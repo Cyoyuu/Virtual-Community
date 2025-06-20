@@ -1,0 +1,37 @@
+Given available places in the scene and initial information of characters, generate characters and groups based on the instructions.
+
+Available places in the scene:
+$places_information_verbalized$
+
+Initial information of characters:
+$characters_initial_information_verbalized$
+
+Instructions:
+Remember that all the places you generated must be one of the place in available places in the scene.
+
+Firstly, generate full information of $num_characters$ characters based on the initial information of characters given to you (i.e. name, age, famous or not). 
+The output should be a JSON object which is a dictionary of characters (dictionary). The outer dictionary's keys are the names of characters and the corresponding value is a inner dictionary that has nine keys ('age', 'values', 'learned', 'working_place', 'living_place', 'currently', 'lifestyle', 'known_places', 'initial_cash_value'). Each character should follow the following format:
+{
+    "age": "copy from initial information of the character",
+    "values": "contains a list of 2-3 Schwartz Basic Values from ['self-direction', 'stimulation', 'hedonism', 'achievement', 'power', 'security', 'conformity', 'tradition', 'benevolence', 'universalism']",
+    "learned": "for famous person like Elon Musk, retrieve from wikipedia, e.g. I am a businessman and investor known for my key roles in the space company SpaceX and the automotive company Tesla, Inc. Other involvements include ownership of X Corp., the company that operates the social media platform X (formerly known as Twitter), and my role in the founding of the Boring Company, xAI, Neuralink, and OpenAI. I am one of the wealthiest individuals in the world. For non-famous person, describe the primary role first and the primary role must be grounded to the scene's available places! This means that if the character has a job or he or she's a student, the working place must exist in the scene. And be specific on the working place (for example, a local firm is not allowed, it must be a firm exists in the scene)! For examples, research scientist at xxx company (xxx company must exist in the scene's available places), doctor at xxx hospital (xxx hospital must exist in the scene's available places), hotel manager at xxx hotel (xxx hotel must exist in the scene's available places), undergraduate student at xxx college (xxx college must exist in the scene's available places), professor at xxx college (must be grounded similarly), cashier at xxx shop (xxx shop must exist in the scene). Only for visitors or tourists at the $scene_name$, working place is not needed. Then decribe the hobbies and other traits. For example in the MIT campus, I am an undergraduate student at MIT College of Computing studying computer science and I like streaming games on Twitch. I love to connect with people and explore new ideas. Places like 'MIT College of Computing' must exist in the scene places",
+    "working_place": "for non-famous character, choose an appropriate place for working in the scene if the character has a job or is a student, else return null. This should be based on the 'learned' information. If the character has a job or is a student, it must have a valid working_place, cannot be null. For famous character, if the 'learned' information doesn't reveal a working place, it's okay to be null",
+    "living_place": "choose an appropriate place of coarse type accommodation for the character to live, for example, most characters like should live in the apartment and house of type real_estate_agency because they are local, only students should live in the dormitory or apartment/house but not hotel, and only visitors and guests live in a temporary place like the hotel and lodging",
+    "currently": "describe the current goal for the person, think about what he or she might want to do in $scene_name$. For famous person like Elon Musk, e.g. I will collaborate with The Picower Institute for Learning and Memory for a project in Neuralink. A requirement is that places like 'The Picower Institute for Learning and Memory' must exist in the scene. For ordinary person like that student mentioned above, e.g. I want to get an A in the Advanced Data Structures course. Another requirement is that the current goal must be related to the person's 'learned' key generated.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "known_places": "places that the character may know in the scene including any place mentioned in the 'learned' and 'currently' information, working place if there's a working place",
+    "initial_cash_value": "given character information previously generated, return a reasonable integer from 100-1000 as the initial cash value for the character"
+}
+
+Then, create $num_groups$ groups given character information you just generated (based on role, personality, hobbies, goals of characters, but do not overlap with their jobs), that suitable for real-world scenarios of the scene (e.g. club, lab, family, company, sports team)
+All $num_characters$ characters are socially connected within $num_groups$ groups, where each character belongs to only one group and each group has at least $group_least_members$ members (make number of members evenly for groups).
+The output should be a JSON object which is a dictionary of groups information (dictionary). The outer dictionary's keys are group names and the corresponding value is a inner dictionary that has three keys ('description', 'place', 'members'). Each group should follow the following format:
+{
+    "description": "group description",
+    "place": "a place where the group activity hosts (the place must be one of the places in the scene)",
+    "members": "a list of character names that joined this group",
+    "daily_activity": "a description of daily activity in the afternoon or in the evening with time duration in present participle but without punctuation, for example, playing tennis from 19:00 to 20:00."
+}
+Do not hallucinate groups with characters' living places.
+
+Only return 2 JSON objects (both are dictionary of dictionaries). The first JSON contains $num_characters$ characters (don't wrap it in a 'characters' key, the keys of the first JSON are character names) and the second JSON contains $num_groups$ groups (don't wrap it in a 'groups' key, the keys of the second JSON are group names).

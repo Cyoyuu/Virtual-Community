@@ -1,0 +1,16 @@
+python ViCo/env.py --head_less \
+--backend gpu \
+--multi_process \
+--skip_avatar_animation \
+--scene NY \
+--no_load_indoor_scene \
+--resolution 512 \
+--num_agents 15 \
+--config agents_num_15 \
+--agent_type tour_agent \
+--max_seconds 100 \
+--save_per_seconds 1 \
+--enable_gt_segmentation \
+--logging_level info \
+--overwrite \
+--debug

@@ -1,0 +1,153 @@
+{
+    "health": {
+        "physical_sickness": {
+            "cold": {
+                "description": "I have caught a cold, leading to a runny nose, sore throat, and mild fatigue. Physical activity is slightly impaired, and the agent may move more slowly or with reduced energy."
+            },
+            "fatigue": {
+                "description": "I am experiencing fatigue, likely due to overexertion or lack of rest. Physical strength is reduced, and I may find it difficult to perform tasks that require endurance."
+            },
+            "headache": {
+                "description": "A throbbing headache has set in, making it difficult to focus. Physical coordination is slightly impaired, and I may struggle with tasks requiring precision."
+            },
+            "muscle_soreness": {
+                "description": "My muscles are sore, likely from intense physical activity. Movement is stiff, and I may have reduced mobility or speed."
+            },
+            "stomach_ache": {
+                "description": "I am experiencing a stomach ache, possibly due to poor diet or stress. Physical performance is reduced, and I may avoid strenuous activities."
+            },
+            "fever": {
+                "description": "I have developed a fever, leading to sweating, chills, and overall weakness. My physical capabilities are significantly reduced, and I may need to rest to recover."
+            },
+            "injury": {
+                "description": "I have sustained an injury, causing pain and limiting my physical capabilities. Depending on the severity, I may struggle with movement or be unable to perform certain actions."
+            }
+        },
+        "mental_sickness": {
+            "depression": {
+                "description": "I am feeling down, with a loss of interest in activities I usually enjoy. Motivation is low, and I may struggle to complete tasks or interact with others."
+            },
+            "anxiety": {
+                "description": "I am experiencing anxiety, leading to nervousness and worry about potential dangers or challenges. Decision-making is impaired, and I may hesitate or avoid situations that require quick thinking."
+            },
+            "stress": {
+                "description": "I am under significant stress, possibly due to overwhelming responsibilities or challenges. Mental focus is reduced, and I may make more mistakes or react poorly to unexpected events."
+            },
+            "insomnia": {
+                "description": "I am struggling with insomnia, leading to poor sleep quality. As a result, I am mentally tired and less alert during the day, making concentration difficult."
+            },
+            "irritability": {
+                "description": "I am feeling irritable, possibly due to accumulated stress or lack of sleep. Social interactions are strained, and I may react negatively to minor annoyances."
+            },
+            "confusion": {
+                "description": "I am experiencing confusion, with difficulty in thinking clearly or remembering important details. This impairs decision-making and can lead to errors in tasks."
+            }
+        }
+    },
+    "health_adjustments": {
+        "goto_theatre": {
+            "physical": 0.0,
+            "mental": 0.1
+        },
+        "goto_gym": {
+            "physical": 0.1,
+            "mental": 0.0
+        },
+        "goto_gym_when_physically_sick": {
+            "physical": -0.1,
+            "mental": 0.0
+        },
+        "exam_low": {
+            "physical": 0.0,
+            "mental": -0.1
+        },
+        "exam_high": {
+            "physical": 0.0,
+            "mental": 0.1
+        },
+        "due_pass": {
+            "physical": 0.0,
+            "mental": -0.1
+        },
+        "step_physical_sickness": {
+            "physical": -0.005,
+            "mental": 0.0
+        },
+        "step_mental_sickness": {
+            "physical": 0.0,
+            "mental": -0.005
+        },
+        "step_sleep": {
+            "physical": 0.001,
+            "mental": 0.0
+        },
+        "bad_weather_walk": {
+            "physical": -0.001,
+            "mental": 0.0
+        },
+        "bad_weather_bike": {
+            "physical": -0.001,
+            "mental": 0.0
+        }
+    },
+    "price": {
+        "one_time": {
+            "restaurant": {
+                "Tawakal Halal": 10,
+                "Catalyst Restaurant": 30,
+                "Carolicious Venezuelan Food": 15,
+                "BibimBox": 15,
+                "Saloniki Greek": 10,
+                "McCormick Dining Hall": 7,
+                "The Howard Dining Hall in Maseeh Hall": 7
+            },
+            "transit": {
+                "bus": 2
+            },
+            "entertainment": {
+                "theatre": 20,
+                "gym": 10
+            }
+        },
+        "per_km": {
+            "transit": {
+                "walk": 0,
+                "bike": 0.5,
+                "uber": 1.50
+            }
+        },
+        "per_minute": {
+            "transit": {
+                "bike": 0.2
+            }
+        }
+    },
+    "_comments": {
+    },
+    "goods_price_per_store":{
+        "store-Fresh-Beverages":{
+            "Fresh Produce":14,
+            "Beverages":10
+        },
+        "store-Fresh-DM":{
+            "Fresh Produce":12,
+            "Dairy & Meat":10
+        },
+        "store-Fresh-Snacks":{
+            "Fresh Produce":10,
+            "Snacks":14
+        },
+        "store-Beverages-DM":{
+            "Dairy & Meat":12,
+            "Beverages":12
+        },
+        "store-Beverages-Snacks":{
+            "Beverages":14,
+            "Snacks":10
+        },
+        "store-Snacks-DM":{
+            "Dairy & Meat":14,
+            "Snacks":12
+        }
+    }
+}
