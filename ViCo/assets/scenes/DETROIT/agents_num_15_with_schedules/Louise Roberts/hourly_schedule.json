@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning routine and preparation",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "07:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Greening of Detroit - Lafayette Greens",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on green spaces project",
+        "place": "The Greening of Detroit - Lafayette Greens",
+        "building": "open space",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Hudson Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "The Greening of Detroit - Lafayette Greens",
+        "end_place": "The Hudson Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Greening of Detroit - Lafayette Greens",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "The Hudson Cafe",
+        "end_place": "The Greening of Detroit - Lafayette Greens"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work on green spaces project",
+        "place": "The Greening of Detroit - Lafayette Greens",
+        "building": "open space",
+        "start_time": "14:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Hudson Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "The Greening of Detroit - Lafayette Greens",
+        "end_place": "The Hudson Cafe"
+    },
+    {
+        "type": "main",
+        "activity": "Creative Minds brainstorming session",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "The Hudson Cafe",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Grocery shopping",
+        "place": "Fresh and Snacks Store",
+        "building": "The Albert",
+        "start_time": "18:15:00",
+        "end_time": "18:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Louise Roberts's room at Julian C. Madison Building",
+        "place": null,
+        "building": null,
+        "start_time": "18:45:00",
+        "end_time": "19:00:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Louise Roberts's room at Julian C. Madison Building"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "22:00:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Julian C. Madison Building",
+        "building": "Julian C. Madison Building",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

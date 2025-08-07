@@ -1,0 +1,168 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at Security Trust Lofts",
+        "building": "Security Trust Lofts",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at The Hudson Cafe",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit in the D",
+        "place": null,
+        "building": null,
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning workout session",
+        "place": "CrossFit in the D",
+        "building": "Griswold Capitol Park",
+        "start_time": "07:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Qube",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "CrossFit in the D",
+        "end_place": "The Qube"
+    },
+    {
+        "type": "main",
+        "activity": "Study session at The Qube",
+        "place": "The Qube",
+        "building": "The Qube",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Avalon Caf\u00e9 and Bakery",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "The Qube",
+        "end_place": "Avalon Caf\u00e9 and Bakery"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Avalon Caf\u00e9 and Bakery",
+        "place": "Avalon Caf\u00e9 and Bakery",
+        "building": "1001 Woodward Garage",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Avalon Caf\u00e9 and Bakery",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Grocery shopping at Fresh and Beverages Store",
+        "place": "Fresh and Beverages Store",
+        "building": "First State Bank",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivia Adams's room at Security Trust Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Olivia Adams's room at Security Trust Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Rest and relaxation",
+        "place": "Olivia Adams's room at Security Trust Lofts",
+        "building": "Security Trust Lofts",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit in the D",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Olivia Adams's room at Security Trust Lofts",
+        "end_place": "CrossFit in the D"
+    },
+    {
+        "type": "main",
+        "activity": "Group workout with Fitness Enthusiasts",
+        "place": "CrossFit in the D",
+        "building": "Griswold Capitol Park",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Trolley Room Detroit",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "CrossFit in the D",
+        "end_place": "Trolley Room Detroit."
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Trolley Room Detroit",
+        "place": "Trolley Room Detroit.",
+        "building": "Hotel Indigo",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivia Adams's room at Security Trust Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Trolley Room Detroit.",
+        "end_place": "Olivia Adams's room at Security Trust Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Evening relaxation and preparation for bed",
+        "place": "Olivia Adams's room at Security Trust Lofts",
+        "building": "Security Trust Lofts",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at Security Trust Lofts",
+        "building": "Security Trust Lofts",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

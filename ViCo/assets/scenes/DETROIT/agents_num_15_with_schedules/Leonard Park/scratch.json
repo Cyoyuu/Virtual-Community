@@ -1,0 +1,182 @@
+{
+    "name": "Leonard Park",
+    "first_name": "Leonard",
+    "last_name": "Park",
+    "age": 26,
+    "innate": "conformity, security, benevolence",
+    "learned": "I am a librarian at Skillman Branch, passionate about literature and helping people find the right books. I enjoy reading and organizing community events.",
+    "currently": "I am organizing a book club to encourage reading in the community.",
+    "lifestyle": "I go to bed around 22:00, wake up around 06:30, eat dinner around 18:30",
+    "groups": [
+        {
+            "name": "Business Networkers",
+            "description": "A group of business professionals who meet to network and discuss business strategies.",
+            "place": "Comerica / Detroit Trust Company",
+            "members": [
+                "Steve Johnson",
+                "Roth Miller",
+                "Leonard Park"
+            ],
+            "daily_activity": "networking and discussing strategies from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Leonard Park's room at Louis Kamper Apts",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Louis Kamper Apts",
+            "building": "Louis Kamper Apts",
+            "start_time": "00:00:00",
+            "end_time": "06:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "The Hudson Cafe",
+            "building": "1241 Woodward Avenue",
+            "start_time": "06:30:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Skillman Branch",
+            "place": null,
+            "building": null,
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work at Skillman Branch",
+            "place": "Skillman Branch",
+            "building": "Skillman Branch",
+            "start_time": "07:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Leila",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Skillman Branch",
+            "end_place": "Leila"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Leila",
+            "building": "Farwell Building",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Skillman Branch",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Leila",
+            "end_place": "Skillman Branch"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work and organize book club at Skillman Branch",
+            "place": "Skillman Branch",
+            "building": "Skillman Branch",
+            "start_time": "13:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Comerica / Detroit Trust Company",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Skillman Branch",
+            "end_place": "Comerica / Detroit Trust Company"
+        },
+        {
+            "type": "main",
+            "activity": "Business Networkers meeting",
+            "place": "Comerica / Detroit Trust Company",
+            "building": "Comerica / Detroit Trust Company",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Fountain Detroit",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Comerica / Detroit Trust Company",
+            "end_place": "The Fountain Detroit"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "The Fountain Detroit",
+            "building": "Campus Martius Fountain",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Louis Kamper Apts",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "The Fountain Detroit",
+            "end_place": "Leonard Park's room at Louis Kamper Apts"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and read",
+            "place": "Leonard Park's room at Louis Kamper Apts",
+            "building": "Louis Kamper Apts",
+            "start_time": "20:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Louis Kamper Apts",
+            "building": "Louis Kamper Apts",
+            "start_time": "22:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Skillman Branch",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

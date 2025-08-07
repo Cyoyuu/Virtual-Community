@@ -1,0 +1,114 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Mr Beast's room at Hotel at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "00:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bohemia at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "09:00:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Qube",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "10:00:00",
+        "start_place": "Bohemia at The Detroit Club",
+        "end_place": "The Qube"
+    },
+    {
+        "type": "main",
+        "activity": "Film challenge video and collaborate with local creators",
+        "place": "The Qube",
+        "building": "The Qube",
+        "start_time": "10:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit in the D",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "The Qube",
+        "end_place": "CrossFit in the D"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Fitness Enthusiasts",
+        "place": "CrossFit in the D",
+        "building": "Griswold Capitol Park",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Hudson Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "CrossFit in the D",
+        "end_place": "The Hudson Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel at The Detroit Club",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "The Hudson Cafe",
+        "end_place": "Mr Beast's room at Hotel at The Detroit Club"
+    },
+    {
+        "type": "main",
+        "activity": "Edit video and plan next content",
+        "place": "Mr Beast's room at Hotel at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bohemia at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "20:00:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Mr Beast's room at Hotel at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's activities",
+        "place": "Mr Beast's room at Hotel at The Detroit Club",
+        "building": "The Detroit Club",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

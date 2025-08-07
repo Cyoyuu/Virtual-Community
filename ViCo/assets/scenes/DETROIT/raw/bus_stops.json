@@ -1,0 +1,144 @@
+{
+    "manual_bus_drive_route": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 42.3348699,
+                    "lng": -83.04564429999999
+                },
+                "southwest": {
+                    "lat": 42.3290542,
+                    "lng": -83.0493566
+                }
+            },
+            "copyrights": "Map data \u00a92024 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.5 mi",
+                        "value": 791
+                    },
+                    "duration": {
+                        "text": "3 mins",
+                        "value": 200
+                    },
+                    "end_address": "277 Woodward Ave, Detroit, MI 48226, USA",
+                    "end_location": {
+                        "lat": 42.329241,
+                        "lng": -83.04564429999999
+                    },
+                    "start_address": "1459 Woodward Ave, Detroit, MI 48226, USA",
+                    "start_location": {
+                        "lat": 42.3348699,
+                        "lng": -83.0493566
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.3 mi",
+                                "value": 478
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 111
+                            },
+                            "end_location": {
+                                "lat": 42.3310509,
+                                "lng": -83.04693569999999
+                            },
+                            "html_instructions": "Head <b>southeast</b> on <b>Woodward Ave</b> toward <b>W Grand River Ave</b><div style=\"font-size:0.9em\">Parts of this road may be closed at certain times or days</div>",
+                            "polyline": {
+                                "points": "}okaGnq{yNj@a@jBwAfFuDr@g@~@q@JAFCz@k@@AFOH?`@Av@Ab@AHAFAHGHC"
+                            },
+                            "start_location": {
+                                "lat": 42.3348699,
+                                "lng": -83.0493566
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "180 ft",
+                                "value": 55
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 18
+                            },
+                            "end_location": {
+                                "lat": 42.33072869999999,
+                                "lng": -83.047435
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>W Fort St</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "axjaGjb{yNFBBBBDBBDHPj@@BBBLP"
+                            },
+                            "start_location": {
+                                "lat": 42.3310509,
+                                "lng": -83.04693569999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 mi",
+                                "value": 218
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 57
+                            },
+                            "end_location": {
+                                "lat": 42.3290542,
+                                "lng": -83.04606509999999
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>Griswold St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "avjaGle{yNx@o@~AsAVQ|CyB"
+                            },
+                            "start_location": {
+                                "lat": 42.33072869999999,
+                                "lng": -83.047435
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "131 ft",
+                                "value": 40
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 14
+                            },
+                            "end_location": {
+                                "lat": 42.329241,
+                                "lng": -83.04564429999999
+                            },
+                            "html_instructions": "Turn <b>left</b> at the 2nd cross street onto <b>W Larned St</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "qkjaG||zyNe@uA"
+                            },
+                            "start_location": {
+                                "lat": 42.3290542,
+                                "lng": -83.04606509999999
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "}okaGnq{yNrLwI~@q@JAbAo@HQj@AzACPCRKJFFHVt@DFLPx@o@vBeB|CyBe@uA"
+            },
+            "summary": "Woodward Ave and Griswold St",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

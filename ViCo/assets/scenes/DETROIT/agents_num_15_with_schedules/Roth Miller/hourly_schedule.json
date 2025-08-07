@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Bedell Bldg",
+        "building": "Bedell Bldg",
+        "start_time": "00:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at The Hudson Cafe",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on marketing campaign at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "First National Bank Building",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Roasting Plant Coffee",
+        "place": "Roasting Plant Coffee",
+        "building": "First National Bank Building",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on marketing campaign at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "First National Bank Building",
+        "start_time": "12:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Comerica / Detroit Trust Company",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Comerica / Detroit Trust Company"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with Business Networkers",
+        "place": "Comerica / Detroit Trust Company",
+        "building": "Comerica / Detroit Trust Company",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bad Luck Bar",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Comerica / Detroit Trust Company",
+        "end_place": "Bad Luck Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Bad Luck Bar",
+        "place": "Bad Luck Bar",
+        "building": "The Albert",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit in the D",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Bad Luck Bar",
+        "end_place": "CrossFit in the D"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at CrossFit in the D",
+        "place": "CrossFit in the D",
+        "building": "Griswold Capitol Park",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Roth Miller's room at Bedell Bldg",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "CrossFit in the D",
+        "end_place": "Roth Miller's room at Bedell Bldg"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Roth Miller's room at Bedell Bldg",
+        "building": "Bedell Bldg",
+        "start_time": "22:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Bedell Bldg",
+        "building": "Bedell Bldg",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Elizabeth Mensah's room at 28 Grand",
+        "building": "28 Grand",
+        "start_time": "00:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Elizabeth Mensah's room at 28 Grand",
+        "building": "28 Grand",
+        "start_time": "09:00:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Starbucks",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "10:00:00",
+        "start_place": "Elizabeth Mensah's room at 28 Grand",
+        "end_place": "Starbucks"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a barista",
+        "place": "Starbucks",
+        "building": "One Kennedy Square",
+        "start_time": "10:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Hudson Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Starbucks",
+        "end_place": "The Hudson Cafe"
+    },
+    {
+        "type": "main",
+        "activity": "Explore new coffee blends",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "15:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Brainstorming creative projects with Creative Minds",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "The Hudson Cafe",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Buy groceries",
+        "place": "Fresh and Snacks Store",
+        "building": "The Albert",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Elizabeth Mensah's room at 28 Grand",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Elizabeth Mensah's room at 28 Grand"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Elizabeth Mensah's room at 28 Grand",
+        "building": "28 Grand",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Practice latte art",
+        "place": "Elizabeth Mensah's room at 28 Grand",
+        "building": "28 Grand",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Elizabeth Mensah's room at 28 Grand",
+        "building": "28 Grand",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at 45 W Grand River",
+        "building": "45 W Grand River",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at The Hudson Cafe",
+        "place": "The Hudson Cafe",
+        "building": "1241 Woodward Avenue",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on user interface project",
+        "place": "Beverages and Snacks Store",
+        "building": "Ally Detroit Center",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Plum Market \u2013 Ally Detroit Center",
+        "place": "Plum Market \u2013 Ally Detroit Center",
+        "building": "Ally Detroit Center",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on user interface project",
+        "place": "Beverages and Snacks Store",
+        "building": "Ally Detroit Center",
+        "start_time": "12:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit in the D",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Beverages and Snacks Store",
+        "end_place": "CrossFit in the D"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Fitness Enthusiasts",
+        "place": "CrossFit in the D",
+        "building": "Griswold Capitol Park",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pika Hayes's room",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "CrossFit in the D",
+        "end_place": "Pika Hayes's room at 45 W Grand River"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Pika Hayes's room at 45 W Grand River",
+        "building": "45 W Grand River",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leila",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:10:00",
+        "start_place": "Pika Hayes's room at 45 W Grand River",
+        "end_place": "Leila"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Leila",
+        "place": "Leila",
+        "building": "Farwell Building",
+        "start_time": "19:10:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pika Hayes's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Leila",
+        "end_place": "Pika Hayes's room at 45 W Grand River"
+    },
+    {
+        "type": "main",
+        "activity": "Evening study and project review",
+        "place": "Pika Hayes's room at 45 W Grand River",
+        "building": "45 W Grand River",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at 45 W Grand River",
+        "building": "45 W Grand River",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

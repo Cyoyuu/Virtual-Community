@@ -1,0 +1,223 @@
+{
+    "name": "Albert Einstein",
+    "first_name": "Albert",
+    "last_name": "Einstein",
+    "age": 70,
+    "innate": "self-direction, universalism, benevolence",
+    "learned": "I am a theoretical physicist known for developing the theory of relativity, one of the two pillars of modern physics. I enjoy pondering the mysteries of the universe and engaging in intellectual discussions.",
+    "currently": "I am visiting Detroit to give a lecture on the theory of relativity at a local university.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness Enthusiasts",
+            "description": "A group of fitness lovers who meet to work out and share tips on healthy living.",
+            "place": "CrossFit in the D",
+            "members": [
+                "Olivia Adams",
+                "Pika Hayes",
+                "Mr Beast",
+                "Albert Einstein"
+            ],
+            "daily_activity": "working out from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Hudson Cafe",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:10:00",
+            "start_place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+            "end_place": "The Hudson Cafe"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Hudson Cafe",
+            "place": null,
+            "building": null,
+            "start_time": "08:10:00",
+            "end_time": "08:30:00",
+            "start_place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+            "end_place": "The Hudson Cafe"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at The Hudson Cafe",
+            "place": "The Hudson Cafe",
+            "building": "1241 Woodward Avenue",
+            "start_time": "08:30:00",
+            "end_time": "09:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to the university for lecture",
+            "place": null,
+            "building": null,
+            "start_time": "09:30:00",
+            "end_time": "10:00:00",
+            "start_place": "The Hudson Cafe",
+            "end_place": "The Qube"
+        },
+        {
+            "type": "main",
+            "activity": "Giving a lecture on the theory of relativity",
+            "place": "The Qube",
+            "building": "The Qube",
+            "start_time": "10:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Parc for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "The Qube",
+            "end_place": "Parc"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Parc",
+            "place": "Parc",
+            "building": "Parc",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Qube for intellectual discussions",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Parc",
+            "end_place": "The Qube"
+        },
+        {
+            "type": "main",
+            "activity": "Engaging in intellectual discussions",
+            "place": "The Qube",
+            "building": "The Qube",
+            "start_time": "14:00:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to CrossFit in the D for workout",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "The Qube",
+            "end_place": "CrossFit in the D"
+        },
+        {
+            "type": "main",
+            "activity": "Workout with Fitness Enthusiasts",
+            "place": "CrossFit in the D",
+            "building": "Griswold Capitol Park",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lafayette Coney Island for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "18:00:00",
+            "start_place": "CrossFit in the D",
+            "end_place": "Lafayette Coney Island"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Lafayette Coney Island",
+            "place": "Lafayette Coney Island",
+            "building": "118 West Lafayette Boulevard",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Motor Bar for evening relaxation",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Lafayette Coney Island",
+            "end_place": "The Motor Bar"
+        },
+        {
+            "type": "main",
+            "activity": "Relaxing at The Motor Bar",
+            "place": "The Motor Bar",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Albert Einstein's room for rest",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "The Motor Bar",
+            "end_place": "Albert Einstein's room at The Westin Book Cadillac Detroit"
+        },
+        {
+            "type": "main",
+            "activity": "Pondering the mysteries of the universe",
+            "place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "21:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Preparing for bed",
+            "place": "Albert Einstein's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

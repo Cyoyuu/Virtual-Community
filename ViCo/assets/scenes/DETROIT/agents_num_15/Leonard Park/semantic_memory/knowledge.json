@@ -1,0 +1,431 @@
+{
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Bedell Bldg",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Business Networkers"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Griswold Capitol Park",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Business Networkers"
+        ]
+    },
+    "Business Networkers": {
+        "description": "A group of business professionals who meet to network and discuss business strategies.",
+        "place": "Comerica / Detroit Trust Company",
+        "members": [
+            "Steve Johnson",
+            "Roth Miller",
+            "Leonard Park"
+        ],
+        "daily_activity": "networking and discussing strategies from 18:00 to 19:00"
+    },
+    "Leonard Park's room at Louis Kamper Apts": {
+        "building": "Louis Kamper Apts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            804.1666030883789,
+            1243.5814895629883,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Leonard Park's room at Louis Kamper Apts",
+        "bounding_box": [
+            -195.83339695590124,
+            243.58148956273126,
+            141.28773117065427,
+            30.547256354606624,
+            15.473744694342496,
+            71.32294464111328,
+            0.005804014171061041
+        ]
+    },
+    "Skillman Branch": {
+        "building": "Skillman Branch",
+        "coarse_type": "office",
+        "fine_types": [
+            "yes",
+            "library"
+        ],
+        "location": [
+            1103.458999633789,
+            1254.0712203979492,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            104.06956481933594,
+            260.7979736328125,
+            113.28225708007812,
+            37.907474517822266,
+            50.4849739074707,
+            13.364303588867188,
+            0.5282725691795349
+        ]
+    },
+    "Comerica / Detroit Trust Company": {
+        "building": "Comerica / Detroit Trust Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            936.5564441680908,
+            780.0391006469727,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -63.44363021850586,
+            -219.96089935302737,
+            115.47777557373048,
+            45.83147349999873,
+            44.79279899073322,
+            17.899826049804688,
+            0.5299222221243514
+        ]
+    },
+    "The Qube": {
+        "building": "The Qube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1114.9123573303223,
+            863.841064453125,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            114.91724095609248,
+            -136.1604717034295,
+            138.7156867980957,
+            39.54085284911711,
+            85.26707023472619,
+            69.3884506225586,
+            0.5264903316197388
+        ]
+    },
+    "The Hudson Cafe": {
+        "building": "1241 Woodward Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.1949272155762,
+            1190.8524017333984,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -43.80291938915393,
+            190.8512689026288,
+            127.07634735107422,
+            12.865053464090366,
+            30.086103451377657,
+            42.20600891113281,
+            -1.0443569246898463
+        ]
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -93.46975666202655,
+            33.18000534615047,
+            131.04362869262695,
+            87.17751103579315,
+            33.022748964467326,
+            50.341148376464844,
+            0.01036980624943694
+        ]
+    },
+    "Eat\u00f3ri Market": {
+        "building": "Malcomson Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "grocery_or_supermarket",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            840.9358520507812,
+            1132.5894584655762,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -159.06414795469192,
+            132.58946268892942,
+            117.77972793579102,
+            29.876273865500696,
+            15.842230082645601,
+            24.074729919433594,
+            0.013392439509375431
+        ]
+    },
+    "Leila": {
+        "building": "Farwell Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            841.1796798706055,
+            1178.3803787231445,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -158.82032012939456,
+            178.32506561279297,
+            121.57249069213867,
+            30.569683815424437,
+            38.00121147215839,
+            31.64752960205078,
+            0.007843581964288936
+        ]
+    },
+    "The Fountain Detroit": {
+        "building": "Campus Martius Fountain",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1124.5920753479004,
+            988.4745365381241,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            124.59204864501953,
+            -11.525463461875908,
+            105.55118560791016,
+            17.830428804963372,
+            17.599619644919773,
+            0.3178558349609375,
+            0.0012667193202227428
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "First National Bank Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1220.8864822387695,
+            917.9287872314453,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            220.536376953125,
+            -71.7525634765625,
+            156.63113403320312,
+            126.08989715576172,
+            69.62396240234375,
+            104.43657684326172,
+            -0.4966522753238678
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Ally Detroit Center",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_dealer",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1257.6224517822266,
+            823.1520156860352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            257.60919189453125,
+            -176.90774536132812,
+            197.37088012695312,
+            49.34873962402344,
+            49.70307159423828,
+            185.12020874023438,
+            0.5291655659675598
+        ]
+    },
+    "Cadillac Square Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            161.4483028206114,
+            -22.808013611521325
+        ],
+        "rotation": -1.5640466217041311,
+        "bounding_box": null
+    },
+    "Shelby Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -86.86399316235591,
+            -115.57112890928369
+        ],
+        "rotation": -1.0302152296250702,
+        "bounding_box": null
+    },
+    "Washington Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -227.14865352914424,
+            215.1107975807429
+        ],
+        "rotation": -0.0006155934257629443,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            84.45736775052188,
+            171.781173660121
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -108.023841044584,
+            -11.773207132607133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -235.7681507700008,
+            -220.24129204678292
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -24.2629832013028,
+            189.9705379110076
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -9.397046064414717,
+            -234.05763460544557
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -165.8144108188955,
+            215.07522290123595
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Washington Boulevard": [
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Cadillac Square": [
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

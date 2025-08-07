@@ -1,0 +1,436 @@
+{
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at Capitol Park Building",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Elon Musk": {
+        "age": 53,
+        "living_place": "Elon Musk's room at Hotel Indigo Detroit Downtown, an IHG Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Elon Musk.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at The Albert",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Tech Innovators": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+        "place": "The Qube",
+        "members": [
+            "Elon Musk",
+            "Jensen Huang",
+            "James Thompson",
+            "Brian Carter"
+        ],
+        "daily_activity": "discussing tech trends from 18:00 to 19:00"
+    },
+    "Jensen Huang's room at The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Jensen Huang's room at The Westin Book Cadillac Detroit",
+        "bounding_box": [
+            -176.821044921875,
+            38.51941680908203,
+            158.79672241210938,
+            68.47006225585938,
+            45.92334747314453,
+            106.59537506103516,
+            0.013145167380571365
+        ]
+    },
+    "The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "bounding_box": [
+            -176.821044921875,
+            38.51941680908203,
+            158.79672241210938,
+            68.47006225585938,
+            45.92334747314453,
+            106.59537506103516,
+            0.013145167380571365
+        ]
+    },
+    "The Qube": {
+        "building": "The Qube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1114.9123573303223,
+            863.841064453125,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            114.91724095609248,
+            -136.1604717034295,
+            138.7156867980957,
+            39.54085284911711,
+            85.26707023472619,
+            69.3884506225586,
+            0.5264903316197388
+        ]
+    },
+    "The Hudson Cafe": {
+        "building": "1241 Woodward Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.1949272155762,
+            1190.8524017333984,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -43.80291938915393,
+            190.8512689026288,
+            127.07634735107422,
+            12.865053464090366,
+            30.086103451377657,
+            42.20600891113281,
+            -1.0443569246898463
+        ]
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -93.46975666202655,
+            33.18000534615047,
+            131.04362869262695,
+            87.17751103579315,
+            33.022748964467326,
+            50.341148376464844,
+            0.01036980624943694
+        ]
+    },
+    "Comerica / Detroit Trust Company": {
+        "building": "Comerica / Detroit Trust Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            936.5564441680908,
+            780.0391006469727,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -63.44363021850586,
+            -219.96089935302737,
+            115.47777557373048,
+            45.83147349999873,
+            44.79279899073322,
+            17.899826049804688,
+            0.5299222221243514
+        ]
+    },
+    "The Motor Bar": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -176.821044921875,
+            38.51941680908203,
+            158.79672241210938,
+            68.47006225585938,
+            45.92334747314453,
+            106.59537506103516,
+            0.013145167380571365
+        ]
+    },
+    "Trolley Room Detroit.": {
+        "building": "Hotel Indigo",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.1555938720703,
+            969.3572273254395,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -201.84449768066403,
+            -30.642772674560547,
+            126.70783996582031,
+            33.8807049902561,
+            37.306462008614005,
+            41.447662353515625,
+            0.0015179765000364763
+        ]
+    },
+    "American Coney Island": {
+        "building": "114 West Lafayette Boulevard",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            949.7582588195801,
+            980.4919891357422,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -49.4091588726114,
+            -15.766394745487279,
+            111.45375061035156,
+            25.54059719980788,
+            15.453014543212962,
+            9.549057006835938,
+            0.3028234817693629
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "First State Bank",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "local_government_office",
+            "establishment"
+        ],
+        "location": [
+            980.8406653404236,
+            957.0423936843872,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -19.339146579609995,
+            -42.783374503439596,
+            118.661865234375,
+            23.2187632005865,
+            18.550098131875636,
+            23.8416748046875,
+            0.5549494115473294
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Ally Detroit Center",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_dealer",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1257.6224517822266,
+            823.1520156860352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            257.60919189453125,
+            -176.90774536132812,
+            197.37088012695312,
+            49.34873962402344,
+            49.70307159423828,
+            185.12020874023438,
+            0.5291655659675598
+        ]
+    },
+    "Cadillac Square Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            161.4483028206114,
+            -22.808013611521325
+        ],
+        "rotation": -1.5640466217041311,
+        "bounding_box": null
+    },
+    "Shelby Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -86.86399316235591,
+            -115.57112890928369
+        ],
+        "rotation": -1.0302152296250702,
+        "bounding_box": null
+    },
+    "Washington Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -227.14865352914424,
+            215.1107975807429
+        ],
+        "rotation": -0.0006155934257629443,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            84.45736775052188,
+            171.781173660121
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -108.023841044584,
+            -11.773207132607133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -235.7681507700008,
+            -220.24129204678292
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -24.2629832013028,
+            189.9705379110076
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -9.397046064414717,
+            -234.05763460544557
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -165.8144108188955,
+            215.07522290123595
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Washington Boulevard": [
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Cadillac Square": [
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

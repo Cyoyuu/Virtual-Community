@@ -1,0 +1,193 @@
+{
+    "name": "Brian Carter",
+    "first_name": "Brian",
+    "last_name": "Carter",
+    "age": 35,
+    "innate": "achievement, power, security",
+    "learned": "I am a financial analyst working at Comerica / Detroit Trust Company. I enjoy analyzing market trends and investing in stocks.",
+    "currently": "I am aiming to secure a promotion by successfully managing a high-profile client portfolio.",
+    "lifestyle": "I go to bed around 23:00, wake up around 07:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "The Qube",
+            "members": [
+                "Elon Musk",
+                "Jensen Huang",
+                "James Thompson",
+                "Brian Carter"
+            ],
+            "daily_activity": "discussing tech trends from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brian Carter's room at Capitol Park Building",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brian Carter's room at Capitol Park Building",
+            "building": "Capitol Park Building",
+            "start_time": "00:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at The Hudson Cafe",
+            "place": "The Hudson Cafe",
+            "building": "1241 Woodward Avenue",
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Comerica / Detroit Trust Company",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on high-profile client portfolio",
+            "place": "Comerica / Detroit Trust Company",
+            "building": "Comerica / Detroit Trust Company",
+            "start_time": "08:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to True Market",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Comerica / Detroit Trust Company",
+            "end_place": "True Market"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to True Market",
+            "place": null,
+            "building": null,
+            "start_time": "12:10:00",
+            "end_time": "12:30:00",
+            "start_place": null,
+            "end_place": "True Market"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at True Market",
+            "place": "True Market",
+            "building": "One Campus Martius",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Comerica / Detroit Trust Company",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "True Market",
+            "end_place": "Comerica / Detroit Trust Company"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on client portfolio",
+            "place": "Comerica / Detroit Trust Company",
+            "building": "Comerica / Detroit Trust Company",
+            "start_time": "13:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Qube for Tech Innovators meeting",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "18:00:00",
+            "start_place": "Comerica / Detroit Trust Company",
+            "end_place": "The Qube"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators meeting",
+            "place": "The Qube",
+            "building": "The Qube",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to BrisaBar for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "The Qube",
+            "end_place": "BrisaBar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at BrisaBar",
+            "place": "BrisaBar",
+            "building": "Brisabar",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Capitol Park Building",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "BrisaBar",
+            "end_place": "Brian Carter's room at Capitol Park Building"
+        },
+        {
+            "type": "main",
+            "activity": "Review market trends and prepare for next day",
+            "place": "Brian Carter's room at Capitol Park Building",
+            "building": "Capitol Park Building",
+            "start_time": "20:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brian Carter's room at Capitol Park Building",
+            "building": "Capitol Park Building",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Comerica / Detroit Trust Company",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

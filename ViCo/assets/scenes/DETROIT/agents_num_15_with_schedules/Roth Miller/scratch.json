@@ -1,0 +1,180 @@
+{
+    "name": "Roth Miller",
+    "first_name": "Roth",
+    "last_name": "Miller",
+    "age": 26,
+    "innate": "achievement, power, security",
+    "learned": "I am a marketing manager at Fresh and DM Store, focused on promoting fashion brands. I enjoy fashion and attending industry events.",
+    "currently": "I am working on a new marketing campaign to increase brand awareness.",
+    "lifestyle": "I go to bed around 23:30, wake up around 07:30, eat dinner around 19:30",
+    "groups": [
+        {
+            "name": "Business Networkers",
+            "description": "A group of business professionals who meet to network and discuss business strategies.",
+            "place": "Comerica / Detroit Trust Company",
+            "members": [
+                "Steve Johnson",
+                "Roth Miller",
+                "Leonard Park"
+            ],
+            "daily_activity": "networking and discussing strategies from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Roth Miller's room at Bedell Bldg",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Roth Miller's room at Bedell Bldg",
+            "building": "Bedell Bldg",
+            "start_time": "00:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at The Hudson Cafe",
+            "place": "The Hudson Cafe",
+            "building": "1241 Woodward Avenue",
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on marketing campaign at Fresh and DM Store",
+            "place": "Fresh and DM Store",
+            "building": "First National Bank Building",
+            "start_time": "08:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Roasting Plant Coffee",
+            "place": "Roasting Plant Coffee",
+            "building": "First National Bank Building",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on marketing campaign at Fresh and DM Store",
+            "place": "Fresh and DM Store",
+            "building": "First National Bank Building",
+            "start_time": "12:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Comerica / Detroit Trust Company",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Fresh and DM Store",
+            "end_place": "Comerica / Detroit Trust Company"
+        },
+        {
+            "type": "main",
+            "activity": "Networking with Business Networkers",
+            "place": "Comerica / Detroit Trust Company",
+            "building": "Comerica / Detroit Trust Company",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bad Luck Bar",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Comerica / Detroit Trust Company",
+            "end_place": "Bad Luck Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Bad Luck Bar",
+            "place": "Bad Luck Bar",
+            "building": "The Albert",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to CrossFit in the D",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Bad Luck Bar",
+            "end_place": "CrossFit in the D"
+        },
+        {
+            "type": "main",
+            "activity": "Workout at CrossFit in the D",
+            "place": "CrossFit in the D",
+            "building": "Griswold Capitol Park",
+            "start_time": "20:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Roth Miller's room at Bedell Bldg",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "CrossFit in the D",
+            "end_place": "Roth Miller's room at Bedell Bldg"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Roth Miller's room at Bedell Bldg",
+            "building": "Bedell Bldg",
+            "start_time": "22:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Roth Miller's room at Bedell Bldg",
+            "building": "Bedell Bldg",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Fresh and DM Store",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

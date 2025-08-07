@@ -1,0 +1,191 @@
+{
+    "name": "Jensen Huang",
+    "first_name": "Jensen",
+    "last_name": "Huang",
+    "age": 61,
+    "innate": "achievement, power, self-direction",
+    "learned": "I am the CEO of NVIDIA, known for my work in the field of graphics processing units (GPUs) and AI technology. I am passionate about advancing technology and innovation.",
+    "currently": "I am in Detroit to attend a tech conference and explore potential partnerships.",
+    "lifestyle": "I go to bed around 23:00, wake up around 06:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "The Qube",
+            "members": [
+                "Elon Musk",
+                "Jensen Huang",
+                "James Thompson",
+                "Brian Carter"
+            ],
+            "daily_activity": "discussing tech trends from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Jensen Huang's room at The Westin Book Cadillac Detroit",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jensen Huang's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "00:00:00",
+            "end_time": "06:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "The Hudson Cafe",
+            "building": "1241 Woodward Avenue",
+            "start_time": "06:30:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to tech conference",
+            "place": null,
+            "building": null,
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend tech conference",
+            "place": "Comerica / Detroit Trust Company",
+            "building": "Comerica / Detroit Trust Company",
+            "start_time": "07:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Comerica / Detroit Trust Company",
+            "end_place": "American Coney Island"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "American Coney Island",
+            "building": "114 West Lafayette Boulevard",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Qube",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "American Coney Island",
+            "end_place": "The Qube"
+        },
+        {
+            "type": "main",
+            "activity": "Explore potential partnerships",
+            "place": "The Qube",
+            "building": "The Qube",
+            "start_time": "13:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss tech trends with Tech Innovators",
+            "place": "The Qube",
+            "building": "The Qube",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "The Qube",
+            "end_place": "The Motor Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "The Motor Bar",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to CrossFit in the D",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "The Motor Bar",
+            "end_place": "CrossFit in the D"
+        },
+        {
+            "type": "main",
+            "activity": "Workout at CrossFit in the D",
+            "place": "CrossFit in the D",
+            "building": "Griswold Capitol Park",
+            "start_time": "20:30:00",
+            "end_time": "21:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to hotel",
+            "place": null,
+            "building": null,
+            "start_time": "21:30:00",
+            "end_time": "22:00:00",
+            "start_place": "CrossFit in the D",
+            "end_place": "Jensen Huang's room at The Westin Book Cadillac Detroit"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for next day",
+            "place": "Jensen Huang's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "22:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jensen Huang's room at The Westin Book Cadillac Detroit",
+            "building": "The Westin Book Cadillac Detroit",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

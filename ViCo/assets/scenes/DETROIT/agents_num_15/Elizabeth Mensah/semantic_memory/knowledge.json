@@ -1,0 +1,388 @@
+{
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Julian C. Madison Building",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Creative Minds"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Fowler Building",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Creative Minds"
+        ]
+    },
+    "Taylor Swift": {
+        "age": 34,
+        "living_place": "The Westin Book Cadillac Detroit",
+        "appearance": "ViCo/assets/imgs/avatars/Taylor Swift.png",
+        "groups": [
+            "Creative Minds"
+        ]
+    },
+    "Creative Minds": {
+        "description": "A group of creative individuals who gather to share ideas and work on artistic projects.",
+        "place": "The Hudson Cafe",
+        "members": [
+            "Taylor Swift",
+            "Sophie Carlsen",
+            "Elizabeth Mensah",
+            "Louise Roberts"
+        ],
+        "daily_activity": "brainstorming creative projects from 17:00 to 18:00"
+    },
+    "Elizabeth Mensah's room at 28 Grand": {
+        "building": "28 Grand",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            879.1999893188477,
+            1261.3353271484375,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Elizabeth Mensah's room at 28 Grand",
+        "bounding_box": [
+            -124.54118544160983,
+            262.1976262094179,
+            142.69587707519528,
+            24.06140321194037,
+            37.11591675898298,
+            0.0,
+            0.5280478261920806
+        ]
+    },
+    "Starbucks": {
+        "building": "One Kennedy Square",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1046.1001915931702,
+            953.4135026931763,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            50.798590714339895,
+            -43.34372912216753,
+            128.1491241455078,
+            37.11199773476478,
+            73.64135906015076,
+            43.563385009765625,
+            0.5851494823661103
+        ]
+    },
+    "The Hudson Cafe": {
+        "building": "1241 Woodward Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.1949272155762,
+            1190.8524017333984,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -43.80291938915393,
+            190.8512689026288,
+            127.07634735107422,
+            12.865053464090366,
+            30.086103451377657,
+            42.20600891113281,
+            -1.0443569246898463
+        ]
+    },
+    "The Qube": {
+        "building": "The Qube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1114.9123573303223,
+            863.841064453125,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            114.91724095609248,
+            -136.1604717034295,
+            138.7156867980957,
+            39.54085284911711,
+            85.26707023472619,
+            69.3884506225586,
+            0.5264903316197388
+        ]
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -93.46975666202655,
+            33.18000534615047,
+            131.04362869262695,
+            87.17751103579315,
+            33.022748964467326,
+            50.341148376464844,
+            0.01036980624943694
+        ]
+    },
+    "Comerica / Detroit Trust Company": {
+        "building": "Comerica / Detroit Trust Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            936.5564441680908,
+            780.0391006469727,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -63.44363021850586,
+            -219.96089935302737,
+            115.47777557373048,
+            45.83147349999873,
+            44.79279899073322,
+            17.899826049804688,
+            0.5299222221243514
+        ]
+    },
+    "Spkr Box": {
+        "building": "Spkr Box",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "cafe"
+        ],
+        "location": [
+            851.0887756347656,
+            1242.951416015625,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -150.99171475376204,
+            242.39216471447136,
+            108.81187438964842,
+            4.434783385071954,
+            16.87718509674382,
+            5.68438720703125,
+            0.2679331932106937
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "The Albert",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            932.0420570373535,
+            1159.4660568237305,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -67.97072425319332,
+            159.47525695658913,
+            124.87011337280273,
+            29.42094393604332,
+            47.38959401784695,
+            37.93787384033203,
+            0.5203333702113538
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "First National Bank Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1220.8864822387695,
+            917.9287872314453,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            220.536376953125,
+            -71.7525634765625,
+            156.63113403320312,
+            126.08989715576172,
+            69.62396240234375,
+            104.43657684326172,
+            -0.4966522753238678
+        ]
+    },
+    "Cadillac Square Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            161.4483028206114,
+            -22.808013611521325
+        ],
+        "rotation": -1.5640466217041311,
+        "bounding_box": null
+    },
+    "Shelby Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -86.86399316235591,
+            -115.57112890928369
+        ],
+        "rotation": -1.0302152296250702,
+        "bounding_box": null
+    },
+    "Washington Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -227.14865352914424,
+            215.1107975807429
+        ],
+        "rotation": -0.0006155934257629443,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            84.45736775052188,
+            171.781173660121
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -108.023841044584,
+            -11.773207132607133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -235.7681507700008,
+            -220.24129204678292
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -24.2629832013028,
+            189.9705379110076
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -9.397046064414717,
+            -234.05763460544557
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -165.8144108188955,
+            215.07522290123595
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Washington Boulevard": [
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Cadillac Square": [
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

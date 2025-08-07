@@ -1,0 +1,385 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at The Albert",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss and develop innovative technology solutions.",
+        "place": "The Qube",
+        "members": [
+            "Brycer Rodriguez",
+            "Pika Hayes"
+        ],
+        "daily_activity": "brainstorming new tech ideas from 15:00 to 17:00"
+    },
+    "Pika Hayes's room at Julian C. Madison Building": {
+        "building": "Julian C. Madison Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            803.9821166992188,
+            1267.0031204223633,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Pika Hayes's room at Julian C. Madison Building",
+        "bounding_box": [
+            -196.01788330078125,
+            266.9808502197265,
+            118.56494903564452,
+            30.563559453139995,
+            31.388722325159062,
+            25.654739379882812,
+            0.007843279713176585
+        ]
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -93.46975666202655,
+            33.18000534615047,
+            131.04362869262695,
+            87.17751103579315,
+            33.022748964467326,
+            50.341148376464844,
+            0.01036980624943694
+        ]
+    },
+    "Julian C. Madison Building": {
+        "building": "Julian C. Madison Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            803.9821166992188,
+            1267.0031204223633,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -196.01788330078125,
+            266.9808502197265,
+            118.56494903564452,
+            30.563559453139995,
+            31.388722325159062,
+            25.654739379882812,
+            0.007843279713176585
+        ]
+    },
+    "The Qube": {
+        "building": "The Qube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1114.9123573303223,
+            863.841064453125,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            114.91724095609248,
+            -136.1604717034295,
+            138.7156867980957,
+            39.54085284911711,
+            85.26707023472619,
+            69.3884506225586,
+            0.5264903316197388
+        ]
+    },
+    "The Greening of Detroit - Lafayette Greens": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            897.4479860573208,
+            968.2752357269793,
+            -0.0009022684871933251
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "BrisaBar": {
+        "building": "Brisabar",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1125.0534858703613,
+            964.1176795959473,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            125.0729634144782,
+            -35.90463662175216,
+            105.63214874267578,
+            18.051239344305362,
+            17.399429281114557,
+            0.1963958740234375,
+            -0.0024801434540356933
+        ]
+    },
+    "American Coney Island": {
+        "building": "114 West Lafayette Boulevard",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            949.7582588195801,
+            980.4919891357422,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -49.4091588726114,
+            -15.766394745487279,
+            111.45375061035156,
+            25.54059719980788,
+            15.453014543212962,
+            9.549057006835938,
+            0.3028234817693629
+        ]
+    },
+    "Spkr Box": {
+        "building": "Spkr Box",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "cafe"
+        ],
+        "location": [
+            851.0887756347656,
+            1242.951416015625,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -150.99171475376204,
+            242.39216471447136,
+            108.81187438964842,
+            4.434783385071954,
+            16.87718509674382,
+            5.68438720703125,
+            0.2679331932106937
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "First State Bank",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "local_government_office",
+            "establishment"
+        ],
+        "location": [
+            980.8406653404236,
+            957.0423936843872,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -19.339146579609995,
+            -42.783374503439596,
+            118.661865234375,
+            23.2187632005865,
+            18.550098131875636,
+            23.8416748046875,
+            0.5549494115473294
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "The Detroit Club",
+        "coarse_type": "stores",
+        "fine_types": [
+            "spa",
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -217.88290791109895,
+            -223.2923461719123,
+            115.47357177734376,
+            24.24307520078893,
+            39.705176260942366,
+            15.116439819335938,
+            0.5268689301193654
+        ]
+    },
+    "Cadillac Square Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            161.4483028206114,
+            -22.808013611521325
+        ],
+        "rotation": -1.5640466217041311,
+        "bounding_box": null
+    },
+    "Shelby Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -86.86399316235591,
+            -115.57112890928369
+        ],
+        "rotation": -1.0302152296250702,
+        "bounding_box": null
+    },
+    "Washington Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -227.14865352914424,
+            215.1107975807429
+        ],
+        "rotation": -0.0006155934257629443,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            84.45736775052188,
+            171.781173660121
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -108.023841044584,
+            -11.773207132607133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -235.7681507700008,
+            -220.24129204678292
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -24.2629832013028,
+            189.9705379110076
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -9.397046064414717,
+            -234.05763460544557
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -165.8144108188955,
+            215.07522290123595
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Washington Boulevard": [
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Cadillac Square": [
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}
