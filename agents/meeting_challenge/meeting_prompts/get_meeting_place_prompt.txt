@@ -1,0 +1,41 @@
+You are an agent located in a city, and you need to coordinate with other agents to decide on a mutual meeting location. The goal is to choose a location from a list of available places such that the total travel time for all agents to reach the meeting point is minimized. Remember for clarity, the place name must be an exact match of the name in the place list.
+
+You are participating in a conversation with other agents. Based on the following information, generate your next message in the discussion. Your response should be natural, collaborative, and focused on helping the group reach an efficient decision.
+
+Informations:
+
+My Name:
+$SelfName$
+
+Agent positions:
+$Agentposes$
+
+Place list:
+$Places$
+
+Conversation History so far:
+$ConversationHistory$
+
+Your response should be in the following format:
+start of response(don't include this line)
+{
+    "type": $type$,
+    "speech": $speech$
+}
+end of response(don't include this line)
+So that your response can be directly parsed by json.
+
+Instructions:
+
+1.You can replace $type$ with one of the following 3 words: "wait", "speak", "decide".
+2.If you choose to wait for other agents' responses, replace $type$ with "wait".
+3.If you choose to speak, replace $type$ with "speak" and see the following instructions.
+4.Replace $speech$ with what your are actually going to speak in the conversation.
+5.Estimate the distances from agents (based on their positions) to each potential meeting location.
+6.Consider proposing a location that appears optimal or commenting on previously suggested locations.
+7.You may ask clarifying questions, suggest trade-offs, or support others’ proposals if they seem reasonable.
+8.Keep your message concise (1–3 sentences and less than 100 words), as part of an ongoing dialogue.
+9.If the conversation has lasted too long (more than 5 times agents number), you can just choose the proposal with the most support to avoid wasting too much time.
+10.If you think everyone has reached an agreement, just replace $speech$ with "decide" and $speech$ with the decided meeting place.
+
+Now, generate your response. Don't include extra charactors.
