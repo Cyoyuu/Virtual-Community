@@ -15,8 +15,8 @@ import time
 
 from agents.agent import Agent
 from agents.memory import SemanticMemory
-from mytools.utils import *
-from mytools.model_manager import global_model_manager
+from ViCo.tools.utils import *
+from ViCo.tools.model_manager import global_model_manager
 from sg.builder.builder import Builder, BuilderConfig
 
 

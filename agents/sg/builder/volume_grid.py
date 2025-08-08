@@ -11,8 +11,8 @@ import os
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
-from ViCo.tools.utils import atomic_save
-from .builtin import lib_builder
+from mytools.utils import atomic_save
+from sg.builder.builtin import lib_builder
 
 def convex_hull(points: np.ndarray) -> np.ndarray:
     size = np.zeros(1, dtype=np.int32)
@@ -258,3 +258,8 @@ class VolumeGridBuilder:
 
     def __del__(self):
         self.close()
+
+if __name__ == '__main__':
+    a = VolumeGridBuilder(conf=VolumeGridBuilderConfig(voxel_size=0.025))
+    a.load("output/NY_agents_num_15_with_schedules_demo1/replay_agent/curr_sim/Elizabeth Mensah/semantic_memory/open space/volume_grid.pkl")
+    a.visualize()
