@@ -4,7 +4,7 @@ import requests
 import random
 import multiprocessing as mp
 
-from sg.builder.model import *
+from agents.sg.builder.model import *
 from .server import ProcessChannel
 
 def all_to_device(arg, device: str):
