@@ -11,8 +11,8 @@ from logging import Logger
 from .volume_grid import VolumeGridBuilder, VolumeGridBuilderConfig
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
-from mytools.model_manager import global_model_manager
-from mytools.utils import atomic_save
+from ViCo.tools.model_manager import global_model_manager
+from ViCo.tools.utils import atomic_save
 
 @dataclass
 class ObjectBuilderConfig:

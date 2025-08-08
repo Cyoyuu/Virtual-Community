@@ -11,7 +11,7 @@ import os
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
-from mytools.utils import atomic_save
+from ViCo.tools.utils import atomic_save
 from sg.builder.builtin import lib_builder
 
 def convex_hull(points: np.ndarray) -> np.ndarray:

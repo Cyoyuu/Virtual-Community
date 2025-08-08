@@ -9,7 +9,7 @@ import json
 from .builtin import lib_region
 from .volume_grid import VolumeGridBuilder
 from .object import ObjectBuilder
-from mytools.utils import atomic_save
+from ViCo.tools.utils import atomic_save
 
 class RegionBuilder:
     def __init__(self, vg_builder: VolumeGridBuilder, obj_builder: ObjectBuilder, logger: Logger = None, debug = False, output_dir = None):
