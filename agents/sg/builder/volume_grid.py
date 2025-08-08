@@ -12,7 +12,7 @@ current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
 from ViCo.tools.utils import atomic_save
-from sg.builder.builtin import lib_builder
+from agents.sg.builder.builtin import lib_builder
 
 def convex_hull(points: np.ndarray) -> np.ndarray:
     size = np.zeros(1, dtype=np.int32)
