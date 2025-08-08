@@ -8,7 +8,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --skip_avatar_animation \
 --enable_gt_segmentation \
 --output_dir ViCo/meeting_challenge/output \
---scene AMSTERDAM \
+--scene DETROIT \
 --enable_outdoor_objects \
 --outdoor_objects_max_num 5 \
 --resolution 512 \

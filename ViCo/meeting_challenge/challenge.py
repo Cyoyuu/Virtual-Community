@@ -165,7 +165,6 @@ def main():
         tm_vehicle_num=args.tm_vehicle_num,
         tm_avatar_num=args.tm_avatar_num,
         save_per_seconds=args.save_per_seconds,
-        enable_indoor_activities=args.enable_indoor_activities,
         debug=args.debug,
     )
     obs = env.reset()
