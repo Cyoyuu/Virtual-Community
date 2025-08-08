@@ -12,7 +12,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --enable_outdoor_objects \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
---config agents_num_15_with_schedules \
+--config agents_num_5 \
 --agent_type llm \
 --save_per_seconds 50 \
 --step_limit 1500 \
