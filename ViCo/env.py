@@ -683,6 +683,8 @@ class VicoEnv:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 			elif action['type'] == 'wait':
 				continue
+			elif action['type'] == 'task_complete':
+				continue
 			else:
 				raise NotImplementedError(f"agent action type {action['type']} is not supported")
 
