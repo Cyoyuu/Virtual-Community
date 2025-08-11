@@ -105,7 +105,7 @@ class LLMMeetingAgent(Agent):
         self.looking_down = False
         self.num_agents = num_agents
         self.comm = self.num_agents > 1
-        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seef_knowledge.json"))
+        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
         if init_generator:
 

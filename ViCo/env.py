@@ -673,7 +673,7 @@ class VicoEnv:
 				agent_pos = self.config['agent_poses'][i][:3]
 				converse_range = action['arg2'] if 'arg2' in action else 10
 				priority = random.randint(0, 100)
-				if converse_range > 10:
+				if converse_range > 800:
 					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 10. Ignored.")
 					self.agents[i].robot.action_status = ActionStatus.FAIL
 					continue
