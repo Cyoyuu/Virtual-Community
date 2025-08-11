@@ -153,7 +153,7 @@ class LLMMeetingAgent(Agent):
                 if response_type is None or response_type == "wait":
                     action = {"type": "wait"}
                 elif response_type == "speak":
-                    action = {"type": "speech", "arg1": speech, "arg2": 800}
+                    action = {"type": "converse", "arg1": speech, "arg2": 800}
                     self.conversation_history.append(Chat(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
                 elif response_type == "decide":
                     self.meeting_place = speech
