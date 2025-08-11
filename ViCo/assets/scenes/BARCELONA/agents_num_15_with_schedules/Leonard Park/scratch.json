@@ -1,0 +1,177 @@
+{
+    "name": "Leonard Park",
+    "first_name": "Leonard",
+    "last_name": "Park",
+    "age": 26,
+    "innate": "stimulation, hedonism, achievement",
+    "learned": "I am a bartender at Kasparo, known for crafting unique cocktails. I enjoy socializing and attending music festivals.",
+    "currently": "I want to create a signature cocktail that becomes a hit at the bar.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness Enthusiasts",
+            "description": "A group of individuals passionate about fitness and wellness, meeting for yoga and other activities.",
+            "place": "Mandiram Escola de Yoga",
+            "members": [
+                "Elizabeth Mensah",
+                "Leonard Park",
+                "Chad Thompson"
+            ],
+            "daily_activity": "practicing yoga from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Leonard Park's room at Cami Gallery",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Cami Gallery",
+            "building": "Carrer de Casp",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Leonard Park's room at Cami Gallery",
+            "building": "Carrer de Casp",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Il\u00b7lacions Design Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Leonard Park's room at Cami Gallery",
+            "end_place": "Il\u00b7lacions Design Gallery"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Il\u00b7lacions Design Gallery",
+            "place": "Il\u00b7lacions Design Gallery",
+            "building": "Rambla de Canaletes",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to 100 Montaditos",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Il\u00b7lacions Design Gallery",
+            "end_place": "100 Montaditos"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "100 Montaditos",
+            "building": "Pl Urquinaona",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "100 Montaditos",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and Snacks Store",
+            "place": "Fresh and Snacks Store",
+            "building": "Casa Pich i Pon",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to 100 Montaditos",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "100 Montaditos"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "100 Montaditos",
+            "building": "Pl Urquinaona",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Il\u00b7lacions Design Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "100 Montaditos",
+            "end_place": "Il\u00b7lacions Design Gallery"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Il\u00b7lacions Design Gallery",
+            "place": "Il\u00b7lacions Design Gallery",
+            "building": "Rambla de Canaletes",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Leonard Park's room at Cami Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Il\u00b7lacions Design Gallery",
+            "end_place": "Leonard Park's room at Cami Gallery"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Leonard Park's room at Cami Gallery",
+            "building": "Carrer de Casp",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Kasparo",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

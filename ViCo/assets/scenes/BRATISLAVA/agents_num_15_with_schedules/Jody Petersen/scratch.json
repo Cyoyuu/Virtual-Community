@@ -1,0 +1,202 @@
+{
+    "name": "Jody Petersen",
+    "first_name": "Jody",
+    "last_name": "Petersen",
+    "age": 27,
+    "innate": "benevolence, universalism",
+    "learned": "I am a social worker at Kult\u00farne a informa\u010dn\u00e9 centrum energetiky, focusing on community development. I enjoy painting and yoga.",
+    "currently": "I want to organize a community art event to raise awareness about renewable energy.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food enthusiasts who experiment with new recipes and culinary techniques.",
+            "place": "Bistro Gourmet",
+            "members": [
+                "Jody Petersen",
+                "Louise Roberts",
+                "Megan Carter",
+                "Olivia Adams"
+            ],
+            "daily_activity": "experimenting with recipes from 15:00 to 16:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Jody Petersen's room at Apartment Residence - Free Parking",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jody Petersen's room at Apartment Residence - Free Parking",
+            "building": "Obchodn\u00e1 42",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caffe4U Ltd.",
+            "building": "Obchodn\u00e1 42",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on community development projects",
+            "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to OMA fine foods & wine",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "end_place": "OMA fine foods & wine"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "OMA fine foods & wine",
+            "building": "Konventn\u00e1 6",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "OMA fine foods & wine",
+            "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+        },
+        {
+            "type": "main",
+            "activity": "Research for community art event",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "building": "24",
+            "start_time": "13:00:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bistro Gourmet",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "end_place": "Bistro Gourmet"
+        },
+        {
+            "type": "main",
+            "activity": "Experiment with recipes with Culinary Creators",
+            "place": "Bistro Gourmet",
+            "building": "Crowne Plaza",
+            "start_time": "15:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Bistro Gourmet",
+            "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+        },
+        {
+            "type": "main",
+            "activity": "Plan community art event",
+            "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to OMA fine foods & wine",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "end_place": "OMA fine foods & wine"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "OMA fine foods & wine",
+            "building": "Konventn\u00e1 6",
+            "start_time": "18:10:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Jody Petersen's room at Apartment Residence - Free Parking",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "OMA fine foods & wine",
+            "end_place": "Jody Petersen's room at Apartment Residence - Free Parking"
+        },
+        {
+            "type": "main",
+            "activity": "Yoga and painting",
+            "place": "Jody Petersen's room at Apartment Residence - Free Parking",
+            "building": "Obchodn\u00e1 42",
+            "start_time": "19:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Jody Petersen's room at Apartment Residence - Free Parking",
+            "building": "Obchodn\u00e1 42",
+            "start_time": "22:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

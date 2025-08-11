@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Albert Einstein's room at Stein-b\u00e9rpalota",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Pizzagram",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mad\u00e1ch Trade Center",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Pizzagram",
+        "end_place": "Mad\u00e1ch Trade Center"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for lecture",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Lecture on the theory of relativity",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Collaborate on art projects with Creative Arts Collective",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to JCC Budapest - B\u00e1lint H\u00e1z",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "JCC Budapest - B\u00e1lint H\u00e1z"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "JCC Budapest - B\u00e1lint H\u00e1z",
+        "building": "B\u00e1lint H\u00e1z",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Albert Einstein's room at Stein-b\u00e9rpalota",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "JCC Budapest - B\u00e1lint H\u00e1z",
+        "end_place": "Albert Einstein's room at Stein-b\u00e9rpalota"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review the day's activities",
+        "place": "Albert Einstein's room at Stein-b\u00e9rpalota",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Pizzagram",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Albert Einstein's room at Stein-b\u00e9rpalota",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,174 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a research assistant at the MC Academy for International Legal Studies, focusing on international law. I enjoy playing soccer and exploring new cultures.",
+    "currently": "I want to publish a paper on international trade law.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Brussels Student Network",
+            "description": "A network of students from various institutions in Brussels who collaborate on academic and social projects.",
+            "place": "IHECS - B\u00e2timent Chambon (CH)",
+            "members": [
+                "Brycer Rodriguez",
+                "Olivia Adams",
+                "Pika Hayes",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "collaborating on projects from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at Boiteux",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at Boiteux",
+            "building": "Boiteux",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at The Brunch",
+            "place": "The Brunch",
+            "building": "Royal Atrium",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MC Academy for International Legal Studies",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Research work on international trade law",
+            "place": "MC Academy for International Legal Studies",
+            "building": "Rue de Ligne 49",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at DUKES Lounge Bar",
+            "place": "DUKES Lounge Bar",
+            "building": "Rue de Ligne 49",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue research work on international trade law",
+            "place": "MC Academy for International Legal Studies",
+            "building": "Rue de Ligne 49",
+            "start_time": "12:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to IHECS - B\u00e2timent Chambon (CH)",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "MC Academy for International Legal Studies",
+            "end_place": "IHECS - B\u00e2timent Chambon (CH)"
+        },
+        {
+            "type": "main",
+            "activity": "Collaborate on projects with Brussels Student Network",
+            "place": "IHECS - B\u00e2timent Chambon (CH)",
+            "building": "Boiteux",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to L'art de la Pizza",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "IHECS - B\u00e2timent Chambon (CH)",
+            "end_place": "L'art de la Pizza"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at L'art de la Pizza",
+            "place": "L'art de la Pizza",
+            "building": "Rue de la Montagne 64",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Museum of the National Bank of Belgium",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "L'art de la Pizza",
+            "end_place": "Museum of the National Bank of Belgium"
+        },
+        {
+            "type": "main",
+            "activity": "Explore Museum of the National Bank of Belgium",
+            "place": "Museum of the National Bank of Belgium",
+            "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Brycer Rodriguez's room at Boiteux",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Museum of the National Bank of Belgium",
+            "end_place": "Brycer Rodriguez's room at Boiteux"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and personal time",
+            "place": "Brycer Rodriguez's room at Boiteux",
+            "building": "Boiteux",
+            "start_time": "21:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "MC Academy for International Legal Studies",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleeping",
+        "place": "Brian Carter's room at Casa Mart\u00ed",
+        "building": "Casa Mart\u00ed",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4",
+        "building": "Casa Mart\u00ed",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Catalonia Plaza Catalunya",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Overseeing daily operations and ensuring guest satisfaction",
+        "place": "Hotel Catalonia Plaza Catalunya",
+        "building": "Carrer de Bergara",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Prado de Flores Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Hotel Catalonia Plaza Catalunya",
+        "end_place": "Prado de Flores Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Prado de Flores Restaurant",
+        "building": "Carrer de Santa Anna",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hotel Catalonia Plaza Catalunya",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Prado de Flores Restaurant",
+        "end_place": "Hotel Catalonia Plaza Catalunya"
+    },
+    {
+        "type": "main",
+        "activity": "Implementing new digital check-in system",
+        "place": "Hotel Catalonia Plaza Catalunya",
+        "building": "Carrer de Bergara",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to TuCoworking",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Hotel Catalonia Plaza Catalunya",
+        "end_place": "TuCoworking"
+    },
+    {
+        "type": "main",
+        "activity": "Developing tech solutions with Tech Innovators",
+        "place": "TuCoworking",
+        "building": "Pla\u00e7a de la Vila de Madrid",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Can Pizza Universitat",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "TuCoworking",
+        "end_place": "Can Pizza Universitat"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il\u00b7lacions Design Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Can Pizza Universitat",
+        "end_place": "Il\u00b7lacions Design Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Photography and exploring design gallery",
+        "place": "Il\u00b7lacions Design Gallery",
+        "building": "Rambla de Canaletes",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Brian Carter's room at Casa Mart\u00ed",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Il\u00b7lacions Design Gallery",
+        "end_place": "Brian Carter's room at Casa Mart\u00ed"
+    },
+    {
+        "type": "main",
+        "activity": "Relaxing and preparing for the next day",
+        "place": "Brian Carter's room at Casa Mart\u00ed",
+        "building": "Casa Mart\u00ed",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

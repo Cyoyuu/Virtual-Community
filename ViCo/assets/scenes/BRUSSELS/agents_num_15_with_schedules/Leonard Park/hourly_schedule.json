@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "L\u00e9opold Caf\u00e9 Royal",
+        "building": "Rue de Louvain 2",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Explore new beverages and ingredients for cocktail creation",
+        "place": "Fresh and Beverages Store",
+        "building": "Marquis",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium for inspiration",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "11:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to L\u00e9opold Caf\u00e9 Royal",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "L\u00e9opold Caf\u00e9 Royal"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "L\u00e9opold Caf\u00e9 Royal",
+        "building": "Rue de Louvain 2",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on creating a signature cocktail",
+        "place": "L\u00e9opold Caf\u00e9 Royal",
+        "building": "Rue de Louvain 2",
+        "start_time": "14:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Competento",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "L\u00e9opold Caf\u00e9 Royal",
+        "end_place": "Competento"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Competento",
+        "building": "Rue de la Chancellerie 19",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar \u00e0 viandes Cannibale",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Competento",
+        "end_place": "Bar \u00e0 viandes Cannibale"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bar \u00e0 viandes Cannibale",
+        "building": "Rue de l'Enseignement 10",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to L\u00e9opold Caf\u00e9 Royal",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Bar \u00e0 viandes Cannibale",
+        "end_place": "L\u00e9opold Caf\u00e9 Royal"
+    },
+    {
+        "type": "main",
+        "activity": "Socialize and explore new music",
+        "place": "L\u00e9opold Caf\u00e9 Royal",
+        "building": "Rue de Louvain 2",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leonard Park's room at Boiteux",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "L\u00e9opold Caf\u00e9 Royal",
+        "end_place": "Leonard Park's room at Boiteux"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for sleep",
+        "place": "Leonard Park's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

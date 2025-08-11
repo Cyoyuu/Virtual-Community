@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Eve By J Gonzales's room at Building III",
+        "building": "Building III",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Eve By J Gonzales's room at Building III",
+        "building": "Building III",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to YellowKorner Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Eve By J Gonzales's room at Building III",
+        "end_place": "YellowKorner Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at YellowKorner Amsterdam",
+        "place": "YellowKorner Amsterdam",
+        "building": "Singel 282",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ClubNl",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "YellowKorner Amsterdam",
+        "end_place": "ClubNl"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "ClubNl",
+        "building": "Nieuwezijds Voorburgwal 169",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "ClubNl",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and Snacks Store",
+        "place": "Fresh and Snacks Store",
+        "building": "Spuistraat 226",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bubbles & Wines",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Bubbles & Wines"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bubbles & Wines",
+        "building": "Nes 37",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Bubbles & Wines",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and Snacks Store",
+        "place": "Fresh and Snacks Store",
+        "building": "Spuistraat 226",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Eve By J Gonzales's room at Building III",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Eve By J Gonzales's room at Building III"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Eve By J Gonzales's room at Building III",
+        "building": "Building III",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

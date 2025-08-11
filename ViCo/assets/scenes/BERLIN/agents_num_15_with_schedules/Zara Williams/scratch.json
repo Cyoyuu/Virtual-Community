@@ -1,0 +1,157 @@
+{
+    "name": "Zara Williams",
+    "first_name": "Zara",
+    "last_name": "Williams",
+    "age": 15,
+    "innate": "benevolence, universalism, tradition",
+    "learned": "I am a student at Fr\u00f6bel-Kita im BMG, enjoying learning and playing with friends. I love drawing and reading fairy tales.",
+    "currently": "I want to finish reading my favorite fairy tale book.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Berlin Young Artists",
+            "description": "A group of young artists and students exploring art galleries and working on creative projects.",
+            "place": "Friends forever galerie",
+            "members": [
+                "Jody Petersen",
+                "Megan Carter",
+                "Zara Williams"
+            ],
+            "daily_activity": "painting and discussing art from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Zara Williams's room at Palais Theising",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Zara Williams's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Morning routine and reading fairy tales",
+            "place": "Zara Williams's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "08:00:00",
+            "end_time": "09:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fr\u00f6bel-Kita im BMG",
+            "place": null,
+            "building": null,
+            "start_time": "09:30:00",
+            "end_time": "10:00:00",
+            "start_place": "Zara Williams's room at Palais Theising",
+            "end_place": "Fr\u00f6bel-Kita im BMG"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes and play with friends",
+            "place": "Fr\u00f6bel-Kita im BMG",
+            "building": "im Bundesgesundheitsministerium",
+            "start_time": "10:00:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Berliner Kindl for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Fr\u00f6bel-Kita im BMG",
+            "end_place": "Berliner Kindl"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Berliner Kindl",
+            "building": "Wilhelmstra\u00dfe 78",
+            "start_time": "16:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Friends forever galerie",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Berliner Kindl",
+            "end_place": "Friends forever galerie"
+        },
+        {
+            "type": "main",
+            "activity": "Painting and discussing art with Berlin Young Artists",
+            "place": "Friends forever galerie",
+            "building": "Glinkastra\u00dfe 42",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Zara Williams's room at Palais Theising",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Friends forever galerie",
+            "end_place": "Zara Williams's room at Palais Theising"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Zara Williams's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue reading fairy tales and drawing",
+            "place": "Zara Williams's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "19:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Evening routine and prepare for bed",
+            "place": "Zara Williams's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Fr\u00f6bel-Kita im BMG",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

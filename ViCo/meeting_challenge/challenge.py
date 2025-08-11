@@ -275,7 +275,7 @@ def main():
         all_task_end = True
         for agent in agent_actions_to_print:
             action = agent_actions_to_print[agent]
-            if (action is None or action != 'task_complete') and env.steps <= 1500:
+            if (action is None or action != 'task_complete') and env.steps <= 15000:
                 all_task_end = False
 
     result = {"agent_poses": [agent_pose for agent_pose in env.config['agent_poses']],

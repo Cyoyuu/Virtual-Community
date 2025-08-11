@@ -1,0 +1,806 @@
+{
+    "Star Kebab & Grill": {
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1082.5144958496094,
+            733.6156234741211,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Hotel Central Basilica": {
+        "building": "Hotel Central Basilica",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            846.031623840332,
+            1015.0438834428787,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "Danubius Center": {
+        "building": "Danubius Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            813.8089065551758,
+            1129.1195793151855,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+    },
+    "Pika Hayes's room at Stern-b\u00e9rpalota": {
+        "building": "Stern-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1130.3611526489258,
+            1158.1834869384766,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Pika Hayes's room at Stern-b\u00e9rpalota"
+    },
+    "Saxlehner-palota": {
+        "building": "Saxlehner-palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1045.8289232254028,
+            978.7351529598236,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Orczy-h\u00e1z 1795-1937": {
+        "building": "Orczy-h\u00e1z 1795-1937",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1056.3562107086182,
+            758.0221328735352,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota": {
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1054.3488693237305,
+            1082.9636821746826,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota"
+    },
+    "Japanika": {
+        "building": "Danubius Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            813.8089065551758,
+            1129.1195793151855,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Mad\u00e1ch Trade Center": {
+        "building": "Mad\u00e1ch Trade Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1263.6710739135742,
+            859.2509078979492,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+    },
+    "Hark\u00e1nyi-b\u00e9rpalota": {
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1054.3488693237305,
+            1082.9636821746826,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Cat Cafe": {
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1054.3488693237305,
+            1082.9636821746826,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+    },
+    "Fonci\u00e9re-palota": {
+        "building": "Fonci\u00e9re-palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1029.5349559783936,
+            1051.165057182312,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Leonard Park's room at Fonci\u00e9re-palota": {
+        "building": "Fonci\u00e9re-palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1029.5349559783936,
+            1051.165057182312,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Leonard Park's room at Fonci\u00e9re-palota"
+    },
+    "Louise Roberts's room at Saxlehner-palota": {
+        "building": "Saxlehner-palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1045.8289232254028,
+            978.7351529598236,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Louise Roberts's room at Saxlehner-palota"
+    },
+    "Br\u00fcll-b\u00e9rpalota": {
+        "building": "Br\u00fcll-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1124.1702270507812,
+            1057.5671672821045,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Will Smith's room at 12 Revay Hotel": {
+        "building": "12 Revay Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1101.1510887145996,
+            1196.1985092163086,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Will Smith's room at 12 Revay Hotel"
+    },
+    "Donald Trump's room at Hotel Central Basilica": {
+        "building": "Hotel Central Basilica",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            846.031623840332,
+            1015.0438834428787,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Donald Trump's room at Hotel Central Basilica"
+    },
+    "Pichler h\u00e1z": {
+        "building": "Pichler h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            864.235237121582,
+            1173.2506942749023,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Stein-b\u00e9rpalota": {
+        "building": "Stein-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1020.2060127258301,
+            956.8885612487793,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "The bar": {
+        "building": "Anker-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1038.3319717645645,
+            786.3472595214844,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Zitterbarth h\u00e1z": {
+        "building": "Zitterbarth h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            939.6284217834473,
+            1244.788932800293,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Roni ABC": {
+        "building": "Roni ABC",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1139.6305847167969,
+            823.7910614013672,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Stern-b\u00e9rpalota": {
+        "building": "Stern-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1130.3611526489258,
+            1158.1834869384766,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Roombach Hotel": {
+        "building": "Roombach Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1233.8733367919922,
+            765.7465057373047,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+    },
+    "Sophie Carlsen's room at Krausz palota": {
+        "building": "Krausz palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1164.6422576904297,
+            1187.6227722167969,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Sophie Carlsen's room at Krausz palota"
+    },
+    "aurobus": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1102.4225176832404,
+            710.9044753796101,
+            -0.007380832494305878
+        ],
+        "scene": null
+    },
+    "Pizzagram": {
+        "building": "Stein-b\u00e9rpalota",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1020.2060127258301,
+            956.8885612487793,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+    },
+    "Olivia Adams's room at Br\u00fcll-b\u00e9rpalota": {
+        "building": "Br\u00fcll-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1124.1702270507812,
+            1057.5671672821045,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Olivia Adams's room at Br\u00fcll-b\u00e9rpalota"
+    },
+    "Fresh and Snacks Store": {
+        "building": "Ullmann-palota",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "jewelry_store",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1145.749984741211,
+            1080.9169940948486,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "Jensen Huang's room at Roombach Hotel": {
+        "building": "Roombach Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1233.8733367919922,
+            765.7465057373047,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Jensen Huang's room at Roombach Hotel"
+    },
+    "Albert Einstein's room at Stein-b\u00e9rpalota": {
+        "building": "Stein-b\u00e9rpalota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1020.2060127258301,
+            956.8885612487793,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Albert Einstein's room at Stein-b\u00e9rpalota"
+    },
+    "Krausz palota": {
+        "building": "Krausz palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1164.6422576904297,
+            1187.6227722167969,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+    },
+    "Fresh and Beverages Store": {
+        "building": "ECE irodah\u00e1z",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            943.3070030212402,
+            970.7814821600914,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+    },
+    "STRAW Budapest": {
+        "building": "Zitterbarth h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            939.6284217834473,
+            1244.788932800293,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+    },
+    "Derra-h\u00e1z": {
+        "building": "Derra-h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            743.3714294433594,
+            935.5931720733643,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+    },
+    "Jody Petersen's room at Derra-h\u00e1z": {
+        "building": "Derra-h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            743.3714294433594,
+            935.5931720733643,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Jody Petersen's room at Derra-h\u00e1z"
+    },
+    "Tim Cook's room at Wombat's Hostel": {
+        "building": "Wombat's Hostel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            1214.6585540771484,
+            941.0573272705078,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Tim Cook's room at Wombat's Hostel"
+    },
+    "Chad Thompson's room at Orczy-h\u00e1z 1795-1937": {
+        "building": "Orczy-h\u00e1z 1795-1937",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1056.3562107086182,
+            758.0221328735352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Chad Thompson's room at Orczy-h\u00e1z 1795-1937"
+    },
+    "Emily Johnson's room at Zitterbarth h\u00e1z": {
+        "building": "Zitterbarth h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            939.6284217834473,
+            1244.788932800293,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Emily Johnson's room at Zitterbarth h\u00e1z"
+    },
+    "Association of Hungarian Fine and Applied Artists": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1079.8432006835938,
+            1107.1592712402344,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+    },
+    "Halva & Nuts": {
+        "building": "J\u00e1lics-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1261.4201278686523,
+            996.4071159362793,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Beverages and DM Store": {
+        "building": "Budapest",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.7794342041016,
+            1239.5271911621094,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "JCC Budapest - B\u00e1lint H\u00e1z": {
+        "building": "B\u00e1lint H\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1129.2392196655273,
+            1222.1030960083008,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+    },
+    "Snacks and DM Store": {
+        "building": "Belv\u00e1ros-Lip\u00f3tv\u00e1ros Eg\u00e9szs\u00e9g\u00fcgyi Szolg\u00e1lat (BLESZ)",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            815.3350448608398,
+            1218.6979446411133,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+    },
+    "Wombat's Hostel": {
+        "building": "Wombat's Hostel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            1214.6585540771484,
+            941.0573272705078,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Beverages and Snacks Store": {
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1082.5144958496094,
+            733.6156234741211,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "\u65e5\u672c\u9910\u9986 \u6709\u4e2d\u6587\u670d\u52a1\u5458": {
+        "building": "G\u00f6m\u00f6ry-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1135.7746887207031,
+            889.8367767333984,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+    },
+    "12 Revay Hotel": {
+        "building": "12 Revay Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1101.1510887145996,
+            1196.1985092163086,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "Fresh and DM Store": {
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "shoe_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1054.3488693237305,
+            1082.9636821746826,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Zara Williams's room at Pichler h\u00e1z": {
+        "building": "Pichler h\u00e1z",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            864.235237121582,
+            1173.2506942749023,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Zara Williams's room at Pichler h\u00e1z"
+    },
+    "Hercegpr\u00edm\u00e1s utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -155.9045398743109,
+            144.7213899496251,
+            100.09582600805436
+        ]
+    },
+    "Kir\u00e1ly utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            117.95772788275947,
+            -183.99893072540985,
+            100.56025797713674
+        ]
+    },
+    "Andr\u00e1ssy \u00fat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            59.99896986558039,
+            29.98931781945049,
+            101.82633803240357
+        ]
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            248.1290355749906,
+            -186.6216138602753,
+            97.63041102423931
+        ]
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            111.0178026959204,
+            109.49239231574528,
+            100.71219146165895
+        ]
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            71.10663574044452,
+            -84.23841513956515,
+            100.32614427289296
+        ]
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            -122.0405227968639,
+            -79.60096903829383,
+            101.61662343176778
+        ]
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            241.34025042679923,
+            -78.70096472476352,
+            99.70598804057839
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Dunkin' Donuts",
+        "building": "Europ\u00e4isches Haus",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Dunkin' Donuts",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a cashier",
+        "place": "Fresh and DM Store",
+        "building": "Unter den Linden 74",
+        "start_time": "09:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner and cooking session with Berlin Culinary Creators",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and explore exhibits",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivia Adams's room",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:15:00",
+        "start_place": "Forum Willy Brandt Berlin",
+        "end_place": "Olivia Adams's room at Palais Theising"
+    },
+    {
+        "type": "main",
+        "activity": "Plan and budget for Paris trip",
+        "place": "Olivia Adams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "22:15:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Olivia Adams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

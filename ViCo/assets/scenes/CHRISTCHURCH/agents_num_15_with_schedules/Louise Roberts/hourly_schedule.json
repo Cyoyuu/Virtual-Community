@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Ray White Commercial Christchurch",
+        "building": "76 Hereford Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Kong",
+        "building": "76 Hereford Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CBRE Christchurch",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on closing a major property deal",
+        "place": "CBRE Christchurch",
+        "building": "Grand Central Building",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kensington House",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "CBRE Christchurch",
+        "end_place": "Kensington House"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Kensington House",
+        "building": "Kensington House",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to CBRE Christchurch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Kensington House",
+        "end_place": "CBRE Christchurch"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on property deal",
+        "place": "CBRE Christchurch",
+        "building": "Grand Central Building",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Catalyst Group - Christchurch",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "CBRE Christchurch",
+        "end_place": "Catalyst Group - Christchurch"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends with Tech Innovators Group",
+        "place": "Catalyst Group - Christchurch",
+        "building": "Kensington House",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kong for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "Catalyst Group - Christchurch",
+        "end_place": "Kong"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Kong",
+        "building": "76 Hereford Street",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Louise Roberts's room at Ray White Commercial Christchurch",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Kong",
+        "end_place": "Louise Roberts's room at Ray White Commercial Christchurch"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and spend time with family",
+        "place": "Louise Roberts's room at Ray White Commercial Christchurch",
+        "building": "76 Hereford Street",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Gardening",
+        "place": "Louise Roberts's room at Ray White Commercial Christchurch",
+        "building": "76 Hereford Street",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

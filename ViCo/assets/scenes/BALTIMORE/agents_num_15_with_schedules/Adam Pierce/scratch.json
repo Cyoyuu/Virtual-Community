@@ -1,0 +1,211 @@
+{
+    "name": "Adam Pierce",
+    "first_name": "Adam",
+    "last_name": "Pierce",
+    "age": 27,
+    "innate": "achievement, self-direction, stimulation",
+    "learned": "I am a research scientist at Federal Hill Preparatory School focusing on environmental science. I enjoy hiking and exploring nature.",
+    "currently": "I am working on a project to improve local park ecosystems.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Baltimore Book Club",
+            "description": "A group of book enthusiasts who meet weekly to discuss literature and organize community events.",
+            "place": "Enoch Pratt Library - Light Street Branch",
+            "members": [
+                "Elizabeth Mensah",
+                "Adam Pierce",
+                "Olivia Adams"
+            ],
+            "daily_activity": "discussing books from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Starbucks",
+            "building": "7 West Cross Street",
+            "start_time": "08:15:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Federal Hill Preparatory School",
+            "place": null,
+            "building": null,
+            "start_time": "08:45:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on environmental science project",
+            "place": "Federal Hill Preparatory School",
+            "building": "1040 William Street",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Henry Street Park",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Federal Hill Preparatory School",
+            "end_place": "Henry Street Park"
+        },
+        {
+            "type": "main",
+            "activity": "Field research and exploration",
+            "place": "Henry Street Park",
+            "building": "open space",
+            "start_time": "12:15:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Juice Lab Company",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:15:00",
+            "start_place": "Henry Street Park",
+            "end_place": "Juice Lab Company"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Juice Lab Company",
+            "building": "1035 Light Street",
+            "start_time": "14:15:00",
+            "end_time": "14:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Federal Hill Preparatory School",
+            "place": null,
+            "building": null,
+            "start_time": "14:45:00",
+            "end_time": "15:00:00",
+            "start_place": "Juice Lab Company",
+            "end_place": "Federal Hill Preparatory School"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work on environmental science project",
+            "place": "Federal Hill Preparatory School",
+            "building": "1040 William Street",
+            "start_time": "15:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "16:45:00",
+            "start_place": "Federal Hill Preparatory School",
+            "end_place": "Enoch Pratt Library - Light Street Branch"
+        },
+        {
+            "type": "main",
+            "activity": "Baltimore Book Club meeting",
+            "place": "Enoch Pratt Library - Light Street Branch",
+            "building": "Light Street Branch",
+            "start_time": "16:45:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to &pizza - Fed Hill",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Enoch Pratt Library - Light Street Branch",
+            "end_place": "&pizza - Fed Hill"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "&pizza - Fed Hill",
+            "building": "1201 South Charles Street",
+            "start_time": "18:15:00",
+            "end_time": "18:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to South Baltimore Strength Club",
+            "place": null,
+            "building": null,
+            "start_time": "18:45:00",
+            "end_time": "19:00:00",
+            "start_place": "&pizza - Fed Hill",
+            "end_place": "South Baltimore Strength Club"
+        },
+        {
+            "type": "main",
+            "activity": "Workout session",
+            "place": "South Baltimore Strength Club",
+            "building": "1237 Wall Street",
+            "start_time": "19:00:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Adam Pierce's room at 1201 S Charles Street Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "20:45:00",
+            "start_place": "South Baltimore Strength Club",
+            "end_place": "Adam Pierce's room at 1201 S Charles Street Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and personal time",
+            "place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
+            "start_time": "20:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Federal Hill Preparatory School",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

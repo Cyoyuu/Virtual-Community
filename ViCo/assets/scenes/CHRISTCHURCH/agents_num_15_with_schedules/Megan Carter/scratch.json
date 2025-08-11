@@ -1,0 +1,169 @@
+{
+    "name": "Megan Carter",
+    "first_name": "Megan",
+    "last_name": "Carter",
+    "age": 10,
+    "innate": "stimulation, benevolence",
+    "learned": "I am a student at RapidRhythm, learning music and dance. I love playing the piano and dancing with friends.",
+    "currently": "I want to perform in the upcoming school talent show.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Local Workers Association",
+            "description": "A group of local workers in various industries.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Jody Petersen",
+                "Joe Anderson",
+                "Megan Carter"
+            ],
+            "daily_activity": "networking with colleagues from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Wow Wah",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to RapidRhythm",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Music and dance practice at RapidRhythm",
+            "place": "RapidRhythm",
+            "building": "T\u016branga (Christchurch Central Library)",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "The Catering Belle Ltd",
+            "building": "T\u016branga (Christchurch Central Library)",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue music and dance practice at RapidRhythm",
+            "place": "RapidRhythm",
+            "building": "T\u016branga (Christchurch Central Library)",
+            "start_time": "12:30:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "RapidRhythm",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Networking with colleagues at Local Workers Association",
+            "place": "Beverages and DM Store",
+            "building": "Cashel Street",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Urbanz Accommodation Christchurch",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Megan Carter's room at Urbanz Accomodation Christchurch"
+        },
+        {
+            "type": "main",
+            "activity": "Free time and relaxation",
+            "place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Wow Wah",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Piano practice for school talent show",
+            "place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "18:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Dance practice for school talent show",
+            "place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "21:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for bed",
+            "place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "building": "Urbanz Accommodation Christchurch",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "RapidRhythm",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Mark Zuckerberg's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Meet with local tech leaders",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to DeSano Pizzeria Napoletana - Downtown Austin",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "DeSano Pizzeria Napoletana - Downtown Austin"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "DeSano Pizzeria Napoletana - Downtown Austin",
+        "building": "DeSano Pizzeria Napoletana",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "DeSano Pizzeria Napoletana - Downtown Austin",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Explore new technology ventures",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "13:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Summit Rooftop",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "Summit Rooftop"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Summit Rooftop",
+        "building": "120 West 5th Street",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Summit Rooftop",
+        "end_place": "Mark Zuckerberg's room at The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Mark Zuckerberg's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Mark Zuckerberg's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

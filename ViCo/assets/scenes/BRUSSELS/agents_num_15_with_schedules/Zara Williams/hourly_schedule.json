@@ -1,0 +1,124 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Busy Bee",
+        "building": "Rue d'Assaut 3",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Busy Bee",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to L'art de la Pizza",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "L'art de la Pizza"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "L'art de la Pizza",
+        "building": "Rue de la Montagne 64",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "L'art de la Pizza",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Explore museums with Brussels Cultural Explorers",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joppes Tarts Bakery",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Joppes Tarts Bakery"
+    },
+    {
+        "type": "meal",
+        "activity": "Afternoon Snack",
+        "place": "Joppes Tarts Bakery",
+        "building": "Rue d'Assaut 15",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Joppes Tarts Bakery",
+        "end_place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Read",
+        "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

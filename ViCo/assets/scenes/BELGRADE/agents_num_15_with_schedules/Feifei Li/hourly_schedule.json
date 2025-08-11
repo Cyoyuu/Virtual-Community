@@ -1,0 +1,134 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Feifei Li's room at Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Vinarija Panti\u0107",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to local university for AI research collaboration",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Vinarija Panti\u0107",
+        "end_place": "\u0160kola gitare Star\u010devi\u0107"
+    },
+    {
+        "type": "main",
+        "activity": "AI research collaboration with local universities",
+        "place": "\u0160kola gitare Star\u010devi\u0107",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "\u0160kola gitare Star\u010devi\u0107",
+        "end_place": "Pala\u010dinak pola metra"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Pala\u010dinak pola metra",
+        "building": "Terazije bb",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to local university for AI research collaboration",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Pala\u010dinak pola metra",
+        "end_place": "\u0160kola gitare Star\u010devi\u0107"
+    },
+    {
+        "type": "main",
+        "activity": "Continue AI research collaboration with local universities",
+        "place": "\u0160kola gitare Star\u010devi\u0107",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
+        "start_time": "14:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Prag for Cultural Explorers event",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "\u0160kola gitare Star\u010devi\u0107",
+        "end_place": "Hotel Prag"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Cultural Explorers event",
+        "place": "Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Vinarija Panti\u0107",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "20:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to FunFit for evening entertainment",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:15:00",
+        "start_place": "Vinarija Panti\u0107",
+        "end_place": "FunFit"
+    },
+    {
+        "type": "main",
+        "activity": "Evening entertainment at FunFit",
+        "place": "FunFit",
+        "building": "Kralja Milana 4a",
+        "start_time": "21:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hotel Prag",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "FunFit",
+        "end_place": "Feifei Li's room at Hotel Prag"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Feifei Li's room at Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

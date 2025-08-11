@@ -1,0 +1,142 @@
+{
+    "manual_bus_drive_route": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 50.8513521,
+                    "lng": 4.3618522
+                },
+                "southwest": {
+                    "lat": 50.8465561,
+                    "lng": 4.3565927
+                }
+            },
+            "copyrights": "Map data \u00a92024 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.7 km",
+                        "value": 667
+                    },
+                    "duration": {
+                        "text": "3 mins",
+                        "value": 154
+                    },
+                    "end_address": "Gare Centrale, 1000 Bruxelles, Belgium",
+                    "end_location": {
+                        "lat": 50.8465561,
+                        "lng": 4.3565927
+                    },
+                    "start_address": "Rue Jean de Brouchoven de Bergeyck 5, 1000 Bruxelles, Belgium",
+                    "start_location": {
+                        "lat": 50.8513521,
+                        "lng": 4.3618522
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "8 m",
+                                "value": 8
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 1
+                            },
+                            "end_location": {
+                                "lat": 50.85128419999999,
+                                "lng": 4.361841
+                            },
+                            "html_instructions": "Head <b>south</b> toward <b>Pachecolaan</b>/<wbr/><b>Bd Pach\u00e9co</b>",
+                            "polyline": {
+                                "points": "}{juHq|rYB@B@DA"
+                            },
+                            "start_location": {
+                                "lat": 50.8513521,
+                                "lng": 4.3618522
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 110
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 15
+                            },
+                            "end_location": {
+                                "lat": 50.85041589999999,
+                                "lng": 4.3610966
+                            },
+                            "html_instructions": "Exit the roundabout onto <b>Pachecolaan</b>/<wbr/><b>Bd Pach\u00e9co</b>",
+                            "polyline": {
+                                "points": "o{juHo|rY~@r@lA~@JLPP"
+                            },
+                            "start_location": {
+                                "lat": 50.85128419999999,
+                                "lng": 4.361841
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.3 km",
+                                "value": 321
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 71
+                            },
+                            "end_location": {
+                                "lat": 50.8483886,
+                                "lng": 4.3579516
+                            },
+                            "html_instructions": "At the roundabout, continue straight onto <b>Bd de Berlaimont</b>/<wbr/><b>de Berlaimontlaan</b>",
+                            "maneuver": "roundabout-right",
+                            "polyline": {
+                                "points": "cvjuH{wrY?@?@?@?@?@?@?@?@?@?@@??@?@?@@@?@?@@@?@@@@@@@@??@@?@@@?@?@?@?@Ah@z@nArB|@`Bx@vAb@z@R^`@r@NXPXJZ"
+                            },
+                            "start_location": {
+                                "lat": 50.85041589999999,
+                                "lng": 4.3610966
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 228
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 67
+                            },
+                            "end_location": {
+                                "lat": 50.8465561,
+                                "lng": 4.3565927
+                            },
+                            "html_instructions": "Continue onto <b>Bd de l'Imp\u00e9ratrice</b>/<wbr/><b>Keizerinlaan</b>",
+                            "polyline": {
+                                "points": "mijuHedrYr@z@x@`A@@VTz@l@TJLH^NHBr@T@@J@D@B@NB"
+                            },
+                            "start_location": {
+                                "lat": 50.8483886,
+                                "lng": 4.3579516
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "}{juHq|rYFBDA~@r@xAlAPR?B?D@LDJFDF@BAh@z@lCtErCfF`@r@JZr@z@z@bArAbAlAh@fAZRD"
+            },
+            "summary": "Bd de Berlaimont/de Berlaimontlaan and Bd de l'Imp\u00e9ratrice/Keizerinlaan",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

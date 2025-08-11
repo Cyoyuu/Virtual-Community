@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jody Petersen's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Het Clubke",
+        "building": "Hogeschool-Universiteit Brussel Campus Stormstraat",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Competento",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new feature for library management system",
+        "place": "Competento",
+        "building": "Rue de la Chancellerie 19",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Busy Bee",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Competento",
+        "end_place": "Busy Bee"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Busy Bee",
+        "building": "Rue d'Assaut 3",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Competento",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Busy Bee",
+        "end_place": "Competento"
+    },
+    {
+        "type": "main",
+        "activity": "Continue developing new feature",
+        "place": "Competento",
+        "building": "Rue de la Chancellerie 19",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tech Innovators Club meeting",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Competento",
+        "end_place": "Competento"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends at Tech Innovators Club",
+        "place": "Competento",
+        "building": "Rue de la Chancellerie 19",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar rouge - Bruxelles",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Competento",
+        "end_place": "Bar rouge - Bruxelles"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bar rouge - Bruxelles",
+        "building": "Rue de Louvain 12",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Bar rouge - Bruxelles",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Jody Petersen's room at Boiteux",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Jody Petersen's room at Boiteux"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Jody Petersen's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Jody Petersen's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

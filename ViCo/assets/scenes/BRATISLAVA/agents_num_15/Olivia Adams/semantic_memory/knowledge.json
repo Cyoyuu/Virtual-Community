@@ -1,0 +1,455 @@
+{
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Jody Petersen's room at Apartment Residence - Free Parking",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Louise Roberts's room at Milk n Honey Homes",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Megan Carter's room at Apartments BB4, bratislava",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Culinary Creators": {
+        "description": "A group of chefs and food enthusiasts who experiment with new recipes and culinary techniques.",
+        "place": "Bistro Gourmet",
+        "members": [
+            "Jody Petersen",
+            "Louise Roberts",
+            "Megan Carter",
+            "Olivia Adams"
+        ],
+        "daily_activity": "experimenting with recipes from 15:00 to 16:30"
+    },
+    "Olivia Adams's room at Lucas Apartment": {
+        "building": "5 Tolst\u00e9ho Close to Presidential palace",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            892.672679901123,
+            1033.4367122650146,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Olivia Adams's room at Lucas Apartment",
+        "bounding_box": [
+            -107.31505926634317,
+            33.24006457820457,
+            126.62699508666992,
+            27.48325780695527,
+            14.839893216605798,
+            17.315711975097656,
+            -0.18607432990185566
+        ]
+    },
+    "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165": {
+        "building": "Office Center Po\u0161tov\u00e1",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1187.1749267578125,
+            725.3897399902344,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "bounding_box": [
+            186.0138348335011,
+            -272.9478498407604,
+            115.59178161621095,
+            25.883002097449506,
+            43.72775115768546,
+            21.883285522460938,
+            0.4830995278086819
+        ]
+    },
+    "Bistro Gourmet": {
+        "building": "Crowne Plaza",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1075.4125862121582,
+            788.2996978759766,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            81.09033863496279,
+            -216.33802624657545,
+            122.53482818603516,
+            77.40632928816682,
+            78.79693902074749,
+            29.527328491210938,
+            0.7261077233172377
+        ]
+    },
+    "Slovensk\u00e1 technick\u00e1 kni\u017enica": {
+        "building": "24",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1249.4459228515625,
+            1176.0525283813477,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            249.4459228515625,
+            176.1638641357422,
+            123.11087036132812,
+            9.585921100830271,
+            30.783009521534098,
+            20.042999267578125,
+            -0.6656642523320964
+        ]
+    },
+    "AC Hotel Bratislava Old Town": {
+        "building": "Vysok\u00e1 7490/2A",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1153.320442199707,
+            859.5009422302246,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            149.07659681008744,
+            -139.64523248562097,
+            120.22465133666992,
+            45.753191067241396,
+            66.39729428812079,
+            22.803535461425767,
+            -0.8808452075611298
+        ]
+    },
+    "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky": {
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            761.6915664672852,
+            754.7244567871094,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            -238.2400680505192,
+            -244.55202214573876,
+            120.95001602172853,
+            19.162930016671574,
+            25.336569903903612,
+            15.801658630371094,
+            0.3877715617741103
+        ]
+    },
+    "Eleven cafe&lounge bar": {
+        "building": "Konventn\u00e1 17",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            914.1708068847656,
+            806.4725875854492,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            -85.28249242447376,
+            -192.96567580213352,
+            124.4691047668457,
+            19.06412789744437,
+            25.967891772463645,
+            21.946678161621094,
+            0.29992843548637516
+        ]
+    },
+    "Paris Caf\u00e9": {
+        "building": "Dreven\u00e1 576/10",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1084.4377326965332,
+            721.1294708251953,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            84.0253360765575,
+            -280.2008816365185,
+            115.94682693481445,
+            15.328105486316094,
+            27.93298291742178,
+            16.56926727294922,
+            0.81393345873606
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Konventn\u00e1 811 03",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            786.8300170898438,
+            761.0464324951172,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -212.9397686050872,
+            -238.95356097048625,
+            120.69901275634767,
+            32.129822056454216,
+            16.31641225335476,
+            15.736007690429688,
+            0.3885480091310284
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Obchodn\u00e1 516/26",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1217.9571914672852,
+            753.2153244018555,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            218.46867017108656,
+            -247.49230193170808,
+            110.97777557373048,
+            10.213036376648482,
+            45.31893913042523,
+            12.4212646484375,
+            0.6827825048122723
+        ]
+    },
+    "Banco Casino": {
+        "building": "Crowne Plaza",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "casino",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1075.4125862121582,
+            788.2996978759766,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            81.09033863496279,
+            -216.33802624657545,
+            122.53482818603516,
+            77.40632928816682,
+            78.79693902074749,
+            29.527328491210938,
+            0.7261077233172377
+        ]
+    },
+    "Hod\u017eovo n\u00e1mestie Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            89.6687841327635,
+            -110.04229442443317
+        ],
+        "rotation": -0.753325421791811,
+        "bounding_box": null
+    },
+    "\u0160tetinova Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -233.40005217414816,
+            -155.00664649639714
+        ],
+        "rotation": 2.1172461786750985,
+        "bounding_box": null
+    },
+    "Panensk\u00e1 Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -132.46840279007986,
+            -140.8212360800419
+        ],
+        "rotation": 2.14118163697676,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            247.52892989801015,
+            -125.3516310895381
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -73.72702856905617,
+            -138.602181229165
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -279.3872891726143,
+            -36.23969947565152
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            217.80103525537174,
+            42.488212927284344
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.0017833264783,
+            -232.77288073898328
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -244.1337320355244,
+            -163.91799842996238
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -128.19851995173985,
+            100.2670809518925
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Panensk\u00e1": [
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hod\u017eovo n\u00e1mestie": [
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

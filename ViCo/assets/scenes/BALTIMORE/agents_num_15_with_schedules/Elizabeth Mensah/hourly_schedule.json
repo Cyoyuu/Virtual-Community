@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Elizabeth Mensah's room at Wheelhouse",
+        "building": "7 West Cross Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Starbucks",
+        "building": "7 West Cross Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work at the library",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to BobaPoP",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "BobaPoP"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "BobaPoP",
+        "building": "1114 Light Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "BobaPoP",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Organize community events at the library",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "13:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Baltimore Book Club meeting",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Blue Agave Mexican Food",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "Blue Agave Mexican Food"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Blue Agave Mexican Food",
+        "building": "1032 Light Street",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Blue Agave Mexican Food",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "main",
+        "activity": "Leisure time at South Baltimore Strength Club",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Elizabeth Mensah's room at Wheelhouse",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "Elizabeth Mensah's room at Wheelhouse"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Elizabeth Mensah's room at Wheelhouse",
+        "building": "7 West Cross Street",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Elizabeth Mensah's room at Wheelhouse",
+        "building": "7 West Cross Street",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

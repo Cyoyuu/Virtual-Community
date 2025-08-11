@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "The Brunch",
+        "building": "Royal Atrium",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "The Brunch",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for keynote speech at the conference",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "09:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Philantropy House",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "12:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to La Rose Noire",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "La Rose Noire"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "La Rose Noire",
+        "building": "Rue de la Croix de Fer 15",
+        "start_time": "14:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "La Rose Noire",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Engage in diplomatic discussions",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar \u00e0 viandes Cannibale",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Philantropy House",
+        "end_place": "Bar \u00e0 viandes Cannibale"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bar \u00e0 viandes Cannibale",
+        "building": "Rue de l'Enseignement 10",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Bar \u00e0 viandes Cannibale",
+        "end_place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and read",
+        "place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare notes for tomorrow's conference",
+        "place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "22:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

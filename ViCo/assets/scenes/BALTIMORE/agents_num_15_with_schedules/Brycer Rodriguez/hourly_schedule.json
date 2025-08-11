@@ -1,0 +1,106 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brycer Rodriguez's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Poke Bowl - Federal Hill",
+        "building": "1040 Light Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Brewer's Cask",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a bartender",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "09:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "The Brewer's Cask",
+        "end_place": "Byblos Lebanese Cuisine"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Byblos Lebanese Cuisine",
+        "building": "1033 Light Street",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:05:00",
+        "start_place": "Byblos Lebanese Cuisine",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Federal Hill Fitness Crew",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "18:05:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The 8x10",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "The 8x10"
+    },
+    {
+        "type": "main",
+        "activity": "Attend a live concert",
+        "place": "The 8x10",
+        "building": "10 East Cross Street",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Brycer Rodriguez's room",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "23:00:00",
+        "start_place": "The 8x10",
+        "end_place": "Brycer Rodriguez's room at 1111 Light Street Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Brycer Rodriguez's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brian Carter's room at The Multifamily company",
+        "building": "The Citizens Building",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Brian Carter's room at The Multifamily company",
+        "building": "The Citizens Building",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ohio University Govt Relations",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Brian Carter's room at The Multifamily company",
+        "end_place": "Ohio University Govt Relations"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Ohio University Govt Relations",
+        "place": "Ohio University Govt Relations",
+        "building": "Huntington Plaza",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Accent Wine Parlor",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Ohio University Govt Relations",
+        "end_place": "Accent Wine Parlor"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Accent Wine Parlor",
+        "building": "The Citizens Building",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ohio University Govt Relations",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Accent Wine Parlor",
+        "end_place": "Ohio University Govt Relations"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Ohio University Govt Relations",
+        "place": "Ohio University Govt Relations",
+        "building": "Huntington Plaza",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ohio Community Development Finance Fund - Food Distribution Center",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Ohio University Govt Relations",
+        "end_place": "Ohio Community Development Finance Fund - Food Distribution Center"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+        "building": "Huntington Bank Building",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Chaos Contemporary Craft",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Ohio Community Development Finance Fund - Food Distribution Center",
+        "end_place": "Chaos Contemporary Craft"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Chaos Contemporary Craft",
+        "place": "Chaos Contemporary Craft",
+        "building": "78 North High Street",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Brian Carter's room at The Multifamily company",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Chaos Contemporary Craft",
+        "end_place": "Brian Carter's room at The Multifamily company"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Brian Carter's room at The Multifamily company",
+        "building": "The Citizens Building",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

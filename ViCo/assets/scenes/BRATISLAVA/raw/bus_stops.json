@@ -1,0 +1,167 @@
+{
+    "manual_bus_drive_route": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 48.1527817,
+                    "lng": 17.1101317
+                },
+                "southwest": {
+                    "lat": 48.1477437,
+                    "lng": 17.1065582
+                }
+            },
+            "copyrights": "Map data \u00a92024",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.9 km",
+                        "value": 864
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 120
+                    },
+                    "end_address": "N\u00e1mestie 1. m\u00e1ja 3867/8, 811 06 Bratislava-Star\u00e9 Mesto, Slovakia",
+                    "end_location": {
+                        "lat": 48.149507,
+                        "lng": 17.1101317
+                    },
+                    "start_address": "\u0160tef\u00e1nikova 892/37, 811 05 Bratislava-Star\u00e9 Mesto, Slovakia",
+                    "start_location": {
+                        "lat": 48.1527817,
+                        "lng": 17.1065582
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.5 km",
+                                "value": 507
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 64
+                            },
+                            "end_location": {
+                                "lat": 48.1482305,
+                                "lng": 17.1069603
+                            },
+                            "html_instructions": "Head <b>south</b> on <b>\u0160tef\u00e1nikova</b> toward <b>Spojn\u00e1</b>",
+                            "polyline": {
+                                "points": "{y{dH_clgBXC~DQlFUl@Ct@Eh@C|AKl@Ez@C`@Cb@@B@d@?"
+                            },
+                            "start_location": {
+                                "lat": 48.1527817,
+                                "lng": 17.1065582
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "82 m",
+                                "value": 82
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 16
+                            },
+                            "end_location": {
+                                "lat": 48.147765,
+                                "lng": 17.1075116
+                            },
+                            "html_instructions": "Slight <b>left</b> onto <b>Such\u00e9 m\u00fdto</b>",
+                            "maneuver": "turn-slight-left",
+                            "polyline": {
+                                "points": "m}zdHoelgBLGJA^?JEBCBELK@WBM?GCY"
+                            },
+                            "start_location": {
+                                "lat": 48.1482305,
+                                "lng": 17.1069603
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 137
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 22
+                            },
+                            "end_location": {
+                                "lat": 48.1486038,
+                                "lng": 17.1088628
+                            },
+                            "html_instructions": "Merge onto <b>Hod\u017eovo n\u00e1mestie</b>",
+                            "maneuver": "merge",
+                            "polyline": {
+                                "points": "ozzdH}hlgBEMO[m@mAAAu@kAk@gA"
+                            },
+                            "start_location": {
+                                "lat": 48.147765,
+                                "lng": 17.1075116
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "60 m",
+                                "value": 60
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 9
+                            },
+                            "end_location": {
+                                "lat": 48.1490253,
+                                "lng": 17.1093628
+                            },
+                            "html_instructions": "Keep <b>left</b> to stay on <b>Hod\u017eovo n\u00e1mestie</b>",
+                            "maneuver": "keep-left",
+                            "polyline": {
+                                "points": "w_{dHkqlgBKOm@}@GGSM"
+                            },
+                            "start_location": {
+                                "lat": 48.1486038,
+                                "lng": 17.1088628
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "78 m",
+                                "value": 78
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 9
+                            },
+                            "end_location": {
+                                "lat": 48.149507,
+                                "lng": 17.1101317
+                            },
+                            "html_instructions": "<b>Hod\u017eovo n\u00e1mestie</b> turns slightly <b>right</b> and becomes <b>N\u00e1mestie 1. m\u00e1ja</b>",
+                            "polyline": {
+                                "points": "mb{dHotlgBc@{@Uc@e@y@"
+                            },
+                            "start_location": {
+                                "lat": 48.1490253,
+                                "lng": 17.1093628
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "{y{dH_clgBtNo@jF[|AGf@Bd@?LGj@AJEFILK@WBUIg@}@iBw@mAw@wAu@eASMc@{@{@}A"
+            },
+            "summary": "\u0160tef\u00e1nikova and Hod\u017eovo n\u00e1mestie",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

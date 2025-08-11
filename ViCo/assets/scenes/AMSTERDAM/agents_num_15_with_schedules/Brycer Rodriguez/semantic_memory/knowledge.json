@@ -1,0 +1,421 @@
+{
+    "Chuang Gan": {
+        "age": 35,
+        "living_place": "Sofitel Legend The Grand Amsterdam",
+        "appearance": "ViCo/assets/imgs/avatars/Chuang Gan.png",
+        "groups": [
+            "AI Enthusiasts Club"
+        ]
+    },
+    "Yann LeCun": {
+        "age": 64,
+        "living_place": "W Amsterdam",
+        "appearance": "ViCo/assets/imgs/avatars/Yann LeCun.png",
+        "groups": [
+            "AI Enthusiasts Club"
+        ]
+    },
+    "AI Enthusiasts Club": {
+        "description": "A group of individuals passionate about artificial intelligence and machine learning, sharing knowledge and collaborating on projects.",
+        "place": "Humanities IT Lab - Universiteit van Amsterdam",
+        "members": [
+            "Brycer Rodriguez",
+            "Chuang Gan",
+            "Yann LeCun"
+        ],
+        "daily_activity": "discussing AI advancements from 15:00 to 16:00"
+    },
+    "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.": {
+        "building": "Nieuwezijds Voorburgwal 252",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            910.5617179870605,
+            859.5694961547852,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.",
+        "bounding_box": [
+            -88.7009120738933,
+            -140.43050501610287,
+            115.29487228393556,
+            17.83128515399612,
+            9.982160729644093,
+            17.196983337402344,
+            0.33048479842924994
+        ]
+    },
+    "Humanities IT Lab - Universiteit van Amsterdam": {
+        "building": "UvA PC Hoofthuis",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            870.3427658081055,
+            1076.7827997207642,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            -133.3330829311656,
+            75.47306057622252,
+            118.04490661621094,
+            26.717999373655417,
+            113.61818832626042,
+            21.909576416015625,
+            -0.2602005698881573
+        ]
+    },
+    "YellowKorner Amsterdam": {
+        "building": "Singel 282",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            745.3891906738281,
+            882.0786437988281,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -254.7461246729208,
+            -118.18349402501218,
+            112.8027114868164,
+            30.78212881543937,
+            10.393568934449723,
+            11.191864013671875,
+            -0.11114827116600837
+        ]
+    },
+    "Amsterdam Yoga Centre": {
+        "building": "Singel 300",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -261.353045485607,
+            -178.07236909753436,
+            115.16712570190431,
+            30.50653721295573,
+            17.46137789389023,
+            16.67302703857422,
+            -0.1108469586759953
+        ]
+    },
+    "The Lobby Nesplein": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            173.13579031517335,
+            -233.8267931442452,
+            112.11829757690431,
+            82.57669607270873,
+            58.77243479033173,
+            10.355445861816406,
+            -0.054462440222174106
+        ]
+    },
+    "BEMS Restaurant": {
+        "building": "Nieuwezijds Voorburgwal 171",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            957.0935535430908,
+            872.0422248840332,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -43.11715184336136,
+            -128.02270488651965,
+            112.35879516601564,
+            8.707053797881924,
+            5.69928920325795,
+            10.859909057617188,
+            0.32287819678472374
+        ]
+    },
+    "Lucius": {
+        "building": "Spuistraat 247",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            867.6321449279785,
+            737.7033157348633,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -131.8398451817628,
+            -263.5222460975123,
+            114.3901710510254,
+            51.87860712849065,
+            16.84137686706443,
+            15.373954772949219,
+            0.19076914558153743
+        ]
+    },
+    "BeerTemple": {
+        "building": "Nieuwezijds Voorburgwal 250",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            909.3520698547363,
+            866.4657592773438,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -90.50333803668119,
+            -132.2621381959301,
+            111.78848266601564,
+            7.737429111232643,
+            19.175992964912254,
+            10.089279174804688,
+            -1.1704084795077612
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Sint Luci\u00ebnsteeg 25",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            949.2522029876709,
+            713.7570953369141,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -50.988590519535684,
+            -286.3745057626151,
+            112.43733978271486,
+            11.223327653369854,
+            12.401772898085975,
+            10.820144653320312,
+            0.05065287300716039
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Spuistraat 251",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            849.1618041992188,
+            718.4234619140625,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -150.85353602378765,
+            -281.5109662880782,
+            115.14910888671876,
+            17.08055395719075,
+            4.6097676494294415,
+            16.546890258789062,
+            0.22981235479445036
+        ]
+    },
+    "Moonlife concept store": {
+        "building": "Wijdesteeg",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            909.2360000610352,
+            836.0588455200195,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -90.2540054321289,
+            -163.9869384765625,
+            114.9057846069336,
+            16.6563777923584,
+            5.759768009185791,
+            16.80438995361328,
+            0.17803071439266205
+        ]
+    },
+    "Singel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -223.64587491774998,
+            -331.8770473372178
+        ],
+        "rotation": -0.11606742879572277,
+        "bounding_box": null
+    },
+    "Damrak Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            205.2698704781698,
+            105.74759652198695
+        ],
+        "rotation": -0.6870389474018183,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            190.9697649930068,
+            -159.54508143669185
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -270.59051032698653,
+            -184.14685443747305
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -99.84747833441955,
+            -121.10998771547311
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            162.8009026867501,
+            105.22397871245589
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.802841477347487,
+            -233.41860399615223
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -106.98235061443106,
+            -267.68981899489995
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.59099691949788,
+            40.69110591926888
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Damrak": [
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Singel": [
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

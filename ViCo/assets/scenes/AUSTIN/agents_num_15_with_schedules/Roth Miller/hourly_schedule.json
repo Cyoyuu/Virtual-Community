@@ -1,0 +1,112 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Tacodeli",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to 301 Congress",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "07:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on marketing strategies and campaign development",
+        "place": "301 Congress",
+        "building": "301 Congress",
+        "start_time": "07:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Tacodeli",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on marketing campaign",
+        "place": "301 Congress",
+        "building": "301 Congress",
+        "start_time": "12:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to REP Real Estate Partners",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "16:45:00",
+        "start_place": "301 Congress",
+        "end_place": "REP Real Estate Partners"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and discussing property deals",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "16:45:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "REP Real Estate Partners",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Neon Grotto",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "18:15:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roth Miller's room at Avison Young",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "19:45:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Roth Miller's room at Avison Young"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Roth Miller's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "19:45:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

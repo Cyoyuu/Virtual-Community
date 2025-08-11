@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Chad Thompson's room at Kesselbauer",
+        "building": "Kesselbauer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Business Garden",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on sustainable tech solutions",
+        "place": "Business Garden",
+        "building": "Business Garden",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Menu pre zmenu",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Business Garden",
+        "end_place": "Menu pre zmenu"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Menu pre zmenu",
+        "building": "18",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Business Garden",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Menu pre zmenu",
+        "end_place": "Business Garden"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on app to reduce food waste",
+        "place": "Business Garden",
+        "building": "Business Garden",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Business Garden",
+        "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "building": "24",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to la bouche culinary",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "end_place": "la bouche culinary"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "la bouche culinary",
+        "building": "N\u00e1mestie 1. m\u00e1ja 7",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "la bouche culinary",
+        "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer at local shelter",
+        "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Kesselbauer",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "end_place": "Chad Thompson's room at Kesselbauer"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Chad Thompson's room at Kesselbauer",
+        "building": "Kesselbauer",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Chad Thompson's room at Kesselbauer",
+        "building": "Kesselbauer",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

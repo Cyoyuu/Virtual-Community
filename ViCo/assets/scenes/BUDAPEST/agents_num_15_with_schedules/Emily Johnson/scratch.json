@@ -1,0 +1,177 @@
+{
+    "name": "Emily Johnson",
+    "first_name": "Emily",
+    "last_name": "Johnson",
+    "age": 16,
+    "innate": "benevolence, universalism, conformity",
+    "learned": "I am a high school student interested in environmental science. I volunteer at local parks and enjoy hiking.",
+    "currently": "I want to organize a community clean-up event at aurobus.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Environmental Enthusiasts",
+            "description": "A group dedicated to environmental conservation and research, organizing clean-up events and biodiversity studies.",
+            "place": "aurobus",
+            "members": [
+                "Emily Johnson",
+                "Sophie Carlsen",
+                "Zara Williams"
+            ],
+            "daily_activity": "conducting biodiversity research from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+            "building": "Zitterbarth h\u00e1z",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+            "building": "Zitterbarth h\u00e1z",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+            "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "building": "Orczy-h\u00e1z 1795-1937.002",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to STRAW Budapest",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "end_place": "STRAW Budapest"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "STRAW Budapest",
+            "building": "Zitterbarth h\u00e1z",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "STRAW Budapest",
+            "end_place": "Association of Hungarian Fine and Applied Artists"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Association of Hungarian Fine and Applied Artists",
+            "place": "Association of Hungarian Fine and Applied Artists",
+            "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to STRAW Budapest",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Association of Hungarian Fine and Applied Artists",
+            "end_place": "STRAW Budapest"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "STRAW Budapest",
+            "building": "Zitterbarth h\u00e1z",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Mad\u00e1ch Trade Center",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "STRAW Budapest",
+            "end_place": "Mad\u00e1ch Trade Center"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Mad\u00e1ch Trade Center",
+            "place": "Mad\u00e1ch Trade Center",
+            "building": "Mad\u00e1ch Trade Center",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Emily Johnson's room at Zitterbarth h\u00e1z",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Mad\u00e1ch Trade Center",
+            "end_place": "Emily Johnson's room at Zitterbarth h\u00e1z"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+            "building": "Zitterbarth h\u00e1z",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "aurobus",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

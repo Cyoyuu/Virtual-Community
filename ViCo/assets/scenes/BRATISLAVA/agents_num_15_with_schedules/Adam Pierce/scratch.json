@@ -1,0 +1,204 @@
+{
+    "name": "Adam Pierce",
+    "first_name": "Adam",
+    "last_name": "Pierce",
+    "age": 27,
+    "innate": "achievement, stimulation",
+    "learned": "I am a research scientist at Slovensk\u00e1 technick\u00e1 kni\u017enica, focusing on innovative library systems. I enjoy hiking and exploring new technologies.",
+    "currently": "I want to develop a new digital cataloging system for the library.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "members": [
+                "Adam Pierce",
+                "Chad Thompson",
+                "Ilya Sutskever",
+                "Shannon Steves"
+            ],
+            "daily_activity": "discussing tech trends from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "building": "Konventn\u00e1 5",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Street Good - Healthy bistro in Bratislava",
+            "building": "Palis\u00e1dy 34",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Street Good - Healthy bistro in Bratislava",
+            "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+        },
+        {
+            "type": "main",
+            "activity": "Research and development of digital cataloging system",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "building": "24",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bistro Gourmet",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "end_place": "Bistro Gourmet"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Bistro Gourmet",
+            "building": "Crowne Plaza",
+            "start_time": "12:40:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Bistro Gourmet",
+            "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+        },
+        {
+            "type": "main",
+            "activity": "Continue research and development of digital cataloging system",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "building": "24",
+            "start_time": "13:30:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Club meeting",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "building": "24",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Panensk\u00e1 kaviare\u0148",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "end_place": "Panensk\u00e1 kaviare\u0148"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Panensk\u00e1 kaviare\u0148",
+            "place": null,
+            "building": null,
+            "start_time": "18:10:00",
+            "end_time": "18:30:00",
+            "start_place": null,
+            "end_place": "Panensk\u00e1 kaviare\u0148"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Panensk\u00e1 kaviare\u0148",
+            "building": "Panensk\u00e1 7378/18",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Yoga House",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Panensk\u00e1 kaviare\u0148",
+            "end_place": "Yoga House"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind at Yoga House",
+            "place": "Yoga House",
+            "building": "Panensk\u00e1 682/33",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Adam Pierce's room",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Yoga House",
+            "end_place": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5"
+        },
+        {
+            "type": "main",
+            "activity": "Explore new technologies online",
+            "place": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "building": "Konventn\u00e1 5",
+            "start_time": "21:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "building": "Konventn\u00e1 5",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

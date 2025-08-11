@@ -1,0 +1,167 @@
+{
+    "name": "Zara Williams",
+    "first_name": "Zara",
+    "last_name": "Williams",
+    "age": 15,
+    "innate": "stimulation, self-direction, hedonism",
+    "learned": "I am a high school student at De Nieuwe Vrouw, interested in music and dance. I enjoy participating in school performances.",
+    "currently": "I want to choreograph a dance routine for the school talent show.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Health and Wellness Group",
+            "description": "A group focused on promoting holistic health and wellness through yoga and mindfulness practices.",
+            "place": "Amsterdam Yoga Centre",
+            "members": [
+                "Pika Hayes",
+                "Shannon Steves",
+                "Zara Williams"
+            ],
+            "daily_activity": "practicing yoga from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Zara Williams's room at Red light district Residence on ground floor",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Zara Williams's room at Red light district Residence on ground floor",
+            "building": "Pieter Jacobszstraat 25",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caf\u00e9 De Buurvrouw",
+            "building": "Sint Pieterspoortsteeg 29",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to De Nieuwe Vrouw",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Caf\u00e9 De Buurvrouw",
+            "end_place": "De Nieuwe Vrouw"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes",
+            "place": "De Nieuwe Vrouw",
+            "building": "Nieuwezijds Voorburgwal 178",
+            "start_time": "09:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "De Nieuwe Vrouw",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Choreograph dance routine for school talent show",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Practice yoga with Health and Wellness Group",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to La Condesa Taqueria",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "La Condesa Taqueria"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "La Condesa Taqueria",
+            "building": "Herengracht 287h",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to YellowKorner Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "La Condesa Taqueria",
+            "end_place": "YellowKorner Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Visit YellowKorner Amsterdam for inspiration",
+            "place": "YellowKorner Amsterdam",
+            "building": "Singel 282",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Zara Williams's room",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "YellowKorner Amsterdam",
+            "end_place": "Zara Williams's room at Red light district Residence on ground floor"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Zara Williams's room at Red light district Residence on ground floor",
+            "building": "Pieter Jacobszstraat 25",
+            "start_time": "21:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "De Nieuwe Vrouw",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

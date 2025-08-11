@@ -1,0 +1,146 @@
+{
+    "name": "Megan Carter",
+    "first_name": "Megan",
+    "last_name": "Carter",
+    "age": 10,
+    "innate": "stimulation, benevolence",
+    "learned": "I am a student at S\u00fakromn\u00e1 matersk\u00e1 \u0161kola Edulienka, interested in art and music. I enjoy drawing and playing the piano.",
+    "currently": "I want to win the school art competition.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food enthusiasts who experiment with new recipes and culinary techniques.",
+            "place": "Bistro Gourmet",
+            "members": [
+                "Jody Petersen",
+                "Louise Roberts",
+                "Megan Carter",
+                "Olivia Adams"
+            ],
+            "daily_activity": "experimenting with recipes from 15:00 to 16:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Megan Carter's room at Apartments BB4, bratislava",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to school",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend school and focus on art for competition",
+            "place": "S\u00fakromn\u00e1 matersk\u00e1 \u0161kola Edulienka",
+            "building": "Palis\u00e1dy 51",
+            "start_time": "09:00:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bistro Gourmet",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "S\u00fakromn\u00e1 matersk\u00e1 \u0161kola Edulienka",
+            "end_place": "Bistro Gourmet"
+        },
+        {
+            "type": "main",
+            "activity": "Participate in Culinary Creators group activity",
+            "place": "Bistro Gourmet",
+            "building": "Crowne Plaza",
+            "start_time": "15:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back home",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Bistro Gourmet",
+            "end_place": "Megan Carter's room at Apartments BB4, bratislava"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Practice piano and work on art for competition",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "18:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Evening snack",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "22:00:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Megan Carter's room at Apartments BB4, bratislava",
+            "building": "Apartments BB4",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "S\u00fakromn\u00e1 matersk\u00e1 \u0161kola Edulienka",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

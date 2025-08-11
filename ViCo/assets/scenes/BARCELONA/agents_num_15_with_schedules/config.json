@@ -1,0 +1,769 @@
+{
+    "sim_name": "BARCELONA_agents_num_15",
+    "agent_names": [
+        "Brian Carter",
+        "Brycer Rodriguez",
+        "Chad Thompson",
+        "Christiano Ronaldo",
+        "Drake",
+        "Elizabeth Mensah",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Leonard Park",
+        "Olivia Adams",
+        "Richard Feynman",
+        "Sophie Carlsen",
+        "Taylor Swift",
+        "Will Smith",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 750,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                290.87548018338885,
+                -131.55553975228997,
+                117.50718701075614,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa Mart\u00ed",
+            "current_place": "Brian Carter's room at Casa Mart\u00ed",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                125.80018821799345,
+                -1.4580982379396996,
+                120.81853427272324,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Movistar Centre",
+            "current_place": "Brycer Rodriguez's room at Movistar Centre",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                157.28546489137986,
+                -186.46097748509547,
+                117.88038343815575,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carrer de Bertrellans",
+            "current_place": "Chad Thompson's room at Aticco Living Bertrellans 9 - Flexliving Building",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -238.46122255786048,
+                233.9684410876841,
+                128.9465292156749,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "El Avenida Palace",
+            "current_place": "Christiano Ronaldo's room at El Avenida Palace",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -165.10339848603516,
+                -128.2831075434295,
+                123.68353187751752,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Regina",
+            "current_place": "Drake's room at Hotel Regina",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                288.6483235600542,
+                -137.95409598379388,
+                117.45041135137579,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Portal de L'Angel",
+            "current_place": "Elizabeth Mensah's room at Pensi\u00f3n Nevada",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -88.44093286749636,
+                -160.55519812115753,
+                122.72440448931752,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carrer de Pelai",
+            "current_place": "Jody Petersen's room at Recreativos Pelayo 56",
+            "current_vehicle": null
+        },
+        {
+            "cash": 650,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                288.5676537618334,
+                -132.92657844090223,
+                117.50514274666034,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa Mart\u00ed",
+            "current_place": "Joe Anderson's room at Casa Mart\u00ed",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                58.77957298655793,
+                274.9721316395373,
+                125.13585867767375,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carrer de Casp",
+            "current_place": "Leonard Park's room at Cami Gallery",
+            "current_vehicle": null
+        },
+        {
+            "cash": 350,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                126.1018014385573,
+                -1.7892148702345434,
+                120.80995399165344,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Movistar Centre",
+            "current_place": "Olivia Adams's room at Movistar Centre",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -235.51869627711662,
+                236.96406620675938,
+                128.9301146442992,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "El Avenida Palace",
+            "current_place": "Richard Feynman's room at El Avenida Palace",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                133.68065101267268,
+                -10.109417621821231,
+                120.40456258661703,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Movistar Centre",
+            "current_place": "Sophie Carlsen's room at Movistar Centre",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                176.87489615392712,
+                276.58338042955353,
+                123.57911139335357,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pla\u00e7a d'Urquinaona",
+            "current_place": "Taylor Swift's room at H10 Urquinaona Plaza",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -16.630205082223966,
+                270.7216929004249,
+                126.61542003292739,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "ME Hotel",
+            "current_place": "Will Smith's room at ME Barcelona",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -20.208829761110387,
+                -174.80419737956913,
+                122.14689696867832,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Metro Catalunya",
+            "current_place": "Zara Williams's room at Hotel Monegal",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1285.1085510253906,
+            880.1705627441406,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1140.361312866211,
+            1004.8940782546997,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1167.6887588500977,
+            835.0990219116211,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            753.3645477294922,
+            1243.994743347168,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            835.4902877807617,
+            895.762451171875,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1282.3576049804688,
+            853.0029373168945,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.344841003418,
+            816.2847900390625,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1285.1085510253906,
+            880.1705627441406,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1062.3693389892578,
+            1264.7517776489258,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1140.361312866211,
+            1004.8940782546997,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            753.3645477294922,
+            1243.994743347168,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1140.361312866211,
+            1004.8940782546997,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1191.4053268432617,
+            1266.7021255493164,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            979.2794070243835,
+            1244.179702758789,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            963.7433061599731,
+            821.2826309204102,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/celebrity_Christiano_Ronaldo.glb",
+        "ViCo/avatars/models/celebrity_Drake.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/celebrity_Richard_Feynman.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Taylor_Swift.glb",
+        "ViCo/avatars/models/celebrity_Will_Smith.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Carrer del Bonsucc\u00e9s",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "\u00a8LimitEDitions\u00a8 Sneakers Shop": {
+            "building": "Carrer del Duc",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Avinguda del Portal de l'\u00c0ngel",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Casa Pich i Pon",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Carrer de Fontanella",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "El Avenida Palace",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Business Innovators": {
+            "description": "A group of professionals and students interested in business innovation and entrepreneurship.",
+            "place": "Geneva Business School - Barcelona Campus",
+            "members": [
+                "Brycer Rodriguez",
+                "Olivia Adams",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "discussing business strategies from 15:00 to 16:00"
+        },
+        "Creative Minds": {
+            "description": "A group of artists and creatives who gather to share ideas and collaborate on projects.",
+            "place": "Il\u00b7lacions Design Gallery",
+            "members": [
+                "Zara Williams",
+                "Taylor Swift",
+                "Drake",
+                "Christiano Ronaldo"
+            ],
+            "daily_activity": "brainstorming creative projects from 17:00 to 18:00"
+        },
+        "Fitness Enthusiasts": {
+            "description": "A group of individuals passionate about fitness and wellness, meeting for yoga and other activities.",
+            "place": "Mandiram Escola de Yoga",
+            "members": [
+                "Elizabeth Mensah",
+                "Leonard Park",
+                "Chad Thompson"
+            ],
+            "daily_activity": "practicing yoga from 18:00 to 19:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest in technology and innovation.",
+            "place": "TuCoworking",
+            "members": [
+                "Joe Anderson",
+                "Brian Carter",
+                "Jody Petersen",
+                "Richard Feynman",
+                "Will Smith"
+            ],
+            "daily_activity": "developing tech solutions from 16:00 to 17:00"
+        }
+    }
+}

@@ -1,0 +1,412 @@
+{
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at The Multifamily company",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Columbus Culinary Club"
+        ]
+    },
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Jody Petersen's room at Microliving at Long and Front",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
+        "groups": [
+            "Columbus Culinary Club"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "The Multifamily company",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Columbus Culinary Club"
+        ]
+    },
+    "Columbus Culinary Club": {
+        "description": "A group of food enthusiasts who explore and enjoy the culinary scene in Columbus.",
+        "place": "The Wing Dynasty",
+        "members": [
+            "Brian Carter",
+            "Jody Petersen",
+            "Joe Anderson",
+            "Steve Johnson"
+        ],
+        "daily_activity": "tasting new dishes from 18:00 to 19:00"
+    },
+    "Joe Anderson's room at The Multifamily company": {
+        "building": "The Citizens Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Joe Anderson's room at The Multifamily company",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Huntington Center": {
+        "building": "Huntington Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1119.5110931396484,
+            894.9528617858887,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            117.65195046295409,
+            -104.44199788015068,
+            198.56515884399414,
+            68.80355370839798,
+            69.8860186925178,
+            162.32524871826172,
+            0.14680052427771872
+        ]
+    },
+    "The Wing Dynasty": {
+        "building": "121 South High Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1148.6179733276367,
+            734.4808959960938,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            149.08356783537386,
+            -265.3463357707358,
+            129.36211013793948,
+            60.36457470768148,
+            19.31384845064123,
+            23.430870056152344,
+            0.1497175448353306
+        ]
+    },
+    "Ohio Community Development Finance Fund - Food Distribution Center": {
+        "building": "Huntington Bank Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1116.3445091247559,
+            950.6182546615601,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            116.16938781738281,
+            -49.408836364746094,
+            143.6201934814453,
+            58.08161926269531,
+            39.75822067260742,
+            53.864654541015625,
+            0.1536320447921753
+        ]
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "Ohio University Govt Relations": {
+        "building": "Huntington Plaza",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
+        ]
+    },
+    "Accent Wine Parlor": {
+        "building": "The Citizens Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "liquor_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "The Capital Club": {
+        "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+        "coarse_type": "food",
+        "fine_types": [
+            "gym",
+            "bar",
+            "health",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1059.9933938980103,
+            861.9460525512695,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            60.01637411447343,
+            -138.05667055997964,
+            142.79308700561523,
+            55.06134415253213,
+            90.11950848053891,
+            57.459388732910156,
+            0.14613047834726559
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Vern Riffe Center for Government and the Arts",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_repair",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1104.2559204101562,
+            817.3631744384766,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            104.2154832221221,
+            -184.14588436692574,
+            171.88875198364258,
+            129.24464097674974,
+            74.03578528349477,
+            116.11711883544922,
+            0.13660516016028626
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "40 West Gay Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "spa",
+            "hair_care",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1022.607340335846,
+            1182.317756652832,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            22.556351571916412,
+            182.1531671517427,
+            121.35496520996094,
+            10.527402498917798,
+            34.131103688095415,
+            15.98577880859375,
+            0.1556184894332462
+        ]
+    },
+    "Marconi Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -173.8897111313305,
+            259.3223454647179
+        ],
+        "rotation": 1.7374446058537958,
+        "bounding_box": null
+    },
+    "North High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            156.97469546519335,
+            122.38828789203147
+        ],
+        "rotation": -2.9933589340822246,
+        "bounding_box": null
+    },
+    "South High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            209.61970123951443,
+            -190.3711637897594
+        ],
+        "rotation": -2.994111967392216,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            57.03117646281551,
+            -17.56404027718296
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.17144875149471,
+            -217.34119253501643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.344963855943284,
+            222.93542690688022
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.64205681084644,
+            -231.96371476352795
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            287.8821319352048,
+            50.86864863752275
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To South High Street": [
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Marconi Boulevard": [
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

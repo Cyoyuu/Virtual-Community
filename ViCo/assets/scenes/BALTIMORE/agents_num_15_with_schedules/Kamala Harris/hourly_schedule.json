@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kamala Harris's room at A Home In The Hill",
+        "building": "1113 South Hanover Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Mums",
+        "building": "1132 South Hanover Street",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Mums",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Attend political conference",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to &pizza - Fed Hill",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "&pizza - Fed Hill"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "&pizza - Fed Hill",
+        "building": "1201 South Charles Street",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "&pizza - Fed Hill",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Continue attending political conference",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Century21 Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "Century21 Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Brainstorming tech solutions with Baltimore Tech Innovators",
+        "place": "Century21 Downtown",
+        "building": "South Baltimore Recreation Center",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Souvlaki (Federal Hill)",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Century21 Downtown",
+        "end_place": "Souvlaki (Federal Hill)"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Souvlaki (Federal Hill)",
+        "building": "17 East Cross Street",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The 8x10",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Souvlaki (Federal Hill)",
+        "end_place": "The 8x10"
+    },
+    {
+        "type": "main",
+        "activity": "Evening entertainment at The 8x10",
+        "place": "The 8x10",
+        "building": "10 East Cross Street",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kamala Harris's room at A Home In The Hill",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "The 8x10",
+        "end_place": "Kamala Harris's room at A Home In The Hill"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed and relax",
+        "place": "Kamala Harris's room at A Home In The Hill",
+        "building": "1113 South Hanover Street",
+        "start_time": "22:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kamala Harris's room at A Home In The Hill",
+        "building": "1113 South Hanover Street",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

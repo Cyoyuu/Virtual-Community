@@ -1,0 +1,96 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fr\u00f6bel-Kita im BMG",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend school and learn with friends",
+        "place": "Fr\u00f6bel-Kita im BMG",
+        "building": "im Bundesgesundheitsministerium",
+        "start_time": "09:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends forever galerie",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Fr\u00f6bel-Kita im BMG",
+        "end_place": "Friends forever galerie"
+    },
+    {
+        "type": "main",
+        "activity": "Painting and discussing art with Berlin Young Artists",
+        "place": "Friends forever galerie",
+        "building": "Glinkastra\u00dfe 42",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Finish reading favorite fairy tale book",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Evening snack",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

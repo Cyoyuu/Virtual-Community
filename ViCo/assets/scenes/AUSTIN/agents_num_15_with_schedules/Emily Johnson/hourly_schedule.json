@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep in Emily Johnson's room",
+        "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
+        "building": "The Stephen F Austin Royal Sonesta Hotel",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Caroline",
+        "place": "Caroline",
+        "building": "Aloft Austin Downtown",
+        "start_time": "07:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Wild About Music",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Wild About Music",
+        "place": "Wild About Music",
+        "building": "Wild About Music",
+        "start_time": "08:30:00",
+        "end_time": "10:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Snacks and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "10:00:00",
+        "end_time": "10:30:00",
+        "start_place": "Wild About Music",
+        "end_place": "Snacks and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Snacks and DM Store",
+        "place": "Snacks and DM Store",
+        "building": "722 Congress Avenue",
+        "start_time": "10:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kelly's Corner",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Snacks and DM Store",
+        "end_place": "Kelly's Corner"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Kelly's Corner",
+        "place": "Kelly's Corner",
+        "building": "101 West 5th Street",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Kelly's Corner",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at The Driskill",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "14:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Austin Explorers meeting",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "The Driskill",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Explore local attractions with Austin Explorers",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "The Driskill",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Neon Grotto",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to The Stephen F Austin Royal Sonesta Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax in Emily Johnson's room",
+        "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
+        "building": "The Stephen F Austin Royal Sonesta Hotel",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep in Emily Johnson's room",
+        "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
+        "building": "The Stephen F Austin Royal Sonesta Hotel",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

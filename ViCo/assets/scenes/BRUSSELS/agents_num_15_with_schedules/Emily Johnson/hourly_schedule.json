@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "building": "Rue d'Arenberg 46",
+        "start_time": "11:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "end_place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for group activity",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "13:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Explore museums with Brussels Cultural Explorers",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to JeanBon St Gudule",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Beverages and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Beverages and Snacks Store for snacks",
+        "place": "Beverages and Snacks Store",
+        "building": "Rue d'Arenberg 54",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Beverages and Snacks Store",
+        "end_place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Free time for painting or relaxation",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "19:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "LeBron James's room at AC Hotel Bratislava Old Town",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Panta Rhei Bratislava - Kn\u00edhkupectvo",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:10:00",
+        "start_place": "Panta Rhei Bratislava - Kn\u00edhkupectvo",
+        "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Slovensk\u00e1 technick\u00e1 kni\u017enica for reading and research",
+        "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "building": "24",
+        "start_time": "09:10:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Kult\u00farne a informa\u010dn\u00e9 centrum energetiky for a meeting",
+        "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "start_time": "11:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bistro Gourmet for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "end_place": "Bistro Gourmet"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to AC Hotel Bratislava Old Town",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Bistro Gourmet",
+        "end_place": "LeBron James's room at AC Hotel Bratislava Old Town"
+    },
+    {
+        "type": "main",
+        "activity": "Rest and prepare for the youth basketball camp",
+        "place": "LeBron James's room at AC Hotel Bratislava Old Town",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct sports training at Youth Sports Academy",
+        "place": "AC Hotel Bratislava Old Town",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Q - Pizza S.r.o.",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "17:40:00",
+        "start_place": "AC Hotel Bratislava Old Town",
+        "end_place": "Q - Pizza S.r.o."
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Q - Pizza S.r.o.",
+        "place": null,
+        "building": null,
+        "start_time": "17:40:00",
+        "end_time": "18:00:00",
+        "start_place": null,
+        "end_place": "Q - Pizza S.r.o."
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Q - Pizza S.r.o.",
+        "building": "Obchodn\u00e1 551/21",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Yoga Beats - Mysore Room Bratislava",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Q - Pizza S.r.o.",
+        "end_place": "Yoga Beats - Mysore Room Bratislava"
+    },
+    {
+        "type": "main",
+        "activity": "Yoga session at Yoga Beats - Mysore Room Bratislava",
+        "place": "Yoga Beats - Mysore Room Bratislava",
+        "building": "Obchodn\u00e1 35",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to AC Hotel Bratislava Old Town",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Yoga Beats - Mysore Room Bratislava",
+        "end_place": "LeBron James's room at AC Hotel Bratislava Old Town"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "LeBron James's room at AC Hotel Bratislava Old Town",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

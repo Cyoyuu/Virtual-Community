@@ -1,0 +1,186 @@
+{
+    "name": "Sophie Carlsen",
+    "first_name": "Sophie",
+    "last_name": "Carlsen",
+    "age": 20,
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a student at August-Boeckh-Haus studying art history. I enjoy visiting art galleries and painting.",
+    "currently": "I want to complete my art project on Renaissance paintings.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Berlin Historical Society",
+            "description": "A group of history enthusiasts exploring Berlin's rich historical sites and discussing political philosophy.",
+            "place": "Memorial",
+            "members": [
+                "Abraham Lincoln",
+                "Elizabeth Mensah",
+                "Neil deGrasse Tyson",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "exploring historical sites from 14:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Sophie Carlsen's room at Palais Theising",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Sophie Carlsen's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Berliner Kindl",
+            "building": "Wilhelmstra\u00dfe 78",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to August-Boeckh-Haus",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Berliner Kindl",
+            "end_place": "August-Boeckh-Haus"
+        },
+        {
+            "type": "main",
+            "activity": "Study Renaissance paintings for art project",
+            "place": "August-Boeckh-Haus",
+            "building": "August-Boeckh-Haus",
+            "start_time": "09:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Galerie im Adlon",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "August-Boeckh-Haus",
+            "end_place": "Galerie im Adlon"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Galerie im Adlon",
+            "place": "Galerie im Adlon",
+            "building": "Adlon Kempinski",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Memorial",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Galerie im Adlon",
+            "end_place": "Memorial"
+        },
+        {
+            "type": "main",
+            "activity": "Explore historical sites with Berlin Historical Society",
+            "place": "Memorial",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to India Club Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Memorial",
+            "end_place": "India Club Berlin"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "India Club Berlin",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Forum Willy Brandt Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "India Club Berlin",
+            "end_place": "Forum Willy Brandt Berlin"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and explore Forum Willy Brandt Berlin",
+            "place": "Forum Willy Brandt Berlin",
+            "building": "Palais Theising",
+            "start_time": "18:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Sophie Carlsen's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Forum Willy Brandt Berlin",
+            "end_place": "Sophie Carlsen's room at Palais Theising"
+        },
+        {
+            "type": "main",
+            "activity": "Work on art project in room",
+            "place": "Sophie Carlsen's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for sleep",
+            "place": "Sophie Carlsen's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "August-Boeckh-Haus",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

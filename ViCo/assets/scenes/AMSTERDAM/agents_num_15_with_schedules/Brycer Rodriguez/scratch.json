@@ -1,0 +1,209 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a research scientist at the Humanities IT Lab - Universiteit van Amsterdam, focusing on artificial intelligence and machine learning. I enjoy hiking and exploring new technologies.",
+    "currently": "I want to publish a paper on the latest advancements in AI at the upcoming conference.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "AI Enthusiasts Club",
+            "description": "A group of individuals passionate about artificial intelligence and machine learning, sharing knowledge and collaborating on projects.",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "members": [
+                "Brycer Rodriguez",
+                "Chuang Gan",
+                "Yann LeCun"
+            ],
+            "daily_activity": "discussing AI advancements from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.",
+            "building": "Nieuwezijds Voorburgwal 252",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "BEMS Restaurant",
+            "building": "Nieuwezijds Voorburgwal 171",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Humanities IT Lab",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Research and work on AI paper",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Lobby Nesplein",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "The Lobby Nesplein"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "The Lobby Nesplein",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Humanities IT Lab",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "The Lobby Nesplein",
+            "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Continue research and work on AI paper",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "13:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "AI Enthusiasts Club meeting",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to YellowKorner Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:10:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "YellowKorner Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Explore new technologies",
+            "place": "YellowKorner Amsterdam",
+            "building": "Singel 282",
+            "start_time": "16:10:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to BEMS Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "YellowKorner Amsterdam",
+            "end_place": "BEMS Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "BEMS Restaurant",
+            "building": "Nieuwezijds Voorburgwal 171",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "BEMS Restaurant",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind with yoga",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "19:00:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Brycer Rodriguez's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V."
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for next day's research",
+            "place": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.",
+            "building": "Nieuwezijds Voorburgwal 252",
+            "start_time": "21:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and leisure time",
+            "place": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.",
+            "building": "Nieuwezijds Voorburgwal 252",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Humanities IT Lab - Universiteit van Amsterdam",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

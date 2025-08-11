@@ -1,0 +1,194 @@
+{
+    "name": "Abraham Lincoln",
+    "first_name": "Abraham",
+    "last_name": "Lincoln",
+    "age": 56,
+    "innate": "universalism, benevolence, tradition",
+    "learned": "I am the 16th President of the United States, known for leading the country during the Civil War and abolishing slavery. I enjoy reading historical texts and discussing political philosophy.",
+    "currently": "I am visiting Berlin to explore historical sites and learn more about European political history.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Berlin Historical Society",
+            "description": "A group of history enthusiasts exploring Berlin's rich historical sites and discussing political philosophy.",
+            "place": "Memorial",
+            "members": [
+                "Abraham Lincoln",
+                "Elizabeth Mensah",
+                "Neil deGrasse Tyson",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "exploring historical sites from 14:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin",
+            "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Hotel Bar im Ch\u00e2teau Royal Berlin",
+            "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+            "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Forum Willy Brandt Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+            "end_place": "Forum Willy Brandt Berlin"
+        },
+        {
+            "type": "main",
+            "activity": "Explore Forum Willy Brandt Berlin",
+            "place": "Forum Willy Brandt Berlin",
+            "building": "Palais Theising",
+            "start_time": "09:30:00",
+            "end_time": "11:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Friends forever galerie",
+            "place": null,
+            "building": null,
+            "start_time": "11:30:00",
+            "end_time": "12:00:00",
+            "start_place": "Forum Willy Brandt Berlin",
+            "end_place": "Friends forever galerie"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Friends forever galerie",
+            "place": "Friends forever galerie",
+            "building": "Glinkastra\u00dfe 42",
+            "start_time": "12:00:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Berliner Kindl for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Friends forever galerie",
+            "end_place": "Berliner Kindl"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Berliner Kindl",
+            "place": "Berliner Kindl",
+            "building": "Wilhelmstra\u00dfe 78",
+            "start_time": "13:30:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Memorial for Berlin Historical Society activity",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:15:00",
+            "start_place": "Berliner Kindl",
+            "end_place": "Memorial"
+        },
+        {
+            "type": "main",
+            "activity": "Explore historical sites with Berlin Historical Society",
+            "place": "Memorial",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "14:15:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to India Club Berlin for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Memorial",
+            "end_place": "India Club Berlin"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at India Club Berlin",
+            "place": "India Club Berlin",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Hotel Ch\u00e2teau Royal Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "India Club Berlin",
+            "end_place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin"
+        },
+        {
+            "type": "main",
+            "activity": "Read historical texts and discuss political philosophy",
+            "place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin",
+            "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "start_time": "18:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack at Hotel Bar im Ch\u00e2teau Royal Berlin",
+            "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+            "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin",
+            "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

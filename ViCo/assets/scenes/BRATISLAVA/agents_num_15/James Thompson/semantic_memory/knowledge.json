@@ -1,0 +1,472 @@
+{
+    "David Malan": {
+        "age": 40,
+        "living_place": "David Malan's room at Downtown Bratislava Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/David Malan.png",
+        "groups": [
+            "Community Builders"
+        ]
+    },
+    "Jensen Huang": {
+        "age": 61,
+        "living_place": "Garni Hotel Virgo",
+        "appearance": "ViCo/assets/imgs/avatars/Jensen Huang.png",
+        "groups": [
+            "Community Builders"
+        ]
+    },
+    "Community Builders": {
+        "description": "A group dedicated to community development and social work initiatives in Bratislava.",
+        "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "members": [
+            "David Malan",
+            "James Thompson",
+            "Jensen Huang"
+        ],
+        "daily_activity": "planning community events from 18:00 to 19:30"
+    },
+    "James Thompson's room at Grand Central Apartment": {
+        "building": "Obchodn\u00e1 518/30",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.5552062988281,
+            763.2404632568359,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "James Thompson's room at Grand Central Apartment",
+        "bounding_box": [
+            238.00740929114,
+            -237.8599568692863,
+            109.37450027465822,
+            12.171784820838267,
+            47.64387934073302,
+            10.710075378417969,
+            0.67377343174067
+        ]
+    },
+    "Invest Product as": {
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            761.6915664672852,
+            754.7244567871094,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -238.2400680505192,
+            -244.55202214573876,
+            120.95001602172853,
+            19.162930016671574,
+            25.336569903903612,
+            15.801658630371094,
+            0.3877715617741103
+        ]
+    },
+    "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky": {
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            761.6915664672852,
+            754.7244567871094,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            -238.2400680505192,
+            -244.55202214573876,
+            120.95001602172853,
+            19.162930016671574,
+            25.336569903903612,
+            15.801658630371094,
+            0.3877715617741103
+        ]
+    },
+    "Slovensk\u00e1 technick\u00e1 kni\u017enica": {
+        "building": "24",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1249.4459228515625,
+            1176.0525283813477,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            249.4459228515625,
+            176.1638641357422,
+            123.11087036132812,
+            9.585921100830271,
+            30.783009521534098,
+            20.042999267578125,
+            -0.6656642523320964
+        ]
+    },
+    "AC Hotel Bratislava Old Town": {
+        "building": "Vysok\u00e1 7490/2A",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1153.320442199707,
+            859.5009422302246,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            149.07659681008744,
+            -139.64523248562097,
+            120.22465133666992,
+            45.753191067241396,
+            66.39729428812079,
+            22.803535461425767,
+            -0.8808452075611298
+        ]
+    },
+    "Bistro Gourmet": {
+        "building": "Crowne Plaza",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1075.4125862121582,
+            788.2996978759766,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            81.09033863496279,
+            -216.33802624657545,
+            122.53482818603516,
+            77.40632928816682,
+            78.79693902074749,
+            29.527328491210938,
+            0.7261077233172377
+        ]
+    },
+    "G\u00f3vinda re\u0161taur\u00e1cia": {
+        "building": "Obchodn\u00e1 518/30",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.5552062988281,
+            763.2404632568359,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            238.00740929114,
+            -237.8599568692863,
+            109.37450027465822,
+            12.171784820838267,
+            47.64387934073302,
+            10.710075378417969,
+            0.67377343174067
+        ]
+    },
+    "Apollon Gay Club": {
+        "building": "Panensk\u00e1 24",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            775.4760437011719,
+            826.5081939697266,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -224.39263570311678,
+            -173.54534530576763,
+            118.3856773376465,
+            26.770366491627936,
+            30.860392272365,
+            10.814811706542969,
+            0.3402495251964998
+        ]
+    },
+    "Foxford": {
+        "building": "Obchodn\u00e1 516/26",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "book_store",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1217.9571914672852,
+            753.2153244018555,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            218.46867017108656,
+            -247.49230193170808,
+            110.97777557373048,
+            10.213036376648482,
+            45.31893913042523,
+            12.4212646484375,
+            0.6827825048122723
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Obchodn\u00e1 516/26",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1217.9571914672852,
+            753.2153244018555,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            218.46867017108656,
+            -247.49230193170808,
+            110.97777557373048,
+            10.213036376648482,
+            45.31893913042523,
+            12.4212646484375,
+            0.6827825048122723
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Konventn\u00e1 811 03",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            786.8300170898438,
+            761.0464324951172,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -212.9397686050872,
+            -238.95356097048625,
+            120.69901275634767,
+            32.129822056454216,
+            16.31641225335476,
+            15.736007690429688,
+            0.3885480091310284
+        ]
+    },
+    "Club 44": {
+        "building": "38",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1274.195541381836,
+            804.1743240356445,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            274.6199014180362,
+            -197.32016606969484,
+            109.09879302978517,
+            10.993202781976226,
+            32.11135035592315,
+            10.38519287109375,
+            0.6462901796311471
+        ]
+    },
+    "Hod\u017eovo n\u00e1mestie Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            89.6687841327635,
+            -110.04229442443317
+        ],
+        "rotation": -0.753325421791811,
+        "bounding_box": null
+    },
+    "\u0160tetinova Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -233.40005217414816,
+            -155.00664649639714
+        ],
+        "rotation": 2.1172461786750985,
+        "bounding_box": null
+    },
+    "Panensk\u00e1 Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -132.46840279007986,
+            -140.8212360800419
+        ],
+        "rotation": 2.14118163697676,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            247.52892989801015,
+            -125.3516310895381
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -73.72702856905617,
+            -138.602181229165
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -279.3872891726143,
+            -36.23969947565152
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            217.80103525537174,
+            42.488212927284344
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.0017833264783,
+            -232.77288073898328
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -244.1337320355244,
+            -163.91799842996238
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -128.19851995173985,
+            100.2670809518925
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Panensk\u00e1": [
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hod\u017eovo n\u00e1mestie": [
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

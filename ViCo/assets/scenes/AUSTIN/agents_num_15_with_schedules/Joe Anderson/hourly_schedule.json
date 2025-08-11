@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Chick-fil-A",
+        "place": "Chick-fil-A 6th & Congress",
+        "building": "One American Center",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to One American Center",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a financial analyst",
+        "place": "One American Center",
+        "building": "One American Center",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tacodeli",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "One American Center",
+        "end_place": "Tacodeli"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Tacodeli",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to One American Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Tacodeli",
+        "end_place": "One American Center"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work as a financial analyst",
+        "place": "One American Center",
+        "building": "One American Center",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to REP Real Estate Partners",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "One American Center",
+        "end_place": "REP Real Estate Partners"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and discussing property deals",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "REP Real Estate Partners",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Neon Grotto",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joe Anderson's room at Crites Real Estate",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Joe Anderson's room at Crites Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Expand investment portfolio",
+        "place": "Joe Anderson's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

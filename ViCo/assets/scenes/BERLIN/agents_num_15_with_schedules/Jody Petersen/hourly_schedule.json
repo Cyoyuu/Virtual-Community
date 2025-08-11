@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jody Petersen's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "EINSTEIN Unter den Linden",
+        "building": "Unter den Linden 42",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rabitz Property Consulting",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work at Rabitz Property Consulting",
+        "place": "Rabitz Property Consulting",
+        "building": "Adlon Kempinski",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Lorenz Adlon Esszimmer",
+        "building": "Adlon Kempinski",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work at Rabitz Property Consulting",
+        "place": "Rabitz Property Consulting",
+        "building": "Adlon Kempinski",
+        "start_time": "12:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends forever galerie",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Rabitz Property Consulting",
+        "end_place": "Friends forever galerie"
+    },
+    {
+        "type": "main",
+        "activity": "Painting and discussing art with Berlin Young Artists",
+        "place": "Friends forever galerie",
+        "building": "Glinkastra\u00dfe 42",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Attend a business seminar",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Jody Petersen's room at Haus Sommer",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Forum Willy Brandt Berlin",
+        "end_place": "Jody Petersen's room at Haus Sommer"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for the next day and relax",
+        "place": "Jody Petersen's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

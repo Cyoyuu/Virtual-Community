@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Dulceology Bakery",
+        "place": "Dulceology Bakery",
+        "building": "1138 South Charles Street",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Dulceology Bakery",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Work on album at Enoch Pratt Library - Light Street Branch",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at South Baltimore Strength Club",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to YARD for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "YARD"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at YARD",
+        "place": "YARD",
+        "building": "1026 South Charles Street",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The 8x10",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "YARD",
+        "end_place": "The 8x10"
+    },
+    {
+        "type": "main",
+        "activity": "Rehearsal and preparation for performance at The 8x10",
+        "place": "The 8x10",
+        "building": "10 East Cross Street",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lucky Fortune",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "The 8x10",
+        "end_place": "Lucky Fortune"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Lucky Fortune",
+        "place": "Lucky Fortune",
+        "building": "1116 Light Street",
+        "start_time": "18:10:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The 8x10 for jamming session",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Lucky Fortune",
+        "end_place": "The 8x10"
+    },
+    {
+        "type": "main",
+        "activity": "Jamming session with Baltimore Music Collective at The 8x10",
+        "place": "The 8x10",
+        "building": "10 East Cross Street",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Leonard Park's room",
+        "place": null,
+        "building": null,
+        "start_time": "20:30:00",
+        "end_time": "21:00:00",
+        "start_place": "The 8x10",
+        "end_place": "Leonard Park's room at 1111 Light Street Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind at Leonard Park's room",
+        "place": "Leonard Park's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "21:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Music creation and brainstorming at Leonard Park's room",
+        "place": "Leonard Park's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,183 @@
+{
+    "name": "James Thompson",
+    "first_name": "James",
+    "last_name": "Thompson",
+    "age": 24,
+    "innate": "achievement, conformity",
+    "learned": "I am a financial analyst at Invest Product as, focusing on real estate investments. I enjoy reading and playing chess.",
+    "currently": "I aim to secure a major investment deal for my company.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Community Builders",
+            "description": "A group dedicated to community development and social work initiatives in Bratislava.",
+            "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "members": [
+                "David Malan",
+                "James Thompson",
+                "Jensen Huang"
+            ],
+            "daily_activity": "planning community events from 18:00 to 19:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "James Thompson's room at Grand Central Apartment",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "James Thompson's room at Grand Central Apartment",
+            "building": "Obchodn\u00e1 518/30",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "G\u00f3vinda re\u0161taur\u00e1cia",
+            "building": "Obchodn\u00e1 518/30",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Invest Product as",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on securing a major investment deal",
+            "place": "Invest Product as",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bistro Gourmet",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Invest Product as",
+            "end_place": "Bistro Gourmet"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Bistro Gourmet",
+            "building": "Crowne Plaza",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Invest Product as",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Bistro Gourmet",
+            "end_place": "Invest Product as"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on investment deal",
+            "place": "Invest Product as",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "13:00:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky for Community Builders meeting",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Invest Product as",
+            "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+        },
+        {
+            "type": "main",
+            "activity": "Community Builders meeting",
+            "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "18:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Foxford",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "19:40:00",
+            "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "end_place": "Foxford"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Foxford",
+            "building": "Obchodn\u00e1 516/26",
+            "start_time": "19:40:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to James Thompson's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Foxford",
+            "end_place": "James Thompson's room at Grand Central Apartment"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and read",
+            "place": "James Thompson's room at Grand Central Apartment",
+            "building": "Obchodn\u00e1 518/30",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Play chess online",
+            "place": "James Thompson's room at Grand Central Apartment",
+            "building": "Obchodn\u00e1 518/30",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Invest Product as",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

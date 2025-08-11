@@ -1,0 +1,183 @@
+{
+    "name": "Joe Anderson",
+    "first_name": "Joe",
+    "last_name": "Anderson",
+    "age": 31,
+    "innate": "achievement, power, security",
+    "learned": "I am a manager at Hotel Kasina, overseeing daily operations and ensuring guest satisfaction. I enjoy traveling and learning about different cultures.",
+    "currently": "I aim to improve the hotel's customer service ratings.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Hospitality Professionals",
+            "description": "A group of professionals working in the hospitality industry.",
+            "place": "Hotel Kasina",
+            "members": [
+                "Joe Anderson",
+                "Steve Johnson",
+                "Jody Petersen"
+            ],
+            "daily_activity": "discussing hospitality trends from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joe Anderson's room at Parliament Suites",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Parliament Suites",
+            "building": "Dragoslava Snacks and DM Storeovi\u0107a 9b",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hotel Kasina",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Oversee daily operations and ensure guest satisfaction",
+            "place": "Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "08:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Kasina By Community for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Hotel Kasina",
+            "end_place": "Kasina By Community"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Kasina By Community",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Hotel Kasina",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:10:00",
+            "start_place": "Kasina By Community",
+            "end_place": "Hotel Kasina"
+        },
+        {
+            "type": "main",
+            "activity": "Continue overseeing operations and improving customer service",
+            "place": "Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "13:10:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss hospitality trends with Hospitality Professionals group",
+            "place": "Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Plan strategies to improve customer service ratings",
+            "place": "Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Ognji\u0161te for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Hotel Kasina",
+            "end_place": "Ognji\u0161te"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Ognji\u0161te",
+            "building": "Ars Medica Beograd",
+            "start_time": "18:30:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to FunFit for leisure",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Ognji\u0161te",
+            "end_place": "FunFit"
+        },
+        {
+            "type": "main",
+            "activity": "Enjoy leisure time at FunFit",
+            "place": "FunFit",
+            "building": "Kralja Milana 4a",
+            "start_time": "20:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Joe Anderson's room at Parliament Suites",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "FunFit",
+            "end_place": "Joe Anderson's room at Parliament Suites"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Joe Anderson's room at Parliament Suites",
+            "building": "Dragoslava Snacks and DM Storeovi\u0107a 9b",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Hotel Kasina",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

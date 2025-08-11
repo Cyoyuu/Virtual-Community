@@ -168,7 +168,7 @@ class LLMMeetingAgent(Agent):
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None
         self.action_history.append(Action(action, self.curr_time, self.curr_time))
-        self.logger.info(f"{self.name}'s current generated action is {action}.")
+        self.logger.debug(f"{self.name}'s current generated action is {action}.")
         assert action is None or isinstance(action, dict)
         return action
     

@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Neil deGrasse Tyson's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "The Oak Room",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to University for Lecture",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "The Oak Room",
+        "end_place": "EzOffice"
+    },
+    {
+        "type": "main",
+        "activity": "Give Lecture on Astrophysics",
+        "place": "EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Deville Coffee",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "EzOffice",
+        "end_place": "Deville Coffee"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Deville Coffee",
+        "building": "Telus Sky",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Deville Coffee",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Collage Gallery",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fairmont Palliser",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "Neil deGrasse Tyson's room at Fairmont Palliser"
+    },
+    {
+        "type": "main",
+        "activity": "Free Time / Stargazing",
+        "place": "Neil deGrasse Tyson's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Play Basketball with Calgary Sports Enthusiasts",
+        "place": "Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Oak Room",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Writing about the Universe",
+        "place": "Neil deGrasse Tyson's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Prepare for Sleep",
+        "place": "Neil deGrasse Tyson's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

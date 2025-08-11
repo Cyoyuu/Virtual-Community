@@ -1,0 +1,194 @@
+{
+    "name": "Joe Anderson",
+    "first_name": "Joe",
+    "last_name": "Anderson",
+    "age": 31,
+    "innate": "security, conformity, benevolence",
+    "learned": "I am a financial analyst at Huntington Center, helping clients manage their investments. I enjoy playing chess and jogging in the park.",
+    "currently": "I am preparing for the CFA Level 2 exam to advance my career.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Columbus Culinary Club",
+            "description": "A group of food enthusiasts who explore and enjoy the culinary scene in Columbus.",
+            "place": "The Wing Dynasty",
+            "members": [
+                "Brian Carter",
+                "Jody Petersen",
+                "Joe Anderson",
+                "Steve Johnson"
+            ],
+            "daily_activity": "tasting new dishes from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joe Anderson's room at The Multifamily company",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at The Multifamily company",
+            "building": "The Citizens Building",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Accent Wine Parlor",
+            "building": "The Citizens Building",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Huntington Center",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a financial analyst",
+            "place": "Huntington Center",
+            "building": "Huntington Center",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Ohio Community Development Finance Fund - Food Distribution Center",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Huntington Center",
+            "end_place": "Ohio Community Development Finance Fund - Food Distribution Center"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "building": "Huntington Bank Building",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Huntington Center",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "end_place": "Huntington Center"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work as a financial analyst",
+            "place": "Huntington Center",
+            "building": "Huntington Center",
+            "start_time": "13:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Wing Dynasty",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Huntington Center",
+            "end_place": "The Wing Dynasty"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner with Columbus Culinary Club",
+            "place": "The Wing Dynasty",
+            "building": "121 South High Street",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Chaos Contemporary Craft",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "The Wing Dynasty",
+            "end_place": "Chaos Contemporary Craft"
+        },
+        {
+            "type": "main",
+            "activity": "Play chess",
+            "place": "Chaos Contemporary Craft",
+            "building": "78 North High Street",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to park for jogging",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Chaos Contemporary Craft",
+            "end_place": "Chaos Contemporary Craft"
+        },
+        {
+            "type": "main",
+            "activity": "Jogging in the park",
+            "place": "Chaos Contemporary Craft",
+            "building": "78 North High Street",
+            "start_time": "21:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Joe Anderson's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "23:00:00",
+            "start_place": "Chaos Contemporary Craft",
+            "end_place": "Joe Anderson's room at The Multifamily company"
+        },
+        {
+            "type": "main",
+            "activity": "Study for CFA Level 2 exam",
+            "place": "Joe Anderson's room at The Multifamily company",
+            "building": "The Citizens Building",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Huntington Center",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

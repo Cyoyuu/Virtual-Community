@@ -1,0 +1,96 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kate Novak's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Kate Novak's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rosso Coffee Roasters - Stephen Ave",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work and practice latte art",
+        "place": "Rosso Coffee Roasters - Stephen Ave",
+        "building": "Calgary TELUS Convention Centre North Building",
+        "start_time": "09:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Rosso Coffee Roasters - Stephen Ave",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Painting and sharing art with Calgary Art Collective",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to El Furniture Warehouse",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "El Furniture Warehouse"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "El Furniture Warehouse",
+        "building": "Glanville/Ward Block",
+        "start_time": "18:30:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Kate Novak's room at Carter Place",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "El Furniture Warehouse",
+        "end_place": "Kate Novak's room at Carter Place"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and paint in room",
+        "place": "Kate Novak's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "20:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Kate Novak's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

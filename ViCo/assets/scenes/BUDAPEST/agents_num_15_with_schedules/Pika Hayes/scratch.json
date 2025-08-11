@@ -1,0 +1,185 @@
+{
+    "name": "Pika Hayes",
+    "first_name": "Pika",
+    "last_name": "Hayes",
+    "age": 18,
+    "innate": "self-direction, stimulation, achievement",
+    "learned": "I am a student at a local high school, interested in computer science and gaming.",
+    "currently": "I want to develop my own video game.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Mad\u00e1ch Trade Center",
+            "members": [
+                "Jensen Huang",
+                "Leonard Park",
+                "Olivia Adams",
+                "Pika Hayes",
+                "Tim Cook"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+            "building": "Stern-b\u00e9rpalota",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Cat Cafe",
+            "building": "Hark\u00e1nyi-b\u00e9rpalota",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to school",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes at school",
+            "place": "Mad\u00e1ch Trade Center",
+            "building": "Mad\u00e1ch Trade Center",
+            "start_time": "09:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to aurobus",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Mad\u00e1ch Trade Center",
+            "end_place": "aurobus"
+        },
+        {
+            "type": "main",
+            "activity": "Work on video game development",
+            "place": "aurobus",
+            "building": "open space",
+            "start_time": "15:30:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Mad\u00e1ch Trade Center",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "aurobus",
+            "end_place": "Mad\u00e1ch Trade Center"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Club meeting",
+            "place": "Mad\u00e1ch Trade Center",
+            "building": "Mad\u00e1ch Trade Center",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Star Kebab & Grill",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Mad\u00e1ch Trade Center",
+            "end_place": "Star Kebab & Grill"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Star Kebab & Grill",
+            "building": "Orczy-h\u00e1z 1795-1937.002",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to aurobus",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Star Kebab & Grill",
+            "end_place": "aurobus"
+        },
+        {
+            "type": "main",
+            "activity": "Continue video game development",
+            "place": "aurobus",
+            "building": "open space",
+            "start_time": "19:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Pika Hayes's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "aurobus",
+            "end_place": "Pika Hayes's room at Stern-b\u00e9rpalota"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+            "building": "Stern-b\u00e9rpalota",
+            "start_time": "22:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+            "building": "Stern-b\u00e9rpalota",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Mad\u00e1ch Trade Center",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

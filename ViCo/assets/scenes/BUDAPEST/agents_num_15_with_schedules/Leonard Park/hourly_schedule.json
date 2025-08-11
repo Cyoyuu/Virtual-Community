@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Fonci\u00e9re-palota",
+        "building": "Fonci\u00e9re-palota",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Leonard Park's room at Fonci\u00e9re-palota",
+        "building": "Fonci\u00e9re-palota",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Leonard Park's room at Fonci\u00e9re-palota",
+        "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Pizzagram",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "end_place": "Pizzagram"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Pizzagram",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Pizzagram",
+        "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Japanika",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "end_place": "Japanika"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Japanika",
+        "building": "Danubius Center",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Japanika",
+        "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leonard Park's room at Fonci\u00e9re-palota",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+        "end_place": "Leonard Park's room at Fonci\u00e9re-palota"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Leonard Park's room at Fonci\u00e9re-palota",
+        "building": "Fonci\u00e9re-palota",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

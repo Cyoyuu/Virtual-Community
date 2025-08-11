@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at Hotel V",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Coffee & Cakes.",
+        "building": "Sint Luci\u00ebnsteeg 21",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Concrete Store Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Oversee operations and customer relations",
+        "place": "Concrete Store Amsterdam",
+        "building": "Spuistraat 250",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Caf\u00e9 DIEP!",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Concrete Store Amsterdam",
+        "end_place": "Caf\u00e9 DIEP!"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Caf\u00e9 DIEP!",
+        "building": "Nieuwezijds Voorburgwal 256-HS",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Humanities IT Lab - Universiteit van Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Caf\u00e9 DIEP!",
+        "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Research sustainable product options",
+        "place": "Humanities IT Lab - Universiteit van Amsterdam",
+        "building": "UvA PC Hoofthuis",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Lobby Nesplein",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+        "end_place": "The Lobby Nesplein"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Culinary Innovators",
+        "place": "The Lobby Nesplein",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Lobby Nesplein",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Concrete Store Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "The Lobby Nesplein",
+        "end_place": "Concrete Store Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and building professional relationships",
+        "place": "Concrete Store Amsterdam",
+        "building": "Spuistraat 250",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Steve Johnson's room at Hotel V",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Concrete Store Amsterdam",
+        "end_place": "Steve Johnson's room at Hotel V"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Steve Johnson's room at Hotel V",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

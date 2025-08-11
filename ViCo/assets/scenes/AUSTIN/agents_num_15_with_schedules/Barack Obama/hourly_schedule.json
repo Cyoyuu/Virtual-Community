@@ -1,0 +1,178 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin",
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Chick-fil-A 6th & Congress",
+        "building": "One American Center",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower for Leadership Summit",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Leadership Summit",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto for Lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower for Community Engagement",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Engage with Local Community Leaders",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill for Austin Explorers Activity",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Indeed Tower",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Local Attractions with Austin Explorers",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "16:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store for Shopping",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "The Driskill",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "612 Brazos Street Suite C",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hoson for Dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Hoson"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Hoson",
+        "building": "Claudia Taylor Johnson Hall",
+        "start_time": "18:30:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hyatt Centric Congress Avenue Austin",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Hoson",
+        "end_place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Reflect on the Day",
+        "place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin",
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "start_time": "20:00:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Barcelona for Evening Entertainment",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin",
+        "end_place": "Barcelona"
+    },
+    {
+        "type": "main",
+        "activity": "Evening Entertainment at Barcelona",
+        "place": "Barcelona",
+        "building": "209 East 6th Street",
+        "start_time": "22:45:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hyatt Centric Congress Avenue Austin",
+        "place": null,
+        "building": null,
+        "start_time": "23:30:00",
+        "end_time": "23:45:00",
+        "start_place": "Barcelona",
+        "end_place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin",
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "start_time": "23:45:00",
+        "end_time": "23:59:59"
+    }
+]

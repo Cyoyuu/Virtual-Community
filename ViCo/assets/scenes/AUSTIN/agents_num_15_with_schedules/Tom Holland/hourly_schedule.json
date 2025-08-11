@@ -1,0 +1,168 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Tom Holland's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Film Festival Promotion",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to In Plain Sight",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "In Plain Sight"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "In Plain Sight",
+        "building": "612 Brazos Street Suite C",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "In Plain Sight",
+        "end_place": "Tom Holland's room at The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Prepare for Afternoon Activities",
+        "place": "Tom Holland's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "13:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill Lobby",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Tom Holland's room at The Driskill",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Local Attractions with Austin Explorers",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cuatro Gato",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "The Driskill",
+        "end_place": "Cuatro Gato"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Cuatro Gato for a Snack",
+        "place": "Cuatro Gato",
+        "building": "Coconut Club",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Cuatro Gato",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Club Eternal",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Club Eternal"
+    },
+    {
+        "type": "main",
+        "activity": "Evening Entertainment at Club Eternal",
+        "place": "Club Eternal",
+        "building": "207 West 4th Street",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Club Eternal",
+        "end_place": "Tom Holland's room at The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Wind Down and Prepare for Bed",
+        "place": "Tom Holland's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "22:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Tom Holland's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

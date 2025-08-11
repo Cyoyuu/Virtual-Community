@@ -1,0 +1,173 @@
+{
+    "name": "Mark Zuckerberg",
+    "first_name": "Mark",
+    "last_name": "Zuckerberg",
+    "age": 30,
+    "innate": "achievement, power, self-direction",
+    "learned": "I am a technology entrepreneur and philanthropist, known for co-founding Facebook, Inc. I am interested in technology and innovation.",
+    "currently": "I am in Austin to explore new technology ventures and meet with local tech leaders.",
+    "lifestyle": "I go to bed around 23:00, wake up around 07:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Indeed Tower",
+            "members": [
+                "Andrew Ng",
+                "Mark Zuckerberg",
+                "James Thompson"
+            ],
+            "daily_activity": "discussing technology trends from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Mark Zuckerberg's room at The Driskill",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Mark Zuckerberg's room at The Driskill",
+            "building": "The Driskill",
+            "start_time": "00:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Neon Grotto",
+            "building": "Neon Grotto",
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Indeed Tower",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Meet with local tech leaders",
+            "place": "Indeed Tower",
+            "building": "Indeed Tower",
+            "start_time": "08:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to DeSano Pizzeria Napoletana - Downtown Austin",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Indeed Tower",
+            "end_place": "DeSano Pizzeria Napoletana - Downtown Austin"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "DeSano Pizzeria Napoletana - Downtown Austin",
+            "building": "DeSano Pizzeria Napoletana",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Indeed Tower",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "DeSano Pizzeria Napoletana - Downtown Austin",
+            "end_place": "Indeed Tower"
+        },
+        {
+            "type": "main",
+            "activity": "Explore new technology ventures",
+            "place": "Indeed Tower",
+            "building": "Indeed Tower",
+            "start_time": "13:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss technology trends with Tech Innovators",
+            "place": "Indeed Tower",
+            "building": "Indeed Tower",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Summit Rooftop",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Indeed Tower",
+            "end_place": "Summit Rooftop"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Summit Rooftop",
+            "building": "120 West 5th Street",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Driskill",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Summit Rooftop",
+            "end_place": "Mark Zuckerberg's room at The Driskill"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Mark Zuckerberg's room at The Driskill",
+            "building": "The Driskill",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Mark Zuckerberg's room at The Driskill",
+            "building": "The Driskill",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,134 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Sophie Carlsen's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to August-Boeckh-Haus",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "August-Boeckh-Haus"
+    },
+    {
+        "type": "main",
+        "activity": "Study Renaissance paintings for art project",
+        "place": "August-Boeckh-Haus",
+        "building": "August-Boeckh-Haus",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie im Adlon",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "Galerie im Adlon"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerie im Adlon",
+        "place": "Galerie im Adlon",
+        "building": "Adlon Kempinski",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Memorial",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Galerie im Adlon",
+        "end_place": "Memorial"
+    },
+    {
+        "type": "main",
+        "activity": "Explore historical sites with Berlin Historical Society",
+        "place": "Memorial",
+        "building": "Akademie der K\u00fcnste",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to India Club Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Memorial",
+        "end_place": "India Club Berlin"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "India Club Berlin",
+        "building": "Akademie der K\u00fcnste",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "India Club Berlin",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and explore Forum Willy Brandt Berlin",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sophie Carlsen's room",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Forum Willy Brandt Berlin",
+        "end_place": "Sophie Carlsen's room at Palais Theising"
+    },
+    {
+        "type": "main",
+        "activity": "Work on art project in room",
+        "place": "Sophie Carlsen's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for sleep",
+        "place": "Sophie Carlsen's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

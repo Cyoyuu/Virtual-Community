@@ -1,0 +1,106 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Zara Williams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning routine and reading fairy tales",
+        "place": "Zara Williams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "08:00:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fr\u00f6bel-Kita im BMG",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "10:00:00",
+        "start_place": "Zara Williams's room at Palais Theising",
+        "end_place": "Fr\u00f6bel-Kita im BMG"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and play with friends",
+        "place": "Fr\u00f6bel-Kita im BMG",
+        "building": "im Bundesgesundheitsministerium",
+        "start_time": "10:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Fr\u00f6bel-Kita im BMG",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "16:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends forever galerie",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Friends forever galerie"
+    },
+    {
+        "type": "main",
+        "activity": "Painting and discussing art with Berlin Young Artists",
+        "place": "Friends forever galerie",
+        "building": "Glinkastra\u00dfe 42",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Zara Williams's room at Palais Theising",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "Zara Williams's room at Palais Theising"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Zara Williams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue reading fairy tales and drawing",
+        "place": "Zara Williams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Evening routine and prepare for bed",
+        "place": "Zara Williams's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

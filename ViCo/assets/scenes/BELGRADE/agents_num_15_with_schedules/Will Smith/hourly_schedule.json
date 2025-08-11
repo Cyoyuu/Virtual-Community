@@ -1,0 +1,134 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Will Smith's room at Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Vinarija Panti\u0107",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to film set",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Vinarija Panti\u0107",
+        "end_place": "FunFit"
+    },
+    {
+        "type": "main",
+        "activity": "Film shooting",
+        "place": "FunFit",
+        "building": "Kralja Milana 4a",
+        "start_time": "09:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to lunch",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "FunFit",
+        "end_place": "Restaurant Tchaikovsky"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to guitar school",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "\u0160kola gitare Star\u010devi\u0107"
+    },
+    {
+        "type": "main",
+        "activity": "Guitar practice",
+        "place": "\u0160kola gitare Star\u010devi\u0107",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "\u0160kola gitare Star\u010devi\u0107",
+        "end_place": "Vinarija Panti\u0107"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Vinarija Panti\u0107",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend cultural event with Cultural Explorers",
+        "place": "Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to entertainment",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Hotel Prag",
+        "end_place": "Dark Angels Gentlemen\u2019s Club"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Dark Angels Gentlemen\u2019s Club",
+        "place": "Dark Angels Gentlemen\u2019s Club",
+        "building": "\u0422\u0426 \u0418\u0432\u0430\u043d\u0438\u0443\u043c",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to hotel",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "Dark Angels Gentlemen\u2019s Club",
+        "end_place": "Will Smith's room at Hotel Prag"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Will Smith's room at Hotel Prag",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

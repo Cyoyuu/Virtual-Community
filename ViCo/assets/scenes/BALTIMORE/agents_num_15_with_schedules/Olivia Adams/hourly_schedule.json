@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at Harbor Hill Apartments",
+        "building": "301 Warren Avenue",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Olivia Adams's room at Harbor Hill Apartments",
+        "building": "301 Warren Avenue",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Federal Hill Preparatory School",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Study for final exams",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ponchos Tacos",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Federal Hill Preparatory School",
+        "end_place": "Ponchos Tacos"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Ponchos Tacos",
+        "building": "1101 Light Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Federal Hill Preparatory School",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Ponchos Tacos",
+        "end_place": "Federal Hill Preparatory School"
+    },
+    {
+        "type": "main",
+        "activity": "Continue studying for final exams",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Federal Hill Preparatory School",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Baltimore Book Club meeting",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Magerks Pub & Grill Federal Hill",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "Magerks Pub & Grill Federal Hill"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Magerks Pub & Grill Federal Hill",
+        "building": "1061 South Charles Street",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivia Adams's room at Harbor Hill Apartments",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Magerks Pub & Grill Federal Hill",
+        "end_place": "Olivia Adams's room at Harbor Hill Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Study for final exams",
+        "place": "Olivia Adams's room at Harbor Hill Apartments",
+        "building": "301 Warren Avenue",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Olivia Adams's room at Harbor Hill Apartments",
+        "building": "301 Warren Avenue",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Olivia Adams's room at Harbor Hill Apartments",
+        "building": "301 Warren Avenue",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

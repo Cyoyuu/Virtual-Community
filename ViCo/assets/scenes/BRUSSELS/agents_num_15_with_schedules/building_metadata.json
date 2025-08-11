@@ -1,0 +1,1562 @@
+{
+    "open space": {
+        "bounding_box": null,
+        "places": [
+            {
+                "name": "Parc de Bruxelles",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1288.2820004270154,
+                    702.6976881331855,
+                    -0.013435480158932478
+                ],
+                "scene": null
+            },
+            {
+                "name": "Rue Royale - Koningsstraat Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    248.4558743001318,
+                    126.14291293168375
+                ],
+                "scene": null
+            },
+            {
+                "name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    -185.9587778087036,
+                    -55.4488975931433
+                ],
+                "scene": null
+            },
+            {
+                "name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    -186.62379945156712,
+                    254.07203855685333
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 1",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    257.3150608488824,
+                    217.921529838583
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 2",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -144.90686574301637,
+                    247.30453634487793
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 3",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -84.95122229994689,
+                    -157.59257660109876
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 4",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    218.04335012590744,
+                    -42.91592377155606
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 5",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -233.7892271527921,
+                    0.09600317054358865
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 6",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    130.89613937889055,
+                    90.66982142544775
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 7",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    308.76264827423273,
+                    -204.25359623561639
+                ],
+                "scene": null
+            }
+        ]
+    },
+    "Rue de la Chancellerie 19": {
+        "building_glb": "buildings_element.548.glb",
+        "bounding_box": [
+            43.443906299160524,
+            -158.0778265243057,
+            81.29925537109376,
+            27.77994307983233,
+            84.67502064377031,
+            0.0770111083984375,
+            -0.505262463190674
+        ],
+        "places": [
+            {
+                "name": "Competento",
+                "coarse_type": "office",
+                "fine_types": [
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1046.8551769256592,
+                    837.5702133178711,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            27.668168882660105,
+            -198.87729085785958
+        ]
+    },
+    "Royal Atrium": {
+        "building_glb": "buildings_Royal Atrium.glb",
+        "bounding_box": [
+            129.95689392089844,
+            -80.5760498046875,
+            97.3431625366211,
+            79.33800506591797,
+            72.20111083984375,
+            29.334266662597656,
+            -0.3171980679035187
+        ],
+        "places": [
+            {
+                "name": "The Brunch",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1130.694839477539,
+                    910.6145782470703,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            102.01321701578422,
+            -35.30803336106162
+        ]
+    },
+    "Rue de la Montagne 64": {
+        "building_glb": "buildings_element.380.glb",
+        "bounding_box": [
+            -241.5618196101769,
+            -51.10496700341272,
+            68.01146507263184,
+            5.438713274693673,
+            11.362794065264458,
+            16.875629425048828,
+            0.8200976718832134
+        ],
+        "places": [
+            {
+                "name": "L'art de la Pizza",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    758.4381713867188,
+                    948.9562397003174,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            -238.87939120142605,
+            -58.024227281331086
+        ]
+    },
+    "Rue de la Montagne 68": {
+        "building_glb": "buildings_element.349.glb",
+        "bounding_box": [
+            -238.47709744082195,
+            -46.1244683312559,
+            66.98744010925293,
+            6.8206201339774415,
+            14.2079847425363,
+            14.71176528930664,
+            0.7197238227870631
+        ],
+        "places": [
+            {
+                "name": "TM FOOD MAKER. Pizza burger",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    761.52392578125,
+                    954.1101722717285,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            -235.1380303815572,
+            -53.97427128651109
+        ]
+    },
+    "Rue de la Montagne 72": {
+        "building_glb": "buildings_element.354.glb",
+        "bounding_box": [
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
+        ],
+        "places": [
+            {
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    771.2095184326172,
+                    959.8093318939209,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -233.12267860150263,
+            -35.16738466086686
+        ]
+    },
+    "Rue d'Arenberg 54": {
+        "building_glb": "buildings_element.409.glb",
+        "bounding_box": [
+            -201.7377820158104,
+            -15.961385013195073,
+            72.12518310546875,
+            10.683652086537602,
+            13.801078699753583,
+            20.913543701171875,
+            0.016325344328747354
+        ],
+        "places": [
+            {
+                "name": "JeanBon St Gudule",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    798.3053207397461,
+                    983.9646892547607,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            },
+            {
+                "name": "Beverages and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    798.3053207397461,
+                    983.9646892547607,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            -196.4978422730717,
+            -23.7774258725014
+        ]
+    },
+    "Boulevard de l'Imp\u00e9ratrice 62": {
+        "building_glb": "buildings_element.405.glb",
+        "bounding_box": [
+            -188.73309814785796,
+            10.535961959582572,
+            73.44032669067383,
+            23.45737368367083,
+            58.95164902277464,
+            24.36823272705078,
+            -0.620360463166841
+        ],
+        "places": [
+            {
+                "name": "Maison St. Michel",
+                "coarse_type": "food",
+                "fine_types": [
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    813.519645690918,
+                    1010.3300657272339,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -208.03466787414433,
+            5.415962882974398
+        ]
+    },
+    "Rue d'Arenberg 46": {
+        "building_glb": "buildings_element.049.glb",
+        "bounding_box": [
+            -208.5909657582522,
+            -13.41181284694643,
+            72.3326416015625,
+            16.40769701101788,
+            22.852878309299413,
+            23.090240478515625,
+            -0.8435380108491896
+        ],
+        "places": [
+            {
+                "name": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    787.1690216064453,
+                    988.4120641760528,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -209.54699363093314,
+            -26.58375340318554
+        ]
+    },
+    "Marquis": {
+        "building_glb": "buildings_Marquis.glb",
+        "bounding_box": [
+            -91.03511047363281,
+            -104.93002319335938,
+            83.58557891845703,
+            72.18888854980469,
+            90.57077026367188,
+            32.19690704345703,
+            -0.5364537239074707
+        ],
+        "places": [
+            {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    915.5147399902344,
+                    892.4346466064453,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            }
+        ],
+        "outdoor_xy": [
+            -111.39731321834837,
+            -66.59519285570036
+        ]
+    },
+    "Rue Royale 100": {
+        "building_glb": "buildings_element.052.glb",
+        "bounding_box": [
+            186.70975041761054,
+            3.23972612867151,
+            95.63347244262695,
+            23.757540210441256,
+            37.31228203296095,
+            26.198951721191406,
+            -0.3218778333910595
+        ],
+        "places": [
+            {
+                "name": "Brasserie de la Presse",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1189.9850463867188,
+                    1003.2612009048462,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            192.6366004635768,
+            -19.456999897333812
+        ]
+    },
+    "Rue de Louvain 2": {
+        "building_glb": "buildings_element.231.glb",
+        "bounding_box": [
+            238.83478966107015,
+            -41.40968102847862,
+            97.5982780456543,
+            14.035324867965631,
+            14.764576679103767,
+            20.757362365722656,
+            -0.1396001207075822
+        ],
+        "places": [
+            {
+                "name": "L\u00e9opold Caf\u00e9 Royal",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1238.1253128051758,
+                    957.8619194030762,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            232.87238528563296,
+            -49.036513856542754
+        ]
+    },
+    "Rue de la Croix de Fer 9/13": {
+        "building_glb": "buildings_element.243.glb",
+        "bounding_box": [
+            254.95676101970002,
+            -35.4298947411737,
+            96.33380126953125,
+            9.77471708316841,
+            8.419759141659158,
+            18.060623168945312,
+            0.29458936739538266
+        ],
+        "places": [
+            {
+                "name": "Pizza Hut Delivery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1254.6243438720703,
+                    965.0202856063843,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            249.6860066623061,
+            -31.58471787652206
+        ]
+    },
+    "Rue de l'Enseignement 2": {
+        "building_glb": "buildings_element.173.glb",
+        "bounding_box": [
+            225.20971536750463,
+            -13.395648765828502,
+            95.81648254394531,
+            21.15989690628574,
+            20.592157221459434,
+            19.81170654296875,
+            -0.3182295182033194
+        ],
+        "places": [
+            {
+                "name": "Paul",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1224.8189697265625,
+                    986.559010386467,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            213.2564458324446,
+            -12.670647848405553
+        ]
+    },
+    "Rue de l'Enseignement 10": {
+        "building_glb": "buildings_element.203.glb",
+        "bounding_box": [
+            236.13788610676582,
+            -3.822275345461219,
+            96.16506576538086,
+            5.123980984766245,
+            10.172010837069646,
+            19.46623992919922,
+            0.744212893186951
+        ],
+        "places": [
+            {
+                "name": "Bar \u00e0 viandes Cannibale",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1236.1378860473633,
+                    996.1777245998383,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            242.80076254005033,
+            -5.7995077468445455
+        ]
+    },
+    "Rue de la Croix de Fer 15": {
+        "building_glb": "buildings_element.226.glb",
+        "bounding_box": [
+            262.044682770512,
+            -34.194163329769104,
+            96.78400802612305,
+            5.963610668744567,
+            10.194417978868586,
+            18.94721221923828,
+            0.29940066498700285
+        ],
+        "places": [
+            {
+                "name": "La Rose Noire",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1262.2958984375,
+                    966.2841539382935,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            259.4657088099356,
+            -28.60915881000636
+        ]
+    },
+    "Rue de l'Enseignement 16": {
+        "building_glb": "buildings_element.219.glb",
+        "bounding_box": [
+            239.84636643667886,
+            -0.12699247561789573,
+            96.61907958984375,
+            5.372008774594805,
+            10.596316685737595,
+            20.548797607421875,
+            0.7407672233980279
+        ],
+        "places": [
+            {
+                "name": "Caf\u00e9 Treurenberg",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1239.9752731323242,
+                    999.8848342895508,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            234.40935156030685,
+            3.435527964855054
+        ]
+    },
+    "Rue de Louvain 12": {
+        "building_glb": "buildings_element.237.glb",
+        "bounding_box": [
+            258.9383640153162,
+            -44.974298881684135,
+            95.96808242797852,
+            9.019756498853203,
+            13.648308309319594,
+            16.40180206298828,
+            -0.09920781296841347
+        ],
+        "places": [
+            {
+                "name": "Bar rouge - Bruxelles",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1259.2002410888672,
+                    954.7736549377441,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            258.34465623076596,
+            -52.778020525343734
+        ]
+    },
+    "Rue Royale 13": {
+        "building_glb": "buildings_element.120.glb",
+        "bounding_box": [
+            224.45492387447095,
+            -4.384532906043618,
+            95.9917984008789,
+            14.131053025339662,
+            10.022415438253853,
+            20.162338256835938,
+            -0.3023380163474682
+        ],
+        "places": [
+            {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "florist",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1223.8662719726562,
+                    995.715203166008,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            215.46694753701289,
+            -6.113421379417593
+        ]
+    },
+    "Hogeschool-Universiteit Brussel Campus Stormstraat": {
+        "building_glb": "buildings_element.421.glb",
+        "bounding_box": [
+            -206.18020468843474,
+            107.62626312465835,
+            66.49734306335449,
+            31.384778509659178,
+            56.08633111434471,
+            26.057910919189453,
+            0.2835418723482034
+        ],
+        "places": [
+            {
+                "name": "Het Clubke",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    795.2914352416992,
+                    1106.6389274597168,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -224.04749004104113,
+            109.27578269670828
+        ]
+    },
+    "Rue d'Assaut 3": {
+        "building_glb": "buildings_element.545.glb",
+        "bounding_box": [
+            -244.84292602539062,
+            56.13623046875,
+            66.68570709228516,
+            37.01728057861328,
+            61.71924591064453,
+            19.778133392333984,
+            -0.9071028232574463
+        ],
+        "places": [
+            {
+                "name": "Busy Bee",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    760.513313293457,
+                    1050.4241676330566,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -212.4148268785358,
+            66.38781074448265
+        ]
+    },
+    "Rue d'Assaut 15": {
+        "building_glb": "buildings_element.415.glb",
+        "bounding_box": [
+            -203.0821814709775,
+            30.135718487544818,
+            72.8151741027832,
+            18.670438047093633,
+            45.521296676424605,
+            25.958290100097656,
+            -0.7435123585520509
+        ],
+        "places": [
+            {
+                "name": "Joppes Tarts Bakery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    797.5480804443359,
+                    1031.0639548301697,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -189.28863030709985,
+            49.731138431625986
+        ]
+    },
+    "Campus Pacheco": {
+        "building_glb": "buildings_Campus Pacheco.glb",
+        "bounding_box": [
+            129.0808028258968,
+            148.5057689675389,
+            83.92369842529295,
+            46.85295042332486,
+            55.31250946638599,
+            19.473953247070312,
+            -0.3163196669079378
+        ],
+        "places": [
+            {
+                "name": "Delrez Yannick",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1130.8296661376953,
+                    1151.119369506836,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            106.85425474384395,
+            159.12283159130666
+        ]
+    },
+    "Rue de Ligne 13": {
+        "building_glb": "buildings_element.510.glb",
+        "bounding_box": [
+            121.59583937739781,
+            34.837027244165924,
+            87.06180572509766,
+            27.235677515200965,
+            46.13149064628303,
+            21.441314697265625,
+            0.41535653675541695
+        ],
+        "places": [
+            {
+                "name": "Fresh and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1115.2785263061523,
+                    1035.9704856872559,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            105.93193799544315,
+            54.23117025412143
+        ]
+    },
+    "Boiteux": {
+        "building_glb": "buildings_Boiteux.glb",
+        "bounding_box": [
+            -260.5793301556366,
+            273.69968740524826,
+            64.06091117858885,
+            17.2707030023195,
+            25.302058912070837,
+            30.507083892822266,
+            -0.44912342819388795
+        ],
+        "places": [
+            {
+                "name": "IHECS - B\u00e2timent Chambon (CH)",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            },
+            {
+                "name": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Brycer Rodriguez's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Jody Petersen's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Leonard Park's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Louise Roberts's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Olivia Adams's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -32
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Pika Hayes's room at Boiteux"
+            },
+            {
+                "building": "Boiteux",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    742.2045822143555,
+                    1273.7317810058594,
+                    -36
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Sophie Carlsen's room at Boiteux"
+            }
+        ],
+        "outdoor_xy": [
+            -273.40532078272605,
+            264.72761830905785
+        ]
+    },
+    "Rue du marais n'1": {
+        "building_glb": "buildings_element.008.glb",
+        "bounding_box": [
+            -162.1469859482976,
+            261.85469492437267,
+            56.28889846801757,
+            7.701870299194461,
+            6.376530066268643,
+            12.552230834960938,
+            -0.5250842845124495
+        ],
+        "places": [
+            {
+                "name": "L'Ap\u00e9ro chez mymi",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    837.8212585449219,
+                    1261.7219696044922,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -167.0296752857063,
+            263.1035499247677
+        ]
+    },
+    "Rue du Marais 5": {
+        "building_glb": "buildings_element.508.glb",
+        "bounding_box": [
+            -150.1997912345175,
+            269.58435403738844,
+            55.83309364318847,
+            6.961606011839407,
+            15.912397658457655,
+            11.253719329833984,
+            0.98159979675654
+        ],
+        "places": [
+            {
+                "name": "Claire's Caf\u00e9",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    849.7903747558594,
+                    1269.0631256103516,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            -157.898727812764,
+            274.18293414866275
+        ]
+    },
+    "Rue du Marais 7": {
+        "building_glb": "buildings_element.009.glb",
+        "bounding_box": [
+            -140.24633622346465,
+            277.80765255034044,
+            55.569887161254876,
+            7.620576691051349,
+            20.670256816074403,
+            10.726482391357422,
+            1.0060344788977647
+        ],
+        "places": [
+            {
+                "name": "La Confiserie de Bruxelles",
+                "coarse_type": "food",
+                "fine_types": [
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    859.8126831054688,
+                    1278.1965942382812,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            },
+            {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "book_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    859.8126831054688,
+                    1278.1965942382812,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -148.7570480190539,
+            285.55406450662366
+        ]
+    },
+    "Rue Montagne aux Herbes Potag\u00e8res 57": {
+        "building_glb": "buildings_element.436.glb",
+        "bounding_box": [
+            -177.4439928658601,
+            200.82952432688307,
+            60.472846984863274,
+            44.48082358421017,
+            96.86160371481819,
+            20.7210693359375,
+            -0.5117384718386224
+        ],
+        "places": [
+            {
+                "name": "Museum of the National Bank of Belgium",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    823.4956512451172,
+                    1206.5694198608398,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -177.90944396671068,
+            247.45986732492304
+        ]
+    },
+    "Rue du Marais 15": {
+        "building_glb": "buildings_element.011.glb",
+        "bounding_box": [
+            -130.67975779203263,
+            284.2432333452775,
+            58.19349479675292,
+            6.340233110204551,
+            27.27544023991715,
+            15.76022720336914,
+            1.0323687483045865
+        ],
+        "places": [
+            {
+                "name": "Sakagura",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    869.3288955688477,
+                    1283.9571685791016,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            -141.58777144344344,
+            294.5262915110648
+        ]
+    },
+    "Ancienne imprimerie du quotidien Le Peuple - Voormalige drukker": {
+        "building_glb": "buildings_Ancienne imprimerie du quotidien Le Peuple - Voormalige drukker.glb",
+        "bounding_box": [
+            -15.30284019326897,
+            270.73878172636404,
+            63.7702465057373,
+            10.813322241291026,
+            10.723113301922501,
+            18.06998062133789,
+            -0.6823050240123698
+        ],
+        "places": [
+            {
+                "name": "BXL CENTRAL [CHEZ PIAS]",
+                "coarse_type": "food",
+                "fine_types": [
+                    "book_store",
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    984.7862672805786,
+                    1270.8810577392578,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            -7.9584405391472375,
+            269.6183652757398
+        ]
+    },
+    "Rue de Ligne 49": {
+        "building_glb": "buildings_element.428.glb",
+        "bounding_box": [
+            232.49153026267186,
+            168.94271745791167,
+            90.56878662109374,
+            40.352085299741304,
+            16.037624370562437,
+            21.567474365234375,
+            -0.3208501328880337
+        ],
+        "places": [
+            {
+                "name": "DUKES Lounge Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "night_club",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1232.6369857788086,
+                    1170.509262084961,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            },
+            {
+                "name": "MC Academy for International Legal Studies",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1232.6369857788086,
+                    1170.509262084961,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            214.24643663221906,
+            181.18864152510073
+        ]
+    },
+    "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie": {
+        "building_glb": "buildings_HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie.glb",
+        "bounding_box": [
+            267.1178533640898,
+            274.4865261629659,
+            90.01959991455077,
+            40.363486019224865,
+            26.955394452973792,
+            23.5625,
+            -0.3186164384750355
+        ],
+        "places": [
+            {
+                "name": "Onderwijs",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1266.971534729004,
+                    1274.4501571655273,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            },
+            {
+                "name": "The Jane",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1266.971534729004,
+                    1274.4501571655273,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            285.9216439181648,
+            263.8741681721245
+        ]
+    },
+    "Hotel Hubert \u2013 Grand Place": {
+        "building_glb": "buildings_Hotel Hubert \u2013 Grand Place.glb",
+        "bounding_box": [
+            -242.77814001533116,
+            29.39701795784947,
+            68.78532791137695,
+            10.99586768065038,
+            29.960067861208522,
+            21.458961486816406,
+            -0.7963710798842513
+        ],
+        "places": [
+            {
+                "name": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Barack Obama's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Emma Watson's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Lisa Su's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Mark Zuckerberg's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -32
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Megan Carter's room at Hotel Hubert \u2013 Grand Place"
+            },
+            {
+                "building": "Hotel Hubert \u2013 Grand Place",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    754.4182434082031,
+                    1029.0228338241577,
+                    -36
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Zara Williams's room at Hotel Hubert \u2013 Grand Place"
+            }
+        ],
+        "outdoor_xy": [
+            -256.2454428376924,
+            20.31186638376635
+        ]
+    },
+    "Philantropy House": {
+        "building_glb": "buildings_Philantropy House.glb",
+        "bounding_box": [
+            181.11677349590934,
+            -22.776869956576956,
+            95.44200897216797,
+            18.188009707988304,
+            25.854275102858498,
+            22.190536499023438,
+            -0.3038562366117691
+        ],
+        "places": [
+            {
+                "name": "Philantropy House",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    1182.0369186401367,
+                    977.2010865211487,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            169.88691555183163,
+            -24.853764376826604
+        ]
+    }
+}

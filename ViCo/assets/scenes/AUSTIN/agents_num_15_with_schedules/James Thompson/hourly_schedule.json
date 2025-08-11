@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "James Thompson's room at Savills Austin",
+        "building": "300 West 6th Street Suite 1510",
+        "start_time": "00:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:10:00",
+        "start_place": "James Thompson's room at Savills Austin",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "09:10:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "10:00:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Work on software project",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "10:00:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Comedor",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:10:00",
+        "start_place": "Indeed Tower",
+        "end_place": "Comedor"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Comedor",
+        "building": "Comedor",
+        "start_time": "13:10:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Comedor",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on software project",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "14:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Dead Rabbit, Austin",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "The Dead Rabbit, Austin"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Dead Rabbit, Austin",
+        "building": "204 East 6th Street",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to James Thompson's room at Savills Austin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "The Dead Rabbit, Austin",
+        "end_place": "James Thompson's room at Savills Austin"
+    },
+    {
+        "type": "main",
+        "activity": "Free time for coding or relaxation",
+        "place": "James Thompson's room at Savills Austin",
+        "building": "300 West 6th Street Suite 1510",
+        "start_time": "20:30:00",
+        "end_time": "01:00:00"
+    }
+]

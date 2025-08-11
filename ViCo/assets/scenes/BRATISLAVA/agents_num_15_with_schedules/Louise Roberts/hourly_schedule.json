@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Milk n Honey Homes",
+        "building": "Swetlikov dom",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research new recipes and culinary techniques",
+        "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "building": "24",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Le Petit Cafe & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "end_place": "Le Petit Cafe & Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Le Petit Cafe & Restaurant",
+        "building": "Such\u00e9 m\u00fdto 510/19",
+        "start_time": "11:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bistro Gourmet",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Le Petit Cafe & Restaurant",
+        "end_place": "Bistro Gourmet"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Culinary Creators group activity",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Culinary Creators",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "15:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new signature dish",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Banco Casino",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Bistro Gourmet",
+        "end_place": "Banco Casino"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment",
+        "place": "Banco Casino",
+        "building": "Crowne Plaza",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar On",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Banco Casino",
+        "end_place": "Bar On"
+    },
+    {
+        "type": "main",
+        "activity": "Socialize and unwind",
+        "place": "Bar On",
+        "building": "Obchodn\u00e1 557",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Louise Roberts's room at Milk n Honey Homes",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "Bar On",
+        "end_place": "Louise Roberts's room at Milk n Honey Homes"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Louise Roberts's room at Milk n Honey Homes",
+        "building": "Swetlikov dom",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

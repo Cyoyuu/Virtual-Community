@@ -1,0 +1,769 @@
+{
+    "sim_name": "BUDAPEST_agents_num_15",
+    "agent_names": [
+        "Albert Einstein",
+        "Chad Thompson",
+        "Donald Trump",
+        "Emily Johnson",
+        "Jensen Huang",
+        "Jody Petersen",
+        "Leonard Park",
+        "Louise Roberts",
+        "Megan Carter",
+        "Olivia Adams",
+        "Pika Hayes",
+        "Sophie Carlsen",
+        "Tim Cook",
+        "Will Smith",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                11.467298986095848,
+                -67.65962238298613,
+                100.93153654841,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Stein-b\u00e9rpalota",
+            "current_place": "Albert Einstein's room at Stein-b\u00e9rpalota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                41.290530943833296,
+                -246.16102610242007,
+                100.79356560260747,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Orczy-h\u00e1z 1795-1937",
+            "current_place": "Chad Thompson's room at Orczy-h\u00e1z 1795-1937",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -138.3614150104694,
+                25.427810897515986,
+                100.92297728872869,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Central Basilica",
+            "current_place": "Donald Trump's room at Hotel Central Basilica",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -25.170848326113656,
+                244.42090926730424,
+                100.51925012309678,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Zitterbarth h\u00e1z",
+            "current_place": "Emily Johnson's room at Zitterbarth h\u00e1z",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                247.24230737119765,
+                -236.79682247998454,
+                99.8340968313941,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Roombach Hotel",
+            "current_place": "Jensen Huang's room at Roombach Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -252.68123278406185,
+                -87.53867292727293,
+                101.93475736611622,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Derra-h\u00e1z",
+            "current_place": "Jody Petersen's room at Derra-h\u00e1z",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                57.58105215748268,
+                56.88983457574049,
+                101.78601588020292,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fonci\u00e9re-palota",
+            "current_place": "Leonard Park's room at Fonci\u00e9re-palota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                20.0185692770935,
+                -14.140040373212482,
+                101.18125285383204,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Saxlehner-palota",
+            "current_place": "Louise Roberts's room at Saxlehner-palota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                79.8866720039257,
+                76.79646676103121,
+                101.70191754891424,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hark\u00e1nyi-b\u00e9rpalota",
+            "current_place": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                138.57153141985805,
+                65.33255890317302,
+                102.28661605013993,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Br\u00fcll-b\u00e9rpalota",
+            "current_place": "Olivia Adams's room at Br\u00fcll-b\u00e9rpalota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                117.90497852645011,
+                174.64718370217346,
+                100.31355535602091,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Stern-b\u00e9rpalota",
+            "current_place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                157.36563620634684,
+                206.57129148891767,
+                100.71787853773179,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Krausz palota",
+            "current_place": "Sophie Carlsen's room at Krausz palota",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                211.21690505065237,
+                -27.59618642825037,
+                100.17192335531512,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Wombat's Hostel",
+            "current_place": "Tim Cook's room at Wombat's Hostel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                123.27216718999202,
+                187.45315998326922,
+                100.11810340855156,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "12 Revay Hotel",
+            "current_place": "Will Smith's room at 12 Revay Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -152.53587934460305,
+                178.60716234278203,
+                100.53864702155408,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pichler h\u00e1z",
+            "current_place": "Zara Williams's room at Pichler h\u00e1z",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1020.2060127258301,
+            956.8885612487793,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1056.3562107086182,
+            758.0221328735352,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            846.031623840332,
+            1015.0438834428787,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            939.6284217834473,
+            1244.788932800293,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1233.8733367919922,
+            765.7465057373047,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            743.3714294433594,
+            935.5931720733643,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1029.5349559783936,
+            1051.165057182312,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1045.8289232254028,
+            978.7351529598236,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1054.3488693237305,
+            1082.9636821746826,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1124.1702270507812,
+            1057.5671672821045,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1130.3611526489258,
+            1158.1834869384766,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1164.6422576904297,
+            1187.6227722167969,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1214.6585540771484,
+            941.0573272705078,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1101.1510887145996,
+            1196.1985092163086,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            864.235237121582,
+            1173.2506942749023,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Albert_Einstein.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Tim_Cook.glb",
+        "ViCo/avatars/models/celebrity_Will_Smith.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and Snacks Store": {
+            "building": "Orczy-h\u00e1z 1795-1937.002",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Budapest",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Ullmann-palota",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "ECE irodah\u00e1z",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Hark\u00e1nyi-b\u00e9rpalota",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Belv\u00e1ros-Lip\u00f3tv\u00e1ros Eg\u00e9szs\u00e9g\u00fcgyi Szolg\u00e1lat (BLESZ)",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Tech Innovators Club": {
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Mad\u00e1ch Trade Center",
+            "members": [
+                "Jensen Huang",
+                "Leonard Park",
+                "Olivia Adams",
+                "Pika Hayes",
+                "Tim Cook"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+        },
+        "Environmental Enthusiasts": {
+            "description": "A group dedicated to environmental conservation and research, organizing clean-up events and biodiversity studies.",
+            "place": "aurobus",
+            "members": [
+                "Emily Johnson",
+                "Sophie Carlsen",
+                "Zara Williams"
+            ],
+            "daily_activity": "conducting biodiversity research from 15:00 to 16:00"
+        },
+        "Creative Arts Collective": {
+            "description": "A group of artists and designers who collaborate on creative projects and share ideas.",
+            "place": "Association of Hungarian Fine and Applied Artists",
+            "members": [
+                "Albert Einstein",
+                "Louise Roberts",
+                "Megan Carter"
+            ],
+            "daily_activity": "collaborating on art projects from 16:00 to 17:00"
+        },
+        "Culinary Creators": {
+            "description": "A group of chefs and food enthusiasts who experiment with new recipes and flavors.",
+            "place": "Star Kebab & Grill",
+            "members": [
+                "Chad Thompson",
+                "Donald Trump",
+                "Jody Petersen",
+                "Will Smith"
+            ],
+            "daily_activity": "experimenting with new recipes from 18:00 to 19:00"
+        }
+    }
+}

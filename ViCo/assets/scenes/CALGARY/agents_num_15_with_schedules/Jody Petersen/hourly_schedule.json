@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jody Petersen's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Jody Petersen's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Art Market Craft Sale",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Jody Petersen's room at First on Tenth",
+        "end_place": "Art Market Craft Sale"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Art Market Craft Sale",
+        "place": "Art Market Craft Sale",
+        "building": "107 8 Avenue Southeast",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Palace Theatre",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Art Market Craft Sale",
+        "end_place": "The Palace Theatre"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Palace Theatre",
+        "building": "The Palace Theatre",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "The Palace Theatre",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "Glanville/Ward Block",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to MODERN STEAK on Stephen Avenue",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "MODERN STEAK on Stephen Avenue"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "MODERN STEAK on Stephen Avenue",
+        "building": "Imperial Bank of Canada",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Art Market Craft Sale",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "MODERN STEAK on Stephen Avenue",
+        "end_place": "Art Market Craft Sale"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Art Market Craft Sale",
+        "place": "Art Market Craft Sale",
+        "building": "107 8 Avenue Southeast",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jody Petersen's room at First on Tenth",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Art Market Craft Sale",
+        "end_place": "Jody Petersen's room at First on Tenth"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Jody Petersen's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,769 @@
+{
+    "sim_name": "BELGRADE_agents_num_15",
+    "agent_names": [
+        "Barack Obama",
+        "Brycer Rodriguez",
+        "Chad Thompson",
+        "Eve By J Gonzales",
+        "Feifei Li",
+        "Isaac Newton",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Leonard Park",
+        "Megan Carter",
+        "Neil deGrasse Tyson",
+        "Shannon Steves",
+        "Steve Johnson",
+        "Will Smith",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -225.43075660145905,
+                -27.325256050786503,
+                111.09634313701568,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "current_place": "Barack Obama's room at Hotel Moskva",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -287.6503682023418,
+                -159.61324726403072,
+                100.9245296219436,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pajsijeva 1",
+            "current_place": "Brycer Rodriguez's room at Belgrade apartments",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -205.67482669796007,
+                223.66386357449517,
+                108.18011628441846,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Kolar\u010deva 5",
+            "current_place": "Chad Thompson's room at Apartmani Beograd Rakoc",
+            "current_vehicle": null
+        },
+        {
+            "cash": 250,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -60.679485628291324,
+                -216.40120610174625,
+                115.0913355595662,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Terazije 43",
+            "current_place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -253.38908191379429,
+                -250.2402209918571,
+                98.8383303371323,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+            "current_place": "Feifei Li's room at Hotel Prag",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -251.37238703790695,
+                47.55431555724005,
+                109.67309050012223,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u0411\u0430\u043b\u043a\u0430\u043d",
+            "current_place": "Isaac Newton's room at Hotel Balkan Beograd",
+            "current_vehicle": null
+        },
+        {
+            "cash": 350,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                263.12001840355475,
+                -125.41934242915976,
+                112.5052726090033,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "2 sprat",
+            "current_place": "Jody Petersen's room at Legacy Apartmani",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -17.962068902683335,
+                -217.97896057536963,
+                115.3590069393704,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Dragoslava Jovanovi\u0107a 9b",
+            "current_place": "Joe Anderson's room at Parliament Suites",
+            "current_vehicle": null
+        },
+        {
+            "cash": 450,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -236.04055787565375,
+                -107.71507836225389,
+                107.86468084833794,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Balkanska 6",
+            "current_place": "Leonard Park's room at Central Peaceful Nest Belgrade",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -280.33560628166333,
+                -177.8286867254032,
+                101.26827860160628,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pajsijeva 4",
+            "current_place": "Megan Carter's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
+            "current_vehicle": null
+        },
+        {
+            "cash": 950,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -188.2999091876507,
+                -65.96311938227102,
+                112.59140594743263,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "current_place": "Neil deGrasse Tyson's room at Hotel Moskva",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -153.4374926049695,
+                -197.8812442016123,
+                113.82411715733824,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+            "current_place": "Shannon Steves's room at Rezidencija Redli",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                144.70733570159217,
+                -57.359051044379385,
+                110.58489915436138,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Vlajkovi\u0107eva 9",
+            "current_place": "Steve Johnson's room at Apartments City Hall",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -295.20912723824534,
+                -267.6270700952236,
+                95.27115161114756,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+            "current_place": "Will Smith's room at Hotel Prag",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -275.08638691955406,
+                -176.15491941505863,
+                102.09475645551139,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pajsijeva 4",
+            "current_place": "Zara Williams's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            790.4918212890625,
+            949.7886743545532,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            720.6167449951172,
+            834.553108215332,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            807.8774261474609,
+            1218.0288848876953,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            924.9542961120605,
+            772.6872482299805,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            729.8923797607422,
+            737.8661041259766,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            749.1613235473633,
+            1033.0344228744507,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1273.6181030273438,
+            881.346004486084,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            971.2645254135132,
+            794.4219818115234,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            757.0527954101562,
+            885.3133277893066,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            726.3250732421875,
+            799.5314254760742,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.4918212890625,
+            949.7886743545532,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            854.767463684082,
+            818.8358688354492,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.4875717163086,
+            932.398359298706,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            729.8923797607422,
+            737.8661041259766,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            726.3250732421875,
+            799.5314254760742,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Barack_Obama.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/celebrity_Feifei_Li.glb",
+        "ViCo/avatars/models/celebrity_Isaac_Newton.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/celebrity_Neil_deGrasse_Tyson.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Will_Smith.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Fresh and DM Store": {
+            "building": "Terazije 36",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Balkanska 20",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Kosovska 35",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "\u0422\u0426 \u0418\u0432\u0430\u043d\u0438\u0443\u043c",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Kralja Milana 4a",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Fitness Enthusiasts": {
+            "description": "A group of individuals passionate about fitness and healthy living.",
+            "place": "FunFit",
+            "members": [
+                "Brycer Rodriguez",
+                "Chad Thompson",
+                "Shannon Steves",
+                "Megan Carter"
+            ],
+            "daily_activity": "attending a fitness class from 17:00 to 18:00"
+        },
+        "Cultural Explorers": {
+            "description": "A group of people interested in exploring and experiencing different cultures.",
+            "place": "Hotel Prag",
+            "members": [
+                "Barack Obama",
+                "Will Smith",
+                "Feifei Li",
+                "Neil deGrasse Tyson"
+            ],
+            "daily_activity": "attending a cultural event from 18:00 to 20:00"
+        },
+        "Young Musicians": {
+            "description": "A group of young individuals passionate about music and performing.",
+            "place": "\u0160kola gitare Star\u010devi\u0107",
+            "members": [
+                "Eve By J Gonzales",
+                "Leonard Park",
+                "Zara Williams",
+                "Isaac Newton"
+            ],
+            "daily_activity": "practicing music from 16:00 to 18:00"
+        },
+        "Hospitality Professionals": {
+            "description": "A group of professionals working in the hospitality industry.",
+            "place": "Hotel Kasina",
+            "members": [
+                "Joe Anderson",
+                "Steve Johnson",
+                "Jody Petersen"
+            ],
+            "daily_activity": "discussing hospitality trends from 15:00 to 16:00"
+        }
+    }
+}

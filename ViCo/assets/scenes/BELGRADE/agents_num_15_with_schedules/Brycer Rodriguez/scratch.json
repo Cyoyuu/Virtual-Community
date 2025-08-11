@@ -1,0 +1,202 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a fitness trainer at FunFit gym, passionate about helping people achieve their health goals. I enjoy hiking and exploring new fitness trends.",
+    "currently": "I want to expand my client base and introduce a new fitness class at FunFit.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness Enthusiasts",
+            "description": "A group of individuals passionate about fitness and healthy living.",
+            "place": "FunFit",
+            "members": [
+                "Brycer Rodriguez",
+                "Chad Thompson",
+                "Shannon Steves",
+                "Megan Carter"
+            ],
+            "daily_activity": "attending a fitness class from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at Belgrade apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Alphabet",
+            "building": "\u0414\u043e\u043c \u0412\u0443\u043a\u043e\u0432\u0435 \u0437\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0435",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to FunFit",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a fitness trainer and plan new fitness class",
+            "place": "FunFit",
+            "building": "Kralja Milana 4a",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurant Tchaikovsky",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "FunFit",
+            "end_place": "Restaurant Tchaikovsky"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to FunFit",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Restaurant Tchaikovsky",
+            "end_place": "FunFit"
+        },
+        {
+            "type": "main",
+            "activity": "Research new fitness trends and client outreach",
+            "place": "FunFit",
+            "building": "Kralja Milana 4a",
+            "start_time": "13:30:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Alphabet",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "FunFit",
+            "end_place": "Alphabet"
+        },
+        {
+            "type": "meal",
+            "activity": "Snack",
+            "place": "Alphabet",
+            "building": "\u0414\u043e\u043c \u0412\u0443\u043a\u043e\u0432\u0435 \u0437\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0435",
+            "start_time": "17:00:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to FunFit",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Alphabet",
+            "end_place": "FunFit"
+        },
+        {
+            "type": "main",
+            "activity": "Attend Fitness Enthusiasts group class",
+            "place": "FunFit",
+            "building": "Kralja Milana 4a",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Vinarija Panti\u0107",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:10:00",
+            "start_place": "FunFit",
+            "end_place": "Vinarija Panti\u0107"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Vinarija Panti\u0107",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+            "start_time": "19:10:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Brycer Rodriguez's room at Belgrade apartments",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Vinarija Panti\u0107",
+            "end_place": "Brycer Rodriguez's room at Belgrade apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and personal time",
+            "place": "Brycer Rodriguez's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "20:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for next day's activities",
+            "place": "Brycer Rodriguez's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "FunFit",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

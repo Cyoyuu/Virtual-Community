@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "Rue Royale 13",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Maison St. Michel",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Maison St. Michel"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Maison St. Michel",
+        "building": "Boulevard de l'Imp\u00e9ratrice 62",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Maison St. Michel",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Paul",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Paul"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Paul",
+        "building": "Rue de l'Enseignement 2",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Paul",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

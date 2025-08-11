@@ -1,0 +1,114 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
+        "building": "Pajsijeva 4",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Kafe Key",
+        "building": "Pajsijeva 4",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Edukativa",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes at Edukativa",
+        "place": "Edukativa",
+        "building": "Kralja Milana 4a",
+        "start_time": "08:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Terazijska Kujna",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Edukativa",
+        "end_place": "Terazijska Kujna"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Terazijska Kujna",
+        "building": "Terazije 36",
+        "start_time": "15:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to FunFit",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Terazijska Kujna",
+        "end_place": "FunFit"
+    },
+    {
+        "type": "main",
+        "activity": "Attend fitness class with Fitness Enthusiasts",
+        "place": "FunFit",
+        "building": "Kralja Milana 4a",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Big Daddy | Smash Burgers",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "FunFit",
+        "end_place": "Big Daddy | Smash Burgers"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Big Daddy | Smash Burgers",
+        "building": "Balkanska 23",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Megan Carter's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Big Daddy | Smash Burgers",
+        "end_place": "Megan Carter's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste"
+    },
+    {
+        "type": "main",
+        "activity": "Drawing practice for art competition",
+        "place": "Megan Carter's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
+        "building": "Pajsijeva 4",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
+        "building": "Pajsijeva 4",
+        "start_time": "21:00:00",
+        "end_time": "23:59:59"
+    }
+]

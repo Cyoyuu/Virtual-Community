@@ -1,0 +1,114 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Zara Williams's room at Pichler h\u00e1z",
+        "building": "Pichler h\u00e1z",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Zara Williams's room at Pichler h\u00e1z",
+        "building": "Pichler h\u00e1z",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend school classes",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to aurobus",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "aurobus"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct biodiversity research with Environmental Enthusiasts",
+        "place": "aurobus",
+        "building": "open space",
+        "start_time": "15:15:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "aurobus",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "meal",
+        "activity": "Early Dinner",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Dance practice for school dance team",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pichler h\u00e1z",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "Zara Williams's room at Pichler h\u00e1z"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Zara Williams's room at Pichler h\u00e1z",
+        "building": "Pichler h\u00e1z",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Zara Williams's room at Pichler h\u00e1z",
+        "building": "Pichler h\u00e1z",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

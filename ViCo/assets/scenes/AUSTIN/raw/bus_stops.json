@@ -1,0 +1,144 @@
+{
+    "manual_bus_drive_route": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 30.2701419,
+                    "lng": -97.74204499999999
+                },
+                "southwest": {
+                    "lat": 30.2671205,
+                    "lng": -97.7466511
+                }
+            },
+            "copyrights": "Map data \u00a92024 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.5 mi",
+                        "value": 829
+                    },
+                    "duration": {
+                        "text": "4 mins",
+                        "value": 211
+                    },
+                    "end_address": "800 Congress Ave., Austin, TX 78701, USA",
+                    "end_location": {
+                        "lat": 30.2701419,
+                        "lng": -97.74204499999999
+                    },
+                    "start_address": "6th/Guadalupe, Austin, TX 78701, USA",
+                    "start_location": {
+                        "lat": 30.2689966,
+                        "lng": -97.74616499999999
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "49 ft",
+                                "value": 15
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 3
+                            },
+                            "end_location": {
+                                "lat": 30.269038,
+                                "lng": -97.74631219999999
+                            },
+                            "html_instructions": "Head <b>west</b> on <b>W 6th St</b> toward <b>Guadalupe St</b>",
+                            "polyline": {
+                                "points": "g|vwDn`rsQG\\"
+                            },
+                            "start_location": {
+                                "lat": 30.2689966,
+                                "lng": -97.74616499999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "354 ft",
+                                "value": 108
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 26
+                            },
+                            "end_location": {
+                                "lat": 30.268111,
+                                "lng": -97.7466511
+                            },
+                            "html_instructions": "Turn <b>left</b> at the 1st cross street onto <b>Guadalupe St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "o|vwDlarsQ`@Jn@PJBdAXTF"
+                            },
+                            "start_location": {
+                                "lat": 30.269038,
+                                "lng": -97.74631219999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 mi",
+                                "value": 353
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 89
+                            },
+                            "end_location": {
+                                "lat": 30.2671205,
+                                "lng": -97.74315399999999
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>W 5th St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "uvvwDpcrsQZcB`@wBVoARmAJc@BQH_@V_BVoAP{@"
+                            },
+                            "start_location": {
+                                "lat": 30.268111,
+                                "lng": -97.7466511
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 mi",
+                                "value": 353
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 93
+                            },
+                            "end_location": {
+                                "lat": 30.2701419,
+                                "lng": -97.74204499999999
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>Congress Ave.</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "opvwDtmqsQk@OmBe@a@K]KEAa@Kc@MoA]_@MSCaAYa@Ka@Kk@Q"
+                            },
+                            "start_location": {
+                                "lat": 30.2671205,
+                                "lng": -97.74315399999999
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "g|vwDn`rsQG\\`@Jz@TzA`@|@{Ez@sE`@_Ch@kCyEmA{Cy@eFuA"
+            },
+            "summary": "W 5th St and Congress Ave.",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

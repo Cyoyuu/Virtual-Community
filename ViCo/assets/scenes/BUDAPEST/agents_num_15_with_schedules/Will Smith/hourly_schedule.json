@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Will Smith's room at 12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mad\u00e1ch Trade Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Film shooting",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Japanika",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "Japanika"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Japanika",
+        "building": "Danubius Center",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Japanika",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Explore art exhibits",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cat Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "Cat Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Afternoon coffee and snack",
+        "place": "Cat Cafe",
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Cat Cafe",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Will Smith's room at 12 Revay Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "Will Smith's room at 12 Revay Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Will Smith's room at 12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

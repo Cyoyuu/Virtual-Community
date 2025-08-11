@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jody Petersen's room at Derra-h\u00e1z",
+        "building": "Derra-h\u00e1z",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Jody Petersen's room at Derra-h\u00e1z",
+        "building": "Derra-h\u00e1z",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The bar",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on creative cocktails",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on cocktails",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "The bar",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Association of Hungarian Fine and Applied Artists for inspiration",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Culinary Creators",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The bar",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "The bar"
+    },
+    {
+        "type": "main",
+        "activity": "Evening shift at The bar",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jody Petersen's room at Derra-h\u00e1z",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "The bar",
+        "end_place": "Jody Petersen's room at Derra-h\u00e1z"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Jody Petersen's room at Derra-h\u00e1z",
+        "building": "Derra-h\u00e1z",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

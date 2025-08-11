@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Dunkin' Donuts",
+        "building": "Europ\u00e4isches Haus",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Allianz Forum",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Dunkin' Donuts",
+        "end_place": "Allianz Forum"
+    },
+    {
+        "type": "main",
+        "activity": "Research and development on office productivity tool",
+        "place": "Allianz Forum",
+        "building": "Allianz Forum",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Contacts",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Allianz Forum",
+        "end_place": "Contacts"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Contacts",
+        "building": "Unter den Linden 63-65",
+        "start_time": "12:40:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Allianz Forum",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Contacts",
+        "end_place": "Allianz Forum"
+    },
+    {
+        "type": "main",
+        "activity": "Continue research and development",
+        "place": "Allianz Forum",
+        "building": "Allianz Forum",
+        "start_time": "14:00:00",
+        "end_time": "14:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "14:45:00",
+        "end_time": "15:00:00",
+        "start_place": "Allianz Forum",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Attend tech seminar with Berlin Tech Innovators",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Forum Willy Brandt Berlin",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Memorial",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Memorial"
+    },
+    {
+        "type": "main",
+        "activity": "Evening exploration and relaxation",
+        "place": "Memorial",
+        "building": "Akademie der K\u00fcnste",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Adam Pierce's room at Haus Sommer",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Memorial",
+        "end_place": "Adam Pierce's room at Haus Sommer"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Adam Pierce's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

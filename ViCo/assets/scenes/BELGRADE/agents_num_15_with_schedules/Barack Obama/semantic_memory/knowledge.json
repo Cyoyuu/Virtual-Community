@@ -1,0 +1,477 @@
+{
+    "Feifei Li": {
+        "age": 48,
+        "living_place": "Hotel Prag",
+        "appearance": "ViCo/assets/imgs/avatars/Feifei Li.png",
+        "groups": [
+            "Cultural Explorers"
+        ]
+    },
+    "Neil deGrasse Tyson": {
+        "age": 50,
+        "living_place": "Hotel Moskva",
+        "appearance": "ViCo/assets/imgs/avatars/Neil deGrasse Tyson.png",
+        "groups": [
+            "Cultural Explorers"
+        ]
+    },
+    "Will Smith": {
+        "age": 56,
+        "living_place": "Hotel Prag",
+        "appearance": "ViCo/assets/imgs/avatars/Will Smith.png",
+        "groups": [
+            "Cultural Explorers"
+        ]
+    },
+    "Cultural Explorers": {
+        "description": "A group of people interested in exploring and experiencing different cultures.",
+        "place": "Hotel Prag",
+        "members": [
+            "Barack Obama",
+            "Will Smith",
+            "Feifei Li",
+            "Neil deGrasse Tyson"
+        ],
+        "daily_activity": "attending a cultural event from 18:00 to 20:00"
+    },
+    "Barack Obama's room at Hotel Moskva": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Barack Obama's room at Hotel Moskva",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Hotel Moskva": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Hotel Prag": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            729.8923797607422,
+            737.8661041259766,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            -274.04638671875,
+            -258.54669189453125,
+            106.22630310058594,
+            23.50684356689453,
+            38.11990737915039,
+            20.808822631835938,
+            -0.5785485506057739
+        ]
+    },
+    "FunFit": {
+        "building": "Kralja Milana 4a",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            891.3858032226562,
+            727.4752960205078,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -108.6731289005075,
+            -272.4354781850209,
+            124.03781127929689,
+            18.99392305428472,
+            12.483432123821025,
+            22.912353515625,
+            0.35868795165031353
+        ]
+    },
+    "\u0160kola gitare Star\u010devi\u0107": {
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            816.9180679321289,
+            898.9368286132812,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            -183.05051394441477,
+            -101.0376555236416,
+            119.56740951538086,
+            13.452089917602713,
+            26.38880369504873,
+            16.282737731933594,
+            0.4591469264440528
+        ]
+    },
+    "Hotel Kasina": {
+        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            848.7226333618164,
+            1006.2702541351318,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -151.2814329225195,
+            6.265316367493767,
+            124.65803909301758,
+            13.657579252733568,
+            19.31067647145127,
+            25.098106384277344,
+            0.3337058982621143
+        ]
+    },
+    "Restaurant Tchaikovsky": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Vinarija Panti\u0107": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            729.8923797607422,
+            737.8661041259766,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -274.04638671875,
+            -258.54669189453125,
+            106.22630310058594,
+            23.50684356689453,
+            38.11990737915039,
+            20.808822631835938,
+            -0.5785485506057739
+        ]
+    },
+    "Big Daddy | Smash Burgers": {
+        "building": "Balkanska 23",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            761.8645629882812,
+            737.1246566772461,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -238.9685821533203,
+            -262.8753433227539,
+            104.81258773803712,
+            17.798725937850566,
+            16.79077526379562,
+            12.567573547363281,
+            -0.6727264465240782
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            897.5285530090332,
+            875.6583557128906,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -100.9609215416454,
+            -120.34257285505572,
+            124.81621170043945,
+            38.797664575591156,
+            29.427361494651148,
+            22.454246520996094,
+            0.2591954415578011
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Balkanska 20",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            743.6900863647461,
+            765.1167602539062,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -260.20215733779116,
+            -235.3552912776295,
+            108.23786544799806,
+            25.86557999803348,
+            18.023939842118523,
+            19.535011291503906,
+            -0.5899130225512562
+        ]
+    },
+    "\u0421\u043a\u0443\u043b\u043f\u0442\u043e\u0440\u0430\u043b\u043d\u0430 \u043a\u043e\u043c\u043f\u043e\u0437\u0438\u0446\u0438\u0458\u0430 \u043da \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432\u043e\u0458 \u043f\u0430\u043b\u0430\u0442\u0438": {
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            897.5285530090332,
+            875.6583557128906,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -100.9609215416454,
+            -120.34257285505572,
+            124.81621170043945,
+            38.797664575591156,
+            29.427361494651148,
+            22.454246520996094,
+            0.2591954415578011
+        ]
+    },
+    "Terazije Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -164.62815107752476,
+            -95.63216940962928
+        ],
+        "rotation": -2.7305262349241093,
+        "bounding_box": null
+    },
+    "Nu\u0161i\u0107eva Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -119.24844984998313,
+            63.60666664076639
+        ],
+        "rotation": -1.0909325927205704,
+        "bounding_box": null
+    },
+    "Vlajkovi\u0107eva Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            173.20657790852127,
+            -65.35067351838185
+        ],
+        "rotation": -1.2887654117099983,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            141.37977936067165,
+            -25.473929222954297
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -179.81139956827707,
+            -60.43984930068976
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -1.7717796907507926,
+            -110.18798798107161
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -93.23521906373988,
+            83.04741591922233
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -118.58895033529824,
+            -209.70731384944537
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.20695820872615,
+            -223.9359239602318
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            254.1027380200836,
+            -78.3013779382844
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Vlajkovi\u0107eva": [
+            {
+                "stop_name": "Terazije Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Nu\u0161i\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Vlajkovi\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Terazije": [
+            {
+                "stop_name": "Vlajkovi\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Nu\u0161i\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Terazije Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

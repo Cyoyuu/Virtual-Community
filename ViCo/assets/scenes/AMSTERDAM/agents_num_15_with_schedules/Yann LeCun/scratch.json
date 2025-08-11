@@ -1,0 +1,231 @@
+{
+    "name": "Yann LeCun",
+    "first_name": "Yann",
+    "last_name": "LeCun",
+    "age": 64,
+    "innate": "universalism, self-direction, achievement",
+    "learned": "I am a computer scientist known for my pioneering work in artificial intelligence and deep learning.",
+    "currently": "I am in Amsterdam to collaborate with local AI researchers on a new project.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "AI Enthusiasts Club",
+            "description": "A group of individuals passionate about artificial intelligence and machine learning, sharing knowledge and collaborating on projects.",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "members": [
+                "Brycer Rodriguez",
+                "Chuang Gan",
+                "Yann LeCun"
+            ],
+            "daily_activity": "discussing AI advancements from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Yann LeCun's room at W Amsterdam",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Yann LeCun's room at W Amsterdam",
+            "building": "Spuistraat 175",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Lobby Nesplein",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:10:00",
+            "start_place": "Yann LeCun's room at W Amsterdam",
+            "end_place": "The Lobby Nesplein"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Lobby Nesplein",
+            "place": null,
+            "building": null,
+            "start_time": "08:10:00",
+            "end_time": "08:30:00",
+            "start_place": "Yann LeCun's room at W Amsterdam",
+            "end_place": "The Lobby Nesplein"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "The Lobby Nesplein",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "08:30:00",
+            "end_time": "09:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Humanities IT Lab - Universiteit van Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "09:30:00",
+            "end_time": "10:00:00",
+            "start_place": "The Lobby Nesplein",
+            "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Collaborate with local AI researchers",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "10:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "Fresh and DM Store"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Fresh and DM Store",
+            "building": "Kalverstraat 57",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Humanities IT Lab - Universiteit van Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Fresh and DM Store",
+            "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for AI Enthusiasts Club meeting",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "14:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "AI Enthusiasts Club meeting",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind with yoga",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to BeerTemple",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "BeerTemple"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "BeerTemple",
+            "building": "Nieuwezijds Voorburgwal 250",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to YellowKorner Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "BeerTemple",
+            "end_place": "YellowKorner Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Visit YellowKorner Amsterdam for leisure",
+            "place": "YellowKorner Amsterdam",
+            "building": "Singel 282",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Yann LeCun's room at W Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "YellowKorner Amsterdam",
+            "end_place": "Yann LeCun's room at W Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Evening work session",
+            "place": "Yann LeCun's room at W Amsterdam",
+            "building": "Spuistraat 175",
+            "start_time": "21:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Yann LeCun's room at W Amsterdam",
+            "building": "Spuistraat 175",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

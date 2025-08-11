@@ -1,0 +1,120 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Chad Thompson's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Chad Thompson's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on signature dish",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Memorial",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Memorial"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy some games",
+        "place": "Memorial",
+        "building": "Akademie der K\u00fcnste",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Berliner Kindl",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Memorial",
+        "end_place": "Berliner Kindl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Berlin Culinary Creators group activity",
+        "place": "Berliner Kindl",
+        "building": "Wilhelmstra\u00dfe 78",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Chad Thompson's room at Haus Sommer",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Berliner Kindl",
+        "end_place": "Chad Thompson's room at Haus Sommer"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Chad Thompson's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Chad Thompson's room at Haus Sommer",
+        "building": "Haus Sommer",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

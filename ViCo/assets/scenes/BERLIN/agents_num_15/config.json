@@ -1,0 +1,769 @@
+{
+    "sim_name": "BERLIN_agents_num_15",
+    "agent_names": [
+        "Abraham Lincoln",
+        "Adam Pierce",
+        "Brian Carter",
+        "Chad Thompson",
+        "Elizabeth Mensah",
+        "Eve By J Gonzales",
+        "Jody Petersen",
+        "Lisa Su",
+        "Megan Carter",
+        "Neil deGrasse Tyson",
+        "Olivia Adams",
+        "Selena Gomez",
+        "Sophie Carlsen",
+        "Tim Cook",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                231.52757186807375,
+                83.35142771319332,
+                103.56511309513809,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "current_place": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -206.35448283076593,
+                130.48173804176514,
+                103.47015058536813,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Haus Sommer",
+            "current_place": "Adam Pierce's room at Haus Sommer",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -124.67942319676246,
+                -240.20380844307368,
+                103.84645446241112,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Behrenstra\u00dfe 1C",
+            "current_place": "Brian Carter's room at Apartments at Brandenburg Gate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -207.41401517425845,
+                130.36735232051103,
+                103.49233729526824,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Haus Sommer",
+            "current_place": "Chad Thompson's room at Haus Sommer",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                271.65455758000184,
+                -152.4593664778532,
+                103.00598785897854,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Elizabeth Mensah's room at Palais Theising",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                264.78169972204,
+                -153.17325347820974,
+                103.01284215675139,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Eve By J Gonzales's room at Palais Theising",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -208.64730617512174,
+                130.23420784265116,
+                103.51353465232853,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Haus Sommer",
+            "current_place": "Jody Petersen's room at Haus Sommer",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                231.37276676909167,
+                84.87097419182389,
+                103.55112387685755,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "current_place": "Lisa Su's room at Hotel Ch\u00e2teau Royal Berlin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                259.7907980503791,
+                -159.38882594574318,
+                102.9261865194267,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Megan Carter's room at Palais Theising",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                230.98715404334334,
+                88.65609795957393,
+                103.56525547038211,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "current_place": "Neil deGrasse Tyson's room at Hotel Ch\u00e2teau Royal Berlin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                261.1470476375245,
+                -172.44594931080542,
+                103.00613238079653,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Olivia Adams's room at Palais Theising",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                230.8593325535977,
+                114.40822049191529,
+                103.72561795023434,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "current_place": "Selena Gomez's room at Hotel Ch\u00e2teau Royal Berlin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                260.63991171492745,
+                -167.56356160948135,
+                102.9887540473193,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Sophie Carlsen's room at Palais Theising",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                231.57040800733,
+                82.93095380766319,
+                103.5789419741264,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+            "current_place": "Tim Cook's room at Hotel Ch\u00e2teau Royal Berlin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                260.2605085836504,
+                -163.9109053896164,
+                102.96242370782606,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palais Theising",
+            "current_place": "Zara Williams's room at Palais Theising",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1242.4502487182617,
+            1099.687297821045,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            798.2910079956055,
+            1106.213809967041,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            892.7398567199707,
+            776.5162048339844,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            798.2910079956055,
+            1106.213809967041,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            798.2910079956055,
+            1106.213809967041,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1242.4502487182617,
+            1099.687297821045,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1242.4502487182617,
+            1099.687297821045,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1242.4502487182617,
+            1099.687297821045,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1242.4502487182617,
+            1099.687297821045,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1270.7462768554688,
+            837.3975067138672,
+            -32,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Abraham_Lincoln.glb",
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/celebrity_Lisa_Su.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/celebrity_Neil_deGrasse_Tyson.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/celebrity_Selena_Gomez.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Tim_Cook.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and Snacks Store": {
+            "building": "Adlon Kempinski",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Matthias-Erzberger-Haus",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Behrenstra\u00dfe 72",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Germany",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Unter den Linden 74",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Mittelstra\u00dfe 30",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Berlin Historical Society": {
+            "description": "A group of history enthusiasts exploring Berlin's rich historical sites and discussing political philosophy.",
+            "place": "Memorial",
+            "members": [
+                "Abraham Lincoln",
+                "Elizabeth Mensah",
+                "Neil deGrasse Tyson",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "exploring historical sites from 14:00 to 16:00"
+        },
+        "Berlin Tech Innovators": {
+            "description": "A group of tech professionals and enthusiasts collaborating on innovative projects and attending tech conferences.",
+            "place": "Forum Willy Brandt Berlin",
+            "members": [
+                "Adam Pierce",
+                "Brian Carter",
+                "Lisa Su",
+                "Tim Cook"
+            ],
+            "daily_activity": "attending tech seminars from 15:00 to 17:00"
+        },
+        "Berlin Culinary Creators": {
+            "description": "A group of chefs and food lovers experimenting with new recipes and hosting dinner parties.",
+            "place": "Berliner Kindl",
+            "members": [
+                "Chad Thompson",
+                "Eve By J Gonzales",
+                "Olivia Adams",
+                "Selena Gomez"
+            ],
+            "daily_activity": "cooking and tasting new dishes from 18:00 to 20:00"
+        },
+        "Berlin Young Artists": {
+            "description": "A group of young artists and students exploring art galleries and working on creative projects.",
+            "place": "Friends forever galerie",
+            "members": [
+                "Jody Petersen",
+                "Megan Carter",
+                "Zara Williams"
+            ],
+            "daily_activity": "painting and discussing art from 16:00 to 18:00"
+        }
+    }
+}

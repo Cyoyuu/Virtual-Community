@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Day Companies",
+        "building": "22 East Gay Street # 800",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Downtown Convenience",
+        "building": "26 North High Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Genoa Park",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer at Genoa Park",
+        "place": "Genoa Park",
+        "building": "open space",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ohio Community Development Finance Fund - Food Distribution Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Genoa Park",
+        "end_place": "Ohio Community Development Finance Fund - Food Distribution Center"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+        "building": "Huntington Bank Building",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emily Johnson's room at Day Companies",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Ohio Community Development Finance Fund - Food Distribution Center",
+        "end_place": "Emily Johnson's room at Day Companies"
+    },
+    {
+        "type": "main",
+        "activity": "Work on science fair project",
+        "place": "Emily Johnson's room at Day Companies",
+        "building": "22 East Gay Street # 800",
+        "start_time": "13:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Chaos Contemporary Craft",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Emily Johnson's room at Day Companies",
+        "end_place": "Chaos Contemporary Craft"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss films and art with Columbus Film and Arts Society",
+        "place": "Chaos Contemporary Craft",
+        "building": "78 North High Street",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Wing Dynasty",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Chaos Contemporary Craft",
+        "end_place": "The Wing Dynasty"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Wing Dynasty",
+        "building": "121 South High Street",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emily Johnson's room at Day Companies",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "The Wing Dynasty",
+        "end_place": "Emily Johnson's room at Day Companies"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on science fair project",
+        "place": "Emily Johnson's room at Day Companies",
+        "building": "22 East Gay Street # 800",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Emily Johnson's room at Day Companies",
+        "building": "22 East Gay Street # 800",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

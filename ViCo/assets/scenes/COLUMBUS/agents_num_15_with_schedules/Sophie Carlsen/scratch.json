@@ -1,0 +1,182 @@
+{
+    "name": "Sophie Carlsen",
+    "first_name": "Sophie",
+    "last_name": "Carlsen",
+    "age": 20,
+    "innate": "self-direction, stimulation, universalism",
+    "learned": "I am a college student at Ohio University Govt Relations, studying environmental science. I love hiking and participating in environmental campaigns.",
+    "currently": "I am leading a campaign to promote recycling on campus.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who discuss and work on innovative technology projects.",
+            "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "members": [
+                "Elizabeth Mensah",
+                "Leonard Park",
+                "Pika Hayes",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "brainstorming tech solutions from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Sophie Carlsen's room at Microliving at Long and Front",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Sophie Carlsen's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Cravings Caf\u00e9",
+            "building": "Microliving at Long and Front",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Ohio University Govt Relations",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Study and work on environmental science projects",
+            "place": "Ohio University Govt Relations",
+            "building": "Huntington Plaza",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Danny's Deli-cious!",
+            "building": "Huntington Plaza",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Lead recycling campaign on campus",
+            "place": "Ohio University Govt Relations",
+            "building": "Huntington Plaza",
+            "start_time": "12:30:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Ohio Community Development Finance Fund - Food Distribution Center",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "Ohio University Govt Relations",
+            "end_place": "Ohio Community Development Finance Fund - Food Distribution Center"
+        },
+        {
+            "type": "main",
+            "activity": "Brainstorming tech solutions with Tech Innovators",
+            "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "building": "Huntington Bank Building",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Wing Dynasty",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "end_place": "The Wing Dynasty"
+        },
+        {
+            "type": "meal",
+            "activity": "Early Dinner",
+            "place": "The Wing Dynasty",
+            "building": "121 South High Street",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Chaos Contemporary Craft",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "The Wing Dynasty",
+            "end_place": "Chaos Contemporary Craft"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy games",
+            "place": "Chaos Contemporary Craft",
+            "building": "78 North High Street",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Sophie Carlsen's room",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Chaos Contemporary Craft",
+            "end_place": "Sophie Carlsen's room at Microliving at Long and Front"
+        },
+        {
+            "type": "main",
+            "activity": "Study and prepare for next day's activities",
+            "place": "Sophie Carlsen's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
+            "start_time": "19:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "Cravings Caf\u00e9",
+            "building": "Microliving at Long and Front",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Ohio University Govt Relations",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

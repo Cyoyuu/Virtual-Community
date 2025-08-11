@@ -1,0 +1,427 @@
+{
+    "Hilary Clinton": {
+        "age": 77,
+        "living_place": "Sincere",
+        "appearance": "ViCo/assets/imgs/avatars/Hilary Clinton.png",
+        "groups": [
+            "Columbus Film and Arts Society"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Day Companies",
+        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Columbus Film and Arts Society"
+        ]
+    },
+    "Tom Holland": {
+        "age": 28,
+        "living_place": "Sincere",
+        "appearance": "ViCo/assets/imgs/avatars/Tom Holland.png",
+        "groups": [
+            "Columbus Film and Arts Society"
+        ]
+    },
+    "Columbus Film and Arts Society": {
+        "description": "A group of artists and film enthusiasts who appreciate and create art and films.",
+        "place": "Chaos Contemporary Craft",
+        "members": [
+            "Emily Johnson",
+            "Hilary Clinton",
+            "Shannon Steves",
+            "Tom Holland"
+        ],
+        "daily_activity": "discussing films and art from 17:00 to 18:00"
+    },
+    "Emily Johnson's room at Day Companies": {
+        "building": "22 East Gay Street # 800",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.4444580078125,
+            1198.7952880859375,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Emily Johnson's room at Day Companies",
+        "bounding_box": [
+            186.40369779120803,
+            198.81144994375734,
+            130.16643905639648,
+            20.454929907609795,
+            19.167812591652858,
+            30.219642639160156,
+            0.1485978110058755
+        ]
+    },
+    "Genoa Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            794.8894217458446,
+            765.2608799734858,
+            -0.007624202338519126
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "The Wing Dynasty": {
+        "building": "121 South High Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1148.6179733276367,
+            734.4808959960938,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            149.08356783537386,
+            -265.3463357707358,
+            129.36211013793948,
+            60.36457470768148,
+            19.31384845064123,
+            23.430870056152344,
+            0.1497175448353306
+        ]
+    },
+    "Ohio Community Development Finance Fund - Food Distribution Center": {
+        "building": "Huntington Bank Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1116.3445091247559,
+            950.6182546615601,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            116.16938781738281,
+            -49.408836364746094,
+            143.6201934814453,
+            58.08161926269531,
+            39.75822067260742,
+            53.864654541015625,
+            0.1536320447921753
+        ]
+    },
+    "Ohio University Govt Relations": {
+        "building": "Huntington Plaza",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
+        ]
+    },
+    "Ringside Caf\u00e9": {
+        "building": "19 North Pearl Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1183.9898147583008,
+            1091.1103630065918,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            184.0421177101697,
+            90.96856531557913,
+            124.8832893371582,
+            8.384403549891235,
+            57.246559007430804,
+            15.333549499511719,
+            -1.410043660722462
+        ]
+    },
+    "Accent Wine Parlor": {
+        "building": "The Citizens Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "liquor_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Downtown Convenience": {
+        "building": "26 North High Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1171.1194915771484,
+            1070.2487487792969,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            171.1194918551205,
+            70.2487526354041,
+            124.80613708496094,
+            26.698042906307474,
+            28.613302389477465,
+            14.776763916015625,
+            0.14788409782279663
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Wyandotte Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_dealer",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1092.125057220459,
+            976.5497612953186,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            92.11475267417211,
+            -23.4461845491899,
+            140.81752014160156,
+            17.627033280596716,
+            19.05660072246215,
+            48.305328369140625,
+            0.14577894191581103
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "90 North Front Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1008.7170629501343,
+            1210.7599029541016,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            8.717063544077487,
+            210.75990657274454,
+            115.98189163208006,
+            57.75730300143609,
+            19.603874657851733,
+            6.673133850097656,
+            0.1470192607273907
+        ]
+    },
+    "Marconi Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -173.8897111313305,
+            259.3223454647179
+        ],
+        "rotation": 1.7374446058537958,
+        "bounding_box": null
+    },
+    "North High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            156.97469546519335,
+            122.38828789203147
+        ],
+        "rotation": -2.9933589340822246,
+        "bounding_box": null
+    },
+    "South High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            209.61970123951443,
+            -190.3711637897594
+        ],
+        "rotation": -2.994111967392216,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            57.03117646281551,
+            -17.56404027718296
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.17144875149471,
+            -217.34119253501643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.344963855943284,
+            222.93542690688022
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.64205681084644,
+            -231.96371476352795
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            287.8821319352048,
+            50.86864863752275
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To South High Street": [
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Marconi Boulevard": [
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

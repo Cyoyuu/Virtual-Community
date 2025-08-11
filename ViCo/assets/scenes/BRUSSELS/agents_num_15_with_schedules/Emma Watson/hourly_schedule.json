@@ -1,0 +1,134 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleeping",
+        "place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 Treurenberg",
+        "building": "Rue de l'Enseignement 16",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Caf\u00e9 Treurenberg",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for UN Women event",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Brasserie de la Presse",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Philantropy House",
+        "end_place": "Brasserie de la Presse"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Brasserie de la Presse",
+        "building": "Rue Royale 100",
+        "start_time": "12:10:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "Brasserie de la Presse",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "13:15:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Engage in diplomatic discussions",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar \u00e0 viandes Cannibale",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Philantropy House",
+        "end_place": "Bar \u00e0 viandes Cannibale"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bar \u00e0 viandes Cannibale",
+        "building": "Rue de l'Enseignement 10",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Bar \u00e0 viandes Cannibale",
+        "end_place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and read",
+        "place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day",
+        "place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

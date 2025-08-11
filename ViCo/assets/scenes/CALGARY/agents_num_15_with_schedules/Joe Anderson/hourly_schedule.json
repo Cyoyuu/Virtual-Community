@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Royal India Restaurant Calgary",
+        "building": "Tower Centre",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bankers Court Building",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on investment strategies",
+        "place": "Bankers Court Building",
+        "building": "Bankers Court",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to S.K. Market",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Bankers Court Building",
+        "end_place": "S.K. Market"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "S.K. Market",
+        "building": "First on Tenth",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Bankers Court Building",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "S.K. Market",
+        "end_place": "Bankers Court Building"
+    },
+    {
+        "type": "main",
+        "activity": "Attend financial seminar",
+        "place": "Bankers Court Building",
+        "building": "Bankers Court",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Play chess",
+        "place": "Bankers Court Building",
+        "building": "Bankers Court",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fairmont Palliser",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Bankers Court Building",
+        "end_place": "Fairmont Palliser"
+    },
+    {
+        "type": "main",
+        "activity": "Play basketball with Calgary Sports Enthusiasts",
+        "place": "Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Oak Room",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Joe Anderson's room at Palliser Square",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "The Oak Room",
+        "end_place": "Joe Anderson's room at Palliser Square"
+    },
+    {
+        "type": "main",
+        "activity": "Review investment portfolio",
+        "place": "Joe Anderson's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Joe Anderson's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

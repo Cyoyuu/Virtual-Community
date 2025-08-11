@@ -1,0 +1,464 @@
+{
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at Casa Mart\u00ed",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Casa Mart\u00ed",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Richard Feynman": {
+        "age": 40,
+        "living_place": "El Avenida Palace",
+        "appearance": "ViCo/assets/imgs/avatars/Richard Feynman.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Will Smith": {
+        "age": 56,
+        "living_place": "ME Barcelona",
+        "appearance": "ViCo/assets/imgs/avatars/Will Smith.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Tech Innovators": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest in technology and innovation.",
+        "place": "TuCoworking",
+        "members": [
+            "Joe Anderson",
+            "Brian Carter",
+            "Jody Petersen",
+            "Richard Feynman",
+            "Will Smith"
+        ],
+        "daily_activity": "developing tech solutions from 16:00 to 17:00"
+    },
+    "Jody Petersen's room at Recreativos Pelayo 56": {
+        "building": "Carrer de Pelai",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            914.344841003418,
+            816.2847900390625,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Jody Petersen's room at Recreativos Pelayo 56",
+        "bounding_box": [
+            -85.87647025523592,
+            -184.05294466737098,
+            133.89886856079102,
+            14.147494795435858,
+            43.94579869431275,
+            26.86949920654297,
+            -0.1289472187376353
+        ]
+    },
+    "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)": {
+        "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            925.0594806671143,
+            1116.3296737670898,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            -75.03899134978053,
+            111.63696273080402,
+            151.77111053466797,
+            30.598442328468742,
+            52.86324382879695,
+            49.74732971191406,
+            -0.821464838309381
+        ]
+    },
+    "TuCoworking": {
+        "building": "Pla\u00e7a de la Vila de Madrid",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1214.362564086914,
+            741.7255859375,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            211.26866097942067,
+            -254.29565469389405,
+            131.91738891601565,
+            45.18962140853311,
+            48.389463137297994,
+            32.079681396484375,
+            0.513586991778526
+        ]
+    },
+    "Geneva Business School - Barcelona Campus": {
+        "building": "Carrer de Rivadeneyra",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1058.8317012786865,
+            836.8618850708008,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            58.9659531205412,
+            -164.00429224361437,
+            129.17107772827148,
+            23.417091805750577,
+            36.47565654867587,
+            19.34101104736328,
+            -0.56924270274052
+        ]
+    },
+    "Il\u00b7lacions Design Gallery": {
+        "building": "Rambla de Canaletes",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1090.086513519287,
+            730.7357635498047,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            90.05526925079454,
+            -268.4703047539697,
+            133.17289352416995,
+            31.677733173517826,
+            18.86584769294573,
+            31.82740020751953,
+            0.4654475662488498
+        ]
+    },
+    "Mandiram Escola de Yoga": {
+        "building": "Pl Urquinaona",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.7693557739258,
+            1255.4750671386719,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            174.7235690686839,
+            251.93077120888918,
+            137.4907646179199,
+            25.40860593222929,
+            33.38011725376362,
+            28.89398956298828,
+            0.7825328536983855
+        ]
+    },
+    "Auna caf\u00e9": {
+        "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            925.0594806671143,
+            1116.3296737670898,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -75.03899134978053,
+            111.63696273080402,
+            151.77111053466797,
+            30.598442328468742,
+            52.86324382879695,
+            49.74732971191406,
+            -0.821464838309381
+        ]
+    },
+    "Vapiano Gran Via": {
+        "building": "Gran Via de les Corts Catalanes",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            803.9527130126953,
+            1186.001205444336,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -195.66511316431192,
+            185.3356604503645,
+            140.88913345336914,
+            16.15741008074954,
+            32.41312588213011,
+            26.866966247558594,
+            0.7534874577843585
+        ]
+    },
+    "Burger King": {
+        "building": "Metro Catalunya",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            963.7433061599731,
+            821.2826309204102,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            -35.68821416606413,
+            -179.63249003137497,
+            137.47528839111328,
+            27.678280777708412,
+            24.01231593184185,
+            32.16667175292969,
+            -0.11255415200080782
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Casa Pich i Pon",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.9596710205078,
+            1098.5413284301758,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -118.7930428363285,
+            93.18013984710525,
+            145.82381057739258,
+            21.78630905051794,
+            46.56748897137243,
+            37.60515594482422,
+            -0.9247121595441887
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Carrer del Bonsucc\u00e9s",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            993.6312102079391,
+            725.8872528076172,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -5.454439958670882,
+            -274.23464936242186,
+            127.96074676513673,
+            5.1072670048195885,
+            13.629867722653284,
+            17.659652709960938,
+            0.5030197356036703
+        ]
+    },
+    "The Black Room": {
+        "building": "Casa Pich i Pon",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.9596710205078,
+            1098.5413284301758,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -118.7930428363285,
+            93.18013984710525,
+            145.82381057739258,
+            21.78630905051794,
+            46.56748897137243,
+            37.60515594482422,
+            -0.9247121595441887
+        ]
+    },
+    "Carrer de Pelai Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -204.29159513682924,
+            -125.76041054613603
+        ],
+        "rotation": -1.6835685762424586,
+        "bounding_box": null
+    },
+    "Carrer de les Moles Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            281.36825597179325,
+            -33.58935112239556
+        ],
+        "rotation": -2.528794532330347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -122.53727152492371,
+            198.66561933870753
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            233.75701186628015,
+            -21.747647677694534
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -89.05860692651642,
+            -232.12719100086204
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            141.44607067946572,
+            206.82899029537643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -196.94092205335937,
+            -86.69934575498702
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            160.0452007698988,
+            -240.7381685183215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -17.649811608307868,
+            220.37557954478368
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Carrer de les Moles": [
+            {
+                "stop_name": "Carrer de Pelai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Carrer de les Moles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            }
+        ],
+        "To Carrer de Pelai": [
+            {
+                "stop_name": "Carrer de les Moles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Carrer de Pelai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Lucas Apartment",
+        "building": "5 Tolst\u00e9ho Close to Presidential palace",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes",
+        "place": "Evanjelick\u00e1 z\u00e1kladn\u00e1 \u0161kola",
+        "building": "Palis\u00e1dy 50",
+        "start_time": "08:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to AC Hotel Bratislava Old Town",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Evanjelick\u00e1 z\u00e1kladn\u00e1 \u0161kola",
+        "end_place": "AC Hotel Bratislava Old Town"
+    },
+    {
+        "type": "main",
+        "activity": "Youth Sports Academy training",
+        "place": "AC Hotel Bratislava Old Town",
+        "building": "Vysok\u00e1 7490/2A",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bistro Gourmet",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "AC Hotel Bratislava Old Town",
+        "end_place": "Bistro Gourmet"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Bistro Gourmet",
+        "end_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica"
+    },
+    {
+        "type": "main",
+        "activity": "Work on robotics project",
+        "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "building": "24",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back home",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "23:00:00",
+        "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "end_place": "Emily Johnson's room at Lucas Apartment"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Emily Johnson's room at Lucas Apartment",
+        "building": "5 Tolst\u00e9ho Close to Presidential palace",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

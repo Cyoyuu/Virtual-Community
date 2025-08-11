@@ -1,0 +1,86 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "S.K. Market",
+        "building": "First on Tenth",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes",
+        "place": "Canadian Friends-The Hebrew",
+        "building": "Len Werry Building",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Canadian Friends-The Hebrew",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Participate in Calgary Art Collective",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "15:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Deville Coffee",
+        "building": "Telus Sky",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Carter Place",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Deville Coffee",
+        "end_place": "Pika Hayes's room at Carter Place"
+    },
+    {
+        "type": "main",
+        "activity": "Work on digital art portfolio",
+        "place": "Pika Hayes's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Gaming and digital content creation",
+        "place": "Pika Hayes's room at Carter Place",
+        "building": "Carter Place",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

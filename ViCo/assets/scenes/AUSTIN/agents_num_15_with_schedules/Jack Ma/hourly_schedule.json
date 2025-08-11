@@ -1,0 +1,158 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jack Ma's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Business meetings and exploration of potential collaborations",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "07:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends Bar",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "Friends Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Friends Bar",
+        "building": "208 East 6th Street",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Texas Toy Museum and Arcade",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Friends Bar",
+        "end_place": "Texas Toy Museum and Arcade"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Texas Toy Museum and Arcade",
+        "place": "Texas Toy Museum and Arcade",
+        "building": "Texas Toy Museum and Arcade",
+        "start_time": "13:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Texas Toy Museum and Arcade",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Explore local attractions with Austin Explorers",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rain on 4th",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "The Driskill",
+        "end_place": "Rain on 4th"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy some leisure time",
+        "place": "Rain on 4th",
+        "building": "Rain on 4th",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mort Subite",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Rain on 4th",
+        "end_place": "Mort Subite"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Mort Subite",
+        "building": "Mort Subite",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jack Ma's room at The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Mort Subite",
+        "end_place": "Jack Ma's room at The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Evening work and planning",
+        "place": "Jack Ma's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "20:00:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Jack Ma's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "22:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jack Ma's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

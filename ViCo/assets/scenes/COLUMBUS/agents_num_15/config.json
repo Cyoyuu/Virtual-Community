@@ -1,0 +1,769 @@
+{
+    "sim_name": "COLUMBUS_agents_num_15",
+    "agent_names": [
+        "Brian Carter",
+        "Elizabeth Mensah",
+        "Elon Musk",
+        "Emily Johnson",
+        "Hilary Clinton",
+        "Jensen Huang",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Leonard Park",
+        "Pika Hayes",
+        "Shannon Steves",
+        "Sophie Carlsen",
+        "Steve Johnson",
+        "Tom Holland",
+        "Yoshua Bengio"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                60.30194179699645,
+                126.10825813018208,
+                114.82548993121179,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Citizens Building",
+            "current_place": "Brian Carter's room at The Multifamily company",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -31.25235755780977,
+                282.0861193578672,
+                112.60000811691226,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Microliving at Long and Front",
+            "current_place": "Elizabeth Mensah's room at Microliving at Long and Front",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                63.994646267091824,
+                -90.91519912977647,
+                116.21455652774183,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+            "current_place": "Elon Musk's room at The Capital Suites Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                197.8768894465192,
+                198.00573005585986,
+                115.8404725791126,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "22 East Gay Street # 800",
+            "current_place": "Emily Johnson's room at Day Companies",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -170.2017225398861,
+                261.2838494846529,
+                108.19272484005315,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Central Police Headquarters",
+            "current_place": "Hilary Clinton's room at Sincere",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                54.44832417618899,
+                -92.32022302465685,
+                115.75561703808226,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+            "current_place": "Jensen Huang's room at The Capital Suites Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -29.923389007109073,
+                272.86974308127617,
+                113.08382874063533,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Microliving at Long and Front",
+            "current_place": "Jody Petersen's room at Microliving at Long and Front",
+            "current_vehicle": null
+        },
+        {
+            "cash": 750,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                85.38788991537908,
+                149.19744525107438,
+                115.3178196594378,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Citizens Building",
+            "current_place": "Joe Anderson's room at The Multifamily company",
+            "current_vehicle": null
+        },
+        {
+            "cash": 650,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -29.94229411963271,
+                273.000849743264,
+                113.13024781509225,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Microliving at Long and Front",
+            "current_place": "Leonard Park's room at Microliving at Long and Front",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                23.060333393040978,
+                291.6187278831282,
+                113.08893947743914,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Microliving at Long and Front",
+            "current_place": "Pika Hayes's room at Microliving at Long and Front",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                188.7786283580813,
+                188.46513573915902,
+                115.46467650145908,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "22 East Gay Street # 800",
+            "current_place": "Shannon Steves's room at Day Companies",
+            "current_vehicle": null
+        },
+        {
+            "cash": 450,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                29.857583413471687,
+                274.2902338041077,
+                113.32357916068067,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Microliving at Long and Front",
+            "current_place": "Sophie Carlsen's room at Microliving at Long and Front",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                59.123755524303895,
+                134.14856808224565,
+                114.90737652132736,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Citizens Building",
+            "current_place": "Steve Johnson's room at The Multifamily company",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -165.05465516951054,
+                202.49000962346102,
+                108.09186389819979,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Central Police Headquarters",
+            "current_place": "Tom Holland's room at Sincere",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                26.192068200931,
+                -104.17781818753647,
+                113.9348327633639,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+            "current_place": "Yoshua Bengio's room at The Capital Suites Hotel",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1088.1769924163818,
+            1138.675464630127,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            999.395791053772,
+            1277.5515899658203,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1059.9933938980103,
+            861.9460525512695,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1186.4444580078125,
+            1198.7952880859375,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            854.108039855957,
+            1233.6431350708008,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1059.9933938980103,
+            861.9460525512695,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            999.395791053772,
+            1277.5515899658203,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1088.1769924163818,
+            1138.675464630127,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            999.395791053772,
+            1277.5515899658203,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            999.395791053772,
+            1277.5515899658203,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1186.4444580078125,
+            1198.7952880859375,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            999.395791053772,
+            1277.5515899658203,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1088.1769924163818,
+            1138.675464630127,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            854.108039855957,
+            1233.6431350708008,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1059.9933938980103,
+            861.9460525512695,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/celebrity_Elon_Musk.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Hilary_Clinton.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Tom_Holland.glb",
+        "ViCo/avatars/models/celebrity_Yoshua_Bengio.glb"
+    ],
+    "stores": {
+        "Fresh and Beverages Store": {
+            "building": "Wyandotte Building",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "40 West Gay Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Vern Riffe Center for Government and the Arts",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "90 North Front Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Huntington Plaza",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Rankin Building",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Columbus Culinary Club": {
+            "description": "A group of food enthusiasts who explore and enjoy the culinary scene in Columbus.",
+            "place": "The Wing Dynasty",
+            "members": [
+                "Brian Carter",
+                "Jody Petersen",
+                "Joe Anderson",
+                "Steve Johnson"
+            ],
+            "daily_activity": "tasting new dishes from 18:00 to 19:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech enthusiasts and professionals who discuss and work on innovative technology projects.",
+            "place": "Ohio Community Development Finance Fund - Food Distribution Center",
+            "members": [
+                "Elizabeth Mensah",
+                "Leonard Park",
+                "Pika Hayes",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "brainstorming tech solutions from 15:00 to 16:00"
+        },
+        "Columbus Film and Arts Society": {
+            "description": "A group of artists and film enthusiasts who appreciate and create art and films.",
+            "place": "Chaos Contemporary Craft",
+            "members": [
+                "Emily Johnson",
+                "Hilary Clinton",
+                "Shannon Steves",
+                "Tom Holland"
+            ],
+            "daily_activity": "discussing films and art from 17:00 to 18:00"
+        },
+        "AI and Business Leaders": {
+            "description": "A group of business leaders and AI researchers who collaborate on AI and business strategies.",
+            "place": "Ohio University Govt Relations",
+            "members": [
+                "Elon Musk",
+                "Jensen Huang",
+                "Yoshua Bengio"
+            ],
+            "daily_activity": "collaborating on AI projects from 16:00 to 17:00"
+        }
+    }
+}

@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Shannon Steves's room at Rezidencija Redli",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Siberian Wellness",
+        "building": "Terazije 32",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Siberian Wellness",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on wellness program",
+        "place": "Siberian Wellness",
+        "building": "Terazije 32",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kod dvoglavog orla",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Siberian Wellness",
+        "end_place": "Kod dvoglavog orla"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Kod dvoglavog orla",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Siberian Wellness",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Kod dvoglavog orla",
+        "end_place": "Siberian Wellness"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on wellness program",
+        "place": "Siberian Wellness",
+        "building": "Terazije 32",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to FunFit",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Siberian Wellness",
+        "end_place": "FunFit"
+    },
+    {
+        "type": "main",
+        "activity": "Attend fitness class with Fitness Enthusiasts",
+        "place": "FunFit",
+        "building": "Kralja Milana 4a",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ognji\u0161te",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "FunFit",
+        "end_place": "Ognji\u0161te"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Ognji\u0161te",
+        "building": "Ars Medica Beograd",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rezidencija Redli",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Ognji\u0161te",
+        "end_place": "Shannon Steves's room at Rezidencija Redli"
+    },
+    {
+        "type": "main",
+        "activity": "Evening yoga practice",
+        "place": "Shannon Steves's room at Rezidencija Redli",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer work planning",
+        "place": "Shannon Steves's room at Rezidencija Redli",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "20:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Shannon Steves's room at Rezidencija Redli",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Shannon Steves's room at Rezidencija Redli",
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

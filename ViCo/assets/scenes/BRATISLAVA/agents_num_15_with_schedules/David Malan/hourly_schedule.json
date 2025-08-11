@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "David Malan's room at Downtown Bratislava Hotel",
+        "building": "Panensk\u00e1 680/31",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bistro Gourmet",
+        "building": "Crowne Plaza",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct workshop on computer science education",
+        "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "building": "24",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to U Prezidenta for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+        "end_place": "U Prezidenta"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "U Prezidenta",
+        "building": "Slovakia",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "U Prezidenta",
+        "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Community Builders meeting",
+        "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "start_time": "13:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to OMA fine foods & wine",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:10:00",
+        "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "end_place": "OMA fine foods & wine"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to OMA fine foods & wine",
+        "place": null,
+        "building": null,
+        "start_time": "17:10:00",
+        "end_time": "18:00:00",
+        "start_place": null,
+        "end_place": "OMA fine foods & wine"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "OMA fine foods & wine",
+        "building": "Konventn\u00e1 6",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kult\u00farne a informa\u010dn\u00e9 centrum energetiky for Community Builders meeting",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "OMA fine foods & wine",
+        "end_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky"
+    },
+    {
+        "type": "main",
+        "activity": "Community Builders meeting",
+        "place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Banco Casino for relaxation",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+        "end_place": "Banco Casino"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at Banco Casino",
+        "place": "Banco Casino",
+        "building": "Crowne Plaza",
+        "start_time": "20:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Downtown Bratislava Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Banco Casino",
+        "end_place": "David Malan's room at Downtown Bratislava Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's activities",
+        "place": "David Malan's room at Downtown Bratislava Hotel",
+        "building": "Panensk\u00e1 680/31",
+        "start_time": "22:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "David Malan's room at Downtown Bratislava Hotel",
+        "building": "Panensk\u00e1 680/31",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

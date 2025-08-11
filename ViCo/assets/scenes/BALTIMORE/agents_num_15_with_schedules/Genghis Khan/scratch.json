@@ -1,0 +1,212 @@
+{
+    "name": "Genghis Khan",
+    "first_name": "Genghis",
+    "last_name": "Khan",
+    "age": 45,
+    "innate": "power, achievement, security",
+    "learned": "I am a historical figure known for my leadership and military strategies.",
+    "currently": "I am exploring historical sites in Baltimore.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Baltimore Music Collective",
+            "description": "A group of musicians and music lovers who perform and collaborate on musical projects.",
+            "place": "The 8x10",
+            "members": [
+                "Leonard Park",
+                "Pika Hayes",
+                "Roth Miller",
+                "Genghis Khan"
+            ],
+            "daily_activity": "jamming sessions from 19:00 to 20:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Genghis Khan's room at A Home In The Hill",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Genghis Khan's room at A Home In The Hill",
+            "building": "1113 South Hanover Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Pub Dog Pizza & Drafthouse",
+            "building": "20 East Cross Street",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Pub Dog Pizza & Drafthouse",
+            "end_place": "Enoch Pratt Library - Light Street Branch"
+        },
+        {
+            "type": "main",
+            "activity": "Explore historical archives",
+            "place": "Enoch Pratt Library - Light Street Branch",
+            "building": "Light Street Branch",
+            "start_time": "09:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to South Baltimore Strength Club",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Enoch Pratt Library - Light Street Branch",
+            "end_place": "South Baltimore Strength Club"
+        },
+        {
+            "type": "main",
+            "activity": "Strength training",
+            "place": "South Baltimore Strength Club",
+            "building": "1237 Wall Street",
+            "start_time": "12:30:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Blue Agave Mexican Food",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "South Baltimore Strength Club",
+            "end_place": "Blue Agave Mexican Food"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Blue Agave Mexican Food",
+            "building": "1032 Light Street",
+            "start_time": "14:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Alley at Abbey Fed",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Blue Agave Mexican Food",
+            "end_place": "The Alley at Abbey Fed"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy a snack",
+            "place": "The Alley at Abbey Fed",
+            "building": "1041 Marshall Street",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Pub Dog Pizza & Drafthouse",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "The Alley at Abbey Fed",
+            "end_place": "Pub Dog Pizza & Drafthouse"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Pub Dog Pizza & Drafthouse",
+            "building": "20 East Cross Street",
+            "start_time": "17:30:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The 8x10",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Pub Dog Pizza & Drafthouse",
+            "end_place": "The 8x10"
+        },
+        {
+            "type": "main",
+            "activity": "Jamming session with Baltimore Music Collective",
+            "place": "The 8x10",
+            "building": "10 East Cross Street",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Genghis Khan's room at A Home In The Hill",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "The 8x10",
+            "end_place": "Genghis Khan's room at A Home In The Hill"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Genghis Khan's room at A Home In The Hill",
+            "building": "1113 South Hanover Street",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Late-night snack",
+            "place": "Genghis Khan's room at A Home In The Hill",
+            "building": "1113 South Hanover Street",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Genghis Khan's room at A Home In The Hill",
+            "building": "1113 South Hanover Street",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

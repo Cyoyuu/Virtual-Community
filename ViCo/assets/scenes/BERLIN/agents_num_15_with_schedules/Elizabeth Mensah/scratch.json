@@ -1,0 +1,204 @@
+{
+    "name": "Elizabeth Mensah",
+    "first_name": "Elizabeth",
+    "last_name": "Mensah",
+    "age": 23,
+    "innate": "self-direction, universalism, benevolence",
+    "learned": "I am an undergraduate student at August-Boeckh-Haus studying international relations. I enjoy volunteering and learning new languages.",
+    "currently": "I want to get an A in my International Politics course.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Berlin Historical Society",
+            "description": "A group of history enthusiasts exploring Berlin's rich historical sites and discussing political philosophy.",
+            "place": "Memorial",
+            "members": [
+                "Abraham Lincoln",
+                "Elizabeth Mensah",
+                "Neil deGrasse Tyson",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "exploring historical sites from 14:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Elizabeth Mensah's room at Palais Theising",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Elizabeth Mensah's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Berliner Kindl",
+            "building": "Wilhelmstra\u00dfe 78",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to August-Boeckh-Haus",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Berliner Kindl",
+            "end_place": "August-Boeckh-Haus"
+        },
+        {
+            "type": "main",
+            "activity": "Study for International Politics course",
+            "place": "August-Boeckh-Haus",
+            "building": "August-Boeckh-Haus",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to India Club Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "August-Boeckh-Haus",
+            "end_place": "India Club Berlin"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "India Club Berlin",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "13:00:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Memorial",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "India Club Berlin",
+            "end_place": "Memorial"
+        },
+        {
+            "type": "main",
+            "activity": "Explore historical sites with Berlin Historical Society",
+            "place": "Memorial",
+            "building": "Akademie der K\u00fcnste",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to August-Boeckh-Haus",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Memorial",
+            "end_place": "August-Boeckh-Haus"
+        },
+        {
+            "type": "main",
+            "activity": "Continue studying for International Politics course",
+            "place": "August-Boeckh-Haus",
+            "building": "August-Boeckh-Haus",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Berliner Kindl",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "August-Boeckh-Haus",
+            "end_place": "Berliner Kindl"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Berliner Kindl",
+            "building": "Wilhelmstra\u00dfe 78",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Friends forever galerie",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Berliner Kindl",
+            "end_place": "Friends forever galerie"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy art at Friends forever galerie",
+            "place": "Friends forever galerie",
+            "building": "Glinkastra\u00dfe 42",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Elizabeth Mensah's room at Palais Theising",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Friends forever galerie",
+            "end_place": "Elizabeth Mensah's room at Palais Theising"
+        },
+        {
+            "type": "main",
+            "activity": "Review notes and prepare for next day",
+            "place": "Elizabeth Mensah's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "21:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Elizabeth Mensah's room at Palais Theising",
+            "building": "Palais Theising",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chatting_with": null,
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "August-Boeckh-Haus",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

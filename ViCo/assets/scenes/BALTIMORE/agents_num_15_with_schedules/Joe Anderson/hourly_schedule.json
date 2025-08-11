@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at home",
+        "place": "Joe Anderson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Matsuri Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new sushi menu",
+        "place": "Matsuri Restaurant",
+        "building": "1105 South Charles Street",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch break",
+        "place": "Matsuri Restaurant",
+        "building": "1105 South Charles Street",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on new sushi menu",
+        "place": "Matsuri Restaurant",
+        "building": "1105 South Charles Street",
+        "start_time": "12:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Matsuri Restaurant",
+        "end_place": "Enoch Pratt Library - Light Street Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Research new recipes",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "16:15:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "17:45:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Federal Hill Fitness Crew",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "17:45:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Blue Agave Mexican Food",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "Blue Agave Mexican Food"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Blue Agave Mexican Food",
+        "place": "Blue Agave Mexican Food",
+        "building": "1032 Light Street",
+        "start_time": "19:15:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back home",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "Blue Agave Mexican Food",
+        "end_place": "Joe Anderson's room at 1201 S Charles Street Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Joe Anderson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "20:15:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack before bed",
+        "place": "Joe Anderson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

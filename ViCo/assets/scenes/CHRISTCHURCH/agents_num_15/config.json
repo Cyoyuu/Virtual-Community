@@ -1,0 +1,769 @@
+{
+    "sim_name": "CHRISTCHURCH_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Emma Watson",
+        "Eve By J Gonzales",
+        "Jack Ma",
+        "Jody Petersen",
+        "Joe Anderson",
+        "John F Kennedy",
+        "Leonard Park",
+        "Louise Roberts",
+        "Megan Carter",
+        "Pika Hayes",
+        "Shannon Steves",
+        "Will Smith",
+        "Yoshua Bengio",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -262.47427690919267,
+                -118.69674173523174,
+                112.49961825948212,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Adam Pierce's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -12.528259525894123,
+                -56.17890406301126,
+                112.77200130290824,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Distinction Hotel Christchurch",
+            "current_place": "Emma Watson's room at Distinction Christchurch Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                153.12334582347833,
+                183.0831623121356,
+                111.15552422989941,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Eve By J Gonzales's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -61.113414254633426,
+                235.64838869725338,
+                111.56966784585414,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Crowne Plaza Christchurch",
+            "current_place": "Jack Ma's room at Crowne Plaza Christchurch by IHG",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -277.9109021973366,
+                -118.79529026842224,
+                112.51710300723553,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Jody Petersen's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -268.0480600473468,
+                -118.73232517023348,
+                112.45223724551366,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Joe Anderson's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                40.66335257557651,
+                -24.343238397054062,
+                112.57958580139241,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Old Government Building",
+            "current_place": "John F Kennedy's room at Adina Heritage Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -282.05195705663294,
+                -118.82172706238642,
+                112.54839709313956,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Leonard Park's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 650,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -281.76418342348796,
+                -118.81988989468248,
+                112.54622237845875,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Louise Roberts's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                140.09386159383624,
+                202.18860086614268,
+                111.14418933603028,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Megan Carter's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 350,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                113.8058034144688,
+                184.94402427467634,
+                111.87771854637764,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Pika Hayes's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 550,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -269.5116567285667,
+                -118.74166887738608,
+                112.46585151972897,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "76 Hereford Street",
+            "current_place": "Shannon Steves's room at Ray White Commercial Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 950,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                82.28295076351523,
+                74.51295168189596,
+                112.05788297360135,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "113 Worcester Street",
+            "current_place": "Will Smith's room at Quest Cathedral Junction",
+            "current_vehicle": null
+        },
+        {
+            "cash": 850,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                40.66742879276519,
+                -12.693954657689794,
+                112.79506802070776,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Old Government Building",
+            "current_place": "Yoshua Bengio's room at Adina Heritage Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 250,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                164.165798356644,
+                201.26101618046266,
+                111.21064104965015,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Zara Williams's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1012.7234511375427,
+            951.3979454040527,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            952.5873069763184,
+            1231.9229583740234,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1081.2799625396729,
+            989.6693503856659,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            727.6322631835938,
+            868.1143112182617,
+            -32,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1088.782585144043,
+            1055.9374160766602,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1081.2799625396729,
+            989.6693503856659,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/celebrity_Emma_Watson.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/celebrity_Jack_Ma.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/celebrity_John_F_Kennedy.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/celebrity_Will_Smith.glb",
+        "ViCo/avatars/models/celebrity_Yoshua_Bengio.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Cashel Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Polished Diamonds",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "248 High Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "BNZ Centre",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "ANZ Centre",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "The Terrace Car Park",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Music Enthusiasts Club": {
+            "description": "A group of individuals passionate about music and rhythm.",
+            "place": "RapidRhythm",
+            "members": [
+                "Adam Pierce",
+                "Eve By J Gonzales",
+                "Pika Hayes",
+                "Zara Williams"
+            ],
+            "daily_activity": "exploring new music from 17:00 to 18:00"
+        },
+        "Tech Innovators Group": {
+            "description": "A group focused on technology and innovation.",
+            "place": "Catalyst Group - Christchurch",
+            "members": [
+                "Leonard Park",
+                "Shannon Steves",
+                "Louise Roberts"
+            ],
+            "daily_activity": "discussing tech trends from 16:00 to 17:00"
+        },
+        "Celebrity Visitors": {
+            "description": "A group of famous individuals visiting Christchurch.",
+            "place": "Crowne Plaza Christchurch by IHG",
+            "members": [
+                "Emma Watson",
+                "Jack Ma",
+                "John F Kennedy",
+                "Will Smith",
+                "Yoshua Bengio"
+            ],
+            "daily_activity": "attending events from 18:00 to 19:00"
+        },
+        "Local Workers Association": {
+            "description": "A group of local workers in various industries.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Jody Petersen",
+                "Joe Anderson",
+                "Megan Carter"
+            ],
+            "daily_activity": "networking with colleagues from 15:00 to 16:00"
+        }
+    }
+}

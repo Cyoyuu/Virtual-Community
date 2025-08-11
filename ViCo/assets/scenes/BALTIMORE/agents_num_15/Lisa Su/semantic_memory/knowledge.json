@@ -1,0 +1,459 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at Harbor Hill Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Baltimore Tech Innovators"
+        ]
+    },
+    "David Malan": {
+        "age": 40,
+        "living_place": "David Malan's room at A Home In The Hill",
+        "appearance": "ViCo/assets/imgs/avatars/David Malan.png",
+        "groups": [
+            "Baltimore Tech Innovators"
+        ]
+    },
+    "Kamala Harris": {
+        "age": 59,
+        "living_place": "Kamala Harris's room at A Home In The Hill",
+        "appearance": "ViCo/assets/imgs/avatars/Kamala Harris.png",
+        "groups": [
+            "Baltimore Tech Innovators"
+        ]
+    },
+    "Will Smith": {
+        "age": 56,
+        "living_place": "A Home In The Hill",
+        "appearance": "ViCo/assets/imgs/avatars/Will Smith.png",
+        "groups": [
+            "Baltimore Tech Innovators"
+        ]
+    },
+    "Baltimore Tech Innovators": {
+        "description": "A group of tech professionals and enthusiasts who share ideas and work on innovative projects.",
+        "place": "Century21 Downtown",
+        "members": [
+            "Chad Thompson",
+            "David Malan",
+            "Lisa Su",
+            "Kamala Harris",
+            "Will Smith"
+        ],
+        "daily_activity": "brainstorming tech solutions from 16:00 to 17:00"
+    },
+    "Lisa Su's room at A Home In The Hill": {
+        "building": "1113 South Hanover Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.0026702880859,
+            912.5161247253418,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Lisa Su's room at A Home In The Hill",
+        "bounding_box": [
+            -240.13296508789062,
+            -87.07470703125,
+            74.53837585449219,
+            14.2446928024292,
+            3.736699104309082,
+            5.3982696533203125,
+            0.15606799721717834
+        ]
+    },
+    "Century21 Downtown": {
+        "building": "South Baltimore Recreation Center",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            955.3221788406372,
+            1076.4360122680664,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            -44.46466827392578,
+            76.45333862304688,
+            82.06431579589844,
+            45.894134521484375,
+            15.197223663330078,
+            11.878150939941406,
+            0.1580280363559723
+        ]
+    },
+    "Enoch Pratt Library - Light Street Branch": {
+        "building": "Light Street Branch",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.3567028045654,
+            742.555549621582,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            64.41921997070312,
+            -257.1175842285156,
+            82.6961441040039,
+            23.557029724121094,
+            31.98584747314453,
+            5.143157958984375,
+            0.1126413568854332
+        ]
+    },
+    "South Baltimore Strength Club": {
+        "building": "1237 Wall Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1140.8871612548828,
+            790.4407806396484,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            141.98529303203642,
+            -210.29788512235763,
+            85.47895431518556,
+            21.585735819502204,
+            21.239466395036,
+            6.108543395996094,
+            0.13869154024537414
+        ]
+    },
+    "The 8x10": {
+        "building": "10 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            885.5095634460449,
+            979.1267638206482,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            -114.48613357543947,
+            -20.873236179351807,
+            77.52820587158203,
+            4.753929894684231,
+            19.792485562640035,
+            8.963027954101562,
+            0.05566619235794686
+        ]
+    },
+    "Juice Lab Company": {
+        "building": "1035 Light Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1038.2314910888672,
+            1034.6633367538452,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            38.20132050428663,
+            34.66333781711625,
+            79.33521270751953,
+            4.681614211217072,
+            41.35544334549062,
+            6.7262115478515625,
+            -1.4362703455085215
+        ]
+    },
+    "Berries by Quicha": {
+        "building": "922 Light Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            974.1204710006714,
+            1126.997200012207,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -25.863330841064453,
+            126.69252014160156,
+            80.32926940917969,
+            20.976917266845703,
+            4.389194011688232,
+            8.570335388183594,
+            0.05255763605237007
+        ]
+    },
+    "The Perch": {
+        "building": "1110 South Charles Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            815.8510131835938,
+            910.6777687072754,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "bounding_box": [
+            -184.13586448267995,
+            -89.27193644020556,
+            76.21584701538086,
+            37.965117437285194,
+            9.355976653983836,
+            8.204780578613281,
+            0.05895737163730694
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "1020 Light Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            982.6813201904297,
+            1059.5988101959229,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -17.412494533399247,
+            59.64069097424626,
+            80.00381088256836,
+            22.812435545492285,
+            4.376509934764979,
+            7.950569152832031,
+            0.18043293253161935
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Federal Hill Cleaners",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.4020156860352,
+            955.9252338409424,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -244.04689151998772,
+            -43.887557275388694,
+            75.67019271850586,
+            11.823433418177192,
+            9.12746239739906,
+            8.155509948730469,
+            0.1480233646595425
+        ]
+    },
+    "The Pink Art Gallery": {
+        "building": "1125 Light Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1045.0656147003174,
+            905.5884094238281,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            45.04530912123172,
+            -94.27878347087179,
+            81.16293716430664,
+            28.20581876158442,
+            5.3033449846572225,
+            8.762138366699219,
+            0.08704382790697278
+        ]
+    },
+    "Weber Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            62.045638028129346,
+            -79.944052801245
+        ],
+        "rotation": -1.4347317355623312,
+        "bounding_box": null
+    },
+    "South Charles Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -83.55211554255058,
+            -33.65036613291564
+        ],
+        "rotation": -1.4776061895035828,
+        "bounding_box": null
+    },
+    "Olive Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -203.6470944479423,
+            -45.68417057898851
+        ],
+        "rotation": -3.0916009048916844,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -166.37837354804984,
+            25.09043608193694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            31.192618875151837,
+            -86.33272588533399
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.24465578842066,
+            -122.939706084611
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.470494963686212,
+            66.23107185146742
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -68.41388043672472,
+            -23.896660317334824
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            352.67343009202983,
+            -8.493953354113648
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            77.06964128758824,
+            -254.656878264548
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Olive Street": [
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Weber Street": [
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

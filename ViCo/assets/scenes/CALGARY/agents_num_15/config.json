@@ -1,0 +1,752 @@
+{
+    "sim_name": "CALGARY_agents_num_15",
+    "agent_names": [
+        "Barack Obama",
+        "Brian Carter",
+        "Elizabeth Mensah",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Kate Novak",
+        "LeBron James",
+        "Mark Zuckerberg",
+        "Neil deGrasse Tyson",
+        "Pika Hayes",
+        "Shannon Steves",
+        "Sophie Carlsen",
+        "Steve Johnson",
+        "Yoshua Bengio",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -50.43488688421809,
+                -142.83221640844485,
+                96.92455975048749,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Barack Obama's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -119.99077977686485,
+                -224.66320842181761,
+                94.2251878720688,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Brian Carter's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                242.1300649075563,
+                171.16466885551205,
+                93.87754643045187,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Elizabeth Mensah's room at Carter Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -36.049601974495815,
+                -274.1867189011265,
+                96.18480094386034,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "First on Tenth",
+            "current_place": "Jody Petersen's room at First on Tenth",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                84.51776397414754,
+                -142.4307936627616,
+                97.13944076279589,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Tower Centre",
+            "current_place": "Joe Anderson's room at Palliser Square",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                240.69275036513255,
+                150.81476935534585,
+                94.08337155427247,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Kate Novak's room at Carter Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -122.9004997893312,
+                -124.30521966224109,
+                95.83687847399489,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "LeBron James's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -66.74246476843774,
+                -181.08816972133883,
+                96.90586925362815,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Mark Zuckerberg's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -123.16633481332019,
+                -130.48286363242514,
+                95.5546748146119,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Neil deGrasse Tyson's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                240.04566688508336,
+                141.65318126968336,
+                94.26453969785108,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Pika Hayes's room at Carter Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -97.85791306831052,
+                -209.42646615435885,
+                94.95904019278525,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Shannon Steves's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                256.78397336209525,
+                132.89655596962706,
+                97.05908168897754,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Sophie Carlsen's room at Carter Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                112.20853262326374,
+                -146.31908135359117,
+                97.29918957355562,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Tower Centre",
+            "current_place": "Steve Johnson's room at Palliser Square",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -56.59919419923324,
+                -126.62948521341168,
+                97.06167285144946,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Yoshua Bengio's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                251.39287760768875,
+                133.2773293649622,
+                96.57174139005443,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Zara Williams's room at Carter Place",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            912.662654876709,
+            847.2293167114258,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            988.4496936798096,
+            714.2852325439453,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1048.0912742614746,
+            832.0565490722656,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1048.0912742614746,
+            832.0565490722656,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Barack_Obama.glb",
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/celebrity_LeBron_James.glb",
+        "ViCo/avatars/models/celebrity_Mark_Zuckerberg.glb",
+        "ViCo/avatars/models/celebrity_Neil_deGrasse_Tyson.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Yoshua_Bengio.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Fresh and DM Store": {
+            "building": "Glanville/Ward Block",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Calgary Tower",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "The Bow",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "100-129 8 Avenue Southwest",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Fire Hall No. 1",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Tech Innovators Club": {
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "EzOffice",
+            "members": [
+                "Brian Carter",
+                "Mark Zuckerberg",
+                "Yoshua Bengio"
+            ],
+            "daily_activity": "discussing tech trends from 17:00 to 18:00"
+        },
+        "Calgary Art Collective": {
+            "description": "A community of artists and art lovers who gather to create, share, and appreciate art.",
+            "place": "Collage Gallery",
+            "members": [
+                "Kate Novak",
+                "Elizabeth Mensah",
+                "Pika Hayes",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "painting and sharing art from 16:00 to 18:00"
+        },
+        "Calgary Sports Enthusiasts": {
+            "description": "A group of sports lovers who engage in various sports activities and events.",
+            "place": "Fairmont Palliser",
+            "members": [
+                "LeBron James",
+                "Barack Obama",
+                "Joe Anderson",
+                "Neil deGrasse Tyson"
+            ],
+            "daily_activity": "playing basketball from 18:00 to 19:00"
+        },
+        "Community Helpers": {
+            "description": "A group dedicated to volunteering and organizing community events to help those in need.",
+            "place": "S.K. Market",
+            "members": [
+                "Jody Petersen",
+                "Shannon Steves",
+                "Steve Johnson",
+                "Zara Williams"
+            ],
+            "daily_activity": "organizing community events from 15:00 to 17:00"
+        }
+    }
+}

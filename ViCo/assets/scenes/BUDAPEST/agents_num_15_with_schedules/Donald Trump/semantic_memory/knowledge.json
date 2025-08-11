@@ -1,0 +1,395 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at Orczy-h\u00e1z 1795-1937",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Derra-h\u00e1z",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Will Smith": {
+        "age": 56,
+        "living_place": "12 Revay Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Will Smith.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Culinary Creators": {
+        "description": "A group of chefs and food enthusiasts who experiment with new recipes and flavors.",
+        "place": "Star Kebab & Grill",
+        "members": [
+            "Chad Thompson",
+            "Donald Trump",
+            "Jody Petersen",
+            "Will Smith"
+        ],
+        "daily_activity": "experimenting with new recipes from 18:00 to 19:00"
+    },
+    "Donald Trump's room at Hotel Central Basilica": {
+        "building": "Hotel Central Basilica",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            846.031623840332,
+            1015.0438834428787,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Donald Trump's room at Hotel Central Basilica",
+        "bounding_box": [
+            -153.96837623476762,
+            15.628321158670143,
+            111.2525749206543,
+            31.940921184929184,
+            20.611503408106756,
+            20.54755401611328,
+            0.1602234261634159
+        ]
+    },
+    "Hotel Central Basilica": {
+        "building": "Hotel Central Basilica",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            846.031623840332,
+            1015.0438834428787,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "bounding_box": [
+            -153.96837623476762,
+            15.628321158670143,
+            111.2525749206543,
+            31.940921184929184,
+            20.611503408106756,
+            20.54755401611328,
+            0.1602234261634159
+        ]
+    },
+    "Star Kebab & Grill": {
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1082.5144958496094,
+            733.6156234741211,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            82.51449584960938,
+            -266.2007141113281,
+            113.66513061523438,
+            14.387836456298828,
+            24.090131759643555,
+            27.955238342285156,
+            0.9561694860458374
+        ]
+    },
+    "Mad\u00e1ch Trade Center": {
+        "building": "Mad\u00e1ch Trade Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1263.6710739135742,
+            859.2509078979492,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "bounding_box": [
+            266.6149385192083,
+            -146.7274329635741,
+            114.26008605957031,
+            31.35583564571864,
+            54.34587721211185,
+            31.515655517578125,
+            0.8250894633695468
+        ]
+    },
+    "aurobus": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1102.4225176832404,
+            710.9044753796101,
+            -0.007380832494305878
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Association of Hungarian Fine and Applied Artists": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1079.8432006835938,
+            1107.1592712402344,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "bounding_box": [
+            80.0988998413086,
+            107.15927124023438,
+            112.07051849365234,
+            34.5406608581543,
+            39.503257751464844,
+            22.35468292236328,
+            0.7375522255897522
+        ]
+    },
+    "JCC Budapest - B\u00e1lint H\u00e1z": {
+        "building": "B\u00e1lint H\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1129.2392196655273,
+            1222.1030960083008,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            129.0549659186514,
+            222.10309918194915,
+            110.62977981567381,
+            19.263797396162918,
+            41.77492025819328,
+            21.02307891845703,
+            0.7009740205955808
+        ]
+    },
+    "Roni ABC": {
+        "building": "Roni ABC",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1139.6305847167969,
+            823.7910614013672,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "bounding_box": [
+            139.6305694580078,
+            -176.2089385986328,
+            103.14949035644533,
+            9.903895661645569,
+            15.840966828222008,
+            6.4879913330078125,
+            0.6891719889663451
+        ]
+    },
+    "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon": {
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1082.5144958496094,
+            733.6156234741211,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            82.51449584960938,
+            -266.2007141113281,
+            113.66513061523438,
+            14.387836456298828,
+            24.090131759643555,
+            27.955238342285156,
+            0.9561694860458374
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "ECE irodah\u00e1z",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            943.3070030212402,
+            970.7814821600914,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -52.95170402526854,
+            -29.218517839908586,
+            114.28670501708984,
+            46.33361879146786,
+            54.264206122232714,
+            26.726882934570312,
+            0.1509085970705138
+        ]
+    },
+    "Hercegpr\u00edm\u00e1s utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -155.9045398743109,
+            144.7213899496251
+        ],
+        "rotation": 0.1637124135040342,
+        "bounding_box": null
+    },
+    "Kir\u00e1ly utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            117.95772788275947,
+            -183.99893072540985
+        ],
+        "rotation": 2.2355502044473248,
+        "bounding_box": null
+    },
+    "Andr\u00e1ssy \u00fat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            59.99896986558039,
+            29.98931781945049
+        ],
+        "rotation": 2.377180086853661,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            248.1290355749906,
+            -186.6216138602753
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            111.0178026959204,
+            109.49239231574528
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            71.10663574044452,
+            -84.23841513956515
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -122.0405227968639,
+            -79.60096903829383
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            241.34025042679923,
+            -78.70096472476352
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Andr\u00e1ssy \u00fat": [
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hercegpr\u00edm\u00e1s utca": [
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

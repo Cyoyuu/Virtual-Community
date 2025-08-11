@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleeping",
+        "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+        "building": "Stern-b\u00e9rpalota",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Cat Cafe",
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes at school",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to aurobus",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "aurobus"
+    },
+    {
+        "type": "main",
+        "activity": "Work on video game development",
+        "place": "aurobus",
+        "building": "open space",
+        "start_time": "15:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mad\u00e1ch Trade Center",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "aurobus",
+        "end_place": "Mad\u00e1ch Trade Center"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to aurobus",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "aurobus"
+    },
+    {
+        "type": "main",
+        "activity": "Continue video game development",
+        "place": "aurobus",
+        "building": "open space",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Pika Hayes's room",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "aurobus",
+        "end_place": "Pika Hayes's room at Stern-b\u00e9rpalota"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+        "building": "Stern-b\u00e9rpalota",
+        "start_time": "22:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Pika Hayes's room at Stern-b\u00e9rpalota",
+        "building": "Stern-b\u00e9rpalota",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

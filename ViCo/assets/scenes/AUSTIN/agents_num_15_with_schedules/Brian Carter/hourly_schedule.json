@@ -1,0 +1,102 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brian Carter's room at Hanover Republic Square",
+        "building": "Hanover Republic Square",
+        "start_time": "00:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Powder Room",
+        "place": "Powder Room",
+        "building": "Hanover Republic Square",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to REP Real Estate Partners",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on property deal",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Tacodeli",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on property deal",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "12:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and discussing property deals",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Neon Grotto",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "REP Real Estate Partners",
+        "end_place": "Neon Grotto"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Neon Grotto",
+        "place": "Neon Grotto",
+        "building": "Neon Grotto",
+        "start_time": "18:30:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hanover Republic Square",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Neon Grotto",
+        "end_place": "Brian Carter's room at Hanover Republic Square"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Brian Carter's room at Hanover Republic Square",
+        "building": "Hanover Republic Square",
+        "start_time": "20:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brian Carter's room at Hanover Republic Square",
+        "building": "Hanover Republic Square",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

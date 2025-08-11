@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brian Carter's room at Mount Royal House",
+        "building": "Mount Royal House",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Buzzards Restaurant & Bar",
+        "building": "Mount Royal House",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to EzOffice",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new feature for business management software",
+        "place": "EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to MODERN STEAK on Stephen Avenue",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "EzOffice",
+        "end_place": "MODERN STEAK on Stephen Avenue"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "MODERN STEAK on Stephen Avenue",
+        "building": "Imperial Bank of Canada",
+        "start_time": "12:10:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to EzOffice",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "MODERN STEAK on Stephen Avenue",
+        "end_place": "EzOffice"
+    },
+    {
+        "type": "main",
+        "activity": "Continue developing new feature",
+        "place": "EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "13:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Buzzards Restaurant & Bar",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "EzOffice",
+        "end_place": "Buzzards Restaurant & Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Buzzards Restaurant & Bar",
+        "building": "Mount Royal House",
+        "start_time": "18:10:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Buzzards Restaurant & Bar",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Explore new technologies at Collage Gallery",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Mount Royal House",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "Brian Carter's room at Mount Royal House"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Brian Carter's room at Mount Royal House",
+        "building": "Mount Royal House",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Brian Carter's room at Mount Royal House",
+        "building": "Mount Royal House",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jensen Huang's room at Roombach Hotel",
+        "building": "Roombach Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Jensen Huang's room at Roombach Hotel",
+        "building": "Roombach Hotel",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mad\u00e1ch Trade Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Jensen Huang's room at Roombach Hotel",
+        "end_place": "Mad\u00e1ch Trade Center"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Mad\u00e1ch Trade Center",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cat Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "Cat Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Cat Cafe",
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Cat Cafe",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cat Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Cat Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Cat Cafe",
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mad\u00e1ch Trade Center",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Cat Cafe",
+        "end_place": "Mad\u00e1ch Trade Center"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Mad\u00e1ch Trade Center",
+        "place": "Mad\u00e1ch Trade Center",
+        "building": "Mad\u00e1ch Trade Center",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jensen Huang's room at Roombach Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Mad\u00e1ch Trade Center",
+        "end_place": "Jensen Huang's room at Roombach Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Jensen Huang's room at Roombach Hotel",
+        "building": "Roombach Hotel",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

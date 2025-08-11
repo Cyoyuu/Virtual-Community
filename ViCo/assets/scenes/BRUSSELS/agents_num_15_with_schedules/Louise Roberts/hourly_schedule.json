@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleeping",
+        "place": "Louise Roberts's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Claire's Caf\u00e9",
+        "building": "Rue du Marais 5",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Planning community event",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to La Confiserie de Bruxelles",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Philantropy House",
+        "end_place": "La Confiserie de Bruxelles"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "La Confiserie de Bruxelles",
+        "building": "Rue du Marais 7",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "La Confiserie de Bruxelles",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteering and reading",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "13:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Engaging in diplomatic discussions",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Claire's Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Philantropy House",
+        "end_place": "Claire's Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Claire's Caf\u00e9",
+        "building": "Rue du Marais 5",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Claire's Caf\u00e9",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Leisure time at Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Louise Roberts's room at Boiteux",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Louise Roberts's room at Boiteux"
+    },
+    {
+        "type": "main",
+        "activity": "Relaxing and preparing for bed",
+        "place": "Louise Roberts's room at Boiteux",
+        "building": "Boiteux",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]
