@@ -130,14 +130,8 @@ class HeuristicMeetingAgent(Agent):
     def get_agent_list(self):
         return self.s_mem.agents
 
-    def get_indoor_places(self):
-        return self.s_mem.get_indoor_places()
-
-    def get_outdoor_places(self):
-        return self.s_mem.get_outdoor_places()
-
     def goto_place(self, target_place: str, force=False) -> (dict, bool):
-        places = self.get_indoor_places() + self.get_outdoor_places() + ['open space']
+        places = self.s_mem.get_places() + ['open space']
         if target_place is None:
             target_place = 'open space'
             self.logger.debug(
