@@ -186,7 +186,7 @@ class LLMMeetingAgent(Agent):
         for agent in agent_pos_dict:
             if agent_pos_dict[agent]['place'] is not None:
                 agent_pos_dict[agent]['pose'][0], agent_pos_dict[agent]['pose'][1] = agent_pos_dict[agent]['pose'][0]-1000, agent_pos_dict[agent]['pose'][1]-1000
-            agent_pos_description += f"{agent} is now in {agent_pos_dict[agent]['place'] if agent_pos_dict[agent]['place'] is not None else 'open space'}, with coordinate {agent_pos_dict['pose']}.\n"
+            agent_pos_description += f"{agent} is now in {agent_pos_dict[agent]['place'] if agent_pos_dict[agent]['place'] is not None else 'open space'}, with coordinate {agent_pos_dict[agent]['pose']}.\n"
         agent_pos_description.strip("\n")
         prompt = prompt.replace("$AgentPoses$", agent_pos_description)
         prompt = prompt.replace("$Places$", self.get_nearest_places_description(self.get_meeting_target()))
