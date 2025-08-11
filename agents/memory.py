@@ -22,12 +22,12 @@ from ViCo.tools.model_manager import global_model_manager
 from ViCo.tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
 
 class SemanticMemory:
-	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None):
+	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None):
 		self.storage_path = storage_path
 		self.detect_interval = detect_interval
 		self.debug = debug
 		self.logger = logger
-		self.knowledge_path = os.path.join(storage_path, "knowledge.json")
+		self.knowledge_path = os.path.join(storage_path, "knowledge.json") if knowledge_path is None else knowledge_path
 		self.knowledge = {}
 		self.knowledge_feature_path = os.path.join(storage_path, "knowledge_feature.pkl")
 		self.knowledge_feature = {}
