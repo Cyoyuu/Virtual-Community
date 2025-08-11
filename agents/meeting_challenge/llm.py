@@ -161,8 +161,7 @@ class LLMMeetingAgent(Agent):
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             else:
-                action = self.goto_place(self.meeting_place)
-                arrived = self.current_place == self.meeting_place
+                action, arrived = self.goto_place(self.meeting_place)
                 if arrived:
                     action = {'type': 'task_complete'}
         except Exception as e:
