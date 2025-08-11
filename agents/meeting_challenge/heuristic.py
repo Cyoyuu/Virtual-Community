@@ -88,7 +88,7 @@ class HeuristicMeetingAgent(Agent):
         return meeting_target
     
     def get_meeting_place(self):
-        place = self.get_nearest_places(self.get_meeting_target())[0]
+        place = self.get_nearest_places(self.get_meeting_target())[0][1]
         return place
 
     def get_nearest_places(self, target):
