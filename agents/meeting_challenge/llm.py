@@ -190,7 +190,7 @@ class LLMMeetingAgent(Agent):
         agent_pos_description.strip("\n")
         prompt = prompt.replace("$AgentPoses$", agent_pos_description)
         prompt = prompt.replace("$Places$", self.get_nearest_places_description(self.get_meeting_target()))
-        prompt = prompt.replace("$ConversationHistory$", self.conversation_history)
+        prompt = prompt.replace("$ConversationHistory$", self.get_conversation_description())
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
