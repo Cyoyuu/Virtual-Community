@@ -18,10 +18,12 @@ $ConversationHistory$
 
 Your response should be in the following format:
 start of response(don't include this line)
+```json
 {
     "type": $type$,
     "speech": $speech$
 }
+```
 end of response(don't include this line)
 So that your response can be directly parsed by json.
 
@@ -38,4 +40,4 @@ Instructions:
 9.If the conversation has lasted too long (more than 5 times agents number), you can just choose the proposal with the most support to avoid wasting too much time.
 10.If you think everyone has reached an agreement, just replace $speech$ with "decide" and $speech$ with the decided meeting place.
 
-Now, generate your response. Don't include extra charactors.
+Now, generate your response. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!
