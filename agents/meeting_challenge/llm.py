@@ -168,6 +168,7 @@ class LLMMeetingAgent(Agent):
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None
+        self.action_history.append(Action(action, self.curr_time, self.curr_time))
         return action
     
     def get_meeting_target(self):
