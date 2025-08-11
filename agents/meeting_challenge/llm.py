@@ -196,14 +196,14 @@ class LLMMeetingAgent(Agent):
         try:
             response_dict = self.parse_json(prompt, response)
             self.logger.debug(f"generated response: {response_dict}")
-            meeting_place = response_dict['meeting_place']
+            response_type = response_dict['type']
             speech = response_dict['speech']
         except Exception as e:
             self.logger.error(
                 f"Error getting meeting place: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            meeting_place = None
+            response_type = None
             speech = None
-        return meeting_place, speech
+        return response_type, speech
 
     def parse_json(self, prompt, response, last_call=False):
         json_str = None
