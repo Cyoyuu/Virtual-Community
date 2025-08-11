@@ -28,7 +28,7 @@ class HeuristicMeetingAgent(Agent):
         self.looking_down = False
         self.num_agents = num_agents
         self.comm = self.num_agents > 1
-        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger)
+        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
         if init_generator:
 
@@ -38,14 +38,14 @@ class HeuristicMeetingAgent(Agent):
 
         self.end_time = None
 
-        self.meeting_target = None
+        self.meeting_place = None
         self.stage = 0
 
     def reset(self, name, pose):
         super().reset(name, pose)
         self.curr_time = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), debug=self.debug, logger=self.logger)
-        self.meeting_target = None
+        self.meeting_place = None
 
     def _process_obs(self, obs):
         num_new_objects = self.s_mem.update(obs)
@@ -58,24 +58,21 @@ class HeuristicMeetingAgent(Agent):
     def _act(self, obs):
         action = None
         if self.stage == 0:
-            self.meeting_target = self.get_meeting_target()
-            action = self.navigate(self.s_mem.get_sg(self.current_place), self.meeting_target, goal_bbox=None)
-            arrived = is_near_goal(self.pose[0], self.pose[1], None, self.meeting_target)
+            self.meeting_place = self.get_meeting_place()
+            action, arrived = self.goto_place(self.meeting_place)
             if arrived:
                 self.stage = 10
             else:
                 self.stage += 1
         elif self.stage <= 9:
-            action = self.navigate(self.s_mem.get_sg(self.current_place), self.meeting_target, goal_bbox=None)
-            arrived = is_near_goal(self.pose[0], self.pose[1], None, self.meeting_target)
+            action, arrived = self.goto_place(self.meeting_place)
             if arrived:
                 self.stage = 10
             else:
                 self.stage = (self.stage+1)%10
         elif self.stage == 10:
-            self.meeting_target = self.get_meeting_target()
-            action = self.navigate(self.s_mem.get_sg(self.current_place), self.meeting_target, goal_bbox=None)
-            arrived = is_near_goal(self.pose[0], self.pose[1], None, self.meeting_target, threshold=5)
+            self.meeting_place = self.get_meeting_place()
+            action, arrived = self.goto_place(self.meeting_place)
             if arrived:
                 action = {'type': 'task_complete'}
             else:
@@ -89,6 +86,26 @@ class HeuristicMeetingAgent(Agent):
             meeting_target += np.array(self.obs['agent_pos_dict'][agent]['pose'][:2])
         meeting_target /= len(self.obs['agent_pos_dict'])
         return meeting_target
+    
+    def get_meeting_place(self):
+        place = self.get_nearest_places(self.get_meeting_target())[0]
+        return place
+
+    def get_nearest_places(self, target):
+        place_list = []
+        for place in self.s_mem.get_places():
+            goal_place_dict = self.s_mem.get_knowledge(place)
+            if goal_place_dict is None:
+                self.logger.error(f"No knowledge found for {place}.")
+                return None, False
+            goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+            if goal_place_dict["building"] != "open space":
+                goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+            goal_bbox = goal_place_dict["bounding_box"]
+            place_list.append((np.linalg.norm(np.array(target)-goal_pos),place))
+        place_list = sorted(place_list)
+        place_list = place_list[:15] if len(place_list)>15 else place_list
+        return place_list
 
     def goto(self, target, force=False):
         if target.startswith("task_"):
