@@ -1,0 +1,315 @@
+{
+    "sim_name": "AUSTIN_agents_num_5",
+    "agent_names": [
+        "Alex Jefferson",
+        "Megan Carter",
+        "Shannon Steves",
+        "Steve Johnson",
+        "Yann LeCun"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -234.36855008396148,
+                -34.72605333697807,
+                106.44508109136267,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hanover Republic Square",
+            "current_place": "Alex Jefferson's room at Hanover Republic Square",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -90.59210619809659,
+                -181.9659931972424,
+                105.27074784373318,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "319 Colorado Street",
+            "current_place": "Megan Carter's room at 4th and Colorado",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -243.41697589784005,
+                204.7847043641123,
+                112.76348187779371,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 West 6th Street Suite 1510",
+            "current_place": "Shannon Steves's room at Savills Austin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -273.4072292056777,
+                117.33833279284183,
+                110.2653750256911,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "ATX Tower",
+            "current_place": "Steve Johnson's room at Crites Real Estate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                176.34075543101432,
+                12.734728761048041,
+                109.05594092134834,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Driskill",
+            "current_place": "Yann LeCun's room at The Driskill",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            753.2972106933594,
+            990.7613353729248,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            890.3592643737793,
+            837.6057586669922,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            797.0851669311523,
+            1200.809211730957,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            750.550178527832,
+            1108.0142288208008,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1164.4101486206055,
+            1045.4788842201233,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Yann_LeCun.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "The Riley Building",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "5th and Colorado",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "CVS Pharmacy",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Wild About Music",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Oneut",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "722 Congress Avenue",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Tech Innovators Club": {
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Indeed Tower",
+            "members": [
+                "Alex Jefferson",
+                "Yann LeCun"
+            ],
+            "daily_activity": "discussing technology trends from 18:00 to 19:00"
+        },
+        "Art and Social Club": {
+            "description": "A community of individuals who enjoy art, socializing, and cultural activities.",
+            "place": "The Dead Rabbit, Austin",
+            "members": [
+                "Megan Carter",
+                "Shannon Steves",
+                "Steve Johnson"
+            ],
+            "daily_activity": "hosting art and social events from 17:00 to 19:00"
+        }
+    }
+}

@@ -1,0 +1,386 @@
+{
+    "Yann LeCun": {
+        "age": 64,
+        "living_place": "The Driskill",
+        "appearance": "ViCo/assets/imgs/avatars/Yann LeCun.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+        "place": "Indeed Tower",
+        "members": [
+            "Alex Jefferson",
+            "Yann LeCun"
+        ],
+        "daily_activity": "discussing technology trends from 18:00 to 19:00"
+    },
+    "Alex Jefferson's room at Hanover Republic Square": {
+        "building": "Hanover Republic Square",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.2972106933594,
+            990.7613353729248,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Alex Jefferson's room at Hanover Republic Square",
+        "bounding_box": [
+            -246.7083327197297,
+            -9.2424088725735,
+            185.58750915527344,
+            41.360091556883994,
+            38.83588991354665,
+            157.82546997070312,
+            -0.3144263592227019
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "The Dead Rabbit, Austin": {
+        "building": "204 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1227.822525024414,
+            1018.1956071853638,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            227.82254028320312,
+            18.195602416992188,
+            116.03865051269531,
+            13.030577659606934,
+            39.155460357666016,
+            15.186332702636719,
+            -0.31255459785461426
+        ]
+    },
+    "Powder Room": {
+        "building": "Hanover Republic Square",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.2972106933594,
+            990.7613353729248,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -246.7083327197297,
+            -9.2424088725735,
+            185.58750915527344,
+            41.360091556883994,
+            38.83588991354665,
+            157.82546997070312,
+            -0.3144263592227019
+        ]
+    },
+    "Firehouse Lounge & Hostel": {
+        "building": "Firehouse Lounge & Hostel",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "bar",
+            "hostel"
+        ],
+        "location": [
+            1227.6295623779297,
+            1051.1461791992188,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            227.63192494539288,
+            51.07353904937173,
+            116.09837341308594,
+            21.97171637444343,
+            12.512559175067764,
+            11.946701049804688,
+            -0.3083523976338946
+        ]
+    },
+    "The Eleanor": {
+        "building": "The Roosevelt Room",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            722.9879302978516,
+            1000.7474145889282,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -277.01263427734375,
+            0.7476043701171875,
+            115.5969009399414,
+            7.165318965911865,
+            38.790252685546875,
+            17.84918212890625,
+            -0.31613221764564514
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "722 Congress Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "finance",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1077.0716609954834,
+            1231.643081665039,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            76.41874649017814,
+            231.6161529552354,
+            117.7382354736328,
+            50.237069926072,
+            35.73686503721335,
+            9.689102172851562,
+            -0.314488561040297
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "5th and Colorado",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            849.1528282165527,
+            959.4064693450928,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -150.8711313336559,
+            -40.593528950208295,
+            139.06513595581055,
+            53.96049004373077,
+            39.745880443738045,
+            62.901283264160156,
+            -0.31915276708788637
+        ]
+    },
+    "Wild About Music": {
+        "building": "Wild About Music",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1115.107105255127,
+            1089.276912689209,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            115.09131339416432,
+            89.2876347157912,
+            113.87362289428711,
+            7.292744612817333,
+            37.50139986550991,
+            8.100639343261719,
+            1.261354754823172
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}
