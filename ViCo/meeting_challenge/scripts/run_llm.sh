@@ -1,3 +1,5 @@
+scene=$1
+
 export PYTHONPATH=${PWD}
 
 # export keep_running='1'
@@ -8,14 +10,15 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --skip_avatar_animation \
 --enable_gt_segmentation \
 --output_dir ViCo/meeting_challenge/output \
---scene DETROIT \
+--scene ${scene} \
 --enable_outdoor_objects \
+--enable_indoor_scene \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_5 \
 --agent_type llm \
---save_per_seconds 50 \
---step_limit 1500 \
+--save_per_seconds 200 \
+--step_limit 15000 \
 --lm_source azure \
 --lm_id gpt-4o \
 --debug \
