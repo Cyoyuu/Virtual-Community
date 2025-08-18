@@ -1,0 +1,173 @@
+{
+    "name": "Steve Johnson",
+    "first_name": "Steve",
+    "last_name": "Johnson",
+    "age": 30,
+    "innate": "security, conformity, tradition",
+    "learned": "I am a software developer at Idea Nuova Inc, and I enjoy coding and playing video games.",
+    "currently": "I am working on developing a new software application.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Empire State Building",
+            "members": [
+                "Bill Gates",
+                "Feifei Li",
+                "Steve Jobs",
+                "Steve Johnson"
+            ],
+            "daily_activity": "discussing technology trends from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Steve Johnson's room at E\u014cS NoMad Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Steve Johnson's room at E\u014cS NoMad Apartments",
+            "building": "EOS",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Baskin-Robbins",
+            "building": "302 5th Avenue",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Idea Nuova Inc",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "main",
+            "activity": "Software development work",
+            "place": "Idea Nuova Inc",
+            "building": "302 5th Avenue",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to STATE Grill and Bar",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Idea Nuova Inc",
+            "end_place": "STATE Grill and Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "STATE Grill and Bar",
+            "building": "Empire State Building",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Idea Nuova Inc",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:45:00",
+            "start_place": "STATE Grill and Bar",
+            "end_place": "Idea Nuova Inc"
+        },
+        {
+            "type": "main",
+            "activity": "Continue software development work",
+            "place": "Idea Nuova Inc",
+            "building": "302 5th Avenue",
+            "start_time": "12:45:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Empire State Building for Tech Innovators Club meeting",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Idea Nuova Inc",
+            "end_place": "Empire State Building"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Club meeting",
+            "place": "Empire State Building",
+            "building": "Empire State Building",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "STATE Grill and Bar",
+            "building": "Empire State Building",
+            "start_time": "19:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Steve Johnson's room at E\u014cS NoMad Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "STATE Grill and Bar",
+            "end_place": "Steve Johnson's room at E\u014cS NoMad Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and play video games",
+            "place": "Steve Johnson's room at E\u014cS NoMad Apartments",
+            "building": "EOS",
+            "start_time": "20:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Steve Johnson's room at E\u014cS NoMad Apartments",
+            "building": "EOS",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Idea Nuova Inc",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,420 @@
+{
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "Elizabeth Mensah's room at Theatre Park",
+        "appearance": "ViCo/assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "Creative Arts Group"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Theatre Park",
+        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Creative Arts Group"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "JONES TTOWN",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Creative Arts Group"
+        ]
+    },
+    "Creative Arts Group": {
+        "description": "A group of individuals passionate about arts and creativity, meeting to share ideas and work on art projects.",
+        "place": "Verno Art Studios",
+        "members": [
+            "Elizabeth Mensah",
+            "Pika Hayes",
+            "Zara Williams",
+            "Olivia Adams"
+        ],
+        "daily_activity": "working on art projects from 16:00 to 17:00"
+    },
+    "Olivia Adams's room at Classy & Rustic Downtown Condo": {
+        "building": "Nelson Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Starbucks": {
+        "building": "221 Queen Street West",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            766.4516067504883,
+            1227.8131561279297,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -233.54844665527344,
+            227.8131561279297,
+            197.7458038330078,
+            29.255900074614548,
+            30.41286239444057,
+            79.5115966796875,
+            0.2845447485288334
+        ]
+    },
+    "Verno Art Studios": {
+        "building": "120 Adelaide Street West Unit FC-09",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1141.2012023925781,
+            1187.323585510254,
+            -36
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            141.67819696673928,
+            188.66048485468602,
+            211.56494140625,
+            40.74812248194316,
+            53.76133484803879,
+            111.7357177734375,
+            0.297179563177001
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "145 Wellington Street West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            991.1608514785767,
+            739.1054000854492,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -8.773028393482171,
+            -260.98171460209085,
+            157.5133209228516,
+            45.12938606591113,
+            30.04219615949391,
+            13.655609130859375,
+            0.2973957958698972
+        ]
+    },
+    "F45 Training Toronto Downtown": {
+        "building": "North Tower",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            987.1375579833984,
+            896.8284225463867,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -12.986947978983881,
+            -102.79264455034728,
+            171.97727966308594,
+            35.16610113891242,
+            30.747822481605414,
+            37.336090087890625,
+            0.2895740288522889
+        ]
+    },
+    "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!": {
+        "building": "Nelson Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Smoke's Poutinerie Adelaide": {
+        "building": "Nelson Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Tim Hortons": {
+        "building": "120 Adelaide Street West Unit FC-09",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1141.2012023925781,
+            1187.323585510254,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            141.67819696673928,
+            188.66048485468602,
+            211.56494140625,
+            40.74812248194316,
+            53.76133484803879,
+            111.7357177734375,
+            0.297179563177001
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Boutique Condo West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            752.1804733276367,
+            1059.982961654663,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -247.81965637207034,
+            59.98296165466309,
+            181.64993286132812,
+            22.583336903625927,
+            92.78239107414743,
+            51.735382080078125,
+            -1.2824980308418785
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "The Dominion of Canada General Insurance Company",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1004.5163097381592,
+            1056.5051174163818,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            4.516885391406625,
+            55.90237374417084,
+            172.34688568115234,
+            59.41062478687141,
+            26.96097954580368,
+            35.27458190917969,
+            0.2810712167948572
+        ]
+    },
+    "Duncan Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -305.5051431396848,
+            31.274830657362244
+        ],
+        "rotation": -1.2818139451305748,
+        "bounding_box": null
+    },
+    "University Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            60.647572252395314,
+            -177.97103757136227
+        ],
+        "rotation": -2.746130847002968,
+        "bounding_box": null
+    },
+    "King Street West Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            320.9162021456791,
+            31.692857479827722
+        ],
+        "rotation": -1.279698474914429,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.9830944262577,
+            -60.632213384139725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            70.9781059093955,
+            -58.57682221598191
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            143.33072943279424,
+            162.86726965953133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            9.28993683166875,
+            89.4595028492765
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -228.06344546133988,
+            175.04188547899503
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -137.68946092169688,
+            80.05882480669985
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To King Street West": [
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Duncan Street": [
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

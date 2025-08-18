@@ -1,0 +1,104 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Union Gourmet Catering",
+        "building": "Public Ledger Building",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Liberty Square",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend school",
+        "place": "Liberty Square",
+        "building": "Public Ledger Building",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Union Gourmet Catering",
+        "building": "Public Ledger Building",
+        "start_time": "15:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Liberty Bell Center",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Union Gourmet Catering",
+        "end_place": "Liberty Bell Center"
+    },
+    {
+        "type": "main",
+        "activity": "Visit historical landmarks with Historical Explorers",
+        "place": "Liberty Bell Center",
+        "building": "Liberty Bell Center",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Franklin\u2019s ice cream",
+        "building": "Liberty Bell Center",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Weitzman National Museum of American Jewish History",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Franklin\u2019s ice cream",
+        "end_place": "Weitzman National Museum of American Jewish History"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Weitzman National Museum of American Jewish History",
+        "place": "Weitzman National Museum of American Jewish History",
+        "building": "Weitzman National Museum of American Jewish History",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Megan Carter's room at The Ayer",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Weitzman National Museum of American Jewish History",
+        "end_place": "Megan Carter's room at The Ayer"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Megan Carter's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

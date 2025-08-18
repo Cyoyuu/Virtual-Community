@@ -1,0 +1,192 @@
+{
+    "name": "Joe Anderson",
+    "first_name": "Joe",
+    "last_name": "Anderson",
+    "age": 31,
+    "innate": "security, conformity, benevolence",
+    "learned": "I am a fitness trainer at CrossFit Somerville, helping people achieve their health goals. I enjoy cycling and cooking.",
+    "currently": "I am organizing a community fitness challenge.",
+    "lifestyle": "I go to bed around 23:00, wake up around 07:00, eat dinner around 18:30",
+    "groups": [
+        {
+            "name": "Tech Innovators Group",
+            "description": "A network of tech enthusiasts and professionals exploring new technologies.",
+            "place": "Prospect Union Square",
+            "members": [
+                "Isaac Newton",
+                "Joe Anderson",
+                "Leonard Park",
+                "Tim Cook"
+            ],
+            "daily_activity": "brainstorming tech solutions from 18:00 to 19:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joe Anderson's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Dunkin'",
+            "building": "Dunkin'",
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to CrossFit Somerville",
+            "place": null,
+            "building": null,
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a fitness trainer",
+            "place": "CrossFit Somerville",
+            "building": "CrossFit",
+            "start_time": "08:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Life Alive Organic Cafe Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "CrossFit Somerville",
+            "end_place": "Life Alive Organic Cafe Union Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Life Alive Organic Cafe Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lincoln Park",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Life Alive Organic Cafe Union Square",
+            "end_place": "Lincoln Park"
+        },
+        {
+            "type": "main",
+            "activity": "Cycling and organizing community fitness challenge",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "13:30:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Lincoln Park",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Grocery shopping",
+            "place": "Fresh and Snacks Store",
+            "building": "1 Bow Street",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Prospect Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Prospect Union Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Prospect Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Group meeting",
+            "place": "Prospect Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "18:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Joe Anderson's room at Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Prospect Union Square",
+            "end_place": "Joe Anderson's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and personal time",
+            "place": "Joe Anderson's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "20:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "CrossFit Somerville",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

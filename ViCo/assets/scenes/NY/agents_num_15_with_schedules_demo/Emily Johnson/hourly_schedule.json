@@ -1,0 +1,96 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Living Quest Real Estate",
+        "building": "315 5th Avenue",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Emily Johnson's room at Living Quest Real Estate",
+        "building": "315 5th Avenue",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Satellite Academy High School",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes",
+        "place": "Satellite Academy High School",
+        "building": "120 West 30th Street",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Creative Art Works",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Satellite Academy High School",
+        "end_place": "Creative Art Works"
+    },
+    {
+        "type": "main",
+        "activity": "Collaborate on art projects with Creative Minds",
+        "place": "Creative Art Works",
+        "building": "Manhattan Mall",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ikbal's Halal Food",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Creative Art Works",
+        "end_place": "Ikbal's Halal Food"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Ikbal's Halal Food",
+        "building": "Manhattan Mall",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Emily Johnson's room",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Ikbal's Halal Food",
+        "end_place": "Emily Johnson's room at Living Quest Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Work on art competition piece",
+        "place": "Emily Johnson's room at Living Quest Real Estate",
+        "building": "315 5th Avenue",
+        "start_time": "18:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Evening snack",
+        "place": "Emily Johnson's room at Living Quest Real Estate",
+        "building": "315 5th Avenue",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

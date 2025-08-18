@@ -1,0 +1,174 @@
+{
+    "name": "Tim Cook",
+    "first_name": "Tim",
+    "last_name": "Cook",
+    "age": 55,
+    "innate": "power, achievement, security",
+    "learned": "I am the CEO of Apple Inc., known for my leadership in technology innovation and sustainability.",
+    "currently": "I am in Bratislava to explore potential partnerships in technology and sustainability.",
+    "lifestyle": "I go to bed around 22:30, wake up around 06:30, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "members": [
+                "Louise Roberts",
+                "Mark Zuckerberg",
+                "Tim Cook",
+                "Roth Miller"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Tim Cook's room at Hotel Tatra",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tim Cook's room at Hotel Tatra",
+            "building": "Hotel Tatra",
+            "start_time": "00:00:00",
+            "end_time": "06:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "06:30:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to St. Elizabeth College of Health and Social Work",
+            "place": null,
+            "building": null,
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Explore potential partnerships in technology and sustainability",
+            "place": "St. Elizabeth College of Health and Social Work",
+            "building": "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety",
+            "start_time": "07:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Le Petit Cafe & Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "St. Elizabeth College of Health and Social Work",
+            "end_place": "Le Petit Cafe & Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Le Petit Cafe & Restaurant",
+            "building": "Such\u00e9 m\u00fdto 510/19",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Le Petit Cafe & Restaurant",
+            "end_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Tech Innovators Club meeting",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "13:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Club meeting",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "17:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovak Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "Slovak Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "19:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "KINO TATRA",
+            "building": "Hotel Tatra",
+            "start_time": "19:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Return to Tim Cook's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "KINO TATRA",
+            "end_place": "Tim Cook's room at Hotel Tatra"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tim Cook's room at Hotel Tatra",
+            "building": "Hotel Tatra",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

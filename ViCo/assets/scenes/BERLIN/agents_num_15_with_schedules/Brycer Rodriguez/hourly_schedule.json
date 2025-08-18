@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brycer Rodriguez's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to August-Boeckh-Haus",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Thesis Research and Writing",
+        "place": "August-Boeckh-Haus",
+        "building": "August-Boeckh-Haus",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie im Adlon",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "Galerie im Adlon"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerie im Adlon",
+        "place": "Galerie im Adlon",
+        "building": "Adlon Kempinski",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il Punto",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:15:00",
+        "start_place": "Galerie im Adlon",
+        "end_place": "Il Punto"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Il Punto",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 6",
+        "start_time": "14:15:00",
+        "end_time": "14:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to August-Boeckh-Haus",
+        "place": null,
+        "building": null,
+        "start_time": "14:45:00",
+        "end_time": "15:00:00",
+        "start_place": "Il Punto",
+        "end_place": "August-Boeckh-Haus"
+    },
+    {
+        "type": "main",
+        "activity": "Study with Berlin Student Society",
+        "place": "August-Boeckh-Haus",
+        "building": "August-Boeckh-Haus",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to China Club Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "China Club Berlin"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "China Club Berlin",
+        "building": "Behrenstra\u00dfe 72",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends forever galerie",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "China Club Berlin",
+        "end_place": "Friends forever galerie"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Friends forever galerie",
+        "place": "Friends forever galerie",
+        "building": "Glinkastra\u00dfe 42",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Forum Willy Brandt Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at Forum Willy Brandt Berlin",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "20:15:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Brycer Rodriguez's room",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:15:00",
+        "start_place": "Forum Willy Brandt Berlin",
+        "end_place": "Brycer Rodriguez's room at Palais Theising"
+    },
+    {
+        "type": "main",
+        "activity": "Evening Relaxation and Preparation for Bed",
+        "place": "Brycer Rodriguez's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "22:15:00",
+        "end_time": "23:59:59"
+    }
+]

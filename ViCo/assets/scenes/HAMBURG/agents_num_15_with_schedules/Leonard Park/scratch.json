@@ -1,0 +1,205 @@
+{
+    "name": "Leonard Park",
+    "first_name": "Leonard",
+    "last_name": "Park",
+    "age": 26,
+    "innate": "stimulation, hedonism",
+    "learned": "I am a DJ at wineBANK Hamburg. I love mixing music and creating unique soundscapes.",
+    "currently": "I am preparing for my next big performance at wineBANK Hamburg.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Entertainment and Leisure",
+            "description": "A group of individuals involved in the entertainment industry and leisure activities.",
+            "place": "wineBANK Hamburg",
+            "members": [
+                "Chad Thompson",
+                "Elon Musk",
+                "Frank Walter Steinmeier",
+                "John F Kennedy",
+                "LeBron James",
+                "Leonard Park"
+            ],
+            "daily_activity": "attending live performances from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Leonard Park's room at Jupihaus",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Jupihaus",
+            "building": "Jupihaus",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caf\u00e9 no\u00e9",
+            "building": "ABC-Stra\u00dfe 44-46",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to wineBANK Hamburg",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Caf\u00e9 no\u00e9",
+            "end_place": "wineBANK Hamburg"
+        },
+        {
+            "type": "main",
+            "activity": "Music Mixing and Preparation",
+            "place": "wineBANK Hamburg",
+            "building": "Alte Oberpostdirektion",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Olivegan",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "wineBANK Hamburg",
+            "end_place": "Olivegan"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Olivegan",
+            "building": "Valentinskamp 34",
+            "start_time": "13:00:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MOM ART SPACE",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Olivegan",
+            "end_place": "MOM ART SPACE"
+        },
+        {
+            "type": "main",
+            "activity": "Explore Art and Music",
+            "place": "MOM ART SPACE",
+            "building": "Valentinskamp 34",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to wineBANK Hamburg",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "MOM ART SPACE",
+            "end_place": "wineBANK Hamburg"
+        },
+        {
+            "type": "main",
+            "activity": "Final Music Preparation",
+            "place": "wineBANK Hamburg",
+            "building": "Alte Oberpostdirektion",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend Live Performance",
+            "place": "wineBANK Hamburg",
+            "building": "Alte Oberpostdirektion",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Klimperkiste",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:10:00",
+            "start_place": "wineBANK Hamburg",
+            "end_place": "Klimperkiste"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Klimperkiste",
+            "place": null,
+            "building": null,
+            "start_time": "19:10:00",
+            "end_time": "19:30:00",
+            "start_place": null,
+            "end_place": "Klimperkiste"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Klimperkiste",
+            "building": "Esplanade 17",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Leonard Park's room at Jupihaus",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Klimperkiste",
+            "end_place": "Leonard Park's room at Jupihaus"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and Unwind",
+            "place": "Leonard Park's room at Jupihaus",
+            "building": "Jupihaus",
+            "start_time": "20:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Jupihaus",
+            "building": "Jupihaus",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "wineBANK Hamburg",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,438 @@
+{
+    "J Robert Oppenheimer": {
+        "age": 62,
+        "living_place": "J Robert Oppenheimer's room at MILU APARTMENTS MILANO",
+        "appearance": "ViCo/assets/imgs/avatars/J Robert Oppenheimer.png",
+        "groups": [
+            "Milan Sports Team"
+        ]
+    },
+    "LeBron James": {
+        "age": 39,
+        "living_place": "MILU APARTMENTS MILANO",
+        "appearance": "ViCo/assets/imgs/avatars/LeBron James.png",
+        "groups": [
+            "Milan Sports Team"
+        ]
+    },
+    "Milan Sports Team": {
+        "description": "A team for sports enthusiasts to train and compete in various sports.",
+        "place": "ABEL",
+        "members": [
+            "J Robert Oppenheimer",
+            "Jeff Bezos",
+            "LeBron James"
+        ],
+        "daily_activity": "basketball practice from 18:00 to 19:30"
+    },
+    "Jeff Bezos's room at MILU APARTMENTS MILANO": {
+        "building": "Via Caminadella",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1143.8871841430664,
+            840.2990493774414,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Jeff Bezos's room at MILU APARTMENTS MILANO",
+        "bounding_box": [
+            146.88597880503363,
+            -159.16115151361,
+            122.68914031982422,
+            27.29813319649149,
+            16.66098357056834,
+            15.821731567382798,
+            0.5048246993320491
+        ]
+    },
+    "ABEL": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1187.0965591453808,
+            735.1482715378298,
+            -0.008247297581220892
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Caf\u00e9 De Amicis": {
+        "building": "Via Edmondo de Amicis",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            913.1083145141602,
+            968.799633026123,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ]
+    },
+    "Le Cavallerizze": {
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            825.3389129638672,
+            918.7246150970459,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -184.58961486816406,
+            -81.22627258300781,
+            116.44261932373047,
+            35.094085693359375,
+            47.77935028076172,
+            5.8205108642578125,
+            -0.6583981513977051
+        ]
+    },
+    "Universit\u00e0 Cattolica -Edificio via Lanzone 14": {
+        "building": "Via San Pio V",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2957229614258,
+            882.8430099487305,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ]
+    },
+    "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano": {
+        "building": "Via Caminadella",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1143.8871841430664,
+            840.2990493774414,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            146.88597880503363,
+            -159.16115151361,
+            122.68914031982422,
+            27.29813319649149,
+            16.66098357056834,
+            15.821731567382798,
+            0.5048246993320491
+        ]
+    },
+    "Just Bowl": {
+        "building": "Via Francesco Novati",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1209.7241821289062,
+            847.586799621582,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            211.0496550276761,
+            -154.8169509632623,
+            123.38034057617188,
+            14.65409259727792,
+            21.06825863834656,
+            16.32000732421875,
+            -0.7431676443319067
+        ]
+    },
+    "Bistrot A Buon Rendere": {
+        "building": "33 Via De Amicis Edmondo",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1168.3214492797852,
+            729.5478668212891,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            170.0806721381436,
+            -270.41645558858056,
+            128.57376480102542,
+            15.06608843057849,
+            25.565065871348153,
+            28.806480407714844,
+            0.8555169576724874
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "33 Via De Amicis Edmondo",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "health",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1168.3214492797852,
+            729.5478668212891,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            170.0806721381436,
+            -270.41645558858056,
+            128.57376480102542,
+            15.06608843057849,
+            25.565065871348153,
+            28.806480407714844,
+            0.8555169576724874
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Via San Pio V",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2957229614258,
+            882.8430099487305,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ]
+    },
+    "Padiglione Aeronavale": {
+        "building": "Padiglione Aeronavale",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum"
+        ],
+        "location": [
+            778.8821029663086,
+            914.5847110748291,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -221.60708468110283,
+            -85.00327477544204,
+            123.66853713989258,
+            59.509900178541244,
+            57.57105673539258,
+            19.840599060058594,
+            -0.6696532835012385
+        ]
+    },
+    "Via Lodovico Necchi Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            275.8140310265028,
+            -139.97034909004233
+        ],
+        "rotation": -1.8149280584994887,
+        "bounding_box": null
+    },
+    "Via Edmondo de Amicis Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -65.93732561556723,
+            -126.39486544599913
+        ],
+        "rotation": 2.4943035051935416,
+        "bounding_box": null
+    },
+    "Via Bernardino Zenale Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -114.4527537817468,
+            243.87291376961986
+        ],
+        "rotation": -0.40365263075400587,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -126.99953288891919,
+            184.61791207176307
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            191.7041762596749,
+            -112.95025571070914
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -70.93074925681577,
+            -19.90143314509312
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            197.8229199282745,
+            145.4380916390492
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -195.64842812589262,
+            -107.06645171752132
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -47.12202541236839,
+            -220.04938063821953
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.97530517493664,
+            -262.0452924473627
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Via Bernardino Zenale": [
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Via Lodovico Necchi": [
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

@@ -2,67 +2,117 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Jody Petersen's room at Microliving at Long and Front",
-        "building": "Microliving at Long and Front",
+        "place": "Jody Petersen's room at Day Companies",
+        "building": "22 East Gay Street # 800",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
-        "activity": "Breakfast at Cravings Caf\u00e9",
-        "place": "Cravings Caf\u00e9",
-        "building": "Microliving at Long and Front",
-        "start_time": "08:00:00",
-        "end_time": "08:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to The Wing Dynasty",
-        "place": null,
-        "building": null,
+        "activity": "Breakfast",
+        "place": "Palmas Tropical Escape",
+        "building": "46 North High Street",
         "start_time": "08:30:00",
         "end_time": "09:00:00"
     },
     {
-        "type": "main",
-        "activity": "Work on new menu for the upcoming food festival",
-        "place": "The Wing Dynasty",
-        "building": "121 South High Street",
+        "type": "commute",
+        "activity": "Commute to Supreme Court Law Library",
+        "place": null,
+        "building": null,
         "start_time": "09:00:00",
-        "end_time": "12:00:00"
+        "end_time": "09:30:00",
+        "start_place": "Palmas Tropical Escape",
+        "end_place": "Supreme Court Law Library"
     },
     {
-        "type": "meal",
-        "activity": "Lunch at The Wing Dynasty",
-        "place": "The Wing Dynasty",
-        "building": "121 South High Street",
-        "start_time": "12:00:00",
+        "type": "main",
+        "activity": "Work at Supreme Court Law Library",
+        "place": "Supreme Court Law Library",
+        "building": "Supreme Court of Ohio",
+        "start_time": "09:30:00",
         "end_time": "12:30:00"
     },
     {
-        "type": "main",
-        "activity": "Continue working on new menu",
-        "place": "The Wing Dynasty",
-        "building": "121 South High Street",
-        "start_time": "12:30:00",
-        "end_time": "17:30:00"
-    },
-    {
         "type": "commute",
-        "activity": "Commute to Microliving at Long and Front",
+        "activity": "Commute to Barroluco Argentine Comfort Food",
         "place": null,
         "building": null,
-        "start_time": "17:30:00",
-        "end_time": "18:00:00",
-        "start_place": "The Wing Dynasty",
-        "end_place": "The Wing Dynasty"
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Supreme Court Law Library",
+        "end_place": "Barroluco Argentine Comfort Food"
     },
     {
         "type": "meal",
-        "activity": "Dinner and tasting new dishes with Columbus Culinary Club",
-        "place": "The Wing Dynasty",
-        "building": "121 South High Street",
+        "activity": "Lunch",
+        "place": "Barroluco Argentine Comfort Food",
+        "building": "47 North Pearl Street",
+        "start_time": "12:40:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Supreme Court Law Library",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Barroluco Argentine Comfort Food",
+        "end_place": "Supreme Court Law Library"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work at Supreme Court Law Library",
+        "place": "Supreme Court Law Library",
+        "building": "Supreme Court of Ohio",
+        "start_time": "13:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Huntington Center",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Supreme Court Law Library",
+        "end_place": "Huntington Center"
+    },
+    {
+        "type": "main",
+        "activity": "Columbus Business Network meeting",
+        "place": "Huntington Center",
+        "building": "Huntington Center",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Palmas Tropical Escape",
+        "place": null,
+        "building": null,
         "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Huntington Center",
+        "end_place": "Palmas Tropical Escape"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Palmas Tropical Escape",
+        "place": null,
+        "building": null,
+        "start_time": "18:10:00",
+        "end_time": "18:30:00",
+        "start_place": null,
+        "end_place": "Palmas Tropical Escape"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Palmas Tropical Escape",
+        "building": "46 North High Street",
+        "start_time": "18:30:00",
         "end_time": "19:00:00"
     },
     {
@@ -72,33 +122,33 @@
         "building": null,
         "start_time": "19:00:00",
         "end_time": "19:30:00",
-        "start_place": "The Wing Dynasty",
+        "start_place": "Palmas Tropical Escape",
         "end_place": "Chaos Contemporary Craft"
     },
     {
         "type": "main",
-        "activity": "Relax and enjoy games at Chaos Contemporary Craft",
+        "activity": "Organize community book club event",
         "place": "Chaos Contemporary Craft",
         "building": "78 North High Street",
         "start_time": "19:30:00",
-        "end_time": "21:00:00"
+        "end_time": "22:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Microliving at Long and Front",
+        "activity": "Commute to Jody Petersen's room at Day Companies",
         "place": null,
         "building": null,
-        "start_time": "21:00:00",
-        "end_time": "21:30:00",
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
         "start_place": "Chaos Contemporary Craft",
-        "end_place": "Jody Petersen's room at Microliving at Long and Front"
+        "end_place": "Jody Petersen's room at Day Companies"
     },
     {
         "type": "main",
-        "activity": "Relax and unwind",
-        "place": "Jody Petersen's room at Microliving at Long and Front",
-        "building": "Microliving at Long and Front",
-        "start_time": "21:30:00",
+        "activity": "Relax and prepare for bed",
+        "place": "Jody Petersen's room at Day Companies",
+        "building": "22 East Gay Street # 800",
+        "start_time": "22:30:00",
         "end_time": "23:59:59"
     }
 ]

@@ -1,38 +1,29 @@
 {
-    "Chad Thompson": {
-        "age": 28,
-        "living_place": "Chad Thompson's room at Haus Sommer",
-        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+    "Cillian Murphy": {
+        "age": 48,
+        "living_place": "Cillian Murphy's room at Hotel Ch\u00e2teau Royal Berlin",
+        "appearance": "ViCo/assets/imgs/avatars/Cillian Murphy.png",
         "groups": [
-            "Berlin Culinary Creators"
+            "Berlin Art Enthusiasts"
         ]
     },
-    "Olivia Adams": {
-        "age": 22,
+    "Kate Novak": {
+        "age": 23,
         "living_place": "Palais Theising",
-        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
         "groups": [
-            "Berlin Culinary Creators"
+            "Berlin Art Enthusiasts"
         ]
     },
-    "Selena Gomez": {
-        "age": 32,
-        "living_place": "Hotel Ch\u00e2teau Royal Berlin",
-        "appearance": "ViCo/assets/imgs/avatars/Selena Gomez.png",
-        "groups": [
-            "Berlin Culinary Creators"
-        ]
-    },
-    "Berlin Culinary Creators": {
-        "description": "A group of chefs and food lovers experimenting with new recipes and hosting dinner parties.",
-        "place": "Berliner Kindl",
+    "Berlin Art Enthusiasts": {
+        "description": "A group of individuals passionate about art and culture, exploring galleries and museums in Berlin.",
+        "place": "Friends forever galerie",
         "members": [
-            "Chad Thompson",
             "Eve By J Gonzales",
-            "Olivia Adams",
-            "Selena Gomez"
+            "Kate Novak",
+            "Cillian Murphy"
         ],
-        "daily_activity": "cooking and tasting new dishes from 18:00 to 20:00"
+        "daily_activity": "visiting art galleries from 16:00 to 18:00"
     },
     "Eve By J Gonzales's room at Palais Theising": {
         "building": "Palais Theising",
@@ -45,7 +36,7 @@
             837.3975067138672,
             -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "name": "Eve By J Gonzales's room at Palais Theising",
         "bounding_box": [
             270.6683044433594,
@@ -57,29 +48,50 @@
             0.1034993178085124
         ]
     },
-    "Starbucks": {
-        "building": "Pariser Platz 4A",
-        "coarse_type": "food",
+    "Fr\u00f6bel-Kita im BMG": {
+        "building": "im Bundesgesundheitsministerium",
+        "coarse_type": "office",
         "fine_types": [
-            "cafe",
+            "school",
             "point_of_interest",
-            "food",
             "establishment"
         ],
         "location": [
-            830.5794143676758,
-            1017.6247839927673,
+            1202.5439682006836,
+            800.3695373535156,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
         "bounding_box": [
-            -169.4203239842582,
-            17.62556044452765,
-            117.32018280029297,
-            35.40057035240413,
-            50.099088604200496,
-            27.398513793945312,
-            0.11025260651881935
+            202.71729661098868,
+            -199.80140201637454,
+            116.96408081054688,
+            87.81798119254081,
+            76.60282633690817,
+            28.27166748046875,
+            0.11055433360749166
+        ]
+    },
+    "Palais Theising": {
+        "building": "Palais Theising",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1270.7462768554688,
+            837.3975067138672,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            270.6683044433594,
+            -162.6024932861328,
+            115.11205291748048,
+            18.97455800176124,
+            17.973907533285743,
+            24.350433349609375,
+            0.1034993178085124
         ]
     },
     "Friends forever galerie": {
@@ -95,7 +107,7 @@
             818.6903610229492,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             274.3823579411318,
             -181.11113015291093,
@@ -106,77 +118,74 @@
             0.10350052452727374
         ]
     },
-    "Berliner Kindl": {
-        "building": "Wilhelmstra\u00dfe 78",
-        "coarse_type": "food",
+    "Rathsack Geb\u00e4udeservice GmbH": {
+        "building": "Glinkastra\u00dfe 30",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "restaurant",
+            "real_estate_agency",
             "point_of_interest",
-            "food",
             "establishment"
         ],
         "location": [
-            924.7960453033447,
-            742.9582595825195,
+            1282.8489990234375,
+            712.7369079589844,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
         "bounding_box": [
-            -74.73582409935607,
-            -257.0452992418696,
-            115.5212860107422,
-            15.464124409311774,
-            65.25435206889607,
-            23.172622680664062,
-            0.3142352306542696
+            282.8455266759489,
+            -287.01308378672064,
+            114.89515686035158,
+            19.153817999697633,
+            7.455263266501914,
+            23.53887939453125,
+            0.09032472245426922
         ]
     },
-    "Memorial": {
-        "building": "Akademie der K\u00fcnste",
-        "coarse_type": "entertainment",
+    "August-Boeckh-Haus": {
+        "building": "August-Boeckh-Haus",
+        "coarse_type": "office",
         "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
+            "university"
         ],
         "location": [
-            812.0868530273438,
-            857.7762260437012,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            -187.87543437758413,
-            -142.2299128660116,
-            111.32804489135742,
-            35.73794942676991,
-            81.96167813201629,
-            15.052940368652344,
-            0.1076321516413292
-        ]
-    },
-    "Forum Willy Brandt Berlin": {
-        "building": "Palais Theising",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
+            1277.2444152832031,
+            1168.189308166504,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            270.6683044433594,
-            -162.6024932861328,
-            115.11205291748048,
-            18.97455800176124,
-            17.973907533285743,
-            24.350433349609375,
-            0.1034993178085124
+            277.2447168724877,
+            168.1914726599949,
+            107.3475875854492,
+            21.663743902387818,
+            21.552491233010713,
+            8.099639892578125,
+            0.09701252193719455
+        ]
+    },
+    "Galerie im Adlon": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
         ]
     },
     "EINSTEIN Unter den Linden": {
@@ -193,7 +202,82 @@
             1064.4876728057861,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            242.29230238227618,
+            64.66633280163461,
+            116.00746154785156,
+            15.629991978785286,
+            53.13174919793875,
+            24.774169921875,
+            0.10154622759204261
+        ]
+    },
+    "Starbucks": {
+        "building": "Pariser Platz 4A",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            830.5794143676758,
+            1017.6247839927673,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -169.4203239842582,
+            17.62556044452765,
+            117.32018280029297,
+            35.40057035240413,
+            50.099088604200496,
+            27.398513793945312,
+            0.11025260651881935
+        ]
+    },
+    "1687 Restaurant & Caf\u00e9": {
+        "building": "Mittelstra\u00dfe 30",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1121.2932090759277,
+            1149.9044494628906,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            121.29393323297427,
+            149.27511665533441,
+            113.7048988342285,
+            45.83511356150687,
+            55.986780935075274,
+            20.999412536621094,
+            0.10806876847208037
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Unter den Linden 42",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.2963180541992,
+            1064.4876728057861,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
         "bounding_box": [
             242.29230238227618,
             64.66633280163461,
@@ -230,29 +314,28 @@
             0.10806876847208037
         ]
     },
-    "Beverages and DM Store": {
-        "building": "Behrenstra\u00dfe 72",
-        "coarse_type": "stores",
+    "Forum Willy Brandt Berlin": {
+        "building": "Palais Theising",
+        "coarse_type": "entertainment",
         "fine_types": [
-            "hair_care",
-            "store",
+            "museum",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            817.6804046630859,
-            807.3371734619141,
-            -8
+            1270.7462768554688,
+            837.3975067138672,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            -182.37213932842636,
-            -192.76683093081496,
-            117.82957458496094,
-            35.677450850084526,
-            19.999705050438138,
-            28.055999755859375,
-            0.11368366493009407
+            270.6683044433594,
+            -162.6024932861328,
+            115.11205291748048,
+            18.97455800176124,
+            17.973907533285743,
+            24.350433349609375,
+            0.1034993178085124
         ]
     },
     "Dorotheenstra\u00dfe Bus Stop": {

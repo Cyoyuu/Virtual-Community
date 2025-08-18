@@ -1,0 +1,162 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments",
+        "building": "The Grand Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments",
+        "building": "The Grand Hotel",
+        "start_time": "08:30:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CUNY School of Professional Studies",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "10:00:00",
+        "start_place": "Fushimi Market",
+        "end_place": "CUNY School of Professional Studies | CUNY SPS"
+    },
+    {
+        "type": "main",
+        "activity": "Taking classes at CUNY School of Professional Studies",
+        "place": "CUNY School of Professional Studies | CUNY SPS",
+        "building": "119 West 31st Street",
+        "start_time": "10:00:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Baskin-Robbins",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "11:40:00",
+        "start_place": "CUNY School of Professional Studies | CUNY SPS",
+        "end_place": "Baskin-Robbins"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Baskin-Robbins",
+        "building": "302 5th Avenue",
+        "start_time": "11:40:00",
+        "end_time": "12:40:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "12:40:00",
+        "end_time": "13:00:00",
+        "start_place": "Baskin-Robbins",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping for fresh produce and snacks",
+        "place": "Fresh and Snacks Store",
+        "building": "1261 Broadway Floor 11",
+        "start_time": "13:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arrive",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Arrive"
+    },
+    {
+        "type": "main",
+        "activity": "Training and relaxation session at Arrive",
+        "place": "Arrive",
+        "building": "129 West 29th Street Second Floor",
+        "start_time": "14:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CUNY School of Professional Studies",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Arrive",
+        "end_place": "CUNY School of Professional Studies | CUNY SPS"
+    },
+    {
+        "type": "main",
+        "activity": "Participate in AI Enthusiasts Club brainstorming session",
+        "place": "CUNY School of Professional Studies | CUNY SPS",
+        "building": "119 West 31st Street",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Up on 20 Rooftop Lounge",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "CUNY School of Professional Studies | CUNY SPS",
+        "end_place": "Up on 20 Rooftop Lounge"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Up on 20 Rooftop Lounge",
+        "building": "Hyatt Herald Square New York",
+        "start_time": "18:10:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Creative Art Works",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Up on 20 Rooftop Lounge",
+        "end_place": "Creative Art Works"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment at Creative Art Works",
+        "place": "Creative Art Works",
+        "building": "Manhattan Mall",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Elizabeth Mensah's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Creative Art Works",
+        "end_place": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Personal time and relaxation",
+        "place": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments",
+        "building": "The Grand Hotel",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

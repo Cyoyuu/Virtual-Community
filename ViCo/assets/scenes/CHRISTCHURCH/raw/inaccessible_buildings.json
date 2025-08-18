@@ -24,8 +24,7 @@
                     -288.72425842285156,
                     -281.694580078125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -55,8 +54,7 @@
                     -282.1333770751953,
                     -317.7450256347656,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -85,8 +83,7 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "SEASON ACE NZ",
@@ -104,8 +101,7 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "THE ONE SOUVENIR & GIFTS",
@@ -119,8 +115,7 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "PAWS CLUB PET STORE",
@@ -135,8 +130,7 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "Trendez By Adorn Christchurch",
@@ -151,8 +145,7 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Curb Vintage",
@@ -167,8 +160,85 @@
                     -188.9984130859375,
                     -310.2229309082031,
                     -24
+                ]
+            }
+        ]
+    },
+    "Cashel Street": {
+        "building_glb": "buildings_element.052.glb",
+        "bounding_box": [
+            -100.78253173828125,
+            -266.14080810546875,
+            118.41551208496094,
+            38.30206298828125,
+            50.5390625,
+            10.398628234863281,
+            0.00017210030637215823
+        ],
+        "places": [
+            {
+                "name": "Ballantynes Department Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "department_store",
+                    "shoe_store",
+                    "clothing_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "location": [
+                    -100.78253555297852,
+                    -266.1375198364258,
+                    -4
+                ]
+            },
+            {
+                "name": "Swarovski Boutique Ballantynes",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -100.78253555297852,
+                    -266.1375198364258,
+                    -8
+                ]
+            },
+            {
+                "name": "Veronika Maine Ballantynes",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -100.78253555297852,
+                    -266.1375198364258,
+                    -12
+                ]
+            },
+            {
+                "name": "Benefit Cosmetics Brow Bar",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -100.78253555297852,
+                    -266.1375198364258,
+                    -16
+                ]
             }
         ]
     },
@@ -197,8 +267,7 @@
                     -99.3574104309082,
                     -316.8162841796875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Bounce Luggage Storage - Colombo",
@@ -213,8 +282,7 @@
                     -99.3574104309082,
                     -316.8162841796875,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -243,8 +311,7 @@
                     -17.7142333984375,
                     -296.0430145263672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Joyful express",
@@ -259,8 +326,7 @@
                     -17.7142333984375,
                     -296.0430145263672,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Fashion Society",
@@ -275,8 +341,7 @@
                     -17.7142333984375,
                     -296.0430145263672,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "A&C Homestore The Crossing",
@@ -293,8 +358,7 @@
                     -17.7142333984375,
                     -296.0430145263672,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -324,8 +388,7 @@
                     26.398123264312744,
                     -294.4790954589844,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "RUBY Christchurch",
@@ -340,8 +403,7 @@
                     26.398123264312744,
                     -294.4790954589844,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             }
         ]
     },
@@ -370,8 +432,7 @@
                     81.72834777832031,
                     -290.61668395996094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -400,8 +461,7 @@
                     96.16192626953125,
                     -302.6338195800781,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "The 03 Barbershop",
@@ -416,8 +476,7 @@
                     96.16192626953125,
                     -302.6338195800781,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Outsiders",
@@ -435,8 +494,7 @@
                     96.16192626953125,
                     -302.6338195800781,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "AS Colour Christchurch",
@@ -451,8 +509,7 @@
                     96.16192626953125,
                     -302.6338195800781,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             }
         ]
     },
@@ -481,8 +538,7 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "The Residency",
@@ -497,8 +553,7 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "dainty",
@@ -513,8 +568,7 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Pink Lady Rooftop",
@@ -528,8 +582,7 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Crimson Cuts Barber",
@@ -544,8 +597,7 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "The Muse Christchurch Art Hotel | Hotel room | Christchurch Central City Accommodation",
@@ -559,8 +611,139 @@
                     157.53289794921875,
                     -291.0132141113281,
                     -24
+                ]
+            }
+        ]
+    },
+    "76 Hereford Street": {
+        "building_glb": "buildings_element.073.glb",
+        "bounding_box": [
+            -272.36773681640625,
+            -131.85229110717773,
+            119.0121307373047,
+            20.12012806771357,
+            24.184244033492106,
+            13.246795654296875,
+            0.006383985654672662
+        ],
+        "places": [
+            {
+                "name": "Kong",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "location": [
+                    -272.36773681640625,
+                    -131.88568878173828,
+                    -4
+                ]
+            },
+            {
+                "name": "Zodiac Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -272.36773681640625,
+                    -131.88568878173828,
+                    -8
+                ]
+            },
+            {
+                "name": "Ray White Commercial Christchurch",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -272.36773681640625,
+                    -131.88568878173828,
+                    -12
+                ]
+            }
+        ]
+    },
+    "The Church Pub": {
+        "building_glb": "buildings_The Church Pub.glb",
+        "bounding_box": [
+            154.3917066188286,
+            -14.713659905483615,
+            116.45612716674805,
+            18.724038323490216,
+            22.02926950052141,
+            8.653938293457031,
+            0.010623948502070992
+        ],
+        "places": [
+            {
+                "name": "Curiosity shop",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    154.4200210571289,
+                    -14.657066941261292,
+                    -4
+                ]
+            },
+            {
+                "name": "Paddy McNaughton's Irish Pub",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    154.4200210571289,
+                    -14.657066941261292,
+                    -8
+                ]
+            },
+            {
+                "name": "Whakamana: the Cannabis Museum of Aotearoa",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    154.4200210571289,
+                    -14.657066941261292,
+                    -12
+                ]
+            },
+            {
+                "name": "The Church Pub",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    154.4200210571289,
+                    -14.657066941261292,
+                    -16
+                ]
             }
         ]
     },
@@ -587,8 +770,7 @@
                     -313.19189453125,
                     31.81386375427246,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -614,8 +796,7 @@
                     -367.6217346191406,
                     102.05348587036133,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     }

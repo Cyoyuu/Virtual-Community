@@ -1,0 +1,154 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "00:00:00",
+        "end_time": "06:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning routine and preparation for the day",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Frankly Thai",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Saint Catherine of Siena School",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and study",
+        "place": "Saint Catherine of Siena School",
+        "building": "990 Holzheimer Street",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Saint Catherine of Siena School",
+        "end_place": "Stanley Tek Corp"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Saint Catherine of Siena School",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "Saint Catherine of Siena School"
+    },
+    {
+        "type": "main",
+        "activity": "Self-study and exam preparation",
+        "place": "Saint Catherine of Siena School",
+        "building": "990 Holzheimer Street",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Young Scholars group study and tutoring",
+        "place": "Saint Catherine of Siena School",
+        "building": "990 Holzheimer Street",
+        "start_time": "15:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Saint Catherine of Siena School",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Soccer practice and fitness",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Frankly Thai for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Frankly Thai"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Frankly Thai",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Evening nature exploration",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review study materials",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "20:00:00",
+        "end_time": "21:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "21:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at John Savoretti Realty",
+        "building": "959 Hempstead Turnpike",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Barack Obama's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Batea",
+        "building": "El Avenida Palace",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Movistar Centre for keynote speech",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Batea",
+        "end_place": "Movistar Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Keynote speech at global leadership summit",
+        "place": "Movistar Centre",
+        "building": "Movistar Centre",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il\u00b7lacions Design Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Movistar Centre",
+        "end_place": "Il\u00b7lacions Design Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Il\u00b7lacions Design Gallery",
+        "place": "Il\u00b7lacions Design Gallery",
+        "building": "Rambla de Canaletes",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Can Pizza Universitat for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Il\u00b7lacions Design Gallery",
+        "end_place": "Can Pizza Universitat"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to El Avenida Palace for Cultural Explorers activity",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Can Pizza Universitat",
+        "end_place": "El Avenida Palace"
+    },
+    {
+        "type": "main",
+        "activity": "Cultural Explorers activity - visiting cultural landmarks",
+        "place": "El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Vapiano Gran Via for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "El Avenida Palace",
+        "end_place": "Vapiano Gran Via"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Vapiano Gran Via",
+        "building": "Gran Via de les Corts Catalanes",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mandiram Escola de Yoga",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Vapiano Gran Via",
+        "end_place": "Mandiram Escola de Yoga"
+    },
+    {
+        "type": "main",
+        "activity": "Yoga session",
+        "place": "Mandiram Escola de Yoga",
+        "building": "Pl Urquinaona",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to El Avenida Palace",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Mandiram Escola de Yoga",
+        "end_place": "Barack Obama's room at El Avenida Palace"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and read",
+        "place": "Barack Obama's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Spend time with family",
+        "place": "Barack Obama's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

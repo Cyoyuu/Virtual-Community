@@ -1,0 +1,178 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Leonard Park's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH WEV",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research on new solar panel technology",
+        "place": "ETH WEV",
+        "building": "WEV",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to GESS-Bibliothek",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "ETH WEV",
+        "end_place": "GESS-Bibliothek"
+    },
+    {
+        "type": "main",
+        "activity": "Read scientific journals",
+        "place": "GESS-Bibliothek",
+        "building": "Haldeneggsteig 4",
+        "start_time": "12:15:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Orient World",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "13:45:00",
+        "start_place": "GESS-Bibliothek",
+        "end_place": "Orient World"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Orient World",
+        "building": "Leonhardstrasse 10",
+        "start_time": "13:45:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH WEV",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Orient World",
+        "end_place": "ETH WEV"
+    },
+    {
+        "type": "main",
+        "activity": "Continue research on solar panel technology",
+        "place": "ETH WEV",
+        "building": "WEV",
+        "start_time": "15:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "ETH WEV",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Didi's Frieden",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "Didi's Frieden"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Didi's Frieden",
+        "building": "Stampfenbachstrasse 32",
+        "start_time": "18:15:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to update Fitness Z\u00fcrich Central",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "Didi's Frieden",
+        "end_place": "update Fitness Z\u00fcrich Central"
+    },
+    {
+        "type": "main",
+        "activity": "Workout",
+        "place": "update Fitness Z\u00fcrich Central",
+        "building": "Neum\u00fchlequai 32",
+        "start_time": "19:15:00",
+        "end_time": "20:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Swiss National Museum",
+        "place": null,
+        "building": null,
+        "start_time": "20:15:00",
+        "end_time": "20:30:00",
+        "start_place": "update Fitness Z\u00fcrich Central",
+        "end_place": "Swiss National Museum"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Swiss National Museum",
+        "place": "Swiss National Museum",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leonard Park's room at Rosenhof",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Swiss National Museum",
+        "end_place": "Leonard Park's room at Rosenhof"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Leonard Park's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

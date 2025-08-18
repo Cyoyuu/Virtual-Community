@@ -1,0 +1,473 @@
+{
+    "Elon Musk": {
+        "age": 53,
+        "living_place": "Elon Musk's room at Zetland Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Elon Musk.png",
+        "groups": [
+            "Celebrity Visitors"
+        ]
+    },
+    "Emma Watson": {
+        "age": 34,
+        "living_place": "Emma Watson's room at Zetland Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Emma Watson.png",
+        "groups": [
+            "Celebrity Visitors"
+        ]
+    },
+    "Genghis Khan": {
+        "age": 45,
+        "living_place": "Genghis Khan's room at Zetland Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Genghis Khan.png",
+        "groups": [
+            "Celebrity Visitors"
+        ]
+    },
+    "Selena Gomez": {
+        "age": 32,
+        "living_place": "Selena Gomez's room at Zetland Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Selena Gomez.png",
+        "groups": [
+            "Celebrity Visitors"
+        ]
+    },
+    "Celebrity Visitors": {
+        "description": "A group of famous individuals visiting Sydney for various events and collaborations.",
+        "place": "Zetland Hotel",
+        "members": [
+            "Elon Musk",
+            "Emma Watson",
+            "Selena Gomez",
+            "Genghis Khan",
+            "Tiger Woods"
+        ],
+        "daily_activity": "networking and attending events from 18:00 to 20:00"
+    },
+    "Tiger Woods's room at Zetland Hotel": {
+        "building": "Zetland Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "liquor_store",
+            "lodging",
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1208.4084777832031,
+            1119.1431579589844,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Tiger Woods's room at Zetland Hotel",
+        "bounding_box": [
+            208.35946355131324,
+            119.88597885193512,
+            92.61418151855469,
+            18.635509926467083,
+            24.31978116999916,
+            8.614517211914062,
+            0.5612515261628251
+        ]
+    },
+    "Zetland Hotel": {
+        "building": "Zetland Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "liquor_store",
+            "lodging",
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1208.4084777832031,
+            1119.1431579589844,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "bounding_box": [
+            208.35946355131324,
+            119.88597885193512,
+            92.61418151855469,
+            18.635509926467083,
+            24.31978116999916,
+            8.614517211914062,
+            0.5612515261628251
+        ]
+    },
+    "F45 Training Alexandria": {
+        "building": "3 Botany Road",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            933.9162330627441,
+            1276.155776977539,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -66.08220857918748,
+            276.154487331106,
+            89.49079132080077,
+            18.556741541320058,
+            25.62205975333204,
+            15.806488037109375,
+            0.3986056085853777
+        ]
+    },
+    "Green Square Library": {
+        "building": "Green Square Library",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1060.649486541748,
+            888.1517105102539,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            60.93905447789574,
+            -114.57384918126185,
+            91.91293334960938,
+            17.97475966981269,
+            71.09079399009927,
+            16.807342529296875,
+            1.0482249407640674
+        ]
+    },
+    "Rail Operations Centre (ROC)": {
+        "building": "Rail Operations Centre (ROC)",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            807.5258026123047,
+            1109.369613647461,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -193.04834885508424,
+            109.17915780752564,
+            92.47132873535156,
+            52.59227971884261,
+            63.91889920168374,
+            27.776901245117188,
+            0.2677592280020879
+        ]
+    },
+    "Finestra Del Caffe": {
+        "building": "Zetland Hotel",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1208.4084777832031,
+            1119.1431579589844,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            208.35946355131324,
+            119.88597885193512,
+            92.61418151855469,
+            18.635509926467083,
+            24.31978116999916,
+            8.614517211914062,
+            0.5612515261628251
+        ]
+    },
+    "Bar Noun (Green Square Acai)": {
+        "building": "Green Square Library",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1060.649486541748,
+            888.1517105102539,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            60.93905447789574,
+            -114.57384918126185,
+            91.91293334960938,
+            17.97475966981269,
+            71.09079399009927,
+            16.807342529296875,
+            1.0482249407640674
+        ]
+    },
+    "Rang on Portman": {
+        "building": "2 Portman Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1186.4737243652344,
+            1069.4450092315674,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            186.45809658860756,
+            69.79728699987245,
+            90.49465942382812,
+            4.100308741544903,
+            30.40746678133055,
+            4.6470794677734375,
+            -0.9916796173958612
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "300 Botany Road",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            936.9669342041016,
+            1027.2341227531433,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -65.98502212755488,
+            31.05547140436246,
+            85.94004440307617,
+            73.61507973343012,
+            58.66126314093601,
+            12.461555480957031,
+            0.2176195721726147
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "1047 Bourke Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1090.6781883239746,
+            1117.8927307128906,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            83.5289535522461,
+            112.65505981445312,
+            90.13288879394531,
+            67.0411148071289,
+            66.62051391601562,
+            8.220382690429688,
+            0.5815186500549316
+        ]
+    },
+    "MLP Ballet Pilates": {
+        "building": "Infinity",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1050.2746601104736,
+            977.5079536437988,
+            -16
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            44.18903033987562,
+            -24.45623701260825,
+            109.55628967285156,
+            75.69586091899028,
+            73.40907794026245,
+            50.082366943359375,
+            0.5895443434489543
+        ]
+    },
+    "Bourke Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            317.05327372806033,
+            204.55814674850038
+        ],
+        "rotation": 2.1532933096511115,
+        "bounding_box": null
+    },
+    "Wyndham Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -161.78434078937195,
+            143.992531389789
+        ],
+        "rotation": -2.873593756111944,
+        "bounding_box": null
+    },
+    "Botany Road Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            9.001909758742496,
+            -193.2484882483283
+        ],
+        "rotation": 3.0288711317012718,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -227.06621692853517,
+            135.85016190536345
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            55.44996795530069,
+            -30.44046147365931
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.7455445318065,
+            144.45362037796804
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -93.08319438248041,
+            213.55690731680494
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            200.0229179599511,
+            -151.29117132319797
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -109.81534016162476,
+            -134.59505599191922
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -177.18018479977925,
+            -34.26709215386672
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Botany Road": [
+            {
+                "stop_name": "Bourke Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Wyndham Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Botany Road Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Bourke Street": [
+            {
+                "stop_name": "Botany Road Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Wyndham Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Bourke Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

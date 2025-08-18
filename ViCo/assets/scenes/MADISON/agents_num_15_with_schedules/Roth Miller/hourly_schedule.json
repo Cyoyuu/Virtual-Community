@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Barracuda Condos",
+        "building": "Barracuda Condos",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Barriques Coffee - West Wash",
+        "building": "Hotel Lorraine",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Loraine Business Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on app development",
+        "place": "The Loraine Business Center",
+        "building": "Hotel Lorraine",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tornado Steak House",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "The Loraine Business Center",
+        "end_place": "Tornado Steak House"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Tornado Steak House",
+        "building": "116 South Hamilton Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Loraine Business Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Tornado Steak House",
+        "end_place": "The Loraine Business Center"
+    },
+    {
+        "type": "main",
+        "activity": "Continue app development",
+        "place": "The Loraine Business Center",
+        "building": "Hotel Lorraine",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech innovations with Madison Tech Innovators",
+        "place": "The Loraine Business Center",
+        "building": "Hotel Lorraine",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Resolution Fitness",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "The Loraine Business Center",
+        "end_place": "Resolution Fitness"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at Resolution Fitness",
+        "place": "Resolution Fitness",
+        "building": "345 West Washington Avenue Suite 301",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Genna's Lounge",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Resolution Fitness",
+        "end_place": "Genna's Lounge"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Genna's Lounge",
+        "building": "105 West Main Street",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roth Miller's room at Barracuda Condos",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Genna's Lounge",
+        "end_place": "Roth Miller's room at Barracuda Condos"
+    },
+    {
+        "type": "main",
+        "activity": "Play video games",
+        "place": "Roth Miller's room at Barracuda Condos",
+        "building": "Barracuda Condos",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Roth Miller's room at Barracuda Condos",
+        "building": "Barracuda Condos",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

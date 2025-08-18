@@ -1,0 +1,192 @@
+{
+    "name": "Megan Carter",
+    "first_name": "Megan",
+    "last_name": "Carter",
+    "age": 10,
+    "innate": "conformity, tradition, security",
+    "learned": "I am a student at Humanities IT Lab - Universiteit van Amsterdam, interested in technology and coding. I enjoy playing video games and coding.",
+    "currently": "I want to learn new coding languages and create my own game.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness and Wellness Group",
+            "description": "A group focused on health and wellness activities, including yoga, meditation, and fitness training.",
+            "place": "Amsterdam Yoga Centre",
+            "members": [
+                "Alex Jefferson",
+                "Megan Carter",
+                "Pika Hayes",
+                "Rodtang"
+            ],
+            "daily_activity": "practicing yoga from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Megan Carter's room at Building III",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Megan Carter's room at Building III",
+            "building": "Building III",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Techlab Bv",
+            "building": "Singel 326 A",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Humanities IT Lab",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes and learn new coding languages",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Mavi 's International BV",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "Mavi 's International BV"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Mavi 's International BV",
+            "building": "Rokin 20",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Humanities IT Lab",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Mavi 's International BV",
+            "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Work on creating my own game",
+            "place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "building": "UvA PC Hoofthuis",
+            "start_time": "13:00:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Yoga practice with Fitness and Wellness Group",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hummingbird Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "Hummingbird Amsterdam"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Hummingbird Amsterdam",
+            "building": "Spuistraat 215",
+            "start_time": "18:10:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Megan Carter's room",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Hummingbird Amsterdam",
+            "end_place": "Megan Carter's room at Building III"
+        },
+        {
+            "type": "main",
+            "activity": "Play video games and relax",
+            "place": "Megan Carter's room at Building III",
+            "building": "Building III",
+            "start_time": "19:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Study coding languages",
+            "place": "Megan Carter's room at Building III",
+            "building": "Building III",
+            "start_time": "22:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for bed and sleep",
+            "place": "Megan Carter's room at Building III",
+            "building": "Building III",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Humanities IT Lab - Universiteit van Amsterdam",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

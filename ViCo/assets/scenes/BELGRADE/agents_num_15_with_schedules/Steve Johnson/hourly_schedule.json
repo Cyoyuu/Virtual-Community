@@ -2,22 +2,22 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Steve Johnson's room at Apartments City Hall",
-        "building": "Vlajkovi\u0107eva 9",
+        "place": "Steve Johnson's room at Vintage Apartment in the Centre of Belgrade",
+        "building": "Nu\u0161i\u0107eva 4",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Steve Johnson's room at Apartments City Hall",
-        "building": "Vlajkovi\u0107eva 9",
+        "place": "Mister Dolar",
+        "building": "Nu\u0161i\u0107eva 4",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Kod Cika Rade",
+        "activity": "Commute to Restaurant Tchaikovsky",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
@@ -25,90 +25,78 @@
     },
     {
         "type": "main",
-        "activity": "Work on creating a signature dish",
-        "place": "Kod Cika Rade",
-        "building": "Balkanska 25",
+        "activity": "Work on creating a new menu",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
         "start_time": "09:00:00",
-        "end_time": "14:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Hotel Kasina",
-        "place": null,
-        "building": null,
-        "start_time": "14:30:00",
-        "end_time": "15:00:00",
-        "start_place": "Kod Cika Rade",
-        "end_place": "Hotel Kasina"
-    },
-    {
-        "type": "main",
-        "activity": "Discuss hospitality trends with Hospitality Professionals",
-        "place": "Hotel Kasina",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "start_time": "15:00:00",
-        "end_time": "16:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Kafe Key",
-        "place": null,
-        "building": null,
-        "start_time": "16:00:00",
-        "end_time": "16:30:00",
-        "start_place": "Hotel Kasina",
-        "end_place": "Kafe Key"
+        "end_time": "12:00:00"
     },
     {
         "type": "meal",
-        "activity": "Early Dinner",
-        "place": "Kafe Key",
-        "building": "Pajsijeva 4",
-        "start_time": "16:30:00",
-        "end_time": "17:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to FunFit",
-        "place": null,
-        "building": null,
-        "start_time": "17:30:00",
-        "end_time": "18:00:00",
-        "start_place": "Kafe Key",
-        "end_place": "FunFit"
+        "activity": "Lunch",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
     },
     {
         "type": "main",
-        "activity": "Relax and enjoy some entertainment",
-        "place": "FunFit",
-        "building": "Kralja Milana 4a",
+        "activity": "Continue working on the new menu",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "12:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Culinary Creators meeting - sharing cooking techniques",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
         "start_time": "18:00:00",
-        "end_time": "20:00:00"
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "building": "Dragoslava Jovanovi\u0107a 11",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
     },
     {
         "type": "commute",
         "activity": "Commute back to Steve Johnson's room",
         "place": null,
         "building": null,
-        "start_time": "20:00:00",
-        "end_time": "20:30:00",
-        "start_place": "FunFit",
-        "end_place": "Steve Johnson's room at Apartments City Hall"
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "end_place": "Steve Johnson's room at Vintage Apartment in the Centre of Belgrade"
     },
     {
         "type": "main",
-        "activity": "Experiment with new recipes",
-        "place": "Steve Johnson's room at Apartments City Hall",
-        "building": "Vlajkovi\u0107eva 9",
-        "start_time": "20:30:00",
-        "end_time": "23:30:00"
-    },
-    {
-        "type": "meal",
-        "activity": "Late-night snack",
-        "place": "Steve Johnson's room at Apartments City Hall",
-        "building": "Vlajkovi\u0107eva 9",
-        "start_time": "23:30:00",
+        "activity": "Relax and unwind",
+        "place": "Steve Johnson's room at Vintage Apartment in the Centre of Belgrade",
+        "building": "Nu\u0161i\u0107eva 4",
+        "start_time": "21:30:00",
         "end_time": "23:59:59"
     }
 ]

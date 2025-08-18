@@ -1,0 +1,196 @@
+{
+    "name": "Sophie Carlsen",
+    "first_name": "Sophie",
+    "last_name": "Carlsen",
+    "age": 20,
+    "innate": "self-direction, stimulation, hedonism",
+    "learned": "I am a student at Prospect Hill Academy Charter Sch, studying graphic design. I enjoy digital art and video editing.",
+    "currently": "I am working on a digital art project for my portfolio.",
+    "lifestyle": "I go to bed around 01:00, wake up around 09:00, eat dinner around 20:00",
+    "groups": [
+        {
+            "name": "Creative Arts Society",
+            "description": "A community of artists and designers sharing their passion for visual arts.",
+            "place": "Cambridge Preschool of the Arts",
+            "members": [
+                "Eve By J Gonzales",
+                "Pika Hayes",
+                "Sophie Carlsen",
+                "Steve Johnson"
+            ],
+            "daily_activity": "creating art pieces from 16:00 to 17:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Sophie Carlsen's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Sophie Carlsen's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on digital art project for portfolio",
+            "place": "Sophie Carlsen's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to june bug restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Sophie Carlsen's room at Union 346 Apartments",
+            "end_place": "june bug restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "june bug restaurant",
+            "building": "251 Washington Street",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Prospect Hill Academy Charter Sch",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "june bug restaurant",
+            "end_place": "Prospect Hill Academy Charter Sch"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes at Prospect Hill Academy Charter Sch",
+            "place": "Prospect Hill Academy Charter Sch",
+            "building": "15 Webster Avenue",
+            "start_time": "13:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Cambridge Preschool of the Arts",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Prospect Hill Academy Charter Sch",
+            "end_place": "Cambridge Preschool of the Arts"
+        },
+        {
+            "type": "main",
+            "activity": "Creative Arts Society - creating art pieces",
+            "place": "Cambridge Preschool of the Arts",
+            "building": "361 Somerville Avenue",
+            "start_time": "16:00:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lincoln Park",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Cambridge Preschool of the Arts",
+            "end_place": "Lincoln Park"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy the outdoors",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Union Tavern",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Lincoln Park",
+            "end_place": "Union Tavern"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Union Tavern",
+            "building": "Union Tavern",
+            "start_time": "19:30:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Soft Space Wellness",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "Union Tavern",
+            "end_place": "Soft Space Wellness"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind at Soft Space Wellness",
+            "place": "Soft Space Wellness",
+            "building": "1 Bow Market Way",
+            "start_time": "21:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Sophie Carlsen's room",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:30:00",
+            "start_place": "Soft Space Wellness",
+            "end_place": "Sophie Carlsen's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed and relax",
+            "place": "Sophie Carlsen's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Prospect Hill Academy Charter Sch",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

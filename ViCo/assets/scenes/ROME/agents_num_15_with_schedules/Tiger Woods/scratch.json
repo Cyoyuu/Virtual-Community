@@ -1,0 +1,177 @@
+{
+    "name": "Tiger Woods",
+    "first_name": "Tiger",
+    "last_name": "Woods",
+    "age": 48,
+    "innate": "achievement, power, stimulation",
+    "learned": "I am a professional golfer known for my numerous championships and contributions to the sport. I enjoy golfing and mentoring young athletes.",
+    "currently": "I am hosting a golf clinic for aspiring golfers at Ninfeo Degli Specchi.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Sports and Fitness Club",
+            "description": "A group of sports enthusiasts and athletes, engaging in various physical activities and competitions.",
+            "place": "Judo Club Mezzaroma A.s.d.",
+            "members": [
+                "Rodtang",
+                "Tiger Woods",
+                "Brian Carter"
+            ],
+            "daily_activity": "training in martial arts from 17:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Tiger Woods's room at Colosseum Palace Star",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tiger Woods's room at Colosseum Palace Star",
+            "building": "Via del Monte Oppio",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caff\u00e8 dello Studente",
+            "building": "Via delle Terme di Tito",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Ninfeo Degli Specchi",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Caff\u00e8 dello Studente",
+            "end_place": "Ninfeo Degli Specchi"
+        },
+        {
+            "type": "main",
+            "activity": "Host golf clinic for aspiring golfers",
+            "place": "Ninfeo Degli Specchi",
+            "building": "open space",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to La Biga Wine Food",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Ninfeo Degli Specchi",
+            "end_place": "La Biga Wine Food"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "La Biga Wine Food",
+            "building": "Via Nicola Salvi",
+            "start_time": "13:00:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Museo del Foro Romano",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "La Biga Wine Food",
+            "end_place": "Museo del Foro Romano"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Museo del Foro Romano",
+            "place": "Museo del Foro Romano",
+            "building": "Antiquarium Forense",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Judo Club Mezzaroma A.s.d.",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Museo del Foro Romano",
+            "end_place": "Judo Club Mezzaroma A.s.d."
+        },
+        {
+            "type": "main",
+            "activity": "Training in martial arts",
+            "place": "Judo Club Mezzaroma A.s.d.",
+            "building": "Via Vittorino da Feltre",
+            "start_time": "16:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Shapla Market",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Judo Club Mezzaroma A.s.d.",
+            "end_place": "Shapla Market"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Shapla Market",
+            "building": "Via dei Serpenti",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Tiger Woods's room at Colosseum Palace Star",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Shapla Market",
+            "end_place": "Tiger Woods's room at Colosseum Palace Star"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Tiger Woods's room at Colosseum Palace Star",
+            "building": "Via del Monte Oppio",
+            "start_time": "20:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

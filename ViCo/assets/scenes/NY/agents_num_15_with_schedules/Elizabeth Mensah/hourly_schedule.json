@@ -1,0 +1,168 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Elizabeth Mensah's room at The Magellan",
+        "building": "The Magellan",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Urban food market",
+        "building": "Herald Towers",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on marketing campaign",
+        "place": "Fresh and DM Store",
+        "building": "25 West 31st Street 4th floor",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Greeley Square Park",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Greeley Square Park"
+    },
+    {
+        "type": "main",
+        "activity": "Yoga session",
+        "place": "Greeley Square Park",
+        "building": "open space",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Urban food market",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Greeley Square Park",
+        "end_place": "Urban food market"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Urban food market",
+        "building": "Herald Towers",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Creative Art Works",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:15:00",
+        "start_place": "Urban food market",
+        "end_place": "Creative Art Works"
+    },
+    {
+        "type": "main",
+        "activity": "Painting session",
+        "place": "Creative Art Works",
+        "building": "Manhattan Mall",
+        "start_time": "14:15:00",
+        "end_time": "15:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Living Quest Real Estate",
+        "place": null,
+        "building": null,
+        "start_time": "15:45:00",
+        "end_time": "16:00:00",
+        "start_place": "Creative Art Works",
+        "end_place": "Living Quest Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and discussing property deals",
+        "place": "Living Quest Real Estate",
+        "building": "315 5th Avenue",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Ayza Wine & Chocolate Bar",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Living Quest Real Estate",
+        "end_place": "Ayza Wine & Chocolate Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Ayza Wine & Chocolate Bar",
+        "building": "Life Hotel",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Empire State Building",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Ayza Wine & Chocolate Bar",
+        "end_place": "Empire State Building"
+    },
+    {
+        "type": "main",
+        "activity": "Leisure time at Empire State Building",
+        "place": "Empire State Building",
+        "building": "Empire State Building",
+        "start_time": "18:15:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Elizabeth Mensah's room at The Magellan",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Empire State Building",
+        "end_place": "Elizabeth Mensah's room at The Magellan"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Elizabeth Mensah's room at The Magellan",
+        "building": "The Magellan",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Elizabeth Mensah's room at The Magellan",
+        "building": "The Magellan",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

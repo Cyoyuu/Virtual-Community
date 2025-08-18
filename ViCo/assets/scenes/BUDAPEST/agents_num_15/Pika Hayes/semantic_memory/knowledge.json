@@ -1,45 +1,36 @@
 {
-    "Jensen Huang": {
-        "age": 61,
-        "living_place": "Jensen Huang's room at Roombach Hotel",
-        "appearance": "ViCo/assets/imgs/avatars/Jensen Huang.png",
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Stein-b\u00e9rpalota",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
         "groups": [
             "Tech Innovators Club"
         ]
     },
-    "Leonard Park": {
-        "age": 26,
-        "living_place": "Leonard Park's room at Fonci\u00e9re-palota",
-        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Eve By J Gonzales's room at Hark\u00e1nyi-b\u00e9rpalota",
+        "appearance": "ViCo/assets/imgs/avatars/Eve By J Gonzales.png",
         "groups": [
             "Tech Innovators Club"
         ]
     },
-    "Olivia Adams": {
-        "age": 22,
-        "living_place": "Olivia Adams's room at Br\u00fcll-b\u00e9rpalota",
-        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
-        "groups": [
-            "Tech Innovators Club"
-        ]
-    },
-    "Tim Cook": {
-        "age": 55,
-        "living_place": "Wombat's Hostel",
-        "appearance": "ViCo/assets/imgs/avatars/Tim Cook.png",
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Pichler h\u00e1z",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
         "groups": [
             "Tech Innovators Club"
         ]
     },
     "Tech Innovators Club": {
-        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
-        "place": "Mad\u00e1ch Trade Center",
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends and innovations in technology.",
+        "place": "Danubius Center",
         "members": [
-            "Jensen Huang",
-            "Leonard Park",
-            "Olivia Adams",
+            "Adam Pierce",
+            "Eve By J Gonzales",
             "Pika Hayes",
-            "Tim Cook"
+            "Steve Johnson"
         ],
         "daily_activity": "discussing technology trends from 17:00 to 18:00"
     },
@@ -54,7 +45,7 @@
             1158.1834869384766,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
         "name": "Pika Hayes's room at Stern-b\u00e9rpalota",
         "bounding_box": [
             131.23858521656408,
@@ -66,66 +57,26 @@
             0.7469728398913553
         ]
     },
-    "Mad\u00e1ch Trade Center": {
-        "building": "Mad\u00e1ch Trade Center",
+    "Danubius Center": {
+        "building": "Danubius Center",
         "coarse_type": "office",
         "fine_types": [
             "office"
         ],
         "location": [
-            1263.6710739135742,
-            859.2509078979492,
-            -4
+            813.8089065551758,
+            1129.1195793151855,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
         "bounding_box": [
-            266.6149385192083,
-            -146.7274329635741,
-            114.26008605957031,
-            31.35583564571864,
-            54.34587721211185,
-            31.515655517578125,
-            0.8250894633695468
-        ]
-    },
-    "aurobus": {
-        "building": "open space",
-        "coarse_type": "open",
-        "fine_types": [
-            "park",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1102.4225176832404,
-            710.9044753796101,
-            -0.007380832494305878
-        ],
-        "scene": null,
-        "bounding_box": null
-    },
-    "Association of Hungarian Fine and Applied Artists": {
-        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1079.8432006835938,
-            1107.1592712402344,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            80.0988998413086,
-            107.15927124023438,
-            112.07051849365234,
-            34.5406608581543,
-            39.503257751464844,
-            22.35468292236328,
-            0.7375522255897522
+            -187.85393464612292,
+            129.1202397096153,
+            109.54126358032225,
+            63.32512786906723,
+            33.63492000873172,
+            24.98517608642578,
+            0.13699244968885868
         ]
     },
     "Star Kebab & Grill": {
@@ -142,7 +93,7 @@
             733.6156234741211,
             -24
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             82.51449584960938,
             -266.2007141113281,
@@ -153,29 +104,76 @@
             0.9561694860458374
         ]
     },
-    "Pizzagram": {
-        "building": "Stein-b\u00e9rpalota",
-        "coarse_type": "food",
+    "Association of Hungarian Fine and Applied Artists": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "coarse_type": "entertainment",
         "fine_types": [
-            "restaurant",
+            "art_gallery",
             "point_of_interest",
-            "food",
             "establishment"
         ],
         "location": [
-            1020.2060127258301,
-            956.8885612487793,
+            1079.8432006835938,
+            1107.1592712402344,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            13.103591904457579,
-            -45.090792071727364,
-            113.3840560913086,
-            41.58100998762464,
-            33.60088733113829,
-            25.476303100585938,
-            0.5930513562908697
+            80.0988998413086,
+            107.15927124023438,
+            112.07051849365234,
+            34.5406608581543,
+            39.503257751464844,
+            22.35468292236328,
+            0.7375522255897522
+        ]
+    },
+    "12 Revay Hotel": {
+        "building": "12 Revay Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1101.1510887145996,
+            1196.1985092163086,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "bounding_box": [
+            101.54588114433633,
+            196.19850028938524,
+            111.17228698730467,
+            20.844687070841115,
+            40.332532981227864,
+            22.353317260742188,
+            0.7457837012891251
+        ]
+    },
+    "Japanika": {
+        "building": "Danubius Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            813.8089065551758,
+            1129.1195793151855,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -187.85393464612292,
+            129.1202397096153,
+            109.54126358032225,
+            63.32512786906723,
+            33.63492000873172,
+            24.98517608642578,
+            0.13699244968885868
         ]
     },
     "Cat Cafe": {
@@ -192,7 +190,7 @@
             1082.9636821746826,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             54.74369239807129,
             82.96368217468262,
@@ -218,7 +216,7 @@
             1222.1030960083008,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             129.0549659186514,
             222.10309918194915,
@@ -255,29 +253,29 @@
             0.7324671803742033
         ]
     },
-    "Snacks and DM Store": {
-        "building": "Belv\u00e1ros-Lip\u00f3tv\u00e1ros Eg\u00e9szs\u00e9g\u00fcgyi Szolg\u00e1lat (BLESZ)",
+    "Fresh and Snacks Store": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
         "coarse_type": "stores",
         "fine_types": [
+            "clothing_store",
             "store",
-            "health",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            815.3350448608398,
-            1218.6979446411133,
-            -4
+            1079.8432006835938,
+            1107.1592712402344,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
         "bounding_box": [
-            -184.668077469107,
-            217.51684561173826,
-            110.93982696533202,
-            32.71952044821346,
-            41.22033242427565,
-            22.1285400390625,
-            0.13890031947134723
+            80.0988998413086,
+            107.15927124023438,
+            112.07051849365234,
+            34.5406608581543,
+            39.503257751464844,
+            22.35468292236328,
+            0.7375522255897522
         ]
     },
     "Hercegpr\u00edm\u00e1s utca Bus Stop": {

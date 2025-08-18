@@ -1,0 +1,184 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Genghis Khan's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Finestra Del Caffe",
+        "place": "Finestra Del Caffe",
+        "building": "Zetland Hotel",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to F45 Training Alexandria",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at F45 Training Alexandria",
+        "place": "F45 Training Alexandria",
+        "building": "3 Botany Road",
+        "start_time": "09:00:00",
+        "end_time": "10:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Green Square Library",
+        "place": null,
+        "building": null,
+        "start_time": "10:00:00",
+        "end_time": "10:30:00",
+        "start_place": "F45 Training Alexandria",
+        "end_place": "Green Square Library"
+    },
+    {
+        "type": "main",
+        "activity": "Research modern leadership at Green Square Library",
+        "place": "Green Square Library",
+        "building": "Green Square Library",
+        "start_time": "10:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Camy's Chargrill Chicken Green Square",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:45:00",
+        "start_place": "Green Square Library",
+        "end_place": "Camy's Chargrill Chicken Green Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Camy's Chargrill Chicken Green Square",
+        "place": "Camy's Chargrill Chicken Green Square",
+        "building": "Green Square",
+        "start_time": "12:45:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rail Operations Centre (ROC)",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:45:00",
+        "start_place": "Camy's Chargrill Chicken Green Square",
+        "end_place": "Rail Operations Centre (ROC)"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Rail Operations Centre (ROC) to learn about modern governance",
+        "place": "Rail Operations Centre (ROC)",
+        "building": "Rail Operations Centre (ROC)",
+        "start_time": "13:45:00",
+        "end_time": "15:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Combine Air Green Square",
+        "place": null,
+        "building": null,
+        "start_time": "15:45:00",
+        "end_time": "16:15:00",
+        "start_place": "Rail Operations Centre (ROC)",
+        "end_place": "Combine Air Green Square"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment at Combine Air Green Square",
+        "place": "Combine Air Green Square",
+        "building": "Portman on the Park",
+        "start_time": "16:15:00",
+        "end_time": "17:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Zetland Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "17:45:00",
+        "end_time": "18:00:00",
+        "start_place": "Combine Air Green Square",
+        "end_place": "Zetland Hotel"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner with Celebrity Visitors",
+        "place": "Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with Celebrity Visitors",
+        "place": "Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Snacks and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "Zetland Hotel",
+        "end_place": "Snacks and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping at Snacks and DM Store",
+        "place": "Snacks and DM Store",
+        "building": "1047 Bourke Street",
+        "start_time": "20:15:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Zetland Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:15:00",
+        "start_place": "Snacks and DM Store",
+        "end_place": "Genghis Khan's room at Zetland Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and reflect on the day",
+        "place": "Genghis Khan's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "21:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack before bed",
+        "place": "Genghis Khan's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Genghis Khan's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

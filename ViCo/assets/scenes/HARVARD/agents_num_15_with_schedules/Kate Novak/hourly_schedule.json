@@ -1,0 +1,158 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kate Novak's room at Grays Hall",
+        "building": "Grays Hall",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Harvard Dining Services",
+        "building": "Barker Center",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard University FAS Human Resources",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct research on employee motivation and engagement",
+        "place": "Harvard University FAS Human Resources",
+        "building": "1414 Massachusetts Avenue",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Capital One Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Harvard University FAS Human Resources",
+        "end_place": "Capital One Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Capital One Caf\u00e9",
+        "building": "24 John F. Kennedy Street",
+        "start_time": "12:15:00",
+        "end_time": "12:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard Data Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:45:00",
+        "end_time": "13:00:00",
+        "start_place": "Capital One Caf\u00e9",
+        "end_place": "Harvard Data Center"
+    },
+    {
+        "type": "main",
+        "activity": "Continue research and data analysis",
+        "place": "Harvard Data Center",
+        "building": "Littauer Center",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard University",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "15:45:00",
+        "start_place": "Harvard Data Center",
+        "end_place": "Harvard University"
+    },
+    {
+        "type": "main",
+        "activity": "Participate in Harvard Leadership Circle meeting",
+        "place": "Harvard University",
+        "building": "Massachusetts Hall",
+        "start_time": "15:45:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Smoke Shop BBQ - Harvard Square",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Harvard University",
+        "end_place": "The Smoke Shop BBQ - Harvard Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Smoke Shop BBQ - Harvard Square",
+        "building": "The Smoke Shop",
+        "start_time": "18:15:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Carpenter Center for the Visual Arts",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "The Smoke Shop BBQ - Harvard Square",
+        "end_place": "Carpenter Center for the Visual Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Attend an art exhibition",
+        "place": "Carpenter Center for the Visual Arts",
+        "building": "Carpenter Center",
+        "start_time": "19:15:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kate Novak's room at Grays Hall",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:15:00",
+        "start_place": "Carpenter Center for the Visual Arts",
+        "end_place": "Kate Novak's room at Grays Hall"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Kate Novak's room at Grays Hall",
+        "building": "Grays Hall",
+        "start_time": "21:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for the next day",
+        "place": "Kate Novak's room at Grays Hall",
+        "building": "Grays Hall",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kate Novak's room at Grays Hall",
+        "building": "Grays Hall",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

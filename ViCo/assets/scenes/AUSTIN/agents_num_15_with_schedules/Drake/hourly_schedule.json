@@ -1,0 +1,124 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Drake's room at Hyatt Centric Congress Avenue Austin",
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "7-Eleven",
+        "building": "7-Eleven",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Northern-Southern for music collaboration",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Music collaboration with local artists",
+        "place": "Northern-Southern",
+        "building": "107 East 5th Street Suite 107",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Blindside Lounge for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Northern-Southern",
+        "end_place": "Blindside Lounge"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Blindside Lounge",
+        "building": "211 East 6th Street",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Barcelona for entertainment",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Blindside Lounge",
+        "end_place": "Barcelona"
+    },
+    {
+        "type": "main",
+        "activity": "Explore entertainment options",
+        "place": "Barcelona",
+        "building": "209 East 6th Street",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Driskill for networking",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Barcelona",
+        "end_place": "The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Networking and socializing with Austin Celebrity Circle",
+        "place": "The Driskill",
+        "building": "The Driskill",
+        "start_time": "16:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Retail Therapy Cocktail Lounge",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:10:00",
+        "start_place": "The Driskill",
+        "end_place": "Retail Therapy Cocktail Lounge"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Retail Therapy Cocktail Lounge",
+        "building": "Perry Brooks Building",
+        "start_time": "19:10:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hyatt Centric Congress Avenue Austin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Retail Therapy Cocktail Lounge",
+        "end_place": "Drake's room at Hyatt Centric Congress Avenue Austin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Drake's room at Hyatt Centric Congress Avenue Austin",
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

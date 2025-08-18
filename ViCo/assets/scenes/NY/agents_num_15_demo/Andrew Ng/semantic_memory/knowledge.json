@@ -1,0 +1,418 @@
+{
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "MACY 31 Self Serviced Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "AI Enthusiasts Club"
+        ]
+    },
+    "Elon Musk": {
+        "age": 53,
+        "living_place": "Hilton Garden Inn New York/Manhattan-Chelsea",
+        "appearance": "ViCo/assets/imgs/avatars/Elon Musk.png",
+        "groups": [
+            "AI Enthusiasts Club"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Courtyard New York Manhattan/Chelsea",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "AI Enthusiasts Club"
+        ]
+    },
+    "AI Enthusiasts Club": {
+        "description": "A group of enthusiasts and professionals discussing the latest in artificial intelligence.",
+        "place": "CUNY School of Professional Studies | CUNY SPS",
+        "members": [
+            "Andrew Ng",
+            "Elizabeth Mensah",
+            "Elon Musk",
+            "Joe Anderson"
+        ],
+        "daily_activity": "brainstorming tech ideas from 17:00 to 18:00"
+    },
+    "Andrew Ng's room at Hilton Garden Inn New York/Manhattan-Chelsea": {
+        "building": "Hilton Garden Inn",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            724.8568115234375,
+            722.7256774902344,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Andrew Ng's room at Hilton Garden Inn New York/Manhattan-Chelsea",
+        "bounding_box": [
+            -274.94458683373756,
+            -276.87225050135913,
+            153.9167747497559,
+            15.245814577482912,
+            28.20937345806551,
+            72.16275787353516,
+            -0.5054927909139872
+        ]
+    },
+    "CUNY School of Professional Studies | CUNY SPS": {
+        "building": "119 West 31st Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            856.0582275390625,
+            938.0584306716919,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -143.94234710886053,
+            -61.93701148753711,
+            154.29039001464844,
+            21.260188035629255,
+            60.45866373743206,
+            72.62905883789062,
+            -0.5043155355838873
+        ]
+    },
+    "Hilton Garden Inn New York/Manhattan-Chelsea": {
+        "building": "Hilton Garden Inn",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            724.8568115234375,
+            722.7256774902344,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            -274.94458683373756,
+            -276.87225050135913,
+            153.9167747497559,
+            15.245814577482912,
+            28.20937345806551,
+            72.16275787353516,
+            -0.5054927909139872
+        ]
+    },
+    "Creative Art Works": {
+        "building": "Manhattan Mall",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            912.0142936706543,
+            986.3369770050049,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -87.99254708130022,
+            -3.0164706221076525,
+            146.6420669555664,
+            104.82575874028153,
+            60.9554637105247,
+            57.36222839355469,
+            -0.5049870570731838
+        ]
+    },
+    "Empire State Building": {
+        "building": "Empire State Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1209.8928298950195,
+            922.1136102676392,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            209.90191650390625,
+            -77.88565826416016,
+            332.58038330078125,
+            59.62389373779297,
+            129.4319305419922,
+            425.0972595214844,
+            1.06252121925354
+        ]
+    },
+    "Speedy's": {
+        "building": "1271 Broadway",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            970.3469715118408,
+            900.8429832458496,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -27.54410112536783,
+            -99.15599757288734,
+            133.00466918945312,
+            12.272030393032153,
+            32.87457460110959,
+            28.53192138671875,
+            1.0630529136308366
+        ]
+    },
+    "America Gourmet Food": {
+        "building": "831 6th Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            810.3820037841797,
+            724.9438629150391,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -189.6179827598148,
+            -275.0561403259667,
+            124.66675567626955,
+            5.685023257284445,
+            19.779977142762768,
+            12.543716430664062,
+            1.063173428692334
+        ]
+    },
+    "My Cooking Party": {
+        "building": "130 West 29th Street 6th Floor",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            712.7225799560547,
+            767.3263397216797,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -287.273216746148,
+            -232.6736473645091,
+            141.23655700683597,
+            11.968931024730045,
+            26.58043054724567,
+            47.82476806640625,
+            -0.5045187456682845
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "1235 Broadway",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            943.8778076171875,
+            769.8535232543945,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -52.94042068798431,
+            -226.06583904509267,
+            126.48215484619142,
+            18.778852966593117,
+            51.27035995071426,
+            16.201675415039062,
+            1.0633228611263694
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "315 5th Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1250.5939025878906,
+            748.8459930419922,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            250.59391528632548,
+            -251.15399789636342,
+            140.41606521606448,
+            9.481761339314327,
+            46.34579013023134,
+            46.907310485839844,
+            1.0607685399950633
+        ]
+    },
+    "West 33rd Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -21.863142239604706,
+            3.1658655452613136
+        ],
+        "rotation": 1.0600621214984063,
+        "bounding_box": null
+    },
+    "West 30th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -164.61506034391584,
+            -177.51857904087157
+        ],
+        "rotation": -2.0742518450169194,
+        "bounding_box": null
+    },
+    "West 32nd Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            208.81712440140075,
+            -209.97002528743698
+        ],
+        "rotation": -2.078742912675693,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            78.04482205789564,
+            -149.51055936875215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -184.09744629704446,
+            -88.75683696354766
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            166.06543909251093,
+            -11.633172081622893
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -142.17263687851377,
+            180.79953000430368
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.68121964625644,
+            -129.33286547358568
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -210.83448137085242,
+            -237.86099832166857
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 32nd Street": [
+            {
+                "stop_name": "West 33rd Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 30th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 32nd Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West 33rd Street": [
+            {
+                "stop_name": "West 32nd Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 30th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 33rd Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

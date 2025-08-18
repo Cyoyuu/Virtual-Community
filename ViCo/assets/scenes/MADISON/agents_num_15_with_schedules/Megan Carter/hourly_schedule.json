@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at The Baskerville",
+        "building": "The Baskerville",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Cento",
+        "building": "122 West Mifflin Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend school",
+        "place": "Wisconsin Veterans Museum",
+        "building": "Wisconsin Veterans Museum",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Fresh and Snacks Store",
+        "building": "Wisconsin Veterans Museum",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on school project about the history of Wisconsin",
+        "place": "Wisconsin Veterans Museum",
+        "building": "Wisconsin Veterans Museum",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Grace Food Pantry",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Wisconsin Veterans Museum",
+        "end_place": "Grace Food Pantry"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer at food drive",
+        "place": "Grace Food Pantry",
+        "building": "Grace Episcopal Church",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Resolution Fitness",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Grace Food Pantry",
+        "end_place": "Resolution Fitness"
+    },
+    {
+        "type": "main",
+        "activity": "Enjoy some leisure time",
+        "place": "Resolution Fitness",
+        "building": "345 West Washington Avenue Suite 301",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cento for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Resolution Fitness",
+        "end_place": "Cento"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Cento",
+        "building": "122 West Mifflin Street",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Overture Center for the Arts",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Cento",
+        "end_place": "Overture Center for the Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Overture Center for the Arts",
+        "place": "Overture Center for the Arts",
+        "building": "Overture Center for the Arts",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to The Baskerville",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Overture Center for the Arts",
+        "end_place": "Megan Carter's room at The Baskerville"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Megan Carter's room at The Baskerville",
+        "building": "The Baskerville",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Megan Carter's room at The Baskerville",
+        "building": "The Baskerville",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

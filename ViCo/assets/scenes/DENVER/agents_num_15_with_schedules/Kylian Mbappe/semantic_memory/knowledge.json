@@ -1,0 +1,411 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at The Residences at Civic Center",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Fitness and Sports Group"
+        ]
+    },
+    "Michael Jordan": {
+        "age": 61,
+        "living_place": "The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "appearance": "ViCo/assets/imgs/avatars/Michael Jordan.png",
+        "groups": [
+            "Fitness and Sports Group"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "The Residences at Civic Center",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Fitness and Sports Group"
+        ]
+    },
+    "Fitness and Sports Group": {
+        "description": "A group dedicated to fitness and sports activities, promoting a healthy lifestyle.",
+        "place": "The Denver Athletic Club",
+        "members": [
+            "Chad Thompson",
+            "Kylian Mbappe",
+            "Michael Jordan",
+            "Zara Williams"
+        ],
+        "daily_activity": "playing basketball from 17:00 to 18:30"
+    },
+    "Kylian Mbappe's room at The Slate Hotel Denver Downtown, Tapestry by Hilton": {
+        "building": "1250 Welton Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            779.7807235717773,
+            1028.871181488037,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Kylian Mbappe's room at The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "bounding_box": [
+            -220.21717712283296,
+            28.867766459749316,
+            131.46985626220703,
+            30.064249462384645,
+            37.3536706681419,
+            6.7711029052734375,
+            0.7892000603968983
+        ]
+    },
+    "The Denver Athletic Club": {
+        "building": "1325 Glenarm Place",
+        "coarse_type": "food",
+        "fine_types": [
+            "gym",
+            "spa",
+            "health",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            872.0357246398926,
+            1121.4368705749512,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -127.96460723876953,
+            121.4762954711914,
+            141.37937927246094,
+            37.29275894165039,
+            122.1312255859375,
+            24.4935302734375,
+            -0.781761109828949
+        ]
+    },
+    "McNichols Civic Center Building": {
+        "building": "McNichols Civic Center Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1229.2746276855469,
+            895.5717010498047,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            229.26273154956812,
+            -104.4560193293176,
+            141.8115692138672,
+            53.99832903034863,
+            27.98106471507084,
+            17.5625,
+            -0.004475675748544737
+        ]
+    },
+    "SVN | Denver Commercial": {
+        "building": "414 14th Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            979.2080314159393,
+            1079.067569732666,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            -21.81895707370513,
+            78.12746228073925,
+            141.05338287353516,
+            33.130768404965615,
+            37.149569951845365,
+            19.416854858398438,
+            0.7985437449987053
+        ]
+    },
+    "Denver Firefighters Museum": {
+        "building": "1326 Tremont Place",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            986.0086421966553,
+            997.1698107719421,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -13.991358757019043,
+            -2.813474655151367,
+            135.6930389404297,
+            14.673664093017578,
+            36.347679138183594,
+            9.4046630859375,
+            0.7794472575187683
+        ]
+    },
+    "Diamond Cabaret": {
+        "building": "1222 Glenarm Place",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            816.2572402954102,
+            980.2737646102905,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -183.74275970458984,
+            -22.592729568481435,
+            133.0150604248047,
+            38.59656916720307,
+            40.64379225727282,
+            10.082611083984375,
+            -0.786622183771094
+        ]
+    },
+    "Bar Red": {
+        "building": "437 West Colfax Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            841.7524566650391,
+            961.2652130126953,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -158.48239716157016,
+            -44.7017985410797,
+            135.01132202148438,
+            16.713002198888955,
+            19.478643706234354,
+            13.2021484375,
+            0.7957042146756431
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "1325 Glenarm Place",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "spa",
+            "hair_care",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            872.0357246398926,
+            1121.4368705749512,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -127.96460723876953,
+            121.4762954711914,
+            141.37937927246094,
+            37.29275894165039,
+            122.1312255859375,
+            24.4935302734375,
+            -0.781761109828949
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "323 14th Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1057.679937362671,
+            1070.6798419952393,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            58.43065030546372,
+            70.68386508709374,
+            137.61217498779297,
+            18.391793963454127,
+            38.2954518044231,
+            11.876510620117188,
+            0.7773427185865639
+        ]
+    },
+    "Tremont Place Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            223.51118219794316,
+            272.6155177584943
+        ],
+        "rotation": 2.35402308414951,
+        "bounding_box": null
+    },
+    "Glenarm Place Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -36.57998736222894,
+            10.95737012174964
+        ],
+        "rotation": 1.6337246460609054,
+        "bounding_box": null
+    },
+    "West 14th Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            38.63757570344625,
+            -236.50780135581877
+        ],
+        "rotation": -1.5709184286041482,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -132.29308674514246,
+            44.03818273086455
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            229.37408745254095,
+            -84.02767138673687
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            73.82841255855345,
+            46.97023279130167
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -65.88070627516149,
+            -116.11411382584171
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -14.11898390240778,
+            197.93008231918526
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            101.76363289190434,
+            -226.434088464398
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            239.87633008535047,
+            200.17493575828917
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 14th Avenue": [
+            {
+                "stop_name": "Tremont Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Glenarm Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 14th Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Tremont Place": [
+            {
+                "stop_name": "West 14th Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Glenarm Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Tremont Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

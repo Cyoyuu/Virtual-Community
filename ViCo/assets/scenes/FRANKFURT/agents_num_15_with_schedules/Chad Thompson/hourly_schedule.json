@@ -1,0 +1,94 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Chad Thompson's room at Kleiner Laubenberg",
+        "building": "Kleiner Laubenberg",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Coffee bar at the Kunstverein",
+        "building": "Steinernes Haus",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Frankfurter Kunstverein",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on improving the user interface of the museum's digital platform",
+        "place": "Frankfurter Kunstverein",
+        "building": "Steinernes Haus",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Coffee bar at the Kunstverein",
+        "building": "Steinernes Haus",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on the digital platform",
+        "place": "Frankfurter Kunstverein",
+        "building": "Steinernes Haus",
+        "start_time": "12:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Dining Raum",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Frankfurter Kunstverein",
+        "end_place": "Dining Raum"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner and cooking with Culinary Creators",
+        "place": "Dining Raum",
+        "building": "Fahrgasse 15",
+        "start_time": "17:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Kleiner Laubenberg",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Dining Raum",
+        "end_place": "Chad Thompson's room at Kleiner Laubenberg"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and play video games",
+        "place": "Chad Thompson's room at Kleiner Laubenberg",
+        "building": "Kleiner Laubenberg",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Chad Thompson's room at Kleiner Laubenberg",
+        "building": "Kleiner Laubenberg",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -2,128 +2,130 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
+        "place": "Olivia Adams's room at Nellis Realty",
+        "building": "722 Congress Avenue",
         "start_time": "00:00:00",
-        "end_time": "09:00:00"
+        "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
+        "place": "Higher Ground",
+        "building": "722 Congress Avenue",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Thistle Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a barista",
+        "place": "Thistle Cafe",
+        "building": "Procore Tower",
         "start_time": "09:00:00",
-        "end_time": "09:30:00"
-    },
-    {
-        "type": "main",
-        "activity": "Work on portfolio",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
-        "start_time": "09:30:00",
-        "end_time": "12:30:00"
-    },
-    {
-        "type": "meal",
-        "activity": "Lunch",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
-        "start_time": "12:30:00",
-        "end_time": "13:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Explore new design trends",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
-        "start_time": "13:00:00",
         "end_time": "15:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Fresh and Snacks Store",
+        "activity": "Commute to Snacks and DM Store",
         "place": null,
         "building": null,
         "start_time": "15:00:00",
-        "end_time": "15:30:00",
-        "start_place": "Olivia Adams's room at Susan Stiles Realty",
-        "end_place": "Fresh and Snacks Store"
+        "end_time": "15:15:00",
+        "start_place": "Thistle Cafe",
+        "end_place": "Snacks and DM Store"
     },
     {
         "type": "main",
-        "activity": "Visit Fresh and Snacks Store for design inspiration",
-        "place": "Fresh and Snacks Store",
-        "building": "114 West 7th Street",
-        "start_time": "15:30:00",
-        "end_time": "16:30:00"
+        "activity": "Buy snacks and drinks",
+        "place": "Snacks and DM Store",
+        "building": "722 Congress Avenue",
+        "start_time": "15:15:00",
+        "end_time": "15:45:00"
     },
     {
         "type": "commute",
-        "activity": "Commute back to Olivia Adams's room",
+        "activity": "Commute to Olivia Adams's room",
         "place": null,
         "building": null,
-        "start_time": "16:30:00",
+        "start_time": "15:45:00",
+        "end_time": "16:00:00",
+        "start_place": "Snacks and DM Store",
+        "end_place": "Olivia Adams's room at Nellis Realty"
+    },
+    {
+        "type": "main",
+        "activity": "Work on photography project",
+        "place": "Olivia Adams's room at Nellis Realty",
+        "building": "722 Congress Avenue",
+        "start_time": "16:00:00",
+        "end_time": "16:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Northern-Southern",
+        "place": null,
+        "building": null,
+        "start_time": "16:45:00",
         "end_time": "17:00:00",
-        "start_place": "Fresh and Snacks Store",
-        "end_place": "Olivia Adams's room at Susan Stiles Realty"
+        "start_place": "Olivia Adams's room at Nellis Realty",
+        "end_place": "Northern-Southern"
     },
     {
         "type": "main",
-        "activity": "Continue working on portfolio",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
+        "activity": "Attend art workshop",
+        "place": "Northern-Southern",
+        "building": "107 East 5th Street Suite 107",
         "start_time": "17:00:00",
-        "end_time": "18:30:00"
+        "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Neon Grotto",
+        "activity": "Commute to Chi'Lantro",
         "place": null,
         "building": null,
-        "start_time": "18:30:00",
-        "end_time": "19:00:00",
-        "start_place": "Olivia Adams's room at Susan Stiles Realty",
-        "end_place": "Neon Grotto"
-    },
-    {
-        "type": "main",
-        "activity": "Creative Minds group meeting",
-        "place": "Neon Grotto",
-        "building": "Neon Grotto",
-        "start_time": "19:00:00",
-        "end_time": "20:00:00"
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Northern-Southern",
+        "end_place": "Chi'Lantro"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "Neon Grotto",
-        "building": "Neon Grotto",
-        "start_time": "20:00:00",
-        "end_time": "21:00:00"
+        "place": "Chi'Lantro",
+        "building": "Colorado Tower",
+        "start_time": "18:15:00",
+        "end_time": "18:45:00"
     },
     {
         "type": "commute",
-        "activity": "Commute back to Olivia Adams's room",
+        "activity": "Commute to Olivia Adams's room",
         "place": null,
         "building": null,
-        "start_time": "21:00:00",
-        "end_time": "21:30:00",
-        "start_place": "Neon Grotto",
-        "end_place": "Olivia Adams's room at Susan Stiles Realty"
+        "start_time": "18:45:00",
+        "end_time": "19:00:00",
+        "start_place": "Chi'Lantro",
+        "end_place": "Olivia Adams's room at Nellis Realty"
     },
     {
         "type": "main",
-        "activity": "Relax and unwind with digital art",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
-        "start_time": "21:30:00",
+        "activity": "Edit photos and relax",
+        "place": "Olivia Adams's room at Nellis Realty",
+        "building": "722 Congress Avenue",
+        "start_time": "19:00:00",
         "end_time": "23:30:00"
     },
     {
         "type": "meal",
-        "activity": "Late-night snack",
-        "place": "Olivia Adams's room at Susan Stiles Realty",
-        "building": "Brown Building",
+        "activity": "Light snack",
+        "place": "Olivia Adams's room at Nellis Realty",
+        "building": "722 Congress Avenue",
         "start_time": "23:30:00",
         "end_time": "23:59:59"
     }

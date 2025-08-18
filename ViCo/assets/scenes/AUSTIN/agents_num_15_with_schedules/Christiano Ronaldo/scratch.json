@@ -1,0 +1,205 @@
+{
+    "name": "Christiano Ronaldo",
+    "first_name": "Christiano",
+    "last_name": "Ronaldo",
+    "age": 39,
+    "innate": "achievement, power, stimulation",
+    "learned": "I am a professional footballer known for my time at clubs like Manchester United and Real Madrid. I enjoy philanthropy and investing in various businesses.",
+    "currently": "I am in Austin to explore potential business opportunities and attend a charity event.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Austin Celebrity Circle",
+            "description": "A social group for celebrities visiting Austin to network and explore business opportunities.",
+            "place": "The Driskill",
+            "members": [
+                "Christiano Ronaldo",
+                "Cillian Murphy",
+                "Drake",
+                "Emma Watson",
+                "Usain Bolt"
+            ],
+            "daily_activity": "networking and socializing from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Christiano Ronaldo's room at The Driskill",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Christiano Ronaldo's room at The Driskill",
+            "building": "The Driskill",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Shop 24",
+            "building": "213 East 6th Street",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to REP Real Estate Partners",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Shop 24",
+            "end_place": "REP Real Estate Partners"
+        },
+        {
+            "type": "main",
+            "activity": "Explore business opportunities",
+            "place": "REP Real Estate Partners",
+            "building": "301 Congress",
+            "start_time": "09:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Northern-Southern",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "REP Real Estate Partners",
+            "end_place": "Northern-Southern"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Northern-Southern for entertainment",
+            "place": "Northern-Southern",
+            "building": "107 East 5th Street Suite 107",
+            "start_time": "12:30:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Firehouse Lounge & Hostel",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "Northern-Southern",
+            "end_place": "Firehouse Lounge & Hostel"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Firehouse Lounge & Hostel",
+            "building": "Firehouse Lounge & Hostel",
+            "start_time": "14:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Indeed Tower",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Firehouse Lounge & Hostel",
+            "end_place": "Indeed Tower"
+        },
+        {
+            "type": "main",
+            "activity": "Attend charity event",
+            "place": "Indeed Tower",
+            "building": "Indeed Tower",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Driskill",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Indeed Tower",
+            "end_place": "The Driskill"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner and networking with Austin Celebrity Circle",
+            "place": "The Driskill",
+            "building": "The Driskill",
+            "start_time": "18:30:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Networking and socializing with Austin Celebrity Circle",
+            "place": "The Driskill",
+            "building": "The Driskill",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Barcelona",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "The Driskill",
+            "end_place": "Barcelona"
+        },
+        {
+            "type": "main",
+            "activity": "Enjoy entertainment at Barcelona",
+            "place": "Barcelona",
+            "building": "209 East 6th Street",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to The Driskill",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:30:00",
+            "start_place": "Barcelona",
+            "end_place": "Christiano Ronaldo's room at The Driskill"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Christiano Ronaldo's room at The Driskill",
+            "building": "The Driskill",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

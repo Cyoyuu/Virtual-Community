@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Douglas Paul Real Estate",
+        "building": "1210 Massachusetts Avenue",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Tatte Bakery & Cafe | Harvard Square",
+        "place": "Tatte Bakery & Cafe | Harvard Square",
+        "building": "Fairfax Hall",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard Center for Population and Development Studies",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on project analyzing population growth patterns",
+        "place": "Harvard Center for Population and Development Studies",
+        "building": "9 Bow Street",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hokkaido Ramen Santouka Harvard Square for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Harvard Center for Population and Development Studies",
+        "end_place": "Hokkaido Ramen Santouka Harvard Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Hokkaido Ramen Santouka Harvard Square",
+        "place": "Hokkaido Ramen Santouka Harvard Square",
+        "building": "1 Bow Street",
+        "start_time": "12:15:00",
+        "end_time": "12:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard Data Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:45:00",
+        "end_time": "14:00:00",
+        "start_place": "Hokkaido Ramen Santouka Harvard Square",
+        "end_place": "Harvard Data Center"
+    },
+    {
+        "type": "main",
+        "activity": "Develop software projects with Harvard Tech Innovators",
+        "place": "Harvard Data Center",
+        "building": "Littauer Center",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Carpenter Center for the Visual Arts",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Harvard Data Center",
+        "end_place": "Carpenter Center for the Visual Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Explore exhibits at Carpenter Center for the Visual Arts",
+        "place": "Carpenter Center for the Visual Arts",
+        "building": "Carpenter Center",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mr. Bartley's Burger Cottage for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Carpenter Center for the Visual Arts",
+        "end_place": "Mr. Bartley's Burger Cottage"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Mr. Bartley's Burger Cottage",
+        "place": "Mr. Bartley's Burger Cottage",
+        "building": "Hampden Hall",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "18:45:00",
+        "start_place": "Mr. Bartley's Burger Cottage",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shop for groceries at Fresh and Beverages Store",
+        "place": "Fresh and Beverages Store",
+        "building": "Hampden Hall",
+        "start_time": "18:45:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Adam Pierce's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:45:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Adam Pierce's room at Douglas Paul Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review research notes",
+        "place": "Adam Pierce's room at Douglas Paul Real Estate",
+        "building": "1210 Massachusetts Avenue",
+        "start_time": "19:45:00",
+        "end_time": "23:59:59"
+    }
+]

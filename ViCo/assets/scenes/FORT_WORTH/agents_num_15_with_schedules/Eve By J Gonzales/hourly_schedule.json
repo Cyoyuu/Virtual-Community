@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Eve By J Gonzales's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "La Perla",
+        "building": "Houston Place Lofts",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research project on urban sustainability",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Picchi Pacchi Pizzeria",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "Picchi Pacchi Pizzeria"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Picchi Pacchi Pizzeria",
+        "building": "Neil P Anderson Building",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Picchi Pacchi Pizzeria",
+        "end_place": "Fort Worth Public Library - Downtown Express"
+    },
+    {
+        "type": "main",
+        "activity": "Continue research project on urban sustainability",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "Lanham Fitness Center"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Fitness Enthusiasts Club",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to La Perla for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "La Perla"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "La Perla",
+        "building": "Houston Place Lofts",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Eve By J Gonzales's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Eve By J Gonzales's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

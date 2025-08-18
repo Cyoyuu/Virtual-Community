@@ -1,38 +1,29 @@
 {
-    "Brycer Rodriguez": {
-        "age": 22,
-        "living_place": "Brycer Rodriguez's room at Belgrade apartments",
-        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Central Peaceful Nest Belgrade",
+        "appearance": "ViCo/assets/imgs/avatars/Eve By J Gonzales.png",
         "groups": [
-            "Fitness Enthusiasts"
+            "Culinary Creators"
         ]
     },
-    "Megan Carter": {
-        "age": 10,
-        "living_place": "Skyapartmani.com-Najbolji Apartmani U Strogom Centru, Obezbedjena Garaza Za Sve Goste",
-        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Vintage Apartment in the Centre of Belgrade",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
         "groups": [
-            "Fitness Enthusiasts"
+            "Culinary Creators"
         ]
     },
-    "Shannon Steves": {
-        "age": 27,
-        "living_place": "Rezidencija Redli",
-        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
-        "groups": [
-            "Fitness Enthusiasts"
-        ]
-    },
-    "Fitness Enthusiasts": {
-        "description": "A group of individuals passionate about fitness and healthy living.",
-        "place": "FunFit",
+    "Culinary Creators": {
+        "description": "A group of chefs and food lovers who meet to share recipes and cooking techniques.",
+        "place": "Restaurant Tchaikovsky",
         "members": [
-            "Brycer Rodriguez",
+            "Steve Johnson",
             "Chad Thompson",
-            "Shannon Steves",
-            "Megan Carter"
+            "Eve By J Gonzales"
         ],
-        "daily_activity": "attending a fitness class from 17:00 to 18:00"
+        "daily_activity": "sharing cooking techniques from 17:00 to 18:00"
     },
     "Chad Thompson's room at Apartmani Beograd Rakoc": {
         "building": "Kolar\u010deva 5",
@@ -46,9 +37,9 @@
         "location": [
             807.8774261474609,
             1218.0288848876953,
-            -8
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
         "name": "Chad Thompson's room at Apartmani Beograd Rakoc",
         "bounding_box": [
             -192.44528606826535,
@@ -58,6 +49,126 @@
             15.053997605689439,
             26.423011779785156,
             -0.38959364793043405
+        ]
+    },
+    "Irony vs.Satyr Bar Belgrade": {
+        "building": "Balkanska 19",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            787.2005996704102,
+            774.6326065063477,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -211.1555373126644,
+            -223.54002548311462,
+            107.58730697631837,
+            21.3002290578391,
+            13.401604785441355,
+            9.253684997558594,
+            -0.32166863997409983
+        ]
+    },
+    "Restaurant Tchaikovsky": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -16
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Nu\u0161i\u0107eva Business Center": {
+        "building": "Nu\u0161i\u0107eva Business Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            988.0944175720215,
+            1160.702018737793,
+            -8
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -11.905582427978516,
+            161.4200439453125,
+            121.59349822998047,
+            17.21519660949707,
+            26.603633880615234,
+            27.876197814941406,
+            0.6476122736930847
+        ]
+    },
+    "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective": {
+        "building": "Dragoslava Jovanovi\u0107a 11",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1006.4708003997803,
+            805.4982223510742,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            6.470793903698004,
+            -194.57410834528827,
+            125.41312789916992,
+            14.327699595735748,
+            35.551842069646,
+            21.900001525878906,
+            -1.0460808119325529
+        ]
+    },
+    "Srednja \u0160kola Sveti Sava, Beograd": {
+        "building": "\u0421\u0440\u0435\u0434\u045a\u0430 \u0448\u043a\u043e\u043b\u0430 \u201e\u0421\u0432\u0435\u0442\u0438 \u0421\u0430\u0432\u0430\u201c",
+        "coarse_type": "office",
+        "fine_types": [
+            "secondary_school",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            914.9928665161133,
+            1130.3901443481445,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -78.94675925397733,
+            129.46800780433597,
+            122.96813583374023,
+            37.40910177827015,
+            62.95143356599393,
+            29.789405822753906,
+            0.25087334138354844
         ]
     },
     "Pub 21": {
@@ -73,7 +184,7 @@
             755.8258361816406,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
             -223.30348205566406,
             -241.7588653564453,
@@ -84,8 +195,57 @@
             -0.6395435929298401
         ]
     },
-    "FunFit": {
-        "building": "Kralja Milana 4a",
+    "Beverages and DM Store": {
+        "building": "Balkanska 19",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            787.2005996704102,
+            774.6326065063477,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -211.1555373126644,
+            -223.54002548311462,
+            107.58730697631837,
+            21.3002290578391,
+            13.401604785441355,
+            9.253684997558594,
+            -0.32166863997409983
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Balkanska 11",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            786.7452239990234,
+            850.953498840332,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -213.17584228515625,
+            -149.04650115966797,
+            112.91844177246095,
+            9.929024022807933,
+            11.721440196007785,
+            11.674591064453125,
+            0.1344000134602505
+        ]
+    },
+    "Chic'a go! Studio": {
+        "building": "Nu\u0161i\u0107eva 8",
         "coarse_type": "entertainment",
         "fine_types": [
             "gym",
@@ -94,191 +254,19 @@
             "establishment"
         ],
         "location": [
-            891.3858032226562,
-            727.4752960205078,
-            -24
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            -108.6731289005075,
-            -272.4354781850209,
-            124.03781127929689,
-            18.99392305428472,
-            12.483432123821025,
-            22.912353515625,
-            0.35868795165031353
-        ]
-    },
-    "Hotel Prag": {
-        "building": "\u0425\u043e\u0442\u0435\u043b \u041f\u0440\u0430\u0433",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            729.8923797607422,
-            737.8661041259766,
+            902.0642204284668,
+            1056.6857929229736,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            -274.04638671875,
-            -258.54669189453125,
-            106.22630310058594,
-            23.50684356689453,
-            38.11990737915039,
-            20.808822631835938,
-            -0.5785485506057739
-        ]
-    },
-    "\u0160kola gitare Star\u010devi\u0107": {
-        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            816.9180679321289,
-            898.9368286132812,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            -183.05051394441477,
-            -101.0376555236416,
-            119.56740951538086,
-            13.452089917602713,
-            26.38880369504873,
-            16.282737731933594,
-            0.4591469264440528
-        ]
-    },
-    "Hotel Kasina": {
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            848.7226333618164,
-            1006.2702541351318,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-        "bounding_box": [
-            -151.2814329225195,
-            6.265316367493767,
-            124.65803909301758,
-            13.657579252733568,
-            19.31067647145127,
-            25.098106384277344,
-            0.3337058982621143
-        ]
-    },
-    "Terazijska Kujna": {
-        "building": "Terazije 36",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            864.8439636230469,
-            797.3622283935547,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -136.64175623762375,
-            -203.88251228582791,
-            119.24510192871095,
-            22.45242802833859,
-            17.51336034013327,
-            10.942642211914062,
-            0.4065554898101026
-        ]
-    },
-    "Ognji\u0161te": {
-        "building": "Ars Medica Beograd",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            952.2638607025146,
-            840.4193420410156,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            -47.736953338644035,
-            -158.0269294162769,
-            116.31040191650392,
-            19.923373382850816,
-            47.878606691797636,
-            5.16650390625,
-            -1.033052344342761
-        ]
-    },
-    "Fresh and DM Store": {
-        "building": "Terazije 36",
-        "coarse_type": "stores",
-        "fine_types": [
-            "beauty_salon",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            864.8439636230469,
-            797.3622283935547,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
-        "bounding_box": [
-            -136.64175623762375,
-            -203.88251228582791,
-            119.24510192871095,
-            22.45242802833859,
-            17.51336034013327,
-            10.942642211914062,
-            0.4065554898101026
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "Kralja Milana 4a",
-        "coarse_type": "stores",
-        "fine_types": [
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            891.3858032226562,
-            727.4752960205078,
-            -20
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            -108.6731289005075,
-            -272.4354781850209,
-            124.03781127929689,
-            18.99392305428472,
-            12.483432123821025,
-            22.912353515625,
-            0.35868795165031353
+            -96.47508380384433,
+            56.602274227341034,
+            121.1541748046875,
+            23.772591703214736,
+            27.792736807840537,
+            20.683349609375,
+            0.477748427093326
         ]
     },
     "Terazije Bus Stop": {

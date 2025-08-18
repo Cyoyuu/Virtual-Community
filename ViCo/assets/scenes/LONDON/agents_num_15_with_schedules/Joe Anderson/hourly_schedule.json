@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Old Queen Street Cafe",
+        "building": "Old Queen Street Cafe",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Oversee daily operations and customer service",
+        "place": "Beverages and DM Store",
+        "building": "Church House",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fuller's Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "Fuller's Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Fuller's Kitchen",
+        "building": "The Sanctuary House",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Beverages and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:45:00",
+        "start_place": "Fuller's Kitchen",
+        "end_place": "Beverages and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Organize book signing event for local author",
+        "place": "Beverages and DM Store",
+        "building": "Church House",
+        "start_time": "12:45:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Literary Enthusiasts group meeting",
+        "place": "Beverages and DM Store",
+        "building": "Church House",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Old Queen Street Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "Old Queen Street Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Old Queen Street Cafe",
+        "building": "Old Queen Street Cafe",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Churchill War Rooms",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "18:45:00",
+        "start_place": "Old Queen Street Cafe",
+        "end_place": "Churchill War Rooms"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment",
+        "place": "Churchill War Rooms",
+        "building": "King Charles Street",
+        "start_time": "18:45:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Joe Anderson's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:15:00",
+        "start_place": "Churchill War Rooms",
+        "end_place": "Joe Anderson's room at Sequential Investors"
+    },
+    {
+        "type": "main",
+        "activity": "Read and collect rare books",
+        "place": "Joe Anderson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "21:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's activities",
+        "place": "Joe Anderson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

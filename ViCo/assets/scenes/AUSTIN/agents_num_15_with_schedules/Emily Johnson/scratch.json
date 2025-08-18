@@ -3,29 +3,28 @@
     "first_name": "Emily",
     "last_name": "Johnson",
     "age": 16,
-    "innate": "stimulation, self-direction, hedonism",
-    "learned": "I am a high school student visiting Austin with my family. I love exploring new places and trying out different cuisines.",
-    "currently": "I want to visit as many local attractions as possible during my stay in Austin.",
-    "lifestyle": "I go to bed around 22:00, wake up around 07:00, eat dinner around 18:30",
+    "innate": "conformity, tradition, benevolence",
+    "learned": "I am a high school student interested in art and design. I enjoy painting and visiting art galleries.",
+    "currently": "I am preparing for an art competition at my school.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Austin Explorers",
-            "description": "A group of individuals who enjoy exploring the city of Austin and experiencing its culture and attractions.",
-            "place": "The Driskill",
+            "name": "Austin Music and Arts Club",
+            "description": "A club for music and art lovers to share their passion and collaborate on creative projects.",
+            "place": "Northern-Southern",
             "members": [
-                "Barack Obama",
+                "Brycer Rodriguez",
                 "Emily Johnson",
-                "Jack Ma",
-                "Tom Holland",
-                "Shannon Steves"
+                "Olivia Adams",
+                "Megan Carter"
             ],
-            "daily_activity": "exploring local attractions from 16:00 to 17:00"
+            "daily_activity": "attending art workshops from 17:00 to 18:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
+    "living_place": "Emily Johnson's room at Aloft Austin Downtown",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,150 +33,140 @@
     "hourly_schedule": [
         {
             "type": "sleep",
-            "activity": "Sleep in Emily Johnson's room",
-            "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
-            "building": "The Stephen F Austin Royal Sonesta Hotel",
-            "start_time": "00:00:00",
-            "end_time": "07:00:00"
-        },
-        {
-            "type": "meal",
-            "activity": "Breakfast at Caroline",
-            "place": "Caroline",
+            "activity": "Sleep",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
             "building": "Aloft Austin Downtown",
-            "start_time": "07:00:00",
+            "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
-            "type": "commute",
-            "activity": "Commute to Wild About Music",
-            "place": null,
-            "building": null,
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caroline",
+            "building": "Aloft Austin Downtown",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "main",
-            "activity": "Explore Wild About Music",
-            "place": "Wild About Music",
-            "building": "Wild About Music",
+            "activity": "Art practice for competition",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
+            "building": "Aloft Austin Downtown",
             "start_time": "08:30:00",
-            "end_time": "10:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Snacks and DM Store",
-            "place": null,
-            "building": null,
-            "start_time": "10:00:00",
-            "end_time": "10:30:00",
-            "start_place": "Wild About Music",
-            "end_place": "Snacks and DM Store"
-        },
-        {
-            "type": "main",
-            "activity": "Visit Snacks and DM Store",
-            "place": "Snacks and DM Store",
-            "building": "722 Congress Avenue",
-            "start_time": "10:30:00",
             "end_time": "12:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Kelly's Corner",
+            "activity": "Commute to Chick-fil-A 6th & Congress",
             "place": null,
             "building": null,
             "start_time": "12:00:00",
-            "end_time": "12:30:00",
-            "start_place": "Snacks and DM Store",
-            "end_place": "Kelly's Corner"
+            "end_time": "12:10:00",
+            "start_place": "Emily Johnson's room at Aloft Austin Downtown",
+            "end_place": "Chick-fil-A 6th & Congress"
         },
         {
             "type": "meal",
-            "activity": "Lunch at Kelly's Corner",
-            "place": "Kelly's Corner",
-            "building": "101 West 5th Street",
+            "activity": "Lunch",
+            "place": "Chick-fil-A 6th & Congress",
+            "building": "One American Center",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and DM Store",
+            "place": null,
+            "building": null,
             "start_time": "12:30:00",
-            "end_time": "13:30:00"
+            "end_time": "12:45:00",
+            "start_place": "Chick-fil-A 6th & Congress",
+            "end_place": "Fresh and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Buy art supplies",
+            "place": "Fresh and DM Store",
+            "building": "CVS Pharmacy",
+            "start_time": "12:45:00",
+            "end_time": "13:15:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to The Driskill",
+            "activity": "Commute back to Aloft Austin Downtown",
             "place": null,
             "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "Fresh and DM Store",
+            "end_place": "Emily Johnson's room at Aloft Austin Downtown"
+        },
+        {
+            "type": "main",
+            "activity": "Continue art practice for competition",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
+            "building": "Aloft Austin Downtown",
             "start_time": "13:30:00",
-            "end_time": "14:00:00",
-            "start_place": "Kelly's Corner",
-            "end_place": "The Driskill"
-        },
-        {
-            "type": "main",
-            "activity": "Relax at The Driskill",
-            "place": "The Driskill",
-            "building": "The Driskill",
-            "start_time": "14:00:00",
-            "end_time": "15:30:00"
+            "end_time": "16:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Austin Explorers meeting",
+            "activity": "Commute to Northern-Southern",
             "place": null,
             "building": null,
-            "start_time": "15:30:00",
-            "end_time": "16:00:00",
-            "start_place": "The Driskill",
-            "end_place": "The Driskill"
+            "start_time": "16:30:00",
+            "end_time": "16:45:00",
+            "start_place": "Emily Johnson's room at Aloft Austin Downtown",
+            "end_place": "Northern-Southern"
         },
         {
             "type": "main",
-            "activity": "Explore local attractions with Austin Explorers",
-            "place": "The Driskill",
-            "building": "The Driskill",
-            "start_time": "16:00:00",
-            "end_time": "17:00:00"
+            "activity": "Attend art workshop with Austin Music and Arts Club",
+            "place": "Northern-Southern",
+            "building": "107 East 5th Street Suite 107",
+            "start_time": "16:45:00",
+            "end_time": "18:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Neon Grotto",
+            "activity": "Commute to Caroline for dinner",
             "place": null,
             "building": null,
-            "start_time": "17:00:00",
-            "end_time": "17:30:00",
-            "start_place": "The Driskill",
-            "end_place": "Neon Grotto"
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Northern-Southern",
+            "end_place": "Caroline"
         },
         {
             "type": "meal",
-            "activity": "Dinner at Neon Grotto",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
-            "start_time": "17:30:00",
-            "end_time": "18:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute back to The Stephen F Austin Royal Sonesta Hotel",
-            "place": null,
-            "building": null,
-            "start_time": "18:30:00",
-            "end_time": "19:00:00",
-            "start_place": "Neon Grotto",
-            "end_place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel"
+            "activity": "Dinner",
+            "place": "Caroline",
+            "building": "Aloft Austin Downtown",
+            "start_time": "18:15:00",
+            "end_time": "18:45:00"
         },
         {
             "type": "main",
-            "activity": "Relax in Emily Johnson's room",
-            "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
-            "building": "The Stephen F Austin Royal Sonesta Hotel",
-            "start_time": "19:00:00",
-            "end_time": "22:00:00"
+            "activity": "Relax and free time",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
+            "building": "Aloft Austin Downtown",
+            "start_time": "18:45:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
+            "building": "Aloft Austin Downtown",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
         },
         {
             "type": "sleep",
-            "activity": "Sleep in Emily Johnson's room",
-            "place": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
-            "building": "The Stephen F Austin Royal Sonesta Hotel",
-            "start_time": "22:00:00",
+            "activity": "Sleep",
+            "place": "Emily Johnson's room at Aloft Austin Downtown",
+            "building": "Aloft Austin Downtown",
+            "start_time": "23:30:00",
             "end_time": "23:59:59"
         }
     ],
@@ -190,13 +179,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
     "working_place": null,
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

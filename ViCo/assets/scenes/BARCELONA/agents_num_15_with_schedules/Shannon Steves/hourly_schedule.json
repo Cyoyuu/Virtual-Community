@@ -1,0 +1,138 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Shannon Steves's room at Casa Mart\u00ed",
+        "building": "Casa Mart\u00ed",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4",
+        "building": "Casa Mart\u00ed",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Can Pizza Universitat",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new menu at Can Pizza Universitat",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on new menu at Can Pizza Universitat",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "12:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Can Pizza Universitat",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping for ingredients at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "Carrer de la Canuda",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Can Pizza Universitat",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Can Pizza Universitat"
+    },
+    {
+        "type": "main",
+        "activity": "Experimenting with new recipes with Culinary Creators",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Finalize menu ideas at Can Pizza Universitat",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "18:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il\u00b7lacions Design Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Can Pizza Universitat",
+        "end_place": "Il\u00b7lacions Design Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy art at Il\u00b7lacions Design Gallery",
+        "place": "Il\u00b7lacions Design Gallery",
+        "building": "Rambla de Canaletes",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Casa Mart\u00ed",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:30:00",
+        "start_place": "Il\u00b7lacions Design Gallery",
+        "end_place": "Shannon Steves's room at Casa Mart\u00ed"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Shannon Steves's room at Casa Mart\u00ed",
+        "building": "Casa Mart\u00ed",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

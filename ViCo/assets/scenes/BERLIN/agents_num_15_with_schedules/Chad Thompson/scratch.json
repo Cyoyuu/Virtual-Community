@@ -3,28 +3,29 @@
     "first_name": "Chad",
     "last_name": "Thompson",
     "age": 28,
-    "innate": "hedonism, stimulation, achievement",
-    "learned": "I am a chef at Berliner Kindl, specializing in German cuisine. I love experimenting with new recipes and flavors.",
-    "currently": "I want to create a signature dish that becomes popular among locals.",
+    "innate": "achievement, power, security",
+    "learned": "I am a manager at Rathsack Geb\u00e4udeservice GmbH. I enjoy playing golf and attending business seminars.",
+    "currently": "I am working on improving the company's service efficiency.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Berlin Culinary Creators",
-            "description": "A group of chefs and food lovers experimenting with new recipes and hosting dinner parties.",
-            "place": "Berliner Kindl",
+            "name": "Berlin Business Network",
+            "description": "A group of professionals working in various industries in Berlin, focused on networking and business development.",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
             "members": [
+                "Brian Carter",
                 "Chad Thompson",
-                "Eve By J Gonzales",
-                "Olivia Adams",
-                "Selena Gomez"
+                "Joe Anderson",
+                "Leonard Park",
+                "Louise Roberts"
             ],
-            "daily_activity": "cooking and tasting new dishes from 18:00 to 20:00"
+            "daily_activity": "attending business seminars from 17:00 to 18:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Chad Thompson's room at Haus Sommer",
+    "living_place": "Chad Thompson's room at Apartments at Brandenburg Gate",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,22 +35,22 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Chad Thompson's room at Haus Sommer",
-            "building": "Haus Sommer",
+            "place": "Chad Thompson's room at Apartments at Brandenburg Gate",
+            "building": "Behrenstra\u00dfe 1C",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Chad Thompson's room at Haus Sommer",
-            "building": "Haus Sommer",
+            "place": "Viale dei Tigli",
+            "building": "Behrenstra\u00dfe 1C",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Berliner Kindl",
+            "activity": "Commute to Rathsack Geb\u00e4udeservice GmbH",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
@@ -57,96 +58,118 @@
         },
         {
             "type": "main",
-            "activity": "Experiment with new recipes",
-            "place": "Berliner Kindl",
-            "building": "Wilhelmstra\u00dfe 78",
+            "activity": "Work on improving company's service efficiency",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
+            "building": "Glinkastra\u00dfe 30",
             "start_time": "09:00:00",
             "end_time": "12:00:00"
         },
         {
+            "type": "commute",
+            "activity": "Commute to EINSTEIN Unter den Linden",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Rathsack Geb\u00e4udeservice GmbH",
+            "end_place": "EINSTEIN Unter den Linden"
+        },
+        {
             "type": "meal",
             "activity": "Lunch",
-            "place": "Berliner Kindl",
-            "building": "Wilhelmstra\u00dfe 78",
-            "start_time": "12:00:00",
-            "end_time": "12:30:00"
-        },
-        {
-            "type": "main",
-            "activity": "Continue working on signature dish",
-            "place": "Berliner Kindl",
-            "building": "Wilhelmstra\u00dfe 78",
-            "start_time": "12:30:00",
-            "end_time": "15:00:00"
+            "place": "EINSTEIN Unter den Linden",
+            "building": "Unter den Linden 42",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Memorial",
+            "activity": "Commute back to Rathsack Geb\u00e4udeservice GmbH",
             "place": null,
             "building": null,
-            "start_time": "15:00:00",
-            "end_time": "15:30:00",
-            "start_place": "Berliner Kindl",
-            "end_place": "Memorial"
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "EINSTEIN Unter den Linden",
+            "end_place": "Rathsack Geb\u00e4udeservice GmbH"
         },
         {
             "type": "main",
-            "activity": "Relax and enjoy some games",
-            "place": "Memorial",
-            "building": "Akademie der K\u00fcnste",
-            "start_time": "15:30:00",
-            "end_time": "17:00:00"
+            "activity": "Continue working on improving company's service efficiency",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
+            "building": "Glinkastra\u00dfe 30",
+            "start_time": "13:30:00",
+            "end_time": "16:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Berliner Kindl",
+            "activity": "Commute to business seminar",
             "place": null,
             "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Rathsack Geb\u00e4udeservice GmbH",
+            "end_place": "Rathsack Geb\u00e4udeservice GmbH"
+        },
+        {
+            "type": "main",
+            "activity": "Attend business seminar",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
+            "building": "Glinkastra\u00dfe 30",
             "start_time": "17:00:00",
-            "end_time": "17:30:00",
-            "start_place": "Memorial",
-            "end_place": "Berliner Kindl"
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Viale dei Tigli",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Rathsack Geb\u00e4udeservice GmbH",
+            "end_place": "Viale dei Tigli"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Berliner Kindl",
-            "building": "Wilhelmstra\u00dfe 78",
-            "start_time": "17:30:00",
-            "end_time": "18:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Berlin Culinary Creators group activity",
-            "place": "Berliner Kindl",
-            "building": "Wilhelmstra\u00dfe 78",
-            "start_time": "18:00:00",
-            "end_time": "20:00:00"
+            "place": "Viale dei Tigli",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "18:10:00",
+            "end_time": "19:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Chad Thompson's room at Haus Sommer",
+            "activity": "Commute to Galerie im Adlon",
             "place": null,
             "building": null,
-            "start_time": "20:00:00",
-            "end_time": "20:30:00",
-            "start_place": "Berliner Kindl",
-            "end_place": "Chad Thompson's room at Haus Sommer"
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Viale dei Tigli",
+            "end_place": "Galerie im Adlon"
         },
         {
             "type": "main",
-            "activity": "Relax and unwind",
-            "place": "Chad Thompson's room at Haus Sommer",
-            "building": "Haus Sommer",
-            "start_time": "20:30:00",
-            "end_time": "23:30:00"
+            "activity": "Relax and enjoy at Galerie im Adlon",
+            "place": "Galerie im Adlon",
+            "building": "Adlon Kempinski",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
         },
         {
-            "type": "meal",
-            "activity": "Light snack",
-            "place": "Chad Thompson's room at Haus Sommer",
-            "building": "Haus Sommer",
-            "start_time": "23:30:00",
+            "type": "commute",
+            "activity": "Commute back to Chad Thompson's room",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Galerie im Adlon",
+            "end_place": "Chad Thompson's room at Apartments at Brandenburg Gate"
+        },
+        {
+            "type": "main",
+            "activity": "Personal time and preparation for next day",
+            "place": "Chad Thompson's room at Apartments at Brandenburg Gate",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "21:30:00",
             "end_time": "23:59:59"
         }
     ],
@@ -159,13 +182,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Berliner Kindl",
+    "working_place": "Rathsack Geb\u00e4udeservice GmbH",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

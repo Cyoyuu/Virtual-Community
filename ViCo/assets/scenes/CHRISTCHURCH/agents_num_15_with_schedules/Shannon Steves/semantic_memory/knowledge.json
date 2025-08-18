@@ -1,84 +1,31 @@
 {
-    "Leonard Park": {
-        "age": 26,
-        "living_place": "Leonard Park's room at Ray White Commercial Christchurch",
-        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at Catalyst Group - Christchurch",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
         "groups": [
-            "Tech Innovators Group"
+            "Wellness Warriors"
         ]
     },
     "Louise Roberts": {
         "age": 29,
-        "living_place": "Louise Roberts's room at Ray White Commercial Christchurch",
+        "living_place": "Louise Roberts's room at Catalyst Group - Christchurch",
         "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
         "groups": [
-            "Tech Innovators Group"
+            "Wellness Warriors"
         ]
     },
-    "Tech Innovators Group": {
-        "description": "A group focused on technology and innovation.",
-        "place": "Catalyst Group - Christchurch",
+    "Wellness Warriors": {
+        "description": "A group focused on promoting health and wellness through various activities and community service.",
+        "place": "Heritage Health Club",
         "members": [
-            "Leonard Park",
-            "Shannon Steves",
-            "Louise Roberts"
+            "Louise Roberts",
+            "Brian Carter",
+            "Shannon Steves"
         ],
-        "daily_activity": "discussing tech trends from 16:00 to 17:00"
+        "daily_activity": "practicing yoga and meditation from 18:00 to 19:00"
     },
-    "Shannon Steves's room at Ray White Commercial Christchurch": {
-        "building": "76 Hereford Street",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            727.6322631835938,
-            868.1143112182617,
-            -32
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Shannon Steves's room at Ray White Commercial Christchurch",
-        "bounding_box": [
-            -272.36773681640625,
-            -131.85229110717773,
-            119.0121307373047,
-            20.12012806771357,
-            24.184244033492106,
-            13.246795654296875,
-            0.006383985654672662
-        ]
-    },
-    "The Catering Belle Ltd": {
-        "building": "T\u016branga (Christchurch Central Library)",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "bakery",
-            "store",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            981.2879409790039,
-            1108.6643829345703,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -18.712087777375316,
-            108.66430752466928,
-            126.1923713684082,
-            68.55356396754661,
-            25.158120884977674,
-            29.246849060058594,
-            -2.5093479815716326e-06
-        ]
-    },
-    "Catalyst Group - Christchurch": {
+    "Shannon Steves's room at Catalyst Group - Christchurch": {
         "building": "Kensington House",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -91,9 +38,10 @@
         "location": [
             1155.179183959961,
             817.0445785522461,
-            -12
+            -40
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Shannon Steves's room at Catalyst Group - Christchurch",
         "bounding_box": [
             155.30100936792724,
             -183.00731106290766,
@@ -102,6 +50,57 @@
             27.19353599473631,
             8.345420837402344,
             0.008965139674897496
+        ]
+    },
+    "Heritage Health Club": {
+        "building": "Old Government Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -20
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Chiwahwah Mexican Cantina Bar": {
+        "building": "136 Oxford Terrace",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            738.6576385498047,
+            853.1593742370605,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -261.39120368332027,
+            -146.87176429642975,
+            120.3871078491211,
+            46.46012754452312,
+            54.21283190387791,
+            15.643783569335923,
+            0.0029456287286576733
         ]
     },
     "RapidRhythm": {
@@ -117,7 +116,7 @@
             1108.6643829345703,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
             -18.712087777375316,
             108.66430752466928,
@@ -141,7 +140,7 @@
             1231.9229583740234,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
         "bounding_box": [
             -47.411441802978516,
             231.80393981933594,
@@ -150,60 +149,6 @@
             25.22930145263672,
             65.22388458251953,
             0.0137138357385993
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "Cashel Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "department_store",
-            "shoe_store",
-            "clothing_store",
-            "home_goods_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            899.2174644470215,
-            733.8624801635742,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            -100.78253173828125,
-            -266.14080810546875,
-            118.41551208496094,
-            38.30206298828125,
-            50.5390625,
-            10.398628234863281,
-            0.00017210030637215823
-        ]
-    },
-    "Kong": {
-        "building": "76 Hereford Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            727.6322631835938,
-            868.1143112182617,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -272.36773681640625,
-            -131.85229110717773,
-            119.0121307373047,
-            20.12012806771357,
-            24.184244033492106,
-            13.246795654296875,
-            0.006383985654672662
         ]
     },
     "Kensington House": {
@@ -219,7 +164,7 @@
             817.0445785522461,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             155.30100936792724,
             -183.00731106290766,
@@ -228,6 +173,57 @@
             27.19353599473631,
             8.345420837402344,
             0.008965139674897496
+        ]
+    },
+    "O.G.B Bar & Cocktail Bar": {
+        "building": "Old Government Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Burger Bonanza City Centre": {
+        "building": "109 Worcester Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1098.8381080627441,
+            1030.6068267822266,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            98.85693332925109,
+            30.662315863613003,
+            119.18923950195312,
+            32.02377602336966,
+            15.718612016132193,
+            13.202651977539062,
+            0.003471812498178397
         ]
     },
     "Fresh and Snacks Store": {
@@ -255,53 +251,29 @@
             -0.7772728789601847
         ]
     },
-    "Snacks and DM Store": {
-        "building": "Polished Diamonds",
+    "Fresh and Beverages Store": {
+        "building": "268 High Street",
         "coarse_type": "stores",
         "fine_types": [
-            "point_of_interest",
+            "shoe_store",
             "store",
+            "point_of_interest",
             "establishment"
         ],
         "location": [
-            1107.3193855285645,
-            1214.4617538452148,
+            987.172063678503,
+            865.6374130249023,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
         "bounding_box": [
-            107.32889483355629,
-            214.46170832810628,
-            115.3553123474121,
-            7.772387226406339,
-            4.441782157848892,
-            7.873435974121094,
-            0.004281765176864726
-        ]
-    },
-    "Whakamana: the Cannabis Museum of Aotearoa": {
-        "building": "The Church Pub",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1154.420021057129,
-            985.3429330587387,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            154.3917066188286,
-            -14.713659905483615,
-            116.45612716674805,
-            18.724038323490216,
-            22.02926950052141,
-            8.653938293457031,
-            0.010623948502070992
+            -11.011819050352628,
+            -129.85205161795054,
+            116.29160308837892,
+            25.04320046790334,
+            31.53070537179174,
+            7.04296875,
+            -0.784433731861729
         ]
     },
     "Gloucester Street Bus Stop": {

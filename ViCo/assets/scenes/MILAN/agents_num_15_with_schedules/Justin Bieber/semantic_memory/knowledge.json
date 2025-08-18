@@ -1,0 +1,424 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Augustinianum",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Domus Julia",
+        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Selena Gomez": {
+        "age": 32,
+        "living_place": "MILU APARTMENTS MILANO",
+        "appearance": "ViCo/assets/imgs/avatars/Selena Gomez.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Milan Music Club": {
+        "description": "A club for music enthusiasts to share and enjoy music together.",
+        "place": "Caf\u00e9 De Amicis",
+        "members": [
+            "Brycer Rodriguez",
+            "Justin Bieber",
+            "Pika Hayes",
+            "Selena Gomez"
+        ],
+        "daily_activity": "jamming sessions from 17:00 to 18:30"
+    },
+    "Justin Bieber's room at MILU APARTMENTS MILANO": {
+        "building": "Via Caminadella",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1143.8871841430664,
+            840.2990493774414,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Justin Bieber's room at MILU APARTMENTS MILANO",
+        "bounding_box": [
+            146.88597880503363,
+            -159.16115151361,
+            122.68914031982422,
+            27.29813319649149,
+            16.66098357056834,
+            15.821731567382798,
+            0.5048246993320491
+        ]
+    },
+    "Caf\u00e9 De Amicis": {
+        "building": "Via Edmondo de Amicis",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            913.1083145141602,
+            968.799633026123,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ]
+    },
+    "Le Cavallerizze": {
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            825.3389129638672,
+            918.7246150970459,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -184.58961486816406,
+            -81.22627258300781,
+            116.44261932373047,
+            35.094085693359375,
+            47.77935028076172,
+            5.8205108642578125,
+            -0.6583981513977051
+        ]
+    },
+    "Universit\u00e0 Cattolica -Edificio via Lanzone 14": {
+        "building": "Via San Pio V",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2957229614258,
+            882.8430099487305,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ]
+    },
+    "ABEL": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1187.0965591453808,
+            735.1482715378298,
+            -0.008247297581220892
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano": {
+        "building": "Via Caminadella",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1143.8871841430664,
+            840.2990493774414,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            146.88597880503363,
+            -159.16115151361,
+            122.68914031982422,
+            27.29813319649149,
+            16.66098357056834,
+            15.821731567382798,
+            0.5048246993320491
+        ]
+    },
+    "Sant'Ambrogio": {
+        "building": "Via Ausonio",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            971.8065643310547,
+            738.6961212158203,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -28.022322888969306,
+            -267.1491729211908,
+            123.98828125000001,
+            25.45917558036924,
+            33.24996755248376,
+            20.574005126953125,
+            -0.7682366803780493
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Via Ausonio",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            971.8065643310547,
+            738.6961212158203,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -28.022322888969306,
+            -267.1491729211908,
+            123.98828125000001,
+            25.45917558036924,
+            33.24996755248376,
+            20.574005126953125,
+            -0.7682366803780493
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Via San Vittore",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.2326583862305,
+            1126.6292572021484,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -137.25127333203613,
+            126.59750545144792,
+            126.6708755493164,
+            28.14149149346803,
+            22.165544664594538,
+            23.559738159179688,
+            -0.3982692030645363
+        ]
+    },
+    "Bunkerbootcamp": {
+        "building": "Via Edmondo de Amicis",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "physiotherapist",
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            913.1083145141602,
+            968.799633026123,
+            -16
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ]
+    },
+    "Via Lodovico Necchi Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            275.8140310265028,
+            -139.97034909004233
+        ],
+        "rotation": -1.8149280584994887,
+        "bounding_box": null
+    },
+    "Via Edmondo de Amicis Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -65.93732561556723,
+            -126.39486544599913
+        ],
+        "rotation": 2.4943035051935416,
+        "bounding_box": null
+    },
+    "Via Bernardino Zenale Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -114.4527537817468,
+            243.87291376961986
+        ],
+        "rotation": -0.40365263075400587,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -126.99953288891919,
+            184.61791207176307
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            191.7041762596749,
+            -112.95025571070914
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -70.93074925681577,
+            -19.90143314509312
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            197.8229199282745,
+            145.4380916390492
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -195.64842812589262,
+            -107.06645171752132
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -47.12202541236839,
+            -220.04938063821953
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.97530517493664,
+            -262.0452924473627
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Via Bernardino Zenale": [
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Via Lodovico Necchi": [
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

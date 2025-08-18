@@ -2,131 +2,125 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Joe Anderson's room at Parliament Suites",
-        "building": "Dragoslava Snacks and DM Storeovi\u0107a 9b",
+        "place": "Joe Anderson's room at Apartments DaisyD",
+        "building": "Vlajkovi\u0107eva 19",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
-        "type": "commute",
-        "activity": "Commute to Hotel Kasina",
-        "place": null,
-        "building": null,
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Joe Anderson's room at Apartments DaisyD",
+        "building": "Vlajkovi\u0107eva 19",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
-        "type": "main",
-        "activity": "Oversee daily operations and ensure guest satisfaction",
-        "place": "Hotel Kasina",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
         "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Joe Anderson's room at Apartments DaisyD",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and Snacks Store",
+        "place": "Fresh and Snacks Store",
+        "building": "Vlajkovi\u0107eva 12",
+        "start_time": "08:45:00",
         "end_time": "12:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Kasina By Community for lunch",
+        "activity": "Commute to Restaurant Tchaikovsky",
         "place": null,
         "building": null,
         "start_time": "12:00:00",
-        "end_time": "12:10:00",
-        "start_place": "Hotel Kasina",
-        "end_place": "Kasina By Community"
+        "end_time": "12:15:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Restaurant Tchaikovsky"
     },
     {
         "type": "meal",
         "activity": "Lunch",
-        "place": "Kasina By Community",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "start_time": "12:10:00",
-        "end_time": "13:00:00"
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
     },
     {
         "type": "commute",
-        "activity": "Commute back to Hotel Kasina",
+        "activity": "Commute to Beverages and DM Store",
         "place": null,
         "building": null,
-        "start_time": "13:00:00",
-        "end_time": "13:10:00",
-        "start_place": "Kasina By Community",
-        "end_place": "Hotel Kasina"
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Beverages and DM Store"
     },
     {
         "type": "main",
-        "activity": "Continue overseeing operations and improving customer service",
-        "place": "Hotel Kasina",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "start_time": "13:10:00",
-        "end_time": "15:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Discuss hospitality trends with Hospitality Professionals group",
-        "place": "Hotel Kasina",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "start_time": "15:00:00",
-        "end_time": "16:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Plan strategies to improve customer service ratings",
-        "place": "Hotel Kasina",
-        "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
-        "start_time": "16:00:00",
+        "activity": "Activity at Beverages and DM Store",
+        "place": "Beverages and DM Store",
+        "building": "Balkanska 19",
+        "start_time": "13:30:00",
         "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Ognji\u0161te for dinner",
+        "activity": "Commute to \u0160tark - Terazije",
         "place": null,
         "building": null,
         "start_time": "18:00:00",
-        "end_time": "18:30:00",
-        "start_place": "Hotel Kasina",
-        "end_place": "Ognji\u0161te"
+        "end_time": "18:15:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "\u0160tark - Terazije"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "Ognji\u0161te",
-        "building": "Ars Medica Beograd",
-        "start_time": "18:30:00",
-        "end_time": "19:30:00"
+        "place": "\u0160tark - Terazije",
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to FunFit for leisure",
+        "activity": "Commute to Skulptura Devojka sa \u0161koljkom",
         "place": null,
         "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "\u0160tark - Terazije",
+        "end_place": "Skulptura Devojka sa \u0161koljkom"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Skulptura Devojka sa \u0161koljkom",
+        "place": "Skulptura Devojka sa \u0161koljkom",
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
         "start_time": "19:30:00",
-        "end_time": "20:00:00",
-        "start_place": "Ognji\u0161te",
-        "end_place": "FunFit"
-    },
-    {
-        "type": "main",
-        "activity": "Enjoy leisure time at FunFit",
-        "place": "FunFit",
-        "building": "Kralja Milana 4a",
-        "start_time": "20:00:00",
-        "end_time": "22:00:00"
+        "end_time": "22:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute back to Joe Anderson's room at Parliament Suites",
+        "activity": "Commute to Joe Anderson's room at Apartments DaisyD",
         "place": null,
         "building": null,
-        "start_time": "22:00:00",
-        "end_time": "22:30:00",
-        "start_place": "FunFit",
-        "end_place": "Joe Anderson's room at Parliament Suites"
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Skulptura Devojka sa \u0161koljkom",
+        "end_place": "Joe Anderson's room at Apartments DaisyD"
     },
     {
         "type": "main",
-        "activity": "Relax and prepare for bed",
-        "place": "Joe Anderson's room at Parliament Suites",
-        "building": "Dragoslava Snacks and DM Storeovi\u0107a 9b",
-        "start_time": "22:30:00",
+        "activity": "Prepare for Bed",
+        "place": "Joe Anderson's room at Apartments DaisyD",
+        "building": "Vlajkovi\u0107eva 19",
+        "start_time": "22:45:00",
         "end_time": "23:59:59"
     }
 ]

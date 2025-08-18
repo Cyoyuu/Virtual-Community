@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "James Thompson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Beverages and DM Store",
+        "building": "Church House",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on mobile app development",
+        "place": "Fresh and Snacks Store",
+        "building": "22 Old Queen Street",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kendal\u2019s Caf\u00e9 Bar",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Kendal\u2019s Caf\u00e9 Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Kendal\u2019s Caf\u00e9 Bar",
+        "building": "Institution of Civil Engineers",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Kendal\u2019s Caf\u00e9 Bar",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on mobile app development",
+        "place": "Fresh and Snacks Store",
+        "building": "22 Old Queen Street",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Queen Elizabeth II Conference Centre",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Queen Elizabeth II Conference Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to James Thompson's room at Sequential Investors",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Queen Elizabeth II Conference Centre",
+        "end_place": "Beverages and DM Store"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Beverages and DM Store",
+        "building": "Church House",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Play video games",
+        "place": "James Thompson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "18:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Personal coding project",
+        "place": "James Thompson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "James Thompson's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

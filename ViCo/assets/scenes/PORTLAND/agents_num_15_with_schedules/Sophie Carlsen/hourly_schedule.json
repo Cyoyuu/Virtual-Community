@@ -1,0 +1,120 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Sophie Carlsen's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Sophie Carlsen's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Coffee ME Up",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a barista and practice coffee brewing techniques",
+        "place": "Coffee ME Up",
+        "building": "225 Cumberland Avenue",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Coffee ME Up",
+        "building": "225 Cumberland Avenue",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work and improve latte art skills",
+        "place": "Coffee ME Up",
+        "building": "225 Cumberland Avenue",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland Public Library - Main Branch",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Coffee ME Up",
+        "end_place": "Portland Public Library - Main Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Research new coffee brewing methods",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "15:15:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anthony's Italian Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "16:45:00",
+        "start_place": "Portland Public Library - Main Branch",
+        "end_place": "Anthony's Italian Kitchen"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Portland Culinary Arts Society",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "16:45:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sophie Carlsen's room at Chestnut Street Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "19:45:00",
+        "start_place": "Anthony's Italian Kitchen",
+        "end_place": "Sophie Carlsen's room at Chestnut Street Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Sophie Carlsen's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "19:45:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Sophie Carlsen's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

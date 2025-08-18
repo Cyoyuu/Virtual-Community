@@ -1,0 +1,229 @@
+{
+    "name": "Shannon Steves",
+    "first_name": "Shannon",
+    "last_name": "Steves",
+    "age": 27,
+    "innate": "universalism, benevolence, self-direction",
+    "learned": "I am a freelance graphic designer, working with various clients in Brussels. I love art and visiting museums.",
+    "currently": "I am working on a design project for a local art gallery.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Brussels Art and Culture Society",
+            "description": "A group of individuals passionate about art and culture, organizing events and exhibitions in Brussels.",
+            "place": "Museum of the National Bank of Belgium",
+            "members": [
+                "Louise Roberts",
+                "Shannon Steves",
+                "Zara Williams"
+            ],
+            "daily_activity": "organizing art exhibitions from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Shannon Steves's room at Luxury apartments in Brussels",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "building": "Province BE",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Claire's Caf\u00e9",
+            "building": "Rue du Marais 5",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Beverages Store",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:15:00",
+            "start_place": "Claire's Caf\u00e9",
+            "end_place": "Fresh and Beverages Store"
+        },
+        {
+            "type": "main",
+            "activity": "Grocery shopping",
+            "place": "Fresh and Beverages Store",
+            "building": "Marquis",
+            "start_time": "09:15:00",
+            "end_time": "09:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Shannon Steves's room",
+            "place": null,
+            "building": null,
+            "start_time": "09:45:00",
+            "end_time": "10:00:00",
+            "start_place": "Fresh and Beverages Store",
+            "end_place": "Shannon Steves's room at Luxury apartments in Brussels"
+        },
+        {
+            "type": "main",
+            "activity": "Work on design project for local art gallery",
+            "place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "building": "Province BE",
+            "start_time": "10:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Parc de Bruxelles",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:45:00",
+            "start_place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "end_place": "Parc de Bruxelles"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy the park",
+            "place": "Parc de Bruxelles",
+            "building": "open space",
+            "start_time": "12:45:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to BXL CENTRAL [CHEZ PIAS]",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "13:45:00",
+            "start_place": "Parc de Bruxelles",
+            "end_place": "BXL CENTRAL [CHEZ PIAS]"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "BXL CENTRAL [CHEZ PIAS]",
+            "building": "Ancienne imprimerie du quotidien Le Peuple - Voormalige drukker",
+            "start_time": "13:45:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Museum of the National Bank of Belgium",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "14:45:00",
+            "start_place": "BXL CENTRAL [CHEZ PIAS]",
+            "end_place": "Museum of the National Bank of Belgium"
+        },
+        {
+            "type": "main",
+            "activity": "Organize art exhibition with Brussels Art and Culture Society",
+            "place": "Museum of the National Bank of Belgium",
+            "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+            "start_time": "14:45:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Philantropy House",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:15:00",
+            "start_place": "Museum of the National Bank of Belgium",
+            "end_place": "Philantropy House"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Philantropy House for inspiration",
+            "place": "Philantropy House",
+            "building": "Philantropy House",
+            "start_time": "16:15:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to DUKES Lounge Bar",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "17:45:00",
+            "start_place": "Philantropy House",
+            "end_place": "DUKES Lounge Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "DUKES Lounge Bar",
+            "building": "Rue de Ligne 49",
+            "start_time": "17:45:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Shannon Steves's room",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:15:00",
+            "start_place": "DUKES Lounge Bar",
+            "end_place": "Shannon Steves's room at Luxury apartments in Brussels"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work on design project",
+            "place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "building": "Province BE",
+            "start_time": "19:15:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "building": "Province BE",
+            "start_time": "22:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for bed and sleep",
+            "place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "building": "Province BE",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

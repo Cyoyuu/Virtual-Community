@@ -1,0 +1,156 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Andrew Ng's room at hub by Premier Inn London Westminster Abbey hotel",
+        "building": "21 Tothill Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Lounge Cafe Bar",
+        "place": "Lounge Cafe Bar",
+        "building": "21 Tothill Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Queen Elizabeth II Conference Centre",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for keynote speech",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "09:00:00",
+        "end_time": "10:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Deliver keynote speech",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "10:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with attendees",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "11:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Old Queen Street Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Queen Elizabeth II Conference Centre",
+        "end_place": "Old Queen Street Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Old Queen Street Cafe",
+        "place": "Old Queen Street Cafe",
+        "building": "Old Queen Street Cafe",
+        "start_time": "12:10:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Queen Elizabeth II Conference Centre",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Old Queen Street Cafe",
+        "end_place": "Queen Elizabeth II Conference Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Attend tech sessions",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "13:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Churchill War Rooms",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Queen Elizabeth II Conference Centre",
+        "end_place": "Churchill War Rooms"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Churchill War Rooms",
+        "place": "Churchill War Rooms",
+        "building": "King Charles Street",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lounge Cafe Bar",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Churchill War Rooms",
+        "end_place": "Lounge Cafe Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Lounge Cafe Bar",
+        "place": "Lounge Cafe Bar",
+        "building": "21 Tothill Street",
+        "start_time": "18:15:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review the day",
+        "place": "Andrew Ng's room at hub by Premier Inn London Westminster Abbey hotel",
+        "building": "21 Tothill Street",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jewel Tower",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:15:00",
+        "start_place": "Andrew Ng's room at hub by Premier Inn London Westminster Abbey hotel",
+        "end_place": "Jewel Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Jewel Tower",
+        "place": "Jewel Tower",
+        "building": "Jewel Tower",
+        "start_time": "23:15:00",
+        "end_time": "23:59:59"
+    }
+]

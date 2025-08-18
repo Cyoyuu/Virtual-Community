@@ -2,22 +2,22 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "James Thompson's room at Harbor Hill Apartments",
-        "building": "301 Warren Avenue",
+        "place": "James Thompson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "James Thompson's room at Harbor Hill Apartments",
-        "building": "301 Warren Avenue",
+        "place": "&pizza - Fed Hill",
+        "building": "1201 South Charles Street",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to South Baltimore Strength Club",
+        "activity": "Commute to Weichert Realtors-Urban Lifestyles",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
@@ -25,136 +25,118 @@
     },
     {
         "type": "main",
-        "activity": "Personal Workout and Training Clients",
-        "place": "South Baltimore Strength Club",
-        "building": "1237 Wall Street",
+        "activity": "Work at Weichert Realtors-Urban Lifestyles",
+        "place": "Weichert Realtors-Urban Lifestyles",
+        "building": "1234 Light Street",
         "start_time": "09:00:00",
         "end_time": "12:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+        "activity": "Commute to The Brewer's Cask",
         "place": null,
         "building": null,
         "start_time": "12:00:00",
         "end_time": "12:15:00",
-        "start_place": "South Baltimore Strength Club",
-        "end_place": "Enoch Pratt Library - Light Street Branch"
-    },
-    {
-        "type": "main",
-        "activity": "Research and Relaxation",
-        "place": "Enoch Pratt Library - Light Street Branch",
-        "building": "Light Street Branch",
-        "start_time": "12:15:00",
-        "end_time": "13:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Magerks Pub & Grill Federal Hill",
-        "place": null,
-        "building": null,
-        "start_time": "13:30:00",
-        "end_time": "13:45:00",
-        "start_place": "Enoch Pratt Library - Light Street Branch",
-        "end_place": "Magerks Pub & Grill Federal Hill"
+        "start_place": "Weichert Realtors-Urban Lifestyles",
+        "end_place": "The Brewer's Cask"
     },
     {
         "type": "meal",
         "activity": "Lunch",
-        "place": "Magerks Pub & Grill Federal Hill",
-        "building": "1061 South Charles Street",
-        "start_time": "13:45:00",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "12:15:00",
+        "end_time": "12:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Weichert Realtors-Urban Lifestyles",
+        "place": null,
+        "building": null,
+        "start_time": "12:45:00",
+        "end_time": "13:00:00",
+        "start_place": "The Brewer's Cask",
+        "end_place": "Weichert Realtors-Urban Lifestyles"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work at Weichert Realtors-Urban Lifestyles",
+        "place": "Weichert Realtors-Urban Lifestyles",
+        "building": "1234 Light Street",
+        "start_time": "13:00:00",
         "end_time": "14:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to South Baltimore Strength Club",
+        "activity": "Commute to Federal Hill Preparatory School",
         "place": null,
         "building": null,
         "start_time": "14:30:00",
         "end_time": "15:00:00",
-        "start_place": "Magerks Pub & Grill Federal Hill",
-        "end_place": "South Baltimore Strength Club"
+        "start_place": "Weichert Realtors-Urban Lifestyles",
+        "end_place": "Federal Hill Preparatory School"
     },
     {
         "type": "main",
-        "activity": "Training and Preparation for Competition",
-        "place": "South Baltimore Strength Club",
-        "building": "1237 Wall Street",
+        "activity": "Participate in Young Scholars Association study group",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
         "start_time": "15:00:00",
-        "end_time": "17:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to James Thompson's room at Harbor Hill Apartments",
-        "place": null,
-        "building": null,
-        "start_time": "17:30:00",
-        "end_time": "18:00:00",
-        "start_place": "South Baltimore Strength Club",
-        "end_place": "James Thompson's room at Harbor Hill Apartments"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner",
-        "place": "James Thompson's room at Harbor Hill Apartments",
-        "building": "301 Warren Avenue",
-        "start_time": "18:00:00",
-        "end_time": "18:30:00"
+        "end_time": "16:00:00"
     },
     {
         "type": "commute",
         "activity": "Commute to South Baltimore Strength Club",
         "place": null,
         "building": null,
-        "start_time": "18:30:00",
-        "end_time": "19:00:00",
-        "start_place": "James Thompson's room at Harbor Hill Apartments",
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Federal Hill Preparatory School",
         "end_place": "South Baltimore Strength Club"
     },
     {
         "type": "main",
-        "activity": "Workout with Federal Hill Fitness Crew",
+        "activity": "Workout at South Baltimore Strength Club",
         "place": "South Baltimore Strength Club",
         "building": "1237 Wall Street",
-        "start_time": "19:00:00",
-        "end_time": "20:00:00"
+        "start_time": "16:15:00",
+        "end_time": "17:15:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to The 8x10",
+        "activity": "Commute to &pizza - Fed Hill",
         "place": null,
         "building": null,
-        "start_time": "20:00:00",
-        "end_time": "20:15:00",
+        "start_time": "17:15:00",
+        "end_time": "17:30:00",
         "start_place": "South Baltimore Strength Club",
-        "end_place": "The 8x10"
+        "end_place": "&pizza - Fed Hill"
     },
     {
-        "type": "main",
-        "activity": "Evening Relaxation and Entertainment",
-        "place": "The 8x10",
-        "building": "10 East Cross Street",
-        "start_time": "20:15:00",
-        "end_time": "22:00:00"
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "&pizza - Fed Hill",
+        "building": "1201 South Charles Street",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to James Thompson's room at Harbor Hill Apartments",
+        "activity": "Commute to James Thompson's room",
         "place": null,
         "building": null,
-        "start_time": "22:00:00",
-        "end_time": "22:30:00",
-        "start_place": "The 8x10",
-        "end_place": "James Thompson's room at Harbor Hill Apartments"
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "&pizza - Fed Hill",
+        "end_place": "James Thompson's room at 1201 S Charles Street Apartments"
     },
     {
         "type": "main",
-        "activity": "Evening Routine and Relaxation",
-        "place": "James Thompson's room at Harbor Hill Apartments",
-        "building": "301 Warren Avenue",
-        "start_time": "22:30:00",
+        "activity": "Prepare for next day's work and relax",
+        "place": "James Thompson's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "18:15:00",
         "end_time": "23:59:59"
     }
 ]

@@ -1,0 +1,395 @@
+{
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "1201 S Charles Street Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "groups": [
+            "Fitness and Wellness Group"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "1201 S Charles Street Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Fitness and Wellness Group"
+        ]
+    },
+    "Fitness and Wellness Group": {
+        "description": "A group focused on fitness and wellness activities, including training and healthy living.",
+        "place": "South Baltimore Strength Club",
+        "members": [
+            "Kate Novak",
+            "Olivia Adams",
+            "Shannon Steves"
+        ],
+        "daily_activity": "conducting a group workout session from 18:00 to 19:00"
+    },
+    "Kate Novak's room at 1201 S Charles Street Apartments": {
+        "building": "1201 South Charles Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.3932800292969,
+            822.9064788818359,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Kate Novak's room at 1201 S Charles Street Apartments",
+        "bounding_box": [
+            -120.33512155099746,
+            -178.74011291619252,
+            83.52968215942384,
+            38.12178132883957,
+            26.033092412490983,
+            18.19036102294922,
+            0.14138311586981486
+        ]
+    },
+    "South Baltimore Strength Club": {
+        "building": "1237 Wall Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1140.8871612548828,
+            790.4407806396484,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            141.98529303203642,
+            -210.29788512235763,
+            85.47895431518556,
+            21.585735819502204,
+            21.239466395036,
+            6.108543395996094,
+            0.13869154024537414
+        ]
+    },
+    "Marcus-Boyd Realty": {
+        "building": "926 Light Street Suite 2",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            972.310866355896,
+            1117.212245941162,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "bounding_box": [
+            -27.70146442785785,
+            117.20073219000085,
+            80.30168533325195,
+            24.868845726774452,
+            5.44952988963669,
+            8.214042663574219,
+            0.05248499561682774
+        ]
+    },
+    "The Brewer's Cask": {
+        "building": "Brewers Cask",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1019.692458152771,
+            764.5966033935547,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            19.69245830998879,
+            -235.35330577030328,
+            83.88119125366212,
+            22.723498348075918,
+            5.036956974563426,
+            9.847343444824219,
+            0.04169641107251326
+        ]
+    },
+    "Federal Hill Preparatory School": {
+        "building": "1040 William Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.0709342956543,
+            1032.2982387542725,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            80.46018270572205,
+            32.297798565321045,
+            81.66573715209961,
+            104.2108690619469,
+            64.79397269395406,
+            11.744636535644531,
+            0.12242259344145233
+        ]
+    },
+    "&pizza - Fed Hill": {
+        "building": "1201 South Charles Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.3932800292969,
+            822.9064788818359,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -120.33512155099746,
+            -178.74011291619252,
+            83.52968215942384,
+            38.12178132883957,
+            26.033092412490983,
+            18.19036102294922,
+            0.14138311586981486
+        ]
+    },
+    "Ropewalk Tavern": {
+        "building": "Ropewalk Tavern",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "bar"
+        ],
+        "location": [
+            866.5918884277344,
+            804.9065017700195,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -133.66181083612796,
+            -194.78978638578224,
+            78.94007492065431,
+            13.954267436578697,
+            4.856680376355644,
+            8.756950378417969,
+            0.16696938399172076
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "8 West West Street 2nd Floor",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            805.3192977905273,
+            847.2203216552734,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -194.48836245315607,
+            -152.79834528837029,
+            76.84592437744142,
+            27.603198905860136,
+            18.312746230013133,
+            7.83709716796875,
+            0.14194081649125367
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "CVS Pharmacy",
+        "coarse_type": "stores",
+        "fine_types": [
+            "pharmacy",
+            "store",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            808.8098297119141,
+            1050.1167259216309,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -191.00495123107706,
+            50.11672404654913,
+            79.17250442504883,
+            40.82346448010221,
+            27.438871586776695,
+            13.009178161621094,
+            0.1304354685918644
+        ]
+    },
+    "Weber Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            62.045638028129346,
+            -79.944052801245
+        ],
+        "rotation": -1.4347317355623312,
+        "bounding_box": null
+    },
+    "South Charles Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -83.55211554255058,
+            -33.65036613291564
+        ],
+        "rotation": -1.4776061895035828,
+        "bounding_box": null
+    },
+    "Olive Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -203.6470944479423,
+            -45.68417057898851
+        ],
+        "rotation": -3.0916009048916844,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -166.37837354804984,
+            25.09043608193694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            31.192618875151837,
+            -86.33272588533399
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.24465578842066,
+            -122.939706084611
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.470494963686212,
+            66.23107185146742
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -68.41388043672472,
+            -23.896660317334824
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            352.67343009202983,
+            -8.493953354113648
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            77.06964128758824,
+            -254.656878264548
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Olive Street": [
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Weber Street": [
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

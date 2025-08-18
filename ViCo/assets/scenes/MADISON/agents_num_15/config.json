@@ -1,0 +1,769 @@
+{
+    "sim_name": "MADISON_agents_num_15",
+    "agent_names": [
+        "Brian Carter",
+        "Chad Thompson",
+        "Emily Johnson",
+        "Jensen Huang",
+        "Jody Petersen",
+        "Joshua Tenenbaum",
+        "Kate Novak",
+        "Kylian Mbappe",
+        "Megan Carter",
+        "Michael Jordan",
+        "Mike Tyson",
+        "Roth Miller",
+        "Shannon Steves",
+        "Steve Johnson",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -57.644958937501805,
+                -99.75403530960959,
+                123.56973422174609,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Capitol West",
+            "current_place": "Brian Carter's room at Capitol West",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -183.91773978179157,
+                -165.65357494684645,
+                114.07068861302159,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Metropolitan Place",
+            "current_place": "Chad Thompson's room at Metropolitan Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                192.5747610686074,
+                -117.4031478358174,
+                127.51244462368798,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Baskerville",
+            "current_place": "Emily Johnson's room at The Baskerville",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -117.98102504298733,
+                -176.28368672063394,
+                116.9895153373915,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Place",
+            "current_place": "Jensen Huang's room at Hyatt Place Madison/Downtown",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -42.800814017211934,
+                -204.07091676555532,
+                120.85004032411817,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "306 West Main",
+            "current_place": "Jody Petersen's room at 306 West Main",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                139.285153191556,
+                -52.16401542673637,
+                131.14916909261206,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Best Western Premier Park Hotel",
+            "current_place": "Joshua Tenenbaum's room at Best Western Premier Park Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                197.20284414263733,
+                -78.07163073837202,
+                129.99787744997016,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Pressman",
+            "current_place": "Kate Novak's room at The Pressman",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -85.57549099586541,
+                -179.1484826984875,
+                119.07545689964697,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Place",
+            "current_place": "Kylian Mbappe's room at Hyatt Place Madison/Downtown",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                193.95269064031172,
+                -138.8153046442177,
+                126.31150194074496,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Baskerville",
+            "current_place": "Megan Carter's room at The Baskerville",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -107.40899238224651,
+                -156.2638056608148,
+                118.96651194210341,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Place",
+            "current_place": "Michael Jordan's room at Hyatt Place Madison/Downtown",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -121.04031391733801,
+                -166.2928553078993,
+                117.25126274300018,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Place",
+            "current_place": "Mike Tyson's room at Hyatt Place Madison/Downtown",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                158.49081435836393,
+                -249.5043748476172,
+                117.99635999949064,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Barracuda Condos",
+            "current_place": "Roth Miller's room at Barracuda Condos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -125.34704411240564,
+                145.41916176029127,
+                119.33282285512504,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Red Square Flowers",
+            "current_place": "Shannon Steves's room at Red Square Flowers",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -173.14732687187873,
+                -154.81820172227023,
+                114.9928039512169,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Metropolitan Place",
+            "current_place": "Steve Johnson's room at Metropolitan Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                202.82373506910784,
+                -129.84728084554834,
+                126.6169495292783,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Baskerville",
+            "current_place": "Zara Williams's room at The Baskerville",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            936.5092840194702,
+            872.5380058288574,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            833.824520111084,
+            876.2187118530273,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1193.1338348388672,
+            870.4584999084473,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            901.1961975097656,
+            820.4130249023438,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            980.8398399353027,
+            824.8539886474609,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1126.540298461914,
+            965.4961442947388,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1206.7333145141602,
+            899.0291862487793,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            901.1961975097656,
+            820.4130249023438,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1193.1338348388672,
+            870.4584999084473,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            901.1961975097656,
+            820.4130249023438,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            901.1961975097656,
+            820.4130249023438,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1144.3697052001953,
+            729.1040725708008,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            881.4170722961426,
+            1146.7241439819336,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            833.824520111084,
+            876.2187118530273,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1193.1338348388672,
+            870.4584999084473,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/celebrity_Joshua_Tenenbaum.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/celebrity_Kylian_Mbappe.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/celebrity_Michael_Jordan.glb",
+        "ViCo/avatars/models/celebrity_Mike_Tyson.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "345 West Washington Avenue Suite 301",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Hotel Lorraine",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Red Square Flowers",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "224 State Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Wisconsin Veterans Museum",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "137 West Johnson Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Madison Tech Innovators": {
+            "description": "A group of tech enthusiasts and professionals working on innovative projects in Madison.",
+            "place": "The Loraine Business Center",
+            "members": [
+                "Roth Miller",
+                "Steve Johnson",
+                "Brian Carter",
+                "Jensen Huang",
+                "Joshua Tenenbaum"
+            ],
+            "daily_activity": "discussing tech innovations from 15:00 to 17:00"
+        },
+        "Madison Fitness Club": {
+            "description": "A group of fitness enthusiasts who meet regularly to train and participate in fitness events.",
+            "place": "Resolution Fitness",
+            "members": [
+                "Chad Thompson",
+                "Kylian Mbappe",
+                "Mike Tyson",
+                "Michael Jordan"
+            ],
+            "daily_activity": "training sessions from 17:00 to 19:00"
+        },
+        "Madison Arts and Culture": {
+            "description": "A group of individuals passionate about arts and culture, organizing events and exhibitions in Madison.",
+            "place": "Overture Center for the Arts",
+            "members": [
+                "Kate Novak",
+                "Zara Williams",
+                "Emily Johnson"
+            ],
+            "daily_activity": "organizing art exhibitions from 16:00 to 18:00"
+        },
+        "Madison Community Helpers": {
+            "description": "A group dedicated to community service and helping those in need in Madison.",
+            "place": "Grace Food Pantry",
+            "members": [
+                "Shannon Steves",
+                "Jody Petersen",
+                "Megan Carter"
+            ],
+            "daily_activity": "volunteering at food drives from 14:00 to 16:00"
+        }
+    }
+}

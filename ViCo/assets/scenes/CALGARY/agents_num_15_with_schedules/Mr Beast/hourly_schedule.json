@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Mr Beast's room at Hyatt Regency Calgary",
+        "building": "Hyatt Regency Calgary",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Mini Stop Smoke & Coffee",
+        "place": "Mini Stop Smoke & Coffee",
+        "building": "Hyatt Regency Calgary - Event Centre",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Film video at Collage Gallery",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Unicorn for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "The Unicorn"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Unicorn",
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Calgary Chamber of Commerce",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "The Unicorn",
+        "end_place": "Calgary Chamber of Commerce"
+    },
+    {
+        "type": "main",
+        "activity": "Meet with local business leaders",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hyatt Regency Calgary",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "Mr Beast's room at Hyatt Regency Calgary"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for media event",
+        "place": "Mr Beast's room at Hyatt Regency Calgary",
+        "building": "Hyatt Regency Calgary",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to James Joyce Irish Pub & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Mr Beast's room at Hyatt Regency Calgary",
+        "end_place": "James Joyce Irish Pub & Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at James Joyce Irish Pub & Restaurant",
+        "place": "James Joyce Irish Pub & Restaurant",
+        "building": "The Molson's Bank Building",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hyatt Regency Calgary for media event",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "James Joyce Irish Pub & Restaurant",
+        "end_place": "Hyatt Regency Calgary"
+    },
+    {
+        "type": "main",
+        "activity": "Attend media event with Famous Faces",
+        "place": "Hyatt Regency Calgary",
+        "building": "Hyatt Regency Calgary",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Mr Beast's room at Hyatt Regency Calgary",
+        "building": "Hyatt Regency Calgary",
+        "start_time": "20:00:00",
+        "end_time": "23:59:59"
+    }
+]

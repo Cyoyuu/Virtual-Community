@@ -1,0 +1,174 @@
+{
+    "name": "Adam Pierce",
+    "first_name": "Adam",
+    "last_name": "Pierce",
+    "age": 27,
+    "innate": "achievement, self-direction, stimulation",
+    "learned": "I am a software developer at Beverages and DM Store I enjoy hiking and photography during my free time.",
+    "currently": "I am working on a new software project to improve user experience.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Enthusiasts Club",
+            "description": "A group of tech enthusiasts who meet to discuss the latest trends in technology and work on collaborative projects.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Adam Pierce",
+                "Chad Thompson",
+                "Roth Miller",
+                "Jensen Huang"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Adam Pierce's room at Boutique Condo East",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Adam Pierce's room at Boutique Condo East",
+            "building": "Boutique Condo East",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Subway",
+            "place": "Subway",
+            "building": "Boutique Condo East",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Working on software project",
+            "place": "Beverages and DM Store",
+            "building": "145 Wellington Street West",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Chart store mobile phone",
+            "place": "Chart store mobile phone",
+            "building": "145 Wellington Street West",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on software project",
+            "place": "Beverages and DM Store",
+            "building": "145 Wellington Street West",
+            "start_time": "12:30:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Enthusiasts Club meeting",
+            "place": "Beverages and DM Store",
+            "building": "145 Wellington Street West",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Byblos Downtown",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Byblos Downtown"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Byblos Downtown",
+            "place": null,
+            "building": null,
+            "start_time": "18:10:00",
+            "end_time": "18:30:00",
+            "start_place": null,
+            "end_place": "Byblos Downtown"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Byblos Downtown",
+            "place": "Byblos Downtown",
+            "building": "11 Duncan Street",
+            "start_time": "18:30:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Verno Art Studios",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Byblos Downtown",
+            "end_place": "Verno Art Studios"
+        },
+        {
+            "type": "main",
+            "activity": "Photography session at Verno Art Studios",
+            "place": "Verno Art Studios",
+            "building": "120 Adelaide Street West Unit FC-09",
+            "start_time": "20:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Boutique Condo East",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "Verno Art Studios",
+            "end_place": "Adam Pierce's room at Boutique Condo East"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Adam Pierce's room at Boutique Condo East",
+            "building": "Boutique Condo East",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Beverages and DM Store",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

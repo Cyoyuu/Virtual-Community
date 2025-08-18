@@ -1,41 +1,4 @@
 {
-    "Cashel Street": {
-        "building_glb": "buildings_element.052.glb",
-        "bounding_box": [
-            -100.78253173828125,
-            -266.14080810546875,
-            118.41551208496094,
-            38.30206298828125,
-            50.5390625,
-            10.398628234863281,
-            0.00017210030637215823
-        ],
-        "places": [
-            {
-                "name": "Beverages and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "department_store",
-                    "shoe_store",
-                    "clothing_store",
-                    "home_goods_store",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    899.2174644470215,
-                    733.8624801635742,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-            }
-        ],
-        "outdoor_xy": [
-            -110.24800182717972,
-            -239.87290547675482
-        ]
-    },
     "39 Lichfield Street": {
         "building_glb": "buildings_element.100.glb",
         "bounding_box": [
@@ -62,158 +25,166 @@
                     716.0777587890625,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -151.34798776330538,
-            -279.7794268635069
+            -161.30344064443375,
+            -282.3287277555849
         ]
     },
-    "76 Hereford Street": {
-        "building_glb": "buildings_element.073.glb",
+    "126 Cashel Street": {
+        "building_glb": "buildings_element.097.glb",
         "bounding_box": [
-            -272.36773681640625,
-            -131.85229110717773,
-            119.0121307373047,
-            20.12012806771357,
-            24.184244033492106,
-            13.246795654296875,
-            0.006383985654672662
+            -143.74114990234375,
+            -259.4259948730469,
+            117.87117004394531,
+            7.814050197601318,
+            37.041744232177734,
+            8.424812316894531,
+            -0.012435353361070156
         ],
         "places": [
             {
-                "name": "Kong",
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    856.0373306274414,
+                    740.5739974975586,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            },
+            {
+                "name": "Nespresso Boutique Christchurch",
                 "coarse_type": "food",
                 "fine_types": [
-                    "bar",
+                    "store",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    856.0373306274414,
+                    740.5739974975586,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -148.16683128998963,
+            -278.8933386719085
+        ]
+    },
+    "The Crossing Shop 109": {
+        "building_glb": "buildings_element.086.glb",
+        "bounding_box": [
+            -30.467853546142578,
+            -260.86199951171875,
+            119.69757843017578,
+            16.66131019592285,
+            42.34786605834961,
+            12.544052124023438,
+            -0.00952102616429329
+        ],
+        "places": [
+            {
+                "name": "Beverages and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "spa",
+                    "hair_care",
+                    "beauty_salon",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    969.332859992981,
+                    739.2173385620117,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            -29.678030705013583,
+            -283.0444577628673
+        ]
+    },
+    "166 Cashel Street": {
+        "building_glb": "buildings_element.084.glb",
+        "bounding_box": [
+            -1.1420860290527344,
+            -260.6515197753906,
+            119.43695831298828,
+            12.000466346740723,
+            41.7349853515625,
+            12.030754089355469,
+            0.007931801490485668
+        ],
+        "places": [
+            {
+                "name": "Elements by IHF",
+                "coarse_type": "food",
+                "fine_types": [
                     "restaurant",
                     "point_of_interest",
                     "food",
                     "establishment"
                 ],
                 "location": [
-                    727.6322631835938,
-                    868.1143112182617,
+                    998.7693929672241,
+                    739.3120574951172,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            },
-            {
-                "name": "Ray White Commercial Christchurch",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Adam Pierce's room at Ray White Commercial Christchurch"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Jody Petersen's room at Ray White Commercial Christchurch"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Joe Anderson's room at Ray White Commercial Christchurch"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Leonard Park's room at Ray White Commercial Christchurch"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Louise Roberts's room at Ray White Commercial Christchurch"
-            },
-            {
-                "building": "76 Hereford Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    727.6322631835938,
-                    868.1143112182617,
-                    -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Shannon Steves's room at Ray White Commercial Christchurch"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -279.8289695472598,
-            -118.80753534921983
+            3.7823444292752697,
+            -282.4806399251851
+        ]
+    },
+    "136 Oxford Terrace": {
+        "building_glb": "buildings_element.072.glb",
+        "bounding_box": [
+            -261.39120368332027,
+            -146.87176429642975,
+            120.3871078491211,
+            46.46012754452312,
+            54.21283190387791,
+            15.643783569335923,
+            0.0029456287286576733
+        ],
+        "places": [
+            {
+                "name": "Chiwahwah Mexican Cantina Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    738.6576385498047,
+                    853.1593742370605,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -285.6765702561209,
+            -128.13297310628965
         ]
     },
     "126 Oxford Terrace": {
@@ -242,45 +213,12 @@
                     816.4504470825195,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -285.33192574610047,
-            -186.70731016375487
-        ]
-    },
-    "The Terrace Car Park": {
-        "building_glb": "buildings_The Terrace Car Park.glb",
-        "bounding_box": [
-            -208.35224388655644,
-            -151.7756194278747,
-            125.36438369750977,
-            51.28541663940937,
-            35.799275334841695,
-            25.41094207763672,
-            -0.0041442210356415375
-        ],
-        "places": [
-            {
-                "name": "Beverages and Snacks Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    791.5961532592773,
-                    848.2015991210938,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-            }
-        ],
-        "outdoor_xy": [
-            -181.703058394816,
-            -150.26789431599246
+            -245.66426052812366,
+            -194.88528798473908
         ]
     },
     "Westpac Building": {
@@ -308,12 +246,12 @@
                     790.7758102416992,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -222.58711421651682,
-            -221.3281214071846
+            -283.06770279406527,
+            -211.77007376278164
         ]
     },
     "BNZ Centre": {
@@ -329,24 +267,59 @@
         ],
         "places": [
             {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
+                "name": "Hari Hari",
+                "coarse_type": "food",
                 "fine_types": [
-                    "shopping_mall",
+                    "restaurant",
                     "point_of_interest",
+                    "food",
                     "establishment"
                 ],
                 "location": [
                     854.8315467834473,
                     866.6320533752441,
-                    -4
+                    -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -170.10465405801347,
-            -118.49571830979282
+            -146.0561434815902,
+            -148.28553417858606
+        ]
+    },
+    "BNZ center": {
+        "building_glb": "buildings_element.102.glb",
+        "bounding_box": [
+            -138.61507715295238,
+            -179.30019622389966,
+            114.59710693359376,
+            5.3531092003418586,
+            13.72655228172669,
+            3.5016632080078125,
+            0.011192056750555556
+        ],
+        "places": [
+            {
+                "name": "\u0412\u0438\u0435\u0442\u043d\u0430\u043c\u0441\u043a\u0438 \u0440\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u0442 \"\u041c\u0438\u0441 \u0421\u0430\u0439\u0433\u043e\u043d\"",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    861.4223327636719,
+                    820.7297592163086,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -142.26127293280837,
+            -182.0331900179928
         ]
     },
     "254/266 High Street": {
@@ -375,12 +348,62 @@
                     854.505443572998,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            1.9019459770340603,
-            -117.96663897742891
+            -14.555303257401116,
+            -152.17463512888713
+        ]
+    },
+    "268 High Street": {
+        "building_glb": "buildings_element.043.glb",
+        "bounding_box": [
+            -11.011819050352628,
+            -129.85205161795054,
+            116.29160308837892,
+            25.04320046790334,
+            31.53070537179174,
+            7.04296875,
+            -0.784433731861729
+        ],
+        "places": [
+            {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    987.172063678503,
+                    865.6374130249023,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            },
+            {
+                "name": "HELL Pizza Hereford Street",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    987.172063678503,
+                    865.6374130249023,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -28.81224487283168,
+            -128.54594575869353
         ]
     },
     "ANZ Centre": {
@@ -395,6 +418,22 @@
             -0.000661822555506542
         ],
         "places": [
+            {
+                "name": "Mugen Sushi (CBD)",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    973.6704540252686,
+                    808.1239929199219,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
             {
                 "name": "Fresh and DM Store",
                 "coarse_type": "stores",
@@ -413,8 +452,8 @@
             }
         ],
         "outdoor_xy": [
-            -60.14703519530322,
-            -159.68830114345843
+            -60.174565022077005,
+            -201.2852859021267
         ]
     },
     "248 High Street": {
@@ -447,8 +486,41 @@
             }
         ],
         "outdoor_xy": [
-            12.331295350126538,
-            -176.8304012770265
+            11.362159944663967,
+            -175.87688828050284
+        ]
+    },
+    "161 Cashel Street": {
+        "building_glb": "buildings_element.042.glb",
+        "bounding_box": [
+            45.39261541585396,
+            -185.86075155175254,
+            119.20365524291994,
+            9.09761953706235,
+            31.825004635014757,
+            12.405281066894531,
+            -0.7916898027688811
+        ],
+        "places": [
+            {
+                "name": "Austin Club",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1045.4569826126099,
+                    813.4673767089844,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            29.699712261894017,
+            -194.03893139534074
         ]
     },
     "Grand Central Building": {
@@ -477,12 +549,12 @@
                     805.407585144043,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             }
         ],
         "outdoor_xy": [
-            126.79794495916867,
-            -218.81070771828882
+            92.59904341735263,
+            -221.09510915246207
         ]
     },
     "Kensington House": {
@@ -510,7 +582,7 @@
                     817.0445785522461,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Catalyst Group - Christchurch",
@@ -527,12 +599,156 @@
                     817.0445785522461,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Brian Carter's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Chad Thompson's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Elizabeth Mensah's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Emily Johnson's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Kate Novak's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -32
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Louise Roberts's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -36
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Roth Miller's room at Catalyst Group - Christchurch"
+            },
+            {
+                "building": "Kensington House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1155.179183959961,
+                    817.0445785522461,
+                    -40
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Shannon Steves's room at Catalyst Group - Christchurch"
             }
         ],
         "outdoor_xy": [
-            160.31033411083155,
-            -197.55975517904997
+            149.92092559948625,
+            -197.6529001729773
         ]
     },
     "Christchurch Central City": {
@@ -561,17 +777,32 @@
                     1214.3340301513672,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            82.45800424524919,
-            215.38860786042665
+            82.45694400263237,
+            215.53656893447717
         ]
     },
     "open space": {
         "bounding_box": null,
         "places": [
+            {
+                "name": "Rauora Park",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1264.0135744674103,
+                    837.0244306087668,
+                    -0.007541792011437565
+                ],
+                "scene": null
+            },
             {
                 "name": "Gloucester Street Bus Stop",
                 "coarse_type": "transit",
@@ -691,12 +922,142 @@
                     936.9941253662109,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "Public Trust Building",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    735.220344543457,
+                    936.9941253662109,
+                    -12
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -283.1197560089277,
-            -74.94694137536071
+            -283.11209113264255,
+            -63.38029281560203
+        ]
+    },
+    "The Regent": {
+        "building_glb": "buildings_The Regent.glb",
+        "bounding_box": [
+            -201.70979392238704,
+            -23.304728094033514,
+            110.72106170654297,
+            40.402734746119066,
+            50.91637022095448,
+            0.29058837890625,
+            -0.004269183406570053
+        ],
+        "places": [
+            {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    798.3986206054688,
+                    976.7312109470367,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -209.20624246133025,
+            -49.731150410671916
+        ]
+    },
+    "85A Hereford Street": {
+        "building_glb": "buildings_element.006.glb",
+        "bounding_box": [
+            -236.0403594970703,
+            -74.15640258789062,
+            117.51860046386719,
+            22.99322509765625,
+            50.05768585205078,
+            12.017929077148438,
+            0.0016457809833809733
+        ],
+        "places": [
+            {
+                "name": "Micky Finn's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    763.9596405029297,
+                    925.8460655212402,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -228.93416587699315,
+            -100.17358551586986
+        ]
+    },
+    "Ibis Hotel Christchurch": {
+        "building_glb": "buildings_Ibis Hotel Christchurch.glb",
+        "bounding_box": [
+            -157.18228912353516,
+            -86.33565902709961,
+            121.98949432373047,
+            40.17265593468636,
+            25.792584612096835,
+            23.821609497070312,
+            0.0008585295396987734
+        ],
+        "places": [
+            {
+                "name": "ibis Christchurch",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    842.8177108764648,
+                    913.6643409729004,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            },
+            {
+                "building": "Ibis Hotel Christchurch",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    842.8177108764648,
+                    913.6643409729004,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Selena Gomez's room at ibis Christchurch"
+            }
+        ],
+        "outdoor_xy": [
+            -167.90759703945287,
+            -100.24116445037083
         ]
     },
     "Distinction Hotel Christchurch": {
@@ -726,7 +1087,7 @@
                     951.3979454040527,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             },
             {
                 "name": "Gumption Restaurant & Bar",
@@ -743,7 +1104,7 @@
                     951.3979454040527,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "building": "Distinction Hotel Christchurch",
@@ -760,13 +1121,13 @@
                     951.3979454040527,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Emma Watson's room at Distinction Christchurch Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "David Malan's room at Distinction Christchurch Hotel"
             }
         ],
         "outdoor_xy": [
-            37.94294921955175,
-            -57.58363058982546
+            -12.568505651947321,
+            -34.22431628874147
         ]
     },
     "Spark": {
@@ -796,12 +1157,12 @@
                     916.0651168823242,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -58.652708638995605,
-            -94.74373349101728
+            -58.62216056233118,
+            -99.41429370492644
         ]
     },
     "Old Government Building": {
@@ -831,7 +1192,7 @@
                     989.6693503856659,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "name": "Adina Heritage Christchurch",
@@ -846,7 +1207,7 @@
                     989.6693503856659,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             },
             {
                 "name": "Heritage Health Club",
@@ -863,7 +1224,7 @@
                     989.6693503856659,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             },
             {
                 "building": "Old Government Building",
@@ -878,29 +1239,64 @@
                     989.6693503856659,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
-                "name": "John F Kennedy's room at Adina Heritage Christchurch"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Michael Jordan's room at Adina Heritage Christchurch"
+            }
+        ],
+        "outdoor_xy": [
+            40.664389325724414,
+            -21.38034508672618
+        ]
+    },
+    "109 Worcester Street": {
+        "building_glb": "buildings_element.003.glb",
+        "bounding_box": [
+            98.85693332925109,
+            30.662315863613003,
+            119.18923950195312,
+            32.02377602336966,
+            15.718612016132193,
+            13.202651977539062,
+            0.003471812498178397
+        ],
+        "places": [
+            {
+                "name": "Burger Bonanza City Centre",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1098.8381080627441,
+                    1030.6068267822266,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
-                "building": "Old Government Building",
+                "name": "Hotel 115",
                 "coarse_type": "accommodation",
                 "fine_types": [
                     "lodging",
+                    "clothing_store",
+                    "store",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1081.2799625396729,
-                    989.6693503856659,
-                    -20
+                    1098.8381080627441,
+                    1030.6068267822266,
+                    -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
-                "name": "Yoshua Bengio's room at Adina Heritage Christchurch"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             }
         ],
         "outdoor_xy": [
-            40.66466659748592,
-            -20.58793946327937
+            101.84142163257789,
+            21.813318087959313
         ]
     },
     "113 Worcester Street": {
@@ -928,10 +1324,96 @@
                     1055.9374160766602,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-            },
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            }
+        ],
+        "outdoor_xy": [
+            81.77224881323693,
+            62.956583995281264
+        ]
+    },
+    "203 Manchester Street": {
+        "building_glb": "buildings_element.033.glb",
+        "bounding_box": [
+            153.7284393310547,
+            -89.16716003417969,
+            115.0847396850586,
+            20.418315887451172,
+            19.803781509399414,
+            5.754692077636719,
+            0.0020125042647123337
+        ],
+        "places": [
             {
-                "building": "113 Worcester Street",
+                "name": "Mexico Christchurch",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1153.7444610595703,
+                    910.8533935546875,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            146.30932011770503,
+            -100.08400389540581
+        ]
+    },
+    "The Midland Club": {
+        "building_glb": "buildings_The Midland Club.glb",
+        "bounding_box": [
+            -263.25354660870937,
+            83.00094899331515,
+            117.69670867919922,
+            16.710578222114197,
+            21.135787163318394,
+            13.64361572265625,
+            -0.6276685122359623
+        ],
+        "places": [
+            {
+                "name": "Miro",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    736.4852600097656,
+                    1087.1025047302246,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -249.46873132279148,
+            86.069653553607
+        ]
+    },
+    "174 Oxford Terrace": {
+        "building_glb": "buildings_element.065.glb",
+        "bounding_box": [
+            -266.67706298828125,
+            47.50589370727539,
+            132.80682373046875,
+            20.3543701171875,
+            47.72266387939453,
+            44.006614685058594,
+            4.123111648368649e-05
+        ],
+        "places": [
+            {
+                "name": "Noah\u2019s Hotel",
                 "coarse_type": "accommodation",
                 "fine_types": [
                     "lodging",
@@ -939,66 +1421,16 @@
                     "establishment"
                 ],
                 "location": [
-                    1088.782585144043,
-                    1055.9374160766602,
-                    -8
+                    733.3226318359375,
+                    1047.5061111450195,
+                    -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Will Smith's room at Quest Cathedral Junction"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             }
         ],
         "outdoor_xy": [
-            88.68890216931008,
-            74.4996050795213
-        ]
-    },
-    "The Church Pub": {
-        "building_glb": "buildings_The Church Pub.glb",
-        "bounding_box": [
-            154.3917066188286,
-            -14.713659905483615,
-            116.45612716674805,
-            18.724038323490216,
-            22.02926950052141,
-            8.653938293457031,
-            0.010623948502070992
-        ],
-        "places": [
-            {
-                "name": "Paddy McNaughton's Irish Pub",
-                "coarse_type": "food",
-                "fine_types": [
-                    "bar",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1154.420021057129,
-                    985.3429330587387,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            },
-            {
-                "name": "Whakamana: the Cannabis Museum of Aotearoa",
-                "coarse_type": "entertainment",
-                "fine_types": [
-                    "museum",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1154.420021057129,
-                    985.3429330587387,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            157.73129608669205,
-            -2.6628661263178737
+            -277.85478025125747,
+            60.41349667422495
         ]
     },
     "T\u016branga (Christchurch Central Library)": {
@@ -1026,7 +1458,7 @@
                     1108.6643829345703,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             },
             {
                 "name": "The Catering Belle Ltd",
@@ -1045,12 +1477,12 @@
                     1108.6643829345703,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            16.56467641606043,
-            101.57463771704876
+            -22.89421320238957,
+            95.08525757654569
         ]
     },
     "Novotel": {
@@ -1079,12 +1511,192 @@
                     1083.6231994628906,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Novotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "office",
+                    "hotel"
+                ],
+                "location": [
+                    1011.4323678016663,
+                    1083.6231994628906,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "building": "Novotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "office",
+                    "hotel"
+                ],
+                "location": [
+                    1011.4323678016663,
+                    1083.6231994628906,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Usain Bolt's room at Novotel"
             }
         ],
         "outdoor_xy": [
-            10.680531980497928,
-            72.94926435614656
+            -10.383536514824664,
+            81.59751045288357
+        ]
+    },
+    "1 New Regent Street": {
+        "building_glb": "buildings_element.162.glb",
+        "bounding_box": [
+            87.34874277953887,
+            151.78918179874174,
+            115.3141746520996,
+            7.861038912686547,
+            4.475079412601686,
+            7.783927917480469,
+            0.002818435871299742
+        ],
+        "places": [
+            {
+                "name": "Elysian Du Regent",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1087.3510398864746,
+                    1151.789176940918,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+            },
+            {
+                "name": "Mashawe Mediterranean BBQ",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1087.3510398864746,
+                    1151.789176940918,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            82.41903055009595,
+            151.49582484358484
+        ]
+    },
+    "Pacific Tower": {
+        "building_glb": "buildings_Pacific Tower.glb",
+        "bounding_box": [
+            123.5050817833287,
+            107.1215935285621,
+            140.15695190429688,
+            22.114349067955626,
+            33.4514313042286,
+            58.03826904296875,
+            0.0020057482392818833
+        ],
+        "places": [
+            {
+                "name": "Foveo Stays",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1123.4716567993164,
+                    1107.121639251709,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+            }
+        ],
+        "outdoor_xy": [
+            111.43560299328303,
+            113.24399022611784
+        ]
+    },
+    "Sampan House": {
+        "building_glb": "buildings_Sampan House.glb",
+        "bounding_box": [
+            140.1375882537261,
+            112.42621662678262,
+            114.3852310180664,
+            11.033179246051956,
+            22.97604743312369,
+            6.5003662109375,
+            0.008051158725287775
+        ],
+        "places": [
+            {
+                "name": "Sampan House",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1140.073097229004,
+                    1112.4701118469238,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            145.52541783652455,
+            99.98116736367369
+        ]
+    },
+    "CITY CENTRAL": {
+        "building_glb": "buildings_element.009.glb",
+        "bounding_box": [
+            123.59447451291113,
+            64.3403586501529,
+            120.94290542602539,
+            22.331448927155332,
+            52.10846158607136,
+            18.83470916748047,
+            0.0018803301418747643
+        ],
+        "places": [
+            {
+                "name": "C Junction Convenience and LOTTO Store",
+                "coarse_type": "food",
+                "fine_types": [
+                    "convenience_store",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1123.5836296081543,
+                    1064.319501876831,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            130.5557992370971,
+            37.299169634149955
         ]
     },
     "Crowne Plaza Christchurch": {
@@ -1113,7 +1725,7 @@
                     1231.9229583740234,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Crowne Plaza Christchurch by IHG",
@@ -1128,7 +1740,7 @@
                     1231.9229583740234,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
             },
             {
                 "building": "Crowne Plaza Christchurch",
@@ -1143,13 +1755,132 @@
                     1231.9229583740234,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Jack Ma's room at Crowne Plaza Christchurch by IHG"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Adam Pierce's room at Crowne Plaza Christchurch by IHG"
+            },
+            {
+                "building": "Crowne Plaza Christchurch",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    952.5873069763184,
+                    1231.9229583740234,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Frank Walter Steinmeier's room at Crowne Plaza Christchurch by IHG"
             }
         ],
         "outdoor_xy": [
-            -41.76389147054296,
-            218.26546317707994
+            -54.95530667698893,
+            218.08454693404036
+        ]
+    },
+    "168 Armagh Street": {
+        "building_glb": "buildings_element.159.glb",
+        "bounding_box": [
+            86.96881484985352,
+            239.32525634765628,
+            116.48816299438475,
+            8.4099576232289,
+            9.695930790310141,
+            9.462501525878906,
+            -1.1830119483924416e-05
+        ],
+        "places": [
+            {
+                "name": "Belle (cafe & micro roastery)",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1086.9688148498535,
+                    1239.3252563476562,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            81.763782684708,
+            234.81531314273658
+        ]
+    },
+    "35 New Regent Street": {
+        "building_glb": "buildings_element.060.glb",
+        "bounding_box": [
+            87.28012723653467,
+            222.90554129989255,
+            115.60818862915038,
+            7.788967624390203,
+            4.375314124188077,
+            7.693351745605469,
+            0.011419409971339082
+        ],
+        "places": [
+            {
+                "name": "Rollickin Gelato",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1087.2672233581543,
+                    1222.9056243896484,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            82.38541824420584,
+            222.89731314948622
+        ]
+    },
+    "Casa Publica": {
+        "building_glb": "buildings_Casa Publica.glb",
+        "bounding_box": [
+            111.4725767319545,
+            235.5272028469593,
+            115.12872314453124,
+            16.456745240722682,
+            19.506616888075847,
+            7.501434326171875,
+            -0.002045881420276032
+        ],
+        "places": [
+            {
+                "name": "Casa Publica",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "bar",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1111.492530822754,
+                    1235.534523010254,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            116.0639009854822,
+            224.76447858010232
         ]
     },
     "27 New Regent Street": {
@@ -1178,45 +1909,46 @@
                     1205.645492553711,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            92.29398812403335,
-            208.6840574810832
+            82.4891743637986,
+            202.92333081662812
         ]
     },
-    "Polished Diamonds": {
-        "building_glb": "buildings_Polished Diamonds.glb",
+    "277 Manchester Street": {
+        "building_glb": "buildings_element.013.glb",
         "bounding_box": [
-            107.32889483355629,
-            214.46170832810628,
-            115.3553123474121,
-            7.772387226406339,
-            4.441782157848892,
-            7.873435974121094,
-            0.004281765176864726
+            154.6391295672991,
+            209.84106452585888,
+            114.4141159057617,
+            15.36347929814519,
+            9.874515438136774,
+            6.5357666015625,
+            -0.00944473154105544
         ],
         "places": [
             {
-                "name": "Snacks and DM Store",
-                "coarse_type": "stores",
+                "name": "Child Sister",
+                "coarse_type": "food",
                 "fine_types": [
+                    "cafe",
                     "point_of_interest",
-                    "store",
+                    "food",
                     "establishment"
                 ],
                 "location": [
-                    1107.3193855285645,
-                    1214.4617538452148,
+                    1154.6391296386719,
+                    1209.841064453125,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            102.45100247432221,
-            212.51251365967315
+            155.50826829349313,
+            203.8953329604523
         ]
     },
     "Urbanz Accommodation Christchurch": {
@@ -1244,7 +1976,7 @@
                     1192.6258087158203,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             },
             {
                 "name": "Wow Wah",
@@ -1261,7 +1993,7 @@
                     1192.6258087158203,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "building": "Urbanz Accommodation Christchurch",
@@ -1276,61 +2008,13 @@
                     1192.6258087158203,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Eve By J Gonzales's room at Urbanz Accomodation Christchurch"
-            },
-            {
-                "building": "Urbanz Accommodation Christchurch",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1138.9851760864258,
-                    1192.6258087158203,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Megan Carter's room at Urbanz Accomodation Christchurch"
-            },
-            {
-                "building": "Urbanz Accommodation Christchurch",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1138.9851760864258,
-                    1192.6258087158203,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Pika Hayes's room at Urbanz Accomodation Christchurch"
-            },
-            {
-                "building": "Urbanz Accommodation Christchurch",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1138.9851760864258,
-                    1192.6258087158203,
-                    -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Zara Williams's room at Urbanz Accomodation Christchurch"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Brycer Rodriguez's room at Urbanz Accomodation Christchurch"
             }
         ],
         "outdoor_xy": [
-            164.20149918173988,
-            183.8364093183667
+            137.80446808962932,
+            183.05177586083892
         ]
     },
     "Wilko": {
@@ -1357,12 +2041,140 @@
                     1210.2427444458008,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            112.21520786021604,
-            209.99663703626427
+            102.47421316007929,
+            212.0589411443316
+        ]
+    },
+    "Story": {
+        "building_glb": "buildings_Story.glb",
+        "bounding_box": [
+            107.58892900719081,
+            165.75809505710887,
+            115.4680938720703,
+            7.796497578342153,
+            4.107712758634058,
+            7.8443603515625,
+            0.003914348666135129
+        ],
+        "places": [
+            {
+                "name": "Story",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
+                ],
+                "location": [
+                    1107.5849075317383,
+                    1165.75390625,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            102.69338297203764,
+            165.05803834607005
+        ]
+    },
+    "Twenty Seven Steps": {
+        "building_glb": "buildings_Twenty Seven Steps.glb",
+        "bounding_box": [
+            107.50739741614163,
+            183.1642926061478,
+            115.49893569946288,
+            7.853107100430233,
+            4.664383650092839,
+            7.722816467285156,
+            0.0056542349673897345
+        ],
+        "places": [
+            {
+                "name": "Twenty Seven Steps",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
+                ],
+                "location": [
+                    1107.512550354004,
+                    1183.1642761230469,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            102.588404722702,
+            181.81317643706328
+        ]
+    },
+    "The Nook Eatery": {
+        "building_glb": "buildings_The Nook Eatery.glb",
+        "bounding_box": [
+            107.40138593031148,
+            201.4819268538953,
+            115.36191177368163,
+            7.740044745534405,
+            4.541936302202218,
+            8.000358581542969,
+            0.002862491664193168
+        ],
+        "places": [
+            {
+                "name": "The Nook Eatery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
+                ],
+                "location": [
+                    1107.4038848876953,
+                    1201.4819030761719,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            102.52204092537939,
+            204.73177196880553
+        ]
+    },
+    "Waffle Haus": {
+        "building_glb": "buildings_Waffle Haus.glb",
+        "bounding_box": [
+            107.55725662057245,
+            174.52036529564407,
+            115.497257232666,
+            7.853107100430218,
+            4.430501119581998,
+            7.742927551269531,
+            0.005654234967389745
+        ],
+        "places": [
+            {
+                "name": "Waffle Haus",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
+                ],
+                "location": [
+                    1107.548728942871,
+                    1174.5314559936523,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            102.7784003292627,
+            177.7086461881949
         ]
     },
     "Mashawe": {
@@ -1389,12 +2201,12 @@
                     1147.3808822631836,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            85.82419831675806,
-            144.18325590743373
+            81.16348596467212,
+            149.02451305443526
         ]
     },
     "Coffee Lovers": {
@@ -1421,12 +2233,107 @@
                     1201.1927642822266,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            92.29143187085806,
-            202.65834724233054
+            82.48537513043175,
+            200.28220457528732
+        ]
+    },
+    "Isaac House": {
+        "building_glb": "buildings_Isaac House.glb",
+        "bounding_box": [
+            -89.73032649883238,
+            239.94867197232736,
+            120.31216812133788,
+            18.91036711373278,
+            9.261692366897243,
+            18.346092224121065,
+            -0.0029290538515536336
+        ],
+        "places": [
+            {
+                "name": "Isaac House",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    910.2832374572754,
+                    1239.9653015136719,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -100.16971288236624,
+            245.35723677319547
+        ]
+    },
+    "BreakFree": {
+        "building_glb": "buildings_BreakFree.glb",
+        "bounding_box": [
+            135.72609178283702,
+            -185.10779758680704,
+            125.6707763671875,
+            15.388296824505066,
+            69.6694579644171,
+            26.36383056640625,
+            0.004496535666828728
+        ],
+        "places": [
+            {
+                "name": "BreakFree",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    1135.7611465454102,
+                    814.9021682739258,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            }
+        ],
+        "outdoor_xy": [
+            140.60374620302588,
+            -220.92095614537922
+        ]
+    },
+    "Christchurch City Hotel": {
+        "building_glb": "buildings_Christchurch City Hotel.glb",
+        "bounding_box": [
+            -92.31824111938477,
+            -152.52499389648435,
+            123.21390914916992,
+            26.197170591027923,
+            18.06721274316982,
+            20.931556701660156,
+            0.0004407699667852853
+        ],
+        "places": [
+            {
+                "name": "Christchurch City Hotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    907.6817588806152,
+                    847.4807510375977,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+            }
+        ],
+        "outdoor_xy": [
+            -99.38983181902556,
+            -162.5617181877243
         ]
     }
 }

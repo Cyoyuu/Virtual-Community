@@ -1,0 +1,470 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Center City Condos at BHHS Fox & Roach Realtors",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Real Estate Professionals"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at The Ledger Residences by Sosuite - Old City",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Real Estate Professionals"
+        ]
+    },
+    "Real Estate Professionals": {
+        "description": "A group of real estate agents and professionals working together to close property deals and share market insights.",
+        "place": "Star Real Estate Group",
+        "members": [
+            "Adam Pierce",
+            "James Thompson",
+            "Roth Miller"
+        ],
+        "daily_activity": "discussing property market trends from 14:00 to 16:00"
+    },
+    "Roth Miller's room at The Ayer": {
+        "building": "The Ayer",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            728.3393096923828,
+            804.2295074462891,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Roth Miller's room at The Ayer",
+        "bounding_box": [
+            -271.6856689453125,
+            -195.76687622070312,
+            149.66038513183594,
+            32.218597412109375,
+            29.270401000976562,
+            68.87334442138672,
+            -0.1619754284620285
+        ]
+    },
+    "Philadelphia Chinese Immersion Academy": {
+        "building": "706 Chestnut Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            801.6148529052734,
+            1019.3577181100845,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -198.38441580582617,
+            19.35661960286813,
+            121.18640518188477,
+            7.6901984555093605,
+            42.19369149207977,
+            14.116142272949219,
+            -0.16316059603053837
+        ]
+    },
+    "Star Real Estate Group": {
+        "building": "1500 Walnut Street # 1103",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1051.455093383789,
+            795.146728515625,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            52.932945102053594,
+            -204.85754561769352,
+            156.25180435180664,
+            23.669416423890024,
+            66.32895667095374,
+            88.10070037841797,
+            -0.20284464868764748
+        ]
+    },
+    "Bridgette Mayer Gallery": {
+        "building": "709 Walnut Street 1st Floor",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            778.821647644043,
+            901.8995742797852,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -220.9073122186608,
+            -98.09822544482097,
+            120.19851684570312,
+            6.132607915848955,
+            28.126557654904712,
+            10.51904296875,
+            -0.15494050801814677
+        ]
+    },
+    "Liberty Bell Center": {
+        "building": "Liberty Bell Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "yes",
+            "museum"
+        ],
+        "location": [
+            1015.6748943328857,
+            1091.4512157440186,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            14.648245518216232,
+            91.35626567565933,
+            120.47753143310547,
+            23.34313837981168,
+            96.11425307722985,
+            11.949996948242188,
+            -0.1469144377353281
+        ]
+    },
+    "Platoon Fitness, Philadelphia": {
+        "building": "716 Walnut Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "physiotherapist",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            732.4849166870117,
+            852.9039192199707,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -270.11642666413513,
+            -147.13272514101487,
+            122.10443115234375,
+            45.29125706859921,
+            51.114021934499526,
+            14.551116943359375,
+            -0.15923858349233205
+        ]
+    },
+    "Talula's Garden": {
+        "building": "The Ayer",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            728.3393096923828,
+            804.2295074462891,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -271.6856689453125,
+            -195.76687622070312,
+            149.66038513183594,
+            32.218597412109375,
+            29.270401000976562,
+            68.87334442138672,
+            -0.1619754284620285
+        ]
+    },
+    "Old Nelson Food Co": {
+        "building": "701 Chestnut Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            830.2045669555664,
+            1069.4062671661377,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -169.81096958500711,
+            69.43407448247248,
+            124.80351638793945,
+            7.69377593166274,
+            31.598206627076067,
+            21.356101989746094,
+            -0.16278423177475906
+        ]
+    },
+    "Independence Beer Garden": {
+        "building": "Rohm and Haas Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            950.8095455169678,
+            1140.8828010559082,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -49.19021077398559,
+            140.88280206602914,
+            138.02108001708984,
+            47.14049765369515,
+            85.0364512808642,
+            49.57350158691406,
+            -0.16269958925930195
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "724 Chestnut Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            736.7276153564453,
+            1029.328345298767,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -263.26808200879447,
+            29.32834535532819,
+            124.9041862487793,
+            7.057457286939759,
+            43.322242636432875,
+            20.33930206298828,
+            -0.16307758488623164
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "711 Sansom Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            780.7654037475586,
+            980.658064365387,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -219.2370742261515,
+            -19.313699000769628,
+            120.37287139892578,
+            6.40090366475833,
+            27.439927490222534,
+            12.281280517578125,
+            -0.15997646440239263
+        ]
+    },
+    "Congress Hall": {
+        "building": "Congress Hall",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            982.8707296848297,
+            994.1635589599609,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -17.224668484258572,
+            -6.276790716744575,
+            122.57484436035156,
+            15.872422201967737,
+            32.31148412137185,
+            16.044281005859375,
+            -0.1586030064651122
+        ]
+    },
+    "Chestnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            118.28951908450945,
+            3.9586107050921666
+        ],
+        "rotation": -1.7318008185927494,
+        "bounding_box": null
+    },
+    "Walnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            78.63308406330034,
+            -171.75149312496984
+        ],
+        "rotation": 1.4159458545706831,
+        "bounding_box": null
+    },
+    "Ionic Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -307.5186042496154,
+            4.736636898051245
+        ],
+        "rotation": 1.4221153999950833,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.175316071994,
+            35.330156217726106
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.93356885018716,
+            -1.6505826632421339
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            177.80703989096526,
+            -245.49041705483242
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.79844681042135,
+            -127.56612672653645
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -77.85848494947972,
+            21.78821777721246
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            19.874014198703783,
+            -238.3893393306398
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -265.2094364159634,
+            199.45220050642803
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Ionic Street": [
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Chestnut Street": [
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

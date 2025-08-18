@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Schadowhaus",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+        "end_place": "Schadowhaus"
+    },
+    {
+        "type": "main",
+        "activity": "Attend conference at Schadowhaus",
+        "place": "Schadowhaus",
+        "building": "Schadow-Haus",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il Punto for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Schadowhaus",
+        "end_place": "Il Punto"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Il Punto",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 6",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to August-Boeckh-Haus",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Il Punto",
+        "end_place": "August-Boeckh-Haus"
+    },
+    {
+        "type": "main",
+        "activity": "Research and collaboration with scientists",
+        "place": "August-Boeckh-Haus",
+        "building": "August-Boeckh-Haus",
+        "start_time": "14:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie im Adlon",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "Galerie im Adlon"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Berlin Celebrity Circle event",
+        "place": "Galerie im Adlon",
+        "building": "Adlon Kempinski",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lorenz Adlon Esszimmer for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Galerie im Adlon",
+        "end_place": "Lorenz Adlon Esszimmer"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Lorenz Adlon Esszimmer",
+        "building": "Adlon Kempinski",
+        "start_time": "20:30:00",
+        "end_time": "21:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hotel Ch\u00e2teau Royal Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "21:30:00",
+        "end_time": "22:00:00",
+        "start_place": "Lorenz Adlon Esszimmer",
+        "end_place": "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

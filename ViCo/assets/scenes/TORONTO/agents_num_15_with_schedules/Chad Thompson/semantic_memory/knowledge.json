@@ -1,0 +1,420 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Boutique Condo East",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Tech Enthusiasts Club"
+        ]
+    },
+    "Jensen Huang": {
+        "age": 61,
+        "living_place": "The Union Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Jensen Huang.png",
+        "groups": [
+            "Tech Enthusiasts Club"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Bay Street Condos",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Tech Enthusiasts Club"
+        ]
+    },
+    "Tech Enthusiasts Club": {
+        "description": "A group of tech enthusiasts who meet to discuss the latest trends in technology and work on collaborative projects.",
+        "place": "Beverages and DM Store",
+        "members": [
+            "Adam Pierce",
+            "Chad Thompson",
+            "Roth Miller",
+            "Jensen Huang"
+        ],
+        "daily_activity": "discussing technology trends from 17:00 to 18:00"
+    },
+    "Chad Thompson's room at Bay Street Condos": {
+        "building": "Boutique Condo West",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            752.1804733276367,
+            1059.982961654663,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Chad Thompson's room at Bay Street Condos",
+        "bounding_box": [
+            -247.81965637207034,
+            59.98296165466309,
+            181.64993286132812,
+            22.583336903625927,
+            92.78239107414743,
+            51.735382080078125,
+            -1.2824980308418785
+        ]
+    },
+    "Cresa Toronto Inc., Brokerage": {
+        "building": "200 Wellington Street West",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.2376327514648,
+            742.6029891967773,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "bounding_box": [
+            -170.69448166727287,
+            -257.4224221484702,
+            154.71855926513675,
+            8.35862149033527,
+            7.858786427018733,
+            4.6067047119140625,
+            0.29205137376867785
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "145 Wellington Street West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            991.1608514785767,
+            739.1054000854492,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -8.773028393482171,
+            -260.98171460209085,
+            157.5133209228516,
+            45.12938606591113,
+            30.04219615949391,
+            13.655609130859375,
+            0.2973957958698972
+        ]
+    },
+    "Verno Art Studios": {
+        "building": "120 Adelaide Street West Unit FC-09",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1141.2012023925781,
+            1187.323585510254,
+            -36
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            141.67819696673928,
+            188.66048485468602,
+            211.56494140625,
+            40.74812248194316,
+            53.76133484803879,
+            111.7357177734375,
+            0.297179563177001
+        ]
+    },
+    "F45 Training Toronto Downtown": {
+        "building": "North Tower",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            987.1375579833984,
+            896.8284225463867,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -12.986947978983881,
+            -102.79264455034728,
+            171.97727966308594,
+            35.16610113891242,
+            30.747822481605414,
+            37.336090087890625,
+            0.2895740288522889
+        ]
+    },
+    "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!": {
+        "building": "Nelson Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Harvest Green": {
+        "building": "200 Wellington Street West",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.2376327514648,
+            742.6029891967773,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -170.69448166727287,
+            -257.4224221484702,
+            154.71855926513675,
+            8.35862149033527,
+            7.858786427018733,
+            4.6067047119140625,
+            0.29205137376867785
+        ]
+    },
+    "Chart store mobile phone": {
+        "building": "145 Wellington Street West",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            991.1608514785767,
+            739.1054000854492,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -8.773028393482171,
+            -260.98171460209085,
+            157.5133209228516,
+            45.12938606591113,
+            30.04219615949391,
+            13.655609130859375,
+            0.2973957958698972
+        ]
+    },
+    "Roll & Roll by JC Mart": {
+        "building": "University Plaza",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "liquor_store",
+            "laundry",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            805.4779739379883,
+            1134.5094833374023,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -194.76045145307617,
+            134.44198153553918,
+            183.13565063476562,
+            34.8602372914358,
+            56.3980434717796,
+            53.908416748046875,
+            0.2918350208055469
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Boutique Condo West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            752.1804733276367,
+            1059.982961654663,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -247.81965637207034,
+            59.98296165466309,
+            181.64993286132812,
+            22.583336903625927,
+            92.78239107414743,
+            51.735382080078125,
+            -1.2824980308418785
+        ]
+    },
+    "Duncan Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -305.5051431396848,
+            31.274830657362244
+        ],
+        "rotation": -1.2818139451305748,
+        "bounding_box": null
+    },
+    "University Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            60.647572252395314,
+            -177.97103757136227
+        ],
+        "rotation": -2.746130847002968,
+        "bounding_box": null
+    },
+    "King Street West Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            320.9162021456791,
+            31.692857479827722
+        ],
+        "rotation": -1.279698474914429,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.9830944262577,
+            -60.632213384139725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            70.9781059093955,
+            -58.57682221598191
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            143.33072943279424,
+            162.86726965953133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            9.28993683166875,
+            89.4595028492765
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -228.06344546133988,
+            175.04188547899503
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -137.68946092169688,
+            80.05882480669985
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To King Street West": [
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Duncan Street": [
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

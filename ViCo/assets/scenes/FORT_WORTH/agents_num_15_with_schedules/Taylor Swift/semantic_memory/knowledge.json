@@ -1,0 +1,426 @@
+{
+    "Kylian Mbappe": {
+        "age": 25,
+        "living_place": "Kylian Mbappe's room at Hilton Fort Worth",
+        "appearance": "ViCo/assets/imgs/avatars/Kylian Mbappe.png",
+        "groups": [
+            "Celebrity Charity Group"
+        ]
+    },
+    "Will Smith": {
+        "age": 56,
+        "living_place": "The Ashton Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Will Smith.png",
+        "groups": [
+            "Celebrity Charity Group"
+        ]
+    },
+    "Celebrity Charity Group": {
+        "description": "A group of celebrities collaborating on charity events and community projects.",
+        "place": "Hilton Fort Worth",
+        "members": [
+            "Kylian Mbappe",
+            "Taylor Swift",
+            "Will Smith"
+        ],
+        "daily_activity": "planning charity events from 18:00 to 19:00"
+    },
+    "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone": {
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1071.157070159912,
+            1259.6762390136719,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone",
+        "bounding_box": [
+            71.15767402088743,
+            259.38820581943713,
+            124.64462661743164,
+            30.525276941046346,
+            61.64314128840393,
+            31.779380798339844,
+            0.5306528662488761
+        ]
+    },
+    "Courtyard Fort Worth Downtown/Blackstone": {
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1071.157070159912,
+            1259.6762390136719,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            71.15767402088743,
+            259.38820581943713,
+            124.64462661743164,
+            30.525276941046346,
+            61.64314128840393,
+            31.779380798339844,
+            0.5306528662488761
+        ]
+    },
+    "Hilton Fort Worth": {
+        "building": "Hilton Fort Worth",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1167.0871200561523,
+            1130.1348915100098,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            167.07580411764494,
+            130.1320873003596,
+            122.78656005859375,
+            58.716402448917165,
+            61.88210761246608,
+            31.947509765625,
+            0.528706174543754
+        ]
+    },
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.20849609375,
+            904.2162132263184,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -43.72303431509959,
+            -95.7049147649222,
+            135.87408447265625,
+            73.5226924534619,
+            97.90414338877876,
+            49.02667236328125,
+            -0.007332725972464746
+        ]
+    },
+    "Fort Worth Public Library - Downtown Express": {
+        "building": "Fort Worth Old City Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1030.5131950378418,
+            771.1894226074219,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            30.517742156982422,
+            -228.810302734375,
+            117.53858947753906,
+            55.869632720947266,
+            108.70323944091797,
+            13.071022033691406,
+            -0.010612870566546917
+        ]
+    },
+    "Arielle Seleske, REALTOR - TD Realty": {
+        "building": "Neil P Anderson Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            850.162223815918,
+            967.5801939964294,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -150.05951247334372,
+            -32.22582196628941,
+            130.54940032958984,
+            33.87540978849457,
+            49.67236195149711,
+            36.27357482910156,
+            -0.020723284586584113
+        ]
+    },
+    "Corner Bakery": {
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1071.157070159912,
+            1259.6762390136719,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            71.15767402088743,
+            259.38820581943713,
+            124.64462661743164,
+            30.525276941046346,
+            61.64314128840393,
+            31.779380798339844,
+            0.5306528662488761
+        ]
+    },
+    "Ruth's Chris Steak House": {
+        "building": "Hilton Fort Worth",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1167.0871200561523,
+            1130.1348915100098,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            167.07580411764494,
+            130.1320873003596,
+            122.78656005859375,
+            58.716402448917165,
+            61.88210761246608,
+            31.947509765625,
+            0.528706174543754
+        ]
+    },
+    "The Sterling": {
+        "building": "911 Houston Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1124.6080932617188,
+            995.3040952682495,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            124.60806655883789,
+            -4.695904731750485,
+            113.56169891357422,
+            28.07003194525758,
+            32.06495132347028,
+            8.836257934570312,
+            0.5245223204878323
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "911 Houston Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1124.6080932617188,
+            995.3040952682495,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            124.60806655883789,
+            -4.695904731750485,
+            113.56169891357422,
+            28.07003194525758,
+            32.06495132347028,
+            8.836257934570312,
+            0.5245223204878323
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "901 Throckmorton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1026.4681687355042,
+            987.6056065261364,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            26.468162536621094,
+            -12.394390106201172,
+            114.69550323486328,
+            21.960912704467773,
+            15.197171211242676,
+            8.6431884765625,
+            0.5200315713882446
+        ]
+    },
+    "West 7th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -176.4915018524415,
+            -14.460973615116995
+        ],
+        "rotation": -1.0524566790619148,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.1052575202679,
+            182.87464646913259
+        ],
+        "rotation": -0.8936122536766103,
+        "bounding_box": null
+    },
+    "Houston Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.72617540910458,
+            -143.92913508338017
+        ],
+        "rotation": 2.0823315085752347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            64.15209643979796,
+            69.77376676139166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -98.10083788061374,
+            -271.8031433875841
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -2.83358979438382,
+            -42.72445330458906
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            7.8425292876260535,
+            262.31761608136424
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.43417848174332,
+            173.54857106916538
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Houston Street": [
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To West 7th Street": [
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

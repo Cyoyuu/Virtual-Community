@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Andrew Ng's room at The Press Hotel, Autograph Collection",
+        "building": "The Press Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at UNION Restaurant",
+        "place": "UNION Restaurant",
+        "building": "The Press Hotel",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland High School for keynote speech preparation",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "UNION Restaurant",
+        "end_place": "Portland High School"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for keynote speech on AI advancements",
+        "place": "Portland High School",
+        "building": "Portland High School",
+        "start_time": "09:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland Public Library - Main Branch",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Portland High School",
+        "end_place": "Portland Public Library - Main Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Research and work on AI projects",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "12:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anthony's Italian Kitchen for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Portland Public Library - Main Branch",
+        "end_place": "Anthony's Italian Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Anthony's Italian Kitchen",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "14:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to St. Vincent de Paul Soup Kitchen for community service planning",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Anthony's Italian Kitchen",
+        "end_place": "St. Vincent de Paul Soup Kitchen"
+    },
+    {
+        "type": "main",
+        "activity": "Participate in community service project planning with Portland Social Impact Group",
+        "place": "St. Vincent de Paul Soup Kitchen",
+        "building": "307 Congress Street",
+        "start_time": "15:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Press Hotel for relaxation",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "St. Vincent de Paul Soup Kitchen",
+        "end_place": "Andrew Ng's room at The Press Hotel, Autograph Collection"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Andrew Ng's room at The Press Hotel, Autograph Collection",
+        "building": "The Press Hotel",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at UNION Restaurant",
+        "place": "UNION Restaurant",
+        "building": "The Press Hotel",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arcana for entertainment",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "UNION Restaurant",
+        "end_place": "Arcana"
+    },
+    {
+        "type": "main",
+        "activity": "Enjoy entertainment at Arcana",
+        "place": "Arcana",
+        "building": "81 Market Street",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to The Press Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Arcana",
+        "end_place": "Andrew Ng's room at The Press Hotel, Autograph Collection"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for the next day's activities",
+        "place": "Andrew Ng's room at The Press Hotel, Autograph Collection",
+        "building": "The Press Hotel",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Andrew Ng's room at The Press Hotel, Autograph Collection",
+        "building": "The Press Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

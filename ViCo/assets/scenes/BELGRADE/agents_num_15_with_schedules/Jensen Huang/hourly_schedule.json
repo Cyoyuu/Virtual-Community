@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jensen Huang's room at Simma Luxury Apartments & Rooms",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Nu\u0161i\u0107eva Business Center",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Nu\u0161i\u0107eva Business Center"
+    },
+    {
+        "type": "main",
+        "activity": "Meeting with local tech companies",
+        "place": "Nu\u0161i\u0107eva Business Center",
+        "building": "Nu\u0161i\u0107eva Business Center",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Restaurant Tchaikovsky",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Nu\u0161i\u0107eva Business Center",
+        "end_place": "Restaurant Tchaikovsky"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Gallery Graphic Collective",
+        "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "building": "Dragoslava Jovanovi\u0107a 11",
+        "start_time": "14:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Nu\u0161i\u0107eva Business Center",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "end_place": "Nu\u0161i\u0107eva Business Center"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators",
+        "place": "Nu\u0161i\u0107eva Business Center",
+        "building": "Nu\u0161i\u0107eva Business Center",
+        "start_time": "15:15:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Vinoteka Bajke iz Flajke",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Nu\u0161i\u0107eva Business Center",
+        "end_place": "Vinoteka Bajke iz Flajke"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Vinoteka Bajke iz Flajke",
+        "place": "Vinoteka Bajke iz Flajke",
+        "building": "Balkanska 11",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Restaurant Tchaikovsky",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Vinoteka Bajke iz Flajke",
+        "end_place": "Restaurant Tchaikovsky"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jensen Huang's room at Simma Luxury Apartments & Rooms",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Jensen Huang's room at Simma Luxury Apartments & Rooms"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Jensen Huang's room at Simma Luxury Apartments & Rooms",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's meetings",
+        "place": "Jensen Huang's room at Simma Luxury Apartments & Rooms",
+        "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u0418\u0433\u0443\u043c\u0430\u043d\u043e\u0432",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

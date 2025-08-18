@@ -1,0 +1,185 @@
+{
+    "name": "Selena Gomez",
+    "first_name": "Selena",
+    "last_name": "Gomez",
+    "age": 32,
+    "innate": "hedonism, achievement, universalism",
+    "learned": "I am a singer and actress known for my work in music and film. I enjoy traveling and philanthropy.",
+    "currently": "I am exploring opportunities to collaborate with local artists.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Entertainment Stars",
+            "description": "A group of famous personalities in the entertainment industry.",
+            "place": "Urban Axes - Axe Throwing",
+            "members": [
+                "Selena Gomez",
+                "Tom Holland",
+                "Will Smith"
+            ],
+            "daily_activity": "socializing and networking from 19:00 to 20:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Selena Gomez's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Selena Gomez's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Counter Culture Coffee",
+            "building": "374 Somerville Avenue",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lincoln Park",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Counter Culture Coffee",
+            "end_place": "Lincoln Park"
+        },
+        {
+            "type": "main",
+            "activity": "Explore collaboration opportunities with local artists",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "09:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Juliet for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Lincoln Park",
+            "end_place": "Juliet"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Juliet",
+            "building": "263 Washington Street",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MOTA Fitness, Wellness & Spaces",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Juliet",
+            "end_place": "MOTA Fitness, Wellness & Spaces"
+        },
+        {
+            "type": "main",
+            "activity": "Fitness and wellness session",
+            "place": "MOTA Fitness, Wellness & Spaces",
+            "building": "11 Bow Street Floor 2",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "MOTA Fitness, Wellness & Spaces",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Shopping for snacks",
+            "place": "Fresh and Snacks Store",
+            "building": "1 Bow Street",
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Urban Axes - Axe Throwing",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Urban Axes - Axe Throwing"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Urban Axes - Axe Throwing",
+            "building": "2 Union Square",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Socializing and networking with Entertainment Stars",
+            "place": "Urban Axes - Axe Throwing",
+            "building": "2 Union Square",
+            "start_time": "19:00:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Selena Gomez's room at Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "Urban Axes - Axe Throwing",
+            "end_place": "Selena Gomez's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Selena Gomez's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "21:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

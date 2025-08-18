@@ -1,0 +1,181 @@
+{
+    "name": "Sophie Carlsen",
+    "first_name": "Sophie",
+    "last_name": "Carlsen",
+    "age": 20,
+    "innate": "self-direction, stimulation, achievement",
+    "learned": "I am a ballet dancer at MLP Ballet Pilates, training for upcoming performances. I love dancing and watching ballet shows.",
+    "currently": "I want to perfect my routine for the next ballet performance.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness Enthusiasts",
+            "description": "A group of individuals passionate about fitness and healthy living.",
+            "place": "F45 Training Alexandria",
+            "members": [
+                "Chad Thompson",
+                "Brycer Rodriguez",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "working out from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Sophie Carlsen's room at Portman on the Park",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Sophie Carlsen's room at Portman on the Park",
+            "building": "Portman on the Park",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "IIKO Mazesoba",
+            "building": "Portman on the Park",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MLP Ballet Pilates",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Ballet practice",
+            "place": "MLP Ballet Pilates",
+            "building": "Infinity",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Miracle Supermarket Green Square",
+            "building": "Infinity",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Ballet practice",
+            "place": "MLP Ballet Pilates",
+            "building": "Infinity",
+            "start_time": "12:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to De'Longhi Coffee Lounge",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "MLP Ballet Pilates",
+            "end_place": "De'Longhi Coffee Lounge"
+        },
+        {
+            "type": "meal",
+            "activity": "Afternoon snack",
+            "place": "De'Longhi Coffee Lounge",
+            "building": "30 Ebsworth Street",
+            "start_time": "16:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to F45 Training Alexandria",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "De'Longhi Coffee Lounge",
+            "end_place": "F45 Training Alexandria"
+        },
+        {
+            "type": "main",
+            "activity": "Workout with Fitness Enthusiasts",
+            "place": "F45 Training Alexandria",
+            "building": "3 Botany Road",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to IIKO Mazesoba",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "F45 Training Alexandria",
+            "end_place": "IIKO Mazesoba"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "IIKO Mazesoba",
+            "building": "Portman on the Park",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Sophie Carlsen's room",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "IIKO Mazesoba",
+            "end_place": "Sophie Carlsen's room at Portman on the Park"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and review ballet videos",
+            "place": "Sophie Carlsen's room at Portman on the Park",
+            "building": "Portman on the Park",
+            "start_time": "19:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "IIKO Mazesoba",
+            "building": "Portman on the Park",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "MLP Ballet Pilates",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

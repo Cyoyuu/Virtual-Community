@@ -12,6 +12,23 @@
         ],
         "places": [
             {
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    757.5758743286133,
+                    723.1630249023438,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            },
+            {
                 "name": "Spanky's Saloon",
                 "coarse_type": "food",
                 "fine_types": [
@@ -24,12 +41,78 @@
                     723.1630249023438,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -231.10351182491888,
-            -296.40451259180367
+            -262.0793334853231,
+            -265.1064284364177
+        ]
+    },
+    "211 10 Avenue Southwest": {
+        "building_glb": "buildings_element.018.glb",
+        "bounding_box": [
+            -186.39120483398438,
+            -279.8854064941406,
+            98.41413116455078,
+            17.371410369873047,
+            35.691993713378906,
+            4.920753479003906,
+            -0.03978026285767555
+        ],
+        "places": [
+            {
+                "name": "Charlie's Watch Repair",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    813.4141159057617,
+                    720.1105041503906,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -186.44780264606413,
+            -298.74407213093616
+        ]
+    },
+    "MacCosham Place": {
+        "building_glb": "buildings_MacCosham Place.glb",
+        "bounding_box": [
+            -209.10868072509766,
+            -278.74758911132807,
+            100.99383926391603,
+            28.574173760805905,
+            35.79965914065831,
+            9.864326477050781,
+            -0.05245524767312114
+        ],
+        "places": [
+            {
+                "name": "Greta Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    790.7687377929688,
+                    721.2524108886719,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -221.40983212121478,
+            -297.02759804966587
         ]
     },
     "Mount Royal House": {
@@ -59,7 +142,7 @@
                     772.8514404296875,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Mount Royal House",
@@ -72,7 +155,7 @@
                     772.8514404296875,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             },
             {
                 "building": "Mount Royal House",
@@ -85,8 +168,8 @@
                     772.8514404296875,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Brian Carter's room at Mount Royal House"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Adam Pierce's room at Mount Royal House"
             },
             {
                 "building": "Mount Royal House",
@@ -99,13 +182,27 @@
                     772.8514404296875,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Shannon Steves's room at Mount Royal House"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Emily Johnson's room at Mount Royal House"
+            },
+            {
+                "building": "Mount Royal House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    912.678882598877,
+                    772.8514404296875,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Megan Carter's room at Mount Royal House"
             }
         ],
         "outdoor_xy": [
-            -120.51722698396176,
-            -236.86427698915804
+            -120.09168715811197,
+            -227.00186244248584
         ]
     },
     "First on Tenth": {
@@ -121,6 +218,21 @@
         ],
         "places": [
             {
+                "name": "Beverages and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    988.4496936798096,
+                    714.2852325439453,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+            },
+            {
                 "name": "S.K. Market",
                 "coarse_type": "food",
                 "fine_types": [
@@ -135,7 +247,7 @@
                     714.2852325439453,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "First on Tenth",
@@ -148,7 +260,7 @@
                     714.2852325439453,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "First on Tenth",
@@ -159,49 +271,29 @@
                 "location": [
                     988.4496936798096,
                     714.2852325439453,
-                    -12
+                    -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Jody Petersen's room at First on Tenth"
-            }
-        ],
-        "outdoor_xy": [
-            23.40670384301292,
-            -288.74248636019036
-        ]
-    },
-    "Penn West Plaza - West Tower": {
-        "building_glb": "buildings_Penn West Plaza - West Tower.glb",
-        "bounding_box": [
-            -259.3435152312436,
-            -138.7422966503445,
-            139.6084098815918,
-            57.55539785686262,
-            40.31627485088116,
-            84.6470718383789,
-            -0.04280820666042378
-        ],
-        "places": [
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Brycer Rodriguez's room at First on Tenth"
+            },
             {
-                "name": "DreamBody Training",
-                "coarse_type": "entertainment",
+                "building": "First on Tenth",
+                "coarse_type": "accommodation",
                 "fine_types": [
-                    "gym",
-                    "health",
-                    "point_of_interest",
-                    "establishment"
+                    "apartments"
                 ],
                 "location": [
-                    740.6555786132812,
-                    861.1219444274902,
-                    -4
+                    988.4496936798096,
+                    714.2852325439453,
+                    -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Eve By J Gonzales's room at First on Tenth"
             }
         ],
         "outdoor_xy": [
-            -288.4572143228255,
-            -122.60326966857086
+            23.02345862194303,
+            -297.41943910503886
         ]
     },
     "Penn West Plaza - East Tower": {
@@ -229,17 +321,48 @@
                     857.6012725830078,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+            },
+            {
+                "building": "Penn West Plaza - East Tower",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    813.1806106567383,
+                    857.6012725830078,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Kate Novak's room at EzOffice"
             }
         ],
         "outdoor_xy": [
-            -205.1747989967297,
-            -120.39789301947843
+            -215.4045240602896,
+            -124.30009769682644
         ]
     },
     "open space": {
         "bounding_box": null,
         "places": [
+            {
+                "name": "Park",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    942.2551604507346,
+                    1143.1339298589287,
+                    -0.0018679423426704034
+                ],
+                "scene": null
+            },
             {
                 "name": "7 Avenue SE Bus Stop",
                 "coarse_type": "transit",
@@ -368,7 +491,7 @@
                     847.2293167114258,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Fairmont Palliser",
@@ -385,7 +508,7 @@
                     847.2293167114258,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "Fairmont Palliser Hotel",
@@ -402,8 +525,8 @@
                     847.2293167114258,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Barack Obama's room at Fairmont Palliser"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Bruce Lee's room at Fairmont Palliser"
             },
             {
                 "building": "Fairmont Palliser Hotel",
@@ -420,67 +543,13 @@
                     847.2293167114258,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "LeBron James's room at Fairmont Palliser"
-            },
-            {
-                "building": "Fairmont Palliser Hotel",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    912.662654876709,
-                    847.2293167114258,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Mark Zuckerberg's room at Fairmont Palliser"
-            },
-            {
-                "building": "Fairmont Palliser Hotel",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    912.662654876709,
-                    847.2293167114258,
-                    -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Neil deGrasse Tyson's room at Fairmont Palliser"
-            },
-            {
-                "building": "Fairmont Palliser Hotel",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    912.662654876709,
-                    847.2293167114258,
-                    -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Yoshua Bengio's room at Fairmont Palliser"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Feifei Li's room at Fairmont Palliser"
             }
         ],
         "outdoor_xy": [
-            -50.82833384825122,
-            -151.97538809618777
+            -101.66453235220271,
+            -179.5854109481429
         ]
     },
     "Tower Centre": {
@@ -508,7 +577,7 @@
                     832.0565490722656,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             },
             {
                 "name": "Royal India Restaurant Calgary",
@@ -524,7 +593,7 @@
                     832.0565490722656,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "building": "Tower Centre",
@@ -539,8 +608,8 @@
                     832.0565490722656,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Joe Anderson's room at Palliser Square"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Jody Petersen's room at Palliser Square"
             },
             {
                 "building": "Tower Centre",
@@ -555,13 +624,13 @@
                     832.0565490722656,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Steve Johnson's room at Palliser Square"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Roth Miller's room at Palliser Square"
             }
         ],
         "outdoor_xy": [
-            -7.2299164772129245,
-            -129.5477501805946
+            -43.59767668677599,
+            -140.96776013579156
         ]
     },
     "Calgary Tower": {
@@ -577,22 +646,6 @@
         ],
         "places": [
             {
-                "name": "Beverages and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "tourist_attraction",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1040.60560131073,
-                    847.8853607177734,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-            },
-            {
                 "name": "Ruth's Chris Steak House Calgary",
                 "coarse_type": "food",
                 "fine_types": [
@@ -606,12 +659,47 @@
                     847.8853607177734,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            53.185693625934775,
-            -131.31763020776145
+            45.20860187284901,
+            -127.95882426124017
+        ]
+    },
+    "205 9 Avenue Southeast": {
+        "building_glb": "buildings_element.015.glb",
+        "bounding_box": [
+            247.6008071899414,
+            -153.2887954711914,
+            116.4857406616211,
+            39.06729125382467,
+            24.044859687931517,
+            45.01301574707031,
+            -0.038607724083889954
+        ],
+        "places": [
+            {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1247.6007232666016,
+                    846.7112045288086,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            }
+        ],
+        "outdoor_xy": [
+            226.75574548245893,
+            -160.95451950168086
         ]
     },
     "Bankers Court": {
@@ -639,12 +727,62 @@
                     925.2698059082031,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "building": "Bankers Court",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    743.7522277832031,
+                    925.2698059082031,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Joe Anderson's room at Bankers Court Building"
             }
         ],
         "outdoor_xy": [
-            -255.55496306098468,
-            -93.59833925394068
+            -260.31773041906644,
+            -93.44583879930627
+        ]
+    },
+    "225 8 Avenue Southwest": {
+        "building_glb": "buildings_element.043.glb",
+        "bounding_box": [
+            -230.18233494829576,
+            -31.383659021752337,
+            101.10554885864258,
+            11.523234527988944,
+            39.33321234648181,
+            8.592262268066406,
+            -0.044389946123808026
+        ],
+        "places": [
+            {
+                "name": "Falafel King",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    769.8176727294922,
+                    968.6274738311768,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -232.5060204922813,
+            -51.967427282066666
         ]
     },
     "The Palace Theatre": {
@@ -672,12 +810,12 @@
                     968.3142495155334,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -182.50069661821917,
-            -52.74849282069622
+            -189.03331544059577,
+            -54.283358525969675
         ]
     },
     "The Unicorn": {
@@ -707,46 +845,116 @@
                     968.1706504821777,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -218.58791725181567,
-            -52.64657668089564
+            -221.0370370218122,
+            -52.52943831191777
         ]
     },
-    "100-129 8 Avenue Southwest": {
-        "building_glb": "buildings_element.024.glb",
+    "Alberta Block": {
+        "building_glb": "buildings_Alberta Block.glb",
         "bounding_box": [
-            -74.74112304778261,
-            -38.412518148373785,
-            103.10808181762695,
-            7.129056126576393,
-            39.42662668647752,
-            12.157569885253906,
-            -0.04715963560557845
+            -144.2480596755105,
+            -35.38852015482774,
+            101.62186813354492,
+            16.264882932033135,
+            41.0177495748196,
+            9.690773010253906,
+            -0.042842393267439
         ],
         "places": [
             {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
+                "name": "The Chocolate Lab, Stephen Ave",
+                "coarse_type": "food",
                 "fine_types": [
-                    "spa",
-                    "beauty_salon",
+                    "store",
                     "point_of_interest",
+                    "food",
                     "establishment"
                 ],
                 "location": [
-                    925.2098655700684,
-                    961.5874814987183,
+                    855.7056503295898,
+                    964.6502780914307,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -73.5222585166957,
-            -59.20641024193333
+            -136.1209664618092,
+            -57.26554681150216
+        ]
+    },
+    "Alberta Hotel Building": {
+        "building_glb": "buildings_Alberta Hotel Building.glb",
+        "bounding_box": [
+            -101.68242370201612,
+            -37.020819325622064,
+            104.07582473754883,
+            30.766386682745065,
+            39.18738324692932,
+            14.392082214355469,
+            -0.043071852228104945
+        ],
+        "places": [
+            {
+                "name": "Murrieta's West Coast Bar & Grill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    898.8599662780762,
+                    962.4448881149292,
+                    -12
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -118.28204721653981,
+            -41.68969317790526
+        ]
+    },
+    "Pain Block": {
+        "building_glb": "buildings_Pain Block.glb",
+        "bounding_box": [
+            -82.3452130080031,
+            -37.91146477780003,
+            100.6115951538086,
+            8.109475333412375,
+            39.26893425332308,
+            7.2015228271484375,
+            -0.04715992373912431
+        ],
+        "places": [
+            {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "book_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    917.7352409362793,
+                    962.0885353088379,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -85.8077615973242,
+            -58.40548462440505
         ]
     },
     "Bank of Nova Scotia Building": {
@@ -776,12 +984,47 @@
                     963.5075883865356,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -62.058660673477874,
-            -18.337921912522123
+            -59.63599711292818,
+            -54.81917301606706
+        ]
+    },
+    "Lineham (1899) Block": {
+        "building_glb": "buildings_Lineham (1899) Block.glb",
+        "bounding_box": [
+            -6.266177649245489,
+            -41.872411518630734,
+            99.4791030883789,
+            7.602908076791154,
+            39.452886604636866,
+            6.086639404296875,
+            -0.04737753733049725
+        ],
+        "places": [
+            {
+                "name": "Annabelle's Kitchen Downtown",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    993.636306643486,
+                    958.1249084472656,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -11.375238497067548,
+            -62.37990221393136
         ]
     },
     "Calgary Herald Block": {
@@ -810,12 +1053,47 @@
                     958.5924654006958,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -8.506933551028148,
-            -20.971534408711637
+            -16.28026940572953,
+            -62.12258662990043
+        ]
+    },
+    "The Molson's Bank Building": {
+        "building_glb": "buildings_The Molson's Bank Building.glb",
+        "bounding_box": [
+            -15.417450933223165,
+            16.53840126229389,
+            102.84700393676758,
+            14.302255352687759,
+            33.35992376103934,
+            12.961753845214844,
+            -0.043025027499169206
+        ],
+        "places": [
+            {
+                "name": "James Joyce Irish Pub & Restaurant",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    984.5416355133057,
+                    1016.5398328453302,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -16.69960859291326,
+            -1.1027384734672658
         ]
     },
     "Calgary Milling Company": {
@@ -844,12 +1122,12 @@
                     960.3013334274292,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -36.255007953177596,
-            -59.52359937561148
+            -39.179817011939406,
+            -59.37016214444998
         ]
     },
     "Glanville/Ward Block": {
@@ -878,10 +1156,10 @@
                     957.4458770751953,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
-                "name": "Fresh and DM Store",
+                "name": "Fresh and Snacks Store",
                 "coarse_type": "stores",
                 "fine_types": [
                     "florist",
@@ -894,12 +1172,12 @@
                     957.4458770751953,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
             }
         ],
         "outdoor_xy": [
-            15.36874456728593,
-            -22.121046875539953
+            7.28962039585102,
+            -63.15901298109215
         ]
     },
     "107 8 Avenue Southeast": {
@@ -915,6 +1193,22 @@
         ],
         "places": [
             {
+                "name": "Milestones",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1081.0609951019287,
+                    933.4126567840576,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
                 "name": "Art Market Craft Sale",
                 "coarse_type": "entertainment",
                 "fine_types": [
@@ -927,12 +1221,12 @@
                     933.4126567840576,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            56.60606202755746,
-            -56.447846666412474
+            56.60073930367386,
+            -56.585928791483056
         ]
     },
     "Imperial Bank of Canada": {
@@ -962,12 +1256,95 @@
                     1015.2934172153473,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            57.70549638912189,
-            -5.150307152149846
+            57.944839944957316,
+            21.776161104024723
+        ]
+    },
+    "3 8 Avenue Southwest": {
+        "building_glb": "buildings_element.025.glb",
+        "bounding_box": [
+            27.33346170432872,
+            -43.7544361129086,
+            100.92611694335938,
+            13.75390375739256,
+            40.149251011064564,
+            8.99359130859375,
+            -0.04291204789765478
+        ],
+        "places": [
+            {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1027.2476615905762,
+                    956.2937707901001,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            },
+            {
+                "name": "Saltlik",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1027.2476615905762,
+                    956.2937707901001,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            21.676453656495166,
+            -64.60557747141266
+        ]
+    },
+    "Thomson Brothers Block": {
+        "building_glb": "buildings_Thomson Brothers Block.glb",
+        "bounding_box": [
+            95.68941180803098,
+            6.998288242345204,
+            103.20220947265625,
+            15.609428764576268,
+            25.689298511491252,
+            14.60552978515625,
+            -0.025384760006270563
+        ],
+        "places": [
+            {
+                "name": "Thomsons Kitchen & Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1095.6837425231934,
+                    1006.9950547218323,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            86.88534274472252,
+            -6.627285663668003
         ]
     },
     "Calgary TELUS Convention Centre North Building": {
@@ -999,12 +1376,12 @@
                     1032.6835761070251,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            161.18423826690383,
-            -13.336705401066144
+            198.18046484656543,
+            -15.157459472050327
         ]
     },
     "Glenbow Museum": {
@@ -1033,12 +1410,129 @@
                     929.1014413833618,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            164.77283630805584,
-            -110.45984065536962
+            164.64907190781867,
+            -110.45426353100187
+        ]
+    },
+    "The Dominion Bank": {
+        "building_glb": "buildings_The Dominion Bank.glb",
+        "bounding_box": [
+            238.73278045654294,
+            7.149968624114997,
+            103.42822265625,
+            13.30355867063101,
+            39.5544667625292,
+            17.05169677734375,
+            -0.0563991602361554
+        ],
+        "places": [
+            {
+                "name": "Teatro Ristorante",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1238.5122680664062,
+                    1007.149968624115,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Lighthouse Camp Services Ltd",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1238.5122680664062,
+                    1007.149968624115,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            }
+        ],
+        "outdoor_xy": [
+            231.51222935741066,
+            15.003698670502095
+        ]
+    },
+    "Bow Parkade - Impark Lot 232": {
+        "building_glb": "buildings_Bow Parkade - Impark Lot 232.glb",
+        "bounding_box": [
+            -249.3496833427621,
+            158.71190778347085,
+            105.36521148681639,
+            61.27272614298376,
+            79.45802342362313,
+            20.339324951171875,
+            -0.04058307840469585
+        ],
+        "places": [
+            {
+                "name": "SAIGON STAR Ultimate Subs & Grill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    750.653694152832,
+                    1158.7120361328125,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -279.3511911546215,
+            199.61598904227253
+        ]
+    },
+    "Stephen Avenue Place": {
+        "building_glb": "buildings_Stephen Avenue Place.glb",
+        "bounding_box": [
+            -240.90298461914062,
+            51.391998291015625,
+            177.21507263183594,
+            86.1715316772461,
+            83.08457946777344,
+            161.83831787109375,
+            -0.04656149819493294
+        ],
+        "places": [
+            {
+                "name": "Juice Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    758.2236633300781,
+                    1052.3132634162903,
+                    -8
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -260.4671933305759,
+            9.71514933021124
         ]
     },
     "Telus Sky": {
@@ -1067,7 +1561,22 @@
                     1126.022590637207,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "Fairfield Commercial Rl Est",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1011.5281934738159,
+                    1126.022590637207,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             },
             {
                 "name": "Collage Gallery",
@@ -1082,12 +1591,46 @@
                     1126.022590637207,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            1.9826261128414409,
-            102.68521897182433
+            4.654513846300599,
+            102.58255253739343
+        ]
+    },
+    "232 7 Avenue Southwest": {
+        "building_glb": "buildings_element.036.glb",
+        "bounding_box": [
+            -206.95786882464728,
+            156.59636156051167,
+            104.15605545043944,
+            23.640790412903645,
+            72.7763054293234,
+            18.44438934326172,
+            -0.041040273304368304
+        ],
+        "places": [
+            {
+                "name": "DirtBelly",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    792.9698028564453,
+                    1156.639575958252,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -201.09863408334266,
+            118.9361005341643
         ]
     },
     "The Bow": {
@@ -1103,24 +1646,28 @@
         ],
         "places": [
             {
-                "name": "Fresh and Snacks Store",
-                "coarse_type": "stores",
+                "name": "Tim Hortons",
+                "coarse_type": "food",
                 "fine_types": [
+                    "cafe",
+                    "bakery",
                     "store",
+                    "restaurant",
+                    "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
                     1122.322135925293,
                     1243.2884674072266,
-                    -16
+                    -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            102.33842651506447,
-            229.84209079770773
+            186.98860853804044,
+            254.93670575949443
         ]
     },
     "Len Werry Building": {
@@ -1148,12 +1695,47 @@
                     1128.589183807373,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -81.61319476514765,
-            108.96039626754599
+            -101.34240335796814,
+            109.8710426801283
+        ]
+    },
+    "Army & Navy Store Building": {
+        "building_glb": "buildings_Army & Navy Store Building.glb",
+        "bounding_box": [
+            9.88700747569363,
+            72.53657296037389,
+            97.72411727905273,
+            14.998284093432762,
+            21.350967629254786,
+            5.336006164550781,
+            -0.04429086794975643
+        ],
+        "places": [
+            {
+                "name": "Palomino Smokehouse",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1009.8871189951897,
+                    1072.5335216522217,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            0.9263618462864838,
+            62.311799226717056
         ]
     },
     "Hyatt Regency Calgary - Event Centre": {
@@ -1185,45 +1767,138 @@
                     1036.2610523700714,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            124.04453510998655,
-            -9.084051781749391
+            90.01851785057474,
+            -7.152296955341321
         ]
     },
-    "Fire Hall No. 1": {
-        "building_glb": "buildings_Fire Hall No. 1.glb",
+    "Bow Valley Square 1": {
+        "building_glb": "buildings_Bow Valley Square 1.glb",
         "bounding_box": [
-            204.81708245500775,
-            217.89708733884,
-            99.00764846801756,
-            25.261441834124696,
-            24.46403959021609,
-            11.058937072753906,
-            0.7160557337646062
+            -144.94466782636778,
+            232.66866274604934,
+            126.99770736694336,
+            33.81886847283576,
+            26.200155876070237,
+            64.78058624267578,
+            -0.03658245387697744
         ],
         "places": [
             {
-                "name": "Snacks and DM Store",
-                "coarse_type": "stores",
+                "name": "International Corporation",
+                "coarse_type": "food",
                 "fine_types": [
-                    "beauty_salon",
+                    "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1205.431884765625,
-                    1216.8799514770508,
+                    855.0553321838379,
+                    1232.6686706542969,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            202.62933133675517,
-            233.53327300185353
+            -145.0536561051855,
+            218.56313348487026
+        ]
+    },
+    "Calgary Chamber of Commerce": {
+        "building_glb": "buildings_Calgary Chamber of Commerce.glb",
+        "bounding_box": [
+            30.44338847651975,
+            218.94835531170966,
+            104.017032623291,
+            34.09097385904392,
+            21.768319383217154,
+            18.89360809326172,
+            -0.04311696943721217
+        ],
+        "places": [
+            {
+                "name": "Calgary Chamber of Commerce",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    1030.4410238265991,
+                    1219.0133666992188,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            17.7119940882827,
+            207.6024198646709
+        ]
+    },
+    "The Edison": {
+        "building_glb": "buildings_The Edison.glb",
+        "bounding_box": [
+            -67.85700988769531,
+            -84.03475952148438,
+            159.3233642578125,
+            53.27262878417969,
+            36.97584533691406,
+            125.69037628173828,
+            -0.03652285784482956
+        ],
+        "places": [
+            {
+                "name": "The Edison",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    932.1520118713379,
+                    915.974250793457,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -63.198077437258476,
+            -103.70592030130997
+        ]
+    },
+    "Bow Valley Square 4": {
+        "building_glb": "buildings_Bow Valley Square 4.glb",
+        "bounding_box": [
+            -228.4726104736328,
+            236.52420043945312,
+            161.9514923095703,
+            41.29452896118164,
+            27.19976234436035,
+            134.2218475341797,
+            -0.04431001469492912
+        ],
+        "places": [
+            {
+                "name": "Bow Valley Square 4",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    771.5337066650391,
+                    1236.5122146606445,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -219.40142769056285,
+            221.5077674891886
         ]
     },
     "St. Regis Hotel": {
@@ -1249,12 +1924,88 @@
                     1116.5070190429688,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            },
+            {
+                "building": "St. Regis Hotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "hotel"
+                ],
+                "location": [
+                    1154.2382049560547,
+                    1116.5070190429688,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "LeBron James's room at St. Regis Hotel"
             }
         ],
         "outdoor_xy": [
-            146.58607689102314,
-            95.56149444819987
+            154.21584484005496,
+            95.24864892362825
+        ]
+    },
+    "Hyatt Regency Calgary": {
+        "building_glb": "buildings_Hyatt Regency Calgary.glb",
+        "bounding_box": [
+            77.14081522973258,
+            59.37976606678873,
+            128.29573822021484,
+            27.02083156875971,
+            42.154658732482844,
+            65.96400451660156,
+            -0.03826544092194709
+        ],
+        "places": [
+            {
+                "name": "Hyatt Regency Calgary",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    1077.2204723358154,
+                    1059.287166595459,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+            },
+            {
+                "building": "Hyatt Regency Calgary",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    1077.2204723358154,
+                    1059.287166595459,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Drake's room at Hyatt Regency Calgary"
+            },
+            {
+                "building": "Hyatt Regency Calgary",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "yes",
+                    "hotel"
+                ],
+                "location": [
+                    1077.2204723358154,
+                    1059.287166595459,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Mr Beast's room at Hyatt Regency Calgary"
+            }
+        ],
+        "outdoor_xy": [
+            61.9987620781494,
+            43.15874937682893
         ]
     },
     "Carter Place": {
@@ -1280,7 +2031,7 @@
                     1154.7436904907227,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
             },
             {
                 "building": "Carter Place",
@@ -1293,69 +2044,13 @@
                     1154.7436904907227,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Elizabeth Mensah's room at Carter Place"
-            },
-            {
-                "building": "Carter Place",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1253.5452575683594,
-                    1154.7436904907227,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Kate Novak's room at Carter Place"
-            },
-            {
-                "building": "Carter Place",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1253.5452575683594,
-                    1154.7436904907227,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Pika Hayes's room at Carter Place"
-            },
-            {
-                "building": "Carter Place",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1253.5452575683594,
-                    1154.7436904907227,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Sophie Carlsen's room at Carter Place"
-            },
-            {
-                "building": "Carter Place",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1253.5452575683594,
-                    1154.7436904907227,
-                    -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Zara Williams's room at Carter Place"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Chad Thompson's room at Carter Place"
             }
         ],
         "outdoor_xy": [
-            267.8448806748531,
-            173.65948031677368
+            240.29950551745642,
+            145.24709930612175
         ]
     }
 }

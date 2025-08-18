@@ -1,0 +1,184 @@
+{
+    "name": "Roth Miller",
+    "first_name": "Roth",
+    "last_name": "Miller",
+    "age": 26,
+    "innate": "achievement, self-direction, security",
+    "learned": "I am a financial analyst at Invest Product as, specializing in market trends and investment strategies.",
+    "currently": "I am analyzing new investment opportunities in the European market.",
+    "lifestyle": "I go to bed around 23:30, wake up around 07:30, eat dinner around 19:30",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "members": [
+                "Louise Roberts",
+                "Mark Zuckerberg",
+                "Tim Cook",
+                "Roth Miller"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Roth Miller's room at Metropolitan Star",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Roth Miller's room at Metropolitan Star",
+            "building": "Metropolitan Star",
+            "start_time": "00:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "KYTI\u010cKOVO \u00ae - ovocie v \u010dokol\u00e1de",
+            "building": "Metropolitan Star",
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Invest Product as",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Analyze new investment opportunities in the European market",
+            "place": "Invest Product as",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "08:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Street Good - Healthy bistro in Bratislava",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Invest Product as",
+            "end_place": "Street Good - Healthy bistro in Bratislava"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Street Good - Healthy bistro in Bratislava",
+            "building": "Palis\u00e1dy 34",
+            "start_time": "12:40:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Invest Product as",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Street Good - Healthy bistro in Bratislava",
+            "end_place": "Invest Product as"
+        },
+        {
+            "type": "main",
+            "activity": "Continue analyzing investment opportunities",
+            "place": "Invest Product as",
+            "building": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
+            "start_time": "14:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Invest Product as",
+            "end_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss technology trends with Tech Innovators Club",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "17:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovak Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "Slovak Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Roth Miller's room at Metropolitan Star",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Slovak Restaurant",
+            "end_place": "Roth Miller's room at Metropolitan Star"
+        },
+        {
+            "type": "main",
+            "activity": "Personal time and relaxation",
+            "place": "Roth Miller's room at Metropolitan Star",
+            "building": "Metropolitan Star",
+            "start_time": "20:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Roth Miller's room at Metropolitan Star",
+            "building": "Metropolitan Star",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Invest Product as",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

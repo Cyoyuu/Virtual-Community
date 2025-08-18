@@ -1,0 +1,183 @@
+{
+    "name": "Megan Carter",
+    "first_name": "Megan",
+    "last_name": "Carter",
+    "age": 10,
+    "innate": "benevolence, universalism, stimulation",
+    "learned": "I am a student at LEYF - House of Commons Nursery & Pre-School, and I love drawing and playing with my friends.",
+    "currently": "I am learning about animals and their habitats.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Literary Enthusiasts",
+            "description": "A group of book lovers who gather to share their favorite reads and discuss literature.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Brian Carter",
+                "Joe Anderson",
+                "Megan Carter",
+                "Steve Johnson"
+            ],
+            "daily_activity": "sharing book recommendations from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Megan Carter's room at Room C",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Megan Carter's room at Room C",
+            "building": "12 Bridge Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "St Stephen's Tavern",
+            "building": "12 Bridge Street",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to LEYF - House of Commons Nursery & Pre-School",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes and learn about animals and their habitats",
+            "place": "LEYF - House of Commons Nursery & Pre-School",
+            "building": "12 Bridge Street",
+            "start_time": "08:45:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "LEYF - House of Commons Nursery & Pre-School",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Literary Enthusiasts group meeting",
+            "place": "Beverages and DM Store",
+            "building": "Church House",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to St Stephen's Tavern",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "St Stephen's Tavern"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "St Stephen's Tavern",
+            "building": "12 Bridge Street",
+            "start_time": "18:15:00",
+            "end_time": "18:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Churchill War Rooms",
+            "place": null,
+            "building": null,
+            "start_time": "18:45:00",
+            "end_time": "19:00:00",
+            "start_place": "St Stephen's Tavern",
+            "end_place": "Churchill War Rooms"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Churchill War Rooms",
+            "place": "Churchill War Rooms",
+            "building": "King Charles Street",
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Megan Carter's room at Room C",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:15:00",
+            "start_place": "Churchill War Rooms",
+            "end_place": "Megan Carter's room at Room C"
+        },
+        {
+            "type": "main",
+            "activity": "Drawing and playing with friends",
+            "place": "Megan Carter's room at Room C",
+            "building": "12 Bridge Street",
+            "start_time": "21:15:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Late-night snack",
+            "place": "Snacks and DM Store",
+            "building": "12 Bridge Street",
+            "start_time": "23:00:00",
+            "end_time": "23:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Return to Megan Carter's room at Room C",
+            "place": null,
+            "building": null,
+            "start_time": "23:15:00",
+            "end_time": "23:20:00",
+            "start_place": "Snacks and DM Store",
+            "end_place": "Megan Carter's room at Room C"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Megan Carter's room at Room C",
+            "building": "12 Bridge Street",
+            "start_time": "23:20:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "LEYF - House of Commons Nursery & Pre-School",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

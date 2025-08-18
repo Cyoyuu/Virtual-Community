@@ -1,0 +1,158 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Usain Bolt's room at AC Hotel Fort Worth Downtown",
+        "building": "AC Hotel by Marriott Fort Worth Downtown",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "AC Hotel Fort Worth Downtown",
+        "building": "AC Hotel by Marriott Fort Worth Downtown",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Workout",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "Fort Worth Public Library - Downtown Express"
+    },
+    {
+        "type": "main",
+        "activity": "Research and Reading",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "09:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Picchi Pacchi Pizzeria",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "Picchi Pacchi Pizzeria"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Picchi Pacchi Pizzeria",
+        "building": "Neil P Anderson Building",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arielle Seleske, REALTOR - TD Realty",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Picchi Pacchi Pizzeria",
+        "end_place": "Arielle Seleske, REALTOR - TD Realty"
+    },
+    {
+        "type": "main",
+        "activity": "Business Meeting",
+        "place": "Arielle Seleske, REALTOR - TD Realty",
+        "building": "Neil P Anderson Building",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with Real Estate Professionals Network",
+        "place": "Arielle Seleske, REALTOR - TD Realty",
+        "building": "Neil P Anderson Building",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Arielle Seleske, REALTOR - TD Realty",
+        "end_place": "Beverages and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping",
+        "place": "Beverages and DM Store",
+        "building": "Neil P Anderson Building",
+        "start_time": "16:15:00",
+        "end_time": "16:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bailey's Bar-B-Q",
+        "place": null,
+        "building": null,
+        "start_time": "16:45:00",
+        "end_time": "17:15:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "Bailey's Bar-B-Q"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bailey's Bar-B-Q",
+        "building": "Bailey's Bar-B-Q",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Usain Bolt's room at AC Hotel Fort Worth Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Bailey's Bar-B-Q",
+        "end_place": "Usain Bolt's room at AC Hotel Fort Worth Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Leisure Time",
+        "place": "Usain Bolt's room at AC Hotel Fort Worth Downtown",
+        "building": "AC Hotel by Marriott Fort Worth Downtown",
+        "start_time": "18:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Usain Bolt's room at AC Hotel Fort Worth Downtown",
+        "building": "AC Hotel by Marriott Fort Worth Downtown",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

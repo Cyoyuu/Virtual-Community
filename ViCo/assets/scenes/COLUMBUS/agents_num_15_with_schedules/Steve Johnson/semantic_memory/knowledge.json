@@ -1,41 +1,41 @@
 {
-    "Brian Carter": {
-        "age": 35,
-        "living_place": "Brian Carter's room at The Multifamily company",
-        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at The Multifamily company",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
         "groups": [
-            "Columbus Culinary Club"
+            "Columbus Business Network"
         ]
     },
     "Jody Petersen": {
         "age": 27,
-        "living_place": "Jody Petersen's room at Microliving at Long and Front",
+        "living_place": "Jody Petersen's room at Day Companies",
         "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
         "groups": [
-            "Columbus Culinary Club"
+            "Columbus Business Network"
         ]
     },
-    "Joe Anderson": {
-        "age": 31,
-        "living_place": "Joe Anderson's room at The Multifamily company",
-        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Leonard Park's room at Day Companies",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
         "groups": [
-            "Columbus Culinary Club"
+            "Columbus Business Network"
         ]
     },
-    "Columbus Culinary Club": {
-        "description": "A group of food enthusiasts who explore and enjoy the culinary scene in Columbus.",
-        "place": "The Wing Dynasty",
+    "Columbus Business Network": {
+        "description": "A group of professionals focused on business and finance.",
+        "place": "Huntington Center",
         "members": [
-            "Brian Carter",
-            "Jody Petersen",
-            "Joe Anderson",
-            "Steve Johnson"
+            "Adam Pierce",
+            "Steve Johnson",
+            "Leonard Park",
+            "Jody Petersen"
         ],
-        "daily_activity": "tasting new dishes from 18:00 to 19:00"
+        "daily_activity": "networking and discussing business strategies from 16:00 to 18:00"
     },
-    "Steve Johnson's room at The Multifamily company": {
-        "building": "The Citizens Building",
+    "Steve Johnson's room at Day Companies": {
+        "building": "22 East Gay Street # 800",
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -43,94 +43,42 @@
             "establishment"
         ],
         "location": [
-            1088.1769924163818,
-            1138.675464630127,
-            -20
+            1186.4444580078125,
+            1198.7952880859375,
+            -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Steve Johnson's room at The Multifamily company",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Steve Johnson's room at Day Companies",
         "bounding_box": [
-            88.30434919742729,
-            138.6551785088116,
-            132.46599197387695,
-            57.051317028997595,
-            19.707441263019703,
-            35.49272918701172,
-            0.14549941762505805
+            186.40369779120803,
+            198.81144994375734,
+            130.16643905639648,
+            20.454929907609795,
+            19.167812591652858,
+            30.219642639160156,
+            0.1485978110058755
         ]
     },
-    "Beverages and DM Store": {
-        "building": "Vern Riffe Center for Government and the Arts",
-        "coarse_type": "stores",
+    "Huntington Center": {
+        "building": "Huntington Center",
+        "coarse_type": "office",
         "fine_types": [
-            "car_repair",
-            "store",
-            "point_of_interest",
-            "establishment"
+            "office"
         ],
         "location": [
-            1104.2559204101562,
-            817.3631744384766,
+            1119.5110931396484,
+            894.9528617858887,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            104.2154832221221,
-            -184.14588436692574,
-            171.88875198364258,
-            129.24464097674974,
-            74.03578528349477,
-            116.11711883544922,
-            0.13660516016028626
-        ]
-    },
-    "The Wing Dynasty": {
-        "building": "121 South High Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1148.6179733276367,
-            734.4808959960938,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            149.08356783537386,
-            -265.3463357707358,
-            129.36211013793948,
-            60.36457470768148,
-            19.31384845064123,
-            23.430870056152344,
-            0.1497175448353306
-        ]
-    },
-    "Ohio Community Development Finance Fund - Food Distribution Center": {
-        "building": "Huntington Bank Building",
-        "coarse_type": "food",
-        "fine_types": [
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1116.3445091247559,
-            950.6182546615601,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            116.16938781738281,
-            -49.408836364746094,
-            143.6201934814453,
-            58.08161926269531,
-            39.75822067260742,
-            53.864654541015625,
-            0.1536320447921753
+            117.65195046295409,
+            -104.44199788015068,
+            198.56515884399414,
+            68.80355370839798,
+            69.8860186925178,
+            162.32524871826172,
+            0.14680052427771872
         ]
     },
     "Chaos Contemporary Craft": {
@@ -146,7 +94,7 @@
             1218.1978302001953,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             164.99983614024816,
             218.2010218866336,
@@ -157,8 +105,24 @@
             0.14626007278795772
         ]
     },
-    "Ohio University Govt Relations": {
-        "building": "Huntington Plaza",
+    "Genoa Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            794.8894217458446,
+            765.2608799734858,
+            -0.007624202338519126
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "DAVIDSON THEATRE AT THE RIFFE CENTER THEATRES": {
+        "building": "Vern Riffe Center for Government and the Arts",
         "coarse_type": "office",
         "fine_types": [
             "university",
@@ -166,11 +130,111 @@
             "establishment"
         ],
         "location": [
-            1039.7580137252808,
-            963.1019334793091,
+            1104.2559204101562,
+            817.3631744384766,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            104.2154832221221,
+            -184.14588436692574,
+            171.88875198364258,
+            129.24464097674974,
+            74.03578528349477,
+            116.11711883544922,
+            0.13660516016028626
+        ]
+    },
+    "Buckeye Bourbon House": {
+        "building": "Residence Inn Columbus Downtown",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1218.5756072998047,
+            1223.0526733398438,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            218.60497463587143,
+            223.11186588093435,
+            130.41807174682617,
+            28.438188664151447,
+            57.548920666825516,
+            32.449012756347656,
+            0.1495821458990764
+        ]
+    },
+    "Subway": {
+        "building": "Wyandotte Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1092.125057220459,
+            976.5497612953186,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            92.11475267417211,
+            -23.4461845491899,
+            140.81752014160156,
+            17.627033280596716,
+            19.05660072246215,
+            48.305328369140625,
+            0.14577894191581103
+        ]
+    },
+    "Barroluco Argentine Comfort Food": {
+        "building": "47 North Pearl Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1175.5971221923828,
+            1152.0074768066406,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            174.75808802608174,
+            151.96841372484968,
+            124.51150131225586,
+            57.50807030278581,
+            19.403159772770323,
+            17.58509063720703,
+            0.1478729979968653
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Huntington Plaza",
+        "coarse_type": "stores",
+        "fine_types": [
+            "local_government_office",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
             39.75801380942004,
             -36.89805276939042,
@@ -179,58 +243,6 @@
             29.917434723981227,
             52.145469665527344,
             0.15077389799563612
-        ]
-    },
-    "Accent Wine Parlor": {
-        "building": "The Citizens Building",
-        "coarse_type": "food",
-        "fine_types": [
-            "liquor_store",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1088.1769924163818,
-            1138.675464630127,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            88.30434919742729,
-            138.6551785088116,
-            132.46599197387695,
-            57.051317028997595,
-            19.707441263019703,
-            35.49272918701172,
-            0.14549941762505805
-        ]
-    },
-    "Ringside Caf\u00e9": {
-        "building": "19 North Pearl Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1183.9898147583008,
-            1091.1103630065918,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            184.0421177101697,
-            90.96856531557913,
-            124.8832893371582,
-            8.384403549891235,
-            57.246559007430804,
-            15.333549499511719,
-            -1.410043660722462
         ]
     },
     "Snacks and DM Store": {

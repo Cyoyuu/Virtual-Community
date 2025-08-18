@@ -1,0 +1,116 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleeping",
+        "place": "Yann LeCun's room at Florence Fortezza Apartment",
+        "building": "Viale Filippo Strozzi",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at VaL\u00f9 Bakery & Cakes",
+        "place": "VaL\u00f9 Bakery & Cakes",
+        "building": "Viale Filippo Strozzi",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to conference venue",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "VaL\u00f9 Bakery & Cakes",
+        "end_place": "Florence Fortezza Apartment"
+    },
+    {
+        "type": "main",
+        "activity": "Attend AI and machine learning conference",
+        "place": "Florence Fortezza Apartment",
+        "building": "Viale Filippo Strozzi",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Chef Executive for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Florence Fortezza Apartment",
+        "end_place": "Chef Executive"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Chef Executive",
+        "place": "Chef Executive",
+        "building": "Via Cosimo Ridolfi",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "15:00:00",
+        "start_place": "Chef Executive",
+        "end_place": "Beverages and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators Club",
+        "place": "Beverages and Snacks Store",
+        "building": "Giardino della Fortezza",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anca Srl for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "Beverages and Snacks Store",
+        "end_place": "Anca Srl"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Anca Srl",
+        "place": "Anca Srl",
+        "building": "Giardino della Fortezza",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Florence Fortezza Apartment",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Anca Srl",
+        "end_place": "Yann LeCun's room at Florence Fortezza Apartment"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's conference",
+        "place": "Yann LeCun's room at Florence Fortezza Apartment",
+        "building": "Viale Filippo Strozzi",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Yann LeCun's room at Florence Fortezza Apartment",
+        "building": "Viale Filippo Strozzi",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

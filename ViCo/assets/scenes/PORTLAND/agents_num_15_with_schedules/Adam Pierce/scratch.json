@@ -1,0 +1,191 @@
+{
+    "name": "Adam Pierce",
+    "first_name": "Adam",
+    "last_name": "Pierce",
+    "age": 27,
+    "innate": "achievement, self-direction, stimulation",
+    "learned": "I am a research scientist at Portland Public Library - Main Branch, focusing on data analysis and machine learning. I enjoy hiking and photography during my free time.",
+    "currently": "I want to publish a paper on machine learning applications in library systems.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Portland Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals working on innovative projects and sharing knowledge.",
+            "place": "Portland Public Library - Main Branch",
+            "members": [
+                "Adam Pierce",
+                "Joe Anderson",
+                "Pika Hayes"
+            ],
+            "daily_activity": "discussing tech trends and project ideas from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Adam Pierce's room at Chestnut Street Lofts",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Adam Pierce's room at Chestnut Street Lofts",
+            "building": "Chestnut Street Lofts",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Peace Food Market",
+            "place": "Peace Food Market",
+            "building": "Chestnut Street Lofts",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Portland Public Library - Main Branch",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Research and work on machine learning paper",
+            "place": "Portland Public Library - Main Branch",
+            "building": "Portland Public Library - Main Branch",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Anthony's Italian Kitchen",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Portland Public Library - Main Branch",
+            "end_place": "Anthony's Italian Kitchen"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Anthony's Italian Kitchen",
+            "place": "Anthony's Italian Kitchen",
+            "building": "151 Middle Street",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Portland Public Library - Main Branch",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Anthony's Italian Kitchen",
+            "end_place": "Portland Public Library - Main Branch"
+        },
+        {
+            "type": "main",
+            "activity": "Continue research and work on machine learning paper",
+            "place": "Portland Public Library - Main Branch",
+            "building": "Portland Public Library - Main Branch",
+            "start_time": "13:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss tech trends and project ideas with Portland Tech Innovators",
+            "place": "Portland Public Library - Main Branch",
+            "building": "Portland Public Library - Main Branch",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Nura Hummus, Falafel, and Shawarma for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Portland Public Library - Main Branch",
+            "end_place": "Nura Hummus, Falafel, and Shawarma"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Nura Hummus, Falafel, and Shawarma",
+            "place": "Nura Hummus, Falafel, and Shawarma",
+            "building": "1 Monument St. Path",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Arcana for entertainment",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Nura Hummus, Falafel, and Shawarma",
+            "end_place": "Arcana"
+        },
+        {
+            "type": "main",
+            "activity": "Enjoy entertainment at Arcana",
+            "place": "Arcana",
+            "building": "81 Market Street",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Adam Pierce's room at Chestnut Street Lofts",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Arcana",
+            "end_place": "Adam Pierce's room at Chestnut Street Lofts"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and review the day's work",
+            "place": "Adam Pierce's room at Chestnut Street Lofts",
+            "building": "Chestnut Street Lofts",
+            "start_time": "21:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for bed and sleep",
+            "place": "Adam Pierce's room at Chestnut Street Lofts",
+            "building": "Chestnut Street Lofts",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Portland Public Library - Main Branch",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

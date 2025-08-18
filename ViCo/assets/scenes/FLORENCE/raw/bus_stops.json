@@ -1,0 +1,96 @@
+{
+    "manual_bus_drive_route": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 43.7834407,
+                    "lng": 11.2597763
+                },
+                "southwest": {
+                    "lat": 43.7807541,
+                    "lng": 11.25067
+                }
+            },
+            "copyrights": "Map data \u00a92024 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.8 km",
+                        "value": 808
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 124
+                    },
+                    "end_address": "V.le Spartaco Lavagnini, 2R, 50129 Firenze FI, Italy",
+                    "end_location": {
+                        "lat": 43.7834407,
+                        "lng": 11.2597763
+                    },
+                    "start_address": "V.le Filippo Strozzi, 8n, 50129 Firenze FI, Italy",
+                    "start_location": {
+                        "lat": 43.7807541,
+                        "lng": 11.25067
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 208
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 37
+                            },
+                            "end_location": {
+                                "lat": 43.7817054,
+                                "lng": 11.2527211
+                            },
+                            "html_instructions": "Head <b>east</b> on <b>V.le Filippo Strozzi</b>/<wbr/><b>SS67</b> toward <b>Via Cosimo Ridolfi</b>",
+                            "polyline": {
+                                "points": "u|ejGuktcAK{@OiBCSC[AKCOKWCIKSQSeA}@MMSQ"
+                            },
+                            "start_location": {
+                                "lat": 43.7807541,
+                                "lng": 11.25067
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.6 km",
+                                "value": 600
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 87
+                            },
+                            "end_location": {
+                                "lat": 43.7834407,
+                                "lng": 11.2597763
+                            },
+                            "html_instructions": "Slight <b>right</b> onto <b>V.le Spartaco Lavagnini</b>/<wbr/><b>SS67</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-slight-right",
+                            "polyline": {
+                                "points": "ubfjGoxtcAO]CGEGCIAIAIESG]AICYAKiAqHeAmHIk@Kw@Ko@SyAIk@YsBCGM{@e@cD"
+                            },
+                            "start_location": {
+                                "lat": 43.7817054,
+                                "lng": 11.2527211
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "u|ejGuktcAc@uEE[Oa@]g@sAkASQO]IOMq@OmAiFm^w@gF"
+            },
+            "summary": "SS67",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

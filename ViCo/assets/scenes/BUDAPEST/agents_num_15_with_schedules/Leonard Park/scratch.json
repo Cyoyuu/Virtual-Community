@@ -3,29 +3,27 @@
     "first_name": "Leonard",
     "last_name": "Park",
     "age": 26,
-    "innate": "achievement, power, security",
-    "learned": "I am a software developer at Danubius Center, specializing in web applications.",
-    "currently": "I want to develop a new feature for our company's main product.",
+    "innate": "self-direction, stimulation, achievement",
+    "learned": "I am a graphic designer at Snacks and DM Store. I enjoy creating visually appealing designs and exploring art galleries.",
+    "currently": "I want to design a new collection that reflects the vibrant culture of Budapest.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Tech Innovators Club",
-            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
-            "place": "Mad\u00e1ch Trade Center",
+            "name": "Art and Culture Enthusiasts",
+            "description": "A group of individuals passionate about art and culture, who explore galleries and attend cultural events.",
+            "place": "Association of Hungarian Fine and Applied Artists",
             "members": [
-                "Jensen Huang",
-                "Leonard Park",
-                "Olivia Adams",
-                "Pika Hayes",
-                "Tim Cook"
+                "Megan Carter",
+                "Zara Williams",
+                "Leonard Park"
             ],
-            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+            "daily_activity": "exploring art galleries from 15:00 to 16:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Leonard Park's room at Fonci\u00e9re-palota",
+    "living_place": "Leonard Park's room at Br\u00fcll-b\u00e9rpalota",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -35,125 +33,125 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Leonard Park's room at Fonci\u00e9re-palota",
-            "building": "Fonci\u00e9re-palota",
+            "place": "Leonard Park's room at Br\u00fcll-b\u00e9rpalota",
+            "building": "Br\u00fcll-b\u00e9rpalota",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Leonard Park's room at Fonci\u00e9re-palota",
-            "building": "Fonci\u00e9re-palota",
-            "start_time": "08:00:00",
-            "end_time": "08:30:00"
+            "place": "Cat Cafe",
+            "building": "Hark\u00e1nyi-b\u00e9rpalota",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "activity": "Commute to Snacks and DM Store",
             "place": null,
             "building": null,
-            "start_time": "08:30:00",
-            "end_time": "08:45:00",
-            "start_place": "Leonard Park's room at Fonci\u00e9re-palota",
-            "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Cat Cafe",
+            "end_place": "Snacks and DM Store"
         },
         {
             "type": "main",
-            "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "building": "Orczy-h\u00e1z 1795-1937.002",
-            "start_time": "08:45:00",
-            "end_time": "12:00:00"
+            "activity": "Work on graphic design at Snacks and DM Store",
+            "place": "Snacks and DM Store",
+            "building": "Ullmann-palota",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Pizzagram",
+            "activity": "Commute to Star Kebab & Grill",
             "place": null,
             "building": null,
-            "start_time": "12:00:00",
-            "end_time": "12:15:00",
-            "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "end_place": "Pizzagram"
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Snacks and DM Store",
+            "end_place": "Star Kebab & Grill"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "Pizzagram",
-            "building": "Stein-b\u00e9rpalota",
-            "start_time": "12:15:00",
-            "end_time": "13:15:00"
+            "place": "Star Kebab & Grill",
+            "building": "Orczy-h\u00e1z 1795-1937.002",
+            "start_time": "13:00:00",
+            "end_time": "13:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "activity": "Commute to Association of Hungarian Fine and Applied Artists",
             "place": null,
             "building": null,
-            "start_time": "13:15:00",
-            "end_time": "13:30:00",
-            "start_place": "Pizzagram",
-            "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Star Kebab & Grill",
+            "end_place": "Association of Hungarian Fine and Applied Artists"
         },
         {
             "type": "main",
-            "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "building": "Orczy-h\u00e1z 1795-1937.002",
-            "start_time": "13:30:00",
+            "activity": "Explore art galleries with Art and Culture Enthusiasts",
+            "place": "Association of Hungarian Fine and Applied Artists",
+            "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Snacks and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Association of Hungarian Fine and Applied Artists",
+            "end_place": "Snacks and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on graphic design at Snacks and DM Store",
+            "place": "Snacks and DM Store",
+            "building": "Ullmann-palota",
+            "start_time": "16:30:00",
             "end_time": "18:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Japanika",
+            "activity": "Commute to The bar",
             "place": null,
             "building": null,
             "start_time": "18:00:00",
-            "end_time": "18:15:00",
-            "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "end_place": "Japanika"
+            "end_time": "18:30:00",
+            "start_place": "Snacks and DM Store",
+            "end_place": "The bar"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Japanika",
-            "building": "Danubius Center",
-            "start_time": "18:15:00",
-            "end_time": "19:15:00"
+            "place": "The bar",
+            "building": "Anker-h\u00e1z",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
+            "activity": "Commute to Leonard Park's room at Br\u00fcll-b\u00e9rpalota",
             "place": null,
             "building": null,
-            "start_time": "19:15:00",
+            "start_time": "19:00:00",
             "end_time": "19:30:00",
-            "start_place": "Japanika",
-            "end_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon"
+            "start_place": "The bar",
+            "end_place": "Leonard Park's room at Br\u00fcll-b\u00e9rpalota"
         },
         {
             "type": "main",
-            "activity": "Activity at Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "building": "Orczy-h\u00e1z 1795-1937.002",
+            "activity": "Design new collection reflecting Budapest's culture",
+            "place": "Leonard Park's room at Br\u00fcll-b\u00e9rpalota",
+            "building": "Br\u00fcll-b\u00e9rpalota",
             "start_time": "19:30:00",
-            "end_time": "22:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Leonard Park's room at Fonci\u00e9re-palota",
-            "place": null,
-            "building": null,
-            "start_time": "22:30:00",
-            "end_time": "22:45:00",
-            "start_place": "Hyperminceur Karcs\u00fas\u00edt\u00f3 Szalon",
-            "end_place": "Leonard Park's room at Fonci\u00e9re-palota"
-        },
-        {
-            "type": "main",
-            "activity": "Prepare for Bed",
-            "place": "Leonard Park's room at Fonci\u00e9re-palota",
-            "building": "Fonci\u00e9re-palota",
-            "start_time": "22:45:00",
             "end_time": "23:59:59"
         }
     ],
@@ -166,13 +164,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Danubius Center",
+    "working_place": "Snacks and DM Store",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

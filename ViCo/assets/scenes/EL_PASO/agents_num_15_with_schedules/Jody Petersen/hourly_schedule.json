@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jody Petersen's room at Gustavo Aguilar, Realtor",
+        "building": "502 North Oregon Street A",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Barrio Eats & Drinks",
+        "building": "502 North Oregon Street A",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Abel Saucedo Art Studio",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:40:00",
+        "start_place": "Barrio Eats & Drinks",
+        "end_place": "Abel Saucedo Art Studio"
+    },
+    {
+        "type": "main",
+        "activity": "Morning Photography Session",
+        "place": "Abel Saucedo Art Studio",
+        "building": "W. S. Hills Commercial Structure",
+        "start_time": "08:40:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Strayer University",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Abel Saucedo Art Studio",
+        "end_place": "The Rumor Mill #4"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Rumor Mill #4",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Study Group",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Study Group",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flor De Barro Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Strayer University",
+        "end_place": "Flor De Barro Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Flor De Barro Gallery for Inspiration",
+        "place": "Flor De Barro Gallery",
+        "building": "212 South Mesa Street",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Tap Bar & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Flor De Barro Gallery",
+        "end_place": "The Tap Bar & Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Machop Spawn",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "The Tap Bar & Restaurant",
+        "end_place": "Machop Spawn"
+    },
+    {
+        "type": "main",
+        "activity": "Evening Entertainment at Machop Spawn",
+        "place": "Machop Spawn",
+        "building": "125 Henry Trost Court",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Jody Petersen's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Machop Spawn",
+        "end_place": "Jody Petersen's room at Gustavo Aguilar, Realtor"
+    },
+    {
+        "type": "main",
+        "activity": "Review Photos and Plan Exhibition",
+        "place": "Jody Petersen's room at Gustavo Aguilar, Realtor",
+        "building": "502 North Oregon Street A",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for Sleep",
+        "place": "Jody Petersen's room at Gustavo Aguilar, Realtor",
+        "building": "502 North Oregon Street A",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

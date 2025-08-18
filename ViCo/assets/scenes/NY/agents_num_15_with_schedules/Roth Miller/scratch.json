@@ -1,0 +1,176 @@
+{
+    "name": "Roth Miller",
+    "first_name": "Roth",
+    "last_name": "Miller",
+    "age": 26,
+    "innate": "achievement, power, security",
+    "learned": "I am a real estate agent at Living Quest Real Estate, and I enjoy playing basketball and cooking.",
+    "currently": "I am working on closing a major property deal.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Real Estate Professionals",
+            "description": "A group of real estate agents and professionals who collaborate on property deals and market trends.",
+            "place": "Living Quest Real Estate",
+            "members": [
+                "Brian Carter",
+                "Elizabeth Mensah",
+                "Roth Miller"
+            ],
+            "daily_activity": "networking and discussing property deals from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Roth Miller's room at The Magellan",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Roth Miller's room at The Magellan",
+            "building": "The Magellan",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Roth Miller's room at The Magellan",
+            "building": "The Magellan",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Roth Miller's room at The Magellan",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and Snacks Store",
+            "place": "Fresh and Snacks Store",
+            "building": "315 5th Avenue",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Perros y Vainas en la Plaza",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Perros y Vainas en la Plaza"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Perros y Vainas en la Plaza",
+            "building": "Nuchas",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "Perros y Vainas en la Plaza",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and Snacks Store",
+            "place": "Fresh and Snacks Store",
+            "building": "315 5th Avenue",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to E-MO",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "E-MO"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "E-MO",
+            "building": "2 West 32nd Street",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Mercy University - Manhattan Campus",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "E-MO",
+            "end_place": "Mercy University - Manhattan Campus"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Mercy University - Manhattan Campus",
+            "place": "Mercy University - Manhattan Campus",
+            "building": "47 West 34th Street",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Roth Miller's room at The Magellan",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Mercy University - Manhattan Campus",
+            "end_place": "Roth Miller's room at The Magellan"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Roth Miller's room at The Magellan",
+            "building": "The Magellan",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Living Quest Real Estate",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

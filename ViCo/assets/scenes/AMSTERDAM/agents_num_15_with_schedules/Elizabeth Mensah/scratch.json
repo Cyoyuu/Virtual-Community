@@ -4,20 +4,21 @@
     "last_name": "Mensah",
     "age": 23,
     "innate": "benevolence, universalism, self-direction",
-    "learned": "I am a student at Claudia Rolando - Singing Lessons in Amsterdam, pursuing a career in music. I love singing and performing at local events.",
-    "currently": "I want to improve my vocal skills and perform at a major music festival.",
+    "learned": "I am a volunteer at Flemish Cultural Center de Brakke Grond, promoting art and culture. I enjoy painting and visiting galleries.",
+    "currently": "I am organizing an art exhibition to showcase local talent.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Creative Arts Collective",
-            "description": "A community of artists and designers who come together to share their work and inspire each other.",
-            "place": "YellowKorner Amsterdam",
+            "name": "Art and Culture Society",
+            "description": "A group dedicated to promoting art and culture through exhibitions, workshops, and community events.",
+            "place": "Flemish Cultural Center de Brakke Grond",
             "members": [
+                "Brycer Rodriguez",
                 "Elizabeth Mensah",
-                "Eve By J Gonzales",
-                "Leonard Park"
+                "Emily Johnson",
+                "Louise Roberts"
             ],
-            "daily_activity": "creating art pieces from 14:00 to 15:30"
+            "daily_activity": "organizing art exhibitions from 14:00 to 16:00"
         }
     ],
     "daily_requirement": "",
@@ -41,143 +42,169 @@
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "drink coffee",
-            "building": "Spuistraat 249",
+            "place": "Techlab Bv",
+            "building": "Singel 326 A",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+            "place": null,
+            "building": null,
             "start_time": "08:30:00",
             "end_time": "09:00:00"
         },
         {
+            "type": "main",
+            "activity": "Organize art exhibition preparations",
+            "place": "Flemish Cultural Center de Brakke Grond",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
             "type": "commute",
-            "activity": "Commute to Claudia Rolando - Singing Lessons",
+            "activity": "Commute to Eetcaf\u00e9 de Brakke Grond",
             "place": null,
             "building": null,
-            "start_time": "09:00:00",
-            "end_time": "09:30:00",
-            "start_place": "drink coffee",
-            "end_place": "Claudia Rolando - Singing Lessons in Amsterdam"
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Flemish Cultural Center de Brakke Grond",
+            "end_place": "Eetcaf\u00e9 de Brakke Grond"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Eetcaf\u00e9 de Brakke Grond",
+            "building": "Nes 43",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Royal Palace Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Eetcaf\u00e9 de Brakke Grond",
+            "end_place": "Royal Palace Amsterdam"
         },
         {
             "type": "main",
-            "activity": "Singing Lessons",
-            "place": "Claudia Rolando - Singing Lessons in Amsterdam",
-            "building": "Spuistraat 249",
-            "start_time": "09:30:00",
-            "end_time": "11:30:00"
+            "activity": "Visit Royal Palace Amsterdam",
+            "place": "Royal Palace Amsterdam",
+            "building": "Koninklijk Paleis",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "Royal Palace Amsterdam",
+            "end_place": "Flemish Cultural Center de Brakke Grond"
+        },
+        {
+            "type": "main",
+            "activity": "Organize art exhibitions with Art and Culture Society",
+            "place": "Flemish Cultural Center de Brakke Grond",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "14:30:00",
+            "end_time": "16:00:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Amsterdam Yoga Centre",
             "place": null,
             "building": null,
-            "start_time": "11:30:00",
-            "end_time": "12:00:00",
-            "start_place": "Claudia Rolando - Singing Lessons in Amsterdam",
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Flemish Cultural Center de Brakke Grond",
             "end_place": "Amsterdam Yoga Centre"
         },
         {
             "type": "main",
-            "activity": "Yoga Session",
+            "activity": "Yoga session",
             "place": "Amsterdam Yoga Centre",
             "building": "Singel 300",
-            "start_time": "12:00:00",
-            "end_time": "13:00:00"
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to The Lobby Nesplein",
             "place": null,
             "building": null,
-            "start_time": "13:00:00",
-            "end_time": "13:30:00",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
             "start_place": "Amsterdam Yoga Centre",
             "end_place": "The Lobby Nesplein"
         },
         {
             "type": "meal",
-            "activity": "Lunch",
+            "activity": "Dinner",
             "place": "The Lobby Nesplein",
             "building": "Vlaams Cultuurhuis de Brakke Grond",
-            "start_time": "13:30:00",
-            "end_time": "14:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to YellowKorner Amsterdam",
-            "place": null,
-            "building": null,
-            "start_time": "14:00:00",
-            "end_time": "14:15:00",
-            "start_place": "The Lobby Nesplein",
-            "end_place": "YellowKorner Amsterdam"
-        },
-        {
-            "type": "main",
-            "activity": "Creative Arts Collective - Art Creation",
-            "place": "YellowKorner Amsterdam",
-            "building": "Singel 282",
-            "start_time": "14:15:00",
-            "end_time": "15:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Humanities IT Lab - Universiteit van Amsterdam",
-            "place": null,
-            "building": null,
-            "start_time": "15:30:00",
-            "end_time": "16:00:00",
-            "start_place": "YellowKorner Amsterdam",
-            "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
-        },
-        {
-            "type": "main",
-            "activity": "Research and Study",
-            "place": "Humanities IT Lab - Universiteit van Amsterdam",
-            "building": "UvA PC Hoofthuis",
-            "start_time": "16:00:00",
-            "end_time": "18:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Caf\u00e9 restaurant van Kerkwijk",
-            "place": null,
-            "building": null,
             "start_time": "18:00:00",
-            "end_time": "18:30:00",
-            "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
-            "end_place": "Caf\u00e9 restaurant van Kerkwijk"
+            "end_time": "18:30:00"
         },
         {
-            "type": "meal",
-            "activity": "Dinner",
-            "place": "Caf\u00e9 restaurant van Kerkwijk",
-            "building": "Nes 41",
+            "type": "commute",
+            "activity": "Commute to Fresh and Beverages Store",
+            "place": null,
+            "building": null,
             "start_time": "18:30:00",
-            "end_time": "19:30:00"
+            "end_time": "19:00:00",
+            "start_place": "The Lobby Nesplein",
+            "end_place": "Fresh and Beverages Store"
+        },
+        {
+            "type": "main",
+            "activity": "Buy art supplies",
+            "place": "Fresh and Beverages Store",
+            "building": "Spuistraat 231",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Elizabeth Mensah's room at Charly Group Amsterdam",
             "place": null,
             "building": null,
-            "start_time": "19:30:00",
-            "end_time": "20:00:00",
-            "start_place": "Caf\u00e9 restaurant van Kerkwijk",
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Fresh and Beverages Store",
             "end_place": "Elizabeth Mensah's room at Charly Group Amsterdam"
         },
         {
             "type": "main",
-            "activity": "Vocal Practice and Relaxation",
+            "activity": "Painting session",
             "place": "Elizabeth Mensah's room at Charly Group Amsterdam",
             "building": "Herengracht 257",
-            "start_time": "20:00:00",
+            "start_time": "20:30:00",
             "end_time": "23:00:00"
         },
         {
-            "type": "main",
-            "activity": "Prepare for Bed",
-            "place": "Elizabeth Mensah's room at Charly Group Amsterdam",
-            "building": "Herengracht 257",
+            "type": "commute",
+            "activity": "Commute to Techlab Bv",
+            "place": null,
+            "building": null,
             "start_time": "23:00:00",
+            "end_time": "23:10:00",
+            "start_place": "Elizabeth Mensah's room at Charly Group Amsterdam",
+            "end_place": "Techlab Bv"
+        },
+        {
+            "type": "meal",
+            "activity": "Evening snack",
+            "place": "Techlab Bv",
+            "building": "Singel 326 A",
+            "start_time": "23:10:00",
             "end_time": "23:59:59"
         }
     ],
@@ -190,13 +217,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Claudia Rolando - Singing Lessons in Amsterdam",
+    "working_place": "Flemish Cultural Center de Brakke Grond",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

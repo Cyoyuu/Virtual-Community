@@ -9,7 +9,7 @@
     },
     {
         "type": "meal",
-        "activity": "Breakfast",
+        "activity": "Breakfast at Viale dei Tigli",
         "place": "Viale dei Tigli",
         "building": "Behrenstra\u00dfe 1C",
         "start_time": "08:00:00",
@@ -17,7 +17,7 @@
     },
     {
         "type": "commute",
-        "activity": "Commute to Hotel Ch\u00e2teau Royal Berlin",
+        "activity": "Commute to Rabitz Property Consulting",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
@@ -25,72 +25,90 @@
     },
     {
         "type": "main",
-        "activity": "Manage hotel operations and improve guest satisfaction",
-        "place": "Hotel Ch\u00e2teau Royal Berlin",
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "activity": "Work on property deal",
+        "place": "Rabitz Property Consulting",
+        "building": "Adlon Kempinski",
         "start_time": "09:00:00",
         "end_time": "12:00:00"
     },
     {
         "type": "meal",
-        "activity": "Lunch",
-        "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "activity": "Lunch at Lorenz Adlon Esszimmer",
+        "place": "Lorenz Adlon Esszimmer",
+        "building": "Adlon Kempinski",
         "start_time": "12:00:00",
-        "end_time": "12:30:00"
+        "end_time": "13:00:00"
     },
     {
         "type": "main",
-        "activity": "Continue hotel management tasks",
-        "place": "Hotel Ch\u00e2teau Royal Berlin",
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "start_time": "12:30:00",
-        "end_time": "14:30:00"
+        "activity": "Continue working on property deal",
+        "place": "Rabitz Property Consulting",
+        "building": "Adlon Kempinski",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Forum Willy Brandt Berlin",
+        "activity": "Commute to Rathsack Geb\u00e4udeservice GmbH",
         "place": null,
         "building": null,
-        "start_time": "14:30:00",
-        "end_time": "15:00:00",
-        "start_place": "Hotel Ch\u00e2teau Royal Berlin",
-        "end_place": "Forum Willy Brandt Berlin"
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Rabitz Property Consulting",
+        "end_place": "Rathsack Geb\u00e4udeservice GmbH"
     },
     {
         "type": "main",
-        "activity": "Attend tech seminar with Berlin Tech Innovators",
-        "place": "Forum Willy Brandt Berlin",
-        "building": "Palais Theising",
-        "start_time": "15:00:00",
-        "end_time": "17:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Berliner Kindl",
-        "place": null,
-        "building": null,
-        "start_time": "17:00:00",
-        "end_time": "17:30:00",
-        "start_place": "Forum Willy Brandt Berlin",
-        "end_place": "Berliner Kindl"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner",
-        "place": "Berliner Kindl",
-        "building": "Wilhelmstra\u00dfe 78",
-        "start_time": "17:30:00",
+        "activity": "Attend Berlin Business Network seminar",
+        "place": "Rathsack Geb\u00e4udeservice GmbH",
+        "building": "Glinkastra\u00dfe 30",
+        "start_time": "16:30:00",
         "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Brian Carter's room at Apartments at Brandenburg Gate",
+        "activity": "Commute to Viale dei Tigli",
         "place": null,
         "building": null,
         "start_time": "18:00:00",
         "end_time": "18:30:00",
-        "start_place": "Berliner Kindl",
+        "start_place": "Rathsack Geb\u00e4udeservice GmbH",
+        "end_place": "Viale dei Tigli"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Viale dei Tigli",
+        "place": "Viale dei Tigli",
+        "building": "Behrenstra\u00dfe 1C",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie im Adlon",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Viale dei Tigli",
+        "end_place": "Galerie im Adlon"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerie im Adlon",
+        "place": "Galerie im Adlon",
+        "building": "Adlon Kempinski",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Brian Carter's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Galerie im Adlon",
         "end_place": "Brian Carter's room at Apartments at Brandenburg Gate"
     },
     {
@@ -98,15 +116,7 @@
         "activity": "Relax and prepare for the next day",
         "place": "Brian Carter's room at Apartments at Brandenburg Gate",
         "building": "Behrenstra\u00dfe 1C",
-        "start_time": "18:30:00",
-        "end_time": "23:30:00"
-    },
-    {
-        "type": "meal",
-        "activity": "Light snack",
-        "place": "Viale dei Tigli",
-        "building": "Behrenstra\u00dfe 1C",
-        "start_time": "23:30:00",
+        "start_time": "21:30:00",
         "end_time": "23:59:59"
     }
 ]

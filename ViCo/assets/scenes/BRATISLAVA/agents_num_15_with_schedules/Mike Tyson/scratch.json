@@ -1,0 +1,191 @@
+{
+    "name": "Mike Tyson",
+    "first_name": "Mike",
+    "last_name": "Tyson",
+    "age": 58,
+    "innate": "power, stimulation, hedonism",
+    "learned": "I am a former professional boxer known for my ferocious style and being the youngest heavyweight champion in history.",
+    "currently": "I am visiting Bratislava to promote my autobiography and meet fans.",
+    "lifestyle": "I go to bed around 23:00, wake up around 07:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Bratislava Visitors Club",
+            "description": "A group of famous personalities visiting Bratislava for various events and engagements.",
+            "place": "Hotel Tatra",
+            "members": [
+                "John F Kennedy",
+                "Kylian Mbappe",
+                "Mike Tyson"
+            ],
+            "daily_activity": "attending local events from 19:00 to 21:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Mike Tyson's room at Garni Hotel Virgo",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Mike Tyson's room at Garni Hotel Virgo",
+            "building": "14 663",
+            "start_time": "00:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "07:30:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Autobiography Promotion and Fan Meeting",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to U Prezidenta",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "U Prezidenta"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "U Prezidenta",
+            "building": "Slovakia",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to St. Elizabeth College of Health and Social Work",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "U Prezidenta",
+            "end_place": "St. Elizabeth College of Health and Social Work"
+        },
+        {
+            "type": "main",
+            "activity": "Visit and Talk at St. Elizabeth College",
+            "place": "St. Elizabeth College of Health and Social Work",
+            "building": "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Tiki Zone",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "St. Elizabeth College of Health and Social Work",
+            "end_place": "Tiki Zone"
+        },
+        {
+            "type": "meal",
+            "activity": "Afternoon Snack",
+            "place": "Tiki Zone",
+            "building": "Such\u00e9 m\u00fdto",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hotel Tatra",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Tiki Zone",
+            "end_place": "Hotel Tatra"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and Prepare for Evening Event",
+            "place": "Hotel Tatra",
+            "building": "Hotel Tatra",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner with Bratislava Visitors Club",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend Local Event with Bratislava Visitors Club",
+            "place": "Hotel Tatra",
+            "building": "Hotel Tatra",
+            "start_time": "21:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Garni Hotel Virgo",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:30:00",
+            "start_place": "Hotel Tatra",
+            "end_place": "Mike Tyson's room at Garni Hotel Virgo"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Mike Tyson's room at Garni Hotel Virgo",
+            "building": "14 663",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

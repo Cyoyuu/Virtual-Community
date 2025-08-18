@@ -1,0 +1,226 @@
+{
+    "name": "Tim Cook",
+    "first_name": "Tim",
+    "last_name": "Cook",
+    "age": 55,
+    "innate": "power, achievement, security",
+    "learned": "I am the CEO of Apple Inc., known for my leadership in technology innovation. I enjoy cycling and philanthropy.",
+    "currently": "I am exploring potential partnerships with local tech startups.",
+    "lifestyle": "I go to bed around 22:00, wake up around 06:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Group",
+            "description": "A network of tech enthusiasts and professionals exploring new technologies.",
+            "place": "Prospect Union Square",
+            "members": [
+                "Isaac Newton",
+                "Joe Anderson",
+                "Leonard Park",
+                "Tim Cook"
+            ],
+            "daily_activity": "brainstorming tech solutions from 18:00 to 19:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Tim Cook's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tim Cook's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "06:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Morning cycling",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "06:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to breakfast",
+            "place": null,
+            "building": null,
+            "start_time": "07:30:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Life Alive Organic Cafe Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Cambridge Preschool of the Arts",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Explore potential partnerships with local tech startups",
+            "place": "Cambridge Preschool of the Arts",
+            "building": "361 Somerville Avenue",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Cambridge Preschool of the Arts",
+            "end_place": "Mandarin Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Mandarin Restaurant",
+            "building": "7 Union Square",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MOTA Fitness, Wellness & Spaces",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Mandarin Restaurant",
+            "end_place": "MOTA Fitness, Wellness & Spaces"
+        },
+        {
+            "type": "main",
+            "activity": "Afternoon workout",
+            "place": "MOTA Fitness, Wellness & Spaces",
+            "building": "11 Bow Street Floor 2",
+            "start_time": "13:30:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Beverages Store",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "MOTA Fitness, Wellness & Spaces",
+            "end_place": "Fresh and Beverages Store"
+        },
+        {
+            "type": "main",
+            "activity": "Shopping for snacks and beverages",
+            "place": "Fresh and Beverages Store",
+            "building": "7 Union Square",
+            "start_time": "15:30:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Prospect Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Fresh and Beverages Store",
+            "end_place": "Prospect Union Square"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Tech Innovators Group meeting",
+            "place": "Prospect Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Innovators Group meeting",
+            "place": "Prospect Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "18:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Prospect Union Square",
+            "end_place": "Ebi Sushi"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Ebi Sushi",
+            "building": "290 Somerville Avenue",
+            "start_time": "20:00:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Tim Cook's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "Ebi Sushi",
+            "end_place": "Tim Cook's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Tim Cook's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "21:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tim Cook's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "22:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

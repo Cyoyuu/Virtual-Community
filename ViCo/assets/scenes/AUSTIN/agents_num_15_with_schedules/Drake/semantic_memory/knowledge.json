@@ -1,0 +1,482 @@
+{
+    "Christiano Ronaldo": {
+        "age": 39,
+        "living_place": "Christiano Ronaldo's room at The Driskill",
+        "appearance": "ViCo/assets/imgs/avatars/Christiano Ronaldo.png",
+        "groups": [
+            "Austin Celebrity Circle"
+        ]
+    },
+    "Cillian Murphy": {
+        "age": 48,
+        "living_place": "Cillian Murphy's room at The Stephen F Austin Royal Sonesta Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Cillian Murphy.png",
+        "groups": [
+            "Austin Celebrity Circle"
+        ]
+    },
+    "Emma Watson": {
+        "age": 34,
+        "living_place": "Thompson Austin",
+        "appearance": "ViCo/assets/imgs/avatars/Emma Watson.png",
+        "groups": [
+            "Austin Celebrity Circle"
+        ]
+    },
+    "Usain Bolt": {
+        "age": 38,
+        "living_place": "The Driskill",
+        "appearance": "ViCo/assets/imgs/avatars/Usain Bolt.png",
+        "groups": [
+            "Austin Celebrity Circle"
+        ]
+    },
+    "Austin Celebrity Circle": {
+        "description": "A social group for celebrities visiting Austin to network and explore business opportunities.",
+        "place": "The Driskill",
+        "members": [
+            "Christiano Ronaldo",
+            "Cillian Murphy",
+            "Drake",
+            "Emma Watson",
+            "Usain Bolt"
+        ],
+        "daily_activity": "networking and socializing from 18:00 to 19:00"
+    },
+    "Drake's room at Hyatt Centric Congress Avenue Austin": {
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1160.5523147583008,
+            1216.660385131836,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Drake's room at Hyatt Centric Congress Avenue Austin",
+        "bounding_box": [
+            160.55126111043285,
+            216.65516489345663,
+            164.94488906860352,
+            13.768293069219272,
+            48.163182921744955,
+            105.6424789428711,
+            1.258348881575619
+        ]
+    },
+    "Hyatt Centric Congress Avenue Austin": {
+        "building": "Hyatt Centric Congress Avenue Austin",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1160.5523147583008,
+            1216.660385131836,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            160.55126111043285,
+            216.65516489345663,
+            164.94488906860352,
+            13.768293069219272,
+            48.163182921744955,
+            105.6424789428711,
+            1.258348881575619
+        ]
+    },
+    "The Driskill": {
+        "building": "The Driskill",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1164.4101486206055,
+            1045.4788842201233,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            164.4190478965505,
+            45.95275120352525,
+            119.48749923706055,
+            49.06776463765067,
+            54.34353309550402,
+            20.864112854003906,
+            -0.3018611889945575
+        ]
+    },
+    "REP Real Estate Partners": {
+        "building": "301 Congress",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1035.5013465881348,
+            735.1301651000977,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            36.42030355833909,
+            -260.97442031289506,
+            128.56488418579104,
+            103.43402650153512,
+            43.07685841660562,
+            48.342430114746094,
+            -0.31240514790593676
+        ]
+    },
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.0162734985352,
+            846.779727935791,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "7-Eleven": {
+        "building": "7-Eleven",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1113.4486961364746,
+            1082.619987487793,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            113.4246713528609,
+            82.61998804507155,
+            113.81870651245117,
+            6.515008087963432,
+            38.39901525737259,
+            8.430656433105469,
+            1.2587575723330509
+        ]
+    },
+    "Blindside Lounge": {
+        "building": "211 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1225.4779586791992,
+            952.6784725189209,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            225.4811416258789,
+            -47.326594634059745,
+            112.71129989624023,
+            7.018978417090075,
+            39.0159321396847,
+            9.115303039550781,
+            -0.31258405782319937
+        ]
+    },
+    "Retail Therapy Cocktail Lounge": {
+        "building": "Perry Brooks Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1202.9087448120117,
+            1164.7472305297852,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            202.91367527689272,
+            164.7471882849361,
+            124.9706039428711,
+            47.40079223049624,
+            84.39139551590065,
+            26.816207885742188,
+            -0.306789043118116
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Royal Blue Grocery",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "finance",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1108.6464576721191,
+            1068.9332084655762,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            108.64229994281044,
+            68.92022818235934,
+            112.9504165649414,
+            7.643033917136528,
+            37.49435990797152,
+            7.2278289794921875,
+            1.2601449681022063
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "The Nature Conservancy",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            943.3980197906494,
+            816.2821197509766,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -56.60198049252275,
+            -183.61213006581187,
+            110.7256202697754,
+            6.827403502042752,
+            48.48299703275681,
+            10.459510803222656,
+            1.2507565931772793
+        ]
+    },
+    "Barcelona": {
+        "building": "209 East 6th Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1218.9689178466797,
+            954.7767114639282,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            218.96494880213814,
+            -45.220697174649224,
+            115.9556770324707,
+            6.677093006369538,
+            39.015932139684786,
+            15.416282653808594,
+            -0.3125841329905716
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

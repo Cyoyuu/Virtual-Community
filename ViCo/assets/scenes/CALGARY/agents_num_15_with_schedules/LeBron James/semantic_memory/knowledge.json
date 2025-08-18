@@ -1,114 +1,105 @@
 {
-    "Barack Obama": {
-        "age": 63,
-        "living_place": "Barack Obama's room at Fairmont Palliser",
-        "appearance": "ViCo/assets/imgs/avatars/Barack Obama.png",
+    "Bruce Lee": {
+        "age": 32,
+        "living_place": "Bruce Lee's room at Fairmont Palliser",
+        "appearance": "ViCo/assets/imgs/avatars/Bruce Lee.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Famous Faces"
         ]
     },
-    "Joe Anderson": {
-        "age": 31,
-        "living_place": "Joe Anderson's room at Palliser Square",
-        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+    "Drake": {
+        "age": 37,
+        "living_place": "Drake's room at Hyatt Regency Calgary",
+        "appearance": "ViCo/assets/imgs/avatars/Drake.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Famous Faces"
         ]
     },
-    "Neil deGrasse Tyson": {
-        "age": 50,
-        "living_place": "Fairmont Palliser",
-        "appearance": "ViCo/assets/imgs/avatars/Neil deGrasse Tyson.png",
+    "Mr Beast": {
+        "age": 26,
+        "living_place": "Hyatt Regency Calgary",
+        "appearance": "ViCo/assets/imgs/avatars/Mr Beast.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Famous Faces"
         ]
     },
-    "Calgary Sports Enthusiasts": {
-        "description": "A group of sports lovers who engage in various sports activities and events.",
-        "place": "Fairmont Palliser",
+    "Famous Faces": {
+        "description": "A group of famous personalities visiting Calgary for various events and collaborations.",
+        "place": "Hyatt Regency Calgary",
         "members": [
+            "Bruce Lee",
+            "Drake",
             "LeBron James",
-            "Barack Obama",
-            "Joe Anderson",
-            "Neil deGrasse Tyson"
+            "Mr Beast"
         ],
-        "daily_activity": "playing basketball from 18:00 to 19:00"
+        "daily_activity": "attending media events from 18:00 to 20:00"
     },
-    "LeBron James's room at Fairmont Palliser": {
-        "building": "Fairmont Palliser Hotel",
+    "LeBron James's room at St. Regis Hotel": {
+        "building": "St. Regis Hotel",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
+            "hotel"
         ],
         "location": [
-            912.662654876709,
-            847.2293167114258,
-            -16
+            1154.2382049560547,
+            1116.5070190429688,
+            -8
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "LeBron James's room at Fairmont Palliser",
+        "name": "LeBron James's room at St. Regis Hotel",
         "bounding_box": [
-            -87.4929970966381,
-            -152.74765359916148,
-            115.76285171508789,
-            71.19512496189223,
-            52.844412356693184,
-            43.14080047607422,
-            -0.04300524958503859
+            154.24148349494175,
+            116.4088706981184,
+            105.43748092651367,
+            15.92049743256271,
+            40.28701309137035,
+            22.162986755371094,
+            -0.04098032567585085
         ]
     },
-    "Fairmont Palliser": {
-        "building": "Fairmont Palliser Hotel",
+    "St. Regis Hotel": {
+        "building": "St. Regis Hotel",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
+            "hotel"
         ],
         "location": [
-            912.662654876709,
-            847.2293167114258,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "bounding_box": [
-            -87.4929970966381,
-            -152.74765359916148,
-            115.76285171508789,
-            71.19512496189223,
-            52.844412356693184,
-            43.14080047607422,
-            -0.04300524958503859
-        ]
-    },
-    "EzOffice": {
-        "building": "Penn West Plaza - East Tower",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            813.1806106567383,
-            857.6012725830078,
+            1154.2382049560547,
+            1116.5070190429688,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
         "bounding_box": [
-            -186.11185167994518,
-            -142.39914379571815,
-            120.78651809692383,
-            58.25577642621536,
-            40.121193058956756,
-            51.46520233154297,
-            -0.04803202114412833
+            154.24148349494175,
+            116.4088706981184,
+            105.43748092651367,
+            15.92049743256271,
+            40.28701309137035,
+            22.162986755371094,
+            -0.04098032567585085
+        ]
+    },
+    "Hyatt Regency Calgary": {
+        "building": "Hyatt Regency Calgary",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1077.2204723358154,
+            1059.287166595459,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            77.14081522973258,
+            59.37976606678873,
+            128.29573822021484,
+            27.02083156875971,
+            42.154658732482844,
+            65.96400451660156,
+            -0.03826544092194709
         ]
     },
     "Collage Gallery": {
@@ -124,7 +115,7 @@
             1126.022590637207,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
             12.20758230332764,
             126.24321741697567,
@@ -135,59 +126,30 @@
             -0.03840578717597665
         ]
     },
-    "S.K. Market": {
-        "building": "First on Tenth",
-        "coarse_type": "food",
+    "Calgary Chamber of Commerce": {
+        "building": "Calgary Chamber of Commerce",
+        "coarse_type": "office",
         "fine_types": [
-            "convenience_store",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
+            "office"
         ],
         "location": [
-            988.4496936798096,
-            714.2852325439453,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -11.622152328491211,
-            -285.60400390625,
-            138.67218017578125,
-            68.26644897460938,
-            18.656599044799805,
-            87.11425018310547,
-            -0.04413949325680733
-        ]
-    },
-    "The Oak Room": {
-        "building": "Fairmont Palliser Hotel",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            912.662654876709,
-            847.2293167114258,
+            1030.4410238265991,
+            1219.0133666992188,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            -87.4929970966381,
-            -152.74765359916148,
-            115.76285171508789,
-            71.19512496189223,
-            52.844412356693184,
-            43.14080047607422,
-            -0.04300524958503859
+            30.44338847651975,
+            218.94835531170966,
+            104.017032623291,
+            34.09097385904392,
+            21.768319383217154,
+            18.89360809326172,
+            -0.04311696943721217
         ]
     },
-    "Bank & Baron P.U.B": {
-        "building": "Bank of Nova Scotia Building",
+    "The Unicorn": {
+        "building": "The Unicorn",
         "coarse_type": "food",
         "fine_types": [
             "bar",
@@ -197,47 +159,124 @@
             "establishment"
         ],
         "location": [
-            937.2791595458984,
-            963.5075883865356,
+            781.3165283203125,
+            968.1706504821777,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -62.723059969544835,
-            -36.496595230309325,
-            103.29049301147461,
-            16.788155302939057,
-            34.34073428043762,
-            12.896919250488281,
-            -0.04366305425273763
+            -218.61576885898216,
+            -31.93618769734301,
+            100.90655899047852,
+            11.77023049285988,
+            39.37082103242671,
+            8.264137268066406,
+            -0.04779234207646445
         ]
     },
-    "Fresh and Beverages Store": {
-        "building": "100-129 8 Avenue Southwest",
-        "coarse_type": "stores",
+    "Saltlik": {
+        "building": "3 8 Avenue Southwest",
+        "coarse_type": "food",
         "fine_types": [
-            "spa",
-            "beauty_salon",
+            "restaurant",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            925.2098655700684,
-            961.5874814987183,
-            -4
+            1027.2476615905762,
+            956.2937707901001,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -74.74112304778261,
-            -38.412518148373785,
-            103.10808181762695,
-            7.129056126576393,
-            39.42662668647752,
-            12.157569885253906,
-            -0.04715963560557845
+            27.33346170432872,
+            -43.7544361129086,
+            100.92611694335938,
+            13.75390375739256,
+            40.149251011064564,
+            8.99359130859375,
+            -0.04291204789765478
         ]
     },
-    "Fresh and DM Store": {
+    "Teatro Ristorante": {
+        "building": "The Dominion Bank",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1238.5122680664062,
+            1007.149968624115,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            238.73278045654294,
+            7.149968624114997,
+            103.42822265625,
+            13.30355867063101,
+            39.5544667625292,
+            17.05169677734375,
+            -0.0563991602361554
+        ]
+    },
+    "Rosso Coffee Roasters - Stephen Ave": {
+        "building": "Calgary TELUS Convention Centre North Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1170.5018463134766,
+            1032.6835761070251,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            170.52440324268116,
+            32.21843464154801,
+            105.03994369506836,
+            82.04110323126498,
+            89.91837552826995,
+            21.63860321044922,
+            -0.04917491242612879
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "3 8 Avenue Southwest",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1027.2476615905762,
+            956.2937707901001,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            27.33346170432872,
+            -43.7544361129086,
+            100.92611694335938,
+            13.75390375739256,
+            40.149251011064564,
+            8.99359130859375,
+            -0.04291204789765478
+        ]
+    },
+    "Fresh and Snacks Store": {
         "building": "Glanville/Ward Block",
         "coarse_type": "stores",
         "fine_types": [
@@ -251,7 +290,7 @@
             957.4458770751953,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
         "bounding_box": [
             12.847125883065964,
             -42.711588172113366,
@@ -260,6 +299,30 @@
             39.37288220171207,
             9.850662231445312,
             -0.047106700857796314
+        ]
+    },
+    "Art Market Craft Sale": {
+        "building": "107 8 Avenue Southeast",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.0609951019287,
+            933.4126567840576,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            80.86207369670376,
+            -66.43224189531084,
+            130.8954315185547,
+            47.245197324578676,
+            77.79977138563156,
+            69.94955444335938,
+            -0.03852844720667381
         ]
     },
     "7 Avenue SE Bus Stop": {

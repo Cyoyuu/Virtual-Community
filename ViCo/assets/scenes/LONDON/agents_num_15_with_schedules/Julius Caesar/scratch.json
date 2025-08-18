@@ -1,0 +1,176 @@
+{
+    "name": "Julius Caesar",
+    "first_name": "Julius",
+    "last_name": "Caesar",
+    "age": 56,
+    "innate": "power, achievement, tradition",
+    "learned": "I am a Roman general and statesman known for my role in the rise of the Roman Empire.",
+    "currently": "I am visiting London to learn about its historical landmarks.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Historical Explorers",
+            "description": "A group of history enthusiasts who explore historical sites and discuss historical events.",
+            "place": "Churchill War Rooms",
+            "members": [
+                "Genghis Khan",
+                "Julius Caesar",
+                "Jack Ma"
+            ],
+            "daily_activity": "exploring historical sites from 13:00 to 15:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Beverages and DM Store",
+            "place": "Beverages and DM Store",
+            "building": "Church House",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Switchroom Caf\u00e9t\u00e9ria",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Switchroom Caf\u00e9t\u00e9ria"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Switchroom Caf\u00e9t\u00e9ria",
+            "building": "King Charles Street",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "Switchroom Caf\u00e9t\u00e9ria",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and Snacks Store",
+            "place": "Fresh and Snacks Store",
+            "building": "22 Old Queen Street",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Switchroom Caf\u00e9t\u00e9ria",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Switchroom Caf\u00e9t\u00e9ria"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Switchroom Caf\u00e9t\u00e9ria",
+            "building": "King Charles Street",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "Switchroom Caf\u00e9t\u00e9ria",
+            "end_place": "Fresh and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and DM Store",
+            "place": "Fresh and DM Store",
+            "building": "Palace of Westminster",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Fresh and DM Store",
+            "end_place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Julius Caesar's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

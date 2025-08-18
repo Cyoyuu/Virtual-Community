@@ -10,8 +10,8 @@
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Paul",
-        "building": "Rue de l'Enseignement 2",
+        "place": "Sophie Carlsen's room at Boiteux",
+        "building": "Boiteux",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
@@ -25,7 +25,7 @@
     },
     {
         "type": "main",
-        "activity": "Attend classes and study at Delrez Yannick",
+        "activity": "Research on sustainable practices",
         "place": "Delrez Yannick",
         "building": "Campus Pacheco",
         "start_time": "09:00:00",
@@ -33,74 +33,64 @@
     },
     {
         "type": "commute",
-        "activity": "Commute to TM FOOD MAKER. Pizza burger",
+        "activity": "Commute to Maison St. Michel",
         "place": null,
         "building": null,
         "start_time": "12:00:00",
         "end_time": "12:30:00",
         "start_place": "Delrez Yannick",
-        "end_place": "TM FOOD MAKER. Pizza burger"
+        "end_place": "Maison St. Michel"
     },
     {
         "type": "meal",
         "activity": "Lunch",
-        "place": "TM FOOD MAKER. Pizza burger",
-        "building": "Rue de la Montagne 68",
+        "place": "Maison St. Michel",
+        "building": "Boulevard de l'Imp\u00e9ratrice 62",
         "start_time": "12:30:00",
-        "end_time": "13:00:00"
+        "end_time": "13:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Competento",
+        "activity": "Commute to Parc de Bruxelles",
         "place": null,
         "building": null,
-        "start_time": "13:00:00",
-        "end_time": "13:30:00",
-        "start_place": "TM FOOD MAKER. Pizza burger",
-        "end_place": "Competento"
-    },
-    {
-        "type": "main",
-        "activity": "Research internship opportunities at Competento",
-        "place": "Competento",
-        "building": "Rue de la Chancellerie 19",
         "start_time": "13:30:00",
-        "end_time": "15:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to IHECS - B\u00e2timent Chambon (CH)",
-        "place": null,
-        "building": null,
-        "start_time": "15:30:00",
-        "end_time": "16:00:00",
-        "start_place": "Competento",
-        "end_place": "IHECS - B\u00e2timent Chambon (CH)"
+        "end_time": "14:00:00",
+        "start_place": "Maison St. Michel",
+        "end_place": "Parc de Bruxelles"
     },
     {
         "type": "main",
-        "activity": "Collaborate on projects with Brussels Student Network",
-        "place": "IHECS - B\u00e2timent Chambon (CH)",
-        "building": "Boiteux",
+        "activity": "Photography and hiking",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Playing football with Sports Enthusiasts Group",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
         "start_time": "16:00:00",
-        "end_time": "18:00:00"
+        "end_time": "17:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to The Jane",
+        "activity": "Commute to Sakagura",
         "place": null,
         "building": null,
-        "start_time": "18:00:00",
-        "end_time": "18:10:00",
-        "start_place": "IHECS - B\u00e2timent Chambon (CH)",
-        "end_place": "The Jane"
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Parc de Bruxelles",
+        "end_place": "Sakagura"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "The Jane",
-        "building": "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie",
-        "start_time": "18:10:00",
+        "place": "Sakagura",
+        "building": "Rue du Marais 15",
+        "start_time": "17:30:00",
         "end_time": "18:30:00"
     },
     {
@@ -110,7 +100,7 @@
         "building": null,
         "start_time": "18:30:00",
         "end_time": "19:00:00",
-        "start_place": "The Jane",
+        "start_place": "Sakagura",
         "end_place": "Museum of the National Bank of Belgium"
     },
     {
@@ -133,15 +123,15 @@
     },
     {
         "type": "main",
-        "activity": "Relax and prepare for the next day",
+        "activity": "Relax and review the day's photos",
         "place": "Sophie Carlsen's room at Boiteux",
         "building": "Boiteux",
         "start_time": "21:30:00",
         "end_time": "23:30:00"
     },
     {
-        "type": "sleep",
-        "activity": "Sleep",
+        "type": "meal",
+        "activity": "Light snack",
         "place": "Sophie Carlsen's room at Boiteux",
         "building": "Boiteux",
         "start_time": "23:30:00",

@@ -1,0 +1,418 @@
+{
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at Casa15",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Sports and Fitness Club"
+        ]
+    },
+    "Tiger Woods": {
+        "age": 48,
+        "living_place": "Colosseum Palace Star",
+        "appearance": "ViCo/assets/imgs/avatars/Tiger Woods.png",
+        "groups": [
+            "Sports and Fitness Club"
+        ]
+    },
+    "Sports and Fitness Club": {
+        "description": "A group of sports enthusiasts and athletes, engaging in various physical activities and competitions.",
+        "place": "Judo Club Mezzaroma A.s.d.",
+        "members": [
+            "Rodtang",
+            "Tiger Woods",
+            "Brian Carter"
+        ],
+        "daily_activity": "training in martial arts from 17:00 to 19:00"
+    },
+    "Rodtang's room at Gio Roma": {
+        "building": "Via della Polveriera",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1190.4861450195312,
+            1065.4321537017822,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Rodtang's room at Gio Roma",
+        "bounding_box": [
+            190.46621814900405,
+            67.09074538715224,
+            82.49349594116211,
+            16.361330275928598,
+            22.103336735219436,
+            18.92412567138672,
+            -0.8695459813486716
+        ]
+    },
+    "Judo Club Mezzaroma A.s.d.": {
+        "building": "Via Vittorino da Feltre",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1049.5850982666016,
+            1039.0471696853638,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            49.59211425487132,
+            37.051163243113194,
+            74.45539474487305,
+            63.688796304715446,
+            80.65889820529287,
+            22.813377380371094,
+            0.29219340631578594
+        ]
+    },
+    "Museo del Foro Romano": {
+        "building": "Antiquarium Forense",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3420181274414,
+            910.6684684753418,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -102.70884187937881,
+            -89.41710968473794,
+            69.19388389587402,
+            57.391472311522364,
+            51.28124858877566,
+            20.928516387939453,
+            -0.382245178977388
+        ]
+    },
+    "Sapienza University of Rome": {
+        "building": "Basilica di San Pietro in Vincoli",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1217.6034240722656,
+            1219.8777236938477,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            220.61813898274215,
+            225.21830119516304,
+            88.0794105529785,
+            65.80311114544374,
+            37.088481100154965,
+            19.62212371826172,
+            0.47428431655427994
+        ]
+    },
+    "Scuola Primaria e dell'Infanzia Vittorino da Feltre": {
+        "building": "Via Vittorino da Feltre",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1049.5850982666016,
+            1039.0471696853638,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            49.59211425487132,
+            37.051163243113194,
+            74.45539474487305,
+            63.688796304715446,
+            80.65889820529287,
+            22.813377380371094,
+            0.29219340631578594
+        ]
+    },
+    "Bar Del Mose' Srl": {
+        "building": "Via della Polveriera",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1190.4861450195312,
+            1065.4321537017822,
+            -16
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            190.46621814900405,
+            67.09074538715224,
+            82.49349594116211,
+            16.361330275928598,
+            22.103336735219436,
+            18.92412567138672,
+            -0.8695459813486716
+        ]
+    },
+    "Taverna Romana": {
+        "building": "Via dell'Agnello",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            914.5399398803711,
+            1246.8920669555664,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -85.46187687931109,
+            246.891277901232,
+            65.09022712707518,
+            11.893334681512085,
+            10.906063290460471,
+            16.337718963623047,
+            0.40619945157703086
+        ]
+    },
+    "La Fraschetta Der Panino": {
+        "building": "Via del Cardello",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            939.8834342956543,
+            1190.5474472045898,
+            -24
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -60.11292950463069,
+            190.25675839867938,
+            69.82021331787108,
+            13.659239742278366,
+            23.133663520574743,
+            26.024749755859375,
+            0.3251630402230719
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Via del Cardello",
+        "coarse_type": "stores",
+        "fine_types": [
+            "bicycle_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            939.8834342956543,
+            1190.5474472045898,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -60.11292950463069,
+            190.25675839867938,
+            69.82021331787108,
+            13.659239742278366,
+            23.133663520574743,
+            26.024749755859375,
+            0.3251630402230719
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Santa Maria del Buon Consiglio",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            911.6967544555664,
+            1172.1967391967773,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -88.6883033632276,
+            171.89280164620126,
+            60.53710937499999,
+            6.6216294430388,
+            19.594324287738885,
+            8.454238891601562,
+            -1.0922247757761048
+        ]
+    },
+    "Via Baccina Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -124.06334317161804,
+            295.1341958642664
+        ],
+        "rotation": 1.77327958417077,
+        "bounding_box": null
+    },
+    "Clivo di Venere Felice Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -89.7927030957936,
+            -47.41122594335685
+        ],
+        "rotation": 1.185047186755296,
+        "bounding_box": null
+    },
+    "Via del Fagutale Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            65.63141698136319,
+            195.92920089563364
+        ],
+        "rotation": 0.28529072214625484,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -31.91465084980735,
+            159.14015573181956
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            154.859766303681,
+            14.430619627723697
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -196.4361957511487,
+            187.36892945331482
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -215.23309089466213,
+            -224.4542954433734
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            181.42028612596198,
+            202.0415241895089
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -59.003153048101474,
+            -112.37156917977106
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.601316257495764,
+            267.4230481321671
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Via del Fagutale": [
+            {
+                "stop_name": "Via Baccina Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Clivo di Venere Felice Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Via del Fagutale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ],
+        "To Via Baccina": [
+            {
+                "stop_name": "Via del Fagutale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Clivo di Venere Felice Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:08",
+                "last_bus": "22:08"
+            },
+            {
+                "stop_name": "Via Baccina Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:10",
+                "last_bus": "22:10"
+            }
+        ]
+    }
+}

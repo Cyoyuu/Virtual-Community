@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Alex Jefferson's room at Domus Fausta",
+        "building": "Domus Fausta",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 De Amicis",
+        "building": "Via Edmondo de Amicis",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CeTIF",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research work on sustainable management practices",
+        "place": "CeTIF",
+        "building": "Centro congressi Olona",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Universit\u00e0 Cattolica -Edificio via Lanzone 14",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "CeTIF",
+        "end_place": "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano",
+        "building": "Via Caminadella",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CeTIF",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano",
+        "end_place": "CeTIF"
+    },
+    {
+        "type": "main",
+        "activity": "Continue research work on sustainable management practices",
+        "place": "CeTIF",
+        "building": "Centro congressi Olona",
+        "start_time": "14:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Universit\u00e0 Cattolica -Edificio via Lanzone 14",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "CeTIF",
+        "end_place": "Universit\u00e0 Cattolica -Edificio via Lanzone 14"
+    },
+    {
+        "type": "main",
+        "activity": "Milan Tech Innovators coding session",
+        "place": "Universit\u00e0 Cattolica -Edificio via Lanzone 14",
+        "building": "Via San Pio V",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il Rosmarino",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Universit\u00e0 Cattolica -Edificio via Lanzone 14",
+        "end_place": "Il Rosmarino"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Il Rosmarino",
+        "building": "Via Aristide de Togni",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Le Cavallerizze",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Il Rosmarino",
+        "end_place": "Le Cavallerizze"
+    },
+    {
+        "type": "main",
+        "activity": "Photography and relaxation",
+        "place": "Le Cavallerizze",
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Domus Fausta",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Le Cavallerizze",
+        "end_place": "Alex Jefferson's room at Domus Fausta"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for bed",
+        "place": "Alex Jefferson's room at Domus Fausta",
+        "building": "Domus Fausta",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

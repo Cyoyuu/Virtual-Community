@@ -2,125 +2,139 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Jody Petersen's room at First on Tenth",
-        "building": "First on Tenth",
+        "place": "Jody Petersen's room at Palliser Square",
+        "building": "Tower Centre",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Jody Petersen's room at First on Tenth",
-        "building": "First on Tenth",
+        "place": "Royal India Restaurant Calgary",
+        "building": "Tower Centre",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Art Market Craft Sale",
+        "activity": "Commute to Calgary Chamber of Commerce",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
-        "end_time": "08:45:00",
-        "start_place": "Jody Petersen's room at First on Tenth",
-        "end_place": "Art Market Craft Sale"
+        "end_time": "09:00:00"
     },
     {
         "type": "main",
-        "activity": "Activity at Art Market Craft Sale",
-        "place": "Art Market Craft Sale",
-        "building": "107 8 Avenue Southeast",
-        "start_time": "08:45:00",
+        "activity": "Work on developing a new program to support small businesses",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "09:00:00",
         "end_time": "12:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to The Palace Theatre",
+        "activity": "Commute to The Unicorn",
         "place": null,
         "building": null,
         "start_time": "12:00:00",
-        "end_time": "12:15:00",
-        "start_place": "Art Market Craft Sale",
-        "end_place": "The Palace Theatre"
+        "end_time": "12:10:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "The Unicorn"
     },
     {
         "type": "meal",
         "activity": "Lunch",
-        "place": "The Palace Theatre",
-        "building": "The Palace Theatre",
-        "start_time": "12:15:00",
-        "end_time": "13:15:00"
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Fresh and DM Store",
+        "activity": "Commute back to Calgary Chamber of Commerce",
         "place": null,
         "building": null,
-        "start_time": "13:15:00",
-        "end_time": "13:30:00",
-        "start_place": "The Palace Theatre",
-        "end_place": "Fresh and DM Store"
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "The Unicorn",
+        "end_place": "Calgary Chamber of Commerce"
     },
     {
         "type": "main",
-        "activity": "Activity at Fresh and DM Store",
-        "place": "Fresh and DM Store",
-        "building": "Glanville/Ward Block",
-        "start_time": "13:30:00",
-        "end_time": "18:00:00"
+        "activity": "Prepare for Business Innovators meeting",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Business Innovators meeting",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work on community outreach programs",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to MODERN STEAK on Stephen Avenue",
+        "activity": "Commute to Royal India Restaurant Calgary",
         "place": null,
         "building": null,
-        "start_time": "18:00:00",
-        "end_time": "18:15:00",
-        "start_place": "Fresh and DM Store",
-        "end_place": "MODERN STEAK on Stephen Avenue"
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "Royal India Restaurant Calgary"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "MODERN STEAK on Stephen Avenue",
-        "building": "Imperial Bank of Canada",
-        "start_time": "18:15:00",
-        "end_time": "19:15:00"
+        "place": "Royal India Restaurant Calgary",
+        "building": "Tower Centre",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Art Market Craft Sale",
+        "activity": "Commute to Collage Gallery",
         "place": null,
         "building": null,
-        "start_time": "19:15:00",
-        "end_time": "19:30:00",
-        "start_place": "MODERN STEAK on Stephen Avenue",
-        "end_place": "Art Market Craft Sale"
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Royal India Restaurant Calgary",
+        "end_place": "Collage Gallery"
     },
     {
         "type": "main",
-        "activity": "Activity at Art Market Craft Sale",
-        "place": "Art Market Craft Sale",
-        "building": "107 8 Avenue Southeast",
-        "start_time": "19:30:00",
-        "end_time": "22:30:00"
+        "activity": "Visit Collage Gallery for relaxation",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Jody Petersen's room at First on Tenth",
+        "activity": "Commute back to Jody Petersen's room at Palliser Square",
         "place": null,
         "building": null,
-        "start_time": "22:30:00",
-        "end_time": "22:45:00",
-        "start_place": "Art Market Craft Sale",
-        "end_place": "Jody Petersen's room at First on Tenth"
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "Jody Petersen's room at Palliser Square"
     },
     {
         "type": "main",
-        "activity": "Prepare for Bed",
-        "place": "Jody Petersen's room at First on Tenth",
-        "building": "First on Tenth",
-        "start_time": "22:45:00",
+        "activity": "Relax and prepare for bed",
+        "place": "Jody Petersen's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "21:30:00",
         "end_time": "23:59:59"
     }
 ]

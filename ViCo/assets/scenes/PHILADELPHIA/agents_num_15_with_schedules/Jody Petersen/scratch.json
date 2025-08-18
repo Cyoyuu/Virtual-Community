@@ -1,0 +1,221 @@
+{
+    "name": "Jody Petersen",
+    "first_name": "Jody",
+    "last_name": "Petersen",
+    "age": 27,
+    "innate": "benevolence, universalism",
+    "learned": "I am a physiotherapist working at Platoon Fitness, Philadelphia. I enjoy helping people recover and improve their health.",
+    "currently": "I am developing a new fitness program for my clients.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness and Health Enthusiasts",
+            "description": "A group focused on physical fitness and health, organizing training sessions and wellness programs.",
+            "place": "Platoon Fitness, Philadelphia",
+            "members": [
+                "Jody Petersen",
+                "Rodtang",
+                "Olivia Adams",
+                "Lionel Messi",
+                "Yann LeCun"
+            ],
+            "daily_activity": "conducting fitness training from 17:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Jody Petersen's room at The Ledger Residences by Sosuite - Old City",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jody Petersen's room at The Ledger Residences by Sosuite - Old City",
+            "building": "Public Ledger Building",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Union Gourmet Catering",
+            "place": "Union Gourmet Catering",
+            "building": "Public Ledger Building",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Platoon Fitness",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on developing a new fitness program",
+            "place": "Platoon Fitness, Philadelphia",
+            "building": "716 Walnut Street",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bridgette Mayer Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:05:00",
+            "start_place": "Platoon Fitness, Philadelphia",
+            "end_place": "Bridgette Mayer Gallery"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Bridgette Mayer Gallery",
+            "place": "Bridgette Mayer Gallery",
+            "building": "709 Walnut Street 1st Floor",
+            "start_time": "12:05:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Old Nelson Food Co",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:05:00",
+            "start_place": "Bridgette Mayer Gallery",
+            "end_place": "Old Nelson Food Co"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Old Nelson Food Co",
+            "place": "Old Nelson Food Co",
+            "building": "701 Chestnut Street",
+            "start_time": "13:05:00",
+            "end_time": "13:35:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Liberty Bell Center",
+            "place": null,
+            "building": null,
+            "start_time": "13:35:00",
+            "end_time": "13:45:00",
+            "start_place": "Old Nelson Food Co",
+            "end_place": "Liberty Bell Center"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Liberty Bell Center",
+            "place": "Liberty Bell Center",
+            "building": "Liberty Bell Center",
+            "start_time": "13:45:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Platoon Fitness",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:15:00",
+            "start_place": "Liberty Bell Center",
+            "end_place": "Platoon Fitness, Philadelphia"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for fitness training session",
+            "place": "Platoon Fitness, Philadelphia",
+            "building": "716 Walnut Street",
+            "start_time": "15:15:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Conduct fitness training session",
+            "place": "Platoon Fitness, Philadelphia",
+            "building": "716 Walnut Street",
+            "start_time": "17:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fat Salmon Sushi",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:05:00",
+            "start_place": "Platoon Fitness, Philadelphia",
+            "end_place": "Fat Salmon Sushi"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Fat Salmon Sushi",
+            "place": "Fat Salmon Sushi",
+            "building": "719 Walnut Street",
+            "start_time": "19:05:00",
+            "end_time": "19:35:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "19:35:00",
+            "end_time": "19:45:00",
+            "start_place": "Fat Salmon Sushi",
+            "end_place": "Beverages and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Buy snacks and beverages",
+            "place": "Beverages and Snacks Store",
+            "building": "Public Ledger Building",
+            "start_time": "19:45:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Jody Petersen's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:05:00",
+            "start_place": "Beverages and Snacks Store",
+            "end_place": "Jody Petersen's room at The Ledger Residences by Sosuite - Old City"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Jody Petersen's room at The Ledger Residences by Sosuite - Old City",
+            "building": "Public Ledger Building",
+            "start_time": "20:05:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Platoon Fitness, Philadelphia",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

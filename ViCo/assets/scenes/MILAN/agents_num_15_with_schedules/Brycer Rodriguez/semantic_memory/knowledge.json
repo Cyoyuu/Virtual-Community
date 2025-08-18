@@ -1,0 +1,422 @@
+{
+    "Justin Bieber": {
+        "age": 29,
+        "living_place": "MILU APARTMENTS MILANO",
+        "appearance": "ViCo/assets/imgs/avatars/Justin Bieber.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Domus Julia",
+        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Selena Gomez": {
+        "age": 32,
+        "living_place": "MILU APARTMENTS MILANO",
+        "appearance": "ViCo/assets/imgs/avatars/Selena Gomez.png",
+        "groups": [
+            "Milan Music Club"
+        ]
+    },
+    "Milan Music Club": {
+        "description": "A club for music enthusiasts to share and enjoy music together.",
+        "place": "Caf\u00e9 De Amicis",
+        "members": [
+            "Brycer Rodriguez",
+            "Justin Bieber",
+            "Pika Hayes",
+            "Selena Gomez"
+        ],
+        "daily_activity": "jamming sessions from 17:00 to 18:30"
+    },
+    "Brycer Rodriguez's room at Augustinianum": {
+        "building": "Augustinianum",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "dormitory"
+        ],
+        "location": [
+            1245.406639099121,
+            1144.571647644043,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Brycer Rodriguez's room at Augustinianum",
+        "bounding_box": [
+            245.40663472237475,
+            145.3008698100138,
+            124.22249221801758,
+            22.27184602805618,
+            47.699972798674686,
+            17.38402557373047,
+            0.599755187037199
+        ]
+    },
+    "Universit\u00e0 Cattolica -Edificio via Lanzone 14": {
+        "building": "Via San Pio V",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2957229614258,
+            882.8430099487305,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ]
+    },
+    "Caf\u00e9 De Amicis": {
+        "building": "Via Edmondo de Amicis",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            913.1083145141602,
+            968.799633026123,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ]
+    },
+    "Le Cavallerizze": {
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            825.3389129638672,
+            918.7246150970459,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -184.58961486816406,
+            -81.22627258300781,
+            116.44261932373047,
+            35.094085693359375,
+            47.77935028076172,
+            5.8205108642578125,
+            -0.6583981513977051
+        ]
+    },
+    "ABEL": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1187.0965591453808,
+            735.1482715378298,
+            -0.008247297581220892
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Just Bowl": {
+        "building": "Via Francesco Novati",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1209.7241821289062,
+            847.586799621582,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            211.0496550276761,
+            -154.8169509632623,
+            123.38034057617188,
+            14.65409259727792,
+            21.06825863834656,
+            16.32000732421875,
+            -0.7431676443319067
+        ]
+    },
+    "Jack mela verde": {
+        "building": "Colonne Di S.Lorenzo",
+        "coarse_type": "food",
+        "fine_types": [
+            "supermarket",
+            "grocery_or_supermarket",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            981.6261034011841,
+            976.602541923523,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -20.58967287476291,
+            -13.714702828202403,
+            120.97687911987305,
+            68.90765844390964,
+            94.5274145620654,
+            15.984962463378906,
+            0.6376403505539888
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Via San Pio V",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2957229614258,
+            882.8430099487305,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            825.3389129638672,
+            918.7246150970459,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -184.58961486816406,
+            -81.22627258300781,
+            116.44261932373047,
+            35.094085693359375,
+            47.77935028076172,
+            5.8205108642578125,
+            -0.6583981513977051
+        ]
+    },
+    "Bunkerbootcamp": {
+        "building": "Via Edmondo de Amicis",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "physiotherapist",
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            913.1083145141602,
+            968.799633026123,
+            -16
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ]
+    },
+    "Via Lodovico Necchi Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            275.8140310265028,
+            -139.97034909004233
+        ],
+        "rotation": -1.8149280584994887,
+        "bounding_box": null
+    },
+    "Via Edmondo de Amicis Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -65.93732561556723,
+            -126.39486544599913
+        ],
+        "rotation": 2.4943035051935416,
+        "bounding_box": null
+    },
+    "Via Bernardino Zenale Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -114.4527537817468,
+            243.87291376961986
+        ],
+        "rotation": -0.40365263075400587,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -126.99953288891919,
+            184.61791207176307
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            191.7041762596749,
+            -112.95025571070914
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -70.93074925681577,
+            -19.90143314509312
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            197.8229199282745,
+            145.4380916390492
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -195.64842812589262,
+            -107.06645171752132
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -47.12202541236839,
+            -220.04938063821953
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.97530517493664,
+            -262.0452924473627
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Via Bernardino Zenale": [
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Via Lodovico Necchi": [
+            {
+                "stop_name": "Via Bernardino Zenale Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Via Edmondo de Amicis Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Via Lodovico Necchi Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

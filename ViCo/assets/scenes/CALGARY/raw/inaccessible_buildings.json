@@ -24,8 +24,7 @@
                     -106.47496795654297,
                     -286.1200714111328,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Medina Cafe & Grill Sheesha Lounge",
@@ -44,8 +43,7 @@
                     -106.47496795654297,
                     -286.1200714111328,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "BR BROMLEY BARBERSHOP",
@@ -60,8 +58,7 @@
                     -106.47496795654297,
                     -286.1200714111328,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Lofts on First",
@@ -73,8 +70,7 @@
                     -106.47496795654297,
                     -286.1200714111328,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -106,8 +102,7 @@
                     -66.78698348999023,
                     -287.9296875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -137,8 +132,7 @@
                     69.06135368347168,
                     -294.8647918701172,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "Academy Of Canadian English",
@@ -152,8 +146,7 @@
                     69.06135368347168,
                     -294.8647918701172,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -183,8 +176,7 @@
                     131.72746658325195,
                     -294.51853942871094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             }
         ]
     },
@@ -212,8 +204,7 @@
                     171.44387817382812,
                     -296.3429718017578,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             },
             {
                 "name": "Baby Snow",
@@ -228,8 +219,7 @@
                     171.44387817382812,
                     -296.3429718017578,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Paco's Bar",
@@ -245,8 +235,7 @@
                     171.44387817382812,
                     -296.3429718017578,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Lady Fatima Academy",
@@ -260,8 +249,7 @@
                     171.44387817382812,
                     -296.3429718017578,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -290,8 +278,7 @@
                     246.27436065673828,
                     -302.1175231933594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Upten Pizza Planet",
@@ -307,8 +294,7 @@
                     246.27436065673828,
                     -302.1175231933594,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Kassle And Co",
@@ -322,8 +308,7 @@
                     246.27436065673828,
                     -302.1175231933594,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             },
             {
                 "name": "Eatfit Meal Prep Inc",
@@ -338,8 +323,7 @@
                     246.27436065673828,
                     -302.1175231933594,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "EdgeWave Seekers",
@@ -354,8 +338,110 @@
                     246.27436065673828,
                     -302.1175231933594,
                     -20
+                ]
+            }
+        ]
+    },
+    "Penn West Plaza - West Tower": {
+        "building_glb": "buildings_Penn West Plaza - West Tower.glb",
+        "bounding_box": [
+            -259.3435152312436,
+            -138.7422966503445,
+            139.6084098815918,
+            57.55539785686262,
+            40.31627485088116,
+            84.6470718383789,
+            -0.04280820666042378
+        ],
+        "places": [
+            {
+                "name": "DreamBody Training",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "location": [
+                    -259.34442138671875,
+                    -138.87805557250977,
+                    -4
+                ]
+            },
+            {
+                "name": "Core Club Fitness",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -259.34442138671875,
+                    -138.87805557250977,
+                    -8
+                ]
+            },
+            {
+                "name": "207 & 215 9th Ave SW",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -259.34442138671875,
+                    -138.87805557250977,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Macnaghten Block": {
+        "building_glb": "buildings_Macnaghten Block.glb",
+        "bounding_box": [
+            1.3317230393595436,
+            -42.21253357848418,
+            99.52545547485352,
+            7.81115644818963,
+            39.45340882603152,
+            6.179359436035156,
+            -0.04223236681107808
+        ],
+        "places": [
+            {
+                "name": "Original Joe's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1.331399917602539,
+                    -42.175658226013184,
+                    -4
+                ]
+            },
+            {
+                "name": "Bar Annabelle",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1.331399917602539,
+                    -42.175658226013184,
+                    -8
+                ]
             }
         ]
     },
@@ -384,8 +470,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "The Bow Valley Athletic Club",
@@ -400,8 +485,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Toro Bravo Taqueria",
@@ -416,8 +500,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Garage Sports Bar",
@@ -433,8 +516,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Cushman & Wakefield - Commercial Real Estate Services",
@@ -450,8 +532,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             },
             {
                 "name": "Imagine Wireless",
@@ -465,8 +546,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Fido (Available in the Rogers store)",
@@ -481,8 +561,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Bow Valley Square Fitness Centre",
@@ -497,8 +576,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Sushi Party",
@@ -513,8 +591,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -36
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "TacoTime",
@@ -529,8 +606,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -40
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Jugo Juice",
@@ -546,8 +622,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -44
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Cork Fine Wine Liquor & Ale Bow Valley Square",
@@ -563,8 +638,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -48
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Royal Camp Services Ltd",
@@ -578,8 +652,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -52
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Oakberry A\u00e7ai Bowls and Smoothies | Bow Valley Square",
@@ -594,8 +667,7 @@
                     -199.9580421447754,
                     263.22376251220703,
                     -56
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -623,8 +695,7 @@
                     -18.372203826904297,
                     251.87491607666016,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Jelly Modern Doughnuts",
@@ -640,8 +711,7 @@
                     -18.372203826904297,
                     251.87491607666016,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "OPA! of Greece Suncor Energy Centre",
@@ -656,8 +726,7 @@
                     -18.372203826904297,
                     251.87491607666016,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -683,8 +752,7 @@
                     -139.54882431030273,
                     368.87347412109375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -710,8 +778,7 @@
                     358.87152099609375,
                     108.83060455322266,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -737,8 +804,7 @@
                     -221.48241424560547,
                     389.55958557128906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -764,8 +830,7 @@
                     -308.0700225830078,
                     392.01832580566406,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -791,8 +856,7 @@
                     17.637389183044434,
                     266.32967376708984,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -819,8 +883,33 @@
                     284.1027069091797,
                     364.72181701660156,
                     -4
+                ]
+            }
+        ]
+    },
+    "Hanover Place": {
+        "building_glb": "buildings_Hanover Place.glb",
+        "bounding_box": [
+            24.663869967178414,
+            167.36937579248277,
+            141.2410125732422,
+            36.210191201969565,
+            37.53105975549688,
+            93.55844116210938,
+            -0.0411709308475011
+        ],
+        "places": [
+            {
+                "name": "Hanover Place",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "location": [
+                    24.566126823425293,
+                    167.37779998779297,
+                    -4
+                ]
             }
         ]
     },
@@ -846,8 +935,7 @@
                     335.7065887451172,
                     159.69654846191406,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -873,8 +961,7 @@
                     -286.49632263183594,
                     -326.0045623779297,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -900,8 +987,7 @@
                     -169.51283264160156,
                     -422.1564483642578,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -927,8 +1013,7 @@
                     -351.7379455566406,
                     -420.2546691894531,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -954,8 +1039,7 @@
                     301.4399108886719,
                     -411.6919250488281,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -981,8 +1065,7 @@
                     272.90843200683594,
                     -347.8962707519531,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -1008,8 +1091,7 @@
                     -52.989532470703125,
                     259.7008514404297,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1035,8 +1117,7 @@
                     -412.4120635986328,
                     142.2515754699707,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1062,8 +1143,7 @@
                     -353.4248352050781,
                     184.695068359375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     }

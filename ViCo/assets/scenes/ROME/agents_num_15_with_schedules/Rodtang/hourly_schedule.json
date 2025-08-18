@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Rodtang's room at Gio Roma",
+        "building": "Via della Polveriera",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bar Del Mose' Srl",
+        "building": "Via della Polveriera",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Judo Club Mezzaroma A.s.d.",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning Training Session",
+        "place": "Judo Club Mezzaroma A.s.d.",
+        "building": "Via Vittorino da Feltre",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sapienza University of Rome",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Judo Club Mezzaroma A.s.d.",
+        "end_place": "Sapienza University of Rome"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Sapienza University of Rome",
+        "place": "Sapienza University of Rome",
+        "building": "Basilica di San Pietro in Vincoli",
+        "start_time": "11:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Taverna Romana",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Sapienza University of Rome",
+        "end_place": "Taverna Romana"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Taverna Romana",
+        "building": "Via dell'Agnello",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museo del Foro Romano",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Taverna Romana",
+        "end_place": "Museo del Foro Romano"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museo del Foro Romano",
+        "place": "Museo del Foro Romano",
+        "building": "Antiquarium Forense",
+        "start_time": "14:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Judo Club Mezzaroma A.s.d.",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Museo del Foro Romano",
+        "end_place": "Judo Club Mezzaroma A.s.d."
+    },
+    {
+        "type": "main",
+        "activity": "Evening Training Session",
+        "place": "Judo Club Mezzaroma A.s.d.",
+        "building": "Via Vittorino da Feltre",
+        "start_time": "16:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to La Fraschetta Der Panino",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Judo Club Mezzaroma A.s.d.",
+        "end_place": "La Fraschetta Der Panino"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "La Fraschetta Der Panino",
+        "building": "Via del Cardello",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rodtang's room at Gio Roma",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "La Fraschetta Der Panino",
+        "end_place": "Rodtang's room at Gio Roma"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Prepare for Tomorrow",
+        "place": "Rodtang's room at Gio Roma",
+        "building": "Via della Polveriera",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

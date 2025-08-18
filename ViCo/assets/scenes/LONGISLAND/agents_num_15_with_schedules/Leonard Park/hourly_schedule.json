@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on software application",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Wah Luck Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "Wah Luck Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Wah Luck Kitchen",
+        "building": "930 Hempstead Turnpike",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Wah Luck Kitchen",
+        "end_place": "Stanley Tek Corp"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on software application",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "13:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Workout with Fitness Enthusiasts",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Nunzi's American Bistro",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Nunzi's American Bistro"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Nunzi's American Bistro",
+        "building": "918 Hempstead Turnpike",
+        "start_time": "19:15:00",
+        "end_time": "19:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Leonard Park's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:45:00",
+        "end_time": "20:15:00",
+        "start_place": "Nunzi's American Bistro",
+        "end_place": "Leonard Park's room at ALUX Realty"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and play chess",
+        "place": "Leonard Park's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "20:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

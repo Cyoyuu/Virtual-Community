@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Lisa Su's room at The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "building": "1250 Welton Street",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Coffee Etcetera",
+        "building": "Denver Justice Center/Lindsey-Flanigan Courthouse",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to McNichols Civic Center Building",
+        "place": null,
+        "building": null,
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend tech conference",
+        "place": "McNichols Civic Center Building",
+        "building": "McNichols Civic Center Building",
+        "start_time": "07:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Denver Athletic Club",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "McNichols Civic Center Building",
+        "end_place": "The Denver Athletic Club"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Denver Athletic Club",
+        "building": "1325 Glenarm Place",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to SVN | Denver Commercial",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "The Denver Athletic Club",
+        "end_place": "SVN | Denver Commercial"
+    },
+    {
+        "type": "main",
+        "activity": "Meet with industry leaders",
+        "place": "SVN | Denver Commercial",
+        "building": "414 14th Street",
+        "start_time": "13:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends with Tech Innovators",
+        "place": "SVN | Denver Commercial",
+        "building": "414 14th Street",
+        "start_time": "15:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Yard House",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "SVN | Denver Commercial",
+        "end_place": "Yard House"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Yard House",
+        "building": "Sheraton Denver Downtown Hotel",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lisa Su's room at The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Yard House",
+        "end_place": "Lisa Su's room at The Slate Hotel Denver Downtown, Tapestry by Hilton"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for the next day",
+        "place": "Lisa Su's room at The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "building": "1250 Welton Street",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Lisa Su's room at The Slate Hotel Denver Downtown, Tapestry by Hilton",
+        "building": "1250 Welton Street",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

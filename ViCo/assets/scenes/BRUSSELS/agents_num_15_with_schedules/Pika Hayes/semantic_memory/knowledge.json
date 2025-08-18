@@ -1,18 +1,18 @@
 {
-    "Brycer Rodriguez": {
-        "age": 22,
-        "living_place": "Brycer Rodriguez's room at Boiteux",
-        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+    "Kylian Mbappe": {
+        "age": 25,
+        "living_place": "Kylian Mbappe's room at Hotel Hubert \u2013 Grand Place",
+        "appearance": "ViCo/assets/imgs/avatars/Kylian Mbappe.png",
         "groups": [
-            "Brussels Student Network"
+            "Sports Enthusiasts Group"
         ]
     },
-    "Olivia Adams": {
-        "age": 22,
-        "living_place": "Olivia Adams's room at Boiteux",
-        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Megan Carter's room at Charles' Home",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
         "groups": [
-            "Brussels Student Network"
+            "Sports Enthusiasts Group"
         ]
     },
     "Sophie Carlsen": {
@@ -20,45 +20,45 @@
         "living_place": "Boiteux",
         "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
         "groups": [
-            "Brussels Student Network"
+            "Sports Enthusiasts Group"
         ]
     },
-    "Brussels Student Network": {
-        "description": "A network of students from various institutions in Brussels who collaborate on academic and social projects.",
-        "place": "IHECS - B\u00e2timent Chambon (CH)",
+    "Sports Enthusiasts Group": {
+        "description": "A group of sports lovers who engage in various sports activities and events in Brussels.",
+        "place": "Parc de Bruxelles",
         "members": [
-            "Brycer Rodriguez",
-            "Olivia Adams",
+            "Kylian Mbappe",
+            "Sophie Carlsen",
             "Pika Hayes",
-            "Sophie Carlsen"
+            "Megan Carter"
         ],
-        "daily_activity": "collaborating on projects from 16:00 to 18:00"
+        "daily_activity": "playing football from 16:00 to 17:00"
     },
-    "Pika Hayes's room at Boiteux": {
-        "building": "Boiteux",
+    "Pika Hayes's room at Charles' Home": {
+        "building": "Charles' Home",
         "coarse_type": "accommodation",
         "fine_types": [
             "apartments"
         ],
         "location": [
-            742.2045822143555,
-            1273.7317810058594,
-            -32
+            713.8932189941406,
+            918.7632255554199,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Pika Hayes's room at Boiteux",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Pika Hayes's room at Charles' Home",
         "bounding_box": [
-            -260.5793301556366,
-            273.69968740524826,
-            64.06091117858885,
-            17.2707030023195,
-            25.302058912070837,
-            30.507083892822266,
-            -0.44912342819388795
+            -286.6910474754376,
+            -80.37116140514311,
+            65.20316886901855,
+            8.412366977547284,
+            25.602181756683187,
+            14.84024429321289,
+            0.7075414936217818
         ]
     },
-    "Onderwijs": {
-        "building": "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie",
+    "MC Academy for International Legal Studies": {
+        "building": "Rue de Ligne 49",
         "coarse_type": "office",
         "fine_types": [
             "school",
@@ -66,67 +66,60 @@
             "establishment"
         ],
         "location": [
-            1266.971534729004,
-            1274.4501571655273,
-            -4
+            1232.6369857788086,
+            1170.509262084961,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            267.1178533640898,
-            274.4865261629659,
-            90.01959991455077,
-            40.363486019224865,
-            26.955394452973792,
-            23.5625,
-            -0.3186164384750355
+            232.49153026267186,
+            168.94271745791167,
+            90.56878662109374,
+            40.352085299741304,
+            16.037624370562437,
+            21.567474365234375,
+            -0.3208501328880337
         ]
     },
-    "IHECS - B\u00e2timent Chambon (CH)": {
-        "building": "Boiteux",
-        "coarse_type": "office",
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
         "fine_types": [
-            "university",
+            "park",
+            "tourist_attraction",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            742.2045822143555,
-            1273.7317810058594,
-            -4
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            -260.5793301556366,
-            273.69968740524826,
-            64.06091117858885,
-            17.2707030023195,
-            25.302058912070837,
-            30.507083892822266,
-            -0.44912342819388795
-        ]
+        "scene": null,
+        "bounding_box": null
     },
-    "Competento": {
-        "building": "Rue de la Chancellerie 19",
-        "coarse_type": "office",
+    "Fresh and Beverages Store": {
+        "building": "Marquis",
+        "coarse_type": "stores",
         "fine_types": [
-            "library",
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1046.8551769256592,
-            837.5702133178711,
+            915.5147399902344,
+            892.4346466064453,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
         "bounding_box": [
-            43.443906299160524,
-            -158.0778265243057,
-            81.29925537109376,
-            27.77994307983233,
-            84.67502064377031,
-            0.0770111083984375,
-            -0.505262463190674
+            -91.03511047363281,
+            -104.93002319335938,
+            83.58557891845703,
+            72.18888854980469,
+            90.57077026367188,
+            32.19690704345703,
+            -0.5364537239074707
         ]
     },
     "Museum of the National Bank of Belgium": {
@@ -143,7 +136,7 @@
             1206.5694198608398,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             -177.4439928658601,
             200.82952432688307,
@@ -165,7 +158,7 @@
             977.2010865211487,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
         "bounding_box": [
             181.11677349590934,
             -22.776869956576956,
@@ -176,8 +169,33 @@
             -0.3038562366117691
         ]
     },
-    "The Jane": {
-        "building": "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie",
+    "DUKES Lounge Bar": {
+        "building": "Rue de Ligne 49",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.6369857788086,
+            1170.509262084961,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            232.49153026267186,
+            168.94271745791167,
+            90.56878662109374,
+            40.352085299741304,
+            16.037624370562437,
+            21.567474365234375,
+            -0.3208501328880337
+        ]
+    },
+    "TM FOOD MAKER. Pizza burger": {
+        "building": "Rue de la Montagne 68",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -186,23 +204,23 @@
             "establishment"
         ],
         "location": [
-            1266.971534729004,
-            1274.4501571655273,
-            -12
+            761.52392578125,
+            954.1101722717285,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            267.1178533640898,
-            274.4865261629659,
-            90.01959991455077,
-            40.363486019224865,
-            26.955394452973792,
-            23.5625,
-            -0.3186164384750355
+            -238.47709744082195,
+            -46.1244683312559,
+            66.98744010925293,
+            6.8206201339774415,
+            14.2079847425363,
+            14.71176528930664,
+            0.7197238227870631
         ]
     },
-    "L\u00e9opold Caf\u00e9 Royal": {
-        "building": "Rue de Louvain 2",
+    "Bar \u00e0 viandes Cannibale": {
+        "building": "Rue de l'Enseignement 10",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -211,96 +229,68 @@
             "establishment"
         ],
         "location": [
-            1238.1253128051758,
-            957.8619194030762,
+            1236.1378860473633,
+            996.1777245998383,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            238.83478966107015,
-            -41.40968102847862,
-            97.5982780456543,
-            14.035324867965631,
-            14.764576679103767,
-            20.757362365722656,
-            -0.1396001207075822
+            236.13788610676582,
+            -3.822275345461219,
+            96.16506576538086,
+            5.123980984766245,
+            10.172010837069646,
+            19.46623992919922,
+            0.744212893186951
         ]
     },
-    "BXL CENTRAL [CHEZ PIAS]": {
-        "building": "Ancienne imprimerie du quotidien Le Peuple - Voormalige drukker",
-        "coarse_type": "food",
-        "fine_types": [
-            "book_store",
-            "cafe",
-            "food",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            984.7862672805786,
-            1270.8810577392578,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            -15.30284019326897,
-            270.73878172636404,
-            63.7702465057373,
-            10.813322241291026,
-            10.723113301922501,
-            18.06998062133789,
-            -0.6823050240123698
-        ]
-    },
-    "Fresh and DM Store": {
-        "building": "Rue Royale 13",
+    "Beverages and DM Store": {
+        "building": "Rue de la Montagne 70",
         "coarse_type": "stores",
         "fine_types": [
-            "florist",
-            "point_of_interest",
+            "storage",
             "store",
+            "point_of_interest",
             "establishment"
         ],
         "location": [
-            1223.8662719726562,
-            995.715203166008,
+            767.083610534668,
+            956.575662612915,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
         "bounding_box": [
-            224.45492387447095,
-            -4.384532906043618,
-            95.9917984008789,
-            14.131053025339662,
-            10.022415438253853,
-            20.162338256835938,
-            -0.3023380163474682
+            -232.69209821601703,
+            -43.50049928628902,
+            67.36325645446777,
+            5.56019458417559,
+            10.825517845777897,
+            14.710865020751953,
+            0.7408302985462484
         ]
     },
-    "Snacks and DM Store": {
-        "building": "Rue du Marais 7",
+    "Beverages and Snacks Store": {
+        "building": "Rue de la Montagne 72",
         "coarse_type": "stores",
         "fine_types": [
-            "book_store",
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            859.8126831054688,
-            1278.1965942382812,
-            -8
+            771.2095184326172,
+            959.8093318939209,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
-            -140.24633622346465,
-            277.80765255034044,
-            55.569887161254876,
-            7.620576691051349,
-            20.670256816074403,
-            10.726482391357422,
-            1.0060344788977647
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
         ]
     },
     "Rue Royale - Koningsstraat Bus Stop": {

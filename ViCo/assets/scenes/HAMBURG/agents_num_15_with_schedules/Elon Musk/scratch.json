@@ -1,0 +1,167 @@
+{
+    "name": "Elon Musk",
+    "first_name": "Elon",
+    "last_name": "Musk",
+    "age": 53,
+    "innate": "achievement, self-direction",
+    "learned": "I am a businessman and investor known for my key roles in the space company SpaceX and the automotive company Tesla, Inc. Other involvements include ownership of X Corp., the company that operates the social media platform X (formerly known as Twitter), and my role in the founding of the Boring Company, xAI, Neuralink, and OpenAI. I am one of the wealthiest individuals in the world.",
+    "currently": "I am exploring potential collaborations with German automotive companies.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Entertainment and Leisure",
+            "description": "A group of individuals involved in the entertainment industry and leisure activities.",
+            "place": "wineBANK Hamburg",
+            "members": [
+                "Chad Thompson",
+                "Elon Musk",
+                "Frank Walter Steinmeier",
+                "John F Kennedy",
+                "LeBron James",
+                "Leonard Park"
+            ],
+            "daily_activity": "attending live performances from 18:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Elon Musk's room at Marriott Hotel",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Elon Musk's room at Marriott Hotel",
+            "building": "Marriott Hotel",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Schanzenb\u00e4ckerei",
+            "building": "Dammtorstra\u00dfe 20",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to ABC Cube for business meetings",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Business meetings with German automotive companies",
+            "place": "ABC Cube",
+            "building": "ABC Cube",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MAD about Juice Dammtorstra\u00dfe for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "ABC Cube",
+            "end_place": "MAD about Juice Dammtorstra\u00dfe"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "MAD about Juice Dammtorstra\u00dfe",
+            "building": "Metropolis Haus",
+            "start_time": "12:30:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to ABC Cube for afternoon meetings",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "MAD about Juice Dammtorstra\u00dfe",
+            "end_place": "ABC Cube"
+        },
+        {
+            "type": "main",
+            "activity": "Continue business meetings and collaboration discussions",
+            "place": "ABC Cube",
+            "building": "ABC Cube",
+            "start_time": "13:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to wineBANK Hamburg for entertainment and leisure",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "18:00:00",
+            "start_place": "ABC Cube",
+            "end_place": "wineBANK Hamburg"
+        },
+        {
+            "type": "main",
+            "activity": "Attend live performances with Entertainment and Leisure group",
+            "place": "wineBANK Hamburg",
+            "building": "Alte Oberpostdirektion",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Marriott Hotel for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "wineBANK Hamburg",
+            "end_place": "Elon Musk's room at Marriott Hotel"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Elon Musk's room at Marriott Hotel",
+            "building": "Marriott Hotel",
+            "start_time": "19:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Personal time and relaxation",
+            "place": "Elon Musk's room at Marriott Hotel",
+            "building": "Marriott Hotel",
+            "start_time": "20:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

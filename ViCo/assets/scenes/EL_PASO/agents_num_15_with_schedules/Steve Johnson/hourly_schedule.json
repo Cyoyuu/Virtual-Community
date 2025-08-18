@@ -1,0 +1,130 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at Leonardo Poggio Real Estate",
+        "building": "416 North Stanton Street Floor 6",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at The Upper Room Cafe",
+        "place": "The Upper Room Cafe",
+        "building": "416 North Stanton Street Floor 6",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Tap Bar & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Oversee daily operations and plan new menu item",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Tap Bar & Restaurant",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue planning and testing new recipes",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "12:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flor De Barro Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "The Tap Bar & Restaurant",
+        "end_place": "Flor De Barro Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Flor De Barro Gallery for inspiration",
+        "place": "Flor De Barro Gallery",
+        "building": "212 South Mesa Street",
+        "start_time": "16:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to The Tap Bar & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Flor De Barro Gallery",
+        "end_place": "The Tap Bar & Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at The Tap Bar & Restaurant",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Host El Paso Hospitality Network event",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Machop Spawn",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "The Tap Bar & Restaurant",
+        "end_place": "Machop Spawn"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment at Machop Spawn",
+        "place": "Machop Spawn",
+        "building": "125 Henry Trost Court",
+        "start_time": "20:15:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Steve Johnson's room",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:15:00",
+        "start_place": "Machop Spawn",
+        "end_place": "Steve Johnson's room at Leonardo Poggio Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Steve Johnson's room at Leonardo Poggio Real Estate",
+        "building": "416 North Stanton Street Floor 6",
+        "start_time": "22:15:00",
+        "end_time": "23:59:59"
+    }
+]

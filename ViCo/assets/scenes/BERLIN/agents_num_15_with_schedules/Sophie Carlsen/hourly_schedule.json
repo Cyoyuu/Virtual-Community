@@ -17,118 +17,110 @@
     },
     {
         "type": "commute",
-        "activity": "Commute to August-Boeckh-Haus",
+        "activity": "Commute to Russische Handelsvertretung",
         "place": null,
         "building": null,
         "start_time": "09:00:00",
         "end_time": "09:30:00",
         "start_place": "Berliner Kindl",
+        "end_place": "Russische Handelsvertretung"
+    },
+    {
+        "type": "main",
+        "activity": "Attend business administration classes",
+        "place": "Russische Handelsvertretung",
+        "building": "Russische Handelsvertretung",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Gentle Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Russische Handelsvertretung",
+        "end_place": "Gentle Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Gentle Restaurant",
+        "building": "Robert-Koch-Forum",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to August-Boeckh-Haus",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Gentle Restaurant",
         "end_place": "August-Boeckh-Haus"
     },
     {
         "type": "main",
-        "activity": "Study Renaissance paintings for art project",
+        "activity": "Study with Berlin Student Society",
         "place": "August-Boeckh-Haus",
         "building": "August-Boeckh-Haus",
-        "start_time": "09:30:00",
-        "end_time": "12:00:00"
+        "start_time": "14:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Palais Theising",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "Forum Willy Brandt Berlin"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Forum Willy Brandt Berlin",
+        "building": "Palais Theising",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Galerie im Adlon",
         "place": null,
         "building": null,
-        "start_time": "12:00:00",
-        "end_time": "12:30:00",
-        "start_place": "August-Boeckh-Haus",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Forum Willy Brandt Berlin",
         "end_place": "Galerie im Adlon"
     },
     {
         "type": "main",
-        "activity": "Visit Galerie im Adlon",
+        "activity": "Attend networking event",
         "place": "Galerie im Adlon",
         "building": "Adlon Kempinski",
-        "start_time": "12:30:00",
-        "end_time": "13:30:00"
+        "start_time": "19:30:00",
+        "end_time": "21:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Memorial",
+        "activity": "Commute to Palais Theising",
         "place": null,
         "building": null,
-        "start_time": "13:30:00",
-        "end_time": "14:00:00",
+        "start_time": "21:30:00",
+        "end_time": "22:00:00",
         "start_place": "Galerie im Adlon",
-        "end_place": "Memorial"
-    },
-    {
-        "type": "main",
-        "activity": "Explore historical sites with Berlin Historical Society",
-        "place": "Memorial",
-        "building": "Akademie der K\u00fcnste",
-        "start_time": "14:00:00",
-        "end_time": "16:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to India Club Berlin",
-        "place": null,
-        "building": null,
-        "start_time": "16:00:00",
-        "end_time": "16:30:00",
-        "start_place": "Memorial",
-        "end_place": "India Club Berlin"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner",
-        "place": "India Club Berlin",
-        "building": "Akademie der K\u00fcnste",
-        "start_time": "16:30:00",
-        "end_time": "18:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Forum Willy Brandt Berlin",
-        "place": null,
-        "building": null,
-        "start_time": "18:00:00",
-        "end_time": "18:30:00",
-        "start_place": "India Club Berlin",
-        "end_place": "Forum Willy Brandt Berlin"
-    },
-    {
-        "type": "main",
-        "activity": "Relax and explore Forum Willy Brandt Berlin",
-        "place": "Forum Willy Brandt Berlin",
-        "building": "Palais Theising",
-        "start_time": "18:30:00",
-        "end_time": "20:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Sophie Carlsen's room",
-        "place": null,
-        "building": null,
-        "start_time": "20:00:00",
-        "end_time": "20:30:00",
-        "start_place": "Forum Willy Brandt Berlin",
         "end_place": "Sophie Carlsen's room at Palais Theising"
     },
     {
         "type": "main",
-        "activity": "Work on art project in room",
+        "activity": "Relax and unwind",
         "place": "Sophie Carlsen's room at Palais Theising",
         "building": "Palais Theising",
-        "start_time": "20:30:00",
-        "end_time": "23:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Wind down and prepare for sleep",
-        "place": "Sophie Carlsen's room at Palais Theising",
-        "building": "Palais Theising",
-        "start_time": "23:00:00",
+        "start_time": "22:00:00",
         "end_time": "23:59:59"
     }
 ]

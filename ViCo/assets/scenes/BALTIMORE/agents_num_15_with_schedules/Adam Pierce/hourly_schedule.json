@@ -9,131 +9,103 @@
     },
     {
         "type": "meal",
-        "activity": "Breakfast",
-        "place": "Starbucks",
-        "building": "7 West Cross Street",
-        "start_time": "08:15:00",
-        "end_time": "08:45:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Federal Hill Preparatory School",
-        "place": null,
-        "building": null,
-        "start_time": "08:45:00",
-        "end_time": "09:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Work on environmental science project",
-        "place": "Federal Hill Preparatory School",
-        "building": "1040 William Street",
-        "start_time": "09:00:00",
-        "end_time": "12:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Henry Street Park",
-        "place": null,
-        "building": null,
-        "start_time": "12:00:00",
-        "end_time": "12:15:00",
-        "start_place": "Federal Hill Preparatory School",
-        "end_place": "Henry Street Park"
-    },
-    {
-        "type": "main",
-        "activity": "Field research and exploration",
-        "place": "Henry Street Park",
-        "building": "open space",
-        "start_time": "12:15:00",
-        "end_time": "14:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Juice Lab Company",
-        "place": null,
-        "building": null,
-        "start_time": "14:00:00",
-        "end_time": "14:15:00",
-        "start_place": "Henry Street Park",
-        "end_place": "Juice Lab Company"
-    },
-    {
-        "type": "meal",
-        "activity": "Lunch",
-        "place": "Juice Lab Company",
-        "building": "1035 Light Street",
-        "start_time": "14:15:00",
-        "end_time": "14:45:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Federal Hill Preparatory School",
-        "place": null,
-        "building": null,
-        "start_time": "14:45:00",
-        "end_time": "15:00:00",
-        "start_place": "Juice Lab Company",
-        "end_place": "Federal Hill Preparatory School"
-    },
-    {
-        "type": "main",
-        "activity": "Continue work on environmental science project",
-        "place": "Federal Hill Preparatory School",
-        "building": "1040 William Street",
-        "start_time": "15:00:00",
-        "end_time": "16:30:00"
+        "activity": "Breakfast at Sam's Bagels",
+        "place": "Sam's Bagels",
+        "building": "915 Light Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Enoch Pratt Library - Light Street Branch",
         "place": null,
         "building": null,
-        "start_time": "16:30:00",
-        "end_time": "16:45:00",
-        "start_place": "Federal Hill Preparatory School",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research work on data analytics",
+        "place": "Enoch Pratt Library - Light Street Branch",
+        "building": "Light Street Branch",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Brewer's Cask",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Enoch Pratt Library - Light Street Branch",
+        "end_place": "The Brewer's Cask"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Brewer's Cask",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Enoch Pratt Library - Light Street Branch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "The Brewer's Cask",
         "end_place": "Enoch Pratt Library - Light Street Branch"
     },
     {
         "type": "main",
-        "activity": "Baltimore Book Club meeting",
+        "activity": "Continue research work on data analytics",
         "place": "Enoch Pratt Library - Light Street Branch",
         "building": "Light Street Branch",
-        "start_time": "16:45:00",
-        "end_time": "18:00:00"
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to &pizza - Fed Hill",
+        "activity": "Commute to Marcus-Boyd Realty for Tech Enthusiasts Club meeting",
         "place": null,
         "building": null,
-        "start_time": "18:00:00",
-        "end_time": "18:15:00",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
         "start_place": "Enoch Pratt Library - Light Street Branch",
-        "end_place": "&pizza - Fed Hill"
+        "end_place": "Marcus-Boyd Realty"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Enthusiasts Club meeting",
+        "place": "Marcus-Boyd Realty",
+        "building": "926 Light Street Suite 2",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
     },
     {
         "type": "meal",
-        "activity": "Dinner",
-        "place": "&pizza - Fed Hill",
-        "building": "1201 South Charles Street",
-        "start_time": "18:15:00",
-        "end_time": "18:45:00"
+        "activity": "Dinner at Moo Moo Cows - Ice Cream",
+        "place": "Moo Moo Cows - Ice Cream",
+        "building": "926 Light Street Suite 2",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
     },
     {
         "type": "commute",
         "activity": "Commute to South Baltimore Strength Club",
         "place": null,
         "building": null,
-        "start_time": "18:45:00",
+        "start_time": "18:30:00",
         "end_time": "19:00:00",
-        "start_place": "&pizza - Fed Hill",
+        "start_place": "Moo Moo Cows - Ice Cream",
         "end_place": "South Baltimore Strength Club"
     },
     {
         "type": "main",
-        "activity": "Workout session",
+        "activity": "Workout at South Baltimore Strength Club",
         "place": "South Baltimore Strength Club",
         "building": "1237 Wall Street",
         "start_time": "19:00:00",
@@ -141,20 +113,36 @@
     },
     {
         "type": "commute",
-        "activity": "Commute to Adam Pierce's room at 1201 S Charles Street Apartments",
+        "activity": "Commute back to Adam Pierce's room",
         "place": null,
         "building": null,
         "start_time": "20:30:00",
-        "end_time": "20:45:00",
+        "end_time": "21:00:00",
         "start_place": "South Baltimore Strength Club",
         "end_place": "Adam Pierce's room at 1201 S Charles Street Apartments"
     },
     {
         "type": "main",
-        "activity": "Relax and personal time",
+        "activity": "Relax and explore new technologies",
         "place": "Adam Pierce's room at 1201 S Charles Street Apartments",
         "building": "1201 South Charles Street",
-        "start_time": "20:45:00",
+        "start_time": "21:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Late-night snack at &pizza - Fed Hill",
+        "place": "&pizza - Fed Hill",
+        "building": "1201 South Charles Street",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "23:30:00",
         "end_time": "23:59:59"
     }
 ]

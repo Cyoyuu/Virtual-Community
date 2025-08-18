@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Peace Food Market",
+        "building": "Chestnut Street Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland Public Library - Main Branch",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research new recipes and culinary techniques",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Portland Public Library - Main Branch",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Purchase ingredients for new recipe",
+        "place": "Fresh and Snacks Store",
+        "building": "81 Market Street",
+        "start_time": "11:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anthony's Italian Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Anthony's Italian Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new dish for the restaurant menu",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "13:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Portland Culinary Arts Society",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "17:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Corner Room Italian Kitchen & Bar",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Anthony's Italian Kitchen",
+        "end_place": "The Corner Room Italian Kitchen & Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Corner Room Italian Kitchen & Bar",
+        "building": "The Corner Room Italian Kitchen & Bar",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arcana",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "The Corner Room Italian Kitchen & Bar",
+        "end_place": "Arcana"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Arcana",
+        "building": "81 Market Street",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Chestnut Street Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Arcana",
+        "end_place": "Leonard Park's room at Chestnut Street Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Leonard Park's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -3,28 +3,27 @@
     "first_name": "Eve",
     "last_name": "Gonzales",
     "age": 21,
-    "innate": "self-direction, stimulation, hedonism",
-    "learned": "I am a student at Visoka \u0161kola modernog biznisa - Modern Business School, studying marketing. I love photography and exploring new cultures.",
-    "currently": "I want to excel in my marketing internship and travel around Europe.",
+    "innate": "stimulation, hedonism",
+    "learned": "I am a barista at Kafe Key. I enjoy making coffee and exploring new cafes.",
+    "currently": "I am learning new coffee brewing techniques to improve my skills as a barista.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Young Musicians",
-            "description": "A group of young individuals passionate about music and performing.",
-            "place": "\u0160kola gitare Star\u010devi\u0107",
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food lovers who meet to share recipes and cooking techniques.",
+            "place": "Restaurant Tchaikovsky",
             "members": [
-                "Eve By J Gonzales",
-                "Leonard Park",
-                "Zara Williams",
-                "Isaac Newton"
+                "Steve Johnson",
+                "Chad Thompson",
+                "Eve By J Gonzales"
             ],
-            "daily_activity": "practicing music from 16:00 to 18:00"
+            "daily_activity": "sharing cooking techniques from 17:00 to 18:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment",
+    "living_place": "Eve By J Gonzales's room at Central Peaceful Nest Belgrade",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -33,130 +32,98 @@
     "hourly_schedule": [
         {
             "type": "sleep",
-            "activity": "Sleeping",
-            "place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment",
-            "building": "Terazije 43",
+            "activity": "Sleep",
+            "place": "Eve By J Gonzales's room at Central Peaceful Nest Belgrade",
+            "building": "Balkanska 6",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Burrito Madre",
-            "building": "Terazije 27",
+            "place": "Kafe Key",
+            "building": "Pajsijeva 4",
             "start_time": "08:00:00",
-            "end_time": "08:30:00"
+            "end_time": "09:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Modern Business School",
+            "activity": "Commute to Kafe Key for work",
             "place": null,
             "building": null,
-            "start_time": "08:30:00",
-            "end_time": "08:45:00"
+            "start_time": "09:00:00",
+            "end_time": "09:15:00",
+            "start_place": "Kafe Key",
+            "end_place": "Kafe Key"
         },
         {
             "type": "main",
-            "activity": "Marketing Internship",
-            "place": "Visoka \u0161kola modernog biznisa - Modern Business School",
-            "building": "Terazije 27",
-            "start_time": "08:45:00",
-            "end_time": "12:00:00"
-        },
-        {
-            "type": "meal",
-            "activity": "Lunch",
-            "place": "Burrito Madre",
-            "building": "Terazije 27",
-            "start_time": "12:00:00",
-            "end_time": "12:30:00"
+            "activity": "Work as a barista and practice new coffee brewing techniques",
+            "place": "Kafe Key",
+            "building": "Pajsijeva 4",
+            "start_time": "09:15:00",
+            "end_time": "16:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Skulptura Devojka sa \u0161koljkom",
+            "activity": "Commute to Restaurant Tchaikovsky for Culinary Creators meeting",
             "place": null,
             "building": null,
-            "start_time": "12:30:00",
-            "end_time": "12:40:00",
-            "start_place": "Burrito Madre",
-            "end_place": "Skulptura Devojka sa \u0161koljkom"
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Kafe Key",
+            "end_place": "Restaurant Tchaikovsky"
         },
         {
             "type": "main",
-            "activity": "Photography and Cultural Exploration",
-            "place": "Skulptura Devojka sa \u0161koljkom",
-            "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
-            "start_time": "12:40:00",
-            "end_time": "15:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to \u0160kola gitare Star\u010devi\u0107",
-            "place": null,
-            "building": null,
-            "start_time": "15:30:00",
-            "end_time": "15:45:00",
-            "start_place": "Skulptura Devojka sa \u0161koljkom",
-            "end_place": "\u0160kola gitare Star\u010devi\u0107"
-        },
-        {
-            "type": "main",
-            "activity": "Music Practice with Young Musicians",
-            "place": "\u0160kola gitare Star\u010devi\u0107",
-            "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
-            "start_time": "15:45:00",
+            "activity": "Culinary Creators meeting - sharing cooking techniques",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "start_time": "16:30:00",
             "end_time": "18:00:00"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Kai Caffe Bar",
-            "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
             "start_time": "18:00:00",
-            "end_time": "18:30:00"
+            "end_time": "19:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to FunFit",
+            "activity": "Commute to Galerija Grafi\u010dki kolektiv for entertainment",
             "place": null,
             "building": null,
-            "start_time": "18:30:00",
-            "end_time": "18:45:00",
-            "start_place": "Kai Caffe Bar",
-            "end_place": "FunFit"
+            "start_time": "19:00:00",
+            "end_time": "19:15:00",
+            "start_place": "Restaurant Tchaikovsky",
+            "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
         },
         {
             "type": "main",
-            "activity": "Relax and Enjoy Games",
-            "place": "FunFit",
-            "building": "Kralja Milana 4a",
-            "start_time": "18:45:00",
+            "activity": "Visit Galerija Grafi\u010dki kolektiv for entertainment",
+            "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "building": "Dragoslava Jovanovi\u0107a 11",
+            "start_time": "19:15:00",
             "end_time": "21:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute back to Terazije Urban Downtown Apartment",
+            "activity": "Commute back to Eve By J Gonzales's room",
             "place": null,
             "building": null,
             "start_time": "21:00:00",
-            "end_time": "21:15:00",
-            "start_place": "FunFit",
-            "end_place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment"
+            "end_time": "21:30:00",
+            "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "end_place": "Eve By J Gonzales's room at Central Peaceful Nest Belgrade"
         },
         {
             "type": "main",
-            "activity": "Study and Prepare for Next Day",
-            "place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment",
-            "building": "Terazije 43",
-            "start_time": "21:15:00",
-            "end_time": "23:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Relax and Wind Down",
-            "place": "Eve By J Gonzales's room at Terazije Urban Downtown Apartment",
-            "building": "Terazije 43",
-            "start_time": "23:00:00",
+            "activity": "Relax and unwind",
+            "place": "Eve By J Gonzales's room at Central Peaceful Nest Belgrade",
+            "building": "Balkanska 6",
+            "start_time": "21:30:00",
             "end_time": "23:59:59"
         }
     ],
@@ -169,13 +136,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Visoka \u0161kola modernog biznisa - Modern Business School",
+    "working_place": "Kafe Key",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

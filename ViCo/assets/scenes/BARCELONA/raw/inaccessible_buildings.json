@@ -23,8 +23,7 @@
                     -189.59849548339844,
                     -249.1578826904297,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             }
         ]
     },
@@ -52,8 +51,7 @@
                     94.80157089233398,
                     -287.1420593261719,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             },
             {
                 "name": "Hotel SERHS Rivoli Rambla",
@@ -67,8 +65,7 @@
                     94.80157089233398,
                     -287.1420593261719,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             },
             {
                 "name": "Cerveseria Sky Bar (Hotel Serhs Rivoli Rambla)",
@@ -82,8 +79,7 @@
                     94.80157089233398,
                     -287.1420593261719,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Gastro 128 Rambla - 128 Rambla Restaurant",
@@ -98,8 +94,63 @@
                     94.80157089233398,
                     -287.1420593261719,
                     -16
+                ]
+            }
+        ]
+    },
+    "Pla\u00e7a de la Vila de Madrid": {
+        "building_glb": "buildings_element.643.glb",
+        "bounding_box": [
+            211.26866097942067,
+            -254.29565469389405,
+            131.91738891601565,
+            45.18962140853311,
+            48.389463137297994,
+            32.079681396484375,
+            0.513586991778526
+        ],
+        "places": [
+            {
+                "name": "Dog Care Barcelona",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    214.36256408691406,
+                    -258.2744140625,
+                    -4
+                ]
+            },
+            {
+                "name": "TuCoworking",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    214.36256408691406,
+                    -258.2744140625,
+                    -8
+                ]
+            },
+            {
+                "name": "TuColiving",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    214.36256408691406,
+                    -258.2744140625,
+                    -12
+                ]
             }
         ]
     },
@@ -128,8 +179,7 @@
                     217.3163833618164,
                     -299.0283508300781,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Headstash BCN",
@@ -144,8 +194,284 @@
                     217.3163833618164,
                     -299.0283508300781,
                     -8
+                ]
+            }
+        ]
+    },
+    "Carrer del Duc": {
+        "building_glb": "buildings_element.739.glb",
+        "bounding_box": [
+            245.8904813373696,
+            -284.6206703544872,
+            128.9289016723633,
+            15.04552446913569,
+            23.458398549686393,
+            25.246505737304688,
+            0.5129280533216747
+        ],
+        "places": [
+            {
+                "name": "\u00a8LimitEDitions\u00a8 Sneakers Shop",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                "location": [
+                    245.9556884765625,
+                    -284.8008117675781,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Pelai": {
+        "building_glb": "buildings_element.358.glb",
+        "bounding_box": [
+            -85.87647025523592,
+            -184.05294466737098,
+            133.89886856079102,
+            14.147494795435858,
+            43.94579869431275,
+            26.86949920654297,
+            -0.1289472187376353
+        ],
+        "places": [
+            {
+                "name": "Recreativos Pelayo 56",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -85.65515899658203,
+                    -183.7152099609375,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Jovellanos": {
+        "building_glb": "buildings_element.410.glb",
+        "bounding_box": [
+            -211.0099716722718,
+            -179.32318317232958,
+            131.49899291992188,
+            29.804878264211744,
+            16.513238781881775,
+            19.9508056640625,
+            0.32192057904857846
+        ],
+        "places": [
+            {
+                "name": "Sabanna Barcelona",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "bar",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -211.85501861572266,
+                    -178.84243774414062,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Balmes": {
+        "building_glb": "buildings_element.672.glb",
+        "bounding_box": [
+            -247.8318089354653,
+            -156.44451026747222,
+            136.2943458557129,
+            14.156303617987923,
+            29.166597646662645,
+            28.030052185058594,
+            0.020466639776050233
+        ],
+        "places": [
+            {
+                "name": "LBC Luxury Bracelet Collection",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -247.74762725830078,
+                    -156.5438232421875,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Metro Catalunya": {
+        "building_glb": "buildings_element.362.glb",
+        "bounding_box": [
+            -35.68821416606413,
+            -179.63249003137497,
+            137.47528839111328,
+            27.678280777708412,
+            24.01231593184185,
+            32.16667175292969,
+            -0.11255415200080782
+        ],
+        "places": [
+            {
+                "name": "Burger King",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -36.256693840026855,
+                    -178.71736907958984,
+                    -4
+                ]
+            },
+            {
+                "name": "Hotel Monegal",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -36.256693840026855,
+                    -178.71736907958984,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Carrer de Santa Anna": {
+        "building_glb": "buildings_element.094.glb",
+        "bounding_box": [
+            83.98477718050572,
+            -187.29046346589843,
+            131.69019317626953,
+            14.010478244875065,
+            23.16029404944812,
+            26.355606079101562,
+            0.8562309596415999
+        ],
+        "places": [
+            {
+                "name": "Prado de Flores Restaurant",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    84.06364059448242,
+                    -189.11980438232422,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Rivadeneyra": {
+        "building_glb": "buildings_element.797.glb",
+        "bounding_box": [
+            58.9659531205412,
+            -164.00429224361437,
+            129.17107772827148,
+            23.417091805750577,
+            36.47565654867587,
+            19.34101104736328,
+            -0.56924270274052
+        ],
+        "places": [
+            {
+                "name": "Geneva Business School - Barcelona Campus",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    58.83170127868652,
+                    -163.13811492919922,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Bergara": {
+        "building_glb": "buildings_element.067.glb",
+        "bounding_box": [
+            -150.70632934570312,
+            -47.07569122314453,
+            137.583740234375,
+            15.033868789672852,
+            26.520671844482422,
+            26.464859008789062,
+            0.4587004780769348
+        ],
+        "places": [
+            {
+                "name": "Hotel Catalonia Plaza Catalunya",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -150.36014556884766,
+                    -47.03055381774902,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Via Laietana": {
+        "building_glb": "buildings_element.253.glb",
+        "bounding_box": [
+            251.76329638026587,
+            103.19644463875548,
+            130.82129287719727,
+            5.458903386941024,
+            21.465085006237864,
+            22.42217254638672,
+            -0.7924715426459557
+        ],
+        "places": [
+            {
+                "name": "Mundypiel",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    250.9785919189453,
+                    103.19234848022461,
+                    -4
+                ]
             }
         ]
     },
@@ -173,8 +499,49 @@
                     -93.47084426879883,
                     289.4762420654297,
                     -4
+                ]
+            }
+        ]
+    },
+    "Carrer de Casp": {
+        "building_glb": "buildings_element.562.glb",
+        "bounding_box": [
+            62.43692151380938,
+            264.79263138952217,
+            137.6140213012695,
+            15.936579513520005,
+            17.556161089916635,
+            26.040237426757812,
+            0.7867079749634631
+        ],
+        "places": [
+            {
+                "name": "Cami Gallery",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                "location": [
+                    62.36933898925781,
+                    264.7517776489258,
+                    -4
+                ]
+            },
+            {
+                "name": "Cami - Bed and Breakfast",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    62.36933898925781,
+                    264.7517776489258,
+                    -8
+                ]
             }
         ]
     },
@@ -201,8 +568,7 @@
                     -284.2565231323242,
                     -421.56639099121094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -229,8 +595,7 @@
                     59.748220443725586,
                     -391.58233642578125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -257,8 +622,7 @@
                     303.97862243652344,
                     -395.5616455078125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -285,8 +649,7 @@
                     338.4884796142578,
                     16.372246265411377,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -313,8 +676,7 @@
                     -393.32508850097656,
                     -97.14912033081055,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -340,8 +702,7 @@
                     -349.2371520996094,
                     200.37834930419922,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -367,8 +728,7 @@
                     -363.8017272949219,
                     213.06944274902344,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             }
         ]
     },
@@ -395,8 +755,7 @@
                     -390.7283020019531,
                     203.57488250732422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -422,8 +781,7 @@
                     -368.1687774658203,
                     229.13856506347656,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -450,8 +808,7 @@
                     -347.4350891113281,
                     158.41631317138672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -478,8 +835,7 @@
                     -385.33131408691406,
                     -397.02149963378906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -506,8 +862,7 @@
                     -381.95086669921875,
                     -355.0763244628906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -534,8 +889,7 @@
                     -149.8935775756836,
                     -102.06692886352539,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -561,8 +915,7 @@
                     -121.55509185791016,
                     -95.30486297607422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -589,8 +942,61 @@
                     -140.24107360839844,
                     421.24591064453125,
                     -4
+                ]
+            }
+        ]
+    },
+    "HCC Montblanc": {
+        "building_glb": "buildings_HCC Montblanc.glb",
+        "bounding_box": [
+            266.7469184375947,
+            88.80501890775184,
+            135.6312599182129,
+            18.418084356325355,
+            36.79861515475331,
+            34.165794372558594,
+            -0.9217057725904625
+        ],
+        "places": [
+            {
+                "name": "HCC Montblanc",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "hotel",
+                    "hotel"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    268.10023498535156,
+                    88.4708366394043,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Catalonia Portal de l'\u00c0ngel": {
+        "building_glb": "buildings_Catalonia Portal de l'\u00c0ngel.glb",
+        "bounding_box": [
+            221.70031583799715,
+            -161.88658918875475,
+            127.84450149536133,
+            36.448533056245026,
+            47.84027632510233,
+            22.07891082763672,
+            -0.8957141928042223
+        ],
+        "places": [
+            {
+                "name": "Catalonia Portal de l'\u00c0ngel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "hotel",
+                    "hotel"
+                ],
+                "location": [
+                    223.85189819335938,
+                    -162.95693969726562,
+                    -4
+                ]
             }
         ]
     },
@@ -617,8 +1023,7 @@
                     385.7204895019531,
                     283.46905517578125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             }
         ]
     },
@@ -645,8 +1050,7 @@
                     398.9880828857422,
                     -259.1012649536133,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -672,8 +1076,7 @@
                     377.5196228027344,
                     -282.32960510253906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -700,8 +1103,7 @@
                     -317.3048400878906,
                     286.76092529296875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -727,8 +1129,7 @@
                     376.1929016113281,
                     90.9189624786377,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -754,8 +1155,7 @@
                     285.8196105957031,
                     -262.8802490234375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -781,8 +1181,7 @@
                     -308.6698913574219,
                     372.8380432128906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -809,8 +1208,7 @@
                     372.66021728515625,
                     -226.05199432373047,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             }
         ]
     }

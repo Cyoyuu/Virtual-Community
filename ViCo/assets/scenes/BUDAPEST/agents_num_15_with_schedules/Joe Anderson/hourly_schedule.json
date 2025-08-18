@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Orczy-h\u00e1z 1795-1937",
+        "building": "Orczy-h\u00e1z 1795-1937",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Danubius Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research new culinary trends",
+        "place": "Danubius Center",
+        "building": "Danubius Center",
+        "start_time": "09:00:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Danubius Center",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Visit art exhibition for inspiration",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "11:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Pizzagram",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "Pizzagram"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Pizzagram",
+        "building": "Stein-b\u00e9rpalota",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Kebab & Grill",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Pizzagram",
+        "end_place": "Star Kebab & Grill"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "14:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Culinary Creators group meeting",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Star Kebab & Grill",
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "start_time": "17:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The bar",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Star Kebab & Grill",
+        "end_place": "The bar"
+    },
+    {
+        "type": "main",
+        "activity": "Socialize and relax",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joe Anderson's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "The bar",
+        "end_place": "Joe Anderson's room at Orczy-h\u00e1z 1795-1937"
+    },
+    {
+        "type": "main",
+        "activity": "Plan next day's activities",
+        "place": "Joe Anderson's room at Orczy-h\u00e1z 1795-1937",
+        "building": "Orczy-h\u00e1z 1795-1937",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Joe Anderson's room at Orczy-h\u00e1z 1795-1937",
+        "building": "Orczy-h\u00e1z 1795-1937",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

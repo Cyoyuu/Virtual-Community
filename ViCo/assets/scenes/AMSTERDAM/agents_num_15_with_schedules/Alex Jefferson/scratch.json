@@ -1,0 +1,202 @@
+{
+    "name": "Alex Jefferson",
+    "first_name": "Alex",
+    "last_name": "Jefferson",
+    "age": 30,
+    "innate": "power, security, achievement",
+    "learned": "I am a hotel manager at Hotel Hoksbergen, ensuring guests have a comfortable stay. I love reading and playing chess.",
+    "currently": "I aim to improve guest satisfaction scores at the hotel.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness and Wellness Group",
+            "description": "A group focused on health and wellness activities, including yoga, meditation, and fitness training.",
+            "place": "Amsterdam Yoga Centre",
+            "members": [
+                "Alex Jefferson",
+                "Megan Carter",
+                "Pika Hayes",
+                "Rodtang"
+            ],
+            "daily_activity": "practicing yoga from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Alex Jefferson's room at Building III",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Alex Jefferson's room at Building III",
+            "building": "Building III",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Morning routine and preparation for the day",
+            "place": "Alex Jefferson's room at Building III",
+            "building": "Building III",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hotel Hoksbergen",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work at Hotel Hoksbergen",
+            "place": "Hotel Hoksbergen",
+            "building": "Singel 301",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Pancakes and Burgers for lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Hotel Hoksbergen",
+            "end_place": "Pancakes and Burgers"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Pancakes and Burgers",
+            "building": "Oudezijds Voorburgwal 244",
+            "start_time": "12:15:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Hotel Hoksbergen",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:15:00",
+            "start_place": "Pancakes and Burgers",
+            "end_place": "Hotel Hoksbergen"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work at Hotel Hoksbergen",
+            "place": "Hotel Hoksbergen",
+            "building": "Singel 301",
+            "start_time": "13:15:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "15:45:00",
+            "start_place": "Hotel Hoksbergen",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Yoga session with Fitness and Wellness Group",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "15:45:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Eetcaf\u00e9 de Brakke Grond for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "Eetcaf\u00e9 de Brakke Grond"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Eetcaf\u00e9 de Brakke Grond",
+            "building": "Nes 43",
+            "start_time": "18:15:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Hotel Hoksbergen",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:15:00",
+            "start_place": "Eetcaf\u00e9 de Brakke Grond",
+            "end_place": "Hotel Hoksbergen"
+        },
+        {
+            "type": "main",
+            "activity": "Evening work session at Hotel Hoksbergen",
+            "place": "Hotel Hoksbergen",
+            "building": "Singel 301",
+            "start_time": "19:15:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Alex Jefferson's room at Building III",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:15:00",
+            "start_place": "Hotel Hoksbergen",
+            "end_place": "Alex Jefferson's room at Building III"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and read a book",
+            "place": "Alex Jefferson's room at Building III",
+            "building": "Building III",
+            "start_time": "21:15:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Play chess online",
+            "place": "Alex Jefferson's room at Building III",
+            "building": "Building III",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Hotel Hoksbergen",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

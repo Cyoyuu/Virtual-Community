@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kylian Mbappe's room at Hyatt Place Madison/Downtown",
+        "building": "Hyatt Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Barriques Coffee - West Wash",
+        "building": "Hotel Lorraine",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Overture Center for the Arts",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Barriques Coffee - West Wash",
+        "end_place": "Overture Center for the Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Overture Center for the Arts",
+        "place": "Overture Center for the Arts",
+        "building": "Overture Center for the Arts",
+        "start_time": "09:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Grace Food Pantry",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Overture Center for the Arts",
+        "end_place": "Grace Food Pantry"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Grace Food Pantry",
+        "building": "Grace Episcopal Church",
+        "start_time": "12:00:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Madison Hunger Task Force - Food Distribution Center",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Grace Food Pantry",
+        "end_place": "Madison Hunger Task Force - Food Distribution Center"
+    },
+    {
+        "type": "main",
+        "activity": "Charity Event at Madison Hunger Task Force",
+        "place": "Madison Hunger Task Force - Food Distribution Center",
+        "building": "Capitol West",
+        "start_time": "13:30:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Resolution Fitness",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Madison Hunger Task Force - Food Distribution Center",
+        "end_place": "Resolution Fitness"
+    },
+    {
+        "type": "main",
+        "activity": "Training Session with Madison Fitness Club",
+        "place": "Resolution Fitness",
+        "building": "345 West Washington Avenue Suite 301",
+        "start_time": "17:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Botanist Social",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Resolution Fitness",
+        "end_place": "The Botanist Social"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Botanist Social",
+        "building": "206 State Street",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hyatt Place Madison/Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "20:30:00",
+        "end_time": "21:00:00",
+        "start_place": "The Botanist Social",
+        "end_place": "Kylian Mbappe's room at Hyatt Place Madison/Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Kylian Mbappe's room at Hyatt Place Madison/Downtown",
+        "building": "Hyatt Place",
+        "start_time": "21:00:00",
+        "end_time": "23:59:59"
+    }
+]

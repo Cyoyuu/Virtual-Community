@@ -1,0 +1,218 @@
+{
+    "name": "Pika Hayes",
+    "first_name": "Pika",
+    "last_name": "Hayes",
+    "age": 18,
+    "innate": "self-direction, stimulation",
+    "learned": "I am a student at EDUCATIONPARTNER GmbH & Co KG. I enjoy skateboarding and video games.",
+    "currently": "I am working on a project about renewable energy for my class.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals working on innovative projects.",
+            "place": "ABC Cube",
+            "members": [
+                "Andrew Ng",
+                "Jody Petersen",
+                "Pika Hayes"
+            ],
+            "daily_activity": "brainstorming new tech ideas from 14:00 to 15:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Pika Hayes's room at Valentina",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Pika Hayes's room at Valentina",
+            "building": "Valentina",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Caf\u00e9 no\u00e9",
+            "building": "ABC-Stra\u00dfe 44-46",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to EDUCATIONPARTNER GmbH & Co KG",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on renewable energy project",
+            "place": "EDUCATIONPARTNER GmbH & Co KG",
+            "building": "ABC-Stra\u00dfe 44-46",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Mala Town Hamburg \u81ea\u9009\u9ebb\u8fa3\u70eb&\u5976\u8336",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "EDUCATIONPARTNER GmbH & Co KG",
+            "end_place": "Mala Town Hamburg \u81ea\u9009\u9ebb\u8fa3\u70eb&\u5976\u8336"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Mala Town Hamburg \u81ea\u9009\u9ebb\u8fa3\u70eb&\u5976\u8336",
+            "building": "Ansgarhof",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to ABC Cube",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Mala Town Hamburg \u81ea\u9009\u9ebb\u8fa3\u70eb&\u5976\u8336",
+            "end_place": "ABC Cube"
+        },
+        {
+            "type": "main",
+            "activity": "Brainstorming with Tech Innovators",
+            "place": "ABC Cube",
+            "building": "ABC Cube",
+            "start_time": "13:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "ABC Cube",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Buy snacks and drinks",
+            "place": "Beverages and DM Store",
+            "building": "ABC-Stra\u00dfe 21",
+            "start_time": "15:30:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Pika Hayes's room at Valentina",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Pika Hayes's room at Valentina"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and play video games",
+            "place": "Pika Hayes's room at Valentina",
+            "building": "Valentina",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to godi l`arte ! Kultur- und Gastronomie-Management GmbH",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Pika Hayes's room at Valentina",
+            "end_place": "godi l`arte ! Kultur- und Gastronomie-Management GmbH"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "godi l`arte ! Kultur- und Gastronomie-Management GmbH",
+            "building": "Hamburgische Staatsoper",
+            "start_time": "18:10:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "godi l`arte ! Kultur- und Gastronomie-Management GmbH",
+            "end_place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer"
+        },
+        {
+            "type": "main",
+            "activity": "Evening walk and reflection",
+            "place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "building": "open space",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Pika Hayes's room at Valentina",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "end_place": "Pika Hayes's room at Valentina"
+        },
+        {
+            "type": "main",
+            "activity": "Work on renewable energy project",
+            "place": "Pika Hayes's room at Valentina",
+            "building": "Valentina",
+            "start_time": "20:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and play video games",
+            "place": "Pika Hayes's room at Valentina",
+            "building": "Valentina",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "EDUCATIONPARTNER GmbH & Co KG",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

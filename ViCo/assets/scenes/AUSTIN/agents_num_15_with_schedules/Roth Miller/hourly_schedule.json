@@ -2,111 +2,131 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Roth Miller's room at Avison Young",
-        "building": "515 Congress Avenue # N",
+        "place": "Roth Miller's room at Savills Austin",
+        "building": "300 West 6th Street Suite 1510",
         "start_time": "00:00:00",
-        "end_time": "07:00:00"
+        "end_time": "08:00:00"
     },
     {
         "type": "meal",
-        "activity": "Breakfast at Tacodeli",
-        "place": "Tacodeli",
-        "building": "301 Congress",
-        "start_time": "07:00:00",
-        "end_time": "07:30:00"
+        "activity": "Breakfast",
+        "place": "Hoson",
+        "building": "Claudia Taylor Johnson Hall",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to 301 Congress",
+        "activity": "Commute to Indeed Tower",
         "place": null,
         "building": null,
-        "start_time": "07:30:00",
-        "end_time": "07:45:00"
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
     },
     {
         "type": "main",
-        "activity": "Work on marketing strategies and campaign development",
-        "place": "301 Congress",
-        "building": "301 Congress",
-        "start_time": "07:45:00",
+        "activity": "Work on app development",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "09:00:00",
         "end_time": "12:00:00"
     },
     {
-        "type": "meal",
-        "activity": "Lunch at Tacodeli",
-        "place": "Tacodeli",
-        "building": "301 Congress",
+        "type": "commute",
+        "activity": "Commute to In Plain Sight",
+        "place": null,
+        "building": null,
         "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Indeed Tower",
+        "end_place": "In Plain Sight"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "In Plain Sight",
+        "building": "612 Brazos Street Suite C",
+        "start_time": "12:10:00",
         "end_time": "12:30:00"
     },
     {
-        "type": "main",
-        "activity": "Continue working on marketing campaign",
-        "place": "301 Congress",
-        "building": "301 Congress",
+        "type": "commute",
+        "activity": "Commute back to Indeed Tower",
+        "place": null,
+        "building": null,
         "start_time": "12:30:00",
-        "end_time": "16:30:00"
+        "end_time": "13:00:00",
+        "start_place": "In Plain Sight",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Continue app development",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Group brainstorming session",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to REP Real Estate Partners",
+        "activity": "Commute to Rain on 4th",
         "place": null,
         "building": null,
-        "start_time": "16:30:00",
-        "end_time": "16:45:00",
-        "start_place": "301 Congress",
-        "end_place": "REP Real Estate Partners"
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Indeed Tower",
+        "end_place": "Rain on 4th"
     },
     {
-        "type": "main",
-        "activity": "Networking and discussing property deals",
-        "place": "REP Real Estate Partners",
-        "building": "301 Congress",
-        "start_time": "16:45:00",
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Rain on 4th",
+        "building": "Rain on 4th",
+        "start_time": "17:30:00",
         "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Neon Grotto",
+        "activity": "Commute to Northern-Southern",
         "place": null,
         "building": null,
         "start_time": "18:00:00",
-        "end_time": "18:15:00",
-        "start_place": "REP Real Estate Partners",
-        "end_place": "Neon Grotto"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner at Neon Grotto",
-        "place": "Neon Grotto",
-        "building": "Neon Grotto",
-        "start_time": "18:15:00",
-        "end_time": "19:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Roth Miller's room at Avison Young",
-        "place": null,
-        "building": null,
-        "start_time": "19:30:00",
-        "end_time": "19:45:00",
-        "start_place": "Neon Grotto",
-        "end_place": "Roth Miller's room at Avison Young"
+        "end_time": "18:30:00",
+        "start_place": "Rain on 4th",
+        "end_place": "Northern-Southern"
     },
     {
         "type": "main",
-        "activity": "Relax and unwind",
-        "place": "Roth Miller's room at Avison Young",
-        "building": "515 Congress Avenue # N",
-        "start_time": "19:45:00",
-        "end_time": "23:00:00"
+        "activity": "Relax and enjoy entertainment",
+        "place": "Northern-Southern",
+        "building": "107 East 5th Street Suite 107",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
     },
     {
-        "type": "sleep",
-        "activity": "Sleep",
-        "place": "Roth Miller's room at Avison Young",
-        "building": "515 Congress Avenue # N",
-        "start_time": "23:00:00",
+        "type": "commute",
+        "activity": "Commute back to Roth Miller's room at Savills Austin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Northern-Southern",
+        "end_place": "Roth Miller's room at Savills Austin"
+    },
+    {
+        "type": "main",
+        "activity": "Play video games",
+        "place": "Roth Miller's room at Savills Austin",
+        "building": "300 West 6th Street Suite 1510",
+        "start_time": "20:30:00",
         "end_time": "23:59:59"
     }
 ]

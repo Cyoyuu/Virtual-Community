@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at Domus Carola",
+        "building": "Domus Carola",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 De Amicis",
+        "building": "Via Edmondo de Amicis",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sant'Ambrogio",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Caf\u00e9 De Amicis",
+        "end_place": "Sant'Ambrogio"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new signature dish",
+        "place": "Sant'Ambrogio",
+        "building": "Via Ausonio",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Just Bowl",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Sant'Ambrogio",
+        "end_place": "Just Bowl"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Just Bowl",
+        "building": "Via Francesco Novati",
+        "start_time": "12:40:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Just Bowl",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Buy ingredients for new recipes",
+        "place": "Fresh and Snacks Store",
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Le Cavallerizze",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Le Cavallerizze"
+    },
+    {
+        "type": "main",
+        "activity": "Attend painting workshop",
+        "place": "Le Cavallerizze",
+        "building": "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona",
+        "start_time": "15:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sant'Ambrogio",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Le Cavallerizze",
+        "end_place": "Sant'Ambrogio"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on new signature dish",
+        "place": "Sant'Ambrogio",
+        "building": "Via Ausonio",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Sant'Ambrogio",
+        "building": "Via Ausonio",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Domus Carola",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Sant'Ambrogio",
+        "end_place": "Steve Johnson's room at Domus Carola"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes at home",
+        "place": "Steve Johnson's room at Domus Carola",
+        "building": "Domus Carola",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Steve Johnson's room at Domus Carola",
+        "building": "Domus Carola",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at Domus Carola",
+        "building": "Domus Carola",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

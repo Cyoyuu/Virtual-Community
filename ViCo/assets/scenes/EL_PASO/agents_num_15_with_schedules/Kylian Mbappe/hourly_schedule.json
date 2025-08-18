@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kylian Mbappe's room at Plaza Hotel",
+        "building": "Plaza Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "District Coffee Co.",
+        "building": "119 North Stanton Street",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Abel Saucedo Art Studio",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:15:00",
+        "start_place": "District Coffee Co.",
+        "end_place": "Abel Saucedo Art Studio"
+    },
+    {
+        "type": "main",
+        "activity": "Explore local art",
+        "place": "Abel Saucedo Art Studio",
+        "building": "W. S. Hills Commercial Structure",
+        "start_time": "09:15:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Machop Spawn",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:15:00",
+        "start_place": "Abel Saucedo Art Studio",
+        "end_place": "Machop Spawn"
+    },
+    {
+        "type": "main",
+        "activity": "Play video games",
+        "place": "Machop Spawn",
+        "building": "125 Henry Trost Court",
+        "start_time": "11:15:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flor De Barro Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "Machop Spawn",
+        "end_place": "Flor De Barro Gallery"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Flor De Barro Gallery",
+        "building": "212 South Mesa Street",
+        "start_time": "13:15:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Strayer University",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:15:00",
+        "start_place": "Flor De Barro Gallery",
+        "end_place": "Strayer University"
+    },
+    {
+        "type": "main",
+        "activity": "Charity football match preparation",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "14:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Tap Bar & Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Strayer University",
+        "end_place": "The Tap Bar & Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking event with El Paso Hospitality Network",
+        "place": "The Tap Bar & Restaurant",
+        "building": "408 East San Antonio Avenue",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to MONA Bar of Modern Art",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "The Tap Bar & Restaurant",
+        "end_place": "MONA Bar of Modern Art"
+    },
+    {
+        "type": "main",
+        "activity": "Enjoy local art and culture",
+        "place": "MONA Bar of Modern Art",
+        "building": "410 1/2 East San Antonio Avenue",
+        "start_time": "20:15:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Plaza Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:15:00",
+        "start_place": "MONA Bar of Modern Art",
+        "end_place": "Kylian Mbappe's room at Plaza Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Kylian Mbappe's room at Plaza Hotel",
+        "building": "Plaza Hotel",
+        "start_time": "22:15:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,41 +1,59 @@
 {
+    "Barack Obama": {
+        "age": 63,
+        "living_place": "Barack Obama's room at El Avenida Palace",
+        "appearance": "ViCo/assets/imgs/avatars/Barack Obama.png",
+        "groups": [
+            "Cultural Explorers"
+        ]
+    },
     "Christiano Ronaldo": {
         "age": 39,
-        "living_place": "Christiano Ronaldo's room at El Avenida Palace",
+        "living_place": "Christiano Ronaldo's room at H10 Urquinaona Plaza",
         "appearance": "ViCo/assets/imgs/avatars/Christiano Ronaldo.png",
         "groups": [
-            "Creative Minds"
+            "Cultural Explorers"
         ]
     },
     "Drake": {
         "age": 37,
-        "living_place": "Drake's room at Hotel Regina",
+        "living_place": "Drake's room at ME Barcelona",
         "appearance": "ViCo/assets/imgs/avatars/Drake.png",
         "groups": [
-            "Creative Minds"
+            "Cultural Explorers"
         ]
     },
-    "Taylor Swift": {
-        "age": 34,
-        "living_place": "Taylor Swift's room at H10 Urquinaona Plaza",
-        "appearance": "ViCo/assets/imgs/avatars/Taylor Swift.png",
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at El Avenida Palace",
+        "appearance": "ViCo/assets/imgs/avatars/Emily Johnson.png",
         "groups": [
-            "Creative Minds"
+            "Cultural Explorers"
         ]
     },
-    "Creative Minds": {
-        "description": "A group of artists and creatives who gather to share ideas and collaborate on projects.",
-        "place": "Il\u00b7lacions Design Gallery",
-        "members": [
-            "Zara Williams",
-            "Taylor Swift",
-            "Drake",
-            "Christiano Ronaldo"
-        ],
-        "daily_activity": "brainstorming creative projects from 17:00 to 18:00"
+    "Justin Bieber": {
+        "age": 29,
+        "living_place": "Justin Bieber's room at Hotel Regina",
+        "appearance": "ViCo/assets/imgs/avatars/Justin Bieber.png",
+        "groups": [
+            "Cultural Explorers"
+        ]
     },
-    "Zara Williams's room at Hotel Monegal": {
-        "building": "Metro Catalunya",
+    "Cultural Explorers": {
+        "description": "A group of individuals exploring the cultural landmarks and experiences of Barcelona.",
+        "place": "El Avenida Palace",
+        "members": [
+            "Barack Obama",
+            "Christiano Ronaldo",
+            "Drake",
+            "Emily Johnson",
+            "Zara Williams",
+            "Justin Bieber"
+        ],
+        "daily_activity": "visiting cultural landmarks from 16:00 to 17:00"
+    },
+    "Zara Williams's room at El Avenida Palace": {
+        "building": "El Avenida Palace",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -43,20 +61,66 @@
             "establishment"
         ],
         "location": [
-            963.7433061599731,
-            821.2826309204102,
-            -12
+            753.3645477294922,
+            1243.994743347168,
+            -24
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
-        "name": "Zara Williams's room at Hotel Monegal",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Zara Williams's room at El Avenida Palace",
         "bounding_box": [
-            -35.68821416606413,
-            -179.63249003137497,
-            137.47528839111328,
-            27.678280777708412,
-            24.01231593184185,
-            32.16667175292969,
-            -0.11255415200080782
+            -246.63091359976198,
+            247.11159671648724,
+            150.58866882324216,
+            28.076820589647134,
+            31.403392938025995,
+            44.21380615234375,
+            -0.7764564204912203
+        ]
+    },
+    "El Avenida Palace": {
+        "building": "El Avenida Palace",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.3645477294922,
+            1243.994743347168,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "bounding_box": [
+            -246.63091359976198,
+            247.11159671648724,
+            150.58866882324216,
+            28.076820589647134,
+            31.403392938025995,
+            44.21380615234375,
+            -0.7764564204912203
+        ]
+    },
+    "Movistar Centre": {
+        "building": "Movistar Centre",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1140.361312866211,
+            1004.8940782546997,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            135.98538208007812,
+            7.576118469238281,
+            142.0291748046875,
+            25.226667404174805,
+            27.929733276367188,
+            43.638832092285156,
+            0.7388031482696533
         ]
     },
     "Il\u00b7lacions Design Gallery": {
@@ -72,7 +136,7 @@
             730.7357635498047,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             90.05526925079454,
             -268.4703047539697,
@@ -83,33 +147,134 @@
             0.4654475662488498
         ]
     },
-    "Geneva Business School - Barcelona Campus": {
-        "building": "Carrer de Rivadeneyra",
-        "coarse_type": "office",
+    "Can Pizza Universitat": {
+        "building": "Ronda de la Universitat",
+        "coarse_type": "food",
         "fine_types": [
-            "university",
-            "school",
+            "restaurant",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1058.8317012786865,
-            836.8618850708008,
+            798.5226516723633,
+            982.3367626667023,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            58.9659531205412,
-            -164.00429224361437,
-            129.17107772827148,
-            23.417091805750577,
-            36.47565654867587,
-            19.34101104736328,
-            -0.56924270274052
+            -201.01796938045516,
+            -18.399003356869216,
+            136.12260818481445,
+            18.27070180396342,
+            41.40875408504387,
+            21.59789276123047,
+            0.463124273712025
         ]
     },
-    "Mandiram Escola de Yoga": {
-        "building": "Pl Urquinaona",
+    "Batea": {
+        "building": "El Avenida Palace",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.3645477294922,
+            1243.994743347168,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -246.63091359976198,
+            247.11159671648724,
+            150.58866882324216,
+            28.076820589647134,
+            31.403392938025995,
+            44.21380615234375,
+            -0.7764564204912203
+        ]
+    },
+    "Vapiano Gran Via": {
+        "building": "Gran Via de les Corts Catalanes",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            803.9527130126953,
+            1186.001205444336,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -195.66511316431192,
+            185.3356604503645,
+            140.88913345336914,
+            16.15741008074954,
+            32.41312588213011,
+            26.866966247558594,
+            0.7534874577843585
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Casa Pich i Pon",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.9596710205078,
+            1098.5413284301758,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -118.7930428363285,
+            93.18013984710525,
+            145.82381057739258,
+            21.78630905051794,
+            46.56748897137243,
+            37.60515594482422,
+            -0.9247121595441887
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Carrer de la Canuda",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "health",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1258.5184631347656,
+            802.5407562255859,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            256.6870271629036,
+            -196.8986839590719,
+            126.62826156616211,
+            29.190051261755897,
+            60.93020407054617,
+            20.376747131347656,
+            -1.027447051746568
+        ]
+    },
+    "Yoga Vacaciones": {
+        "building": "Ronda de la Universitat",
         "coarse_type": "entertainment",
         "fine_types": [
             "gym",
@@ -118,168 +283,19 @@
             "establishment"
         ],
         "location": [
-            1174.7693557739258,
-            1255.4750671386719,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            174.7235690686839,
-            251.93077120888918,
-            137.4907646179199,
-            25.40860593222929,
-            33.38011725376362,
-            28.89398956298828,
-            0.7825328536983855
-        ]
-    },
-    "TuCoworking": {
-        "building": "Pla\u00e7a de la Vila de Madrid",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1214.362564086914,
-            741.7255859375,
+            798.5226516723633,
+            982.3367626667023,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            211.26866097942067,
-            -254.29565469389405,
-            131.91738891601565,
-            45.18962140853311,
-            48.389463137297994,
-            32.079681396484375,
-            0.513586991778526
-        ]
-    },
-    "Burger King": {
-        "building": "Metro Catalunya",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            963.7433061599731,
-            821.2826309204102,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -35.68821416606413,
-            -179.63249003137497,
-            137.47528839111328,
-            27.678280777708412,
-            24.01231593184185,
-            32.16667175292969,
-            -0.11255415200080782
-        ]
-    },
-    "Subway": {
-        "building": "Rambla de Canaletes",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1090.086513519287,
-            730.7357635498047,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            90.05526925079454,
-            -268.4703047539697,
-            133.17289352416995,
-            31.677733173517826,
-            18.86584769294573,
-            31.82740020751953,
-            0.4654475662488498
-        ]
-    },
-    "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4": {
-        "building": "Casa Mart\u00ed",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1285.1085510253906,
-            880.1705627441406,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            285.4540480441911,
-            -119.83270734513754,
-            127.58673477172852,
-            14.10403798653613,
-            23.694917731040512,
-            20.31163787841797,
-            0.5360568433778378
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "Carrer del Bonsucc\u00e9s",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            993.6312102079391,
-            725.8872528076172,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            -5.454439958670882,
-            -274.23464936242186,
-            127.96074676513673,
-            5.1072670048195885,
-            13.629867722653284,
-            17.659652709960938,
-            0.5030197356036703
-        ]
-    },
-    "Fresh and Beverages Store": {
-        "building": "Avinguda del Portal de l'\u00c0ngel",
-        "coarse_type": "stores",
-        "fine_types": [
-            "shoe_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1218.155029296875,
-            1029.085952758789,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
-        "bounding_box": [
-            212.34474182128906,
-            22.17278289794922,
-            127.1725845336914,
-            43.141090393066406,
-            165.32167053222656,
-            21.32282257080078,
-            0.6154614686965942
+            -201.01796938045516,
+            -18.399003356869216,
+            136.12260818481445,
+            18.27070180396342,
+            41.40875408504387,
+            21.59789276123047,
+            0.463124273712025
         ]
     },
     "Carrer de Pelai Bus Stop": {

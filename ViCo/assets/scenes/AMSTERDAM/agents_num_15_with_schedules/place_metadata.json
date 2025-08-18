@@ -1,4 +1,70 @@
 {
+    "Tim Cook's room at Swiss\u00f4tel Amsterdam": {
+        "building": "Nieuwendijk 231",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1102.6620903015137,
+            1054.9966487884521,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Tim Cook's room at Swiss\u00f4tel Amsterdam"
+    },
+    "Chad Thompson's room at Serviced Apartments Amsterdam | Long and Short Stay Accommodation": {
+        "building": "Sint Pieterspoortsteeg 21",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1176.7149200439453,
+            818.472900390625,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Chad Thompson's room at Serviced Apartments Amsterdam | Long and Short Stay Accommodation"
+    },
+    "Flemish Cultural Center de Brakke Grond": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Techlab Bv": {
+        "building": "Singel 326 A",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            731.1872100830078,
+            738.3324813842773,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
     "Caf\u00e9 De Buurvrouw": {
         "building": "Sint Pieterspoortsteeg 29",
         "coarse_type": "food",
@@ -12,69 +78,86 @@
             810.3527374267578,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Bar Jones": {
-        "building": "Nes 33",
+    "Megan Carter's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Megan Carter's room at Building III"
+    },
+    "BEMS Restaurant": {
+        "building": "Nieuwezijds Voorburgwal 171",
         "coarse_type": "food",
         "fine_types": [
-            "bar",
+            "restaurant",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1155.5295486450195,
-            836.4890670776367,
+            957.0935535430908,
+            872.0422248840332,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Hotel V": {
-        "building": "Vlaams Cultuurhuis de Brakke Grond",
-        "coarse_type": "accommodation",
+    "La Condesa Taqueria": {
+        "building": "Herengracht 287h",
+        "coarse_type": "food",
         "fine_types": [
-            "lodging",
             "restaurant",
             "point_of_interest",
             "food",
             "establishment"
         ],
         "location": [
-            1173.8683776855469,
-            766.2080841064453,
+            712.1708679199219,
+            749.7493286132812,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "BeerTemple": {
-        "building": "Nieuwezijds Voorburgwal 250",
+    "TrainMore Amsterdam Singel Black Label": {
+        "building": "Singel 250",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.3935928344727,
+            977.1166310310364,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "The Lobby Nesplein": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
         "coarse_type": "food",
         "fine_types": [
+            "restaurant",
             "bar",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            909.3520698547363,
-            866.4657592773438,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "Nederlandse Beauty School Amsterdam": {
-        "building": "Singel 300",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            739.4293670654297,
-            822.9019088745117,
+            1173.8683776855469,
+            766.2080841064453,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Two Rooms in City Centre": {
         "building": "Herengracht 211",
@@ -87,6 +170,189 @@
         "location": [
             727.8427429199219,
             1037.7041187286377,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Elizabeth Mensah's room at Charly Group Amsterdam": {
+        "building": "Herengracht 257",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            720.1282348632812,
+            842.0216064453125,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Elizabeth Mensah's room at Charly Group Amsterdam"
+    },
+    "Joe Anderson's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Joe Anderson's room at Building III"
+    },
+    "Humanities IT Lab - Universiteit van Amsterdam": {
+        "building": "UvA PC Hoofthuis",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            870.3427658081055,
+            1076.7827997207642,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Hotel Hoksbergen": {
+        "building": "Singel 301",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            799.1795883178711,
+            722.3047332763672,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "The Butcher W Operations B.V.": {
+        "building": "Nieuwezijds Voorburgwal 271",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            970.0538415908813,
+            791.1518478393555,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Regus - Amsterdam, Singelstaete": {
+        "building": "Singel 250",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.3935928344727,
+            977.1166310310364,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Beverages and DM Store": {
+        "building": "Spuistraat 260",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            816.0925369262695,
+            710.7210540771484,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "Hotel Amsterdam De Roode Leeuw": {
+        "building": "Damrak 93-94",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.0584182739258,
+            1071.1327781677246,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "De Nieuwe Vrouw": {
+        "building": "Nieuwezijds Voorburgwal 178",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            923.7640514373779,
+            1103.2031288146973,
+            -20
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Alex Jefferson's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Alex Jefferson's room at Building III"
+    },
+    "Amsterdam Yoga Centre": {
+        "building": "Singel 300",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Charly Group Amsterdam": {
+        "building": "Herengracht 257",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            720.1282348632812,
+            842.0216064453125,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
@@ -106,490 +372,7 @@
             827.1210632324219,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "BEMS Restaurant": {
-        "building": "Nieuwezijds Voorburgwal 171",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            957.0935535430908,
-            872.0422248840332,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "The Hoxton, Amsterdam": {
-        "building": "Herengracht 255",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "bar",
-            "lodging",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            733.1640319824219,
-            855.8078308105469,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Flemish Cultural Center de Brakke Grond": {
-        "building": "Vlaams Cultuurhuis de Brakke Grond",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1173.8683776855469,
-            766.2080841064453,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Fresh and Beverages Store": {
-        "building": "Sint Luci\u00ebnsteeg 25",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            949.2522029876709,
-            713.7570953369141,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "Leonard Park's room at De Groote Club": {
-        "building": "Paleisstraat 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1005.9868640899658,
-            939.9135322570801,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Leonard Park's room at De Groote Club"
-    },
-    "Elizabeth Mensah's room at Charly Group Amsterdam": {
-        "building": "Herengracht 257",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            720.1282348632812,
-            842.0216064453125,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Elizabeth Mensah's room at Charly Group Amsterdam"
-    },
-    "Mr portret": {
-        "building": "Amsterdam",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            869.0656204223633,
-            846.8522186279297,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Bubbles & Wines": {
-        "building": "Nes 37",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1154.6223526000977,
-            832.0418243408203,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Stokkenbar": {
-        "building": "Sint Luci\u00ebnsteeg 3",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            992.2341585755348,
-            722.367431640625,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "Donald Trump's room at The Hoxton, Amsterdam": {
-        "building": "Herengracht 255",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "bar",
-            "lodging",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            733.1640319824219,
-            855.8078308105469,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-        "name": "Donald Trump's room at The Hoxton, Amsterdam"
-    },
-    "Caf\u00e9 restaurant van Kerkwijk": {
-        "building": "Nes 41",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1146.6369018554688,
-            818.5218124389648,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Abraxas": {
-        "building": "Jonge Roelensteeg 12-14",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "food",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            968.8310294151306,
-            885.611930847168,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Vrieshorst Project B.V.": {
-        "building": "Kalverstraat 35-37",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1048.6044216156006,
-            815.4920196533203,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "The Lobby Nesplein": {
-        "building": "Vlaams Cultuurhuis de Brakke Grond",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "bar",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1173.8683776855469,
-            766.2080841064453,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Beverages and DM Store": {
-        "building": "Spuistraat 250",
-        "coarse_type": "stores",
-        "fine_types": [
-            "bicycle_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            817.9329528808594,
-            747.1223907470703,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-    },
-    "Guesthouse BBtheDam": {
-        "building": "Pieter Jacobszstraat 22",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1191.9451141357422,
-            832.7722702026367,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-    },
-    "La Condesa Taqueria": {
-        "building": "Herengracht 287h",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            712.1708679199219,
-            749.7493286132812,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Shannon Steves's room at Guesthouse BBtheDam": {
-        "building": "Pieter Jacobszstraat 22",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1191.9451141357422,
-            832.7722702026367,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "Shannon Steves's room at Guesthouse BBtheDam"
-    },
-    "Eetcaf\u00e9 de Brakke Grond": {
-        "building": "Nes 43",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1178.1835479736328,
-            799.5207748413086,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "Fresh and DM Store": {
-        "building": "Kalverstraat 57",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1022.9377584457397,
-            745.8336334228516,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "nachbar": {
-        "building": "Nieuwezijds Voorburgwal 169",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "night_club",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            963.5298128128052,
-            879.9903945922852,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Red light district Residence on ground floor": {
-        "building": "Pieter Jacobszstraat 25",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1225.366584777832,
-            836.0687484741211,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "Steve Johnson's room at Hotel V": {
-        "building": "Vlaams Cultuurhuis de Brakke Grond",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1173.8683776855469,
-            766.2080841064453,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Steve Johnson's room at Hotel V"
-    },
-    "Moonlife concept store": {
-        "building": "Wijdesteeg",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            909.2360000610352,
-            836.0588455200195,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Amsterdam Yoga Centre": {
-        "building": "Singel 300",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            739.4293670654297,
-            822.9019088745117,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Fresh and Snacks Store": {
-        "building": "Spuistraat 226",
-        "coarse_type": "stores",
-        "fine_types": [
-            "car_repair",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            816.9859161376953,
-            792.7637405395508,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-    },
-    "Hotel HEGRA by Stanley Collection": {
-        "building": "Herengracht 269",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            711.8989868164062,
-            805.6150283813477,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Caf\u00e9 DIEP!": {
-        "building": "Nieuwezijds Voorburgwal 256-HS",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "bar",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            909.1920890808105,
-            852.0387649536133,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "YellowKorner Amsterdam": {
-        "building": "Singel 282",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            745.3891906738281,
-            882.0786437988281,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Tom Holland's room at Hotel TwentySeven": {
-        "building": "Industria",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1118.354320526123,
-            918.3688545227051,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Tom Holland's room at Hotel TwentySeven"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Hotel TwentySeven": {
         "building": "Industria",
@@ -604,38 +387,54 @@
             918.3688545227051,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
     },
-    "Beverages and Snacks Store": {
-        "building": "Spuistraat 251",
+    "Fresh and DM Store": {
+        "building": "Jonge Roelensteeg",
         "coarse_type": "stores",
         "fine_types": [
+            "jewelry_store",
+            "point_of_interest",
             "store",
+            "establishment"
+        ],
+        "location": [
+            994.1781234741211,
+            873.2332382202148,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Claudia Rolando - Singing Lessons in Amsterdam": {
+        "building": "Spuistraat 249",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            849.1618041992188,
-            718.4234619140625,
-            -4
+            849.4439926147461,
+            725.1471710205078,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
     },
-    "Charly Group Amsterdam": {
-        "building": "Herengracht 257",
+    "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw": {
+        "building": "Damrak 93-94",
         "coarse_type": "accommodation",
         "fine_types": [
-            "real_estate_agency",
             "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            720.1282348632812,
-            842.0216064453125,
-            -4
+            1118.0584182739258,
+            1071.1327781677246,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw"
     },
     "drink coffee": {
         "building": "Spuistraat 249",
@@ -651,118 +450,84 @@
             725.1471710205078,
             -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Yann LeCun's room at W Amsterdam": {
-        "building": "Spuistraat 175",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            888.3967514038086,
-            954.9266242980957,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Yann LeCun's room at W Amsterdam"
-    },
-    "Zara Williams's room at Red light district Residence on ground floor": {
-        "building": "Pieter Jacobszstraat 25",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1225.366584777832,
-            836.0687484741211,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-        "name": "Zara Williams's room at Red light district Residence on ground floor"
-    },
-    "Brasserie 3-5-3": {
-        "building": "Nieuwezijds Voorburgwal 353",
+    "Green house seed company": {
+        "building": "Oudezijds Voorburgwal 191",
         "coarse_type": "food",
         "fine_types": [
-            "cafe",
+            "point_of_interest",
+            "store",
             "food",
+            "establishment"
+        ],
+        "location": [
+            1287.1887664794922,
+            810.2958831787109,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Fresh and Beverages Store": {
+        "building": "Spuistraat 231",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            917.9028282165527,
-            718.2993927001953,
+            876.285514831543,
+            789.9008255004883,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
     },
-    "Bar-Restaurant Het Groene Paleis": {
-        "building": "NRC-gebouw",
+    "Nederlandse Beauty School Amsterdam": {
+        "building": "Singel 300",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -8
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "BeerTemple": {
+        "building": "Nieuwezijds Voorburgwal 250",
         "coarse_type": "food",
         "fine_types": [
             "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            909.3520698547363,
+            866.4657592773438,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "ROYAL98": {
+        "building": "Nieuwendijk 231",
+        "coarse_type": "food",
+        "fine_types": [
             "restaurant",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1114.8650283813477,
-            761.5866546630859,
-            -4
+            1102.6620903015137,
+            1054.9966487884521,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V.": {
-        "building": "Nieuwezijds Voorburgwal 252",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            910.5617179870605,
-            859.5694961547852,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V."
-    },
-    "ClubNl": {
-        "building": "Nieuwezijds Voorburgwal 169",
-        "coarse_type": "food",
-        "fine_types": [
-            "night_club",
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            963.5298128128052,
-            879.9903945922852,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Eve By J Gonzales's room at Building III": {
-        "building": "Building III",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1000.8488445281982,
-            912.8461971282959,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-        "name": "Eve By J Gonzales's room at Building III"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Concrete Store Amsterdam": {
         "building": "Spuistraat 250",
@@ -780,25 +545,25 @@
             747.1223907470703,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "Luxury Canal Suite De Heren": {
-        "building": "Herengracht 253 H",
-        "coarse_type": "accommodation",
+    "nachbar": {
+        "building": "Nieuwezijds Voorburgwal 169",
+        "coarse_type": "entertainment",
         "fine_types": [
-            "lodging",
+            "night_club",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            718.9880218505859,
-            871.8441009521484,
+            963.5298128128052,
+            879.9903945922852,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
     },
-    "Techlab Bv": {
-        "building": "Singel 326 A",
+    "Mavi 's International BV": {
+        "building": "Rokin 20",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -807,13 +572,238 @@
             "establishment"
         ],
         "location": [
-            731.1872100830078,
-            738.3324813842773,
+            1063.0294075012207,
+            855.2220764160156,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Pika Hayes's room at Two Rooms in City Centre": {
+    "Abraxas": {
+        "building": "Jonge Roelensteeg 12-14",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            968.8310294151306,
+            885.611930847168,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Royal Palace Amsterdam": {
+        "building": "Koninklijk Paleis",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            981.1056747436523,
+            998.1671314239502,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Hotel V": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "Pancakes and Burgers": {
+        "building": "Oudezijds Voorburgwal 244",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1255.239501953125,
+            854.3655471801758,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Sukasari gunununghalu": {
+        "building": "Damstraat 22",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.2677536010742,
+            876.8668746948242,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Rodtang's room at Hotel V": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Rodtang's room at Hotel V"
+    },
+    "ClubNl": {
+        "building": "Nieuwezijds Voorburgwal 169",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            963.5298128128052,
+            879.9903945922852,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Pika Hayes's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Pika Hayes's room at Building III"
+    },
+    "Andrew Ng's room at Hotel TwentySeven": {
+        "building": "Industria",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.354320526123,
+            918.3688545227051,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Andrew Ng's room at Hotel TwentySeven"
+    },
+    "Beverages and Snacks Store": {
+        "building": "Spuistraat 251",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            849.1618041992188,
+            718.4234619140625,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "Emily Johnson's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Emily Johnson's room at Building III"
+    },
+    "Louise Roberts's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Louise Roberts's room at Building III"
+    },
+    "Eetcaf\u00e9 de Brakke Grond": {
+        "building": "Nes 43",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1178.1835479736328,
+            799.5207748413086,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Van Stapele Koekmakerij": {
+        "building": "Rokin 17",
+        "coarse_type": "food",
+        "fine_types": [
+            "tourist_attraction",
+            "bakery",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1129.2807884216309,
+            866.633617401123,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Brycer Rodriguez's room at Two Rooms in City Centre": {
         "building": "Herengracht 211",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -826,104 +816,27 @@
             1037.7041187286377,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "Pika Hayes's room at Two Rooms in City Centre"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Brycer Rodriguez's room at Two Rooms in City Centre"
     },
-    "WhatsNext": {
-        "building": "Kalverstraat 57",
+    "Bar-Restaurant Het Groene Paleis": {
+        "building": "NRC-gebouw",
         "coarse_type": "food",
         "fine_types": [
-            "food",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1022.9377584457397,
-            745.8336334228516,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Building III": {
-        "building": "Building III",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1000.8488445281982,
-            912.8461971282959,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "SooTea bubble tea shop & more": {
-        "building": "Sint Luci\u00ebnsteeg 19",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            972.9555487632751,
-            717.7644348144531,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "De Groote Club": {
-        "building": "Paleisstraat 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1005.9868640899658,
-            939.9135322570801,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Argentinos": {
-        "building": "Damstraat 34",
-        "coarse_type": "food",
-        "fine_types": [
+            "bar",
             "restaurant",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1241.9146270751953,
-            863.326114654541,
+            1114.8650283813477,
+            761.5866546630859,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "FuLu": {
-        "building": "Rokin 24bel",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1060.6610488891602,
-            838.752326965332,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "James Thompson's room at Regus - Amsterdam, Singelstaete": {
+    "Adam Pierce's room at Regus - Amsterdam, Singelstaete": {
         "building": "Singel 250",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -934,104 +847,10 @@
         "location": [
             750.3935928344727,
             977.1166310310364,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "James Thompson's room at Regus - Amsterdam, Singelstaete"
-    },
-    "Claudia Rolando - Singing Lessons in Amsterdam": {
-        "building": "Spuistraat 249",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            849.4439926147461,
-            725.1471710205078,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
-    },
-    "Coffee & Cakes.": {
-        "building": "Sint Luci\u00ebnsteeg 21",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            961.1497688293457,
-            714.5084075927734,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "LeBron James's room at Luxury Canal Suite De Heren": {
-        "building": "Herengracht 253 H",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            718.9880218505859,
-            871.8441009521484,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "LeBron James's room at Luxury Canal Suite De Heren"
-    },
-    "Humanities IT Lab - Universiteit van Amsterdam": {
-        "building": "UvA PC Hoofthuis",
-        "coarse_type": "office",
-        "fine_types": [
-            "university",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            870.3427658081055,
-            1076.7827997207642,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
-    },
-    "Roth Miller's room at Hotel HEGRA by Stanley Collection": {
-        "building": "Herengracht 269",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            711.8989868164062,
-            805.6150283813477,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Roth Miller's room at Hotel HEGRA by Stanley Collection"
-    },
-    "De Nieuwe Vrouw": {
-        "building": "Nieuwezijds Voorburgwal 178",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            923.7640514373779,
-            1103.2031288146973,
-            -20
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Adam Pierce's room at Regus - Amsterdam, Singelstaete"
     },
     "Lucius": {
         "building": "Spuistraat 247",
@@ -1048,71 +867,71 @@
             737.7033157348633,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Theo Peters Numismatiek & Filatelie B.V.": {
-        "building": "Nieuwezijds Voorburgwal 252",
+    "Serviced Apartments Amsterdam | Long and Short Stay Accommodation": {
+        "building": "Sint Pieterspoortsteeg 21",
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            910.5617179870605,
-            859.5694961547852,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Chuang Gan's room at Sofitel Legend The Grand Amsterdam": {
-        "building": "Oudezijds Voorburgwal 197",
-        "coarse_type": "accommodation",
-        "fine_types": [
             "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1268.7057876586914,
-            745.7073135375977,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "Chuang Gan's room at Sofitel Legend The Grand Amsterdam"
-    },
-    "Sofitel Legend The Grand Amsterdam": {
-        "building": "Oudezijds Voorburgwal 197",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1268.7057876586914,
-            745.7073135375977,
+            1176.7149200439453,
+            818.472900390625,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
     },
-    "Regus - Amsterdam, Singelstaete": {
-        "building": "Singel 250",
+    "Hotel De Gerstekorrel": {
+        "building": "Damstraat 22",
         "coarse_type": "accommodation",
         "fine_types": [
-            "real_estate_agency",
+            "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            750.3935928344727,
-            977.1166310310364,
+            1216.2677536010742,
+            876.8668746948242,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
-    "Susie's Saloon": {
-        "building": "Oudezijds Voorburgwal 254",
+    "Swiss\u00f4tel Amsterdam": {
+        "building": "Nieuwendijk 231",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1102.6620903015137,
+            1054.9966487884521,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Bar Jones": {
+        "building": "Nes 33",
         "coarse_type": "food",
         "fine_types": [
             "bar",
@@ -1120,14 +939,30 @@
             "establishment"
         ],
         "location": [
-            1237.253547668457,
-            837.6444778442383,
+            1155.5295486450195,
+            836.4890670776367,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "W Amsterdam": {
-        "building": "Spuistraat 175",
+    "Caf\u00e9 restaurant van Kerkwijk": {
+        "building": "Nes 41",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1146.6369018554688,
+            818.5218124389648,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Genghis Khan's room at Hotel De Gerstekorrel": {
+        "building": "Damstraat 22",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -1135,23 +970,39 @@
             "establishment"
         ],
         "location": [
-            888.3967514038086,
-            954.9266242980957,
-            -8
+            1216.2677536010742,
+            876.8668746948242,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Genghis Khan's room at Hotel De Gerstekorrel"
     },
-    "Snacks and DM Store": {
-        "building": "Kalverstraat 60 - 62",
+    "Fresh and Snacks Store": {
+        "building": "Nieuwendijk 231",
         "coarse_type": "stores",
         "fine_types": [
-            "point_of_interest",
             "store",
+            "point_of_interest",
             "establishment"
         ],
         "location": [
-            986.49791431427,
-            775.3778533935547,
+            1102.6620903015137,
+            1054.9966487884521,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "Snacks and DM Store": {
+        "building": "Industria",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.354320526123,
+            918.3688545227051,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
@@ -1164,7 +1015,8 @@
             -223.64587491774998,
             -331.8770473372178,
             108.0179059499044
-        ]
+        ],
+        "scene": null
     },
     "Damrak Bus Stop": {
         "building": "open space",
@@ -1174,7 +1026,8 @@
             205.2698704781698,
             105.74759652198695,
             107.56842942896503
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 1": {
         "building": "open space",
@@ -1184,7 +1037,8 @@
             190.9697649930068,
             -159.54508143669185,
             107.44656170443761
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 2": {
         "building": "open space",
@@ -1194,7 +1048,8 @@
             -270.59051032698653,
             -184.14685443747305,
             107.04116980683409
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 3": {
         "building": "open space",
@@ -1204,7 +1059,8 @@
             -99.84747833441955,
             -121.10998771547311,
             106.88003402941624
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 4": {
         "building": "open space",
@@ -1214,7 +1070,8 @@
             162.8009026867501,
             105.22397871245589,
             107.81291776802452
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 5": {
         "building": "open space",
@@ -1224,7 +1081,8 @@
             14.802841477347487,
             -233.41860399615223,
             107.30805479810088
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 6": {
         "building": "open space",
@@ -1234,7 +1092,8 @@
             -106.98235061443106,
             -267.68981899489995,
             106.81944394501322
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 7": {
         "building": "open space",
@@ -1244,6 +1103,7 @@
             -167.59099691949788,
             40.69110591926888,
             107.84551901907076
-        ]
+        ],
+        "scene": null
     }
 }

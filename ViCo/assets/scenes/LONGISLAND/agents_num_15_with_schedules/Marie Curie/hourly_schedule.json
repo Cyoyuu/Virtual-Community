@@ -1,0 +1,158 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Marie Curie's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "06:00:00",
+        "end_time": "06:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Saint Catherine of Siena School",
+        "place": null,
+        "building": null,
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct research on radioactivity",
+        "place": "Saint Catherine of Siena School",
+        "building": "990 Holzheimer Street",
+        "start_time": "07:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Nunzi's American Bistro",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Saint Catherine of Siena School",
+        "end_place": "Nunzi's American Bistro"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Nunzi's American Bistro",
+        "building": "918 Hempstead Turnpike",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Nunzi's American Bistro",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Exercise and relaxation",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Saint Catherine of Siena School",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Saint Catherine of Siena School"
+    },
+    {
+        "type": "main",
+        "activity": "Young Scholars group activity",
+        "place": "Saint Catherine of Siena School",
+        "building": "990 Holzheimer Street",
+        "start_time": "15:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Saint Catherine of Siena School",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping for supplies",
+        "place": "Fresh and DM Store",
+        "building": "918 Hempstead Turnpike",
+        "start_time": "17:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Filomena's Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Filomena's Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Filomena's Restaurant",
+        "building": "1039 Hempstead Turnpike",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Marie Curie's room at Caruso & Boughton Realty Inc",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Filomena's Restaurant",
+        "end_place": "Marie Curie's room at Caruso & Boughton Realty Inc"
+    },
+    {
+        "type": "main",
+        "activity": "Reading and relaxation",
+        "place": "Marie Curie's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's research",
+        "place": "Marie Curie's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "21:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Marie Curie's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

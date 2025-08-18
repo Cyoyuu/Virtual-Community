@@ -1,0 +1,460 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Douglas Paul Real Estate",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Harvard Tech Innovators"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at Ridgely Hall",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Harvard Tech Innovators"
+        ]
+    },
+    "Richard Feynman": {
+        "age": 40,
+        "living_place": "Richard Feynman's room at Harvard Real Estate",
+        "appearance": "ViCo/assets/imgs/avatars/Richard Feynman.png",
+        "groups": [
+            "Harvard Tech Innovators"
+        ]
+    },
+    "Harvard Tech Innovators": {
+        "description": "A group focused on technology and innovation, sharing ideas and working on tech projects.",
+        "place": "Harvard Data Center",
+        "members": [
+            "Adam Pierce",
+            "James Thompson",
+            "Richard Feynman",
+            "Yann LeCun"
+        ],
+        "daily_activity": "developing software projects from 14:00 to 16:00"
+    },
+    "Yann LeCun's room at Harvard Real Estate": {
+        "building": "Smith Campus Center",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.1311111450195,
+            799.2759552001953,
+            -36
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Yann LeCun's room at Harvard Real Estate",
+        "bounding_box": [
+            -173.20317491530784,
+            -194.35649816724455,
+            122.63580703735352,
+            57.563055511831486,
+            110.77083940328005,
+            24.70989227294922,
+            -0.42418825838431756
+        ]
+    },
+    "Harvard University": {
+        "building": "Massachusetts Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            854.8024978637695,
+            1003.1739790439606,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -145.19750211251878,
+            3.224075311900224,
+            119.92831420898438,
+            31.428743132661122,
+            13.710266997647256,
+            11.812286376953125,
+            -0.2272257900509816
+        ]
+    },
+    "Harvard Data Center": {
+        "building": "Littauer Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            858.018367767334,
+            1223.814796447754,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -142.11360922115927,
+            222.94980898441594,
+            120.97059631347656,
+            79.54169107837889,
+            20.190206365012017,
+            16.3668212890625,
+            -0.18780005654391949
+        ]
+    },
+    "Carpenter Center for the Visual Arts": {
+        "building": "Carpenter Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1185.689353942871,
+            911.0917778015137,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            185.9552494907168,
+            -87.77732787119393,
+            121.98974227905275,
+            61.57512744563733,
+            42.114735916360885,
+            13.96250152587892,
+            -0.1005751136370428
+        ]
+    },
+    "Capital One Caf\u00e9": {
+        "building": "24 John F. Kennedy Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bank",
+            "finance",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.0351028442383,
+            833.1252365112305,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -246.93044504586976,
+            -170.3029191972588,
+            116.45587539672853,
+            30.377242990181493,
+            32.251238625737486,
+            8.940284729003906,
+            -0.5435579240308758
+        ]
+    },
+    "Richard A. and Susan F. Smith Campus Center": {
+        "building": "Smith Campus Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "travel_agency",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.1311111450195,
+            799.2759552001953,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -173.20317491530784,
+            -194.35649816724455,
+            122.63580703735352,
+            57.563055511831486,
+            110.77083940328005,
+            24.70989227294922,
+            -0.42418825838431756
+        ]
+    },
+    "DIG": {
+        "building": "82 Mount Auburn Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.1088409423828,
+            751.9566955566406,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -250.94287192392684,
+            -248.151286352318,
+            117.22274398803712,
+            19.441365744127047,
+            17.856616967826803,
+            10.853919982910156,
+            -0.47110733362661883
+        ]
+    },
+    "Clover Food Lab": {
+        "building": "Harvard Science Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            983.3944854736328,
+            1225.7613830566406,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -18.31533224015803,
+            217.04163478979504,
+            120.71637725830078,
+            130.65610374730008,
+            75.19688291633445,
+            17.931442260742188,
+            0.27094753581325765
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "14 Plympton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1021.7997913360596,
+            739.9853973388672,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            21.733445132264304,
+            -260.2326111698543,
+            116.88745498657228,
+            15.751293918673582,
+            20.23052552992687,
+            8.918174743652344,
+            -0.3109945331579001
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "14 John F. Kennedy Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            771.2977066040039,
+            861.2660331726074,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -229.01536106527624,
+            -136.1400772222954,
+            117.26210021972658,
+            28.88906747908826,
+            44.934008443107864,
+            10.888137817382812,
+            -0.465287506543293
+        ]
+    },
+    "The Collection of Historical Scientific Instruments at the Putnam Gallery": {
+        "building": "Harvard Science Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            983.3944854736328,
+            1225.7613830566406,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -18.31533224015803,
+            217.04163478979504,
+            120.71637725830078,
+            130.65610374730008,
+            75.19688291633445,
+            17.931442260742188,
+            0.27094753581325765
+        ]
+    },
+    "John F. Kennedy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -301.823639734867,
+            -191.2037801155555
+        ],
+        "rotation": -0.5531513624387934,
+        "bounding_box": null
+    },
+    "Cambridge Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            16.528803609433904,
+            150.65013352098512
+        ],
+        "rotation": -1.8393218932132975,
+        "bounding_box": null
+    },
+    "Quincy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            122.12224185971871,
+            -227.54447507960705
+        ],
+        "rotation": 2.9298153683542463,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -219.2434807155732,
+            -70.13480772898232
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.9620577425494,
+            -168.94950167262357
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            219.70838752681368,
+            101.13194690835284
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -178.8554646544401,
+            -224.5900005932641
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -105.68479829799094,
+            160.20801555148782
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.791292142404634,
+            -204.62582157803433
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            40.48226105178207,
+            104.91752717698618
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Quincy Street": [
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To John F. Kennedy Street": [
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

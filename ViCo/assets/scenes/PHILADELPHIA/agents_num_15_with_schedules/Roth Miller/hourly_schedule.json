@@ -1,0 +1,112 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Talula's Garden",
+        "building": "The Ayer",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philadelphia Chinese Immersion Academy",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare lesson plans for the upcoming semester",
+        "place": "Philadelphia Chinese Immersion Academy",
+        "building": "706 Chestnut Street",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Old Nelson Food Co",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Philadelphia Chinese Immersion Academy",
+        "end_place": "Old Nelson Food Co"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Old Nelson Food Co",
+        "building": "701 Chestnut Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Star Real Estate Group",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Old Nelson Food Co",
+        "end_place": "Star Real Estate Group"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss property market trends",
+        "place": "Star Real Estate Group",
+        "building": "1500 Walnut Street # 1103",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Ayer",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Star Real Estate Group",
+        "end_place": "Roth Miller's room at The Ayer"
+    },
+    {
+        "type": "main",
+        "activity": "Continue preparing lesson plans",
+        "place": "Roth Miller's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Talula's Garden",
+        "building": "The Ayer",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Roth Miller's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "18:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

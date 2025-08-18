@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jensen Huang's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Maison St. Michel",
+        "building": "Boulevard de l'Imp\u00e9ratrice 62",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tech Summit",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Maison St. Michel",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Tech Summit",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Caf\u00e9 Treurenberg",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Philantropy House",
+        "end_place": "Caf\u00e9 Treurenberg"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Caf\u00e9 Treurenberg",
+        "building": "Rue de l'Enseignement 16",
+        "start_time": "12:40:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Caf\u00e9 Treurenberg",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Parc de Bruxelles",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Parc de Bruxelles"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at Parc de Bruxelles",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Parc de Bruxelles",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Business Leaders Network Meeting",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:10:00",
+        "start_place": "Philantropy House",
+        "end_place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "building": "Rue d'Arenberg 46",
+        "start_time": "19:10:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hotel Hubert",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Hawaiian Pok\u00e9 Bowl - Bruxelles Arenberg",
+        "end_place": "Jensen Huang's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's summit",
+        "place": "Jensen Huang's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Jensen Huang's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

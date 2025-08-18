@@ -1,144 +1,24 @@
 {
     "sim_name": "BRUSSELS_agents_num_15",
     "agent_names": [
-        "Barack Obama",
-        "Brycer Rodriguez",
-        "Emily Johnson",
-        "Emma Watson",
-        "Frank Walter Steinmeier",
-        "Jody Petersen",
+        "Adam Pierce",
+        "Ilya Sutskever",
+        "Jack Ma",
+        "Jensen Huang",
+        "Kate Novak",
+        "Kylian Mbappe",
         "Leonard Park",
-        "Lisa Su",
         "Louise Roberts",
-        "Mark Zuckerberg",
         "Megan Carter",
-        "Olivia Adams",
         "Pika Hayes",
+        "Roth Miller",
+        "Shannon Steves",
         "Sophie Carlsen",
+        "Steve Jobs",
         "Zara Williams"
     ],
     "step": 0,
     "agent_infos": [
-        {
-            "cash": 800,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -254.24449379909842,
-                18.266515855882247,
-                58.38492368662158,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
-        {
-            "cash": 300,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -247.31913980936574,
-                282.4624833479951,
-                49.093628737914266,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Boiteux",
-            "current_place": "Brycer Rodriguez's room at Boiteux",
-            "current_vehicle": null
-        },
-        {
-            "cash": 150,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -249.51810459957946,
-                13.713099227911176,
-                58.65419613317061,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Emily Johnson's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
-        {
-            "cash": 700,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -250.05107387758108,
-                13.980043044889566,
-                58.62439434136738,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
-        {
-            "cash": 900,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -252.89802226247352,
-                16.890165826422354,
-                58.46181568086658,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
         {
             "cash": 500,
             "held_objects": [
@@ -152,19 +32,19 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -248.43894411972,
-                283.0022003697127,
-                49.11053747724793,
+                -63.12206988600367,
+                220.44227056845295,
+                54.34990358751618,
                 0.0,
                 0.0,
                 0.0
             ],
-            "current_building": "Boiteux",
-            "current_place": "Jody Petersen's room at Boiteux",
+            "current_building": "Province BE",
+            "current_place": "Adam Pierce's room at Luxury apartments in Brussels",
             "current_vehicle": null
         },
         {
-            "cash": 400,
+            "cash": 800,
             "held_objects": [
                 null,
                 null
@@ -176,15 +56,15 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -260.7867927680564,
-                258.6458107150298,
-                50.002672003955496,
+                -251.62732120717064,
+                15.591267641552612,
+                58.53438070402062,
                 0.0,
                 0.0,
                 0.0
             ],
-            "current_building": "Boiteux",
-            "current_place": "Leonard Park's room at Boiteux",
+            "current_building": "Hotel Hubert \u2013 Grand Place",
+            "current_place": "Ilya Sutskever's room at Hotel Hubert \u2013 Grand Place",
             "current_vehicle": null
         },
         {
@@ -200,19 +80,19 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -255.5783478049962,
-                19.629968368895973,
-                58.30875223274724,
+                -250.12573081472217,
+                14.056356635514064,
+                58.620130960653526,
                 0.0,
                 0.0,
                 0.0
             ],
             "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Lisa Su's room at Hotel Hubert \u2013 Grand Place",
+            "current_place": "Jack Ma's room at Hotel Hubert \u2013 Grand Place",
             "current_vehicle": null
         },
         {
-            "cash": 350,
+            "cash": 1000,
             "held_objects": [
                 null,
                 null
@@ -224,111 +104,15 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -264.4918279538053,
-                260.43154286244294,
-                50.12295186829425,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Boiteux",
-            "current_place": "Louise Roberts's room at Boiteux",
-            "current_vehicle": null
-        },
-        {
-            "cash": 950,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -251.8394391726849,
-                15.808092550318483,
-                58.522267433936605,
+                -252.08915988590073,
+                16.063354619840467,
+                58.50800681043202,
                 0.0,
                 0.0,
                 0.0
             ],
             "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Mark Zuckerberg's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
-        {
-            "cash": 100,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -254.67166380962976,
-                18.703164860771707,
-                58.36052959205814,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-            "current_vehicle": null
-        },
-        {
-            "cash": 250,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -274.132102838297,
-                265.0779086614378,
-                49.50665770800287,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Boiteux",
-            "current_place": "Olivia Adams's room at Boiteux",
-            "current_vehicle": null
-        },
-        {
-            "cash": 200,
-            "held_objects": [
-                null,
-                null
-            ],
-            "physical_health": 1,
-            "mental_health": 1,
-            "condition": {
-                "physical": null,
-                "mental": null
-            },
-            "outdoor_pose": [
-                -266.7913503449125,
-                261.53985381001263,
-                50.19653349264547,
-                0.0,
-                0.0,
-                0.0
-            ],
-            "current_building": "Boiteux",
-            "current_place": "Pika Hayes's room at Boiteux",
+            "current_place": "Jensen Huang's room at Hotel Hubert \u2013 Grand Place",
             "current_vehicle": null
         },
         {
@@ -344,15 +128,231 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -247.8295426238906,
-                282.7084844433512,
-                49.11019840006628,
+                -262.8087365506584,
+                259.6203358765567,
+                50.06831216975133,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Boiteux",
+            "current_place": "Kate Novak's room at Boiteux",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -257.7483040652517,
+                21.848076425020004,
+                58.184834080943084,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Hubert \u2013 Grand Place",
+            "current_place": "Kylian Mbappe's room at Hotel Hubert \u2013 Grand Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                169.48435040358922,
+                118.10483742675521,
+                78.77338408305071,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Belair",
+            "current_place": "Leonard Park's room at Belair",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                53.98922256057139,
+                20.269840574315744,
+                74.52050064441167,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Catedra",
+            "current_place": "Louise Roberts's room at Catedra",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -281.63968715237803,
+                -94.21115584750241,
+                57.6263702952678,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Charles' Home",
+            "current_place": "Megan Carter's room at Charles' Home",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -280.44268274976935,
+                -93.18740245566062,
+                57.74465466513942,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Charles' Home",
+            "current_place": "Pika Hayes's room at Charles' Home",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                153.65602336535255,
+                135.8853729508518,
+                76.98297048584189,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Belair",
+            "current_place": "Roth Miller's room at Belair",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -55.13936132003252,
+                227.1599141775072,
+                54.50995826688106,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Province BE",
+            "current_place": "Shannon Steves's room at Luxury apartments in Brussels",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -260.5001376791142,
+                258.5076502976841,
+                49.993366063935646,
                 0.0,
                 0.0,
                 0.0
             ],
             "current_building": "Boiteux",
             "current_place": "Sophie Carlsen's room at Boiteux",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -256.5369813529054,
+                20.609874201300975,
+                58.25400822721581,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Hubert \u2013 Grand Place",
+            "current_place": "Steve Jobs's room at Hotel Hubert \u2013 Grand Place",
             "current_vehicle": null
         },
         {
@@ -368,21 +368,29 @@
                 "mental": null
             },
             "outdoor_pose": [
-                -252.08966309167738,
-                16.06386899186147,
-                58.507978074216936,
+                -275.85172409855676,
+                -89.26092609455338,
+                57.907189240414,
                 0.0,
                 0.0,
                 0.0
             ],
-            "current_building": "Hotel Hubert \u2013 Grand Place",
-            "current_place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+            "current_building": "Charles' Home",
+            "current_place": "Zara Williams's room at Charles' Home",
             "current_vehicle": null
         }
     ],
     "curr_time": "October 1, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
     "agent_poses": [
+        [
+            928.8806419372559,
+            1231.0624389648438,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
         [
             754.4182434082031,
             1029.0228338241577,
@@ -392,14 +400,6 @@
             0.0
         ],
         [
-            742.2045822143555,
-            1273.7317810058594,
-            -12,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
             754.4182434082031,
             1029.0228338241577,
             -12,
@@ -416,9 +416,65 @@
             0.0
         ],
         [
+            742.2045822143555,
+            1273.7317810058594,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
             754.4182434082031,
             1029.0228338241577,
             -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1164.3447799682617,
+            1126.8471984863281,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1060.8930644989014,
+            1021.3308854103088,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            713.8932189941406,
+            918.7632255554199,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            713.8932189941406,
+            918.7632255554199,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1164.3447799682617,
+            1126.8471984863281,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            928.8806419372559,
+            1231.0624389648438,
+            -12,
             0.0,
             0.0,
             0.0
@@ -432,14 +488,6 @@
             0.0
         ],
         [
-            742.2045822143555,
-            1273.7317810058594,
-            -20,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
             754.4182434082031,
             1029.0228338241577,
             -24,
@@ -448,57 +496,9 @@
             0.0
         ],
         [
-            742.2045822143555,
-            1273.7317810058594,
-            -24,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            754.4182434082031,
-            1029.0228338241577,
-            -28,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            754.4182434082031,
-            1029.0228338241577,
-            -32,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            742.2045822143555,
-            1273.7317810058594,
-            -28,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            742.2045822143555,
-            1273.7317810058594,
-            -32,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            742.2045822143555,
-            1273.7317810058594,
-            -36,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            754.4182434082031,
-            1029.0228338241577,
-            -36,
+            713.8932189941406,
+            918.7632255554199,
+            -16,
             0.0,
             0.0,
             0.0
@@ -601,36 +601,70 @@
     "num_agents": 15,
     "sec_per_step": 1,
     "agent_skins": [
-        "ViCo/avatars/models/celebrity_Barack_Obama.glb",
-        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
-        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
-        "ViCo/avatars/models/celebrity_Emma_Watson.glb",
-        "ViCo/avatars/models/celebrity_Frank_Walter_Steinmeier.glb",
-        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/celebrity_Ilya_Sutskever.glb",
+        "ViCo/avatars/models/celebrity_Jack_Ma.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/celebrity_Kylian_Mbappe.glb",
         "ViCo/avatars/models/mixamo_Leonard_Park.glb",
-        "ViCo/avatars/models/celebrity_Lisa_Su.glb",
         "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
-        "ViCo/avatars/models/celebrity_Mark_Zuckerberg.glb",
         "ViCo/avatars/models/mixamo_Megan_Carter.glb",
-        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
         "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
         "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Steve_Jobs.glb",
         "ViCo/avatars/models/mixamo_Zara_Williams.glb"
     ],
     "stores": {
-        "Snacks and DM Store": {
-            "building": "Rue du Marais 7",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
-            "type": "store-Snacks-DM",
+        "Beverages and DM Store": {
+            "building": "Rue de la Montagne 70",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
             "goods": [
                 {
                     "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Rue de la Montagne 72",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
                     "price": 14,
                     "quantity": 5
                 },
                 {
                     "name": "Snacks",
-                    "price": 12,
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Marquis",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
                     "quantity": 5
                 }
             ]
@@ -653,7 +687,7 @@
             ]
         },
         "Fresh and Snacks Store": {
-            "building": "Rue de Ligne 13",
+            "building": "De Lignegebouw",
             "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
             "type": "store-Fresh-Snacks",
             "goods": [
@@ -669,52 +703,18 @@
                 }
             ]
         },
-        "Fresh and Beverages Store": {
-            "building": "Marquis",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
-            "type": "store-Fresh-Beverages",
+        "Snacks and DM Store": {
+            "building": "Rue du Marais 7",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
             "goods": [
                 {
-                    "name": "Fresh Produce",
-                    "price": 14,
-                    "quantity": 5
-                },
-                {
-                    "name": "Beverages",
-                    "price": 10,
-                    "quantity": 5
-                }
-            ]
-        },
-        "Beverages and Snacks Store": {
-            "building": "Rue d'Arenberg 54",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
-            "type": "store-Beverages-Snacks",
-            "goods": [
-                {
-                    "name": "Beverages",
+                    "name": "Dairy & Meat",
                     "price": 14,
                     "quantity": 5
                 },
                 {
                     "name": "Snacks",
-                    "price": 10,
-                    "quantity": 5
-                }
-            ]
-        },
-        "Beverages and DM Store": {
-            "building": "Rue de la Montagne 72",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-            "type": "store-Beverages-DM",
-            "goods": [
-                {
-                    "name": "Dairy & Meat",
-                    "price": 12,
-                    "quantity": 5
-                },
-                {
-                    "name": "Beverages",
                     "price": 12,
                     "quantity": 5
                 }
@@ -724,46 +724,46 @@
     "groups": {
         "Tech Innovators Club": {
             "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
-            "place": "Competento",
+            "place": "Fresh and Beverages Store",
             "members": [
-                "Jody Petersen",
-                "Lisa Su",
-                "Mark Zuckerberg",
-                "Leonard Park"
+                "Adam Pierce",
+                "Roth Miller",
+                "Ilya Sutskever",
+                "Steve Jobs"
             ],
-            "daily_activity": "discussing tech trends from 17:00 to 18:00"
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
         },
-        "Brussels Cultural Explorers": {
-            "description": "A group of individuals who enjoy exploring the cultural and historical sites of Brussels.",
+        "Brussels Art and Culture Society": {
+            "description": "A group of individuals passionate about art and culture, organizing events and exhibitions in Brussels.",
             "place": "Museum of the National Bank of Belgium",
             "members": [
-                "Emily Johnson",
-                "Megan Carter",
+                "Louise Roberts",
+                "Shannon Steves",
                 "Zara Williams"
             ],
-            "daily_activity": "exploring museums from 14:00 to 16:00"
+            "daily_activity": "organizing art exhibitions from 15:00 to 16:00"
         },
-        "International Diplomats Forum": {
-            "description": "A group of diplomats and leaders who gather to discuss international relations and diplomacy.",
+        "Sports Enthusiasts Group": {
+            "description": "A group of sports lovers who engage in various sports activities and events in Brussels.",
+            "place": "Parc de Bruxelles",
+            "members": [
+                "Kylian Mbappe",
+                "Sophie Carlsen",
+                "Pika Hayes",
+                "Megan Carter"
+            ],
+            "daily_activity": "playing football from 16:00 to 17:00"
+        },
+        "Business Leaders Network": {
+            "description": "A network of business leaders and entrepreneurs who collaborate and share insights on business strategies.",
             "place": "Philantropy House",
             "members": [
-                "Barack Obama",
-                "Frank Walter Steinmeier",
-                "Emma Watson",
-                "Louise Roberts"
+                "Jack Ma",
+                "Jensen Huang",
+                "Leonard Park",
+                "Kate Novak"
             ],
-            "daily_activity": "engaging in diplomatic discussions from 15:00 to 17:00"
-        },
-        "Brussels Student Network": {
-            "description": "A network of students from various institutions in Brussels who collaborate on academic and social projects.",
-            "place": "IHECS - B\u00e2timent Chambon (CH)",
-            "members": [
-                "Brycer Rodriguez",
-                "Olivia Adams",
-                "Pika Hayes",
-                "Sophie Carlsen"
-            ],
-            "daily_activity": "collaborating on projects from 16:00 to 18:00"
+            "daily_activity": "discussing business strategies from 18:00 to 19:00"
         }
     }
 }

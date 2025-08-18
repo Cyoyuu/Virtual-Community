@@ -1,0 +1,203 @@
+{
+    "name": "Joe Anderson",
+    "first_name": "Joe",
+    "last_name": "Anderson",
+    "age": 31,
+    "innate": "achievement, power, security",
+    "learned": "I am a software developer at Allianz Forum. I enjoy coding and participating in hackathons.",
+    "currently": "I am working on a new software project for the company.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Berlin Business Network",
+            "description": "A group of professionals working in various industries in Berlin, focused on networking and business development.",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
+            "members": [
+                "Brian Carter",
+                "Chad Thompson",
+                "Joe Anderson",
+                "Leonard Park",
+                "Louise Roberts"
+            ],
+            "daily_activity": "attending business seminars from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joe Anderson's room at Apartments at Brandenburg Gate",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Apartments at Brandenburg Gate",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Viale dei Tigli",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Allianz Forum",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on software project",
+            "place": "Allianz Forum",
+            "building": "Allianz Forum",
+            "start_time": "09:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to China Club Berlin",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Allianz Forum",
+            "end_place": "China Club Berlin"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "China Club Berlin",
+            "building": "Behrenstra\u00dfe 72",
+            "start_time": "12:40:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Allianz Forum",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "China Club Berlin",
+            "end_place": "Allianz Forum"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on software project",
+            "place": "Allianz Forum",
+            "building": "Allianz Forum",
+            "start_time": "14:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Rathsack Geb\u00e4udeservice GmbH",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Allianz Forum",
+            "end_place": "Rathsack Geb\u00e4udeservice GmbH"
+        },
+        {
+            "type": "main",
+            "activity": "Attend Berlin Business Network seminar",
+            "place": "Rathsack Geb\u00e4udeservice GmbH",
+            "building": "Glinkastra\u00dfe 30",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Viale dei Tigli",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Rathsack Geb\u00e4udeservice GmbH",
+            "end_place": "Viale dei Tigli"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Viale dei Tigli",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Galerie im Adlon",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Viale dei Tigli",
+            "end_place": "Galerie im Adlon"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Galerie im Adlon",
+            "place": "Galerie im Adlon",
+            "building": "Adlon Kempinski",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Joe Anderson's room",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Galerie im Adlon",
+            "end_place": "Joe Anderson's room at Apartments at Brandenburg Gate"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Joe Anderson's room at Apartments at Brandenburg Gate",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "21:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Joe Anderson's room at Apartments at Brandenburg Gate",
+            "building": "Behrenstra\u00dfe 1C",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Allianz Forum",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

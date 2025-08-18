@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Lionel Messi's room at Rickkypartym",
+        "building": "222 Richmond Street West #97",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at JaBistro",
+        "place": "JaBistro",
+        "building": "222 Richmond Street West #97",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Verno Art Studios",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "JaBistro",
+        "end_place": "Verno Art Studios"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Verno Art Studios",
+        "place": "Verno Art Studios",
+        "building": "120 Adelaide Street West Unit FC-09",
+        "start_time": "09:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to BRANDOR COFFEE",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Verno Art Studios",
+        "end_place": "BRANDOR COFFEE"
+    },
+    {
+        "type": "meal",
+        "activity": "Coffee break at BRANDOR COFFEE",
+        "place": "BRANDOR COFFEE",
+        "building": "North Tower",
+        "start_time": "12:00:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "BRANDOR COFFEE",
+        "end_place": "Beverages and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Beverages and DM Store",
+        "place": "Beverages and DM Store",
+        "building": "145 Wellington Street West",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jennifer Coffee's",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "Jennifer Coffee's"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Jennifer Coffee's",
+        "place": "Jennifer Coffee's",
+        "building": "Former HSBC Building",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to F45 Training Toronto Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Jennifer Coffee's",
+        "end_place": "F45 Training Toronto Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for sports activity",
+        "place": "F45 Training Toronto Downtown",
+        "building": "North Tower",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Play sports with Fitness and Sports Team",
+        "place": "F45 Training Toronto Downtown",
+        "building": "North Tower",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to JaBistro",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "F45 Training Toronto Downtown",
+        "end_place": "JaBistro"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at JaBistro",
+        "place": "JaBistro",
+        "building": "222 Richmond Street West #97",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Club Lux",
+        "place": null,
+        "building": null,
+        "start_time": "20:30:00",
+        "end_time": "21:00:00",
+        "start_place": "JaBistro",
+        "end_place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!"
+    },
+    {
+        "type": "main",
+        "activity": "Enjoy nightlife at Club Lux",
+        "place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+        "building": "Nelson Street",
+        "start_time": "21:00:00",
+        "end_time": "23:59:59"
+    }
+]

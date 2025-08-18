@@ -1,0 +1,158 @@
+{
+    "name": "Zara Williams",
+    "first_name": "Zara",
+    "last_name": "Williams",
+    "age": 15,
+    "innate": "benevolence, universalism, tradition",
+    "learned": "I am a student at Holy Cross School, and I love playing the piano and participating in school plays.",
+    "currently": "I want to perform in the school musical and improve my piano skills.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Creative Arts Society",
+            "description": "A society for individuals passionate about creative arts, including music, acting, and painting.",
+            "place": "The Brewer's Cask",
+            "members": [
+                "Emma Watson",
+                "Tom Holland",
+                "Zara Williams",
+                "Drake"
+            ],
+            "daily_activity": "hosting a creative arts workshop from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Zara Williams's room at 1111 Light Street Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Zara Williams's room at 1111 Light Street Apartments",
+            "building": "1111 Light Luxury Apartments",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "The Smoothie Garden",
+            "building": "905 Light Street",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Holy Cross School",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes",
+            "place": "Holy Cross School",
+            "building": "Holy Cross School",
+            "start_time": "09:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Brewer's Cask",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Holy Cross School",
+            "end_place": "The Brewer's Cask"
+        },
+        {
+            "type": "main",
+            "activity": "Participate in Creative Arts Society workshop",
+            "place": "The Brewer's Cask",
+            "building": "Brewers Cask",
+            "start_time": "15:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Tre Fratelli Italian Ristorante",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "The Brewer's Cask",
+            "end_place": "Tre Fratelli Italian Ristorante"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Tre Fratelli Italian Ristorante",
+            "building": "Light Street Cafe",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Holy Cross School",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Tre Fratelli Italian Ristorante",
+            "end_place": "Holy Cross School"
+        },
+        {
+            "type": "main",
+            "activity": "Piano practice",
+            "place": "Holy Cross School",
+            "building": "Holy Cross School",
+            "start_time": "18:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Zara Williams's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Holy Cross School",
+            "end_place": "Zara Williams's room at 1111 Light Street Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Zara Williams's room at 1111 Light Street Apartments",
+            "building": "1111 Light Luxury Apartments",
+            "start_time": "20:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Holy Cross School",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

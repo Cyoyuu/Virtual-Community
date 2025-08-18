@@ -44,33 +44,6 @@
             -8
         ]
     },
-    "Break Point": {
-        "building": "Central Building",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -41.08756446838379,
-            -154.7433090209961,
-            -4
-        ]
-    },
-    "Central Building": {
-        "building": "Central Building",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            -41.08756446838379,
-            -154.7433090209961,
-            -8
-        ]
-    },
     "Competento": {
         "building": "Rue de la Chancellerie 19",
         "coarse_type": "office",
@@ -274,23 +247,6 @@
             -4
         ]
     },
-    "Pizza Hut Delivery": {
-        "building": "Rue de la Croix de Fer 9/13",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "meal_delivery",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            254.6243438720703,
-            -34.97971439361572,
-            -4
-        ]
-    },
     "Paul": {
         "building": "Rue de l'Enseignement 2",
         "coarse_type": "food",
@@ -338,20 +294,6 @@
             -4
         ]
     },
-    "La Rose Noire": {
-        "building": "Rue de la Croix de Fer 15",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            262.2958984375,
-            -33.71584606170654,
-            -4
-        ]
-    },
     "Caf\u00e9 Treurenberg": {
         "building": "Rue de l'Enseignement 16",
         "coarse_type": "food",
@@ -378,20 +320,6 @@
         "location": [
             259.2002410888672,
             -45.22634506225586,
-            -4
-        ]
-    },
-    "LK Coiffure": {
-        "building": "Rue de la Croix de Fer 21",
-        "coarse_type": "stores",
-        "fine_types": [
-            "hair_care",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            267.7043151855469,
-            -32.84168338775635,
             -4
         ]
     },
@@ -468,35 +396,6 @@
             -12
         ]
     },
-    "Hotel Exploitatiemaatschappij Diegem Nv": {
-        "building": "Rue d'Assaut 15",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -202.45191955566406,
-            31.063954830169678,
-            -4
-        ]
-    },
-    "Joppes Tarts Bakery": {
-        "building": "Rue d'Assaut 15",
-        "coarse_type": "food",
-        "fine_types": [
-            "food",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -202.45191955566406,
-            31.063954830169678,
-            -8
-        ]
-    },
     "Atlas hotel": {
         "building": "de Berlaimontlaan 18",
         "coarse_type": "accommodation",
@@ -566,21 +465,6 @@
         "location": [
             130.8296661376953,
             151.11936950683594,
-            -4
-        ]
-    },
-    "\u00d3ptica24": {
-        "building": "Rue de Ligne 13",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            115.27852630615234,
-            35.97048568725586,
             -4
         ]
     },
@@ -935,7 +819,8 @@
         "location": [
             248.4558743001318,
             126.14291293168375
-        ]
+        ],
+        "scene": null
     },
     "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop": {
         "building": "open space",
@@ -944,7 +829,8 @@
         "location": [
             -185.9587778087036,
             -55.4488975931433
-        ]
+        ],
+        "scene": null
     },
     "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop": {
         "building": "open space",
@@ -953,7 +839,8 @@
         "location": [
             -186.62379945156712,
             254.07203855685333
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 1": {
         "building": "open space",
@@ -962,7 +849,8 @@
         "location": [
             257.3150608488824,
             217.921529838583
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 2": {
         "building": "open space",
@@ -971,7 +859,8 @@
         "location": [
             -144.90686574301637,
             247.30453634487793
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 3": {
         "building": "open space",
@@ -980,7 +869,8 @@
         "location": [
             -84.95122229994689,
             -157.59257660109876
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 4": {
         "building": "open space",
@@ -989,7 +879,8 @@
         "location": [
             218.04335012590744,
             -42.91592377155606
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 5": {
         "building": "open space",
@@ -998,7 +889,8 @@
         "location": [
             -233.7892271527921,
             0.09600317054358865
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 6": {
         "building": "open space",
@@ -1007,7 +899,8 @@
         "location": [
             130.89613937889055,
             90.66982142544775
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 7": {
         "building": "open space",
@@ -1016,6 +909,7 @@
         "location": [
             308.76264827423273,
             -204.25359623561639
-        ]
+        ],
+        "scene": null
     }
 }

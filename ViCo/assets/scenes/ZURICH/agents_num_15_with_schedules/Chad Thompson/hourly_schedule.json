@@ -1,0 +1,116 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Chad Thompson's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 Oscar",
+        "building": "Bahnhofplatz 15",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new cocktail recipes",
+        "place": "Caf\u00e9 Oscar",
+        "building": "Bahnhofplatz 15",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sapori d\u2019Italia",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Caf\u00e9 Oscar",
+        "end_place": "Sapori d\u2019Italia"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Sapori d\u2019Italia",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Sapori d\u2019Italia",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Research cocktail trends",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to update Fitness Z\u00fcrich Central",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "update Fitness Z\u00fcrich Central"
+    },
+    {
+        "type": "main",
+        "activity": "Fitness class with Fitness Enthusiasts",
+        "place": "update Fitness Z\u00fcrich Central",
+        "building": "Neum\u00fchlequai 32",
+        "start_time": "16:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to African Queen",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "update Fitness Z\u00fcrich Central",
+        "end_place": "African Queen"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "African Queen",
+        "building": "Stampfenbachstrasse 70",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Caf\u00e9 Oscar",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "African Queen",
+        "end_place": "Caf\u00e9 Oscar"
+    },
+    {
+        "type": "main",
+        "activity": "Evening shift and cocktail experimentation",
+        "place": "Caf\u00e9 Oscar",
+        "building": "Bahnhofplatz 15",
+        "start_time": "18:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,441 @@
+{
+    "Lionel Messi": {
+        "age": 37,
+        "living_place": "Lionel Messi's room at Rickkypartym",
+        "appearance": "ViCo/assets/imgs/avatars/Lionel Messi.png",
+        "groups": [
+            "Fitness and Sports Team"
+        ]
+    },
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Louise Roberts's room at Apartments International",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Fitness and Sports Team"
+        ]
+    },
+    "Usain Bolt": {
+        "age": 38,
+        "living_place": "Rickkypartym",
+        "appearance": "ViCo/assets/imgs/avatars/Usain Bolt.png",
+        "groups": [
+            "Fitness and Sports Team"
+        ]
+    },
+    "Fitness and Sports Team": {
+        "description": "A group of sports enthusiasts who meet to engage in various physical activities and sports.",
+        "place": "F45 Training Toronto Downtown",
+        "members": [
+            "Lionel Messi",
+            "Usain Bolt",
+            "Louise Roberts",
+            "Shannon Steves"
+        ],
+        "daily_activity": "playing sports from 18:00 to 19:00"
+    },
+    "Shannon Steves's room at Theatre Park": {
+        "building": "Theatre Park",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            804.3599548339844,
+            915.555196762085,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Shannon Steves's room at Theatre Park",
+        "bounding_box": [
+            -195.64009094238284,
+            -84.44480323791505,
+            218.80960083007812,
+            18.683583668305914,
+            37.20572297156648,
+            129.82122802734375,
+            0.29681182385208593
+        ]
+    },
+    "Richmond Adelaide Child Care Centre": {
+        "building": "Oxford Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1093.2398090362549,
+            1149.86381149292,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            93.23871050768807,
+            150.14031153222447,
+            214.72044372558594,
+            50.77338860502701,
+            49.99779600456343,
+            178.45437622070312,
+            0.2892941827095905
+        ]
+    },
+    "F45 Training Toronto Downtown": {
+        "building": "North Tower",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            987.1375579833984,
+            896.8284225463867,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -12.986947978983881,
+            -102.79264455034728,
+            171.97727966308594,
+            35.16610113891242,
+            30.747822481605414,
+            37.336090087890625,
+            0.2895740288522889
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "145 Wellington Street West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            991.1608514785767,
+            739.1054000854492,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -8.773028393482171,
+            -260.98171460209085,
+            157.5133209228516,
+            45.12938606591113,
+            30.04219615949391,
+            13.655609130859375,
+            0.2973957958698972
+        ]
+    },
+    "Verno Art Studios": {
+        "building": "120 Adelaide Street West Unit FC-09",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1141.2012023925781,
+            1187.323585510254,
+            -36
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            141.67819696673928,
+            188.66048485468602,
+            211.56494140625,
+            40.74812248194316,
+            53.76133484803879,
+            111.7357177734375,
+            0.297179563177001
+        ]
+    },
+    "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!": {
+        "building": "Nelson Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Boreal Mobile Foods Inc.": {
+        "building": "Theatre Park",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            804.3599548339844,
+            915.555196762085,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -195.64009094238284,
+            -84.44480323791505,
+            218.80960083007812,
+            18.683583668305914,
+            37.20572297156648,
+            129.82122802734375,
+            0.29681182385208593
+        ]
+    },
+    "BRANDOR COFFEE": {
+        "building": "North Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            987.1375579833984,
+            896.8284225463867,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -12.986947978983881,
+            -102.79264455034728,
+            171.97727966308594,
+            35.16610113891242,
+            30.747822481605414,
+            37.336090087890625,
+            0.2895740288522889
+        ]
+    },
+    "LiberTerre": {
+        "building": "Oxford Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1093.2398090362549,
+            1149.86381149292,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            93.23871050768807,
+            150.14031153222447,
+            214.72044372558594,
+            50.77338860502701,
+            49.99779600456343,
+            178.45437622070312,
+            0.2892941827095905
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Theatre Park",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            804.3599548339844,
+            915.555196762085,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -195.64009094238284,
+            -84.44480323791505,
+            218.80960083007812,
+            18.683583668305914,
+            37.20572297156648,
+            129.82122802734375,
+            0.29681182385208593
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Northbridge Place",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1167.5907363891602,
+            1089.5690479278564,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            170.69014578540583,
+            90.74185285555114,
+            174.41810607910156,
+            40.68073980070434,
+            56.97702733178078,
+            40.128875732421875,
+            0.28936217069119197
+        ]
+    },
+    "Duncan Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -305.5051431396848,
+            31.274830657362244
+        ],
+        "rotation": -1.2818139451305748,
+        "bounding_box": null
+    },
+    "University Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            60.647572252395314,
+            -177.97103757136227
+        ],
+        "rotation": -2.746130847002968,
+        "bounding_box": null
+    },
+    "King Street West Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            320.9162021456791,
+            31.692857479827722
+        ],
+        "rotation": -1.279698474914429,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.9830944262577,
+            -60.632213384139725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            70.9781059093955,
+            -58.57682221598191
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            143.33072943279424,
+            162.86726965953133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            9.28993683166875,
+            89.4595028492765
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -228.06344546133988,
+            175.04188547899503
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -137.68946092169688,
+            80.05882480669985
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To King Street West": [
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Duncan Street": [
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

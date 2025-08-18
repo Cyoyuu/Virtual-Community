@@ -1,0 +1,146 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Sophie Carlsen's room at Stanton House | El Paso Downtown",
+        "building": "Martin Building",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Taft-Diaz",
+        "building": "Martin Building",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Strayer University",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Study and prepare for debate competition",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Rumor Mill #4",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue debate preparation",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend study group",
+        "place": "Strayer University",
+        "building": "221 North Kansas Street Suite 110",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Strayer University",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Buy snacks and drinks",
+        "place": "Fresh and Beverages Store",
+        "building": "Richard Caples Building",
+        "start_time": "16:15:00",
+        "end_time": "16:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sophie Carlsen's room",
+        "place": null,
+        "building": null,
+        "start_time": "16:45:00",
+        "end_time": "17:00:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Sophie Carlsen's room at Stanton House | El Paso Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review debate notes",
+        "place": "Sophie Carlsen's room at Stanton House | El Paso Downtown",
+        "building": "Martin Building",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Taft-Diaz",
+        "building": "Martin Building",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Machop Spawn",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Taft-Diaz",
+        "end_place": "Machop Spawn"
+    },
+    {
+        "type": "main",
+        "activity": "Enjoy some entertainment",
+        "place": "Machop Spawn",
+        "building": "125 Henry Trost Court",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Sophie Carlsen's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Machop Spawn",
+        "end_place": "Sophie Carlsen's room at Stanton House | El Paso Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Write and reflect on the day",
+        "place": "Sophie Carlsen's room at Stanton House | El Paso Downtown",
+        "building": "Martin Building",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Sophie Carlsen's room at Stanton House | El Paso Downtown",
+        "building": "Martin Building",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

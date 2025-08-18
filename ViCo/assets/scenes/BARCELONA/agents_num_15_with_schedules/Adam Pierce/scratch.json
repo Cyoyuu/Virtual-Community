@@ -1,0 +1,191 @@
+{
+    "name": "Adam Pierce",
+    "first_name": "Adam",
+    "last_name": "Pierce",
+    "age": 27,
+    "innate": "achievement, stimulation, self-direction",
+    "learned": "I am a software developer at Movistar Centre, passionate about technology and innovation. In my free time, I enjoy hiking and exploring new places.",
+    "currently": "I am working on a new app feature to enhance user experience at Movistar Centre.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Enthusiasts Club",
+            "description": "A group of individuals passionate about technology and innovation, sharing insights and exploring new tech trends.",
+            "place": "Movistar Centre",
+            "members": [
+                "Adam Pierce",
+                "Marques Brownlee",
+                "Leonard Park"
+            ],
+            "daily_activity": "discussing the latest tech trends from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Adam Pierce's room at Casa Mart\u00ed",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Adam Pierce's room at Casa Mart\u00ed",
+            "building": "Casa Mart\u00ed",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4",
+            "building": "Casa Mart\u00ed",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Movistar Centre",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on new app feature",
+            "place": "Movistar Centre",
+            "building": "Movistar Centre",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Can Pizza Universitat",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Movistar Centre",
+            "end_place": "Can Pizza Universitat"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Can Pizza Universitat",
+            "building": "Ronda de la Universitat",
+            "start_time": "12:10:00",
+            "end_time": "12:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Movistar Centre",
+            "place": null,
+            "building": null,
+            "start_time": "12:45:00",
+            "end_time": "13:15:00",
+            "start_place": "Can Pizza Universitat",
+            "end_place": "Movistar Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on new app feature",
+            "place": "Movistar Centre",
+            "building": "Movistar Centre",
+            "start_time": "13:15:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss latest tech trends with Tech Enthusiasts Club",
+            "place": "Movistar Centre",
+            "building": "Movistar Centre",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Il\u00b7lacions Design Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Movistar Centre",
+            "end_place": "Il\u00b7lacions Design Gallery"
+        },
+        {
+            "type": "main",
+            "activity": "Explore Il\u00b7lacions Design Gallery",
+            "place": "Il\u00b7lacions Design Gallery",
+            "building": "Rambla de Canaletes",
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to OGGI Gelato Barcelona",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Il\u00b7lacions Design Gallery",
+            "end_place": "OGGI Gelato Barcelona"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "OGGI Gelato Barcelona",
+            "building": "Avinguda del Portal de l'\u00c0ngel",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Casa Mart\u00ed",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "OGGI Gelato Barcelona",
+            "end_place": "Adam Pierce's room at Casa Mart\u00ed"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Adam Pierce's room at Casa Mart\u00ed",
+            "building": "Casa Mart\u00ed",
+            "start_time": "19:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Adam Pierce's room at Casa Mart\u00ed",
+            "building": "Casa Mart\u00ed",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Movistar Centre",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

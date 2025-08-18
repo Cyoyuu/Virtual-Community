@@ -3,27 +3,27 @@
     "first_name": "Olivia",
     "last_name": "Adams",
     "age": 22,
-    "innate": "universalism, benevolence, tradition",
-    "learned": "I am a student at Federal Hill Preparatory School studying biology. I enjoy volunteering at local animal shelters.",
-    "currently": "I am preparing for my final exams.",
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a barista at Starbucks, passionate about coffee and customer service. I enjoy painting and exploring new cafes.",
+    "currently": "I want to create a new signature drink for our cafe.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Baltimore Book Club",
-            "description": "A group of book enthusiasts who meet weekly to discuss literature and organize community events.",
-            "place": "Enoch Pratt Library - Light Street Branch",
+            "name": "Fitness and Wellness Group",
+            "description": "A group focused on fitness and wellness activities, including training and healthy living.",
+            "place": "South Baltimore Strength Club",
             "members": [
-                "Elizabeth Mensah",
-                "Adam Pierce",
-                "Olivia Adams"
+                "Kate Novak",
+                "Olivia Adams",
+                "Shannon Steves"
             ],
-            "daily_activity": "discussing books from 17:00 to 18:00"
+            "daily_activity": "conducting a group workout session from 18:00 to 19:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Olivia Adams's room at Harbor Hill Apartments",
+    "living_place": "Olivia Adams's room at 1201 S Charles Street Apartments",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -33,139 +33,157 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Olivia Adams's room at Harbor Hill Apartments",
-            "building": "301 Warren Avenue",
+            "place": "Olivia Adams's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Olivia Adams's room at Harbor Hill Apartments",
-            "building": "301 Warren Avenue",
+            "place": "&pizza - Fed Hill",
+            "building": "1201 South Charles Street",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Federal Hill Preparatory School",
+            "activity": "Commute to Starbucks",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
-            "end_time": "09:00:00"
+            "end_time": "08:45:00"
         },
         {
             "type": "main",
-            "activity": "Study for final exams",
-            "place": "Federal Hill Preparatory School",
-            "building": "1040 William Street",
-            "start_time": "09:00:00",
+            "activity": "Work as a barista and brainstorm new signature drink ideas",
+            "place": "Starbucks",
+            "building": "7 West Cross Street",
+            "start_time": "08:45:00",
             "end_time": "12:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Ponchos Tacos",
+            "activity": "Commute to The Brewer's Cask",
             "place": null,
             "building": null,
             "start_time": "12:00:00",
             "end_time": "12:10:00",
-            "start_place": "Federal Hill Preparatory School",
-            "end_place": "Ponchos Tacos"
+            "start_place": "Starbucks",
+            "end_place": "The Brewer's Cask"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "Ponchos Tacos",
-            "building": "1101 Light Street",
+            "place": "The Brewer's Cask",
+            "building": "Brewers Cask",
             "start_time": "12:10:00",
             "end_time": "12:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Federal Hill Preparatory School",
+            "activity": "Commute to Buns & Roses Chimney Cakes",
             "place": null,
             "building": null,
             "start_time": "12:30:00",
-            "end_time": "13:00:00",
-            "start_place": "Ponchos Tacos",
-            "end_place": "Federal Hill Preparatory School"
+            "end_time": "12:45:00",
+            "start_place": "The Brewer's Cask",
+            "end_place": "Buns & Roses Chimney Cakes"
         },
         {
             "type": "main",
-            "activity": "Continue studying for final exams",
-            "place": "Federal Hill Preparatory School",
-            "building": "1040 William Street",
-            "start_time": "13:00:00",
-            "end_time": "16:00:00"
+            "activity": "Explore new cafe and gather inspiration for drink ideas",
+            "place": "Buns & Roses Chimney Cakes",
+            "building": "The Store",
+            "start_time": "12:45:00",
+            "end_time": "14:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Enoch Pratt Library - Light Street Branch",
+            "activity": "Commute to Olivia Adams's room",
             "place": null,
             "building": null,
-            "start_time": "16:00:00",
-            "end_time": "16:30:00",
-            "start_place": "Federal Hill Preparatory School",
-            "end_place": "Enoch Pratt Library - Light Street Branch"
+            "start_time": "14:00:00",
+            "end_time": "14:15:00",
+            "start_place": "Buns & Roses Chimney Cakes",
+            "end_place": "Olivia Adams's room at 1201 S Charles Street Apartments"
         },
         {
             "type": "main",
-            "activity": "Baltimore Book Club meeting",
-            "place": "Enoch Pratt Library - Light Street Branch",
-            "building": "Light Street Branch",
-            "start_time": "16:30:00",
-            "end_time": "18:00:00"
+            "activity": "Painting and relaxing",
+            "place": "Olivia Adams's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
+            "start_time": "14:15:00",
+            "end_time": "17:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Magerks Pub & Grill Federal Hill",
+            "activity": "Commute to South Baltimore Strength Club",
             "place": null,
             "building": null,
-            "start_time": "18:00:00",
-            "end_time": "18:10:00",
-            "start_place": "Enoch Pratt Library - Light Street Branch",
-            "end_place": "Magerks Pub & Grill Federal Hill"
+            "start_time": "17:30:00",
+            "end_time": "17:45:00",
+            "start_place": "Olivia Adams's room at 1201 S Charles Street Apartments",
+            "end_place": "South Baltimore Strength Club"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Magerks Pub & Grill Federal Hill",
-            "building": "1061 South Charles Street",
-            "start_time": "18:10:00",
-            "end_time": "18:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Olivia Adams's room at Harbor Hill Apartments",
-            "place": null,
-            "building": null,
-            "start_time": "18:30:00",
-            "end_time": "19:00:00",
-            "start_place": "Magerks Pub & Grill Federal Hill",
-            "end_place": "Olivia Adams's room at Harbor Hill Apartments"
+            "place": "South Baltimore Strength Club",
+            "building": "1237 Wall Street",
+            "start_time": "17:45:00",
+            "end_time": "18:00:00"
         },
         {
             "type": "main",
-            "activity": "Study for final exams",
-            "place": "Olivia Adams's room at Harbor Hill Apartments",
-            "building": "301 Warren Avenue",
+            "activity": "Group workout session with Fitness and Wellness Group",
+            "place": "South Baltimore Strength Club",
+            "building": "1237 Wall Street",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and Snacks Store",
+            "place": null,
+            "building": null,
             "start_time": "19:00:00",
-            "end_time": "22:00:00"
+            "end_time": "19:15:00",
+            "start_place": "South Baltimore Strength Club",
+            "end_place": "Beverages and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Purchase ingredients for new drink ideas",
+            "place": "Beverages and Snacks Store",
+            "building": "1137 South Charles Street",
+            "start_time": "19:15:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Olivia Adams's room",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:15:00",
+            "start_place": "Beverages and Snacks Store",
+            "end_place": "Olivia Adams's room at 1201 S Charles Street Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Experiment with new drink recipes",
+            "place": "Olivia Adams's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
+            "start_time": "20:15:00",
+            "end_time": "23:00:00"
         },
         {
             "type": "main",
             "activity": "Relax and unwind",
-            "place": "Olivia Adams's room at Harbor Hill Apartments",
-            "building": "301 Warren Avenue",
-            "start_time": "22:00:00",
-            "end_time": "23:30:00"
-        },
-        {
-            "type": "meal",
-            "activity": "Light snack",
-            "place": "Olivia Adams's room at Harbor Hill Apartments",
-            "building": "301 Warren Avenue",
-            "start_time": "23:30:00",
+            "place": "Olivia Adams's room at 1201 S Charles Street Apartments",
+            "building": "1201 South Charles Street",
+            "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
     ],
@@ -178,13 +196,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Federal Hill Preparatory School",
+    "working_place": "Starbucks",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

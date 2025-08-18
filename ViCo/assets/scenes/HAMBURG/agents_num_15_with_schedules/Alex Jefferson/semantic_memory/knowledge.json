@@ -1,0 +1,434 @@
+{
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Deutschlandhaus",
+        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Real Estate Enthusiasts"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Kupferdiebhaus",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Real Estate Enthusiasts"
+        ]
+    },
+    "Real Estate Enthusiasts": {
+        "description": "A group of individuals passionate about real estate and property management.",
+        "place": "Sienna Real Estate Germany GmbH",
+        "members": [
+            "Alex Jefferson",
+            "Brian Carter",
+            "Roth Miller"
+        ],
+        "daily_activity": "discussing market trends from 15:00 to 16:00"
+    },
+    "Alex Jefferson's room at Alster Forest": {
+        "building": "Neuer Jungfernstieg 7",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1268.9040069580078,
+            976.2339510917664,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Alex Jefferson's room at Alster Forest",
+        "bounding_box": [
+            268.80151758972147,
+            -23.766041999813876,
+            120.82588577270508,
+            8.72741780378611,
+            19.744607913337717,
+            19.690025329589844,
+            1.0549104306276271
+        ]
+    },
+    "Sienna Real Estate Germany GmbH": {
+        "building": "Fuhlentwiete 10",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            919.1069183349609,
+            726.615348815918,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "bounding_box": [
+            -81.6545942761452,
+            -273.0611346400677,
+            130.12387847900393,
+            51.91356755391696,
+            31.1723183988029,
+            29.868148803710938,
+            0.27276879202895826
+        ]
+    },
+    "ABC Cube": {
+        "building": "ABC Cube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            975.4160537719727,
+            847.279426574707,
+            -16
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -24.362452507019043,
+            -152.72057342529297,
+            127.51932907104492,
+            28.287292886170423,
+            21.61153771872852,
+            23.297279357910156,
+            0.18982219886484586
+        ]
+    },
+    "Stolpersteine f\u00fcr homosexuelle NS-Opfer": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            708.2585319949546,
+            753.3931363246651,
+            -0.011426215686071828
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "wineBANK Hamburg": {
+        "building": "Alte Oberpostdirektion",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1062.2334289550781,
+            1266.409278869629,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            64.99286797576461,
+            262.94552457242355,
+            126.38022232055663,
+            71.83042890134318,
+            48.17834555132659,
+            24.335472106933594,
+            0.12348944024534773
+        ]
+    },
+    "Caf\u00e9 Condi": {
+        "building": "Neuer Jungfernstieg 9 14",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1273.1027526855469,
+            984.1044907569885,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            273.1721921305649,
+            -15.89551506903425,
+            120.85502624511719,
+            9.277219207661256,
+            19.81317183305464,
+            19.67059326171875,
+            1.0549105569683574
+        ]
+    },
+    "Gregor`s Superfood": {
+        "building": "Gerhofstra\u00dfe 2",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1162.933853149414,
+            826.2369155883789,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            157.49078478741666,
+            -169.09826636620255,
+            123.6135139465332,
+            21.37683544219697,
+            30.420519517018576,
+            25.24584197998047,
+            -0.6356037617002337
+        ]
+    },
+    "Cappino Caf\u00e9": {
+        "building": "Trocadero-Haus",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1121.4129180908203,
+            728.5920715332031,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            121.4970643565176,
+            -271.40516432716515,
+            118.7415237426758,
+            16.33571242904746,
+            41.529303401513474,
+            14.471420288085938,
+            0.5753804245849187
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Gro\u00dfe Theaterstra\u00dfe 43",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1276.61962890625,
+            1115.472812652588,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            276.27878590103717,
+            115.53990491087973,
+            119.93544387817383,
+            15.335459259957801,
+            16.07426992272566,
+            17.282615661621094,
+            -0.330647223474754
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Hamburger Hof",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1231.5494384765625,
+            806.5919647216797,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            229.7248228143012,
+            -197.52096316906218,
+            124.57926559448242,
+            50.26559234450249,
+            85.22035018576871,
+            25.79492950439453,
+            -0.8270944472315095
+        ]
+    },
+    "Yellowkorner Hamburg": {
+        "building": "Gerhofstra\u00dfe 2",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1162.933853149414,
+            826.2369155883789,
+            -8
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            157.49078478741666,
+            -169.09826636620255,
+            123.6135139465332,
+            21.37683544219697,
+            30.420519517018576,
+            25.24584197998047,
+            -0.6356037617002337
+        ]
+    },
+    "Drehbahn Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -4.73018606834329,
+            114.09625391677828
+        ],
+        "rotation": 1.5332236099123497,
+        "bounding_box": null
+    },
+    "Gorch-Fock-Wall Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -172.21403421632863,
+            130.5643543640188
+        ],
+        "rotation": -1.611149459969041,
+        "bounding_box": null
+    },
+    "Gro\u00dfe Bleichen Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            198.75740371910646,
+            -258.0755095687518
+        ],
+        "rotation": 2.169436681846908,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -242.68836879051298,
+            -2.688700534339098
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            212.88498126789537,
+            48.932713113086024
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            156.62364760732416,
+            -154.08307882625047
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            182.58222792426642,
+            236.2232815788863
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.71999650118364,
+            -79.19741732818166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -154.13603303240018,
+            -198.68429758064045
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            34.333652174137974,
+            238.6940053344933
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Gro\u00dfe Bleichen": [
+            {
+                "stop_name": "Drehbahn Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Gorch-Fock-Wall Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Gro\u00dfe Bleichen Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Drehbahn": [
+            {
+                "stop_name": "Gro\u00dfe Bleichen Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Gorch-Fock-Wall Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            },
+            {
+                "stop_name": "Drehbahn Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

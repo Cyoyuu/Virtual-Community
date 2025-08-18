@@ -1,36 +1,32 @@
 {
-    "Beverages and Snacks Store": {
-        "building": "Adlon Kempinski",
-        "coarse_type": "stores",
+    "Louise Roberts's room at Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "clothing_store",
-            "home_goods_store",
-            "store",
+            "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            861.4021148681641,
-            868.8953990936279,
-            -24
+            892.7398567199707,
+            776.5162048339844,
+            -28
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Louise Roberts's room at Apartments at Brandenburg Gate"
     },
-    "EINSTEIN Unter den Linden": {
-        "building": "Unter den Linden 42",
-        "coarse_type": "food",
+    "Palais Theising": {
+        "building": "Palais Theising",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
+            "apartments"
         ],
         "location": [
-            1242.2963180541992,
-            1064.4876728057861,
-            -4
+            1270.7462768554688,
+            837.3975067138672,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
     },
     "Apartments at Brandenburg Gate": {
         "building": "Behrenstra\u00dfe 1C",
@@ -45,83 +41,7 @@
             776.5162048339844,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "Eve By J Gonzales's room at Palais Theising": {
-        "building": "Palais Theising",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Eve By J Gonzales's room at Palais Theising"
-    },
-    "Selena Gomez's room at Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -24
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Selena Gomez's room at Hotel Ch\u00e2teau Royal Berlin"
-    },
-    "Hotel Bar im Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-    },
-    "Lisa Su's room at Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Lisa Su's room at Hotel Ch\u00e2teau Royal Berlin"
-    },
-    "Fr\u00f6bel-Kita im BMG": {
-        "building": "im Bundesgesundheitsministerium",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1202.5439682006836,
-            800.3695373535156,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
     },
     "Dunkin' Donuts": {
         "building": "Europ\u00e4isches Haus",
@@ -140,39 +60,9 @@
             1020.8131468296051,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Chad Thompson's room at Haus Sommer": {
-        "building": "Haus Sommer",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            798.2910079956055,
-            1106.213809967041,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Chad Thompson's room at Haus Sommer"
-    },
-    "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin"
-    },
-    "Palais Theising": {
+    "Eve By J Gonzales's room at Palais Theising": {
         "building": "Palais Theising",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -181,251 +71,10 @@
         "location": [
             1270.7462768554688,
             837.3975067138672,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "Lorenz Adlon Esszimmer": {
-        "building": "Adlon Kempinski",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            861.4021148681641,
-            868.8953990936279,
             -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Olivia Adams's room at Palais Theising": {
-        "building": "Palais Theising",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
-            -24
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Olivia Adams's room at Palais Theising"
-    },
-    "Contacts": {
-        "building": "Unter den Linden 63-65",
-        "coarse_type": "food",
-        "fine_types": [
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1101.6664199829102,
-            908.2746448516846,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Fresh and Snacks Store": {
-        "building": "Germany",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1265.595687866211,
-            1063.103063583374,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-    },
-    "Forum Willy Brandt Berlin": {
-        "building": "Palais Theising",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Allianz Forum": {
-        "building": "Allianz Forum",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            730.6108703613281,
-            1040.429967880249,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
-    },
-    "India Club Berlin": {
-        "building": "Akademie der K\u00fcnste",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            812.0868530273438,
-            857.7762260437012,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-    },
-    "Rabitz Property Consulting": {
-        "building": "Adlon Kempinski",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            861.4021148681641,
-            868.8953990936279,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Galerie im Adlon": {
-        "building": "Adlon Kempinski",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            861.4021148681641,
-            868.8953990936279,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Fresh and DM Store": {
-        "building": "Unter den Linden 74",
-        "coarse_type": "stores",
-        "fine_types": [
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            909.0811080932617,
-            1023.2611856013536,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "Fresh and Beverages Store": {
-        "building": "Matthias-Erzberger-Haus",
-        "coarse_type": "stores",
-        "fine_types": [
-            "storage",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            956.9866218566895,
-            917.629337310791,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "Memorial": {
-        "building": "Akademie der K\u00fcnste",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            812.0868530273438,
-            857.7762260437012,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Brian Carter's room at Apartments at Brandenburg Gate": {
-        "building": "Behrenstra\u00dfe 1C",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            892.7398567199707,
-            776.5162048339844,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-        "name": "Brian Carter's room at Apartments at Brandenburg Gate"
-    },
-    "Elizabeth Mensah's room at Palais Theising": {
-        "building": "Palais Theising",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Elizabeth Mensah's room at Palais Theising"
-    },
-    "Viale dei Tigli": {
-        "building": "Behrenstra\u00dfe 1C",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            892.7398567199707,
-            776.5162048339844,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Eve By J Gonzales's room at Palais Theising"
     },
     "1687 Restaurant & Caf\u00e9": {
         "building": "Mittelstra\u00dfe 30",
@@ -442,7 +91,70 @@
             1149.9044494628906,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Il Punto": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 6",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.1580047607422,
+            1233.4370574951172,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Berliner Kindl": {
+        "building": "Wilhelmstra\u00dfe 78",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            924.7960453033447,
+            742.9582595825195,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Gentle Restaurant": {
+        "building": "Robert-Koch-Forum",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            929.2939567565918,
+            1214.3909606933594,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
     },
     "Starbucks": {
         "building": "Pariser Platz 4A",
@@ -458,10 +170,10 @@
             1017.6247839927673,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Neil deGrasse Tyson's room at Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+    "Chad Thompson's room at Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -469,12 +181,45 @@
             "establishment"
         ],
         "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -20
+            892.7398567199707,
+            776.5162048339844,
+            -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Neil deGrasse Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Chad Thompson's room at Apartments at Brandenburg Gate"
+    },
+    "EINSTEIN Unter den Linden": {
+        "building": "Unter den Linden 42",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.2963180541992,
+            1064.4876728057861,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Beverages and Snacks Store": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
     },
     "Beverages and DM Store": {
         "building": "Behrenstra\u00dfe 72",
@@ -492,6 +237,97 @@
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
     },
+    "Barack Obama's room at Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Barack Obama's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    "Lomonossow-Linde": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1364.0601512525918,
+            640.8604669508123,
+            -0.020483291323955655
+        ],
+        "scene": null
+    },
+    "Europ\u00e4isches Haus": {
+        "building": "Europ\u00e4isches Haus",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            859.9858245849609,
+            1020.8131468296051,
+            -12
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "H & H Investitions Entwicklungsgesellschaft mbH": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 6",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.1580047607422,
+            1233.4370574951172,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Erlebnis Europa": {
+        "building": "Europ\u00e4isches Haus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            859.9858245849609,
+            1020.8131468296051,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
     "Friends forever galerie": {
         "building": "Glinkastra\u00dfe 42",
         "coarse_type": "entertainment",
@@ -505,23 +341,35 @@
             818.6903610229492,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "Il Punto": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 6",
-        "coarse_type": "food",
+    "Allianz Forum": {
+        "building": "Allianz Forum",
+        "coarse_type": "office",
         "fine_types": [
-            "restaurant",
-            "food",
+            "office"
+        ],
+        "location": [
+            730.6108703613281,
+            1040.429967880249,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Forum Willy Brandt Berlin": {
+        "building": "Palais Theising",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1236.1580047607422,
-            1233.4370574951172,
+            1270.7462768554688,
+            837.3975067138672,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
     },
     "Snacks and DM Store": {
         "building": "Mittelstra\u00dfe 30",
@@ -540,19 +388,98 @@
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
     },
-    "Adam Pierce's room at Haus Sommer": {
-        "building": "Haus Sommer",
+    "Kate Novak's room at Palais Theising": {
+        "building": "Palais Theising",
         "coarse_type": "accommodation",
         "fine_types": [
             "apartments"
         ],
         "location": [
-            798.2910079956055,
-            1106.213809967041,
+            1270.7462768554688,
+            837.3975067138672,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Kate Novak's room at Palais Theising"
+    },
+    "Lionel Messi's room at Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Lionel Messi's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    "Fresh and Beverages Store": {
+        "building": "Matthias-Erzberger-Haus",
+        "coarse_type": "stores",
+        "fine_types": [
+            "storage",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.9866218566895,
+            917.629337310791,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+    },
+    "Hotel Bar im Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Rathsack Geb\u00e4udeservice GmbH": {
+        "building": "Glinkastra\u00dfe 30",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1282.8489990234375,
+            712.7369079589844,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "Viale dei Tigli": {
+        "building": "Behrenstra\u00dfe 1C",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            892.7398567199707,
+            776.5162048339844,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Adam Pierce's room at Haus Sommer"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
     "China Club Berlin": {
         "building": "Behrenstra\u00dfe 72",
@@ -568,7 +495,223 @@
             807.3371734619141,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Cillian Murphy's room at Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Cillian Murphy's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    "Caf\u00e9 LebensArt": {
+        "building": "Matthias-Erzberger-Haus",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            956.9866218566895,
+            917.629337310791,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Schadowhaus": {
+        "building": "Schadow-Haus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1068.8470153808594,
+            1089.9077377319336,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Contacts": {
+        "building": "Unter den Linden 63-65",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1101.6664199829102,
+            908.2746448516846,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Brian Carter's room at Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            892.7398567199707,
+            776.5162048339844,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Brian Carter's room at Apartments at Brandenburg Gate"
+    },
+    "Fr\u00f6bel-Kita im BMG": {
+        "building": "im Bundesgesundheitsministerium",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1202.5439682006836,
+            800.3695373535156,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Axica Convention Center": {
+        "building": "Axica Convention Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            774.7564239501953,
+            843.7793846130371,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Russische Handelsvertretung": {
+        "building": "Russische Handelsvertretung",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1220.1015548706055,
+            911.6785488128662,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "Pika Hayes's room at Palais Theising": {
+        "building": "Palais Theising",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1270.7462768554688,
+            837.3975067138672,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Pika Hayes's room at Palais Theising"
+    },
+    "Prof. Dr. med. Dr. rer. nat. Ulf G\u00f6bel": {
+        "building": "Robert-Koch-Forum",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            929.2939567565918,
+            1214.3909606933594,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Joe Anderson's room at Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            892.7398567199707,
+            776.5162048339844,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Joe Anderson's room at Apartments at Brandenburg Gate"
+    },
+    "Lorenz Adlon Esszimmer": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -16
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin": {
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.4502487182617,
+            1099.687297821045,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    "Galerie im Adlon": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
     "August-Boeckh-Haus": {
         "building": "August-Boeckh-Haus",
@@ -581,80 +724,7 @@
             1168.189308166504,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
-    },
-    "Megan Carter's room at Palais Theising": {
-        "building": "Palais Theising",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
-            -20
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Megan Carter's room at Palais Theising"
-    },
-    "Haus Sommer": {
-        "building": "Haus Sommer",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            798.2910079956055,
-            1106.213809967041,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Erlebnis Europa": {
-        "building": "Europ\u00e4isches Haus",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            859.9858245849609,
-            1020.8131468296051,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-    },
-    "Tim Cook's room at Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -28
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Tim Cook's room at Hotel Ch\u00e2teau Royal Berlin"
-    },
-    "Jody Petersen's room at Haus Sommer": {
-        "building": "Haus Sommer",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            798.2910079956055,
-            1106.213809967041,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Jody Petersen's room at Haus Sommer"
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
     },
     "Sophie Carlsen's room at Palais Theising": {
         "building": "Palais Theising",
@@ -667,10 +737,40 @@
             837.3975067138672,
             -28
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "name": "Sophie Carlsen's room at Palais Theising"
     },
-    "Zara Williams's room at Palais Theising": {
+    "Fresh and DM Store": {
+        "building": "Unter den Linden 74",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            909.0811080932617,
+            1023.2611856013536,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Fresh and Snacks Store": {
+        "building": "Unter den Linden 42",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1242.2963180541992,
+            1064.4876728057861,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "Brycer Rodriguez's room at Palais Theising": {
         "building": "Palais Theising",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -679,26 +779,41 @@
         "location": [
             1270.7462768554688,
             837.3975067138672,
-            -32
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Zara Williams's room at Palais Theising"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Brycer Rodriguez's room at Palais Theising"
     },
-    "Berliner Kindl": {
-        "building": "Wilhelmstra\u00dfe 78",
-        "coarse_type": "food",
+    "Leonard Park's room at Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "restaurant",
+            "lodging",
             "point_of_interest",
-            "food",
             "establishment"
         ],
         "location": [
-            924.7960453033447,
-            742.9582595825195,
-            -4
+            892.7398567199707,
+            776.5162048339844,
+            -24
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Leonard Park's room at Apartments at Brandenburg Gate"
+    },
+    "Rabitz Property Consulting": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
     "Dorotheenstra\u00dfe Bus Stop": {
         "building": "open space",
@@ -708,7 +823,8 @@
             -276.32068646209586,
             134.91691783328858,
             103.56148380766861
-        ]
+        ],
+        "scene": null
     },
     "Wilhelmstra\u00dfe Bus Stop": {
         "building": "open space",
@@ -718,7 +834,8 @@
             -80.1443818575605,
             -133.99096123871433,
             103.24322602849824
-        ]
+        ],
+        "scene": null
     },
     "Mittelstra\u00dfe Bus Stop": {
         "building": "open space",
@@ -728,7 +845,8 @@
             374.8505950021759,
             141.1008314496153,
             103.39055747359747
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 1": {
         "building": "open space",
@@ -738,7 +856,8 @@
             229.96290008650672,
             62.08780631732322,
             103.76177557305137
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 2": {
         "building": "open space",
@@ -748,7 +867,8 @@
             -194.61441405187819,
             17.257650244464728,
             103.85602500382132
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 3": {
         "building": "open space",
@@ -758,7 +878,8 @@
             -125.37705697340463,
             -189.25981309793508,
             103.52708868466753
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 4": {
         "building": "open space",
@@ -768,7 +889,8 @@
             227.40201082542762,
             -154.0059505983572,
             103.18882817398875
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 5": {
         "building": "open space",
@@ -778,7 +900,8 @@
             -4.282316988717954,
             175.09397367318775,
             102.89272224947634
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 6": {
         "building": "open space",
@@ -788,7 +911,8 @@
             332.6510647579524,
             -324.88368731930206,
             103.23675181201028
-        ]
+        ],
+        "scene": null
     },
     "Bicycle Sharing Station 7": {
         "building": "open space",
@@ -798,6 +922,7 @@
             211.35856808912084,
             183.73906073961084,
             103.03341895764103
-        ]
+        ],
+        "scene": null
     }
 }

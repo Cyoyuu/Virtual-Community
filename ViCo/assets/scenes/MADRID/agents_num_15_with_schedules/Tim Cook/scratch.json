@@ -1,0 +1,214 @@
+{
+    "name": "Tim Cook",
+    "first_name": "Tim",
+    "last_name": "Cook",
+    "age": 55,
+    "innate": "achievement, power, security",
+    "learned": "I am the CEO of Apple Inc., known for my leadership in the tech industry and my focus on privacy and environmental issues.",
+    "currently": "I am in Madrid to discuss potential collaborations with local tech companies.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Madrid Business Leaders",
+            "description": "A group of business professionals and leaders who discuss and collaborate on various business ventures.",
+            "place": "VP Jard\u00edn de Recoletos",
+            "members": [
+                "Hilary Clinton",
+                "Ilya Sutskever",
+                "Lionel Messi",
+                "Michael Jordan",
+                "Tim Cook"
+            ],
+            "daily_activity": "networking and discussing business strategies from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Tim Cook's room at VP Jard\u00edn de Recoletos",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Tim Cook's room at VP Jard\u00edn de Recoletos",
+            "building": "Calle de Gil de Santiva\u00f1es",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Delivinos Urban Gourmet",
+            "building": "Calle Cid 2",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Delivinos Urban Gourmet",
+            "end_place": "Sala Recoletos - Fundaci\u00f3n MAPFRE"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Sala Recoletos - Fundaci\u00f3n MAPFRE for entertainment",
+            "place": "Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
+            "start_time": "09:30:00",
+            "end_time": "11:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "11:00:00",
+            "end_time": "11:30:00",
+            "start_place": "Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Fresh and Snacks Store for shopping",
+            "place": "Fresh and Snacks Store",
+            "building": "C/ Almt Almirante",
+            "start_time": "11:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurante Casa America",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Restaurante Casa America"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Studio42",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "Restaurante Casa America",
+            "end_place": "Studio42"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Studio42 for entertainment",
+            "place": "Studio42",
+            "building": "Edificio Restaura",
+            "start_time": "14:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to VP Jard\u00edn de Recoletos",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Studio42",
+            "end_place": "VP Jard\u00edn de Recoletos"
+        },
+        {
+            "type": "main",
+            "activity": "Networking with Madrid Business Leaders",
+            "place": "VP Jard\u00edn de Recoletos",
+            "building": "Calle de Gil de Santiva\u00f1es",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Alegor\u00edA",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "VP Jard\u00edn de Recoletos",
+            "end_place": "Alegor\u00edA"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Alegor\u00edA",
+            "building": "Calle del Cid",
+            "start_time": "18:10:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fascinado club",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Alegor\u00edA",
+            "end_place": "Fascinado club"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Fascinado club for entertainment",
+            "place": "Fascinado club",
+            "building": "Calle del Cid",
+            "start_time": "19:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Tim Cook's room at VP Jard\u00edn de Recoletos",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Fascinado club",
+            "end_place": "Tim Cook's room at VP Jard\u00edn de Recoletos"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for the next day",
+            "place": "Tim Cook's room at VP Jard\u00edn de Recoletos",
+            "building": "Calle de Gil de Santiva\u00f1es",
+            "start_time": "21:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

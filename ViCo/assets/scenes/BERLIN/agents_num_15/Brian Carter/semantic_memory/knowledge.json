@@ -1,38 +1,47 @@
 {
-    "Adam Pierce": {
-        "age": 27,
-        "living_place": "Adam Pierce's room at Haus Sommer",
-        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Apartments at Brandenburg Gate",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
         "groups": [
-            "Berlin Tech Innovators"
+            "Berlin Business Network"
         ]
     },
-    "Lisa Su": {
-        "age": 54,
-        "living_place": "Hotel Ch\u00e2teau Royal Berlin",
-        "appearance": "ViCo/assets/imgs/avatars/Lisa Su.png",
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Apartments at Brandenburg Gate",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
         "groups": [
-            "Berlin Tech Innovators"
+            "Berlin Business Network"
         ]
     },
-    "Tim Cook": {
-        "age": 55,
-        "living_place": "Hotel Ch\u00e2teau Royal Berlin",
-        "appearance": "ViCo/assets/imgs/avatars/Tim Cook.png",
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Apartments at Brandenburg Gate",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
         "groups": [
-            "Berlin Tech Innovators"
+            "Berlin Business Network"
         ]
     },
-    "Berlin Tech Innovators": {
-        "description": "A group of tech professionals and enthusiasts collaborating on innovative projects and attending tech conferences.",
-        "place": "Forum Willy Brandt Berlin",
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Apartments at Brandenburg Gate",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Berlin Business Network"
+        ]
+    },
+    "Berlin Business Network": {
+        "description": "A group of professionals working in various industries in Berlin, focused on networking and business development.",
+        "place": "Rathsack Geb\u00e4udeservice GmbH",
         "members": [
-            "Adam Pierce",
             "Brian Carter",
-            "Lisa Su",
-            "Tim Cook"
+            "Chad Thompson",
+            "Joe Anderson",
+            "Leonard Park",
+            "Louise Roberts"
         ],
-        "daily_activity": "attending tech seminars from 15:00 to 17:00"
+        "daily_activity": "attending business seminars from 17:00 to 18:00"
     },
     "Brian Carter's room at Apartments at Brandenburg Gate": {
         "building": "Behrenstra\u00dfe 1C",
@@ -47,7 +56,7 @@
             776.5162048339844,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "name": "Brian Carter's room at Apartments at Brandenburg Gate",
         "bounding_box": [
             -107.68170777553168,
@@ -59,8 +68,32 @@
             0.307856262238717
         ]
     },
-    "Hotel Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+    "Rabitz Property Consulting": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
+        ]
+    },
+    "Apartments at Brandenburg Gate": {
+        "building": "Behrenstra\u00dfe 1C",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -68,92 +101,89 @@
             "establishment"
         ],
         "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "bounding_box": [
-            242.6571777789901,
-            99.04322478918093,
-            115.63469314575195,
-            23.325359564936267,
-            30.963206675254103,
-            24.15544891357422,
-            0.10152558912094532
-        ]
-    },
-    "Forum Willy Brandt Berlin": {
-        "building": "Palais Theising",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1270.7462768554688,
-            837.3975067138672,
+            892.7398567199707,
+            776.5162048339844,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "bounding_box": [
-            270.6683044433594,
-            -162.6024932861328,
-            115.11205291748048,
-            18.97455800176124,
-            17.973907533285743,
-            24.350433349609375,
-            0.1034993178085124
+            -107.68170777553168,
+            -223.12088235256442,
+            116.64058685302736,
+            57.2337211033099,
+            20.258383977309883,
+            26.445480346679688,
+            0.307856262238717
         ]
     },
-    "Memorial": {
-        "building": "Akademie der K\u00fcnste",
-        "coarse_type": "entertainment",
+    "Rathsack Geb\u00e4udeservice GmbH": {
+        "building": "Glinkastra\u00dfe 30",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "museum",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            812.0868530273438,
-            857.7762260437012,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            -187.87543437758413,
-            -142.2299128660116,
-            111.32804489135742,
-            35.73794942676991,
-            81.96167813201629,
-            15.052940368652344,
-            0.1076321516413292
-        ]
-    },
-    "Berliner Kindl": {
-        "building": "Wilhelmstra\u00dfe 78",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            924.7960453033447,
-            742.9582595825195,
+            1282.8489990234375,
+            712.7369079589844,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
         "bounding_box": [
-            -74.73582409935607,
-            -257.0452992418696,
-            115.5212860107422,
-            15.464124409311774,
-            65.25435206889607,
-            23.172622680664062,
-            0.3142352306542696
+            282.8455266759489,
+            -287.01308378672064,
+            114.89515686035158,
+            19.153817999697633,
+            7.455263266501914,
+            23.53887939453125,
+            0.09032472245426922
+        ]
+    },
+    "August-Boeckh-Haus": {
+        "building": "August-Boeckh-Haus",
+        "coarse_type": "office",
+        "fine_types": [
+            "university"
+        ],
+        "location": [
+            1277.2444152832031,
+            1168.189308166504,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            277.2447168724877,
+            168.1914726599949,
+            107.3475875854492,
+            21.663743902387818,
+            21.552491233010713,
+            8.099639892578125,
+            0.09701252193719455
+        ]
+    },
+    "Galerie im Adlon": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
         ]
     },
     "Friends forever galerie": {
@@ -169,7 +199,7 @@
             818.6903610229492,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             274.3823579411318,
             -181.11113015291093,
@@ -178,6 +208,31 @@
             19.6127359470624,
             26.765052795410156,
             0.10350052452727374
+        ]
+    },
+    "Lorenz Adlon Esszimmer": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -16
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
         ]
     },
     "Viale dei Tigli": {
@@ -195,7 +250,7 @@
             776.5162048339844,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             -107.68170777553168,
             -223.12088235256442,
@@ -206,101 +261,82 @@
             0.307856262238717
         ]
     },
-    "Hotel Bar im Ch\u00e2teau Royal Berlin": {
-        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+    "Caf\u00e9 LebensArt": {
+        "building": "Matthias-Erzberger-Haus",
         "coarse_type": "food",
         "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1242.4502487182617,
-            1099.687297821045,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            242.6571777789901,
-            99.04322478918093,
-            115.63469314575195,
-            23.325359564936267,
-            30.963206675254103,
-            24.15544891357422,
-            0.10152558912094532
-        ]
-    },
-    "EINSTEIN Unter den Linden": {
-        "building": "Unter den Linden 42",
-        "coarse_type": "food",
-        "fine_types": [
+            "cafe",
             "restaurant",
+            "point_of_interest",
+            "store",
             "food",
-            "point_of_interest",
             "establishment"
         ],
         "location": [
-            1242.2963180541992,
-            1064.4876728057861,
-            -4
+            956.9866218566895,
+            917.629337310791,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            242.29230238227618,
-            64.66633280163461,
-            116.00746154785156,
-            15.629991978785286,
-            53.13174919793875,
-            24.774169921875,
-            0.10154622759204261
+            -40.50332832270382,
+            -83.04670877008424,
+            113.30331802368164,
+            88.27229533513983,
+            57.812141040685965,
+            20.083290100097656,
+            0.11533896319133252
         ]
     },
-    "Fresh and DM Store": {
-        "building": "Unter den Linden 74",
+    "Beverages and Snacks Store": {
+        "building": "Adlon Kempinski",
         "coarse_type": "stores",
         "fine_types": [
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            909.0811080932617,
-            1023.2611856013536,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
-        "bounding_box": [
-            -91.03621920312861,
-            24.312991559684313,
-            115.85339736938477,
-            31.784944400157897,
-            46.00490572785767,
-            24.90746307373047,
-            0.11243514315681946
-        ]
-    },
-    "Fresh and Snacks Store": {
-        "building": "Germany",
-        "coarse_type": "stores",
-        "fine_types": [
+            "clothing_store",
+            "home_goods_store",
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1265.595687866211,
-            1063.103063583374,
+            861.4021148681641,
+            868.8953990936279,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Matthias-Erzberger-Haus",
+        "coarse_type": "stores",
+        "fine_types": [
+            "storage",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.9866218566895,
+            917.629337310791,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
         "bounding_box": [
-            265.5956874772351,
-            63.10307880207894,
-            116.83374786376953,
-            30.471478662830776,
-            45.316688921513304,
-            26.286087036132812,
-            0.1026880334292421
+            -40.50332832270382,
+            -83.04670877008424,
+            113.30331802368164,
+            88.27229533513983,
+            57.812141040685965,
+            20.083290100097656,
+            0.11533896319133252
         ]
     },
     "Dorotheenstra\u00dfe Bus Stop": {

@@ -1,0 +1,172 @@
+{
+    "name": "Leonard Park",
+    "first_name": "Leonard",
+    "last_name": "Park",
+    "age": 26,
+    "innate": "conformity, security, benevolence",
+    "learned": "I am a librarian at Green Square Library, passionate about literature and community engagement. I enjoy reading and organizing book clubs.",
+    "currently": "I aim to organize a community reading event at the library.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Creative Minds",
+            "description": "A group of artists and creatives who share a love for art and design.",
+            "place": "Green Square Library",
+            "members": [
+                "Eve By J Gonzales",
+                "Louise Roberts",
+                "Leonard Park",
+                "Zara Williams"
+            ],
+            "daily_activity": "attending art workshops from 16:00 to 17:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Leonard Park's room at Portman on the Park",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Portman on the Park",
+            "building": "Portman on the Park",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at IIKO Mazesoba",
+            "place": "IIKO Mazesoba",
+            "building": "Portman on the Park",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Green Square Library",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work at Green Square Library",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Bar Noun (Green Square Acai)",
+            "place": "Bar Noun (Green Square Acai)",
+            "building": "Green Square Library",
+            "start_time": "12:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Organize community reading event at Green Square Library",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "12:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend Creative Minds art workshop",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "15:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to IIKO Mazesoba",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Green Square Library",
+            "end_place": "IIKO Mazesoba"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at IIKO Mazesoba",
+            "place": "IIKO Mazesoba",
+            "building": "Portman on the Park",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Combine Air Green Square",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "IIKO Mazesoba",
+            "end_place": "Combine Air Green Square"
+        },
+        {
+            "type": "main",
+            "activity": "Exercise at Combine Air Green Square",
+            "place": "Combine Air Green Square",
+            "building": "Portman on the Park",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Leonard Park's room at Portman on the Park",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Combine Air Green Square",
+            "end_place": "Leonard Park's room at Portman on the Park"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and read at Leonard Park's room",
+            "place": "Leonard Park's room at Portman on the Park",
+            "building": "Portman on the Park",
+            "start_time": "20:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Portman on the Park",
+            "building": "Portman on the Park",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Green Square Library",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -2,133 +2,169 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Pika Hayes's room at Two Rooms in City Centre",
-        "building": "Herengracht 211",
+        "place": "Pika Hayes's room at Building III",
+        "building": "Building III",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Hummingbird Amsterdam",
-        "building": "Spuistraat 215",
-        "start_time": "08:30:00",
+        "place": "Techlab Bv",
+        "building": "Singel 326 A",
+        "start_time": "08:00:00",
         "end_time": "09:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to De Nieuwe Vrouw",
-        "place": null,
-        "building": null,
-        "start_time": "09:00:00",
-        "end_time": "09:30:00",
-        "start_place": "Hummingbird Amsterdam",
-        "end_place": "De Nieuwe Vrouw"
-    },
-    {
-        "type": "main",
-        "activity": "Attend classes and work on fashion design",
-        "place": "De Nieuwe Vrouw",
-        "building": "Nieuwezijds Voorburgwal 178",
-        "start_time": "09:30:00",
-        "end_time": "12:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to The Lobby Nesplein",
-        "place": null,
-        "building": null,
-        "start_time": "12:30:00",
-        "end_time": "13:00:00",
-        "start_place": "De Nieuwe Vrouw",
-        "end_place": "The Lobby Nesplein"
-    },
-    {
-        "type": "meal",
-        "activity": "Lunch",
-        "place": "The Lobby Nesplein",
-        "building": "Vlaams Cultuurhuis de Brakke Grond",
-        "start_time": "13:00:00",
-        "end_time": "13:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Humanities IT Lab - Universiteit van Amsterdam",
-        "place": null,
-        "building": null,
-        "start_time": "13:30:00",
-        "end_time": "14:00:00",
-        "start_place": "The Lobby Nesplein",
-        "end_place": "Humanities IT Lab - Universiteit van Amsterdam"
-    },
-    {
-        "type": "main",
-        "activity": "Research and sketch designs for fashion show",
-        "place": "Humanities IT Lab - Universiteit van Amsterdam",
-        "building": "UvA PC Hoofthuis",
-        "start_time": "14:00:00",
-        "end_time": "16:30:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Amsterdam Yoga Centre",
         "place": null,
         "building": null,
-        "start_time": "16:30:00",
-        "end_time": "17:00:00",
-        "start_place": "Humanities IT Lab - Universiteit van Amsterdam",
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Techlab Bv",
         "end_place": "Amsterdam Yoga Centre"
     },
     {
         "type": "main",
-        "activity": "Yoga session with Health and Wellness Group",
+        "activity": "Morning Yoga Practice",
         "place": "Amsterdam Yoga Centre",
         "building": "Singel 300",
-        "start_time": "17:00:00",
+        "start_time": "09:30:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hummingbird Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Amsterdam Yoga Centre",
+        "end_place": "Hummingbird Amsterdam"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Hummingbird Amsterdam",
+        "building": "Spuistraat 215",
+        "start_time": "11:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Hummingbird Amsterdam",
+        "end_place": "Flemish Cultural Center de Brakke Grond"
+    },
+    {
+        "type": "main",
+        "activity": "Meditation Session",
+        "place": "Flemish Cultural Center de Brakke Grond",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Flemish Cultural Center de Brakke Grond",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shopping for Healthy Snacks",
+        "place": "Fresh and Beverages Store",
+        "building": "Spuistraat 231",
+        "start_time": "15:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Amsterdam Yoga Centre",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Amsterdam Yoga Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Group Yoga Practice",
+        "place": "Amsterdam Yoga Centre",
+        "building": "Singel 300",
+        "start_time": "16:00:00",
         "end_time": "18:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Brasserie 3-5-3",
+        "activity": "Commute to Abraxas",
         "place": null,
         "building": null,
         "start_time": "18:00:00",
         "end_time": "18:30:00",
         "start_place": "Amsterdam Yoga Centre",
-        "end_place": "Brasserie 3-5-3"
+        "end_place": "Abraxas"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "Brasserie 3-5-3",
-        "building": "Nieuwezijds Voorburgwal 353",
+        "place": "Abraxas",
+        "building": "Jonge Roelensteeg 12-14",
         "start_time": "18:30:00",
-        "end_time": "19:00:00"
+        "end_time": "19:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Pika Hayes's room at Two Rooms in City Centre",
+        "activity": "Commute to Royal Palace Amsterdam",
         "place": null,
         "building": null,
-        "start_time": "19:00:00",
-        "end_time": "19:30:00",
-        "start_place": "Brasserie 3-5-3",
-        "end_place": "Pika Hayes's room at Two Rooms in City Centre"
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Abraxas",
+        "end_place": "Royal Palace Amsterdam"
     },
     {
         "type": "main",
-        "activity": "Continue working on clothing designs",
-        "place": "Pika Hayes's room at Two Rooms in City Centre",
-        "building": "Herengracht 211",
-        "start_time": "19:30:00",
-        "end_time": "23:30:00"
+        "activity": "Evening Walk and Relaxation",
+        "place": "Royal Palace Amsterdam",
+        "building": "Koninklijk Paleis",
+        "start_time": "20:00:00",
+        "end_time": "21:30:00"
     },
     {
-        "type": "sleep",
-        "activity": "Prepare for bed and sleep",
-        "place": "Pika Hayes's room at Two Rooms in City Centre",
-        "building": "Herengracht 211",
-        "start_time": "23:30:00",
+        "type": "commute",
+        "activity": "Commute to Pika Hayes's room at Building III",
+        "place": null,
+        "building": null,
+        "start_time": "21:30:00",
+        "end_time": "22:00:00",
+        "start_place": "Royal Palace Amsterdam",
+        "end_place": "Pika Hayes's room at Building III"
+    },
+    {
+        "type": "main",
+        "activity": "Evening Meditation and Reflection",
+        "place": "Pika Hayes's room at Building III",
+        "building": "Building III",
+        "start_time": "22:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Pika Hayes's room at Building III",
+        "building": "Building III",
+        "start_time": "23:00:00",
         "end_time": "23:59:59"
     }
 ]

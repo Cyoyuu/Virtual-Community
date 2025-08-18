@@ -1,129 +1,99 @@
 {
-    "Chad Thompson": {
-        "age": 28,
-        "living_place": "Chad Thompson's room at Aticco Living Bertrellans 9 - Flexliving Building",
-        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Casa Mart\u00ed",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
         "groups": [
-            "Fitness Enthusiasts"
+            "Tech Enthusiasts Club"
         ]
     },
-    "Elizabeth Mensah": {
-        "age": 23,
-        "living_place": "Elizabeth Mensah's room at Pensi\u00f3n Nevada",
-        "appearance": "ViCo/assets/imgs/avatars/Elizabeth Mensah.png",
+    "Marques Brownlee": {
+        "age": 30,
+        "living_place": "El Avenida Palace",
+        "appearance": "ViCo/assets/imgs/avatars/Marques Brownlee.png",
         "groups": [
-            "Fitness Enthusiasts"
+            "Tech Enthusiasts Club"
         ]
     },
-    "Fitness Enthusiasts": {
-        "description": "A group of individuals passionate about fitness and wellness, meeting for yoga and other activities.",
-        "place": "Mandiram Escola de Yoga",
+    "Tech Enthusiasts Club": {
+        "description": "A group of individuals passionate about technology and innovation, sharing insights and exploring new tech trends.",
+        "place": "Movistar Centre",
         "members": [
-            "Elizabeth Mensah",
-            "Leonard Park",
-            "Chad Thompson"
+            "Adam Pierce",
+            "Marques Brownlee",
+            "Leonard Park"
         ],
-        "daily_activity": "practicing yoga from 18:00 to 19:00"
+        "daily_activity": "discussing the latest tech trends from 15:00 to 16:00"
     },
-    "Leonard Park's room at Cami Gallery": {
-        "building": "Carrer de Casp",
+    "Leonard Park's room at Casa Mart\u00ed": {
+        "building": "Casa Mart\u00ed",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
+            "apartments",
+            "artwork"
         ],
         "location": [
-            1062.3693389892578,
-            1264.7517776489258,
-            -8
+            1285.1085510253906,
+            880.1705627441406,
+            -20
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Leonard Park's room at Cami Gallery",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Leonard Park's room at Casa Mart\u00ed",
         "bounding_box": [
-            62.43692151380938,
-            264.79263138952217,
-            137.6140213012695,
-            15.936579513520005,
-            17.556161089916635,
-            26.040237426757812,
-            0.7867079749634631
+            285.4540480441911,
+            -119.83270734513754,
+            127.58673477172852,
+            14.10403798653613,
+            23.694917731040512,
+            20.31163787841797,
+            0.5360568433778378
         ]
     },
-    "Kasparo": {
-        "building": "Pla\u00e7a de Vicen\u00e7 Martorell",
-        "coarse_type": "food",
+    "Fresh and DM Store": {
+        "building": "Carrer de la Canuda",
+        "coarse_type": "stores",
         "fine_types": [
-            "bar",
-            "restaurant",
-            "food",
             "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            896.7416458129883,
-            734.6321411132812,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -102.87493060003135,
-            -265.79710146072205,
-            126.75826263427736,
-            4.3185784290601,
-            15.70181754095764,
-            17.084762573242188,
-            -1.019848463961105
-        ]
-    },
-    "Mandiram Escola de Yoga": {
-        "building": "Pl Urquinaona",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
             "health",
-            "point_of_interest",
+            "store",
             "establishment"
         ],
         "location": [
-            1174.7693557739258,
-            1255.4750671386719,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            174.7235690686839,
-            251.93077120888918,
-            137.4907646179199,
-            25.40860593222929,
-            33.38011725376362,
-            28.89398956298828,
-            0.7825328536983855
-        ]
-    },
-    "Geneva Business School - Barcelona Campus": {
-        "building": "Carrer de Rivadeneyra",
-        "coarse_type": "office",
-        "fine_types": [
-            "university",
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1058.8317012786865,
-            836.8618850708008,
+            1258.5184631347656,
+            802.5407562255859,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
         "bounding_box": [
-            58.9659531205412,
-            -164.00429224361437,
-            129.17107772827148,
-            23.417091805750577,
-            36.47565654867587,
-            19.34101104736328,
-            -0.56924270274052
+            256.6870271629036,
+            -196.8986839590719,
+            126.62826156616211,
+            29.190051261755897,
+            60.93020407054617,
+            20.376747131347656,
+            -1.027447051746568
+        ]
+    },
+    "Movistar Centre": {
+        "building": "Movistar Centre",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1140.361312866211,
+            1004.8940782546997,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            135.98538208007812,
+            7.576118469238281,
+            142.0291748046875,
+            25.226667404174805,
+            27.929733276367188,
+            43.638832092285156,
+            0.7388031482696533
         ]
     },
     "Il\u00b7lacions Design Gallery": {
@@ -139,7 +109,7 @@
             730.7357635498047,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             90.05526925079454,
             -268.4703047539697,
@@ -150,8 +120,33 @@
             0.4654475662488498
         ]
     },
-    "TuCoworking": {
-        "building": "Pla\u00e7a de la Vila de Madrid",
+    "Can Pizza Universitat": {
+        "building": "Ronda de la Universitat",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.5226516723633,
+            982.3367626667023,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -201.01796938045516,
+            -18.399003356869216,
+            136.12260818481445,
+            18.27070180396342,
+            41.40875408504387,
+            21.59789276123047,
+            0.463124273712025
+        ]
+    },
+    "El Avenida Palace": {
+        "building": "El Avenida Palace",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -159,88 +154,61 @@
             "establishment"
         ],
         "location": [
-            1214.362564086914,
-            741.7255859375,
-            -8
+            753.3645477294922,
+            1243.994743347168,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
         "bounding_box": [
-            211.26866097942067,
-            -254.29565469389405,
-            131.91738891601565,
-            45.18962140853311,
-            48.389463137297994,
-            32.079681396484375,
-            0.513586991778526
+            -246.63091359976198,
+            247.11159671648724,
+            150.58866882324216,
+            28.076820589647134,
+            31.403392938025995,
+            44.21380615234375,
+            -0.7764564204912203
         ]
     },
-    "100 Montaditos": {
-        "building": "Pl Urquinaona",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1174.7693557739258,
-            1255.4750671386719,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            174.7235690686839,
-            251.93077120888918,
-            137.4907646179199,
-            25.40860593222929,
-            33.38011725376362,
-            28.89398956298828,
-            0.7825328536983855
-        ]
-    },
-    "Auna caf\u00e9": {
-        "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+    "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4": {
+        "building": "Casa Mart\u00ed",
         "coarse_type": "food",
         "fine_types": [
             "cafe",
-            "store",
-            "food",
             "point_of_interest",
+            "food",
             "establishment"
         ],
         "location": [
-            925.0594806671143,
-            1116.3296737670898,
+            1285.1085510253906,
+            880.1705627441406,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -75.03899134978053,
-            111.63696273080402,
-            151.77111053466797,
-            30.598442328468742,
-            52.86324382879695,
-            49.74732971191406,
-            -0.821464838309381
+            285.4540480441911,
+            -119.83270734513754,
+            127.58673477172852,
+            14.10403798653613,
+            23.694917731040512,
+            20.31163787841797,
+            0.5360568433778378
         ]
     },
-    "Fresh and Beverages Store": {
+    "OGGI Gelato Barcelona": {
         "building": "Avinguda del Portal de l'\u00c0ngel",
-        "coarse_type": "stores",
+        "coarse_type": "food",
         "fine_types": [
-            "shoe_store",
             "store",
             "point_of_interest",
+            "food",
             "establishment"
         ],
         "location": [
             1218.155029296875,
             1029.085952758789,
-            -8
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             212.34474182128906,
             22.17278289794922,
@@ -251,8 +219,33 @@
             0.6154614686965942
         ]
     },
-    "Fresh and Snacks Store": {
-        "building": "Casa Pich i Pon",
+    "Oficina Alhevi": {
+        "building": "Portal de l'Angel",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1178.196304321289,
+            970.1355185508728,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            178.39831629544688,
+            -31.292047206762433,
+            129.66705322265625,
+            24.159458304815644,
+            35.55993512375967,
+            22.7069091796875,
+            -0.8353573194793715
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "C.C. Del Triangle",
         "coarse_type": "stores",
         "fine_types": [
             "clothing_store",
@@ -261,11 +254,35 @@
             "establishment"
         ],
         "location": [
-            879.9596710205078,
-            1098.5413284301758,
+            878.0311279296875,
+            901.5777530670166,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -119.69338285789293,
+            -94.17620715577607,
+            134.92746353149414,
+            140.14640060618825,
+            73.46671811816593,
+            24.338768005371094,
+            -0.11926047578477805
+        ]
+    },
+    "The Black Room": {
+        "building": "Casa Pich i Pon",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.9596710205078,
+            1098.5413284301758,
+            -8
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             -118.7930428363285,
             93.18013984710525,

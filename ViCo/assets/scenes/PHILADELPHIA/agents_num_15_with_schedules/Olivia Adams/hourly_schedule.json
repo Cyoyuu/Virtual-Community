@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at The Ledger Residences by Sosuite - Old City",
+        "building": "Public Ledger Building",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Union Gourmet Catering",
+        "place": "Union Gourmet Catering",
+        "building": "Public Ledger Building",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to American Philosophical Society",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on research paper about historical scientific discoveries",
+        "place": "American Philosophical Society",
+        "building": "Philosophical Hall",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to TaKorean | The Bourse",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "American Philosophical Society",
+        "end_place": "TaKorean | The Bourse"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at TaKorean | The Bourse",
+        "place": "TaKorean | The Bourse",
+        "building": "The Philadelphia Bourse",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to American Philosophical Society",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:45:00",
+        "start_place": "TaKorean | The Bourse",
+        "end_place": "American Philosophical Society"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on research paper",
+        "place": "American Philosophical Society",
+        "building": "Philosophical Hall",
+        "start_time": "12:45:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Platoon Fitness, Philadelphia",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "16:45:00",
+        "start_place": "American Philosophical Society",
+        "end_place": "Platoon Fitness, Philadelphia"
+    },
+    {
+        "type": "main",
+        "activity": "Fitness training with Fitness and Health Enthusiasts",
+        "place": "Platoon Fitness, Philadelphia",
+        "building": "716 Walnut Street",
+        "start_time": "16:45:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Koto Sushi",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "Platoon Fitness, Philadelphia",
+        "end_place": "Koto Sushi"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Koto Sushi",
+        "place": "Koto Sushi",
+        "building": "719 Sansom Street #1Fl",
+        "start_time": "19:15:00",
+        "end_time": "19:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Olivia Adams's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:45:00",
+        "end_time": "20:00:00",
+        "start_place": "Koto Sushi",
+        "end_place": "Olivia Adams's room at The Ledger Residences by Sosuite - Old City"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and leisure time",
+        "place": "Olivia Adams's room at The Ledger Residences by Sosuite - Old City",
+        "building": "Public Ledger Building",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's work",
+        "place": "Olivia Adams's room at The Ledger Residences by Sosuite - Old City",
+        "building": "Public Ledger Building",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at The Ledger Residences by Sosuite - Old City",
+        "building": "Public Ledger Building",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brycer Rodriguez's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "S.K. Market",
+        "building": "First on Tenth",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rosso Coffee Roasters - Stephen Ave",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a barista",
+        "place": "Rosso Coffee Roasters - Stephen Ave",
+        "building": "Calgary TELUS Convention Centre North Building",
+        "start_time": "09:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Rosso Coffee Roasters - Stephen Ave",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Collaborate on art projects with Calgary Creatives",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "15:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Unicorn",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "The Unicorn"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Brycer Rodriguez's room at First on Tenth",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "The Unicorn",
+        "end_place": "Brycer Rodriguez's room at First on Tenth"
+    },
+    {
+        "type": "main",
+        "activity": "Photography and editing",
+        "place": "Brycer Rodriguez's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "18:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer at local shelters",
+        "place": "Brycer Rodriguez's room at First on Tenth",
+        "building": "First on Tenth",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Late-night snack",
+        "place": "Beverages and Snacks Store",
+        "building": "First on Tenth",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

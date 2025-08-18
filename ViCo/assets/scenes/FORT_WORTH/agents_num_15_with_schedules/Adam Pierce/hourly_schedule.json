@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "La Perla",
+        "building": "Houston Place Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Training clients at Lanham Fitness Center",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "Fort Worth Public Library - Downtown Express"
+    },
+    {
+        "type": "main",
+        "activity": "Research new hiking trails",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bailey's Bar-B-Q",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "Bailey's Bar-B-Q"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Bailey's Bar-B-Q",
+        "building": "Bailey's Bar-B-Q",
+        "start_time": "14:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Bailey's Bar-B-Q",
+        "end_place": "Lanham Fitness Center"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Fitness Enthusiasts Club meeting",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Fitness Enthusiasts Club meeting",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Capital Grille",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "The Capital Grille"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Capital Grille",
+        "building": "800 Main Street",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Adam Pierce's room at Houston Place Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "The Capital Grille",
+        "end_place": "Adam Pierce's room at Houston Place Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Adam Pierce's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Plan next day's activities",
+        "place": "Adam Pierce's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Adam Pierce's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

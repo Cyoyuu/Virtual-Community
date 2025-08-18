@@ -1,0 +1,148 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "John F Kennedy's room at 12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Japanika",
+        "building": "Danubius Center",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Danubius Center",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Japanika",
+        "end_place": "Danubius Center"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for keynote speech",
+        "place": "Danubius Center",
+        "building": "Danubius Center",
+        "start_time": "09:30:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Deliver keynote speech at international conference on leadership",
+        "place": "Danubius Center",
+        "building": "Danubius Center",
+        "start_time": "11:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Japanika",
+        "building": "Danubius Center",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with conference attendees",
+        "place": "Danubius Center",
+        "building": "Danubius Center",
+        "start_time": "13:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Association of Hungarian Fine and Applied Artists",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Danubius Center",
+        "end_place": "Association of Hungarian Fine and Applied Artists"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Association of Hungarian Fine and Applied Artists",
+        "place": "Association of Hungarian Fine and Applied Artists",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to 12 Revay Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Association of Hungarian Fine and Applied Artists",
+        "end_place": "12 Revay Hotel"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss global issues with International Diplomats",
+        "place": "12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The bar",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "12 Revay Hotel",
+        "end_place": "The bar"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind at The bar",
+        "place": "The bar",
+        "building": "Anker-h\u00e1z",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to 12 Revay Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "The bar",
+        "end_place": "John F Kennedy's room at 12 Revay Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Review notes and prepare for next day's activities",
+        "place": "John F Kennedy's room at 12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and leisure time",
+        "place": "John F Kennedy's room at 12 Revay Hotel",
+        "building": "12 Revay Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

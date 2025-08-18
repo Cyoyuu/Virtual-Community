@@ -1,62 +1,87 @@
 {
-    "Eve By J Gonzales": {
-        "age": 21,
+    "Brycer Rodriguez": {
+        "age": 22,
         "living_place": "Urbanz Accomodation Christchurch",
-        "appearance": "ViCo/assets/imgs/avatars/Eve By J Gonzales.png",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
         "groups": [
-            "Music Enthusiasts Club"
+            "Culinary Creators"
         ]
     },
-    "Pika Hayes": {
-        "age": 18,
-        "living_place": "Urbanz Accomodation Christchurch",
-        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "Catalyst Group - Christchurch",
+        "appearance": "ViCo/assets/imgs/avatars/Elizabeth Mensah.png",
         "groups": [
-            "Music Enthusiasts Club"
+            "Culinary Creators"
         ]
     },
-    "Zara Williams": {
-        "age": 15,
-        "living_place": "Urbanz Accomodation Christchurch",
-        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Catalyst Group - Christchurch",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
         "groups": [
-            "Music Enthusiasts Club"
+            "Culinary Creators"
         ]
     },
-    "Music Enthusiasts Club": {
-        "description": "A group of individuals passionate about music and rhythm.",
-        "place": "RapidRhythm",
+    "Culinary Creators": {
+        "description": "A group of chefs and food enthusiasts who meet to share recipes and culinary techniques.",
+        "place": "Chiwahwah Mexican Cantina Bar",
         "members": [
             "Adam Pierce",
-            "Eve By J Gonzales",
-            "Pika Hayes",
-            "Zara Williams"
+            "Brycer Rodriguez",
+            "Kate Novak",
+            "Elizabeth Mensah"
         ],
-        "daily_activity": "exploring new music from 17:00 to 18:00"
+        "daily_activity": "sharing recipes and cooking techniques from 17:00 to 19:00"
     },
-    "Adam Pierce's room at Ray White Commercial Christchurch": {
-        "building": "76 Hereford Street",
+    "Adam Pierce's room at Crowne Plaza Christchurch by IHG": {
+        "building": "Crowne Plaza Christchurch",
         "coarse_type": "accommodation",
         "fine_types": [
-            "real_estate_agency",
+            "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            727.6322631835938,
-            868.1143112182617,
+            952.5873069763184,
+            1231.9229583740234,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Adam Pierce's room at Ray White Commercial Christchurch",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
         "bounding_box": [
-            -272.36773681640625,
-            -131.85229110717773,
-            119.0121307373047,
-            20.12012806771357,
-            24.184244033492106,
-            13.246795654296875,
-            0.006383985654672662
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "Chiwahwah Mexican Cantina Bar": {
+        "building": "136 Oxford Terrace",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            738.6576385498047,
+            853.1593742370605,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -261.39120368332027,
+            -146.87176429642975,
+            120.3871078491211,
+            46.46012754452312,
+            54.21283190387791,
+            15.643783569335923,
+            0.0029456287286576733
         ]
     },
     "RapidRhythm": {
@@ -72,7 +97,7 @@
             1108.6643829345703,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
             -18.712087777375316,
             108.66430752466928,
@@ -81,209 +106,6 @@
             25.158120884977674,
             29.246849060058594,
             -2.5093479815716326e-06
-        ]
-    },
-    "Catalyst Group - Christchurch": {
-        "building": "Kensington House",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "general_contractor",
-            "finance",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1155.179183959961,
-            817.0445785522461,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "bounding_box": [
-            155.30100936792724,
-            -183.00731106290766,
-            116.68766403198244,
-            16.843895278845515,
-            27.19353599473631,
-            8.345420837402344,
-            0.008965139674897496
-        ]
-    },
-    "Crowne Plaza Christchurch by IHG": {
-        "building": "Crowne Plaza Christchurch",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            952.5873069763184,
-            1231.9229583740234,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "bounding_box": [
-            -47.411441802978516,
-            231.80393981933594,
-            144.02279663085938,
-            25.295927047729492,
-            25.22930145263672,
-            65.22388458251953,
-            0.0137138357385993
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "Cashel Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "department_store",
-            "shoe_store",
-            "clothing_store",
-            "home_goods_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            899.2174644470215,
-            733.8624801635742,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            -100.78253173828125,
-            -266.14080810546875,
-            118.41551208496094,
-            38.30206298828125,
-            50.5390625,
-            10.398628234863281,
-            0.00017210030637215823
-        ]
-    },
-    "Kong": {
-        "building": "76 Hereford Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            727.6322631835938,
-            868.1143112182617,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -272.36773681640625,
-            -131.85229110717773,
-            119.0121307373047,
-            20.12012806771357,
-            24.184244033492106,
-            13.246795654296875,
-            0.006383985654672662
-        ]
-    },
-    "The Catering Belle Ltd": {
-        "building": "T\u016branga (Christchurch Central Library)",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_takeaway",
-            "bakery",
-            "store",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            981.2879409790039,
-            1108.6643829345703,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -18.712087777375316,
-            108.66430752466928,
-            126.1923713684082,
-            68.55356396754661,
-            25.158120884977674,
-            29.246849060058594,
-            -2.5093479815716326e-06
-        ]
-    },
-    "Coffee Lovers": {
-        "building": "Coffee Lovers",
-        "coarse_type": "food",
-        "fine_types": [
-            "yes",
-            "cafe"
-        ],
-        "location": [
-            1087.3880043029785,
-            1201.1927642822266,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            87.38800430297852,
-            201.19276428222656,
-            115.45781326293944,
-            7.802628541193985,
-            4.285808031519572,
-            7.858695983886719,
-            -0.0014384888869996536
-        ]
-    },
-    "Fresh and Beverages Store": {
-        "building": "BNZ Centre",
-        "coarse_type": "stores",
-        "fine_types": [
-            "shopping_mall",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            854.8315467834473,
-            866.6320533752441,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
-        "bounding_box": [
-            -145.14318652159733,
-            -133.34452106024895,
-            123.41022872924805,
-            76.29912766530543,
-            27.875329394565433,
-            21.64942169189453,
-            0.0035637498923529157
-        ]
-    },
-    "Beverages and Snacks Store": {
-        "building": "The Terrace Car Park",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            791.5961532592773,
-            848.2015991210938,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
-        "bounding_box": [
-            -208.35224388655644,
-            -151.7756194278747,
-            125.36438369750977,
-            51.28541663940937,
-            35.799275334841695,
-            25.41094207763672,
-            -0.0041442210356415375
         ]
     },
     "Heritage Health Club": {
@@ -301,7 +123,7 @@
             989.6693503856659,
             -20
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             81.27511799758722,
             -10.339055078365252,
@@ -310,6 +132,130 @@
             27.705736653511416,
             18.518211364746094,
             -0.00034991138627258754
+        ]
+    },
+    "Crowne Plaza Christchurch by IHG": {
+        "building": "Crowne Plaza Christchurch",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            952.5873069763184,
+            1231.9229583740234,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "Market Place Restaurant": {
+        "building": "Crowne Plaza Christchurch",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            952.5873069763184,
+            1231.9229583740234,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "Cafe Stir": {
+        "building": "27 New Regent Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1087.3880310058594,
+            1205.645492553711,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            87.39136169877115,
+            205.65107218873135,
+            115.5080223083496,
+            7.796516877498815,
+            4.630838754782584,
+            7.841117858886719,
+            -0.0014384888869974277
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "268 High Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            987.172063678503,
+            865.6374130249023,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -11.011819050352628,
+            -129.85205161795054,
+            116.29160308837892,
+            25.04320046790334,
+            31.53070537179174,
+            7.04296875,
+            -0.784433731861729
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "ANZ Centre",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            973.6704540252686,
+            808.1239929199219,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -26.306063443600344,
+            -191.89410270839073,
+            120.30231857299806,
+            65.72455772942858,
+            72.21670810679366,
+            15.000328063964844,
+            -0.000661822555506542
         ]
     },
     "Gloucester Street Bus Stop": {

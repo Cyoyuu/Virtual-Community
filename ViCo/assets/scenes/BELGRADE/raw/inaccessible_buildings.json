@@ -1,4 +1,103 @@
 {
+    "Kralja Milana 4a": {
+        "building_glb": "buildings_element.093.glb",
+        "bounding_box": [
+            -108.6731289005075,
+            -272.4354781850209,
+            124.03781127929689,
+            18.99392305428472,
+            12.483432123821025,
+            22.912353515625,
+            0.35868795165031353
+        ],
+        "places": [
+            {
+                "name": "Edukativa",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -4
+                ]
+            },
+            {
+                "name": "7 Rooms Suites",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -8
+                ]
+            },
+            {
+                "name": "Apartment King Milan",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -12
+                ]
+            },
+            {
+                "name": "Apartments Tom&Jerry",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -16
+                ]
+            },
+            {
+                "name": "COMPJET d.o.o. - Servis 1",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -20
+                ]
+            },
+            {
+                "name": "FunFit",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "point_of_interest",
+                    "health",
+                    "establishment"
+                ],
+                "location": [
+                    -108.61419677734375,
+                    -272.5247039794922,
+                    -24
+                ]
+            }
+        ]
+    },
     "Kraljice Natalije 43": {
         "building_glb": "buildings_element.425.glb",
         "bounding_box": [
@@ -25,8 +124,7 @@
                     -293.9087829589844,
                     -306.13755798339844,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             }
         ]
     },
@@ -56,8 +154,92 @@
                     -258.1488952636719,
                     -295.0569763183594,
                     -4
+                ]
+            }
+        ]
+    },
+    "Terazije 42": {
+        "building_glb": "buildings_element.103.glb",
+        "bounding_box": [
+            -125.81620269439046,
+            -244.714726284499,
+            123.20012664794923,
+            32.905953595256086,
+            19.3763732811325,
+            21.568283081054688,
+            0.3006231138346163
+        ],
+        "places": [
+            {
+                "name": "Geladrink",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "health",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    -125.84974670410156,
+                    -242.17884826660156,
+                    -4
+                ]
+            },
+            {
+                "name": "Nanofiber maske",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -125.84974670410156,
+                    -242.17884826660156,
+                    -8
+                ]
+            },
+            {
+                "name": "Orlovi fan shop - FSS",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -125.84974670410156,
+                    -242.17884826660156,
+                    -12
+                ]
+            }
+        ]
+    },
+    "\u0414\u043e\u043c \u0412\u0443\u043a\u043e\u0432\u0435 \u0437\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0435": {
+        "building_glb": "buildings_\u0414\u043e\u043c \u0412\u0443\u043a\u043e\u0432\u0435 \u0437\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0435.glb",
+        "bounding_box": [
+            -122.09088103359926,
+            -262.35956042830304,
+            119.27134323120119,
+            37.31743849843088,
+            16.917790828339285,
+            16.20423126220703,
+            0.3661496612076429
+        ],
+        "places": [
+            {
+                "name": "Alphabet",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -122.25679016113281,
+                    -262.75059509277344,
+                    -4
+                ]
             }
         ]
     },
@@ -85,8 +267,7 @@
                     -102.30048370361328,
                     -290.15782165527344,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "Street Pasta Bar - Kralja Milana 6 Terazije",
@@ -101,8 +282,7 @@
                     -102.30048370361328,
                     -290.15782165527344,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Campo Marzio",
@@ -117,8 +297,7 @@
                     -102.30048370361328,
                     -290.15782165527344,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             }
         ]
     },
@@ -148,8 +327,464 @@
                     -48.143680572509766,
                     -275.64794158935547,
                     -4
+                ]
+            }
+        ]
+    },
+    "Terazije": {
+        "building_glb": "buildings_element.100.glb",
+        "bounding_box": [
+            -163.94441044255814,
+            -211.08524453666996,
+            116.6107635498047,
+            29.89638127123386,
+            12.967021341432735,
+            11.19873046875,
+            0.3164467458549146
+        ],
+        "places": [
+            {
+                "name": "Hostel Bongo",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                "location": [
+                    -163.94192504882812,
+                    -211.08072662353516,
+                    -4
+                ]
+            }
+        ]
+    },
+    "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0441\u043a\u0438 \u0430\u0442\u0435\u0459\u0435 \u041c\u0438\u043b\u0430\u043d\u0430 \u0408\u043e\u0432\u0430\u043d\u043e\u0432\u0438": {
+        "building_glb": "buildings_\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0441\u043a\u0438 \u0430\u0442\u0435\u0459\u0435 \u041c\u0438\u043b\u0430\u043d\u0430 \u0408\u043e\u0432\u0430\u043d\u043e\u0432\u0438.glb",
+        "bounding_box": [
+            -148.82698510719825,
+            -234.48035973369932,
+            116.22432327270509,
+            14.32021364852476,
+            69.0703696306096,
+            15.255790710449219,
+            -1.2626773903293802
+        ],
+        "places": [
+            {
+                "name": "Ercegovac",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "clothing_store",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -148.82698440551758,
+                    -234.36349487304688,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Pajsijeva 2": {
+        "building_glb": "buildings_element.473.glb",
+        "bounding_box": [
+            -256.37889912324056,
+            -194.47385749542616,
+            107.04119110107423,
+            15.941647089673811,
+            41.66623606523065,
+            10.175674438476562,
+            0.30866661350320945
+        ],
+        "places": [
+            {
+                "name": "Truba\u010di Beograd",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -260.4542465209961,
+                    -194.94195556640625,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Balkanska 16": {
+        "building_glb": "buildings_element.109.glb",
+        "bounding_box": [
+            -237.99476623535156,
+            -196.59017181396484,
+            112.85107040405275,
+            19.743176428249644,
+            23.74599311284022,
+            18.305030822753906,
+            -0.3503130120303839
+        ],
+        "places": [
+            {
+                "name": "Locass",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -237.99476623535156,
+                    -198.85588836669922,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Terazije 36": {
+        "building_glb": "buildings_element.102.glb",
+        "bounding_box": [
+            -136.64175623762375,
+            -203.88251228582791,
+            119.24510192871095,
+            22.45242802833859,
+            17.51336034013327,
+            10.942642211914062,
+            0.4065554898101026
+        ],
+        "places": [
+            {
+                "name": "Brilijantin pasaz",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -135.15603637695312,
+                    -202.6377716064453,
+                    -4
+                ]
+            },
+            {
+                "name": "LIQUOR STORE",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "liquor_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -135.15603637695312,
+                    -202.6377716064453,
+                    -8
+                ]
+            },
+            {
+                "name": "Terazijska Kujna",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -135.15603637695312,
+                    -202.6377716064453,
+                    -12
+                ]
+            },
+            {
+                "name": "Iglu \u0160port",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -135.15603637695312,
+                    -202.6377716064453,
+                    -16
+                ]
+            }
+        ]
+    },
+    "Terazije 38": {
+        "building_glb": "buildings_element.101.glb",
+        "bounding_box": [
+            -131.8472137451172,
+            -215.6956787109375,
+            125.54907989501953,
+            23.16169548034668,
+            11.110551834106445,
+            23.641990661621094,
+            0.3050701320171356
+        ],
+        "places": [
+            {
+                "name": "Tudors",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -131.84722900390625,
+                    -215.97396087646484,
+                    -4
+                ]
+            },
+            {
+                "name": "Terazije Square Apartment",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -131.84722900390625,
+                    -215.97396087646484,
+                    -8
+                ]
+            },
+            {
+                "name": "Terazije Central Apartment",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -131.84722900390625,
+                    -215.97396087646484,
+                    -12
+                ]
+            },
+            {
+                "name": "Safran Retail doo",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -131.84722900390625,
+                    -215.97396087646484,
+                    -16
+                ]
+            }
+        ]
+    },
+    "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u0442\u0438\u043d\u0430\u201c": {
+        "building_glb": "buildings_\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u0442\u0438\u043d\u0430\u201c.glb",
+        "bounding_box": [
+            -170.79434902584978,
+            -125.50408692025513,
+            120.98768997192383,
+            13.45993684182545,
+            28.485526621639096,
+            18.84325408935547,
+            0.4694852546196395
+        ],
+        "places": [
+            {
+                "name": "TERAZIJE OUTLET",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -170.7905731201172,
+                    -125.50370025634766,
+                    -4
+                ]
+            },
+            {
+                "name": "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u0442\u0438\u043d\u0430\u201c",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    -170.7905731201172,
+                    -125.50370025634766,
+                    -8
+                ]
+            }
+        ]
+    },
+    "\u0413\u0440\u0430\u0434\u0441\u043a\u0430 \u0443\u043f\u0440\u0430\u0432\u0430 \u0413\u0440\u0430\u0434\u0430 \u0411\u0435\u043e\u0433\u0440\u0430\u0434\u0430": {
+        "building_glb": "buildings_\u0413\u0440\u0430\u0434\u0441\u043a\u0430 \u0443\u043f\u0440\u0430\u0432\u0430 \u0413\u0440\u0430\u0434\u0430 \u0411\u0435\u043e\u0433\u0440\u0430\u0434\u0430.glb",
+        "bounding_box": [
+            -47.09811561545244,
+            -127.98158052720149,
+            127.83162307739258,
+            48.54615146469786,
+            13.888545726999052,
+            28.84093475341797,
+            -0.19695121555637737
+        ],
+        "places": [
+            {
+                "name": "Maccani Luxury Suites",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -47.26602554321289,
+                    -126.77477264404297,
+                    -4
+                ]
+            },
+            {
+                "name": "Srednja Tehni\u010dka \u0161kola \"Mihajlo Pupin\"",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -47.26602554321289,
+                    -126.77477264404297,
+                    -8
+                ]
+            },
+            {
+                "name": "TA\u0160 BET",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "casino",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -47.26602554321289,
+                    -126.77477264404297,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Ars Medica Beograd": {
+        "building_glb": "buildings_Ars Medica Beograd.glb",
+        "bounding_box": [
+            -47.736953338644035,
+            -158.0269294162769,
+            116.31040191650392,
+            19.923373382850816,
+            47.878606691797636,
+            5.16650390625,
+            -1.033052344342761
+        ],
+        "places": [
+            {
+                "name": "Ognji\u0161te",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -47.73613929748535,
+                    -159.58065795898438,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Trg Nikole Pa\u0161i\u0107a 8": {
+        "building_glb": "buildings_element.082.glb",
+        "bounding_box": [
+            -17.263696670532227,
+            -136.72323608398438,
+            126.88760375976562,
+            38.491458892822266,
+            13.908232688903809,
+            26.696319580078125,
+            -0.3364933133125305
+        ],
+        "places": [
+            {
+                "name": "Martini Vesto",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -17.726420760154724,
+                    -137.12213897705078,
+                    -4
+                ]
+            },
+            {
+                "name": "Studio Miolift Centar Lepote 1",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -17.726420760154724,
+                    -137.12213897705078,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Trg Nikole Pa\u0161i\u0107a 12": {
+        "building_glb": "buildings_element.083.glb",
+        "bounding_box": [
+            16.87172799563587,
+            -165.52399281401875,
+            128.15806579589844,
+            22.966349695528994,
+            17.383014289885587,
+            28.79449462890625,
+            0.6383263671212509
+        ],
+        "places": [
+            {
+                "name": "AMC-Afrodite Mode Collection",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    16.57535171508789,
+                    -166.287841796875,
+                    -4
+                ]
             }
         ]
     },
@@ -178,8 +813,7 @@
                     292.1732482910156,
                     -132.2230224609375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             }
         ]
     },
@@ -208,8 +842,7 @@
                     -296.3907699584961,
                     -89.73743629455566,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             },
             {
                 "name": "Coffee Bean BGD Cafeteria",
@@ -224,8 +857,7 @@
                     -296.3907699584961,
                     -89.73743629455566,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "GVS Serbia",
@@ -240,8 +872,7 @@
                     -296.3907699584961,
                     -89.73743629455566,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Atera Dvojka Bar",
@@ -255,8 +886,7 @@
                     -296.3907699584961,
                     -89.73743629455566,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Deciji centar Mlekce",
@@ -271,8 +901,278 @@
                     -296.3907699584961,
                     -89.73743629455566,
                     -20
+                ]
+            }
+        ]
+    },
+    "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c": {
+        "building_glb": "buildings_\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0410\u043d\u043a\u0435\u0440\u201c.glb",
+        "bounding_box": [
+            -183.05051394441477,
+            -101.0376555236416,
+            119.56740951538086,
+            13.452089917602713,
+            26.38880369504873,
+            16.282737731933594,
+            0.4591469264440528
+        ],
+        "places": [
+            {
+                "name": "SULUJ Gallery",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "location": [
+                    -183.0819320678711,
+                    -101.06317138671875,
+                    -4
+                ]
+            },
+            {
+                "name": "Grubin",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -183.0819320678711,
+                    -101.06317138671875,
+                    -8
+                ]
+            },
+            {
+                "name": "Kai Caffe Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -183.0819320678711,
+                    -101.06317138671875,
+                    -12
+                ]
+            },
+            {
+                "name": "\u0160kola gitare Star\u010devi\u0107",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -183.0819320678711,
+                    -101.06317138671875,
+                    -16
+                ]
+            }
+        ]
+    },
+    "Terazije 22": {
+        "building_glb": "buildings_element.086.glb",
+        "bounding_box": [
+            -201.5203857421875,
+            -76.17657470703125,
+            117.147705078125,
+            24.708595275878906,
+            13.412836074829102,
+            14.007453918457031,
+            0.2960265576839447
+        ],
+        "places": [
+            {
+                "name": "\u041f\u0430\u0442\u0440\u0438\u0458\u0430\u0440\u0448\u0438\u0458\u0441\u043a\u0430 \u043f\u0440\u043e\u0434\u0430\u0432\u043d\u0438\u0446\u0430",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -201.80540466308594,
+                    -75.06390762329102,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Trg Nikole Pa\u0161i\u0107a 11": {
+        "building_glb": "buildings_element.491.glb",
+        "bounding_box": [
+            56.13498426373447,
+            -62.602168246594324,
+            119.41846084594727,
+            40.53953640923683,
+            35.77567255248454,
+            18.187217712402344,
+            0.29444695365006657
+        ],
+        "places": [
+            {
+                "name": "\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u0437\u0430 \u0441\u0430\u0432\u0440\u0435\u043c\u0435\u043d\u0443 \u0438\u0441\u0442\u043e\u0440\u0438\u0458\u0443",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    55.40542030334473,
+                    -63.40618324279785,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Kosovska 26/IV": {
+        "building_glb": "buildings_element.235.glb",
+        "bounding_box": [
+            73.30067237677513,
+            13.60612522134194,
+            125.88985824584961,
+            52.19813736478512,
+            59.69630096898584,
+            32.82666778564453,
+            0.3429811853630701
+        ],
+        "places": [
+            {
+                "name": "Fabrika Fotografa",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    72.63616371154785,
+                    12.508234977722168,
+                    -4
+                ]
+            },
+            {
+                "name": "Warm Up Cafe",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    72.63616371154785,
+                    12.508234977722168,
+                    -8
+                ]
+            },
+            {
+                "name": "Tin Drum Music",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    72.63616371154785,
+                    12.508234977722168,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Kosovska 30": {
+        "building_glb": "buildings_element.237.glb",
+        "bounding_box": [
+            118.14754104614258,
+            -19.807022094726552,
+            122.51798629760742,
+            13.193115203210018,
+            17.89038828941294,
+            26.00379180908203,
+            0.7921863069432677
+        ],
+        "places": [
+            {
+                "name": "Veterinarska apoteka Maja S",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "pet_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    118.14754104614258,
+                    -19.795894622802734,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Kosovska 34": {
+        "building_glb": "buildings_element.239.glb",
+        "bounding_box": [
+            137.79505239946738,
+            -45.27443697871288,
+            119.46838760375977,
+            21.307132546667173,
+            23.989750769365713,
+            19.48479461669922,
+            -0.779041915170602
+        ],
+        "places": [
+            {
+                "name": "Midland Steel Trading",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    137.80398178100586,
+                    -41.94795799255371,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Majke Jevrosime 19": {
+        "building_glb": "buildings_element.130.glb",
+        "bounding_box": [
+            272.8750708257677,
+            -9.265929182892195,
+            114.35663986206055,
+            11.216216445650627,
+            16.04933241976623,
+            14.039649963378906,
+            -0.5957007688569288
+        ],
+        "places": [
+            {
+                "name": "My Place Fitness - Centar za personalne treninge",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    272.87506103515625,
+                    -9.226966425776482,
+                    -4
+                ]
             }
         ]
     },
@@ -300,8 +1200,7 @@
                     -299.0234069824219,
                     12.158764839172363,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             },
             {
                 "name": "Minut",
@@ -316,8 +1215,306 @@
                     -299.0234069824219,
                     12.158764839172363,
                     -8
+                ]
+            }
+        ]
+    },
+    "Bezistan": {
+        "building_glb": "buildings_element.212.glb",
+        "bounding_box": [
+            -96.45839502584509,
+            15.125587798821964,
+            117.62244415283203,
+            23.386021247778505,
+            13.88785397946482,
+            12.126052856445312,
+            0.3311436190423979
+        ],
+        "places": [
+            {
+                "name": "\u041e\u0442\u0432\u043e\u0440\u0435\u043d\u0430 \u0433\u0430\u043b\u0435\u0440\u0438\u0458\u0430",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                "location": [
+                    -96.60579681396484,
+                    15.33617639541626,
+                    -4
+                ]
+            }
+        ]
+    },
+    "\u010cavketov pasa\u017e": {
+        "building_glb": "buildings_element.547.glb",
+        "bounding_box": [
+            -63.59041461420268,
+            57.18699453440339,
+            118.47750854492188,
+            37.904580977506036,
+            19.89187972934621,
+            15.96356201171875,
+            0.23417677898866185
+        ],
+        "places": [
+            {
+                "name": "Lisabon BAR",
+                "coarse_type": "food",
+                "fine_types": [
+                    "night_club",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -63.59170150756836,
+                    54.90437889099121,
+                    -4
+                ]
+            }
+        ]
+    },
+    "De\u010danska 14": {
+        "building_glb": "buildings_element.168.glb",
+        "bounding_box": [
+            -45.70096927809075,
+            64.1492215167524,
+            126.19676208496094,
+            27.26010092192172,
+            25.93078146436822,
+            32.72540283203125,
+            0.22682914235142493
+        ],
+        "places": [
+            {
+                "name": "Minacord",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -45.70096969604492,
+                    65.8189525604248,
+                    -4
+                ]
+            },
+            {
+                "name": "Ekonomska \u0161kola",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -45.70096969604492,
+                    65.8189525604248,
+                    -8
+                ]
+            },
+            {
+                "name": "\u041aARE Beograd",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -45.70096969604492,
+                    65.8189525604248,
+                    -12
+                ]
+            },
+            {
+                "name": "\u8d1d\u5e02\u4f4f\u5bbf",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -45.70096969604492,
+                    65.8189525604248,
+                    -16
+                ]
+            }
+        ]
+    },
+    "Kosovska 16": {
+        "building_glb": "buildings_element.233.glb",
+        "bounding_box": [
+            43.187711551914475,
+            56.134193449709215,
+            120.03868103027344,
+            22.077383122828262,
+            10.40848447844337,
+            21.12054443359375,
+            0.3981301750605472
+        ],
+        "places": [
+            {
+                "name": "Stay In Apartments",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    43.187710762023926,
+                    55.221357345581055,
+                    -4
+                ]
+            },
+            {
+                "name": "Shroom's Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    43.187710762023926,
+                    55.221357345581055,
+                    -8
+                ]
+            },
+            {
+                "name": "Kiwi Apartment",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    43.187710762023926,
+                    55.221357345581055,
+                    -12
+                ]
+            },
+            {
+                "name": "Beograd Smestaj",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    43.187710762023926,
+                    55.221357345581055,
+                    -16
+                ]
+            }
+        ]
+    },
+    "Kosovska 18": {
+        "building_glb": "buildings_element.234.glb",
+        "bounding_box": [
+            50.97423553466797,
+            45.11940002441406,
+            123.33517456054688,
+            27.773258209228516,
+            16.042699813842773,
+            27.50971221923828,
+            0.3915311098098755
+        ],
+        "places": [
+            {
+                "name": "Garden Food",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    51.00189781188965,
+                    44.634918212890625,
+                    -4
+                ]
+            },
+            {
+                "name": "Hectors Green d.o.o.",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    51.00189781188965,
+                    44.634918212890625,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Terazije 10": {
+        "building_glb": "buildings_element.014.glb",
+        "bounding_box": [
+            -239.4237350410864,
+            81.98291703164193,
+            127.60599517822266,
+            15.607523665969905,
+            26.690033566897206,
+            35.15592956542969,
+            0.11412575124661187
+        ],
+        "places": [
+            {
+                "name": "Zepter hotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -239.4216537475586,
+                    82.24283981323242,
+                    -4
+                ]
+            }
+        ]
+    },
+    "\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0411\u0430\u0442\u0438\u045a\u043e\u043b\u201c": {
+        "building_glb": "buildings_\u041f\u0430\u043b\u0430\u0442\u0430 \u201e\u0411\u0430\u0442\u0438\u045a\u043e\u043b\u201c.glb",
+        "bounding_box": [
+            -245.80571122823312,
+            62.44791224927064,
+            123.42285919189453,
+            33.986639728466784,
+            19.74281839588069,
+            28.986679077148438,
+            0.10070465662049637
+        ],
+        "places": [
+            {
+                "name": "Dominic Smart Luxury Suites - Terazije",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -245.8071060180664,
+                    62.95686912536621,
+                    -4
+                ]
             }
         ]
     },
@@ -346,8 +1543,7 @@
                     290.95484924316406,
                     90.52165985107422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Aura Relax",
@@ -361,8 +1557,7 @@
                     290.95484924316406,
                     90.52165985107422,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             }
         ]
     },
@@ -392,8 +1587,375 @@
                     -318.51878356933594,
                     138.8244400024414,
                     -4
+                ]
+            }
+        ]
+    },
+    "Terazije 4": {
+        "building_glb": "buildings_element.074.glb",
+        "bounding_box": [
+            -261.2375243162,
+            127.51128022830278,
+            124.38663101196288,
+            30.28932949168817,
+            13.851380560619209,
+            31.587577819824233,
+            0.3472615592609154
+        ],
+        "places": [
+            {
+                "name": "Delfi knji\u017eara \u201eSlobodan Seleni\u0107\u201c | Laguna \u2013 klub \u010ditalaca",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "book_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                "location": [
+                    -260.7732849121094,
+                    127.98497009277344,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Terazije 5": {
+        "building_glb": "buildings_element.542.glb",
+        "bounding_box": [
+            -151.95629377630868,
+            149.3914226486112,
+            118.02638244628905,
+            39.26636377745043,
+            8.305715656758824,
+            18.101699829101562,
+            -0.09071742865930243
+        ],
+        "places": [
+            {
+                "name": "Relove",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -151.95709228515625,
+                    149.3937759399414,
+                    -4
+                ]
+            },
+            {
+                "name": "Podcast studio Beograd",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -151.95709228515625,
+                    149.3937759399414,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Terazije 8": {
+        "building_glb": "buildings_element.073.glb",
+        "bounding_box": [
+            -254.91017913818362,
+            117.57077407836917,
+            125.1348648071289,
+            25.733040274361286,
+            9.83668893473411,
+            32.28388977050781,
+            0.3198077155465429
+        ],
+        "places": [
+            {
+                "name": "Wurtz Platz",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "night_club",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -254.9101791381836,
+                    118.8118667602539,
+                    -4
+                ]
+            },
+            {
+                "name": "The Goddess Beauty Coworking",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -254.9101791381836,
+                    118.8118667602539,
+                    -8
+                ]
+            }
+        ]
+    },
+    "\u010cumi\u0107evo soka\u010de lokal 38": {
+        "building_glb": "buildings_element.543.glb",
+        "bounding_box": [
+            -129.74345016479492,
+            132.30571746826172,
+            115.02271652221678,
+            12.015290362708138,
+            15.682137531555385,
+            9.826637268066406,
+            0.026171047512523544
+        ],
+        "places": [
+            {
+                "name": "MASCOMSTORE",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -129.74345016479492,
+                    132.30571365356445,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Lokal 145": {
+        "building_glb": "buildings_element.606.glb",
+        "bounding_box": [
+            -109.59785009165341,
+            124.20031344108114,
+            115.98454666137695,
+            12.774435707291738,
+            30.804508245830643,
+            13.220878601074219,
+            -0.683508874548422
+        ],
+        "places": [
+            {
+                "name": "Modeli Mirjane Mari\u0107 butik Natali",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -108.22062301635742,
+                    123.66131591796875,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Kosovska 10": {
+        "building_glb": "buildings_element.232.glb",
+        "bounding_box": [
+            30.412036284286472,
+            70.36645317857922,
+            122.62138748168945,
+            15.4279401241106,
+            33.992548376971456,
+            26.354881286621094,
+            0.758895299313301
+        ],
+        "places": [
+            {
+                "name": "Super Diskont - Diskont pica",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "liquor_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    30.58797836303711,
+                    74.00090026855469,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Kosovska 8": {
+        "building_glb": "buildings_element.227.glb",
+        "bounding_box": [
+            13.84234523773193,
+            90.1755599975586,
+            122.99322509765625,
+            11.757110010098957,
+            18.429820548358773,
+            26.913543701171875,
+            0.7837592431706235
+        ],
+        "places": [
+            {
+                "name": "Studio Identity",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    13.842345237731934,
+                    89.79149627685547,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Majke Jevrosime 44": {
+        "building_glb": "buildings_element.243.glb",
+        "bounding_box": [
+            101.85663373456013,
+            124.51924563949858,
+            117.12478256225586,
+            16.15387563090065,
+            18.433343211049138,
+            22.36811065673828,
+            -0.7843101117606173
+        ],
+        "places": [
+            {
+                "name": "AzotAgroDunav d.o.o.",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    101.85351943969727,
+                    124.5184097290039,
+                    -4
+                ]
+            },
+            {
+                "name": "JD Properties and Consulting",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    101.85351943969727,
+                    124.5184097290039,
+                    -8
+                ]
+            },
+            {
+                "name": "Apartment Jewel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    101.85351943969727,
+                    124.5184097290039,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Majke Jevrosime 43": {
+        "building_glb": "buildings_element.244.glb",
+        "bounding_box": [
+            108.51087376675035,
+            109.12303349491884,
+            117.38393020629883,
+            14.599228350278393,
+            31.022218073121564,
+            22.56371307373047,
+            -0.7705990089915428
+        ],
+        "places": [
+            {
+                "name": "Central Apartments",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    108.37662887573242,
+                    109.12303161621094,
+                    -4
+                ]
+            }
+        ]
+    },
+    "\u0417\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0430 \u0412\u043b\u0430\u0458\u043a\u0430 \u0421. \u041a\u0430\u043b\u0435\u043d\u0438\u045b\u0430": {
+        "building_glb": "buildings_\u0417\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0430 \u0412\u043b\u0430\u0458\u043a\u0430 \u0421. \u041a\u0430\u043b\u0435\u043d\u0438\u045b\u0430.glb",
+        "bounding_box": [
+            262.6965018747041,
+            116.14091051731675,
+            114.46060180664062,
+            26.699398661599563,
+            45.22642420627858,
+            21.846954345703125,
+            -0.6172811719640606
+        ],
+        "places": [
+            {
+                "name": "Nova Vizantija",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    263.18016052246094,
+                    116.29646301269531,
+                    -4
+                ]
+            },
+            {
+                "name": "Kamini BioNova",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "general_contractor",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    263.18016052246094,
+                    116.29646301269531,
+                    -8
+                ]
+            },
+            {
+                "name": "\u0417\u0430\u0434\u0443\u0436\u0431\u0438\u043d\u0430 \u0412\u043b\u0430\u0458\u043a\u0430 \u0421. \u041a\u0430\u043b\u0435\u043d\u0438\u045b\u0430",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    263.18016052246094,
+                    116.29646301269531,
+                    -12
+                ]
             }
         ]
     },
@@ -423,8 +1985,7 @@
                     288.0240173339844,
                     113.55903625488281,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Black Turtle Pub V",
@@ -439,8 +2000,7 @@
                     288.0240173339844,
                     113.55903625488281,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Rezija cafe club",
@@ -455,8 +2015,7 @@
                     288.0240173339844,
                     113.55903625488281,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -486,8 +2045,7 @@
                     302.2726287841797,
                     144.4175262451172,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "Casio Elektri\u010dni Klaviri i Klavijature",
@@ -501,8 +2059,7 @@
                     302.2726287841797,
                     144.4175262451172,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             }
         ]
     },
@@ -531,8 +2088,7 @@
                     299.14451599121094,
                     162.65703582763672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "Maxi Svetogorska",
@@ -549,8 +2105,7 @@
                     299.14451599121094,
                     162.65703582763672,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -578,8 +2133,576 @@
                     -287.6245574951172,
                     176.80510711669922,
                     -4
+                ]
+            }
+        ]
+    },
+    "\u010cumi\u0107evo soka\u010de 53": {
+        "building_glb": "buildings_element.607.glb",
+        "bounding_box": [
+            -139.29399299512207,
+            160.79935262027243,
+            112.72549057006835,
+            21.410259743570915,
+            51.54439728852301,
+            8.281242370605469,
+            0.94013832938652
+        ],
+        "places": [
+            {
+                "name": "Gallery 1250 Ceramics Made By Local Artists",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "home_goods_store",
+                    "art_gallery",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -4
+                ]
+            },
+            {
+                "name": "Odiseja Travel Club",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -8
+                ]
+            },
+            {
+                "name": "POKRET CONCEPT STORE",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -12
+                ]
+            },
+            {
+                "name": "Frierski Salon Rale",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shopping_mall",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -16
+                ]
+            },
+            {
+                "name": "Kafe Princ",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -20
+                ]
+            },
+            {
+                "name": "Jastrebacka Prica",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -24
+                ]
+            },
+            {
+                "name": "Aguara chocolate",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -28
+                ]
+            },
+            {
+                "name": "DOT COFFEE",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -32
+                ]
+            },
+            {
+                "name": "Iva Brki\u0107 gallery",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -36
+                ]
+            },
+            {
+                "name": "Dada art gallery",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -143.34916305541992,
+                    156.09506225585938,
+                    -40
+                ]
+            }
+        ]
+    },
+    "\u010cumi\u0107evo soka\u010de 1": {
+        "building_glb": "buildings_element.608.glb",
+        "bounding_box": [
+            -140.87657109321412,
+            177.3842987332368,
+            111.42053222656249,
+            40.92975258015034,
+            13.88282668954611,
+            5.09814453125,
+            -0.05113369283635997
+        ],
+        "places": [
+            {
+                "name": "Gugadzina dizajn studio",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -4
+                ]
+            },
+            {
+                "name": "\u041c\u0435\u0434\u0430",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -8
+                ]
+            },
+            {
+                "name": "Zdravac",
+                "coarse_type": "food",
+                "fine_types": [
+                    "health",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -12
+                ]
+            },
+            {
+                "name": "Manonija",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -16
+                ]
+            },
+            {
+                "name": "Klasa Klasa",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -20
+                ]
+            },
+            {
+                "name": "BUBICAshop",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -24
+                ]
+            },
+            {
+                "name": "Kamen Dizajn",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -28
+                ]
+            },
+            {
+                "name": "Camera Obscura",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -140.6401138305664,
+                    177.60195922851562,
+                    -32
+                ]
+            }
+        ]
+    },
+    "Belgrade Design District": {
+        "building_glb": "buildings_Belgrade Design District.glb",
+        "bounding_box": [
+            -114.35168583290489,
+            183.53494373203242,
+            112.22236251831053,
+            24.76787788008342,
+            62.76487676892297,
+            10.314842224121094,
+            0.06761127160340427
+        ],
+        "places": [
+            {
+                "name": "Restoria",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -4
+                ]
+            },
+            {
+                "name": "Makart d.o.o.",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "book_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -8
+                ]
+            },
+            {
+                "name": "Moja Srbija",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "travel_agency",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -12
+                ]
+            },
+            {
+                "name": "REdesign 21",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "jewelry_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -16
+                ]
+            },
+            {
+                "name": "KETZ",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -20
+                ]
+            },
+            {
+                "name": "Nosimse",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -24
+                ]
+            },
+            {
+                "name": "Belgrade Design District",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    -113.4395751953125,
+                    183.50127410888672,
+                    -28
+                ]
+            }
+        ]
+    },
+    "Nu\u0161ic\u0301eva 18": {
+        "building_glb": "buildings_element.158.glb",
+        "bounding_box": [
+            40.46860061085829,
+            155.16783028815593,
+            118.40134811401367,
+            18.030290808091234,
+            26.47009068783405,
+            23.631935119628906,
+            -0.9631991927702184
+        ],
+        "places": [
+            {
+                "name": "Kulinarija",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    40.31257343292236,
+                    155.2029571533203,
+                    -4
+                ]
+            },
+            {
+                "name": "Downtown Apartments Bane",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    40.31257343292236,
+                    155.2029571533203,
+                    -8
+                ]
+            },
+            {
+                "name": "Level Luxury Suites",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    40.31257343292236,
+                    155.2029571533203,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Majke Jevrosime 53": {
+        "building_glb": "buildings_element.160.glb",
+        "bounding_box": [
+            65.7199247247292,
+            161.33606777721678,
+            115.98372650146483,
+            13.643390905620056,
+            18.675738617008722,
+            20.213912963867188,
+            -0.8366025095957261
+        ],
+        "places": [
+            {
+                "name": "Mara Mu\u0161ki Frizerski Salon",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    68.01482009887695,
+                    161.27007293701172,
+                    -4
+                ]
+            },
+            {
+                "name": "Apoteka Kr\u0161enkovi\u0107",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "pharmacy",
+                    "store",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    68.01482009887695,
+                    161.27007293701172,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Kondina 9": {
+        "building_glb": "buildings_element.251.glb",
+        "bounding_box": [
+            151.7713864745062,
+            147.48167797246407,
+            114.05671310424803,
+            12.165512499867079,
+            12.459181833814045,
+            18.339698791503906,
+            -0.33082129925743337
+        ],
+        "places": [
+            {
+                "name": "Evergreen coffee Beograd",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    151.79314422607422,
+                    147.50130462646484,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Kondina 13": {
+        "building_glb": "buildings_element.248.glb",
+        "bounding_box": [
+            160.48690866752372,
+            176.57817299079667,
+            112.58625030517577,
+            13.805224073870473,
+            24.84917387276433,
+            17.988006591796875,
+            -0.3096709413241772
+        ],
+        "places": [
+            {
+                "name": "Kondina 13",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    160.4868927001953,
+                    176.5781707763672,
+                    -4
+                ]
             }
         ]
     },
@@ -608,8 +2731,7 @@
                     -289.195068359375,
                     198.26217651367188,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             },
             {
                 "name": "Elipsa Beograd | Knez Mihailova",
@@ -624,8 +2746,7 @@
                     -289.195068359375,
                     198.26217651367188,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Cash carry",
@@ -640,8 +2761,325 @@
                     -289.195068359375,
                     198.26217651367188,
                     -12
+                ]
+            }
+        ]
+    },
+    "Makedonska 4": {
+        "building_glb": "buildings_element.214.glb",
+        "bounding_box": [
+            -152.85712517466715,
+            217.13679183079313,
+            115.61397552490233,
+            29.285915287144075,
+            9.502279927999616,
+            15.37225341796875,
+            -0.3009017085445199
+        ],
+        "places": [
+            {
+                "name": "Wurst Platz Bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "night_club",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "location": [
+                    -152.82808685302734,
+                    216.2634048461914,
+                    -4
+                ]
+            },
+            {
+                "name": "Backstage Belgrade",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "night_club",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -152.82808685302734,
+                    216.2634048461914,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Design District": {
+        "building_glb": "buildings_element.545.glb",
+        "bounding_box": [
+            -131.75891257685996,
+            195.62264990231202,
+            120.09579467773438,
+            18.352695193104488,
+            18.431235302023442,
+            23.525177001953125,
+            -0.38949712949926113
+        ],
+        "places": [
+            {
+                "name": "Trzni centar \u010cumi\u0107evo soka\u010de",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shopping_mall",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -133.56033325195312,
+                    194.91741180419922,
+                    -4
+                ]
+            }
+        ]
+    },
+    "De\u010danska 4": {
+        "building_glb": "buildings_element.191.glb",
+        "bounding_box": [
+            -85.01497115522452,
+            223.508830759983,
+            117.71878433227539,
+            18.381367400273966,
+            24.672169472337615,
+            22.73424530029297,
+            0.24252326336810245
+        ],
+        "places": [
+            {
+                "name": "Lux Apartment in Belgrade",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -85.26283645629883,
+                    223.509033203125,
+                    -4
+                ]
+            },
+            {
+                "name": "Apartmani Beograd Parlament | Apartment in Belgrade Parlament",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "car_rental",
+                    "establishment"
+                ],
+                "location": [
+                    -85.26283645629883,
+                    223.509033203125,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Sprat 2": {
+        "building_glb": "buildings_element.190.glb",
+        "bounding_box": [
+            -90.94261824097656,
+            240.18799207778167,
+            116.61762237548827,
+            21.897549854489576,
+            10.517747628446676,
+            21.04766845703125,
+            0.24072706868727956
+        ],
+        "places": [
+            {
+                "name": "TM centar",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -90.37188720703125,
+                    240.17921447753906,
+                    -4
+                ]
+            },
+            {
+                "name": "Boledo",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -90.37188720703125,
+                    240.17921447753906,
+                    -8
+                ]
+            },
+            {
+                "name": "Apartman Opera - City Break Apartments",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -90.37188720703125,
+                    240.17921447753906,
+                    -12
+                ]
+            },
+            {
+                "name": "Kafana Mornar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -90.37188720703125,
+                    240.17921447753906,
+                    -16
+                ]
+            }
+        ]
+    },
+    "Makedonska 30": {
+        "building_glb": "buildings_element.185.glb",
+        "bounding_box": [
+            58.249666109184204,
+            231.8744129855971,
+            117.3222770690918,
+            31.349240061068485,
+            8.717594609296757,
+            25.706031799316406,
+            -0.21953581434418148
+        ],
+        "places": [
+            {
+                "name": "Langos",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    58.249664306640625,
+                    232.0302505493164,
+                    -4
+                ]
+            },
+            {
+                "name": "INGLOT",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    58.249664306640625,
+                    232.0302505493164,
+                    -8
+                ]
+            },
+            {
+                "name": "Lingua Academy",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    58.249664306640625,
+                    232.0302505493164,
+                    -12
+                ]
+            }
+        ]
+    },
+    "Eurocentar": {
+        "building_glb": "buildings_Eurocentar.glb",
+        "bounding_box": [
+            32.32313795328002,
+            228.28188587602892,
+            118.87763595581055,
+            17.15080873790705,
+            30.03147183459768,
+            27.05719757080078,
+            -0.3852228883762526
+        ],
+        "places": [
+            {
+                "name": "Mix Muzi\u010dki Instrumenti",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    32.45477867126465,
+                    227.4993438720703,
+                    -4
+                ]
+            },
+            {
+                "name": "ANA LJUBINKOVI\u0106 / ABO Shoes / ZEJAK",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    32.45477867126465,
+                    227.4993438720703,
+                    -8
+                ]
+            },
+            {
+                "name": "Obuca Solo",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "shoe_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    32.45477867126465,
+                    227.4993438720703,
+                    -12
+                ]
+            },
+            {
+                "name": "Liupka - Ma\u0161ine za \u0161ivenje, metra\u017ea, predivo, vez, pozamanterija i kursevi i radionice \u0161ivenja",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    32.45477867126465,
+                    227.4993438720703,
+                    -16
+                ]
             }
         ]
     },
@@ -669,8 +3107,37 @@
                     294.1505126953125,
                     238.46554565429688,
                     -4
+                ]
+            }
+        ]
+    },
+    "Makedonska 12": {
+        "building_glb": "buildings_element.189.glb",
+        "bounding_box": [
+            -92.68747276515943,
+            253.47512980897642,
+            119.14398956298827,
+            18.952885212942206,
+            16.13468608527029,
+            26.513504028320312,
+            0.23967319107850638
+        ],
+        "places": [
+            {
+                "name": "Super Dr.Max",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "pharmacy",
+                    "health",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "location": [
+                    -91.56019592285156,
+                    251.95692443847656,
+                    -4
+                ]
             }
         ]
     },
@@ -698,8 +3165,7 @@
                     28.59705924987793,
                     284.81781005859375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             },
             {
                 "name": "Impact Hub Belgrade",
@@ -713,8 +3179,7 @@
                     28.59705924987793,
                     284.81781005859375,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             },
             {
                 "name": "Muzi\u010dka ku\u0107a Metropolis",
@@ -728,8 +3193,51 @@
                     28.59705924987793,
                     284.81781005859375,
                     -12
+                ]
+            }
+        ]
+    },
+    "Makedonska 34": {
+        "building_glb": "buildings_element.184.glb",
+        "bounding_box": [
+            75.03552883271325,
+            225.17325689166705,
+            111.769474029541,
+            11.288240344386908,
+            23.97694718949061,
+            15.217567443847656,
+            -0.7715190822063868
+        ],
+        "places": [
+            {
+                "name": "Vino i tako To",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "location": [
+                    76.96515274047852,
+                    222.6795425415039,
+                    -4
+                ]
+            },
+            {
+                "name": "Holy Beans Kafeterija",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    76.96515274047852,
+                    222.6795425415039,
+                    -8
+                ]
             }
         ]
     },
@@ -759,8 +3267,7 @@
                     -113.98618698120117,
                     320.52439880371094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -790,8 +3297,7 @@
                     -56.27706718444824,
                     291.2243194580078,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Pica Kod Ma\u0161inca",
@@ -807,8 +3313,7 @@
                     -56.27706718444824,
                     291.2243194580078,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Lulu pekara",
@@ -824,8 +3329,7 @@
                     -56.27706718444824,
                     291.2243194580078,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Intermezzo",
@@ -840,8 +3344,7 @@
                     -56.27706718444824,
                     291.2243194580078,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Riviera - Otkup zlata - Menjacnica - Zalagaonica",
@@ -856,8 +3359,7 @@
                     -56.27706718444824,
                     291.2243194580078,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -885,8 +3387,7 @@
                     188.1815185546875,
                     300.3606414794922,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             },
             {
                 "name": "Braca Djokovic",
@@ -900,8 +3401,7 @@
                     188.1815185546875,
                     300.3606414794922,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -929,8 +3429,7 @@
                     222.55217742919922,
                     293.91078186035156,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             },
             {
                 "name": "\u041f\u0440\u0438\u043d\u0446\u0438\u043f \u041f\u0440\u0435\u0441",
@@ -945,8 +3444,7 @@
                     222.55217742919922,
                     293.91078186035156,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Apartman Cetinjska Beograd - Alexandar13",
@@ -960,8 +3458,7 @@
                     222.55217742919922,
                     293.91078186035156,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                ]
             }
         ]
     },
@@ -989,8 +3486,7 @@
                     259.72544860839844,
                     311.0433349609375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             },
             {
                 "name": "\u041e\u0428 \u201e\u0414\u0440\u0430\u0433\u0430\u043d \u041a\u043e\u0432\u0430\u0447\u0435\u0432\u0438\u045b\u201c",
@@ -1002,8 +3498,36 @@
                     259.72544860839844,
                     311.0433349609375,
                     -8
+                ]
+            }
+        ]
+    },
+    "\u0160afarikova 11": {
+        "building_glb": "buildings_element.372.glb",
+        "bounding_box": [
+            247.97188700039396,
+            289.0294983839286,
+            107.31830978393553,
+            27.111343507623953,
+            9.736716866891296,
+            17.11553192138672,
+            -0.2145190527555637
+        ],
+        "places": [
+            {
+                "name": "Bad Sushi",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "location": [
+                    247.96796417236328,
+                    289.0303497314453,
+                    -4
+                ]
             }
         ]
     },
@@ -1030,8 +3554,7 @@
                     -281.5545120239258,
                     385.30641174316406,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -1057,8 +3580,7 @@
                     -334.53900146484375,
                     265.7461395263672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -1084,8 +3606,7 @@
                     -171.86038970947266,
                     -410.7487487792969,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1111,8 +3632,7 @@
                     -328.7303771972656,
                     126.50740051269531,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1138,8 +3658,7 @@
                     -281.6046600341797,
                     320.5797424316406,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1165,8 +3684,7 @@
                     177.87640380859375,
                     -415.0232391357422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1193,8 +3711,7 @@
                     360.5858459472656,
                     104.26216125488281,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -1221,8 +3738,7 @@
                     178.90167236328125,
                     335.2707061767578,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1248,8 +3764,7 @@
                     -110.15528869628906,
                     -338.0583953857422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             }
         ]
     },
@@ -1275,8 +3790,7 @@
                     228.28868865966797,
                     -368.90208435058594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1303,8 +3817,7 @@
                     -343.3950653076172,
                     196.18312072753906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -1330,8 +3843,7 @@
                     -409.63446044921875,
                     249.0749053955078,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1358,8 +3870,7 @@
                     208.10675048828125,
                     -364.96751403808594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1385,8 +3896,7 @@
                     329.02215576171875,
                     -306.0795364379883,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     }

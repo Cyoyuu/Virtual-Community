@@ -1,0 +1,769 @@
+{
+    "sim_name": "PARIS_agents_num_15",
+    "agent_names": [
+        "Alex Jefferson",
+        "Cillian Murphy",
+        "Emily Johnson",
+        "Eve By J Gonzales",
+        "Feifei Li",
+        "James Thompson",
+        "Jensen Huang",
+        "Julius Caesar",
+        "Kate Novak",
+        "Megan Carter",
+        "Mr Beast",
+        "Olivia Adams",
+        "Pika Hayes",
+        "Sophie Carlsen",
+        "Steve Johnson"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -57.65804915845055,
+                -119.51101863649612,
+                100.41550460106025,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Alex Jefferson's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -96.41299041966985,
+                -55.43341408311622,
+                100.74751262253483,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "International Union of Railways (UIC)",
+            "current_place": "Cillian Murphy's room at H\u00f4tel Mercure Paris Centre Tour Eiffel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                16.603433666325365,
+                -131.5747171789592,
+                100.35771268850499,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Emily Johnson's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -36.58076471410378,
+                -97.60209456216695,
+                100.82018271579555,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Eve By J Gonzales's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -173.8005968768096,
+                -44.10972935535682,
+                100.89075166798706,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "International Union of Railways (UIC)",
+            "current_place": "Feifei Li's room at H\u00f4tel Mercure Paris Centre Tour Eiffel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -60.34773247296378,
+                -146.921871188892,
+                99.96942100658303,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "James Thompson's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -172.23359689381942,
+                -41.979979525551755,
+                100.97700226959073,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "International Union of Railways (UIC)",
+            "current_place": "Jensen Huang's room at H\u00f4tel Mercure Paris Centre Tour Eiffel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -173.03522190539988,
+                -45.53257581474392,
+                100.79250465968335,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "International Union of Railways (UIC)",
+            "current_place": "Julius Caesar's room at H\u00f4tel Mercure Paris Centre Tour Eiffel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -68.30330106631999,
+                -139.26828758114405,
+                100.0184043926645,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Kate Novak's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -27.528886544028754,
+                -177.44835214676763,
+                99.70984345991612,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Megan Carter's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -164.17643582729232,
+                -31.02928546274552,
+                101.45514864563836,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "International Union of Railways (UIC)",
+            "current_place": "Mr Beast's room at H\u00f4tel Mercure Paris Centre Tour Eiffel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -28.233700788639077,
+                -177.8168881312519,
+                99.68820537461511,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Olivia Adams's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -21.503681496782356,
+                -171.18541252278814,
+                99.85273522354817,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Pika Hayes's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -40.98737550659283,
+                -165.54732944233592,
+                99.46565631824936,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Sophie Carlsen's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -71.21849149163877,
+                -136.46375470698638,
+                99.83786663089221,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "31 Rue de la F\u00e9d\u00e9ration",
+            "current_place": "Steve Johnson's room at 1001 Vies Habitat",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            863.6507110595703,
+            942.7583446502686,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            863.6507110595703,
+            942.7583446502686,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            863.6507110595703,
+            942.7583446502686,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            863.6507110595703,
+            942.7583446502686,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            863.6507110595703,
+            942.7583446502686,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -32,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -36,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -40,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            983.0603504180908,
+            886.1509742736816,
+            -44,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/celebrity_Cillian_Murphy.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/celebrity_Feifei_Li.glb",
+        "ViCo/avatars/models/mixamo_James_Thompson.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/celebrity_Julius_Caesar.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/celebrity_Mr_Beast.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "25 Boulevard de Grenelle",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "31 Avenue de Suffren",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "35 Avenue de Suffren",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "9 Avenue de Suffren",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "5 Avenue de Suffren",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "4 Avenue Octave Gr\u00e9ard",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Art Enthusiasts Club": {
+            "description": "A group of individuals who share a passion for art and creativity.",
+            "place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+            "members": [
+                "Cillian Murphy",
+                "Emily Johnson",
+                "Eve By J Gonzales"
+            ],
+            "daily_activity": "exploring art exhibitions from 15:00 to 17:00"
+        },
+        "Culinary Creators": {
+            "description": "A group of chefs and food enthusiasts who love to experiment with new recipes and cuisines.",
+            "place": "Percy \u00c9mond",
+            "members": [
+                "Olivia Adams",
+                "Steve Johnson",
+                "James Thompson",
+                "Alex Jefferson"
+            ],
+            "daily_activity": "experimenting with new recipes from 16:00 to 18:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech enthusiasts and professionals who are passionate about technology and innovation.",
+            "place": "Sunflower Caf\u00e9",
+            "members": [
+                "Jensen Huang",
+                "Pika Hayes",
+                "Sophie Carlsen",
+                "Feifei Li"
+            ],
+            "daily_activity": "discussing tech innovations from 17:00 to 19:00"
+        },
+        "Young Explorers": {
+            "description": "A group of young individuals who love to explore and learn new things.",
+            "place": "Square Nicole-de-Hauteclocque",
+            "members": [
+                "Megan Carter",
+                "Kate Novak",
+                "Mr Beast",
+                "Julius Caesar"
+            ],
+            "daily_activity": "exploring the park and learning new skills from 14:00 to 16:00"
+        }
+    }
+}

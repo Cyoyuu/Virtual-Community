@@ -1,0 +1,204 @@
+{
+    "name": "Joshua Tenenbaum",
+    "first_name": "Joshua",
+    "last_name": "Tenenbaum",
+    "age": 50,
+    "innate": "self-direction, universalism, benevolence",
+    "learned": "I am a cognitive scientist known for my work in artificial intelligence and computational models of human cognition.",
+    "currently": "I am attending a conference on AI and cognitive science in Florence.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and innovators exploring new ideas and technologies.",
+            "place": "Beverages and Snacks Store",
+            "members": [
+                "Bill Gates",
+                "Joshua Tenenbaum",
+                "Richard Feynman",
+                "Steve Jobs",
+                "Yann LeCun"
+            ],
+            "daily_activity": "discussing technology trends from 15:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joshua Tenenbaum's room at Florence Fortezza Apartment",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Joshua Tenenbaum's room at Florence Fortezza Apartment",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at VaL\u00f9 Bakery & Cakes",
+            "place": "VaL\u00f9 Bakery & Cakes",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to conference venue",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "VaL\u00f9 Bakery & Cakes",
+            "end_place": "Florence Fortezza Apartment"
+        },
+        {
+            "type": "main",
+            "activity": "Attend AI and cognitive science conference",
+            "place": "Florence Fortezza Apartment",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Chef Executive",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Florence Fortezza Apartment",
+            "end_place": "Chef Executive"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Chef Executive",
+            "place": "Chef Executive",
+            "building": "Via Cosimo Ridolfi",
+            "start_time": "12:40:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to conference venue",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Chef Executive",
+            "end_place": "Florence Fortezza Apartment"
+        },
+        {
+            "type": "main",
+            "activity": "Continue attending AI and cognitive science conference",
+            "place": "Florence Fortezza Apartment",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "14:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:15:00",
+            "start_place": "Florence Fortezza Apartment",
+            "end_place": "Beverages and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss technology trends with Tech Innovators Club",
+            "place": "Beverages and Snacks Store",
+            "building": "Giardino della Fortezza",
+            "start_time": "15:15:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Anca Srl for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Beverages and Snacks Store",
+            "end_place": "Anca Srl"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Anca Srl",
+            "place": "Anca Srl",
+            "building": "Giardino della Fortezza",
+            "start_time": "17:30:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Florence Fortezza Apartment",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Anca Srl",
+            "end_place": "Joshua Tenenbaum's room at Florence Fortezza Apartment"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and review conference notes",
+            "place": "Joshua Tenenbaum's room at Florence Fortezza Apartment",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "19:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack at VaL\u00f9 Bakery & Cakes",
+            "place": "VaL\u00f9 Bakery & Cakes",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to room",
+            "place": null,
+            "building": null,
+            "start_time": "23:30:00",
+            "end_time": "23:45:00",
+            "start_place": "VaL\u00f9 Bakery & Cakes",
+            "end_place": "Joshua Tenenbaum's room at Florence Fortezza Apartment"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Joshua Tenenbaum's room at Florence Fortezza Apartment",
+            "building": "Viale Filippo Strozzi",
+            "start_time": "23:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

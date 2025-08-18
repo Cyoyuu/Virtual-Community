@@ -1,0 +1,417 @@
+{
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at The Baskerville",
+        "appearance": "ViCo/assets/imgs/avatars/Emily Johnson.png",
+        "groups": [
+            "Madison Arts and Culture"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "The Baskerville",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Madison Arts and Culture"
+        ]
+    },
+    "Madison Arts and Culture": {
+        "description": "A group of individuals passionate about arts and culture, organizing events and exhibitions in Madison.",
+        "place": "Overture Center for the Arts",
+        "members": [
+            "Kate Novak",
+            "Zara Williams",
+            "Emily Johnson"
+        ],
+        "daily_activity": "organizing art exhibitions from 16:00 to 18:00"
+    },
+    "Kate Novak's room at The Pressman": {
+        "building": "The Pressman",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1206.7333145141602,
+            899.0291862487793,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Kate Novak's room at The Pressman",
+        "bounding_box": [
+            203.76391534293845,
+            -100.15117358669697,
+            142.52761840820312,
+            36.10985748593296,
+            38.722640693647286,
+            31.5433349609375,
+            0.7753396475786712
+        ]
+    },
+    "Wonderstate Coffee - Madison Cafe": {
+        "building": "25 West Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1219.0629196166992,
+            969.739706993103,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            218.30402339718273,
+            -31.30555682374723,
+            145.36399841308594,
+            37.85258199009694,
+            47.835934820851435,
+            30.520965576171875,
+            0.7632774648882694
+        ]
+    },
+    "Overture Center for the Arts": {
+        "building": "Overture Center for the Arts",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            819.9914093017578,
+            1093.7106523513794,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -179.16370996064046,
+            121.91806722295829,
+            127.17206192016602,
+            82.25792288044569,
+            169.8988746353147,
+            23.26610565185547,
+            0.7557416301816211
+        ]
+    },
+    "The Loraine Business Center": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "bank",
+            "atm",
+            "insurance_agency",
+            "real_estate_agency",
+            "lawyer",
+            "finance",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Resolution Fitness": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -24
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "Grace Food Pantry": {
+        "building": "Grace Episcopal Church",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1031.0897550582886,
+            1066.6621742248535,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            29.245024725377334,
+            68.2189762842892,
+            129.92411041259766,
+            38.900416891364486,
+            52.482412828377086,
+            13.733200073242188,
+            -0.7682133798751558
+        ]
+    },
+    "Catering a Fresco": {
+        "building": "Overture Center for the Arts",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            819.9914093017578,
+            1093.7106523513794,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -179.16370996064046,
+            121.91806722295829,
+            127.17206192016602,
+            82.25792288044569,
+            169.8988746353147,
+            23.26610565185547,
+            0.7557416301816211
+        ]
+    },
+    "Clary's Gourmet Popcorn": {
+        "building": "105 State Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "meal_takeaway",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            958.4669494628906,
+            1142.337303161621,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -41.51794332873713,
+            142.25192264468185,
+            126.19890975952148,
+            18.497951277272204,
+            19.384136289642186,
+            10.558753967285156,
+            -0.010915934286374395
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Red Square Flowers",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            881.4170722961426,
+            1146.7241439819336,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -118.68217722600218,
+            146.73099182559304,
+            124.18193817138672,
+            11.283159542270063,
+            12.914925350364555,
+            9.328994750976562,
+            -0.017016861997636745
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Wisconsin Veterans Museum",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            993.1682281494141,
+            1200.1342086791992,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -6.829787310349609,
+            200.137719433682,
+            134.5824317932129,
+            34.28802050934785,
+            36.193114700329446,
+            23.85729217529297,
+            0.7589465206364812
+        ]
+    },
+    "West Johnson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -145.11684279218883,
+            315.8134983792674
+        ],
+        "rotation": -0.8037606552265828,
+        "bounding_box": null
+    },
+    "West Doty Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            168.93290855636047,
+            -103.42746178914004
+        ],
+        "rotation": -0.03291053212501917,
+        "bounding_box": null
+    },
+    "West Wilson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            324.9969270949154,
+            -170.54746365896176
+        ],
+        "rotation": 2.34409417720222,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.243696430131573,
+            24.310546849995898
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -202.69080886288236,
+            173.51026241170064
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.01263518237513,
+            -119.86484854684215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -51.05275980103885,
+            169.47393538372248
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -157.31361505045334,
+            -192.33382936607885
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.30546522827655,
+            -246.33948688643684
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West Wilson Street": [
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West Johnson Street": [
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

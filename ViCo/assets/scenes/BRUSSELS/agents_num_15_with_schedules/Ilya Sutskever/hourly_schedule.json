@@ -1,0 +1,144 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Ilya Sutskever's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Busy Bee",
+        "building": "Rue d'Assaut 3",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Philantropy House for conference",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Busy Bee",
+        "end_place": "Philantropy House"
+    },
+    {
+        "type": "main",
+        "activity": "Attend AI advancements conference",
+        "place": "Philantropy House",
+        "building": "Philantropy House",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to L'art de la Pizza for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Philantropy House",
+        "end_place": "L'art de la Pizza"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "L'art de la Pizza",
+        "building": "Rue de la Montagne 64",
+        "start_time": "13:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Museum of the National Bank of Belgium",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "L'art de la Pizza",
+        "end_place": "Museum of the National Bank of Belgium"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Museum of the National Bank of Belgium",
+        "place": "Museum of the National Bank of Belgium",
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store for Tech Innovators Club meeting",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Museum of the National Bank of Belgium",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Fresh and Beverages Store",
+        "building": "Marquis",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Maison St. Michel for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "Maison St. Michel"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Maison St. Michel",
+        "building": "Boulevard de l'Imp\u00e9ratrice 62",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Parc de Bruxelles for evening walk",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Maison St. Michel",
+        "end_place": "Parc de Bruxelles"
+    },
+    {
+        "type": "main",
+        "activity": "Evening walk at Parc de Bruxelles",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Hotel Hubert \u2013 Grand Place",
+        "place": null,
+        "building": null,
+        "start_time": "20:30:00",
+        "end_time": "21:00:00",
+        "start_place": "Parc de Bruxelles",
+        "end_place": "Ilya Sutskever's room at Hotel Hubert \u2013 Grand Place"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for the next day",
+        "place": "Ilya Sutskever's room at Hotel Hubert \u2013 Grand Place",
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "start_time": "21:00:00",
+        "end_time": "23:59:59"
+    }
+]

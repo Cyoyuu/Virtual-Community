@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Warung Ambatuk\u00e0m",
+        "building": "4 Avenue Octave Gr\u00e9ard",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Warung Ambatuk\u00e0m",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on perfecting a new dish",
+        "place": "Warung Ambatuk\u00e0m",
+        "building": "4 Avenue Octave Gr\u00e9ard",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sunflower Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Warung Ambatuk\u00e0m",
+        "end_place": "Sunflower Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Sunflower Caf\u00e9",
+        "building": "41 Avenue de Suffren",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sunflower Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Sunflower Caf\u00e9",
+        "end_place": "Warung Ambatuk\u00e0m"
+    },
+    {
+        "type": "main",
+        "activity": "Explore new culinary techniques",
+        "place": "Warung Ambatuk\u00e0m",
+        "building": "4 Avenue Octave Gr\u00e9ard",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Percy \u00c9mond",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Warung Ambatuk\u00e0m",
+        "end_place": "Percy \u00c9mond"
+    },
+    {
+        "type": "main",
+        "activity": "Experiment with new recipes with Culinary Creators",
+        "place": "Percy \u00c9mond",
+        "building": "28 Avenue de Suffren",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to RESTAURANT CHEZ RIBE",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Percy \u00c9mond",
+        "end_place": "RESTAURANT CHEZ RIBE"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "RESTAURANT CHEZ RIBE",
+        "building": "15 Avenue de Suffren",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to RESTAURANT CHEZ RIBE",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "RESTAURANT CHEZ RIBE",
+        "end_place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment",
+        "place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+        "building": "10 Avenue Charles Floquet",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Steve Johnson's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+        "end_place": "Steve Johnson's room at 1001 Vies Habitat"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Steve Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

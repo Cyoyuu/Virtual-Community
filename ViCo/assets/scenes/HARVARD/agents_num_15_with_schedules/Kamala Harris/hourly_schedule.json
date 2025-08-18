@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kamala Harris's room at Harvard Real Estate",
+        "building": "Smith Campus Center",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Richard A. and Susan F. Smith Campus Center",
+        "building": "Smith Campus Center",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard University",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss policy initiatives on climate change",
+        "place": "Harvard University",
+        "building": "Massachusetts Hall",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Capital One Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Harvard University",
+        "end_place": "Capital One Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Capital One Caf\u00e9",
+        "building": "24 John F. Kennedy Street",
+        "start_time": "12:15:00",
+        "end_time": "12:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard Data Center",
+        "place": null,
+        "building": null,
+        "start_time": "12:45:00",
+        "end_time": "13:00:00",
+        "start_place": "Capital One Caf\u00e9",
+        "end_place": "Harvard Data Center"
+    },
+    {
+        "type": "main",
+        "activity": "Work on data analysis for climate policy",
+        "place": "Harvard Data Center",
+        "building": "Littauer Center",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard University",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Harvard Data Center",
+        "end_place": "Harvard University"
+    },
+    {
+        "type": "main",
+        "activity": "Harvard Leadership Circle meeting",
+        "place": "Harvard University",
+        "building": "Massachusetts Hall",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to DIG",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Harvard University",
+        "end_place": "DIG"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "DIG",
+        "building": "82 Mount Auburn Street",
+        "start_time": "18:15:00",
+        "end_time": "18:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Carpenter Center for the Visual Arts",
+        "place": null,
+        "building": null,
+        "start_time": "18:45:00",
+        "end_time": "19:00:00",
+        "start_place": "DIG",
+        "end_place": "Carpenter Center for the Visual Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Attend an art exhibition",
+        "place": "Carpenter Center for the Visual Arts",
+        "building": "Carpenter Center",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kamala Harris's room at Harvard Real Estate",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Carpenter Center for the Visual Arts",
+        "end_place": "Kamala Harris's room at Harvard Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for the next day",
+        "place": "Kamala Harris's room at Harvard Real Estate",
+        "building": "Smith Campus Center",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kamala Harris's room at Harvard Real Estate",
+        "building": "Smith Campus Center",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

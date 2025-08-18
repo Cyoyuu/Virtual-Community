@@ -3,27 +3,27 @@
     "first_name": "Zara",
     "last_name": "Williams",
     "age": 15,
-    "innate": "conformity, security, tradition",
-    "learned": "I am a high school student visiting Brussels with my family. I love reading and visiting historical sites.",
-    "currently": "I want to visit the Museum of the National Bank of Belgium to learn more about history.",
+    "innate": "benevolence, tradition, security",
+    "learned": "I am a student at Oratorienberg, interested in music and art.",
+    "currently": "I am practicing for a school music performance.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Brussels Cultural Explorers",
-            "description": "A group of individuals who enjoy exploring the cultural and historical sites of Brussels.",
+            "name": "Brussels Art and Culture Society",
+            "description": "A group of individuals passionate about art and culture, organizing events and exhibitions in Brussels.",
             "place": "Museum of the National Bank of Belgium",
             "members": [
-                "Emily Johnson",
-                "Megan Carter",
+                "Louise Roberts",
+                "Shannon Steves",
                 "Zara Williams"
             ],
-            "daily_activity": "exploring museums from 14:00 to 16:00"
+            "daily_activity": "organizing art exhibitions from 15:00 to 16:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+    "living_place": "Zara Williams's room at Charles' Home",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -33,122 +33,146 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
-            "building": "Hotel Hubert \u2013 Grand Place",
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Busy Bee",
-            "building": "Rue d'Assaut 3",
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
             "start_time": "08:00:00",
-            "end_time": "09:00:00"
+            "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Museum of the National Bank of Belgium",
+            "activity": "Commute to Oratorienberg",
             "place": null,
             "building": null,
-            "start_time": "09:00:00",
-            "end_time": "09:30:00",
-            "start_place": "Busy Bee",
-            "end_place": "Museum of the National Bank of Belgium"
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
         },
         {
             "type": "main",
-            "activity": "Visit Museum of the National Bank of Belgium",
-            "place": "Museum of the National Bank of Belgium",
-            "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
-            "start_time": "09:30:00",
+            "activity": "School classes and music practice",
+            "place": "Oratorienberg",
+            "building": "De Lignegebouw",
+            "start_time": "09:00:00",
             "end_time": "12:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to L'art de la Pizza",
+            "activity": "Commute to Claire's Caf\u00e9",
             "place": null,
             "building": null,
             "start_time": "12:00:00",
-            "end_time": "12:30:00",
-            "start_place": "Museum of the National Bank of Belgium",
-            "end_place": "L'art de la Pizza"
+            "end_time": "12:10:00",
+            "start_place": "Oratorienberg",
+            "end_place": "Claire's Caf\u00e9"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "L'art de la Pizza",
-            "building": "Rue de la Montagne 64",
-            "start_time": "12:30:00",
-            "end_time": "13:30:00"
+            "place": "Claire's Caf\u00e9",
+            "building": "Rue du Marais 5",
+            "start_time": "12:10:00",
+            "end_time": "12:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Oratorienberg",
+            "place": null,
+            "building": null,
+            "start_time": "12:45:00",
+            "end_time": "13:00:00",
+            "start_place": "Claire's Caf\u00e9",
+            "end_place": "Oratorienberg"
+        },
+        {
+            "type": "main",
+            "activity": "Continue school classes and music practice",
+            "place": "Oratorienberg",
+            "building": "De Lignegebouw",
+            "start_time": "13:00:00",
+            "end_time": "14:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Museum of the National Bank of Belgium",
             "place": null,
             "building": null,
-            "start_time": "13:30:00",
-            "end_time": "14:00:00",
-            "start_place": "L'art de la Pizza",
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "Oratorienberg",
             "end_place": "Museum of the National Bank of Belgium"
         },
         {
             "type": "main",
-            "activity": "Explore museums with Brussels Cultural Explorers",
+            "activity": "Organize art exhibition with Brussels Art and Culture Society",
             "place": "Museum of the National Bank of Belgium",
             "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
-            "start_time": "14:00:00",
+            "start_time": "15:00:00",
             "end_time": "16:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Joppes Tarts Bakery",
+            "activity": "Commute to Parc de Bruxelles",
             "place": null,
             "building": null,
             "start_time": "16:00:00",
-            "end_time": "16:30:00",
+            "end_time": "16:15:00",
             "start_place": "Museum of the National Bank of Belgium",
-            "end_place": "Joppes Tarts Bakery"
+            "end_place": "Parc de Bruxelles"
         },
         {
-            "type": "meal",
-            "activity": "Afternoon Snack",
-            "place": "Joppes Tarts Bakery",
-            "building": "Rue d'Assaut 15",
-            "start_time": "16:30:00",
-            "end_time": "17:00:00"
+            "type": "main",
+            "activity": "Relax and enjoy the park",
+            "place": "Parc de Bruxelles",
+            "building": "open space",
+            "start_time": "16:15:00",
+            "end_time": "17:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Zara Williams's room at Hotel Hubert \u2013 Grand Place",
+            "activity": "Commute to Zara Williams's room at Charles' Home",
             "place": null,
             "building": null,
-            "start_time": "17:00:00",
-            "end_time": "17:30:00",
-            "start_place": "Joppes Tarts Bakery",
-            "end_place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place"
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Parc de Bruxelles",
+            "end_place": "Zara Williams's room at Charles' Home"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
-            "building": "Hotel Hubert \u2013 Grand Place",
-            "start_time": "17:30:00",
-            "end_time": "19:00:00"
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
         },
         {
             "type": "main",
-            "activity": "Relax and Read",
-            "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
-            "building": "Hotel Hubert \u2013 Grand Place",
-            "start_time": "19:00:00",
+            "activity": "Free time for personal activities or homework",
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
+            "start_time": "18:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Music practice for school performance",
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
+            "start_time": "22:00:00",
             "end_time": "23:00:00"
         },
         {
-            "type": "sleep",
-            "activity": "Sleep",
-            "place": "Zara Williams's room at Hotel Hubert \u2013 Grand Place",
-            "building": "Hotel Hubert \u2013 Grand Place",
+            "type": "main",
+            "activity": "Wind down and prepare for bed",
+            "place": "Zara Williams's room at Charles' Home",
+            "building": "Charles' Home",
             "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
@@ -162,13 +186,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": null,
+    "working_place": "Oratorienberg",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

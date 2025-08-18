@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Isaac Newton's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cambridge Preschool of the Arts",
+        "place": null,
+        "building": null,
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Mentor young scientists",
+        "place": "Cambridge Preschool of the Arts",
+        "building": "361 Somerville Avenue",
+        "start_time": "07:30:00",
+        "end_time": "11:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lincoln Park",
+        "place": null,
+        "building": null,
+        "start_time": "11:30:00",
+        "end_time": "12:00:00",
+        "start_place": "Cambridge Preschool of the Arts",
+        "end_place": "Lincoln Park"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and reflect",
+        "place": "Lincoln Park",
+        "building": "open space",
+        "start_time": "12:00:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Life Alive Organic Cafe Union Square",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Lincoln Park",
+        "end_place": "Life Alive Organic Cafe Union Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "13:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Union Tavern",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Life Alive Organic Cafe Union Square",
+        "end_place": "Union Tavern"
+    },
+    {
+        "type": "main",
+        "activity": "Write and research",
+        "place": "Union Tavern",
+        "building": "Union Tavern",
+        "start_time": "14:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Prospect Union Square",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Union Tavern",
+        "end_place": "Prospect Union Square"
+    },
+    {
+        "type": "main",
+        "activity": "Brainstorming tech solutions with Tech Innovators Group",
+        "place": "Prospect Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "18:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Isaac Newton's room at Union 346 Apartments",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Life Alive Organic Cafe Union Square",
+        "end_place": "Isaac Newton's room at Union 346 Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Evening reading and relaxation",
+        "place": "Isaac Newton's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Isaac Newton's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

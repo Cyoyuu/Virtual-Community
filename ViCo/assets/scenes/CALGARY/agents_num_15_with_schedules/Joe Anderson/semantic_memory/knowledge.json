@@ -1,65 +1,40 @@
 {
-    "Barack Obama": {
-        "age": 63,
-        "living_place": "Barack Obama's room at Fairmont Palliser",
-        "appearance": "ViCo/assets/imgs/avatars/Barack Obama.png",
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Mount Royal House",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Business Innovators"
         ]
     },
-    "LeBron James": {
-        "age": 39,
-        "living_place": "Fairmont Palliser",
-        "appearance": "ViCo/assets/imgs/avatars/LeBron James.png",
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Jody Petersen's room at Palliser Square",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Business Innovators"
         ]
     },
-    "Neil deGrasse Tyson": {
-        "age": 50,
-        "living_place": "Fairmont Palliser",
-        "appearance": "ViCo/assets/imgs/avatars/Neil deGrasse Tyson.png",
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Palliser Square",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
         "groups": [
-            "Calgary Sports Enthusiasts"
+            "Business Innovators"
         ]
     },
-    "Calgary Sports Enthusiasts": {
-        "description": "A group of sports lovers who engage in various sports activities and events.",
-        "place": "Fairmont Palliser",
+    "Business Innovators": {
+        "description": "A group of professionals focused on business development and innovation.",
+        "place": "Calgary Chamber of Commerce",
         "members": [
-            "LeBron James",
-            "Barack Obama",
+            "Adam Pierce",
+            "Jody Petersen",
             "Joe Anderson",
-            "Neil deGrasse Tyson"
+            "Roth Miller"
         ],
-        "daily_activity": "playing basketball from 18:00 to 19:00"
+        "daily_activity": "discussing business strategies from 14:00 to 16:00"
     },
-    "Joe Anderson's room at Palliser Square": {
-        "building": "Tower Centre",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1048.0912742614746,
-            832.0565490722656,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Joe Anderson's room at Palliser Square",
-        "bounding_box": [
-            47.858160460901246,
-            -170.25400826218177,
-            104.90235137939455,
-            187.27939075211842,
-            63.301142149349175,
-            18.728729248046875,
-            -0.13950607169024037
-        ]
-    },
-    "Bankers Court Building": {
+    "Joe Anderson's room at Bankers Court Building": {
         "building": "Bankers Court",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -70,9 +45,10 @@
         "location": [
             743.7522277832031,
             925.2698059082031,
-            -4
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Joe Anderson's room at Bankers Court Building",
         "bounding_box": [
             -256.0547725760071,
             -74.70937003900937,
@@ -83,78 +59,48 @@
             -0.032008359620875323
         ]
     },
-    "Palliser Square": {
-        "building": "Tower Centre",
-        "coarse_type": "accommodation",
+    "Bow Valley Square 4": {
+        "building": "Bow Valley Square 4",
+        "coarse_type": "office",
         "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
+            "office"
         ],
         "location": [
-            1048.0912742614746,
-            832.0565490722656,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "bounding_box": [
-            47.858160460901246,
-            -170.25400826218177,
-            104.90235137939455,
-            187.27939075211842,
-            63.301142149349175,
-            18.728729248046875,
-            -0.13950607169024037
-        ]
-    },
-    "Fairmont Palliser": {
-        "building": "Fairmont Palliser Hotel",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            912.662654876709,
-            847.2293167114258,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "bounding_box": [
-            -87.4929970966381,
-            -152.74765359916148,
-            115.76285171508789,
-            71.19512496189223,
-            52.844412356693184,
-            43.14080047607422,
-            -0.04300524958503859
-        ]
-    },
-    "EzOffice": {
-        "building": "Penn West Plaza - East Tower",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            813.1806106567383,
-            857.6012725830078,
+            771.5337066650391,
+            1236.5122146606445,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            -186.11185167994518,
-            -142.39914379571815,
-            120.78651809692383,
-            58.25577642621536,
-            40.121193058956756,
-            51.46520233154297,
-            -0.04803202114412833
+            -228.4726104736328,
+            236.52420043945312,
+            161.9514923095703,
+            41.29452896118164,
+            27.19976234436035,
+            134.2218475341797,
+            -0.04431001469492912
+        ]
+    },
+    "Calgary Chamber of Commerce": {
+        "building": "Calgary Chamber of Commerce",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1030.4410238265991,
+            1219.0133666992188,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            30.44338847651975,
+            218.94835531170966,
+            104.017032623291,
+            34.09097385904392,
+            21.768319383217154,
+            18.89360809326172,
+            -0.04311696943721217
         ]
     },
     "Collage Gallery": {
@@ -170,7 +116,7 @@
             1126.022590637207,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
             12.20758230332764,
             126.24321741697567,
@@ -181,59 +127,81 @@
             -0.03840578717597665
         ]
     },
-    "S.K. Market": {
-        "building": "First on Tenth",
-        "coarse_type": "food",
+    "Hyatt Regency Calgary": {
+        "building": "Hyatt Regency Calgary",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "convenience_store",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
+            "yes",
+            "hotel"
         ],
         "location": [
-            988.4496936798096,
-            714.2852325439453,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -11.622152328491211,
-            -285.60400390625,
-            138.67218017578125,
-            68.26644897460938,
-            18.656599044799805,
-            87.11425018310547,
-            -0.04413949325680733
-        ]
-    },
-    "The Oak Room": {
-        "building": "Fairmont Palliser Hotel",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            912.662654876709,
-            847.2293167114258,
+            1077.2204723358154,
+            1059.287166595459,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
         "bounding_box": [
-            -87.4929970966381,
-            -152.74765359916148,
-            115.76285171508789,
-            71.19512496189223,
-            52.844412356693184,
-            43.14080047607422,
-            -0.04300524958503859
+            77.14081522973258,
+            59.37976606678873,
+            128.29573822021484,
+            27.02083156875971,
+            42.154658732482844,
+            65.96400451660156,
+            -0.03826544092194709
         ]
     },
-    "Royal India Restaurant Calgary": {
-        "building": "Tower Centre",
+    "The Unicorn": {
+        "building": "The Unicorn",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            781.3165283203125,
+            968.1706504821777,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -218.61576885898216,
+            -31.93618769734301,
+            100.90655899047852,
+            11.77023049285988,
+            39.37082103242671,
+            8.264137268066406,
+            -0.04779234207646445
+        ]
+    },
+    "International Corporation": {
+        "building": "Bow Valley Square 1",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            855.0553321838379,
+            1232.6686706542969,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -144.94466782636778,
+            232.66866274604934,
+            126.99770736694336,
+            33.81886847283576,
+            26.200155876070237,
+            64.78058624267578,
+            -0.03658245387697744
+        ]
+    },
+    "DirtBelly": {
+        "building": "232 7 Avenue Southwest",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -242,73 +210,74 @@
             "establishment"
         ],
         "location": [
-            1048.0912742614746,
-            832.0565490722656,
-            -16
+            792.9698028564453,
+            1156.639575958252,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            47.858160460901246,
-            -170.25400826218177,
-            104.90235137939455,
-            187.27939075211842,
-            63.301142149349175,
-            18.728729248046875,
-            -0.13950607169024037
+            -206.95786882464728,
+            156.59636156051167,
+            104.15605545043944,
+            23.640790412903645,
+            72.7763054293234,
+            18.44438934326172,
+            -0.041040273304368304
         ]
     },
-    "Ruth's Chris Steak House Calgary": {
-        "building": "Beverages and DM Store",
+    "Teatro Ristorante": {
+        "building": "The Dominion Bank",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
-            "food",
             "point_of_interest",
+            "food",
             "establishment"
         ],
         "location": [
-            1040.60560131073,
-            847.8853607177734,
-            -12
+            1238.5122680664062,
+            1007.149968624115,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            40.594573013600154,
-            -152.27061659338204,
-            192.05587005615234,
-            38.31504073746664,
-            38.39599312097794,
-            191.1009063720703,
-            0.4284025480628934
+            238.73278045654294,
+            7.149968624114997,
+            103.42822265625,
+            13.30355867063101,
+            39.5544667625292,
+            17.05169677734375,
+            -0.0563991602361554
         ]
     },
     "Beverages and DM Store": {
-        "building": "Beverages and DM Store",
+        "building": "225 10 Avenue Southwest",
         "coarse_type": "stores",
         "fine_types": [
-            "tourist_attraction",
+            "furniture_store",
+            "home_goods_store",
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1040.60560131073,
-            847.8853607177734,
+            757.5758743286133,
+            723.1630249023438,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
         "bounding_box": [
-            40.594573013600154,
-            -152.27061659338204,
-            192.05587005615234,
-            38.31504073746664,
-            38.39599312097794,
-            191.1009063720703,
-            0.4284025480628934
+            -242.50485229492188,
+            -276.84417724609375,
+            99.06855010986328,
+            38.32595443725586,
+            35.871299743652344,
+            6.053688049316406,
+            -0.05245485156774521
         ]
     },
-    "Fresh and Snacks Store": {
-        "building": "The Bow",
+    "Snacks and DM Store": {
+        "building": "3 8 Avenue Southwest",
         "coarse_type": "stores",
         "fine_types": [
             "store",
@@ -316,44 +285,19 @@
             "establishment"
         ],
         "location": [
-            1122.322135925293,
-            1243.2884674072266,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
-        "bounding_box": [
-            129.51651393928924,
-            250.13891094423442,
-            211.9488525390625,
-            96.50259079119071,
-            58.624662295048445,
-            236.77685546875,
-            -0.46390326563411605
-        ]
-    },
-    "DreamBody Training": {
-        "building": "Penn West Plaza - West Tower",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            740.6555786132812,
-            861.1219444274902,
+            1027.2476615905762,
+            956.2937707901001,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
         "bounding_box": [
-            -259.3435152312436,
-            -138.7422966503445,
-            139.6084098815918,
-            57.55539785686262,
-            40.31627485088116,
-            84.6470718383789,
-            -0.04280820666042378
+            27.33346170432872,
+            -43.7544361129086,
+            100.92611694335938,
+            13.75390375739256,
+            40.149251011064564,
+            8.99359130859375,
+            -0.04291204789765478
         ]
     },
     "7 Avenue SE Bus Stop": {

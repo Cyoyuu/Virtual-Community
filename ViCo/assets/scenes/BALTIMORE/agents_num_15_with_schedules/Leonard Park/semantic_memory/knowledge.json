@@ -1,41 +1,32 @@
 {
-    "Genghis Khan": {
-        "age": 45,
-        "living_place": "Genghis Khan's room at A Home In The Hill",
-        "appearance": "ViCo/assets/imgs/avatars/Genghis Khan.png",
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
         "groups": [
-            "Baltimore Music Collective"
+            "Tech Enthusiasts Club"
         ]
     },
-    "Pika Hayes": {
-        "age": 18,
-        "living_place": "Harbor Hill Apartments",
-        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+    "Marques Brownlee": {
+        "age": 30,
+        "living_place": "A Home In The Hill",
+        "appearance": "ViCo/assets/imgs/avatars/Marques Brownlee.png",
         "groups": [
-            "Baltimore Music Collective"
+            "Tech Enthusiasts Club"
         ]
     },
-    "Roth Miller": {
-        "age": 26,
-        "living_place": "Wheelhouse",
-        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
-        "groups": [
-            "Baltimore Music Collective"
-        ]
-    },
-    "Baltimore Music Collective": {
-        "description": "A group of musicians and music lovers who perform and collaborate on musical projects.",
-        "place": "The 8x10",
+    "Tech Enthusiasts Club": {
+        "description": "A group of tech enthusiasts who love exploring the latest gadgets and technology.",
+        "place": "Marcus-Boyd Realty",
         "members": [
+            "Adam Pierce",
             "Leonard Park",
-            "Pika Hayes",
-            "Roth Miller",
-            "Genghis Khan"
+            "Marques Brownlee"
         ],
-        "daily_activity": "jamming sessions from 19:00 to 20:00"
+        "daily_activity": "discussing the latest tech trends from 17:00 to 18:00"
     },
-    "Leonard Park's room at 1111 Light Street Apartments": {
-        "building": "1111 Light Luxury Apartments",
+    "Leonard Park's room at 1201 S Charles Street Apartments": {
+        "building": "1201 South Charles Street",
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -43,68 +34,44 @@
             "establishment"
         ],
         "location": [
-            1073.9977865219116,
-            938.5724220275879,
-            -12
+            879.3932800292969,
+            822.9064788818359,
+            -24
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-        "name": "Leonard Park's room at 1111 Light Street Apartments",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Leonard Park's room at 1201 S Charles Street Apartments",
         "bounding_box": [
-            73.55914045437873,
-            -63.29129825464944,
-            87.03904342651367,
-            98.14689842481047,
-            33.200591104971366,
-            22.39037322998047,
-            -0.09605850030331184
+            -120.33512155099746,
+            -178.74011291619252,
+            83.52968215942384,
+            38.12178132883957,
+            26.033092412490983,
+            18.19036102294922,
+            0.14138311586981486
         ]
     },
-    "The 8x10": {
-        "building": "10 East Cross Street",
-        "coarse_type": "entertainment",
+    "Marcus-Boyd Realty": {
+        "building": "926 Light Street Suite 2",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "night_club",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            885.5095634460449,
-            979.1267638206482,
+            972.310866355896,
+            1117.212245941162,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
         "bounding_box": [
-            -114.48613357543947,
-            -20.873236179351807,
-            77.52820587158203,
-            4.753929894684231,
-            19.792485562640035,
-            8.963027954101562,
-            0.05566619235794686
-        ]
-    },
-    "Enoch Pratt Library - Light Street Branch": {
-        "building": "Light Street Branch",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1064.3567028045654,
-            742.555549621582,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            64.41921997070312,
-            -257.1175842285156,
-            82.6961441040039,
-            23.557029724121094,
-            31.98584747314453,
-            5.143157958984375,
-            0.1126413568854332
+            -27.70146442785785,
+            117.20073219000085,
+            80.30168533325195,
+            24.868845726774452,
+            5.44952988963669,
+            8.214042663574219,
+            0.05248499561682774
         ]
     },
     "South Baltimore Strength Club": {
@@ -121,7 +88,7 @@
             790.4407806396484,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             141.98529303203642,
             -210.29788512235763,
@@ -132,155 +99,204 @@
             0.13869154024537414
         ]
     },
-    "Century21 Downtown": {
-        "building": "South Baltimore Recreation Center",
-        "coarse_type": "accommodation",
+    "The Brewer's Cask": {
+        "building": "Brewers Cask",
+        "coarse_type": "food",
         "fine_types": [
-            "real_estate_agency",
+            "bar",
+            "restaurant",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            955.3221788406372,
-            1076.4360122680664,
+            1019.692458152771,
+            764.5966033935547,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -44.46466827392578,
-            76.45333862304688,
-            82.06431579589844,
-            45.894134521484375,
-            15.197223663330078,
-            11.878150939941406,
-            0.1580280363559723
+            19.69245830998879,
+            -235.35330577030328,
+            83.88119125366212,
+            22.723498348075918,
+            5.036956974563426,
+            9.847343444824219,
+            0.04169641107251326
         ]
     },
-    "Dulceology Bakery": {
-        "building": "1138 South Charles Street",
+    "Federal Hill Preparatory School": {
+        "building": "1040 William Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.0709342956543,
+            1032.2982387542725,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            80.46018270572205,
+            32.297798565321045,
+            81.66573715209961,
+            104.2108690619469,
+            64.79397269395406,
+            11.744636535644531,
+            0.12242259344145233
+        ]
+    },
+    "&pizza - Fed Hill": {
+        "building": "1201 South Charles Street",
         "coarse_type": "food",
         "fine_types": [
-            "bakery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            879.3932800292969,
+            822.9064788818359,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -120.33512155099746,
+            -178.74011291619252,
+            83.52968215942384,
+            38.12178132883957,
+            26.033092412490983,
+            18.19036102294922,
+            0.14138311586981486
+        ]
+    },
+    "Moo Moo Cows - Ice Cream": {
+        "building": "926 Light Street Suite 2",
+        "coarse_type": "food",
+        "fine_types": [
             "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            827.8964538574219,
-            844.0304946899414,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            -172.0733971362198,
-            -155.96948826485075,
-            77.30850219726564,
-            21.12345052965764,
-            5.7835207556831305,
-            7.7620086669921875,
-            0.13762838122853457
-        ]
-    },
-    "YARD": {
-        "building": "1026 South Charles Street",
-        "coarse_type": "food",
-        "fine_types": [
             "restaurant",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            819.3258819580078,
-            1001.9707823395729,
-            -4
+            972.310866355896,
+            1117.212245941162,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            -180.70064460634254,
-            2.4032004342170357,
-            76.38807678222656,
-            22.270188246889013,
-            5.014992324587694,
-            7.69281005859375,
-            0.13031175935743772
+            -27.70146442785785,
+            117.20073219000085,
+            80.30168533325195,
+            24.868845726774452,
+            5.44952988963669,
+            8.214042663574219,
+            0.05248499561682774
         ]
     },
-    "Lucky Fortune": {
-        "building": "1116 Light Street",
+    "Illusions Bar & Theater": {
+        "building": "1025 South Charles Street",
         "coarse_type": "food",
         "fine_types": [
-            "restaurant",
-            "food",
+            "bar",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1006.2491770982742,
-            906.5567588806152,
+            866.277099609375,
+            1041.7220420837402,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            6.29225910551871,
-            -93.44323917577294,
-            81.10318756103516,
-            18.193190558900067,
-            4.225389304727225,
-            9.600967407226562,
-            0.1177881882268393
+            -133.92111200185713,
+            41.722041600154995,
+            77.24744033813477,
+            36.486131473858066,
+            8.388476462357248,
+            7.467735290527344,
+            0.1207731716600843
         ]
     },
-    "Fresh and Snacks Store": {
-        "building": "1020 South Charles Street",
+    "Beverages and Snacks Store": {
+        "building": "1137 South Charles Street",
         "coarse_type": "stores",
         "fine_types": [
             "beauty_salon",
-            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            865.080249786377,
+            848.4602813720703,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -134.96711451623082,
+            -151.53971171281745,
+            77.34609985351564,
+            17.534911025233963,
+            5.8381252826471695,
+            6.92803955078125,
+            0.14663918626361333
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "1057 South Charles Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "clothing_store",
             "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            860.2956771850586,
+            977.4907846450806,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -139.7920781726003,
+            -22.530930115739693,
+            77.37512588500977,
+            19.04270171368158,
+            4.437836284680955,
+            9.132148742675781,
+            0.12503129269890406
+        ]
+    },
+    "Federal Hill Fitness": {
+        "building": "39 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
             "health",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            817.2107009887695,
-            1016.3867034912109,
+            971.6682195663452,
+            928.7260780334473,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
-            -182.60834487377096,
-            16.386702404821893,
-            77.23039245605469,
-            24.860300981365818,
-            4.607632466959173,
-            9.258102416992188,
-            0.14439386859248912
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "1201 Light Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1049.6977500915527,
-            852.9678039550781,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            49.59121921195304,
-            -147.77676189211311,
-            82.92744445800783,
-            28.079911069820035,
-            16.92642787857722,
-            10.053741455078125,
-            0.05771689524763885
+            -28.18764607514438,
+            -71.30665859825848,
+            79.17960357666016,
+            10.93428580259039,
+            19.285946848699442,
+            8.722610473632812,
+            0.14376600018485758
         ]
     },
     "Weber Street Bus Stop": {

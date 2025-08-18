@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kamala Harris's room at Hotel Arlette",
+        "building": "Hotel Arlette",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 Elena",
+        "building": "Kaspar Escher-Haus",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Caf\u00e9 Elena",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Attend meetings and discussions on entrepreneurship",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to GESS-Bibliothek",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "GESS-Bibliothek"
+    },
+    {
+        "type": "main",
+        "activity": "Research and preparation for conferences",
+        "place": "GESS-Bibliothek",
+        "building": "Haldeneggsteig 4",
+        "start_time": "12:30:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Didi's Frieden",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "GESS-Bibliothek",
+        "end_place": "Didi's Frieden"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Didi's Frieden",
+        "building": "Stampfenbachstrasse 32",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to update Fitness Z\u00fcrich Central",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Didi's Frieden",
+        "end_place": "update Fitness Z\u00fcrich Central"
+    },
+    {
+        "type": "main",
+        "activity": "Exercise and relaxation",
+        "place": "update Fitness Z\u00fcrich Central",
+        "building": "Neum\u00fchlequai 32",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Swiss National Museum",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "update Fitness Z\u00fcrich Central",
+        "end_place": "Sapori d\u2019Italia"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Sapori d\u2019Italia",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Global Leaders Forum conference",
+        "place": "Swiss National Museum",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Kamala Harris's room at Hotel Arlette",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Swiss National Museum",
+        "end_place": "Kamala Harris's room at Hotel Arlette"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Kamala Harris's room at Hotel Arlette",
+        "building": "Hotel Arlette",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Kamala Harris's room at Hotel Arlette",
+        "building": "Hotel Arlette",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for the next day",
+        "place": "Kamala Harris's room at Hotel Arlette",
+        "building": "Hotel Arlette",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

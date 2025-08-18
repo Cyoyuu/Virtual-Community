@@ -1,0 +1,207 @@
+{
+    "name": "Kamala Harris",
+    "first_name": "Kamala",
+    "last_name": "Harris",
+    "age": 59,
+    "innate": "power, universalism, benevolence",
+    "learned": "I am the Vice President of the United States, known for my work in social justice and public service. I enjoy cooking and spending time with family.",
+    "currently": "I am visiting El Paso to discuss border policies and community initiatives.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "El Paso Hospitality Network",
+            "description": "A network of professionals in the hospitality industry, sharing experiences and improving customer service.",
+            "place": "The Tap Bar & Restaurant",
+            "members": [
+                "Frank Walter Steinmeier",
+                "Jeff Bezos",
+                "Kamala Harris",
+                "Kylian Mbappe",
+                "Mike Tyson",
+                "Steve Johnson"
+            ],
+            "daily_activity": "hosting networking events from 18:00 to 20:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Kamala Harris's room at Plaza Hotel",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Kamala Harris's room at Plaza Hotel",
+            "building": "Plaza Hotel",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Barrio Eats & Drinks",
+            "place": null,
+            "building": null,
+            "start_time": "08:00:00",
+            "end_time": "08:10:00",
+            "start_place": "Kamala Harris's room at Plaza Hotel",
+            "end_place": "Barrio Eats & Drinks"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Barrio Eats & Drinks",
+            "place": null,
+            "building": null,
+            "start_time": "08:10:00",
+            "end_time": "08:30:00",
+            "start_place": "Kamala Harris's room at Plaza Hotel",
+            "end_place": "Barrio Eats & Drinks"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Barrio Eats & Drinks",
+            "building": "502 North Oregon Street A",
+            "start_time": "08:30:00",
+            "end_time": "09:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Strayer University",
+            "place": null,
+            "building": null,
+            "start_time": "09:30:00",
+            "end_time": "10:00:00",
+            "start_place": "Barrio Eats & Drinks",
+            "end_place": "Strayer University"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss border policies and community initiatives",
+            "place": "Strayer University",
+            "building": "221 North Kansas Street Suite 110",
+            "start_time": "10:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Flor De Barro Gallery",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Strayer University",
+            "end_place": "Flor De Barro Gallery"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Flor De Barro Gallery",
+            "building": "212 South Mesa Street",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Machop Spawn",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Flor De Barro Gallery",
+            "end_place": "Machop Spawn"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy entertainment",
+            "place": "Machop Spawn",
+            "building": "125 Henry Trost Court",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Machop Spawn",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Purchase snacks and beverages",
+            "place": "Fresh and Snacks Store",
+            "building": "502 North Oregon Street A",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Tap Bar & Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "The Tap Bar & Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "The Tap Bar & Restaurant",
+            "building": "408 East San Antonio Avenue",
+            "start_time": "17:30:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend El Paso Hospitality Network event",
+            "place": "The Tap Bar & Restaurant",
+            "building": "408 East San Antonio Avenue",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Plaza Hotel",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "The Tap Bar & Restaurant",
+            "end_place": "Kamala Harris's room at Plaza Hotel"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Kamala Harris's room at Plaza Hotel",
+            "building": "Plaza Hotel",
+            "start_time": "20:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

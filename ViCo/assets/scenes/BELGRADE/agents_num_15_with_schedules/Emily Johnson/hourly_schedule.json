@@ -1,0 +1,106 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at Apartments City Hall",
+        "building": "Vlajkovi\u0107eva 9",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Study for upcoming school exams",
+        "place": "Emily Johnson's room at Apartments City Hall",
+        "building": "Vlajkovi\u0107eva 9",
+        "start_time": "08:00:00",
+        "end_time": "10:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Srednja \u0160kola Sveti Sava, Beograd",
+        "place": null,
+        "building": null,
+        "start_time": "10:00:00",
+        "end_time": "10:30:00",
+        "start_place": "Emily Johnson's room at Apartments City Hall",
+        "end_place": "Srednja \u0160kola Sveti Sava, Beograd"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes",
+        "place": "Srednja \u0160kola Sveti Sava, Beograd",
+        "building": "\u0421\u0440\u0435\u0434\u045a\u0430 \u0448\u043a\u043e\u043b\u0430 \u201e\u0421\u0432\u0435\u0442\u0438 \u0421\u0430\u0432\u0430\u201c",
+        "start_time": "10:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Rehearse with Young Performers drama club",
+        "place": "Srednja \u0160kola Sveti Sava, Beograd",
+        "building": "\u0421\u0440\u0435\u0434\u045a\u0430 \u0448\u043a\u043e\u043b\u0430 \u201e\u0421\u0432\u0435\u0442\u0438 \u0421\u0430\u0432\u0430\u201c",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Restaurant Tchaikovsky",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Srednja \u0160kola Sveti Sava, Beograd",
+        "end_place": "Restaurant Tchaikovsky"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Restaurant Tchaikovsky",
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Restaurant Tchaikovsky",
+        "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "building": "Dragoslava Jovanovi\u0107a 11",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emily Johnson's room at Apartments City Hall",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+        "end_place": "Emily Johnson's room at Apartments City Hall"
+    },
+    {
+        "type": "main",
+        "activity": "Read novels",
+        "place": "Emily Johnson's room at Apartments City Hall",
+        "building": "Vlajkovi\u0107eva 9",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for school exams",
+        "place": "Emily Johnson's room at Apartments City Hall",
+        "building": "Vlajkovi\u0107eva 9",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

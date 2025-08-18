@@ -1,0 +1,112 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Hotel Bar im Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Axica Convention Center",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Host boxing workshop",
+        "place": "Axica Convention Center",
+        "building": "Axica Convention Center",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Axica Convention Center",
+        "building": "Axica Convention Center",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Mentor young athletes",
+        "place": "Axica Convention Center",
+        "building": "Axica Convention Center",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Ch\u00e2teau Royal Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Axica Convention Center",
+        "end_place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Rest and leisure time",
+        "place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "15:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie im Adlon",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin",
+        "end_place": "Lorenz Adlon Esszimmer"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner with Berlin Celebrity Circle",
+        "place": "Lorenz Adlon Esszimmer",
+        "building": "Adlon Kempinski",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend public event with Berlin Celebrity Circle",
+        "place": "Galerie im Adlon",
+        "building": "Adlon Kempinski",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Ch\u00e2teau Royal Berlin",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Galerie im Adlon",
+        "end_place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin",
+        "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

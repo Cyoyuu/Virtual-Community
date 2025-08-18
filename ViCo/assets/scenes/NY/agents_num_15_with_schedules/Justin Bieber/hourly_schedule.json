@@ -1,0 +1,170 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Justin Bieber's room at Martinique New York on Broadway, Curio Collection by Hilton",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Baekjeong NYC",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Empire State Building",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Baekjeong NYC",
+        "end_place": "Empire State Building"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Empire State Building",
+        "place": "Empire State Building",
+        "building": "Empire State Building",
+        "start_time": "09:30:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Greeley Square Park",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:15:00",
+        "start_place": "Empire State Building",
+        "end_place": "Greeley Square Park"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at Greeley Square Park",
+        "place": "Greeley Square Park",
+        "building": "open space",
+        "start_time": "11:15:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Black Burger",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Greeley Square Park",
+        "end_place": "Black Burger"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Black Burger",
+        "building": "65 West 30th Street",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arrive",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Black Burger",
+        "end_place": "Arrive"
+    },
+    {
+        "type": "main",
+        "activity": "Entertainment at Arrive",
+        "place": "Arrive",
+        "building": "129 West 29th Street Second Floor",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mercy University - Manhattan Campus",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Arrive",
+        "end_place": "Mercy University - Manhattan Campus"
+    },
+    {
+        "type": "main",
+        "activity": "Study session with Student Achievers",
+        "place": "Mercy University - Manhattan Campus",
+        "building": "47 West 34th Street",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Martinique New York on Broadway, Curio Collection by Hilton",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Mercy University - Manhattan Campus",
+        "end_place": "Justin Bieber's room at Martinique New York on Broadway, Curio Collection by Hilton"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for dinner",
+        "place": "Justin Bieber's room at Martinique New York on Broadway, Curio Collection by Hilton",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Baekjeong NYC",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Empire State Building",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Baekjeong NYC",
+        "end_place": "Empire State Building"
+    },
+    {
+        "type": "main",
+        "activity": "Evening entertainment at Empire State Building",
+        "place": "Empire State Building",
+        "building": "Empire State Building",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Martinique New York on Broadway, Curio Collection by Hilton",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Empire State Building",
+        "end_place": "Justin Bieber's room at Martinique New York on Broadway, Curio Collection by Hilton"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Justin Bieber's room at Martinique New York on Broadway, Curio Collection by Hilton",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

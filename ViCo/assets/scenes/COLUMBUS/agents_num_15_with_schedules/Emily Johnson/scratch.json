@@ -3,28 +3,28 @@
     "first_name": "Emily",
     "last_name": "Johnson",
     "age": 16,
-    "innate": "benevolence, universalism, self-direction",
-    "learned": "I am a high school student passionate about environmental science. I enjoy volunteering at local parks and participating in science fairs.",
-    "currently": "I want to win the upcoming science fair with my project on renewable energy.",
+    "innate": "benevolence, conformity, security",
+    "learned": "I am a high school student at Kiddie Academy of Downtown Columbus. I enjoy reading and volunteering at local shelters.",
+    "currently": "I want to improve my grades in mathematics.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Columbus Film and Arts Society",
-            "description": "A group of artists and film enthusiasts who appreciate and create art and films.",
+            "name": "Columbus Art Enthusiasts",
+            "description": "A group of individuals passionate about art and creativity.",
             "place": "Chaos Contemporary Craft",
             "members": [
-                "Emily Johnson",
-                "Hilary Clinton",
-                "Shannon Steves",
-                "Tom Holland"
+                "Kate Novak",
+                "Pika Hayes",
+                "Zara Williams",
+                "Emily Johnson"
             ],
-            "daily_activity": "discussing films and art from 17:00 to 18:00"
+            "daily_activity": "exploring art exhibitions from 15:00 to 17:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Emily Johnson's room at Day Companies",
+    "living_place": "Emily Johnson's room at Microliving at Long and Front",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,22 +34,22 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Emily Johnson's room at Day Companies",
-            "building": "22 East Gay Street # 800",
+            "place": "Emily Johnson's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Downtown Convenience",
-            "building": "26 North High Street",
+            "place": "Cravings Caf\u00e9",
+            "building": "Microliving at Long and Front",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Genoa Park",
+            "activity": "Commute to school",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
@@ -57,108 +57,78 @@
         },
         {
             "type": "main",
-            "activity": "Volunteer at Genoa Park",
-            "place": "Genoa Park",
-            "building": "open space",
+            "activity": "Attend classes",
+            "place": "Kiddie Academy of Downtown Columbus",
+            "building": "CSI International Building",
             "start_time": "09:00:00",
-            "end_time": "12:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Ohio Community Development Finance Fund - Food Distribution Center",
-            "place": null,
-            "building": null,
-            "start_time": "12:00:00",
-            "end_time": "12:30:00",
-            "start_place": "Genoa Park",
-            "end_place": "Ohio Community Development Finance Fund - Food Distribution Center"
-        },
-        {
-            "type": "meal",
-            "activity": "Lunch",
-            "place": "Ohio Community Development Finance Fund - Food Distribution Center",
-            "building": "Huntington Bank Building",
-            "start_time": "12:30:00",
-            "end_time": "13:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Emily Johnson's room at Day Companies",
-            "place": null,
-            "building": null,
-            "start_time": "13:00:00",
-            "end_time": "13:30:00",
-            "start_place": "Ohio Community Development Finance Fund - Food Distribution Center",
-            "end_place": "Emily Johnson's room at Day Companies"
-        },
-        {
-            "type": "main",
-            "activity": "Work on science fair project",
-            "place": "Emily Johnson's room at Day Companies",
-            "building": "22 East Gay Street # 800",
-            "start_time": "13:30:00",
-            "end_time": "16:30:00"
+            "end_time": "15:00:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Chaos Contemporary Craft",
             "place": null,
             "building": null,
-            "start_time": "16:30:00",
-            "end_time": "17:00:00",
-            "start_place": "Emily Johnson's room at Day Companies",
+            "start_time": "15:00:00",
+            "end_time": "15:15:00",
+            "start_place": "Kiddie Academy of Downtown Columbus",
             "end_place": "Chaos Contemporary Craft"
         },
         {
             "type": "main",
-            "activity": "Discuss films and art with Columbus Film and Arts Society",
+            "activity": "Explore art exhibitions with Columbus Art Enthusiasts",
             "place": "Chaos Contemporary Craft",
             "building": "78 North High Street",
-            "start_time": "17:00:00",
-            "end_time": "18:00:00"
+            "start_time": "15:15:00",
+            "end_time": "17:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to The Wing Dynasty",
+            "activity": "Commute to Microliving at Long and Front",
             "place": null,
             "building": null,
-            "start_time": "18:00:00",
-            "end_time": "18:30:00",
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
             "start_place": "Chaos Contemporary Craft",
-            "end_place": "The Wing Dynasty"
+            "end_place": "Cravings Caf\u00e9"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "The Wing Dynasty",
-            "building": "121 South High Street",
-            "start_time": "18:30:00",
-            "end_time": "19:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Emily Johnson's room at Day Companies",
-            "place": null,
-            "building": null,
-            "start_time": "19:00:00",
-            "end_time": "19:30:00",
-            "start_place": "The Wing Dynasty",
-            "end_place": "Emily Johnson's room at Day Companies"
+            "place": "Cravings Caf\u00e9",
+            "building": "Microliving at Long and Front",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
         },
         {
             "type": "main",
-            "activity": "Continue working on science fair project",
-            "place": "Emily Johnson's room at Day Companies",
-            "building": "22 East Gay Street # 800",
-            "start_time": "19:30:00",
+            "activity": "Study mathematics to improve grades",
+            "place": "Emily Johnson's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
+            "start_time": "18:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Read and relax",
+            "place": "Emily Johnson's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
+            "start_time": "21:00:00",
             "end_time": "23:00:00"
         },
         {
-            "type": "main",
-            "activity": "Relax and unwind",
-            "place": "Emily Johnson's room at Day Companies",
-            "building": "22 East Gay Street # 800",
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "Cravings Caf\u00e9",
+            "building": "Microliving at Long and Front",
             "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Emily Johnson's room at Microliving at Long and Front",
+            "building": "Microliving at Long and Front",
+            "start_time": "23:30:00",
             "end_time": "23:59:59"
         }
     ],
@@ -171,13 +141,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": null,
+    "working_place": "Kiddie Academy of Downtown Columbus",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

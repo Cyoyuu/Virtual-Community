@@ -1,0 +1,769 @@
+{
+    "sim_name": "FLORENCE_agents_num_15",
+    "agent_names": [
+        "Bill Gates",
+        "Brycer Rodriguez",
+        "Elizabeth Mensah",
+        "James Thompson",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Joshua Tenenbaum",
+        "Megan Carter",
+        "Olivia Adams",
+        "Pika Hayes",
+        "Richard Feynman",
+        "Roth Miller",
+        "Steve Jobs",
+        "Yann LeCun",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -238.35693526015118,
+                -175.765687563095,
+                118.16479239139841,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Bill Gates's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -167.689058186737,
+                -232.20419815781443,
+                117.59889315452673,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa dello Studente",
+            "current_place": "Brycer Rodriguez's room at Casa dello Studente",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -268.23720847957617,
+                282.60177619381835,
+                120.08158940378233,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via Francesco Puccinotti",
+            "current_place": "Elizabeth Mensah's room at Firenze Immobili",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                293.47140277947574,
+                -43.904108380190095,
+                119.92865172450796,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via Zara",
+            "current_place": "James Thompson's room at Florence Apartments, Home Feeling - Zarina",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                66.23309002710911,
+                -68.78562284519178,
+                118.95149769407818,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palazzo della Cassa di Risparmio",
+            "current_place": "Jody Petersen's room at Ruote Apartment Firenze",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -225.9928950029424,
+                -183.3872776976729,
+                118.05381019035411,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Joe Anderson's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -174.89639343720603,
+                -90.91234073611112,
+                119.24184947906681,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Joshua Tenenbaum's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -165.77198618358017,
+                -228.98956236005006,
+                117.58093969269426,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa dello Studente",
+            "current_place": "Megan Carter's room at Casa dello Studente",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                278.0908741790829,
+                -18.773044251193994,
+                119.52346441468487,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via Zara",
+            "current_place": "Olivia Adams's room at Florence Apartments, Home Feeling - Zarina",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -178.7027699021434,
+                -219.24210798208696,
+                117.67147544729897,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa dello Studente",
+            "current_place": "Pika Hayes's room at Casa dello Studente",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -238.3580917779873,
+                -175.76497464848563,
+                118.16479128241575,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Richard Feynman's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                266.3951552109767,
+                -32.225786983655986,
+                119.55354896822641,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via Zara",
+            "current_place": "Roth Miller's room at Florence Apartments, Home Feeling - Zarina",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -224.98450997059632,
+                -184.008878505702,
+                118.04041526152207,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Steve Jobs's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -178.98596043691194,
+                -88.39140074794818,
+                119.6147211057654,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Viale Filippo Strozzi",
+            "current_place": "Yann LeCun's room at Florence Fortezza Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -170.68017574794516,
+                -237.21984366917138,
+                117.71748729986268,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa dello Studente",
+            "current_place": "Zara Williams's room at Casa dello Studente",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            819.5868606567383,
+            768.9266738891602,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            723.1407318115234,
+            1276.262954711914,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1283.433364868164,
+            961.9803686141968,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1074.5916862487793,
+            920.5028343200684,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            819.5868606567383,
+            768.9266738891602,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1283.433364868164,
+            961.9803686141968,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            819.5868606567383,
+            768.9266738891602,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1283.433364868164,
+            961.9803686141968,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            790.2858963012695,
+            868.8813095092773,
+            -32,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            819.5868606567383,
+            768.9266738891602,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Bill_Gates.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_James_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/celebrity_Joshua_Tenenbaum.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/celebrity_Richard_Feynman.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/celebrity_Steve_Jobs.glb",
+        "ViCo/avatars/models/celebrity_Yann_LeCun.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and Snacks Store": {
+            "building": "Giardino della Fortezza",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Via San Gallo",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Via Lorenzo Il Magnifico",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Italy",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Via Volga c/o Fiera del Levante pad.129",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Viale Giovanni Milton",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Tech Innovators Club": {
+            "description": "A group of tech enthusiasts and innovators exploring new ideas and technologies.",
+            "place": "Beverages and Snacks Store",
+            "members": [
+                "Bill Gates",
+                "Joshua Tenenbaum",
+                "Richard Feynman",
+                "Steve Jobs",
+                "Yann LeCun"
+            ],
+            "daily_activity": "discussing technology trends from 15:00 to 17:00"
+        },
+        "Casa dello Studente Community": {
+            "description": "A community of students living and studying at Casa dello Studente.",
+            "place": "Casa dello Studente",
+            "members": [
+                "Brycer Rodriguez",
+                "Megan Carter",
+                "Pika Hayes",
+                "Zara Williams"
+            ],
+            "daily_activity": "studying together from 16:00 to 18:00"
+        },
+        "Florence Culinary Arts Group": {
+            "description": "A group of culinary enthusiasts and professionals sharing recipes and cooking techniques.",
+            "place": "Chef Executive",
+            "members": [
+                "James Thompson",
+                "Olivia Adams",
+                "Roth Miller"
+            ],
+            "daily_activity": "cooking and tasting new dishes from 17:00 to 19:00"
+        },
+        "Florence Art and Design Society": {
+            "description": "A society of artists and designers inspired by Florence's rich cultural heritage.",
+            "place": "Fresh and DM Store",
+            "members": [
+                "Elizabeth Mensah",
+                "Jody Petersen",
+                "Joe Anderson"
+            ],
+            "daily_activity": "creating art pieces from 18:00 to 20:00"
+        }
+    }
+}

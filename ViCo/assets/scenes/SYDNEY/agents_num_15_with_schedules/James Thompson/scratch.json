@@ -1,0 +1,199 @@
+{
+    "name": "James Thompson",
+    "first_name": "James",
+    "last_name": "Thompson",
+    "age": 24,
+    "innate": "achievement, self-direction, stimulation",
+    "learned": "I am a software developer at Rail Operations Centre (ROC), working on innovative transportation solutions. I enjoy coding and playing video games.",
+    "currently": "I want to develop a new feature for the transportation app.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals working on innovative projects.",
+            "place": "Rail Operations Centre (ROC)",
+            "members": [
+                "Adam Pierce",
+                "James Thompson",
+                "Brian Carter"
+            ],
+            "daily_activity": "brainstorming tech solutions from 15:00 to 16:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "James Thompson's room at Portman House",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "James Thompson's room at Portman House",
+            "building": "Portman House",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Haven Coffee - Green Square",
+            "building": "Portman House",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Rail Operations Centre (ROC)",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on developing a new feature for the transportation app",
+            "place": "Rail Operations Centre (ROC)",
+            "building": "Rail Operations Centre (ROC)",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Miso Japanese Teishoku Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Rail Operations Centre (ROC)",
+            "end_place": "Miso Japanese Teishoku Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Miso Japanese Teishoku Restaurant",
+            "building": "14 Ebsworth Street",
+            "start_time": "12:10:00",
+            "end_time": "12:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Rail Operations Centre (ROC)",
+            "place": null,
+            "building": null,
+            "start_time": "12:45:00",
+            "end_time": "13:15:00",
+            "start_place": "Miso Japanese Teishoku Restaurant",
+            "end_place": "Rail Operations Centre (ROC)"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on the transportation app feature",
+            "place": "Rail Operations Centre (ROC)",
+            "building": "Rail Operations Centre (ROC)",
+            "start_time": "13:15:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Brainstorming tech solutions with Tech Innovators",
+            "place": "Rail Operations Centre (ROC)",
+            "building": "Rail Operations Centre (ROC)",
+            "start_time": "15:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wrap up work and plan next steps for the app feature",
+            "place": "Rail Operations Centre (ROC)",
+            "building": "Rail Operations Centre (ROC)",
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to 789 Korean BBQ Restaurant Green Square",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Rail Operations Centre (ROC)",
+            "end_place": "789 Korean BBQ Restaurant Green Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "789 Korean BBQ Restaurant Green Square",
+            "building": "Tenancy 4/2-4 Ebsworth Street",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to F45 Training Alexandria",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "789 Korean BBQ Restaurant Green Square",
+            "end_place": "F45 Training Alexandria"
+        },
+        {
+            "type": "main",
+            "activity": "Workout at F45 Training Alexandria",
+            "place": "F45 Training Alexandria",
+            "building": "3 Botany Road",
+            "start_time": "19:30:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to James Thompson's room at Portman House",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "F45 Training Alexandria",
+            "end_place": "James Thompson's room at Portman House"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and play video games",
+            "place": "James Thompson's room at Portman House",
+            "building": "Portman House",
+            "start_time": "21:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "James Thompson's room at Portman House",
+            "building": "Portman House",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Rail Operations Centre (ROC)",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

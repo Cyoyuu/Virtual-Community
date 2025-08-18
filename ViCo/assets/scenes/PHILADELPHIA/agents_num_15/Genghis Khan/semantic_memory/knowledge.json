@@ -1,0 +1,454 @@
+{
+    "Elon Musk": {
+        "age": 53,
+        "living_place": "Elon Musk's room at Kimpton Hotel Monaco Philadelphia",
+        "appearance": "ViCo/assets/imgs/avatars/Elon Musk.png",
+        "groups": [
+            "Historical Explorers"
+        ]
+    },
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "The Ayer",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Historical Explorers"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "The Ayer",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Historical Explorers"
+        ]
+    },
+    "Historical Explorers": {
+        "description": "A group of individuals interested in exploring historical sites and learning about the rich history of Philadelphia.",
+        "place": "Liberty Bell Center",
+        "members": [
+            "Genghis Khan",
+            "Megan Carter",
+            "Zara Williams",
+            "Elon Musk"
+        ],
+        "daily_activity": "visiting historical landmarks from 16:00 to 18:00"
+    },
+    "Genghis Khan's room at Renaissance Philadelphia Downtown Hotel": {
+        "building": "Renaissance Philadelphia Downtown Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1218.513816833496,
+            1002.1093344688416,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Genghis Khan's room at Renaissance Philadelphia Downtown Hotel",
+        "bounding_box": [
+            218.49603998335886,
+            2.067843938185968,
+            137.9252166748047,
+            42.175738927961234,
+            17.39511767870563,
+            48.929718017578125,
+            -0.16863676871361807
+        ]
+    },
+    "Liberty Bell Center": {
+        "building": "Liberty Bell Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "yes",
+            "museum"
+        ],
+        "location": [
+            1015.6748943328857,
+            1091.4512157440186,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            14.648245518216232,
+            91.35626567565933,
+            120.47753143310547,
+            23.34313837981168,
+            96.11425307722985,
+            11.949996948242188,
+            -0.1469144377353281
+        ]
+    },
+    "Second Bank of the United States Portrait Gallery": {
+        "building": "Second Bank of the United States",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1173.5795974731445,
+            948.8139553070068,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            173.57891845703125,
+            -51.18476104736328,
+            123.02662658691406,
+            27.087997436523438,
+            50.30586624145508,
+            17.000160217285156,
+            -0.15479785203933716
+        ]
+    },
+    "Bridgette Mayer Gallery": {
+        "building": "709 Walnut Street 1st Floor",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            778.821647644043,
+            901.8995742797852,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -220.9073122186608,
+            -98.09822544482097,
+            120.19851684570312,
+            6.132607915848955,
+            28.126557654904712,
+            10.51904296875,
+            -0.15494050801814677
+        ]
+    },
+    "Star Real Estate Group": {
+        "building": "1500 Walnut Street # 1103",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1051.455093383789,
+            795.146728515625,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            52.932945102053594,
+            -204.85754561769352,
+            156.25180435180664,
+            23.669416423890024,
+            66.32895667095374,
+            88.10070037841797,
+            -0.20284464868764748
+        ]
+    },
+    "Platoon Fitness, Philadelphia": {
+        "building": "716 Walnut Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "physiotherapist",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            732.4849166870117,
+            852.9039192199707,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -270.11642666413513,
+            -147.13272514101487,
+            122.10443115234375,
+            45.29125706859921,
+            51.114021934499526,
+            14.551116943359375,
+            -0.15923858349233205
+        ]
+    },
+    "Franklin Social American Kitchen & Bar": {
+        "building": "Renaissance Philadelphia Downtown Hotel",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1218.513816833496,
+            1002.1093344688416,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            218.49603998335886,
+            2.067843938185968,
+            137.9252166748047,
+            42.175738927961234,
+            17.39511767870563,
+            48.929718017578125,
+            -0.16863676871361807
+        ]
+    },
+    "Franklin\u2019s ice cream": {
+        "building": "Liberty Bell Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1015.6748943328857,
+            1091.4512157440186,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            14.648245518216232,
+            91.35626567565933,
+            120.47753143310547,
+            23.34313837981168,
+            96.11425307722985,
+            11.949996948242188,
+            -0.1469144377353281
+        ]
+    },
+    "Union Gourmet Catering": {
+        "building": "Public Ledger Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3109283447266,
+            989.7561779022217,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -104.35907088839507,
+            -10.273055419204816,
+            141.069091796875,
+            118.1608392533941,
+            70.01957658346893,
+            54.146728515625,
+            -0.15943696726644777
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Public Ledger Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3109283447266,
+            989.7561779022217,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -104.35907088839507,
+            -10.273055419204816,
+            141.069091796875,
+            118.1608392533941,
+            70.01957658346893,
+            54.146728515625,
+            -0.15943696726644777
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "711 Sansom Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            780.7654037475586,
+            980.658064365387,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -219.2370742261515,
+            -19.313699000769628,
+            120.37287139892578,
+            6.40090366475833,
+            27.439927490222534,
+            12.281280517578125,
+            -0.15997646440239263
+        ]
+    },
+    "Chestnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            118.28951908450945,
+            3.9586107050921666
+        ],
+        "rotation": -1.7318008185927494,
+        "bounding_box": null
+    },
+    "Walnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            78.63308406330034,
+            -171.75149312496984
+        ],
+        "rotation": 1.4159458545706831,
+        "bounding_box": null
+    },
+    "Ionic Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -307.5186042496154,
+            4.736636898051245
+        ],
+        "rotation": 1.4221153999950833,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.175316071994,
+            35.330156217726106
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.93356885018716,
+            -1.6505826632421339
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            177.80703989096526,
+            -245.49041705483242
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.79844681042135,
+            -127.56612672653645
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -77.85848494947972,
+            21.78821777721246
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            19.874014198703783,
+            -238.3893393306398
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -265.2094364159634,
+            199.45220050642803
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Ionic Street": [
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Chestnut Street": [
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

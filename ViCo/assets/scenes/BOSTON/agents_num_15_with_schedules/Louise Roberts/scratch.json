@@ -1,0 +1,202 @@
+{
+    "name": "Louise Roberts",
+    "first_name": "Louise",
+    "last_name": "Roberts",
+    "age": 29,
+    "innate": "benevolence, universalism, security",
+    "learned": "I am a nurse at Beverages and DM Store, dedicated to patient care. I enjoy hiking and photography.",
+    "currently": "I am attending a workshop on holistic health practices.",
+    "lifestyle": "I go to bed around 22:00, wake up around 06:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Green Innovators Club",
+            "description": "A group focused on sustainable urban development and environmental conservation.",
+            "place": "Lincoln Park",
+            "members": [
+                "Adam Pierce",
+                "Brian Carter",
+                "Elizabeth Mensah",
+                "Louise Roberts"
+            ],
+            "daily_activity": "discussing environmental projects from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Louise Roberts's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Louise Roberts's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "06:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Morning routine and preparation for the day",
+            "place": "Louise Roberts's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "06:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a nurse",
+            "place": "Beverages and DM Store",
+            "building": "304 Somerville Avenue",
+            "start_time": "07:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Union Tavern",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Union Tavern"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch break",
+            "place": "Union Tavern",
+            "building": "Union Tavern",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Union Tavern",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Continue work as a nurse",
+            "place": "Beverages and DM Store",
+            "building": "304 Somerville Avenue",
+            "start_time": "13:30:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lincoln Park",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Lincoln Park"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss environmental projects with Green Innovators Club",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Soft Space Wellness",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Lincoln Park",
+            "end_place": "Soft Space Wellness"
+        },
+        {
+            "type": "main",
+            "activity": "Attend workshop on holistic health practices",
+            "place": "Soft Space Wellness",
+            "building": "1 Bow Market Way",
+            "start_time": "18:30:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Union Tavern for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "19:45:00",
+            "start_place": "Soft Space Wellness",
+            "end_place": "Union Tavern"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Union Tavern",
+            "building": "Union Tavern",
+            "start_time": "19:45:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "21:00:00",
+            "start_place": "Union Tavern",
+            "end_place": "Louise Roberts's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Louise Roberts's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "21:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Louise Roberts's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "22:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Beverages and DM Store",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

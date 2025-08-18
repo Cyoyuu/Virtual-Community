@@ -1,0 +1,88 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Apartments International",
+        "building": "University Plaza",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Roll & Roll by JC Mart",
+        "building": "University Plaza",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rexall",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work at Rexall",
+        "place": "Rexall",
+        "building": "250 University Avenue Unit #120",
+        "start_time": "09:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to F45 Training Toronto Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "Rexall",
+        "end_place": "F45 Training Toronto Downtown"
+    },
+    {
+        "type": "main",
+        "activity": "Fitness and Sports Team Activity",
+        "place": "F45 Training Toronto Downtown",
+        "building": "North Tower",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roll & Roll by JC Mart",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "F45 Training Toronto Downtown",
+        "end_place": "Roll & Roll by JC Mart"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Roll & Roll by JC Mart",
+        "building": "University Plaza",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Louise Roberts's room at Apartments International",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Roll & Roll by JC Mart",
+        "end_place": "Louise Roberts's room at Apartments International"
+    },
+    {
+        "type": "main",
+        "activity": "Gardening and Cooking",
+        "place": "Louise Roberts's room at Apartments International",
+        "building": "University Plaza",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

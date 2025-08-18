@@ -25,8 +25,7 @@
                     -312.72850036621094,
                     -252.98456573486328,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Spizzico pizza italiana",
@@ -41,8 +40,7 @@
                     -312.72850036621094,
                     -252.98456573486328,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -70,8 +68,7 @@
                     -200.06483459472656,
                     -302.2768020629883,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Seoul South Station - Korean Fried Chicken",
@@ -86,8 +83,7 @@
                     -200.06483459472656,
                     -302.2768020629883,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "sintGoorikshal ale",
@@ -101,8 +97,7 @@
                     -200.06483459472656,
                     -302.2768020629883,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Central Station",
@@ -116,8 +111,7 @@
                     -200.06483459472656,
                     -302.2768020629883,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "MOA Paris",
@@ -133,8 +127,7 @@
                     -200.06483459472656,
                     -302.2768020629883,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             }
         ]
     },
@@ -164,8 +157,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Food'art bar",
@@ -180,8 +172,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Le Cercle",
@@ -196,8 +187,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Le GOAT",
@@ -212,8 +202,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Ors / Habip",
@@ -228,8 +217,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "DELYS Station\u00ae - Gare Centrale",
@@ -245,8 +233,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "SoSimply by AG",
@@ -267,8 +254,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Central Gate",
@@ -280,8 +266,7 @@
                     -103.86376571655273,
                     -300.13680267333984,
                     -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -309,8 +294,7 @@
                     -309.72618103027344,
                     -133.41646194458008,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Cercle de Wallonie, Restaurant",
@@ -325,8 +309,48 @@
                     -309.72618103027344,
                     -133.41646194458008,
                     -8
+                ]
+            }
+        ]
+    },
+    "Central Building": {
+        "building_glb": "buildings_Central Building.glb",
+        "bounding_box": [
+            -41.65367996062291,
+            -154.73731870730236,
+            88.43667221069337,
+            12.158464798706095,
+            14.627788750481889,
+            28.622779846191406,
+            0.5671525239732107
+        ],
+        "places": [
+            {
+                "name": "Break Point",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    -41.08756446838379,
+                    -154.7433090209961,
+                    -4
+                ]
+            },
+            {
+                "name": "Central Building",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    -41.08756446838379,
+                    -154.7433090209961,
+                    -8
+                ]
             }
         ]
     },
@@ -354,8 +378,7 @@
                     -293.2517395019531,
                     -15.19031047821045,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Le Stuart",
@@ -367,8 +390,94 @@
                     -293.2517395019531,
                     -15.19031047821045,
                     -8
+                ]
+            }
+        ]
+    },
+    "Rue de la Croix de Fer 9/13": {
+        "building_glb": "buildings_element.243.glb",
+        "bounding_box": [
+            254.95676101970002,
+            -35.4298947411737,
+            96.33380126953125,
+            9.77471708316841,
+            8.419759141659158,
+            18.060623168945312,
+            0.29458936739538266
+        ],
+        "places": [
+            {
+                "name": "Pizza Hut Delivery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "location": [
+                    254.6243438720703,
+                    -34.97971439361572,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Rue de la Croix de Fer 15": {
+        "building_glb": "buildings_element.226.glb",
+        "bounding_box": [
+            262.044682770512,
+            -34.194163329769104,
+            96.78400802612305,
+            5.963610668744567,
+            10.194417978868586,
+            18.94721221923828,
+            0.29940066498700285
+        ],
+        "places": [
+            {
+                "name": "La Rose Noire",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    262.2958984375,
+                    -33.71584606170654,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Rue de la Croix de Fer 21": {
+        "building_glb": "buildings_element.246.glb",
+        "bounding_box": [
+            267.8133325420678,
+            -33.61227435141542,
+            96.33004760742188,
+            5.933007716582932,
+            12.581968376413341,
+            17.943069458007812,
+            0.3232809510259916
+        ],
+        "places": [
+            {
+                "name": "LK Coiffure",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    267.7043151855469,
+                    -32.84168338775635,
+                    -4
+                ]
             }
         ]
     },
@@ -396,8 +505,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Kursusdienst Ekonomika Brussel",
@@ -412,8 +520,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "BelCampus",
@@ -428,8 +535,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Kul Feb",
@@ -443,8 +549,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Dodo toy shop",
@@ -458,8 +563,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "KU Leuven - Campus Brussel",
@@ -474,8 +578,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Fiscale Hogeschool",
@@ -489,8 +592,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Scott's Bar & Kitchen",
@@ -507,8 +609,7 @@
                     -273.74742126464844,
                     101.23320388793945,
                     -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -536,8 +637,79 @@
                     -264.93565368652344,
                     152.0155143737793,
                     -4
+                ]
+            }
+        ]
+    },
+    "Rue d'Assaut 15": {
+        "building_glb": "buildings_element.415.glb",
+        "bounding_box": [
+            -203.0821814709775,
+            30.135718487544818,
+            72.8151741027832,
+            18.670438047093633,
+            45.521296676424605,
+            25.958290100097656,
+            -0.7435123585520509
+        ],
+        "places": [
+            {
+                "name": "Hotel Exploitatiemaatschappij Diegem Nv",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                "location": [
+                    -202.45191955566406,
+                    31.063954830169678,
+                    -4
+                ]
+            },
+            {
+                "name": "Joppes Tarts Bakery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -202.45191955566406,
+                    31.063954830169678,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Rue de Ligne 13": {
+        "building_glb": "buildings_element.510.glb",
+        "bounding_box": [
+            121.59583937739781,
+            34.837027244165924,
+            87.06180572509766,
+            27.235677515200965,
+            46.13149064628303,
+            21.441314697265625,
+            0.41535653675541695
+        ],
+        "places": [
+            {
+                "name": "\u00d3ptica24",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    115.27852630615234,
+                    35.97048568725586,
+                    -4
+                ]
             }
         ]
     },
@@ -565,8 +737,7 @@
                     291.7037048339844,
                     84.08374786376953,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -595,8 +766,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "La Piola Pizza",
@@ -611,8 +781,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Mare",
@@ -627,8 +796,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Fresca",
@@ -643,8 +811,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "My Tannour - Wolf",
@@ -659,8 +826,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Hanoi Station",
@@ -675,8 +841,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Vincent Denis Dessert Bar",
@@ -692,8 +857,7 @@
                     -266.7452621459961,
                     219.59149932861328,
                     -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -722,8 +886,7 @@
                     5.715937748551369,
                     294.39727783203125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -749,8 +912,7 @@
                     -215.2705535888672,
                     310.6654510498047,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -776,8 +938,7 @@
                     -141.60492706298828,
                     364.8647918701172,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -804,8 +965,7 @@
                     2.8624706268310547,
                     348.23138427734375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -832,8 +992,7 @@
                     -324.0501403808594,
                     -184.37773895263672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -860,8 +1019,7 @@
                     -418.2130432128906,
                     -311.46295166015625,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             }
         ]
     },
@@ -887,8 +1045,7 @@
                     -105.21261978149414,
                     250.5662078857422,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -914,8 +1071,7 @@
                     -356.5938720703125,
                     303.7885208129883,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             }
         ]
     },
@@ -942,8 +1098,7 @@
                     -402.6405487060547,
                     -214.4452133178711,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -969,8 +1124,7 @@
                     -6.136905670166016,
                     295.1598205566406,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -996,8 +1150,7 @@
                     275.87300872802734,
                     374.9706268310547,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1023,8 +1176,7 @@
                     430.65538024902344,
                     -15.637077331542969,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     }

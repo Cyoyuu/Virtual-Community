@@ -1,41 +1,41 @@
 {
-    "Eve By J Gonzales": {
-        "age": 21,
-        "living_place": "Eve By J Gonzales's room at 4th and Colorado",
-        "appearance": "ViCo/assets/imgs/avatars/Eve By J Gonzales.png",
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at 4th and Colorado",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
         "groups": [
-            "Creative Minds"
+            "Austin Music and Arts Club"
         ]
     },
-    "Kate Novak": {
-        "age": 23,
-        "living_place": "Kate Novak's room at Aloft Austin Downtown",
-        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at Aloft Austin Downtown",
+        "appearance": "ViCo/assets/imgs/avatars/Emily Johnson.png",
         "groups": [
-            "Creative Minds"
+            "Austin Music and Arts Club"
         ]
     },
-    "Sophie Carlsen": {
-        "age": 20,
-        "living_place": "Aloft Austin Downtown",
-        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Megan Carter's room at The Driskill",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
         "groups": [
-            "Creative Minds"
+            "Austin Music and Arts Club"
         ]
     },
-    "Creative Minds": {
-        "description": "A group of creative individuals who share a passion for art, design, and self-expression.",
-        "place": "Neon Grotto",
+    "Austin Music and Arts Club": {
+        "description": "A club for music and art lovers to share their passion and collaborate on creative projects.",
+        "place": "Northern-Southern",
         "members": [
-            "Eve By J Gonzales",
+            "Brycer Rodriguez",
+            "Emily Johnson",
             "Olivia Adams",
-            "Kate Novak",
-            "Sophie Carlsen"
+            "Megan Carter"
         ],
-        "daily_activity": "sharing creative ideas and projects from 19:00 to 20:00"
+        "daily_activity": "attending art workshops from 17:00 to 18:00"
     },
-    "Olivia Adams's room at Susan Stiles Realty": {
-        "building": "Brown Building",
+    "Olivia Adams's room at Nellis Realty": {
+        "building": "722 Congress Avenue",
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -43,90 +43,71 @@
             "establishment"
         ],
         "location": [
-            964.4265832901001,
-            1266.8643417358398,
-            -8
+            1077.0716609954834,
+            1231.643081665039,
+            -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "Olivia Adams's room at Susan Stiles Realty",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Olivia Adams's room at Nellis Realty",
         "bounding_box": [
-            -35.574186917135286,
-            266.8675429432748,
-            135.80512237548825,
-            26.76383612233771,
-            37.89639353702151,
-            35.64356994628906,
-            -0.31574804118226757
+            76.41874649017814,
+            231.6161529552354,
+            117.7382354736328,
+            50.237069926072,
+            35.73686503721335,
+            9.689102172851562,
+            -0.314488561040297
         ]
     },
-    "Susan Stiles Realty": {
-        "building": "Brown Building",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            964.4265832901001,
-            1266.8643417358398,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "bounding_box": [
-            -35.574186917135286,
-            266.8675429432748,
-            135.80512237548825,
-            26.76383612233771,
-            37.89639353702151,
-            35.64356994628906,
-            -0.31574804118226757
-        ]
-    },
-    "Neon Grotto": {
-        "building": "Neon Grotto",
+    "Thistle Cafe": {
+        "building": "Procore Tower",
         "coarse_type": "food",
         "fine_types": [
-            "bar",
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            871.353946685791,
+            1060.5845203399658,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -131.23443318484968,
+            60.81827806514308,
+            159.35279083251953,
+            84.50115065414666,
+            47.30849482341774,
+            99.03630065917969,
+            -0.31420839639070536
+        ]
+    },
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            840.945426940918,
-            858.2115936279297,
-            -4
+            1196.0162734985352,
+            846.779727935791,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            -159.05457305908203,
-            -141.7884063720703,
-            110.088436126709,
-            12.858288424864767,
-            18.151128918389155,
-            9.520805358886719,
-            -0.31903215104355465
-        ]
-    },
-    "Indeed Tower": {
-        "building": "Indeed Tower",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            919.9503040313721,
-            1146.2666625976562,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            -87.66839599609375,
-            146.1295623779297,
-            194.9882049560547,
-            52.14065170288086,
-            82.02035522460938,
-            167.20199584960938,
-            -0.31920403242111206
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
         ]
     },
     "REP Real Estate Partners": {
@@ -153,6 +134,28 @@
             -0.31240514790593676
         ]
     },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
     "The Driskill": {
         "building": "The Driskill",
         "coarse_type": "accommodation",
@@ -165,7 +168,7 @@
             1045.4788842201233,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "bounding_box": [
             164.4190478965505,
             45.95275120352525,
@@ -176,8 +179,34 @@
             -0.3018611889945575
         ]
     },
-    "Mediterranean Resources LLC": {
-        "building": "401 Congress Avenue # 2900",
+    "Higher Ground": {
+        "building": "722 Congress Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1077.0716609954834,
+            1231.643081665039,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            76.41874649017814,
+            231.6161529552354,
+            117.7382354736328,
+            50.237069926072,
+            35.73686503721335,
+            9.689102172851562,
+            -0.314488561040297
+        ]
+    },
+    "Chi'Lantro": {
+        "building": "Colorado Tower",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -186,69 +215,48 @@
             "establishment"
         ],
         "location": [
-            965.4733638763428,
-            886.7862167358398,
+            879.6914291381836,
+            796.3062896728516,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            -34.52972047320928,
-            -113.21433429605591,
-            110.49073791503906,
-            7.312171877054673,
-            49.17180439685783,
-            7.0614013671875,
-            1.258533636391678
+            -120.98503388794953,
+            -202.66442549748294,
+            164.7222785949707,
+            43.408979226793306,
+            55.52435527840325,
+            121.09481048583984,
+            -0.30645783762856615
         ]
     },
-    "DuMont's Down Low": {
-        "building": "DuMont's Down Low",
-        "coarse_type": "food",
-        "fine_types": [
-            "retail",
-            "bar"
-        ],
-        "location": [
-            817.8811416625977,
-            922.215087890625,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            -182.1195068359375,
-            -77.7813949584961,
-            108.98373413085938,
-            6.144325256347656,
-            38.416595458984375,
-            5.665496826171875,
-            -0.3124043345451355
-        ]
-    },
-    "Fresh and Snacks Store": {
-        "building": "114 West 7th Street",
+    "Snacks and DM Store": {
+        "building": "722 Congress Avenue",
         "coarse_type": "stores",
         "fine_types": [
-            "store",
+            "jewelry_store",
+            "finance",
             "point_of_interest",
+            "store",
             "establishment"
         ],
         "location": [
-            996.3216896057129,
-            1210.3084182739258,
+            1077.0716609954834,
+            1231.643081665039,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
         "bounding_box": [
-            -3.5658947838399495,
-            210.38272006824155,
-            124.8991928100586,
-            20.02545691914643,
-            38.632853893261846,
-            20.611282348632812,
-            -0.30779775886248867
+            76.41874649017814,
+            231.6161529552354,
+            117.7382354736328,
+            50.237069926072,
+            35.73686503721335,
+            9.689102172851562,
+            -0.314488561040297
         ]
     },
-    "Beverages and Snacks Store": {
+    "Fresh and Beverages Store": {
         "building": "5th and Colorado",
         "coarse_type": "stores",
         "fine_types": [
@@ -262,7 +270,7 @@
             959.4064693450928,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
         "bounding_box": [
             -150.8711313336559,
             -40.593528950208295,
@@ -271,31 +279,6 @@
             39.745880443738045,
             62.901283264160156,
             -0.31915276708788637
-        ]
-    },
-    "Driven Performance Training": {
-        "building": "515 Congress Avenue # N",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "point_of_interest",
-            "health",
-            "establishment"
-        ],
-        "location": [
-            1083.6014881134033,
-            1001.5067653656006,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            83.6024169921875,
-            1.5064697265625,
-            159.8031005859375,
-            34.35401153564453,
-            34.197303771972656,
-            102.46208953857422,
-            -0.32215163111686707
         ]
     },
     "East 6th Street Bus Stop": {

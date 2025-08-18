@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Frank Walter Steinmeier's room at Marriott Hotel",
+        "building": "Marriott Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Vu Food",
+        "building": "Esplanade-Hof",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Diplomatic Summit",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Vu Food",
+        "end_place": "ABC Cube"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Diplomatic Summit",
+        "place": "ABC Cube",
+        "building": "ABC Cube",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "ABC Cube",
+        "end_place": "Green Papaya"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Green Papaya",
+        "building": "Stephansplatz 6",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Afternoon Session",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Green Papaya",
+        "end_place": "ABC Cube"
+    },
+    {
+        "type": "main",
+        "activity": "Continue Diplomatic Summit",
+        "place": "ABC Cube",
+        "building": "ABC Cube",
+        "start_time": "14:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Entertainment and Leisure Group",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "ABC Cube",
+        "end_place": "wineBANK Hamburg"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Live Performances",
+        "place": "wineBANK Hamburg",
+        "building": "Alte Oberpostdirektion",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Dinner",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "wineBANK Hamburg",
+        "end_place": "L\u00e4derach Chocolatier"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "L\u00e4derach Chocolatier",
+        "building": "Heine-Haus",
+        "start_time": "19:30:00",
+        "end_time": "20:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "20:30:00",
+        "end_time": "21:00:00",
+        "start_place": "L\u00e4derach Chocolatier",
+        "end_place": "Frank Walter Steinmeier's room at Marriott Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Prepare for Next Day",
+        "place": "Frank Walter Steinmeier's room at Marriott Hotel",
+        "building": "Marriott Hotel",
+        "start_time": "21:00:00",
+        "end_time": "23:59:59"
+    }
+]

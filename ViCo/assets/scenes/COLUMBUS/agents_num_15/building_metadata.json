@@ -99,38 +99,103 @@
             }
         ]
     },
-    "121 South High Street": {
-        "building_glb": "buildings_element.035.glb",
+    "Supreme Court of Ohio": {
+        "building_glb": "buildings_Supreme Court of Ohio.glb",
         "bounding_box": [
-            149.08356783537386,
-            -265.3463357707358,
-            129.36211013793948,
-            60.36457470768148,
-            19.31384845064123,
-            23.430870056152344,
-            0.1497175448353306
+            -4.291066646575928,
+            -203.0668487548828,
+            138.6997833251953,
+            36.43946838378906,
+            96.42694091796875,
+            57.17816162109375,
+            0.14592263102531433
         ],
         "places": [
             {
-                "name": "The Wing Dynasty",
-                "coarse_type": "food",
+                "name": "Supreme Court Law Library",
+                "coarse_type": "office",
                 "fine_types": [
-                    "restaurant",
+                    "library",
                     "point_of_interest",
-                    "food",
                     "establishment"
                 ],
                 "location": [
-                    1148.6179733276367,
-                    734.4808959960938,
+                    996.0639266967773,
+                    796.9352188110352,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            180.74319082346585,
-            -266.17208155317786
+            -25.544229460545292,
+            -190.63571011759933
+        ]
+    },
+    "21 East State Street #200": {
+        "building_glb": "buildings_element.008.glb",
+        "bounding_box": [
+            236.861083984375,
+            -266.1991271972656,
+            131.17864990234375,
+            57.40948486328125,
+            36.95060729980469,
+            26.738243103027344,
+            0.15537774562835693
+        ],
+        "places": [
+            {
+                "name": "Spaces",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1238.4708709716797,
+                    734.3105926513672,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            }
+        ],
+        "outdoor_xy": [
+            206.01708896687794,
+            -261.2384614840111
+        ]
+    },
+    "Ohio Department of Education": {
+        "building_glb": "buildings_Ohio Department of Education.glb",
+        "bounding_box": [
+            -38.69327163696289,
+            -62.34717559814453,
+            128.1385040283203,
+            50.71785354614258,
+            46.837554931640625,
+            39.892494201660156,
+            0.1470041275024414
+        ],
+        "places": [
+            {
+                "name": "Education Department Federal Asstnc",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    961.3073272705078,
+                    937.6542987823486,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -64.310012577817,
+            -69.30042852627078
         ]
     },
     "DoubleTree Suites by Hilton Hotel Columbus Downtown": {
@@ -158,7 +223,7 @@
                     861.9460525512695,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
             },
             {
                 "name": "The Capital Club",
@@ -177,7 +242,7 @@
                     861.9460525512695,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
@@ -192,8 +257,8 @@
                     861.9460525512695,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Elon Musk's room at The Capital Suites Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Andrew Ng's room at The Capital Suites Hotel"
             },
             {
                 "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
@@ -208,8 +273,8 @@
                     861.9460525512695,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Jensen Huang's room at The Capital Suites Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Cillian Murphy's room at The Capital Suites Hotel"
             },
             {
                 "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
@@ -224,13 +289,45 @@
                     861.9460525512695,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Yoshua Bengio's room at The Capital Suites Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Jeff Bezos's room at The Capital Suites Hotel"
+            },
+            {
+                "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1059.9933938980103,
+                    861.9460525512695,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Justin Bieber's room at The Capital Suites Hotel"
+            },
+            {
+                "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1059.9933938980103,
+                    861.9460525512695,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Lionel Messi's room at The Capital Suites Hotel"
             }
         ],
         "outdoor_xy": [
-            35.1228765308302,
-            -164.85747862604694
+            25.223220314952748,
+            -97.59505898298498
         ]
     },
     "Vern Riffe Center for Government and the Arts": {
@@ -260,11 +357,26 @@
                     -4
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            },
+            {
+                "name": "DAVIDSON THEATRE AT THE RIFFE CENTER THEATRES",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1104.2559204101562,
+                    817.3631744384766,
+                    -8
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            44.579984502469394,
-            -230.7188535562085
+            38.954811374231326,
+            -191.26595414869718
         ]
     },
     "Huntington Plaza": {
@@ -294,7 +406,7 @@
                     963.1019334793091,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Ohio University Govt Relations",
@@ -309,7 +421,7 @@
                     963.1019334793091,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             },
             {
                 "name": "Beverages and Snacks Store",
@@ -329,8 +441,8 @@
             }
         ],
         "outdoor_xy": [
-            61.48533383838365,
-            -27.186106940106963
+            14.78190139699929,
+            -25.2260785603704
         ]
     },
     "Wyandotte Building": {
@@ -346,22 +458,6 @@
         ],
         "places": [
             {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "car_dealer",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1092.125057220459,
-                    976.5497612953186,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-            },
-            {
                 "name": "Subway",
                 "coarse_type": "food",
                 "fine_types": [
@@ -376,12 +472,12 @@
                     976.5497612953186,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            102.62123884641346,
-            -27.44945579744686
+            89.24513075990409,
+            -13.22633310893049
         ]
     },
     "Huntington Bank Building": {
@@ -409,12 +505,46 @@
                     950.6182546615601,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            85.70694277553291,
-            -48.99817810473853
+            85.27118937326419,
+            -46.18418404559711
+        ]
+    },
+    "4 East Broad Street": {
+        "building_glb": "buildings_element.059.glb",
+        "bounding_box": [
+            173.5700225830078,
+            45.15076446533203,
+            144.7748565673828,
+            4.259963512420654,
+            21.850852966308594,
+            53.5498046875,
+            0.16671916842460632
+        ],
+        "places": [
+            {
+                "name": "The Peanut Shoppe",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1173.5431900024414,
+                    1045.1184215545654,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            172.45942563777305,
+            32.8891830417101
         ]
     },
     "8 on the Square": {
@@ -443,12 +573,81 @@
                     1046.3932247161865,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            180.05239339689433,
-            33.92716105045343
+            181.78054876165902,
+            34.186332055718026
+        ]
+    },
+    "Broad & High": {
+        "building_glb": "buildings_Broad & High.glb",
+        "bounding_box": [
+            166.05261411175098,
+            43.967276060920454,
+            126.45501708984375,
+            10.976721697699016,
+            22.061371240196983,
+            17.07745361328125,
+            0.16752845944205655
+        ],
+        "places": [
+            {
+                "name": "Black Kahawa Coffee: roastery + bar",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1166.6576919555664,
+                    1044.2722606658936,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            159.3497303254737,
+            44.69102315157202
+        ]
+    },
+    "LeVeque Tower": {
+        "building_glb": "buildings_LeVeque Tower.glb",
+        "bounding_box": [
+            34.11860275268555,
+            43.73653030395508,
+            185.08035278320312,
+            55.900447845458984,
+            55.97755813598633,
+            142.9798583984375,
+            0.1446971893310547
+        ],
+        "places": [
+            {
+                "name": "The Keep",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1034.117837190628,
+                    1040.8250842094421,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            3.998694551291573,
+            49.66553425419863
         ]
     },
     "40 West Gay Street": {
@@ -464,7 +663,7 @@
         ],
         "places": [
             {
-                "name": "Fresh and DM Store",
+                "name": "Fresh and Beverages Store",
                 "coarse_type": "stores",
                 "fine_types": [
                     "beauty_salon",
@@ -479,12 +678,12 @@
                     1182.317756652832,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
             }
         ],
         "outdoor_xy": [
-            29.53262006343209,
-            164.96112407836782
+            29.096597022426906,
+            164.8927177363926
         ]
     },
     "CSI International Building": {
@@ -512,7 +711,7 @@
                     1113.7678565979004,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             },
             {
                 "name": "Greater Columbus Women's Business Development Center -- Wbdc - Food Distribution Center",
@@ -527,12 +726,12 @@
                     1113.7678565979004,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            119.8558370459781,
-            125.23200638286961
+            80.65351266560582,
+            107.3898760251669
         ]
     },
     "The Citizens Building": {
@@ -548,6 +747,21 @@
         ],
         "places": [
             {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1088.1769924163818,
+                    1138.675464630127,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            },
+            {
                 "name": "The Multifamily company",
                 "coarse_type": "accommodation",
                 "fine_types": [
@@ -560,7 +774,7 @@
                     1138.675464630127,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
             },
             {
                 "name": "Accent Wine Parlor",
@@ -577,23 +791,7 @@
                     1138.675464630127,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            },
-            {
-                "building": "The Citizens Building",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1088.1769924163818,
-                    1138.675464630127,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Brian Carter's room at The Multifamily company"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "building": "The Citizens Building",
@@ -608,29 +806,13 @@
                     1138.675464630127,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Joe Anderson's room at The Multifamily company"
-            },
-            {
-                "building": "The Citizens Building",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1088.1769924163818,
-                    1138.675464630127,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Steve Johnson's room at The Multifamily company"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+                "name": "Adam Pierce's room at The Multifamily company"
             }
         ],
         "outdoor_xy": [
-            60.50552549142685,
-            124.71893961379351
+            60.94607575189986,
+            123.67660586270597
         ]
     },
     "19 North Pearl Street": {
@@ -660,12 +842,12 @@
                     1091.1103630065918,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            212.9700870203565,
-            97.64273616801218
+            154.27805060314572,
+            89.45065964054686
         ]
     },
     "46 North High Street": {
@@ -693,12 +875,12 @@
                     1137.3965072631836,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            147.34481048984574,
-            133.98044982330322
+            147.51716958905538,
+            132.8081054436769
         ]
     },
     "26 North High Street": {
@@ -728,12 +910,46 @@
                     1070.2487487792969,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            158.2795188628088,
-            59.05605090808832
+            158.43489718323664,
+            58.01304510111771
+        ]
+    },
+    "47 North Pearl Street": {
+        "building_glb": "buildings_element.039.glb",
+        "bounding_box": [
+            174.75808802608174,
+            151.96841372484968,
+            124.51150131225586,
+            57.50807030278581,
+            19.403159772770323,
+            17.58509063720703,
+            0.1478729979968653
+        ],
+        "places": [
+            {
+                "name": "Barroluco Argentine Comfort Food",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1175.5971221923828,
+                    1152.0074768066406,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            146.77880264699692,
+            137.8502424864724
         ]
     },
     "Central Police Headquarters": {
@@ -761,44 +977,12 @@
                     1233.6431350708008,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-            },
-            {
-                "building": "Central Police Headquarters",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    854.108039855957,
-                    1233.6431350708008,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
-                "name": "Hilary Clinton's room at Sincere"
-            },
-            {
-                "building": "Central Police Headquarters",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    854.108039855957,
-                    1233.6431350708008,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
-                "name": "Tom Holland's room at Sincere"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             }
         ],
         "outdoor_xy": [
-            -115.18658748625921,
-            227.03091071311573
+            -179.62729046075103,
+            259.638386113369
         ]
     },
     "Microliving at Long and Front": {
@@ -827,7 +1011,7 @@
                     1277.5515899658203,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Microliving at Long and Front",
@@ -840,7 +1024,7 @@
                     1277.5515899658203,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "Microliving at Long and Front",
@@ -853,8 +1037,8 @@
                     1277.5515899658203,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Elizabeth Mensah's room at Microliving at Long and Front"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Brycer Rodriguez's room at Microliving at Long and Front"
             },
             {
                 "building": "Microliving at Long and Front",
@@ -867,8 +1051,8 @@
                     1277.5515899658203,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Jody Petersen's room at Microliving at Long and Front"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Emily Johnson's room at Microliving at Long and Front"
             },
             {
                 "building": "Microliving at Long and Front",
@@ -881,8 +1065,8 @@
                     1277.5515899658203,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Leonard Park's room at Microliving at Long and Front"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Kate Novak's room at Microliving at Long and Front"
             },
             {
                 "building": "Microliving at Long and Front",
@@ -895,8 +1079,8 @@
                     1277.5515899658203,
                     -24
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Pika Hayes's room at Microliving at Long and Front"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Megan Carter's room at Microliving at Long and Front"
             },
             {
                 "building": "Microliving at Long and Front",
@@ -909,13 +1093,27 @@
                     1277.5515899658203,
                     -28
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Sophie Carlsen's room at Microliving at Long and Front"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Pika Hayes's room at Microliving at Long and Front"
+            },
+            {
+                "building": "Microliving at Long and Front",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    999.395791053772,
+                    1277.5515899658203,
+                    -32
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Zara Williams's room at Microliving at Long and Front"
             }
         ],
         "outdoor_xy": [
-            28.231325611189853,
-            285.5683064271722
+            -31.37621920558006,
+            282.9450979631078
         ]
     },
     "90 North Front Street": {
@@ -947,8 +1145,8 @@
             }
         ],
         "outdoor_xy": [
-            -19.25926297288958,
-            217.5366932735218
+            -17.70213993460444,
+            195.92780784334482
         ]
     },
     "78 North High Street": {
@@ -976,12 +1174,12 @@
                     1218.1978302001953,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            136.2406349481378,
-            210.87821540338638
+            136.40434538865952,
+            209.76689770649907
         ]
     },
     "Rankin Building": {
@@ -1014,8 +1212,8 @@
             }
         ],
         "outdoor_xy": [
-            51.768093008026106,
-            180.7723907387833
+            60.548935480349826,
+            171.17891023681432
         ]
     },
     "22 East Gay Street # 800": {
@@ -1043,7 +1241,7 @@
                     1198.7952880859375,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             },
             {
                 "building": "22 East Gay Street # 800",
@@ -1058,8 +1256,8 @@
                     1198.7952880859375,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Emily Johnson's room at Day Companies"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Jody Petersen's room at Day Companies"
             },
             {
                 "building": "22 East Gay Street # 800",
@@ -1074,13 +1272,29 @@
                     1198.7952880859375,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Shannon Steves's room at Day Companies"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Leonard Park's room at Day Companies"
+            },
+            {
+                "building": "22 East Gay Street # 800",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1186.4444580078125,
+                    1198.7952880859375,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Steve Johnson's room at Day Companies"
             }
         ],
         "outdoor_xy": [
-            198.42302744898902,
-            194.35754537039716
+            182.02067984258693,
+            187.45346203805693
         ]
     },
     "Residence Inn Columbus Downtown": {
@@ -1108,7 +1322,7 @@
                     1223.0526733398438,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "name": "Buckeye Bourbon House",
@@ -1123,12 +1337,12 @@
                     1223.0526733398438,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            228.9491992459661,
-            254.7815150435821
+            216.06555930309054,
+            192.61846271571835
         ]
     },
     "Huntington Center": {
@@ -1154,12 +1368,74 @@
                     894.9528617858887,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            111.58059644051409,
-            -141.67354470275214
+            140.0242993399786,
+            -137.4677384491741
+        ]
+    },
+    "Rhodes State Office Tower": {
+        "building_glb": "buildings_Rhodes State Office Tower.glb",
+        "bounding_box": [
+            254.40499775984117,
+            76.42954833013762,
+            213.3117218017578,
+            57.87644276850895,
+            56.5741799675417,
+            192.62942504882812,
+            0.1420721631979467
+        ],
+        "places": [
+            {
+                "name": "Rhodes State Office Tower",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    1253.5489120483398,
+                    1076.4738655090332,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            244.22340044311125,
+            45.38804610020832
+        ]
+    },
+    "10 West Broad": {
+        "building_glb": "buildings_10 West Broad.glb",
+        "bounding_box": [
+            102.70549241623631,
+            40.67213830445888,
+            139.2973518371582,
+            55.75751181809598,
+            31.34571377461935,
+            59.549461364746094,
+            0.13476075650669275
+        ],
+        "places": [
+            {
+                "name": "10 West Broad",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    1102.674446105957,
+                    1040.6755285263062,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            73.53495079141477,
+            40.87541646030657
         ]
     }
 }

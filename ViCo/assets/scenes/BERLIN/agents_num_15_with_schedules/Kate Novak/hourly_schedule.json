@@ -1,0 +1,114 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Kate Novak's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Gentle Restaurant",
+        "building": "Robert-Koch-Forum",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Prof. Dr. med. Dr. rer. nat. Ulf G\u00f6bel's office",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend medical classes",
+        "place": "Prof. Dr. med. Dr. rer. nat. Ulf G\u00f6bel",
+        "building": "Robert-Koch-Forum",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Gentle Restaurant",
+        "building": "Robert-Koch-Forum",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to volunteer at local clinic",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Gentle Restaurant",
+        "end_place": "August-Boeckh-Haus"
+    },
+    {
+        "type": "main",
+        "activity": "Volunteer at local clinic",
+        "place": "August-Boeckh-Haus",
+        "building": "August-Boeckh-Haus",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Friends forever galerie",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "August-Boeckh-Haus",
+        "end_place": "Friends forever galerie"
+    },
+    {
+        "type": "main",
+        "activity": "Visit art galleries with Berlin Art Enthusiasts",
+        "place": "Friends forever galerie",
+        "building": "Glinkastra\u00dfe 42",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Gentle Restaurant for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "Gentle Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Gentle Restaurant",
+        "building": "Robert-Koch-Forum",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Palais Theising",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Gentle Restaurant",
+        "end_place": "Kate Novak's room at Palais Theising"
+    },
+    {
+        "type": "main",
+        "activity": "Study and relax",
+        "place": "Kate Novak's room at Palais Theising",
+        "building": "Palais Theising",
+        "start_time": "19:30:00",
+        "end_time": "23:59:59"
+    }
+]

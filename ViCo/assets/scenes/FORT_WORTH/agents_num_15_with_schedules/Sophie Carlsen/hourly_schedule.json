@@ -1,0 +1,120 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Sophie Carlsen's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at La Perla",
+        "place": "La Perla",
+        "building": "Houston Place Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Picchi Pacchi Pizzeria",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Culinary class at Picchi Pacchi Pizzeria",
+        "place": "Picchi Pacchi Pizzeria",
+        "building": "Neil P Anderson Building",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Picchi Pacchi Pizzeria",
+        "place": "Picchi Pacchi Pizzeria",
+        "building": "Neil P Anderson Building",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Practice pizza dough recipe at Picchi Pacchi Pizzeria",
+        "place": "Picchi Pacchi Pizzeria",
+        "building": "Neil P Anderson Building",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Picchi Pacchi Pizzeria",
+        "end_place": "Fort Worth Public Library - Downtown Express"
+    },
+    {
+        "type": "main",
+        "activity": "Literature and Arts Society meeting",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "Lanham Fitness Center"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at Lanham Fitness Center",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to La Perla",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "La Perla"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at La Perla",
+        "place": "La Perla",
+        "building": "Houston Place Lofts",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and read at Sophie Carlsen's room",
+        "place": "Sophie Carlsen's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Sophie Carlsen's room at Houston Place Lofts",
+        "building": "Houston Place Lofts",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

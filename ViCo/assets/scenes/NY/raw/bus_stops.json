@@ -1,0 +1,144 @@
+{
+    "drive_routes": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 40.7516627,
+                    "lng": -73.9878232
+                },
+                "southwest": {
+                    "lat": 40.74681390000001,
+                    "lng": -73.9915524
+                }
+            },
+            "copyrights": "Map data \u00a92024 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "0.6 mi",
+                        "value": 961
+                    },
+                    "duration": {
+                        "text": "5 mins",
+                        "value": 320
+                    },
+                    "end_address": "27 W 30th St, New York, NY 10001, USA",
+                    "end_location": {
+                        "lat": 40.74681390000001,
+                        "lng": -73.988491
+                    },
+                    "start_address": "110 W 35th St, New York, NY 10018, USA",
+                    "start_location": {
+                        "lat": 40.7506944,
+                        "lng": -73.9878232
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.1 mi",
+                                "value": 222
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 63
+                            },
+                            "end_location": {
+                                "lat": 40.7516627,
+                                "lng": -73.9901258
+                            },
+                            "html_instructions": "Head <b>northwest</b> on <b>W 35th St</b> toward <b>7th Ave</b>/<wbr/><b>Fashion Ave</b>",
+                            "polyline": {
+                                "points": "ybvwFzvqbMK^O^CHWz@Ob@M^Mb@O`@Sn@e@zASp@"
+                            },
+                            "start_location": {
+                                "lat": 40.7506944,
+                                "lng": -73.9878232
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 mi",
+                                "value": 248
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 87
+                            },
+                            "end_location": {
+                                "lat": 40.74971550000001,
+                                "lng": -73.9915524
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>7th Ave</b>/<wbr/><b>Fashion Ave</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "{hvwFherbMv@j@l@`@\\RPJJH~@n@f@ZZTB@RN\\Tf@X"
+                            },
+                            "start_location": {
+                                "lat": 40.7516627,
+                                "lng": -73.9901258
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 mi",
+                                "value": 324
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 114
+                            },
+                            "end_location": {
+                                "lat": 40.7482994,
+                                "lng": -73.9881911
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>W 32nd St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "w|uwFdnrbMzAiEvCiJBKPg@Pw@"
+                            },
+                            "start_location": {
+                                "lat": 40.74971550000001,
+                                "lng": -73.9915524
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 mi",
+                                "value": 167
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 56
+                            },
+                            "end_location": {
+                                "lat": 40.74681390000001,
+                                "lng": -73.988491
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Broadway</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "{suwFdyqbMd@Bh@D`@Hd@Fd@FXDNBPFn@D"
+                            },
+                            "start_location": {
+                                "lat": 40.7482994,
+                                "lng": -73.9881911
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "ybvwFzvqbMsBnGy@jCSp@v@j@jAt@\\TfCbBp@d@f@XzAiEzCuJb@_BnAHfAP~@L`@Jn@D"
+            },
+            "summary": "7th Ave/Fashion Ave and W 32nd St",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ]
+}

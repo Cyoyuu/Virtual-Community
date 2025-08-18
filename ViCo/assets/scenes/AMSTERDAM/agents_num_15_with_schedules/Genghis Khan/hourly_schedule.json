@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep at Genghis Khan's room",
+        "place": "Genghis Khan's room at Hotel De Gerstekorrel",
+        "building": "Damstraat 22",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Sukasari gunununghalu",
+        "place": "Sukasari gunununghalu",
+        "building": "Damstraat 22",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Sukasari gunununghalu",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "Jonge Roelensteeg",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+        "place": null,
+        "building": null,
+        "start_time": "10:30:00",
+        "end_time": "11:00:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Flemish Cultural Center de Brakke Grond"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Flemish Cultural Center de Brakke Grond",
+        "place": "Flemish Cultural Center de Brakke Grond",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "11:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Royal Palace Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Flemish Cultural Center de Brakke Grond",
+        "end_place": "Royal Palace Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Explore historical sites with Historical Explorers",
+        "place": "Royal Palace Amsterdam",
+        "building": "Koninklijk Paleis",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Amsterdam Yoga Centre",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Royal Palace Amsterdam",
+        "end_place": "Amsterdam Yoga Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at Amsterdam Yoga Centre",
+        "place": "Amsterdam Yoga Centre",
+        "building": "Singel 300",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mavi 's International BV",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Amsterdam Yoga Centre",
+        "end_place": "Mavi 's International BV"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Mavi 's International BV",
+        "place": "Mavi 's International BV",
+        "building": "Rokin 20",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel De Gerstekorrel",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Mavi 's International BV",
+        "end_place": "Genghis Khan's room at Hotel De Gerstekorrel"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and reflect on the day",
+        "place": "Genghis Khan's room at Hotel De Gerstekorrel",
+        "building": "Damstraat 22",
+        "start_time": "19:00:00",
+        "end_time": "23:59:59"
+    }
+]

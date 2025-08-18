@@ -1,0 +1,190 @@
+{
+    "name": "Alex Jefferson",
+    "first_name": "Alex",
+    "last_name": "Jefferson",
+    "age": 30,
+    "innate": "security, conformity, benevolence",
+    "learned": "I am a librarian at the Lamont Library, where I help students and faculty with research resources. I enjoy reading historical novels.",
+    "currently": "I am organizing a workshop on digital archiving techniques.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Harvard Business Network",
+            "description": "A group of business professionals sharing insights and strategies for success.",
+            "place": "Capital One Caf\u00e9",
+            "members": [
+                "Alex Jefferson",
+                "Louise Roberts",
+                "Steve Johnson"
+            ],
+            "daily_activity": "networking and sharing business strategies from 17:00 to 19:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Alex Jefferson's room at Colliers International Rems",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Alex Jefferson's room at Colliers International Rems",
+            "building": "8 Brattle Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Cardullo's Gourmet Shoppe",
+            "building": "8 Brattle Street",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lamont Library",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work at Lamont Library",
+            "place": "Lamont Library",
+            "building": "Lamont Library",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Harvard Dining Services",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Lamont Library",
+            "end_place": "Harvard Dining Services"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Harvard Dining Services",
+            "building": "Barker Center",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lamont Library",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Harvard Dining Services",
+            "end_place": "Lamont Library"
+        },
+        {
+            "type": "main",
+            "activity": "Organize workshop on digital archiving techniques",
+            "place": "Lamont Library",
+            "building": "Lamont Library",
+            "start_time": "13:00:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Capital One Caf\u00e9",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Lamont Library",
+            "end_place": "Capital One Caf\u00e9"
+        },
+        {
+            "type": "main",
+            "activity": "Harvard Business Network meeting",
+            "place": "Capital One Caf\u00e9",
+            "building": "24 John F. Kennedy Street",
+            "start_time": "17:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Capital One Caf\u00e9",
+            "building": "24 John F. Kennedy Street",
+            "start_time": "19:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Carpenter Center for the Visual Arts",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Capital One Caf\u00e9",
+            "end_place": "Carpenter Center for the Visual Arts"
+        },
+        {
+            "type": "main",
+            "activity": "Enjoy an art exhibition",
+            "place": "Carpenter Center for the Visual Arts",
+            "building": "Carpenter Center",
+            "start_time": "20:00:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Alex Jefferson's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "Carpenter Center for the Visual Arts",
+            "end_place": "Alex Jefferson's room at Colliers International Rems"
+        },
+        {
+            "type": "main",
+            "activity": "Read a historical novel",
+            "place": "Alex Jefferson's room at Colliers International Rems",
+            "building": "8 Brattle Street",
+            "start_time": "22:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for bed",
+            "place": "Alex Jefferson's room at Colliers International Rems",
+            "building": "8 Brattle Street",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Lamont Library",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

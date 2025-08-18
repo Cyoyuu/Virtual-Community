@@ -1,0 +1,431 @@
+{
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Louise Roberts's room at Lucas Apartment",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Mark Zuckerberg": {
+        "age": 30,
+        "living_place": "Mark Zuckerberg's room at AC Hotel Bratislava Old Town",
+        "appearance": "ViCo/assets/imgs/avatars/Mark Zuckerberg.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Roth Miller's room at Metropolitan Star",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+        "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+        "members": [
+            "Louise Roberts",
+            "Mark Zuckerberg",
+            "Tim Cook",
+            "Roth Miller"
+        ],
+        "daily_activity": "discussing technology trends from 17:00 to 18:30"
+    },
+    "Tim Cook's room at Hotel Tatra": {
+        "building": "Hotel Tatra",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Tim Cook's room at Hotel Tatra",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "Hotel Tatra": {
+        "building": "Hotel Tatra",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko": {
+        "building": "\u0160tetinova 143/2",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            788.855842590332,
+            912.095760345459,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -211.1441650390625,
+            -87.89307403564453,
+            119.9660873413086,
+            12.90089225769043,
+            30.10422134399414,
+            11.238212585449219,
+            -0.22940018773078918
+        ]
+    },
+    "St. Elizabeth College of Health and Social Work": {
+        "building": "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1128.216739654541,
+            997.8481979370117,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            124.86914071920779,
+            -2.126960021792844,
+            123.26166915893555,
+            25.194154249440885,
+            30.301794045956495,
+            17.05878448486328,
+            0.6814667858432252
+        ]
+    },
+    "Slovak Restaurant": {
+        "building": "Hotel Tatra",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "Le Petit Cafe & Restaurant": {
+        "building": "Such\u00e9 m\u00fdto 510/19",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.4679737091064,
+            823.8547134399414,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -51.808871476344635,
+            -176.08763228338887,
+            119.46907806396486,
+            24.746865212699813,
+            24.387481023760454,
+            11.815887451171875,
+            0.27431105438881775
+        ]
+    },
+    "OMA fine foods & wine": {
+        "building": "Konventn\u00e1 6",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            788.942024230957,
+            732.297966003418,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -211.0579833984375,
+            -269.3438415527344,
+            121.36639404296875,
+            19.843809127807617,
+            23.603483200073242,
+            19.838844299316406,
+            0.40836650133132935
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Such\u00e9 m\u00fdto 510/19",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "hair_care",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.4679737091064,
+            823.8547134399414,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -51.808871476344635,
+            -176.08763228338887,
+            119.46907806396486,
+            24.746865212699813,
+            24.387481023760454,
+            11.815887451171875,
+            0.27431105438881775
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Konventn\u00e1 811 03",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            786.8300170898438,
+            761.0464324951172,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -212.9397686050872,
+            -238.95356097048625,
+            120.69901275634767,
+            32.129822056454216,
+            16.31641225335476,
+            15.736007690429688,
+            0.3885480091310284
+        ]
+    },
+    "KINO TATRA": {
+        "building": "Hotel Tatra",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "movie_theater",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -8
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "Hod\u017eovo n\u00e1mestie Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            89.6687841327635,
+            -110.04229442443317
+        ],
+        "rotation": -0.753325421791811,
+        "bounding_box": null
+    },
+    "\u0160tetinova Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -233.40005217414816,
+            -155.00664649639714
+        ],
+        "rotation": 2.1172461786750985,
+        "bounding_box": null
+    },
+    "Panensk\u00e1 Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -132.46840279007986,
+            -140.8212360800419
+        ],
+        "rotation": 2.14118163697676,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            247.52892989801015,
+            -125.3516310895381
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -73.72702856905617,
+            -138.602181229165
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -279.3872891726143,
+            -36.23969947565152
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            217.80103525537174,
+            42.488212927284344
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.0017833264783,
+            -232.77288073898328
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -244.1337320355244,
+            -163.91799842996238
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -128.19851995173985,
+            100.2670809518925
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Panensk\u00e1": [
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hod\u017eovo n\u00e1mestie": [
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

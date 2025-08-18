@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Belair",
+        "building": "Belair",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Maison St. Michel",
+        "building": "Boulevard de l'Imp\u00e9ratrice 62",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Maison St. Michel",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new feature for web application",
+        "place": "Fresh and Beverages Store",
+        "building": "Marquis",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to L'art de la Pizza",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "L'art de la Pizza"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "L'art de la Pizza",
+        "building": "Rue de la Montagne 64",
+        "start_time": "12:40:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "L'art de la Pizza",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Continue developing new feature",
+        "place": "Fresh and Beverages Store",
+        "building": "Marquis",
+        "start_time": "14:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators Club",
+        "place": "Fresh and Beverages Store",
+        "building": "Marquis",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to moods",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "moods"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to moods",
+        "place": null,
+        "building": null,
+        "start_time": "18:10:00",
+        "end_time": "18:30:00",
+        "start_place": null,
+        "end_place": "moods"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "moods",
+        "building": "Rue des Colonies 6",
+        "start_time": "18:30:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Parc de Bruxelles",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "moods",
+        "end_place": "Parc de Bruxelles"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
+        "start_time": "20:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Roth Miller's room at Belair",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Parc de Bruxelles",
+        "end_place": "Roth Miller's room at Belair"
+    },
+    {
+        "type": "main",
+        "activity": "Play video games",
+        "place": "Roth Miller's room at Belair",
+        "building": "Belair",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Roth Miller's room at Belair",
+        "building": "Belair",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

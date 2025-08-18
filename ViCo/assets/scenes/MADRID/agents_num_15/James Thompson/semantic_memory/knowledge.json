@@ -1,0 +1,374 @@
+{
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Hermanos Revilla S.A.",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Madrid Culinary Club"
+        ]
+    },
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Alquiler Aulas Madrid",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Madrid Culinary Club"
+        ]
+    },
+    "Madrid Culinary Club": {
+        "description": "A group of food enthusiasts who enjoy cooking, tasting, and discussing culinary arts.",
+        "place": "Restaurante Casa America",
+        "members": [
+            "Joe Anderson",
+            "Kate Novak",
+            "James Thompson"
+        ],
+        "daily_activity": "cooking and tasting new recipes from 18:00 to 20:00"
+    },
+    "James Thompson's room at Banco Pastor": {
+        "building": "Banco Pastor",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            894.14111328125,
+            954.4608287811279,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "James Thompson's room at Banco Pastor",
+        "bounding_box": [
+            -105.85377704305841,
+            -45.575017160195145,
+            111.94186019897461,
+            51.479299837704055,
+            25.904959767237756,
+            29.60785675048828,
+            -0.009845289859287237
+        ]
+    },
+    "Chip\u00e9 Club - Bar clandestino Madrid": {
+        "building": "Paseo de Recoletos",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1001.0358138084412,
+            1238.9425201416016,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            0.9838162426465749,
+            238.94030685135232,
+            116.43093872070312,
+            17.73265966695145,
+            48.035493411200264,
+            29.082916259765625,
+            -0.29340665030088114
+        ]
+    },
+    "Restaurante Casa America": {
+        "building": "Plaza Cibeles",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            983.6115970611572,
+            750.4559173583984,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -16.300989151000977,
+            -250.48870849609375,
+            102.1541748046875,
+            12.776013374328613,
+            29.475526809692383,
+            13.409934997558594,
+            -0.17329157888889313
+        ]
+    },
+    "Sala Recoletos - Fundaci\u00f3n MAPFRE": {
+        "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            919.7438831329346,
+            1029.5676300525665,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -82.22857281986984,
+            28.175066932454314,
+            109.62540817260742,
+            47.564611938743475,
+            49.57584921157312,
+            21.949424743652344,
+            -0.35154400613995723
+        ]
+    },
+    "Studio42": {
+        "building": "Edificio Restaura",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1059.319423675537,
+            1034.0926558971405,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            58.05340261066306,
+            35.47135718935563,
+            113.21757888793945,
+            37.62846632369809,
+            48.976330149421514,
+            29.26738739013672,
+            -0.29621027468419364
+        ]
+    },
+    "VP Jard\u00edn de Recoletos": {
+        "building": "Calle de Gil de Santiva\u00f1es",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "parking",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.8162384033203,
+            971.0767664909363,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            186.8205108642578,
+            -28.92323350906371,
+            113.29517364501953,
+            25.314533185951518,
+            24.83850642830309,
+            19.035842895507812,
+            -0.28649533353081275
+        ]
+    },
+    "Mahercatering": {
+        "building": "Edificio Restaura",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1059.319423675537,
+            1034.0926558971405,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            58.05340261066306,
+            35.47135718935563,
+            113.21757888793945,
+            37.62846632369809,
+            48.976330149421514,
+            29.26738739013672,
+            -0.29621027468419364
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Calle del Almirante",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            889.2098655700684,
+            1019.3210904598236,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -110.50116673312989,
+            18.291978705139133,
+            109.88446044921875,
+            14.024893962766411,
+            28.079143925150717,
+            19.694229125976562,
+            -0.23369401009728238
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Comunidad de Madrid",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1069.5130653381348,
+            730.9863357543945,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            67.25865173339844,
+            -267.33837890625,
+            112.33528137207031,
+            40.547847747802734,
+            33.45376968383789,
+            28.37061309814453,
+            0.1601802110671997
+        ]
+    },
+    "Calle del Marqu\u00e9s del Duero Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -58.0202809454414,
+            -218.57037871714718
+        ],
+        "rotation": -1.7406466506939888,
+        "bounding_box": null
+    },
+    "Calle de Gil de Santiva\u00f1es Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            147.0734273115021,
+            -4.309514189558893
+        ],
+        "rotation": 1.2901675503266337,
+        "bounding_box": null
+    },
+    "Calle del Marqu\u00e9s de la Ensenada Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -119.00400701601724,
+            126.13158515816286
+        ],
+        "rotation": 2.8536377698847484,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -146.95564288226248,
+            61.05785866076525
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            155.55199020286358,
+            -96.74209822714788
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -152.03367697953678,
+            -310.89190558203575
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -0.20704627128564979,
+            179.78328094249733
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -78.7641995305332,
+            -98.62504570361148
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Calle del Marqu\u00e9s de la Ensenada": [
+            {
+                "stop_name": "Calle del Marqu\u00e9s del Duero Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Calle de Gil de Santiva\u00f1es Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Calle del Marqu\u00e9s de la Ensenada Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ],
+        "To Calle del Marqu\u00e9s del Duero": [
+            {
+                "stop_name": "Calle del Marqu\u00e9s de la Ensenada Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Calle de Gil de Santiva\u00f1es Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            },
+            {
+                "stop_name": "Calle del Marqu\u00e9s del Duero Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:10",
+                "last_bus": "22:10"
+            }
+        ]
+    }
+}

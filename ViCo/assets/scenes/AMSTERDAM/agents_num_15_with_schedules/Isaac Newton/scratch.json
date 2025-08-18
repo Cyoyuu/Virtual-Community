@@ -1,0 +1,177 @@
+{
+    "name": "Isaac Newton",
+    "first_name": "Isaac",
+    "last_name": "Newton",
+    "age": 65,
+    "innate": "self-direction, universalism, achievement",
+    "learned": "I am a renowned physicist and mathematician known for my laws of motion and universal gravitation.",
+    "currently": "I am visiting Amsterdam to discuss scientific theories with local scholars.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Historical Explorers",
+            "description": "A group of individuals interested in exploring historical sites and learning about history.",
+            "place": "Royal Palace Amsterdam",
+            "members": [
+                "Andrew Ng",
+                "Genghis Khan",
+                "Isaac Newton"
+            ],
+            "daily_activity": "exploring historical sites from 13:00 to 15:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+            "building": "Damrak 93-94",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "BEMS Restaurant",
+            "building": "Nieuwezijds Voorburgwal 171",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "BEMS Restaurant",
+            "end_place": "Flemish Cultural Center de Brakke Grond"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss scientific theories with local scholars",
+            "place": "Flemish Cultural Center de Brakke Grond",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Royal Palace Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Flemish Cultural Center de Brakke Grond",
+            "end_place": "Royal Palace Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Explore historical sites with Historical Explorers",
+            "place": "Royal Palace Amsterdam",
+            "building": "Koninklijk Paleis",
+            "start_time": "13:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Royal Palace Amsterdam",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind with yoga",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "15:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to BEMS Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "BEMS Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "BEMS Restaurant",
+            "building": "Nieuwezijds Voorburgwal 171",
+            "start_time": "17:30:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Hotel Amsterdam De Roode Leeuw",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "BEMS Restaurant",
+            "end_place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw"
+        },
+        {
+            "type": "main",
+            "activity": "Reflect on the day's discussions and theories",
+            "place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+            "building": "Damrak 93-94",
+            "start_time": "19:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Snacks and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:10:00",
+            "start_place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+            "end_place": "Snacks and DM Store"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "Snacks and DM Store",
+            "building": "Industria",
+            "start_time": "23:10:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

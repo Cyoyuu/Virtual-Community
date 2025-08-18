@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Usain Bolt's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Usain Bolt's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Usain Bolt's room at The Driskill",
+        "end_place": "Fresh and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and DM Store",
+        "place": "Fresh and DM Store",
+        "building": "CVS Pharmacy",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mediterranean Resources LLC",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Fresh and DM Store",
+        "end_place": "Mediterranean Resources LLC"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Mediterranean Resources LLC",
+        "building": "401 Congress Avenue # 2900",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Wild About Music",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Mediterranean Resources LLC",
+        "end_place": "Wild About Music"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Wild About Music",
+        "place": "Wild About Music",
+        "building": "Wild About Music",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Hideout Theatre",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Wild About Music",
+        "end_place": "The Hideout Theatre"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Hideout Theatre",
+        "building": "The Hideout Coffee House",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Wild About Music",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "The Hideout Theatre",
+        "end_place": "Wild About Music"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Wild About Music",
+        "place": "Wild About Music",
+        "building": "Wild About Music",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Usain Bolt's room at The Driskill",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Wild About Music",
+        "end_place": "Usain Bolt's room at The Driskill"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Usain Bolt's room at The Driskill",
+        "building": "The Driskill",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,186 @@
+{
+    "name": "Leonard Park",
+    "first_name": "Leonard",
+    "last_name": "Park",
+    "age": 26,
+    "innate": "achievement, self-direction, stimulation",
+    "learned": "I am a software developer at Union 346 Apartments, working on innovative tech solutions. I enjoy coding and gaming.",
+    "currently": "I am developing a new app to enhance user experience.",
+    "lifestyle": "I go to bed around 01:00, wake up around 09:00, eat dinner around 20:00",
+    "groups": [
+        {
+            "name": "Tech Innovators Group",
+            "description": "A network of tech enthusiasts and professionals exploring new technologies.",
+            "place": "Prospect Union Square",
+            "members": [
+                "Isaac Newton",
+                "Joe Anderson",
+                "Leonard Park",
+                "Tim Cook"
+            ],
+            "daily_activity": "brainstorming tech solutions from 18:00 to 19:30"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Leonard Park's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Leonard Park's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on app development",
+            "place": "Leonard Park's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Life Alive Organic Cafe Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Leonard Park's room at Union 346 Apartments",
+            "end_place": "Life Alive Organic Cafe Union Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Life Alive Organic Cafe Union Square",
+            "place": "Life Alive Organic Cafe Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lincoln Park",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Life Alive Organic Cafe Union Square",
+            "end_place": "Lincoln Park"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy some fresh air",
+            "place": "Lincoln Park",
+            "building": "open space",
+            "start_time": "13:30:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Lincoln Park",
+            "end_place": "Leonard Park's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Continue app development",
+            "place": "Leonard Park's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "15:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Prospect Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Leonard Park's room at Union 346 Apartments",
+            "end_place": "Prospect Union Square"
+        },
+        {
+            "type": "main",
+            "activity": "Brainstorming session with Tech Innovators Group",
+            "place": "Prospect Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "18:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Johnny Boy for dinner",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Prospect Union Square",
+            "end_place": "Johnny Boy"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Johnny Boy",
+            "place": "Johnny Boy",
+            "building": "257 Washington Street",
+            "start_time": "20:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Johnny Boy",
+            "end_place": "Leonard Park's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Evening gaming session",
+            "place": "Leonard Park's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "21:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for bed",
+            "place": "Leonard Park's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Union 346 Apartments",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

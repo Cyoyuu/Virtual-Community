@@ -1,0 +1,411 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Urbanz Accomodation Christchurch",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Catalyst Group - Christchurch",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Culinary Creators": {
+        "description": "A group of chefs and food enthusiasts who meet to share recipes and culinary techniques.",
+        "place": "Chiwahwah Mexican Cantina Bar",
+        "members": [
+            "Adam Pierce",
+            "Brycer Rodriguez",
+            "Kate Novak",
+            "Elizabeth Mensah"
+        ],
+        "daily_activity": "sharing recipes and cooking techniques from 17:00 to 19:00"
+    },
+    "Elizabeth Mensah's room at Catalyst Group - Christchurch": {
+        "building": "Kensington House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "general_contractor",
+            "finance",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1155.179183959961,
+            817.0445785522461,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Elizabeth Mensah's room at Catalyst Group - Christchurch",
+        "bounding_box": [
+            155.30100936792724,
+            -183.00731106290766,
+            116.68766403198244,
+            16.843895278845515,
+            27.19353599473631,
+            8.345420837402344,
+            0.008965139674897496
+        ]
+    },
+    "Rauora Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1264.0135744674103,
+            837.0244306087668,
+            -0.007541792011437565
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Chiwahwah Mexican Cantina Bar": {
+        "building": "136 Oxford Terrace",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            738.6576385498047,
+            853.1593742370605,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -261.39120368332027,
+            -146.87176429642975,
+            120.3871078491211,
+            46.46012754452312,
+            54.21283190387791,
+            15.643783569335923,
+            0.0029456287286576733
+        ]
+    },
+    "RapidRhythm": {
+        "building": "T\u016branga (Christchurch Central Library)",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            981.2879409790039,
+            1108.6643829345703,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -18.712087777375316,
+            108.66430752466928,
+            126.1923713684082,
+            68.55356396754661,
+            25.158120884977674,
+            29.246849060058594,
+            -2.5093479815716326e-06
+        ]
+    },
+    "Heritage Health Club": {
+        "building": "Old Government Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -20
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Crowne Plaza Christchurch by IHG": {
+        "building": "Crowne Plaza Christchurch",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            952.5873069763184,
+            1231.9229583740234,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "bounding_box": [
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "Kensington House": {
+        "building": "Kensington House",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1155.179183959961,
+            817.0445785522461,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            155.30100936792724,
+            -183.00731106290766,
+            116.68766403198244,
+            16.843895278845515,
+            27.19353599473631,
+            8.345420837402344,
+            0.008965139674897496
+        ]
+    },
+    "Twenty Seven Steps": {
+        "building": "Twenty Seven Steps",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "restaurant"
+        ],
+        "location": [
+            1107.512550354004,
+            1183.1642761230469,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            107.50739741614163,
+            183.1642926061478,
+            115.49893569946288,
+            7.853107100430233,
+            4.664383650092839,
+            7.722816467285156,
+            0.0056542349673897345
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "268 High Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            987.172063678503,
+            865.6374130249023,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -11.011819050352628,
+            -129.85205161795054,
+            116.29160308837892,
+            25.04320046790334,
+            31.53070537179174,
+            7.04296875,
+            -0.784433731861729
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "ANZ Centre",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            973.6704540252686,
+            808.1239929199219,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -26.306063443600344,
+            -191.89410270839073,
+            120.30231857299806,
+            65.72455772942858,
+            72.21670810679366,
+            15.000328063964844,
+            -0.000661822555506542
+        ]
+    },
+    "Gloucester Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            57.12867876988341,
+            116.53646795470775
+        ],
+        "rotation": 3.137767476010901,
+        "bounding_box": null
+    },
+    "Colombo Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            56.29208670534897,
+            28.563349604132178
+        ],
+        "rotation": -3.1393365052238997,
+        "bounding_box": null
+    },
+    "Cambridge Terrace Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -372.361714314352,
+            -203.89736754714133
+        ],
+        "rotation": 3.12841219057123,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -246.50746527210558,
+            -2.463151061085895
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.488766660426808,
+            -173.5865310534407
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -192.05062614359377,
+            -168.3787989896405
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.50697073452898,
+            183.7728118125115
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            167.6508060845298,
+            -170.38236131376215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.73054451666508,
+            192.61921121320998
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Cambridge Terrace": [
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Gloucester Street": [
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+        "building": "Damrak 93-94",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "BEMS Restaurant",
+        "building": "Nieuwezijds Voorburgwal 171",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "BEMS Restaurant",
+        "end_place": "Flemish Cultural Center de Brakke Grond"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss scientific theories with local scholars",
+        "place": "Flemish Cultural Center de Brakke Grond",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Royal Palace Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Flemish Cultural Center de Brakke Grond",
+        "end_place": "Royal Palace Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Explore historical sites with Historical Explorers",
+        "place": "Royal Palace Amsterdam",
+        "building": "Koninklijk Paleis",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Amsterdam Yoga Centre",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Royal Palace Amsterdam",
+        "end_place": "Amsterdam Yoga Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind with yoga",
+        "place": "Amsterdam Yoga Centre",
+        "building": "Singel 300",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to BEMS Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Amsterdam Yoga Centre",
+        "end_place": "BEMS Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "BEMS Restaurant",
+        "building": "Nieuwezijds Voorburgwal 171",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Amsterdam De Roode Leeuw",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "BEMS Restaurant",
+        "end_place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw"
+    },
+    {
+        "type": "main",
+        "activity": "Reflect on the day's discussions and theories",
+        "place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+        "building": "Damrak 93-94",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Snacks and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:10:00",
+        "start_place": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw",
+        "end_place": "Snacks and DM Store"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Snacks and DM Store",
+        "building": "Industria",
+        "start_time": "23:10:00",
+        "end_time": "23:59:59"
+    }
+]

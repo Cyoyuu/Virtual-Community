@@ -3,6 +3,21 @@
         "bounding_box": null,
         "places": [
             {
+                "name": "Lomonossow-Linde",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1364.0601512525918,
+                    640.8604669508123,
+                    -0.020483291323955655
+                ],
+                "scene": null
+            },
+            {
                 "name": "Dorotheenstra\u00dfe Bus Stop",
                 "coarse_type": "transit",
                 "fine_type": "bus stop",
@@ -130,12 +145,45 @@
                     742.9582595825195,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -92.0546552162098,
-            -232.0081340376865
+            -81.11955591660151,
+            -265.65421208462726
+        ]
+    },
+    "Glinkastra\u00dfe 30": {
+        "building_glb": "buildings_element.2714.glb",
+        "bounding_box": [
+            282.8455266759489,
+            -287.01308378672064,
+            114.89515686035158,
+            19.153817999697633,
+            7.455263266501914,
+            23.53887939453125,
+            0.09032472245426922
+        ],
+        "places": [
+            {
+                "name": "Rathsack Geb\u00e4udeservice GmbH",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1282.8489990234375,
+                    712.7369079589844,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            272.4937609498464,
+            -289.97690320967126
         ]
     },
     "Behrenstra\u00dfe 1C": {
@@ -163,7 +211,7 @@
                     776.5162048339844,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             },
             {
                 "name": "Viale dei Tigli",
@@ -180,7 +228,7 @@
                     776.5162048339844,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "building": "Behrenstra\u00dfe 1C",
@@ -195,13 +243,77 @@
                     776.5162048339844,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
                 "name": "Brian Carter's room at Apartments at Brandenburg Gate"
+            },
+            {
+                "building": "Behrenstra\u00dfe 1C",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    892.7398567199707,
+                    776.5162048339844,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Chad Thompson's room at Apartments at Brandenburg Gate"
+            },
+            {
+                "building": "Behrenstra\u00dfe 1C",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    892.7398567199707,
+                    776.5162048339844,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Joe Anderson's room at Apartments at Brandenburg Gate"
+            },
+            {
+                "building": "Behrenstra\u00dfe 1C",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    892.7398567199707,
+                    776.5162048339844,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Leonard Park's room at Apartments at Brandenburg Gate"
+            },
+            {
+                "building": "Behrenstra\u00dfe 1C",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    892.7398567199707,
+                    776.5162048339844,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Louise Roberts's room at Apartments at Brandenburg Gate"
             }
         ],
         "outdoor_xy": [
-            -133.20092500277826,
-            -240.60317294211532
+            -121.40441373897387,
+            -239.162468693746
         ]
     },
     "Behrenstra\u00dfe 72": {
@@ -230,7 +342,7 @@
                     807.3371734619141,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "name": "Beverages and DM Store",
@@ -250,57 +362,8 @@
             }
         ],
         "outdoor_xy": [
-            -193.709890993588,
-            -205.13264782347642
-        ]
-    },
-    "Akademie der K\u00fcnste": {
-        "building_glb": "buildings_Akademie der K\u00fcnste.glb",
-        "bounding_box": [
-            -187.87543437758413,
-            -142.2299128660116,
-            111.32804489135742,
-            35.73794942676991,
-            81.96167813201629,
-            15.052940368652344,
-            0.1076321516413292
-        ],
-        "places": [
-            {
-                "name": "India Club Berlin",
-                "coarse_type": "food",
-                "fine_types": [
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    812.0868530273438,
-                    857.7762260437012,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            },
-            {
-                "name": "Memorial",
-                "coarse_type": "entertainment",
-                "fine_types": [
-                    "museum",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    812.0868530273438,
-                    857.7762260437012,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            -175.7087694399837,
-            -98.69012251777299
+            -170.861700375464,
+            -202.52393376311852
         ]
     },
     "im Bundesgesundheitsministerium": {
@@ -328,12 +391,12 @@
                     800.3695373535156,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            205.3867651958621,
-            -239.04789089777907
+            156.11148096488276,
+            -187.00062083808353
         ]
     },
     "Glinkastra\u00dfe 42": {
@@ -361,12 +424,45 @@
                     818.6903610229492,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            261.7566550769627,
-            -179.9603164349183
+            262.88646752248275,
+            -190.83731679700242
+        ]
+    },
+    "Axica Convention Center": {
+        "building_glb": "buildings_Axica Convention Center.glb",
+        "bounding_box": [
+            -225.2235691353758,
+            -156.4101509581565,
+            118.51242065429688,
+            41.85316552307418,
+            102.14029349837881,
+            29.452484130859375,
+            0.10747672081605907
+        ],
+        "places": [
+            {
+                "name": "Axica Convention Center",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    774.7564239501953,
+                    843.7793846130371,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -229.71530113064637,
+            -209.26711358685512
         ]
     },
     "Adlon Kempinski": {
@@ -394,7 +490,7 @@
                     868.8953990936279,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             },
             {
                 "name": "Rabitz Property Consulting",
@@ -409,7 +505,7 @@
                     868.8953990936279,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             },
             {
                 "name": "Lorenz Adlon Esszimmer",
@@ -425,7 +521,7 @@
                     868.8953990936279,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "name": "Beverages and Snacks Store",
@@ -446,8 +542,8 @@
             }
         ],
         "outdoor_xy": [
-            -152.1704738775624,
-            -64.27882710339127
+            -133.76087711883764,
+            -198.51802229718757
         ]
     },
     "Palais Theising": {
@@ -475,7 +571,7 @@
                     837.3975067138672,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             },
             {
                 "name": "Palais Theising",
@@ -488,7 +584,7 @@
                     837.3975067138672,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             },
             {
                 "building": "Palais Theising",
@@ -501,8 +597,8 @@
                     837.3975067138672,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Elizabeth Mensah's room at Palais Theising"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Brycer Rodriguez's room at Palais Theising"
             },
             {
                 "building": "Palais Theising",
@@ -515,7 +611,7 @@
                     837.3975067138672,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
                 "name": "Eve By J Gonzales's room at Palais Theising"
             },
             {
@@ -529,8 +625,8 @@
                     837.3975067138672,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Megan Carter's room at Palais Theising"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Kate Novak's room at Palais Theising"
             },
             {
                 "building": "Palais Theising",
@@ -543,8 +639,8 @@
                     837.3975067138672,
                     -24
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Olivia Adams's room at Palais Theising"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Pika Hayes's room at Palais Theising"
             },
             {
                 "building": "Palais Theising",
@@ -557,27 +653,13 @@
                     837.3975067138672,
                     -28
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
                 "name": "Sophie Carlsen's room at Palais Theising"
-            },
-            {
-                "building": "Palais Theising",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1270.7462768554688,
-                    837.3975067138672,
-                    -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Zara Williams's room at Palais Theising"
             }
         ],
         "outdoor_xy": [
-            263.61634024199816,
-            -153.29429991925906
+            260.1973010465472,
+            -163.30238272728292
         ]
     },
     "Matthias-Erzberger-Haus": {
@@ -607,11 +689,29 @@
                     -4
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            },
+            {
+                "name": "Caf\u00e9 LebensArt",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    956.9866218566895,
+                    917.629337310791,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -84.05639629079188,
-            -99.31711341946897
+            -86.33695681052919,
+            -79.63218949499658
         ]
     },
     "Unter den Linden 63-65": {
@@ -639,12 +739,12 @@
                     908.2746448516846,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            112.25130248681069,
-            -149.8594809994115
+            85.36802929763775,
+            -152.8737166890888
         ]
     },
     "Pariser Platz 4A": {
@@ -673,12 +773,27 @@
                     1017.6247839927673,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Regus",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    830.5794143676758,
+                    1017.6247839927673,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             }
         ],
         "outdoor_xy": [
-            -162.96355763013162,
-            -7.868340288680969
+            -160.4623449766685,
+            -7.591452247087075
         ]
     },
     "Europ\u00e4isches Haus": {
@@ -707,7 +822,7 @@
                     1020.8131468296051,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             },
             {
                 "name": "Dunkin' Donuts",
@@ -726,12 +841,25 @@
                     1020.8131468296051,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Europ\u00e4isches Haus",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    859.9858245849609,
+                    1020.8131468296051,
+                    -12
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -125.52233743834195,
-            7.1878013187805045
+            -144.6368716871197,
+            -5.8378489626165715
         ]
     },
     "Unter den Linden 74": {
@@ -763,8 +891,8 @@
             }
         ],
         "outdoor_xy": [
-            -80.01819886902132,
-            1.4020794285355684
+            -109.95096752083668,
+            41.27263733395444
         ]
     },
     "Unter den Linden 42": {
@@ -793,26 +921,8 @@
                     1064.4876728057861,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            232.65337511395012,
-            72.30432892557441
-        ]
-    },
-    "Germany": {
-        "building_glb": "buildings_element.2771.glb",
-        "bounding_box": [
-            265.5956874772351,
-            63.10307880207894,
-            116.83374786376953,
-            30.471478662830776,
-            45.316688921513304,
-            26.286087036132812,
-            0.1026880334292421
-        ],
-        "places": [
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
             {
                 "name": "Fresh and Snacks Store",
                 "coarse_type": "stores",
@@ -822,16 +932,50 @@
                     "establishment"
                 ],
                 "location": [
-                    1265.595687866211,
-                    1063.103063583374,
-                    -4
+                    1242.2963180541992,
+                    1064.4876728057861,
+                    -8
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
             }
         ],
         "outdoor_xy": [
-            282.41408154728845,
-            58.283350465583105
+            240.5212425381586,
+            36.77725518358009
+        ]
+    },
+    "Schadow-Haus": {
+        "building_glb": "buildings_Schadow-Haus.glb",
+        "bounding_box": [
+            68.32104003017746,
+            89.10602052942679,
+            115.40165710449219,
+            43.354808484799655,
+            44.515067782215766,
+            24.293350219726562,
+            0.11008106720585276
+        ],
+        "places": [
+            {
+                "name": "Schadowhaus",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1068.8470153808594,
+                    1089.9077377319336,
+                    -4
+                ],
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            }
+        ],
+        "outdoor_xy": [
+            71.52766593842281,
+            66.06127763307354
         ]
     },
     "Mittelstra\u00dfe 30": {
@@ -878,12 +1022,12 @@
                     1149.9044494628906,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            144.50233481160927,
-            157.10525411165028
+            98.88031669165787,
+            134.11919418174045
         ]
     },
     "Neust\u00e4dtische Kirchstra\u00dfe 3": {
@@ -911,7 +1055,7 @@
                     1099.687297821045,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "Hotel Ch\u00e2teau Royal Berlin",
@@ -926,7 +1070,7 @@
                     1099.687297821045,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
@@ -941,8 +1085,8 @@
                     1099.687297821045,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Abraham Lincoln's room at Hotel Ch\u00e2teau Royal Berlin"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Barack Obama's room at Hotel Ch\u00e2teau Royal Berlin"
             },
             {
                 "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
@@ -957,8 +1101,8 @@
                     1099.687297821045,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Lisa Su's room at Hotel Ch\u00e2teau Royal Berlin"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Cillian Murphy's room at Hotel Ch\u00e2teau Royal Berlin"
             },
             {
                 "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
@@ -973,8 +1117,8 @@
                     1099.687297821045,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Neil deGrasse Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Lionel Messi's room at Hotel Ch\u00e2teau Royal Berlin"
             },
             {
                 "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
@@ -989,8 +1133,8 @@
                     1099.687297821045,
                     -24
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Selena Gomez's room at Hotel Ch\u00e2teau Royal Berlin"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Mike Tyson's room at Hotel Ch\u00e2teau Royal Berlin"
             },
             {
                 "building": "Neust\u00e4dtische Kirchstra\u00dfe 3",
@@ -1005,13 +1149,62 @@
                     1099.687297821045,
                     -28
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Tim Cook's room at Hotel Ch\u00e2teau Royal Berlin"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Yoshua Bengio's room at Hotel Ch\u00e2teau Royal Berlin"
             }
         ],
         "outdoor_xy": [
-            237.53589368663012,
-            115.08840087572986
+            229.74465556995446,
+            100.85229945653109
+        ]
+    },
+    "Robert-Koch-Forum": {
+        "building_glb": "buildings_Robert-Koch-Forum.glb",
+        "bounding_box": [
+            -73.12335417457321,
+            214.49974224002662,
+            112.3029098510742,
+            107.59225616385314,
+            77.3268546139876,
+            18.7066650390625,
+            0.10447101217430226
+        ],
+        "places": [
+            {
+                "name": "Prof. Dr. med. Dr. rer. nat. Ulf G\u00f6bel",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    929.2939567565918,
+                    1214.3909606933594,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            },
+            {
+                "name": "Gentle Restaurant",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    929.2939567565918,
+                    1214.3909606933594,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -30.618319832697537,
+            179.0756488802483
         ]
     },
     "Neust\u00e4dtische Kirchstra\u00dfe 6": {
@@ -1040,85 +1233,89 @@
                     1233.4370574951172,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "H & H Investitions Entwicklungsgesellschaft mbH",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1236.1580047607422,
+                    1233.4370574951172,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             }
         ],
         "outdoor_xy": [
-            238.84709885385067,
-            260.22195688681654
+            253.67625461791826,
+            209.1207775936657
         ]
     },
-    "Haus Sommer": {
-        "building_glb": "buildings_Haus Sommer.glb",
+    "Russische Handelsvertretung": {
+        "building_glb": "buildings_Russische Handelsvertretung.glb",
         "bounding_box": [
-            -201.42627359813633,
-            105.63236790607561,
-            114.12491607666016,
-            20.17281936586393,
-            48.469564930114316,
-            21.377655029296875,
-            0.10754217410719602
+            219.6744842529297,
+            -88.57963562011719,
+            110.76678466796875,
+            16.782672882080078,
+            85.43440246582031,
+            16.948471069335938,
+            0.10785634070634842
         ],
         "places": [
             {
-                "name": "Haus Sommer",
-                "coarse_type": "accommodation",
+                "name": "Russische Handelsvertretung",
+                "coarse_type": "office",
                 "fine_types": [
-                    "apartments"
+                    "office"
                 ],
                 "location": [
-                    798.2910079956055,
-                    1106.213809967041,
+                    1220.1015548706055,
+                    911.6785488128662,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-            },
-            {
-                "building": "Haus Sommer",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    798.2910079956055,
-                    1106.213809967041,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Adam Pierce's room at Haus Sommer"
-            },
-            {
-                "building": "Haus Sommer",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    798.2910079956055,
-                    1106.213809967041,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Chad Thompson's room at Haus Sommer"
-            },
-            {
-                "building": "Haus Sommer",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    798.2910079956055,
-                    1106.213809967041,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Jody Petersen's room at Haus Sommer"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -200.91759465896283,
-            131.06869735332296
+            222.38812697973583,
+            -132.2585323095274
+        ]
+    },
+    "Aeroflot-B\u00fcro": {
+        "building_glb": "buildings_Aeroflot-B\u00fcro.glb",
+        "bounding_box": [
+            207.3307412958048,
+            -37.45045785812512,
+            112.36457443237305,
+            32.12235200496119,
+            18.89223278311842,
+            19.398963928222656,
+            0.10803473981603154
+        ],
+        "places": [
+            {
+                "name": "Aeroflot-B\u00fcro",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    1207.3296966552734,
+                    963.608865737915,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            189.7497436962936,
+            -33.58007410368786
         ]
     },
     "Allianz Forum": {
@@ -1144,12 +1341,12 @@
                     1040.429967880249,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -256.3134061191477,
-            26.602584136493366
+            -265.9961128310536,
+            25.649421320244688
         ]
     },
     "August-Boeckh-Haus": {
@@ -1175,12 +1372,12 @@
                     1168.189308166504,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            290.1033271666184,
-            158.21550096372218
+            284.12790695036983,
+            157.02945163763823
         ]
     }
 }

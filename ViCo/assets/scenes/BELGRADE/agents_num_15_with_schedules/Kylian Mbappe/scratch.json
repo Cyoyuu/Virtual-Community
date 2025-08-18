@@ -1,0 +1,213 @@
+{
+    "name": "Kylian Mbappe",
+    "first_name": "Kylian",
+    "last_name": "Mbappe",
+    "age": 25,
+    "innate": "achievement, stimulation",
+    "learned": "I am a professional footballer known for my speed and skill on the field. I am visiting Belgrade for a charity football match.",
+    "currently": "I am training for the upcoming charity football match in Belgrade.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Young Performers",
+            "description": "A group of young actors and performers who meet to rehearse and perform plays.",
+            "place": "Srednja \u0160kola Sveti Sava, Beograd",
+            "members": [
+                "Pika Hayes",
+                "Emily Johnson",
+                "Brycer Rodriguez",
+                "Joe Anderson",
+                "Kylian Mbappe"
+            ],
+            "daily_activity": "rehearsing plays from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Kylian Mbappe's room at Hotel Kasina",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Kylian Mbappe's room at Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Kasina By Community",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to training",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Kasina By Community",
+            "end_place": "Srednja \u0160kola Sveti Sava, Beograd"
+        },
+        {
+            "type": "main",
+            "activity": "Training for charity football match",
+            "place": "Srednja \u0160kola Sveti Sava, Beograd",
+            "building": "\u0421\u0440\u0435\u0434\u045a\u0430 \u0448\u043a\u043e\u043b\u0430 \u201e\u0421\u0432\u0435\u0442\u0438 \u0421\u0430\u0432\u0430\u201c",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to lunch",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Srednja \u0160kola Sveti Sava, Beograd",
+            "end_place": "Restaurant Tchaikovsky"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Gallery Graphic Collective",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "Restaurant Tchaikovsky",
+            "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Gallery Graphic Collective",
+            "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "building": "Dragoslava Jovanovi\u0107a 11",
+            "start_time": "14:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to rehearsal",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "end_place": "Srednja \u0160kola Sveti Sava, Beograd"
+        },
+        {
+            "type": "main",
+            "activity": "Rehearsing plays with Young Performers",
+            "place": "Srednja \u0160kola Sveti Sava, Beograd",
+            "building": "\u0421\u0440\u0435\u0434\u045a\u0430 \u0448\u043a\u043e\u043b\u0430 \u201e\u0421\u0432\u0435\u0442\u0438 \u0421\u0430\u0432\u0430\u201c",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to dinner",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Srednja \u0160kola Sveti Sava, Beograd",
+            "end_place": "Mister Dolar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Mister Dolar",
+            "building": "Nu\u0161i\u0107eva 4",
+            "start_time": "17:30:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Obelix",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Mister Dolar",
+            "end_place": "Obelix"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and enjoy entertainment at Obelix",
+            "place": "Obelix",
+            "building": "Kosovska 19",
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to hotel",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Obelix",
+            "end_place": "Kylian Mbappe's room at Hotel Kasina"
+        },
+        {
+            "type": "main",
+            "activity": "Relax in hotel room",
+            "place": "Kylian Mbappe's room at Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "21:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Late night snack",
+            "place": "Kasina By Community",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for bed",
+            "place": "Kylian Mbappe's room at Hotel Kasina",
+            "building": "\u041a\u0430\u0441\u0438\u043d\u0430",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

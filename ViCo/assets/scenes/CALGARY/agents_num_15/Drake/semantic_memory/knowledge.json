@@ -1,0 +1,432 @@
+{
+    "Bruce Lee": {
+        "age": 32,
+        "living_place": "Bruce Lee's room at Fairmont Palliser",
+        "appearance": "ViCo/assets/imgs/avatars/Bruce Lee.png",
+        "groups": [
+            "Famous Faces"
+        ]
+    },
+    "LeBron James": {
+        "age": 39,
+        "living_place": "St. Regis Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/LeBron James.png",
+        "groups": [
+            "Famous Faces"
+        ]
+    },
+    "Mr Beast": {
+        "age": 26,
+        "living_place": "Hyatt Regency Calgary",
+        "appearance": "ViCo/assets/imgs/avatars/Mr Beast.png",
+        "groups": [
+            "Famous Faces"
+        ]
+    },
+    "Famous Faces": {
+        "description": "A group of famous personalities visiting Calgary for various events and collaborations.",
+        "place": "Hyatt Regency Calgary",
+        "members": [
+            "Bruce Lee",
+            "Drake",
+            "LeBron James",
+            "Mr Beast"
+        ],
+        "daily_activity": "attending media events from 18:00 to 20:00"
+    },
+    "Drake's room at Hyatt Regency Calgary": {
+        "building": "Hyatt Regency Calgary",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1077.2204723358154,
+            1059.287166595459,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Drake's room at Hyatt Regency Calgary",
+        "bounding_box": [
+            77.14081522973258,
+            59.37976606678873,
+            128.29573822021484,
+            27.02083156875971,
+            42.154658732482844,
+            65.96400451660156,
+            -0.03826544092194709
+        ]
+    },
+    "Hyatt Regency Calgary": {
+        "building": "Hyatt Regency Calgary",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1077.2204723358154,
+            1059.287166595459,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            77.14081522973258,
+            59.37976606678873,
+            128.29573822021484,
+            27.02083156875971,
+            42.154658732482844,
+            65.96400451660156,
+            -0.03826544092194709
+        ]
+    },
+    "Collage Gallery": {
+        "building": "Telus Sky",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1011.5281934738159,
+            1126.022590637207,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            12.20758230332764,
+            126.24321741697567,
+            114.30366897583008,
+            61.13943111378536,
+            45.866454927839555,
+            38.696983337402344,
+            -0.03840578717597665
+        ]
+    },
+    "Calgary Chamber of Commerce": {
+        "building": "Calgary Chamber of Commerce",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1030.4410238265991,
+            1219.0133666992188,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            30.44338847651975,
+            218.94835531170966,
+            104.017032623291,
+            34.09097385904392,
+            21.768319383217154,
+            18.89360809326172,
+            -0.04311696943721217
+        ]
+    },
+    "The Unicorn": {
+        "building": "The Unicorn",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            781.3165283203125,
+            968.1706504821777,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -218.61576885898216,
+            -31.93618769734301,
+            100.90655899047852,
+            11.77023049285988,
+            39.37082103242671,
+            8.264137268066406,
+            -0.04779234207646445
+        ]
+    },
+    "Mini Stop Smoke & Coffee": {
+        "building": "Hyatt Regency Calgary - Event Centre",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "atm",
+            "store",
+            "finance",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1100.245906829834,
+            1036.2610523700714,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            99.37726774786844,
+            36.48846265335847,
+            107.87141036987305,
+            60.87311782745684,
+            86.2021350813029,
+            26.769065856933594,
+            -0.05671199673414299
+        ]
+    },
+    "Ruth's Chris Steak House Calgary": {
+        "building": "Calgary Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1040.60560131073,
+            847.8853607177734,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            40.594573013600154,
+            -152.27061659338204,
+            192.05587005615234,
+            38.31504073746664,
+            38.39599312097794,
+            191.1009063720703,
+            0.4284025480628934
+        ]
+    },
+    "Rosso Coffee Roasters - Stephen Ave": {
+        "building": "Calgary TELUS Convention Centre North Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1170.5018463134766,
+            1032.6835761070251,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            170.52440324268116,
+            32.21843464154801,
+            105.03994369506836,
+            82.04110323126498,
+            89.91837552826995,
+            21.63860321044922,
+            -0.04917491242612879
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "3 8 Avenue Southwest",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1027.2476615905762,
+            956.2937707901001,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            27.33346170432872,
+            -43.7544361129086,
+            100.92611694335938,
+            13.75390375739256,
+            40.149251011064564,
+            8.99359130859375,
+            -0.04291204789765478
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Pain Block",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "book_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            917.7352409362793,
+            962.0885353088379,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -82.3452130080031,
+            -37.91146477780003,
+            100.6115951538086,
+            8.109475333412375,
+            39.26893425332308,
+            7.2015228271484375,
+            -0.04715992373912431
+        ]
+    },
+    "7 Avenue SE Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            213.57898134369964,
+            79.73680891249482
+        ],
+        "rotation": 1.5226506190170235,
+        "bounding_box": null
+    },
+    "7 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -124.4519846515683,
+            19.556307044589268
+        ],
+        "rotation": 1.4410783557362552,
+        "bounding_box": null
+    },
+    "9 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -32.44796231946118,
+            -109.16211502337957
+        ],
+        "rotation": -1.6133906719308326,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            37.25163294595485,
+            -68.55553785117415
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.03246747747397,
+            133.2601646863323
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.09291638577415,
+            -23.9639466873687
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.56048645554196,
+            -101.36867727252661
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            171.99436022298394,
+            202.88656314004245
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -114.93998688393205,
+            -247.5273767606725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.064107078237664,
+            97.85745257931084
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To 9 Avenue SW": [
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To 7 Avenue SE": [
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

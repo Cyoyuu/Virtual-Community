@@ -1,0 +1,184 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, achievement, self-direction",
+    "learned": "I am a research scientist at Slovensk\u00e1 technick\u00e1 kni\u017enica focusing on renewable energy solutions. I enjoy hiking and photography.",
+    "currently": "I am working on a project to develop sustainable energy solutions for urban areas.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food enthusiasts who experiment with new recipes and culinary techniques.",
+            "place": "Slovak Restaurant",
+            "members": [
+                "Steve Johnson",
+                "Eve By J Gonzales",
+                "Brycer Rodriguez",
+                "Jody Petersen"
+            ],
+            "daily_activity": "experimenting with new recipes from 18:00 to 20:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at Luxury Apartment for Long Term Rent Konventna 5",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "building": "Konventn\u00e1 5",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "\u0160tef\u00e1nka by Pulitzer",
+            "building": "Palis\u00e1dy 741/59",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Research work on sustainable energy solutions",
+            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "building": "24",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Menu pre zmenu",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+            "end_place": "Menu pre zmenu"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Menu pre zmenu",
+            "building": "18",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Menu pre zmenu",
+            "end_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko"
+        },
+        {
+            "type": "main",
+            "activity": "Continue research work",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "13:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Slovak Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "Slovak Restaurant"
+        },
+        {
+            "type": "main",
+            "activity": "Photography session",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner and Culinary Creators group activity",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
+            "start_time": "18:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to KINO TATRA",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:15:00",
+            "start_place": "Slovak Restaurant",
+            "end_place": "KINO TATRA"
+        },
+        {
+            "type": "main",
+            "activity": "Watch a movie",
+            "place": "KINO TATRA",
+            "building": "Hotel Tatra",
+            "start_time": "20:15:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Brycer Rodriguez's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "23:00:00",
+            "start_place": "KINO TATRA",
+            "end_place": "Brycer Rodriguez's room at Luxury Apartment for Long Term Rent Konventna 5"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for bed",
+            "place": "Brycer Rodriguez's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "building": "Konventn\u00e1 5",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

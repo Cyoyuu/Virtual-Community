@@ -1,0 +1,162 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brycer Rodriguez's room at MACY 31 Self Serviced Apartments",
+        "building": "The Grand Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "HEYTEA\uff08Herald Square\uff09",
+        "building": "1293 Broadway",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mercy University - Manhattan Campus",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "HEYTEA\uff08Herald Square\uff09",
+        "end_place": "Mercy University - Manhattan Campus"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and work on thesis",
+        "place": "Mercy University - Manhattan Campus",
+        "building": "47 West 34th Street",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to COSTAS - AREPA BAR",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Mercy University - Manhattan Campus",
+        "end_place": "COSTAS - AREPA BAR"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "COSTAS - AREPA BAR",
+        "building": "The Martin Building",
+        "start_time": "12:40:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Empire State Building",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "COSTAS - AREPA BAR",
+        "end_place": "Empire State Building"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Empire State Building for inspiration",
+        "place": "Empire State Building",
+        "building": "Empire State Building",
+        "start_time": "13:15:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Creative Art Works",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Empire State Building",
+        "end_place": "Creative Art Works"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Creative Art Works",
+        "place": "Creative Art Works",
+        "building": "Manhattan Mall",
+        "start_time": "15:15:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Greeley Square Park",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Creative Art Works",
+        "end_place": "Greeley Square Park"
+    },
+    {
+        "type": "main",
+        "activity": "Explore the city with Urban Explorers",
+        "place": "Greeley Square Park",
+        "building": "open space",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Baekjeong NYC",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "Greeley Square Park",
+        "end_place": "Baekjeong NYC"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Baekjeong NYC",
+        "building": "Martinique New York on Broadway, Curio Collection by Hilton",
+        "start_time": "18:10:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Brycer Rodriguez's room",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Baekjeong NYC",
+        "end_place": "Brycer Rodriguez's room at MACY 31 Self Serviced Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Work on thesis and relax",
+        "place": "Brycer Rodriguez's room at MACY 31 Self Serviced Apartments",
+        "building": "The Grand Hotel",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Snacks and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:30:00",
+        "end_time": "23:45:00",
+        "start_place": "Brycer Rodriguez's room at MACY 31 Self Serviced Apartments",
+        "end_place": "Snacks and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Buy snacks for the next day",
+        "place": "Snacks and DM Store",
+        "building": "1261 Flushing Avenue",
+        "start_time": "23:45:00",
+        "end_time": "23:59:59"
+    }
+]

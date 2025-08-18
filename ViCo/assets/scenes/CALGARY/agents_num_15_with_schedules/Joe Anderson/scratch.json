@@ -3,28 +3,28 @@
     "first_name": "Joe",
     "last_name": "Anderson",
     "age": 31,
-    "innate": "achievement, power, stimulation",
-    "learned": "I am a financial analyst at Bankers Court Building, focusing on investment strategies. I enjoy playing chess and attending financial seminars.",
-    "currently": "I aim to enhance my investment portfolio at Bankers Court Building.",
+    "innate": "security, conformity, tradition",
+    "learned": "I am a financial analyst at Bow Valley Square 4, specializing in investment strategies.",
+    "currently": "I want to achieve a promotion to senior analyst by the end of the year.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Calgary Sports Enthusiasts",
-            "description": "A group of sports lovers who engage in various sports activities and events.",
-            "place": "Fairmont Palliser",
+            "name": "Business Innovators",
+            "description": "A group of professionals focused on business development and innovation.",
+            "place": "Calgary Chamber of Commerce",
             "members": [
-                "LeBron James",
-                "Barack Obama",
+                "Adam Pierce",
+                "Jody Petersen",
                 "Joe Anderson",
-                "Neil deGrasse Tyson"
+                "Roth Miller"
             ],
-            "daily_activity": "playing basketball from 18:00 to 19:00"
+            "daily_activity": "discussing business strategies from 14:00 to 16:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Joe Anderson's room at Palliser Square",
+    "living_place": "Joe Anderson's room at Bankers Court Building",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,128 +34,166 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Joe Anderson's room at Palliser Square",
-            "building": "Tower Centre",
+            "place": "Joe Anderson's room at Bankers Court Building",
+            "building": "Bankers Court",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Royal India Restaurant Calgary",
-            "building": "Tower Centre",
+            "place": "International Corporation",
+            "building": "Bow Valley Square 1",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Bankers Court Building",
+            "activity": "Commute to Bow Valley Square 4",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
-            "end_time": "09:00:00"
+            "end_time": "08:45:00"
         },
         {
             "type": "main",
-            "activity": "Work on investment strategies",
-            "place": "Bankers Court Building",
-            "building": "Bankers Court",
-            "start_time": "09:00:00",
+            "activity": "Work as a financial analyst",
+            "place": "Bow Valley Square 4",
+            "building": "Bow Valley Square 4",
+            "start_time": "08:45:00",
             "end_time": "12:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to S.K. Market",
+            "activity": "Commute to DirtBelly",
             "place": null,
             "building": null,
             "start_time": "12:00:00",
             "end_time": "12:10:00",
-            "start_place": "Bankers Court Building",
-            "end_place": "S.K. Market"
+            "start_place": "Bow Valley Square 4",
+            "end_place": "DirtBelly"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "S.K. Market",
-            "building": "First on Tenth",
+            "place": "DirtBelly",
+            "building": "232 7 Avenue Southwest",
             "start_time": "12:10:00",
             "end_time": "12:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute back to Bankers Court Building",
+            "activity": "Commute to Bow Valley Square 4",
             "place": null,
             "building": null,
             "start_time": "12:30:00",
-            "end_time": "13:00:00",
-            "start_place": "S.K. Market",
-            "end_place": "Bankers Court Building"
+            "end_time": "12:45:00",
+            "start_place": "DirtBelly",
+            "end_place": "Bow Valley Square 4"
         },
         {
             "type": "main",
-            "activity": "Attend financial seminar",
-            "place": "Bankers Court Building",
-            "building": "Bankers Court",
-            "start_time": "13:00:00",
-            "end_time": "16:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Play chess",
-            "place": "Bankers Court Building",
-            "building": "Bankers Court",
-            "start_time": "16:00:00",
-            "end_time": "17:30:00"
+            "activity": "Continue work as a financial analyst",
+            "place": "Bow Valley Square 4",
+            "building": "Bow Valley Square 4",
+            "start_time": "12:45:00",
+            "end_time": "13:45:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Fairmont Palliser",
+            "activity": "Commute to Calgary Chamber of Commerce",
             "place": null,
             "building": null,
-            "start_time": "17:30:00",
-            "end_time": "18:00:00",
-            "start_place": "Bankers Court Building",
-            "end_place": "Fairmont Palliser"
+            "start_time": "13:45:00",
+            "end_time": "14:00:00",
+            "start_place": "Bow Valley Square 4",
+            "end_place": "Calgary Chamber of Commerce"
         },
         {
             "type": "main",
-            "activity": "Play basketball with Calgary Sports Enthusiasts",
-            "place": "Fairmont Palliser",
-            "building": "Fairmont Palliser Hotel",
-            "start_time": "18:00:00",
-            "end_time": "19:00:00"
+            "activity": "Discuss business strategies with Business Innovators",
+            "place": "Calgary Chamber of Commerce",
+            "building": "Calgary Chamber of Commerce",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bow Valley Square 4",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:15:00",
+            "start_place": "Calgary Chamber of Commerce",
+            "end_place": "Bow Valley Square 4"
+        },
+        {
+            "type": "main",
+            "activity": "Wrap up work and plan for promotion",
+            "place": "Bow Valley Square 4",
+            "building": "Bow Valley Square 4",
+            "start_time": "16:15:00",
+            "end_time": "17:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Unicorn",
+            "place": null,
+            "building": null,
+            "start_time": "17:45:00",
+            "end_time": "18:00:00",
+            "start_place": "Bow Valley Square 4",
+            "end_place": "The Unicorn"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "The Oak Room",
-            "building": "Fairmont Palliser Hotel",
-            "start_time": "19:00:00",
-            "end_time": "19:30:00"
+            "place": "The Unicorn",
+            "building": "The Unicorn",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute back to Joe Anderson's room at Palliser Square",
+            "activity": "Commute to Collage Gallery",
             "place": null,
             "building": null,
-            "start_time": "19:30:00",
-            "end_time": "20:00:00",
-            "start_place": "The Oak Room",
-            "end_place": "Joe Anderson's room at Palliser Square"
+            "start_time": "18:30:00",
+            "end_time": "18:45:00",
+            "start_place": "The Unicorn",
+            "end_place": "Collage Gallery"
         },
         {
             "type": "main",
-            "activity": "Review investment portfolio",
-            "place": "Joe Anderson's room at Palliser Square",
-            "building": "Tower Centre",
+            "activity": "Relax and enjoy art",
+            "place": "Collage Gallery",
+            "building": "Telus Sky",
+            "start_time": "18:45:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Joe Anderson's room at Bankers Court Building",
+            "place": null,
+            "building": null,
             "start_time": "20:00:00",
+            "end_time": "20:15:00",
+            "start_place": "Collage Gallery",
+            "end_place": "Joe Anderson's room at Bankers Court Building"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for the next day and relax",
+            "place": "Joe Anderson's room at Bankers Court Building",
+            "building": "Bankers Court",
+            "start_time": "20:15:00",
             "end_time": "23:00:00"
         },
         {
-            "type": "main",
-            "activity": "Relax and unwind",
-            "place": "Joe Anderson's room at Palliser Square",
-            "building": "Tower Centre",
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Bankers Court Building",
+            "building": "Bankers Court",
             "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
@@ -169,13 +207,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Bankers Court Building",
+    "working_place": "Bow Valley Square 4",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

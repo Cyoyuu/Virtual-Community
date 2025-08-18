@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Marques Brownlee's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Batea",
+        "place": "Batea",
+        "building": "El Avenida Palace",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Movistar Centre",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Batea",
+        "end_place": "Movistar Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Attend tech conference",
+        "place": "Movistar Centre",
+        "building": "Movistar Centre",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Can Pizza Universitat",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Movistar Centre",
+        "end_place": "Can Pizza Universitat"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Can Pizza Universitat",
+        "place": "Can Pizza Universitat",
+        "building": "Ronda de la Universitat",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Movistar Centre",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Can Pizza Universitat",
+        "end_place": "Movistar Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss latest tech trends with Tech Enthusiasts Club",
+        "place": "Movistar Centre",
+        "building": "Movistar Centre",
+        "start_time": "14:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Il\u00b7lacions Design Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Movistar Centre",
+        "end_place": "Il\u00b7lacions Design Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Il\u00b7lacions Design Gallery",
+        "place": "Il\u00b7lacions Design Gallery",
+        "building": "Rambla de Canaletes",
+        "start_time": "16:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Batea",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Il\u00b7lacions Design Gallery",
+        "end_place": "Batea"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Batea",
+        "place": "Batea",
+        "building": "El Avenida Palace",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to BomBom Urban Club Barcelona",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Batea",
+        "end_place": "BomBom Urban Club Barcelona"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at BomBom Urban Club Barcelona",
+        "place": "BomBom Urban Club Barcelona",
+        "building": "Rambla de Catalunya",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Marques Brownlee's room at El Avenida Palace",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "BomBom Urban Club Barcelona",
+        "end_place": "Marques Brownlee's room at El Avenida Palace"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's activities",
+        "place": "Marques Brownlee's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "22:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Marques Brownlee's room at El Avenida Palace",
+        "building": "El Avenida Palace",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

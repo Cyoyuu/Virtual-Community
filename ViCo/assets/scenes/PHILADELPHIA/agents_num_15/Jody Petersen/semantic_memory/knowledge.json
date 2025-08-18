@@ -1,0 +1,438 @@
+{
+    "Lionel Messi": {
+        "age": 37,
+        "living_place": "Kimpton Hotel Monaco Philadelphia",
+        "appearance": "ViCo/assets/imgs/avatars/Lionel Messi.png",
+        "groups": [
+            "Fitness and Health Enthusiasts"
+        ]
+    },
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "The Ledger Residences by Sosuite - Old City",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "groups": [
+            "Fitness and Health Enthusiasts"
+        ]
+    },
+    "Rodtang": {
+        "age": 26,
+        "living_place": "Renaissance Philadelphia Downtown Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Rodtang.png",
+        "groups": [
+            "Fitness and Health Enthusiasts"
+        ]
+    },
+    "Yann LeCun": {
+        "age": 64,
+        "living_place": "Kimpton Hotel Monaco Philadelphia",
+        "appearance": "ViCo/assets/imgs/avatars/Yann LeCun.png",
+        "groups": [
+            "Fitness and Health Enthusiasts"
+        ]
+    },
+    "Fitness and Health Enthusiasts": {
+        "description": "A group focused on physical fitness and health, organizing training sessions and wellness programs.",
+        "place": "Platoon Fitness, Philadelphia",
+        "members": [
+            "Jody Petersen",
+            "Rodtang",
+            "Olivia Adams",
+            "Lionel Messi",
+            "Yann LeCun"
+        ],
+        "daily_activity": "conducting fitness training from 17:00 to 19:00"
+    },
+    "Jody Petersen's room at The Ledger Residences by Sosuite - Old City": {
+        "building": "Public Ledger Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3109283447266,
+            989.7561779022217,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Jody Petersen's room at The Ledger Residences by Sosuite - Old City",
+        "bounding_box": [
+            -104.35907088839507,
+            -10.273055419204816,
+            141.069091796875,
+            118.1608392533941,
+            70.01957658346893,
+            54.146728515625,
+            -0.15943696726644777
+        ]
+    },
+    "Platoon Fitness, Philadelphia": {
+        "building": "716 Walnut Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "physiotherapist",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            732.4849166870117,
+            852.9039192199707,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -270.11642666413513,
+            -147.13272514101487,
+            122.10443115234375,
+            45.29125706859921,
+            51.114021934499526,
+            14.551116943359375,
+            -0.15923858349233205
+        ]
+    },
+    "Bridgette Mayer Gallery": {
+        "building": "709 Walnut Street 1st Floor",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            778.821647644043,
+            901.8995742797852,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -220.9073122186608,
+            -98.09822544482097,
+            120.19851684570312,
+            6.132607915848955,
+            28.126557654904712,
+            10.51904296875,
+            -0.15494050801814677
+        ]
+    },
+    "Star Real Estate Group": {
+        "building": "1500 Walnut Street # 1103",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1051.455093383789,
+            795.146728515625,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            52.932945102053594,
+            -204.85754561769352,
+            156.25180435180664,
+            23.669416423890024,
+            66.32895667095374,
+            88.10070037841797,
+            -0.20284464868764748
+        ]
+    },
+    "Liberty Bell Center": {
+        "building": "Liberty Bell Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "yes",
+            "museum"
+        ],
+        "location": [
+            1015.6748943328857,
+            1091.4512157440186,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            14.648245518216232,
+            91.35626567565933,
+            120.47753143310547,
+            23.34313837981168,
+            96.11425307722985,
+            11.949996948242188,
+            -0.1469144377353281
+        ]
+    },
+    "Union Gourmet Catering": {
+        "building": "Public Ledger Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3109283447266,
+            989.7561779022217,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -104.35907088839507,
+            -10.273055419204816,
+            141.069091796875,
+            118.1608392533941,
+            70.01957658346893,
+            54.146728515625,
+            -0.15943696726644777
+        ]
+    },
+    "Old Nelson Food Co": {
+        "building": "701 Chestnut Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            830.2045669555664,
+            1069.4062671661377,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -169.81096958500711,
+            69.43407448247248,
+            124.80351638793945,
+            7.69377593166274,
+            31.598206627076067,
+            21.356101989746094,
+            -0.16278423177475906
+        ]
+    },
+    "Fat Salmon Sushi": {
+        "building": "719 Walnut Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            749.2172164916992,
+            906.8263854980469,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -250.78280639648438,
+            -93.17361450195312,
+            121.45684051513672,
+            6.153522491455078,
+            28.747512817382812,
+            13.019050598144531,
+            -0.1676671802997589
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Public Ledger Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.3109283447266,
+            989.7561779022217,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -104.35907088839507,
+            -10.273055419204816,
+            141.069091796875,
+            118.1608392533941,
+            70.01957658346893,
+            54.146728515625,
+            -0.15943696726644777
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "711 Sansom Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            780.7654037475586,
+            980.658064365387,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -219.2370742261515,
+            -19.313699000769628,
+            120.37287139892578,
+            6.40090366475833,
+            27.439927490222534,
+            12.281280517578125,
+            -0.15997646440239263
+        ]
+    },
+    "Chestnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            118.28951908450945,
+            3.9586107050921666
+        ],
+        "rotation": -1.7318008185927494,
+        "bounding_box": null
+    },
+    "Walnut Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            78.63308406330034,
+            -171.75149312496984
+        ],
+        "rotation": 1.4159458545706831,
+        "bounding_box": null
+    },
+    "Ionic Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -307.5186042496154,
+            4.736636898051245
+        ],
+        "rotation": 1.4221153999950833,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.175316071994,
+            35.330156217726106
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.93356885018716,
+            -1.6505826632421339
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            177.80703989096526,
+            -245.49041705483242
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.79844681042135,
+            -127.56612672653645
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -77.85848494947972,
+            21.78821777721246
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            19.874014198703783,
+            -238.3893393306398
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -265.2094364159634,
+            199.45220050642803
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Ionic Street": [
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Chestnut Street": [
+            {
+                "stop_name": "Ionic Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Walnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Chestnut Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

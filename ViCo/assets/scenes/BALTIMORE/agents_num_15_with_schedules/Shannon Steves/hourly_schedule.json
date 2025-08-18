@@ -1,0 +1,120 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Shannon Steves's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at home",
+        "place": "Shannon Steves's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Brewer's Cask",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on new seasonal menu",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch break",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on new seasonal menu",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "12:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "The Brewer's Cask",
+        "end_place": "Fresh and Beverages Store"
+    },
+    {
+        "type": "main",
+        "activity": "Shop for ingredients",
+        "place": "Fresh and Beverages Store",
+        "building": "1101 South Hanover Street",
+        "start_time": "16:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Group workout session",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back home",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "Shannon Steves's room at 1201 S Charles Street Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Shannon Steves's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Shannon Steves's room at 1201 S Charles Street Apartments",
+        "building": "1201 South Charles Street",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

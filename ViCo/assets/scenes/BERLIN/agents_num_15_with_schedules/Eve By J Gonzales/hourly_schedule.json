@@ -12,105 +12,97 @@
         "activity": "Breakfast",
         "place": "EINSTEIN Unter den Linden",
         "building": "Unter den Linden 42",
-        "start_time": "08:00:00",
+        "start_time": "08:30:00",
         "end_time": "09:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Starbucks",
+        "activity": "Commute to Fr\u00f6bel-Kita im BMG",
         "place": null,
         "building": null,
         "start_time": "09:00:00",
         "end_time": "09:30:00",
         "start_place": "EINSTEIN Unter den Linden",
-        "end_place": "Starbucks"
+        "end_place": "Fr\u00f6bel-Kita im BMG"
     },
     {
         "type": "main",
-        "activity": "Work as a barista and practice latte art",
-        "place": "Starbucks",
-        "building": "Pariser Platz 4A",
+        "activity": "Internship at Fr\u00f6bel-Kita im BMG",
+        "place": "Fr\u00f6bel-Kita im BMG",
+        "building": "im Bundesgesundheitsministerium",
         "start_time": "09:30:00",
-        "end_time": "14:00:00"
+        "end_time": "15:30:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Friends forever galerie",
         "place": null,
         "building": null,
-        "start_time": "14:00:00",
-        "end_time": "14:30:00",
-        "start_place": "Starbucks",
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Fr\u00f6bel-Kita im BMG",
         "end_place": "Friends forever galerie"
     },
     {
         "type": "main",
-        "activity": "Visit Friends forever galerie for art inspiration",
+        "activity": "Visit art galleries with Berlin Art Enthusiasts",
         "place": "Friends forever galerie",
         "building": "Glinkastra\u00dfe 42",
-        "start_time": "14:30:00",
-        "end_time": "16:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute to Berliner Kindl",
-        "place": null,
-        "building": null,
         "start_time": "16:00:00",
-        "end_time": "16:30:00",
-        "start_place": "Friends forever galerie",
-        "end_place": "Berliner Kindl"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner with Berlin Culinary Creators",
-        "place": "Berliner Kindl",
-        "building": "Wilhelmstra\u00dfe 78",
-        "start_time": "16:30:00",
         "end_time": "18:00:00"
     },
     {
-        "type": "main",
-        "activity": "Cooking and tasting new dishes with Berlin Culinary Creators",
-        "place": "Berliner Kindl",
-        "building": "Wilhelmstra\u00dfe 78",
+        "type": "commute",
+        "activity": "Commute to 1687 Restaurant & Caf\u00e9",
+        "place": null,
+        "building": null,
         "start_time": "18:00:00",
-        "end_time": "20:00:00"
+        "end_time": "18:30:00",
+        "start_place": "Friends forever galerie",
+        "end_place": "1687 Restaurant & Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "1687 Restaurant & Caf\u00e9",
+        "building": "Mittelstra\u00dfe 30",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Memorial",
+        "activity": "Commute to Palais Theising",
         "place": null,
         "building": null,
-        "start_time": "20:00:00",
-        "end_time": "20:30:00",
-        "start_place": "Berliner Kindl",
-        "end_place": "Memorial"
-    },
-    {
-        "type": "main",
-        "activity": "Relax and reflect at Memorial",
-        "place": "Memorial",
-        "building": "Akademie der K\u00fcnste",
-        "start_time": "20:30:00",
-        "end_time": "22:00:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute back to Eve By J Gonzales's room",
-        "place": null,
-        "building": null,
-        "start_time": "22:00:00",
-        "end_time": "22:30:00",
-        "start_place": "Memorial",
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "1687 Restaurant & Caf\u00e9",
         "end_place": "Eve By J Gonzales's room at Palais Theising"
     },
     {
         "type": "main",
-        "activity": "Prepare for bed and unwind",
+        "activity": "Relax and paint",
         "place": "Eve By J Gonzales's room at Palais Theising",
         "building": "Palais Theising",
-        "start_time": "22:30:00",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:30:00",
+        "end_time": "23:40:00",
+        "start_place": "Eve By J Gonzales's room at Palais Theising",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "meal",
+        "activity": "Late-night snack",
+        "place": "Fresh and Snacks Store",
+        "building": "Unter den Linden 42",
+        "start_time": "23:40:00",
         "end_time": "23:59:59"
     }
 ]

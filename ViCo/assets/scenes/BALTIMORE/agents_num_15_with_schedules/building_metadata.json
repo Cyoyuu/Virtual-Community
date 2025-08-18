@@ -24,12 +24,12 @@
                     742.555549621582,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            64.76575974546422,
-            -239.9770832179259
+            50.73580372682027,
+            -249.8385722644396
         ]
     },
     "open space": {
@@ -178,12 +178,12 @@
                     770.1903991699219,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             }
         ],
         "outdoor_xy": [
-            6.973583643267011,
-            -230.97876490702478
+            7.106946461990133,
+            -232.19349514804267
         ]
     },
     "Brewers Cask": {
@@ -213,12 +213,48 @@
                     764.5966033935547,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            32.00533990888399,
-            -233.92424225326832
+            7.349741247864915,
+            -236.06724369488694
+        ]
+    },
+    "1235 Light Street": {
+        "building_glb": "buildings_element.1087.glb",
+        "bounding_box": [
+            62.820985634946936,
+            -193.8443111867831,
+            84.95872879028322,
+            43.8267531401645,
+            75.41405999973247,
+            13.259010314941406,
+            0.12926271976826306
+        ],
+        "places": [
+            {
+                "name": "Domino's Pizza",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1063.270486831665,
+                    806.9038543701172,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            38.4397317357688,
+            -184.03485019264812
         ]
     },
     "1237 Wall Street": {
@@ -247,12 +283,46 @@
                     790.4407806396484,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            146.16400584478734,
-            -221.44697895103275
+            147.16416566148587,
+            -221.30736894676838
+        ]
+    },
+    "1200 South Hanover Street Ste 103": {
+        "building_glb": "buildings_element.2029.glb",
+        "bounding_box": [
+            -269.27805554699574,
+            -201.78423893407444,
+            75.37605667114259,
+            16.788311904114863,
+            27.527919488011563,
+            5.917335510253906,
+            0.04819633707666095
+        ],
+        "places": [
+            {
+                "name": "Papa Johns Pizza",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    730.7646789550781,
+                    798.2197036743164,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -276.9111944523315,
+            -216.93353725038213
         ]
     },
     "1201 South Charles Street": {
@@ -281,7 +351,7 @@
                     822.9064788818359,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "1201 S Charles Street Apartments",
@@ -296,7 +366,7 @@
                     822.9064788818359,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
             },
             {
                 "building": "1201 South Charles Street",
@@ -311,7 +381,7 @@
                     822.9064788818359,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
                 "name": "Adam Pierce's room at 1201 S Charles Street Apartments"
             },
             {
@@ -327,13 +397,143 @@
                     822.9064788818359,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Joe Anderson's room at 1201 S Charles Street Apartments"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "James Thompson's room at 1201 S Charles Street Apartments"
+            },
+            {
+                "building": "1201 South Charles Street",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    879.3932800292969,
+                    822.9064788818359,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Kate Novak's room at 1201 S Charles Street Apartments"
+            },
+            {
+                "building": "1201 South Charles Street",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    879.3932800292969,
+                    822.9064788818359,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Leonard Park's room at 1201 S Charles Street Apartments"
+            },
+            {
+                "building": "1201 South Charles Street",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    879.3932800292969,
+                    822.9064788818359,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Olivia Adams's room at 1201 S Charles Street Apartments"
+            },
+            {
+                "building": "1201 South Charles Street",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    879.3932800292969,
+                    822.9064788818359,
+                    -32
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Shannon Steves's room at 1201 S Charles Street Apartments"
             }
         ],
         "outdoor_xy": [
-            -98.65012671463866,
-            -188.73022468301104
+            -107.60002262739613,
+            -191.08530343540966
+        ]
+    },
+    "1208 Light Street": {
+        "building_glb": "buildings_element.1254.glb",
+        "bounding_box": [
+            11.126857047763268,
+            -163.31975045789636,
+            82.1138153076172,
+            24.269761392659984,
+            9.271086343053893,
+            9.451339721679688,
+            0.14800448656274226
+        ],
+        "places": [
+            {
+                "name": "Berkshire Hathaway HomeServices PenFed Realty: Federal Hill",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1010.9413750171661,
+                    836.8262405395508,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            -1.1681006416547406,
+            -169.9270246605108
+        ]
+    },
+    "1210 Light Street": {
+        "building_glb": "buildings_element.1253.glb",
+        "bounding_box": [
+            12.656224119769456,
+            -172.71382168847336,
+            81.08385848999025,
+            23.093002972612453,
+            10.05859512768569,
+            6.982063293457031,
+            0.13522939547805407
+        ],
+        "places": [
+            {
+                "name": "Karen Chapman- IN-VISION REALTY formerly Long & Foster",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1012.5140533447266,
+                    827.2861633300781,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+            }
+        ],
+        "outdoor_xy": [
+            12.000551864342146,
+            -178.88788193322202
         ]
     },
     "1132 South Hanover Street": {
@@ -361,12 +561,45 @@
                     854.9539108276367,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -261.52758647418443,
-            -144.86487148535846
+            -289.22864863586295,
+            -147.31585802488817
+        ]
+    },
+    "8 West West Street 2nd Floor": {
+        "building_glb": "buildings_element.1835.glb",
+        "bounding_box": [
+            -194.48836245315607,
+            -152.79834528837029,
+            76.84592437744142,
+            27.603198905860136,
+            18.312746230013133,
+            7.83709716796875,
+            0.14194081649125367
+        ],
+        "places": [
+            {
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    805.3192977905273,
+                    847.2203216552734,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -186.92181019297792,
+            -161.97662165977923
         ]
     },
     "1138 South Charles Street": {
@@ -396,45 +629,82 @@
                     844.0304946899414,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -179.65485933751498,
-            -160.94846252776534
+            -172.3905611185209,
+            -159.94232829900866
         ]
     },
-    "1201 Light Street": {
-        "building_glb": "buildings_element.1083.glb",
+    "1137 South Charles Street": {
+        "building_glb": "buildings_element.2479.glb",
         "bounding_box": [
-            49.59121921195304,
-            -147.77676189211311,
-            82.92744445800783,
-            28.079911069820035,
-            16.92642787857722,
-            10.053741455078125,
-            0.05771689524763885
+            -134.96711451623082,
+            -151.53971171281745,
+            77.34609985351564,
+            17.534911025233963,
+            5.8381252826471695,
+            6.92803955078125,
+            0.14663918626361333
         ],
         "places": [
             {
-                "name": "Beverages and DM Store",
+                "name": "Beverages and Snacks Store",
                 "coarse_type": "stores",
                 "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    865.080249786377,
+                    848.4602813720703,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            -145.09641807490647,
+            -149.80724794513918
+        ]
+    },
+    "1125 South Charles Street": {
+        "building_glb": "buildings_element.1665.glb",
+        "bounding_box": [
+            -132.3857350719181,
+            -122.41857917207273,
+            77.07159805297853,
+            24.25787315561558,
+            4.6821801923311295,
+            6.111488342285156,
+            0.13637759643199535
+        ],
+        "places": [
+            {
+                "name": "Cheese Galore and More",
+                "coarse_type": "food",
+                "fine_types": [
+                    "liquor_store",
+                    "cafe",
+                    "bar",
+                    "food",
                     "point_of_interest",
                     "store",
                     "establishment"
                 ],
                 "location": [
-                    1049.6977500915527,
-                    852.9678039550781,
+                    867.7693901062012,
+                    877.5814170837402,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            47.68774334824876,
-            -138.40774879950786
+            -145.01654192909666,
+            -126.94512036164981
         ]
     },
     "1113 South Hanover Street": {
@@ -478,7 +748,7 @@
                     -8
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "David Malan's room at A Home In The Hill"
+                "name": "Drake's room at A Home In The Hill"
             },
             {
                 "building": "1113 South Hanover Street",
@@ -494,7 +764,7 @@
                     -12
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Genghis Khan's room at A Home In The Hill"
+                "name": "Marques Brownlee's room at A Home In The Hill"
             },
             {
                 "building": "1113 South Hanover Street",
@@ -510,44 +780,45 @@
                     -16
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Kamala Harris's room at A Home In The Hill"
-            },
-            {
-                "building": "1113 South Hanover Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    760.0026702880859,
-                    912.5161247253418,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Lisa Su's room at A Home In The Hill"
-            },
-            {
-                "building": "1113 South Hanover Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    760.0026702880859,
-                    912.5161247253418,
-                    -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Will Smith's room at A Home In The Hill"
+                "name": "Tom Holland's room at A Home In The Hill"
             }
         ],
         "outdoor_xy": [
-            -247.70668739688998,
-            -91.17005414111566
+            -248.26850164813604,
+            -87.62598768755001
+        ]
+    },
+    "1101 South Hanover Street": {
+        "building_glb": "buildings_element.2426.glb",
+        "bounding_box": [
+            -239.46691894531247,
+            -71.94377899169922,
+            73.83927917480469,
+            16.192591850278255,
+            19.503949048142836,
+            4.446075439453125,
+            0.059122908879947034
+        ],
+        "places": [
+            {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    760.4684600830078,
+                    928.0562210083008,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            }
+        ],
+        "outdoor_xy": [
+            -242.14890628621603,
+            -61.33173710650834
         ]
     },
     "1118 South Charles Street": {
@@ -576,12 +847,12 @@
                     895.4101715087891,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -202.38459258030127,
-            -106.7355792769841
+            -184.1159595048302,
+            -116.3700485095239
         ]
     },
     "1110 South Charles Street": {
@@ -609,12 +880,82 @@
                     910.6777687072754,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -200.9382617613159,
-            -95.95158191703734
+            -204.1280147415251,
+            -89.69866921937957
+        ]
+    },
+    "1108 South Charles Street": {
+        "building_glb": "buildings_element.2447.glb",
+        "bounding_box": [
+            -180.1418423956952,
+            -81.84566674658605,
+            76.92605590820312,
+            29.029218520357762,
+            5.320561169870436,
+            9.469711303710938,
+            0.06318438745899738
+        ],
+        "places": [
+            {
+                "name": "grab and go",
+                "coarse_type": "food",
+                "fine_types": [
+                    "convenience_store",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    819.8797378540039,
+                    918.2807846069336,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -195.6054404524696,
+            -83.14223449521288
+        ]
+    },
+    "1113 South Charles Street": {
+        "building_glb": "buildings_element.2483.glb",
+        "bounding_box": [
+            -136.61978317776916,
+            -93.77333693162238,
+            77.07638549804688,
+            18.422001578276245,
+            7.961609397124457,
+            7.5216217041015625,
+            0.162457870937389
+        ],
+        "places": [
+            {
+                "name": "Mother's Federal Hill Grille",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    863.6465034484863,
+                    905.044116973877,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -146.9292155698979,
+            -94.00404442218826
         ]
     },
     "1105 South Charles Street": {
@@ -643,12 +984,47 @@
                     921.2744026184082,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -128.29347054304435,
-            -77.10166864899448
+            -131.25802044714086,
+            -81.73716521120518
+        ]
+    },
+    "1117 South Charles Street": {
+        "building_glb": "buildings_element.2425.glb",
+        "bounding_box": [
+            -126.22243222119073,
+            -107.39670956448037,
+            77.67687225341797,
+            38.88479311967989,
+            23.39532704096201,
+            8.022735595703125,
+            0.1341843481184721
+        ],
+        "places": [
+            {
+                "name": "Wayward Bar & Kitchen",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    873.9438591003418,
+                    894.0397338867188,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -120.50848608847053,
+            -93.8125113573995
         ]
     },
     "17 East Cross Street": {
@@ -679,46 +1055,155 @@
                     919.4369964599609,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -95.33789931329187,
-            -69.66155809132914
+            -91.21863409856978,
+            -90.94094212333775
         ]
     },
-    "1116 Light Street": {
-        "building_glb": "buildings_element.1283.glb",
+    "21 East Cross Street": {
+        "building_glb": "buildings_element.1467.glb",
         "bounding_box": [
-            6.29225910551871,
-            -93.44323917577294,
-            81.10318756103516,
-            18.193190558900067,
-            4.225389304727225,
-            9.600967407226562,
-            0.1177881882268393
+            -82.91106414794922,
+            -78.8176498413086,
+            75.98348999023438,
+            9.856942176818848,
+            19.546695709228516,
+            4.4260101318359375,
+            0.14687934517860413
         ],
         "places": [
             {
-                "name": "Lucky Fortune",
+                "name": "Water Song Yunnan Kitchen",
                 "coarse_type": "food",
                 "fine_types": [
+                    "meal_delivery",
                     "restaurant",
                     "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1006.2491770982742,
-                    906.5567588806152,
+                    916.9961128234863,
+                    921.1400451660156,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            16.139503735783833,
-            -90.74077911255459
+            -79.31966631242393,
+            -89.17693263481655
+        ]
+    },
+    "13 East Cross Street": {
+        "building_glb": "buildings_element.1468.glb",
+        "bounding_box": [
+            -100.69017028808594,
+            -81.29225158691406,
+            75.6883544921875,
+            6.576471328735352,
+            19.538461685180664,
+            4.307640075683594,
+            0.12728437781333923
+        ],
+        "places": [
+            {
+                "name": "Pizza Boli's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    900.058895111084,
+                    918.6800994873047,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -100.57135537715637,
+            -92.13410759011232
+        ]
+    },
+    "31 East Cross Street": {
+        "building_glb": "buildings_element.1470.glb",
+        "bounding_box": [
+            -51.673082953511454,
+            -74.23377351983363,
+            77.99956893920898,
+            4.976567388797468,
+            19.368991162072064,
+            7.180244445800781,
+            0.14457084680176016
+        ],
+        "places": [
+            {
+                "name": "Mug Shots Bar & Grill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    948.3327331542969,
+                    925.7595367431641,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -49.610316514178635,
+            -84.73059564088705
+        ]
+    },
+    "25 East Cross Street": {
+        "building_glb": "buildings_element.1465.glb",
+        "bounding_box": [
+            -70.90778341604572,
+            -77.1007787123477,
+            78.57836532592773,
+            4.862988275072507,
+            19.394747945600294,
+            9.034461975097656,
+            0.14489682096521742
+        ],
+        "places": [
+            {
+                "name": "Locals Only",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_delivery",
+                    "meal_takeaway",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    929.0774955749512,
+                    922.8820762634277,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -67.59751322120314,
+            -87.42840685634991
         ]
     },
     "1114 Light Street": {
@@ -747,47 +1232,12 @@
                     912.0225715637207,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -32.16545248216684,
-            -89.4655987897993
-        ]
-    },
-    "Her Heelz": {
-        "building_glb": "buildings_Her Heelz.glb",
-        "bounding_box": [
-            44.16277930093856,
-            -83.0925231946922,
-            80.3414192199707,
-            27.967117530881094,
-            5.660090144037043,
-            7.504096984863281,
-            0.1229107160823021
-        ],
-        "places": [
-            {
-                "name": "Beverages and Snacks Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "shoe_store",
-                    "clothing_store",
-                    "point_of_interest",
-                    "store",
-                    "establishment"
-                ],
-                "location": [
-                    1044.1779718399048,
-                    916.9040336608887,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-            }
-        ],
-        "outdoor_xy": [
-            33.21631094746103,
-            -88.30393648271745
+            -30.43385894628555,
+            -101.11640431144117
         ]
     },
     "1125 Light Street": {
@@ -815,46 +1265,46 @@
                     905.5884094238281,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            37.8940851801111,
-            -91.23728024906396
+            29.93447854767282,
+            -94.84573392055157
         ]
     },
-    "Federal Hill Cleaners": {
-        "building_glb": "buildings_Federal Hill Cleaners.glb",
+    "Light Street Cafe": {
+        "building_glb": "buildings_Light Street Cafe.glb",
         "bounding_box": [
-            -244.04689151998772,
-            -43.887557275388694,
-            75.67019271850586,
-            11.823433418177192,
-            9.12746239739906,
-            8.155509948730469,
-            0.1480233646595425
+            43.41630280936763,
+            -77.38293389288572,
+            80.98074340820312,
+            27.901172733018516,
+            6.02131874955646,
+            9.030654907226562,
+            0.12883258487804705
         ],
         "places": [
             {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
+                "name": "Tre Fratelli Italian Ristorante",
+                "coarse_type": "food",
                 "fine_types": [
-                    "hair_care",
-                    "health",
+                    "restaurant",
+                    "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    756.4020156860352,
-                    955.9252338409424,
+                    1043.4411659240723,
+                    922.4366073608398,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -237.6778250126683,
-            -48.56308597828397
+            28.470347996297544,
+            -78.3830805642544
         ]
     },
     "6 West Cross Street": {
@@ -883,12 +1333,12 @@
                     965.2247581481934,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -204.47117268373273,
-            -44.60900910033411
+            -207.3707322191173,
+            -29.8507796154596
         ]
     },
     "7 West Cross Street": {
@@ -916,7 +1366,7 @@
                     933.5762157440186,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "name": "Starbucks",
@@ -934,44 +1384,81 @@
                     933.5762157440186,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            },
-            {
-                "building": "7 West Cross Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    814.7785949707031,
-                    933.5762157440186,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Elizabeth Mensah's room at Wheelhouse"
-            },
-            {
-                "building": "7 West Cross Street",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    814.7785949707031,
-                    933.5762157440186,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Roth Miller's room at Wheelhouse"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -168.8825625855993,
-            -50.8564666185071
+            -204.65219480151896,
+            -80.91862077586052
+        ]
+    },
+    "1044 South Charles Street": {
+        "building_glb": "buildings_element.1799.glb",
+        "bounding_box": [
+            -175.9039009940569,
+            -36.67287843829408,
+            76.02352142333984,
+            16.693477430868683,
+            5.841593362146623,
+            7.6243896484375,
+            0.11975002547928204
+        ],
+        "places": [
+            {
+                "name": "Smitty's Liquor Co.",
+                "coarse_type": "food",
+                "fine_types": [
+                    "liquor_store",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    823.9093246459961,
+                    963.3038463592529,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -166.5872161458872,
+            -39.50091936272085
+        ]
+    },
+    "Cross Street Market": {
+        "building_glb": "buildings_Cross Street Market.glb",
+        "bounding_box": [
+            -67.98170906445766,
+            -45.462503279871676,
+            75.58943939208984,
+            18.281383131764773,
+            161.4881211660605,
+            5.9947357177734375,
+            -1.4328735759197009
+        ],
+        "places": [
+            {
+                "name": "Watershed",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    932.2531890869141,
+                    954.3635959625244,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -148.8129490807352,
+            -57.68496638248679
         ]
     },
     "39 East Cross Street": {
@@ -1000,12 +1487,12 @@
                     928.7260780334473,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            -33.18702028034273,
-            -61.27647503566418
+            -35.072288880098405,
+            -68.88834972193924
         ]
     },
     "1111 Light Luxury Apartments": {
@@ -1033,7 +1520,7 @@
                     938.5724220275879,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "1111 Light Luxury Apartments",
@@ -1048,8 +1535,8 @@
                     938.5724220275879,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Brycer Rodriguez's room at 1111 Light Street Apartments"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Eve By J Gonzales's room at 1111 Light Street Apartments"
             },
             {
                 "building": "1111 Light Luxury Apartments",
@@ -1064,13 +1551,45 @@
                     938.5724220275879,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Leonard Park's room at 1111 Light Street Apartments"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Jody Petersen's room at 1111 Light Street Apartments"
+            },
+            {
+                "building": "1111 Light Luxury Apartments",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1073.9977865219116,
+                    938.5724220275879,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Megan Carter's room at 1111 Light Street Apartments"
+            },
+            {
+                "building": "1111 Light Luxury Apartments",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1073.9977865219116,
+                    938.5724220275879,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Zara Williams's room at 1111 Light Street Apartments"
             }
         ],
         "outdoor_xy": [
-            85.01751066177113,
-            -82.07718000321876
+            24.489750711095876,
+            -50.46404309320425
         ]
     },
     "1024 South Charles Street": {
@@ -1100,81 +1619,12 @@
                     1005.867146730423,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -207.02964839458863,
-            4.8283002788441625
-        ]
-    },
-    "1038 South Charles Street": {
-        "building_glb": "buildings_element.1798.glb",
-        "bounding_box": [
-            -176.73673254766922,
-            -26.1207833379734,
-            76.14187240600586,
-            17.069580112759457,
-            2.963847650583883,
-            7.680076599121094,
-            0.137537508899774
-        ],
-        "places": [
-            {
-                "name": "Fresh and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "shoe_store",
-                    "clothing_store",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    823.2331161499023,
-                    973.8792161941528,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-            }
-        ],
-        "outdoor_xy": [
-            -166.9819878541114,
-            -27.053189203154982
-        ]
-    },
-    "1026 South Charles Street": {
-        "building_glb": "buildings_element.1796.glb",
-        "bounding_box": [
-            -180.70064460634254,
-            2.4032004342170357,
-            76.38807678222656,
-            22.270188246889013,
-            5.014992324587694,
-            7.69281005859375,
-            0.13031175935743772
-        ],
-        "places": [
-            {
-                "name": "YARD",
-                "coarse_type": "food",
-                "fine_types": [
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    819.3258819580078,
-                    1001.9707823395729,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            -168.5900570427618,
-            3.3819892440428827
+            -206.8409270080217,
+            3.4498002870604614
         ]
     },
     "1061 South Charles Street": {
@@ -1204,12 +1654,82 @@
                     973.0324287414551,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -149.8125769326546,
-            -25.018880127357907
+            -149.81610847358584,
+            -25.87415390926116
+        ]
+    },
+    "1051 South Charles Street": {
+        "building_glb": "buildings_element.1644.glb",
+        "bounding_box": [
+            -140.0389081190686,
+            -14.273699011334049,
+            77.38127517700195,
+            18.549684827865075,
+            4.7714186534118666,
+            9.001365661621094,
+            0.11397528530693005
+        ],
+        "places": [
+            {
+                "name": "Midnite Confections Cupcakery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    859.8477325439453,
+                    985.8508834838867,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -150.34625713596373,
+            -14.57590132972883
+        ]
+    },
+    "1057 South Charles Street": {
+        "building_glb": "buildings_element.1634.glb",
+        "bounding_box": [
+            -139.7920781726003,
+            -22.530930115739693,
+            77.37512588500977,
+            19.04270171368158,
+            4.437836284680955,
+            9.132148742675781,
+            0.12503129269890406
+        ],
+        "places": [
+            {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    860.2956771850586,
+                    977.4907846450806,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -150.55488970829208,
+            -21.268409292829755
         ]
     },
     "1049 South Charles Street": {
@@ -1239,12 +1759,12 @@
                     994.6061705350876,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -151.1516230011915,
-            -5.05793392228356
+            -151.28677499985096,
+            -3.9433811070352323
         ]
     },
     "10 East Cross Street": {
@@ -1272,12 +1792,12 @@
                     979.1267638206482,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -112.24850409339184,
-            -31.661693882990356
+            -113.56230643189868,
+            -31.73490389153938
         ]
     },
     "20 East Cross Street": {
@@ -1307,12 +1827,82 @@
                     984.58662545681,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -86.49222587705525,
-            -27.776471537312954
+            -86.25324889304153,
+            -27.759606560715703
+        ]
+    },
+    "24 East Cross Street": {
+        "building_glb": "buildings_element.1418.glb",
+        "bounding_box": [
+            -82.21905519454681,
+            -14.801165493655057,
+            77.59064483642578,
+            4.385545575781902,
+            22.72396305203633,
+            8.279998779296875,
+            0.07045474262004771
+        ],
+        "places": [
+            {
+                "name": "Spoons",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    917.729248046875,
+                    985.1988347768784,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -81.86834974490993,
+            -27.16914241814166
+        ]
+    },
+    "1043 South Charles Street": {
+        "building_glb": "buildings_element.1630.glb",
+        "bounding_box": [
+            -142.2010651440538,
+            7.226928989191943,
+            77.22115325927734,
+            16.815809215396442,
+            4.235803261409041,
+            8.022384643554688,
+            0.15158637710347475
+        ],
+        "places": [
+            {
+                "name": "Ruben's Federal Hill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    857.98681640625,
+                    1006.873603105545,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -151.75245875784847,
+            7.451826354439829
         ]
     },
     "18 East Cross Street": {
@@ -1340,12 +1930,81 @@
                     983.4902307987213,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -97.58040575068219,
-            -4.219294949836742
+            -91.41911771911816,
+            -28.653913348384375
+        ]
+    },
+    "26 East Cross Street": {
+        "building_glb": "buildings_element.1414.glb",
+        "bounding_box": [
+            -68.94689809023264,
+            -13.150137585704337,
+            78.36212921142578,
+            4.40031600338728,
+            22.462953551219986,
+            9.04315185546875,
+            0.07024690097958962
+        ],
+        "places": [
+            {
+                "name": "Cross Street Public House",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    930.8101272583008,
+                    986.8239739537239,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -70.3242697398011,
+            -25.508770981492987
+        ]
+    },
+    "36 East Cross Street": {
+        "building_glb": "buildings_element.1417.glb",
+        "bounding_box": [
+            -60.52965245614721,
+            -13.601068032718391,
+            78.28273010253906,
+            4.388278956676064,
+            19.210257340648273,
+            8.74365234375,
+            0.09653227491708448
+        ],
+        "places": [
+            {
+                "name": "Nola Seafood & Spirits",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    939.9357013702393,
+                    986.389755487442,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -62.46970838250663,
+            -24.443663028422144
         ]
     },
     "1041 Marshall Street": {
@@ -1375,12 +2034,12 @@
                     998.7237911820412,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -22.558927164114653,
-            0.1705912533562457
+            -42.4557948402866,
+            -0.7295934285060621
         ]
     },
     "No Way Jose Cafe": {
@@ -1408,12 +2067,12 @@
                     989.3674595952034,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -44.426229921322815,
-            -3.29226250713862
+            -48.96228895232141,
+            -22.850948534332446
         ]
     },
     "1040 Light Street": {
@@ -1443,12 +2102,12 @@
                     1001.6625623703003,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -16.863602757103152,
-            -1.3036716505627752
+            6.037249051748975,
+            -0.5517859198860553
         ]
     },
     "1101 Light Street": {
@@ -1477,83 +2136,235 @@
                     972.4190092086792,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            23.74444570767888,
-            -28.066075352399547
+            23.70234454580024,
+            -27.72121053951708
         ]
     },
-    "1020 South Charles Street": {
-        "building_glb": "buildings_element.1785.glb",
+    "CVS Pharmacy": {
+        "building_glb": "buildings_CVS Pharmacy.glb",
         "bounding_box": [
-            -182.60834487377096,
-            16.386702404821893,
-            77.23039245605469,
-            24.860300981365818,
-            4.607632466959173,
-            9.258102416992188,
-            0.14439386859248912
+            -191.00495123107706,
+            50.11672404654913,
+            79.17250442504883,
+            40.82346448010221,
+            27.438871586776695,
+            13.009178161621094,
+            0.1304354685918644
         ],
         "places": [
+            {
+                "name": "CVS",
+                "coarse_type": "food",
+                "fine_types": [
+                    "drugstore",
+                    "convenience_store",
+                    "clothing_store",
+                    "store",
+                    "health",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    808.8098297119141,
+                    1050.1167259216309,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
             {
                 "name": "Fresh and Snacks Store",
                 "coarse_type": "stores",
                 "fine_types": [
-                    "beauty_salon",
-                    "hair_care",
+                    "pharmacy",
                     "store",
                     "health",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    817.2107009887695,
-                    1016.3867034912109,
-                    -4
+                    808.8098297119141,
+                    1050.1167259216309,
+                    -8
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
             }
         ],
         "outdoor_xy": [
-            -169.47089168370363,
-            19.370974460751402
+            -212.0015278968169,
+            45.55354435925446
         ]
     },
-    "1032 Light Street": {
-        "building_glb": "buildings_element.1242.glb",
+    "1025 South Charles Street": {
+        "building_glb": "buildings_element.1615.glb",
         "bounding_box": [
-            -13.923614661162683,
-            20.987645199596823,
-            79.6791877746582,
-            28.708329832736,
-            5.0933129450587,
-            8.438835144042969,
-            0.15725958451382543
+            -133.92111200185713,
+            41.722041600154995,
+            77.24744033813477,
+            36.486131473858066,
+            8.388476462357248,
+            7.467735290527344,
+            0.1207731716600843
         ],
         "places": [
             {
-                "name": "Blue Agave Mexican Food",
+                "name": "Illusions Bar & Theater",
                 "coarse_type": "food",
                 "fine_types": [
                     "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    866.277099609375,
+                    1041.7220420837402,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -153.21046700111296,
+            40.94001310543273
+        ]
+    },
+    "1019 South Charles Street": {
+        "building_glb": "buildings_element.1645.glb",
+        "bounding_box": [
+            -142.59170328644532,
+            59.47440581552939,
+            77.30656433105469,
+            21.51015747083392,
+            5.930217109726686,
+            7.115753173828125,
+            0.12441294320969264
+        ],
+        "places": [
+            {
+                "name": "ZAATAR Mediterranean Cuisine",
+                "coarse_type": "food",
+                "fine_types": [
                     "restaurant",
                     "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    986.0763854980469,
-                    1021.2158460617065,
+                    857.5181350708008,
+                    1059.3885860443115,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            1.7539982350354242,
-            20.157639845393465
+            -130.4470298404978,
+            57.09130157277376
+        ]
+    },
+    "1035 South Charles Street": {
+        "building_glb": "buildings_element.1639.glb",
+        "bounding_box": [
+            -140.4572627845303,
+            21.891883823590472,
+            76.70062637329102,
+            21.524281348079935,
+            5.548154552220682,
+            6.732719421386719,
+            0.09320971819605951
+        ],
+        "places": [
+            {
+                "name": "Angeli\u2019s Pizzeria",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    859.7148132324219,
+                    1021.885012626648,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -135.69277257738372,
+            18.546739685716606
+        ]
+    },
+    "1031 South Charles Street": {
+        "building_glb": "buildings_element.1636.glb",
+        "bounding_box": [
+            -141.7232682965398,
+            30.576122152551207,
+            77.54017639160156,
+            19.606337771427786,
+            4.0586595502262215,
+            8.213775634765625,
+            0.10806928551188283
+        ],
+        "places": [
+            {
+                "name": "** TREN Homebuyer Workshop **",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    858.4267120361328,
+                    1030.5512599945068,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            }
+        ],
+        "outdoor_xy": [
+            -152.65533254953178,
+            31.17987161923025
+        ]
+    },
+    "1024 Light Street": {
+        "building_glb": "buildings_element.1248.glb",
+        "bounding_box": [
+            -20.224916043720647,
+            32.390986212645025,
+            80.01628875732422,
+            35.97759335571215,
+            19.240107663238707,
+            8.879730224609375,
+            0.1807396059966778
+        ],
+        "places": [
+            {
+                "name": "Blue Moon Too",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    979.6782112121582,
+                    1031.952630996704,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -40.2069073367838,
+            36.105487085760714
         ]
     },
     "1033 Light Street": {
@@ -1582,12 +2393,12 @@
                     1037.9416370391846,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            16.323475283394718,
-            35.51677425166274
+            16.34820501272494,
+            35.32520444460404
         ]
     },
     "1035 Light Street": {
@@ -1615,12 +2426,12 @@
                     1034.6633367538452,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            16.487774381431926,
-            33.46771942853789
+            16.715169198334305,
+            31.787587327620333
         ]
     },
     "1040 William Street": {
@@ -1648,12 +2459,47 @@
                     1032.2982387542725,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            55.63089359940021,
-            -4.40596839017447
+            47.23131749553457,
+            -5.439434398638988
+        ]
+    },
+    "1032 Riverside Avenue": {
+        "building_glb": "buildings_element.456.glb",
+        "bounding_box": [
+            281.4274664435049,
+            24.56944454803288,
+            88.05620193481445,
+            25.13952763368952,
+            4.8727823995682105,
+            6.596580505371094,
+            0.13031123070501638
+        ],
+        "places": [
+            {
+                "name": "The Outpost American Tavern",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1281.3938903808594,
+                    1024.6940774917603,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            290.1354364585311,
+            22.24488203490835
         ]
     },
     "1001 South Charles Street": {
@@ -1684,12 +2530,12 @@
                     1092.7845611572266,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -155.5574444877809,
-            93.19425550702206
+            -155.45656278400782,
+            91.74484238274951
         ]
     },
     "South Baltimore Recreation Center": {
@@ -1717,43 +2563,63 @@
                     1076.4360122680664,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             }
         ],
         "outdoor_xy": [
-            -67.05536853052146,
-            66.04572602241718
+            -64.56146091594202,
+            64.54367198535961
         ]
     },
-    "1020 Light Street": {
-        "building_glb": "buildings_element.1262.glb",
+    "1025 Light Street": {
+        "building_glb": "buildings_element.1179.glb",
         "bounding_box": [
-            -17.412494533399247,
-            59.64069097424626,
-            80.00381088256836,
-            22.812435545492285,
-            4.376509934764979,
-            7.950569152832031,
-            0.18043293253161935
+            25.478089332580574,
+            56.353866577148445,
+            80.04684066772461,
+            21.062452944461256,
+            4.610673063589218,
+            7.572715759277344,
+            0.15759860242674834
         ],
         "places": [
             {
-                "name": "Snacks and DM Store",
-                "coarse_type": "stores",
+                "name": "Urban Deli",
+                "coarse_type": "food",
                 "fine_types": [
-                    "beauty_salon",
+                    "bakery",
+                    "food",
                     "point_of_interest",
+                    "store",
                     "establishment"
                 ],
                 "location": [
-                    982.6813201904297,
-                    1059.5988101959229,
+                    1025.4780941009521,
+                    1056.3538665771484,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
-            },
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            13.730835620315174,
+            56.80270460614503
+        ]
+    },
+    "1017 Light Street": {
+        "building_glb": "buildings_element.1180.glb",
+        "bounding_box": [
+            23.837368016349362,
+            77.07267493413748,
+            78.63003158569336,
+            22.90562986131112,
+            23.07440637122895,
+            4.367774963378906,
+            0.140429423452867
+        ],
+        "places": [
             {
-                "name": "Brendali Italian Ristorante",
+                "name": "Kiku Sushi Restaurant",
                 "coarse_type": "food",
                 "fine_types": [
                     "restaurant",
@@ -1762,50 +2628,16 @@
                     "establishment"
                 ],
                 "location": [
-                    982.6813201904297,
-                    1059.5988101959229,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            }
-        ],
-        "outdoor_xy": [
-            -4.726668794601702,
-            59.230185577214364
-        ]
-    },
-    "1006 Light Street": {
-        "building_glb": "buildings_element.1336.glb",
-        "bounding_box": [
-            -22.97138281814287,
-            95.02068920988512,
-            79.6285171508789,
-            20.429192678814182,
-            4.673341118102186,
-            6.529693603515625,
-            0.1605677498601733
-        ],
-        "places": [
-            {
-                "name": "Be More Thai",
-                "coarse_type": "food",
-                "fine_types": [
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    977.0286169052124,
-                    1095.0095558166504,
+                    1024.5301642417908,
+                    1076.7642936706543,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -12.263943699750312,
-            99.05431353598934
+            13.00961941526927,
+            64.70091225720647
         ]
     },
     "922 Light Street": {
@@ -1834,12 +2666,199 @@
                     1126.997200012207,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -14.478875703010376,
-            128.97151689860894
+            -37.35044419013123,
+            126.36497472204046
+        ]
+    },
+    "926 Light Street Suite 2": {
+        "building_glb": "buildings_element.1350.glb",
+        "bounding_box": [
+            -27.70146442785785,
+            117.20073219000085,
+            80.30168533325195,
+            24.868845726774452,
+            5.44952988963669,
+            8.214042663574219,
+            0.05248499561682774
+        ],
+        "places": [
+            {
+                "name": "Marcus-Boyd Realty",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    972.310866355896,
+                    1117.212245941162,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "name": "Moo Moo Cows - Ice Cream",
+                "coarse_type": "food",
+                "fine_types": [
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    972.310866355896,
+                    1117.212245941162,
+                    -8
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -41.087122768781796,
+            115.91983813090538
+        ]
+    },
+    "915 Light Street": {
+        "building_glb": "buildings_element.1237.glb",
+        "bounding_box": [
+            19.7820242421133,
+            122.44980425902675,
+            81.00757980346678,
+            21.982335395174434,
+            5.194764891505554,
+            8.737648010253906,
+            0.07587844100679994
+        ],
+        "places": [
+            {
+                "name": "Sam's Bagels",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1019.7820320129395,
+                    1122.4498023986816,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            7.686915466950239,
+            123.36185708751066
+        ]
+    },
+    "905 Light Street": {
+        "building_glb": "buildings_element.1232.glb",
+        "bounding_box": [
+            16.08539457102847,
+            139.75489587861915,
+            80.80074310302733,
+            15.81984021416553,
+            4.4931303021490985,
+            8.5457763671875,
+            0.05568273335676215
+        ],
+        "places": [
+            {
+                "name": "The Smoothie Garden",
+                "coarse_type": "food",
+                "fine_types": [
+                    "health",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1016.0594425201416,
+                    1139.754409790039,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            7.184096637388267,
+            139.352082827916
+        ]
+    },
+    "910 South Charles Street": {
+        "building_glb": "buildings_element.2478.glb",
+        "bounding_box": [
+            -187.02320549894688,
+            156.31476629372708,
+            78.82468795776366,
+            20.494469498401426,
+            4.827036187824946,
+            9.860939025878906,
+            0.05007216574497493
+        ],
+        "places": [
+            {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    813.0174865722656,
+                    1156.3265380859375,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -198.34344344088962,
+            157.48986162473213
+        ]
+    },
+    "901 Light Street": {
+        "building_glb": "buildings_element.1174.glb",
+        "bounding_box": [
+            9.925619761500474,
+            162.52869858711134,
+            80.86294174194335,
+            5.678126686873725,
+            25.11415691325241,
+            8.341880798339844,
+            0.04255963302389463
+        ],
+        "places": [
+            {
+                "name": "Bmore Licks",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1009.9241161346436,
+                    1162.5192260742188,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            12.757054046200413,
+            149.0799103519711
         ]
     },
     "301 Warren Avenue": {
@@ -1883,7 +2902,7 @@
                     -8
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Chad Thompson's room at Harbor Hill Apartments"
+                "name": "Bruce Lee's room at Harbor Hill Apartments"
             },
             {
                 "building": "301 Warren Avenue",
@@ -1899,44 +2918,117 @@
                     -12
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "James Thompson's room at Harbor Hill Apartments"
-            },
-            {
-                "building": "301 Warren Avenue",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1196.7144393920898,
-                    1157.3680725097656,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Olivia Adams's room at Harbor Hill Apartments"
-            },
-            {
-                "building": "301 Warren Avenue",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1196.7144393920898,
-                    1157.3680725097656,
-                    -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Pika Hayes's room at Harbor Hill Apartments"
+                "name": "Emma Watson's room at Harbor Hill Apartments"
             }
         ],
         "outdoor_xy": [
-            206.28983874823805,
-            183.127135100163
+            202.22664596892133,
+            130.99416777583227
+        ]
+    },
+    "Artesanos Don Bosco": {
+        "building_glb": "buildings_Artesanos Don Bosco.glb",
+        "bounding_box": [
+            -192.401040119217,
+            205.37882576804054,
+            79.88895797729491,
+            25.92211146101321,
+            6.789729643891546,
+            10.230461120605469,
+            0.050248397070327744
+        ],
+        "places": [
+            {
+                "name": "Zoe\u2019s Just Dezzerts",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    807.5986404418945,
+                    1205.6022491455078,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -180.3364551797408,
+            201.58514359355692
+        ]
+    },
+    "809 Light Street": {
+        "building_glb": "buildings_element.1251.glb",
+        "bounding_box": [
+            16.3444625715972,
+            258.1375507877168,
+            82.93563842773436,
+            26.64310380977587,
+            15.818869409713106,
+            11.277694702148438,
+            0.046974421154397365
+        ],
+        "places": [
+            {
+                "name": "Codetta Bake Shop",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1016.3392496109009,
+                    1258.0202331542969,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            2.064264166008106,
+            256.92142243376753
+        ]
+    },
+    "The Store": {
+        "building_glb": "buildings_element.1205.glb",
+        "bounding_box": [
+            10.290347198909227,
+            284.55742853924903,
+            81.76884841918944,
+            19.14096884122272,
+            6.009225994180048,
+            8.804084777832031,
+            0.04596242196143504
+        ],
+        "places": [
+            {
+                "name": "Buns & Roses Chimney Cakes",
+                "coarse_type": "food",
+                "fine_types": [
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1010.2600156962872,
+                    1284.5587921142578,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -0.15581937074583485,
+            281.61159660759887
         ]
     },
     "Holy Cross School": {
@@ -1963,12 +3055,12 @@
                     906.5582313537598,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            142.70804324828447,
-            -112.0624028680013
+            150.104462853894,
+            -113.53858394297937
         ]
     },
     "Brendali Italian Ristorante": {
@@ -1995,12 +3087,140 @@
                     1055.0681056976318,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -20.962287494219485,
-            50.421496472325174
+            -11.634929606624805,
+            52.01745759574562
+        ]
+    },
+    "Regi's": {
+        "building_glb": "buildings_Regi's.glb",
+        "bounding_box": [
+            -24.780660567609146,
+            99.32332827393971,
+            79.7685661315918,
+            22.471040635287036,
+            4.693947716239683,
+            6.838829040527344,
+            0.16163082775807436
+        ],
+        "places": [
+            {
+                "name": "Regi's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
+                ],
+                "location": [
+                    975.4258604049683,
+                    1099.8964881896973,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -36.8208260379051,
+            97.13424635681429
+        ]
+    },
+    "South Baltimore Leaning Center": {
+        "building_glb": "buildings_South Baltimore Leaning Center.glb",
+        "bounding_box": [
+            -54.11801101590324,
+            -243.66391200219152,
+            83.2001190185547,
+            21.278705233403148,
+            33.52941527636348,
+            12.501998901367188,
+            0.04916913770621794
+        ],
+        "places": [
+            {
+                "name": "South Baltimore Leaning Center",
+                "coarse_type": "office",
+                "fine_types": [
+                    "yes",
+                    "school"
+                ],
+                "location": [
+                    945.9187469482422,
+                    756.3312835693359,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -66.17238475568061,
+            -235.51623793242837
+        ]
+    },
+    "Stalking Horse": {
+        "building_glb": "buildings_Stalking Horse.glb",
+        "bounding_box": [
+            -64.93767036356417,
+            -13.658196501826911,
+            77.52408981323242,
+            4.705656235790037,
+            20.36203302179708,
+            7.302604675292969,
+            0.08106724048219892
+        ],
+        "places": [
+            {
+                "name": "Stalking Horse",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "bar"
+                ],
+                "location": [
+                    935.4203071594238,
+                    986.3341314792633,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -64.84442646944177,
+            -24.868478507025216
+        ]
+    },
+    "Ropewalk Tavern": {
+        "building_glb": "buildings_Ropewalk Tavern.glb",
+        "bounding_box": [
+            -133.66181083612796,
+            -194.78978638578224,
+            78.94007492065431,
+            13.954267436578697,
+            4.856680376355644,
+            8.756950378417969,
+            0.16696938399172076
+        ],
+        "places": [
+            {
+                "name": "Ropewalk Tavern",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "bar"
+                ],
+                "location": [
+                    866.5918884277344,
+                    804.9065017700195,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -126.57117413074685,
+            -197.07143162069104
         ]
     }
 }

@@ -1,0 +1,178 @@
+{
+    "name": "Brian Carter",
+    "first_name": "Brian",
+    "last_name": "Carter",
+    "age": 35,
+    "innate": "security, conformity, benevolence",
+    "learned": "I am a teacher at Albert F. Argenziano School, passionate about educating young minds. I love reading and gardening.",
+    "currently": "I am preparing my students for the upcoming science fair.",
+    "lifestyle": "I go to bed around 22:00, wake up around 06:00, eat dinner around 19:00",
+    "groups": [
+        {
+            "name": "Green Innovators Club",
+            "description": "A group focused on sustainable urban development and environmental conservation.",
+            "place": "Lincoln Park",
+            "members": [
+                "Adam Pierce",
+                "Brian Carter",
+                "Elizabeth Mensah",
+                "Louise Roberts"
+            ],
+            "daily_activity": "discussing environmental projects from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brian Carter's room at Union 346 Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brian Carter's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Brian Carter's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Brian Carter's room at Union 346 Apartments",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Fresh and Snacks Store",
+            "place": "Fresh and Snacks Store",
+            "building": "1 Bow Street",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Urban Axes - Axe Throwing",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "Urban Axes - Axe Throwing"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Urban Axes - Axe Throwing",
+            "building": "2 Union Square",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Soft Space Wellness",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "Urban Axes - Axe Throwing",
+            "end_place": "Soft Space Wellness"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Soft Space Wellness",
+            "place": "Soft Space Wellness",
+            "building": "1 Bow Market Way",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Life Alive Organic Cafe Union Square",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Soft Space Wellness",
+            "end_place": "Life Alive Organic Cafe Union Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Life Alive Organic Cafe Union Square",
+            "building": "Prospect Union Square",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Soft Space Wellness",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "Life Alive Organic Cafe Union Square",
+            "end_place": "Soft Space Wellness"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Soft Space Wellness",
+            "place": "Soft Space Wellness",
+            "building": "1 Bow Market Way",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Brian Carter's room at Union 346 Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Soft Space Wellness",
+            "end_place": "Brian Carter's room at Union 346 Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Brian Carter's room at Union 346 Apartments",
+            "building": "Union 346",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Albert F. Argenziano School",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

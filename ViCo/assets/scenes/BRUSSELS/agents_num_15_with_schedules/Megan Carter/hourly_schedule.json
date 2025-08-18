@@ -1,23 +1,23 @@
 [
     {
         "type": "sleep",
-        "activity": "Sleep",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
+        "activity": "Sleeping",
+        "place": "Megan Carter's room at Charles' Home",
+        "building": "Charles' Home",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Het Clubke",
-        "building": "Hogeschool-Universiteit Brussel Campus Stormstraat",
+        "place": "The Jane",
+        "building": "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Parc de Bruxelles",
+        "activity": "Commute to Onderwijs",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
@@ -25,114 +25,108 @@
     },
     {
         "type": "main",
-        "activity": "Play and explore",
-        "place": "Parc de Bruxelles",
-        "building": "open space",
+        "activity": "Attending classes and working on school project about the history of Brussels",
+        "place": "Onderwijs",
+        "building": "HE2B \u2013 D\u00e9partement d'Ing\u00e9nierie et de Technologie",
         "start_time": "09:00:00",
         "end_time": "12:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Joppes Tarts Bakery",
+        "activity": "Commute to Busy Bee",
         "place": null,
         "building": null,
         "start_time": "12:00:00",
-        "end_time": "12:30:00",
-        "start_place": "Parc de Bruxelles",
-        "end_place": "Joppes Tarts Bakery"
+        "end_time": "12:10:00",
+        "start_place": "Onderwijs",
+        "end_place": "Busy Bee"
     },
     {
         "type": "meal",
         "activity": "Lunch",
-        "place": "Joppes Tarts Bakery",
-        "building": "Rue d'Assaut 15",
-        "start_time": "12:30:00",
-        "end_time": "13:00:00"
+        "place": "Busy Bee",
+        "building": "Rue d'Assaut 3",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Museum of the National Bank of Belgium",
         "place": null,
         "building": null,
-        "start_time": "13:00:00",
-        "end_time": "14:00:00",
-        "start_place": "Joppes Tarts Bakery",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Busy Bee",
         "end_place": "Museum of the National Bank of Belgium"
     },
     {
         "type": "main",
-        "activity": "Explore museum with Brussels Cultural Explorers",
+        "activity": "Visit Museum of the National Bank of Belgium for research",
         "place": "Museum of the National Bank of Belgium",
         "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
-        "start_time": "14:00:00",
-        "end_time": "16:00:00"
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to La Confiserie de Bruxelles",
+        "activity": "Commute to Parc de Bruxelles",
         "place": null,
         "building": null,
-        "start_time": "16:00:00",
-        "end_time": "16:30:00",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00",
         "start_place": "Museum of the National Bank of Belgium",
-        "end_place": "La Confiserie de Bruxelles"
+        "end_place": "Parc de Bruxelles"
     },
     {
-        "type": "meal",
-        "activity": "Snack",
-        "place": "La Confiserie de Bruxelles",
-        "building": "Rue du Marais 7",
-        "start_time": "16:30:00",
+        "type": "main",
+        "activity": "Playing football with Sports Enthusiasts Group",
+        "place": "Parc de Bruxelles",
+        "building": "open space",
+        "start_time": "16:00:00",
         "end_time": "17:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Megan Carter's room at Hotel Hubert \u2013 Grand Place",
+        "activity": "Commute to L'art de la Pizza",
         "place": null,
         "building": null,
         "start_time": "17:00:00",
-        "end_time": "17:30:00",
-        "start_place": "La Confiserie de Bruxelles",
-        "end_place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place"
+        "end_time": "18:00:00",
+        "start_place": "Parc de Bruxelles",
+        "end_place": "L'art de la Pizza"
     },
     {
         "type": "meal",
         "activity": "Dinner",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
-        "start_time": "17:30:00",
+        "place": "L'art de la Pizza",
+        "building": "Rue de la Montagne 64",
+        "start_time": "18:00:00",
         "end_time": "18:30:00"
     },
     {
-        "type": "main",
-        "activity": "Free time for drawing and playing",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
+        "type": "commute",
+        "activity": "Commute back to Charles' Home",
+        "place": null,
+        "building": null,
         "start_time": "18:30:00",
-        "end_time": "22:00:00"
-    },
-    {
-        "type": "meal",
-        "activity": "Evening snack",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
-        "start_time": "22:00:00",
-        "end_time": "22:30:00"
+        "end_time": "19:00:00",
+        "start_place": "L'art de la Pizza",
+        "end_place": "Megan Carter's room at Charles' Home"
     },
     {
         "type": "main",
-        "activity": "Relax and prepare for bed",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
-        "start_time": "22:30:00",
-        "end_time": "23:30:00"
+        "activity": "Relaxing and reviewing school project",
+        "place": "Megan Carter's room at Charles' Home",
+        "building": "Charles' Home",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
     },
     {
-        "type": "sleep",
-        "activity": "Sleep",
-        "place": "Megan Carter's room at Hotel Hubert \u2013 Grand Place",
-        "building": "Hotel Hubert \u2013 Grand Place",
-        "start_time": "23:30:00",
+        "type": "main",
+        "activity": "Preparing for bed",
+        "place": "Megan Carter's room at Charles' Home",
+        "building": "Charles' Home",
+        "start_time": "23:00:00",
         "end_time": "23:59:59"
     }
 ]

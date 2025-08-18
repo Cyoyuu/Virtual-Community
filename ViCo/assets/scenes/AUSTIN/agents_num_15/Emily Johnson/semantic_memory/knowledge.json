@@ -1,138 +1,86 @@
 {
-    "Barack Obama": {
-        "age": 63,
-        "living_place": "Barack Obama's room at Hyatt Centric Congress Avenue Austin",
-        "appearance": "ViCo/assets/imgs/avatars/Barack Obama.png",
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at 4th and Colorado",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
         "groups": [
-            "Austin Explorers"
+            "Austin Music and Arts Club"
         ]
     },
-    "Jack Ma": {
-        "age": 50,
+    "Megan Carter": {
+        "age": 10,
         "living_place": "The Driskill",
-        "appearance": "ViCo/assets/imgs/avatars/Jack Ma.png",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
         "groups": [
-            "Austin Explorers"
+            "Austin Music and Arts Club"
         ]
     },
-    "Shannon Steves": {
-        "age": 27,
-        "living_place": "Savills Austin",
-        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "Nellis Realty",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
         "groups": [
-            "Austin Explorers"
+            "Austin Music and Arts Club"
         ]
     },
-    "Tom Holland": {
-        "age": 28,
-        "living_place": "The Driskill",
-        "appearance": "ViCo/assets/imgs/avatars/Tom Holland.png",
-        "groups": [
-            "Austin Explorers"
-        ]
-    },
-    "Austin Explorers": {
-        "description": "A group of individuals who enjoy exploring the city of Austin and experiencing its culture and attractions.",
-        "place": "The Driskill",
+    "Austin Music and Arts Club": {
+        "description": "A club for music and art lovers to share their passion and collaborate on creative projects.",
+        "place": "Northern-Southern",
         "members": [
-            "Barack Obama",
+            "Brycer Rodriguez",
             "Emily Johnson",
-            "Jack Ma",
-            "Tom Holland",
-            "Shannon Steves"
+            "Olivia Adams",
+            "Megan Carter"
         ],
-        "daily_activity": "exploring local attractions from 16:00 to 17:00"
+        "daily_activity": "attending art workshops from 17:00 to 18:00"
     },
-    "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel": {
-        "building": "The Stephen F Austin Royal Sonesta Hotel",
+    "Emily Johnson's room at Aloft Austin Downtown": {
+        "building": "Aloft Austin Downtown",
         "coarse_type": "accommodation",
         "fine_types": [
-            "yes",
-            "hotel"
+            "lodging",
+            "point_of_interest",
+            "establishment"
         ],
         "location": [
-            1140.7429313659668,
-            1155.3119430541992,
-            -8
+            1126.3316345214844,
+            1108.1401252746582,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-        "name": "Emily Johnson's room at The Stephen F Austin Royal Sonesta Hotel",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Emily Johnson's room at Aloft Austin Downtown",
         "bounding_box": [
-            140.74033971636322,
-            155.31835626038088,
-            134.6453857421875,
-            48.15998024949144,
-            28.392612067874648,
-            46.8560791015625,
-            -0.31250871891393456
+            126.31891685674626,
+            108.14545613627169,
+            121.29437637329102,
+            47.43199851609619,
+            22.122253664057293,
+            22.543052673339844,
+            -0.3012126690256216
         ]
     },
-    "The Stephen F Austin Royal Sonesta Hotel": {
-        "building": "The Stephen F Austin Royal Sonesta Hotel",
-        "coarse_type": "accommodation",
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
         "fine_types": [
-            "yes",
-            "hotel"
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
         ],
         "location": [
-            1140.7429313659668,
-            1155.3119430541992,
-            -4
+            1196.0162734985352,
+            846.779727935791,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
-            140.74033971636322,
-            155.31835626038088,
-            134.6453857421875,
-            48.15998024949144,
-            28.392612067874648,
-            46.8560791015625,
-            -0.31250871891393456
-        ]
-    },
-    "The Driskill": {
-        "building": "The Driskill",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "yes",
-            "hotel"
-        ],
-        "location": [
-            1164.4101486206055,
-            1045.4788842201233,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "bounding_box": [
-            164.4190478965505,
-            45.95275120352525,
-            119.48749923706055,
-            49.06776463765067,
-            54.34353309550402,
-            20.864112854003906,
-            -0.3018611889945575
-        ]
-    },
-    "Indeed Tower": {
-        "building": "Indeed Tower",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            919.9503040313721,
-            1146.2666625976562,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            -87.66839599609375,
-            146.1295623779297,
-            194.9882049560547,
-            52.14065170288086,
-            82.02035522460938,
-            167.20199584960938,
-            -0.31920403242111206
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
         ]
     },
     "REP Real Estate Partners": {
@@ -159,52 +107,49 @@
             -0.31240514790593676
         ]
     },
-    "Neon Grotto": {
-        "building": "Neon Grotto",
-        "coarse_type": "food",
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
         "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
+            "office"
         ],
         "location": [
-            840.945426940918,
-            858.2115936279297,
+            919.9503040313721,
+            1146.2666625976562,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
         "bounding_box": [
-            -159.05457305908203,
-            -141.7884063720703,
-            110.088436126709,
-            12.858288424864767,
-            18.151128918389155,
-            9.520805358886719,
-            -0.31903215104355465
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
         ]
     },
-    "Kelly's Corner": {
-        "building": "101 West 5th Street",
-        "coarse_type": "food",
+    "The Driskill": {
+        "building": "The Driskill",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
+            "yes",
+            "hotel"
         ],
         "location": [
-            979.6644954681396,
-            930.729549407959,
+            1164.4101486206055,
+            1045.4788842201233,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "bounding_box": [
-            -20.33547388995112,
-            -69.27045020726763,
-            112.62531661987305,
-            15.078860178257216,
-            49.16816879527693,
-            10.173179626464844,
-            1.258258398572647
+            164.4190478965505,
+            45.95275120352525,
+            119.48749923706055,
+            49.06776463765067,
+            54.34353309550402,
+            20.864112854003906,
+            -0.3018611889945575
         ]
     },
     "Caroline": {
@@ -223,7 +168,7 @@
             1108.1401252746582,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             126.31891685674626,
             108.14545613627169,
@@ -234,26 +179,73 @@
             -0.3012126690256216
         ]
     },
-    "CVS": {
-        "building": "CVS Pharmacy",
+    "Soho Lounge": {
+        "building": "217 East 6th Street",
         "coarse_type": "food",
         "fine_types": [
-            "drugstore",
-            "convenience_store",
-            "liquor_store",
-            "clothing_store",
-            "health",
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1245.7454299926758,
+            946.1221923828125,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            245.74204558356587,
+            -53.873454420893886,
+            112.07193756103516,
+            6.797137426420573,
+            39.015925764703475,
+            8.129241943359375,
+            -0.31258170471637486
+        ]
+    },
+    "Chick-fil-A 6th & Congress": {
+        "building": "One American Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1021.342939376831,
+            1099.4899044036865,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            21.449616292920993,
+            100.18049252564364,
+            161.73396682739258,
+            73.98316155563622,
+            68.66715235112095,
+            103.2823715209961,
+            -0.30047210688784537
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "CVS Pharmacy",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
             "point_of_interest",
             "store",
-            "food",
             "establishment"
         ],
         "location": [
             991.9518547058105,
             968.1774082183838,
-            -20
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
         "bounding_box": [
             -7.955486361960999,
             -32.19181646060113,
@@ -264,80 +256,29 @@
             1.260487028853259
         ]
     },
-    "Snacks and DM Store": {
-        "building": "722 Congress Avenue",
+    "Beverages and Snacks Store": {
+        "building": "The Nature Conservancy",
         "coarse_type": "stores",
         "fine_types": [
-            "jewelry_store",
-            "finance",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1077.0716609954834,
-            1231.643081665039,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
-        "bounding_box": [
-            76.41874649017814,
-            231.6161529552354,
-            117.7382354736328,
-            50.237069926072,
-            35.73686503721335,
-            9.689102172851562,
-            -0.314488561040297
-        ]
-    },
-    "Fresh and Beverages Store": {
-        "building": "Wild About Music",
-        "coarse_type": "stores",
-        "fine_types": [
-            "locksmith",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1115.107105255127,
-            1089.276912689209,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
-        "bounding_box": [
-            115.09131339416432,
-            89.2876347157912,
-            113.87362289428711,
-            7.292744612817333,
-            37.50139986550991,
-            8.100639343261719,
-            1.261354754823172
-        ]
-    },
-    "Wild About Music": {
-        "building": "Wild About Music",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
             "clothing_store",
-            "store",
             "point_of_interest",
+            "store",
             "establishment"
         ],
         "location": [
-            1115.107105255127,
-            1089.276912689209,
+            943.3980197906494,
+            816.2821197509766,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
-            115.09131339416432,
-            89.2876347157912,
-            113.87362289428711,
-            7.292744612817333,
-            37.50139986550991,
-            8.100639343261719,
-            1.261354754823172
+            -56.60198049252275,
+            -183.61213006581187,
+            110.7256202697754,
+            6.827403502042752,
+            48.48299703275681,
+            10.459510803222656,
+            1.2507565931772793
         ]
     },
     "East 6th Street Bus Stop": {

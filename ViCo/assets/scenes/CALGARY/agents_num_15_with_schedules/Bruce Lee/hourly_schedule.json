@@ -1,0 +1,134 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Bruce Lee's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at The Oak Room",
+        "place": "The Oak Room",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Calgary Chamber of Commerce",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "The Oak Room",
+        "end_place": "Calgary Chamber of Commerce"
+    },
+    {
+        "type": "main",
+        "activity": "Conduct martial arts workshop",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Unicorn for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "The Unicorn"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Unicorn",
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "The Unicorn",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Collage Gallery",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "14:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fairmont Palliser Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "Bruce Lee's room at Fairmont Palliser"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and prepare for media event",
+        "place": "Bruce Lee's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at The Oak Room",
+        "place": "The Oak Room",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hyatt Regency Calgary for media event",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "The Oak Room",
+        "end_place": "Hyatt Regency Calgary"
+    },
+    {
+        "type": "main",
+        "activity": "Attend media event with Famous Faces",
+        "place": "Hyatt Regency Calgary",
+        "building": "Hyatt Regency Calgary",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Fairmont Palliser Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Hyatt Regency Calgary",
+        "end_place": "Bruce Lee's room at Fairmont Palliser"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Bruce Lee's room at Fairmont Palliser",
+        "building": "Fairmont Palliser Hotel",
+        "start_time": "20:30:00",
+        "end_time": "23:59:59"
+    }
+]

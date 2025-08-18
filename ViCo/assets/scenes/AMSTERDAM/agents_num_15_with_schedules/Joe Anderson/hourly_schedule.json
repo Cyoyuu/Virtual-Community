@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Building III",
+        "building": "Building III",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Bar Jones",
+        "building": "Nes 33",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Concrete Store Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on marketing campaign",
+        "place": "Concrete Store Amsterdam",
+        "building": "Spuistraat 250",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Van Stapele Koekmakerij",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Concrete Store Amsterdam",
+        "end_place": "Van Stapele Koekmakerij"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Van Stapele Koekmakerij",
+        "building": "Rokin 17",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Concrete Store Amsterdam",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Van Stapele Koekmakerij",
+        "end_place": "Concrete Store Amsterdam"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on marketing campaign",
+        "place": "Concrete Store Amsterdam",
+        "building": "Spuistraat 250",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Techlab Bv",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Concrete Store Amsterdam",
+        "end_place": "Techlab Bv"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss technology trends with Tech Innovators Club",
+        "place": "Techlab Bv",
+        "building": "Singel 326 A",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joe Anderson's room at Building III",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Techlab Bv",
+        "end_place": "Joe Anderson's room at Building III"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Joe Anderson's room at Building III",
+        "building": "Building III",
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Amsterdam Yoga Centre",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Joe Anderson's room at Building III",
+        "end_place": "Amsterdam Yoga Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Yoga session",
+        "place": "Amsterdam Yoga Centre",
+        "building": "Singel 300",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joe Anderson's room at Building III",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Amsterdam Yoga Centre",
+        "end_place": "Joe Anderson's room at Building III"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Joe Anderson's room at Building III",
+        "building": "Building III",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Building III",
+        "building": "Building III",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

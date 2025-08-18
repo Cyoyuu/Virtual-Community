@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Roth Miller's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Royal India Restaurant Calgary",
+        "building": "Tower Centre",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Edison",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on innovative tech solutions",
+        "place": "The Edison",
+        "building": "The Edison",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Unicorn",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "The Edison",
+        "end_place": "The Unicorn"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Calgary Chamber of Commerce",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "The Unicorn",
+        "end_place": "Calgary Chamber of Commerce"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss business strategies with Business Innovators",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Edison",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "The Edison"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new app to simplify daily tasks",
+        "place": "The Edison",
+        "building": "The Edison",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Royal India Restaurant Calgary",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "The Edison",
+        "end_place": "Royal India Restaurant Calgary"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Royal India Restaurant Calgary",
+        "building": "Tower Centre",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Collage Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Royal India Restaurant Calgary",
+        "end_place": "Collage Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Collage Gallery",
+        "place": "Collage Gallery",
+        "building": "Telus Sky",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roth Miller's room at Palliser Square",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Collage Gallery",
+        "end_place": "Roth Miller's room at Palliser Square"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and plan next day",
+        "place": "Roth Miller's room at Palliser Square",
+        "building": "Tower Centre",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

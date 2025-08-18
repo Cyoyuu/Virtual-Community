@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Jupihaus",
+        "building": "Jupihaus",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 no\u00e9",
+        "building": "ABC-Stra\u00dfe 44-46",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to wineBANK Hamburg",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Caf\u00e9 no\u00e9",
+        "end_place": "wineBANK Hamburg"
+    },
+    {
+        "type": "main",
+        "activity": "Music Mixing and Preparation",
+        "place": "wineBANK Hamburg",
+        "building": "Alte Oberpostdirektion",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivegan",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "wineBANK Hamburg",
+        "end_place": "Olivegan"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Olivegan",
+        "building": "Valentinskamp 34",
+        "start_time": "13:00:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to MOM ART SPACE",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Olivegan",
+        "end_place": "MOM ART SPACE"
+    },
+    {
+        "type": "main",
+        "activity": "Explore Art and Music",
+        "place": "MOM ART SPACE",
+        "building": "Valentinskamp 34",
+        "start_time": "14:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to wineBANK Hamburg",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "MOM ART SPACE",
+        "end_place": "wineBANK Hamburg"
+    },
+    {
+        "type": "main",
+        "activity": "Final Music Preparation",
+        "place": "wineBANK Hamburg",
+        "building": "Alte Oberpostdirektion",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend Live Performance",
+        "place": "wineBANK Hamburg",
+        "building": "Alte Oberpostdirektion",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Klimperkiste",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:10:00",
+        "start_place": "wineBANK Hamburg",
+        "end_place": "Klimperkiste"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Klimperkiste",
+        "place": null,
+        "building": null,
+        "start_time": "19:10:00",
+        "end_time": "19:30:00",
+        "start_place": null,
+        "end_place": "Klimperkiste"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Klimperkiste",
+        "building": "Esplanade 17",
+        "start_time": "19:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leonard Park's room at Jupihaus",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Klimperkiste",
+        "end_place": "Leonard Park's room at Jupihaus"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and Unwind",
+        "place": "Leonard Park's room at Jupihaus",
+        "building": "Jupihaus",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Jupihaus",
+        "building": "Jupihaus",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

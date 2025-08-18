@@ -1,0 +1,454 @@
+{
+    "Alex Jefferson": {
+        "age": 30,
+        "living_place": "Alex Jefferson's room at Rosenhof",
+        "appearance": "ViCo/assets/imgs/avatars/Alex Jefferson.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Leonard Park's room at Rosenhof",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Rosenhof",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest innovations and collaborate on projects.",
+        "place": "ETH Entrepreneurship",
+        "members": [
+            "Alex Jefferson",
+            "Leonard Park",
+            "Marques Brownlee",
+            "Steve Johnson"
+        ],
+        "daily_activity": "discussing tech trends from 17:00 to 18:00"
+    },
+    "Marques Brownlee's room at Hotel Arlette": {
+        "building": "Hotel Arlette",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1122.4509887695312,
+            933.5200958251953,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Marques Brownlee's room at Hotel Arlette",
+        "bounding_box": [
+            122.63183349782068,
+            -66.4204486136714,
+            55.12624168395996,
+            10.662302382629072,
+            13.18085812597234,
+            18.504261016845703,
+            0.08326371829569956
+        ]
+    },
+    "SWISSARTEXPO": {
+        "building": "Bahnhofplatz 15",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            865.9158000946045,
+            827.5610084533691,
+            -64
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -131.35342407226562,
+            -174.63912963867188,
+            47.6217155456543,
+            145.57525634765625,
+            124.60708618164062,
+            15.875804901123047,
+            -0.38022899627685547
+        ]
+    },
+    "ETH Entrepreneurship": {
+        "building": "Weinbergstrasse 9",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1146.6953735351562,
+            837.5018692016602,
+            -8
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            146.62425231933594,
+            -162.48965454101562,
+            56.918758392333984,
+            17.947275161743164,
+            41.43606948852539,
+            24.45513153076172,
+            -0.009643127210438251
+        ]
+    },
+    "update Fitness Z\u00fcrich Central": {
+        "building": "Neum\u00fchlequai 32",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            967.3884601593018,
+            1146.1057357788086,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -32.29085795054888,
+            146.2516702730763,
+            52.596715927124016,
+            20.01484953645123,
+            27.685259124346373,
+            20.44601821899414,
+            0.45538621177242783
+        ]
+    },
+    "GESS-Bibliothek": {
+        "building": "Haldeneggsteig 4",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.5830993652344,
+            1091.489538192749,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            181.12766889792886,
+            89.9976023121851,
+            73.15615653991699,
+            53.82737617622963,
+            41.410424378534536,
+            18.732776641845703,
+            0.4090027252082238
+        ]
+    },
+    "Swiss National Museum": {
+        "building": "Schweizerisches Landesmuseum",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            851.6949768066406,
+            982.0608062744141,
+            -24
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -151.59210205078125,
+            -21.69532012939453,
+            47.86513137817383,
+            153.53775024414062,
+            112.5936050415039,
+            20.653366088867188,
+            0.13080830872058868
+        ]
+    },
+    "Caf\u00e9 Oscar": {
+        "building": "Bahnhofplatz 15",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "meal_takeaway",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            865.9158000946045,
+            827.5610084533691,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -131.35342407226562,
+            -174.63912963867188,
+            47.6217155456543,
+            145.57525634765625,
+            124.60708618164062,
+            15.875804901123047,
+            -0.38022899627685547
+        ]
+    },
+    "Orient World": {
+        "building": "Leonhardstrasse 10",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1226.343147277832,
+            935.9221134185791,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            226.34720079837862,
+            -64.07627053079526,
+            71.17828559875488,
+            11.954230360594584,
+            11.981083664764116,
+            18.727916717529297,
+            -0.7731365934267177
+        ]
+    },
+    "Didi's Frieden": {
+        "building": "Stampfenbachstrasse 32",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1114.2825965881348,
+            987.5432280898094,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            114.26646737016372,
+            -12.183286964894341,
+            56.731689453125,
+            19.441521389955223,
+            25.550765306330145,
+            19.6136474609375,
+            0.278768090146715
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Bahnhofplatz 15",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            865.9158000946045,
+            827.5610084533691,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -131.35342407226562,
+            -174.63912963867188,
+            47.6217155456543,
+            145.57525634765625,
+            124.60708618164062,
+            15.875804901123047,
+            -0.38022899627685547
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Weinbergstrasse 44",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1160.3239212036133,
+            1134.3468399047852,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            160.17758854523018,
+            134.85018670945158,
+            74.84268569946288,
+            16.46976982572637,
+            14.695948604066395,
+            15.033134460449219,
+            0.14630432024115017
+        ]
+    },
+    "Velotunnel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -413.83067500778895,
+            -146.48486366583523
+        ],
+        "rotation": -0.3971264325572039,
+        "bounding_box": null
+    },
+    "Neum\u00fchlequai Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            122.3352831542277,
+            -110.86491251159461
+        ],
+        "rotation": -3.077294618483755,
+        "bounding_box": null
+    },
+    "Walchestrasse Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -57.998059055188264,
+            234.57333491033847
+        ],
+        "rotation": 0.4599238151686223,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            6.107041753975359,
+            110.16973394895498
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            182.82015274718745,
+            -37.93199880117845
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.83423216472946,
+            -20.016373651541628
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            113.02447741390665,
+            -185.39193762873347
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            200.6513766522657,
+            203.41975390398758
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -78.20264657888268,
+            -215.10684836720225
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            45.71791609002762,
+            255.78550286523503
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Walchestrasse": [
+            {
+                "stop_name": "Velotunnel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Neum\u00fchlequai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Walchestrasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Velotunnel": [
+            {
+                "stop_name": "Walchestrasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Neum\u00fchlequai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Velotunnel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

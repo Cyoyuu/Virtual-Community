@@ -1,0 +1,220 @@
+{
+    "name": "Jensen Huang",
+    "first_name": "Jensen",
+    "last_name": "Huang",
+    "age": 61,
+    "innate": "achievement, power, self-direction",
+    "learned": "I am the CEO of NVIDIA, known for my contributions to the field of graphics processing units and AI technology.",
+    "currently": "I am exploring potential collaborations with tech companies in Toronto.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Enthusiasts Club",
+            "description": "A group of tech enthusiasts who meet to discuss the latest trends in technology and work on collaborative projects.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Adam Pierce",
+                "Chad Thompson",
+                "Roth Miller",
+                "Jensen Huang"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Jensen Huang's room at The Union Hotel",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jensen Huang's room at The Union Hotel",
+            "building": "The Strathcona Hotel",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Nina Gelateria & Pastry Shop",
+            "place": "Nina Gelateria & Pastry Shop",
+            "building": "The Strathcona Hotel",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to F45 Training Toronto Downtown",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Workout at F45 Training Toronto Downtown",
+            "place": "F45 Training Toronto Downtown",
+            "building": "North Tower",
+            "start_time": "09:00:00",
+            "end_time": "10:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Verno Art Studios",
+            "place": null,
+            "building": null,
+            "start_time": "10:00:00",
+            "end_time": "10:30:00",
+            "start_place": "F45 Training Toronto Downtown",
+            "end_place": "Verno Art Studios"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Verno Art Studios",
+            "place": "Verno Art Studios",
+            "building": "120 Adelaide Street West Unit FC-09",
+            "start_time": "10:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to LOCAL Public Eatery Adelaide",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Verno Art Studios",
+            "end_place": "LOCAL Public Eatery Adelaide"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at LOCAL Public Eatery Adelaide",
+            "place": "LOCAL Public Eatery Adelaide",
+            "building": "141 Adelaide Street West",
+            "start_time": "12:15:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Rebalance Sports Medicine Physiotherapy & Chiropractic Downtown Toronto",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "LOCAL Public Eatery Adelaide",
+            "end_place": "Rebalance Sports Medicine Physiotherapy & Chiropractic Downtown Toronto"
+        },
+        {
+            "type": "main",
+            "activity": "Physiotherapy session at Rebalance Sports Medicine",
+            "place": "Rebalance Sports Medicine Physiotherapy & Chiropractic Downtown Toronto",
+            "building": "155 University Avenue",
+            "start_time": "13:30:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Beverages and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Rebalance Sports Medicine Physiotherapy & Chiropractic Downtown Toronto",
+            "end_place": "Beverages and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Tech Enthusiasts Club meeting",
+            "place": "Beverages and DM Store",
+            "building": "145 Wellington Street West",
+            "start_time": "15:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Tech Enthusiasts Club meeting",
+            "place": "Beverages and DM Store",
+            "building": "145 Wellington Street West",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Nina Gelateria & Pastry Shop",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Beverages and DM Store",
+            "end_place": "Nina Gelateria & Pastry Shop"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Nina Gelateria & Pastry Shop",
+            "place": "Nina Gelateria & Pastry Shop",
+            "building": "The Strathcona Hotel",
+            "start_time": "18:15:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Nina Gelateria & Pastry Shop",
+            "end_place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!"
+        },
+        {
+            "type": "main",
+            "activity": "Evening at Club Lux",
+            "place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+            "building": "Nelson Street",
+            "start_time": "19:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to The Union Hotel",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:30:00",
+            "start_place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+            "end_place": "Jensen Huang's room at The Union Hotel"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Jensen Huang's room at The Union Hotel",
+            "building": "The Strathcona Hotel",
+            "start_time": "22:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

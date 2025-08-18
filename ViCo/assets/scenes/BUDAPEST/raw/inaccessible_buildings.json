@@ -25,8 +25,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "Labege nemzeti v\u00e1logatott hazai focip\u00e1ly\u00e1ja",
@@ -40,8 +39,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Hublot",
@@ -56,8 +54,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Marquise Watches & Jewelry _ Marquise Hungary",
@@ -72,8 +69,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Gold & Diamonds Corner Kft",
@@ -88,8 +84,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "ARIOSO Budapest Flower Shop - Kempinski",
@@ -104,8 +99,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "The Living Room",
@@ -120,8 +114,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -28
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "EST Grand Savoy Hotel",
@@ -135,8 +128,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -32
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             },
             {
                 "name": "The Kitchen Caters (Showkitchen)",
@@ -150,8 +142,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -36
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Blue Fox The Bar",
@@ -165,8 +156,7 @@
                     -201.3102035522461,
                     -312.1449279785156,
                     -40
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -195,8 +185,7 @@
                     158.70699310302734,
                     -303.6191864013672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -224,8 +213,106 @@
                     -303.81182861328125,
                     -173.43077850341797,
                     -4
+                ]
+            }
+        ]
+    },
+    "H2 Hotel Budapest": {
+        "building_glb": "buildings_H2 Hotel Budapest.glb",
+        "bounding_box": [
+            -267.57662205255036,
+            241.39230022386414,
+            102.28177261352538,
+            33.760621980623625,
+            29.218053347368475,
+            5.075675964355469,
+            0.1479799952128924
+        ],
+        "places": [
+            {
+                "name": "H2 Hotel Budapest",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "location": [
+                    -267.57603454589844,
+                    241.39391326904297,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Belv\u00e1ros-Lip\u00f3tv\u00e1ros Eg\u00e9szs\u00e9g\u00fcgyi Szolg\u00e1lat (BLESZ)": {
+        "building_glb": "buildings_Belv\u00e1ros-Lip\u00f3tv\u00e1ros Eg\u00e9szs\u00e9g\u00fcgyi Szolg\u00e1lat (BLESZ).glb",
+        "bounding_box": [
+            -184.668077469107,
+            217.51684561173826,
+            110.93982696533202,
+            32.71952044821346,
+            41.22033242427565,
+            22.1285400390625,
+            0.13890031947134723
+        ],
+        "places": [
+            {
+                "name": "Widex Hall\u00f3k\u00e9sz\u00fcl\u00e9k St\u00fadi\u00f3 - Hercegpr\u00edm\u00e1s",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -184.66495513916016,
+                    218.69794464111328,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Zitterbarth h\u00e1z": {
+        "building_glb": "buildings_Zitterbarth h\u00e1z.glb",
+        "bounding_box": [
+            -58.14953542836801,
+            244.78892847861644,
+            112.0761375427246,
+            62.97980551260269,
+            29.0968017289728,
+            23.52684783935547,
+            0.16158152927204225
+        ],
+        "places": [
+            {
+                "name": "STRAW Budapest",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "bar",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    -60.371578216552734,
+                    244.78893280029297,
+                    -4
+                ]
+            },
+            {
+                "name": "Zitterbarth h\u00e1z",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    -60.371578216552734,
+                    244.78893280029297,
+                    -8
+                ]
             }
         ]
     },
@@ -254,8 +341,7 @@
                     191.32547760009766,
                     280.8814697265625,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "K+K Opera Hotel",
@@ -268,8 +354,7 @@
                     191.32547760009766,
                     280.8814697265625,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             }
         ]
     },
@@ -295,8 +380,7 @@
                     -217.4878692626953,
                     310.8608093261719,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -323,8 +407,7 @@
                     -129.90118026733398,
                     -284.2836608886719,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -351,8 +434,7 @@
                     -42.8948860168457,
                     -321.97772216796875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -379,8 +461,7 @@
                     -62.24324607849121,
                     -357.3270263671875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -406,8 +487,7 @@
                     -398.84600830078125,
                     150.1034927368164,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -434,8 +514,7 @@
                     363.22027587890625,
                     406.6027526855469,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -461,8 +540,7 @@
                     -177.71880340576172,
                     -364.4380187988281,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -488,8 +566,7 @@
                     -395.218994140625,
                     128.42858123779297,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -515,8 +592,7 @@
                     -375.9258117675781,
                     -408.10487365722656,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -542,8 +618,7 @@
                     153.63694763183594,
                     -256.642822265625,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -570,8 +645,34 @@
                     123.51517105102539,
                     279.9670715332031,
                     -4
+                ]
+            }
+        ]
+    },
+    "Roombach Hotel": {
+        "building_glb": "buildings_Roombach Hotel.glb",
+        "bounding_box": [
+            233.26792122724294,
+            -234.25348663648816,
+            115.1681594848633,
+            13.826643681015064,
+            29.90748386636549,
+            30.914871215820312,
+            0.7998515839215085
+        ],
+        "places": [
+            {
+                "name": "Roombach Hotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "hotel",
+                    "hotel"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "location": [
+                    233.8733367919922,
+                    -234.2534942626953,
+                    -4
+                ]
             }
         ]
     },
@@ -597,8 +698,7 @@
                     -370.44407653808594,
                     107.48221588134766,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -624,8 +724,7 @@
                     -392.76690673828125,
                     78.29576683044434,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -652,8 +751,7 @@
                     -405.35667419433594,
                     -350.93426513671875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             }
         ]
     },
@@ -681,8 +779,7 @@
                     -224.7027359008789,
                     417.95042419433594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -708,8 +805,7 @@
                     -362.56964111328125,
                     -307.63465881347656,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             }
         ]
     },
@@ -735,8 +831,34 @@
                     -378.27442932128906,
                     -90.00922012329102,
                     -4
+                ]
+            }
+        ]
+    },
+    "Hotel Central Basilica": {
+        "building_glb": "buildings_Hotel Central Basilica.glb",
+        "bounding_box": [
+            -153.96837623476762,
+            15.628321158670143,
+            111.2525749206543,
+            31.940921184929184,
+            20.611503408106756,
+            20.54755401611328,
+            0.1602234261634159
+        ],
+        "places": [
+            {
+                "name": "Hotel Central Basilica",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "hotel",
+                    "hotel"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "location": [
+                    -153.96837615966797,
+                    15.043883442878723,
+                    -4
+                ]
             }
         ]
     },
@@ -762,8 +884,7 @@
                     -358.4381866455078,
                     -269.63592529296875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -789,8 +910,7 @@
                     -315.3645935058594,
                     -255.22779083251953,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -816,8 +936,7 @@
                     -425.1708068847656,
                     -148.37693405151367,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -843,8 +962,7 @@
                     -327.4058837890625,
                     -124.48796081542969,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     },
@@ -870,8 +988,7 @@
                     -276.7908477783203,
                     -366.98362731933594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             }
         ]
     },
@@ -897,8 +1014,7 @@
                     372.02154541015625,
                     305.16343688964844,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -924,8 +1040,7 @@
                     343.7321472167969,
                     82.57834243774414,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -951,8 +1066,7 @@
                     316.12925720214844,
                     335.77296447753906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -978,8 +1092,7 @@
                     -247.8364715576172,
                     -408.4680480957031,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     }

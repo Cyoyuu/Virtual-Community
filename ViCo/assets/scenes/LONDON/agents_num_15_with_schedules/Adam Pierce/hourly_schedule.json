@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Old Queen Street Cafe",
+        "building": "Old Queen Street Cafe",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Institution of Mechanical Engineers",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on solar panel project",
+        "place": "Institution of Mechanical Engineers",
+        "building": "Institution of Mechanical Engineers",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Caf\u00e9 at Storey's Gate",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Institution of Mechanical Engineers",
+        "end_place": "Caf\u00e9 at Storey's Gate"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Caf\u00e9 at Storey's Gate",
+        "building": "Storey's Gate Lodge",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Institution of Mechanical Engineers",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Caf\u00e9 at Storey's Gate",
+        "end_place": "Institution of Mechanical Engineers"
+    },
+    {
+        "type": "main",
+        "activity": "Continue work on solar panel project",
+        "place": "Institution of Mechanical Engineers",
+        "building": "Institution of Mechanical Engineers",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Queen Elizabeth II Conference Centre",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Institution of Mechanical Engineers",
+        "end_place": "Queen Elizabeth II Conference Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Queen Elizabeth II Conference Centre",
+        "building": "Queen Elizabeth II Conference Centre",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Old Queen Street Cafe",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Queen Elizabeth II Conference Centre",
+        "end_place": "Old Queen Street Cafe"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Old Queen Street Cafe",
+        "building": "Old Queen Street Cafe",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Churchill War Rooms",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Old Queen Street Cafe",
+        "end_place": "Churchill War Rooms"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Churchill War Rooms",
+        "place": "Churchill War Rooms",
+        "building": "King Charles Street",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Adam Pierce's room at Sequential Investors",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Churchill War Rooms",
+        "end_place": "Adam Pierce's room at Sequential Investors"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and review photography",
+        "place": "Adam Pierce's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "20:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Sequential Investors",
+        "building": "Church House",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

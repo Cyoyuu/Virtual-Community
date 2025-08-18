@@ -1,0 +1,218 @@
+{
+    "name": "Brian Carter",
+    "first_name": "Brian",
+    "last_name": "Carter",
+    "age": 35,
+    "innate": "power, security",
+    "learned": "I am a financial analyst at Nu\u0161i\u0107eva Business Center. I enjoy reading financial news and playing chess.",
+    "currently": "I am analyzing market trends to provide investment advice to clients.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "members": [
+                "Alex Jefferson",
+                "Ilya Sutskever",
+                "Jensen Huang",
+                "Brian Carter"
+            ],
+            "daily_activity": "discussing technology trends from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brian Carter's room at Parliament Suites",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleeping",
+            "place": "Brian Carter's room at Parliament Suites",
+            "building": "Dragoslava Jovanovi\u0107a 9b",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Mister Dolar",
+            "building": "Nu\u0161i\u0107eva 4",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Nu\u0161i\u0107eva Business Center",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00"
+        },
+        {
+            "type": "main",
+            "activity": "Analyzing market trends",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Tepsija",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Nu\u0161i\u0107eva Business Center",
+            "end_place": "Tepsija"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Tepsija",
+            "building": "De\u010danska 23",
+            "start_time": "12:10:00",
+            "end_time": "12:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Nu\u0161i\u0107eva Business Center",
+            "place": null,
+            "building": null,
+            "start_time": "12:45:00",
+            "end_time": "13:00:00",
+            "start_place": "Tepsija",
+            "end_place": "Nu\u0161i\u0107eva Business Center"
+        },
+        {
+            "type": "main",
+            "activity": "Continue analyzing market trends",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "13:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discussing technology trends with Tech Innovators",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Reading financial news",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "16:00:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurant Tchaikovsky",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Nu\u0161i\u0107eva Business Center",
+            "end_place": "Restaurant Tchaikovsky"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Galerija Grafi\u010dki kolektiv",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:15:00",
+            "start_place": "Restaurant Tchaikovsky",
+            "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Galerija Grafi\u010dki kolektiv",
+            "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "building": "Dragoslava Jovanovi\u0107a 11",
+            "start_time": "19:15:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Club Echelon",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "20:45:00",
+            "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "end_place": "Club Echelon"
+        },
+        {
+            "type": "main",
+            "activity": "Relax at Club Echelon",
+            "place": "Club Echelon",
+            "building": "Terazije bb",
+            "start_time": "20:45:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Brian Carter's room",
+            "place": null,
+            "building": null,
+            "start_time": "22:00:00",
+            "end_time": "22:15:00",
+            "start_place": "Club Echelon",
+            "end_place": "Brian Carter's room at Parliament Suites"
+        },
+        {
+            "type": "main",
+            "activity": "Play chess online",
+            "place": "Brian Carter's room at Parliament Suites",
+            "building": "Dragoslava Jovanovi\u0107a 9b",
+            "start_time": "22:15:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Brian Carter's room at Parliament Suites",
+            "building": "Dragoslava Jovanovi\u0107a 9b",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Nu\u0161i\u0107eva Business Center",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

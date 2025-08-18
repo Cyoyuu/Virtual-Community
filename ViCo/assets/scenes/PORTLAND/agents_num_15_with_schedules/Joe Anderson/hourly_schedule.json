@@ -1,0 +1,122 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Peace Food Market",
+        "place": "Peace Food Market",
+        "building": "Chestnut Street Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to UNION Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on developing a new feature for the restaurant's app",
+        "place": "UNION Restaurant",
+        "building": "The Press Hotel",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at UNION Restaurant",
+        "place": "UNION Restaurant",
+        "building": "The Press Hotel",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on the app feature",
+        "place": "UNION Restaurant",
+        "building": "The Press Hotel",
+        "start_time": "12:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland Public Library - Main Branch",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "UNION Restaurant",
+        "end_place": "Portland Public Library - Main Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends and project ideas with Portland Tech Innovators",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anthony's Italian Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Portland Public Library - Main Branch",
+        "end_place": "Anthony's Italian Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Anthony's Italian Kitchen",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arcana",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Anthony's Italian Kitchen",
+        "end_place": "Arcana"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and play video games at Arcana",
+        "place": "Arcana",
+        "building": "81 Market Street",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Joe Anderson's room at Chestnut Street Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Arcana",
+        "end_place": "Joe Anderson's room at Chestnut Street Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and prepare for bed",
+        "place": "Joe Anderson's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

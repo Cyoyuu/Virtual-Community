@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Johnson's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Central Garten",
+        "building": "Central 1",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Beverages Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Oversee operations and strategize business development",
+        "place": "Fresh and Beverages Store",
+        "building": "Weinbergstrasse 44",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to African Queen",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Fresh and Beverages Store",
+        "end_place": "African Queen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "African Queen",
+        "building": "Stampfenbachstrasse 70",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "African Queen",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Research market expansion strategies",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "13:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to update Fitness Z\u00fcrich Central",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "update Fitness Z\u00fcrich Central"
+    },
+    {
+        "type": "main",
+        "activity": "Workout",
+        "place": "update Fitness Z\u00fcrich Central",
+        "building": "Neum\u00fchlequai 32",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:05:00",
+        "start_place": "update Fitness Z\u00fcrich Central",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends with Tech Innovators Club",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "17:05:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Orient World",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "Orient World"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Orient World",
+        "building": "Leonhardstrasse 10",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Swiss National Museum",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Orient World",
+        "end_place": "Swiss National Museum"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and explore exhibits",
+        "place": "Swiss National Museum",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Steve Johnson's room at Rosenhof",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Swiss National Museum",
+        "end_place": "Steve Johnson's room at Rosenhof"
+    },
+    {
+        "type": "main",
+        "activity": "Personal time and unwind",
+        "place": "Steve Johnson's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

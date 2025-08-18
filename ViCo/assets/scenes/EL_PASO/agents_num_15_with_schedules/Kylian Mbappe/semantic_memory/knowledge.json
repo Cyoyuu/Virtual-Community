@@ -1,0 +1,435 @@
+{
+    "Frank Walter Steinmeier": {
+        "age": 68,
+        "living_place": "Frank Walter Steinmeier's room at Plaza Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Frank Walter Steinmeier.png",
+        "groups": [
+            "El Paso Hospitality Network"
+        ]
+    },
+    "Jeff Bezos": {
+        "age": 55,
+        "living_place": "Jeff Bezos's room at Plaza Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Jeff Bezos.png",
+        "groups": [
+            "El Paso Hospitality Network"
+        ]
+    },
+    "Kamala Harris": {
+        "age": 59,
+        "living_place": "Kamala Harris's room at Plaza Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Kamala Harris.png",
+        "groups": [
+            "El Paso Hospitality Network"
+        ]
+    },
+    "Mike Tyson": {
+        "age": 58,
+        "living_place": "Plaza Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Mike Tyson.png",
+        "groups": [
+            "El Paso Hospitality Network"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Leonardo Poggio Real Estate",
+        "appearance": "ViCo/assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "El Paso Hospitality Network"
+        ]
+    },
+    "El Paso Hospitality Network": {
+        "description": "A network of professionals in the hospitality industry, sharing experiences and improving customer service.",
+        "place": "The Tap Bar & Restaurant",
+        "members": [
+            "Frank Walter Steinmeier",
+            "Jeff Bezos",
+            "Kamala Harris",
+            "Kylian Mbappe",
+            "Mike Tyson",
+            "Steve Johnson"
+        ],
+        "daily_activity": "hosting networking events from 18:00 to 20:00"
+    },
+    "Kylian Mbappe's room at Plaza Hotel": {
+        "building": "Plaza Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            914.358814239502,
+            940.456018447876,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Kylian Mbappe's room at Plaza Hotel",
+        "bounding_box": [
+            -89.35138374241811,
+            -65.76565114562594,
+            122.09936141967773,
+            48.67601799051148,
+            42.25413519988733,
+            27.530372619628906,
+            0.6635331020191431
+        ]
+    },
+    "The Tap Bar & Restaurant": {
+        "building": "408 East San Antonio Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1212.9957809448242,
+            895.390079498291,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            212.9945524358067,
+            -104.61078237865748,
+            109.2196273803711,
+            10.984211173655446,
+            33.877098730432415,
+            4.5882110595703125,
+            0.2573860266861187
+        ]
+    },
+    "Flor De Barro Gallery": {
+        "building": "212 South Mesa Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1129.7036476135254,
+            754.5194625854492,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            129.70440673828125,
+            -245.47769165039062,
+            109.9359130859375,
+            37.2058219909668,
+            60.65100860595703,
+            7.061981201171875,
+            0.25947850942611694
+        ]
+    },
+    "Strayer University": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1153.1489181518555,
+            1097.9849243164062,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            153.1489163002651,
+            97.98494956975048,
+            150.2687759399414,
+            22.090690311082852,
+            51.350103232739016,
+            84.32810974121094,
+            0.6642021758278249
+        ]
+    },
+    "Machop Spawn": {
+        "building": "125 Henry Trost Court",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            824.7894287109375,
+            911.8201522827148,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -175.21778869628906,
+            -87.9471435546875,
+            115.61461639404297,
+            23.08540153503418,
+            28.94796371459961,
+            13.061866760253906,
+            0.14320524036884308
+        ]
+    },
+    "MONA Bar of Modern Art": {
+        "building": "410 1/2 East San Antonio Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1220.9512481689453,
+            897.4830513000488,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            220.95126342773438,
+            -102.51693725585938,
+            109.54005432128906,
+            5.470991611480713,
+            33.878196716308594,
+            5.307746887207031,
+            0.25738489627838135
+        ]
+    },
+    "District Coffee Co.": {
+        "building": "119 North Stanton Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.3095474243164,
+            977.6814427375793,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            118.3070424954978,
+            -28.726839828303525,
+            118.45446014404297,
+            41.26294700076949,
+            33.48587952409508,
+            21.699081420898438,
+            0.656253155252622
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "119 North Stanton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.3095474243164,
+            977.6814427375793,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            118.3070424954978,
+            -28.726839828303525,
+            118.45446014404297,
+            41.26294700076949,
+            33.48587952409508,
+            21.699081420898438,
+            0.656253155252622
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "216 South Stanton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.6772232055664,
+            751.5156478881836,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            232.67722273986286,
+            -248.48435028530162,
+            108.68598937988283,
+            37.26727757620322,
+            14.24564981485058,
+            4.890594482421875,
+            0.2496493009229764
+        ]
+    },
+    "Abel Saucedo Art Studio": {
+        "building": "W. S. Hills Commercial Structure",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1019.4840390980244,
+            902.5513076782227,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            17.87396240234375,
+            -97.45286560058594,
+            112.9500503540039,
+            31.311138153076172,
+            38.82958984375,
+            11.135307312011719,
+            0.2653966248035431
+        ]
+    },
+    "South Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            73.54811657291923,
+            -122.65224910177827
+        ],
+        "rotation": -2.8637593607090626,
+        "bounding_box": null
+    },
+    "North Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            7.49369540527834,
+            -18.932084509957477
+        ],
+        "rotation": 0.6406626502569378,
+        "bounding_box": null
+    },
+    "North Kansas Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -29.269887522528805,
+            210.1082951957225
+        ],
+        "rotation": 2.207519085493185,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -254.134242495169,
+            160.69417198063402
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.96587659556215,
+            15.012139805369193
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            324.9489704293077,
+            -138.56047980700052
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -182.32548454842004,
+            -103.52106387208097
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -82.49725674740887,
+            89.5560339668224
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To North Kansas Street": [
+            {
+                "stop_name": "South Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "North Kansas Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To South Mesa Street": [
+            {
+                "stop_name": "North Kansas Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "South Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

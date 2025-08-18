@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "00:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Lantillaise Caterers and Restaurant",
+        "building": "20 New Hyde Park Road",
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Paul Marino Music Studio",
+        "place": null,
+        "building": null,
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Teach piano lessons",
+        "place": "Paul Marino Music Studio",
+        "building": "82 Franklin Avenue",
+        "start_time": "08:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Paul Marino Music Studio",
+        "end_place": "Stanley Tek Corp"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Paul Marino Music Studio",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "Paul Marino Music Studio"
+    },
+    {
+        "type": "main",
+        "activity": "Compose music for recital",
+        "place": "Paul Marino Music Studio",
+        "building": "82 Franklin Avenue",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Creative Minds group session",
+        "place": "Paul Marino Music Studio",
+        "building": "82 Franklin Avenue",
+        "start_time": "16:30:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lantillaise Caterers and Restaurant",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Paul Marino Music Studio",
+        "end_place": "Lantillaise Caterers and Restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Lantillaise Caterers and Restaurant",
+        "building": "20 New Hyde Park Road",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Lantillaise Caterers and Restaurant",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at Synergy Fitness NY",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "20:30:00",
+        "end_time": "21:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Olivia Adams's room at ALUX Realty",
+        "place": null,
+        "building": null,
+        "start_time": "21:30:00",
+        "end_time": "22:00:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Olivia Adams's room at ALUX Realty"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Olivia Adams's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "22:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Olivia Adams's room at ALUX Realty",
+        "building": "14 New Hyde Park Road",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

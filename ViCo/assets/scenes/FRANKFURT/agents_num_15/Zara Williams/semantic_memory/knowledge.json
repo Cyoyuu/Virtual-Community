@@ -1,0 +1,451 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Gro\u00dfer Laubenberg",
+        "appearance": "ViCo/assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Art Enthusiasts Club"
+        ]
+    },
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Leonard Park's room at Gro\u00dfer Engel",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Art Enthusiasts Club"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Pika Hayes's room at Klein-Limburg",
+        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Art Enthusiasts Club"
+        ]
+    },
+    "Art Enthusiasts Club": {
+        "description": "A group of individuals passionate about art and design, meeting to discuss and create art.",
+        "place": "Galerie Leuenroth",
+        "members": [
+            "Adam Pierce",
+            "Leonard Park",
+            "Zara Williams",
+            "Pika Hayes"
+        ],
+        "daily_activity": "creating art from 15:00 to 17:00"
+    },
+    "Zara Williams's room at Alter Esslinger": {
+        "building": "Alter Esslinger",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1054.546365737915,
+            870.2378120422363,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Zara Williams's room at Alter Esslinger",
+        "bounding_box": [
+            54.54636286019553,
+            -129.6452913625809,
+            103.53755569458009,
+            8.866494779751754,
+            14.189176608453112,
+            18.060203552246094,
+            0.3306637166065034
+        ]
+    },
+    "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.": {
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1183.9584655761719,
+            738.755615234375,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            184.01898859681972,
+            -260.98544563113177,
+            94.51446914672853,
+            20.801247162123463,
+            9.733134652889829,
+            6.560264587402344,
+            0.10225525050753245
+        ]
+    },
+    "Galerie Leuenroth": {
+        "building": "ehem. Mehlwaage",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1284.3579711914062,
+            833.3093185424805,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            284.3579654713322,
+            -166.79085798850429,
+            101.52212524414064,
+            10.24287496867823,
+            18.786934914209215,
+            15.901626586914062,
+            0.42383571358109834
+        ]
+    },
+    "Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt": {
+        "building": "Saalgasse 15",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1052.6558589935303,
+            737.4559173583984,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            52.659414291381836,
+            -262.54408264160156,
+            97.66349411010744,
+            16.76661199768749,
+            10.10082408579169,
+            11.087959289550781,
+            0.12785383275469803
+        ]
+    },
+    "Dining Raum": {
+        "building": "Fahrgasse 15",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1288.7382507324219,
+            823.5245742797852,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            288.7382507324219,
+            -176.45872497558594,
+            100.92965698242189,
+            2.7507084132618855,
+            10.35629558526623,
+            14.731185913085938,
+            -1.1746123755784477
+        ]
+    },
+    "Frankfurter Kunstverein": {
+        "building": "Steinernes Haus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            999.6265048980713,
+            841.2666473388672,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -0.8281695056623057,
+            -158.92746680760538,
+            103.34990692138673,
+            16.48399753107753,
+            20.420056776318862,
+            18.433395385742188,
+            0.4252364936106217
+        ]
+    },
+    "Hoppenworth & Ploch Altstadtb\u00e4ckerei": {
+        "building": "Hinter dem L\u00e4mmchen 5",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1044.5591583251953,
+            849.6436157226562,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            44.41725612735576,
+            -150.1527610567044,
+            103.85249710083009,
+            6.096699302295515,
+            10.522098258521467,
+            17.86188507080078,
+            0.28313982886300787
+        ]
+    },
+    "Coffee House to the Golden Scale": {
+        "building": "Goldene Waage",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1109.2778968811035,
+            831.6442031860352,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            109.06744956082213,
+            -168.24000209020232,
+            103.28341293334962,
+            25.917679709261446,
+            13.848675262122752,
+            16.412803649902344,
+            0.26876147632790565
+        ]
+    },
+    "Dortmunder Pils Meet - Frankfurt am Main": {
+        "building": "Hainer Hof 1",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1227.3043975830078,
+            887.5636940002441,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            227.2921142578125,
+            -111.91338348388672,
+            104.0345230102539,
+            10.44001579284668,
+            19.470979690551758,
+            18.705047607421875,
+            0.2416202872991562
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Neues Paradies",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1091.0303230285645,
+            846.8000030517578,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            90.90187651974152,
+            -153.06685798195073,
+            103.0867156982422,
+            7.19619883745395,
+            10.309308976427264,
+            15.714248657226562,
+            0.3275299494235475
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Sandgasse",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            815.7033157348633,
+            999.0429420471191,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -184.2966772972348,
+            -0.9681835553331837,
+            100.6645622253418,
+            5.281791637649168,
+            35.40673173028663,
+            9.371528625488281,
+            0.26212444495714243
+        ]
+    },
+    "Bleidenstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -228.00891954540512,
+            34.867100012495186
+        ],
+        "rotation": -1.2272212009665018,
+        "bounding_box": null
+    },
+    "Domplatz Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            187.89873308578933,
+            -125.09747067401953
+        ],
+        "rotation": -2.828107580791367,
+        "bounding_box": null
+    },
+    "Saalgasse Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            49.44755052649866,
+            -244.83844986744862
+        ],
+        "rotation": -0.883976932063394,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.714385474731255,
+            -24.361326528559523
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            234.75346195656564,
+            -225.2147639010552
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            79.31304242685894,
+            -173.4409525514944
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.4797500106486,
+            -25.948462163399768
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.98993118456949,
+            -33.292404946251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -56.344927612231416,
+            -201.5723036494874
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -89.90940664203639,
+            113.47685636627334
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Saalgasse": [
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Bleidenstra\u00dfe": [
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

@@ -1,0 +1,158 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Pika Hayes's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cambridge Preschool of the Arts",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and work on art exhibition preparation",
+        "place": "Cambridge Preschool of the Arts",
+        "building": "361 Somerville Avenue",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Shree Bombay Market",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Cambridge Preschool of the Arts",
+        "end_place": "Shree Bombay Market"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Shree Bombay Market",
+        "building": "359 Somerville Avenue",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Cambridge Preschool of the Arts",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Shree Bombay Market",
+        "end_place": "Cambridge Preschool of the Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on art exhibition preparation",
+        "place": "Cambridge Preschool of the Arts",
+        "building": "361 Somerville Avenue",
+        "start_time": "13:00:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lincoln Park for skateboarding",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Cambridge Preschool of the Arts",
+        "end_place": "Lincoln Park"
+    },
+    {
+        "type": "main",
+        "activity": "Skateboarding",
+        "place": "Lincoln Park",
+        "building": "open space",
+        "start_time": "16:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cambridge Preschool of the Arts for Creative Arts Society",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Lincoln Park",
+        "end_place": "Cambridge Preschool of the Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Creative Arts Society - creating art pieces",
+        "place": "Cambridge Preschool of the Arts",
+        "building": "361 Somerville Avenue",
+        "start_time": "17:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to june bug restaurant for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Cambridge Preschool of the Arts",
+        "end_place": "june bug restaurant"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "june bug restaurant",
+        "building": "251 Washington Street",
+        "start_time": "18:00:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pika Hayes's room at Union 346 Apartments",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "june bug restaurant",
+        "end_place": "Pika Hayes's room at Union 346 Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and draw",
+        "place": "Pika Hayes's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Pika Hayes's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "22:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,445 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at Metropolitan Place",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Madison Fitness Club"
+        ]
+    },
+    "Kylian Mbappe": {
+        "age": 25,
+        "living_place": "Kylian Mbappe's room at Hyatt Place Madison/Downtown",
+        "appearance": "ViCo/assets/imgs/avatars/Kylian Mbappe.png",
+        "groups": [
+            "Madison Fitness Club"
+        ]
+    },
+    "Mike Tyson": {
+        "age": 58,
+        "living_place": "Hyatt Place Madison/Downtown",
+        "appearance": "ViCo/assets/imgs/avatars/Mike Tyson.png",
+        "groups": [
+            "Madison Fitness Club"
+        ]
+    },
+    "Madison Fitness Club": {
+        "description": "A group of fitness enthusiasts who meet regularly to train and participate in fitness events.",
+        "place": "Resolution Fitness",
+        "members": [
+            "Chad Thompson",
+            "Kylian Mbappe",
+            "Mike Tyson",
+            "Michael Jordan"
+        ],
+        "daily_activity": "training sessions from 17:00 to 19:00"
+    },
+    "Michael Jordan's room at Hyatt Place Madison/Downtown": {
+        "building": "Hyatt Place",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            901.1961975097656,
+            820.4130249023438,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Michael Jordan's room at Hyatt Place Madison/Downtown",
+        "bounding_box": [
+            -99.9923367672607,
+            -179.58798928167948,
+            131.59873962402344,
+            19.468779452768903,
+            46.297420354435516,
+            30.361541748046875,
+            0.7618958174019707
+        ]
+    },
+    "Hyatt Place Madison/Downtown": {
+        "building": "Hyatt Place",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            901.1961975097656,
+            820.4130249023438,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "bounding_box": [
+            -99.9923367672607,
+            -179.58798928167948,
+            131.59873962402344,
+            19.468779452768903,
+            46.297420354435516,
+            30.361541748046875,
+            0.7618958174019707
+        ]
+    },
+    "Resolution Fitness": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -24
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "The Loraine Business Center": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "bank",
+            "atm",
+            "insurance_agency",
+            "real_estate_agency",
+            "lawyer",
+            "finance",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Overture Center for the Arts": {
+        "building": "Overture Center for the Arts",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            819.9914093017578,
+            1093.7106523513794,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -179.16370996064046,
+            121.91806722295829,
+            127.17206192016602,
+            82.25792288044569,
+            169.8988746353147,
+            23.26610565185547,
+            0.7557416301816211
+        ]
+    },
+    "Grace Food Pantry": {
+        "building": "Grace Episcopal Church",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1031.0897550582886,
+            1066.6621742248535,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            29.245024725377334,
+            68.2189762842892,
+            129.92411041259766,
+            38.900416891364486,
+            52.482412828377086,
+            13.733200073242188,
+            -0.7682133798751558
+        ]
+    },
+    "Madison Hunger Task Force - Food Distribution Center": {
+        "building": "Capitol West",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            936.5092840194702,
+            872.5380058288574,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -63.06808088323473,
+            -135.1073593750149,
+            138.23846817016602,
+            41.786820131401434,
+            65.31207096224526,
+            36.86614227294922,
+            -0.8109431431926516
+        ]
+    },
+    "Comedy on State": {
+        "building": "Paras Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            854.2666397094727,
+            1191.5809936523438,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -154.2254146561677,
+            191.0855897309053,
+            127.2444076538086,
+            28.751297865092244,
+            30.37751017257744,
+            15.761611938476562,
+            0.7610058148418195
+        ]
+    },
+    "Maharani Indian Restaurant": {
+        "building": "380 West Washington Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            777.3930892944336,
+            842.5797004699707,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -224.62778580791513,
+            -157.32686995216346,
+            120.13739013671876,
+            24.406498216105483,
+            59.17619045226178,
+            14.502105712890625,
+            0.7796008137773812
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "224 State Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            767.5777359008789,
+            1189.9913635253906,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -230.94639299457035,
+            190.11433585030252,
+            122.70942306518555,
+            10.35753948573541,
+            30.330719707611316,
+            11.122108459472656,
+            0.18015154825206972
+        ]
+    },
+    "West Johnson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -145.11684279218883,
+            315.8134983792674
+        ],
+        "rotation": -0.8037606552265828,
+        "bounding_box": null
+    },
+    "West Doty Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            168.93290855636047,
+            -103.42746178914004
+        ],
+        "rotation": -0.03291053212501917,
+        "bounding_box": null
+    },
+    "West Wilson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            324.9969270949154,
+            -170.54746365896176
+        ],
+        "rotation": 2.34409417720222,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.243696430131573,
+            24.310546849995898
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -202.69080886288236,
+            173.51026241170064
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.01263518237513,
+            -119.86484854684215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -51.05275980103885,
+            169.47393538372248
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -157.31361505045334,
+            -192.33382936607885
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.30546522827655,
+            -246.33948688643684
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West Wilson Street": [
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West Johnson Street": [
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

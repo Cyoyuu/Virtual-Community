@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Yoshua Bengio's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "00:00:00",
+        "end_time": "06:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "T & F Pork Store & Italian Delicatessen",
+        "building": "928 Hempstead Turnpike",
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Paul Marino Music Studio",
+        "place": null,
+        "building": null,
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research and collaboration on AI project",
+        "place": "Paul Marino Music Studio",
+        "building": "82 Franklin Avenue",
+        "start_time": "07:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to We Love Nutrition - Healthy Protein Juice Bar / Nutritional Supplements",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Paul Marino Music Studio",
+        "end_place": "We Love Nutrition - Healthy Protein Juice Bar / Nutritional Supplements"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "We Love Nutrition - Healthy Protein Juice Bar / Nutritional Supplements",
+        "building": "11B Franklin Avenue",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "We Love Nutrition - Healthy Protein Juice Bar / Nutritional Supplements",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Exercise and relaxation",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "13:30:00",
+        "end_time": "15:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "15:30:00",
+        "end_time": "16:00:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Stanley Tek Corp"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators group meeting",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "16:00:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to T & F Pork Store & Italian Delicatessen",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "T & F Pork Store & Italian Delicatessen"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "T & F Pork Store & Italian Delicatessen",
+        "building": "928 Hempstead Turnpike",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Yoshua Bengio's room at Caruso & Boughton Realty Inc",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "T & F Pork Store & Italian Delicatessen",
+        "end_place": "Yoshua Bengio's room at Caruso & Boughton Realty Inc"
+    },
+    {
+        "type": "main",
+        "activity": "Evening research and mentoring",
+        "place": "Yoshua Bengio's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "19:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Yoshua Bengio's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "22:00:00",
+        "end_time": "23:59:59"
+    }
+]

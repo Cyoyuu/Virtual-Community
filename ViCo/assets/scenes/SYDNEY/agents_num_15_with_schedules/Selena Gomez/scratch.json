@@ -1,0 +1,229 @@
+{
+    "name": "Selena Gomez",
+    "first_name": "Selena",
+    "last_name": "Gomez",
+    "age": 32,
+    "innate": "hedonism, universalism, benevolence",
+    "learned": "I am a singer, actress, and producer known for my music career and roles in various films and TV shows. I am also involved in philanthropy and mental health advocacy.",
+    "currently": "I am in Sydney to perform at a charity concert.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Celebrity Visitors",
+            "description": "A group of famous individuals visiting Sydney for various events and collaborations.",
+            "place": "Zetland Hotel",
+            "members": [
+                "Elon Musk",
+                "Emma Watson",
+                "Selena Gomez",
+                "Genghis Khan",
+                "Tiger Woods"
+            ],
+            "daily_activity": "networking and attending events from 18:00 to 20:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Selena Gomez's room at Zetland Hotel",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Selena Gomez's room at Zetland Hotel",
+            "building": "Zetland Hotel",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at Finestra Del Caffe",
+            "place": "Finestra Del Caffe",
+            "building": "Zetland Hotel",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to F45 Training Alexandria",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Workout at F45 Training Alexandria",
+            "place": "F45 Training Alexandria",
+            "building": "3 Botany Road",
+            "start_time": "09:00:00",
+            "end_time": "10:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Green Square Library",
+            "place": null,
+            "building": null,
+            "start_time": "10:00:00",
+            "end_time": "10:30:00",
+            "start_place": "F45 Training Alexandria",
+            "end_place": "Green Square Library"
+        },
+        {
+            "type": "main",
+            "activity": "Philanthropy and mental health advocacy work",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "10:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Camy's Chargrill Chicken Green Square",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Green Square Library",
+            "end_place": "Camy's Chargrill Chicken Green Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Camy's Chargrill Chicken Green Square",
+            "place": "Camy's Chargrill Chicken Green Square",
+            "building": "Green Square",
+            "start_time": "13:00:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to MLP Ballet Pilates",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Camy's Chargrill Chicken Green Square",
+            "end_place": "MLP Ballet Pilates"
+        },
+        {
+            "type": "main",
+            "activity": "Pilates session at MLP Ballet Pilates",
+            "place": "MLP Ballet Pilates",
+            "building": "Infinity",
+            "start_time": "14:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Miracle Supermarket Green Square",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:15:00",
+            "start_place": "MLP Ballet Pilates",
+            "end_place": "Miracle Supermarket Green Square"
+        },
+        {
+            "type": "main",
+            "activity": "Grocery shopping at Miracle Supermarket Green Square",
+            "place": "Miracle Supermarket Green Square",
+            "building": "Infinity",
+            "start_time": "15:15:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Zetland Hotel",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Miracle Supermarket Green Square",
+            "end_place": "Selena Gomez's room at Zetland Hotel"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and prepare for evening events",
+            "place": "Selena Gomez's room at Zetland Hotel",
+            "building": "Zetland Hotel",
+            "start_time": "16:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at Finestra Del Caffe",
+            "place": "Finestra Del Caffe",
+            "building": "Zetland Hotel",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Networking with Celebrity Visitors",
+            "place": "Zetland Hotel",
+            "building": "Zetland Hotel",
+            "start_time": "18:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to charity concert venue",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Zetland Hotel",
+            "end_place": "Green Square Library"
+        },
+        {
+            "type": "main",
+            "activity": "Perform at charity concert",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "20:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Zetland Hotel",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "23:00:00",
+            "start_place": "Green Square Library",
+            "end_place": "Selena Gomez's room at Zetland Hotel"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for bed",
+            "place": "Selena Gomez's room at Zetland Hotel",
+            "building": "Zetland Hotel",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Eve By J Gonzales's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Ponchos Tacos",
+        "building": "1101 Light Street",
+        "start_time": "08:15:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Federal Hill Preparatory School",
+        "place": null,
+        "building": null,
+        "start_time": "08:45:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and study",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Poke Bowl - Federal Hill",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Federal Hill Preparatory School",
+        "end_place": "Poke Bowl - Federal Hill"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Poke Bowl - Federal Hill",
+        "building": "1040 Light Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Federal Hill Preparatory School",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "12:40:00",
+        "start_place": "Poke Bowl - Federal Hill",
+        "end_place": "Federal Hill Preparatory School"
+    },
+    {
+        "type": "main",
+        "activity": "Continue studying and coding practice",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
+        "start_time": "12:40:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Participate in Young Scholars Association study group session",
+        "place": "Federal Hill Preparatory School",
+        "building": "1040 William Street",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to South Baltimore Strength Club",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Federal Hill Preparatory School",
+        "end_place": "South Baltimore Strength Club"
+    },
+    {
+        "type": "main",
+        "activity": "Workout session",
+        "place": "South Baltimore Strength Club",
+        "building": "1237 Wall Street",
+        "start_time": "16:15:00",
+        "end_time": "17:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Brewer's Cask",
+        "place": null,
+        "building": null,
+        "start_time": "17:15:00",
+        "end_time": "17:30:00",
+        "start_place": "South Baltimore Strength Club",
+        "end_place": "The Brewer's Cask"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "The Brewer's Cask",
+        "building": "Brewers Cask",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Eve By J Gonzales's room",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "The Brewer's Cask",
+        "end_place": "Eve By J Gonzales's room at 1111 Light Street Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Coding practice and hackathon preparation",
+        "place": "Eve By J Gonzales's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "18:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Eve By J Gonzales's room at 1111 Light Street Apartments",
+        "building": "1111 Light Luxury Apartments",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

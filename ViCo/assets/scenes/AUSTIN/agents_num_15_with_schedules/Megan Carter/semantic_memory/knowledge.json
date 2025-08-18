@@ -1,0 +1,428 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at 4th and Colorado",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Austin Music and Arts Club"
+        ]
+    },
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at Aloft Austin Downtown",
+        "appearance": "ViCo/assets/imgs/avatars/Emily Johnson.png",
+        "groups": [
+            "Austin Music and Arts Club"
+        ]
+    },
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "Nellis Realty",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "groups": [
+            "Austin Music and Arts Club"
+        ]
+    },
+    "Austin Music and Arts Club": {
+        "description": "A club for music and art lovers to share their passion and collaborate on creative projects.",
+        "place": "Northern-Southern",
+        "members": [
+            "Brycer Rodriguez",
+            "Emily Johnson",
+            "Olivia Adams",
+            "Megan Carter"
+        ],
+        "daily_activity": "attending art workshops from 17:00 to 18:00"
+    },
+    "Megan Carter's room at The Driskill": {
+        "building": "The Driskill",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1164.4101486206055,
+            1045.4788842201233,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Megan Carter's room at The Driskill",
+        "bounding_box": [
+            164.4190478965505,
+            45.95275120352525,
+            119.48749923706055,
+            49.06776463765067,
+            54.34353309550402,
+            20.864112854003906,
+            -0.3018611889945575
+        ]
+    },
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.0162734985352,
+            846.779727935791,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
+        ]
+    },
+    "REP Real Estate Partners": {
+        "building": "301 Congress",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1035.5013465881348,
+            735.1301651000977,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            36.42030355833909,
+            -260.97442031289506,
+            128.56488418579104,
+            103.43402650153512,
+            43.07685841660562,
+            48.342430114746094,
+            -0.31240514790593676
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "The Driskill": {
+        "building": "The Driskill",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1164.4101486206055,
+            1045.4788842201233,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            164.4190478965505,
+            45.95275120352525,
+            119.48749923706055,
+            49.06776463765067,
+            54.34353309550402,
+            20.864112854003906,
+            -0.3018611889945575
+        ]
+    },
+    "Shop 24": {
+        "building": "213 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.1889190673828,
+            950.5078811645508,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            232.18412017822268,
+            -49.49211883544922,
+            112.08625793457031,
+            7.084113131569865,
+            39.00810866711124,
+            8.027328491210938,
+            -0.3126706401264996
+        ]
+    },
+    "DuMont's Down Low": {
+        "building": "DuMont's Down Low",
+        "coarse_type": "food",
+        "fine_types": [
+            "retail",
+            "bar"
+        ],
+        "location": [
+            817.8811416625977,
+            922.215087890625,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -182.1195068359375,
+            -77.7813949584961,
+            108.98373413085938,
+            6.144325256347656,
+            38.416595458984375,
+            5.665496826171875,
+            -0.3124043345451355
+        ]
+    },
+    "Cuatro Gato": {
+        "building": "Coconut Club",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            830.6865081787109,
+            846.1725463867188,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -169.32778219052898,
+            -153.8270778019862,
+            108.95298385620119,
+            24.816763775374998,
+            11.160529388330406,
+            7.999519348144531,
+            -0.3189735691954406
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "5th and Colorado",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            849.1528282165527,
+            959.4064693450928,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -150.8711313336559,
+            -40.593528950208295,
+            139.06513595581055,
+            53.96049004373077,
+            39.745880443738045,
+            62.901283264160156,
+            -0.31915276708788637
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Royal Blue Grocery",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "finance",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1108.6464576721191,
+            1068.9332084655762,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            108.64229994281044,
+            68.92022818235934,
+            112.9504165649414,
+            7.643033917136528,
+            37.49435990797152,
+            7.2278289794921875,
+            1.2601449681022063
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

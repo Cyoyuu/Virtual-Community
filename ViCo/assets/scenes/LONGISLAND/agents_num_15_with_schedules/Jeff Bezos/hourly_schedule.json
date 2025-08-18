@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jeff Bezos's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "00:00:00",
+        "end_time": "06:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "99 United Supermarket Inc.",
+        "building": "909 Hempstead Turnpike",
+        "start_time": "06:00:00",
+        "end_time": "06:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Paul Marino Music Studio",
+        "place": null,
+        "building": null,
+        "start_time": "06:30:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research new tech investment opportunities",
+        "place": "Paul Marino Music Studio",
+        "building": "82 Franklin Avenue",
+        "start_time": "07:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to 99 United Supermarket Inc.",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Paul Marino Music Studio",
+        "end_place": "99 United Supermarket Inc."
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "99 United Supermarket Inc.",
+        "building": "909 Hempstead Turnpike",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Synergy Fitness NY",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "99 United Supermarket Inc.",
+        "end_place": "Synergy Fitness NY"
+    },
+    {
+        "type": "main",
+        "activity": "Workout",
+        "place": "Synergy Fitness NY",
+        "building": "999 Hempstead Turnpike",
+        "start_time": "13:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Stanley Tek Corp",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Synergy Fitness NY",
+        "end_place": "Stanley Tek Corp"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends with Tech Innovators",
+        "place": "Stanley Tek Corp",
+        "building": "922 Hempstead Turnpike",
+        "start_time": "15:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Wah Luck Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "18:00:00",
+        "start_place": "Stanley Tek Corp",
+        "end_place": "Wah Luck Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Wah Luck Kitchen",
+        "building": "930 Hempstead Turnpike",
+        "start_time": "18:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Jeff Bezos's room at Caruso & Boughton Realty Inc",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Wah Luck Kitchen",
+        "end_place": "Jeff Bezos's room at Caruso & Boughton Realty Inc"
+    },
+    {
+        "type": "main",
+        "activity": "Evening relaxation and planning",
+        "place": "Jeff Bezos's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Jeff Bezos's room at Caruso & Boughton Realty Inc",
+        "building": "900 Hempstead Turnpike",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

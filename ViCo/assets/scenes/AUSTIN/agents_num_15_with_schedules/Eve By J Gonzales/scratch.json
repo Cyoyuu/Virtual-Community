@@ -3,28 +3,27 @@
     "first_name": "Eve",
     "last_name": "Gonzales",
     "age": 21,
-    "innate": "hedonism, stimulation, self-direction",
-    "learned": "I am a bartender at Neon Grotto. I enjoy music and nightlife, and I love meeting new people.",
-    "currently": "I am working on improving my mixology skills to create unique cocktails.",
-    "lifestyle": "I go to bed around 02:00, wake up around 10:00, eat dinner around 20:00",
+    "innate": "stimulation, self-direction, achievement",
+    "learned": "I am a student at the University of Texas System studying computer science. I enjoy coding and participating in hackathons.",
+    "currently": "I am working on a project for a hackathon competition.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Creative Minds",
-            "description": "A group of creative individuals who share a passion for art, design, and self-expression.",
-            "place": "Neon Grotto",
+            "name": "Tech Innovators Group",
+            "description": "A group of tech enthusiasts and professionals who collaborate on innovative projects and share knowledge.",
+            "place": "Indeed Tower",
             "members": [
+                "Roth Miller",
                 "Eve By J Gonzales",
-                "Olivia Adams",
-                "Kate Novak",
-                "Sophie Carlsen"
+                "Elizabeth Mensah"
             ],
-            "daily_activity": "sharing creative ideas and projects from 19:00 to 20:00"
+            "daily_activity": "brainstorming tech solutions from 16:00 to 17:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Eve By J Gonzales's room at 4th and Colorado",
+    "living_place": "Eve By J Gonzales's room at Susan Stiles Realty",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,129 +33,149 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Eve By J Gonzales's room at 4th and Colorado",
-            "building": "319 Colorado Street",
+            "place": "Eve By J Gonzales's room at Susan Stiles Realty",
+            "building": "Brown Building",
             "start_time": "00:00:00",
-            "end_time": "10:00:00"
+            "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "Driftwood Downtown",
-            "building": "319 Colorado Street",
-            "start_time": "10:00:00",
-            "end_time": "10:30:00"
+            "place": "Hoson",
+            "building": "Claudia Taylor Johnson Hall",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Neon Grotto",
+            "activity": "Commute to University of Texas System",
             "place": null,
             "building": null,
-            "start_time": "10:30:00",
-            "end_time": "11:00:00",
-            "start_place": "Driftwood Downtown",
-            "end_place": "Neon Grotto"
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
         },
         {
             "type": "main",
-            "activity": "Practice mixology skills",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
-            "start_time": "11:00:00",
-            "end_time": "14:00:00"
+            "activity": "Study and work on hackathon project",
+            "place": "University of Texas System",
+            "building": "Oneut",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Beverages and Snacks Store",
+            "activity": "Commute to Thistle Cafe",
             "place": null,
             "building": null,
-            "start_time": "14:00:00",
-            "end_time": "14:30:00",
-            "start_place": "Neon Grotto",
-            "end_place": "Beverages and Snacks Store"
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "University of Texas System",
+            "end_place": "Thistle Cafe"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Thistle Cafe",
+            "building": "Procore Tower",
+            "start_time": "12:10:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to University of Texas System",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "Thistle Cafe",
+            "end_place": "University of Texas System"
         },
         {
             "type": "main",
-            "activity": "Buy beverages and snacks",
-            "place": "Beverages and Snacks Store",
-            "building": "5th and Colorado",
-            "start_time": "14:30:00",
-            "end_time": "15:00:00"
+            "activity": "Continue working on hackathon project",
+            "place": "University of Texas System",
+            "building": "Oneut",
+            "start_time": "13:00:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Indeed Tower",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "University of Texas System",
+            "end_place": "Indeed Tower"
+        },
+        {
+            "type": "main",
+            "activity": "Brainstorming tech solutions with Tech Innovators Group",
+            "place": "Indeed Tower",
+            "building": "Indeed Tower",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lit Lounge",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Indeed Tower",
+            "end_place": "Lit Lounge"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Lit Lounge",
+            "building": "215 East 6th Street",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Northern-Southern",
             "place": null,
             "building": null,
-            "start_time": "15:00:00",
-            "end_time": "15:30:00",
-            "start_place": "Beverages and Snacks Store",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Lit Lounge",
             "end_place": "Northern-Southern"
         },
         {
             "type": "main",
-            "activity": "Visit Northern-Southern for entertainment",
+            "activity": "Relax and enjoy entertainment",
             "place": "Northern-Southern",
             "building": "107 East 5th Street Suite 107",
-            "start_time": "15:30:00",
-            "end_time": "17:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Neon Grotto",
-            "place": null,
-            "building": null,
-            "start_time": "17:00:00",
-            "end_time": "17:30:00",
-            "start_place": "Northern-Southern",
-            "end_place": "Neon Grotto"
-        },
-        {
-            "type": "main",
-            "activity": "Prepare for Creative Minds meeting",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
-            "start_time": "17:30:00",
-            "end_time": "19:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Creative Minds meeting",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
-            "start_time": "19:00:00",
+            "start_time": "18:30:00",
             "end_time": "20:00:00"
         },
         {
-            "type": "meal",
-            "activity": "Dinner",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
+            "type": "commute",
+            "activity": "Commute to Eve By J Gonzales's room at Susan Stiles Realty",
+            "place": null,
+            "building": null,
             "start_time": "20:00:00",
-            "end_time": "20:30:00"
+            "end_time": "20:30:00",
+            "start_place": "Northern-Southern",
+            "end_place": "Eve By J Gonzales's room at Susan Stiles Realty"
         },
         {
             "type": "main",
-            "activity": "Work as a bartender",
-            "place": "Neon Grotto",
-            "building": "Neon Grotto",
+            "activity": "Personal time and preparation for next day",
+            "place": "Eve By J Gonzales's room at Susan Stiles Realty",
+            "building": "Brown Building",
             "start_time": "20:30:00",
-            "end_time": "02:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Eve By J Gonzales's room",
-            "place": null,
-            "building": null,
-            "start_time": "02:00:00",
-            "end_time": "02:30:00"
+            "end_time": "23:00:00"
         },
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Eve By J Gonzales's room at 4th and Colorado",
-            "building": "319 Colorado Street",
-            "start_time": "02:30:00",
+            "place": "Eve By J Gonzales's room at Susan Stiles Realty",
+            "building": "Brown Building",
+            "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
     ],
@@ -169,13 +188,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Neon Grotto",
+    "working_place": "University of Texas System",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

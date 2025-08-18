@@ -1,0 +1,1164 @@
+{
+    "Via Ausonio": {
+        "building_glb": "buildings_element.099.glb",
+        "bounding_box": [
+            -28.022322888969306,
+            -267.1491729211908,
+            123.98828125000001,
+            25.45917558036924,
+            33.24996755248376,
+            20.574005126953125,
+            -0.7682366803780493
+        ],
+        "places": [
+            {
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "florist",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    971.8065643310547,
+                    738.6961212158203,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            },
+            {
+                "name": "Sant'Ambrogio",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    971.8065643310547,
+                    738.6961212158203,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -49.79214993893562,
+            -269.92077986612924
+        ]
+    },
+    "Via Edmondo de Amicis": {
+        "building_glb": "buildings_element.241.glb",
+        "bounding_box": [
+            -86.24646319257465,
+            -34.554938833890894,
+            128.78801727294922,
+            24.330979602733116,
+            23.07595143926519,
+            28.288436889648438,
+            -0.6634205517584668
+        ],
+        "places": [
+            {
+                "name": "Caf\u00e9 De Amicis",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    913.1083145141602,
+                    968.799633026123,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Bunkerbootcamp",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "physiotherapist",
+                    "gym",
+                    "point_of_interest",
+                    "health",
+                    "establishment"
+                ],
+                "location": [
+                    913.1083145141602,
+                    968.799633026123,
+                    -16
+                ],
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            },
+            {
+                "name": "Rossin Group srl",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    913.1083145141602,
+                    968.799633026123,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+            }
+        ],
+        "outdoor_xy": [
+            -90.9119592387235,
+            -19.14514376684998
+        ]
+    },
+    "33 Via De Amicis Edmondo": {
+        "building_glb": "buildings_element.358.glb",
+        "bounding_box": [
+            170.0806721381436,
+            -270.41645558858056,
+            128.57376480102542,
+            15.06608843057849,
+            25.565065871348153,
+            28.806480407714844,
+            0.8555169576724874
+        ],
+        "places": [
+            {
+                "name": "Beverages and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "health",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1168.3214492797852,
+                    729.5478668212891,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+            },
+            {
+                "name": "Bistrot A Buon Rendere",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1168.3214492797852,
+                    729.5478668212891,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            156.60557103635915,
+            -270.013349308535
+        ]
+    },
+    "open space": {
+        "bounding_box": null,
+        "places": [
+            {
+                "name": "ABEL",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1187.0965591453808,
+                    735.1482715378298,
+                    -0.008247297581220892
+                ],
+                "scene": null
+            },
+            {
+                "name": "Via Lodovico Necchi Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    275.8140310265028,
+                    -139.97034909004233
+                ],
+                "scene": null
+            },
+            {
+                "name": "Via Edmondo de Amicis Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    -65.93732561556723,
+                    -126.39486544599913
+                ],
+                "scene": null
+            },
+            {
+                "name": "Via Bernardino Zenale Bus Stop",
+                "coarse_type": "transit",
+                "fine_type": "bus stop",
+                "location": [
+                    -114.4527537817468,
+                    243.87291376961986
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 1",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -126.99953288891919,
+                    184.61791207176307
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 2",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    191.7041762596749,
+                    -112.95025571070914
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 3",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -70.93074925681577,
+                    -19.90143314509312
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 4",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    197.8229199282745,
+                    145.4380916390492
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 5",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -195.64842812589262,
+                    -107.06645171752132
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 6",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    -47.12202541236839,
+                    -220.04938063821953
+                ],
+                "scene": null
+            },
+            {
+                "name": "Bicycle Sharing Station 7",
+                "coarse_type": "transit",
+                "fine_type": "bicycle station",
+                "location": [
+                    179.97530517493664,
+                    -262.0452924473627
+                ],
+                "scene": null
+            }
+        ]
+    },
+    "Via Caminadella": {
+        "building_glb": "buildings_element.151.glb",
+        "bounding_box": [
+            146.88597880503363,
+            -159.16115151361,
+            122.68914031982422,
+            27.29813319649149,
+            16.66098357056834,
+            15.821731567382798,
+            0.5048246993320491
+        ],
+        "places": [
+            {
+                "name": "MILU APARTMENTS MILANO",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "name": "La Corte Romanengo - Sala da t\u00e8 e ristorante - Milano",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "bakery",
+                    "store",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -8
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "building": "Via Caminadella",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "J Robert Oppenheimer's room at MILU APARTMENTS MILANO"
+            },
+            {
+                "building": "Via Caminadella",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Jeff Bezos's room at MILU APARTMENTS MILANO"
+            },
+            {
+                "building": "Via Caminadella",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Justin Bieber's room at MILU APARTMENTS MILANO"
+            },
+            {
+                "building": "Via Caminadella",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "LeBron James's room at MILU APARTMENTS MILANO"
+            },
+            {
+                "building": "Via Caminadella",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1143.8871841430664,
+                    840.2990493774414,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Selena Gomez's room at MILU APARTMENTS MILANO"
+            }
+        ],
+        "outdoor_xy": [
+            137.35067093298574,
+            -172.19360814461632
+        ]
+    },
+    "Via Carroccio": {
+        "building_glb": "buildings_element.441.glb",
+        "bounding_box": [
+            -94.38683226153023,
+            -211.83962060342287,
+            122.22244262695314,
+            40.63685459470215,
+            35.36491233615746,
+            16.86810302734375,
+            -0.6561352304255561
+        ],
+        "places": [
+            {
+                "name": "Istituto Europeo Leopardi Paritario - Milano",
+                "coarse_type": "office",
+                "fine_types": [
+                    "primary_school",
+                    "secondary_school",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    906.4768829345703,
+                    788.1615524291992,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -110.72458310471067,
+            -198.11453438518106
+        ]
+    },
+    "Via Francesco Novati": {
+        "building_glb": "buildings_element.215.glb",
+        "bounding_box": [
+            211.0496550276761,
+            -154.8169509632623,
+            123.38034057617188,
+            14.65409259727792,
+            21.06825863834656,
+            16.32000732421875,
+            -0.7431676443319067
+        ],
+        "places": [
+            {
+                "name": "Just Bowl",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1209.7241821289062,
+                    847.586799621582,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            211.47019419507467,
+            -166.66606409884656
+        ]
+    },
+    "Via San Pio V": {
+        "building_glb": "buildings_element.421.glb",
+        "bounding_box": [
+            238.2344366715149,
+            -120.38660478695286,
+            121.98648071289062,
+            35.9319659677707,
+            27.48681204239712,
+            13.46490478515625,
+            0.28798192902087716
+        ],
+        "places": [
+            {
+                "name": "Universit\u00e0 Cattolica -Edificio via Lanzone 14",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1239.2957229614258,
+                    882.8430099487305,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            },
+            {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1239.2957229614258,
+                    882.8430099487305,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            }
+        ],
+        "outdoor_xy": [
+            257.33103373276134,
+            -130.10651210467327
+        ]
+    },
+    "Via San Vittore": {
+        "building_glb": "buildings_element.023.glb",
+        "bounding_box": [
+            -137.25127333203613,
+            126.59750545144792,
+            126.6708755493164,
+            28.14149149346803,
+            22.165544664594538,
+            23.559738159179688,
+            -0.3982692030645363
+        ],
+        "places": [
+            {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    861.2326583862305,
+                    1126.6292572021484,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -152.72544166180134,
+            119.99958529929279
+        ]
+    },
+    "Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci - Padiglione Olona": {
+        "building_glb": "buildings_element.087.glb",
+        "bounding_box": [
+            -184.58961486816406,
+            -81.22627258300781,
+            116.44261932373047,
+            35.094085693359375,
+            47.77935028076172,
+            5.8205108642578125,
+            -0.6583981513977051
+        ],
+        "places": [
+            {
+                "name": "Le Cavallerizze",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    825.3389129638672,
+                    918.7246150970459,
+                    -4
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+            },
+            {
+                "name": "Fresh and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    825.3389129638672,
+                    918.7246150970459,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            -167.9555561486363,
+            -90.0355239589177
+        ]
+    },
+    "Centro congressi Olona": {
+        "building_glb": "buildings_Centro congressi Olona.glb",
+        "bounding_box": [
+            -142.67289858886193,
+            27.628017544529023,
+            125.07577896118164,
+            79.34074498768669,
+            63.95318476302804,
+            21.281089782714844,
+            -0.6670726912513736
+        ],
+        "places": [
+            {
+                "name": "CeTIF",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    857.7248878479004,
+                    1012.148775100708,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -155.85839046778713,
+            -3.962785078449482
+        ]
+    },
+    "Colonne Di S.Lorenzo": {
+        "building_glb": "buildings_element.452.glb",
+        "bounding_box": [
+            -20.58967287476291,
+            -13.714702828202403,
+            120.97687911987305,
+            68.90765844390964,
+            94.5274145620654,
+            15.984962463378906,
+            0.6376403505539888
+        ],
+        "places": [
+            {
+                "name": "Jack mela verde",
+                "coarse_type": "food",
+                "fine_types": [
+                    "supermarket",
+                    "grocery_or_supermarket",
+                    "store",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    981.6261034011841,
+                    976.602541923523,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u041c\u0456\u043b\u0430\u043d",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    981.6261034011841,
+                    976.602541923523,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            },
+            {
+                "name": "Liceo Artistico Orsoline",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "secondary_school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    981.6261034011841,
+                    976.602541923523,
+                    -16
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -47.60179814807915,
+            -36.81144058231678
+        ]
+    },
+    "Via Giosu\u00e8 Carducci": {
+        "building_glb": "buildings_element.176.glb",
+        "bounding_box": [
+            -55.502483408877396,
+            124.44132215497586,
+            128.27688598632812,
+            14.480830021129316,
+            20.64550965629528,
+            26.731201171875,
+            -0.39192369428444496
+        ],
+        "places": [
+            {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    944.4972114562988,
+                    1124.446132659912,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -45.63360610229872,
+            126.74561671644284
+        ]
+    },
+    "Canonica di Sant'Ambrogio": {
+        "building_glb": "buildings_Canonica di Sant'Ambrogio.glb",
+        "bounding_box": [
+            109.1289291381836,
+            120.82315063476562,
+            121.91667175292969,
+            41.40115737915039,
+            75.36396026611328,
+            12.889236450195312,
+            -0.9960253238677979
+        ],
+        "places": [
+            {
+                "name": "Biblioteca dell'Archivio Capitolare di S. Ambrogio",
+                "coarse_type": "office",
+                "fine_types": [
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1119.3338813781738,
+                    1120.7677612304688,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            122.98018251410161,
+            155.6499401731459
+        ]
+    },
+    "Augustinianum": {
+        "building_glb": "buildings_Augustinianum.glb",
+        "bounding_box": [
+            245.40663472237475,
+            145.3008698100138,
+            124.22249221801758,
+            22.27184602805618,
+            47.699972798674686,
+            17.38402557373047,
+            0.599755187037199
+        ],
+        "places": [
+            {
+                "name": "Augustinianum",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "dormitory"
+                ],
+                "location": [
+                    1245.406639099121,
+                    1144.571647644043,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            },
+            {
+                "building": "Augustinianum",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "dormitory"
+                ],
+                "location": [
+                    1245.406639099121,
+                    1144.571647644043,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Brycer Rodriguez's room at Augustinianum"
+            }
+        ],
+        "outdoor_xy": [
+            226.3291307976128,
+            162.36000846367094
+        ]
+    },
+    "Italia": {
+        "building_glb": "buildings_element.307.glb",
+        "bounding_box": [
+            -254.069091796875,
+            266.92236328125,
+            121.45426940917969,
+            41.122798919677734,
+            22.443721771240234,
+            13.027633666992188,
+            -0.44085654616355896
+        ],
+        "places": [
+            {
+                "name": "ALTIS Graduate School of Sustainable Management",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    745.931396484375,
+                    1267.2182846069336,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -270.4081342799989,
+            261.11759029221827
+        ]
+    },
+    "Via Aristide de Togni": {
+        "building_glb": "buildings_element.386.glb",
+        "bounding_box": [
+            -131.70400375778104,
+            215.65381783079303,
+            124.63996505737305,
+            10.827900999157789,
+            26.641541122617294,
+            18.783790588378906,
+            -0.404016392000049
+        ],
+        "places": [
+            {
+                "name": "Il Rosmarino",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    868.2966003417969,
+                    1215.6067962646484,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "Studio De Vera",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    868.2966003417969,
+                    1215.6067962646484,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            -137.81400040030886,
+            202.6913621205059
+        ]
+    },
+    "Padiglione Aeronavale": {
+        "building_glb": "buildings_Padiglione Aeronavale.glb",
+        "bounding_box": [
+            -221.60708468110283,
+            -85.00327477544204,
+            123.66853713989258,
+            59.509900178541244,
+            57.57105673539258,
+            19.840599060058594,
+            -0.6696532835012385
+        ],
+        "places": [
+            {
+                "name": "Padiglione Aeronavale",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum"
+                ],
+                "location": [
+                    778.8821029663086,
+                    914.5847110748291,
+                    -4
+                ],
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            }
+        ],
+        "outdoor_xy": [
+            -233.29642421250549,
+            -50.22063767292424
+        ]
+    },
+    "Domus Fausta": {
+        "building_glb": "buildings_Domus Fausta.glb",
+        "bounding_box": [
+            -116.21344131845761,
+            186.78177444650285,
+            128.04185485839844,
+            13.146765012800186,
+            13.74253132279045,
+            25.79095458984375,
+            -0.39134508928004613
+        ],
+        "places": [
+            {
+                "name": "Domus Fausta",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    883.7901039123535,
+                    1186.769187927246,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+            },
+            {
+                "building": "Domus Fausta",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    883.7901039123535,
+                    1186.769187927246,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Alex Jefferson's room at Domus Fausta"
+            },
+            {
+                "building": "Domus Fausta",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    883.7901039123535,
+                    1186.769187927246,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Leonard Park's room at Domus Fausta"
+            },
+            {
+                "building": "Domus Fausta",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    883.7901039123535,
+                    1186.769187927246,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Shannon Steves's room at Domus Fausta"
+            }
+        ],
+        "outdoor_xy": [
+            -123.50270673757602,
+            188.97143937977518
+        ]
+    },
+    "Domus Carola": {
+        "building_glb": "buildings_Domus Carola.glb",
+        "bounding_box": [
+            -121.4261245727539,
+            172.75958251953125,
+            128.3756561279297,
+            14.187600135803223,
+            16.161571502685547,
+            26.510238647460938,
+            -0.3911134600639343
+        ],
+        "places": [
+            {
+                "name": "Domus Carola",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    877.6374855041504,
+                    1172.987937927246,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            },
+            {
+                "building": "Domus Carola",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    877.6374855041504,
+                    1172.987937927246,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Jody Petersen's room at Domus Carola"
+            },
+            {
+                "building": "Domus Carola",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    877.6374855041504,
+                    1172.987937927246,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Megan Carter's room at Domus Carola"
+            },
+            {
+                "building": "Domus Carola",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    877.6374855041504,
+                    1172.987937927246,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Steve Johnson's room at Domus Carola"
+            }
+        ],
+        "outdoor_xy": [
+            -132.1493095625951,
+            167.35883136066994
+        ]
+    },
+    "Domus Julia": {
+        "building_glb": "buildings_Domus Julia.glb",
+        "bounding_box": [
+            -127.18396377563474,
+            159.13990020751953,
+            127.45817565917969,
+            13.929048624203919,
+            13.573007212801032,
+            24.55413818359375,
+            -0.39226779745689166
+        ],
+        "places": [
+            {
+                "name": "Domus Julia",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    872.7418441772461,
+                    1159.1399002075195,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+            },
+            {
+                "building": "Domus Julia",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    872.7418441772461,
+                    1159.1399002075195,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Emily Johnson's room at Domus Julia"
+            },
+            {
+                "building": "Domus Julia",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    872.7418441772461,
+                    1159.1399002075195,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Louise Roberts's room at Domus Julia"
+            },
+            {
+                "building": "Domus Julia",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    872.7418441772461,
+                    1159.1399002075195,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Pika Hayes's room at Domus Julia"
+            }
+        ],
+        "outdoor_xy": [
+            -136.53791964824367,
+            157.36387658001894
+        ]
+    }
+}

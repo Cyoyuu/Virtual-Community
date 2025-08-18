@@ -1,0 +1,146 @@
+{
+    "name": "Zara Williams",
+    "first_name": "Zara",
+    "last_name": "Williams",
+    "age": 15,
+    "innate": "conformity, tradition",
+    "learned": "I am a student at Kita kinderzimmer Valentinshof. I enjoy reading and playing the piano.",
+    "currently": "I am preparing for my upcoming piano recital.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Art and Culture Advocates",
+            "description": "A group dedicated to promoting art and cultural awareness.",
+            "place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "members": [
+                "Emily Johnson",
+                "Sophie Carlsen",
+                "Zara Williams"
+            ],
+            "daily_activity": "organizing cultural events from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Zara Williams's room at Puppenstube",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Zara Williams's room at Puppenstube",
+            "building": "Puppenstube",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Villani",
+            "building": "Valentinskamp 20",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Kita kinderzimmer Valentinshof",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend school",
+            "place": "Kita kinderzimmer Valentinshof",
+            "building": "Caffamacherreihe",
+            "start_time": "09:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "16:00:00",
+            "start_place": "Kita kinderzimmer Valentinshof",
+            "end_place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer"
+        },
+        {
+            "type": "main",
+            "activity": "Organize cultural events with Art and Culture Advocates",
+            "place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "building": "open space",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Villani",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "18:00:00",
+            "start_place": "Stolpersteine f\u00fcr homosexuelle NS-Opfer",
+            "end_place": "Villani"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Villani",
+            "building": "Valentinskamp 20",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Zara Williams's room at Puppenstube",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Villani",
+            "end_place": "Zara Williams's room at Puppenstube"
+        },
+        {
+            "type": "main",
+            "activity": "Practice piano for recital",
+            "place": "Zara Williams's room at Puppenstube",
+            "building": "Puppenstube",
+            "start_time": "19:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Read a book",
+            "place": "Zara Williams's room at Puppenstube",
+            "building": "Puppenstube",
+            "start_time": "23:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Kita kinderzimmer Valentinshof",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

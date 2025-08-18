@@ -1,0 +1,402 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Oportunidades Inmobiliarias",
+        "appearance": "ViCo/assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Madrid Arts and Culture Society"
+        ]
+    },
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Kate Novak's room at Oportunidades Inmobiliarias",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Madrid Arts and Culture Society"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Fiag Apartments",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Madrid Arts and Culture Society"
+        ]
+    },
+    "Madrid Arts and Culture Society": {
+        "description": "A group dedicated to promoting arts and culture in Madrid.",
+        "place": "La Nueva Troje",
+        "members": [
+            "Brycer Rodriguez",
+            "Kate Novak",
+            "Sophie Carlsen",
+            "Megan Carter"
+        ],
+        "daily_activity": "exploring local art exhibitions from 16:00 to 17:00"
+    },
+    "Megan Carter's room at Fiag Apartments": {
+        "building": "Calle del Desenga\u00f1o",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1152.2783508300781,
+            1120.4786109924316,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "Megan Carter's room at Fiag Apartments",
+        "bounding_box": [
+            152.29362026630764,
+            120.3874949001603,
+            121.33912658691406,
+            15.377246590993321,
+            27.28874436949214,
+            22.81463623046875,
+            -0.2772528807373819
+        ]
+    },
+    "La Nueva Troje": {
+        "building": "14",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "night_club",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1198.3304290771484,
+            1107.566593170166,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            198.39303588867188,
+            107.71424102783203,
+            121.64018249511719,
+            9.290390014648438,
+            25.12162208557129,
+            22.919410705566406,
+            -0.19204309582710266
+        ]
+    },
+    "Studio34pilates": {
+        "building": "Calle de Mu\u00f1oz Torrero",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1274.747085571289,
+            1112.656337738037,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            274.55799105182007,
+            112.9899870286611,
+            119.31771087646484,
+            11.100244044345928,
+            18.1689811755105,
+            18.389236450195312,
+            -0.2848952281368633
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Calle del Arenal",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            758.5094909667969,
+            770.8041229248047,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -241.52343222391923,
+            -229.70979261260393,
+            99.65534973144533,
+            16.67512274950127,
+            41.76756974162962,
+            21.998931884765625,
+            -0.4174901585847156
+        ]
+    },
+    "Hotel Vincci Capitol": {
+        "building": "Hotel Vincci Capitol",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            905.4335861206055,
+            1035.963722229004,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            -94.49443218334743,
+            36.6164273181318,
+            124.93082427978516,
+            56.245469422165804,
+            32.249664218012526,
+            42.28153991699219,
+            -0.050233323818322906
+        ]
+    },
+    "Edimburgo bar": {
+        "building": "Calle de Mesonero Romanos",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1169.9193725585938,
+            1084.005142211914,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            169.88808961891655,
+            84.07732597542672,
+            123.13020706176758,
+            24.56227276375127,
+            18.35187591737885,
+            25.05284881591797,
+            -0.07679813460016745
+        ]
+    },
+    "La Prensa. Bar Restaurantes en Gran V\u00eda": {
+        "building": "Calle de Miguel Moya",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1022.8988678455353,
+            1088.7454566955566,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            23.225160598754883,
+            88.74545288085938,
+            117.198974609375,
+            30.94264793395996,
+            15.392956733703613,
+            21.339378356933594,
+            -0.0652204379439354
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "C",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            815.716552734375,
+            947.4443855285645,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -188.1723030237084,
+            -55.21100334364547,
+            113.46380233764648,
+            25.499670034861314,
+            24.36959004487645,
+            29.58661651611328,
+            0.46985734504023985
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Callej\u00f3n de Preciados",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1035.0827598571777,
+            790.8489837646484,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            36.078176274909936,
+            -209.81119567552958,
+            108.19519805908205,
+            13.361520763429244,
+            25.223577228635865,
+            19.6097412109375,
+            1.077180418714619
+        ]
+    },
+    "Caf\u00e9 Berl\u00edn": {
+        "building": "C",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            815.716552734375,
+            947.4443855285645,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -188.1723030237084,
+            -55.21100334364547,
+            113.46380233764648,
+            25.499670034861314,
+            24.36959004487645,
+            29.58661651611328,
+            0.46985734504023985
+        ]
+    },
+    "Costanilla de los \u00c1ngeles Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -240.75430513207507,
+            -188.05569433692537
+        ],
+        "rotation": -0.3769851337020972,
+        "bounding_box": null
+    },
+    "Gran V\u00eda Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -52.57896990191884,
+            56.62883345060033
+        ],
+        "rotation": -2.2675188563304687,
+        "bounding_box": null
+    },
+    "Calle de la Salud Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            212.46551612487096,
+            -160.88704858860845
+        ],
+        "rotation": -2.069273692645017,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            196.05032492166447,
+            -81.85461671797117
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -80.47606759921624,
+            -99.78689984061008
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -179.26385198860606,
+            68.44000185135971
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            173.46808421261872,
+            138.65059786336298
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Calle de la Salud": [
+            {
+                "stop_name": "Costanilla de los \u00c1ngeles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Gran V\u00eda Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Calle de la Salud Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Costanilla de los \u00c1ngeles": [
+            {
+                "stop_name": "Calle de la Salud Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Gran V\u00eda Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Costanilla de los \u00c1ngeles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

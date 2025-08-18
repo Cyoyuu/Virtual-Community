@@ -2,95 +2,125 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota",
-        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "place": "Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z",
+        "building": "G\u00f6m\u00f6ry-h\u00e1z",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
         "activity": "Breakfast",
-        "place": "Cat Cafe",
-        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "place": "Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z",
+        "building": "G\u00f6m\u00f6ry-h\u00e1z",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to school",
+        "activity": "Commute to Danubius Center",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
-        "end_time": "09:00:00"
+        "end_time": "08:45:00",
+        "start_place": "Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z",
+        "end_place": "Danubius Center"
     },
     {
         "type": "main",
-        "activity": "Attend school",
-        "place": "Mad\u00e1ch Trade Center",
-        "building": "Mad\u00e1ch Trade Center",
-        "start_time": "09:00:00",
-        "end_time": "15:00:00"
+        "activity": "Activity at Danubius Center",
+        "place": "Danubius Center",
+        "building": "Danubius Center",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roni ABC",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Danubius Center",
+        "end_place": "Roni ABC"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Roni ABC",
+        "building": "Roni ABC",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Roni ABC",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and Snacks Store",
+        "place": "Fresh and Snacks Store",
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Roni ABC",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Roni ABC"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Roni ABC",
+        "building": "Roni ABC",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Association of Hungarian Fine and Applied Artists",
         "place": null,
         "building": null,
-        "start_time": "15:00:00",
-        "end_time": "15:30:00",
-        "start_place": "Mad\u00e1ch Trade Center",
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Roni ABC",
         "end_place": "Association of Hungarian Fine and Applied Artists"
     },
     {
         "type": "main",
-        "activity": "Collaborate on art projects with Creative Arts Collective",
+        "activity": "Activity at Association of Hungarian Fine and Applied Artists",
         "place": "Association of Hungarian Fine and Applied Artists",
         "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
-        "start_time": "15:30:00",
-        "end_time": "17:00:00"
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Star Kebab & Grill",
+        "activity": "Commute to Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z",
         "place": null,
         "building": null,
-        "start_time": "17:00:00",
-        "end_time": "17:30:00",
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
         "start_place": "Association of Hungarian Fine and Applied Artists",
-        "end_place": "Star Kebab & Grill"
-    },
-    {
-        "type": "meal",
-        "activity": "Dinner",
-        "place": "Star Kebab & Grill",
-        "building": "Orczy-h\u00e1z 1795-1937.002",
-        "start_time": "17:30:00",
-        "end_time": "18:30:00"
-    },
-    {
-        "type": "commute",
-        "activity": "Commute back to Megan Carter's room",
-        "place": null,
-        "building": null,
-        "start_time": "18:30:00",
-        "end_time": "19:00:00",
-        "start_place": "Star Kebab & Grill",
-        "end_place": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota"
+        "end_place": "Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z"
     },
     {
         "type": "main",
-        "activity": "Art practice for school competition",
-        "place": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota",
-        "building": "Hark\u00e1nyi-b\u00e9rpalota",
-        "start_time": "19:00:00",
-        "end_time": "22:00:00"
-    },
-    {
-        "type": "main",
-        "activity": "Relax and prepare for bed",
-        "place": "Megan Carter's room at Hark\u00e1nyi-b\u00e9rpalota",
-        "building": "Hark\u00e1nyi-b\u00e9rpalota",
-        "start_time": "22:00:00",
+        "activity": "Prepare for Bed",
+        "place": "Megan Carter's room at G\u00f6m\u00f6ry-h\u00e1z",
+        "building": "G\u00f6m\u00f6ry-h\u00e1z",
+        "start_time": "22:45:00",
         "end_time": "23:59:59"
     }
 ]

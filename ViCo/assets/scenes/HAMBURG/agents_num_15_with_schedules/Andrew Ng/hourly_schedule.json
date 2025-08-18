@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Andrew Ng's room at Marriott Hotel",
+        "building": "Marriott Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Caf\u00e9 Hamburg",
+        "building": "Gerhofstra\u00dfe 40/IV. Etage",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ABC Cube",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Caf\u00e9 Hamburg",
+        "end_place": "ABC Cube"
+    },
+    {
+        "type": "main",
+        "activity": "Keynote speech at tech conference",
+        "place": "ABC Cube",
+        "building": "ABC Cube",
+        "start_time": "09:30:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to BLOCK HOUSE Deutschlandhaus",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "ABC Cube",
+        "end_place": "BLOCK HOUSE Deutschlandhaus"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "BLOCK HOUSE Deutschlandhaus",
+        "building": "Deutschlandhaus",
+        "start_time": "12:10:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ABC Cube",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "BLOCK HOUSE Deutschlandhaus",
+        "end_place": "ABC Cube"
+    },
+    {
+        "type": "main",
+        "activity": "Brainstorming new tech ideas with Tech Innovators",
+        "place": "ABC Cube",
+        "building": "ABC Cube",
+        "start_time": "13:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie Hans",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "ABC Cube",
+        "end_place": "Galerie Hans"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Galerie Hans for entertainment",
+        "place": "Galerie Hans",
+        "building": "Heine-Haus",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tarantella - Gastronomiegesellschaft mbH",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Galerie Hans",
+        "end_place": "Tarantella - Gastronomiegesellschaft mbH"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Tarantella - Gastronomiegesellschaft mbH",
+        "building": "B\u00fcschstra\u00dfe 2",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to wineBANK Hamburg",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Tarantella - Gastronomiegesellschaft mbH",
+        "end_place": "wineBANK Hamburg"
+    },
+    {
+        "type": "main",
+        "activity": "Relax at wineBANK Hamburg",
+        "place": "wineBANK Hamburg",
+        "building": "Alte Oberpostdirektion",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Marriott Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "wineBANK Hamburg",
+        "end_place": "Andrew Ng's room at Marriott Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's activities",
+        "place": "Andrew Ng's room at Marriott Hotel",
+        "building": "Marriott Hotel",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Andrew Ng's room at Marriott Hotel",
+        "building": "Marriott Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

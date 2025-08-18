@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Building III",
+        "building": "Building III",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning routine and preparation for the day",
+        "place": "Louise Roberts's room at Building III",
+        "building": "Building III",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to De Nieuwe Vrouw",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Louise Roberts's room at Building III",
+        "end_place": "De Nieuwe Vrouw"
+    },
+    {
+        "type": "main",
+        "activity": "Work at De Nieuwe Vrouw",
+        "place": "De Nieuwe Vrouw",
+        "building": "Nieuwezijds Voorburgwal 178",
+        "start_time": "09:30:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Techlab Bv for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "De Nieuwe Vrouw",
+        "end_place": "Techlab Bv"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Techlab Bv",
+        "building": "Singel 326 A",
+        "start_time": "13:00:00",
+        "end_time": "14:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Flemish Cultural Center de Brakke Grond",
+        "place": null,
+        "building": null,
+        "start_time": "14:00:00",
+        "end_time": "14:30:00",
+        "start_place": "Techlab Bv",
+        "end_place": "Flemish Cultural Center de Brakke Grond"
+    },
+    {
+        "type": "main",
+        "activity": "Organize art exhibitions with Art and Culture Society",
+        "place": "Flemish Cultural Center de Brakke Grond",
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "start_time": "14:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to De Nieuwe Vrouw",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Flemish Cultural Center de Brakke Grond",
+        "end_place": "De Nieuwe Vrouw"
+    },
+    {
+        "type": "main",
+        "activity": "Continue organizing charity event",
+        "place": "De Nieuwe Vrouw",
+        "building": "Nieuwezijds Voorburgwal 178",
+        "start_time": "16:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bar-Restaurant Het Groene Paleis for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "De Nieuwe Vrouw",
+        "end_place": "Bar-Restaurant Het Groene Paleis"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Bar-Restaurant Het Groene Paleis",
+        "building": "NRC-gebouw",
+        "start_time": "18:30:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Amsterdam Yoga Centre",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Bar-Restaurant Het Groene Paleis",
+        "end_place": "Amsterdam Yoga Centre"
+    },
+    {
+        "type": "main",
+        "activity": "Evening yoga session",
+        "place": "Amsterdam Yoga Centre",
+        "building": "Singel 300",
+        "start_time": "20:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Louise Roberts's room at Building III",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Amsterdam Yoga Centre",
+        "end_place": "Louise Roberts's room at Building III"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Louise Roberts's room at Building III",
+        "building": "Building III",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Louise Roberts's room at Building III",
+        "building": "Building III",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

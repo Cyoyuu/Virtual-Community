@@ -3,29 +3,27 @@
     "first_name": "Brian",
     "last_name": "Carter",
     "age": 35,
-    "innate": "achievement, security, conformity",
-    "learned": "I am a manager at Hotel Catalonia Plaza Catalunya, overseeing daily operations and ensuring guest satisfaction. I enjoy hiking and photography in my free time.",
-    "currently": "I aim to improve the guest experience by implementing a new digital check-in system at the hotel.",
+    "innate": "security, conformity, tradition",
+    "learned": "I am a financial analyst at Banco Espa\u00f1ol de Cr\u00e9dito (Banesto), with a keen interest in economic trends and market analysis. I enjoy playing chess and solving puzzles.",
+    "currently": "I am working on a financial report for a major client at Banco Espa\u00f1ol de Cr\u00e9dito (Banesto).",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Tech Innovators",
-            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest in technology and innovation.",
-            "place": "TuCoworking",
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food enthusiasts experimenting with new recipes and culinary techniques.",
+            "place": "Can Pizza Universitat",
             "members": [
-                "Joe Anderson",
+                "Shannon Steves",
                 "Brian Carter",
-                "Jody Petersen",
-                "Richard Feynman",
-                "Will Smith"
+                "Joe Anderson"
             ],
-            "daily_activity": "developing tech solutions from 16:00 to 17:00"
+            "daily_activity": "experimenting with new recipes from 17:00 to 18:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Brian Carter's room at Casa Mart\u00ed",
+    "living_place": "Brian Carter's room at SmartMove - Real Estate Agency Barcelona",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,23 +32,23 @@
     "hourly_schedule": [
         {
             "type": "sleep",
-            "activity": "Sleeping",
-            "place": "Brian Carter's room at Casa Mart\u00ed",
-            "building": "Casa Mart\u00ed",
+            "activity": "Sleep",
+            "place": "Brian Carter's room at SmartMove - Real Estate Agency Barcelona",
+            "building": "Avinguda del Portal de l'\u00c0ngel",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "\u30af\u30a2\u30c8\u30ed \u30ac\u30c3\u30c4",
-            "building": "Casa Mart\u00ed",
+            "place": "OGGI Gelato Barcelona",
+            "building": "Avinguda del Portal de l'\u00c0ngel",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Hotel Catalonia Plaza Catalunya",
+            "activity": "Commute to work",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
@@ -58,118 +56,96 @@
         },
         {
             "type": "main",
-            "activity": "Overseeing daily operations and ensuring guest satisfaction",
-            "place": "Hotel Catalonia Plaza Catalunya",
-            "building": "Carrer de Bergara",
+            "activity": "Work on financial report for a major client",
+            "place": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+            "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
             "start_time": "09:00:00",
-            "end_time": "12:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Prado de Flores Restaurant",
-            "place": null,
-            "building": null,
-            "start_time": "12:00:00",
-            "end_time": "12:10:00",
-            "start_place": "Hotel Catalonia Plaza Catalunya",
-            "end_place": "Prado de Flores Restaurant"
+            "end_time": "12:30:00"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "Prado de Flores Restaurant",
-            "building": "Carrer de Santa Anna",
-            "start_time": "12:10:00",
-            "end_time": "12:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute back to Hotel Catalonia Plaza Catalunya",
-            "place": null,
-            "building": null,
+            "place": "Auna caf\u00e9",
+            "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
             "start_time": "12:30:00",
-            "end_time": "13:00:00",
-            "start_place": "Prado de Flores Restaurant",
-            "end_place": "Hotel Catalonia Plaza Catalunya"
+            "end_time": "13:30:00"
         },
         {
             "type": "main",
-            "activity": "Implementing new digital check-in system",
-            "place": "Hotel Catalonia Plaza Catalunya",
-            "building": "Carrer de Bergara",
-            "start_time": "13:00:00",
-            "end_time": "15:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to TuCoworking",
-            "place": null,
-            "building": null,
-            "start_time": "15:30:00",
-            "end_time": "16:00:00",
-            "start_place": "Hotel Catalonia Plaza Catalunya",
-            "end_place": "TuCoworking"
-        },
-        {
-            "type": "main",
-            "activity": "Developing tech solutions with Tech Innovators",
-            "place": "TuCoworking",
-            "building": "Pla\u00e7a de la Vila de Madrid",
-            "start_time": "16:00:00",
-            "end_time": "17:00:00"
+            "activity": "Continue working on financial report",
+            "place": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+            "building": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
+            "start_time": "13:30:00",
+            "end_time": "16:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Can Pizza Universitat",
             "place": null,
             "building": null,
-            "start_time": "17:00:00",
-            "end_time": "17:30:00",
-            "start_place": "TuCoworking",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
+            "start_place": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
             "end_place": "Can Pizza Universitat"
+        },
+        {
+            "type": "main",
+            "activity": "Experiment with new recipes with Culinary Creators",
+            "place": "Can Pizza Universitat",
+            "building": "Ronda de la Universitat",
+            "start_time": "17:00:00",
+            "end_time": "18:00:00"
         },
         {
             "type": "meal",
             "activity": "Dinner",
             "place": "Can Pizza Universitat",
             "building": "Ronda de la Universitat",
-            "start_time": "17:30:00",
-            "end_time": "18:00:00"
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Il\u00b7lacions Design Gallery",
             "place": null,
             "building": null,
-            "start_time": "18:00:00",
-            "end_time": "18:30:00",
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
             "start_place": "Can Pizza Universitat",
             "end_place": "Il\u00b7lacions Design Gallery"
         },
         {
             "type": "main",
-            "activity": "Photography and exploring design gallery",
+            "activity": "Visit Il\u00b7lacions Design Gallery",
             "place": "Il\u00b7lacions Design Gallery",
             "building": "Rambla de Canaletes",
-            "start_time": "18:30:00",
-            "end_time": "20:00:00"
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute back to Brian Carter's room at Casa Mart\u00ed",
+            "activity": "Commute back to Brian Carter's room",
             "place": null,
             "building": null,
-            "start_time": "20:00:00",
-            "end_time": "20:30:00",
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
             "start_place": "Il\u00b7lacions Design Gallery",
-            "end_place": "Brian Carter's room at Casa Mart\u00ed"
+            "end_place": "Brian Carter's room at SmartMove - Real Estate Agency Barcelona"
         },
         {
             "type": "main",
-            "activity": "Relaxing and preparing for the next day",
-            "place": "Brian Carter's room at Casa Mart\u00ed",
-            "building": "Casa Mart\u00ed",
-            "start_time": "20:30:00",
+            "activity": "Relax and play chess or solve puzzles",
+            "place": "Brian Carter's room at SmartMove - Real Estate Agency Barcelona",
+            "building": "Avinguda del Portal de l'\u00c0ngel",
+            "start_time": "21:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Evening snack",
+            "place": "OGGI Gelato Barcelona",
+            "building": "Avinguda del Portal de l'\u00c0ngel",
+            "start_time": "23:30:00",
             "end_time": "23:59:59"
         }
     ],
@@ -182,13 +158,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Hotel Catalonia Plaza Catalunya",
+    "working_place": "Banco Espa\u00f1ol de Cr\u00e9dito (Banesto)",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

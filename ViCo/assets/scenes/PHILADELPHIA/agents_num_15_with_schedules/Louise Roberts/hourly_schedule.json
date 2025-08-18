@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Talula's Garden",
+        "place": "Talula's Garden",
+        "building": "The Ayer",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Bridgette Mayer Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on exhibition preparation",
+        "place": "Bridgette Mayer Gallery",
+        "building": "709 Walnut Street 1st Floor",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Drink Fresh By Djurdjura",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Bridgette Mayer Gallery",
+        "end_place": "Drink Fresh By Djurdjura"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Drink Fresh By Djurdjura",
+        "place": "Drink Fresh By Djurdjura",
+        "building": "711 Walnut Street",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Bridgette Mayer Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Drink Fresh By Djurdjura",
+        "end_place": "Bridgette Mayer Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Continue exhibition preparation",
+        "place": "Bridgette Mayer Gallery",
+        "building": "709 Walnut Street 1st Floor",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Explore art exhibitions with Art Enthusiasts Club",
+        "place": "Bridgette Mayer Gallery",
+        "building": "709 Walnut Street 1st Floor",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Talula's Garden for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "18:00:00",
+        "start_place": "Bridgette Mayer Gallery",
+        "end_place": "Talula's Garden"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Talula's Garden",
+        "place": "Talula's Garden",
+        "building": "The Ayer",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Liberty Bell Center",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Talula's Garden",
+        "end_place": "Liberty Bell Center"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Liberty Bell Center",
+        "place": "Liberty Bell Center",
+        "building": "Liberty Bell Center",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Louise Roberts's room at The Ayer",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Liberty Bell Center",
+        "end_place": "Louise Roberts's room at The Ayer"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Louise Roberts's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "21:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Louise Roberts's room at The Ayer",
+        "building": "The Ayer",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

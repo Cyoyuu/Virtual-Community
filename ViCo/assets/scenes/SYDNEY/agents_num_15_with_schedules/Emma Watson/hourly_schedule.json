@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emma Watson's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Finestra Del Caffe",
+        "place": "Finestra Del Caffe",
+        "building": "Zetland Hotel",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to F45 Training Alexandria",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Finestra Del Caffe",
+        "end_place": "F45 Training Alexandria"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at F45 Training Alexandria",
+        "place": "F45 Training Alexandria",
+        "building": "3 Botany Road",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Green Square Library",
+        "place": null,
+        "building": null,
+        "start_time": "10:30:00",
+        "end_time": "11:00:00",
+        "start_place": "F45 Training Alexandria",
+        "end_place": "Green Square Library"
+    },
+    {
+        "type": "main",
+        "activity": "Work on gender equality initiatives",
+        "place": "Green Square Library",
+        "building": "Green Square Library",
+        "start_time": "11:00:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to IIKO Mazesoba",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Green Square Library",
+        "end_place": "IIKO Mazesoba"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at IIKO Mazesoba",
+        "place": "IIKO Mazesoba",
+        "building": "Portman on the Park",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Rail Operations Centre (ROC)",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "IIKO Mazesoba",
+        "end_place": "Rail Operations Centre (ROC)"
+    },
+    {
+        "type": "main",
+        "activity": "Meeting with local activists",
+        "place": "Rail Operations Centre (ROC)",
+        "building": "Rail Operations Centre (ROC)",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Zetland Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Rail Operations Centre (ROC)",
+        "end_place": "Finestra Del Caffe"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Finestra Del Caffe",
+        "place": "Finestra Del Caffe",
+        "building": "Zetland Hotel",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Networking with Celebrity Visitors",
+        "place": "Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "18:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Combine Air Green Square",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Zetland Hotel",
+        "end_place": "Combine Air Green Square"
+    },
+    {
+        "type": "main",
+        "activity": "Evening relaxation at Combine Air Green Square",
+        "place": "Combine Air Green Square",
+        "building": "Portman on the Park",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Emma Watson's room at Zetland Hotel",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Combine Air Green Square",
+        "end_place": "Emma Watson's room at Zetland Hotel"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Emma Watson's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "22:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emma Watson's room at Zetland Hotel",
+        "building": "Zetland Hotel",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

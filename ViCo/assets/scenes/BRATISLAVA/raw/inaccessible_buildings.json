@@ -24,8 +24,36 @@
                     68.62092971801758,
                     -282.7056884765625,
                     -4
+                ]
+            }
+        ]
+    },
+    "Konzervat\u00f3rium": {
+        "building_glb": "buildings_element.002.glb",
+        "bounding_box": [
+            -258.1452915126345,
+            -284.57042584404286,
+            122.68896102905275,
+            24.574410058584668,
+            14.955496002882843,
+            21.173316955566406,
+            0.38889876601682205
+        ],
+        "places": [
+            {
+                "name": "Konzervat\u00f3rium",
+                "coarse_type": "office",
+                "fine_types": [
+                    "secondary_school",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "location": [
+                    -258.1452941894531,
+                    -284.6149597167969,
+                    -4
+                ]
             }
         ]
     },
@@ -53,8 +81,7 @@
                     -275.97560119628906,
                     -296.08563232421875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -85,8 +112,7 @@
                     -194.61418914794922,
                     -291.45811462402344,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Red Apartment",
@@ -100,8 +126,7 @@
                     -194.61418914794922,
                     -291.45811462402344,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             },
             {
                 "name": "Apartman Maximilian",
@@ -115,8 +140,7 @@
                     -194.61418914794922,
                     -291.45811462402344,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             }
         ]
     },
@@ -144,8 +168,7 @@
                     -111.49333953857422,
                     -316.75750732421875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             },
             {
                 "name": "CBRE",
@@ -159,8 +182,7 @@
                     -111.49333953857422,
                     -316.75750732421875,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             },
             {
                 "name": "Uniq",
@@ -172,8 +194,7 @@
                     -111.49333953857422,
                     -316.75750732421875,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -203,8 +224,7 @@
                     65.39338493347168,
                     -264.29905700683594,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -234,8 +254,7 @@
                     135.62841796875,
                     -292.0330505371094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "FUNTASTIC",
@@ -250,8 +269,7 @@
                     135.62841796875,
                     -292.0330505371094,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Klubov\u0148a Funtastic",
@@ -265,8 +283,7 @@
                     135.62841796875,
                     -292.0330505371094,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "HM Naglreiter s.r.o.",
@@ -283,8 +300,7 @@
                     135.62841796875,
                     -292.0330505371094,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "REKKO - Rekon\u0161trukcie & Kvalitne keramick\u00e9 obklady | Tuhovsk\u00e1 1A - BA",
@@ -300,8 +316,7 @@
                     135.62841796875,
                     -292.0330505371094,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             }
         ]
     },
@@ -331,8 +346,7 @@
                     163.71978759765625,
                     -305.5353698730469,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Vintage shop",
@@ -347,8 +361,51 @@
                     163.71978759765625,
                     -305.5353698730469,
                     -8
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 22": {
+        "building_glb": "buildings_element.512.glb",
+        "bounding_box": [
+            209.82499895828184,
+            -273.4738497963691,
+            114.10086822509767,
+            18.468433384280523,
+            14.572719744509826,
+            18.671859741210938,
+            0.5390063445358699
+        ],
+        "places": [
+            {
+                "name": "Z\u00e1lo\u017e\u0148a Inbox s.r.o.",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "finance",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                "location": [
+                    209.8249969482422,
+                    -273.7521667480469,
+                    -4
+                ]
+            },
+            {
+                "name": "Moda Di Giovanna",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    209.8249969482422,
+                    -273.7521667480469,
+                    -8
+                ]
             }
         ]
     },
@@ -376,8 +433,7 @@
                     305.7129364013672,
                     -253.42656707763672,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -406,8 +462,7 @@
                     23.810537338256836,
                     -273.1771469116211,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "Regus - Bratislava, Europeum City Center",
@@ -421,8 +476,7 @@
                     23.810537338256836,
                     -273.1771469116211,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             },
             {
                 "name": "Grandoptical Slovakia s. r. o.",
@@ -437,8 +491,7 @@
                     23.810537338256836,
                     -273.1771469116211,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "The Europeum Bratislava",
@@ -450,8 +503,80 @@
                     23.810537338256836,
                     -273.1771469116211,
                     -16
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 514/22": {
+        "building_glb": "buildings_element.336.glb",
+        "bounding_box": [
+            193.40310668945312,
+            -253.11898803710938,
+            117.61181640625,
+            16.29707908630371,
+            19.27410316467285,
+            23.664825439453125,
+            0.6920915842056274
+        ],
+        "places": [
+            {
+                "name": "NIKA Viera Abidi",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "location": [
+                    192.56282806396484,
+                    -252.6521224975586,
+                    -4
+                ]
+            },
+            {
+                "name": "Zlatn\u00edctvo MeriMar",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "jewelry_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    192.56282806396484,
+                    -252.6521224975586,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 24": {
+        "building_glb": "buildings_element.394.glb",
+        "bounding_box": [
+            210.46908569335938,
+            -252.07208251953125,
+            113.21989440917969,
+            11.250346183776855,
+            38.098243713378906,
+            16.40296173095703,
+            0.6938599348068237
+        ],
+        "places": [
+            {
+                "name": "ALBI, s.r.o.",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    208.82901000976562,
+                    -252.47344207763672,
+                    -4
+                ]
             }
         ]
     },
@@ -479,8 +604,92 @@
                     -294.61846923828125,
                     -149.51025390625,
                     -4
+                ]
+            }
+        ]
+    },
+    "Panensk\u00e1 669/22": {
+        "building_glb": "buildings_element.020.glb",
+        "bounding_box": [
+            -246.20806822077463,
+            -170.3015081376527,
+            119.5684051513672,
+            16.040859398301468,
+            12.771350630317817,
+            11.615798950195312,
+            0.2907253580618545
+        ],
+        "places": [
+            {
+                "name": "Staro\u017eitnosti Panensk\u00e1",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "location": [
+                    -246.20806884765625,
+                    -170.77462768554688,
+                    -4
+                ]
+            }
+        ]
+    },
+    "19": {
+        "building_glb": "buildings_element.501.glb",
+        "bounding_box": [
+            -56.48062543603237,
+            -159.38527087367567,
+            123.89330673217773,
+            24.747204679079275,
+            10.429076699403867,
+            19.57300567626953,
+            0.26907323156933305
+        ],
+        "places": [
+            {
+                "name": "Pension Petit",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -56.201019287109375,
+                    -159.4640121459961,
+                    -4
+                ]
+            },
+            {
+                "name": "Tabak - Press",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -56.201019287109375,
+                    -159.4640121459961,
+                    -8
+                ]
+            },
+            {
+                "name": "Petit Dependance",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -56.201019287109375,
+                    -159.4640121459961,
+                    -12
+                ]
             }
         ]
     },
@@ -509,8 +718,7 @@
                     302.01795959472656,
                     -185.4549560546875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "ANJEL-metrov\u00fd textil Bratislava",
@@ -525,8 +733,7 @@
                     302.01795959472656,
                     -185.4549560546875,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             },
             {
                 "name": "Art Gallery \"Passage\".",
@@ -540,8 +747,330 @@
                     302.01795959472656,
                     -185.4549560546875,
                     -12
+                ]
+            }
+        ]
+    },
+    "Panensk\u00e1 32": {
+        "building_glb": "buildings_element.552.glb",
+        "bounding_box": [
+            -78.06540524579734,
+            -152.52238394327446,
+            121.56187438964844,
+            15.18288768466616,
+            27.480223518673277,
+            15.2611083984375,
+            0.21107532001569138
+        ],
+        "places": [
+            {
+                "name": "Brot Books Deli",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "book_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "location": [
+                    -77.0531997680664,
+                    -153.01280212402344,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Tatracentrum": {
+        "building_glb": "buildings_element.273.glb",
+        "bounding_box": [
+            181.45131837598956,
+            -98.59661027948039,
+            118.8554573059082,
+            16.2194726325721,
+            37.56305315118685,
+            15.556571960449219,
+            -0.9629042407583311
+        ],
+        "places": [
+            {
+                "name": "Picknik",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    180.63304138183594,
+                    -98.59748840332031,
+                    -4
+                ]
+            },
+            {
+                "name": "Garage Vysoka (AC Hotel)",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "bar",
+                    "lodging",
+                    "parking",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    180.63304138183594,
+                    -98.59748840332031,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Panensk\u00e1": {
+        "building_glb": "buildings_element.482.glb",
+        "bounding_box": [
+            -200.7906200836088,
+            -132.3895527901579,
+            118.34191513061525,
+            11.260373210986096,
+            22.60496907517663,
+            10.070426940917969,
+            -0.1242263917540264
+        ],
+        "places": [
+            {
+                "name": "Jonsson, sro",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -201.67239379882812,
+                    -131.69193267822266,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Vysok\u00e1 4274/6": {
+        "building_glb": "buildings_element.325.glb",
+        "bounding_box": [
+            201.92412455378218,
+            -116.66616991434275,
+            118.72704696655273,
+            19.19472396727657,
+            26.394772935353686,
+            19.238380432128906,
+            -0.8937519669866494
+        ],
+        "places": [
+            {
+                "name": "BMV REAL, s.r.o.",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    202.49593353271484,
+                    -114.36527252197266,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 33b": {
+        "building_glb": "buildings_element.278.glb",
+        "bounding_box": [
+            250.33886220262113,
+            -136.00901064293248,
+            109.84360504150392,
+            4.756580182552249,
+            21.493293092224235,
+            6.1690826416015625,
+            0.6990304721895054
+        ],
+        "places": [
+            {
+                "name": "Oliva pizza pide",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    250.41400146484375,
+                    -135.87022399902344,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 557": {
+        "building_glb": "buildings_element.381.glb",
+        "bounding_box": [
+            263.974561978996,
+            -150.9211763279946,
+            112.30403137207033,
+            7.940918060781381,
+            19.09971986504013,
+            13.452560424804688,
+            0.640971117428365
+        ],
+        "places": [
+            {
+                "name": "Bar On",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    263.9844055175781,
+                    -151.82730865478516,
+                    -4
+                ]
+            },
+            {
+                "name": "Side Kebab",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    263.9844055175781,
+                    -151.82730865478516,
+                    -8
+                ]
+            }
+        ]
+    },
+    "Obchodn\u00e1 557/33": {
+        "building_glb": "buildings_element.517.glb",
+        "bounding_box": [
+            270.7713188040655,
+            -160.18853512800163,
+            108.53403091430665,
+            3.91950096592262,
+            7.7355373183302385,
+            6.437995910644531,
+            -0.9253376572541051
+        ],
+        "places": [
+            {
+                "name": "zlivka tattoo",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    270.75115966796875,
+                    -160.13693237304688,
+                    -4
+                ]
+            },
+            {
+                "name": "Genesis Second Hand",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    270.75115966796875,
+                    -160.13693237304688,
+                    -8
+                ]
+            },
+            {
+                "name": "Pizza Calabria",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    270.75115966796875,
+                    -160.13693237304688,
+                    -12
+                ]
+            },
+            {
+                "name": "Genesis predajna vydajna",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    270.75115966796875,
+                    -160.13693237304688,
+                    -16
+                ]
+            },
+            {
+                "name": "CRYPTO CRAFT BEER",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    270.75115966796875,
+                    -160.13693237304688,
+                    -20
+                ]
+            }
+        ]
+    },
+    "Vysok\u00e1 24": {
+        "building_glb": "buildings_element.584.glb",
+        "bounding_box": [
+            291.3380713113403,
+            -42.83958452234246,
+            109.53676986694336,
+            9.098745285975305,
+            7.67199470117098,
+            3.3827438354492188,
+            0.14468958285349098
+        ],
+        "places": [
+            {
+                "name": "100karaoke - Vysok\u00e1",
+                "coarse_type": "food",
+                "fine_types": [
+                    "night_club",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    291.3152160644531,
+                    -43.04442024230957,
+                    -4
+                ]
             }
         ]
     },
@@ -570,8 +1099,7 @@
                     328.05931091308594,
                     -81.91034889221191,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Leroy Diamonds s.r.o.",
@@ -586,8 +1114,35 @@
                     328.05931091308594,
                     -81.91034889221191,
                     -8
+                ]
+            }
+        ]
+    },
+    "3": {
+        "building_glb": "buildings_element.539.glb",
+        "bounding_box": [
+            -118.95140870161008,
+            80.12300259922011,
+            124.04623413085938,
+            21.673226192698085,
+            27.583616435139053,
+            10.8702392578125,
+            -0.4930686829323581
+        ],
+        "places": [
+            {
+                "name": "ADOLIA, a.s.",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                "location": [
+                    -118.92377853393555,
+                    80.20223236083984,
+                    -4
+                ]
             }
         ]
     },
@@ -619,8 +1174,7 @@
                     290.79576110839844,
                     15.509328842163086,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "\u0160t\u00fadio Olympia",
@@ -636,8 +1190,152 @@
                     290.79576110839844,
                     15.509328842163086,
                     -8
+                ]
+            }
+        ]
+    },
+    "Lermontovova 3": {
+        "building_glb": "buildings_element.548.glb",
+        "bounding_box": [
+            -70.96794645484029,
+            129.81374979633773,
+            128.84957885742188,
+            20.09068753861143,
+            13.388080421563155,
+            18.99609375,
+            -0.3076965828951094
+        ],
+        "places": [
+            {
+                "name": "FUKAS Apartments Lermontova",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    -70.8590316772461,
+                    130.4621810913086,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Lermontovova 911/3": {
+        "building_glb": "buildings_element.580.glb",
+        "bounding_box": [
+            -89.9914813832094,
+            138.1293908277919,
+            129.22387313842773,
+            13.4155954333628,
+            23.89543706699928,
+            19.36219024658203,
+            1.0530670726128986
+        ],
+        "places": [
+            {
+                "name": "iTyReal",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "lawyer",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -90.56265640258789,
+                    138.7891502380371,
+                    -4
+                ]
+            }
+        ]
+    },
+    "Divn\u00fd Janko": {
+        "building_glb": "buildings_Divn\u00fd Janko.glb",
+        "bounding_box": [
+            184.88477069351097,
+            178.3181372631722,
+            118.51766204833983,
+            9.646321752205024,
+            24.35866291060977,
+            7.8521728515625,
+            -0.6509791061812478
+        ],
+        "places": [
+            {
+                "name": "Re\u0161taur\u00e1cia Divn\u00fd Janko",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    185.00991821289062,
+                    179.46752166748047,
+                    -4
+                ]
+            }
+        ]
+    },
+    "N\u00e1mestie slobody 2916/25": {
+        "building_glb": "buildings_element.420.glb",
+        "bounding_box": [
+            247.11708068847662,
+            188.33097076416018,
+            119.1040916442871,
+            9.369645200790805,
+            13.103228164147296,
+            11.526512145996094,
+            -0.669198373109244
+        ],
+        "places": [
+            {
+                "name": "TRIGONA, s.r.o.",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "shoe_store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    247.11708068847656,
+                    189.0156021118164,
+                    -4
+                ]
+            }
+        ]
+    },
+    "N\u00e1mestie slobody 6357/26": {
+        "building_glb": "buildings_element.509.glb",
+        "bounding_box": [
+            235.81208052260558,
+            192.18245375869867,
+            122.46138763427734,
+            13.312848128554682,
+            19.46694642426935,
+            17.655715942382812,
+            -0.6695209885487801
+        ],
+        "places": [
+            {
+                "name": "\u0160tudentsk\u00fd domov Dowina",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    238.1599578857422,
+                    191.8537368774414,
+                    -4
+                ]
             }
         ]
     },
@@ -667,8 +1365,7 @@
                     4.810651779174805,
                     287.7005615234375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Loft Hotel Bratislava",
@@ -685,8 +1382,7 @@
                     4.810651779174805,
                     287.7005615234375,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -714,8 +1410,7 @@
                     -18.487154960632324,
                     292.8769073486328,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             },
             {
                 "name": "Teslux",
@@ -730,8 +1425,7 @@
                     -18.487154960632324,
                     292.8769073486328,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Wine Lounge",
@@ -746,8 +1440,7 @@
                     -18.487154960632324,
                     292.8769073486328,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -773,8 +1466,7 @@
                     170.99295043945312,
                     351.25538635253906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -801,8 +1493,7 @@
                     363.53953552246094,
                     271.42596435546875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -829,8 +1520,7 @@
                     385.9107208251953,
                     305.4079895019531,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -856,8 +1546,7 @@
                     334.45591735839844,
                     86.7452335357666,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -883,8 +1572,7 @@
                     269.18505096435547,
                     218.42745208740234,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -911,8 +1599,7 @@
                     -63.02842903137207,
                     361.5780029296875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -938,8 +1625,59 @@
                     299.58306884765625,
                     142.22496032714844,
                     -4
+                ]
+            }
+        ]
+    },
+    "Ve\u013evyslanectvo Ma\u010farska": {
+        "building_glb": "buildings_Ve\u013evyslanectvo Ma\u010farska.glb",
+        "bounding_box": [
+            -44.28017532752917,
+            -35.35580254274479,
+            128.31400299072266,
+            36.85791943686528,
+            32.92378390899474,
+            22.346664428710938,
+            -0.08669836214617964
+        ],
+        "places": [
+            {
+                "name": "Ve\u013evyslanectvo Ma\u010farska",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "location": [
+                    -44.34968280792236,
+                    -35.25938606262207,
+                    -4
+                ]
+            }
+        ]
+    },
+    "B\u00fdval\u00fd hotel De\u00e1k": {
+        "building_glb": "buildings_B\u00fdval\u00fd hotel De\u00e1k.glb",
+        "bounding_box": [
+            -49.49779706936607,
+            116.68397774996873,
+            127.35536193847656,
+            29.072432879788465,
+            26.311972507258133,
+            17.62185668945314,
+            -0.2762923516643562
+        ],
+        "places": [
+            {
+                "name": "B\u00fdval\u00fd hotel De\u00e1k",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    -52.08383560180664,
+                    119.85883331298828,
+                    -4
+                ]
             }
         ]
     },
@@ -965,8 +1703,7 @@
                     -237.62064361572266,
                     -323.2163543701172,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -992,8 +1729,7 @@
                     18.151003003120422,
                     -311.8606414794922,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1020,8 +1756,7 @@
                     -156.55057907104492,
                     -363.78956604003906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -1048,8 +1783,7 @@
                     -278.67188262939453,
                     -360.0215606689453,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             }
         ]
     }

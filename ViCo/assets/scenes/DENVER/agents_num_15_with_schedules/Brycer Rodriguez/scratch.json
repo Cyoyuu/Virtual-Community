@@ -1,0 +1,184 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, hedonism, self-direction",
+    "learned": "I am a barista at Coffee Etcetera. I enjoy experimenting with coffee recipes and playing guitar in my free time.",
+    "currently": "I want to create a signature coffee blend for the cafe.",
+    "lifestyle": "I go to bed around 01:00, wake up around 09:00, eat dinner around 20:00",
+    "groups": [
+        {
+            "name": "Art Enthusiasts Club",
+            "description": "A group of individuals passionate about art and design, exploring creative projects together.",
+            "place": "McNichols Civic Center Building",
+            "members": [
+                "Adam Pierce",
+                "Kate Novak",
+                "Eve By J Gonzales",
+                "Brycer Rodriguez"
+            ],
+            "daily_activity": "exploring art exhibitions from 15:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at The Residences at Civic Center",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "00:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "09:00:00",
+            "end_time": "09:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Coffee Etcetera",
+            "place": null,
+            "building": null,
+            "start_time": "09:30:00",
+            "end_time": "10:00:00",
+            "start_place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "end_place": "Coffee Etcetera"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a barista and experiment with coffee recipes",
+            "place": "Coffee Etcetera",
+            "building": "Denver Justice Center/Lindsey-Flanigan Courthouse",
+            "start_time": "10:00:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to McNichols Civic Center Building",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "Coffee Etcetera",
+            "end_place": "McNichols Civic Center Building"
+        },
+        {
+            "type": "main",
+            "activity": "Explore art exhibitions with Art Enthusiasts Club",
+            "place": "McNichols Civic Center Building",
+            "building": "McNichols Civic Center Building",
+            "start_time": "15:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fresh and Snacks Store",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:15:00",
+            "start_place": "McNichols Civic Center Building",
+            "end_place": "Fresh and Snacks Store"
+        },
+        {
+            "type": "main",
+            "activity": "Buy ingredients for coffee experimentation",
+            "place": "Fresh and Snacks Store",
+            "building": "1439 Court Place",
+            "start_time": "17:15:00",
+            "end_time": "17:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Denver Athletic Club",
+            "place": null,
+            "building": null,
+            "start_time": "17:45:00",
+            "end_time": "18:00:00",
+            "start_place": "Fresh and Snacks Store",
+            "end_place": "The Denver Athletic Club"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "The Denver Athletic Club",
+            "building": "1325 Glenarm Place",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Brycer Rodriguez's room at The Residences at Civic Center",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "The Denver Athletic Club",
+            "end_place": "Brycer Rodriguez's room at The Residences at Civic Center"
+        },
+        {
+            "type": "main",
+            "activity": "Play guitar and relax",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Experiment with creating a signature coffee blend",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "21:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Late-night snack",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for bed",
+            "place": "Brycer Rodriguez's room at The Residences at Civic Center",
+            "building": "The Residences at Civic Center",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Coffee Etcetera",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

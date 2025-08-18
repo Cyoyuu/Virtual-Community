@@ -1,0 +1,201 @@
+{
+    "name": "Shannon Steves",
+    "first_name": "Shannon",
+    "last_name": "Steves",
+    "age": 27,
+    "innate": "benevolence, universalism, self-direction",
+    "learned": "I am a volunteer coordinator at Burk Burnett Park, organizing community clean-up events and nature walks.",
+    "currently": "I want to increase community participation in park events.",
+    "lifestyle": "I go to bed around 22:00, wake up around 06:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Literature and Arts Society",
+            "description": "A community of book lovers and artists who gather to discuss literature and showcase their art.",
+            "place": "Fort Worth Public Library - Downtown Express",
+            "members": [
+                "Brian Carter",
+                "Louise Roberts",
+                "Shannon Steves",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "discussing literature from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Shannon Steves's room at Historic Electric Building Apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Shannon Steves's room at Historic Electric Building Apartments",
+            "building": "Electric Service Building",
+            "start_time": "00:00:00",
+            "end_time": "06:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Morning routine and preparation for the day",
+            "place": "Shannon Steves's room at Historic Electric Building Apartments",
+            "building": "Electric Service Building",
+            "start_time": "06:00:00",
+            "end_time": "07:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Burk Burnett Park",
+            "place": null,
+            "building": null,
+            "start_time": "07:00:00",
+            "end_time": "07:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Organize community clean-up event",
+            "place": "Burk Burnett Park",
+            "building": "open space",
+            "start_time": "07:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to J's Burgers N' More",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:30:00",
+            "start_place": "Burk Burnett Park",
+            "end_place": "J's Burgers N' More"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "J's Burgers N' More",
+            "building": "905 Throckmorton Street",
+            "start_time": "12:30:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Burk Burnett Park",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "J's Burgers N' More",
+            "end_place": "Burk Burnett Park"
+        },
+        {
+            "type": "main",
+            "activity": "Organize nature walk and engage with community members",
+            "place": "Burk Burnett Park",
+            "building": "open space",
+            "start_time": "14:00:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Fort Worth Public Library - Downtown Express",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Burk Burnett Park",
+            "end_place": "Fort Worth Public Library - Downtown Express"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss literature with Literature and Arts Society",
+            "place": "Fort Worth Public Library - Downtown Express",
+            "building": "Fort Worth Old City Hall",
+            "start_time": "16:00:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to 61 Osteria",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Fort Worth Public Library - Downtown Express",
+            "end_place": "61 Osteria"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "61 Osteria",
+            "building": "500 W. 7th",
+            "start_time": "17:30:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lanham Fitness Center",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "61 Osteria",
+            "end_place": "Lanham Fitness Center"
+        },
+        {
+            "type": "main",
+            "activity": "Exercise at Lanham Fitness Center",
+            "place": "Lanham Fitness Center",
+            "building": "Fritz G Lanham Federal Building",
+            "start_time": "19:00:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Shannon Steves's room at Historic Electric Building Apartments",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Lanham Fitness Center",
+            "end_place": "Shannon Steves's room at Historic Electric Building Apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Shannon Steves's room at Historic Electric Building Apartments",
+            "building": "Electric Service Building",
+            "start_time": "20:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Shannon Steves's room at Historic Electric Building Apartments",
+            "building": "Electric Service Building",
+            "start_time": "22:00:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Burk Burnett Park",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

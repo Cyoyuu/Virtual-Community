@@ -1,0 +1,176 @@
+{
+    "name": "Rodtang",
+    "first_name": "Rodtang",
+    "last_name": "Rodtang",
+    "age": 26,
+    "innate": "achievement, power, stimulation",
+    "learned": "I am a professional Muay Thai fighter known for my aggressive fighting style and resilience.",
+    "currently": "I am training in Amsterdam for an upcoming fight.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness and Wellness Group",
+            "description": "A group focused on health and wellness activities, including yoga, meditation, and fitness training.",
+            "place": "Amsterdam Yoga Centre",
+            "members": [
+                "Alex Jefferson",
+                "Megan Carter",
+                "Pika Hayes",
+                "Rodtang"
+            ],
+            "daily_activity": "practicing yoga from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Rodtang's room at Hotel V",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Rodtang's room at Hotel V",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast at The Lobby Nesplein",
+            "place": "The Lobby Nesplein",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "08:00:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Training session",
+            "place": "Flemish Cultural Center de Brakke Grond",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Techlab Bv",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Flemish Cultural Center de Brakke Grond",
+            "end_place": "Techlab Bv"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch at Techlab Bv",
+            "place": "Techlab Bv",
+            "building": "Singel 326 A",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Royal Palace Amsterdam",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Techlab Bv",
+            "end_place": "Royal Palace Amsterdam"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Royal Palace Amsterdam",
+            "place": "Royal Palace Amsterdam",
+            "building": "Koninklijk Paleis",
+            "start_time": "13:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Amsterdam Yoga Centre",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Royal Palace Amsterdam",
+            "end_place": "Amsterdam Yoga Centre"
+        },
+        {
+            "type": "main",
+            "activity": "Yoga practice with Fitness and Wellness Group",
+            "place": "Amsterdam Yoga Centre",
+            "building": "Singel 300",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to The Lobby Nesplein",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Amsterdam Yoga Centre",
+            "end_place": "The Lobby Nesplein"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner at The Lobby Nesplein",
+            "place": "The Lobby Nesplein",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "18:30:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Rodtang's room at Hotel V",
+            "building": "Vlaams Cultuurhuis de Brakke Grond",
+            "start_time": "19:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Bar Jones",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:10:00",
+            "start_place": "Rodtang's room at Hotel V",
+            "end_place": "Bar Jones"
+        },
+        {
+            "type": "meal",
+            "activity": "Late-night snack at Bar Jones",
+            "place": "Bar Jones",
+            "building": "Nes 33",
+            "start_time": "23:10:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

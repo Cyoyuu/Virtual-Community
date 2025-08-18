@@ -1,0 +1,219 @@
+{
+    "name": "Barack Obama",
+    "first_name": "Barack",
+    "last_name": "Obama",
+    "age": 63,
+    "innate": "universalism, benevolence, achievement",
+    "learned": "I am a former President of the United States, known for my leadership and advocacy for social justice and healthcare reform.",
+    "currently": "I am visiting Harvard to give a lecture on leadership and public service.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Harvard Leadership Circle",
+            "description": "A group of leaders and influencers discussing policy and leadership strategies.",
+            "place": "Harvard University",
+            "members": [
+                "Barack Obama",
+                "Joe Anderson",
+                "Kamala Harris",
+                "Kate Novak"
+            ],
+            "daily_activity": "discussing leadership strategies from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Barack Obama's room at Harvard Real Estate",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Barack Obama's room at Harvard Real Estate",
+            "building": "Smith Campus Center",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Capital One Caf\u00e9",
+            "building": "24 John F. Kennedy Street",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Harvard University",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for lecture on leadership and public service",
+            "place": "Harvard University",
+            "building": "Massachusetts Hall",
+            "start_time": "09:00:00",
+            "end_time": "11:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Give lecture on leadership and public service",
+            "place": "Harvard University",
+            "building": "Massachusetts Hall",
+            "start_time": "11:00:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to DIG",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Harvard University",
+            "end_place": "DIG"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "DIG",
+            "building": "82 Mount Auburn Street",
+            "start_time": "12:40:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Harvard Data Center",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "DIG",
+            "end_place": "Harvard Data Center"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Harvard Data Center",
+            "place": "Harvard Data Center",
+            "building": "Littauer Center",
+            "start_time": "13:30:00",
+            "end_time": "15:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Harvard University",
+            "place": null,
+            "building": null,
+            "start_time": "15:30:00",
+            "end_time": "16:00:00",
+            "start_place": "Harvard Data Center",
+            "end_place": "Harvard University"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss leadership strategies with Harvard Leadership Circle",
+            "place": "Harvard University",
+            "building": "Massachusetts Hall",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Richard A. and Susan F. Smith Campus Center",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Harvard University",
+            "end_place": "Richard A. and Susan F. Smith Campus Center"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Richard A. and Susan F. Smith Campus Center",
+            "building": "Smith Campus Center",
+            "start_time": "18:10:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Carpenter Center for the Visual Arts",
+            "place": null,
+            "building": null,
+            "start_time": "18:30:00",
+            "end_time": "19:00:00",
+            "start_place": "Richard A. and Susan F. Smith Campus Center",
+            "end_place": "Carpenter Center for the Visual Arts"
+        },
+        {
+            "type": "main",
+            "activity": "Enjoy an evening at Carpenter Center for the Visual Arts",
+            "place": "Carpenter Center for the Visual Arts",
+            "building": "Carpenter Center",
+            "start_time": "19:00:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Barre & Soul, Harvard Square Yoga and Barre Studio",
+            "place": null,
+            "building": null,
+            "start_time": "21:00:00",
+            "end_time": "21:30:00",
+            "start_place": "Carpenter Center for the Visual Arts",
+            "end_place": "Barre & Soul, Harvard Square Yoga and Barre Studio"
+        },
+        {
+            "type": "main",
+            "activity": "Relax with yoga at Barre & Soul",
+            "place": "Barre & Soul, Harvard Square Yoga and Barre Studio",
+            "building": "The Garage",
+            "start_time": "21:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Barack Obama's room",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:30:00",
+            "start_place": "Barre & Soul, Harvard Square Yoga and Barre Studio",
+            "end_place": "Barack Obama's room at Harvard Real Estate"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for sleep",
+            "place": "Barack Obama's room at Harvard Real Estate",
+            "building": "Smith Campus Center",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

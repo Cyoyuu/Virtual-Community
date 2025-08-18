@@ -1,62 +1,130 @@
 {
-    "Hilary Clinton": {
-        "age": 77,
-        "living_place": "Sincere",
-        "appearance": "ViCo/assets/imgs/avatars/Hilary Clinton.png",
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Microliving at Long and Front",
+        "appearance": "ViCo/assets/imgs/avatars/Kate Novak.png",
         "groups": [
-            "Columbus Film and Arts Society"
+            "Columbus Art Enthusiasts"
         ]
     },
-    "Shannon Steves": {
-        "age": 27,
-        "living_place": "Day Companies",
-        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Microliving at Long and Front",
+        "appearance": "ViCo/assets/imgs/avatars/Pika Hayes.png",
         "groups": [
-            "Columbus Film and Arts Society"
+            "Columbus Art Enthusiasts"
         ]
     },
-    "Tom Holland": {
-        "age": 28,
-        "living_place": "Sincere",
-        "appearance": "ViCo/assets/imgs/avatars/Tom Holland.png",
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "Microliving at Long and Front",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
         "groups": [
-            "Columbus Film and Arts Society"
+            "Columbus Art Enthusiasts"
         ]
     },
-    "Columbus Film and Arts Society": {
-        "description": "A group of artists and film enthusiasts who appreciate and create art and films.",
+    "Columbus Art Enthusiasts": {
+        "description": "A group of individuals passionate about art and creativity.",
         "place": "Chaos Contemporary Craft",
         "members": [
-            "Emily Johnson",
-            "Hilary Clinton",
-            "Shannon Steves",
-            "Tom Holland"
+            "Kate Novak",
+            "Pika Hayes",
+            "Zara Williams",
+            "Emily Johnson"
         ],
-        "daily_activity": "discussing films and art from 17:00 to 18:00"
+        "daily_activity": "exploring art exhibitions from 15:00 to 17:00"
     },
-    "Emily Johnson's room at Day Companies": {
-        "building": "22 East Gay Street # 800",
+    "Emily Johnson's room at Microliving at Long and Front": {
+        "building": "Microliving at Long and Front",
         "coarse_type": "accommodation",
         "fine_types": [
-            "real_estate_agency",
+            "apartments"
+        ],
+        "location": [
+            999.395791053772,
+            1277.5515899658203,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Emily Johnson's room at Microliving at Long and Front",
+        "bounding_box": [
+            -0.6059568508298341,
+            277.5541094147857,
+            122.27580642700194,
+            57.37173109128698,
+            19.08595959194788,
+            19.336875915527344,
+            0.14320930857348763
+        ]
+    },
+    "Kiddie Academy of Downtown Columbus": {
+        "building": "CSI International Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1186.4444580078125,
-            1198.7952880859375,
-            -8
+            1100.6427726745605,
+            1113.7678565979004,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "name": "Emily Johnson's room at Day Companies",
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
         "bounding_box": [
-            186.40369779120803,
-            198.81144994375734,
-            130.16643905639648,
-            20.454929907609795,
-            19.167812591652858,
-            30.219642639160156,
-            0.1485978110058755
+            100.6171347030615,
+            113.76785232627823,
+            124.48173141479492,
+            39.32766095879762,
+            15.737196691206336,
+            18.048561096191406,
+            0.14157389229671702
+        ]
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "Huntington Center": {
+        "building": "Huntington Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1119.5110931396484,
+            894.9528617858887,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            117.65195046295409,
+            -104.44199788015068,
+            198.56515884399414,
+            68.80355370839798,
+            69.8860186925178,
+            162.32524871826172,
+            0.14680052427771872
         ]
     },
     "Genoa Park": {
@@ -75,81 +143,8 @@
         "scene": null,
         "bounding_box": null
     },
-    "Chaos Contemporary Craft": {
-        "building": "78 North High Street",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1164.998664855957,
-            1218.1978302001953,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
-        "bounding_box": [
-            164.99983614024816,
-            218.2010218866336,
-            128.19513702392578,
-            57.03872063428137,
-            12.378004564168062,
-            26.912185668945312,
-            0.14626007278795772
-        ]
-    },
-    "The Wing Dynasty": {
-        "building": "121 South High Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1148.6179733276367,
-            734.4808959960938,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            149.08356783537386,
-            -265.3463357707358,
-            129.36211013793948,
-            60.36457470768148,
-            19.31384845064123,
-            23.430870056152344,
-            0.1497175448353306
-        ]
-    },
-    "Ohio Community Development Finance Fund - Food Distribution Center": {
-        "building": "Huntington Bank Building",
-        "coarse_type": "food",
-        "fine_types": [
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1116.3445091247559,
-            950.6182546615601,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            116.16938781738281,
-            -49.408836364746094,
-            143.6201934814453,
-            58.08161926269531,
-            39.75822067260742,
-            53.864654541015625,
-            0.1536320447921753
-        ]
-    },
-    "Ohio University Govt Relations": {
-        "building": "Huntington Plaza",
+    "DAVIDSON THEATRE AT THE RIFFE CENTER THEATRES": {
+        "building": "Vern Riffe Center for Government and the Arts",
         "coarse_type": "office",
         "fine_types": [
             "university",
@@ -157,45 +152,68 @@
             "establishment"
         ],
         "location": [
-            1039.7580137252808,
-            963.1019334793091,
+            1104.2559204101562,
+            817.3631744384766,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
         "bounding_box": [
-            39.75801380942004,
-            -36.89805276939042,
-            139.73874282836914,
-            43.879185442144035,
-            29.917434723981227,
-            52.145469665527344,
-            0.15077389799563612
+            104.2154832221221,
+            -184.14588436692574,
+            171.88875198364258,
+            129.24464097674974,
+            74.03578528349477,
+            116.11711883544922,
+            0.13660516016028626
         ]
     },
-    "Ringside Caf\u00e9": {
-        "building": "19 North Pearl Street",
+    "Cravings Caf\u00e9": {
+        "building": "Microliving at Long and Front",
         "coarse_type": "food",
         "fine_types": [
-            "bar",
             "restaurant",
-            "point_of_interest",
             "food",
+            "point_of_interest",
             "establishment"
         ],
         "location": [
-            1183.9898147583008,
-            1091.1103630065918,
+            999.395791053772,
+            1277.5515899658203,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            184.0421177101697,
-            90.96856531557913,
-            124.8832893371582,
-            8.384403549891235,
-            57.246559007430804,
-            15.333549499511719,
-            -1.410043660722462
+            -0.6059568508298341,
+            277.5541094147857,
+            122.27580642700194,
+            57.37173109128698,
+            19.08595959194788,
+            19.336875915527344,
+            0.14320930857348763
+        ]
+    },
+    "Greater Columbus Women's Business Development Center -- Wbdc - Food Distribution Center": {
+        "building": "CSI International Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1100.6427726745605,
+            1113.7678565979004,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            100.6171347030615,
+            113.76785232627823,
+            124.48173141479492,
+            39.32766095879762,
+            15.737196691206336,
+            18.048561096191406,
+            0.14157389229671702
         ]
     },
     "Accent Wine Parlor": {
@@ -213,7 +231,7 @@
             1138.675464630127,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             88.30434919742729,
             138.6551785088116,
@@ -224,79 +242,53 @@
             0.14549941762505805
         ]
     },
-    "Downtown Convenience": {
-        "building": "26 North High Street",
-        "coarse_type": "food",
+    "Fresh and DM Store": {
+        "building": "The Citizens Building",
+        "coarse_type": "stores",
         "fine_types": [
-            "convenience_store",
+            "beauty_salon",
             "point_of_interest",
-            "food",
-            "store",
             "establishment"
         ],
         "location": [
-            1171.1194915771484,
-            1070.2487487792969,
+            1088.1769924163818,
+            1138.675464630127,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
         "bounding_box": [
-            171.1194918551205,
-            70.2487526354041,
-            124.80613708496094,
-            26.698042906307474,
-            28.613302389477465,
-            14.776763916015625,
-            0.14788409782279663
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
         ]
     },
-    "Fresh and Beverages Store": {
-        "building": "Wyandotte Building",
+    "Beverages and Snacks Store": {
+        "building": "Huntington Plaza",
         "coarse_type": "stores",
         "fine_types": [
-            "car_dealer",
+            "local_government_office",
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1092.125057220459,
-            976.5497612953186,
-            -4
+            1039.7580137252808,
+            963.1019334793091,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
-            92.11475267417211,
-            -23.4461845491899,
-            140.81752014160156,
-            17.627033280596716,
-            19.05660072246215,
-            48.305328369140625,
-            0.14577894191581103
-        ]
-    },
-    "Fresh and Snacks Store": {
-        "building": "90 North Front Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "hair_care",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1008.7170629501343,
-            1210.7599029541016,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
-        "bounding_box": [
-            8.717063544077487,
-            210.75990657274454,
-            115.98189163208006,
-            57.75730300143609,
-            19.603874657851733,
-            6.673133850097656,
-            0.1470192607273907
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
         ]
     },
     "Marconi Boulevard Bus Stop": {

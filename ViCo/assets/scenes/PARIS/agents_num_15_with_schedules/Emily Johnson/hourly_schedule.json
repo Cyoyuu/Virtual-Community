@@ -1,0 +1,150 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Morning painting practice",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "08:00:00",
+        "end_time": "09:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sunflower Caf\u00e9",
+        "place": null,
+        "building": null,
+        "start_time": "09:30:00",
+        "end_time": "09:40:00",
+        "start_place": "Emily Johnson's room at 1001 Vies Habitat",
+        "end_place": "Sunflower Caf\u00e9"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Sunflower Caf\u00e9",
+        "building": "41 Avenue de Suffren",
+        "start_time": "09:40:00",
+        "end_time": "10:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Public Primary School F\u00e9d\u00e9ration",
+        "place": null,
+        "building": null,
+        "start_time": "10:00:00",
+        "end_time": "10:30:00",
+        "start_place": "Sunflower Caf\u00e9",
+        "end_place": "Public Primary School F\u00e9d\u00e9ration"
+    },
+    {
+        "type": "main",
+        "activity": "Attend school classes",
+        "place": "Public Primary School F\u00e9d\u00e9ration",
+        "building": "20 rue de la F\u00c3\u00a9d\u00c3\u00a9ration",
+        "start_time": "10:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to \u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:15:00",
+        "start_place": "Public Primary School F\u00e9d\u00e9ration",
+        "end_place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb"
+    },
+    {
+        "type": "main",
+        "activity": "Explore art exhibitions with Art Enthusiasts Club",
+        "place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+        "building": "10 Avenue Charles Floquet",
+        "start_time": "15:15:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Square Nicole-de-Hauteclocque",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "\u30ae\u30e3\u30e9\u30ea\u30fc\u30fb\u30ec\u30be\u30f3\u30fb\u30c7\u30fc\u30c8\u30eb",
+        "end_place": "Square Nicole-de-Hauteclocque"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and paint in the park",
+        "place": "Square Nicole-de-Hauteclocque",
+        "building": "open space",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Percy \u00c9mond",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Square Nicole-de-Hauteclocque",
+        "end_place": "Percy \u00c9mond"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Percy \u00c9mond",
+        "building": "28 Avenue de Suffren",
+        "start_time": "18:15:00",
+        "end_time": "18:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back home",
+        "place": null,
+        "building": null,
+        "start_time": "18:45:00",
+        "end_time": "19:00:00",
+        "start_place": "Percy \u00c9mond",
+        "end_place": "Emily Johnson's room at 1001 Vies Habitat"
+    },
+    {
+        "type": "main",
+        "activity": "Evening painting practice",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "19:00:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Free time and relaxation",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "21:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Emily Johnson's room at 1001 Vies Habitat",
+        "building": "31 Rue de la F\u00e9d\u00e9ration",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

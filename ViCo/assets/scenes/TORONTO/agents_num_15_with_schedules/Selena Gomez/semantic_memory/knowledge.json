@@ -1,0 +1,385 @@
+{
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Megan Carter's room at JONES TTOWN",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Music and Entertainment Circle"
+        ]
+    },
+    "Yann LeCun": {
+        "age": 64,
+        "living_place": "The Union Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Yann LeCun.png",
+        "groups": [
+            "Music and Entertainment Circle"
+        ]
+    },
+    "Music and Entertainment Circle": {
+        "description": "A group of individuals interested in music and entertainment, meeting to share their passion and collaborate on projects.",
+        "place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+        "members": [
+            "Selena Gomez",
+            "Yann LeCun",
+            "Megan Carter"
+        ],
+        "daily_activity": "exploring music from 19:00 to 20:00"
+    },
+    "Selena Gomez's room at Rickkypartym": {
+        "building": "222 Richmond Street West #97",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            736.204216003418,
+            1175.3552017211914,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Selena Gomez's room at Rickkypartym",
+        "bounding_box": [
+            -263.5839538574219,
+            177.0306396484375,
+            162.5434112548828,
+            19.835506439208984,
+            24.09346580505371,
+            11.167388916015625,
+            0.2831730246543884
+        ]
+    },
+    "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!": {
+        "building": "Nelson Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -24
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "145 Wellington Street West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            991.1608514785767,
+            739.1054000854492,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -8.773028393482171,
+            -260.98171460209085,
+            157.5133209228516,
+            45.12938606591113,
+            30.04219615949391,
+            13.655609130859375,
+            0.2973957958698972
+        ]
+    },
+    "Verno Art Studios": {
+        "building": "120 Adelaide Street West Unit FC-09",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1141.2012023925781,
+            1187.323585510254,
+            -36
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            141.67819696673928,
+            188.66048485468602,
+            211.56494140625,
+            40.74812248194316,
+            53.76133484803879,
+            111.7357177734375,
+            0.297179563177001
+        ]
+    },
+    "F45 Training Toronto Downtown": {
+        "building": "North Tower",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            987.1375579833984,
+            896.8284225463867,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -12.986947978983881,
+            -102.79264455034728,
+            171.97727966308594,
+            35.16610113891242,
+            30.747822481605414,
+            37.336090087890625,
+            0.2895740288522889
+        ]
+    },
+    "JaBistro": {
+        "building": "222 Richmond Street West #97",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            736.204216003418,
+            1175.3552017211914,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -263.5839538574219,
+            177.0306396484375,
+            162.5434112548828,
+            19.835506439208984,
+            24.09346580505371,
+            11.167388916015625,
+            0.2831730246543884
+        ]
+    },
+    "Smoke's Poutinerie Adelaide": {
+        "building": "Nelson Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            756.2591781616211,
+            1029.9322148561478,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -243.65343037426283,
+            30.43527985511969,
+            160.11065673828125,
+            24.58196752911233,
+            109.92909415509128,
+            9.40093994140625,
+            -1.2775963231693737
+        ]
+    },
+    "Fune": {
+        "building": "Toronto",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            839.933048248291,
+            991.5242471694946,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -159.45348020738416,
+            -8.895331415544177,
+            164.54656219482422,
+            51.55653780581475,
+            57.489931747094886,
+            19.315078735351562,
+            0.2982409828170084
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Boutique Condo West",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            752.1804733276367,
+            1059.982961654663,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -247.81965637207034,
+            59.98296165466309,
+            181.64993286132812,
+            22.583336903625927,
+            92.78239107414743,
+            51.735382080078125,
+            -1.2824980308418785
+        ]
+    },
+    "Duncan Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -305.5051431396848,
+            31.274830657362244
+        ],
+        "rotation": -1.2818139451305748,
+        "bounding_box": null
+    },
+    "University Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            60.647572252395314,
+            -177.97103757136227
+        ],
+        "rotation": -2.746130847002968,
+        "bounding_box": null
+    },
+    "King Street West Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            320.9162021456791,
+            31.692857479827722
+        ],
+        "rotation": -1.279698474914429,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.9830944262577,
+            -60.632213384139725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            70.9781059093955,
+            -58.57682221598191
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            143.33072943279424,
+            162.86726965953133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            9.28993683166875,
+            89.4595028492765
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -228.06344546133988,
+            175.04188547899503
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -137.68946092169688,
+            80.05882480669985
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To King Street West": [
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Duncan Street": [
+            {
+                "stop_name": "King Street West Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "University Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Duncan Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

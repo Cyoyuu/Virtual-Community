@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at Klein-Limburg",
+        "building": "Klein-Limburg",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Dining Raum",
+        "building": "Fahrgasse 15",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to school",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and work on robotics project",
+        "place": "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.",
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to NORDSEE Frankfurt Fisch Franke",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.",
+        "end_place": "NORDSEE Frankfurt Fisch Franke"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "NORDSEE Frankfurt Fisch Franke",
+        "building": "Domstra\u00dfe 9-11",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to school",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "NORDSEE Frankfurt Fisch Franke",
+        "end_place": "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M."
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on robotics project",
+        "place": "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.",
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie Leuenroth",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.",
+        "end_place": "Galerie Leuenroth"
+    },
+    {
+        "type": "main",
+        "activity": "Art Enthusiasts Club meeting",
+        "place": "Galerie Leuenroth",
+        "building": "ehem. Mehlwaage",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Dining Raum",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Galerie Leuenroth",
+        "end_place": "Dining Raum"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Dining Raum",
+        "building": "Fahrgasse 15",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pika Hayes's room",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Dining Raum",
+        "end_place": "Pika Hayes's room at Klein-Limburg"
+    },
+    {
+        "type": "main",
+        "activity": "Work on robotics project and study",
+        "place": "Pika Hayes's room at Klein-Limburg",
+        "building": "Klein-Limburg",
+        "start_time": "18:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:30:00",
+        "end_time": "23:40:00",
+        "start_place": "Pika Hayes's room at Klein-Limburg",
+        "end_place": "Beverages and Snacks Store"
+    },
+    {
+        "type": "meal",
+        "activity": "Evening snack",
+        "place": "Beverages and Snacks Store",
+        "building": "R\u00f6merberg 34",
+        "start_time": "23:40:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Brian Carter's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Brian Carter's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00",
+        "start_place": "Brian Carter's room at Union 346 Apartments",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Fresh and Snacks Store",
+        "place": "Fresh and Snacks Store",
+        "building": "1 Bow Street",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Urban Axes - Axe Throwing",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Urban Axes - Axe Throwing"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Urban Axes - Axe Throwing",
+        "building": "2 Union Square",
+        "start_time": "12:15:00",
+        "end_time": "13:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Soft Space Wellness",
+        "place": null,
+        "building": null,
+        "start_time": "13:15:00",
+        "end_time": "13:30:00",
+        "start_place": "Urban Axes - Axe Throwing",
+        "end_place": "Soft Space Wellness"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Soft Space Wellness",
+        "place": "Soft Space Wellness",
+        "building": "1 Bow Market Way",
+        "start_time": "13:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Life Alive Organic Cafe Union Square",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:15:00",
+        "start_place": "Soft Space Wellness",
+        "end_place": "Life Alive Organic Cafe Union Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "18:15:00",
+        "end_time": "19:15:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Soft Space Wellness",
+        "place": null,
+        "building": null,
+        "start_time": "19:15:00",
+        "end_time": "19:30:00",
+        "start_place": "Life Alive Organic Cafe Union Square",
+        "end_place": "Soft Space Wellness"
+    },
+    {
+        "type": "main",
+        "activity": "Activity at Soft Space Wellness",
+        "place": "Soft Space Wellness",
+        "building": "1 Bow Market Way",
+        "start_time": "19:30:00",
+        "end_time": "22:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Brian Carter's room at Union 346 Apartments",
+        "place": null,
+        "building": null,
+        "start_time": "22:30:00",
+        "end_time": "22:45:00",
+        "start_place": "Soft Space Wellness",
+        "end_place": "Brian Carter's room at Union 346 Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for Bed",
+        "place": "Brian Carter's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "22:45:00",
+        "end_time": "23:59:59"
+    }
+]

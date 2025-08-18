@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Gro\u00dfer Laubenberg",
+        "building": "Gro\u00dfer Laubenberg",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Coffee House to the Golden Scale",
+        "building": "Goldene Waage",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Caricatura - Museum for Comic Art",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Research and development of interactive exhibit",
+        "place": "Caricatura - Museum for Comic Art",
+        "building": "Leinwandhaus",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Dining Raum",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Caricatura - Museum for Comic Art",
+        "end_place": "Dining Raum"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Dining Raum",
+        "building": "Fahrgasse 15",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Frankfurter Kunstverein",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Dining Raum",
+        "end_place": "Frankfurter Kunstverein"
+    },
+    {
+        "type": "main",
+        "activity": "Explore art and technology exhibits",
+        "place": "Frankfurter Kunstverein",
+        "building": "Steinernes Haus",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Galerie Leuenroth",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Frankfurter Kunstverein",
+        "end_place": "Galerie Leuenroth"
+    },
+    {
+        "type": "main",
+        "activity": "Art Enthusiasts Club meeting",
+        "place": "Galerie Leuenroth",
+        "building": "ehem. Mehlwaage",
+        "start_time": "15:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Nazar D\u00d6NER & GRILL Katharienenpforte 6",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Galerie Leuenroth",
+        "end_place": "Nazar D\u00d6NER & GRILL Katharienenpforte 6"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Nazar D\u00d6NER & GRILL Katharienenpforte 6",
+        "building": "Katharinenpforte 6",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Nazar D\u00d6NER & GRILL Katharienenpforte 6",
+        "end_place": "Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt"
+    },
+    {
+        "type": "main",
+        "activity": "Mindfulness and relaxation session",
+        "place": "Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt",
+        "building": "Saalgasse 15",
+        "start_time": "18:30:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Balthasar Ress Weinbar & Vinothek",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt",
+        "end_place": "Balthasar Ress Weinbar & Vinothek"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy a glass of wine",
+        "place": "Balthasar Ress Weinbar & Vinothek",
+        "building": "Gr\u00fcne Linde",
+        "start_time": "20:30:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Adam Pierce's room at Gro\u00dfer Laubenberg",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "Balthasar Ress Weinbar & Vinothek",
+        "end_place": "Adam Pierce's room at Gro\u00dfer Laubenberg"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed and unwind",
+        "place": "Adam Pierce's room at Gro\u00dfer Laubenberg",
+        "building": "Gro\u00dfer Laubenberg",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

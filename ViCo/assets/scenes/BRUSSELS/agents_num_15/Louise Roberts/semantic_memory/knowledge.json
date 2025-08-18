@@ -1,106 +1,75 @@
 {
-    "Barack Obama": {
-        "age": 63,
-        "living_place": "Barack Obama's room at Hotel Hubert \u2013 Grand Place",
-        "appearance": "ViCo/assets/imgs/avatars/Barack Obama.png",
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Luxury apartments in Brussels",
+        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
         "groups": [
-            "International Diplomats Forum"
+            "Brussels Art and Culture Society"
         ]
     },
-    "Emma Watson": {
-        "age": 34,
-        "living_place": "Emma Watson's room at Hotel Hubert \u2013 Grand Place",
-        "appearance": "ViCo/assets/imgs/avatars/Emma Watson.png",
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "Charles' Home",
+        "appearance": "ViCo/assets/imgs/avatars/Zara Williams.png",
         "groups": [
-            "International Diplomats Forum"
+            "Brussels Art and Culture Society"
         ]
     },
-    "Frank Walter Steinmeier": {
-        "age": 68,
-        "living_place": "Frank Walter Steinmeier's room at Hotel Hubert \u2013 Grand Place",
-        "appearance": "ViCo/assets/imgs/avatars/Frank Walter Steinmeier.png",
-        "groups": [
-            "International Diplomats Forum"
-        ]
-    },
-    "International Diplomats Forum": {
-        "description": "A group of diplomats and leaders who gather to discuss international relations and diplomacy.",
-        "place": "Philantropy House",
+    "Brussels Art and Culture Society": {
+        "description": "A group of individuals passionate about art and culture, organizing events and exhibitions in Brussels.",
+        "place": "Museum of the National Bank of Belgium",
         "members": [
-            "Barack Obama",
-            "Frank Walter Steinmeier",
-            "Emma Watson",
-            "Louise Roberts"
+            "Louise Roberts",
+            "Shannon Steves",
+            "Zara Williams"
         ],
-        "daily_activity": "engaging in diplomatic discussions from 15:00 to 17:00"
+        "daily_activity": "organizing art exhibitions from 15:00 to 16:00"
     },
-    "Louise Roberts's room at Boiteux": {
-        "building": "Boiteux",
+    "Louise Roberts's room at Catedra": {
+        "building": "Catedra",
         "coarse_type": "accommodation",
         "fine_types": [
             "apartments"
         ],
         "location": [
-            742.2045822143555,
-            1273.7317810058594,
-            -24
+            1060.8930644989014,
+            1021.3308854103088,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-        "name": "Louise Roberts's room at Boiteux",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Louise Roberts's room at Catedra",
         "bounding_box": [
-            -260.5793301556366,
-            273.69968740524826,
-            64.06091117858885,
-            17.2707030023195,
-            25.302058912070837,
-            30.507083892822266,
-            -0.44912342819388795
+            61.050886209029315,
+            21.224385405100833,
+            82.7330551147461,
+            12.228438547144105,
+            22.869935295427332,
+            17.705078125,
+            0.1915888279957703
         ]
     },
-    "Philantropy House": {
-        "building": "Philantropy House",
-        "coarse_type": "office",
+    "The Housing Company": {
+        "building": "Rue d'Assaut 3",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "office"
-        ],
-        "location": [
-            1182.0369186401367,
-            977.2010865211487,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
-        "bounding_box": [
-            181.11677349590934,
-            -22.776869956576956,
-            95.44200897216797,
-            18.188009707988304,
-            25.854275102858498,
-            22.190536499023438,
-            -0.3038562366117691
-        ]
-    },
-    "Competento": {
-        "building": "Rue de la Chancellerie 19",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1046.8551769256592,
-            837.5702133178711,
-            -4
+            760.513313293457,
+            1050.4241676330566,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
         "bounding_box": [
-            43.443906299160524,
-            -158.0778265243057,
-            81.29925537109376,
-            27.77994307983233,
-            84.67502064377031,
-            0.0770111083984375,
-            -0.505262463190674
+            -244.84292602539062,
+            56.13623046875,
+            66.68570709228516,
+            37.01728057861328,
+            61.71924591064453,
+            19.778133392333984,
+            -0.9071028232574463
         ]
     },
     "Museum of the National Bank of Belgium": {
@@ -117,7 +86,7 @@
             1206.5694198608398,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
             -177.4439928658601,
             200.82952432688307,
@@ -128,28 +97,117 @@
             -0.5117384718386224
         ]
     },
-    "IHECS - B\u00e2timent Chambon (CH)": {
-        "building": "Boiteux",
-        "coarse_type": "office",
+    "Fresh and Beverages Store": {
+        "building": "Marquis",
+        "coarse_type": "stores",
         "fine_types": [
-            "university",
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            742.2045822143555,
-            1273.7317810058594,
+            915.5147399902344,
+            892.4346466064453,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
         "bounding_box": [
-            -260.5793301556366,
-            273.69968740524826,
-            64.06091117858885,
-            17.2707030023195,
-            25.302058912070837,
-            30.507083892822266,
-            -0.44912342819388795
+            -91.03511047363281,
+            -104.93002319335938,
+            83.58557891845703,
+            72.18888854980469,
+            90.57077026367188,
+            32.19690704345703,
+            -0.5364537239074707
+        ]
+    },
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Philantropy House": {
+        "building": "Philantropy House",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1182.0369186401367,
+            977.2010865211487,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            181.11677349590934,
+            -22.776869956576956,
+            95.44200897216797,
+            18.188009707988304,
+            25.854275102858498,
+            22.190536499023438,
+            -0.3038562366117691
+        ]
+    },
+    "Busy Bee": {
+        "building": "Rue d'Assaut 3",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            760.513313293457,
+            1050.4241676330566,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -244.84292602539062,
+            56.13623046875,
+            66.68570709228516,
+            37.01728057861328,
+            61.71924591064453,
+            19.778133392333984,
+            -0.9071028232574463
+        ]
+    },
+    "Brasserie de la Presse": {
+        "building": "Rue Royale 100",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1189.9850463867188,
+            1003.2612009048462,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            186.70975041761054,
+            3.23972612867151,
+            95.63347244262695,
+            23.757540210441256,
+            37.31228203296095,
+            26.198951721191406,
+            -0.3218778333910595
         ]
     },
     "La Confiserie de Bruxelles": {
@@ -166,7 +224,7 @@
             1278.1965942382812,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
             -140.24633622346465,
             277.80765255034044,
@@ -175,55 +233,6 @@
             20.670256816074403,
             10.726482391357422,
             1.0060344788977647
-        ]
-    },
-    "Caf\u00e9 Treurenberg": {
-        "building": "Rue de l'Enseignement 16",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1239.9752731323242,
-            999.8848342895508,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json",
-        "bounding_box": [
-            239.84636643667886,
-            -0.12699247561789573,
-            96.61907958984375,
-            5.372008774594805,
-            10.596316685737595,
-            20.548797607421875,
-            0.7407672233980279
-        ]
-    },
-    "Claire's Caf\u00e9": {
-        "building": "Rue du Marais 5",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            849.7903747558594,
-            1269.0631256103516,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json",
-        "bounding_box": [
-            -150.1997912345175,
-            269.58435403738844,
-            55.83309364318847,
-            6.961606011839407,
-            15.912397658457655,
-            11.253719329833984,
-            0.98159979675654
         ]
     },
     "Snacks and DM Store": {
@@ -252,7 +261,7 @@
         ]
     },
     "Beverages and Snacks Store": {
-        "building": "Rue d'Arenberg 54",
+        "building": "Rue de la Montagne 72",
         "coarse_type": "stores",
         "fine_types": [
             "store",
@@ -260,19 +269,19 @@
             "establishment"
         ],
         "location": [
-            798.3053207397461,
-            983.9646892547607,
-            -8
+            771.2095184326172,
+            959.8093318939209,
+            -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
-            -201.7377820158104,
-            -15.961385013195073,
-            72.12518310546875,
-            10.683652086537602,
-            13.801078699753583,
-            20.913543701171875,
-            0.016325344328747354
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
         ]
     },
     "Rue Royale - Koningsstraat Bus Stop": {

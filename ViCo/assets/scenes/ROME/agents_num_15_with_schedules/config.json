@@ -1,0 +1,769 @@
+{
+    "sim_name": "ROME_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Brian Carter",
+        "Brycer Rodriguez",
+        "Emily Johnson",
+        "Eve By J Gonzales",
+        "Louise Roberts",
+        "Marie Curie",
+        "Neil deGrasse Tyson",
+        "Rodtang",
+        "Roth Miller",
+        "Shannon Steves",
+        "Sophie Carlsen",
+        "Tiger Woods",
+        "Tim Cook",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -107.86206652813638,
+                149.22475868570305,
+                56.30460936212109,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Vicolo del Buon Consiglio",
+            "current_place": "Adam Pierce's room at Domus Colosseum",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -43.29532573183587,
+                257.9768564266212,
+                56.68492001305954,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via del Pozzuolo",
+            "current_place": "Brian Carter's room at Casa15",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                9.53519215625386,
+                81.09630256975831,
+                63.43937058128993,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via del Fagutale",
+            "current_place": "Brycer Rodriguez's room at Madonna dei Monti Apartament",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                37.64342124176427,
+                279.1918182989335,
+                57.39113496560921,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via dei Serpenti",
+            "current_place": "Emily Johnson's room at Zefiro Home",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -243.085417909271,
+                220.57232518465776,
+                53.5946725605238,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Forum",
+            "current_place": "Eve By J Gonzales's room at Musician Apartment Colosseo",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                185.43026622601587,
+                234.84966697518226,
+                77.54736734262512,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via delle Sette Sale",
+            "current_place": "Louise Roberts's room at Residenza Sette Sale | Casa Vacanze",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                175.49168485768482,
+                -48.04003228044681,
+                68.54867096045373,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via Nicola Salvi",
+            "current_place": "Marie Curie's room at Amazing Colosseo",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -9.097777363904644,
+                54.587863497650645,
+                61.940402213336974,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via delle Carine",
+            "current_place": "Neil deGrasse Tyson's room at Mandredi Palm Suites",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                186.8076868388393,
+                76.01738868479185,
+                74.63614387919057,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via della Polveriera",
+            "current_place": "Rodtang's room at Gio Roma",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -94.1041959147376,
+                249.40296150168956,
+                57.143968743827095,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via dell'Agnello",
+            "current_place": "Roth Miller's room at Domus Fori",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                224.57310000377203,
+                40.390604092884395,
+                74.18992279759462,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via delle Terme di Tito",
+            "current_place": "Shannon Steves's room at dolce casa colosseo1",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -242.64151256141182,
+                217.8850654043034,
+                53.61531009068794,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Forum",
+            "current_place": "Sophie Carlsen's room at Musician Apartment Colosseo",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                211.02899628548835,
+                5.1300867507347245,
+                72.5021439472316,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via del Monte Oppio",
+            "current_place": "Tiger Woods's room at Colosseum Palace Star",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -7.3073499344352895,
+                50.70524128246991,
+                62.29734106998859,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via delle Carine",
+            "current_place": "Tim Cook's room at Mandredi Palm Suites",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                39.068341498374416,
+                275.00923269389335,
+                57.89571325291602,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Via dei Serpenti",
+            "current_place": "Zara Williams's room at Zefiro Home",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            896.9382667541504,
+            1153.567611694336,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            981.9954600334167,
+            1268.8994750976562,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1022.4170351028442,
+            1136.4348640441895,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1040.9032497406006,
+            1284.8015441894531,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            778.6548385620117,
+            1229.2787170410156,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1188.2854614257812,
+            1244.550880432129,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1184.128562927246,
+            975.0517644882202,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1004.0083470344543,
+            1048.431173324585,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1190.4861450195312,
+            1065.4321537017822,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.5399398803711,
+            1246.8920669555664,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1213.7886505126953,
+            1047.1655101776123,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            778.6548385620117,
+            1229.2787170410156,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1190.3093566894531,
+            1014.3256023526192,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1004.0083470344543,
+            1048.431173324585,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1040.9032497406006,
+            1284.8015441894531,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/celebrity_Marie_Curie.glb",
+        "ViCo/avatars/models/celebrity_Neil_deGrasse_Tyson.glb",
+        "ViCo/avatars/models/celebrity_Rodtang.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Tiger_Woods.glb",
+        "ViCo/avatars/models/celebrity_Tim_Cook.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Fresh and Beverages Store": {
+            "building": "Piazza di San Pietro in Vincoli",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Largo Corrado Ricci",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Santa Maria del Buon Consiglio",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Via del Cardello",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Via del Pozzuolo",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Via dei Serpenti",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Rome Art Enthusiasts": {
+            "description": "A group of individuals passionate about art and architecture, exploring galleries and historical sites.",
+            "place": "Museo del Foro Romano",
+            "members": [
+                "Adam Pierce",
+                "Louise Roberts",
+                "Marie Curie"
+            ],
+            "daily_activity": "visiting art galleries from 15:00 to 17:00"
+        },
+        "Sapienza University Scholars": {
+            "description": "A group of students and academics from Sapienza University, focused on research and academic excellence.",
+            "place": "Sapienza University of Rome",
+            "members": [
+                "Eve By J Gonzales",
+                "Brycer Rodriguez",
+                "Sophie Carlsen",
+                "Neil deGrasse Tyson",
+                "Tim Cook"
+            ],
+            "daily_activity": "studying in the library from 14:00 to 16:00"
+        },
+        "Community Helpers": {
+            "description": "A group dedicated to community service and social work, supporting local families and children.",
+            "place": "Scuola Primaria e dell'Infanzia Vittorino da Feltre",
+            "members": [
+                "Shannon Steves",
+                "Emily Johnson",
+                "Zara Williams",
+                "Roth Miller"
+            ],
+            "daily_activity": "organizing community events from 16:00 to 18:00"
+        },
+        "Sports and Fitness Club": {
+            "description": "A group of sports enthusiasts and athletes, engaging in various physical activities and competitions.",
+            "place": "Judo Club Mezzaroma A.s.d.",
+            "members": [
+                "Rodtang",
+                "Tiger Woods",
+                "Brian Carter"
+            ],
+            "daily_activity": "training in martial arts from 17:00 to 19:00"
+        }
+    }
+}

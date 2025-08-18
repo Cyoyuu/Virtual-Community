@@ -1,0 +1,176 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Leonard Park's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "The Hideout Theatre",
+        "building": "The Hideout Coffee House",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Analyze market trends",
+        "place": "Fresh and Snacks Store",
+        "building": "Royal Blue Grocery",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Comedor",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Comedor"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Comedor",
+        "building": "Comedor",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Indeed Tower",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Comedor",
+        "end_place": "Indeed Tower"
+    },
+    {
+        "type": "main",
+        "activity": "Continue analyzing market trends",
+        "place": "Indeed Tower",
+        "building": "Indeed Tower",
+        "start_time": "13:00:00",
+        "end_time": "14:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to REP Real Estate Partners",
+        "place": null,
+        "building": null,
+        "start_time": "14:30:00",
+        "end_time": "15:00:00",
+        "start_place": "Indeed Tower",
+        "end_place": "REP Real Estate Partners"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss market trends with Austin Real Estate Group",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tacodeli",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "REP Real Estate Partners",
+        "end_place": "Tacodeli"
+    },
+    {
+        "type": "meal",
+        "activity": "Early Dinner",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "16:15:00",
+        "end_time": "16:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Northern-Southern",
+        "place": null,
+        "building": null,
+        "start_time": "16:45:00",
+        "end_time": "17:15:00",
+        "start_place": "Tacodeli",
+        "end_place": "Northern-Southern"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment",
+        "place": "Northern-Southern",
+        "building": "107 East 5th Street Suite 107",
+        "start_time": "17:15:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Driven Performance Training",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Northern-Southern",
+        "end_place": "Driven Performance Training"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at Driven Performance Training",
+        "place": "Driven Performance Training",
+        "building": "515 Congress Avenue # N",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Leonard Park's room",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:15:00",
+        "start_place": "Driven Performance Training",
+        "end_place": "Leonard Park's room at Avison Young"
+    },
+    {
+        "type": "main",
+        "activity": "Play chess and solve puzzles",
+        "place": "Leonard Park's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "21:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack",
+        "place": "Leonard Park's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "23:00:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Prepare for sleep",
+        "place": "Leonard Park's room at Avison Young",
+        "building": "515 Congress Avenue # N",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

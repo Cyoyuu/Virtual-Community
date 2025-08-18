@@ -1,4 +1,63 @@
 {
+    "121 South High Street": {
+        "building_glb": "buildings_element.035.glb",
+        "bounding_box": [
+            149.08356783537386,
+            -265.3463357707358,
+            129.36211013793948,
+            60.36457470768148,
+            19.31384845064123,
+            23.430870056152344,
+            0.1497175448353306
+        ],
+        "places": [
+            {
+                "name": "The Wing Dynasty",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    148.61797332763672,
+                    -265.51910400390625,
+                    -4
+                ]
+            },
+            {
+                "name": "Firebelly Wings",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    148.61797332763672,
+                    -265.51910400390625,
+                    -8
+                ]
+            },
+            {
+                "name": "Pat and Gracie's Downtown",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    148.61797332763672,
+                    -265.51910400390625,
+                    -12
+                ]
+            }
+        ]
+    },
     "1 Capitol Square": {
         "building_glb": "buildings_element.glb",
         "bounding_box": [
@@ -25,8 +84,7 @@
                     305.0132293701172,
                     -87.93286323547363,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -54,8 +112,7 @@
                     -245.69259643554688,
                     204.96389770507812,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Farmer's Fridge",
@@ -70,8 +127,7 @@
                     -245.69259643554688,
                     204.96389770507812,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Joseph P. Kinneary Historical Court House",
@@ -86,8 +142,35 @@
                     -245.69259643554688,
                     204.96389770507812,
                     -12
+                ]
+            }
+        ]
+    },
+    "40 North High Street": {
+        "building_glb": "buildings_element.084.glb",
+        "bounding_box": [
+            192.641557303888,
+            128.79233707940836,
+            123.9547119140625,
+            25.077114196658883,
+            6.098416563258945,
+            14.8109130859375,
+            0.14569825264917732
+        ],
+        "places": [
+            {
+                "name": "Secure Power of Columbus",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "location": [
+                    192.68316650390625,
+                    128.79218292236328,
+                    -4
+                ]
             }
         ]
     },
@@ -115,8 +198,7 @@
                     302.6065216064453,
                     136.51581573486328,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -144,8 +226,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Speck Italian Eatery",
@@ -160,8 +241,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "Restalgic Atelier",
@@ -178,8 +258,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "evolverie",
@@ -194,8 +273,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             },
             {
                 "name": "Hank's Low Country Seafood & Raw Bar",
@@ -210,8 +288,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             },
             {
                 "name": "The Nicholas",
@@ -223,8 +300,7 @@
                     73.94894409179688,
                     236.9816131591797,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                ]
             }
         ]
     },
@@ -251,8 +327,7 @@
                     -356.3616943359375,
                     -272.0179634094238,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -278,8 +353,7 @@
                     -262.1040802001953,
                     324.4438934326172,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -306,8 +380,7 @@
                     409.4986114501953,
                     107.3831901550293,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -334,8 +407,7 @@
                     401.5142364501953,
                     167.2111358642578,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -362,8 +434,7 @@
                     -32.89718055725098,
                     405.56903076171875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             }
         ]
     },
@@ -389,8 +460,7 @@
                     347.31561279296875,
                     -248.18082427978516,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -417,8 +487,7 @@
                     394.1742248535156,
                     -259.98895263671875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+                ]
             }
         ]
     },
@@ -444,8 +513,7 @@
                     367.4808654785156,
                     406.06211853027344,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             }
         ]
     }

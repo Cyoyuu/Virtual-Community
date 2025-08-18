@@ -1,0 +1,160 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Adam Pierce's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to work",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on sustainable urban development project",
+        "place": "Prospect Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mama Gina's Pizzeria",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Prospect Union Square",
+        "end_place": "Mama Gina's Pizzeria"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Mama Gina's Pizzeria",
+        "building": "19 Union Square",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to work",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Mama Gina's Pizzeria",
+        "end_place": "Prospect Union Square"
+    },
+    {
+        "type": "main",
+        "activity": "Continue working on project",
+        "place": "Prospect Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "13:00:00",
+        "end_time": "16:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lincoln Park",
+        "place": null,
+        "building": null,
+        "start_time": "16:30:00",
+        "end_time": "17:00:00",
+        "start_place": "Prospect Union Square",
+        "end_place": "Lincoln Park"
+    },
+    {
+        "type": "main",
+        "activity": "Green Innovators Club meeting",
+        "place": "Lincoln Park",
+        "building": "open space",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to dinner",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Lincoln Park",
+        "end_place": "Urban Axes - Axe Throwing"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Urban Axes - Axe Throwing",
+        "building": "2 Union Square",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Villari's Martial Arts Centers",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Urban Axes - Axe Throwing",
+        "end_place": "Villari's Martial Arts Centers"
+    },
+    {
+        "type": "main",
+        "activity": "Evening relaxation and entertainment",
+        "place": "Villari's Martial Arts Centers",
+        "building": "54 Union Square",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back home",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Villari's Martial Arts Centers",
+        "end_place": "Adam Pierce's room at Union 346 Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Evening photography editing",
+        "place": "Adam Pierce's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "21:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:30:00",
+        "end_time": "23:40:00",
+        "start_place": "Adam Pierce's room at Union 346 Apartments",
+        "end_place": "Beverages and Snacks Store"
+    },
+    {
+        "type": "meal",
+        "activity": "Late-night snack",
+        "place": "Beverages and Snacks Store",
+        "building": "54 Union Square",
+        "start_time": "23:40:00",
+        "end_time": "23:59:59"
+    }
+]

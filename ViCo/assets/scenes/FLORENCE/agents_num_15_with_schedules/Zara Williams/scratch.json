@@ -1,0 +1,173 @@
+{
+    "name": "Zara Williams",
+    "first_name": "Zara",
+    "last_name": "Williams",
+    "age": 15,
+    "innate": "benevolence, universalism, self-direction",
+    "learned": "I am a student at Casa dello Studente, interested in environmental science and activism.",
+    "currently": "I want to start a recycling initiative at my school.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Casa dello Studente Community",
+            "description": "A community of students living and studying at Casa dello Studente.",
+            "place": "Casa dello Studente",
+            "members": [
+                "Brycer Rodriguez",
+                "Megan Carter",
+                "Pika Hayes",
+                "Zara Williams"
+            ],
+            "daily_activity": "studying together from 16:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Zara Williams's room at Casa dello Studente",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Zara Williams's room at Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Zara Williams's room at Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Attend classes and study environmental science",
+            "place": "Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "08:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Chef Executive",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Casa dello Studente",
+            "end_place": "Chef Executive"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Chef Executive",
+            "building": "Via Cosimo Ridolfi",
+            "start_time": "12:40:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Casa dello Studente",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Chef Executive",
+            "end_place": "Casa dello Studente"
+        },
+        {
+            "type": "main",
+            "activity": "Plan recycling initiative",
+            "place": "Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "14:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Study with Casa dello Studente Community",
+            "place": "Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "16:00:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Anca Srl",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:10:00",
+            "start_place": "Casa dello Studente",
+            "end_place": "Anca Srl"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Anca Srl",
+            "building": "Giardino della Fortezza",
+            "start_time": "18:10:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Casa dello Studente",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Anca Srl",
+            "end_place": "Zara Williams's room at Casa dello Studente"
+        },
+        {
+            "type": "main",
+            "activity": "Research on environmental activism",
+            "place": "Zara Williams's room at Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "19:30:00",
+            "end_time": "22:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Zara Williams's room at Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "22:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "Zara Williams's room at Casa dello Studente",
+            "building": "Casa dello Studente",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Casa dello Studente",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

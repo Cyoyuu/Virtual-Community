@@ -1,0 +1,152 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Steve Jobs's room at Hotel Wolcott",
+        "building": "Hotel Wolcott",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "STATE Grill and Bar",
+        "building": "Empire State Building",
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mercy University - Manhattan Campus",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:15:00",
+        "start_place": "STATE Grill and Bar",
+        "end_place": "Mercy University - Manhattan Campus"
+    },
+    {
+        "type": "main",
+        "activity": "Attend technology summit",
+        "place": "Mercy University - Manhattan Campus",
+        "building": "47 West 34th Street",
+        "start_time": "09:15:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Greeley Square Park",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Mercy University - Manhattan Campus",
+        "end_place": "Greeley Square Park"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and reflect on the morning session",
+        "place": "Greeley Square Park",
+        "building": "open space",
+        "start_time": "12:15:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Upper Crust",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "Greeley Square Park",
+        "end_place": "Upper Crust"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Upper Crust",
+        "building": "Kratter Building",
+        "start_time": "13:15:00",
+        "end_time": "13:45:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Mercy University - Manhattan Campus",
+        "place": null,
+        "building": null,
+        "start_time": "13:45:00",
+        "end_time": "14:00:00",
+        "start_place": "Upper Crust",
+        "end_place": "Mercy University - Manhattan Campus"
+    },
+    {
+        "type": "main",
+        "activity": "Continue attending technology summit",
+        "place": "Mercy University - Manhattan Campus",
+        "building": "47 West 34th Street",
+        "start_time": "14:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Empire State Building",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:15:00",
+        "start_place": "Mercy University - Manhattan Campus",
+        "end_place": "STATE Grill and Bar"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "STATE Grill and Bar",
+        "building": "Empire State Building",
+        "start_time": "17:15:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Club meeting",
+        "place": "Empire State Building",
+        "building": "Empire State Building",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hotel Wolcott",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:15:00",
+        "start_place": "Empire State Building",
+        "end_place": "Steve Jobs's room at Hotel Wolcott"
+    },
+    {
+        "type": "main",
+        "activity": "Evening reflection and planning",
+        "place": "Steve Jobs's room at Hotel Wolcott",
+        "building": "Hotel Wolcott",
+        "start_time": "19:15:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Snacks and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "23:00:00",
+        "end_time": "23:15:00",
+        "start_place": "Steve Jobs's room at Hotel Wolcott",
+        "end_place": "Snacks and DM Store"
+    },
+    {
+        "type": "main",
+        "activity": "Purchase snacks for the next day",
+        "place": "Snacks and DM Store",
+        "building": "1261 Flushing Avenue",
+        "start_time": "23:15:00",
+        "end_time": "23:59:59"
+    }
+]

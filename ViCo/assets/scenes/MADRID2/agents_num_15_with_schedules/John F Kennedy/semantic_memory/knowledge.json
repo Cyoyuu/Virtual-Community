@@ -1,0 +1,409 @@
+{
+    "Emma Watson": {
+        "age": 34,
+        "living_place": "Emma Watson's room at Hotel Vincci Via 66",
+        "appearance": "ViCo/assets/imgs/avatars/Emma Watson.png",
+        "groups": [
+            "Madrid Celebrity Circle"
+        ]
+    },
+    "Justin Bieber": {
+        "age": 29,
+        "living_place": "Hotel Vincci Via 66",
+        "appearance": "ViCo/assets/imgs/avatars/Justin Bieber.png",
+        "groups": [
+            "Madrid Celebrity Circle"
+        ]
+    },
+    "LeBron James": {
+        "age": 39,
+        "living_place": "Hotel Vincci Capitol",
+        "appearance": "ViCo/assets/imgs/avatars/LeBron James.png",
+        "groups": [
+            "Madrid Celebrity Circle"
+        ]
+    },
+    "Madrid Celebrity Circle": {
+        "description": "A group of famous personalities visiting Madrid.",
+        "place": "Hotel Vincci Capitol",
+        "members": [
+            "Emma Watson",
+            "John F Kennedy",
+            "Justin Bieber",
+            "LeBron James"
+        ],
+        "daily_activity": "attending exclusive events from 19:00 to 20:00"
+    },
+    "John F Kennedy's room at Hotel Vincci Capitol": {
+        "building": "Hotel Vincci Capitol",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            905.4335861206055,
+            1035.963722229004,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "John F Kennedy's room at Hotel Vincci Capitol",
+        "bounding_box": [
+            -94.49443218334743,
+            36.6164273181318,
+            124.93082427978516,
+            56.245469422165804,
+            32.249664218012526,
+            42.28153991699219,
+            -0.050233323818322906
+        ]
+    },
+    "Hotel Vincci Capitol": {
+        "building": "Hotel Vincci Capitol",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            905.4335861206055,
+            1035.963722229004,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            -94.49443218334743,
+            36.6164273181318,
+            124.93082427978516,
+            56.245469422165804,
+            32.249664218012526,
+            42.28153991699219,
+            -0.050233323818322906
+        ]
+    },
+    "Studio34pilates": {
+        "building": "Calle de Mu\u00f1oz Torrero",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1274.747085571289,
+            1112.656337738037,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            274.55799105182007,
+            112.9899870286611,
+            119.31771087646484,
+            11.100244044345928,
+            18.1689811755105,
+            18.389236450195312,
+            -0.2848952281368633
+        ]
+    },
+    "La Nueva Troje": {
+        "building": "14",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "night_club",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1198.3304290771484,
+            1107.566593170166,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            198.39303588867188,
+            107.71424102783203,
+            121.64018249511719,
+            9.290390014648438,
+            25.12162208557129,
+            22.919410705566406,
+            -0.19204309582710266
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Calle del Arenal",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            758.5094909667969,
+            770.8041229248047,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -241.52343222391923,
+            -229.70979261260393,
+            99.65534973144533,
+            16.67512274950127,
+            41.76756974162962,
+            21.998931884765625,
+            -0.4174901585847156
+        ]
+    },
+    "Hamburguesa Nostra": {
+        "building": "Gourmet Experience",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1026.1746864318848,
+            990.5393843650818,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            26.483163943256134,
+            -10.012178234939395,
+            133.7292823791504,
+            25.69158829438185,
+            25.081991113211664,
+            56.53173065185547,
+            -0.09882744508095463
+        ]
+    },
+    "Alimentaci\u00f3n y souvenirs": {
+        "building": "Calle del Carmen",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1060.409797668457,
+            893.7640075683594,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            60.29105149507643,
+            -107.12477621402797,
+            113.96057891845703,
+            9.48903735517229,
+            26.379132329012148,
+            22.069915771484375,
+            0.5758924791645983
+        ]
+    },
+    "\u9e21\u4f60\u592a\u7f8e\u5e7f\u573a": {
+        "building": "FNAC Callao",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1030.8575584888458,
+            905.2019081115723,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            29.193439483642578,
+            -94.46073913574219,
+            125.02738952636719,
+            14.048648834228516,
+            91.37322235107422,
+            46.5062255859375,
+            0.5154855251312256
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Calle de Galdo",
+        "coarse_type": "stores",
+        "fine_types": [
+            "pharmacy",
+            "health",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1103.426113128662,
+            784.4932708740234,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            102.70994015429596,
+            -216.3150093092866,
+            110.32982635498048,
+            21.335738816373887,
+            35.83161167388739,
+            21.654891967773438,
+            -0.8579316389510925
+        ]
+    },
+    "Fnac": {
+        "building": "FNAC Callao",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "department_store",
+            "electronics_store",
+            "movie_rental",
+            "home_goods_store",
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1030.8575584888458,
+            905.2019081115723,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            29.193439483642578,
+            -94.46073913574219,
+            125.02738952636719,
+            14.048648834228516,
+            91.37322235107422,
+            46.5062255859375,
+            0.5154855251312256
+        ]
+    },
+    "Costanilla de los \u00c1ngeles Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -240.75430513207507,
+            -188.05569433692537
+        ],
+        "rotation": -0.3769851337020972,
+        "bounding_box": null
+    },
+    "Gran V\u00eda Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -52.57896990191884,
+            56.62883345060033
+        ],
+        "rotation": -2.2675188563304687,
+        "bounding_box": null
+    },
+    "Calle de la Salud Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            212.46551612487096,
+            -160.88704858860845
+        ],
+        "rotation": -2.069273692645017,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            196.05032492166447,
+            -81.85461671797117
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -80.47606759921624,
+            -99.78689984061008
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -179.26385198860606,
+            68.44000185135971
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            173.46808421261872,
+            138.65059786336298
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Calle de la Salud": [
+            {
+                "stop_name": "Costanilla de los \u00c1ngeles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Gran V\u00eda Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Calle de la Salud Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Costanilla de los \u00c1ngeles": [
+            {
+                "stop_name": "Calle de la Salud Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Gran V\u00eda Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Costanilla de los \u00c1ngeles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

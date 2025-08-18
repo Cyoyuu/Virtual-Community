@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Louise Roberts's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Sweetness",
+        "building": "The Riley Building",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Beverages and DM Store",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work at Beverages and DM Store",
+        "place": "Beverages and DM Store",
+        "building": "The Riley Building",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Tacodeli",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:10:00",
+        "start_place": "Beverages and DM Store",
+        "end_place": "Tacodeli"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Tacodeli",
+        "building": "301 Congress",
+        "start_time": "12:10:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to REP Real Estate Partners",
+        "place": null,
+        "building": null,
+        "start_time": "12:30:00",
+        "end_time": "13:00:00",
+        "start_place": "Tacodeli",
+        "end_place": "REP Real Estate Partners"
+    },
+    {
+        "type": "main",
+        "activity": "Organize community outreach program",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "13:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss market trends with Austin Real Estate Group",
+        "place": "REP Real Estate Partners",
+        "building": "301 Congress",
+        "start_time": "15:00:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Cedar Street Courtyard",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "REP Real Estate Partners",
+        "end_place": "Cedar Street Courtyard"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Cedar Street Courtyard",
+        "building": "Cedar Street Courtyard",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Northern-Southern",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Cedar Street Courtyard",
+        "end_place": "Northern-Southern"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment",
+        "place": "Northern-Southern",
+        "building": "107 East 5th Street Suite 107",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Louise Roberts's room at Crites Real Estate",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Northern-Southern",
+        "end_place": "Louise Roberts's room at Crites Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for next day's community outreach program",
+        "place": "Louise Roberts's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "19:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Wind down and relax",
+        "place": "Louise Roberts's room at Crites Real Estate",
+        "building": "ATX Tower",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

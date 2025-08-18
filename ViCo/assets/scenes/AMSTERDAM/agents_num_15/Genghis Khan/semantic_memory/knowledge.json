@@ -1,0 +1,421 @@
+{
+    "Andrew Ng": {
+        "age": 48,
+        "living_place": "Andrew Ng's room at Hotel TwentySeven",
+        "appearance": "ViCo/assets/imgs/avatars/Andrew Ng.png",
+        "groups": [
+            "Historical Explorers"
+        ]
+    },
+    "Isaac Newton": {
+        "age": 65,
+        "living_place": "Hotel Amsterdam De Roode Leeuw",
+        "appearance": "ViCo/assets/imgs/avatars/Isaac Newton.png",
+        "groups": [
+            "Historical Explorers"
+        ]
+    },
+    "Historical Explorers": {
+        "description": "A group of individuals interested in exploring historical sites and learning about history.",
+        "place": "Royal Palace Amsterdam",
+        "members": [
+            "Andrew Ng",
+            "Genghis Khan",
+            "Isaac Newton"
+        ],
+        "daily_activity": "exploring historical sites from 13:00 to 15:00"
+    },
+    "Genghis Khan's room at Hotel De Gerstekorrel": {
+        "building": "Damstraat 22",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.2677536010742,
+            876.8668746948242,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Genghis Khan's room at Hotel De Gerstekorrel",
+        "bounding_box": [
+            216.60704470446828,
+            -124.13683212054906,
+            114.48343276977539,
+            13.871596833400574,
+            19.966746043226745,
+            13.578895568847656,
+            -0.4762642171471144
+        ]
+    },
+    "Hotel De Gerstekorrel": {
+        "building": "Damstraat 22",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.2677536010742,
+            876.8668746948242,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            216.60704470446828,
+            -124.13683212054906,
+            114.48343276977539,
+            13.871596833400574,
+            19.966746043226745,
+            13.578895568847656,
+            -0.4762642171471144
+        ]
+    },
+    "Royal Palace Amsterdam": {
+        "building": "Koninklijk Paleis",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            981.1056747436523,
+            998.1671314239502,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -18.865328670329507,
+            -1.8264458960437864,
+            131.03923797607422,
+            65.4802227842933,
+            80.9642083340508,
+            46.24748229980469,
+            -0.02547038287749368
+        ]
+    },
+    "Techlab Bv": {
+        "building": "Singel 326 A",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            731.1872100830078,
+            738.3324813842773,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -269.11663921247896,
+            -261.7464949481884,
+            114.65562438964845,
+            28.74136867987774,
+            12.706197571820965,
+            15.725479125976562,
+            -0.11961438250784714
+        ]
+    },
+    "Flemish Cultural Center de Brakke Grond": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -12
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            173.13579031517335,
+            -233.8267931442452,
+            112.11829757690431,
+            82.57669607270873,
+            58.77243479033173,
+            10.355445861816406,
+            -0.054462440222174106
+        ]
+    },
+    "Amsterdam Yoga Centre": {
+        "building": "Singel 300",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -261.353045485607,
+            -178.07236909753436,
+            115.16712570190431,
+            30.50653721295573,
+            17.46137789389023,
+            16.67302703857422,
+            -0.1108469586759953
+        ]
+    },
+    "Sukasari gunununghalu": {
+        "building": "Damstraat 22",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.2677536010742,
+            876.8668746948242,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            216.60704470446828,
+            -124.13683212054906,
+            114.48343276977539,
+            13.871596833400574,
+            19.966746043226745,
+            13.578895568847656,
+            -0.4762642171471144
+        ]
+    },
+    "Mavi 's International BV": {
+        "building": "Rokin 20",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1063.0294075012207,
+            855.2220764160156,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            63.06682184853942,
+            -144.7779083279088,
+            114.56740951538087,
+            16.722961448030485,
+            6.28997413129362,
+            15.830924987792969,
+            0.01333570178389378
+        ]
+    },
+    "Caf\u00e9 De Buurvrouw": {
+        "building": "Sint Pieterspoortsteeg 29",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1197.3933715820312,
+            810.3527374267578,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            197.36815638966706,
+            -189.6366532826724,
+            111.91941452026369,
+            4.966642795744133,
+            16.65314896516437,
+            9.114036560058594,
+            -0.27438302932527237
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Jonge Roelensteeg",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            994.1781234741211,
+            873.2332382202148,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -4.336325975351388,
+            -125.87864440757882,
+            113.8076400756836,
+            11.58001058912558,
+            63.10215152139229,
+            13.695755004882812,
+            -1.222712265249705
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Industria",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1118.354320526123,
+            918.3688545227051,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            116.9344414285057,
+            -84.43780991995098,
+            119.89459228515625,
+            37.89827962834576,
+            31.547611807311824,
+            25.220367431640625,
+            -0.26724143431737685
+        ]
+    },
+    "Singel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -223.64587491774998,
+            -331.8770473372178
+        ],
+        "rotation": -0.11606742879572277,
+        "bounding_box": null
+    },
+    "Damrak Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            205.2698704781698,
+            105.74759652198695
+        ],
+        "rotation": -0.6870389474018183,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            190.9697649930068,
+            -159.54508143669185
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -270.59051032698653,
+            -184.14685443747305
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -99.84747833441955,
+            -121.10998771547311
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            162.8009026867501,
+            105.22397871245589
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.802841477347487,
+            -233.41860399615223
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -106.98235061443106,
+            -267.68981899489995
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.59099691949788,
+            40.69110591926888
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Damrak": [
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Singel": [
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

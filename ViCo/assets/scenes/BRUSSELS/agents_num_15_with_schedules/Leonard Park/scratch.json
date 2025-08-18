@@ -3,28 +3,28 @@
     "first_name": "Leonard",
     "last_name": "Park",
     "age": 26,
-    "innate": "stimulation, achievement, hedonism",
-    "learned": "I am a bartender at L\u00e9opold Caf\u00e9 Royal, known for my creative cocktails. I enjoy socializing and exploring new music.",
-    "currently": "I want to create a signature cocktail for the caf\u00e9.",
+    "innate": "security, conformity, tradition",
+    "learned": "I am an accountant at Philantropy House, specializing in financial audits and compliance. I enjoy reading and playing chess.",
+    "currently": "I am preparing for the annual financial audit at Philantropy House.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Tech Innovators Club",
-            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
-            "place": "Competento",
+            "name": "Business Leaders Network",
+            "description": "A network of business leaders and entrepreneurs who collaborate and share insights on business strategies.",
+            "place": "Philantropy House",
             "members": [
-                "Jody Petersen",
-                "Lisa Su",
-                "Mark Zuckerberg",
-                "Leonard Park"
+                "Jack Ma",
+                "Jensen Huang",
+                "Leonard Park",
+                "Kate Novak"
             ],
-            "daily_activity": "discussing tech trends from 17:00 to 18:00"
+            "daily_activity": "discussing business strategies from 18:00 to 19:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Leonard Park's room at Boiteux",
+    "living_place": "Leonard Park's room at Belair",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,148 +34,150 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Leonard Park's room at Boiteux",
-            "building": "Boiteux",
+            "place": "Leonard Park's room at Belair",
+            "building": "Belair",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
             "activity": "Breakfast",
-            "place": "L\u00e9opold Caf\u00e9 Royal",
-            "building": "Rue de Louvain 2",
-            "start_time": "08:00:00",
-            "end_time": "08:30:00"
+            "place": "Paul",
+            "building": "Rue de l'Enseignement 2",
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Philantropy House",
+            "place": null,
+            "building": null,
+            "start_time": "09:00:00",
+            "end_time": "09:30:00",
+            "start_place": "Paul",
+            "end_place": "Philantropy House"
+        },
+        {
+            "type": "main",
+            "activity": "Work on financial audits and compliance",
+            "place": "Philantropy House",
+            "building": "Philantropy House",
+            "start_time": "09:30:00",
+            "end_time": "12:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Sakagura",
+            "place": null,
+            "building": null,
+            "start_time": "12:30:00",
+            "end_time": "12:40:00",
+            "start_place": "Philantropy House",
+            "end_place": "Sakagura"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Sakagura",
+            "building": "Rue du Marais 15",
+            "start_time": "12:40:00",
+            "end_time": "13:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Philantropy House",
+            "place": null,
+            "building": null,
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Sakagura",
+            "end_place": "Philantropy House"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on financial audits and compliance",
+            "place": "Philantropy House",
+            "building": "Philantropy House",
+            "start_time": "14:00:00",
+            "end_time": "17:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Fresh and Beverages Store",
             "place": null,
             "building": null,
-            "start_time": "08:30:00",
-            "end_time": "09:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Explore new beverages and ingredients for cocktail creation",
-            "place": "Fresh and Beverages Store",
-            "building": "Marquis",
-            "start_time": "09:00:00",
-            "end_time": "11:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Museum of the National Bank of Belgium",
-            "place": null,
-            "building": null,
-            "start_time": "11:00:00",
-            "end_time": "11:30:00",
-            "start_place": "Fresh and Beverages Store",
-            "end_place": "Museum of the National Bank of Belgium"
-        },
-        {
-            "type": "main",
-            "activity": "Visit Museum of the National Bank of Belgium for inspiration",
-            "place": "Museum of the National Bank of Belgium",
-            "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
-            "start_time": "11:30:00",
-            "end_time": "13:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to L\u00e9opold Caf\u00e9 Royal",
-            "place": null,
-            "building": null,
-            "start_time": "13:00:00",
-            "end_time": "13:30:00",
-            "start_place": "Museum of the National Bank of Belgium",
-            "end_place": "L\u00e9opold Caf\u00e9 Royal"
-        },
-        {
-            "type": "meal",
-            "activity": "Lunch",
-            "place": "L\u00e9opold Caf\u00e9 Royal",
-            "building": "Rue de Louvain 2",
-            "start_time": "13:30:00",
-            "end_time": "14:00:00"
-        },
-        {
-            "type": "main",
-            "activity": "Work on creating a signature cocktail",
-            "place": "L\u00e9opold Caf\u00e9 Royal",
-            "building": "Rue de Louvain 2",
-            "start_time": "14:00:00",
-            "end_time": "16:30:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Competento",
-            "place": null,
-            "building": null,
-            "start_time": "16:30:00",
-            "end_time": "17:00:00",
-            "start_place": "L\u00e9opold Caf\u00e9 Royal",
-            "end_place": "Competento"
-        },
-        {
-            "type": "main",
-            "activity": "Tech Innovators Club meeting",
-            "place": "Competento",
-            "building": "Rue de la Chancellerie 19",
-            "start_time": "17:00:00",
-            "end_time": "18:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Bar \u00e0 viandes Cannibale",
-            "place": null,
-            "building": null,
-            "start_time": "18:00:00",
-            "end_time": "18:30:00",
-            "start_place": "Competento",
-            "end_place": "Bar \u00e0 viandes Cannibale"
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Philantropy House",
+            "end_place": "Fresh and Beverages Store"
         },
         {
             "type": "meal",
             "activity": "Dinner",
-            "place": "Bar \u00e0 viandes Cannibale",
-            "building": "Rue de l'Enseignement 10",
+            "place": "Fresh and Beverages Store",
+            "building": "Marquis",
+            "start_time": "18:00:00",
+            "end_time": "18:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Philantropy House for Business Leaders Network meeting",
+            "place": null,
+            "building": null,
             "start_time": "18:30:00",
-            "end_time": "19:00:00"
+            "end_time": "19:00:00",
+            "start_place": "Fresh and Beverages Store",
+            "end_place": "Philantropy House"
         },
         {
-            "type": "commute",
-            "activity": "Commute to L\u00e9opold Caf\u00e9 Royal",
-            "place": null,
-            "building": null,
+            "type": "main",
+            "activity": "Business Leaders Network meeting",
+            "place": "Philantropy House",
+            "building": "Philantropy House",
             "start_time": "19:00:00",
-            "end_time": "19:30:00",
-            "start_place": "Bar \u00e0 viandes Cannibale",
-            "end_place": "L\u00e9opold Caf\u00e9 Royal"
-        },
-        {
-            "type": "main",
-            "activity": "Socialize and explore new music",
-            "place": "L\u00e9opold Caf\u00e9 Royal",
-            "building": "Rue de Louvain 2",
-            "start_time": "19:30:00",
-            "end_time": "23:00:00"
+            "end_time": "20:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Leonard Park's room at Boiteux",
+            "activity": "Commute to Parc de Bruxelles for a walk",
             "place": null,
             "building": null,
-            "start_time": "23:00:00",
-            "end_time": "23:30:00",
-            "start_place": "L\u00e9opold Caf\u00e9 Royal",
-            "end_place": "Leonard Park's room at Boiteux"
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Philantropy House",
+            "end_place": "Parc de Bruxelles"
         },
         {
             "type": "main",
-            "activity": "Wind down and prepare for sleep",
-            "place": "Leonard Park's room at Boiteux",
-            "building": "Boiteux",
+            "activity": "Evening walk and relaxation",
+            "place": "Parc de Bruxelles",
+            "building": "open space",
+            "start_time": "20:30:00",
+            "end_time": "21:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Leonard Park's room at Belair",
+            "place": null,
+            "building": null,
+            "start_time": "21:30:00",
+            "end_time": "22:00:00",
+            "start_place": "Parc de Bruxelles",
+            "end_place": "Leonard Park's room at Belair"
+        },
+        {
+            "type": "main",
+            "activity": "Read and play chess",
+            "place": "Leonard Park's room at Belair",
+            "building": "Belair",
+            "start_time": "22:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Prepare for sleep",
+            "place": "Leonard Park's room at Belair",
+            "building": "Belair",
             "start_time": "23:30:00",
             "end_time": "23:59:59"
         }
@@ -189,13 +191,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "L\u00e9opold Caf\u00e9 Royal",
+    "working_place": "Philantropy House",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

@@ -25,12 +25,78 @@
                     738.3324813842773,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -253.82674267656424,
-            -256.1781422283633
+            -253.84834635177623,
+            -263.51879674120875
+        ]
+    },
+    "Singel 301": {
+        "building_glb": "buildings_element.1134.glb",
+        "bounding_box": [
+            -200.8204116851574,
+            -277.6674348443569,
+            113.89694213867189,
+            14.530284686246874,
+            6.000798951897252,
+            14.10858154296875,
+            -0.019924810221256802
+        ],
+        "places": [
+            {
+                "name": "Hotel Hoksbergen",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    799.1795883178711,
+                    722.3047332763672,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            }
+        ],
+        "outdoor_xy": [
+            -209.03249886646162,
+            -274.92267506394273
+        ]
+    },
+    "Spuistraat 260": {
+        "building_glb": "buildings_element.1131.glb",
+        "bounding_box": [
+            -183.90432173085188,
+            -289.1513326096108,
+            113.53404235839845,
+            16.458535923367858,
+            5.1536530164509555,
+            13.327621459960938,
+            -0.020986463859835887
+        ],
+        "places": [
+            {
+                "name": "Beverages and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    816.0925369262695,
+                    710.7210540771484,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -174.80512398199264,
+            -292.9199349608299
         ]
     },
     "Spuistraat 250": {
@@ -61,28 +127,12 @@
                     747.1223907470703,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
-            },
-            {
-                "name": "Beverages and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "bicycle_store",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    817.9329528808594,
-                    747.1223907470703,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            -173.8775244499695,
-            -259.77939648725766
+            -173.83093801365123,
+            -259.4858146732503
         ]
     },
     "Spuistraat 247": {
@@ -112,12 +162,12 @@
                     737.7033157348633,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -106.74092369279043,
-            -251.41497664588562
+            -158.22351526047208,
+            -268.97683901990445
         ]
     },
     "Spuistraat 249": {
@@ -145,7 +195,7 @@
                     725.1471710205078,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             },
             {
                 "name": "drink coffee",
@@ -161,12 +211,12 @@
                     725.1471710205078,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -160.1903993617292,
-            -274.9957800389217
+            -159.59978127023658,
+            -278.17057751157506
         ]
     },
     "Spuistraat 251": {
@@ -198,8 +248,8 @@
             }
         ],
         "outdoor_xy": [
-            -160.23895655859633,
-            -283.2739873764135
+            -160.1708221883598,
+            -283.56522780691836
         ]
     },
     "Nieuwezijds Voorburgwal 353": {
@@ -228,149 +278,80 @@
                     718.2993927001953,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -86.53551717895179,
-            -278.2160719437862
+            -77.19384121330445,
+            -284.7021451967125
         ]
     },
-    "Sint Luci\u00ebnsteeg 25": {
-        "building_glb": "buildings_element.1221.glb",
+    "Sint Luci\u00ebnsteeg 20": {
+        "building_glb": "buildings_element.1193.glb",
         "bounding_box": [
-            -50.988590519535684,
-            -286.3745057626151,
-            112.43733978271486,
-            11.223327653369854,
-            12.401772898085975,
-            10.820144653320312,
-            0.05065287300716039
+            -68.88922882080078,
+            -271.1357421875,
+            113.56726837158203,
+            4.605103969573975,
+            18.842729568481445,
+            13.4012451171875,
+            0.3040395975112915
         ],
         "places": [
             {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    949.2522029876709,
-                    713.7570953369141,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-            }
-        ],
-        "outdoor_xy": [
-            -56.438155774048504,
-            -279.44064417763406
-        ]
-    },
-    "Sint Luci\u00ebnsteeg 21": {
-        "building_glb": "buildings_element.1189.glb",
-        "bounding_box": [
-            -38.86495605069633,
-            -285.5015561496673,
-            112.03695297241212,
-            3.648031253671083,
-            14.44270331149389,
-            9.798347473144531,
-            0.22398031423511294
-        ],
-        "places": [
-            {
-                "name": "Coffee & Cakes.",
+                "name": "De Pindakaaswinkel",
                 "coarse_type": "food",
                 "fine_types": [
-                    "cafe",
+                    "grocery_or_supermarket",
                     "store",
                     "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    961.1497688293457,
-                    714.5084075927734,
+                    931.5948009490967,
+                    728.9023590087891,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -42.71390361034452,
-            -277.94638302080324
+            -68.70374758738568,
+            -281.99986194060074
         ]
     },
-    "Sint Luci\u00ebnsteeg 19": {
-        "building_glb": "buildings_element.1269.glb",
+    "Rokin 71": {
+        "building_glb": "buildings_element.1348.glb",
         "bounding_box": [
-            -26.31673851698848,
-            -282.26760545648574,
-            112.17935180664064,
-            22.26206745290958,
-            15.313799216086299,
-            9.964813232421875,
-            0.22424032106674405
+            108.198178992766,
+            -277.45543616953137,
+            114.15102767944337,
+            28.83291150655229,
+            13.013828036757332,
+            15.173866271972656,
+            -0.09955371378340218
         ],
         "places": [
             {
-                "name": "SooTea bubble tea shop & more",
-                "coarse_type": "food",
+                "name": "Mister Highland Hotel Amsterdam",
+                "coarse_type": "accommodation",
                 "fine_types": [
-                    "cafe",
-                    "store",
-                    "food",
+                    "lodging",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    972.9555487632751,
-                    717.7644348144531,
+                    1108.2014808654785,
+                    722.880615234375,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             }
         ],
         "outdoor_xy": [
-            -19.78978146306604,
-            -271.8997574912516
-        ]
-    },
-    "Sint Luci\u00ebnsteeg 3": {
-        "building_glb": "buildings_element.1212.glb",
-        "bounding_box": [
-            -8.39419776546842,
-            -276.7517091707952,
-            113.1929168701172,
-            21.84934425388848,
-            13.278905367239862,
-            11.591796875,
-            0.25679536471190384
-        ],
-        "places": [
-            {
-                "name": "Stokkenbar",
-                "coarse_type": "food",
-                "fine_types": [
-                    "restaurant",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    992.2341585755348,
-                    722.367431640625,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            }
-        ],
-        "outdoor_xy": [
-            4.651713695581782,
-            -279.48201379847126
+            92.12308767111466,
+            -283.281429495405
         ]
     },
     "Vlaams Cultuurhuis de Brakke Grond": {
@@ -400,7 +381,7 @@
                     766.2080841064453,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "name": "The Lobby Nesplein",
@@ -417,7 +398,7 @@
                     766.2080841064453,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "name": "Flemish Cultural Center de Brakke Grond",
@@ -432,7 +413,7 @@
                     766.2080841064453,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             },
             {
                 "building": "Vlaams Cultuurhuis de Brakke Grond",
@@ -449,62 +430,13 @@
                     766.2080841064453,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Steve Johnson's room at Hotel V"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Rodtang's room at Hotel V"
             }
         ],
         "outdoor_xy": [
-            160.72516703229152,
-            -202.7188729236672
-        ]
-    },
-    "Oudezijds Voorburgwal 197": {
-        "building_glb": "buildings_element.1489.glb",
-        "bounding_box": [
-            268.7805887209485,
-            -254.52725728469915,
-            114.72731781005861,
-            18.470275404745067,
-            33.38198245798105,
-            16.354537963867188,
-            1.0651066116422925
-        ],
-        "places": [
-            {
-                "name": "Sofitel Legend The Grand Amsterdam",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1268.7057876586914,
-                    745.7073135375977,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-            },
-            {
-                "building": "Oudezijds Voorburgwal 197",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1268.7057876586914,
-                    745.7073135375977,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Chuang Gan's room at Sofitel Legend The Grand Amsterdam"
-            }
-        ],
-        "outdoor_xy": [
-            267.17343388941185,
-            -265.3367859674785
+            203.10759989623136,
+            -265.8920851828822
         ]
     },
     "Herengracht 287h": {
@@ -533,61 +465,127 @@
                     749.7493286132812,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -297.6248480694345,
-            -247.29242979160594
+            -297.452535241868,
+            -245.85893243936937
         ]
     },
-    "Kalverstraat 57": {
-        "building_glb": "buildings_element.1231.glb",
+    "Spuistraat 231": {
+        "building_glb": "buildings_element.1076.glb",
         "bounding_box": [
-            22.791279586068196,
-            -254.37526085711204,
-            115.00249481201173,
-            19.293609760272766,
-            22.55937698235362,
-            16.16510009765625,
-            -0.12150131098002158
+            -123.42222572483664,
+            -211.14786181982834,
+            113.51742553710939,
+            53.31149156698997,
+            9.17557821906729,
+            13.846282958984375,
+            0.16650052111253755
         ],
         "places": [
             {
-                "name": "Fresh and DM Store",
+                "name": "Fresh and Beverages Store",
                 "coarse_type": "stores",
                 "fine_types": [
-                    "store",
+                    "hair_care",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1022.9377584457397,
-                    745.8336334228516,
+                    876.285514831543,
+                    789.9008255004883,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
             },
             {
-                "name": "WhatsNext",
-                "coarse_type": "food",
+                "name": "Nova Hotel & Apartments",
+                "coarse_type": "accommodation",
                 "fine_types": [
-                    "food",
-                    "store",
+                    "lodging",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1022.9377584457397,
-                    745.8336334228516,
-                    -12
+                    876.285514831543,
+                    789.9008255004883,
+                    -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             }
         ],
         "outdoor_xy": [
-            14.700010123292918,
-            -265.7581838408371
+            -151.03437821594622,
+            -213.71494037566939
+        ]
+    },
+    "Nieuwezijds Voorburgwal 277": {
+        "building_glb": "buildings_element.1200.glb",
+        "bounding_box": [
+            -62.00836213480033,
+            -225.94664409126472,
+            109.34338760375978,
+            6.863627677860372,
+            5.9578909682280985,
+            5.187065124511719,
+            -0.14215852601286
+        ],
+        "places": [
+            {
+                "name": "Het Stadspaleis",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    938.045373916626,
+                    774.0534515380859,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -64.20916660525478,
+            -229.6511484225478
+        ]
+    },
+    "Unitz": {
+        "building_glb": "buildings_Unitz.glb",
+        "bounding_box": [
+            113.91426566864186,
+            -269.4411745440141,
+            114.23232650756837,
+            35.44002118917304,
+            13.299620162934751,
+            15.192741394042969,
+            -0.09960256912047766
+        ],
+        "places": [
+            {
+                "name": "Landscape House",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1114.076904296875,
+                    730.5340576171875,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            95.80661322347713,
+            -262.3804511338902
         ]
     },
     "NRC-gebouw": {
@@ -617,12 +615,12 @@
                     761.5866546630859,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            99.17880807730373,
-            -238.00438900024622
+            99.15886310483879,
+            -255.78966031457776
         ]
     },
     "Nes 43": {
@@ -653,12 +651,12 @@
                     799.5207748413086,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            220.50398209688424,
-            -207.15553471270135
+            137.46011198436088,
+            -185.53643451582997
         ]
     },
     "Herengracht 269": {
@@ -686,28 +684,12 @@
                     805.6150283813477,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-            },
-            {
-                "building": "Herengracht 269",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    711.8989868164062,
-                    805.6150283813477,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Roth Miller's room at Hotel HEGRA by Stanley Collection"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
             }
         ],
         "outdoor_xy": [
-            -296.4362653439126,
-            -192.11406827812158
+            -296.4892747955196,
+            -192.5862838545473
         ]
     },
     "Singel 300": {
@@ -736,7 +718,7 @@
                     822.9019088745117,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             },
             {
                 "name": "Nederlandse Beauty School Amsterdam",
@@ -751,46 +733,12 @@
                     822.9019088745117,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -253.79175802111658,
-            -188.70474181117504
-        ]
-    },
-    "Spuistraat 226": {
-        "building_glb": "buildings_element.1059.glb",
-        "bounding_box": [
-            -182.822909069898,
-            -207.67127999600527,
-            112.96469879150392,
-            8.999228501109584,
-            42.08286216459198,
-            12.497482299804688,
-            -1.1567406684047694
-        ],
-        "places": [
-            {
-                "name": "Fresh and Snacks Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "car_repair",
-                    "point_of_interest",
-                    "store",
-                    "establishment"
-                ],
-                "location": [
-                    816.9859161376953,
-                    792.7637405395508,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-            }
-        ],
-        "outdoor_xy": [
-            -202.61280425884175,
-            -217.42419757293976
+            -245.35241480138262,
+            -181.24392262989045
         ]
     },
     "Spuistraat 215": {
@@ -820,78 +768,129 @@
                     827.1210632324219,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -145.2021609649334,
-            -169.69996703077982
+            -142.3870754615627,
+            -177.33796172369009
         ]
     },
-    "Kalverstraat 60 - 62": {
-        "building_glb": "buildings_element.1226.glb",
+    "Spuistraat 223a": {
+        "building_glb": "buildings_element.1103.glb",
         "bounding_box": [
-            -16.697369913666847,
-            -219.33362689102816,
-            114.39030838012697,
-            23.742075446539456,
-            68.69861196702317,
-            15.166542053222656,
-            -1.1874659524939
+            -122.73735315444824,
+            -192.20756921395792,
+            113.23968887329103,
+            54.598782807011865,
+            27.961409601660332,
+            13.330680847167969,
+            0.16635580350272383
         ],
         "places": [
             {
-                "name": "Snacks and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "point_of_interest",
-                    "store",
-                    "establishment"
-                ],
-                "location": [
-                    986.49791431427,
-                    775.3778533935547,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
-            }
-        ],
-        "outdoor_xy": [
-            -51.47986301876141,
-            -227.59856827177396
-        ]
-    },
-    "Kalverstraat 35-37": {
-        "building_glb": "buildings_element.1179.glb",
-        "bounding_box": [
-            48.76652223768008,
-            -184.55765703187922,
-            114.69194793701173,
-            38.72304120973788,
-            11.297723459129841,
-            16.269271850585938,
-            -0.06519586472626723
-        ],
-        "places": [
-            {
-                "name": "Vrieshorst Project B.V.",
+                "name": "The Black Dog",
                 "coarse_type": "food",
                 "fine_types": [
+                    "restaurant",
+                    "food",
                     "bar",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1048.6044216156006,
-                    815.4920196533203,
-                    -8
+                    877.9237937927246,
+                    808.4076995849609,
+                    -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Bka Hotel Services BV",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    877.9237937927246,
+                    808.4076995849609,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             }
         ],
         "outdoor_xy": [
-            28.507600248583014,
-            -182.32221044512391
+            -151.28966168645275,
+            -193.06060898842873
+        ]
+    },
+    "Nieuwezijds Voorburgwal 266hs": {
+        "building_glb": "buildings_element.1116.glb",
+        "bounding_box": [
+            -107.56874936493045,
+            -185.6372065221049,
+            113.96836090087892,
+            25.58055587842342,
+            5.576832859840124,
+            14.689422607421875,
+            0.1670075868833431
+        ],
+        "places": [
+            {
+                "name": "Chokka's Blackhair Academy",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    891.9691162109375,
+                    814.363037109375,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -93.35755360287881,
+            -186.97985765699102
+        ]
+    },
+    "Nieuwezijds Voorburgwal 271": {
+        "building_glb": "buildings_element.1203.glb",
+        "bounding_box": [
+            -31.506619012387137,
+            -208.65652846581608,
+            116.44873428344728,
+            35.0808898983162,
+            16.718240413065534,
+            19.015907287597656,
+            0.343589264457194
+        ],
+        "places": [
+            {
+                "name": "The Butcher W Operations B.V.",
+                "coarse_type": "food",
+                "fine_types": [
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    970.0538415908813,
+                    791.1518478393555,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -51.08260437505359,
+            -208.9790403727854
         ]
     },
     "Nes 41": {
@@ -920,12 +919,12 @@
                     818.5218124389648,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            137.54665606861852,
-            -181.18871187697584
+            149.90329428312785,
+            -186.03936884253585
         ]
     },
     "Nes 37": {
@@ -954,12 +953,63 @@
                     832.0418243408203,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            140.79795520447564,
-            -164.4513409910808
+            140.11029051879447,
+            -167.09984250959758
+        ]
+    },
+    "Sint Pieterspoortsteeg 21": {
+        "building_glb": "buildings_element.1417.glb",
+        "bounding_box": [
+            178.37181267373512,
+            -180.5224840362855,
+            112.82822799682619,
+            19.261448164736834,
+            23.609672795214085,
+            11.140800476074219,
+            -0.2721361779105541
+        ],
+        "places": [
+            {
+                "name": "Serviced Apartments Amsterdam | Long and Short Stay Accommodation",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1176.7149200439453,
+                    818.472900390625,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            },
+            {
+                "building": "Sint Pieterspoortsteeg 21",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1176.7149200439453,
+                    818.472900390625,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Chad Thompson's room at Serviced Apartments Amsterdam | Long and Short Stay Accommodation"
+            }
+        ],
+        "outdoor_xy": [
+            173.92101775193316,
+            -192.57452106585663
         ]
     },
     "Sint Pieterspoortsteeg 29": {
@@ -987,110 +1037,12 @@
                     810.3527374267578,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            192.83770596837363,
-            -198.05042596496855
-        ]
-    },
-    "Pieter Jacobszstraat 22": {
-        "building_glb": "buildings_element.1438.glb",
-        "bounding_box": [
-            191.95869950072287,
-            -167.22772909425848,
-            112.71450805664064,
-            3.8874884902030837,
-            13.859173474713776,
-            10.340576171875,
-            -0.26540509093146053
-        ],
-        "places": [
-            {
-                "name": "Guesthouse BBtheDam",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1191.9451141357422,
-                    832.7722702026367,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-            },
-            {
-                "building": "Pieter Jacobszstraat 22",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1191.9451141357422,
-                    832.7722702026367,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Shannon Steves's room at Guesthouse BBtheDam"
-            }
-        ],
-        "outdoor_xy": [
-            196.82811182673143,
-            -160.33401593396144
-        ]
-    },
-    "Pieter Jacobszstraat 25": {
-        "building_glb": "buildings_element.1442.glb",
-        "bounding_box": [
-            225.44427669527397,
-            -163.9765574437113,
-            111.63772201538087,
-            3.6503098472070383,
-            7.426644187374664,
-            8.417991638183594,
-            -0.4314402311329339
-        ],
-        "places": [
-            {
-                "name": "Red light district Residence on ground floor",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1225.366584777832,
-                    836.0687484741211,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-            },
-            {
-                "building": "Pieter Jacobszstraat 25",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1225.366584777832,
-                    836.0687484741211,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "Zara Williams's room at Red light district Residence on ground floor"
-            }
-        ],
-        "outdoor_xy": [
-            224.8491830057544,
-            -168.89139782607293
+            195.8411287305064,
+            -198.8958373477696
         ]
     },
     "Oudezijds Voorburgwal 254": {
@@ -1118,12 +1070,81 @@
                     837.6444778442383,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            249.0437047035289,
-            -168.28542945120978
+            249.22916840693102,
+            -167.85927176765736
+        ]
+    },
+    "Oudezijds Voorburgwal 191": {
+        "building_glb": "buildings_element.1485.glb",
+        "bounding_box": [
+            287.1887687890379,
+            -190.52224184573578,
+            112.44553756713869,
+            6.249690129067633,
+            18.829971356850848,
+            11.512199401855469,
+            1.1711983186302368
+        ],
+        "places": [
+            {
+                "name": "Green house seed company",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1287.1887664794922,
+                    810.2958831787109,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            278.08359765000944,
+            -185.31172089394215
+        ]
+    },
+    "Spuistraat 124": {
+        "building_glb": "buildings_element.107.glb",
+        "bounding_box": [
+            -104.91649691516908,
+            135.16093745098487,
+            115.37744903564452,
+            5.245338445358665,
+            10.646806076052119,
+            15.483413696289062,
+            -0.322541918684351
+        ],
+        "places": [
+            {
+                "name": "Firma Stroop",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    894.341121673584,
+                    1135.3193283081055,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -101.74960476142964,
+            133.20785500616134
         ]
     },
     "Herengracht 255": {
@@ -1154,31 +1175,12 @@
                     855.8078308105469,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-            },
-            {
-                "building": "Herengracht 255",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "bar",
-                    "lodging",
-                    "restaurant",
-                    "point_of_interest",
-                    "food",
-                    "establishment"
-                ],
-                "location": [
-                    733.1640319824219,
-                    855.8078308105469,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Donald Trump's room at The Hoxton, Amsterdam"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             }
         ],
         "outdoor_xy": [
-            -292.1500754499961,
-            -135.95235051028286
+            -292.5688869510659,
+            -139.4061790908321
         ]
     },
     "Herengracht 253 H": {
@@ -1206,28 +1208,12 @@
                     871.8441009521484,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-            },
-            {
-                "building": "Herengracht 253 H",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    718.9880218505859,
-                    871.8441009521484,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "LeBron James's room at Luxury Canal Suite De Heren"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
             }
         ],
         "outdoor_xy": [
-            -292.11555746597577,
-            -125.16522544546244
+            -292.0212745218525,
+            -124.29968160303413
         ]
     },
     "Herengracht 257": {
@@ -1256,7 +1242,7 @@
                     842.0216064453125,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             },
             {
                 "building": "Herengracht 257",
@@ -1272,13 +1258,13 @@
                     842.0216064453125,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
                 "name": "Elizabeth Mensah's room at Charly Group Amsterdam"
             }
         ],
         "outdoor_xy": [
-            -294.6100860375253,
-            -160.5484709449855
+            -294.41782657568746,
+            -156.71747480338345
         ]
     },
     "Amsterdam": {
@@ -1307,12 +1293,47 @@
                     846.8522186279297,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -147.01299539563527,
-            -156.32275219502696
+            -146.39238181822847,
+            -157.489482798536
+        ]
+    },
+    "Spuistraat 189": {
+        "building_glb": "buildings_element.1074.glb",
+        "bounding_box": [
+            -131.8667260371928,
+            -129.32094159017515,
+            113.14724349975587,
+            20.102814578198476,
+            22.432352195624098,
+            12.601829528808594,
+            0.1930479883147341
+        ],
+        "places": [
+            {
+                "name": "Cafe Schuim",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    869.4603691101074,
+                    870.8415336608887,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -144.307584610273,
+            -123.28318614898257
         ]
     },
     "Nieuwezijds Voorburgwal 250": {
@@ -1340,47 +1361,12 @@
                     866.4657592773438,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -79.65827965633012,
-            -130.7210590470581
-        ]
-    },
-    "Nieuwezijds Voorburgwal 256-HS": {
-        "building_glb": "buildings_element.1136.glb",
-        "bounding_box": [
-            -90.25314857089928,
-            -148.80404727613944,
-            113.26498794555665,
-            4.839268481285752,
-            19.08274924303949,
-            13.230445861816406,
-            -1.239683551282837
-        ],
-        "places": [
-            {
-                "name": "Caf\u00e9 DIEP!",
-                "coarse_type": "food",
-                "fine_types": [
-                    "cafe",
-                    "bar",
-                    "food",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    909.1920890808105,
-                    852.0387649536133,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            -79.516192310585,
-            -147.6116678574757
+            -79.65285430465809,
+            -132.9565181381267
         ]
     },
     "Wijdesteeg": {
@@ -1408,61 +1394,50 @@
                     836.0588455200195,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -81.24418097004072,
-            -166.30794180245704
+            -96.41275559402958,
+            -169.03731081810852
         ]
     },
-    "Nieuwezijds Voorburgwal 252": {
-        "building_glb": "buildings_element.1121.glb",
+    "Rokin 9": {
+        "building_glb": "buildings_element.1429.glb",
         "bounding_box": [
-            -88.7009120738933,
-            -140.43050501610287,
-            115.29487228393556,
-            17.83128515399612,
-            9.982160729644093,
-            17.196983337402344,
-            0.33048479842924994
+            132.81925179704132,
+            -115.58501971894879,
+            117.55458450317383,
+            26.578317766554576,
+            24.21549043233807,
+            21.066062927246094,
+            -0.22237292797473054
         ],
         "places": [
             {
-                "name": "Theo Peters Numismatiek & Filatelie B.V.",
-                "coarse_type": "accommodation",
+                "name": "Reisboekhandel Pied \u00e0 Terre",
+                "coarse_type": "food",
                 "fine_types": [
-                    "real_estate_agency",
+                    "book_store",
+                    "cafe",
+                    "park",
+                    "home_goods_store",
+                    "store",
                     "point_of_interest",
+                    "food",
                     "establishment"
                 ],
                 "location": [
-                    910.5617179870605,
-                    859.5694961547852,
+                    1132.807632446289,
+                    884.4837913513184,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-            },
-            {
-                "building": "Nieuwezijds Voorburgwal 252",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "real_estate_agency",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    910.5617179870605,
-                    859.5694961547852,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Brycer Rodriguez's room at Theo Peters Numismatiek & Filatelie B.V."
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -77.9365667877927,
-            -141.2508141051353
+            119.9969109897841,
+            -107.50255820414888
         ]
     },
     "Nieuwezijds Voorburgwal 171": {
@@ -1491,12 +1466,12 @@
                     872.0422248840332,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -43.0730294385107,
-            -132.06735225756861
+            -47.48032056349516,
+            -131.85450539379923
         ]
     },
     "Nieuwezijds Voorburgwal 169": {
@@ -1524,7 +1499,7 @@
                     879.9903945922852,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             },
             {
                 "name": "ClubNl",
@@ -1540,12 +1515,12 @@
                     879.9903945922852,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -48.07616699503667,
-            -125.45026564448112
+            -49.663192353822815,
+            -121.29527716958634
         ]
     },
     "Jonge Roelensteeg 12-14": {
@@ -1575,47 +1550,200 @@
                     885.611930847168,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -48.46371074641966,
-            -114.17874134845025
+            -48.369586284704184,
+            -119.94184599070982
         ]
     },
-    "Rokin 24bel": {
-        "building_glb": "buildings_element.1182.glb",
+    "Jonge Roelensteeg": {
+        "building_glb": "buildings_element.1229.glb",
         "bounding_box": [
-            60.54837283684003,
-            -161.00988728458327,
-            114.48374176025392,
-            20.182291891577506,
-            10.686570092866168,
-            15.961578369140625,
-            -0.04076773841738933
+            -4.336325975351388,
+            -125.87864440757882,
+            113.8076400756836,
+            11.58001058912558,
+            63.10215152139229,
+            13.695755004882812,
+            -1.222712265249705
         ],
         "places": [
             {
-                "name": "FuLu",
-                "coarse_type": "food",
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
                 "fine_types": [
-                    "meal_takeaway",
+                    "jewelry_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    994.1781234741211,
+                    873.2332382202148,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -32.22391026490248,
+            -143.22109427201332
+        ]
+    },
+    "Nieuwendijk 231": {
+        "building_glb": "buildings_element.530.glb",
+        "bounding_box": [
+            102.79683550451502,
+            55.231687382630525,
+            117.08592987060547,
+            27.478950268279743,
+            43.06707054928723,
+            19.128997802734375,
+            0.9617386103160028
+        ],
+        "places": [
+            {
+                "name": "Fresh and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1102.6620903015137,
+                    1054.9966487884521,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+            },
+            {
+                "name": "Swiss\u00f4tel Amsterdam",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
                     "restaurant",
                     "food",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1060.6610488891602,
-                    838.752326965332,
+                    1102.6620903015137,
+                    1054.9966487884521,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
+                "name": "ROYAL98",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1102.6620903015137,
+                    1054.9966487884521,
+                    -12
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "building": "Nieuwendijk 231",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1102.6620903015137,
+                    1054.9966487884521,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Tim Cook's room at Swiss\u00f4tel Amsterdam"
             }
         ],
         "outdoor_xy": [
-            71.44256135591752,
-            -166.0645303377711
+            116.31321779299076,
+            35.22177512775938
+        ]
+    },
+    "Rokin 20": {
+        "building_glb": "buildings_element.1192.glb",
+        "bounding_box": [
+            63.06682184853942,
+            -144.7779083279088,
+            114.56740951538087,
+            16.722961448030485,
+            6.28997413129362,
+            15.830924987792969,
+            0.01333570178389378
+        ],
+        "places": [
+            {
+                "name": "Mavi 's International BV",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1063.0294075012207,
+                    855.2220764160156,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            72.1930280966799,
+            -148.80155241494168
+        ]
+    },
+    "Rokin 17": {
+        "building_glb": "buildings_element.1751.glb",
+        "bounding_box": [
+            128.92740596624753,
+            -133.36638418369313,
+            115.65891647338869,
+            26.982490814860554,
+            12.413842708377894,
+            17.64661407470703,
+            -0.2142187587625953
+        ],
+        "places": [
+            {
+                "name": "Van Stapele Koekmakerij",
+                "coarse_type": "food",
+                "fine_types": [
+                    "tourist_attraction",
+                    "bakery",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1129.2807884216309,
+                    866.633617401123,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            115.49607493111041,
+            -126.93637689709338
         ]
     },
     "Nes 33": {
@@ -1643,28 +1771,43 @@
                     836.4890670776367,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            168.8763764556528,
-            -168.6736355754861
+            141.01127746177758,
+            -161.77404952810608
         ]
     },
-    "Damstraat 34": {
-        "building_glb": "buildings_element.1476.glb",
+    "Damstraat 22": {
+        "building_glb": "buildings_element.1407.glb",
         "bounding_box": [
-            241.85238638149596,
-            -136.61733173267035,
-            112.48915481567384,
-            5.620078833358156,
-            18.73011636048088,
-            10.080711364746094,
-            -0.47037698400787253
+            216.60704470446828,
+            -124.13683212054906,
+            114.48343276977539,
+            13.871596833400574,
+            19.966746043226745,
+            13.578895568847656,
+            -0.4762642171471144
         ],
         "places": [
             {
-                "name": "Argentinos",
+                "name": "Hotel De Gerstekorrel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1216.2677536010742,
+                    876.8668746948242,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            },
+            {
+                "name": "Sukasari gunununghalu",
                 "coarse_type": "food",
                 "fine_types": [
                     "restaurant",
@@ -1673,16 +1816,199 @@
                     "establishment"
                 ],
                 "location": [
-                    1241.9146270751953,
-                    863.326114654541,
-                    -4
+                    1216.2677536010742,
+                    876.8668746948242,
+                    -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "building": "Damstraat 22",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1216.2677536010742,
+                    876.8668746948242,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Genghis Khan's room at Hotel De Gerstekorrel"
             }
         ],
         "outdoor_xy": [
-            249.39230232374635,
-            -128.8230539514907
+            208.0315625073783,
+            -123.45051896061076
+        ]
+    },
+    "Oudezijds Voorburgwal 242B": {
+        "building_glb": "buildings_element.1416.glb",
+        "bounding_box": [
+            258.59429124343313,
+            -140.0032333889352,
+            113.40316772460939,
+            14.470971834878668,
+            9.185378341607219,
+            12.445602416992188,
+            -0.47356630028023483
+        ],
+        "places": [
+            {
+                "name": "Manikomio",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1257.3564147949219,
+                    859.3250885009766,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            }
+        ],
+        "outdoor_xy": [
+            263.52626954428797,
+            -148.4369019841163
+        ]
+    },
+    "Oudezijds Voorburgwal 246": {
+        "building_glb": "buildings_element.1486.glb",
+        "bounding_box": [
+            250.32289994193272,
+            -147.52026579045705,
+            113.58140945434572,
+            6.121374830979466,
+            19.542701163736417,
+            13.081413269042969,
+            1.1283623814827595
+        ],
+        "places": [
+            {
+                "name": "Caf\u00e9 Rock Planet",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1249.9452056884766,
+                    852.6120223999023,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            260.22838080299556,
+            -151.77038170886576
+        ]
+    },
+    "Oudezijds Voorburgwal 244": {
+        "building_glb": "buildings_element.1478.glb",
+        "bounding_box": [
+            255.21287555793018,
+            -145.8205576442504,
+            113.37001037597658,
+            4.268594735200653,
+            13.746522021173401,
+            12.561904907226562,
+            1.0983531599192247
+        ],
+        "places": [
+            {
+                "name": "Pancakes and Burgers",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1255.239501953125,
+                    854.3655471801758,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            260.9608836969727,
+            -151.87443031647004
+        ]
+    },
+    "Herengracht 245A": {
+        "building_glb": "buildings_element.1007.glb",
+        "bounding_box": [
+            -285.8331309615503,
+            -107.36401358671077,
+            114.42312622070312,
+            6.834127206424464,
+            4.891353345893879,
+            13.884994506835938,
+            -0.11073937878187991
+        ],
+        "places": [
+            {
+                "name": "The Cold Pressed Juicery",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    714.3235015869141,
+                    892.6388816833496,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -290.1431659211212,
+            -106.15665462248452
+        ]
+    },
+    "Herengracht 247": {
+        "building_glb": "buildings_element.942.glb",
+        "bounding_box": [
+            -280.048865905586,
+            -112.92880560379217,
+            115.27105712890625,
+            20.722819167425072,
+            4.939497991424446,
+            15.91229248046875,
+            -0.10914285493143494
+        ],
+        "places": [
+            {
+                "name": "Dutch Water Lounge",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    719.8452301025391,
+                    887.0168952941895,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -290.9927917779732,
+            -108.49826897513583
         ]
     },
     "Singel 282": {
@@ -1710,12 +2036,78 @@
                     882.0786437988281,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            -238.98442037655624,
-            -124.73436283517584
+            -238.32879481466546,
+            -118.86001610643152
+        ]
+    },
+    "Bungehuis": {
+        "building_glb": "buildings_Bungehuis.glb",
+        "bounding_box": [
+            -174.24431316527054,
+            -132.2439367780213,
+            119.78634262084961,
+            32.1802040017808,
+            50.872858748188854,
+            26.10608673095703,
+            -0.0911416001198211
+        ],
+        "places": [
+            {
+                "name": "Soho House Amsterdam",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    825.8206405639648,
+                    866.8016204833984,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+            }
+        ],
+        "outdoor_xy": [
+            -190.97655313425977,
+            -127.5490255734831
+        ]
+    },
+    "Spuistraat 183B": {
+        "building_glb": "buildings_element.1098.glb",
+        "bounding_box": [
+            -133.31538424078732,
+            -112.9934010506689,
+            111.9542121887207,
+            8.159916070381716,
+            3.2978972922863514,
+            9.959831237792969,
+            0.15997406414391882
+        ],
+        "places": [
+            {
+                "name": "Gallery Ashok",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    866.9327087402344,
+                    886.7324447631836,
+                    -4
+                ],
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            }
+        ],
+        "outdoor_xy": [
+            -138.49945663872708,
+            -112.7553416949578
         ]
     },
     "Industria": {
@@ -1731,6 +2123,21 @@
         ],
         "places": [
             {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1118.354320526123,
+                    918.3688545227051,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            },
+            {
                 "name": "Hotel TwentySeven",
                 "coarse_type": "accommodation",
                 "fine_types": [
@@ -1743,7 +2150,7 @@
                     918.3688545227051,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             },
             {
                 "building": "Industria",
@@ -1756,15 +2163,82 @@
                 "location": [
                     1118.354320526123,
                     918.3688545227051,
-                    -8
+                    -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Tom Holland's room at Hotel TwentySeven"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Andrew Ng's room at Hotel TwentySeven"
             }
         ],
         "outdoor_xy": [
-            122.40672250450014,
-            -68.54492996090477
+            98.92400721795687,
+            -74.67523192209215
+        ]
+    },
+    "Instantia": {
+        "building_glb": "buildings_Instantia.glb",
+        "bounding_box": [
+            135.26885000280217,
+            -86.61837698099279,
+            117.45404052734375,
+            16.178211795967755,
+            21.892455512058604,
+            19.9903564453125,
+            -0.26678846466331124
+        ],
+        "places": [
+            {
+                "name": "Ripley's Believe It or Not!",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1135.212776184082,
+                    912.5197792053223,
+                    -4
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            137.38396677546723,
+            -99.58080090371037
+        ]
+    },
+    "Nes 5-23": {
+        "building_glb": "buildings_element.1428.glb",
+        "bounding_box": [
+            171.5587439775361,
+            -101.49031396414551,
+            113.81805038452148,
+            29.75567130307666,
+            21.767986358173733,
+            12.402519226074219,
+            -0.3946984315803786
+        ],
+        "places": [
+            {
+                "name": "RHO Hotel Amsterdam",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1169.3141021728516,
+                    896.384937286377,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            }
+        ],
+        "outdoor_xy": [
+            155.566629159055,
+            -98.58985372452831
         ]
     },
     "Spuistraat 175": {
@@ -1792,28 +2266,28 @@
                     954.9266242980957,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
             },
             {
-                "building": "Spuistraat 175",
-                "coarse_type": "accommodation",
+                "name": "Vigor Vibe",
+                "coarse_type": "entertainment",
                 "fine_types": [
-                    "lodging",
+                    "gym",
+                    "health",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
                     888.3967514038086,
                     954.9266242980957,
-                    -8
+                    -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Yann LeCun's room at W Amsterdam"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            -117.72145424972851,
-            -6.372318990348627
+            -131.2715721154653,
+            -44.034854308156774
         ]
     },
     "Building III": {
@@ -1839,7 +2313,7 @@
                     912.8461971282959,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             },
             {
                 "building": "Building III",
@@ -1852,62 +2326,117 @@
                     912.8461971282959,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "Eve By J Gonzales's room at Building III"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Alex Jefferson's room at Building III"
+            },
+            {
+                "building": "Building III",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    1000.8488445281982,
+                    912.8461971282959,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Emily Johnson's room at Building III"
+            },
+            {
+                "building": "Building III",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    1000.8488445281982,
+                    912.8461971282959,
+                    -16
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Joe Anderson's room at Building III"
+            },
+            {
+                "building": "Building III",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    1000.8488445281982,
+                    912.8461971282959,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Louise Roberts's room at Building III"
+            },
+            {
+                "building": "Building III",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    1000.8488445281982,
+                    912.8461971282959,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Megan Carter's room at Building III"
+            },
+            {
+                "building": "Building III",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "apartments"
+                ],
+                "location": [
+                    1000.8488445281982,
+                    912.8461971282959,
+                    -28
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Pika Hayes's room at Building III"
             }
         ],
         "outdoor_xy": [
-            -11.905902414840774,
-            -52.49034062295998
+            -15.494348445613802,
+            -55.5725410612427
         ]
     },
-    "Paleisstraat 3": {
-        "building_glb": "buildings_element.1165.glb",
+    "Dam 20": {
+        "building_glb": "buildings_element.glb",
         "bounding_box": [
-            5.990853186966582,
-            -60.015933634910624,
-            120.654052734375,
-            11.999964842303584,
-            8.899307601677728,
-            24.958831787109375,
-            0.05131011104501757
+            54.55364459736569,
+            -70.82041164912806,
+            120.53990936279297,
+            43.81287486125252,
+            30.696467997644035,
+            26.587265014648438,
+            -0.07161707977637839
         ],
         "places": [
             {
-                "name": "De Groote Club",
-                "coarse_type": "accommodation",
+                "name": "Madame Tussauds Amsterdam",
+                "coarse_type": "entertainment",
                 "fine_types": [
-                    "lodging",
+                    "tourist_attraction",
+                    "museum",
                     "point_of_interest",
                     "establishment"
                 ],
                 "location": [
-                    1005.9868640899658,
-                    939.9135322570801,
-                    -8
+                    1054.8354244232178,
+                    928.9934349060059,
+                    -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-            },
-            {
-                "building": "Paleisstraat 3",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1005.9868640899658,
-                    939.9135322570801,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
-                "name": "Leonard Park's room at De Groote Club"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             }
         ],
         "outdoor_xy": [
-            7.59581874637035,
-            -54.47667492309808
+            32.24264198099962,
+            -61.69988870222473
         ]
     },
     "Singel 250": {
@@ -1935,7 +2464,23 @@
                     977.1166310310364,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+            },
+            {
+                "name": "TrainMore Amsterdam Singel Black Label",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    750.3935928344727,
+                    977.1166310310364,
+                    -12
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             },
             {
                 "building": "Singel 250",
@@ -1948,20 +2493,69 @@
                 "location": [
                     750.3935928344727,
                     977.1166310310364,
-                    -8
+                    -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "James Thompson's room at Regus - Amsterdam, Singelstaete"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Adam Pierce's room at Regus - Amsterdam, Singelstaete"
             }
         ],
         "outdoor_xy": [
-            -283.5679651893137,
-            -18.560891406560074
+            -278.6244571573021,
+            11.46648347921251
+        ]
+    },
+    "Koninklijk Paleis": {
+        "building_glb": "buildings_Koninklijk Paleis.glb",
+        "bounding_box": [
+            -18.865328670329507,
+            -1.8264458960437864,
+            131.03923797607422,
+            65.4802227842933,
+            80.9642083340508,
+            46.24748229980469,
+            -0.02547038287749368
+        ],
+        "places": [
+            {
+                "name": "Royal Palace Amsterdam",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    981.1056747436523,
+                    998.1671314239502,
+                    -4
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -28.478248570204396,
+            -43.07711154862965
         ]
     },
     "open space": {
         "bounding_box": null,
         "places": [
+            {
+                "name": "parku",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1273.5077003867166,
+                    987.796631797011,
+                    -0.005863642216283438
+                ],
+                "scene": null
+            },
             {
                 "name": "Singel Bus Stop",
                 "coarse_type": "transit",
@@ -2079,7 +2673,7 @@
                     1037.7041187286377,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
             },
             {
                 "building": "Herengracht 211",
@@ -2094,13 +2688,46 @@
                     1037.7041187286377,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Pika Hayes's room at Two Rooms in City Centre"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Brycer Rodriguez's room at Two Rooms in City Centre"
             }
         ],
         "outdoor_xy": [
-            -276.72577117026896,
-            34.39086654034421
+            -270.2410100537161,
+            33.33702638423225
+        ]
+    },
+    "Raadhuisstraat 12": {
+        "building_glb": "buildings_element.115.glb",
+        "bounding_box": [
+            -230.71894051630755,
+            36.85210926511563,
+            113.79116439819336,
+            5.316867041958654,
+            17.675308314737475,
+            12.830833435058594,
+            -0.16049159755221604
+        ],
+        "places": [
+            {
+                "name": "Stepping Inn",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    769.4149475097656,
+                    1036.8837852478027,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            -235.80545070096767,
+            27.70980812649384
         ]
     },
     "UvA PC Hoofthuis": {
@@ -2128,12 +2755,127 @@
                     1076.7827997207642,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -128.0392691510031,
-            133.886481545645
+            -144.23469392521136,
+            90.33794712964132
+        ]
+    },
+    "Magna Plaza": {
+        "building_glb": "buildings_Magna Plaza.glb",
+        "bounding_box": [
+            -93.116616774354,
+            51.659251839353466,
+            120.94218444824219,
+            36.56327949346188,
+            80.33534394429937,
+            27.698516845703125,
+            -0.33879695545532806
+        ],
+        "places": [
+            {
+                "name": "2rememberme",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    906.4873352050781,
+                    1055.0521306991577,
+                    -24
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            }
+        ],
+        "outdoor_xy": [
+            -82.311449931924,
+            24.30670945457454
+        ]
+    },
+    "Damrak 93-94": {
+        "building_glb": "buildings_element.511.glb",
+        "bounding_box": [
+            118.23152143713763,
+            71.93981890695558,
+            116.18558883666992,
+            16.017309388082282,
+            50.49072360979636,
+            17.440467834472656,
+            1.0637007715911184
+        ],
+        "places": [
+            {
+                "name": "Hotel Amsterdam De Roode Leeuw",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1118.0584182739258,
+                    1071.1327781677246,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            },
+            {
+                "building": "Damrak 93-94",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1118.0584182739258,
+                    1071.1327781677246,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Isaac Newton's room at Hotel Amsterdam De Roode Leeuw"
+            }
+        ],
+        "outdoor_xy": [
+            136.872431059917,
+            51.450894825096285
+        ]
+    },
+    "Herengracht 201": {
+        "building_glb": "buildings_element.133.glb",
+        "bounding_box": [
+            -265.3729100567474,
+            83.35379734073412,
+            116.7239761352539,
+            17.89438260507025,
+            11.848207728310532,
+            19.302764892578125,
+            -0.18560205163122268
+        ],
+        "places": [
+            {
+                "name": "\u041b\u0456\u0436\u043a\u043e",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    735.168083190918,
+                    1083.2834815979004,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            }
+        ],
+        "outdoor_xy": [
+            -274.92388062175695,
+            78.10201550825442
         ]
     },
     "Nieuwezijds Voorburgwal 178": {
@@ -2149,6 +2891,23 @@
         ],
         "places": [
             {
+                "name": "Die Port Van Cleve",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    923.7640514373779,
+                    1103.2031288146973,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+            },
+            {
                 "name": "De Nieuwe Vrouw",
                 "coarse_type": "office",
                 "fine_types": [
@@ -2161,12 +2920,45 @@
                     1103.2031288146973,
                     -20
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -58.23652754511521,
-            95.51730463081708
+            -97.15933940502366,
+            98.46799240955352
+        ]
+    },
+    "Nieuwezijds Voorburgwal 141": {
+        "building_glb": "buildings_element.001.glb",
+        "bounding_box": [
+            8.723836560541763,
+            85.3387201578416,
+            125.25106430053711,
+            94.1656104841395,
+            57.66141035854928,
+            35.33411407470703,
+            0.31134103290389004
+        ],
+        "places": [
+            {
+                "name": "Liz",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1008.0798263549805,
+                    1085.931354522705,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            -38.311843697543225,
+            74.53869691902813
         ]
     }
 }

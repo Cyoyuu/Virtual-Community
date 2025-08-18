@@ -1,0 +1,769 @@
+{
+    "sim_name": "TORONTO_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Chad Thompson",
+        "Elizabeth Mensah",
+        "Jensen Huang",
+        "Lionel Messi",
+        "Louise Roberts",
+        "Megan Carter",
+        "Olivia Adams",
+        "Pika Hayes",
+        "Roth Miller",
+        "Selena Gomez",
+        "Shannon Steves",
+        "Usain Bolt",
+        "Yann LeCun",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -171.8591380036771,
+                71.22409649328088,
+                156.71838055067323,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Boutique Condo East",
+            "current_place": "Adam Pierce's room at Boutique Condo East",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -286.49796088279555,
+                35.69171069040268,
+                156.02341883418595,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Boutique Condo West",
+            "current_place": "Chad Thompson's room at Bay Street Condos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -181.86567211912612,
+                -100.7311605797798,
+                153.95775267788582,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Theatre Park",
+            "current_place": "Elizabeth Mensah's room at Theatre Park",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                155.11875047187334,
+                -240.26665312917964,
+                150.46216797156515,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Strathcona Hotel",
+            "current_place": "Jensen Huang's room at The Union Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -252.94813281773304,
+                166.53769977140598,
+                156.80728407024029,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "222 Richmond Street West #97",
+            "current_place": "Lionel Messi's room at Rickkypartym",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -207.25658380785646,
+                111.98064743940125,
+                156.94256278655106,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "University Plaza",
+            "current_place": "Louise Roberts's room at Apartments International",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                145.73803831698302,
+                -17.505510421926314,
+                161.63029620719809,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Exchange Tower",
+            "current_place": "Megan Carter's room at JONES TTOWN",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -215.78727588123468,
+                24.96462632271572,
+                155.4527569271554,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Nelson Street",
+            "current_place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -182.74679115935407,
+                -101.00064769285393,
+                153.95748856678568,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Theatre Park",
+            "current_place": "Pika Hayes's room at Theatre Park",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -266.79779679602166,
+                67.17558938712676,
+                156.5631207486705,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Boutique Condo West",
+            "current_place": "Roth Miller's room at Bay Street Condos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -261.8865627387677,
+                191.11245631252962,
+                157.45760811478135,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "222 Richmond Street West #97",
+            "current_place": "Selena Gomez's room at Rickkypartym",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -184.88788842986366,
+                -101.65549464984542,
+                153.9544097030296,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Theatre Park",
+            "current_place": "Shannon Steves's room at Theatre Park",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                -261.87416523818524,
+                191.11606389678963,
+                157.4579972090903,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "222 Richmond Street West #97",
+            "current_place": "Usain Bolt's room at Rickkypartym",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                135.6418444665954,
+                -245.77209147601687,
+                150.29582722537754,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Strathcona Hotel",
+            "current_place": "Yann LeCun's room at The Union Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "physical_health": 1,
+            "mental_health": 1,
+            "condition": {
+                "physical": null,
+                "mental": null
+            },
+            "outdoor_pose": [
+                154.998030020989,
+                -14.799606190534172,
+                158.24490056520074,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Exchange Tower",
+            "current_place": "Zara Williams's room at JONES TTOWN",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            818.6138305664062,
+            1080.318790435791,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            752.1804733276367,
+            1059.982961654663,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            804.3599548339844,
+            915.555196762085,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1141.1616973876953,
+            769.9646148681641,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            736.204216003418,
+            1175.3552017211914,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            805.4779739379883,
+            1134.5094833374023,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1134.0601387023926,
+            1013.681812286377,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            756.2591781616211,
+            1029.9322148561478,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            804.3599548339844,
+            915.555196762085,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            752.1804733276367,
+            1059.982961654663,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            736.204216003418,
+            1175.3552017211914,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            804.3599548339844,
+            915.555196762085,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            736.204216003418,
+            1175.3552017211914,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1141.1616973876953,
+            769.9646148681641,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1134.0601387023926,
+            1013.681812286377,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/celebrity_Jensen_Huang.glb",
+        "ViCo/avatars/models/celebrity_Lionel_Messi.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/celebrity_Selena_Gomez.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/celebrity_Usain_Bolt.glb",
+        "ViCo/avatars/models/celebrity_Yann_LeCun.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "145 Wellington Street West",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "70 University Avenue",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Theatre Park",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Boutique Condo West",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "The Dominion of Canada General Insurance Company",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Northbridge Place",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Tech Enthusiasts Club": {
+            "description": "A group of tech enthusiasts who meet to discuss the latest trends in technology and work on collaborative projects.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Adam Pierce",
+                "Chad Thompson",
+                "Roth Miller",
+                "Jensen Huang"
+            ],
+            "daily_activity": "discussing technology trends from 17:00 to 18:00"
+        },
+        "Creative Arts Group": {
+            "description": "A group of individuals passionate about arts and creativity, meeting to share ideas and work on art projects.",
+            "place": "Verno Art Studios",
+            "members": [
+                "Elizabeth Mensah",
+                "Pika Hayes",
+                "Zara Williams",
+                "Olivia Adams"
+            ],
+            "daily_activity": "working on art projects from 16:00 to 17:00"
+        },
+        "Fitness and Sports Team": {
+            "description": "A group of sports enthusiasts who meet to engage in various physical activities and sports.",
+            "place": "F45 Training Toronto Downtown",
+            "members": [
+                "Lionel Messi",
+                "Usain Bolt",
+                "Louise Roberts",
+                "Shannon Steves"
+            ],
+            "daily_activity": "playing sports from 18:00 to 19:00"
+        },
+        "Music and Entertainment Circle": {
+            "description": "A group of individuals interested in music and entertainment, meeting to share their passion and collaborate on projects.",
+            "place": "Club Lux - Toronto\u2019s Ultimate Nightlife Experience!",
+            "members": [
+                "Selena Gomez",
+                "Yann LeCun",
+                "Megan Carter"
+            ],
+            "daily_activity": "exploring music from 19:00 to 20:00"
+        }
+    }
+}

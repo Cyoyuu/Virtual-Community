@@ -1,0 +1,436 @@
+{
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Gustavo Aguilar, Realtor",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
+        "groups": [
+            "Strayer University Community"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Stanton House | El Paso Downtown",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Strayer University Community"
+        ]
+    },
+    "Strayer University Community": {
+        "description": "A community of students and faculty from Strayer University, focused on academic excellence and social engagement.",
+        "place": "Strayer University",
+        "members": [
+            "Eve By J Gonzales",
+            "Jody Petersen",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "attending study groups from 14:00 to 16:00"
+    },
+    "Eve By J Gonzales's room at Stanton House | El Paso Downtown": {
+        "building": "Martin Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "art_gallery",
+            "lodging",
+            "spa",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1067.055274963379,
+            1042.7583589553833,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Eve By J Gonzales's room at Stanton House | El Paso Downtown",
+        "bounding_box": [
+            59.54797436115748,
+            42.75360821981033,
+            120.33265686035156,
+            37.3460924352241,
+            53.50092619712862,
+            23.517974853515625,
+            0.6520358365335819
+        ]
+    },
+    "Strayer University": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1153.1489181518555,
+            1097.9849243164062,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            153.1489163002651,
+            97.98494956975048,
+            150.2687759399414,
+            22.090690311082852,
+            51.350103232739016,
+            84.32810974121094,
+            0.6642021758278249
+        ]
+    },
+    "Flor De Barro Gallery": {
+        "building": "212 South Mesa Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1129.7036476135254,
+            754.5194625854492,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            129.70440673828125,
+            -245.47769165039062,
+            109.9359130859375,
+            37.2058219909668,
+            60.65100860595703,
+            7.061981201171875,
+            0.25947850942611694
+        ]
+    },
+    "Machop Spawn": {
+        "building": "125 Henry Trost Court",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            824.7894287109375,
+            911.8201522827148,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -175.21778869628906,
+            -87.9471435546875,
+            115.61461639404297,
+            23.08540153503418,
+            28.94796371459961,
+            13.061866760253906,
+            0.14320524036884308
+        ]
+    },
+    "The Tap Bar & Restaurant": {
+        "building": "408 East San Antonio Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1212.9957809448242,
+            895.390079498291,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            212.9945524358067,
+            -104.61078237865748,
+            109.2196273803711,
+            10.984211173655446,
+            33.877098730432415,
+            4.5882110595703125,
+            0.2573860266861187
+        ]
+    },
+    "Taft-Diaz": {
+        "building": "Martin Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1067.055274963379,
+            1042.7583589553833,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            59.54797436115748,
+            42.75360821981033,
+            120.33265686035156,
+            37.3460924352241,
+            53.50092619712862,
+            23.517974853515625,
+            0.6520358365335819
+        ]
+    },
+    "The Rumor Mill #4": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1153.1489181518555,
+            1097.9849243164062,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            153.1489163002651,
+            97.98494956975048,
+            150.2687759399414,
+            22.090690311082852,
+            51.350103232739016,
+            84.32810974121094,
+            0.6642021758278249
+        ]
+    },
+    "International Bar": {
+        "building": "114 East Mills Avenue A",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            959.9670639038086,
+            985.2450499534607,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -40.032937314882886,
+            -14.754949524524584,
+            113.41239929199219,
+            6.3915676993403725,
+            24.852528303135408,
+            9.143218994140625,
+            0.6486130923952971
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "416 North Stanton Street Floor 6",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1002.5127696990967,
+            1273.740577697754,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            4.32735013961792,
+            273.7420349121094,
+            115.59427642822266,
+            20.611656188964844,
+            47.982967376708984,
+            4.97906494140625,
+            -0.9269542694091797
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "216 South Stanton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.6772232055664,
+            751.5156478881836,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            232.67722273986286,
+            -248.48435028530162,
+            108.68598937988283,
+            37.26727757620322,
+            14.24564981485058,
+            4.890594482421875,
+            0.2496493009229764
+        ]
+    },
+    "Region One Art Gallery": {
+        "building": "216 East Overland Avenue",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1078.6948223114014,
+            754.8918685913086,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            78.69596099853516,
+            -245.68026733398438,
+            111.8647689819336,
+            23.28600311279297,
+            31.82793617248535,
+            10.863792419433594,
+            0.2529118061065674
+        ]
+    },
+    "South Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            73.54811657291923,
+            -122.65224910177827
+        ],
+        "rotation": -2.8637593607090626,
+        "bounding_box": null
+    },
+    "North Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            7.49369540527834,
+            -18.932084509957477
+        ],
+        "rotation": 0.6406626502569378,
+        "bounding_box": null
+    },
+    "North Kansas Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -29.269887522528805,
+            210.1082951957225
+        ],
+        "rotation": 2.207519085493185,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -254.134242495169,
+            160.69417198063402
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.96587659556215,
+            15.012139805369193
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            324.9489704293077,
+            -138.56047980700052
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -182.32548454842004,
+            -103.52106387208097
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -82.49725674740887,
+            89.5560339668224
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To North Kansas Street": [
+            {
+                "stop_name": "South Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "North Kansas Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To South Mesa Street": [
+            {
+                "stop_name": "North Kansas Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "South Mesa Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

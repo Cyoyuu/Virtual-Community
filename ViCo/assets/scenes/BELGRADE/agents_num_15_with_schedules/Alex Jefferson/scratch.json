@@ -1,0 +1,200 @@
+{
+    "name": "Alex Jefferson",
+    "first_name": "Alex",
+    "last_name": "Jefferson",
+    "age": 30,
+    "innate": "achievement, stimulation",
+    "learned": "I am a software developer working at Nu\u0161i\u0107eva Business Center. I enjoy coding, hiking, and exploring new technologies.",
+    "currently": "I am working on a new software project that aims to improve user experience in mobile applications.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Tech Innovators",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "members": [
+                "Alex Jefferson",
+                "Ilya Sutskever",
+                "Jensen Huang",
+                "Brian Carter"
+            ],
+            "daily_activity": "discussing technology trends from 15:00 to 16:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Alex Jefferson's room at Belgrade apartments",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Alex Jefferson's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Tepsija",
+            "building": "De\u010danska 23",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Nu\u0161i\u0107eva Business Center",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work on software project",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "09:00:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurant Tchaikovsky",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:10:00",
+            "start_place": "Nu\u0161i\u0107eva Business Center",
+            "end_place": "Restaurant Tchaikovsky"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Restaurant Tchaikovsky",
+            "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "start_time": "12:10:00",
+            "end_time": "13:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Nu\u0161i\u0107eva Business Center",
+            "place": null,
+            "building": null,
+            "start_time": "13:00:00",
+            "end_time": "13:30:00",
+            "start_place": "Restaurant Tchaikovsky",
+            "end_place": "Nu\u0161i\u0107eva Business Center"
+        },
+        {
+            "type": "main",
+            "activity": "Continue working on software project",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "13:30:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Discuss technology trends with Tech Innovators",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "building": "Nu\u0161i\u0107eva Business Center",
+            "start_time": "15:00:00",
+            "end_time": "16:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Galerija Grafi\u010dki kolektiv",
+            "place": null,
+            "building": null,
+            "start_time": "16:00:00",
+            "end_time": "16:30:00",
+            "start_place": "Nu\u0161i\u0107eva Business Center",
+            "end_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective"
+        },
+        {
+            "type": "main",
+            "activity": "Visit Galerija Grafi\u010dki kolektiv",
+            "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "building": "Dragoslava Jovanovi\u0107a 11",
+            "start_time": "16:30:00",
+            "end_time": "17:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Super Bubble Tea",
+            "place": null,
+            "building": null,
+            "start_time": "17:30:00",
+            "end_time": "18:00:00",
+            "start_place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "end_place": "Super Bubble Tea\u4e2d\u56fd\u5976\u8336\uff08\u5927\u53e3\u8336\uff09"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Super Bubble Tea\u4e2d\u56fd\u5976\u8336\uff08\u5927\u53e3\u8336\uff09",
+            "building": "RS BELGRADE Terazije 13",
+            "start_time": "18:00:00",
+            "end_time": "19:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Alex Jefferson's room",
+            "place": null,
+            "building": null,
+            "start_time": "19:00:00",
+            "end_time": "19:30:00",
+            "start_place": "Super Bubble Tea\u4e2d\u56fd\u5976\u8336\uff08\u5927\u53e3\u8336\uff09",
+            "end_place": "Alex Jefferson's room at Belgrade apartments"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and explore new technologies",
+            "place": "Alex Jefferson's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "19:30:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for next day's work",
+            "place": "Alex Jefferson's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "23:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Alex Jefferson's room at Belgrade apartments",
+            "building": "Pajsijeva 1",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Nu\u0161i\u0107eva Business Center",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

@@ -24,7 +24,7 @@
                     746.944938659668,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "Konventn\u00e1 5",
@@ -39,13 +39,13 @@
                     746.944938659668,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-                "name": "Adam Pierce's room at Luxury Apartment for Long Term Rent Konventna 5"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Brycer Rodriguez's room at Luxury Apartment for Long Term Rent Konventna 5"
             }
         ],
         "outdoor_xy": [
-            -274.01851319678934,
-            -274.1439854443062
+            -263.5607209566072,
+            -269.8444893130129
         ]
     },
     "Konventn\u00e1 6": {
@@ -74,12 +74,12 @@
                     732.297966003418,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -217.04800633877028,
-            -257.9869315903494
+            -208.10505194726542,
+            -254.11740011931778
         ]
     },
     "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky": {
@@ -107,7 +107,7 @@
                     754.7244567871094,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "name": "Kult\u00farne a informa\u010dn\u00e9 centrum energetiky",
@@ -120,12 +120,12 @@
                     754.7244567871094,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -240.5002698496642,
-            -260.2396962211928
+            -229.20031106509302,
+            -255.6242017718782
         ]
     },
     "Modr\u00e1 gu\u013ea": {
@@ -156,12 +156,27 @@
                     742.5356674194336,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "Charming & Cozy - Ambiente Apartments - Check-in Point",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    959.5555143356323,
+                    742.5356674194336,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             }
         ],
         "outdoor_xy": [
-            -25.243423999411416,
-            -251.91751916588166
+            -55.86440299016444,
+            -238.85209689056813
         ]
     },
     "Office Center Po\u0161tov\u00e1": {
@@ -193,8 +208,8 @@
             }
         ],
         "outdoor_xy": [
-            178.25402969687883,
-            -251.19973970647482
+            168.55489230785972,
+            -256.2874885137337
         ]
     },
     "Konventn\u00e1 811 03": {
@@ -225,11 +240,59 @@
                     -4
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+            },
+            {
+                "name": "Rekrea\u010dn\u00e9 Stredisk\u00e1 Slovakia",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    786.8300170898438,
+                    761.0464324951172,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
             }
         ],
         "outdoor_xy": [
-            -196.65201598924915,
-            -242.18187036842176
+            -221.4421080791737,
+            -252.32990771652624
+        ]
+    },
+    "Lyce\u00e1lna kni\u017enica": {
+        "building_glb": "buildings_Lyce\u00e1lna kni\u017enica.glb",
+        "bounding_box": [
+            -122.68878172797451,
+            -218.65837620359656,
+            118.72138595581056,
+            22.247238529804783,
+            49.84996908809472,
+            11.810585021972656,
+            -1.0136808109038256
+        ],
+        "places": [
+            {
+                "name": "Lyce\u00e1lna kni\u017enica",
+                "coarse_type": "office",
+                "fine_types": [
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    876.167911529541,
+                    785.4226226806641,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -148.19656306375694,
+            -226.74248679368944
         ]
     },
     "Dreven\u00e1 576/10": {
@@ -258,12 +321,12 @@
                     721.1294708251953,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            92.40498555346699,
-            -293.1253917083243
+            100.21278313821387,
+            -284.8587816149667
         ]
     },
     "Crowne Plaza": {
@@ -292,7 +355,7 @@
                     788.2996978759766,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
             },
             {
                 "name": "Crowne Plaza Bratislava, an IHG Hotel",
@@ -307,7 +370,7 @@
                     788.2996978759766,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
             },
             {
                 "name": "Bistro Gourmet",
@@ -325,7 +388,7 @@
                     788.2996978759766,
                     -28
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "building": "Crowne Plaza",
@@ -340,13 +403,13 @@
                     788.2996978759766,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Christiano Ronaldo's room at Crowne Plaza Bratislava, an IHG Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+                "name": "Jody Petersen's room at Crowne Plaza Bratislava, an IHG Hotel"
             }
         ],
         "outdoor_xy": [
-            86.56183942367403,
-            -265.5053701740207
+            35.91274298651203,
+            -202.4270069400696
         ]
     },
     "Obchodn\u00e1 516/26": {
@@ -377,29 +440,12 @@
                     753.2153244018555,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            },
-            {
-                "name": "Fresh and Beverages Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "electronics_store",
-                    "home_goods_store",
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1217.9571914672852,
-                    753.2153244018555,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            203.20046107346943,
-            -229.41345959924084
+            201.59347789233993,
+            -230.72037698614716
         ]
     },
     "Obchodn\u00e1 518/30": {
@@ -428,7 +474,7 @@
                     763.2404632568359,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             },
             {
                 "name": "Grand Central Apartment",
@@ -443,7 +489,7 @@
                     763.2404632568359,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             },
             {
                 "building": "Obchodn\u00e1 518/30",
@@ -458,13 +504,48 @@
                     763.2404632568359,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "James Thompson's room at Grand Central Apartment"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "Eve By J Gonzales's room at Grand Central Apartment"
             }
         ],
         "outdoor_xy": [
-            250.06304308294688,
-            -259.99758665759487
+            258.729276086892,
+            -253.0783404845693
+        ]
+    },
+    "Obchodn\u00e1 32": {
+        "building_glb": "buildings_element.286.glb",
+        "bounding_box": [
+            244.1092539606173,
+            -229.41001538820953,
+            109.54801177978517,
+            11.25969502842969,
+            42.00761548549746,
+            11.413116455078125,
+            0.5922535217484918
+        ],
+        "places": [
+            {
+                "name": "Pilsner Factory",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1244.2942123413086,
+                    770.971794128418,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            227.32621876714433,
+            -214.18136720861972
         ]
     },
     "36": {
@@ -492,12 +573,12 @@
                     792.8572769165039,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            234.67233107130238,
-            -205.32515824560843
+            235.46838774100252,
+            -204.73336514759896
         ]
     },
     "14 663": {
@@ -541,12 +622,12 @@
                     -8
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Jensen Huang's room at Garni Hotel Virgo"
+                "name": "Mike Tyson's room at Garni Hotel Virgo"
             }
         ],
         "outdoor_xy": [
-            -277.7821522780186,
-            -189.34876745113846
+            -278.65727993736266,
+            -189.81829225011657
         ]
     },
     "16": {
@@ -574,12 +655,12 @@
                     818.1888198852539,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -256.3402497425172,
-            -192.55664041658855
+            -267.55667925028246,
+            -166.62630992585318
         ]
     },
     "Panensk\u00e1 7378/18": {
@@ -608,12 +689,12 @@
                     813.6686401367188,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -259.4638240128861,
-            -164.75436275613762
+            -236.1334329092948,
+            -202.9738618772226
         ]
     },
     "Panensk\u00e1 24": {
@@ -642,52 +723,32 @@
                     826.5081939697266,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            -212.34835741764073,
-            -186.71085696849866
-        ]
-    },
-    "L\u00fdcejn\u00e1 6504/4": {
-        "building_glb": "buildings_element.581.glb",
-        "bounding_box": [
-            -190.69933214882752,
-            -192.75587599947562,
-            115.02876663208009,
-            4.422209931993886,
-            31.140498566552882,
-            4.414955139160156,
-            0.3169862551364726
-        ],
-        "places": [
-            {
-                "name": "Fresh and DM Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "beauty_salon",
-                    "hair_care",
-                    "spa",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    809.637580871582,
-                    807.3378448486328,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-            }
-        ],
-        "outdoor_xy": [
-            -190.0409833697931,
-            -205.06450701153068
+            -238.85913016282785,
+            -161.23734092339132
         ]
     },
     "open space": {
         "bounding_box": null,
         "places": [
+            {
+                "name": "L\u00fdcejn\u00e1 z\u00e1hrada",
+                "coarse_type": "open",
+                "fine_types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    832.2563707939793,
+                    809.0432036647982,
+                    -0.005063509866488403
+                ],
+                "scene": null
+            },
             {
                 "name": "Hod\u017eovo n\u00e1mestie Bus Stop",
                 "coarse_type": "transit",
@@ -816,45 +877,12 @@
                     806.4725875854492,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -83.47128996935871,
-            -207.0429409994918
-        ]
-    },
-    "19": {
-        "building_glb": "buildings_element.501.glb",
-        "bounding_box": [
-            -56.48062543603237,
-            -159.38527087367567,
-            123.89330673217773,
-            24.747204679079275,
-            10.429076699403867,
-            19.57300567626953,
-            0.26907323156933305
-        ],
-        "places": [
-            {
-                "name": "Fresh and Snacks Store",
-                "coarse_type": "stores",
-                "fine_types": [
-                    "store",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    943.7989807128906,
-                    840.5359878540039,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-            }
-        ],
-        "outdoor_xy": [
-            -42.15023986295405,
-            -161.0447119954065
+            -96.53682608196094,
+            -192.22156249947597
         ]
     },
     "Such\u00e9 m\u00fdto 510/19": {
@@ -884,12 +912,29 @@
                     823.8547134399414,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "Beverages and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "clothing_store",
+                    "hair_care",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    947.4679737091064,
+                    823.8547134399414,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
             }
         ],
         "outdoor_xy": [
-            -38.029063094249025,
-            -175.68589913575792
+            -56.03255859344092,
+            -190.98238555698344
         ]
     },
     "Obchodn\u00e1 549/17": {
@@ -918,12 +963,12 @@
                     790.7234497070312,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            199.80834870108276,
-            -218.82791433599405
+            196.5380346132044,
+            -221.2406974236348
         ]
     },
     "30": {
@@ -939,6 +984,23 @@
         ],
         "places": [
             {
+                "name": "Fresh and Beverages Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "doctor",
+                    "store",
+                    "point_of_interest",
+                    "health",
+                    "establishment"
+                ],
+                "location": [
+                    1186.9751358032227,
+                    817.5123443603516,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+            },
+            {
                 "name": "Smoking Gentleman",
                 "coarse_type": "food",
                 "fine_types": [
@@ -951,12 +1013,12 @@
                     817.5123443603516,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            213.61363131815838,
-            -207.85280982056693
+            209.57039392649267,
+            -210.98978010769736
         ]
     },
     "Obchodn\u00e1 551/21": {
@@ -985,13 +1047,28 @@
                     877.9842681884766,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
-                "name": "Snacks and DM Store",
-                "coarse_type": "stores",
+                "name": "City - Top- Real",
+                "coarse_type": "accommodation",
                 "fine_types": [
-                    "store",
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1269.7058715820312,
+                    877.9842681884766,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            },
+            {
+                "building": "Obchodn\u00e1 551/21",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
                     "point_of_interest",
                     "establishment"
                 ],
@@ -1000,12 +1077,111 @@
                     877.9842681884766,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Elizabeth Mensah's room at City - Top- Real"
             }
         ],
         "outdoor_xy": [
-            245.10389813719792,
-            -107.93825035057617
+            295.2227843717926,
+            -147.32363973510152
+        ]
+    },
+    "Obchodn\u00e1 523/38": {
+        "building_glb": "buildings_element.366.glb",
+        "bounding_box": [
+            268.6441708231716,
+            -208.04956766949795,
+            110.72539138793947,
+            10.176606074458617,
+            42.626844703900616,
+            14.377510070800781,
+            0.594663598945046
+        ],
+        "places": [
+            {
+                "name": "Cityhostel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1268.6700744628906,
+                    793.4261322021484,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            },
+            {
+                "building": "Obchodn\u00e1 523/38",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1268.6700744628906,
+                    793.4261322021484,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Emily Johnson's room at Cityhostel"
+            },
+            {
+                "building": "Obchodn\u00e1 523/38",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1268.6700744628906,
+                    793.4261322021484,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+                "name": "Zara Williams's room at Cityhostel"
+            }
+        ],
+        "outdoor_xy": [
+            255.4211255142588,
+            -190.05511156739607
+        ]
+    },
+    "Obchodn\u00e1 811 06": {
+        "building_glb": "buildings_element.406.glb",
+        "bounding_box": [
+            214.37799569561514,
+            -160.70734024499032,
+            110.42221069335939,
+            9.314542607860776,
+            68.44254032370353,
+            9.813446044921875,
+            0.6550661316728484
+        ],
+        "places": [
+            {
+                "name": "bonyreal",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1214.292221069336,
+                    838.5359954833984,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+            }
+        ],
+        "outdoor_xy": [
+            233.60231967512024,
+            -190.353444611396
         ]
     },
     "Obchodn\u00e1 42": {
@@ -1050,28 +1226,12 @@
                     814.6163635253906,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            },
-            {
-                "building": "Obchodn\u00e1 42",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1279.9772338867188,
-                    814.6163635253906,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Jody Petersen's room at Apartment Residence - Free Parking"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            273.32361939586076,
-            -177.484832973452
+            272.26229747812675,
+            -178.27270274552546
         ]
     },
     "38": {
@@ -1099,12 +1259,45 @@
                     804.1743240356445,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            289.2911699263051,
-            -205.98101927426632
+            263.7876238045855,
+            -184.12731252946747
+        ]
+    },
+    "1": {
+        "building_glb": "buildings_element.085.glb",
+        "bounding_box": [
+            -272.4066664307358,
+            -146.58957856537359,
+            126.36359786987305,
+            16.158430215428393,
+            30.712353606770087,
+            23.915779113769517,
+            -0.010724912719308904
+        ],
+        "places": [
+            {
+                "name": "amt project",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    727.6116638183594,
+                    853.3995513916016,
+                    -4
+                ],
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            }
+        ],
+        "outdoor_xy": [
+            -271.7771765740154,
+            -162.95344757089626
         ]
     },
     "Panensk\u00e1 680/31": {
@@ -1132,7 +1325,7 @@
                     881.6466598510742,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
             },
             {
                 "building": "Panensk\u00e1 680/31",
@@ -1147,13 +1340,13 @@
                     881.6466598510742,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "David Malan's room at Downtown Bratislava Hotel"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+                "name": "John F Kennedy's room at Downtown Bratislava Hotel"
             }
         ],
         "outdoor_xy": [
-            -84.57224293216152,
-            -129.36996330533995
+            -79.39533488489975,
+            -129.41485148913472
         ]
     },
     "Slovakia": {
@@ -1181,12 +1374,12 @@
                     853.8219299316406,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -46.89841188246469,
-            -143.9518896434201
+            -51.8868720312423,
+            -134.789601962205
         ]
     },
     "Panensk\u00e1 682/33": {
@@ -1202,6 +1395,24 @@
         ],
         "places": [
             {
+                "name": "Goethe-Institut Slovensko",
+                "coarse_type": "office",
+                "fine_types": [
+                    "library",
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    932.6029224395752,
+                    890.1177978515625,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            },
+            {
                 "name": "Yoga House",
                 "coarse_type": "entertainment",
                 "fine_types": [
@@ -1215,46 +1426,60 @@
                     890.1177978515625,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -56.98410089349493,
-            -115.20515162384024
+            -70.90914652856671,
+            -128.47154532908914
         ]
     },
-    "Tatracentrum": {
-        "building_glb": "buildings_element.273.glb",
+    "Astoria Palace": {
+        "building_glb": "buildings_Astoria Palace.glb",
         "bounding_box": [
-            181.45131837598956,
-            -98.59661027948039,
-            118.8554573059082,
-            16.2194726325721,
-            37.56305315118685,
-            15.556571960449219,
-            -0.9629042407583311
+            -35.479248046875,
+            -117.86567687988281,
+            124.11463928222656,
+            19.43717384338379,
+            78.89448547363281,
+            21.927528381347656,
+            0.01818389631807804
         ],
         "places": [
             {
-                "name": "Picknik",
+                "name": "Subo bakery",
                 "coarse_type": "food",
                 "fine_types": [
-                    "restaurant",
-                    "food",
+                    "bakery",
+                    "store",
                     "point_of_interest",
+                    "food",
                     "establishment"
                 ],
                 "location": [
-                    1180.633041381836,
-                    901.4025115966797,
+                    963.9942808151245,
+                    881.9967994689941,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            },
+            {
+                "name": "Astoria Palace",
+                "coarse_type": "office",
+                "fine_types": [
+                    "office"
+                ],
+                "location": [
+                    963.9942808151245,
+                    881.9967994689941,
+                    -8
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            180.05880179907325,
-            -88.46762377476853
+            -41.419992774044594,
+            -158.42764535528258
         ]
     },
     "Vysok\u00e1 7490/2A": {
@@ -1285,7 +1510,7 @@
                     859.5009422302246,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "name": "AC Hotel Bratislava Old Town",
@@ -1300,7 +1525,7 @@
                     859.5009422302246,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "Vysok\u00e1 7490/2A",
@@ -1315,13 +1540,13 @@
                     859.5009422302246,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "LeBron James's room at AC Hotel Bratislava Old Town"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Mark Zuckerberg's room at AC Hotel Bratislava Old Town"
             }
         ],
         "outdoor_xy": [
-            119.93201618815759,
-            -158.0585996843821
+            117.4022390759008,
+            -154.99314671710263
         ]
     },
     "Obchodn\u00e1 35": {
@@ -1350,12 +1575,12 @@
                     860.2732772827148,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            253.58742275712325,
-            -130.57817884799695
+            277.9965995908099,
+            -158.61218803218654
         ]
     },
     "\u0160tetinova 143/2": {
@@ -1383,12 +1608,12 @@
                     912.095760345459,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -201.4058029659506,
-            -78.95350440625
+            -210.0084756704879,
+            -104.64221079488136
         ]
     },
     "N\u00e1mestie 1. m\u00e1ja 7": {
@@ -1404,6 +1629,21 @@
         ],
         "places": [
             {
+                "name": "Hotel",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1186.4807891845703,
+                    1058.9975624084473,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+            },
+            {
                 "name": "la bouche culinary",
                 "coarse_type": "food",
                 "fine_types": [
@@ -1418,114 +1658,12 @@
                     1058.9975624084473,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            198.10440119934893,
-            26.382363255562318
-        ]
-    },
-    "Obchodn\u00e1 33b": {
-        "building_glb": "buildings_element.278.glb",
-        "bounding_box": [
-            250.33886220262113,
-            -136.00901064293248,
-            109.84360504150392,
-            4.756580182552249,
-            21.493293092224235,
-            6.1690826416015625,
-            0.6990304721895054
-        ],
-        "places": [
-            {
-                "name": "Oliva pizza pide",
-                "coarse_type": "food",
-                "fine_types": [
-                    "restaurant",
-                    "point_of_interest",
-                    "food",
-                    "establishment"
-                ],
-                "location": [
-                    1250.4140014648438,
-                    864.1297760009766,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
-            }
-        ],
-        "outdoor_xy": [
-            253.557993254376,
-            -134.58836154102912
-        ]
-    },
-    "Obchodn\u00e1 557": {
-        "building_glb": "buildings_element.381.glb",
-        "bounding_box": [
-            263.974561978996,
-            -150.9211763279946,
-            112.30403137207033,
-            7.940918060781381,
-            19.09971986504013,
-            13.452560424804688,
-            0.640971117428365
-        ],
-        "places": [
-            {
-                "name": "Bar On",
-                "coarse_type": "food",
-                "fine_types": [
-                    "bar",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    1263.9844055175781,
-                    848.1726913452148,
-                    -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            260.3568663939934,
-            -140.4577824023498
-        ]
-    },
-    "Obchodn\u00e1 557/33": {
-        "building_glb": "buildings_element.517.glb",
-        "bounding_box": [
-            270.7713188040655,
-            -160.18853512800163,
-            108.53403091430665,
-            3.91950096592262,
-            7.7355373183302385,
-            6.437995910644531,
-            -0.9253376572541051
-        ],
-        "places": [
-            {
-                "name": "Pizza Calabria",
-                "coarse_type": "food",
-                "fine_types": [
-                    "meal_takeaway",
-                    "restaurant",
-                    "point_of_interest",
-                    "food",
-                    "establishment"
-                ],
-                "location": [
-                    1270.7511596679688,
-                    839.8630676269531,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
-            }
-        ],
-        "outdoor_xy": [
-            274.5940149503906,
-            -161.01493834359252
+            213.22434911602107,
+            38.65112852233712
         ]
     },
     "Palis\u00e1dy 34": {
@@ -1554,12 +1692,27 @@
                     949.607099533081,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "name": "INA - International News Agency, spol. s r.o.",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    726.9700622558594,
+                    949.607099533081,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
             }
         ],
         "outdoor_xy": [
-            -267.65466554217255,
-            -34.29813493794517
+            -291.2232402958057,
+            -61.73121020253562
         ]
     },
     "Palis\u00e1dy 50": {
@@ -1575,6 +1728,21 @@
         ],
         "places": [
             {
+                "name": "StarBrokers Real Estate",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    918.3730049133301,
+                    957.1044759750366,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+            },
+            {
                 "name": "Evanjelick\u00e1 z\u00e1kladn\u00e1 \u0161kola",
                 "coarse_type": "office",
                 "fine_types": [
@@ -1588,12 +1756,48 @@
                     957.1044759750366,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            -67.07493985826824,
-            -30.35263950022143
+            -90.75235830202557,
+            -56.1973839129293
+        ]
+    },
+    "Palis\u00e1dy 741/59": {
+        "building_glb": "buildings_element.536.glb",
+        "bounding_box": [
+            -49.06887963688513,
+            -54.23027200188319,
+            126.81122970581055,
+            35.775112440138464,
+            17.115348876321182,
+            19.51801300048828,
+            -0.18711720969476622
+        ],
+        "places": [
+            {
+                "name": "\u0160tef\u00e1nka by Pulitzer",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "bar",
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    950.5810317993164,
+                    946.5343780517578,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -61.73237085182501,
+            -61.560138393782196
         ]
     },
     "Vysok\u00e1 14": {
@@ -1609,6 +1813,23 @@
         ],
         "places": [
             {
+                "name": "Olive Tree",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "meal_delivery",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1245.1155700683594,
+                    930.5207614898682,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
                 "name": "High Street Club",
                 "coarse_type": "entertainment",
                 "fine_types": [
@@ -1621,12 +1842,46 @@
                     930.5207614898682,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            241.2853014405772,
-            -50.05169551818514
+            247.86161003548722,
+            -45.65325880130998
+        ]
+    },
+    "Vysok\u00e1 15": {
+        "building_glb": "buildings_element.371.glb",
+        "bounding_box": [
+            246.71901040269123,
+            -29.089440163464495,
+            112.35456085205078,
+            16.539892717870305,
+            22.198147752612787,
+            6.243896484375,
+            0.42204582612700675
+        ],
+        "places": [
+            {
+                "name": "Na\u0161a \u010cajov\u0148a",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1246.7737121582031,
+                    969.1484479904175,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            238.06162110787213,
+            -32.43935718173722
         ]
     },
     "18": {
@@ -1655,12 +1910,12 @@
                     938.7423439025879,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             }
         ],
         "outdoor_xy": [
-            252.09800641879497,
-            -47.05611104388357
+            256.2015881244008,
+            -44.73279864734464
         ]
     },
     "Palis\u00e1dy 51": {
@@ -1688,12 +1943,279 @@
                     999.3768491744995,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -247.56778532742848,
-            27.805267516897615
+            -271.18599163780345,
+            -4.206405295496673
+        ]
+    },
+    "Palis\u00e1dy 55": {
+        "building_glb": "buildings_element.521.glb",
+        "bounding_box": [
+            -141.8726107520879,
+            -25.029425121744666,
+            125.90490341186523,
+            25.500160700695005,
+            38.87432909984297,
+            17.066627502441406,
+            -0.1867330541661197
+        ],
+        "places": [
+            {
+                "name": "MyVinox",
+                "coarse_type": "food",
+                "fine_types": [
+                    "liquor_store",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    858.1165962219238,
+                    974.8666898012161,
+                    -4
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -144.59426438429358,
+            -45.313941720677725
+        ]
+    },
+    "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety": {
+        "building_glb": "buildings_Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety.glb",
+        "bounding_box": [
+            124.86914071920779,
+            -2.126960021792844,
+            123.26166915893555,
+            25.194154249440885,
+            30.301794045956495,
+            17.05878448486328,
+            0.6814667858432252
+        ],
+        "places": [
+            {
+                "name": "St. Elizabeth College of Health and Social Work",
+                "coarse_type": "office",
+                "fine_types": [
+                    "university",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1128.216739654541,
+                    997.8481979370117,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            },
+            {
+                "name": "Solidarity caf\u00e9",
+                "coarse_type": "food",
+                "fine_types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1128.216739654541,
+                    997.8481979370117,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            121.34254329777443,
+            -19.363949982373693
+        ]
+    },
+    "Such\u00e9 m\u00fdto": {
+        "building_glb": "buildings_element.362.glb",
+        "bounding_box": [
+            204.12363406630533,
+            -13.552356264470786,
+            121.29208374023438,
+            18.409081443912214,
+            21.608483224773025,
+            19.23968505859375,
+            -0.8279389413894493
+        ],
+        "places": [
+            {
+                "name": "Tiki Zone",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1203.8104934692383,
+                    987.7871498465538,
+                    -12
+                ],
+                "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            197.74948532230005,
+            -5.551289045530204
+        ]
+    },
+    "Burza cenn\u00fdch papierov": {
+        "building_glb": "buildings_Burza cenn\u00fdch papierov.glb",
+        "bounding_box": [
+            258.8753472259009,
+            -16.45628631242403,
+            114.43963623046875,
+            20.880009420138087,
+            35.22164634919065,
+            11.313095092773438,
+            0.4261933619701138
+        ],
+        "places": [
+            {
+                "name": "Burza Klub",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1257.4943466186523,
+                    983.1975547075272,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            264.39530984230896,
+            -34.38929304096093
+        ]
+    },
+    "Kuzm\u00e1nyho 9": {
+        "building_glb": "buildings_element.122.glb",
+        "bounding_box": [
+            -269.17500476628396,
+            46.28647247435734,
+            126.94207763671875,
+            17.234001344345703,
+            23.730514312659796,
+            12.88055419921875,
+            -0.5648432746879718
+        ],
+        "places": [
+            {
+                "name": "M\u0160 Kuzm\u00e1nyho",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    729.8637237548828,
+                    1046.1825637817383,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            -281.20451586567066,
+            38.67872031431581
+        ]
+    },
+    "Tolst\u00e9ho 11": {
+        "building_glb": "buildings_element.024.glb",
+        "bounding_box": [
+            -200.44802115299527,
+            63.83719912350719,
+            128.4531593322754,
+            51.273838250265264,
+            40.357095525894465,
+            19.62523651123047,
+            -0.18158693943713458
+        ],
+        "places": [
+            {
+                "name": "Konzervat\u00f3rium Bratislava",
+                "coarse_type": "office",
+                "fine_types": [
+                    "secondary_school",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    799.3298187255859,
+                    1060.3556060791016,
+                    -4
+                ],
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -226.67777820445878,
+            68.47986861533819
+        ]
+    },
+    "Tolst\u00e9ho 9": {
+        "building_glb": "buildings_element.537.glb",
+        "bounding_box": [
+            -153.16583901841503,
+            41.69886624458634,
+            126.80250549316406,
+            27.476128626757717,
+            15.455881831347714,
+            17.072662353515625,
+            -0.17821342722247102
+        ],
+        "places": [
+            {
+                "name": "AB Tolst\u00e9ho \u010d.9",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "real_estate_agency",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    846.7882308959961,
+                    1041.8590507507324,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+            },
+            {
+                "name": "Fresh and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    846.7882308959961,
+                    1041.8590507507324,
+                    -8
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+            }
+        ],
+        "outdoor_xy": [
+            -166.49340915928798,
+            50.846280630159455
         ]
     },
     "5 Tolst\u00e9ho Close to Presidential palace": {
@@ -1721,7 +2243,7 @@
                     1033.4367122650146,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
             },
             {
                 "building": "5 Tolst\u00e9ho Close to Presidential palace",
@@ -1736,45 +2258,13 @@
                     1033.4367122650146,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Emily Johnson's room at Lucas Apartment"
-            },
-            {
-                "building": "5 Tolst\u00e9ho Close to Presidential palace",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    892.672679901123,
-                    1033.4367122650146,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Olivia Adams's room at Lucas Apartment"
-            },
-            {
-                "building": "5 Tolst\u00e9ho Close to Presidential palace",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    892.672679901123,
-                    1033.4367122650146,
-                    -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-                "name": "Zara Williams's room at Lucas Apartment"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+                "name": "Louise Roberts's room at Lucas Apartment"
             }
         ],
         "outdoor_xy": [
-            -106.4769058618646,
-            24.514436322474033
+            -121.92167661715264,
+            27.421945604075038
         ]
     },
     "Swetlikov dom": {
@@ -1802,28 +2292,12 @@
                     1043.209683418274,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-            },
-            {
-                "building": "Swetlikov dom",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "lodging",
-                    "point_of_interest",
-                    "establishment"
-                ],
-                "location": [
-                    942.6309785842896,
-                    1043.209683418274,
-                    -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
-                "name": "Louise Roberts's room at Milk n Honey Homes"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
             }
         ],
         "outdoor_xy": [
-            -64.90057912260284,
-            78.14103945136878
+            -64.5937707171334,
+            16.742139618549146
         ]
     },
     "Apartments BB4": {
@@ -1851,7 +2325,7 @@
                     1036.1422863006592,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
             },
             {
                 "building": "Apartments BB4",
@@ -1866,13 +2340,13 @@
                     1036.1422863006592,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-                "name": "Megan Carter's room at Apartments BB4, bratislava"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+                "name": "Sophie Carlsen's room at Apartments BB4, bratislava"
             }
         ],
         "outdoor_xy": [
-            121.51347140598627,
-            45.090631496860006
+            124.2902622593798,
+            28.575274650614265
         ]
     },
     "Hotel Tatra": {
@@ -1915,7 +2389,23 @@
                     1033.6217756271362,
                     -8
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+            },
+            {
+                "name": "Slovak Restaurant",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1168.7901611328125,
+                    1033.6217756271362,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
             },
             {
                 "building": "Hotel Tatra",
@@ -1928,15 +2418,98 @@
                 "location": [
                     1168.7901611328125,
                     1033.6217756271362,
-                    -12
+                    -16
                 ],
                 "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
-                "name": "Ilya Sutskever's room at Hotel Tatra"
+                "name": "Kylian Mbappe's room at Hotel Tatra"
+            },
+            {
+                "building": "Hotel Tatra",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1168.7901611328125,
+                    1033.6217756271362,
+                    -20
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Tim Cook's room at Hotel Tatra"
             }
         ],
         "outdoor_xy": [
-            187.23689258488903,
-            14.399980646096827
+            192.17924732706857,
+            21.016649478894607
+        ]
+    },
+    "N\u00e1mestie 1. m\u00e1ja 8": {
+        "building_glb": "buildings_element.314.glb",
+        "bounding_box": [
+            234.85158049593042,
+            8.790621746702907,
+            120.46294021606445,
+            17.97437509041096,
+            27.52791017238277,
+            18.908653259277344,
+            0.7368098586403553
+        ],
+        "places": [
+            {
+                "name": "Fresh and Snacks Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1233.4255676269531,
+                    1010.1246950626373,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+            }
+        ],
+        "outdoor_xy": [
+            232.24090199151408,
+            -3.195289890732612
+        ]
+    },
+    "11": {
+        "building_glb": "buildings_element.611.glb",
+        "bounding_box": [
+            -100.73299840332709,
+            69.5643964329217,
+            129.2629737854004,
+            28.05144273449464,
+            33.75615629185434,
+            21.99230194091797,
+            -0.1860808995482073
+        ],
+        "places": [
+            {
+                "name": "Re\u0161taur\u00e1cia Starome\u0161\u0165an",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    898.8823127746582,
+                    1068.7859954833984,
+                    -4
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            }
+        ],
+        "outdoor_xy": [
+            -83.47942537748045,
+            79.99633140284855
         ]
     },
     "Kesselbauer": {
@@ -1952,6 +2525,39 @@
         ],
         "places": [
             {
+                "name": "Snacks and DM Store",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1229.5597686767578,
+                    1097.5266609191895,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+            },
+            {
+                "name": "Pochlieb - remeseln\u00e1 pek\u00e1re\u0148",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bakery",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    1229.5597686767578,
+                    1097.5266609191895,
+                    -12
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
                 "name": "Kesselbauer",
                 "coarse_type": "accommodation",
                 "fine_types": [
@@ -1962,7 +2568,7 @@
                     1097.5266609191895,
                     -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
             },
             {
                 "building": "Kesselbauer",
@@ -1973,29 +2579,180 @@
                 "location": [
                     1229.5597686767578,
                     1097.5266609191895,
-                    -8
+                    -16
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Chad Thompson's room at Kesselbauer"
-            },
-            {
-                "building": "Kesselbauer",
-                "coarse_type": "accommodation",
-                "fine_types": [
-                    "apartments"
-                ],
-                "location": [
-                    1229.5597686767578,
-                    1097.5266609191895,
-                    -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-                "name": "Shannon Steves's room at Kesselbauer"
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+                "name": "Steve Johnson's room at Kesselbauer"
             }
         ],
         "outdoor_xy": [
-            262.6340721823476,
-            83.04774956844085
+            263.5114924916998,
+            84.26790803089064
+        ]
+    },
+    "Metropolitan Star": {
+        "building_glb": "buildings_Metropolitan Star.glb",
+        "bounding_box": [
+            188.03774027384853,
+            87.44697854960575,
+            124.34643936157227,
+            22.744940107934134,
+            105.58042214787247,
+            23.60942840576172,
+            0.9431399267828187
+        ],
+        "places": [
+            {
+                "name": "Metropolitan Star",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1190.9361724853516,
+                    1088.8035564422607,
+                    -4
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+            },
+            {
+                "name": "KYTI\u010cKOVO \u00ae - ovocie v \u010dokol\u00e1de",
+                "coarse_type": "food",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                ],
+                "location": [
+                    1190.9361724853516,
+                    1088.8035564422607,
+                    -8
+                ],
+                "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+            },
+            {
+                "building": "Metropolitan Star",
+                "coarse_type": "accommodation",
+                "fine_types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1190.9361724853516,
+                    1088.8035564422607,
+                    -12
+                ],
+                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+                "name": "Roth Miller's room at Metropolitan Star"
+            }
+        ],
+        "outdoor_xy": [
+            148.37573585572528,
+            124.3777010518316
+        ]
+    },
+    "Gunduli\u010dova 905/8": {
+        "building_glb": "buildings_element.602.glb",
+        "bounding_box": [
+            -125.36201858520505,
+            124.44073867797853,
+            129.0477638244629,
+            24.87214960734821,
+            20.24250933424058,
+            19.745994567871094,
+            -0.5093192030115323
+        ],
+        "places": [
+            {
+                "name": "Pilates Priv\u00e9",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "gym",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    873.0819511413574,
+                    1124.4407386779785,
+                    -4
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -123.6227314143505,
+            110.73140238215527
+        ]
+    },
+    "Jozefsk\u00e1 2989/23": {
+        "building_glb": "buildings_element.589.glb",
+        "bounding_box": [
+            269.37696838378906,
+            157.01224517822266,
+            118.11531448364256,
+            15.04331677156841,
+            21.894748876848894,
+            11.212196350097656,
+            -0.6640161475554919
+        ],
+        "places": [
+            {
+                "name": "IQ\u0161KA Akademia",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1269.376968383789,
+                    1156.8174209594727,
+                    -12
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            276.635864647554,
+            152.46060314655637
+        ]
+    },
+    "M\u00fazeum Janka Jesensk\u00e9ho": {
+        "building_glb": "buildings_M\u00fazeum Janka Jesensk\u00e9ho.glb",
+        "bounding_box": [
+            -278.10514787060004,
+            165.6064342669732,
+            135.56497955322266,
+            18.64568787877937,
+            18.156723194810866,
+            12.877548217773438,
+            -0.49252474447985195
+        ],
+        "places": [
+            {
+                "name": "Janko Jesensk\u00fd Museum",
+                "coarse_type": "entertainment",
+                "fine_types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    721.9040069580078,
+                    1164.0033645629883,
+                    -4
+                ],
+                "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+            }
+        ],
+        "outdoor_xy": [
+            -284.05531483892406,
+            176.3495469881485
         ]
     },
     "Business Garden": {
@@ -2021,12 +2778,12 @@
                     1188.9214401245117,
                     -12
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            -40.276462130078755,
-            181.79621764154797
+            -76.8627105134428,
+            202.63654953662927
         ]
     },
     "Jozefsk\u00e1 2992/4": {
@@ -2054,12 +2811,45 @@
                     1168.8090286254883,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
             }
         ],
         "outdoor_xy": [
-            178.77441985417414,
-            160.23564280108852
+            177.63482256024804,
+            161.0515849479766
+        ]
+    },
+    "Jozefsk\u00e1 6": {
+        "building_glb": "buildings_element.419.glb",
+        "bounding_box": [
+            207.82980094492086,
+            159.23050870261244,
+            119.09072113037108,
+            18.881713190175727,
+            29.991028316102838,
+            10.751174926757812,
+            -0.6213775507791292
+        ],
+        "places": [
+            {
+                "name": "SZ\u0160 s M\u0160 pre \u017eiakov a deti s autizmom",
+                "coarse_type": "office",
+                "fine_types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    1207.8298034667969,
+                    1159.4976348876953,
+                    -4
+                ],
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+            }
+        ],
+        "outdoor_xy": [
+            207.5442424349078,
+            140.89686275750864
         ]
     },
     "24": {
@@ -2087,12 +2877,12 @@
                     1176.0525283813477,
                     -4
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
             }
         ],
         "outdoor_xy": [
-            238.19914586391099,
-            164.15417537219014
+            243.68387962087886,
+            159.84744649408216
         ]
     }
 }

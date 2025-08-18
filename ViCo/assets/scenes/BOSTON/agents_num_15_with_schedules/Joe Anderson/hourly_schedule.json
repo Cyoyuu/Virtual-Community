@@ -1,0 +1,140 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "00:00:00",
+        "end_time": "07:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Dunkin'",
+        "building": "Dunkin'",
+        "start_time": "07:00:00",
+        "end_time": "07:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to CrossFit Somerville",
+        "place": null,
+        "building": null,
+        "start_time": "07:30:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work as a fitness trainer",
+        "place": "CrossFit Somerville",
+        "building": "CrossFit",
+        "start_time": "08:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Life Alive Organic Cafe Union Square",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "CrossFit Somerville",
+        "end_place": "Life Alive Organic Cafe Union Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "Life Alive Organic Cafe Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lincoln Park",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Life Alive Organic Cafe Union Square",
+        "end_place": "Lincoln Park"
+    },
+    {
+        "type": "main",
+        "activity": "Cycling and organizing community fitness challenge",
+        "place": "Lincoln Park",
+        "building": "open space",
+        "start_time": "13:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:30:00",
+        "start_place": "Lincoln Park",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Grocery shopping",
+        "place": "Fresh and Snacks Store",
+        "building": "1 Bow Street",
+        "start_time": "16:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Prospect Union Square",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Fresh and Snacks Store",
+        "end_place": "Prospect Union Square"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Prospect Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Tech Innovators Group meeting",
+        "place": "Prospect Union Square",
+        "building": "Prospect Union Square",
+        "start_time": "18:00:00",
+        "end_time": "19:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Joe Anderson's room at Union 346 Apartments",
+        "place": null,
+        "building": null,
+        "start_time": "19:30:00",
+        "end_time": "20:00:00",
+        "start_place": "Prospect Union Square",
+        "end_place": "Joe Anderson's room at Union 346 Apartments"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and personal time",
+        "place": "Joe Anderson's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "20:00:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Joe Anderson's room at Union 346 Apartments",
+        "building": "Union 346",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

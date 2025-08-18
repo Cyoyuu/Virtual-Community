@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Alex Jefferson's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Central Garten",
+        "building": "Central 1",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Work on innovative tech solutions",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to update Fitness Z\u00fcrich Central",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "update Fitness Z\u00fcrich Central"
+    },
+    {
+        "type": "main",
+        "activity": "Exercise at update Fitness Z\u00fcrich Central",
+        "place": "update Fitness Z\u00fcrich Central",
+        "building": "Neum\u00fchlequai 32",
+        "start_time": "12:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "update Fitness Z\u00fcrich Central",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Develop new app to enhance productivity",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "14:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends with Tech Innovators Club",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "17:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Sapori d\u2019Italia",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:10:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "Sapori d\u2019Italia"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Sapori d\u2019Italia",
+        "building": "Schweizerisches Landesmuseum",
+        "start_time": "18:10:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to ETH Entrepreneurship",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
+        "start_place": "Sapori d\u2019Italia",
+        "end_place": "ETH Entrepreneurship"
+    },
+    {
+        "type": "main",
+        "activity": "Continue developing new app",
+        "place": "ETH Entrepreneurship",
+        "building": "Weinbergstrasse 9",
+        "start_time": "19:00:00",
+        "end_time": "22:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Alex Jefferson's room at Rosenhof",
+        "place": null,
+        "building": null,
+        "start_time": "22:00:00",
+        "end_time": "22:30:00",
+        "start_place": "ETH Entrepreneurship",
+        "end_place": "Alex Jefferson's room at Rosenhof"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Alex Jefferson's room at Rosenhof",
+        "building": "Rosenhof",
+        "start_time": "22:30:00",
+        "end_time": "23:59:59"
+    }
+]

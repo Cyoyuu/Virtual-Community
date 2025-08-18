@@ -1,0 +1,142 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Yann LeCun's room at Harvard Real Estate",
+        "building": "Smith Campus Center",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast",
+        "place": "Capital One Caf\u00e9",
+        "building": "24 John F. Kennedy Street",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard University",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "08:45:00"
+    },
+    {
+        "type": "main",
+        "activity": "Collaborate on AI research projects",
+        "place": "Harvard University",
+        "building": "Massachusetts Hall",
+        "start_time": "08:45:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to DIG for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:15:00",
+        "start_place": "Harvard University",
+        "end_place": "DIG"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch",
+        "place": "DIG",
+        "building": "82 Mount Auburn Street",
+        "start_time": "12:15:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Harvard Data Center",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "DIG",
+        "end_place": "Harvard Data Center"
+    },
+    {
+        "type": "main",
+        "activity": "Develop software projects with Harvard Tech Innovators",
+        "place": "Harvard Data Center",
+        "building": "Littauer Center",
+        "start_time": "13:15:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Carpenter Center for the Visual Arts",
+        "place": null,
+        "building": null,
+        "start_time": "16:00:00",
+        "end_time": "16:15:00",
+        "start_place": "Harvard Data Center",
+        "end_place": "Carpenter Center for the Visual Arts"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Carpenter Center for the Visual Arts",
+        "place": "Carpenter Center for the Visual Arts",
+        "building": "Carpenter Center",
+        "start_time": "16:15:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Richard A. and Susan F. Smith Campus Center for dinner",
+        "place": null,
+        "building": null,
+        "start_time": "17:30:00",
+        "end_time": "17:45:00",
+        "start_place": "Carpenter Center for the Visual Arts",
+        "end_place": "Richard A. and Susan F. Smith Campus Center"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner",
+        "place": "Richard A. and Susan F. Smith Campus Center",
+        "building": "Smith Campus Center",
+        "start_time": "17:45:00",
+        "end_time": "18:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Collection of Historical Scientific Instruments at the Putnam Gallery",
+        "place": null,
+        "building": null,
+        "start_time": "18:30:00",
+        "end_time": "18:45:00",
+        "start_place": "Richard A. and Susan F. Smith Campus Center",
+        "end_place": "The Collection of Historical Scientific Instruments at the Putnam Gallery"
+    },
+    {
+        "type": "main",
+        "activity": "Explore The Collection of Historical Scientific Instruments",
+        "place": "The Collection of Historical Scientific Instruments at the Putnam Gallery",
+        "building": "Harvard Science Center",
+        "start_time": "18:45:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Yann LeCun's room",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:15:00",
+        "start_place": "The Collection of Historical Scientific Instruments at the Putnam Gallery",
+        "end_place": "Yann LeCun's room at Harvard Real Estate"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Yann LeCun's room at Harvard Real Estate",
+        "building": "Smith Campus Center",
+        "start_time": "20:15:00",
+        "end_time": "23:59:59"
+    }
+]

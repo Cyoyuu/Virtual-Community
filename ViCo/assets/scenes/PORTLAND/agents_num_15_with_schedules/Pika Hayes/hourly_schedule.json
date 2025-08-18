@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Pika Hayes's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Peace Food Market",
+        "place": "Peace Food Market",
+        "building": "Chestnut Street Lofts",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland High School",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Attend classes and study computer science",
+        "place": "Portland High School",
+        "building": "Portland High School",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Anthony's Italian Kitchen",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Portland High School",
+        "end_place": "Anthony's Italian Kitchen"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at Anthony's Italian Kitchen",
+        "place": "Anthony's Italian Kitchen",
+        "building": "151 Middle Street",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Portland Public Library - Main Branch",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:30:00",
+        "start_place": "Anthony's Italian Kitchen",
+        "end_place": "Portland Public Library - Main Branch"
+    },
+    {
+        "type": "main",
+        "activity": "Work on game development and programming skills",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "13:30:00",
+        "end_time": "16:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Discuss tech trends and project ideas with Portland Tech Innovators",
+        "place": "Portland Public Library - Main Branch",
+        "building": "Portland Public Library - Main Branch",
+        "start_time": "16:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Peace Food Market",
+        "place": null,
+        "building": null,
+        "start_time": "18:00:00",
+        "end_time": "18:30:00",
+        "start_place": "Portland Public Library - Main Branch",
+        "end_place": "Peace Food Market"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Peace Food Market",
+        "place": "Peace Food Market",
+        "building": "Chestnut Street Lofts",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Arcana",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "Peace Food Market",
+        "end_place": "Arcana"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and enjoy entertainment at Arcana",
+        "place": "Arcana",
+        "building": "81 Market Street",
+        "start_time": "19:30:00",
+        "end_time": "21:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Pika Hayes's room at Chestnut Street Lofts",
+        "place": null,
+        "building": null,
+        "start_time": "21:00:00",
+        "end_time": "21:30:00",
+        "start_place": "Arcana",
+        "end_place": "Pika Hayes's room at Chestnut Street Lofts"
+    },
+    {
+        "type": "main",
+        "activity": "Personal time and preparation for bed",
+        "place": "Pika Hayes's room at Chestnut Street Lofts",
+        "building": "Chestnut Street Lofts",
+        "start_time": "21:30:00",
+        "end_time": "23:59:59"
+    }
+]

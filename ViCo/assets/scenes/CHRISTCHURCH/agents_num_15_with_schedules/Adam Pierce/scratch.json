@@ -3,28 +3,28 @@
     "first_name": "Adam",
     "last_name": "Pierce",
     "age": 27,
-    "innate": "achievement, self-direction",
-    "learned": "I am a research scientist at RapidRhythm, focusing on rhythm analysis in music. I enjoy hiking and exploring new trails.",
-    "currently": "I am working on a project to develop a new algorithm for rhythm detection in music.",
+    "innate": "achievement, stimulation, self-direction",
+    "learned": "I am a chef at Chiwahwah Mexican Cantina Bar, known for my innovative fusion dishes. I enjoy experimenting with new recipes and flavors. In my free time, I love hiking and exploring nature.",
+    "currently": "I want to create a new signature dish for the restaurant's summer menu.",
     "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
     "groups": [
         {
-            "name": "Music Enthusiasts Club",
-            "description": "A group of individuals passionate about music and rhythm.",
-            "place": "RapidRhythm",
+            "name": "Culinary Creators",
+            "description": "A group of chefs and food enthusiasts who meet to share recipes and culinary techniques.",
+            "place": "Chiwahwah Mexican Cantina Bar",
             "members": [
                 "Adam Pierce",
-                "Eve By J Gonzales",
-                "Pika Hayes",
-                "Zara Williams"
+                "Brycer Rodriguez",
+                "Kate Novak",
+                "Elizabeth Mensah"
             ],
-            "daily_activity": "exploring new music from 17:00 to 18:00"
+            "daily_activity": "sharing recipes and cooking techniques from 17:00 to 19:00"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Adam Pierce's room at Ray White Commercial Christchurch",
+    "living_place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,22 +34,22 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Adam Pierce's room at Ray White Commercial Christchurch",
-            "building": "76 Hereford Street",
+            "place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
+            "building": "Crowne Plaza Christchurch",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
             "type": "meal",
-            "activity": "Breakfast at Kong",
-            "place": "Kong",
-            "building": "76 Hereford Street",
+            "activity": "Breakfast at Market Place Restaurant",
+            "place": "Market Place Restaurant",
+            "building": "Crowne Plaza Christchurch",
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to RapidRhythm",
+            "activity": "Commute to Chiwahwah Mexican Cantina Bar",
             "place": null,
             "building": null,
             "start_time": "08:30:00",
@@ -57,72 +57,56 @@
         },
         {
             "type": "main",
-            "activity": "Work on rhythm detection algorithm",
-            "place": "RapidRhythm",
-            "building": "T\u016branga (Christchurch Central Library)",
+            "activity": "Experiment with new recipes and flavors for the summer menu",
+            "place": "Chiwahwah Mexican Cantina Bar",
+            "building": "136 Oxford Terrace",
             "start_time": "09:00:00",
             "end_time": "12:00:00"
         },
         {
-            "type": "meal",
-            "activity": "Lunch at The Catering Belle Ltd",
-            "place": "The Catering Belle Ltd",
-            "building": "T\u016branga (Christchurch Central Library)",
+            "type": "commute",
+            "activity": "Commute to Fresh and Beverages Store",
+            "place": null,
+            "building": null,
             "start_time": "12:00:00",
-            "end_time": "12:30:00"
+            "end_time": "12:30:00",
+            "start_place": "Chiwahwah Mexican Cantina Bar",
+            "end_place": "Fresh and Beverages Store"
         },
         {
             "type": "main",
-            "activity": "Continue working on rhythm detection algorithm",
-            "place": "RapidRhythm",
-            "building": "T\u016branga (Christchurch Central Library)",
+            "activity": "Shop for fresh ingredients",
+            "place": "Fresh and Beverages Store",
+            "building": "268 High Street",
             "start_time": "12:30:00",
-            "end_time": "16:30:00"
+            "end_time": "13:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Music Enthusiasts Club meeting",
+            "activity": "Commute to Cafe Stir",
             "place": null,
             "building": null,
-            "start_time": "16:30:00",
-            "end_time": "17:00:00",
-            "start_place": "RapidRhythm",
-            "end_place": "RapidRhythm"
-        },
-        {
-            "type": "main",
-            "activity": "Explore new music with Music Enthusiasts Club",
-            "place": "RapidRhythm",
-            "building": "T\u016branga (Christchurch Central Library)",
-            "start_time": "17:00:00",
-            "end_time": "18:00:00"
-        },
-        {
-            "type": "commute",
-            "activity": "Commute to Kong",
-            "place": null,
-            "building": null,
-            "start_time": "18:00:00",
-            "end_time": "18:10:00",
-            "start_place": "RapidRhythm",
-            "end_place": "Kong"
+            "start_time": "13:30:00",
+            "end_time": "14:00:00",
+            "start_place": "Fresh and Beverages Store",
+            "end_place": "Cafe Stir"
         },
         {
             "type": "meal",
-            "activity": "Dinner at Kong",
-            "place": "Kong",
-            "building": "76 Hereford Street",
-            "start_time": "18:10:00",
-            "end_time": "18:30:00"
+            "activity": "Lunch at Cafe Stir",
+            "place": "Cafe Stir",
+            "building": "27 New Regent Street",
+            "start_time": "14:00:00",
+            "end_time": "14:30:00"
         },
         {
             "type": "commute",
             "activity": "Commute to Heritage Health Club",
             "place": null,
             "building": null,
-            "start_time": "18:30:00",
-            "end_time": "19:00:00",
-            "start_place": "Kong",
+            "start_time": "14:30:00",
+            "end_time": "15:00:00",
+            "start_place": "Cafe Stir",
             "end_place": "Heritage Health Club"
         },
         {
@@ -130,33 +114,59 @@
             "activity": "Relax and unwind at Heritage Health Club",
             "place": "Heritage Health Club",
             "building": "Old Government Building",
-            "start_time": "19:00:00",
-            "end_time": "21:00:00"
+            "start_time": "15:00:00",
+            "end_time": "16:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute back to Adam Pierce's room",
+            "activity": "Commute to Chiwahwah Mexican Cantina Bar",
             "place": null,
             "building": null,
-            "start_time": "21:00:00",
-            "end_time": "21:30:00",
+            "start_time": "16:30:00",
+            "end_time": "17:00:00",
             "start_place": "Heritage Health Club",
-            "end_place": "Adam Pierce's room at Ray White Commercial Christchurch"
+            "end_place": "Chiwahwah Mexican Cantina Bar"
         },
         {
             "type": "main",
-            "activity": "Personal time and relaxation",
-            "place": "Adam Pierce's room at Ray White Commercial Christchurch",
-            "building": "76 Hereford Street",
-            "start_time": "21:30:00",
-            "end_time": "23:30:00"
+            "activity": "Culinary Creators meeting - sharing recipes and cooking techniques",
+            "place": "Chiwahwah Mexican Cantina Bar",
+            "building": "136 Oxford Terrace",
+            "start_time": "17:00:00",
+            "end_time": "19:00:00"
         },
         {
             "type": "meal",
-            "activity": "Late-night snack at Kong",
-            "place": "Kong",
-            "building": "76 Hereford Street",
-            "start_time": "23:30:00",
+            "activity": "Dinner at Chiwahwah Mexican Cantina Bar",
+            "place": "Chiwahwah Mexican Cantina Bar",
+            "building": "136 Oxford Terrace",
+            "start_time": "19:00:00",
+            "end_time": "19:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Crowne Plaza Christchurch",
+            "place": null,
+            "building": null,
+            "start_time": "19:30:00",
+            "end_time": "20:00:00",
+            "start_place": "Chiwahwah Mexican Cantina Bar",
+            "end_place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and plan next day's activities",
+            "place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
+            "building": "Crowne Plaza Christchurch",
+            "start_time": "20:00:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Wind down and prepare for sleep",
+            "place": "Adam Pierce's room at Crowne Plaza Christchurch by IHG",
+            "building": "Crowne Plaza Christchurch",
+            "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
     ],
@@ -169,13 +179,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "RapidRhythm",
+    "working_place": "Chiwahwah Mexican Cantina Bar",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null

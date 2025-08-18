@@ -1,0 +1,132 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone",
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Corner Bakery",
+        "place": "Corner Bakery",
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "start_time": "08:00:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Lanham Fitness Center",
+        "place": null,
+        "building": null,
+        "start_time": "09:00:00",
+        "end_time": "09:30:00",
+        "start_place": "Corner Bakery",
+        "end_place": "Lanham Fitness Center"
+    },
+    {
+        "type": "main",
+        "activity": "Workout at Lanham Fitness Center",
+        "place": "Lanham Fitness Center",
+        "building": "Fritz G Lanham Federal Building",
+        "start_time": "09:30:00",
+        "end_time": "11:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fort Worth Public Library - Downtown Express",
+        "place": null,
+        "building": null,
+        "start_time": "11:00:00",
+        "end_time": "11:30:00",
+        "start_place": "Lanham Fitness Center",
+        "end_place": "Fort Worth Public Library - Downtown Express"
+    },
+    {
+        "type": "main",
+        "activity": "Research and songwriting at Fort Worth Public Library - Downtown Express",
+        "place": "Fort Worth Public Library - Downtown Express",
+        "building": "Fort Worth Old City Hall",
+        "start_time": "11:30:00",
+        "end_time": "13:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Sterling for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "13:30:00",
+        "end_time": "14:00:00",
+        "start_place": "Fort Worth Public Library - Downtown Express",
+        "end_place": "The Sterling"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Sterling",
+        "place": "The Sterling",
+        "building": "911 Houston Street",
+        "start_time": "14:00:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Hilton Fort Worth",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "The Sterling",
+        "end_place": "Hilton Fort Worth"
+    },
+    {
+        "type": "main",
+        "activity": "Concert rehearsal at Hilton Fort Worth",
+        "place": "Hilton Fort Worth",
+        "building": "Hilton Fort Worth",
+        "start_time": "15:30:00",
+        "end_time": "17:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Celebrity Charity Group meeting",
+        "place": "Hilton Fort Worth",
+        "building": "Hilton Fort Worth",
+        "start_time": "17:30:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at Ruth's Chris Steak House",
+        "place": "Ruth's Chris Steak House",
+        "building": "Hilton Fort Worth",
+        "start_time": "19:00:00",
+        "end_time": "20:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Courtyard Fort Worth Downtown/Blackstone",
+        "place": null,
+        "building": null,
+        "start_time": "20:00:00",
+        "end_time": "20:30:00",
+        "start_place": "Ruth's Chris Steak House",
+        "end_place": "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone"
+    },
+    {
+        "type": "main",
+        "activity": "Relax and unwind in Taylor Swift's room",
+        "place": "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone",
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "start_time": "20:30:00",
+        "end_time": "23:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Prepare for bed",
+        "place": "Taylor Swift's room at Courtyard Fort Worth Downtown/Blackstone",
+        "building": "Courtyard Fort Worth Downtown/Blackstone",
+        "start_time": "23:00:00",
+        "end_time": "23:59:59"
+    }
+]

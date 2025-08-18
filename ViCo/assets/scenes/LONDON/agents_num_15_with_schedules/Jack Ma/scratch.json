@@ -1,0 +1,176 @@
+{
+    "name": "Jack Ma",
+    "first_name": "Jack",
+    "last_name": "Ma",
+    "age": 50,
+    "innate": "achievement, power, self-direction",
+    "learned": "I am a Chinese business magnate, investor, and philanthropist, known for founding Alibaba Group.",
+    "currently": "I am attending business meetings in London to explore new investment opportunities.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Historical Explorers",
+            "description": "A group of history enthusiasts who explore historical sites and discuss historical events.",
+            "place": "Churchill War Rooms",
+            "members": [
+                "Genghis Khan",
+                "Julius Caesar",
+                "Jack Ma"
+            ],
+            "daily_activity": "exploring historical sites from 13:00 to 15:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Jack Ma's room at The Sanctuary House Hotel, Westminster",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Jack Ma's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Jack Ma's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Snacks and DM Store",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "08:45:00",
+            "start_place": "Jack Ma's room at The Sanctuary House Hotel, Westminster",
+            "end_place": "Snacks and DM Store"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Snacks and DM Store",
+            "place": "Snacks and DM Store",
+            "building": "12 Bridge Street",
+            "start_time": "08:45:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lounge Cafe Bar",
+            "place": null,
+            "building": null,
+            "start_time": "12:00:00",
+            "end_time": "12:15:00",
+            "start_place": "Snacks and DM Store",
+            "end_place": "Lounge Cafe Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Lounge Cafe Bar",
+            "building": "21 Tothill Street",
+            "start_time": "12:15:00",
+            "end_time": "13:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Westminster School of Performing Arts",
+            "place": null,
+            "building": null,
+            "start_time": "13:15:00",
+            "end_time": "13:30:00",
+            "start_place": "Lounge Cafe Bar",
+            "end_place": "Westminster School of Performing Arts"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Westminster School of Performing Arts",
+            "place": "Westminster School of Performing Arts",
+            "building": "Westminster School of Performing Arts",
+            "start_time": "13:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Lounge Cafe Bar",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "Westminster School of Performing Arts",
+            "end_place": "Lounge Cafe Bar"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Lounge Cafe Bar",
+            "building": "21 Tothill Street",
+            "start_time": "18:15:00",
+            "end_time": "19:15:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Churchill War Rooms",
+            "place": null,
+            "building": null,
+            "start_time": "19:15:00",
+            "end_time": "19:30:00",
+            "start_place": "Lounge Cafe Bar",
+            "end_place": "Churchill War Rooms"
+        },
+        {
+            "type": "main",
+            "activity": "Activity at Churchill War Rooms",
+            "place": "Churchill War Rooms",
+            "building": "King Charles Street",
+            "start_time": "19:30:00",
+            "end_time": "22:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Jack Ma's room at The Sanctuary House Hotel, Westminster",
+            "place": null,
+            "building": null,
+            "start_time": "22:30:00",
+            "end_time": "22:45:00",
+            "start_place": "Churchill War Rooms",
+            "end_place": "Jack Ma's room at The Sanctuary House Hotel, Westminster"
+        },
+        {
+            "type": "main",
+            "activity": "Prepare for Bed",
+            "place": "Jack Ma's room at The Sanctuary House Hotel, Westminster",
+            "building": "The Sanctuary House",
+            "start_time": "22:45:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": null,
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

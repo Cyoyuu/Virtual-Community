@@ -2,22 +2,22 @@
     {
         "type": "sleep",
         "activity": "Sleep",
-        "place": "Kate Novak's room at Carter Place",
-        "building": "Carter Place",
+        "place": "Kate Novak's room at EzOffice",
+        "building": "Penn West Plaza - East Tower",
         "start_time": "00:00:00",
         "end_time": "08:00:00"
     },
     {
         "type": "meal",
-        "activity": "Breakfast",
-        "place": "Kate Novak's room at Carter Place",
-        "building": "Carter Place",
+        "activity": "Breakfast at Deville Coffee",
+        "place": "Deville Coffee",
+        "building": "Telus Sky",
         "start_time": "08:00:00",
         "end_time": "08:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to Rosso Coffee Roasters - Stephen Ave",
+        "activity": "Commute to Calgary Chamber of Commerce",
         "place": null,
         "building": null,
         "start_time": "08:30:00",
@@ -25,72 +25,108 @@
     },
     {
         "type": "main",
-        "activity": "Work and practice latte art",
-        "place": "Rosso Coffee Roasters - Stephen Ave",
-        "building": "Calgary TELUS Convention Centre North Building",
+        "activity": "Work on expanding client base and international brand projects",
+        "place": "Calgary Chamber of Commerce",
+        "building": "Calgary Chamber of Commerce",
         "start_time": "09:00:00",
-        "end_time": "15:30:00"
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to The Unicorn for lunch",
+        "place": null,
+        "building": null,
+        "start_time": "12:00:00",
+        "end_time": "12:30:00",
+        "start_place": "Calgary Chamber of Commerce",
+        "end_place": "The Unicorn"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at The Unicorn",
+        "place": "The Unicorn",
+        "building": "The Unicorn",
+        "start_time": "12:30:00",
+        "end_time": "13:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Fresh and Snacks Store",
+        "place": null,
+        "building": null,
+        "start_time": "13:00:00",
+        "end_time": "13:15:00",
+        "start_place": "The Unicorn",
+        "end_place": "Fresh and Snacks Store"
+    },
+    {
+        "type": "main",
+        "activity": "Purchase art supplies and snacks",
+        "place": "Fresh and Snacks Store",
+        "building": "Glanville/Ward Block",
+        "start_time": "13:15:00",
+        "end_time": "13:45:00"
     },
     {
         "type": "commute",
         "activity": "Commute to Collage Gallery",
         "place": null,
         "building": null,
-        "start_time": "15:30:00",
-        "end_time": "16:00:00",
-        "start_place": "Rosso Coffee Roasters - Stephen Ave",
+        "start_time": "13:45:00",
+        "end_time": "14:00:00",
+        "start_place": "Fresh and Snacks Store",
         "end_place": "Collage Gallery"
     },
     {
         "type": "main",
-        "activity": "Painting and sharing art with Calgary Art Collective",
+        "activity": "Collaborate on art projects with Calgary Creatives",
         "place": "Collage Gallery",
         "building": "Telus Sky",
-        "start_time": "16:00:00",
-        "end_time": "18:00:00"
+        "start_time": "14:00:00",
+        "end_time": "17:00:00"
     },
     {
         "type": "commute",
-        "activity": "Commute to El Furniture Warehouse",
+        "activity": "Commute to El Furniture Warehouse for dinner",
         "place": null,
         "building": null,
-        "start_time": "18:00:00",
-        "end_time": "18:30:00",
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
         "start_place": "Collage Gallery",
         "end_place": "El Furniture Warehouse"
     },
     {
         "type": "meal",
-        "activity": "Dinner",
+        "activity": "Dinner at El Furniture Warehouse",
         "place": "El Furniture Warehouse",
         "building": "Glanville/Ward Block",
-        "start_time": "18:30:00",
-        "end_time": "19:30:00"
+        "start_time": "17:30:00",
+        "end_time": "18:30:00"
     },
     {
         "type": "commute",
-        "activity": "Commute back to Kate Novak's room at Carter Place",
+        "activity": "Commute back to Kate Novak's room at EzOffice",
         "place": null,
         "building": null,
-        "start_time": "19:30:00",
-        "end_time": "20:00:00",
+        "start_time": "18:30:00",
+        "end_time": "19:00:00",
         "start_place": "El Furniture Warehouse",
-        "end_place": "Kate Novak's room at Carter Place"
+        "end_place": "Kate Novak's room at EzOffice"
     },
     {
         "type": "main",
-        "activity": "Relax and paint in room",
-        "place": "Kate Novak's room at Carter Place",
-        "building": "Carter Place",
-        "start_time": "20:00:00",
-        "end_time": "23:30:00"
+        "activity": "Work on personal digital art projects",
+        "place": "Kate Novak's room at EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "19:00:00",
+        "end_time": "23:00:00"
     },
     {
-        "type": "meal",
-        "activity": "Light snack",
-        "place": "Kate Novak's room at Carter Place",
-        "building": "Carter Place",
-        "start_time": "23:30:00",
+        "type": "main",
+        "activity": "Relax and unwind",
+        "place": "Kate Novak's room at EzOffice",
+        "building": "Penn West Plaza - East Tower",
+        "start_time": "23:00:00",
         "end_time": "23:59:59"
     }
 ]

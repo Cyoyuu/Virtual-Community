@@ -24,8 +24,7 @@
                     37.561320304870605,
                     -371.9311218261719,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -54,8 +53,7 @@
                     30.063932418823242,
                     -343.9231719970703,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -83,8 +81,7 @@
                     28.676401138305664,
                     -314.89662170410156,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -112,8 +109,7 @@
                     289.6660614013672,
                     -314.28466796875,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -142,8 +138,180 @@
                     360.5028533935547,
                     -336.41197204589844,
                     -4
+                ]
+            }
+        ]
+    },
+    "1134 South Charles Street": {
+        "building_glb": "buildings_element.1838.glb",
+        "bounding_box": [
+            -172.57301222712934,
+            -147.64280021217903,
+            76.8150978088379,
+            20.951734600494614,
+            3.6702056231755638,
+            6.871559143066406,
+            0.12674111536883972
+        ],
+        "places": [
+            {
+                "name": "Chateau de MarMutt",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "pet_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    -172.50840759277344,
+                    -147.64279174804688,
+                    -4
+                ]
+            },
+            {
+                "name": "JES made",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "pet_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -172.50840759277344,
+                    -147.64279174804688,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1132 South Charles Street": {
+        "building_glb": "buildings_element.1836.glb",
+        "bounding_box": [
+            -172.02559668916635,
+            -137.99140115853717,
+            77.42944335937501,
+            19.534970422828696,
+            4.7459199618977115,
+            8.226516723632812,
+            0.1363812676744306
+        ],
+        "places": [
+            {
+                "name": "Patorco Smoke Shop",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -172.1807098388672,
+                    -137.99140167236328,
+                    -4
+                ]
+            },
+            {
+                "name": "After Hour Nails and Spa",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -172.1807098388672,
+                    -137.99140167236328,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1128 Light Street": {
+        "building_glb": "buildings_element.1285.glb",
+        "bounding_box": [
+            2.335089154388114,
+            -118.64251915619978,
+            79.8128547668457,
+            31.448126537328683,
+            13.973593158974086,
+            6.963935852050781,
+            0.12800098212657912
+        ],
+        "places": [
+            {
+                "name": "City Nails & Spa",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "spa",
+                    "hair_care",
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    2.1430726051330566,
+                    -118.75728607177734,
+                    -4
+                ]
+            },
+            {
+                "name": "Brightside Tattoo Shop - Baltimore",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    2.1430726051330566,
+                    -118.75728607177734,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1205 Light Street": {
+        "building_glb": "buildings_element.1088.glb",
+        "bounding_box": [
+            49.738308481779285,
+            -155.59637592049762,
+            81.9965171813965,
+            25.573356025141514,
+            4.248660753161611,
+            7.534645080566406,
+            0.1234949917333716
+        ],
+        "places": [
+            {
+                "name": "TheRDBL",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "point_of_interest",
+                    "health",
+                    "establishment"
+                ],
+                "location": [
+                    49.7236270904541,
+                    -155.5259552001953,
+                    -4
+                ]
+            },
+            {
+                "name": "Charm City Hemp Premium CBD Store - Federal Hill",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    49.7236270904541,
+                    -155.5259552001953,
+                    -8
+                ]
             }
         ]
     },
@@ -172,8 +340,7 @@
                     339.9455108642578,
                     -137.02835845947266,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-0.json"
+                ]
             }
         ]
     },
@@ -201,8 +368,7 @@
                     -370.73435974121094,
                     -95.48271560668945,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                ]
             },
             {
                 "name": "[solidcore]",
@@ -217,8 +383,7 @@
                     -370.73435974121094,
                     -95.48271560668945,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "Orangetheory Fitness",
@@ -233,8 +398,7 @@
                     -370.73435974121094,
                     -95.48271560668945,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             }
         ]
     },
@@ -265,8 +429,7 @@
                     -304.2565155029297,
                     -97.45595169067383,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+                ]
             },
             {
                 "name": "Union Brothers Furniture Building",
@@ -281,8 +444,258 @@
                     -304.2565155029297,
                     -97.45595169067383,
                     -8
+                ]
+            }
+        ]
+    },
+    "1124 South Charles Street": {
+        "building_glb": "buildings_element.2451.glb",
+        "bounding_box": [
+            -173.3939176275075,
+            -123.26576763567171,
+            76.82838058471681,
+            20.251285782445507,
+            4.625159428722045,
+            7.226249694824219,
+            0.11035757077500664
+        ],
+        "places": [
+            {
+                "name": "Advanced Laser Clinic And MedSpa",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "hair_care",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+                "location": [
+                    -173.38680267333984,
+                    -123.01890182495117,
+                    -4
+                ]
+            },
+            {
+                "name": "Ametrine Lash & Beauty Bar",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -173.38680267333984,
+                    -123.01890182495117,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1116 Light Street": {
+        "building_glb": "buildings_element.1283.glb",
+        "bounding_box": [
+            6.29225910551871,
+            -93.44323917577294,
+            81.10318756103516,
+            18.193190558900067,
+            4.225389304727225,
+            9.600967407226562,
+            0.1177881882268393
+        ],
+        "places": [
+            {
+                "name": "Lucky Fortune",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    6.249177098274231,
+                    -93.44324111938477,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1100 Light Street Suite A": {
+        "building_glb": "buildings_element.1290.glb",
+        "bounding_box": [
+            -2.450011856705949,
+            -68.0316357705431,
+            78.08695983886719,
+            30.888815232381596,
+            19.980676234201574,
+            5.7645416259765625,
+            0.14953677777823193
+        ],
+        "places": [
+            {
+                "name": "Mr. Nice Guys Bmore Weed Dispensary",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -2.949718475341797,
+                    -68.2961654663086,
+                    -4
+                ]
+            },
+            {
+                "name": "Dunkin'",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "cafe",
+                    "bakery",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -2.949718475341797,
+                    -68.2961654663086,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1022 South Charles Street": {
+        "building_glb": "buildings_element.1789.glb",
+        "bounding_box": [
+            -182.30254361055054,
+            11.766937974844911,
+            76.68104934692383,
+            24.657206092914862,
+            5.092877456180994,
+            8.214408874511719,
+            0.12540400752635436
+        ],
+        "places": [
+            {
+                "name": "Ultimate Style BarberShop",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "hair_care",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -182.3456268310547,
+                    11.766938209533691,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1026 South Charles Street": {
+        "building_glb": "buildings_element.1796.glb",
+        "bounding_box": [
+            -180.70064460634254,
+            2.4032004342170357,
+            76.38807678222656,
+            22.270188246889013,
+            5.014992324587694,
+            7.69281005859375,
+            0.13031175935743772
+        ],
+        "places": [
+            {
+                "name": "YARD",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -180.6741180419922,
+                    1.9707823395729065,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1028 South Charles Street": {
+        "building_glb": "buildings_element.1800.glb",
+        "bounding_box": [
+            -180.269480994101,
+            -2.2070527783344005,
+            76.19578170776367,
+            21.927060279393064,
+            4.239397908377705,
+            7.381919860839844,
+            0.13031203063588326
+        ],
+        "places": [
+            {
+                "name": "Vanessa Vintage Treasures",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -180.45018005371094,
+                    -2.170318305492401,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1038 Light Street": {
+        "building_glb": "buildings_element.1243.glb",
+        "bounding_box": [
+            -8.76530236303385,
+            6.3012659342390975,
+            79.73942565917969,
+            24.851043365328337,
+            4.796946702960736,
+            9.387542724609375,
+            0.16015179179087694
+        ],
+        "places": [
+            {
+                "name": "Mizan's Kitchen",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -8.675798892974854,
+                    6.215535521507263,
+                    -4
+                ]
+            },
+            {
+                "name": "New Sham",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -8.675798892974854,
+                    6.215535521507263,
+                    -8
+                ]
             }
         ]
     },
@@ -312,8 +725,273 @@
                     -306.28521728515625,
                     30.16636085510254,
                     -4
+                ]
+            }
+        ]
+    },
+    "1018 South Charles Street": {
+        "building_glb": "buildings_element.1792.glb",
+        "bounding_box": [
+            -182.7652126121974,
+            25.235736336812906,
+            76.79854202270508,
+            24.31681281481479,
+            5.036907106126497,
+            8.286109924316406,
+            0.13821081905497465
+        ],
+        "places": [
+            {
+                "name": "Seleh's De Federal Hill",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                "location": [
+                    -183.0131378173828,
+                    25.236605644226074,
+                    -4
+                ]
+            },
+            {
+                "name": "fried and fries, federal hill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -183.0131378173828,
+                    25.236605644226074,
+                    -8
+                ]
+            }
+        ]
+    },
+    "1020 South Charles Street": {
+        "building_glb": "buildings_element.1785.glb",
+        "bounding_box": [
+            -182.60834487377096,
+            16.386702404821893,
+            77.23039245605469,
+            24.860300981365818,
+            4.607632466959173,
+            9.258102416992188,
+            0.14439386859248912
+        ],
+        "places": [
+            {
+                "name": "Melessa's Weave Palace",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "hair_care",
+                    "store",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -182.78929901123047,
+                    16.386703491210938,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1032 Light Street": {
+        "building_glb": "buildings_element.1242.glb",
+        "bounding_box": [
+            -13.923614661162683,
+            20.987645199596823,
+            79.6791877746582,
+            28.708329832736,
+            5.0933129450587,
+            8.438835144042969,
+            0.15725958451382543
+        ],
+        "places": [
+            {
+                "name": "Blue Agave Mexican Food",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -13.923614501953125,
+                    21.215846061706543,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1036 Light Street": {
+        "building_glb": "buildings_element.1246.glb",
+        "bounding_box": [
+            -9.445122886311491,
+            10.980210621524193,
+            80.10213470458984,
+            24.6069459726755,
+            4.8215745221499775,
+            9.860748291015625,
+            0.15350906601157957
+        ],
+        "places": [
+            {
+                "name": "TinyBrickOven",
+                "coarse_type": "food",
+                "fine_types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "location": [
+                    -9.089422225952148,
+                    10.946614742279053,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1016 Light Street": {
+        "building_glb": "buildings_element.1263.glb",
+        "bounding_box": [
+            -18.35128319226756,
+            64.01178975285602,
+            79.84981536865234,
+            23.16791577271571,
+            4.538795474716248,
+            7.5549163818359375,
+            0.17211617049081832
+        ],
+        "places": [
+            {
+                "name": "Maria D's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -18.31394100189209,
+                    64.39668083190918,
+                    -4
+                ]
+            }
+        ]
+    },
+    "1020 Light Street": {
+        "building_glb": "buildings_element.1262.glb",
+        "bounding_box": [
+            -17.412494533399247,
+            59.64069097424626,
+            80.00381088256836,
+            22.812435545492285,
+            4.376509934764979,
+            7.950569152832031,
+            0.18043293253161935
+        ],
+        "places": [
+            {
+                "name": "Rhea eyebrow threading",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "beauty_salon",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -17.318679809570312,
+                    59.59881019592285,
+                    -4
+                ]
+            },
+            {
+                "name": "Brendali Italian Ristorante",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -17.318679809570312,
+                    59.59881019592285,
+                    -8
+                ]
+            },
+            {
+                "name": "Nepal Jewelry",
+                "coarse_type": "stores",
+                "fine_types": [
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -17.318679809570312,
+                    59.59881019592285,
+                    -12
+                ]
+            }
+        ]
+    },
+    "1006 Light Street": {
+        "building_glb": "buildings_element.1336.glb",
+        "bounding_box": [
+            -22.97138281814287,
+            95.02068920988512,
+            79.6285171508789,
+            20.429192678814182,
+            4.673341118102186,
+            6.529693603515625,
+            0.1605677498601733
+        ],
+        "places": [
+            {
+                "name": "Be More Thai",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -22.971383094787598,
+                    95.00955581665039,
+                    -4
+                ]
+            },
+            {
+                "name": "Culture Bar and Grill",
+                "coarse_type": "food",
+                "fine_types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -22.971383094787598,
+                    95.00955581665039,
+                    -8
+                ]
             }
         ]
     },
@@ -341,8 +1019,49 @@
                     -377.6005554199219,
                     121.57948303222656,
                     -4
+                ]
+            }
+        ]
+    },
+    "902 South Charles Street": {
+        "building_glb": "buildings_element.2482.glb",
+        "bounding_box": [
+            -183.92775110486832,
+            175.18328207858073,
+            80.07350158691405,
+            12.25985808238162,
+            4.090658996314271,
+            11.618988037109375,
+            0.05094965705362887
+        ],
+        "places": [
+            {
+                "name": "GameOn bar+arcade Baltimore",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                "location": [
+                    -183.89287567138672,
+                    175.19510650634766,
+                    -4
+                ]
+            },
+            {
+                "name": "Top Shelf",
+                "coarse_type": "food",
+                "fine_types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "location": [
+                    -183.89287567138672,
+                    175.19510650634766,
+                    -8
+                ]
             }
         ]
     },
@@ -371,8 +1090,7 @@
                     -397.41383361816406,
                     233.8740234375,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -402,8 +1120,7 @@
                     -386.8092803955078,
                     263.17835235595703,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             }
         ]
     },
@@ -432,8 +1149,7 @@
                     -305.6685028076172,
                     273.67774963378906,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+                ]
             }
         ]
     },
@@ -461,8 +1177,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "LASH LAB | baltimore mink lash extensions + lifts",
@@ -478,8 +1193,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "Sam Cuts",
@@ -494,8 +1208,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+                ]
             },
             {
                 "name": "Lashimore",
@@ -509,8 +1222,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "Hues on Hanover",
@@ -524,8 +1236,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+                ]
             },
             {
                 "name": "Morning Mugs",
@@ -541,8 +1252,7 @@
                     -231.6348114013672,
                     328.65025329589844,
                     -24
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             }
         ]
     },
@@ -571,8 +1281,7 @@
                     -36.02948570251465,
                     318.21075439453125,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/gamestore-0.json"
+                ]
             },
             {
                 "name": "South Baltimore Music Academy",
@@ -586,8 +1295,7 @@
                     -36.02948570251465,
                     318.21075439453125,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             }
         ]
     },
@@ -618,8 +1326,7 @@
                     -155.68185424804688,
                     344.6116485595703,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+                ]
             }
         ]
     },
@@ -649,8 +1356,7 @@
                     92.63168334960938,
                     367.7650909423828,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -678,8 +1384,7 @@
                     132.2517204284668,
                     352.23101806640625,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             },
             {
                 "name": "Figurelle Team of Cummings & Co. Realtors",
@@ -693,8 +1398,7 @@
                     132.2517204284668,
                     352.23101806640625,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+                ]
             },
             {
                 "name": "Angel Stevens and Associates",
@@ -708,8 +1412,7 @@
                     132.2517204284668,
                     352.23101806640625,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             },
             {
                 "name": "Unicorn Listings Team of Cummings & Co. Realtors",
@@ -723,8 +1426,7 @@
                     132.2517204284668,
                     352.23101806640625,
                     -16
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+                ]
             },
             {
                 "name": "Key Group of Cummings & Co. Realtors",
@@ -738,8 +1440,7 @@
                     132.2517204284668,
                     352.23101806640625,
                     -20
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+                ]
             }
         ]
     },
@@ -767,8 +1468,7 @@
                     153.84527587890625,
                     356.5506134033203,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             },
             {
                 "name": "3 Bean Coffee By Vagrant Coffee",
@@ -785,8 +1485,7 @@
                     153.84527587890625,
                     356.5506134033203,
                     -8
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/restaurant-1.json"
+                ]
             },
             {
                 "name": "PrintWithMe Print Kiosk at Vagrant Coffee Inner Harbor",
@@ -800,8 +1499,7 @@
                     153.84527587890625,
                     356.5506134033203,
                     -12
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+                ]
             }
         ]
     },
@@ -830,8 +1528,7 @@
                     202.60745239257812,
                     359.20115661621094,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+                ]
             }
         ]
     },
@@ -859,8 +1556,7 @@
                     -130.1969337463379,
                     390.1515655517578,
                     -4
-                ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                ]
             },
             {
                 "name": "Christ Lutheran Church",
@@ -876,8 +1572,34 @@
                     -130.1969337463379,
                     390.1515655517578,
                     -8
+                ]
+            }
+        ]
+    },
+    "Maria D's": {
+        "building_glb": "buildings_Maria D's.glb",
+        "bounding_box": [
+            -19.08746534092245,
+            68.56206621310128,
+            79.91072845458984,
+            23.097851239939803,
+            4.701543876923661,
+            7.5459136962890625,
+            0.1730738969373173
+        ],
+        "places": [
+            {
+                "name": "Maria D's",
+                "coarse_type": "food",
+                "fine_types": [
+                    "yes",
+                    "restaurant"
                 ],
-                "scene": "ViCo/modules/indoor_scenes/scenes/office-1.json"
+                "location": [
+                    -18.912819862365723,
+                    68.54890823364258,
+                    -4
+                ]
             }
         ]
     }

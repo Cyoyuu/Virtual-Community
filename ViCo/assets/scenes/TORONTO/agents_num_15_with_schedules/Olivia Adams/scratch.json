@@ -1,0 +1,156 @@
+{
+    "name": "Olivia Adams",
+    "first_name": "Olivia",
+    "last_name": "Adams",
+    "age": 22,
+    "innate": "self-direction, achievement, universalism",
+    "learned": "I am a barista at Starbucks. I enjoy painting and exploring new coffee recipes.",
+    "currently": "I am working on creating a new signature coffee blend.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Creative Arts Group",
+            "description": "A group of individuals passionate about arts and creativity, meeting to share ideas and work on art projects.",
+            "place": "Verno Art Studios",
+            "members": [
+                "Elizabeth Mensah",
+                "Pika Hayes",
+                "Zara Williams",
+                "Olivia Adams"
+            ],
+            "daily_activity": "working on art projects from 16:00 to 17:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "building": "Nelson Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "building": "Nelson Street",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Starbucks",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a barista",
+            "place": "Starbucks",
+            "building": "221 Queen Street West",
+            "start_time": "09:00:00",
+            "end_time": "15:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Verno Art Studios",
+            "place": null,
+            "building": null,
+            "start_time": "15:00:00",
+            "end_time": "15:30:00",
+            "start_place": "Starbucks",
+            "end_place": "Verno Art Studios"
+        },
+        {
+            "type": "main",
+            "activity": "Work on art projects with Creative Arts Group",
+            "place": "Verno Art Studios",
+            "building": "120 Adelaide Street West Unit FC-09",
+            "start_time": "15:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Smoke's Poutinerie Adelaide",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Verno Art Studios",
+            "end_place": "Smoke's Poutinerie Adelaide"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Smoke's Poutinerie Adelaide",
+            "building": "Nelson Street",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Olivia Adams's room",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Smoke's Poutinerie Adelaide",
+            "end_place": "Olivia Adams's room at Classy & Rustic Downtown Condo"
+        },
+        {
+            "type": "main",
+            "activity": "Work on creating a new signature coffee blend",
+            "place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "building": "Nelson Street",
+            "start_time": "18:30:00",
+            "end_time": "21:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Painting",
+            "place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "building": "Nelson Street",
+            "start_time": "21:00:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Light snack",
+            "place": "Olivia Adams's room at Classy & Rustic Downtown Condo",
+            "building": "Nelson Street",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Starbucks",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

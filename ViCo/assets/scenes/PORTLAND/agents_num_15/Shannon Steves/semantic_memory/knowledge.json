@@ -1,0 +1,423 @@
+{
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Leonard Park's room at Chestnut Street Lofts",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Portland Culinary Arts Society"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Chestnut Street Lofts",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Portland Culinary Arts Society"
+        ]
+    },
+    "Portland Culinary Arts Society": {
+        "description": "A society for chefs and food lovers to explore culinary arts and share recipes.",
+        "place": "Anthony's Italian Kitchen",
+        "members": [
+            "Leonard Park",
+            "Shannon Steves",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "experimenting with new recipes from 17:00 to 19:00"
+    },
+    "Shannon Steves's room at Chestnut Street Lofts": {
+        "building": "Chestnut Street Lofts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            858.0028839111328,
+            1098.2229270935059,
+            -40
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Shannon Steves's room at Chestnut Street Lofts",
+        "bounding_box": [
+            -141.61360922554724,
+            97.55113170463413,
+            133.23283767700195,
+            21.34861586454863,
+            34.8857542681896,
+            23.67967987060547,
+            -0.7911789717130547
+        ]
+    },
+    "Cellardoor Winery Portland": {
+        "building": "131 Middle Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1257.2682800292969,
+            997.2596249580383,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            257.26828516118115,
+            -2.6513035836115257,
+            125.62115859985352,
+            16.39617840239155,
+            41.503117149458845,
+            16.62425994873047,
+            0.9285386080953706
+        ]
+    },
+    "Anthony's Italian Kitchen": {
+        "building": "151 Middle Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1191.1460342407227,
+            943.6793079376221,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            191.1460373681949,
+            -56.754802766270444,
+            125.63093185424805,
+            20.79580097474165,
+            34.407054297785564,
+            14.100685119628906,
+            0.8759686111191223
+        ]
+    },
+    "Portland High School": {
+        "building": "Portland High School",
+        "coarse_type": "office",
+        "fine_types": [
+            "secondary_school",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            808.4801483154297,
+            1019.8216705322266,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -185.75919903734297,
+            20.411444776244544,
+            133.04767990112305,
+            77.55529604558119,
+            103.42290372239533,
+            20.644081115722656,
+            -0.7798124791054407
+        ]
+    },
+    "Portland Public Library - Main Branch": {
+        "building": "Portland Public Library - Main Branch",
+        "coarse_type": "office",
+        "fine_types": [
+            "yes",
+            "library"
+        ],
+        "location": [
+            753.1604461669922,
+            900.5507717132568,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -251.01952680696658,
+            -95.48478110906362,
+            131.90691757202148,
+            36.962443605037656,
+            103.00650039069997,
+            14.241584777832031,
+            0.7579679697629191
+        ]
+    },
+    "St. Vincent de Paul Soup Kitchen": {
+        "building": "307 Congress Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1178.972671508789,
+            1261.0507278442383,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            173.78999370658667,
+            260.8301976759537,
+            128.16191482543945,
+            30.52242421915047,
+            53.98091194379296,
+            10.322654724121094,
+            0.7532329437146416
+        ]
+    },
+    "Peace Food Market": {
+        "building": "Chestnut Street Lofts",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            858.0028839111328,
+            1098.2229270935059,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -141.61360922554724,
+            97.55113170463413,
+            133.23283767700195,
+            21.34861586454863,
+            34.8857542681896,
+            23.67967987060547,
+            -0.7911789717130547
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "81 Market Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1146.3516998291016,
+            946.2718982696533,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            146.35169786566527,
+            -54.362568509628986,
+            128.45725631713867,
+            18.635625198244817,
+            37.8755071847112,
+            17.06385040283203,
+            0.9080115825616981
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "60 Pearl Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "furniture_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1207.7763671875,
+            956.5260715484619,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            207.776369067647,
+            -43.68539968817836,
+            125.79769515991211,
+            20.78980323356521,
+            35.029764044372634,
+            15.094429016113281,
+            0.8699426285865978
+        ]
+    },
+    "Arcana": {
+        "building": "81 Market Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "spa",
+            "store",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1146.3516998291016,
+            946.2718982696533,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            146.35169786566527,
+            -54.362568509628986,
+            128.45725631713867,
+            18.635625198244817,
+            37.8755071847112,
+            17.06385040283203,
+            0.9080115825616981
+        ]
+    },
+    "Newbury Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            284.2811804009354,
+            80.70894360250102
+        ],
+        "rotation": 2.2372398465743037,
+        "bounding_box": null
+    },
+    "Myrtle Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -124.21283182453655,
+            39.12800401655841
+        ],
+        "rotation": 0.7482367288107186,
+        "bounding_box": null
+    },
+    "Cotton Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -89.99300261485813,
+            -337.0647980819527
+        ],
+        "rotation": 0.704747846603894,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.82260855492288,
+            -166.9149809256802
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -36.651323532587,
+            11.167209905855968
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            98.89081557632319,
+            -157.81898437856177
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.83843186003088,
+            -47.9184954826889
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            203.64750981071816,
+            243.06240789600537
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -72.58185099571132,
+            -191.37601287689628
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -29.993877214504924,
+            206.52372521654934
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Cotton Street": [
+            {
+                "stop_name": "Newbury Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Myrtle Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Cotton Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Newbury Street": [
+            {
+                "stop_name": "Cotton Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Myrtle Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Newbury Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

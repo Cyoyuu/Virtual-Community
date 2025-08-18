@@ -1,0 +1,120 @@
+[
+    {
+        "type": "sleep",
+        "activity": "Sleep",
+        "place": "Shannon Steves's room at Theatre Park",
+        "building": "Theatre Park",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Breakfast at Boreal Mobile Foods Inc.",
+        "place": "Boreal Mobile Foods Inc.",
+        "building": "Theatre Park",
+        "start_time": "08:00:00",
+        "end_time": "08:30:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Richmond Adelaide Child Care Centre",
+        "place": null,
+        "building": null,
+        "start_time": "08:30:00",
+        "end_time": "09:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Teaching and developing new methods",
+        "place": "Richmond Adelaide Child Care Centre",
+        "building": "Oxford Tower",
+        "start_time": "09:00:00",
+        "end_time": "12:00:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Lunch at LiberTerre",
+        "place": "LiberTerre",
+        "building": "Oxford Tower",
+        "start_time": "12:00:00",
+        "end_time": "12:30:00"
+    },
+    {
+        "type": "main",
+        "activity": "Continue teaching and developing new methods",
+        "place": "Richmond Adelaide Child Care Centre",
+        "building": "Oxford Tower",
+        "start_time": "12:30:00",
+        "end_time": "15:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to Verno Art Studios",
+        "place": null,
+        "building": null,
+        "start_time": "15:00:00",
+        "end_time": "15:30:00",
+        "start_place": "Richmond Adelaide Child Care Centre",
+        "end_place": "Verno Art Studios"
+    },
+    {
+        "type": "main",
+        "activity": "Visit Verno Art Studios",
+        "place": "Verno Art Studios",
+        "building": "120 Adelaide Street West Unit FC-09",
+        "start_time": "15:30:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute to F45 Training Toronto Downtown",
+        "place": null,
+        "building": null,
+        "start_time": "17:00:00",
+        "end_time": "17:30:00",
+        "start_place": "Verno Art Studios",
+        "end_place": "BRANDOR COFFEE"
+    },
+    {
+        "type": "meal",
+        "activity": "Dinner at BRANDOR COFFEE",
+        "place": "BRANDOR COFFEE",
+        "building": "North Tower",
+        "start_time": "17:30:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "type": "main",
+        "activity": "Fitness and sports activities",
+        "place": "F45 Training Toronto Downtown",
+        "building": "North Tower",
+        "start_time": "18:00:00",
+        "end_time": "19:00:00"
+    },
+    {
+        "type": "commute",
+        "activity": "Commute back to Theatre Park",
+        "place": null,
+        "building": null,
+        "start_time": "19:00:00",
+        "end_time": "19:30:00",
+        "start_place": "F45 Training Toronto Downtown",
+        "end_place": "Shannon Steves's room at Theatre Park"
+    },
+    {
+        "type": "main",
+        "activity": "Reading and relaxation",
+        "place": "Shannon Steves's room at Theatre Park",
+        "building": "Theatre Park",
+        "start_time": "19:30:00",
+        "end_time": "23:30:00"
+    },
+    {
+        "type": "meal",
+        "activity": "Light snack at Fresh and Beverages Store",
+        "place": "Fresh and Beverages Store",
+        "building": "Theatre Park",
+        "start_time": "23:30:00",
+        "end_time": "23:59:59"
+    }
+]

@@ -1,0 +1,180 @@
+{
+    "name": "Joe Anderson",
+    "first_name": "Joe",
+    "last_name": "Anderson",
+    "age": 31,
+    "innate": "security, tradition, achievement",
+    "learned": "I am a chef at Restaurante Casa America. I enjoy experimenting with traditional Spanish recipes.",
+    "currently": "I am perfecting a new paella recipe for the restaurant's menu.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Madrid Culinary Club",
+            "description": "A group of food enthusiasts who enjoy cooking, tasting, and discussing culinary arts.",
+            "place": "Restaurante Casa America",
+            "members": [
+                "Joe Anderson",
+                "Kate Novak",
+                "James Thompson"
+            ],
+            "daily_activity": "cooking and tasting new recipes from 18:00 to 20:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Joe Anderson's room at Hermanos Revilla S.A.",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Joe Anderson's room at Hermanos Revilla S.A.",
+            "building": "Calle de Prim",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "place": null,
+            "building": null,
+            "start_time": "08:30:00",
+            "end_time": "09:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Visit exhibition at Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "place": "Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
+            "start_time": "09:00:00",
+            "end_time": "11:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurante Casa America",
+            "place": null,
+            "building": null,
+            "start_time": "11:00:00",
+            "end_time": "11:30:00",
+            "start_place": "Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "end_place": "Restaurante Casa America"
+        },
+        {
+            "type": "main",
+            "activity": "Experiment with new paella recipe",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "11:30:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "14:00:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Continue experimenting with new paella recipe",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "14:30:00",
+            "end_time": "17:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Buenas Noches Madrid",
+            "place": null,
+            "building": null,
+            "start_time": "17:00:00",
+            "end_time": "17:30:00",
+            "start_place": "Restaurante Casa America",
+            "end_place": "Buenas Noches Madrid"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Buenas Noches Madrid",
+            "building": "Calle del Conde de Xiquena",
+            "start_time": "17:30:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Restaurante Casa America",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:30:00",
+            "start_place": "Buenas Noches Madrid",
+            "end_place": "Restaurante Casa America"
+        },
+        {
+            "type": "main",
+            "activity": "Madrid Culinary Club meeting",
+            "place": "Restaurante Casa America",
+            "building": "Plaza Cibeles",
+            "start_time": "18:30:00",
+            "end_time": "20:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Joe Anderson's room at Hermanos Revilla S.A.",
+            "place": null,
+            "building": null,
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Restaurante Casa America",
+            "end_place": "Joe Anderson's room at Hermanos Revilla S.A."
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Joe Anderson's room at Hermanos Revilla S.A.",
+            "building": "Calle de Prim",
+            "start_time": "20:30:00",
+            "end_time": "23:30:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Late-night snack",
+            "place": "Joe Anderson's room at Hermanos Revilla S.A.",
+            "building": "Calle de Prim",
+            "start_time": "23:30:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Restaurante Casa America",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

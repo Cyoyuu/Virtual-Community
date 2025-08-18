@@ -1,0 +1,211 @@
+{
+    "name": "Brycer Rodriguez",
+    "first_name": "Brycer",
+    "last_name": "Rodriguez",
+    "age": 22,
+    "innate": "stimulation, hedonism, self-direction",
+    "learned": "I am a barista at Haven Coffee - Green Square, passionate about creating the perfect cup of coffee. I enjoy skateboarding and live music.",
+    "currently": "I want to master latte art and participate in a local barista competition.",
+    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "groups": [
+        {
+            "name": "Fitness Enthusiasts",
+            "description": "A group of individuals passionate about fitness and healthy living.",
+            "place": "F45 Training Alexandria",
+            "members": [
+                "Chad Thompson",
+                "Brycer Rodriguez",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "working out from 17:00 to 18:00"
+        }
+    ],
+    "daily_requirement": "",
+    "curr_time": "October 01, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "living_place": "Brycer Rodriguez's room at Off The Rails",
+    "react_freq": 60,
+    "importance_trigger_max": 250,
+    "importance_trigger_curr": 250,
+    "importance_ele_n": 0,
+    "daily_plan": [],
+    "hourly_schedule": [
+        {
+            "type": "sleep",
+            "activity": "Sleep",
+            "place": "Brycer Rodriguez's room at Off The Rails",
+            "building": "71/240 Wyndham Street",
+            "start_time": "00:00:00",
+            "end_time": "08:00:00"
+        },
+        {
+            "type": "meal",
+            "activity": "Breakfast",
+            "place": "Haven Coffee - Green Square",
+            "building": "Portman House",
+            "start_time": "08:00:00",
+            "end_time": "08:30:00"
+        },
+        {
+            "type": "main",
+            "activity": "Work as a barista",
+            "place": "Haven Coffee - Green Square",
+            "building": "Portman House",
+            "start_time": "08:30:00",
+            "end_time": "12:00:00"
+        },
+        {
+            "type": "main",
+            "activity": "Practice latte art",
+            "place": "Haven Coffee - Green Square",
+            "building": "Portman House",
+            "start_time": "12:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Miso Japanese Teishoku Restaurant",
+            "place": null,
+            "building": null,
+            "start_time": "14:00:00",
+            "end_time": "14:10:00",
+            "start_place": "Haven Coffee - Green Square",
+            "end_place": "Miso Japanese Teishoku Restaurant"
+        },
+        {
+            "type": "meal",
+            "activity": "Lunch",
+            "place": "Miso Japanese Teishoku Restaurant",
+            "building": "14 Ebsworth Street",
+            "start_time": "14:10:00",
+            "end_time": "14:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Green Square Library",
+            "place": null,
+            "building": null,
+            "start_time": "14:30:00",
+            "end_time": "14:45:00",
+            "start_place": "Miso Japanese Teishoku Restaurant",
+            "end_place": "Green Square Library"
+        },
+        {
+            "type": "main",
+            "activity": "Research latte art techniques",
+            "place": "Green Square Library",
+            "building": "Green Square Library",
+            "start_time": "14:45:00",
+            "end_time": "16:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to F45 Training Alexandria",
+            "place": null,
+            "building": null,
+            "start_time": "16:30:00",
+            "end_time": "16:45:00",
+            "start_place": "Green Square Library",
+            "end_place": "F45 Training Alexandria"
+        },
+        {
+            "type": "main",
+            "activity": "Workout with Fitness Enthusiasts",
+            "place": "F45 Training Alexandria",
+            "building": "3 Botany Road",
+            "start_time": "16:45:00",
+            "end_time": "18:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Camy's Chargrill Chicken Green Square",
+            "place": null,
+            "building": null,
+            "start_time": "18:00:00",
+            "end_time": "18:15:00",
+            "start_place": "F45 Training Alexandria",
+            "end_place": "Camy's Chargrill Chicken Green Square"
+        },
+        {
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Camy's Chargrill Chicken Green Square",
+            "building": "Green Square",
+            "start_time": "18:15:00",
+            "end_time": "18:45:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Brycer Rodriguez's room at Off The Rails",
+            "place": null,
+            "building": null,
+            "start_time": "18:45:00",
+            "end_time": "19:00:00",
+            "start_place": "Camy's Chargrill Chicken Green Square",
+            "end_place": "Brycer Rodriguez's room at Off The Rails"
+        },
+        {
+            "type": "main",
+            "activity": "Skateboarding",
+            "place": "Brycer Rodriguez's room at Off The Rails",
+            "building": "71/240 Wyndham Street",
+            "start_time": "19:00:00",
+            "end_time": "20:30:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute to Zetland Hotel",
+            "place": null,
+            "building": null,
+            "start_time": "20:30:00",
+            "end_time": "20:40:00",
+            "start_place": "Brycer Rodriguez's room at Off The Rails",
+            "end_place": "Zetland Hotel"
+        },
+        {
+            "type": "main",
+            "activity": "Attend live music event",
+            "place": "Zetland Hotel",
+            "building": "Zetland Hotel",
+            "start_time": "20:40:00",
+            "end_time": "23:00:00"
+        },
+        {
+            "type": "commute",
+            "activity": "Commute back to Brycer Rodriguez's room at Off The Rails",
+            "place": null,
+            "building": null,
+            "start_time": "23:00:00",
+            "end_time": "23:15:00",
+            "start_place": "Zetland Hotel",
+            "end_place": "Brycer Rodriguez's room at Off The Rails"
+        },
+        {
+            "type": "main",
+            "activity": "Relax and unwind",
+            "place": "Brycer Rodriguez's room at Off The Rails",
+            "building": "71/240 Wyndham Street",
+            "start_time": "23:15:00",
+            "end_time": "23:59:59"
+        }
+    ],
+    "held_objects": [
+        null,
+        null
+    ],
+    "act_address": null,
+    "act_start_time": null,
+    "act_duration": null,
+    "act_description": null,
+    "act_event": "",
+    "chat": null,
+    "chatting_with_buffer": {},
+    "chatting_end_time": null,
+    "working_place": "Haven Coffee - Green Square",
+    "commute_plan": null,
+    "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
+    "chatting_buffer": [],
+    "current_vehicle": null,
+    "current_place": null
+}

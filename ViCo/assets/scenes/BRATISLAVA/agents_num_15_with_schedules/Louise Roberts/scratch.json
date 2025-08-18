@@ -3,28 +3,28 @@
     "first_name": "Louise",
     "last_name": "Roberts",
     "age": 29,
-    "innate": "stimulation, hedonism",
-    "learned": "I am a chef at Bistro Gourmet, specializing in gourmet cuisine. I enjoy experimenting with new recipes and traveling.",
-    "currently": "I want to create a new signature dish for the restaurant.",
-    "lifestyle": "I go to bed around midnight, wake up around 08:00, eat dinner around 18:00",
+    "innate": "self-direction, achievement, security",
+    "learned": "I am a software developer at \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko, creating innovative solutions for educational platforms.",
+    "currently": "I am developing a new app to enhance online learning experiences.",
+    "lifestyle": "I go to bed around 00:00, wake up around 08:00, eat dinner around 19:00",
     "groups": [
         {
-            "name": "Culinary Creators",
-            "description": "A group of chefs and food enthusiasts who experiment with new recipes and culinary techniques.",
-            "place": "Bistro Gourmet",
+            "name": "Tech Innovators Club",
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
             "members": [
-                "Jody Petersen",
                 "Louise Roberts",
-                "Megan Carter",
-                "Olivia Adams"
+                "Mark Zuckerberg",
+                "Tim Cook",
+                "Roth Miller"
             ],
-            "daily_activity": "experimenting with recipes from 15:00 to 16:30"
+            "daily_activity": "discussing technology trends from 17:00 to 18:30"
         }
     ],
     "daily_requirement": "",
     "curr_time": "October 01, 2024, 09:00:00",
     "start_time": "October 1, 2024, 09:00:00",
-    "living_place": "Louise Roberts's room at Milk n Honey Homes",
+    "living_place": "Louise Roberts's room at Lucas Apartment",
     "react_freq": 60,
     "importance_trigger_max": 250,
     "importance_trigger_curr": 250,
@@ -34,147 +34,113 @@
         {
             "type": "sleep",
             "activity": "Sleep",
-            "place": "Louise Roberts's room at Milk n Honey Homes",
-            "building": "Swetlikov dom",
+            "place": "Louise Roberts's room at Lucas Apartment",
+            "building": "5 Tolst\u00e9ho Close to Presidential palace",
             "start_time": "00:00:00",
             "end_time": "08:00:00"
         },
         {
-            "type": "meal",
-            "activity": "Breakfast",
-            "place": "Bistro Gourmet",
-            "building": "Crowne Plaza",
+            "type": "commute",
+            "activity": "Commute to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "place": null,
+            "building": null,
             "start_time": "08:00:00",
             "end_time": "08:30:00"
         },
         {
-            "type": "commute",
-            "activity": "Commute to Slovensk\u00e1 technick\u00e1 kni\u017enica",
-            "place": null,
-            "building": null,
-            "start_time": "08:30:00",
-            "end_time": "09:00:00"
-        },
-        {
             "type": "main",
-            "activity": "Research new recipes and culinary techniques",
-            "place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
-            "building": "24",
-            "start_time": "09:00:00",
-            "end_time": "11:00:00"
+            "activity": "Work on developing a new app to enhance online learning experiences",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "08:30:00",
+            "end_time": "12:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Le Petit Cafe & Restaurant",
+            "activity": "Commute to Street Good - Healthy bistro in Bratislava",
             "place": null,
             "building": null,
-            "start_time": "11:00:00",
-            "end_time": "11:30:00",
-            "start_place": "Slovensk\u00e1 technick\u00e1 kni\u017enica",
-            "end_place": "Le Petit Cafe & Restaurant"
+            "start_time": "12:30:00",
+            "end_time": "13:00:00",
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "Street Good - Healthy bistro in Bratislava"
         },
         {
             "type": "meal",
             "activity": "Lunch",
-            "place": "Le Petit Cafe & Restaurant",
-            "building": "Such\u00e9 m\u00fdto 510/19",
-            "start_time": "11:30:00",
-            "end_time": "12:00:00"
+            "place": "Street Good - Healthy bistro in Bratislava",
+            "building": "Palis\u00e1dy 34",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Bistro Gourmet",
+            "activity": "Commute back to \u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
             "place": null,
             "building": null,
-            "start_time": "12:00:00",
-            "end_time": "12:30:00",
-            "start_place": "Le Petit Cafe & Restaurant",
-            "end_place": "Bistro Gourmet"
+            "start_time": "14:00:00",
+            "end_time": "14:30:00",
+            "start_place": "Street Good - Healthy bistro in Bratislava",
+            "end_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko"
         },
         {
             "type": "main",
-            "activity": "Prepare for Culinary Creators group activity",
-            "place": "Bistro Gourmet",
-            "building": "Crowne Plaza",
-            "start_time": "12:30:00",
-            "end_time": "15:00:00"
+            "activity": "Continue working on the app development",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "14:30:00",
+            "end_time": "17:00:00"
         },
         {
             "type": "main",
-            "activity": "Experiment with new recipes with Culinary Creators",
-            "place": "Bistro Gourmet",
-            "building": "Crowne Plaza",
-            "start_time": "15:00:00",
-            "end_time": "16:30:00"
-        },
-        {
-            "type": "main",
-            "activity": "Develop new signature dish",
-            "place": "Bistro Gourmet",
-            "building": "Crowne Plaza",
-            "start_time": "16:30:00",
-            "end_time": "18:00:00"
-        },
-        {
-            "type": "meal",
-            "activity": "Dinner",
-            "place": "Bistro Gourmet",
-            "building": "Crowne Plaza",
-            "start_time": "18:00:00",
+            "activity": "Discuss technology trends with Tech Innovators Club",
+            "place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "building": "\u0160tetinova 143/2",
+            "start_time": "17:00:00",
             "end_time": "18:30:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Banco Casino",
+            "activity": "Commute to Slovak Restaurant",
             "place": null,
             "building": null,
             "start_time": "18:30:00",
             "end_time": "19:00:00",
-            "start_place": "Bistro Gourmet",
-            "end_place": "Banco Casino"
+            "start_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
+            "end_place": "Slovak Restaurant"
         },
         {
-            "type": "main",
-            "activity": "Relax and enjoy entertainment",
-            "place": "Banco Casino",
-            "building": "Crowne Plaza",
+            "type": "meal",
+            "activity": "Dinner",
+            "place": "Slovak Restaurant",
+            "building": "Hotel Tatra",
             "start_time": "19:00:00",
-            "end_time": "21:00:00"
+            "end_time": "20:00:00"
         },
         {
             "type": "commute",
-            "activity": "Commute to Bar On",
+            "activity": "Commute back to Louise Roberts's room at Lucas Apartment",
             "place": null,
             "building": null,
-            "start_time": "21:00:00",
-            "end_time": "21:30:00",
-            "start_place": "Banco Casino",
-            "end_place": "Bar On"
+            "start_time": "20:00:00",
+            "end_time": "20:30:00",
+            "start_place": "Slovak Restaurant",
+            "end_place": "Louise Roberts's room at Lucas Apartment"
         },
         {
             "type": "main",
-            "activity": "Socialize and unwind",
-            "place": "Bar On",
-            "building": "Obchodn\u00e1 557",
-            "start_time": "21:30:00",
+            "activity": "Relax and unwind",
+            "place": "Louise Roberts's room at Lucas Apartment",
+            "building": "5 Tolst\u00e9ho Close to Presidential palace",
+            "start_time": "20:30:00",
             "end_time": "23:00:00"
         },
         {
-            "type": "commute",
-            "activity": "Commute back to Louise Roberts's room at Milk n Honey Homes",
-            "place": null,
-            "building": null,
-            "start_time": "23:00:00",
-            "end_time": "23:30:00",
-            "start_place": "Bar On",
-            "end_place": "Louise Roberts's room at Milk n Honey Homes"
-        },
-        {
             "type": "main",
-            "activity": "Wind down and prepare for bed",
-            "place": "Louise Roberts's room at Milk n Honey Homes",
-            "building": "Swetlikov dom",
-            "start_time": "23:30:00",
+            "activity": "Prepare for bed",
+            "place": "Louise Roberts's room at Lucas Apartment",
+            "building": "5 Tolst\u00e9ho Close to Presidential palace",
+            "start_time": "23:00:00",
             "end_time": "23:59:59"
         }
     ],
@@ -187,13 +153,13 @@
     "act_duration": null,
     "act_description": null,
     "act_event": "",
-    "chatting_with": null,
     "chat": null,
     "chatting_with_buffer": {},
     "chatting_end_time": null,
-    "working_place": "Bistro Gourmet",
+    "working_place": "\u0160kolsk\u00e9 v\u00fdpo\u010dtov\u00e9 stredisko",
     "commute_plan": null,
     "commute_plan_idx": 0,
+    "last_enter_bus_time": null,
     "chatting_buffer": [],
     "current_vehicle": null,
     "current_place": null
