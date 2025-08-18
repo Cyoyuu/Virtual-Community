@@ -1,4 +1,155 @@
 {
+    "La Fortezza": {
+        "building": "La Fortezza",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            823.5190963745117,
+            1147.401710510254,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+    },
+    "Florence Fortezza Apartment": {
+        "building": "Viale Filippo Strozzi",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.2858963012695,
+            868.8813095092773,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Firenze Immobili": {
+        "building": "Via Francesco Puccinotti",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            723.1407318115234,
+            1276.262954711914,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Beverages and Snacks Store": {
+        "building": "Via Lorenzo Il Magnifico",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            928.5318126678467,
+            1119.4418563842773,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "Snacks and DM Store": {
+        "building": "Via Volga c/o Fiera del Levante pad.129",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1134.3043975830078,
+            1257.1005325317383,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+    },
+    "Beverages and DM Store": {
+        "building": "Viale Filippo Strozzi",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.2858963012695,
+            868.8813095092773,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "Ruote Apartment Firenze": {
+        "building": "Palazzo della Cassa di Risparmio",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1074.5916862487793,
+            920.5028343200684,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Fresh and DM Store": {
+        "building": "Italy",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1159.2578582763672,
+            1107.1815452575684,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Giardino della Fortezza": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            717.8504413958942,
+            939.6318320111532,
+            -0.006516947778877125
+        ],
+        "scene": null
+    },
+    "Shannon Steves's room at Florence Fortezza Apartment": {
+        "building": "Viale Filippo Strozzi",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.2858963012695,
+            868.8813095092773,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Shannon Steves's room at Florence Fortezza Apartment"
+    },
     "HOTEL ZANOBI 45": {
         "building": "Via S. Zanobi",
         "coarse_type": "accommodation",
@@ -8,8 +159,8 @@
             "establishment"
         ],
         "location": [
-            22.76116180419922,
-            -276.3382263183594,
+            1022.7611618041992,
+            723.6617736816406,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
@@ -23,11 +174,150 @@
             "establishment"
         ],
         "location": [
-            -266.62755584716797,
-            -196.65049743652344,
+            733.372444152832,
+            803.3495025634766,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Ristorante Pizzeria da Nasone": {
+        "building": "Via Santa Caterina D'Alessandria",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1096.206127166748,
+            1008.4232486486435,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Pizza Del Vino": {
+        "building": "Italy",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1159.2578582763672,
+            1107.1815452575684,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Casa dello Studente": {
+        "building": "Casa dello Studente",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "dormitory"
+        ],
+        "location": [
+            819.5868606567383,
+            768.9266738891602,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+    },
+    "Pika Hayes's room at Ruote Apartment Firenze": {
+        "building": "Palazzo della Cassa di Risparmio",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1074.5916862487793,
+            920.5028343200684,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Pika Hayes's room at Ruote Apartment Firenze"
+    },
+    "The Florence Irish Pub": {
+        "building": "Palazzo della Cassa di Risparmio",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1074.5916862487793,
+            920.5028343200684,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Megan Carter's room at Casa dello Studente": {
+        "building": "Casa dello Studente",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "dormitory"
+        ],
+        "location": [
+            819.5868606567383,
+            768.9266738891602,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Megan Carter's room at Casa dello Studente"
+    },
+    "Biblioteca del Comitato Regionale Toscano del Coni": {
+        "building": "La Fortezza",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.5190963745117,
+            1147.401710510254,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "L'ortolano": {
+        "building": "Via Santa Reparata",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1197.4659042358398,
+            806.7312774658203,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Cillian Murphy's room at La Fortezza": {
+        "building": "La Fortezza",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            823.5190963745117,
+            1147.401710510254,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Cillian Murphy's room at La Fortezza"
     },
     "VaL\u00f9 Bakery & Cakes": {
         "building": "Viale Filippo Strozzi",
@@ -42,29 +332,30 @@
             "establishment"
         ],
         "location": [
-            -209.71410369873047,
-            -131.11869049072266,
+            790.2858963012695,
+            868.8813095092773,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Florence Fortezza Apartment": {
-        "building": "Viale Filippo Strozzi",
+    "Alex Jefferson's room at Firenze Immobili": {
+        "building": "Via Francesco Puccinotti",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -209.71410369873047,
-            -131.11869049072266,
+            723.1407318115234,
+            1276.262954711914,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Alex Jefferson's room at Firenze Immobili"
     },
-    "Tabacchi Valori Bollati": {
-        "building": "Viale Filippo Strozzi",
+    "Fresh and Snacks Store": {
+        "building": "Via XX Settembre",
         "coarse_type": "stores",
         "fine_types": [
             "store",
@@ -72,72 +363,11 @@
             "establishment"
         ],
         "location": [
-            -209.71410369873047,
-            -131.11869049072266,
-            -28
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-    },
-    "wineapartmentsflorence nebbiolo": {
-        "building": "Via di Barbano",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -188.251708984375,
-            -169.98658752441406,
+            888.0525512695312,
+            1260.0444030761719,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-    },
-    "Chef Executive": {
-        "building": "Via Cosimo Ridolfi",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -199.10254669189453,
-            -185.53207397460938,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "sme.t srls": {
-        "building": "Via Cosimo Ridolfi",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -199.10254669189453,
-            -185.53207397460938,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Villa Royal B&B": {
-        "building": "Piazza della Indipendenza",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -47.90206718444824,
-            -146.06090545654297,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
     },
     "Daniela Petrini Insegnante Yoga": {
         "building": "Via San Zanobi",
@@ -149,58 +379,27 @@
             "establishment"
         ],
         "location": [
-            70.42979431152344,
-            -207.32538604736328,
+            1070.4297943115234,
+            792.6746139526367,
             -4
         ],
         "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "Ruote 25 primo": {
-        "building": "Via delle Ruote",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            162.06593322753906,
-            -188.39391326904297,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Chandan Chavan": {
-        "building": "Via Santa Reparata",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            197.46590423583984,
-            -193.2687225341797,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "L'ortolano": {
-        "building": "Via Santa Reparata",
+    "Chef Executive": {
+        "building": "Via Cosimo Ridolfi",
         "coarse_type": "food",
         "fine_types": [
-            "grocery_or_supermarket",
-            "store",
+            "restaurant",
             "point_of_interest",
             "food",
             "establishment"
         ],
         "location": [
-            197.46590423583984,
-            -193.2687225341797,
-            -8
+            800.8974533081055,
+            814.4679260253906,
+            -4
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Lo Saj Libanese": {
         "building": "Lo Saj Libanese",
@@ -214,314 +413,11 @@
             "establishment"
         ],
         "location": [
-            152.5122528076172,
-            -125.71013259887695,
+            1152.5122528076172,
+            874.289867401123,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Giardino della Fortezza": {
-        "building": "open space",
-        "coarse_type": "open",
-        "fine_types": [
-            "park",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -282.14955860410583,
-            -60.368167988846864,
-            -0.006516947778877125
-        ],
-        "scene": null
-    },
-    "AroundBlu": {
-        "building": "The Student Hotel Firenze Lavagnini",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -163.36341094970703,
-            30.17636728286743,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Ristorante Pizzeria da Nasone": {
-        "building": "Via Santa Caterina D'Alessandria",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            96.20612716674805,
-            8.423248648643494,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Appartamento \"Il Giglio di Caterina\"": {
-        "building": "Via Santa Caterina D'Alessandria",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            96.20612716674805,
-            8.423248648643494,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "The Florence Irish Pub": {
-        "building": "Palazzo della Cassa di Risparmio",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            74.5916862487793,
-            -79.49716567993164,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Ruote Apartment Firenze": {
-        "building": "Palazzo della Cassa di Risparmio",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            74.5916862487793,
-            -79.49716567993164,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Florence Apartments, Home Feeling - Zarina": {
-        "building": "Via Zara",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            283.43336486816406,
-            -38.01963138580322,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Residenza Johanna I": {
-        "building": "Via Bonifacio Lupi",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            231.95501708984375,
-            0.9904422760009766,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Biblioteca del Comitato Regionale Toscano del Coni": {
-        "building": "La Fortezza",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -176.48090362548828,
-            147.4017105102539,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "La Fortezza": {
-        "building": "La Fortezza",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "yes",
-            "hotel"
-        ],
-        "location": [
-            -176.48090362548828,
-            147.4017105102539,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Fiorella Gem": {
-        "building": "Via Lorenzo Il Magnifico",
-        "coarse_type": "stores",
-        "fine_types": [
-            "jewelry_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -71.46818733215332,
-            119.44185638427734,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-    },
-    "Leone X Guest House": {
-        "building": "Via Leone X",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -19.803388595581055,
-            88.8008041381836,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Pizza Del Vino": {
-        "building": "Italy",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            159.2578582763672,
-            107.18154525756836,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Noise Hair Lab": {
-        "building": "Italy",
-        "coarse_type": "stores",
-        "fine_types": [
-            "hair_care",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            159.2578582763672,
-            107.18154525756836,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "Lavagnini My Place B&B": {
-        "building": "Viale Spartaco Lavagnini",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            204.18753814697266,
-            124.93262100219727,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Firenze Immobili": {
-        "building": "Via Francesco Puccinotti",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -276.85926818847656,
-            276.26295471191406,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "ghd Italia S.r.l.": {
-        "building": "Via XX Settembre",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -111.94744873046875,
-            260.0444030761719,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-    },
-    "2Shop": {
-        "building": "Via Volga c/o Fiera del Levante pad.129",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            134.3043975830078,
-            257.1005325317383,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
-    },
-    "Clizia Jewelry": {
-        "building": "Viale Giovanni Milton",
-        "coarse_type": "stores",
-        "fine_types": [
-            "jewelry_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            166.14141082763672,
-            269.09033966064453,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "Casa dello Studente": {
-        "building": "Casa dello Studente",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "dormitory"
-        ],
-        "location": [
-            -180.41313934326172,
-            -231.07332611083984,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
     "Via di Barbano Bus Stop": {
         "building": "open space",
@@ -529,7 +425,8 @@
         "fine_type": "bus stop",
         "location": [
             -159.17645632120642,
-            -97.12648510269636
+            -97.12648510269636,
+            119.24645732484645
         ],
         "scene": null
     },
@@ -539,7 +436,8 @@
         "fine_type": "bus stop",
         "location": [
             73.718397479586,
-            157.0375582880194
+            157.0375582880194,
+            120.34484955032309
         ],
         "scene": null
     },
@@ -549,7 +447,8 @@
         "fine_type": "bus stop",
         "location": [
             198.54545099848747,
-            -207.56771695981305
+            -207.56771695981305,
+            118.93911444043434
         ],
         "scene": null
     },
@@ -559,7 +458,8 @@
         "fine_type": "bicycle station",
         "location": [
             109.10030669329115,
-            20.211776902538066
+            20.211776902538066,
+            119.29332837362519
         ],
         "scene": null
     },
@@ -569,7 +469,8 @@
         "fine_type": "bicycle station",
         "location": [
             -285.15964413671514,
-            -64.81051201181442
+            -64.81051201181442,
+            117.8658849927833
         ],
         "scene": null
     },
@@ -579,7 +480,8 @@
         "fine_type": "bicycle station",
         "location": [
             174.935037270247,
-            197.6304244641488
+            197.6304244641488,
+            121.05242429503883
         ],
         "scene": null
     },
@@ -589,7 +491,8 @@
         "fine_type": "bicycle station",
         "location": [
             -161.85953485775573,
-            160.87276093862096
+            160.87276093862096,
+            120.64575588464366
         ],
         "scene": null
     },
@@ -599,7 +502,8 @@
         "fine_type": "bicycle station",
         "location": [
             19.5612585728379,
-            -202.3741103199879
+            -202.3741103199879,
+            117.94902959299858
         ],
         "scene": null
     },
@@ -609,7 +513,8 @@
         "fine_type": "bicycle station",
         "location": [
             -214.18704208254903,
-            -173.30503259223443
+            -173.30503259223443,
+            118.64615908731696
         ],
         "scene": null
     }

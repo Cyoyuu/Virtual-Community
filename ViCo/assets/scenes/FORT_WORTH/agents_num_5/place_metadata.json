@@ -1,80 +1,18 @@
 {
-    "Fort Worth Public Library - Downtown Express": {
-        "building": "Fort Worth Old City Hall",
-        "coarse_type": "office",
+    "Fresh and Beverages Store": {
+        "building": "Star-Telegram Building",
+        "coarse_type": "stores",
         "fine_types": [
-            "library",
+            "beauty_salon",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            30.513195037841797,
-            -228.81057739257812,
+            957.7258377075195,
+            1015.7194132804871,
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Burk Burnett Park": {
-        "building": "open space",
-        "coarse_type": "open",
-        "fine_types": [
-            "park",
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -246.47042144151004,
-            -102.19664373381177,
-            -0.0055793541536104385
-        ],
-        "scene": null
-    },
-    "Lanham Fitness Center": {
-        "building": "Fritz G Lanham Federal Building",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -43.79150390625,
-            -95.78378677368164,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Fairfield Inn & Suites Fort Worth Downtown/Convention Center": {
-        "building": "Fairfield Inn & Suites",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            108.74024200439453,
-            -110.56094741821289,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Bar 10Ten": {
-        "building": "Fairfield Inn & Suites",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            108.74024200439453,
-            -110.56094741821289,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
     },
     "61 Osteria": {
         "building": "500 W. 7th",
@@ -86,245 +24,11 @@
             "establishment"
         ],
         "location": [
-            -239.64466094970703,
-            1.8072786331176758,
+            760.355339050293,
+            1001.8072786331177,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Greysteel": {
-        "building": "500 W. 7th",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -239.64466094970703,
-            1.8072786331176758,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Arielle Seleske, REALTOR - TD Realty": {
-        "building": "Neil P Anderson Building",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -149.83777618408203,
-            -32.41980600357056,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Picchi Pacchi Pizzeria": {
-        "building": "Neil P Anderson Building",
-        "coarse_type": "food",
-        "fine_types": [
-            "meal_delivery",
-            "meal_takeaway",
-            "store",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -149.83777618408203,
-            -32.41980600357056,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Thomas Printworks": {
-        "building": "Neil P Anderson Building",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -149.83777618408203,
-            -32.41980600357056,
-            -20
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-    },
-    "Historic Electric Building Apartments": {
-        "building": "Electric Service Building",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -178.04995727539062,
-            22.41120719909668,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Chowdala": {
-        "building": "819 Taylor Street",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -52.96140670776367,
-            -35.05890512466431,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "Stars and Stripes Cafe": {
-        "building": "819 Taylor Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -52.96140670776367,
-            -35.05890512466431,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Barber\u2019s Book Store": {
-        "building": "901 Throckmorton Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "book_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            26.46816873550415,
-            -12.394393473863602,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-    },
-    "J's Burgers N' More": {
-        "building": "905 Throckmorton Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            53.08512783050537,
-            -16.051119327545166,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Kspot Waxing Salon": {
-        "building": "Star-Telegram Building",
-        "coarse_type": "stores",
-        "fine_types": [
-            "beauty_salon",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -42.27416229248047,
-            15.71941328048706,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "La Perla": {
-        "building": "Houston Place Lofts",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            77.25395393371582,
-            -28.229281425476074,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Houston Place Lofts": {
-        "building": "Houston Place Lofts",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            77.25395393371582,
-            -28.229281425476074,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "The Sterling": {
-        "building": "911 Houston Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            124.60809326171875,
-            -4.695904731750488,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Son of a Baker Pizzeria": {
-        "building": "Houston Street Bar & Patio",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            59.4185905456543,
-            1.9381380081176758,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Priority Home Buyers | Sell My House Fast for Cash Fort Worth": {
-        "building": "PalmWood Event & Conference",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "finance",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -212.3185272216797,
-            100.20735168457031,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
     },
     "branch & bird": {
         "building": "PalmWood Event & Conference",
@@ -336,61 +40,27 @@
             "establishment"
         ],
         "location": [
-            -212.3185272216797,
-            100.20735168457031,
+            787.6814727783203,
+            1100.2073516845703,
             -8
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Spaces - Fort Worth": {
-        "building": "Sundance Square Garage 4",
+    "Olivia Adams's room at Chowdala": {
+        "building": "819 Taylor Street",
         "coarse_type": "accommodation",
         "fine_types": [
-            "real_estate_agency",
+            "lodging",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -23.455809593200684,
-            112.68975448608398,
-            -4
+            947.0385932922363,
+            964.9410948753357,
+            -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Southern Breeze Oasis": {
-        "building": "Sundance Square Garage 4",
-        "coarse_type": "stores",
-        "fine_types": [
-            "painter",
-            "home_goods_store",
-            "general_contractor",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -23.455809593200684,
-            112.68975448608398,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "The Capital Grille": {
-        "building": "800 Main Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            86.3670768737793,
-            93.1757984161377,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Olivia Adams's room at Chowdala"
     },
     "Del Frisco's Double Eagle Steakhouse": {
         "building": "812 Main Street",
@@ -403,11 +73,104 @@
             "establishment"
         ],
         "location": [
-            115.44149780273438,
-            74.00686645507812,
+            1115.4414978027344,
+            1074.0068664550781,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Greysteel": {
+        "building": "500 W. 7th",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Historic Electric Building Apartments": {
+        "building": "Electric Service Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            821.9500427246094,
+            1022.4112071990967,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Ilya Sutskever's room at Hilton Fort Worth": {
+        "building": "Hilton Fort Worth",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1167.0871200561523,
+            1130.1348915100098,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Ilya Sutskever's room at Hilton Fort Worth"
+    },
+    "J's Personalized Training Center": {
+        "building": "711 Commerce Street # 200",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1199.5153274536133,
+            1241.2267761230469,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Beverages and Snacks Store": {
+        "building": "901 Throckmorton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1026.4681687355042,
+            987.6056065261364,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "The Sterling": {
+        "building": "911 Houston Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1124.6080932617188,
+            995.3040952682495,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Ruth's Chris Steak House": {
         "building": "Hilton Fort Worth",
@@ -419,8 +182,8 @@
             "establishment"
         ],
         "location": [
-            167.08712005615234,
-            130.13489151000977,
+            1167.0871200561523,
+            1130.1348915100098,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
@@ -434,143 +197,47 @@
             "establishment"
         ],
         "location": [
-            167.08712005615234,
-            130.13489151000977,
+            1167.0871200561523,
+            1130.1348915100098,
             -16
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
-    "Refinery 714": {
-        "building": "Kimpton Harper Hotel",
+    "The Capital Grille": {
+        "building": "800 Main Street",
         "coarse_type": "food",
         "fine_types": [
             "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            73.60603332519531,
-            149.29182052612305,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Kimpton Harper Hotel": {
-        "building": "Kimpton Harper Hotel",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            73.60603332519531,
-            149.29182052612305,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "otel": {
-        "building": "Raddison Plaza Annex Hotel",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            224.5605239868164,
-            164.1497039794922,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Annex": {
-        "building": "Raddison Plaza Annex Hotel",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            224.5605239868164,
-            164.1497039794922,
-            -12
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Mercury Chophouse": {
-        "building": "The Tower",
-        "coarse_type": "food",
-        "fine_types": [
             "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -174.76983642578125,
-            208.8545913696289,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "AC Hotel Fort Worth Downtown": {
-        "building": "AC Hotel by Marriott Fort Worth Downtown",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            0.22568893432617188,
-            245.17107391357422,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "CVS": {
-        "building": "515 Houston Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "drugstore",
-            "convenience_store",
-            "liquor_store",
-            "clothing_store",
-            "health",
-            "store",
             "point_of_interest",
             "food",
             "establishment"
         ],
         "location": [
-            -33.341732025146484,
-            272.0436248779297,
+            1086.3670768737793,
+            1093.1757984161377,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "CVS Pharmacy": {
-        "building": "515 Houston Street",
-        "coarse_type": "stores",
+    "Kate Novak's room at Historic Electric Building Apartments": {
+        "building": "Electric Service Building",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "pharmacy",
-            "health",
-            "store",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -33.341732025146484,
-            272.0436248779297,
+            821.9500427246094,
+            1022.4112071990967,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Kate Novak's room at Historic Electric Building Apartments"
     },
-    "Pink Cobra Tattoo": {
-        "building": "603 Houston Street",
+    "Beverages and DM Store": {
+        "building": "Neil P Anderson Building",
         "coarse_type": "stores",
         "fine_types": [
             "store",
@@ -578,48 +245,14 @@
             "establishment"
         ],
         "location": [
-            1.5785293579101562,
-            215.15374755859375,
-            -4
+            850.162223815918,
+            967.5801939964294,
+            -20
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
     },
-    "Corner Bakery": {
-        "building": "Courtyard Fort Worth Downtown/Blackstone",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "bakery",
-            "store",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            71.15707015991211,
-            259.6762390136719,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Courtyard Fort Worth Downtown/Blackstone": {
-        "building": "Courtyard Fort Worth Downtown/Blackstone",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            71.15707015991211,
-            259.6762390136719,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "J's Personalized Training Center": {
-        "building": "711 Commerce Street # 200",
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
         "coarse_type": "entertainment",
         "fine_types": [
             "gym",
@@ -628,24 +261,179 @@
             "establishment"
         ],
         "location": [
-            199.51532745361328,
-            241.22677612304688,
+            956.20849609375,
+            904.2162132263184,
             -4
         ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "AT&T Building": {
-        "building": "AT&T Building",
-        "coarse_type": "office",
+    "Shannon Steves's room at The Ashton Hotel": {
+        "building": "The Ashton Hotel",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "office"
+            "yes",
+            "hotel"
         ],
         "location": [
-            135.31136322021484,
-            -166.82700729370117,
+            1038.27312374115,
+            1212.5656433105469,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Shannon Steves's room at The Ashton Hotel"
+    },
+    "Houston Place Lofts": {
+        "building": "Houston Place Lofts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1077.2539539337158,
+            971.7707185745239,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "Fresh and DM Store": {
+        "building": "Sundance Square Garage 4",
+        "coarse_type": "stores",
+        "fine_types": [
+            "painter",
+            "home_goods_store",
+            "general_contractor",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            976.5441904067993,
+            1112.689754486084,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Chowdala": {
+        "building": "819 Taylor Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.0385932922363,
+            964.9410948753357,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Son of a Baker Pizzeria": {
+        "building": "Houston Street Bar & Patio",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1059.4185905456543,
+            1001.9381380081177,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Fort Worth Public Library - Downtown Express": {
+        "building": "Fort Worth Old City Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1030.5131950378418,
+            771.1894226074219,
             -4
         ],
         "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "Stars and Stripes Cafe": {
+        "building": "819 Taylor Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.0385932922363,
+            964.9410948753357,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Adam Pierce's room at Houston Place Lofts": {
+        "building": "Houston Place Lofts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1077.2539539337158,
+            971.7707185745239,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Adam Pierce's room at Houston Place Lofts"
+    },
+    "Bar 10Ten": {
+        "building": "Fairfield Inn & Suites",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1108.7402420043945,
+            889.4390525817871,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Snacks and DM Store": {
+        "building": "603 Houston Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1001.5785293579102,
+            1215.1537475585938,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+    },
+    "Burk Burnett Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.5295785584899,
+            897.8033562661882,
+            -0.0055793541536104385
+        ],
+        "scene": null
     },
     "The Ashton Hotel": {
         "building": "The Ashton Hotel",
@@ -655,35 +443,25 @@
             "hotel"
         ],
         "location": [
-            38.2731237411499,
-            212.56564331054688,
+            1038.27312374115,
+            1212.5656433105469,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
     },
-    "777 Main": {
-        "building": "777 Main",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            133.66768264770508,
-            224.67807006835938,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Bailey's Bar-B-Q": {
-        "building": "Bailey's Bar-B-Q",
+    "La Perla": {
+        "building": "Houston Place Lofts",
         "coarse_type": "food",
         "fine_types": [
-            "yes",
-            "restaurant"
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
         ],
         "location": [
-            -105.15692901611328,
-            -100.28617858886719,
+            1077.2539539337158,
+            971.7707185745239,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
@@ -694,7 +472,8 @@
         "fine_type": "bus stop",
         "location": [
             -176.4915018524415,
-            -14.460973615116995
+            -14.460973615116995,
+            112.12192936613239
         ],
         "scene": null
     },
@@ -704,7 +483,8 @@
         "fine_type": "bus stop",
         "location": [
             86.1052575202679,
-            182.87464646913259
+            182.87464646913259,
+            108.71633530679091
         ],
         "scene": null
     },
@@ -714,7 +494,8 @@
         "fine_type": "bus stop",
         "location": [
             86.72617540910458,
-            -143.92913508338017
+            -143.92913508338017,
+            110.43558688202265
         ],
         "scene": null
     },
@@ -724,7 +505,8 @@
         "fine_type": "bicycle station",
         "location": [
             64.15209643979796,
-            69.77376676139166
+            69.77376676139166,
+            109.54829056295026
         ],
         "scene": null
     },
@@ -734,7 +516,8 @@
         "fine_type": "bicycle station",
         "location": [
             -98.10083788061374,
-            -271.8031433875841
+            -271.8031433875841,
+            113.21054653053011
         ],
         "scene": null
     },
@@ -744,7 +527,8 @@
         "fine_type": "bicycle station",
         "location": [
             -2.83358979438382,
-            -42.72445330458906
+            -42.72445330458906,
+            111.09058087355163
         ],
         "scene": null
     },
@@ -754,7 +538,8 @@
         "fine_type": "bicycle station",
         "location": [
             7.8425292876260535,
-            262.31761608136424
+            262.31761608136424,
+            110.47302808176963
         ],
         "scene": null
     },
@@ -764,7 +549,8 @@
         "fine_type": "bicycle station",
         "location": [
             183.43417848174332,
-            173.54857106916538
+            173.54857106916538,
+            106.7411929421595
         ],
         "scene": null
     }

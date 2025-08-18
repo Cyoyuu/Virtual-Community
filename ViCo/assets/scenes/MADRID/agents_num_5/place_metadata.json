@@ -1,209 +1,112 @@
 {
-    "Cibeles Fountain": {
-        "building": "open space",
-        "coarse_type": "open",
+    "Campus France Espagne": {
+        "building": "Consulado General de Francia",
+        "coarse_type": "office",
         "fine_types": [
-            "tourist_attraction",
-            "park",
+            "school",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -140.63987168419672,
-            -348.41940385056165,
-            -0.01108869087028097
+            944.914608001709,
+            1219.973762512207,
+            -8
         ],
-        "scene": null
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
     },
-    "Exclusive La Guinda": {
-        "building": "Comunidad de Madrid",
-        "coarse_type": "food",
+    "Snacks and DM Store": {
+        "building": "Calle Marqu\u00e9s de Monasterio",
+        "coarse_type": "stores",
         "fine_types": [
-            "grocery_or_supermarket",
-            "food",
-            "point_of_interest",
+            "home_goods_store",
             "store",
+            "point_of_interest",
             "establishment"
         ],
         "location": [
-            69.51306533813477,
-            -269.01366424560547,
+            840.1088485717773,
+            1050.2799549102783,
             -4
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
     },
-    "The Walt Madrid": {
-        "building": "Puerta de Alcal\u00e1",
+    "LeBron James's room at VP Jard\u00edn de Recoletos": {
+        "building": "Calle de Gil de Santiva\u00f1es",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            229.03163146972656,
-            -276.53001403808594,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Ramses": {
-        "building": "Casa Faraona",
-        "coarse_type": "food",
-        "fine_types": [
+            "parking",
             "restaurant",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            196.87146759033203,
-            -188.03744506835938,
-            -4
+            1186.8162384033203,
+            971.0767664909363,
+            -8
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "LeBron James's room at VP Jard\u00edn de Recoletos"
     },
-    "Casa Faraona": {
-        "building": "Casa Faraona",
+    "Zara Williams's room at Palacio del Marqu\u00e9s de Alca\u00f1ices": {
+        "building": "Palacio del Marqu\u00e9s de Alca\u00f1ices",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
+            "apartments"
+        ],
+        "location": [
+            885.6569404602051,
+            879.8155746459961,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Zara Williams's room at Palacio del Marqu\u00e9s de Alca\u00f1ices"
+    },
+    "Recoven, S.L.": {
+        "building": "Edificio Restaura",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            196.87146759033203,
-            -188.03744506835938,
-            -12
+            1059.319423675537,
+            1034.0926558971405,
+            -8
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
     },
-    "Restaurante Casa America": {
-        "building": "Plaza Cibeles",
+    "Mahercatering": {
+        "building": "Edificio Restaura",
         "coarse_type": "food",
         "fine_types": [
-            "restaurant",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -16.388402938842773,
-            -249.54408264160156,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "FILE AND LIBRARY FRANCISCO ZABALBURU": {
-        "building": "Mutualidad General Judicial",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            42.98624515533447,
-            -215.9254150390625,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Mi Piso en Madrid": {
-        "building": "\u00c1rea de Gobierno de Seguridad",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -152.37911224365234,
-            -195.53588104248047,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "Blondie Madrid": {
-        "building": "Calle de Salustiano Ol\u00f3zaga",
-        "coarse_type": "stores",
-        "fine_types": [
-            "hair_care",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            121.6965217590332,
-            -238.61711883544922,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-    },
-    "Patio de Leones": {
-        "building": "5\u00ba",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "bar",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            216.3203887939453,
-            -182.74376678466797,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "TAI Escuela Universitaria de Artes": {
-        "building": "Centro Universitario de Artes TAI",
-        "coarse_type": "office",
-        "fine_types": [
-            "university",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            194.48861694335938,
-            -139.41878509521484,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Autoservicio": {
-        "building": "5",
-        "coarse_type": "food",
-        "fine_types": [
-            "supermarket",
-            "grocery_or_supermarket",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            170.45277404785156,
-            -73.11190032958984,
-            -4
+            1059.319423675537,
+            1034.0926558971405,
+            -12
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "HAUS Group Real Estate": {
-        "building": "5",
-        "coarse_type": "accommodation",
+    "Calle ilillo 1": {
+        "building": "Consulado General de Francia",
+        "coarse_type": "food",
         "fine_types": [
-            "real_estate_agency",
+            "bar",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            170.45277404785156,
-            -73.11190032958984,
+            944.914608001709,
+            1219.973762512207,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
     "VILLAFRUTA": {
         "building": "Calle de Villalar",
@@ -215,14 +118,14 @@
             "establishment"
         ],
         "location": [
-            139.5207290649414,
-            -98.34867858886719,
+            1139.5207290649414,
+            901.6513214111328,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Habitum Grupo Corporativo S.L.": {
-        "building": "Calle de Villalar",
+    "Alex Jefferson's room at Recoven, S.L.": {
+        "building": "Edificio Restaura",
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -230,72 +133,14 @@
             "establishment"
         ],
         "location": [
-            139.5207290649414,
-            -98.34867858886719,
-            -8
+            1059.319423675537,
+            1034.0926558971405,
+            -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Alex Jefferson's room at Recoven, S.L."
     },
-    "Teatro Marquina": {
-        "building": "Teatro Marquina",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments",
-            "theatre"
-        ],
-        "location": [
-            -194.63050842285156,
-            -43.84540557861328,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Hermanos Revilla S.A.": {
-        "building": "Calle de Prim",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -139.7022247314453,
-            -43.095285415649414,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Middlebury College en Espa\u00f1a": {
-        "building": "Calle de Prim",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -139.7022247314453,
-            -43.095285415649414,
-            -8
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Colourmobile": {
-        "building": "Calle de Prim",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -139.7022247314453,
-            -43.095285415649414,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-    },
-    "Haworth": {
+    "Fresh and Beverages Store": {
         "building": "Banco Pastor",
         "coarse_type": "stores",
         "fine_types": [
@@ -306,24 +151,43 @@
             "establishment"
         ],
         "location": [
-            -105.85888671875,
-            -45.53917121887207,
+            894.14111328125,
+            954.4608287811279,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
     },
-    "Banco Pastor": {
-        "building": "Banco Pastor",
-        "coarse_type": "accommodation",
+    "National Archaeological Museum": {
+        "building": "Palacio de Biblioteca y Museos Nacionales",
+        "coarse_type": "entertainment",
         "fine_types": [
-            "apartments"
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
         ],
         "location": [
-            -105.85888671875,
-            -45.53917121887207,
-            -8
+            1170.1471061706543,
+            1120.0274868011475,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Roth Miller's room at Habitum Grupo Corporativo S.L.": {
+        "building": "Calle de Villalar",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1139.5207290649414,
+            901.6513214111328,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Roth Miller's room at Habitum Grupo Corporativo S.L."
     },
     "Delivinos Urban Gourmet": {
         "building": "Calle Cid 2",
@@ -338,28 +202,91 @@
             "establishment"
         ],
         "location": [
-            145.09207916259766,
-            -63.672555923461914,
+            1145.0920791625977,
+            936.3274440765381,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "escuela de pensamiento": {
-        "building": "Casa-palacio del Marqu\u00e9s de Portago",
-        "coarse_type": "office",
+    "Autoservicio": {
+        "building": "5",
+        "coarse_type": "food",
         "fine_types": [
-            "school",
+            "supermarket",
+            "grocery_or_supermarket",
+            "store",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            225.04559326171875,
-            -44.24524116516113,
+            1170.4527740478516,
+            926.8880996704102,
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Just-ENE": {
+    "mk2 Sunset Cinema": {
+        "building": "Consulado General de Francia",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "movie_theater",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            944.914608001709,
+            1219.973762512207,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Sala Recoletos - Fundaci\u00f3n MAPFRE": {
+        "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            919.7438831329346,
+            1029.5676300525665,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Beverages and DM Store": {
+        "building": "Calle de Salustiano Ol\u00f3zaga",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1121.6965217590332,
+            761.3828811645508,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "Studio42": {
+        "building": "Edificio Restaura",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1059.319423675537,
+            1034.0926558971405,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Fresh and Snacks Store": {
         "building": "C/ Almt Almirante",
         "coarse_type": "stores",
         "fine_types": [
@@ -369,88 +296,42 @@
             "establishment"
         ],
         "location": [
-            -183.7907943725586,
-            -16.683732390403748,
+            816.2092056274414,
+            983.3162676095963,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
     },
-    "Santa Gloria": {
-        "building": "Direcci\u00f3n General de Juventud y Deporte",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            46.78588676452637,
-            -7.769084453582764,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "LI-ONNA": {
-        "building": "Direcci\u00f3n General de Juventud y Deporte",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            46.78588676452637,
-            -7.769084453582764,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Pelotari": {
-        "building": "Calle de Recoletos",
+    "Patio de Leones": {
+        "building": "5\u00ba",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
+            "bar",
+            "store",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            66.03180503845215,
-            -19.48538613319397,
+            1216.3203887939453,
+            817.256233215332,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Fascinado club": {
-        "building": "Calle del Cid",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "night_club",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            110.32362747192383,
-            11.578841209411621,
-            -8
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Apart-Hotel Serrano Recoletos": {
-        "building": "Calle del Cid",
+    "Palacio del Marqu\u00e9s de Alca\u00f1ices": {
+        "building": "Palacio del Marqu\u00e9s de Alca\u00f1ices",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
+            "apartments"
         ],
         "location": [
-            110.32362747192383,
-            11.578841209411621,
-            -12
+            885.6569404602051,
+            879.8155746459961,
+            -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
     },
     "Alegor\u00edA": {
         "building": "Calle del Cid",
@@ -463,9 +344,69 @@
             "establishment"
         ],
         "location": [
-            110.32362747192383,
-            11.578841209411621,
+            1110.3236274719238,
+            1011.5788412094116,
             -16
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Fascinado club": {
+        "building": "Calle del Cid",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1110.3236274719238,
+            1011.5788412094116,
+            -8
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Edificio de la Sociedad de Cr\u00e9dito Mobiliario": {
+        "building": "Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            885.4159889221191,
+            918.5993690490723,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Pelotari": {
+        "building": "Calle de Recoletos",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1066.0318050384521,
+            980.514613866806,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Ramses": {
+        "building": "Casa Faraona",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.871467590332,
+            811.9625549316406,
+            -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
@@ -481,229 +422,14 @@
             "establishment"
         ],
         "location": [
-            186.8162384033203,
-            -28.92323350906372,
+            1186.8162384033203,
+            971.0767664909363,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
     },
-    "Loura": {
-        "building": "Calle del Almirante",
-        "coarse_type": "stores",
-        "fine_types": [
-            "clothing_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -110.79013442993164,
-            19.32109045982361,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "Sala Recoletos - Fundaci\u00f3n MAPFRE": {
-        "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -80.25611686706543,
-            29.56763005256653,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Studio42": {
-        "building": "Edificio Restaura",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "night_club",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            59.31942367553711,
-            34.0926558971405,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Recoven, S.L.": {
-        "building": "Edificio Restaura",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            59.31942367553711,
-            34.0926558971405,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Mahercatering": {
-        "building": "Edificio Restaura",
-        "coarse_type": "food",
-        "fine_types": [
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            59.31942367553711,
-            34.0926558971405,
-            -12
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Dompick": {
-        "building": "Calle de Piamonte",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -266.50328063964844,
-            90.07406234741211,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Buenas Noches Madrid": {
-        "building": "Calle del Conde de Xiquena",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -209.77920532226562,
-            97.73117065429688,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "GROPIUSLAMPS": {
-        "building": "Calle Marqu\u00e9s de Monasterio",
-        "coarse_type": "stores",
-        "fine_types": [
-            "home_goods_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -159.89115142822266,
-            50.27995491027832,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
-    },
-    "Nomo Braganza": {
-        "building": "Calle de Tamayo y Baus",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -141.34782791137695,
-            99.53289031982422,
-            -8
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "National Archaeological Museum": {
-        "building": "Palacio de Biblioteca y Museos Nacionales",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "tourist_attraction",
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            170.1471061706543,
-            120.02748680114746,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Biblioteca Nacional de Espa\u00f1a": {
-        "building": "Palacio de Biblioteca y Museos Nacionales",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            170.1471061706543,
-            120.02748680114746,
-            -8
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Alquiler Aulas Madrid": {
-        "building": "Calle de B\u00e1rbara de Braganza",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -66.14946174621582,
-            125.05740737915039,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-    },
-    "El Supremo": {
-        "building": "Calle del Marqu\u00e9s de la Ensenada",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -91.71643829345703,
-            155.42007446289062,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "mk2 Sunset Cinema": {
-        "building": "Consulado General de Francia",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "movie_theater",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -55.085391998291016,
-            219.97376251220703,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Campus France Espagne": {
-        "building": "Consulado General de Francia",
+    "Middlebury College en Espa\u00f1a": {
+        "building": "Calle de Prim",
         "coarse_type": "office",
         "fine_types": [
             "school",
@@ -711,26 +437,56 @@
             "establishment"
         ],
         "location": [
-            -55.085391998291016,
-            219.97376251220703,
+            860.2977752685547,
+            956.9047145843506,
             -8
         ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
     },
-    "Calle ilillo 1": {
-        "building": "Consulado General de Francia",
-        "coarse_type": "food",
+    "Habitum Grupo Corporativo S.L.": {
+        "building": "Calle de Villalar",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "bar",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -55.085391998291016,
-            219.97376251220703,
-            -12
+            1139.5207290649414,
+            901.6513214111328,
+            -8
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Cibeles Fountain": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            859.3601283158033,
+            651.5805961494384,
+            -0.01108869087028097
+        ],
+        "scene": null
+    },
+    "Megan Carter's room at Edificio de la Sociedad de Cr\u00e9dito Mobiliario": {
+        "building": "Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            885.4159889221191,
+            918.5993690490723,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Megan Carter's room at Edificio de la Sociedad de Cr\u00e9dito Mobiliario"
     },
     "Chip\u00e9 Club - Bar clandestino Madrid": {
         "building": "Paseo de Recoletos",
@@ -741,58 +497,26 @@
             "establishment"
         ],
         "location": [
-            1.035813808441162,
-            238.94252014160156,
+            1001.0358138084412,
+            1238.9425201416016,
             -8
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Bond Bar (Col\u00f3n)": {
-        "building": "Casino Gran Madrid",
-        "coarse_type": "food",
+    "Beverages and Snacks Store": {
+        "building": "Calle de Prim",
+        "coarse_type": "stores",
         "fine_types": [
-            "bar",
-            "restaurant",
-            "food",
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -14.438326835632324,
-            196.13463592529297,
-            -4
+            860.2977752685547,
+            956.9047145843506,
+            -12
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Gran Madrid | Casino Col\u00f3n": {
-        "building": "Casino Gran Madrid",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "casino",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -14.438326835632324,
-            196.13463592529297,
-            -8
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Apostillar Partida De Nacimiento Espa\u00f1ola": {
-        "building": "Tribunal Superior de Justicia",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -258.2730484008789,
-            252.79486083984375,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
     },
     "Caf\u00e9 de l'Institut fran\u00e7ais": {
         "building": "Institut fran\u00e7ais de Madrid",
@@ -805,110 +529,27 @@
             "establishment"
         ],
         "location": [
-            -65.47886657714844,
-            252.3067169189453,
+            934.5211334228516,
+            1252.3067169189453,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Institut fran\u00e7ais Madrid": {
-        "building": "Institut fran\u00e7ais de Madrid",
-        "coarse_type": "office",
+    "Fresh and DM Store": {
+        "building": "Calle del Almirante",
+        "coarse_type": "stores",
         "fine_types": [
-            "library",
-            "embassy",
-            "restaurant",
-            "food",
+            "clothing_store",
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -65.47886657714844,
-            252.3067169189453,
-            -8
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Fundaci\u00f3n Mapfre - Sala de exposiciones B\u00e1rbara de Braganza": {
-        "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones B\u00e1rbara de Braganza",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "civic",
-            "museum"
-        ],
-        "location": [
-            -44.16684150695801,
-            114.34275817871094,
+            889.2098655700684,
+            1019.3210904598236,
             -4
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Embajada de Francia": {
-        "building": "Embajada de Francia",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            135.06885528564453,
-            -184.46556854248047,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Palacio del Marqu\u00e9s de Alca\u00f1ices": {
-        "building": "Palacio del Marqu\u00e9s de Alca\u00f1ices",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -114.34305953979492,
-            -120.1844253540039,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Edificio de la Sociedad de Cr\u00e9dito Mobiliario": {
-        "building": "Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -114.58401107788086,
-            -81.40063095092773,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Caf\u00e9 El Espejo": {
-        "building": "Caf\u00e9 El Espejo",
-        "coarse_type": "food",
-        "fine_types": [
-            "retail",
-            "restaurant"
-        ],
-        "location": [
-            6.887423038482666,
-            163.68498992919922,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Biblioteca Francisco de Zab\u00e1lburu": {
-        "building": "Biblioteca Francisco de Zab\u00e1lburu",
-        "coarse_type": "office",
-        "fine_types": [
-            "civic",
-            "library"
-        ],
-        "location": [
-            20.50681161880493,
-            -216.7883071899414,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
     },
     "Calle del Marqu\u00e9s del Duero Bus Stop": {
         "building": "open space",
@@ -916,7 +557,8 @@
         "fine_type": "bus stop",
         "location": [
             -58.0202809454414,
-            -218.57037871714718
+            -218.57037871714718,
+            93.25659623081282
         ],
         "scene": null
     },
@@ -926,7 +568,8 @@
         "fine_type": "bus stop",
         "location": [
             147.0734273115021,
-            -4.309514189558893
+            -4.309514189558893,
+            103.25710003828644
         ],
         "scene": null
     },
@@ -936,7 +579,8 @@
         "fine_type": "bus stop",
         "location": [
             -119.00400701601724,
-            126.13158515816286
+            126.13158515816286,
+            104.7683919084698
         ],
         "scene": null
     },
@@ -946,7 +590,8 @@
         "fine_type": "bicycle station",
         "location": [
             -146.95564288226248,
-            61.05785866076525
+            61.05785866076525,
+            103.54898512769535
         ],
         "scene": null
     },
@@ -956,7 +601,8 @@
         "fine_type": "bicycle station",
         "location": [
             155.55199020286358,
-            -96.74209822714788
+            -96.74209822714788,
+            103.25190788178455
         ],
         "scene": null
     },
@@ -966,7 +612,8 @@
         "fine_type": "bicycle station",
         "location": [
             -152.03367697953678,
-            -310.89190558203575
+            -310.89190558203575,
+            92.53424794640132
         ],
         "scene": null
     },
@@ -976,7 +623,8 @@
         "fine_type": "bicycle station",
         "location": [
             -0.20704627128564979,
-            179.78328094249733
+            179.78328094249733,
+            101.07272245711724
         ],
         "scene": null
     },
@@ -986,7 +634,8 @@
         "fine_type": "bicycle station",
         "location": [
             -78.7641995305332,
-            -98.62504570361148
+            -98.62504570361148,
+            96.11514697911551
         ],
         "scene": null
     }

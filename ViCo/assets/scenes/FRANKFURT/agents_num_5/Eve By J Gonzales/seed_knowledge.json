@@ -1,0 +1,396 @@
+{
+    "Mark Zuckerberg": {
+        "age": 30,
+        "living_place": "Hotel am Dom",
+        "appearance": "ViCo/assets/imgs/avatars/Mark Zuckerberg.png",
+        "groups": [
+            "Fitness and Social Club"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Schwarzer Stern",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Fitness and Social Club"
+        ]
+    },
+    "Fitness and Social Club": {
+        "description": "A group focused on fitness, health, and social activities, encouraging members to lead an active lifestyle.",
+        "place": "Outdoor Gym - Fitness Training Frankfurt",
+        "members": [
+            "Eve By J Gonzales",
+            "Mark Zuckerberg",
+            "Roth Miller"
+        ],
+        "daily_activity": "engaging in group fitness sessions from 18:00 to 19:30"
+    },
+    "Eve By J Gonzales's room at Gro\u00dfer Engel": {
+        "building": "Gro\u00dfer Engel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            988.7038068771362,
+            817.2939987182617,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Eve By J Gonzales's room at Gro\u00dfer Engel",
+        "bounding_box": [
+            -11.29619312286377,
+            -182.5724105834961,
+            103.23776245117189,
+            7.570394920147324,
+            7.89356934259277,
+            18.306411743164062,
+            0.13123548830890783
+        ]
+    },
+    "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.": {
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1183.9584655761719,
+            738.755615234375,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            184.01898859681972,
+            -260.98544563113177,
+            94.51446914672853,
+            20.801247162123463,
+            9.733134652889829,
+            6.560264587402344,
+            0.10225525050753245
+        ]
+    },
+    "Outdoor Gym - Fitness Training Frankfurt": {
+        "building": "Am Geistpf\u00f6rtchen 4",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1084.5071334838867,
+            733.2428894042969,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            84.33912034203026,
+            -266.7548643628846,
+            99.48945999145509,
+            11.361780249842683,
+            16.33988204846398,
+            14.983573913574219,
+            0.08976118955213178
+        ]
+    },
+    "Caricatura - Museum for Comic Art": {
+        "building": "Leinwandhaus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.523208618164,
+            765.889533996582,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            174.8834335717765,
+            -234.9144884354077,
+            100.17367553710939,
+            20.808565936856695,
+            21.14944224435766,
+            16.697982788085938,
+            0.20027042910870235
+        ]
+    },
+    "Dining Raum": {
+        "building": "Fahrgasse 15",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1288.7382507324219,
+            823.5245742797852,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            288.7382507324219,
+            -176.45872497558594,
+            100.92965698242189,
+            2.7507084132618855,
+            10.35629558526623,
+            14.731185913085938,
+            -1.1746123755784477
+        ]
+    },
+    "Kuma": {
+        "building": "Buchgasse 11",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            739.6681442260742,
+            998.9681527614594,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -260.72929152367806,
+            -1.9324506900010237,
+            106.22438049316406,
+            22.970068249735938,
+            15.071511360558652,
+            18.075592041015625,
+            0.21487155337351083
+        ]
+    },
+    "Main W\u00fcrschtl": {
+        "building": "Braubachstra\u00dfe 37",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            981.3329119682312,
+            855.4543533325195,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -18.973967757492446,
+            -144.92158866852097,
+            102.12872695922853,
+            11.888409200673772,
+            12.471850333505236,
+            16.54242706298828,
+            0.48145917797076493
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Braubachstra\u00dfe 39",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            969.9355316162109,
+            851.8420639038086,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -30.045296727944223,
+            -150.07476427866334,
+            102.05546188354494,
+            13.100895887832746,
+            11.337558345744156,
+            17.078758239746094,
+            0.4378573059227454
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Neue Kr\u00e4me 25",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            887.9367713928223,
+            991.2318770885468,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -111.99739732663038,
+            -8.384131074283486,
+            106.15433120727539,
+            14.584283836412967,
+            8.340715704729854,
+            20.858787536621094,
+            0.1485945430256574
+        ]
+    },
+    "Bleidenstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -228.00891954540512,
+            34.867100012495186
+        ],
+        "rotation": -1.2272212009665018,
+        "bounding_box": null
+    },
+    "Domplatz Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            187.89873308578933,
+            -125.09747067401953
+        ],
+        "rotation": -2.828107580791367,
+        "bounding_box": null
+    },
+    "Saalgasse Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            49.44755052649866,
+            -244.83844986744862
+        ],
+        "rotation": -0.883976932063394,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.714385474731255,
+            -24.361326528559523
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            234.75346195656564,
+            -225.2147639010552
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            79.31304242685894,
+            -173.4409525514944
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.4797500106486,
+            -25.948462163399768
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.98993118456949,
+            -33.292404946251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -56.344927612231416,
+            -201.5723036494874
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -89.90940664203639,
+            113.47685636627334
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Saalgasse": [
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Bleidenstra\u00dfe": [
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

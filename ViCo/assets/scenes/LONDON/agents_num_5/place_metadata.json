@@ -1,4 +1,32 @@
 {
+    "Beverages and Snacks Store": {
+        "building": "7 Cowley Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1092.0647659301758,
+            723.6194458007812,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "Portcullis House": {
+        "building": "Portcullis House",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1240.5375061035156,
+            1171.1279296875,
+            -36
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
     "Tesco Express": {
         "building": "Portcullis House",
         "coarse_type": "food",
@@ -12,13 +40,13 @@
             "establishment"
         ],
         "location": [
-            240.53750610351562,
-            171.1279296875,
+            1240.5375061035156,
+            1171.1279296875,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Cards Galore Westminster Station": {
+    "Beverages and DM Store": {
         "building": "Portcullis House",
         "coarse_type": "stores",
         "fine_types": [
@@ -27,190 +55,43 @@
             "establishment"
         ],
         "location": [
-            240.53750610351562,
-            171.1279296875,
+            1240.5375061035156,
+            1171.1279296875,
             -16
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
     },
-    "Portcullis House": {
-        "building": "Portcullis House",
-        "coarse_type": "office",
+    "Cafe at Supreme Court": {
+        "building": "Supreme Court",
+        "coarse_type": "food",
         "fine_types": [
-            "office"
-        ],
-        "location": [
-            240.53750610351562,
-            171.1279296875,
-            -36
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "St Matthew's CE Primary School": {
-        "building": "St. Matthew's Westminster Primary School and Nursery",
-        "coarse_type": "office",
-        "fine_types": [
-            "primary_school",
-            "school",
+            "cafe",
             "point_of_interest",
+            "food",
             "establishment"
         ],
         "location": [
-            -182.55864715576172,
-            -266.6046905517578,
+            1014.0192947387695,
+            1068.8258686065674,
             -4
         ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "FFT Education Datalab": {
-        "building": "11 Tufton Street",
-        "coarse_type": "office",
+    "Fuller's Kitchen": {
+        "building": "The Sanctuary House",
+        "coarse_type": "food",
         "fine_types": [
-            "school",
+            "restaurant",
+            "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -10.505818843841553,
-            -275.9417419433594,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "The Manoukian Music Centre": {
-        "building": "Manoukian Music Centre.001",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -7.116916656494141,
-            -260.78002166748047,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Gusbourne Plc": {
-        "building": "7 Cowley Street",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            92.06476593017578,
-            -276.38055419921875,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-    },
-    "Church House Bookshop": {
-        "building": "Church House",
-        "coarse_type": "stores",
-        "fine_types": [
-            "book_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -59.62962341308594,
-            -219.98635864257812,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "Sequential Investors": {
-        "building": "Church House",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -59.62962341308594,
-            -219.98635864257812,
+            757.8156127929688,
+            970.385989189148,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Church House": {
-        "building": "Church House",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            -59.62962341308594,
-            -219.98635864257812,
-            -12
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "College Boarding House": {
-        "building": "Houses of College, Dryden's and Wren's",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            47.848995208740234,
-            -190.33684539794922,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Busby's Boarding House": {
-        "building": "Busby\u2019s House",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -1.8187851905822754,
-            -198.4244155883789,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Rigaud's Boarding House": {
-        "building": "Rigaud\u2019s House",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            13.635281085968018,
-            -191.1274185180664,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "College Garden": {
-        "building": "open space",
-        "coarse_type": "open",
-        "fine_types": [
-            "tourist_attraction",
-            "park",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            90.65507963972401,
-            -184.95973138592922,
-            -0.00332624897612277
-        ],
-        "scene": null
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "English Heritage": {
         "building": "The Jewel Tower",
@@ -221,78 +102,39 @@
             "establishment"
         ],
         "location": [
-            90.22586822509766,
-            -142.4967041015625,
+            1090.2258682250977,
+            857.5032958984375,
             -4
         ],
         "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "Jewel Tower": {
-        "building": "Jewel Tower",
-        "coarse_type": "entertainment",
+    "Westminster School of Performing Arts": {
+        "building": "Westminster School of Performing Arts",
+        "coarse_type": "office",
         "fine_types": [
-            "tourist_attraction",
-            "museum",
-            "point_of_interest",
-            "establishment"
+            "school"
         ],
         "location": [
-            133.60113143920898,
-            -147.6052474975586,
+            797.0221786499023,
+            739.8084411621094,
             -4
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
     },
-    "Tower cafe": {
-        "building": "Jewel Tower",
-        "coarse_type": "food",
+    "INTERNATIONAL CAMBRIDGE COLLEGE": {
+        "building": "The Red Lion",
+        "coarse_type": "office",
         "fine_types": [
-            "cafe",
-            "food",
+            "university",
             "point_of_interest",
-            "store",
             "establishment"
         ],
         "location": [
-            133.60113143920898,
-            -147.6052474975586,
+            1183.6213836669922,
+            1253.7085876464844,
             -8
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Cellarium Cafe & Terrace": {
-        "building": "Cheyney Gates",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            1.5284204483032227,
-            -89.3758544921875,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "hub by Premier Inn London Westminster Abbey hotel": {
-        "building": "21 Tothill Street",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -217.4523468017578,
-            -43.908223152160645,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
     },
     "Lounge Cafe Bar": {
         "building": "21 Tothill Street",
@@ -306,108 +148,45 @@
             "establishment"
         ],
         "location": [
-            -217.4523468017578,
-            -43.908223152160645,
+            782.5476531982422,
+            956.0917768478394,
             -8
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Westminster Abbey Shop": {
-        "building": "20 Dean's Yard",
-        "coarse_type": "stores",
+    "Churchill War Rooms": {
+        "building": "King Charles Street",
+        "coarse_type": "entertainment",
         "fine_types": [
+            "tourist_attraction",
+            "museum",
             "point_of_interest",
-            "store",
             "establishment"
         ],
         "location": [
-            -26.361023902893066,
-            -55.28419494628906,
+            1023.9238739013672,
+            1211.8333053588867,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
-    "The Sanctuary House Hotel, Westminster": {
-        "building": "The Sanctuary House",
+    "Brian Carter's room at Sequential Investors": {
+        "building": "Church House",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
-            "bar",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -242.18438720703125,
-            -29.61401081085205,
-            -4
+            940.3703765869141,
+            780.0136413574219,
+            -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Brian Carter's room at Sequential Investors"
     },
-    "Fuller's Kitchen": {
-        "building": "The Sanctuary House",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -242.18438720703125,
-            -29.61401081085205,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Cafe at Supreme Court": {
-        "building": "Supreme Court",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            14.019294738769531,
-            68.82586860656738,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Jubilee cafe": {
-        "building": "Palace of Westminster",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            186.7197265625,
-            14.405009269714355,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Jubilee Shop (Houses of Parliament Gift Shop)": {
-        "building": "Palace of Westminster",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            186.7197265625,
-            14.405009269714355,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-    },
-    "Alpine Interactive": {
+    "Snacks and DM Store": {
         "building": "22 Old Queen Street",
         "coarse_type": "stores",
         "fine_types": [
@@ -417,24 +196,57 @@
             "establishment"
         ],
         "location": [
-            -175.35462188720703,
-            128.7577133178711,
+            824.645378112793,
+            1128.757713317871,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
     },
-    "Kendal\u2019s Caf\u00e9 Bar": {
-        "building": "Institution of Civil Engineers",
+    "Tower cafe": {
+        "building": "Jewel Tower",
         "coarse_type": "food",
         "fine_types": [
             "cafe",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1133.601131439209,
+            852.3947525024414,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Fresh and DM Store": {
+        "building": "20 Dean's Yard",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            973.6389760971069,
+            944.7158050537109,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "The Red Lion, Parliament Street": {
+        "building": "The Red Lion",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
             "point_of_interest",
             "food",
             "establishment"
         ],
         "location": [
-            -48.28557205200195,
-            132.85155487060547,
+            1183.6213836669922,
+            1253.7085876464844,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
@@ -451,39 +263,24 @@
             "establishment"
         ],
         "location": [
-            180.85934448242188,
-            171.5322265625,
+            1180.8593444824219,
+            1171.5322265625,
             -8
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "LEYF - House of Commons Nursery & Pre-School": {
-        "building": "12 Bridge Street",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            180.85934448242188,
-            171.5322265625,
-            -12
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Room C": {
-        "building": "12 Bridge Street",
+    "Sequential Investors": {
+        "building": "Church House",
         "coarse_type": "accommodation",
         "fine_types": [
-            "lodging",
+            "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            180.85934448242188,
-            171.5322265625,
-            -16
+            940.3703765869141,
+            780.0136413574219,
+            -8
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
     },
@@ -497,14 +294,172 @@
             "establishment"
         ],
         "location": [
-            -120.49469757080078,
-            183.04663848876953,
+            879.5053024291992,
+            1183.0466384887695,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Churchill War Rooms": {
-        "building": "King Charles Street",
+    "Steve Johnson's room at Sequential Investors": {
+        "building": "Church House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.3703765869141,
+            780.0136413574219,
+            -24
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Steve Johnson's room at Sequential Investors"
+    },
+    "Fresh and Beverages Store": {
+        "building": "Church House",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.3703765869141,
+            780.0136413574219,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+    },
+    "David Malan's room at The Sanctuary House Hotel, Westminster": {
+        "building": "The Sanctuary House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            757.8156127929688,
+            970.385989189148,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "name": "David Malan's room at The Sanctuary House Hotel, Westminster"
+    },
+    "Fresh and Snacks Store": {
+        "building": "Palace of Westminster",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.7197265625,
+            1014.4050092697144,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "St Matthew's CE Primary School": {
+        "building": "St. Matthew's Westminster Primary School and Nursery",
+        "coarse_type": "office",
+        "fine_types": [
+            "primary_school",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            817.4413528442383,
+            733.3953094482422,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Louise Roberts's room at Sequential Investors": {
+        "building": "Church House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.3703765869141,
+            780.0136413574219,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Louise Roberts's room at Sequential Investors"
+    },
+    "Olivia Adams's room at Room C": {
+        "building": "12 Bridge Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1180.8593444824219,
+            1171.5322265625,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "Olivia Adams's room at Room C"
+    },
+    "The Sanctuary House Hotel, Westminster": {
+        "building": "The Sanctuary House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            757.8156127929688,
+            970.385989189148,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+    },
+    "Room C": {
+        "building": "12 Bridge Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1180.8593444824219,
+            1171.5322265625,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "FFT Education Datalab": {
+        "building": "11 Tufton Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            989.4941811561584,
+            724.0582580566406,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Jewel Tower": {
+        "building": "Jewel Tower",
         "coarse_type": "entertainment",
         "fine_types": [
             "tourist_attraction",
@@ -513,191 +468,11 @@
             "establishment"
         ],
         "location": [
-            23.923873901367188,
-            211.83330535888672,
+            1133.601131439209,
+            852.3947525024414,
             -4
         ],
         "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Switchroom Caf\u00e9t\u00e9ria": {
-        "building": "King Charles Street",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            23.923873901367188,
-            211.83330535888672,
-            -8
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "The Red Lion, Parliament Street": {
-        "building": "The Red Lion",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            183.6213836669922,
-            253.70858764648438,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "INTERNATIONAL CAMBRIDGE COLLEGE": {
-        "building": "The Red Lion",
-        "coarse_type": "office",
-        "fine_types": [
-            "university",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            183.6213836669922,
-            253.70858764648438,
-            -8
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "NIOC House": {
-        "building": "NIOC House",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            -149.77904891967773,
-            -47.900739669799805,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Institution of Mechanical Engineers": {
-        "building": "Institution of Mechanical Engineers",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            -113.510498046875,
-            142.25302505493164,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "St. Stephen's Porch": {
-        "building": "St. Stephen's Porch",
-        "coarse_type": "office",
-        "fine_types": [
-            "office"
-        ],
-        "location": [
-            193.06661224365234,
-            -34.48612594604492,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Westminster School of Performing Arts": {
-        "building": "Westminster School of Performing Arts",
-        "coarse_type": "office",
-        "fine_types": [
-            "school"
-        ],
-        "location": [
-            -202.97782135009766,
-            -260.1915588378906,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Old Queen Street Cafe": {
-        "building": "Old Queen Street Cafe",
-        "coarse_type": "food",
-        "fine_types": [
-            "yes",
-            "restaurant"
-        ],
-        "location": [
-            -115.52392959594727,
-            130.85441970825195,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Common Room and Head Master\u2019s Study": {
-        "building": "Common Room and Head Master\u2019s Study",
-        "coarse_type": "office",
-        "fine_types": [
-            "school"
-        ],
-        "location": [
-            -3.2983570098876953,
-            -180.00662231445312,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Hakluyt\u2019s House": {
-        "building": "Hakluyt\u2019s House",
-        "coarse_type": "office",
-        "fine_types": [
-            "school"
-        ],
-        "location": [
-            -0.027368545532226562,
-            -161.3383331298828,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Liddell\u2019s House": {
-        "building": "Liddell\u2019s House",
-        "coarse_type": "office",
-        "fine_types": [
-            "school"
-        ],
-        "location": [
-            0.021156787872314453,
-            -136.93153762817383,
-            -4
-        ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
-    },
-    "Grant\u2019s House": {
-        "building": "Grant\u2019s House",
-        "coarse_type": "office",
-        "fine_types": [
-            "school"
-        ],
-        "location": [
-            26.53231716156006,
-            -194.6060791015625,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Queen Elizabeth II Conference Centre": {
-        "building": "Queen Elizabeth II Conference Centre",
-        "coarse_type": "office",
-        "fine_types": [
-            "office",
-            "conference_centre"
-        ],
-        "location": [
-            -43.52863883972168,
-            80.64824104309082,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
     },
     "Great College Street Bus Stop": {
         "building": "open space",
@@ -705,7 +480,8 @@
         "fine_type": "bus stop",
         "location": [
             38.40645274211528,
-            -227.53480770787186
+            -227.53480770787186,
+            110.14759046027662
         ],
         "scene": null
     },
@@ -715,7 +491,8 @@
         "fine_type": "bus stop",
         "location": [
             -139.13957576516128,
-            63.5414377776007
+            63.5414377776007,
+            109.67970663100414
         ],
         "scene": null
     },
@@ -725,7 +502,8 @@
         "fine_type": "bus stop",
         "location": [
             194.6122040617792,
-            201.13171938296531
+            201.13171938296531,
+            109.51639803333082
         ],
         "scene": null
     },
@@ -735,7 +513,8 @@
         "fine_type": "bicycle station",
         "location": [
             -110.76626049393577,
-            158.07514125346896
+            158.07514125346896,
+            109.76508965999531
         ],
         "scene": null
     },
@@ -745,7 +524,8 @@
         "fine_type": "bicycle station",
         "location": [
             170.30989385654047,
-            -66.70382338960972
+            -66.70382338960972,
+            110.61767681276564
         ],
         "scene": null
     },
@@ -755,7 +535,8 @@
         "fine_type": "bicycle station",
         "location": [
             -15.263137694116443,
-            -188.72949809339028
+            -188.72949809339028,
+            109.7220808558855
         ],
         "scene": null
     },
@@ -765,7 +546,8 @@
         "fine_type": "bicycle station",
         "location": [
             -207.08554426024182,
-            -18.108069950133103
+            -18.108069950133103,
+            109.16974745483087
         ],
         "scene": null
     },
@@ -775,7 +557,8 @@
         "fine_type": "bicycle station",
         "location": [
             -79.68914916737444,
-            -259.0516822463162
+            -259.0516822463162,
+            109.9145539119842
         ],
         "scene": null
     },
@@ -785,7 +568,8 @@
         "fine_type": "bicycle station",
         "location": [
             -4.770661319853595,
-            151.91202430390794
+            151.91202430390794,
+            110.66368353621831
         ],
         "scene": null
     }

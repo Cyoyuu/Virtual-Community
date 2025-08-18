@@ -1,0 +1,315 @@
+{
+    "sim_name": "FRANKFURT_agents_num_5",
+    "agent_names": [
+        "Adam Pierce",
+        "Eve By J Gonzales",
+        "Louise Roberts",
+        "Mark Zuckerberg",
+        "Roth Miller"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 750,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -14.51278991532821,
+                -195.43608484558155,
+                94.25992317576947,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Kleiner Dachsberg",
+            "current_place": "Adam Pierce's room at Kleiner Dachsberg",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -10.031120087490196,
+                -177.41573722465068,
+                94.19965470304855,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Gro\u00dfer Engel",
+            "current_place": "Eve By J Gonzales's room at Gro\u00dfer Engel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                82.23104731423419,
+                -109.61778700137882,
+                94.41896398225694,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Weissenburg",
+            "current_place": "Louise Roberts's room at Weissenburg",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                224.44533717507986,
+                -133.24509351189167,
+                95.17945250588517,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Domplatz 6",
+            "current_place": "Mark Zuckerberg's room at Hotel am Dom",
+            "current_vehicle": null
+        },
+        {
+            "cash": 650,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -13.416716383184617,
+                -254.55125656091462,
+                93.62634162913398,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Schwarzer Stern",
+            "current_place": "Roth Miller's room at Schwarzer Stern",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            990.9204397201538,
+            799.6276016235352,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            988.7038068771362,
+            817.2939987182617,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1074.9169654846191,
+            896.9547386169434,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1233.2164688110352,
+            863.6302719116211,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            992.2196761965752,
+            751.7379531860352,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/celebrity_Mark_Zuckerberg.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Drachenfels",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Braubachstra\u00dfe 39",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Berliner Str. 42 R\u00f6mershop - Pamuk",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Neue Kr\u00e4me 25",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Haus des Buches",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Fahrgasse 24",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Art and Tech Enthusiasts": {
+            "description": "A group of individuals passionate about the intersection of art and technology, exploring innovative ways to integrate these fields.",
+            "place": "Caricatura - Museum for Comic Art",
+            "members": [
+                "Adam Pierce",
+                "Louise Roberts"
+            ],
+            "daily_activity": "discussing art and technology projects from 15:00 to 17:00"
+        },
+        "Fitness and Social Club": {
+            "description": "A group focused on fitness, health, and social activities, encouraging members to lead an active lifestyle.",
+            "place": "Outdoor Gym - Fitness Training Frankfurt",
+            "members": [
+                "Eve By J Gonzales",
+                "Mark Zuckerberg",
+                "Roth Miller"
+            ],
+            "daily_activity": "engaging in group fitness sessions from 18:00 to 19:30"
+        }
+    }
+}

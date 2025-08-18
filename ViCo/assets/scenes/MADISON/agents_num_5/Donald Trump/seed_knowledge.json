@@ -1,0 +1,387 @@
+{
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "The Pressman",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Madison Book and Coffee Club"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "The Baskerville",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Madison Book and Coffee Club"
+        ]
+    },
+    "Madison Book and Coffee Club": {
+        "description": "A community group that gathers to discuss books and enjoy coffee, fostering a love for literature and social interaction.",
+        "place": "Wonderstate Coffee - Madison Cafe",
+        "members": [
+            "Donald Trump",
+            "Joe Anderson",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "discussing books over coffee from 16:00 to 17:30"
+    },
+    "Donald Trump's room at Best Western Premier Park Hotel": {
+        "building": "Best Western Premier Park Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1126.540298461914,
+            965.4961442947388,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Donald Trump's room at Best Western Premier Park Hotel",
+        "bounding_box": [
+            126.32433695061576,
+            -34.587503876587235,
+            142.67825317382812,
+            41.29085236672107,
+            58.91244940756667,
+            24.170166015625,
+            -0.8023681313906302
+        ]
+    },
+    "Best Western Premier Park Hotel": {
+        "building": "Best Western Premier Park Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1126.540298461914,
+            965.4961442947388,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            126.32433695061576,
+            -34.587503876587235,
+            142.67825317382812,
+            41.29085236672107,
+            58.91244940756667,
+            24.170166015625,
+            -0.8023681313906302
+        ]
+    },
+    "Wonderstate Coffee - Madison Cafe": {
+        "building": "25 West Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1219.0629196166992,
+            969.739706993103,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            218.30402339718273,
+            -31.30555682374723,
+            145.36399841308594,
+            37.85258199009694,
+            47.835934820851435,
+            30.520965576171875,
+            0.7632774648882694
+        ]
+    },
+    "Resolution Fitness": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -24
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "The Post": {
+        "building": "Best Western Premier Park Hotel",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1126.540298461914,
+            965.4961442947388,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            126.32433695061576,
+            -34.587503876587235,
+            142.67825317382812,
+            41.29085236672107,
+            58.91244940756667,
+            24.170166015625,
+            -0.8023681313906302
+        ]
+    },
+    "Genna's Lounge": {
+        "building": "105 West Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1159.2060165405273,
+            935.3182125091553,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            163.52287654766835,
+            -64.35223193721565,
+            135.4872283935547,
+            13.223939093291703,
+            15.03093200733482,
+            9.977508544921875,
+            0.781420949901192
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "380 West Washington Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            777.3930892944336,
+            842.5797004699707,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -224.62778580791513,
+            -157.32686995216346,
+            120.13739013671876,
+            24.406498216105483,
+            59.17619045226178,
+            14.502105712890625,
+            0.7796008137773812
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "137 West Johnson Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            771.6761093139648,
+            1201.9692306518555,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -228.4348457441194,
+            202.0289316577142,
+            121.60249710083006,
+            8.279578243316244,
+            14.473882048642384,
+            8.399986267089844,
+            0.7685396774820282
+        ]
+    },
+    "Boulders Climbing Gym - Downtown": {
+        "building": "129 South Carroll Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1244.2559127807617,
+            940.0739192962646,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            244.29281018826848,
+            -58.471338782951925,
+            137.32569122314453,
+            37.8528648887697,
+            41.27156914497843,
+            18.480850219726562,
+            0.7632367934191506
+        ]
+    },
+    "West Johnson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -145.11684279218883,
+            315.8134983792674
+        ],
+        "rotation": -0.8037606552265828,
+        "bounding_box": null
+    },
+    "West Doty Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            168.93290855636047,
+            -103.42746178914004
+        ],
+        "rotation": -0.03291053212501917,
+        "bounding_box": null
+    },
+    "West Wilson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            324.9969270949154,
+            -170.54746365896176
+        ],
+        "rotation": 2.34409417720222,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.243696430131573,
+            24.310546849995898
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -202.69080886288236,
+            173.51026241170064
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.01263518237513,
+            -119.86484854684215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -51.05275980103885,
+            169.47393538372248
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -157.31361505045334,
+            -192.33382936607885
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.30546522827655,
+            -246.33948688643684
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West Wilson Street": [
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West Johnson Street": [
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

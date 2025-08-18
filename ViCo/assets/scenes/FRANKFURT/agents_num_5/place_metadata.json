@@ -1,54 +1,17 @@
 {
-    "Rote Bar": {
-        "building": "Mainkai 7",
-        "coarse_type": "food",
+    "Louise Roberts's room at Weissenburg": {
+        "building": "Weissenburg",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
+            "apartments"
         ],
         "location": [
-            255.0223617553711,
-            -284.36802673339844,
-            -4
+            1074.9169654846191,
+            896.9547386169434,
+            -8
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "D\u00e9j\u00e0 Vu Shisha Lounge": {
-        "building": "Mainkai 10",
-        "coarse_type": "food",
-        "fine_types": [
-            "night_club",
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            233.8370132446289,
-            -282.6324462890625,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "SEVEN SWANS": {
-        "building": "Mainkai 4",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            285.28150939941406,
-            -282.51856994628906,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Louise Roberts's room at Weissenburg"
     },
     "Ambient Living Immobilienvermittlung": {
         "building": "R\u00f6merberg 11",
@@ -59,133 +22,11 @@
             "establishment"
         ],
         "location": [
-            -78.78245162963867,
-            -262.96678161621094,
+            921.2175483703613,
+            737.0332183837891,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Kiosk am R\u00f6merberg": {
-        "building": "Drachenfels",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -67.41686820983887,
-            -255.06881713867188,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
-    },
-    "Eiscaf\u00e9 Da Vinci": {
-        "building": "Drachenfels",
-        "coarse_type": "food",
-        "fine_types": [
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -67.41686820983887,
-            -255.06881713867188,
-            -8
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Drachenfels": {
-        "building": "Drachenfels",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -67.41686820983887,
-            -255.06881713867188,
-            -16
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "Fried-L\u00fcbbecke-Anlage": {
-        "building": "open space",
-        "coarse_type": "open",
-        "fine_types": [
-            "park",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -101.1448252593718,
-            -243.40295058721074,
-            -0.00544846436014268
-        ],
-        "scene": null
-    },
-    "Outdoor Gym - Fitness Training Frankfurt": {
-        "building": "Am Geistpf\u00f6rtchen 4",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            84.50713348388672,
-            -266.7571105957031,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Susanne M\u00fcllner - Entspannung & Achtsamkeit / MBSR Frankfurt": {
-        "building": "Saalgasse 15",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            52.65585899353027,
-            -262.54408264160156,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.": {
-        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
-        "coarse_type": "office",
-        "fine_types": [
-            "school",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            183.95846557617188,
-            -261.244384765625,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Caricatura - Museum for Comic Art": {
-        "building": "Leinwandhaus",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "tourist_attraction",
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            174.52320861816406,
-            -234.11046600341797,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
     "Gastst\u00e4tte Zum Storch": {
         "building": "Saalgasse 5",
@@ -197,14 +38,157 @@
             "establishment"
         ],
         "location": [
-            128.40159225463867,
-            -249.529541015625,
+            1128.4015922546387,
+            750.470458984375,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
-    "Deirdre Store": {
-        "building": "Gro\u00dfe Fischerstra\u00dfe 26",
+    "Kuma": {
+        "building": "Buchgasse 11",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            739.6681442260742,
+            998.9681527614594,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Caricatura - Museum for Comic Art": {
+        "building": "Leinwandhaus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.523208618164,
+            765.889533996582,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Dortmunder Pils Meet - Frankfurt am Main": {
+        "building": "Hainer Hof 1",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1227.3043975830078,
+            887.5636940002441,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Fresh and DM Store": {
+        "building": "Neue Kr\u00e4me 25",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            887.9367713928223,
+            991.2318770885468,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Mark Zuckerberg's room at Hotel am Dom": {
+        "building": "Domplatz 6",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1233.2164688110352,
+            863.6302719116211,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Mark Zuckerberg's room at Hotel am Dom"
+    },
+    "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.": {
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1183.9584655761719,
+            738.755615234375,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Snacks and DM Store": {
+        "building": "Fahrgasse 24",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "health",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1244.754508972168,
+            988.5089601278305,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+    },
+    "Fresh and Snacks Store": {
+        "building": "Haus des Buches",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1066.5496768951416,
+            935.3431262969971,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "The Dragon\u2018s City Sushi Ramen Bowls & Vietnamesisches Restaurant": {
+        "building": "Fahrgasse 25",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1239.1135330200195,
+            936.5837478637695,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Outdoor Gym - Fitness Training Frankfurt": {
+        "building": "Am Geistpf\u00f6rtchen 4",
         "coarse_type": "entertainment",
         "fine_types": [
             "gym",
@@ -213,57 +197,264 @@
             "establishment"
         ],
         "location": [
-            220.23854064941406,
-            -237.34263610839844,
+            1084.5071334838867,
+            733.2428894042969,
             -4
         ],
         "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
     },
-    "Steves Gem\u00fcseacker": {
-        "building": "Kornmarkt 1",
-        "coarse_type": "entertainment",
+    "Eve By J Gonzales's room at Gro\u00dfer Engel": {
+        "building": "Gro\u00dfer Engel",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "night_club",
-            "point_of_interest",
-            "establishment"
+            "apartments"
         ],
         "location": [
-            -253.14404296875,
-            -172.0356216430664,
-            -4
+            988.7038068771362,
+            817.2939987182617,
+            -8
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Eve By J Gonzales's room at Gro\u00dfer Engel"
     },
-    "TAB": {
-        "building": "Neues Rathaus (S\u00fcdbau)",
-        "coarse_type": "entertainment",
+    "Schwarzer Stern": {
+        "building": "Schwarzer Stern",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
+            "apartments"
         ],
         "location": [
-            -173.61679458618164,
-            -211.87411499023438,
+            992.2196761965752,
+            751.7379531860352,
             -4
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
-    "Fuhrerschein EU": {
-        "building": "Haus L\u00f6wenstein",
-        "coarse_type": "office",
+    "Kleiner Dachsberg": {
+        "building": "Kleiner Dachsberg",
+        "coarse_type": "accommodation",
         "fine_types": [
-            "school",
-            "health",
+            "apartments"
+        ],
+        "location": [
+            990.9204397201538,
+            799.6276016235352,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Beverages and DM Store": {
+        "building": "Drachenfels",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            -83.18593978881836,
-            -181.26376342773438,
+            932.5831317901611,
+            744.9311828613281,
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "Cucina delle Grazie": {
+        "building": "Haus am Dom",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1124.3154945373535,
+            860.8380737304688,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Adam Pierce's room at Kleiner Dachsberg": {
+        "building": "Kleiner Dachsberg",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            990.9204397201538,
+            799.6276016235352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Adam Pierce's room at Kleiner Dachsberg"
+    },
+    "Jin\u2019s Haus Frankfurt Malatang \u9ebb\u8fa3\u70eb": {
+        "building": "Neue Kr\u00e4me 23",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            889.314395904541,
+            984.1797199249268,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Nordsee GmbH": {
+        "building": "Domstra\u00dfe 911",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1097.4533195495605,
+            960.6075963973999,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Fresh and Beverages Store": {
+        "building": "Berliner Str. 42 R\u00f6mershop - Pamuk",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            894.7966613769531,
+            966.5355157852173,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+    },
+    "Hotel am Dom": {
+        "building": "Domplatz 6",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1233.2164688110352,
+            863.6302719116211,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Gew\u00fcrz- und Teehaus Schnorr & Co. GmbH": {
+        "building": "Neue Kr\u00e4me 28",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            918.5333557128906,
+            977.1382718086243,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Gro\u00dfer Engel": {
+        "building": "Gro\u00dfer Engel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            988.7038068771362,
+            817.2939987182617,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Australien Shop Frankfurt": {
+        "building": "Berliner Stra\u00dfe 33",
+        "coarse_type": "food",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            977.9672546386719,
+            927.8454475402832,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Weissenburg": {
+        "building": "Weissenburg",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1074.9169654846191,
+            896.9547386169434,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Dining Raum": {
+        "building": "Fahrgasse 15",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1288.7382507324219,
+            823.5245742797852,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "NORDSEE Frankfurt Fisch Franke": {
+        "building": "Domstra\u00dfe 9-11",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1095.1686325073242,
+            975.6356964111328,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Roth Miller's room at Schwarzer Stern": {
+        "building": "Schwarzer Stern",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            992.2196761965752,
+            751.7379531860352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Roth Miller's room at Schwarzer Stern"
     },
     "MONZA Caff\u00e8 & Bar - R\u00f6merberg": {
         "building": "R\u00f6merberg 32",
@@ -276,43 +467,11 @@
             "establishment"
         ],
         "location": [
-            -18.670747756958008,
-            -163.91525268554688,
+            981.329252243042,
+            836.0847473144531,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Coffee bar at the Kunstverein": {
-        "building": "Steinernes Haus",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -0.37349510192871094,
-            -158.7333526611328,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Frankfurter Kunstverein": {
-        "building": "Steinernes Haus",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -0.37349510192871094,
-            -158.7333526611328,
-            -8
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
     },
     "Main W\u00fcrschtl": {
         "building": "Braubachstra\u00dfe 37",
@@ -326,13 +485,13 @@
             "establishment"
         ],
         "location": [
-            -18.6670880317688,
-            -144.54564666748047,
+            981.3329119682312,
+            855.4543533325195,
             -8
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
-    "Handwerkskunst Frankfurt": {
+    "Beverages and Snacks Store": {
         "building": "Braubachstra\u00dfe 39",
         "coarse_type": "stores",
         "fine_types": [
@@ -341,1163 +500,11 @@
             "establishment"
         ],
         "location": [
-            -30.064468383789062,
-            -148.1579360961914,
+            969.9355316162109,
+            851.8420639038086,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
-    },
-    "Schlegel": {
-        "building": "Schlegel",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            67.85373497009277,
-            -159.6067886352539,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Hoppenworth & Ploch Altstadt Caf\u00e9": {
-        "building": "Eichhorn",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            65.6512508392334,
-            -151.3691635131836,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Eichhorn": {
-        "building": "Eichhorn",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            65.6512508392334,
-            -151.3691635131836,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "TREND[geschick] - Modedesign-SiebdruckKunst": {
-        "building": "Altes Kaufhaus",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            52.65481758117676,
-            -155.6272735595703,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Balthasar Ress Weinbar & Vinothek": {
-        "building": "Gr\u00fcne Linde",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "liquor_store",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            90.47734069824219,
-            -170.1762237548828,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Hoppenworth & Ploch Altstadtb\u00e4ckerei": {
-        "building": "Hinter dem L\u00e4mmchen 5",
-        "coarse_type": "food",
-        "fine_types": [
-            "bakery",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            44.55915832519531,
-            -150.35638427734375,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Frankfurt Cathedral Museum": {
-        "building": "Kaiserdom St. Bartholom\u00e4us",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            179.70761108398438,
-            -169.5280532836914,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Coffee House to the Golden Scale": {
-        "building": "Goldene Waage",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            109.27789688110352,
-            -168.35579681396484,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Amt f\u00fcr katholische Religionsp\u00e4dagogik Frankfurt/Hochtaunus": {
-        "building": "Haus am Dom",
-        "coarse_type": "office",
-        "fine_types": [
-            "library",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            124.31549453735352,
-            -139.16192626953125,
-            -4
-        ],
-        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
-    },
-    "Cucina delle Grazie": {
-        "building": "Haus am Dom",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            124.31549453735352,
-            -139.16192626953125,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Hotel am Dom": {
-        "building": "Domplatz 6",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            233.21646881103516,
-            -136.3697280883789,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Galerie Leuenroth": {
-        "building": "ehem. Mehlwaage",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            284.35797119140625,
-            -166.69068145751953,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "ehem. Mehlwaage": {
-        "building": "ehem. Mehlwaage",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            284.35797119140625,
-            -166.69068145751953,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-    },
-    "Dining Raum": {
-        "building": "Fahrgasse 15",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            288.7382507324219,
-            -176.47542572021484,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Dortmunder Pils Meet - Frankfurt am Main": {
-        "building": "Hainer Hof 1",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            227.3043975830078,
-            -112.43630599975586,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Galerie J\u00f6rg Schuhmacher": {
-        "building": "Weckmarkt 5",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            269.1288757324219,
-            -205.01325225830078,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Lotto-Annahmestelle": {
-        "building": "Berliner Str. 42 R\u00f6mershop - Pamuk",
-        "coarse_type": "stores",
-        "fine_types": [
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            -105.20333862304688,
-            -33.464484214782715,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
-    },
-    "Wacker's coffee shop": {
-        "building": "Kornmarkt 9",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -255.45659637451172,
-            -13.210663080215454,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Kuma": {
-        "building": "Buchgasse 11",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -260.3318557739258,
-            -1.0318472385406494,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "OAKBERRY A\u00e7a\u00ed": {
-        "building": "Sandgasse",
-        "coarse_type": "food",
-        "fine_types": [
-            "health",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -184.29668426513672,
-            -0.9570579528808594,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Paninoteca No.1 Feinkost": {
-        "building": "Parkhaus Hauptwache",
-        "coarse_type": "food",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -204.5529022216797,
-            -3.3552188873291016,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Jin\u2019s Haus Frankfurt Malatang \u9ebb\u8fa3\u70eb": {
-        "building": "Neue Kr\u00e4me 23",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -110.68560409545898,
-            -15.820280075073242,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Hotel City Kr\u00e4me am R\u00f6mer": {
-        "building": "Neue Kr\u00e4me 23",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -110.68560409545898,
-            -15.820280075073242,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "BIRKENSTOCK Frankfurt": {
-        "building": "Neue Kr\u00e4me 25",
-        "coarse_type": "stores",
-        "fine_types": [
-            "shoe_store",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            -112.06322860717773,
-            -8.768122911453247,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
-    },
-    "Gew\u00fcrz- und Teehaus Schnorr & Co. GmbH": {
-        "building": "Neue Kr\u00e4me 28",
-        "coarse_type": "food",
-        "fine_types": [
-            "grocery_or_supermarket",
-            "point_of_interest",
-            "food",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            -81.46664428710938,
-            -22.861728191375732,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "suspects.": {
-        "building": "Berliner Stra\u00dfe 32",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "bar",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -12.659342348575592,
-            -8.713614821434021,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "artROOM Frankfurt": {
-        "building": "Berliner Stra\u00dfe 32",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -12.659342348575592,
-            -8.713614821434021,
-            -12
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Australien Shop Frankfurt": {
-        "building": "Berliner Stra\u00dfe 33",
-        "coarse_type": "food",
-        "fine_types": [
-            "clothing_store",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -22.032745361328125,
-            -72.1545524597168,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Zum Alten Frankfurter - Frankfurt am Main": {
-        "building": "Berliner Stra\u00dfe 34",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -40.943199157714844,
-            -12.810038685798645,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Miramar Hotel": {
-        "building": "Berliner Stra\u00dfe 31",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            4.959211468696594,
-            -46.862831115722656,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Sch\u00fctzenstrasse": {
-        "building": "Frankfurt am Main",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            20.18275547027588,
-            -42.393301010131836,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
-    },
-    "NORDSEE Frankfurt Fisch Franke": {
-        "building": "Domstra\u00dfe 9-11",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            95.16863250732422,
-            -24.364303588867188,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Nordsee GmbH": {
-        "building": "Domstra\u00dfe 911",
-        "coarse_type": "food",
-        "fine_types": [
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            97.45331954956055,
-            -39.3924036026001,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Buchhandel": {
-        "building": "Haus des Buches",
-        "coarse_type": "stores",
-        "fine_types": [
-            "book_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            66.5496768951416,
-            -64.65687370300293,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
-    },
-    "mehlwassersalz": {
-        "building": "Museum f\u00fcr Moderne Kunst",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            158.63181686401367,
-            -23.750280618667603,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "MUSEUM MMK F\u00dcR MODERNE KUNST": {
-        "building": "Museum f\u00fcr Moderne Kunst",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            158.63181686401367,
-            -23.750280618667603,
-            -8
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "MAINTRAUM GmbH": {
-        "building": "Braubachstra\u00dfe 7",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            180.188720703125,
-            -41.193623542785645,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Galerie Anita Beckers": {
-        "building": "Braubachstra\u00dfe 9",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            155.60318756103516,
-            -61.270904541015625,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Gast\u00e4tte Zum Steinernen Haus": {
-        "building": "Braubachstra\u00dfe 9",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            155.60318756103516,
-            -61.270904541015625,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "HANS IM GL\u00dcCK - FRANKFURT am Main Braubachstra\u00dfe": {
-        "building": "Braubachstra\u00dfe 1",
-        "coarse_type": "food",
-        "fine_types": [
-            "night_club",
-            "bar",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            198.92396545410156,
-            -25.112863540649414,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Galerie Edition Raphael": {
-        "building": "Kunst (MMK",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            139.91934967041016,
-            -68.06182479858398,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Atomax": {
-        "building": "Domstra\u00dfe 6",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "book_store",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            140.08372497558594,
-            -75.5536117553711,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "DER MIXER": {
-        "building": "Fahrgasse 22",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            250.03419494628906,
-            -28.489168167114258,
-            -4
-        ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
-    },
-    "Mona Lisa Bar": {
-        "building": "Fahrgasse 24",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            244.75450897216797,
-            -11.491039872169495,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Ludwig Orthop\u00e4die-Schuhtechnik": {
-        "building": "Fahrgasse 24",
-        "coarse_type": "stores",
-        "fine_types": [
-            "shoe_store",
-            "health",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            244.75450897216797,
-            -11.491039872169495,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
-    },
-    "Galerie M\u00fchlfeld & Stohrer": {
-        "building": "Fahrgasse 27",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "art_gallery",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            220.8340301513672,
-            -50.899169921875,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "The Dragon\u2018s City Sushi Ramen Bowls & Vietnamesisches Restaurant": {
-        "building": "Fahrgasse 25",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            239.11353302001953,
-            -63.41625213623047,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Cafe Alte Backstube": {
-        "building": "Dominikanergasse 7",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            287.6717834472656,
-            -58.849740982055664,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Nazar D\u00d6NER & GRILL Katharienenpforte 6": {
-        "building": "Katharinenpforte 6",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -233.92171478271484,
-            84.9167709350586,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "yoga": {
-        "building": "Zeil 127",
-        "coarse_type": "entertainment",
-        "fine_types": [
-            "gym",
-            "health",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -195.97545623779297,
-            109.13292694091797,
-            -4
-        ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
-    },
-    "Hornig Wine Company GmbH": {
-        "building": "Zeil 127",
-        "coarse_type": "food",
-        "fine_types": [
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -195.97545623779297,
-            109.13292694091797,
-            -8
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "orange recon GmbH": {
-        "building": "Zeil 127",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -195.97545623779297,
-            109.13292694091797,
-            -12
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Lolli Eis": {
-        "building": "Liebfrauenstra\u00dfe 4",
-        "coarse_type": "food",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            -123.42164993286133,
-            117.56303405761719,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Itaba": {
-        "building": "T\u00f6ngesgasse 42",
-        "coarse_type": "food",
-        "fine_types": [
-            "grocery_or_supermarket",
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -17.456144332885742,
-            127.09616470336914,
-            -8
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Innside Cafe": {
-        "building": "T\u00f6ngesgasse 46",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            -39.21108913421631,
-            117.6730842590332,
-            -12
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "R\u00f6mer Pils Brunnen": {
-        "building": "T\u00f6ngesgasse 19",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            64.70212173461914,
-            117.5452995300293,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Casa Italiana Spezialit\u00e4ten aus Italien GmbH": {
-        "building": "Kleinmarkthalle",
-        "coarse_type": "food",
-        "fine_types": [
-            "liquor_store",
-            "store",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            22.64167594909668,
-            60.45500373840332,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Ania's Treff - Frankfurt am Main": {
-        "building": "T\u00f6ngesgasse 7",
-        "coarse_type": "food",
-        "fine_types": [
-            "bar",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            170.89195251464844,
-            133.40513610839844,
-            -8
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "fit kitchen": {
-        "building": "T\u00f6ngesgasse 11",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            138.00452423095703,
-            131.06646347045898,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
-    },
-    "Caf\u00e9 Libretto": {
-        "building": "Hasengasse 4",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            113.60851287841797,
-            125.82273483276367,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Parking Frankfort": {
-        "building": "Altstadt",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            110.72898864746094,
-            87.1670970916748,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Taisan K-Food & K-Trend Asia Supermarkt/": {
-        "building": "Fahrgasse 95",
-        "coarse_type": "food",
-        "fine_types": [
-            "grocery_or_supermarket",
-            "meal_takeaway",
-            "store",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            225.77796173095703,
-            109.09494018554688,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
-    },
-    "Alter Esslinger": {
-        "building": "Alter Esslinger",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            54.54636573791504,
-            -129.76218795776367,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "Weissenburg": {
-        "building": "Weissenburg",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            74.91696548461914,
-            -103.04526138305664,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Haus Lichtenstein": {
-        "building": "Haus Lichtenstein",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -76.65109634399414,
-            -241.02017211914062,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
-    },
-    "Klein-Limburg": {
-        "building": "Klein-Limburg",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -81.0235481262207,
-            -225.25726318359375,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Schwarzer Stern": {
-        "building": "Schwarzer Stern",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -7.780323803424835,
-            -248.26204681396484,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Rindsfuss": {
-        "building": "Rindsfuss",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            1.7682104110717773,
-            -231.98714447021484,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Kleiner Dachsberg": {
-        "building": "Kleiner Dachsberg",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -9.079560279846191,
-            -200.37239837646484,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
-    },
-    "Gro\u00dfer Laubenberg": {
-        "building": "Gro\u00dfer Laubenberg",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -8.694065570831299,
-            -208.0367431640625,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
-    },
-    "Kleiner Laubenberg": {
-        "building": "Kleiner Laubenberg",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -8.219327449798584,
-            -214.120361328125,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
-    },
-    "Gro\u00dfer Engel": {
-        "building": "Gro\u00dfer Engel",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -11.29619312286377,
-            -182.70600128173828,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
-    },
-    "Wilder Mann": {
-        "building": "Wilder Mann",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -9.968355417251587,
-            -192.49654388427734,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
-    },
-    "Goldener Greif": {
-        "building": "Goldener Greif",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -10.689387321472168,
-            -187.20330047607422,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
-    },
-    "Huechi Hair / Eun Ha Shon": {
-        "building": "Huechi Hair / Eun Ha Shon",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            -58.48224449157715,
-            72.32729148864746,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
     },
     "Bleidenstra\u00dfe Bus Stop": {
         "building": "open space",
@@ -1505,7 +512,8 @@
         "fine_type": "bus stop",
         "location": [
             -228.00891954540512,
-            34.867100012495186
+            34.867100012495186,
+            97.54740501283644
         ],
         "scene": null
     },
@@ -1515,7 +523,8 @@
         "fine_type": "bus stop",
         "location": [
             187.89873308578933,
-            -125.09747067401953
+            -125.09747067401953,
+            94.6300521530746
         ],
         "scene": null
     },
@@ -1525,7 +534,8 @@
         "fine_type": "bus stop",
         "location": [
             49.44755052649866,
-            -244.83844986744862
+            -244.83844986744862,
+            92.75225795849062
         ],
         "scene": null
     },
@@ -1535,7 +545,8 @@
         "fine_type": "bicycle station",
         "location": [
             -26.714385474731255,
-            -24.361326528559523
+            -24.361326528559523,
+            94.41059615395547
         ],
         "scene": null
     },
@@ -1545,7 +556,8 @@
         "fine_type": "bicycle station",
         "location": [
             234.75346195656564,
-            -225.2147639010552
+            -225.2147639010552,
+            92.70690692349305
         ],
         "scene": null
     },
@@ -1555,7 +567,8 @@
         "fine_type": "bicycle station",
         "location": [
             79.31304242685894,
-            -173.4409525514944
+            -173.4409525514944,
+            96.08460429657745
         ],
         "scene": null
     },
@@ -1565,7 +578,8 @@
         "fine_type": "bicycle station",
         "location": [
             -233.4797500106486,
-            -25.948462163399768
+            -25.948462163399768,
+            96.74319036476945
         ],
         "scene": null
     },
@@ -1575,7 +589,8 @@
         "fine_type": "bicycle station",
         "location": [
             176.98993118456949,
-            -33.292404946251
+            -33.292404946251,
+            93.94055163548751
         ],
         "scene": null
     },
@@ -1585,7 +600,8 @@
         "fine_type": "bicycle station",
         "location": [
             -56.344927612231416,
-            -201.5723036494874
+            -201.5723036494874,
+            93.38594774155335
         ],
         "scene": null
     },
@@ -1595,7 +611,8 @@
         "fine_type": "bicycle station",
         "location": [
             -89.90940664203639,
-            113.47685636627334
+            113.47685636627334,
+            97.87849181973091
         ],
         "scene": null
     }
