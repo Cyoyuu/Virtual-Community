@@ -281,7 +281,7 @@ def main():
             if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'force_enter']:
                 total_time+=1
             if action in ['move_forward'] and last_agent_pos_dict is not None:
-                total_length+=np.linalg.norm(extra_obs["agent_pos_dict"][agent]['pose'][:2]-last_agent_pos_dict[agent]['pose'][:2])
+                total_length+=np.linalg.norm(np.array(extra_obs["agent_pos_dict"][agent]['pose'][:2])-np.array(last_agent_pos_dict[agent]['pose'][:2]))
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
         
