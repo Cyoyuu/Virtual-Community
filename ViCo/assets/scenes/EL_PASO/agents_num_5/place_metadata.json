@@ -1,0 +1,922 @@
+{
+    "Paolo's Shop": {
+        "building": "221 South El Paso Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -138.0431671142578,
+            -272.84276580810547,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "WE THRIIVE": {
+        "building": "221 South El Paso Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -138.0431671142578,
+            -272.84276580810547,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "Flor De Barro Gallery": {
+        "building": "212 South Mesa Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "art_gallery",
+            "museum",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            129.7036476135254,
+            -245.48053741455078,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Region One Art Gallery": {
+        "building": "216 East Overland Avenue",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            78.69482231140137,
+            -245.1081314086914,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8"
+    },
+    "Rest Area Liquor Store": {
+        "building": "206 South Stanton Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "liquor_store",
+            "convenience_store",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            222.08934783935547,
+            -206.95685577392578,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Dulce": {
+        "building": "Hotel Paso Del Norte, Autograph Collection",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            -181.8993911743164,
+            -177.0344696044922,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Elsentro": {
+        "building": "Hotel Paso Del Norte, Autograph Collection",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -181.8993911743164,
+            -177.0344696044922,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Black Jacks Cigar Lounge": {
+        "building": "Hotel Paso Del Norte, Autograph Collection",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -181.8993911743164,
+            -177.0344696044922,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json"
+    },
+    "Fray Garcia de San Francisco Pioneer Plaza": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -165.39917107506642,
+            -131.9266375152225,
+            -0.003512367544345807
+        ],
+        "scene": null
+    },
+    "B-17 Bombers Oyster Pub": {
+        "building": "201 South El Paso Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -148.87099075317383,
+            -232.22769165039062,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Machop Spawn": {
+        "building": "125 Henry Trost Court",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -175.2105712890625,
+            -88.17984771728516,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Wigwam Museum": {
+        "building": "110 East San Antonio Avenue",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -64.17952156066895,
+            -178.9900360107422,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "Sunset Tattoo Company": {
+        "building": "208 East San Antonio Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            2.124844551086426,
+            -160.8674087524414,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json"
+    },
+    "Great Southwest Furniture Design": {
+        "building": "105 East San Antonio Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "furniture_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -68.06937408447266,
+            -122.5120620727539,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json"
+    },
+    "Corazon Restaurant": {
+        "building": "106 Texas Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            -1.580820083618164,
+            -109.29867553710938,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Abel Saucedo Art Studio": {
+        "building": "W. S. Hills Commercial Structure",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            19.48403909802437,
+            -97.44869232177734,
+            -4
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8"
+    },
+    "MOONLIGHT STUDIO": {
+        "building": "W. S. Hills Commercial Structure",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            19.48403909802437,
+            -97.44869232177734,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
+    },
+    "Martha's Caf\u00e9": {
+        "building": "120 South Mesa Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            111.96951293945312,
+            -174.88192749023438,
+            -16
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "versallers Hair & Nail Salon": {
+        "building": "Richard Caples Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            92.66940689086914,
+            -134.10579681396484,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json"
+    },
+    "Richard Caples Building": {
+        "building": "Richard Caples Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            92.66940689086914,
+            -134.10579681396484,
+            -8
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Monocle Eyewear Boutique": {
+        "building": "108 South Stanton Street 2nd Floor Suite 2A",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "health",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            195.46194458007812,
+            -130.6089324951172,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json"
+    },
+    "The Tap Bar & Restaurant": {
+        "building": "408 East San Antonio Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            212.99578094482422,
+            -104.60992050170898,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "MONA Bar of Modern Art": {
+        "building": "410 1/2 East San Antonio Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            220.9512481689453,
+            -102.51694869995117,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "International Bar": {
+        "building": "114 East Mills Avenue A",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -40.032936096191406,
+            -14.754950046539307,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Ria Market": {
+        "building": "204 North Oregon Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -23.73409652709961,
+            -76.26458168029785,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "District Coffee Co.": {
+        "building": "119 North Stanton Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            118.3095474243164,
+            -22.318557262420654,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Subway": {
+        "building": "105 North Stanton Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            138.01182556152344,
+            -68.59925079345703,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Taft-Diaz": {
+        "building": "Martin Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            67.0552749633789,
+            42.7583589553833,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Stanton House | El Paso Downtown": {
+        "building": "Martin Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "art_gallery",
+            "lodging",
+            "spa",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            67.0552749633789,
+            42.7583589553833,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "Martin Building": {
+        "building": "Martin Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            67.0552749633789,
+            42.7583589553833,
+            -16
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "Stanton Tower": {
+        "building": "100 North Stanton Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            204.77336883544922,
+            -15.754840850830078,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "Barrio Eats & Drinks": {
+        "building": "502 North Oregon Street A",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -227.76944732666016,
+            180.72473907470703,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "Gustavo Aguilar, Realtor": {
+        "building": "502 North Oregon Street A",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -227.76944732666016,
+            180.72473907470703,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Unbranded Tavern & Kitchen": {
+        "building": "318 North Mesa Street Suite R-318",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            -26.809799194335938,
+            87.54762649536133,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Desert Pepper Trading Co": {
+        "building": "219 East Mills Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            17.268840789794922,
+            99.67029190063477,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "The Reagan": {
+        "building": "De Soto Hotel",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            83.83134078979492,
+            142.31155014038086,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "De Soto Hotel": {
+        "building": "De Soto Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            83.83134078979492,
+            142.31155014038086,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json"
+    },
+    "Strayer University": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            153.14891815185547,
+            97.98492431640625,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "Derek Lopez Real Estate": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "general_contractor",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            153.14891815185547,
+            97.98492431640625,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
+    },
+    "The Rumor Mill #4": {
+        "building": "221 North Kansas Street Suite 110",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            153.14891815185547,
+            97.98492431640625,
+            -12
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Curry Bowl Indian Bistro - Downtown": {
+        "building": "O. T. Bassett Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            131.46031188964844,
+            49.649752616882324,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+    },
+    "O. T. Bassett Tower": {
+        "building": "O. T. Bassett Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            131.46031188964844,
+            49.649752616882324,
+            -8
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "The Upper Room Cafe": {
+        "building": "416 North Stanton Street Floor 6",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            2.5127696990966797,
+            273.7405776977539,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "Leonardo Poggio Real Estate": {
+        "building": "416 North Stanton Street Floor 6",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            2.5127696990966797,
+            273.7405776977539,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json"
+    },
+    "Mamacitas": {
+        "building": "Hotel Indigo El Paso Downtown",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            76.874267578125,
+            186.8114242553711,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+    },
+    "TANIA": {
+        "building": "Hotel Indigo El Paso Downtown",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            76.874267578125,
+            186.8114242553711,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "300 East Main Leasing": {
+        "building": "300 East Main Street Suite 1205",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            40.24496078491211,
+            167.88697052001953,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json"
+    },
+    "Plaza Hotel": {
+        "building": "Plaza Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            -85.64118576049805,
+            -59.54398155212402,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
+    },
+    "White House Department Store and Hotel McCoy": {
+        "building": "White House Department Store and Hotel McCoy",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            -156.30303955078125,
+            -43.36841821670532,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json"
+    },
+    "Hotel Cortez": {
+        "building": "Hotel Cortez",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            -72.1185359954834,
+            163.99093627929688,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json"
+    },
+    "J. J. Newberry Company": {
+        "building": "J. J. Newberry Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            86.45421600341797,
+            13.503796339035034,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "Singer Sewing Company": {
+        "building": "Singer Sewing Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            72.46959686279297,
+            2.5220131874084473,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "Roberts-Banner Building": {
+        "building": "Roberts-Banner Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            -25.825737953186035,
+            -3.728799343109131,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8"
+    },
+    "First Mortage Company Building": {
+        "building": "First Mortage Company Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            -75.19656181335449,
+            -97.54861831665039,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8"
+    },
+    "South Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            73.54811657291923,
+            -122.65224910177827
+        ],
+        "scene": null
+    },
+    "North Mesa Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            7.49369540527834,
+            -18.932084509957477
+        ],
+        "scene": null
+    },
+    "North Kansas Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -29.269887522528805,
+            210.1082951957225
+        ],
+        "scene": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            -254.134242495169,
+            160.69417198063402
+        ],
+        "scene": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            -64.96587659556215,
+            15.012139805369193
+        ],
+        "scene": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            324.9489704293077,
+            -138.56047980700052
+        ],
+        "scene": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            -182.32548454842004,
+            -103.52106387208097
+        ],
+        "scene": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bicycle station",
+        "location": [
+            -82.49725674740887,
+            89.5560339668224
+        ],
+        "scene": null
+    }
+}
