@@ -1,0 +1,403 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at The Multifamily company",
+        "appearance": "ViCo/assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Columbus Policy and Literacy Group"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Joe Anderson's room at Day Companies",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Columbus Policy and Literacy Group"
+        ]
+    },
+    "Columbus Policy and Literacy Group": {
+        "description": "A group focused on promoting sustainable policies and literacy in the community.",
+        "place": "Supreme Court Law Library",
+        "members": [
+            "Chad Thompson",
+            "Joe Anderson",
+            "Will Smith"
+        ],
+        "daily_activity": "discussing community projects from 15:00 to 17:00"
+    },
+    "Will Smith's room at The Capital Suites Hotel": {
+        "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1059.9933938980103,
+            861.9460525512695,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Will Smith's room at The Capital Suites Hotel",
+        "bounding_box": [
+            60.01637411447343,
+            -138.05667055997964,
+            142.79308700561523,
+            55.06134415253213,
+            90.11950848053891,
+            57.459388732910156,
+            0.14613047834726559
+        ]
+    },
+    "The Capital Suites Hotel": {
+        "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1059.9933938980103,
+            861.9460525512695,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            60.01637411447343,
+            -138.05667055997964,
+            142.79308700561523,
+            55.06134415253213,
+            90.11950848053891,
+            57.459388732910156,
+            0.14613047834726559
+        ]
+    },
+    "Supreme Court Law Library": {
+        "building": "Supreme Court of Ohio",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            996.0639266967773,
+            796.9352188110352,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -4.291066646575928,
+            -203.0668487548828,
+            138.6997833251953,
+            36.43946838378906,
+            96.42694091796875,
+            57.17816162109375,
+            0.14592263102531433
+        ]
+    },
+    "Danny's Deli-cious!": {
+        "building": "Huntington Plaza",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
+        ]
+    },
+    "The Capital Club": {
+        "building": "DoubleTree Suites by Hilton Hotel Columbus Downtown",
+        "coarse_type": "food",
+        "fine_types": [
+            "gym",
+            "bar",
+            "health",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1059.9933938980103,
+            861.9460525512695,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            60.01637411447343,
+            -138.05667055997964,
+            142.79308700561523,
+            55.06134415253213,
+            90.11950848053891,
+            57.459388732910156,
+            0.14613047834726559
+        ]
+    },
+    "Accent Wine Parlor": {
+        "building": "The Citizens Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "liquor_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "The Peanut Shoppe": {
+        "building": "4 East Broad Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1173.5431900024414,
+            1045.1184215545654,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            173.5700225830078,
+            45.15076446533203,
+            144.7748565673828,
+            4.259963512420654,
+            21.850852966308594,
+            53.5498046875,
+            0.16671916842460632
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "The Citizens Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Supreme Court of Ohio",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            996.0639266967773,
+            796.9352188110352,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -4.291066646575928,
+            -203.0668487548828,
+            138.6997833251953,
+            36.43946838378906,
+            96.42694091796875,
+            57.17816162109375,
+            0.14592263102531433
+        ]
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "Marconi Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -173.8897111313305,
+            259.3223454647179
+        ],
+        "rotation": 1.7374446058537958,
+        "bounding_box": null
+    },
+    "North High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            156.97469546519335,
+            122.38828789203147
+        ],
+        "rotation": -2.9933589340822246,
+        "bounding_box": null
+    },
+    "South High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            209.61970123951443,
+            -190.3711637897594
+        ],
+        "rotation": -2.994111967392216,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            57.03117646281551,
+            -17.56404027718296
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.17144875149471,
+            -217.34119253501643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.344963855943284,
+            222.93542690688022
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.64205681084644,
+            -231.96371476352795
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            287.8821319352048,
+            50.86864863752275
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To South High Street": [
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Marconi Boulevard": [
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

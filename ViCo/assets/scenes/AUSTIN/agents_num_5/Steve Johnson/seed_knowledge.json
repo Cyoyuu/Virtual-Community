@@ -1,0 +1,399 @@
+{
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Megan Carter's room at 4th and Colorado",
+        "appearance": "ViCo/assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Art and Social Club"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Shannon Steves's room at Savills Austin",
+        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Art and Social Club"
+        ]
+    },
+    "Art and Social Club": {
+        "description": "A community of individuals who enjoy art, socializing, and cultural activities.",
+        "place": "The Dead Rabbit, Austin",
+        "members": [
+            "Megan Carter",
+            "Shannon Steves",
+            "Steve Johnson"
+        ],
+        "daily_activity": "hosting art and social events from 17:00 to 19:00"
+    },
+    "Steve Johnson's room at Crites Real Estate": {
+        "building": "ATX Tower",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.550178527832,
+            1108.0142288208008,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Steve Johnson's room at Crites Real Estate",
+        "bounding_box": [
+            -249.4489288330078,
+            108.01396179199219,
+            110.19174194335938,
+            49.32197570800781,
+            35.60588073730469,
+            0.4816741943359375,
+            -0.31013649702072144
+        ]
+    },
+    "Crites Real Estate": {
+        "building": "ATX Tower",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.550178527832,
+            1108.0142288208008,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "bounding_box": [
+            -249.4489288330078,
+            108.01396179199219,
+            110.19174194335938,
+            49.32197570800781,
+            35.60588073730469,
+            0.4816741943359375,
+            -0.31013649702072144
+        ]
+    },
+    "The Dead Rabbit, Austin": {
+        "building": "204 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1227.822525024414,
+            1018.1956071853638,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            227.82254028320312,
+            18.195602416992188,
+            116.03865051269531,
+            13.030577659606934,
+            39.155460357666016,
+            15.186332702636719,
+            -0.31255459785461426
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "Shop 24": {
+        "building": "213 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.1889190673828,
+            950.5078811645508,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            232.18412017822268,
+            -49.49211883544922,
+            112.08625793457031,
+            7.084113131569865,
+            39.00810866711124,
+            8.027328491210938,
+            -0.3126706401264996
+        ]
+    },
+    "Friends Bar": {
+        "building": "208 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1239.2685775756836,
+            1014.5000469684601,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            239.2685791579165,
+            14.500051387974619,
+            116.06781768798828,
+            11.02516144996783,
+            39.1493997085588,
+            15.24468994140625,
+            -0.3125534524342584
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "722 Congress Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "finance",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1077.0716609954834,
+            1231.643081665039,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            76.41874649017814,
+            231.6161529552354,
+            117.7382354736328,
+            50.237069926072,
+            35.73686503721335,
+            9.689102172851562,
+            -0.314488561040297
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Wild About Music",
+        "coarse_type": "stores",
+        "fine_types": [
+            "locksmith",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1115.107105255127,
+            1089.276912689209,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            115.09131339416432,
+            89.2876347157912,
+            113.87362289428711,
+            7.292744612817333,
+            37.50139986550991,
+            8.100639343261719,
+            1.261354754823172
+        ]
+    },
+    "Wild About Music": {
+        "building": "Wild About Music",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1115.107105255127,
+            1089.276912689209,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            115.09131339416432,
+            89.2876347157912,
+            113.87362289428711,
+            7.292744612817333,
+            37.50139986550991,
+            8.100639343261719,
+            1.261354754823172
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

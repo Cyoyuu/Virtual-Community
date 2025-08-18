@@ -1,0 +1,315 @@
+{
+    "sim_name": "LONGISLAND_agents_num_5",
+    "agent_names": [
+        "Alex Jefferson",
+        "Feifei Li",
+        "Sophie Carlsen",
+        "Steve Johnson",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                14.002106605714307,
+                -11.282821032117708,
+                89.05733151221816,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "959 Hempstead Turnpike",
+            "current_place": "Alex Jefferson's room at John Savoretti Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                213.96622947626153,
+                -2.7778829256948274,
+                89.48373474818135,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "900 Hempstead Turnpike",
+            "current_place": "Feifei Li's room at Caruso & Boughton Realty Inc",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                32.953199792263916,
+                67.65235963540445,
+                89.6038326689481,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "14 New Hyde Park Road",
+            "current_place": "Sophie Carlsen's room at ALUX Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                16.991078519957764,
+                48.963585773875785,
+                89.3952423128347,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "14 New Hyde Park Road",
+            "current_place": "Steve Johnson's room at ALUX Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                225.61695281475068,
+                -14.425214779913878,
+                89.18440593386441,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "900 Hempstead Turnpike",
+            "current_place": "Zara Williams's room at Caruso & Boughton Realty Inc",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1014.9511914253235,
+            974.0911521911621,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1220.8224411010742,
+            998.6516780853271,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1028.6593952178955,
+            1048.2912111282349,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1028.6593952178955,
+            1048.2912111282349,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1220.8224411010742,
+            998.6516780853271,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/celebrity_Feifei_Li.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "K & K Auto",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "7 James Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "1055 Hempstead Turnpike",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "945 Hempstead Turnpike",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "970 Hempstead Turnpike",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "14 New Hyde Park Road",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Fitness Enthusiasts Club": {
+            "description": "A group of fitness enthusiasts who meet regularly to work out and share fitness tips.",
+            "place": "Synergy Fitness NY",
+            "members": [
+                "Alex Jefferson",
+                "Steve Johnson",
+                "Feifei Li"
+            ],
+            "daily_activity": "working out from 17:00 to 18:00"
+        },
+        "Young Musicians Society": {
+            "description": "A society for young musicians to collaborate, perform, and learn from each other.",
+            "place": "Paul Marino Music Studio",
+            "members": [
+                "Sophie Carlsen",
+                "Zara Williams"
+            ],
+            "daily_activity": "practicing music from 16:00 to 17:00"
+        }
+    }
+}

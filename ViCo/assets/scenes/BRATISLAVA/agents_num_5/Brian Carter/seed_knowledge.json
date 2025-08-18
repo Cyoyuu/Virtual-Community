@@ -1,0 +1,365 @@
+{
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Apartment Residence - Free Parking",
+        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Real Estate Enthusiasts"
+        ]
+    },
+    "Real Estate Enthusiasts": {
+        "description": "A group of individuals interested in real estate, property management, and investment.",
+        "place": "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165",
+        "members": [
+            "Brian Carter",
+            "Joe Anderson"
+        ],
+        "daily_activity": "discussing property trends from 17:00 to 18:00"
+    },
+    "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5": {
+        "building": "Konventn\u00e1 5",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            724.01904296875,
+            746.944938659668,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5",
+        "bounding_box": [
+            -276.268115611985,
+            -253.04431406358145,
+            121.41827774047853,
+            19.127539810667074,
+            38.74035225201079,
+            16.079795837402344,
+            0.39006292202003784
+        ]
+    },
+    "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165": {
+        "building": "Office Center Po\u0161tov\u00e1",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1187.1749267578125,
+            725.3897399902344,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "bounding_box": [
+            186.0138348335011,
+            -272.9478498407604,
+            115.59178161621095,
+            25.883002097449506,
+            43.72775115768546,
+            21.883285522460938,
+            0.4830995278086819
+        ]
+    },
+    "Foxford": {
+        "building": "Obchodn\u00e1 516/26",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "book_store",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1217.9571914672852,
+            753.2153244018555,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            218.46867017108656,
+            -247.49230193170808,
+            110.97777557373048,
+            10.213036376648482,
+            45.31893913042523,
+            12.4212646484375,
+            0.6827825048122723
+        ]
+    },
+    "Re\u0161taur\u00e1cia Starome\u0161\u0165an": {
+        "building": "11",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            898.8823127746582,
+            1068.7859954833984,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -100.73299840332709,
+            69.5643964329217,
+            129.2629737854004,
+            28.05144273449464,
+            33.75615629185434,
+            21.99230194091797,
+            -0.1860808995482073
+        ]
+    },
+    "G\u00f3vinda re\u0161taur\u00e1cia": {
+        "building": "Obchodn\u00e1 518/30",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.5552062988281,
+            763.2404632568359,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            238.00740929114,
+            -237.8599568692863,
+            109.37450027465822,
+            12.171784820838267,
+            47.64387934073302,
+            10.710075378417969,
+            0.67377343174067
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Mateja Bela 845/6",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            847.4871063232422,
+            1072.828109741211,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -151.96706566509633,
+            70.65231907705704,
+            127.69229125976562,
+            15.882033488606222,
+            21.379831944738232,
+            17.9927978515625,
+            -0.47112191946323195
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "N\u00e1mestie 1. m\u00e1ja 7",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1186.4807891845703,
+            1058.9975624084473,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            185.02438221483047,
+            56.90977809588611,
+            123.5959587097168,
+            31.503948143933755,
+            65.05771034679796,
+            21.78833770751953,
+            0.9334929306762859
+        ]
+    },
+    "Yoga House": {
+        "building": "Panensk\u00e1 682/33",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            932.6029224395752,
+            890.1177978515625,
+            -12
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -67.43454924016274,
+            -109.88184959330047,
+            121.35651779174805,
+            18.942749174920444,
+            35.20652591980877,
+            14.296150207519531,
+            -0.003946361019763512
+        ]
+    },
+    "Hod\u017eovo n\u00e1mestie Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            89.6687841327635,
+            -110.04229442443317
+        ],
+        "rotation": -0.753325421791811,
+        "bounding_box": null
+    },
+    "\u0160tetinova Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -233.40005217414816,
+            -155.00664649639714
+        ],
+        "rotation": 2.1172461786750985,
+        "bounding_box": null
+    },
+    "Panensk\u00e1 Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -132.46840279007986,
+            -140.8212360800419
+        ],
+        "rotation": 2.14118163697676,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            247.52892989801015,
+            -125.3516310895381
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -73.72702856905617,
+            -138.602181229165
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -279.3872891726143,
+            -36.23969947565152
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            217.80103525537174,
+            42.488212927284344
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.0017833264783,
+            -232.77288073898328
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -244.1337320355244,
+            -163.91799842996238
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -128.19851995173985,
+            100.2670809518925
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Panensk\u00e1": [
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hod\u017eovo n\u00e1mestie": [
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

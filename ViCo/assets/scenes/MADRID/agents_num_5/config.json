@@ -1,0 +1,315 @@
+{
+    "sim_name": "MADRID_agents_num_5",
+    "agent_names": [
+        "Alex Jefferson",
+        "LeBron James",
+        "Megan Carter",
+        "Roth Miller",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                81.30495685651466,
+                43.77805641228856,
+                100.79395723862183,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Edificio Restaura",
+            "current_place": "Alex Jefferson's room at Recoven, S.L.",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                195.09861816303965,
+                -17.372502440485174,
+                104.32778611426457,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Gil de Santiva\u00f1es",
+            "current_place": "LeBron James's room at VP Jard\u00edn de Recoletos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -101.97159298104795,
+                -68.99283967554813,
+                97.23844350098142,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+            "current_place": "Megan Carter's room at Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                150.41866222173513,
+                -101.20672293161532,
+                103.35441737059531,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Villalar",
+            "current_place": "Roth Miller's room at Habitum Grupo Corporativo S.L.",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -106.54747558750735,
+                -118.26817007380424,
+                96.11953667750186,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palacio del Marqu\u00e9s de Alca\u00f1ices",
+            "current_place": "Zara Williams's room at Palacio del Marqu\u00e9s de Alca\u00f1ices",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1059.319423675537,
+            1034.0926558971405,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1186.8162384033203,
+            971.0767664909363,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            885.4159889221191,
+            918.5993690490723,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1139.5207290649414,
+            901.6513214111328,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            885.6569404602051,
+            879.8155746459961,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/celebrity_LeBron_James.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Calle de Salustiano Ol\u00f3zaga",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Calle de Prim",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Banco Pastor",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "C/ Almt Almirante",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Calle del Almirante",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Calle Marqu\u00e9s de Monasterio",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Madrid Explorers Club": {
+            "description": "A group of individuals passionate about exploring the cultural and historical sites of Madrid.",
+            "place": "Cibeles Fountain",
+            "members": [
+                "Alex Jefferson",
+                "Megan Carter"
+            ],
+            "daily_activity": "exploring historical sites from 15:00 to 17:00"
+        },
+        "Madrid Nightlife Enthusiasts": {
+            "description": "A group of individuals who enjoy the vibrant nightlife and social scene in Madrid.",
+            "place": "Chip\u00e9 Club - Bar clandestino Madrid",
+            "members": [
+                "LeBron James",
+                "Roth Miller",
+                "Zara Williams"
+            ],
+            "daily_activity": "socializing and enjoying nightlife from 20:00 to 22:00"
+        }
+    }
+}

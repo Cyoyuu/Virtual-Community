@@ -1,0 +1,315 @@
+{
+    "sim_name": "BRATISLAVA_agents_num_5",
+    "agent_names": [
+        "Brian Carter",
+        "Isaac Newton",
+        "Jody Petersen",
+        "Joe Anderson",
+        "Sophie Carlsen"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -276.40950504391833,
+                -275.12699026603,
+                113.65488499895807,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Konventn\u00e1 5",
+            "current_place": "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                132.14622044003767,
+                -225.0295253337094,
+                107.65183773759733,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Crowne Plaza",
+            "current_place": "Isaac Newton's room at Crowne Plaza Bratislava, an IHG Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                219.10866289906642,
+                -221.18596747114668,
+                105.61214609534618,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Obchodn\u00e1 518/30",
+            "current_place": "Jody Petersen's room at Grand Central Apartment",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                285.15743953957633,
+                -196.9590461886438,
+                104.41327634915893,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Obchodn\u00e1 42",
+            "current_place": "Joe Anderson's room at Apartment Residence - Free Parking",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                258.12352690424893,
+                -188.22739328922242,
+                105.22274528085403,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Obchodn\u00e1 523/38",
+            "current_place": "Sophie Carlsen's room at Cityhostel",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            724.01904296875,
+            746.944938659668,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1075.4125862121582,
+            788.2996978759766,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1236.5552062988281,
+            763.2404632568359,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1279.9772338867188,
+            814.6163635253906,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1268.6700744628906,
+            793.4261322021484,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/celebrity_Isaac_Newton.glb",
+        "ViCo/avatars/models/mixamo_Jody_Petersen.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Konventn\u00e1 17",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "N\u00e1mestie 1. m\u00e1ja 7",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "N\u00e1mestie 1. m\u00e1ja 3",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Such\u00e9 m\u00fdto",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Vysok\u00e1 1032/19",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Mateja Bela 845/6",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Real Estate Enthusiasts": {
+            "description": "A group of individuals interested in real estate, property management, and investment.",
+            "place": "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165",
+            "members": [
+                "Brian Carter",
+                "Joe Anderson"
+            ],
+            "daily_activity": "discussing property trends from 17:00 to 18:00"
+        },
+        "Coffee and Community": {
+            "description": "A group of coffee lovers and community service enthusiasts who enjoy exploring cafes and engaging in social work.",
+            "place": "Foxford",
+            "members": [
+                "Jody Petersen",
+                "Sophie Carlsen",
+                "Isaac Newton"
+            ],
+            "daily_activity": "exploring new coffee blends from 16:00 to 17:00"
+        }
+    }
+}

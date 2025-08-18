@@ -1,0 +1,315 @@
+{
+    "sim_name": "LONDON_agents_num_5",
+    "agent_names": [
+        "Brian Carter",
+        "David Malan",
+        "Louise Roberts",
+        "Olivia Adams",
+        "Steve Johnson"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -26.527525230942572,
+                -257.1999150906244,
+                109.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Church House",
+            "current_place": "Brian Carter's room at Sequential Investors",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -249.26149516263723,
+                -26.791386757857236,
+                109.06548715892902,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Sanctuary House",
+            "current_place": "David Malan's room at The Sanctuary House Hotel, Westminster",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -74.2820783936538,
+                -254.84986249962424,
+                110.07488887039845,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Church House",
+            "current_place": "Louise Roberts's room at Sequential Investors",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                161.33207340067446,
+                173.80879383008784,
+                111.23869839903556,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "12 Bridge Street",
+            "current_place": "Olivia Adams's room at Room C",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -77.37269166868317,
+                -254.69777011777293,
+                109.9681323275432,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Church House",
+            "current_place": "Steve Johnson's room at Sequential Investors",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            940.3703765869141,
+            780.0136413574219,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            757.8156127929688,
+            970.385989189148,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            940.3703765869141,
+            780.0136413574219,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1180.8593444824219,
+            1171.5322265625,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            940.3703765869141,
+            780.0136413574219,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/celebrity_David_Malan.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Portcullis House",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "7 Cowley Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Church House",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "20 Dean's Yard",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Palace of Westminster",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "22 Old Queen Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Educational Innovators Club": {
+            "description": "A group of educators and researchers dedicated to advancing educational methods and technologies.",
+            "place": "Portcullis House",
+            "members": [
+                "Brian Carter",
+                "Louise Roberts"
+            ],
+            "daily_activity": "discussing educational innovations from 15:00 to 16:00"
+        },
+        "Performing Arts Enthusiasts": {
+            "description": "A group of individuals passionate about performing arts, including students and professionals.",
+            "place": "Westminster School of Performing Arts",
+            "members": [
+                "David Malan",
+                "Olivia Adams",
+                "Steve Johnson"
+            ],
+            "daily_activity": "rehearsing performances from 17:00 to 18:30"
+        }
+    }
+}

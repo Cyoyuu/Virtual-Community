@@ -1,0 +1,370 @@
+{
+    "Cillian Murphy": {
+        "age": 48,
+        "living_place": "Fairmont Palliser",
+        "appearance": "ViCo/assets/imgs/avatars/Cillian Murphy.png",
+        "groups": [
+            "Calgary Tech Innovators"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "First on Tenth",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Calgary Tech Innovators"
+        ]
+    },
+    "Calgary Tech Innovators": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and collaborate on projects.",
+        "place": "EzOffice",
+        "members": [
+            "Alex Jefferson",
+            "Cillian Murphy",
+            "James Thompson"
+        ],
+        "daily_activity": "brainstorming tech solutions from 18:00 to 20:00"
+    },
+    "Alex Jefferson's room at Mount Royal House": {
+        "building": "Mount Royal House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            912.678882598877,
+            772.8514404296875,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Alex Jefferson's room at Mount Royal House",
+        "bounding_box": [
+            -87.51196144294578,
+            -227.89640834070806,
+            123.69854736328126,
+            63.17600504110091,
+            34.01356979322341,
+            60.349090576171875,
+            -0.04312088485364048
+        ]
+    },
+    "EzOffice": {
+        "building": "Penn West Plaza - East Tower",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            813.1806106567383,
+            857.6012725830078,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "bounding_box": [
+            -186.11185167994518,
+            -142.39914379571815,
+            120.78651809692383,
+            58.25577642621536,
+            40.121193058956756,
+            51.46520233154297,
+            -0.04803202114412833
+        ]
+    },
+    "Collage Gallery": {
+        "building": "Telus Sky",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1011.5281934738159,
+            1126.022590637207,
+            -12
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            12.20758230332764,
+            126.24321741697567,
+            114.30366897583008,
+            61.13943111378536,
+            45.866454927839555,
+            38.696983337402344,
+            -0.03840578717597665
+        ]
+    },
+    "Buzzards Restaurant & Bar": {
+        "building": "Mount Royal House",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            912.678882598877,
+            772.8514404296875,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -87.51196144294578,
+            -227.89640834070806,
+            123.69854736328126,
+            63.17600504110091,
+            34.01356979322341,
+            60.349090576171875,
+            -0.04312088485364048
+        ]
+    },
+    "The Chocolate Lab, Stephen Ave": {
+        "building": "Alberta Block",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            855.7056503295898,
+            964.6502780914307,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -144.2480596755105,
+            -35.38852015482774,
+            101.62186813354492,
+            16.264882932033135,
+            41.0177495748196,
+            9.690773010253906,
+            -0.042842393267439
+        ]
+    },
+    "BELTLINE HOSPITALITY GROUP": {
+        "building": "Calgary Herald Block",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            986.1896681785583,
+            958.5924654006958,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -13.809266125062678,
+            -41.47971228932924,
+            101.03626251220703,
+            7.723420269031969,
+            39.47395127248896,
+            9.00054931640625,
+            -0.04753773466052251
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Alberta Block",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            855.7056503295898,
+            964.6502780914307,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -144.2480596755105,
+            -35.38852015482774,
+            101.62186813354492,
+            16.264882932033135,
+            41.0177495748196,
+            9.690773010253906,
+            -0.042842393267439
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Alberta Hotel Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            898.8599662780762,
+            962.4448881149292,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -101.68242370201612,
+            -37.020819325622064,
+            104.07582473754883,
+            30.766386682745065,
+            39.18738324692932,
+            14.392082214355469,
+            -0.043071852228104945
+        ]
+    },
+    "7 Avenue SE Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            213.57898134369964,
+            79.73680891249482
+        ],
+        "rotation": 1.5226506190170235,
+        "bounding_box": null
+    },
+    "7 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -124.4519846515683,
+            19.556307044589268
+        ],
+        "rotation": 1.4410783557362552,
+        "bounding_box": null
+    },
+    "9 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -32.44796231946118,
+            -109.16211502337957
+        ],
+        "rotation": -1.6133906719308326,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            37.25163294595485,
+            -68.55553785117415
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.03246747747397,
+            133.2601646863323
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.09291638577415,
+            -23.9639466873687
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.56048645554196,
+            -101.36867727252661
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            171.99436022298394,
+            202.88656314004245
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -114.93998688393205,
+            -247.5273767606725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.064107078237664,
+            97.85745257931084
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To 9 Avenue SW": [
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To 7 Avenue SE": [
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}
