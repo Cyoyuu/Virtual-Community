@@ -213,6 +213,9 @@ def main():
     # Simulation loop
     env_dt_sim = 0.
     all_task_end = False
+    total_length=0.
+    total_time=0.
+    last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     while not all_task_end:
         lst_time = time.perf_counter()
@@ -275,11 +278,19 @@ def main():
         all_task_end = True
         for agent in agent_actions_to_print:
             action = agent_actions_to_print[agent]
+            if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'force_enter']:
+                total_time+=1
+            if action in ['move_forward'] and last_agent_pos_dict is not None:
+                total_length+=np.linalg.norm(extra_obs["agent_pos_dict"][agent]['pose'][:2]-last_agent_pos_dict[agent]['pose'][:2])
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
+        
+        last_agent_pos_dict=extra_obs["agent_pos_dict"]
 
     result = {"agent_poses": [agent_pose for agent_pose in env.config['agent_poses']],
               "time_spent_meeting": env.steps,
+              "total_agent_navigationg_time": total_time,
+              "total_agent_navigation_length": total_length,
               "done": True}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)

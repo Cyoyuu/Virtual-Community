@@ -259,6 +259,12 @@ class SemanticMemory:
 					if not isinstance(value[0], float):
 						continue
 				self.knowledge[name][key] = value
+			if 'coarse_type' in knowledge:
+				self.places.append(name)
+				if knowledge['coarse_type'] == 'transit':
+					self.transit_places.append(name)
+			if 'age' in knowledge:
+				self.agents.append(name)
 		self.save_memory()
 
 	def update_ga(self, obs):
