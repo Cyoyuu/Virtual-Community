@@ -1,6 +1,8 @@
 # This script contains all commands for annotating the scene. Some steps have dependencies on previous steps, so we recommend running them sequentially as shown below.
 
-SCENES=(LONDON)
+#SCENES=(LONDON)
+SCENES=(AMSTERDAM)
+#SCENES=(AMSTERDAM AUSTIN BARCELONA BERLIN BELGRADE BRATISLAVA BRUSSELS BUDAPEST CALGARY CHRISTCHURCH COLUMBUS BALTIMORE)
 
 SOURCE_PATH="Genesis/genesis/assets/ViCo/scene/v1"
 TARGET_PATH="ViCo/assets/scenes"

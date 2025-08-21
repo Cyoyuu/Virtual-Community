@@ -1,0 +1,315 @@
+{
+    "sim_name": "BALTIMORE_agents_num_5",
+    "agent_names": [
+        "Brian Carter",
+        "Brycer Rodriguez",
+        "Olivia Adams",
+        "Rodtang",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -140.9114862469847,
+                -176.53900339214536,
+                74.27331633891511,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "1201 South Charles Street",
+            "current_place": "Brian Carter's room at 1201 S Charles Street Apartments",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                168.5116020102832,
+                172.3517007306763,
+                81.54979977086367,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "301 Warren Avenue",
+            "current_place": "Brycer Rodriguez's room at Harbor Hill Apartments",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -248.38649751131604,
+                -86.87608194806047,
+                71.82272195799922,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "1113 South Hanover Street",
+            "current_place": "Olivia Adams's room at A Home In The Hill",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -198.8781359467538,
+                -81.73815320244297,
+                72.17184409424456,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "7 West Cross Street",
+            "current_place": "Rodtang's room at Wheelhouse",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                120.05071294737937,
+                -85.4528058328474,
+                79.7567953123918,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "1111 Light Luxury Apartments",
+            "current_place": "Zara Williams's room at 1111 Light Street Apartments",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            879.3932800292969,
+            822.9064788818359,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1196.7144393920898,
+            1157.3680725097656,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            760.0026702880859,
+            912.5161247253418,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            814.7785949707031,
+            933.5762157440186,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1073.9977865219116,
+            938.5724220275879,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/celebrity_Rodtang.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Ace Hardware",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "1119 Light Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "1032 South Charles Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "CVS Pharmacy",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "917 South Charles Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "906 South Charles Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Federal Hill Music Club": {
+            "description": "A club for music enthusiasts and performers in the Federal Hill area.",
+            "place": "The 8x10",
+            "members": [
+                "Brycer Rodriguez",
+                "Olivia Adams"
+            ],
+            "daily_activity": "practicing music from 17:00 to 19:00"
+        },
+        "Baltimore Fitness Group": {
+            "description": "A group dedicated to fitness and training, focusing on strength and conditioning.",
+            "place": "South Baltimore Strength Club",
+            "members": [
+                "Brian Carter",
+                "Rodtang",
+                "Zara Williams"
+            ],
+            "daily_activity": "training sessions from 18:00 to 20:00"
+        }
+    }
+}

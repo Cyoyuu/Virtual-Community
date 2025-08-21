@@ -1,0 +1,315 @@
+{
+    "sim_name": "BELGRADE_agents_num_5",
+    "agent_names": [
+        "Cillian Murphy",
+        "Eve By J Gonzales",
+        "Kate Novak",
+        "Megan Carter",
+        "Steve Johnson"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -225.56586977886448,
+                -74.49872502092474,
+                110.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+            "current_place": "Cillian Murphy's room at Hotel Moskva",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -282.7858593863625,
+                -174.21974527940816,
+                101.10205684458828,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Pajsijeva 1",
+            "current_place": "Eve By J Gonzales's room at Belgrade apartments",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                219.56540175472736,
+                -87.62200676876184,
+                110.93625457259435,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Kosovska 35",
+            "current_place": "Kate Novak's room at Parlament City Center",
+            "current_vehicle": null
+        },
+        {
+            "cash": 100,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                264.8811809291046,
+                -126.95837043679606,
+                112.50119370077431,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "2 sprat",
+            "current_place": "Megan Carter's room at Legacy Apartmani",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -207.69329409270756,
+                218.74772669478253,
+                108.25645542587459,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Kolar\u010deva 5",
+            "current_place": "Steve Johnson's room at Apartmani Beograd Rakoc",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            790.4918212890625,
+            949.7886743545532,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            720.6167449951172,
+            834.553108215332,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1223.1770553588867,
+            923.5174407958984,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1273.6181030273438,
+            881.346004486084,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            807.8774261474609,
+            1218.0288848876953,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Cillian_Murphy.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "Balkanska 23",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "Kosovska 39",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "\u041f\u0430\u043b\u0430\u0442\u0430 \u041f\u0435\u043d\u0437\u0438\u043e\u043d\u043e\u0433 \u0444\u043e\u043d\u0434\u0430",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Terazije 15-23",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Kondina 14",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Art Enthusiasts Club": {
+            "description": "A group of individuals who share a passion for art and culture, exploring galleries and attending art events.",
+            "place": "Galerija Grafi\u010dki kolektiv / Gallery Graphic Collective",
+            "members": [
+                "Cillian Murphy",
+                "Eve By J Gonzales",
+                "Megan Carter"
+            ],
+            "daily_activity": "visiting art exhibitions from 17:00 to 19:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech enthusiasts and professionals who collaborate on software projects and share knowledge.",
+            "place": "Nu\u0161i\u0107eva Business Center",
+            "members": [
+                "Kate Novak",
+                "Steve Johnson"
+            ],
+            "daily_activity": "working on software development projects from 15:00 to 18:00"
+        }
+    }
+}

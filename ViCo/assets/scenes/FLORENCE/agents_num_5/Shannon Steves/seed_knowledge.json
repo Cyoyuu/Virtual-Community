@@ -1,0 +1,357 @@
+{
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Roth Miller's room at Florence Fortezza Apartment",
+        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Culinary and Wellness Enthusiasts"
+        ]
+    },
+    "Tiger Woods": {
+        "age": 48,
+        "living_place": "La Fortezza",
+        "appearance": "ViCo/assets/imgs/avatars/Tiger Woods.png",
+        "groups": [
+            "Culinary and Wellness Enthusiasts"
+        ]
+    },
+    "Culinary and Wellness Enthusiasts": {
+        "description": "A group of food and wellness enthusiasts who enjoy cooking, dining, and practicing mindfulness.",
+        "place": "VaL\u00f9 Bakery & Cakes",
+        "members": [
+            "Roth Miller",
+            "Shannon Steves",
+            "Tiger Woods"
+        ],
+        "daily_activity": "attending culinary workshops from 16:00 to 18:00"
+    },
+    "Shannon Steves's room at Ruote 25 primo": {
+        "building": "Via delle Ruote",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1162.065933227539,
+            811.606086730957,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Shannon Steves's room at Ruote 25 primo",
+        "bounding_box": [
+            161.98153952000106,
+            -188.39392042165608,
+            126.2553939819336,
+            11.256565148246901,
+            25.093943825420123,
+            14.140151977539062,
+            -0.6076980652650962
+        ]
+    },
+    "Daniela Petrini Insegnante Yoga": {
+        "building": "Via San Zanobi",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1070.4297943115234,
+            792.6746139526367,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            70.31817860593634,
+            -207.3305463942084,
+            126.05125427246094,
+            5.861295332254151,
+            19.58460862234656,
+            15.150909423828125,
+            1.0469835905811584
+        ]
+    },
+    "VaL\u00f9 Bakery & Cakes": {
+        "building": "Viale Filippo Strozzi",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "restaurant",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.2858963012695,
+            868.8813095092773,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -209.7141075233227,
+            -131.43581536090474,
+            125.47901153564453,
+            39.594004903092184,
+            103.53280559376769,
+            14.653305053710938,
+            -0.5524143225248823
+        ]
+    },
+    "Giardino della Fortezza": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            717.8504413958942,
+            939.6318320111532,
+            -0.006516947778877125
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "L'ortolano": {
+        "building": "Via Santa Reparata",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1197.4659042358398,
+            806.7312774658203,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            199.7263043643112,
+            -193.4740114963207,
+            126.0653076171875,
+            13.372541185665964,
+            21.691682615965366,
+            13.89691162109375,
+            -0.9741324699181511
+        ]
+    },
+    "Ristorante Pizzeria da Nasone": {
+        "building": "Via Santa Caterina D'Alessandria",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1096.206127166748,
+            1008.4232486486435,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            95.90644579462602,
+            9.01917074289081,
+            126.43576431274414,
+            11.377247206444066,
+            20.521418101386022,
+            14.611503601074219,
+            -0.5715061519707841
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Viale Filippo Strozzi",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.2858963012695,
+            868.8813095092773,
+            -28
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -209.7141075233227,
+            -131.43581536090474,
+            125.47901153564453,
+            39.594004903092184,
+            103.53280559376769,
+            14.653305053710938,
+            -0.5524143225248823
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Viale Giovanni Milton",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1166.1414108276367,
+            1269.0903396606445,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            164.8206312077983,
+            269.19797391414596,
+            131.20478439331052,
+            17.268252627949966,
+            48.11864574819971,
+            16.883827209472656,
+            -1.223898225312858
+        ]
+    },
+    "Via di Barbano Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -159.17645632120642,
+            -97.12648510269636
+        ],
+        "rotation": 2.585019706067684,
+        "bounding_box": null
+    },
+    "Via Lorenzo il Magnifico Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            73.718397479586,
+            157.0375582880194
+        ],
+        "rotation": -1.2210106287699518,
+        "bounding_box": null
+    },
+    "Via delle Ruote Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            198.54545099848747,
+            -207.56771695981305
+        ],
+        "rotation": -2.542958215396702,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            109.10030669329115,
+            20.211776902538066
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -285.15964413671514,
+            -64.81051201181442
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            174.935037270247,
+            197.6304244641488
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -161.85953485775573,
+            160.87276093862096
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            19.5612585728379,
+            -202.3741103199879
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -214.18704208254903,
+            -173.30503259223443
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Via delle Ruote": [
+            {
+                "stop_name": "Via di Barbano Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Via Lorenzo il Magnifico Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Via delle Ruote Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Via di Barbano": [
+            {
+                "stop_name": "Via delle Ruote Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Via Lorenzo il Magnifico Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Via di Barbano Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

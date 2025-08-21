@@ -1,0 +1,315 @@
+{
+    "sim_name": "CHRISTCHURCH_agents_num_5",
+    "agent_names": [
+        "Brycer Rodriguez",
+        "Emily Johnson",
+        "Lisa Su",
+        "Pika Hayes",
+        "Roth Miller"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                113.7840037931366,
+                195.58382966953695,
+                111.3615101636563,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Brycer Rodriguez's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -53.92080743059631,
+                218.0987347762207,
+                111.70978991175396,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Crowne Plaza Christchurch",
+            "current_place": "Emily Johnson's room at Crowne Plaza Christchurch by IHG",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -12.527759360387636,
+                -56.45174839837256,
+                112.77419473366078,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Distinction Hotel Christchurch",
+            "current_place": "Lisa Su's room at Distinction Christchurch Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                157.3028094300904,
+                183.0917255067256,
+                111.10726893931508,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Urbanz Accommodation Christchurch",
+            "current_place": "Pika Hayes's room at Urbanz Accomodation Christchurch",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                40.67087002832327,
+                -2.8593635222358964,
+                113.04164913984286,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Old Government Building",
+            "current_place": "Roth Miller's room at Adina Heritage Christchurch",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            952.5873069763184,
+            1231.9229583740234,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1012.7234511375427,
+            951.3979454040527,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1138.9851760864258,
+            1192.6258087158203,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1081.2799625396729,
+            989.6693503856659,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ]
+    ],
+    "num_agents": 5,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/celebrity_Lisa_Su.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/mixamo_Roth_Miller.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "126 Cashel Street",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "The Terrace Car Park",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "BNZ Centre",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Public Trust Building",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "The Regent",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Old Government Building",
+            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Christchurch Photography Club": {
+            "description": "A group of photography enthusiasts exploring and capturing the beauty of Christchurch.",
+            "place": "Rauora Park",
+            "members": [
+                "Emily Johnson",
+                "Brycer Rodriguez"
+            ],
+            "daily_activity": "taking photos from 15:00 to 17:00"
+        },
+        "Tech Innovators Group": {
+            "description": "A group of tech professionals and students collaborating on innovative projects.",
+            "place": "Catalyst Group - Christchurch",
+            "members": [
+                "Lisa Su",
+                "Pika Hayes",
+                "Roth Miller"
+            ],
+            "daily_activity": "discussing tech trends from 18:00 to 20:00"
+        }
+    }
+}

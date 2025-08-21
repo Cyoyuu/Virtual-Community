@@ -1,7 +1,7 @@
 # This script contains all commands for generating characters the scene. Some steps have dependencies on previous steps, so we recommend running them sequentially as shown below.
 
 #SCENES=(DETROIT)
-SCENES=(AMSTERDAM)
+SCENES=(FLORENCE)
 #SCENES=(MADRID PARIS SYDNEY MADRID2 PHILADELPHIA TORONTO MILAN PORTLAND ZURICH NY ROME)
 
 for SCENE in "${SCENES[@]}"
