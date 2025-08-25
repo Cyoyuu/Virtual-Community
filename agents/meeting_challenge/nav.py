@@ -191,6 +191,27 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
+        # already at the correct place
+        if goal_place == self.obs['current_place']:
+            self.logger.debug(f"{self.name} arrived at {goal_place}.")
+            return self.last_action, True
+        # can enter the correct place
+        if goal_place in self.obs['accessible_places']:
+            self.logger.debug(f"{self.name} finished navigation to {goal_place}")
+            self.last_action = {
+                'type': 'enter',
+                'arg1': goal_place
+            }
+            return self.last_action, False
+        # at wrong place, need to enter open space
+        if self.obs['current_place'] is not None:
+            self.logger.debug(
+                f"{self.name} at {self.obs['current_place']} is entering open space to move to {goal_place}.")
+            self.last_action = {
+                'type': 'enter',
+                'arg1': 'open space'
+            }
+            return self.last_action, False
         if self.last_route is None:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
