@@ -176,5 +176,6 @@ class Amap:
             print(f"No valid route found from {curr_trans[:2]} to {goal_pos}")
             return []
         
+        path.append(goal_pos)
         return path
 
