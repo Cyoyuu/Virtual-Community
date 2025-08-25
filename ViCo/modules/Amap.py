@@ -114,6 +114,11 @@ class Amap:
             raise ValueError(f"Unknown place: {goal_place}")
         
         goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]
+        curr_trans=copy.deepcopy(curr_trans)
+        if goal_pos[0]>500 or goal_pos[1]>500:
+            goal_pos[0], goal_pos[1]=goal_pos[0]-1000, goal_pos[1]-1000
+        if curr_trans[0]>500 or curr_trans[1]>500:
+            curr_trans[0], curr_trans[1]=curr_trans[0]-1000, curr_trans[1]-1000
 
         # 1. Find nearest waypoint to current pose
         start_wp_id = min(
@@ -142,7 +147,8 @@ class Amap:
                 break
 
             current_wp = self.waypoints[wp_id]
-            for succ_id in current_wp.successor:
+            potential = current_wp.successor + current_wp.predecessor
+            for succ_id in potential:
                 if succ_id >= len(self.waypoints):
                     continue
                 succ_wp = self.waypoints[succ_id]
