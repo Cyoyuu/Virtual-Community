@@ -291,10 +291,10 @@ def main():
 
     result = {"agent_poses": [agent_pose for agent_pose in env.config['agent_poses']],
               "time_spent_meeting": env.steps,
-              "agent_navigationg_time_mean": total_time.mean(),
-              "agent_navigationg_time_stdev": total_time.stdev(),
-              "agent_navigation_length_mean": total_length.mean(),
-              "agent_navigation_length_mean": total_length.stdev(),
+              "agent_navigationg_time_mean": np.mean(total_time),
+              "agent_navigationg_time_stdev": np.std(total_time),
+              "agent_navigation_length_mean": np.mean(total_length),
+              "agent_navigation_length_mean": np.std(total_length),
               "done": True}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
