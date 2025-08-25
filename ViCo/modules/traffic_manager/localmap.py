@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 import os
+import copy
+from copy import deepcopy
 from pathlib import Path
 import pickle
 import random
@@ -549,7 +551,7 @@ class LocalMap:
             ]
             self.junctions[id]={'name':name, 'id': id, 'connections': connections}
 
-        self.printable_roads = local_map.roads
+        self.printable_roads = copy.deepcopy(self.roads)
         for road in self.printable_roads:
             self.printable_roads[road]["predecessor"]=self.get_previous_roads(road)
             self.printable_roads[road]['successor']=self.get_next_roads(road)
