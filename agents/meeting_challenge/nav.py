@@ -128,6 +128,7 @@ class NavigationMeetingAgent(Agent):
         self.last_estimated_arrival_time = None
         self.last_route = None
         self.last_nav = None
+        self.last_action = None
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -150,7 +151,8 @@ class NavigationMeetingAgent(Agent):
                 if event["type"] == "message":
                     pass
                 if event["type"] == "app message":
-                    pass
+                    if self.last_action['type']=="query_route":
+                        self.last_route=event["content"]
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']
@@ -185,34 +187,35 @@ class NavigationMeetingAgent(Agent):
         self.action_history.append(Action(action, self.curr_time, self.curr_time))
         self.logger.debug(f"{self.name}'s current generated action is {action}.")
         assert action is None or isinstance(action, dict)
-        return action
+        self.last_action=action
+        return self.last_action
     
-    def city_navigate(self, goal_place):
+    def city_navigate(self, goal_place, threshold=500.):
         if self.last_route is None:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
-        estimated_arrival_time = self.curr_time + calc_time()
-        if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
-            action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
-            return action, False
+        # estimated_arrival_time = self.curr_time + calc_time()
+        # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
+        #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
+        #     return action, False
         cur_trans = np.array(self.pose[:2])
-        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0])
+        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0].location)
         if arrived: self.last_route.pop(0)
         return self.llm_navigate(self)
     
-    def llm_navigate(self, max_retry = 3):
+    def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
         retry = 0
         if self.last_nav is None:
             self.generate_navigation_plan(max_retry)
-        estimated_arrival_time = self.curr_time + calc_time()
-        if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
-            self.generate_navigation_plan(max_retry)
+        # estimated_arrival_time = self.curr_time + calc_time()
+        # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
+        #     self.generate_navigation_plan(max_retry)
         arrived = True
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
         while arrived and retry < max_retry:
-            curr_goal = self.last_nav[0]
+            curr_goal = self.last_nav[0].location
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal)
             if arrived: self.last_nav.pop(0)
