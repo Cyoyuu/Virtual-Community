@@ -77,7 +77,7 @@ def main():
 
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
-    parser.add_argument("--agent_type", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
+    parser.add_argument("--agent_type", type=str, choices=['heuristic', 'llm', 'mcts', 'random', 'nav'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
