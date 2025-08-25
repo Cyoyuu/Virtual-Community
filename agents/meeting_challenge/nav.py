@@ -201,7 +201,7 @@ class NavigationMeetingAgent(Agent):
         cur_trans = np.array(self.pose[:2])
         arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0])
         if arrived: self.last_route.pop(0)
-        return self.llm_navigate(self, max_retry=0)
+        return self.llm_navigate(max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
