@@ -38,7 +38,7 @@ class Amap:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
         self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr",
-                            terrain_height_path=None if self.dry_run else f"{self.env.scene_assets_dir}/height_field.npz",
+                            terrain_height_path=None,
                             ref_lat=ref_lat, ref_lon=ref_lon)
 
         self.waypoints = []
