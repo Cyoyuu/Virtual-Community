@@ -35,6 +35,7 @@ class Amap:
 
         self.waypoints = []
         self.road2waypoint = {}
+        self.spawn_waypoints()
         
     def reset(self, pose):
         self.pose=pose
