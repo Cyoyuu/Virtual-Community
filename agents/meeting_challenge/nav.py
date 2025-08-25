@@ -237,6 +237,8 @@ class NavigationMeetingAgent(Agent):
         while arrived:
             if self.last_nav is None:
                 self.generate_navigation_plan(max_retry=max_retry)
+                if self.last_nav is None:
+                    return {"type": "wait"}, False
             curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal)

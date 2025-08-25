@@ -272,8 +272,10 @@ def main():
         max_distance=0.
         for agent_pose in env.config['agent_poses']:
             agent_pose = np.array(agent_pose[:2])
+            if agent_pose[0]>500: agent_pose-=1000
             for agent2_pose in env.config['agent_poses']:
                 agent2_pose = np.array(agent2_pose[:2])
+                if agent2_pose[0]>500: agent2_pose-=1000
                 max_distance = max(max_distance, np.linalg.norm(agent_pose-agent2_pose))
         gs.logger.info(f"The longest distance between the agents: {max_distance:.2f}")
 
