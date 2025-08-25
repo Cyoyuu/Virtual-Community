@@ -240,7 +240,7 @@ class VicoEnv:
 		gs.logger.info(f"running {self.sim_frames_per_step} scene steps for one ViCo step of {self.sec_per_step}s")
 
 		self.traffic_manager.reset()
-		self.nav_app = Amap(map=self.traffic_manager.map, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata)
+		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata)
 
 		for i, agent in enumerate(self.agents):
 			agent.reset(np.array(self.config['agent_poses'][i][:3], dtype=np.float64), geom_utils.euler_to_R(np.degrees(np.array(self.config['agent_poses'][i][3:], dtype=np.float64))))
