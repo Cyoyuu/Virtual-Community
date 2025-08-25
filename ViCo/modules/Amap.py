@@ -153,7 +153,7 @@ class Amap:
         path = []
         curr = goal_wp_id
         while curr is not None:
-            path.append(self.waypoints[curr])
+            path.append(self.waypoints[curr].location)
             curr = prev[curr]
         path.reverse()
 

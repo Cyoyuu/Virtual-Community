@@ -199,7 +199,7 @@ class NavigationMeetingAgent(Agent):
         #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
         #     return action, False
         cur_trans = np.array(self.pose[:2])
-        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0].location)
+        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0])
         if arrived: self.last_route.pop(0)
         return self.llm_navigate(self)
     
@@ -215,7 +215,7 @@ class NavigationMeetingAgent(Agent):
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
         while arrived and retry < max_retry:
-            curr_goal = self.last_nav[0].location
+            curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal)
             if arrived: self.last_nav.pop(0)
