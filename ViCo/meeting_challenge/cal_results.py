@@ -18,6 +18,7 @@ for scene in os.listdir(base_output_dir):
     for agent_type in os.listdir(os.path.join(base_output_dir, scene)):
         # if "_" not in dir_name:
         #     continue
+        if "result.json" not in os.listdir(os.path.join(base_output_dir, scene, agent_type)): continue
         result = json.load(open(os.path.join(base_output_dir, scene, agent_type, "result.json")))
         print(f"summerizeing {os.path.join(base_output_dir, scene, agent_type)}")
         if agent_type not in results:
