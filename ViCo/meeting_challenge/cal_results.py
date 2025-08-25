@@ -1,0 +1,31 @@
+import json
+import os
+import argparse
+import numpy as np
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--task", type=str, default="carry")
+parser.add_argument("--agent_num", type=int, default=1)
+parser.add_argument("--agent_type", type=str, default="heuristic")
+parser.add_argument("--scene", type=str, default="scene_0")
+parser.add_argument("--task_id", type=str, default="carry_1")
+parser.add_argument("--output_dir", "-o", type=str, default="ViCo/assistance_challenge/output/")
+args = parser.parse_args()
+base_output_dir = args.output_dir
+results = dict()
+for scene in os.listdir(base_output_dir):
+    if not os.path.isdir(os.path.join(base_output_dir, scene)): continue
+    for agent_type in os.listdir(os.path.join(base_output_dir, scene)):
+        # if "_" not in dir_name:
+        #     continue
+        result = json.load(open(os.path.join(base_output_dir, scene, agent_type, "result.json")))
+        print(f"summerizeing {os.path.join(base_output_dir, scene, agent_type)}")
+        if agent_type not in results:
+            results[agent_type] = dict()
+        if scene not in results[agent_type]:
+            results[agent_type][scene] = dict()
+            for key in result:
+                results[agent_type][scene][key] = result[key]
+with open(f"{base_output_dir}/results.json", "w") as f:
+    json.dump(results, f, indent=2)
+import pdb; pdb.set_trace()
