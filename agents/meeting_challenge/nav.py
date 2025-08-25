@@ -126,8 +126,8 @@ class NavigationMeetingAgent(Agent):
         self.meeting_place = None
         self.mode = None
         self.last_estimated_arrival_time = None
-        self.last_route = None
-        self.last_nav = None
+        self.last_route = []
+        self.last_nav = []
         self.last_action = None
 
     def reset(self, name, pose):
@@ -181,6 +181,7 @@ class NavigationMeetingAgent(Agent):
                 action, arrived = self.city_navigate(self.meeting_place)
                 if arrived:
                     action = {'type': 'task_complete'}
+                    self.logger.info(f"Currently arrived at {self.meeting_place}.")
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None
@@ -191,6 +192,7 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
+        self.logger.info(f"Currently city nav to {goal_place}.")
         # already at the correct place
         if goal_place == self.obs['current_place']:
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
@@ -212,7 +214,7 @@ class NavigationMeetingAgent(Agent):
                 'arg1': 'open space'
             }
             return self.last_action, False
-        if self.last_route is None:
+        if not self.last_route:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
         # estimated_arrival_time = self.curr_time + calc_time()
@@ -226,7 +228,7 @@ class NavigationMeetingAgent(Agent):
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
-        if self.last_nav is None:
+        if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
         # estimated_arrival_time = self.curr_time + calc_time()
         # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
@@ -235,9 +237,9 @@ class NavigationMeetingAgent(Agent):
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
         while arrived:
-            if self.last_nav is None:
+            if not self.last_nav:
                 self.generate_navigation_plan(max_retry=max_retry)
-                if self.last_nav is None:
+                if not self.last_nav:
                     return {"type": "wait"}, False
             curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
