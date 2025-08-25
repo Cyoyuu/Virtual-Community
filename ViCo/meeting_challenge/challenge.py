@@ -107,7 +107,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     output_dir = args.output_dir
     result_path = os.path.join(output_dir, "result.json")
-    if os.path.exists(result_path):
+    if os.path.exists(result_path) and not args.overwrite:
         result = json.load(open(result_path, 'r'))
         print(f"results exists: {result}")
         if result["done"]:
