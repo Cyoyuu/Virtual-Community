@@ -39,6 +39,7 @@ for agent_type in results:
     num=0
     for scene in results[agent_type]:
         if "OLD" in scene:continue
+        if "agent_navigation_time_mean" not in results[agent_type][scene]:continue
         for key in average_results[agent_type]:
             average_results[agent_type][key]+=results[agent_type][scene][key]
     for key in average_results[agent_type]:
