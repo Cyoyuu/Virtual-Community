@@ -15,6 +15,7 @@ import time
 import heapq
 
 from ViCo.tools.utils import *
+from ViCo.modules import *
 
 @dataclass
 class Waypoints:
@@ -26,12 +27,19 @@ class Waypoints:
 
 class Amap:
     '''walkers only'''
-    def __init__(self, map=None, pose=None, place_metadata=None, building_metadata=None):
-        self.map=map
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None):
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=place_metadata
         self.building_metadata=building_metadata
+
+        with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
+            for line in file:
+                ref_lat, ref_lon = line.strip().split()
+            ref_lat, ref_lon = float(ref_lat), float(ref_lon)
+        self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr",
+                            terrain_height_path=None if self.dry_run else f"{self.env.scene_assets_dir}/height_field.npz",
+                            ref_lat=ref_lat, ref_lon=ref_lon)
 
         self.waypoints = []
         self.road2waypoint = {}
