@@ -166,7 +166,7 @@ class Amap:
             curr = prev[curr]
         path.reverse()
 
-        if not path or path[0].id != start_wp_id:
+        if not path:
             print(f"No valid route found from {curr_trans[:2]} to {goal_pos}")
             return []
         
