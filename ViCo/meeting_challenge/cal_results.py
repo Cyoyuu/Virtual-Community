@@ -30,6 +30,7 @@ for scene in os.listdir(base_output_dir):
                 if key != "agent_poses":
                     results[agent_type][scene][key] = result[key]
 for agent_type in results:
+    average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting"]=0.
     average_results[agent_type]["agent_navigation_time_mean"]=0.
     average_results[agent_type]["agent_navigation_time_stdev"]=0.
