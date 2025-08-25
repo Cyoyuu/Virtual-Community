@@ -201,27 +201,26 @@ class NavigationMeetingAgent(Agent):
         cur_trans = np.array(self.pose[:2])
         arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0])
         if arrived: self.last_route.pop(0)
-        return self.llm_navigate(self)
+        return self.llm_navigate(self, max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
-        retry = 0
         if self.last_nav is None:
-            self.generate_navigation_plan(max_retry)
+            self.generate_navigation_plan(max_retry=max_retry)
         # estimated_arrival_time = self.curr_time + calc_time()
         # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
         #     self.generate_navigation_plan(max_retry)
         arrived = True
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
-        while arrived and retry < max_retry:
+        while arrived:
             curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal)
             if arrived: self.last_nav.pop(0)
         return action, arrived
 
-    def generate_navigation_plan(self, max_retry):
+    def generate_navigation_plan(self, max_retry=3):
         assert max_retry >= 0
         if max_retry == 0:
             self.last_nav = self.last_route[:min(3,len(self.last_route))]
