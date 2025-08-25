@@ -712,7 +712,8 @@ class VicoEnv:
 					app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				if action['arg1'] == 'query_route':
-					pass
+					app_answer = self.nav_app.query_route(agent_pos, action['arg2'])
+					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
