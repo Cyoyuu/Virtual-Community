@@ -13,6 +13,7 @@ parser.add_argument("--output_dir", "-o", type=str, default="ViCo/assistance_cha
 args = parser.parse_args()
 base_output_dir = args.output_dir
 results = dict()
+average_results = dict()
 for scene in os.listdir(base_output_dir):
     if not os.path.isdir(os.path.join(base_output_dir, scene)): continue
     for agent_type in os.listdir(os.path.join(base_output_dir, scene)):
@@ -26,7 +27,21 @@ for scene in os.listdir(base_output_dir):
         if scene not in results[agent_type]:
             results[agent_type][scene] = dict()
             for key in result:
-                results[agent_type][scene][key] = result[key]
+                if key != "agent_poses":
+                    results[agent_type][scene][key] = result[key]
+for agent_type in results:
+    average_results[agent_type]["time_spent_meeting"]=0.
+    average_results[agent_type]["agent_navigation_time_mean"]=0.
+    average_results[agent_type]["agent_navigation_time_stdev"]=0.
+    average_results[agent_type]["agent_navigation_length_mean"]=0.
+    average_results[agent_type]["agent_navigation_length_stdev"]=0.
+    num=0
+    for scene in results[agent_type]:
+        for key in average_results[agent_type]:
+            average_results[agent_type][key]+=results[agent_type][scene][key]
+    for key in average_results[agent_type]:
+        average_results[agent_type][key]/=num
+    results[agent_type]["average"]=average_results[agent_type]
 with open(f"{base_output_dir}/results.json", "w") as f:
     json.dump(results, f, indent=2)
 import pdb; pdb.set_trace()
