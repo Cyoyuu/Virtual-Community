@@ -151,7 +151,7 @@ class NavigationMeetingAgent(Agent):
                 if event["type"] == "message":
                     pass
                 if event["type"] == "app message":
-                    if self.last_action['type']=="query_route":
+                    if self.last_action['type']=="query_app" and self.last_action['arg1']=="query_route":
                         self.last_route=event["content"]
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']
