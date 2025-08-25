@@ -5,3 +5,4 @@ from .outdoor_objects import *
 from .avatar import *
 from .vehicle import *
 from .traffic_manager import *
+from .Amap import Amap

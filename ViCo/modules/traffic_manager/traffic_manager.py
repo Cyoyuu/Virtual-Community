@@ -5,20 +5,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.image as mpimg
+import json
+import sys
+
+current_directory = os.getcwd()
+sys.path.insert(0, current_directory)
 
 from ViCo.modules import *
 
 from .localmap import *
 from .simple_vehicle import *
 from .simple_agent import *
-
 class TrafficManager:
-    def __init__(self, env, scene_name, vehicle_number=0, pedestrian_number=0, dry_run=False, enable_tm_debug=False, logger=None, debug=False):
+    def __init__(self, env, scene_name, vehicle_number=0, pedestrian_number=0, dry_run=False, enable_tm_debug=False, config_path=None, logger=None, debug=False):
         self.env = env
         self.logger = logger
         self.debug = debug
         self.enable_tm_debug = enable_tm_debug
         self.dry_run = dry_run
+        self.config_path=config_path
+        self.config=None
+        if self.config_path is not None:
+            with open(self.config_path, "r") as f:
+                self.config=json.load(f)
+            pedestrian_number=0#len(self.config['pedestrians'])
+            vehicle_number=len(self.config['vehicles'])
         if pedestrian_number>0 or vehicle_number>0:
             self.enable_traffic=True
         else:
@@ -26,11 +37,11 @@ class TrafficManager:
         if self.enable_traffic and not os.path.exists(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr"):
             logger.error(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr not exist!")
             exit()
+        with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
+            for line in file:
+                ref_lat, ref_lon = line.strip().split()
+            ref_lat, ref_lon = float(ref_lat), float(ref_lon)
         if self.enable_traffic:
-            with open(f'{self.env.scene_assets_dir}/center.txt', "r") as file:
-                for line in file:
-                    ref_lat, ref_lon = line.strip().split()
-                ref_lat, ref_lon = float(ref_lat), float(ref_lon)
             self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr",
                                   terrain_height_path=None if self.dry_run else f"{self.env.scene_assets_dir}/height_field.npz",
                                   ref_lat=ref_lat, ref_lon=ref_lon)
@@ -38,6 +49,8 @@ class TrafficManager:
             self.vehicles_on_road = {}
             for road_id in self.map.get_roads().keys():
                 self.vehicles_on_road[road_id]=list()
+                for lane in self.map.roads[road_id]['lanes']:
+                    self.vehicles_on_road[road_id].append(list())
         else:
             self.map = None
             self.sampled_roads = []
@@ -50,8 +63,8 @@ class TrafficManager:
         self.simple_avatars = []
         self.avatars = []
         self.vehicle_action = [None] * vehicle_number
-        self.uniform_speed=5.
-        self.min_dis=2.
+        self.uniform_speed=2.
+        self.min_dis=9.
 
         # Simple Pedestrian and Vehicle Initialization
         self.create_pedestrians(pedestrian_number)
@@ -65,11 +78,12 @@ class TrafficManager:
             self.add_vehicle(
                 vehicle=self.env.add_vehicle(
                     name=f"auto_vehicle_{i}",
-                    vehicle_asset_path="ViCo/cars/Car/OldCar.glb",
+                    vehicle_asset_path="ViCo/cars/Car/OldCar.glb" if self.config is None else f"ViCo/cars/Car/{self.config['vehicles'][i]['model']}",
                     ego_view_options={
                         "res": (self.env.resolution, self.env.resolution),
                         "fov": 90,
                         "GUI": False,
+                        "far": 16000.0,
                     } if self.enable_tm_debug else None,
                     position=np.array(simple_vehicle.get_pos() + [79.59], dtype=np.float64),
                     rotation=np.array(simple_vehicle.get_rot(), dtype=np.float64),
@@ -93,6 +107,7 @@ class TrafficManager:
                     "res": (self.env.resolution, self.env.resolution),
                     "fov": 90,
                     "GUI": False,
+                    "far": 16000.0,
                 },
                 dt= self.env.sec_per_step if self.env.skip_avatar_animation else 1e-2,
                 terrain_height_path=f"{self.env.scene_assets_dir}/height_field.npz",
@@ -133,6 +148,7 @@ class TrafficManager:
                         "res": (self.env.resolution, self.env.resolution),
                         "fov": 90,
                         "GUI": False,
+                        "far": 16000.0,
                     } if self.enable_tm_debug else None, frame_ratio=5,
                     terrain_height_path=f"{self.env.scene_assets_dir}/height_field.npz",
                     third_person_camera_resolution=128 if self.env.enable_third_person_cameras else None,
@@ -149,11 +165,17 @@ class TrafficManager:
     # Function to create pedestrians
     def create_pedestrians(self, pedestrian_number):
         for _ in range(pedestrian_number):
-            road_id = random.choice(list(self.map.pedestrian_main_roads.keys()))
-            start_s = random.uniform(0, self.map.get_length(road_id))
-            pos = self.map.get_pos(road_id = road_id, s = start_s, lane_id=-1)
-            rot = self.map.get_rot(road_id = road_id, s = start_s)
-            avatar=SimpleVehicle(id = _, init_pos = pos, init_rot = rot, init_road = road_id, init_s = start_s, std_speed = random.uniform(0.8, 1.4))
+            if self.config is None:
+                road_id = random.choice(list(self.map.pedestrian_main_roads.keys()))
+                start_s = random.uniform(0, self.map.get_length(road_id))
+                pos = self.map.get_pos(road_id = road_id, s = start_s, lane_id=-1)
+                rot = self.map.get_rot(road_id = road_id, s = start_s)
+            else:
+                road_id = self.config['pedestrians'][_]['road_id']
+                start_s = self.config['pedestrians'][_]['s']
+                pos = self.map.get_pos(road_id = road_id, s = start_s, lane_id=-1)
+                rot = self.map.get_rot(road_id = road_id, s = start_s, direction=random.choice([1,2]))
+            avatar=SimpleVehicle(id = _, init_pos = pos, init_rot = rot, init_road = road_id, init_s = start_s, init_lane=-1, std_speed = random.uniform(0.8, 1.4))
             self.simple_avatars.append(avatar)
         
     # Function to move pedestrians
@@ -161,44 +183,44 @@ class TrafficManager:
         for ped_id, ped in enumerate(self.simple_avatars):
             if self.dry_run==False and self.avatars[ped_id].avatar.action_status()=="ONGOING":
                 continue
-            road_id, s = ped.get_loc()
+            road_id, s, lane_id = ped.get_loc()
             road_length = self.map.get_length(road_id)
-            scaler = self.map.calc_lane_scaler(road_id, s, lane_id=-1, direction=1 if ped.std_speed>0 else 2)
+            scaler = self.map.calc_lane_scaler(road_id, s, lane_id=lane_id, direction=1 if ped.std_speed>0 else 2)
             s += ped.std_speed * dt / scaler  # Update position along the road
-            ped.set_loc(road_id, s)
+            ped.set_loc(road_id, s, lane_id)
             #print(f"Pedestrian road_id: {road_id}, s: {ped['s']}, road_length: {road_length}")
 
             
             if s >= road_length:  # Check if pedestrian exceeds road length
                 next_road_id = self.map.get_next_road(road_id, valid=True, pedestrian_only=True)
                 if next_road_id:
-                    if next_road_id in self.junction_hazzard:
+                    if next_road_id in self.junction_hazard:
                         pass
                     else:
                         # self.logger.info(f"Pedestrian moving to next road: {next_road_id}, s={ped['s']}")
-                        ped.set_loc(next_road_id, 0.)  # Move to the next road
+                        ped.set_loc(next_road_id, 0., lane_id)  # Move to the next road
                 else:
                     # self.logger.info(f"No next road for pedestrian on road {road_id}, s={ped['s']}")
-                    ped.set_loc(road_id, road_length - 0.01)  # Stop at the end of the current road
+                    ped.set_loc(road_id, road_length - 0.01, lane_id)  # Stop at the end of the current road
                     ped.std_speed = -ped.std_speed # And turn around and walk back
 
             
             if s < 0:  # Check if pedestrian exceeds road length
                 prev_road_id = self.map.get_previous_road(road_id, valid=True, pedestrian_only=True)
                 if prev_road_id:
-                    if prev_road_id in self.junction_hazzard:
+                    if prev_road_id in self.junction_hazard:
                         pass
                     else:
                         # self.logger.info(f"Pedestrian moving to next road: {next_road_id}, s={ped['s']}")
-                        ped.set_loc(prev_road_id, self.map.get_length(prev_road_id) - 0.01)  # Move to the next road
+                        ped.set_loc(prev_road_id, self.map.get_length(prev_road_id) - 0.01, lane_id)  # Move to the next road
                 else:
                     # self.logger.info(f"No next road for pedestrian on road {road_id}, s={ped['s']}")
-                    ped.set_loc(road_id, 0.)  # Stop at the end of the current road
+                    ped.set_loc(road_id, 0., lane_id)  # Stop at the end of the current road
                     ped.std_speed = -ped.std_speed # And turn around and walk back
     
             # Update pedestrian position
             try:
-                ped.set_pos(self.map.get_pos(ped.road, ped.s, lane_id=-1, direction=1 if ped.std_speed>0 else 2, std=0.4))
+                ped.set_pos(self.map.get_pos(ped.road, ped.s, lane_id=lane_id, direction=1 if ped.std_speed>0 else 2, std=0.4))
                 ped.set_rot(self.map.get_rot(ped.road, ped.s, direction=1 if ped.std_speed>0 else 2))
             except AssertionError as e:
                 print(f"Error in get_pos: road_id={ped.road}, s={ped.s}, road_length={road_length}")
@@ -225,13 +247,22 @@ class TrafficManager:
         '''
         Firstly create a simple vehicle object, which is an abstract in traffic manager. Then env will call add_vehicle() to create an auto vehicle in the simulator.
         '''
-        sampled_road = random.sample(self.sampled_roads, 1)[0]
-        self.sampled_roads.remove(sampled_road)
-        pos = self.map.get_pos(road_id = sampled_road, s = 0.)
-        rot = self.map.get_rot(road_id = sampled_road, s = 0.)
-        simple_vehicle=SimpleVehicle(id = len(self.simple_vehicles), init_pos = pos, init_rot = rot, init_road = sampled_road, init_s = 0.)
+        if self.config == None:
+            sampled_road = random.sample(self.sampled_roads, 1)[0]
+            self.sampled_roads.remove(sampled_road)
+            init_s = 0.
+            init_lane = 0
+            pos = self.map.get_pos(road_id = sampled_road, s = init_s, lane_id=init_lane)
+            rot = self.map.get_rot(road_id = sampled_road, s = init_s)
+        else:
+            sampled_road = self.config['vehicles'][len(self.simple_vehicles)]['road_id']
+            init_s = self.config['vehicles'][len(self.simple_vehicles)]['s']
+            init_lane = self.config['vehicles'][len(self.simple_vehicles)]['lane_id']
+            pos = self.map.get_pos(road_id = sampled_road, s = init_s, lane_id=init_lane)
+            rot = self.map.get_rot(road_id = sampled_road, s = init_s)
+        simple_vehicle=SimpleVehicle(id = len(self.simple_vehicles), init_pos = pos, init_rot = rot, init_road = sampled_road, init_s = init_s, init_lane=init_lane)
         self.simple_vehicles.append(simple_vehicle)
-        self.vehicles_on_road[sampled_road].append((0., simple_vehicle.id))
+        self.vehicles_on_road[sampled_road][init_lane].append((init_s, simple_vehicle.id))
         return simple_vehicle
 
     def add_vehicle(self, vehicle, simple_vehicle, debug=False, logger=None):
@@ -249,82 +280,96 @@ class TrafficManager:
         self.avatars.append(avatar)
     
     def plan(self):
-        self.junction_hazzard=dict()
+        self.junction_hazard=dict()
         # filling each junctions with vehicles already in it
         for rid, road in enumerate(self.vehicles_on_road):
             junc_id = self.map.get_junction(road)
             if len(self.vehicles_on_road[road])==0 or junc_id=="-1": continue
-            sorted_vehicles = sorted(self.vehicles_on_road[road])
-            for s, vehicle_id in sorted_vehicles:
-                assert junc_id not in self.junction_hazzard
-                self.junction_hazzard[junc_id]=vehicle_id
+            for lane_id in range(len(self.vehicles_on_road[road])):
+                sorted_vehicles = sorted(self.vehicles_on_road[road][lane_id])
+                for s, vehicle_id in sorted_vehicles:
+                    assert (junc_id not in self.junction_hazard or self.junction_hazard[junc_id]==road)
+                    self.junction_hazard[junc_id]=road
         for i, ped in enumerate(self.simple_avatars):
-            road_id, s = ped.get_loc()
+            road_id, s, lane_id = ped.get_loc()
             junc_id = self.map.get_junction(road_id)
             if junc_id=="-1": continue
-            if junc_id not in self.junction_hazzard:
-                self.junction_hazzard[junc_id]=f"ped_{i}"
+            if junc_id not in self.junction_hazard:
+                self.junction_hazard[junc_id]=road_id
         for rid, road in enumerate(self.vehicles_on_road):
-            if len(self.vehicles_on_road[road])==0: continue
-            sorted_vehicles = sorted(self.vehicles_on_road[road])
-            for vid, sorted_vehicle in enumerate(sorted_vehicles):
-                s, vehicle_id = sorted_vehicle
-                # speed = np.random.normal(loc=self.uniform_speed, scale=0.1)
-                speed = self.uniform_speed
-                if self.dry_run==False:
-                    if self.vehicles[vehicle_id].spare()==False:
-                        self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'arg1': "vehicle is still moving or turning."}
-                        continue
-                # halt if there is a collision ahead
-                if vid+1<len(sorted_vehicles):
-                    if s+speed+self.min_dis>=sorted_vehicles[vid+1][0]:
-                        self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'arg1': f"collision with {sorted_vehicles[vid+1][1]} ahead on the same road"}
-                        continue
-                # if the vehicle is going into the next road...
-                if s+speed>self.map.get_length(road):
-                    next_road=self.smart_get_next_road(road)
-                    if next_road is None:
-                        self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'arg1': "no road ahead"}
-                        continue
-                    # print(f"road: {road}, next: {next_road}")
-                    assert next_road!=road
-                    junc_id = self.map.get_junction(next_road)
-                    if junc_id!="-1":
-                        if junc_id in self.junction_hazzard:
-                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, "arg1": f"junction_hazzard with {self.junction_hazzard[junc_id]}"}
+            for lane_id, vehicles_in_lane in enumerate(self.vehicles_on_road[road]):
+                if len(vehicles_in_lane)==0: continue
+                sorted_vehicles = sorted(vehicles_in_lane)
+                for vid, sorted_vehicle in enumerate(sorted_vehicles):
+                    s, vehicle_id = sorted_vehicle
+                    # speed = np.random.normal(loc=self.uniform_speed, scale=0.1)
+                    speed = self.uniform_speed
+                    if self.dry_run==False:
+                        if self.vehicles[vehicle_id].spare()==False:
+                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, 'arg1': "vehicle is still moving or turning."}
                             continue
-                        self.junction_hazzard[junc_id]=vehicle_id
-                        self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': self.map.get_length(road)-s, 'next_road': next_road}
-                        # no need of checking vehicles in next road since its in a junction
-                        continue
-                    else:
-                        tmp_list=sorted(self.vehicles_on_road[next_road])# nearest vehicle on the next road
-                        if len(tmp_list)>0 and tmp_list[0][0]<self.min_dis:
-                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, "arg1": f"{tmp_list[0][1]} on next road"}
+                    # halt if there is a collision ahead
+                    if vid+1<len(sorted_vehicles):
+                        if s+speed+self.min_dis>=sorted_vehicles[vid+1][0]:
+                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, 'arg1': f"collision with {sorted_vehicles[vid+1][1]} ahead on the same road"}
+                            continue
+                    if vid+1==len(sorted_vehicles):
+                        if s+speed+self.min_dis>=self.map.get_length(road)+self.get_dis_to_nearest_vehicle(road, lane_id, self.min_dis+speed):
+                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, 'arg1': f"collision with some vehicle ahead on some next road"}
+                            continue
+                    # if the vehicle is going into the next road...
+                    if s+speed>self.map.get_length(road):
+                        next_road_and_lane=self.smart_get_next_road(road, lane_id=lane_id)
+                        if next_road_and_lane is None:
+                            # if lane_id==0:print(road, lane_id)
+                            assert lane_id!=0 # cant be on the 0 lane...
+                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, 'arg1': "no road ahead"}
+                            continue
+                        next_road, next_lane = next_road_and_lane['road_id'], next_road_and_lane['lane_id']
+                        assert next_road!=road
+                        junc_id = self.map.get_junction(next_road)
+                        if junc_id!="-1":
+                            if junc_id in self.junction_hazard and self.junction_hazard[junc_id]!=next_road:
+                                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, "arg1": f"junction_hazard with road {self.junction_hazard[junc_id]}"}
+                                continue
+                            tmp_list=sorted(self.vehicles_on_road[next_road][next_lane])# nearest vehicle on the next road
+                            if len(tmp_list)>0 and tmp_list[0][0]<self.min_dis:
+                                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, "arg1": f"{tmp_list[0][1]} on next road in junction."}
+                            else:
+                                self.junction_hazard[junc_id]=next_road
+                                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': self.map.get_length(road)-s, 'next_road': next_road, 'next_lane': next_lane}
+                            continue
                         else:
-                            self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': self.map.get_length(road)-s, 'next_road': next_road}
-                        continue
-                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': speed, 'next_road': road}
+                            tmp_list=sorted(self.vehicles_on_road[next_road][next_lane])# nearest vehicle on the next road
+                            if len(tmp_list)>0 and tmp_list[0][0]<self.min_dis:
+                                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'stop', 'next_road': road, 'next_lane': lane_id, "arg1": f"{tmp_list[0][1]} on next road"}
+                            else:
+                                self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': self.map.get_length(road)-s, 'next_road': next_road, 'next_lane': next_lane}
+                            continue
+                    self.vehicle_action[vehicle_id]={'id': vehicle_id, 'type': 'move_forward', 'arg1': speed, 'next_road': road, 'next_lane': lane_id}
 
     def act(self):
         # update self.vehicles_on_road
         for road_id in self.map.get_roads().keys():
-            self.vehicles_on_road[road_id]=list()
+            for lane_id in range(len(self.vehicles_on_road[road_id])):
+                self.vehicles_on_road[road_id][lane_id]=list()
         # update vehicles
         for i in range(self.vehicle_number):
             next_road_id=self.vehicle_action[i]['next_road']
-            road_id, s=self.simple_vehicles[i].get_loc()
+            next_lane_id=self.vehicle_action[i]['next_lane']
+            road_id, s, lane_id=self.simple_vehicles[i].get_loc()
             # print(f"road_id: {road_id}, s: {s}")
             if self.vehicle_action[i]['type']=='move_forward':
                 s+=self.vehicle_action[i]['arg1']
                 if road_id != next_road_id:
                     s=0.
-                self.simple_vehicles[i].set_loc(next_road_id,s)
+                    lane_id=next_lane_id
+                self.simple_vehicles[i].set_loc(next_road_id, s, lane_id)
             if self.vehicle_action[i]['type']=='stop':
                 pass
-            self.vehicles_on_road[next_road_id].append((s, i))
+            self.vehicles_on_road[next_road_id][lane_id].append((s, i))
             # print(f"next_road_id: {next_road_id}, s: {s}")
-            self.simple_vehicles[i].set_pos(self.map.get_pos(next_road_id,s))
+            self.simple_vehicles[i].set_pos(self.map.get_pos(next_road_id,s, lane_id))
             self.simple_vehicles[i].set_rot(self.map.get_rot(next_road_id,s))
     
     def schedule(self):
@@ -338,8 +383,8 @@ class TrafficManager:
     def step(self):
         if self.enable_traffic:
             self.schedule()
-        # if self.enable_tm_debug:
-        #     self.logger.info(self.vehicle_action)
+        if self.enable_tm_debug:
+            self.logger.info(self.vehicle_action)
         for vehicle in self.vehicles:
             vehicle.step()
         for avatar in self.avatars:
@@ -351,26 +396,47 @@ class TrafficManager:
     def get_pedestrians_pos(self):
         return [ped.get_pos() for ped in self.simple_avatars]
     
-    def is_full(self, road):
-        tmp_list=sorted(self.vehicles_on_road[road])# nearest vehicle on the next road
+    def is_full(self, road_id, lane_id):
+        '''
+        return True if the road is full of vehicles
+        '''
+        tmp_list=sorted(self.vehicles_on_road[road_id][lane_id])# nearest vehicle on the next road
         if len(tmp_list)>0 and tmp_list[0][0]<self.min_dis:
             return True
         else:
             return False
         
-    def smart_get_next_road(self, road):
-        next_roads = self.map.get_next_roads(road, valid=True)
-        next_roads = [next_road for next_road in next_roads if not self.is_full(road)]
-        if len(next_roads)==0:
-            return self.map.get_next_road(road)
-        if len(next_roads)==1:
-            return next_roads[0]
-        if len(next_roads)>1:
-            next_roads = [next_road for next_road in next_roads if len([nnr for nnr in self.map.get_next_roads(next_road, valid=True) if not self.is_full(nnr)])>0]
-            if len(next_roads)>0:
-                return random.choice(next_roads)
+    def get_dis_to_nearest_vehicle(self, road_id, lane_id, min_dis):
+        '''
+        get the distance to the nearest vehicle ahead the endpoint of the current road and lane.
+        '''
+        if min_dis<0:return 0
+        next_roads_and_lanes = self.map.get_next_roads_and_lanes(road_id, lane_id)
+        ret=min_dis
+        for next_road_and_lane in next_roads_and_lanes:
+            next_road_id, next_lane_id=next_road_and_lane['road_id'], next_road_and_lane['lane_id']
+            tmp_list=sorted(self.vehicles_on_road[next_road_id][next_lane_id])
+            if len(tmp_list)>0:
+                ret=min(ret, tmp_list[0][0])
             else:
-                return self.map.get_next_road(road)
+                ret=min(ret, self.get_dis_to_nearest_vehicle(next_road_id, next_lane_id, min_dis-self.map.get_length(next_road_id)))+self.map.get_length(next_road_id)
+        return ret
+        
+    def smart_get_next_road(self, road_id, lane_id):
+        next_roads_and_lanes = self.map.get_next_roads_and_lanes(road_id, lane_id)
+        if len(next_roads_and_lanes)==0:
+            return None
+        next_roads_and_lanes = [next_road_and_lane for next_road_and_lane in next_roads_and_lanes if not self.is_full(next_road_and_lane['road_id'], next_road_and_lane['lane_id'])]
+        if len(next_roads_and_lanes)==0:
+            return self.map.get_next_roads_and_lanes(road_id, lane_id)[0]
+        if len(next_roads_and_lanes)==1:
+            return next_roads_and_lanes[0]
+        if len(next_roads_and_lanes)>1:
+            next_roads_and_lanes = [next_road_and_lane for next_road_and_lane in next_roads_and_lanes if len([nnr for nnr in self.map.get_next_roads_and_lanes(next_road_and_lane['road_id'], next_road_and_lane['lane_id']) if not self.is_full(nnr['road_id'], nnr['lane_id'])])>0]
+            if len(next_roads_and_lanes)>0:
+                return random.choice(next_roads_and_lanes)
+            else:
+                return self.map.get_next_roads_and_lanes(road_id, lane_id)[0]
 
     def init_post_scene_build(self):
         bus_pose = self.bus.update_at_time(self.env.curr_time)
@@ -416,6 +482,7 @@ def update(frame, traffic_manager):
 
 
 if __name__ == "__main__" :
+    random.seed(1)
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
@@ -472,5 +539,5 @@ if __name__ == "__main__" :
     plt.grid()
     # plt.legend()
     plt.axis('equal')  # Equal scaling for x and y axes
-    ani.save('traffic_visualization.gif', writer='pillow', fps=10)
+    ani.save('traffic_visualization_lane_demo.gif', writer='pillow', fps=10)
     plt.show()

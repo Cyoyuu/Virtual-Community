@@ -240,6 +240,7 @@ class VicoEnv:
 		gs.logger.info(f"running {self.sim_frames_per_step} scene steps for one ViCo step of {self.sec_per_step}s")
 
 		self.traffic_manager.reset()
+		self.nav_app = Amap(map=self.traffic_manager.map, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata)
 
 		for i, agent in enumerate(self.agents):
 			agent.reset(np.array(self.config['agent_poses'][i][:3], dtype=np.float64), geom_utils.euler_to_R(np.degrees(np.array(self.config['agent_poses'][i][3:], dtype=np.float64))))
@@ -681,10 +682,40 @@ class VicoEnv:
 				# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
+			elif action['type'] == 'message':
+				if agent.robot.base_state == AvatarState.SLEEPING:
+					agent.robot.base_state = AvatarState.STANDING
+				agent_pos = self.config['agent_poses'][i][:3]
+				converse_range = action['arg2'] if 'arg2' in action else 10
+				priority = random.randint(0, 100)
+				if converse_range > 800:
+					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 10. Ignored.")
+					self.agents[i].robot.action_status = ActionStatus.FAIL
+					continue
+				deleted_subjects = self.events.add(type="message", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
+				# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
+				for deleted_subject in deleted_subjects:
+					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 			elif action['type'] == 'wait':
 				continue
 			elif action['type'] == 'task_complete':
 				continue
+			elif action['type'] == 'query_app':
+				if agent.robot.base_state == AvatarState.SLEEPING:
+					agent.robot.base_state = AvatarState.STANDING
+				agent_pos = self.config['agent_poses'][i][:3]
+				priority = random.randint(0, 100)
+				if action['arg1'] == 'query_place':
+					app_answer = self.nav_app.query_place(action['arg2'])
+					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
+				if action['arg1'] == 'query_nearby':
+					app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
+					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
+				if action['arg1'] == 'query_route':
+					pass
+				# if interleaved with other speech events, keep only this one, drop others and give it fail
+				for deleted_subject in deleted_subjects:
+					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 			else:
 				raise NotImplementedError(f"agent action type {action['type']} is not supported")
 
