@@ -4,7 +4,7 @@ import pdb
 import random
 import copy
 from copy import deepcopy
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 import json
 import numpy as np
@@ -21,8 +21,8 @@ class Waypoints:
     id: int
     location: list[float, float] | None = None
     belong: str | None = None
-    predecessor: list = []
-    successor: list = []
+    predecessor: list = field(default_factory=list)
+    successor: list = field(default_factory=list)
 
 class Amap:
     '''walkers only'''
