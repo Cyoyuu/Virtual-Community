@@ -38,6 +38,7 @@ for agent_type in results:
     average_results[agent_type]["agent_navigation_length_stdev"]=0.
     num=0
     for scene in results[agent_type]:
+        if "OLD" in scene:continue
         for key in average_results[agent_type]:
             average_results[agent_type][key]+=results[agent_type][scene][key]
     for key in average_results[agent_type]:
