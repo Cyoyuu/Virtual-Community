@@ -48,4 +48,4 @@ class TurnMotion(BaseMotionModule):
         rot_xyz_rad = np.array([0.0, 0.0, np.deg2rad(rot_xyz[2])])
         rot_mat_rad = geom_utils.quat_to_R(geom_utils.euler_to_quat(rot_xyz_rad))
         gs.logger.debug(f"Turning Motion: rot_xyz is {rot_xyz}, self.angle is {self.angle}, self.robot.global_rot is {rot_mat @ self.robot.global_rot}, self.robot.global_rot new is {self.robot.global_rot @ geom_utils.euler_to_R(rot_xyz)}, self.robot.global_rot_rad is {rot_mat_rad @ self.robot.global_rot}")
-        self.robot.global_rot = rot_mat @ self.robot.global_rot
+        self.robot.global_rot = self.robot.global_rot @ geom_utils.euler_to_R(rot_xyz)

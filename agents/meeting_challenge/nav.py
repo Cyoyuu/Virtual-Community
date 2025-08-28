@@ -226,10 +226,10 @@ class NavigationMeetingAgent(Agent):
         #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
         #     return action, False
         cur_trans = np.array(self.pose[:2])
-        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=3)
-        while arrived and len(self.last_route)>0:
+        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=2)
+        while arrived and len(self.last_route)>1:
             self.last_route.pop(0)
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=3)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=2)
         return self.llm_navigate(max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
@@ -249,7 +249,7 @@ class NavigationMeetingAgent(Agent):
                     return {"type": "wait"}, False
             curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal, threshold=3)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal, threshold=2)
             if arrived: self.last_nav.pop(0)
         return action, arrived
 
