@@ -143,8 +143,8 @@ class Amap:
         heap = []
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])) <= min_dis2s+self.waypoints_dis:
-                dist[i] = 0
-                heap.append((0, i))
+                dist[i] = np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2]))
+                heapq.heappush((dist[i], i))
 
         while heap:
             d, wp_id = heapq.heappop(heap)
@@ -169,10 +169,10 @@ class Amap:
                     heapq.heappush(heap, (new_dist, succ_id))
 
         # 4. Reconstruct path
-        goal_wp_pair=(dist[goal_wp_id], goal_wp_id)
+        goal_wp_pair=(dist[goal_wp_id]+min_dis2t, goal_wp_id)
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
-                goal_wp_pair=min((dist[i], i), goal_wp_pair)
+                goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
         if goal_wp_pair[0] == float('inf'):
             print(f"No path found from {curr_trans[:2]} to {goal_pos}")
             return []
