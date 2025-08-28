@@ -821,7 +821,6 @@ class PedestrianMap(BaseMap):
     
 
 if __name__ == "__main__" :
-    random.seed(1)
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()

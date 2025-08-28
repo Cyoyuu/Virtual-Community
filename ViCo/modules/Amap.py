@@ -13,6 +13,8 @@ import re
 from enum import Enum
 import time
 import heapq
+import matplotlib.pyplot as plt
+import argparse
 
 from ViCo.tools.utils import *
 from ViCo.modules import *
@@ -57,14 +59,13 @@ class Amap:
             last_waypoint=self.waypoints[self.road2waypoint[road]]
             s=10.
             for geometry in self.map.printable_roads[road]["geometry"]:
-                while s<geometry['length']:
+                while s<geometry['length']+geometry['s']:
                     pos = self.map.get_pos(road, s)
                     new_wp = Waypoints(id=len(self.waypoints), location=pos, belong=road)
                     self.waypoints.append(new_wp)
                     last_waypoint.successor.append(new_wp.id)
                     last_waypoint = new_wp
                     s+=10
-                s=0.
             for successor in self.map.printable_roads[road]['successor']:
                 last_waypoint.successor.append(self.road2waypoint[successor])
         for waypoint in self.waypoints:
@@ -179,3 +180,26 @@ class Amap:
         path.append(goal_pos)
         return path
 
+if __name__ == "__main__" :
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--scene", '-s', type=str, required=True)
+    args = parser.parse_args()
+    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr"):
+        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr not exist!")
+        exit()
+    with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt', "r") as file:
+        for line in file:
+            ref_lat, ref_lon = line.strip().split()
+        ref_lat, ref_lon = float(ref_lat), float(ref_lon)
+    amap=Amap(scene_name=args.scene)
+    wps=[wp.location for wp in amap.waypoints]
+    xs, ys = zip(*wps)
+    plt.figure(figsize=(10, 6))
+    plt.plot(xs, ys, 'ro', markersize=5)
+    plt.title(f'Amap Waypoints Visualization - {args.scene}')
+    plt.xlabel('X Coordinate')
+    plt.ylabel('Y Coordinate')
+    plt.grid()
+    # plt.legend()
+    plt.axis('equal')  # Equal scaling for x and y axes
+    plt.show()
