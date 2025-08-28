@@ -161,7 +161,7 @@ class NavigationMeetingAgent(Agent):
         self.obs = obs
         if self.obs['steps']%100==0:
             self.route_history[self.obs['steps']]=self.last_route
-            json.dump(self.route_history, open(os.path.join(self.storage_path, "route_hisroty.json"), "w"))
+            json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
     def _act(self, obs):
         action = None

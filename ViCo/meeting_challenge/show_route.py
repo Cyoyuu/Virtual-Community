@@ -7,24 +7,26 @@ def plot_waypoints(route_history, steps=100):
     # 3. Create the plot
     plt.figure(figsize=(10, 6))
     colors = ['blue', 'red', 'yellow', 'cyan', 'green']
+    x_coords={}
+    y_coords={}
     for idx, name in enumerate(route_history):
         # 2. Extract IDs and locations
         ids = []
-        x_coords = []
-        y_coords = []
-        for wp in route_history[name][steps]:
-            x_coords.append(wp[0])
-            y_coords.append(wp[1])
+        x_coords[name] = []
+        y_coords[name] = []
+        for wp in route_history[name][f"{steps}"]:
+            x_coords[name].append(wp[0])
+            y_coords[name].append(wp[1])
         # Plot the path (line connecting waypoints)
-        plt.plot(x_coords, y_coords, color=colors[idx], linewidth=2, label=name, zorder=1)
+        plt.plot(x_coords[name], y_coords[name], color=colors[idx], linewidth=2, label=name, zorder=1)
     
-    # Plot the individual waypoints
-    plt.scatter(x_coords, y_coords, color='red', s=60, zorder=2, label='Waypoints')
-    
-    # Annotate each waypoint with its ID
-    for i, (x, y) in enumerate(zip(x_coords, y_coords)):
-        plt.annotate(str(ids[i]), (x, y), textcoords="offset points", xytext=(5,5),
-                    ha='left', fontsize=9, color='darkblue')
+        # Plot the individual waypoints
+        plt.scatter(x_coords[name], y_coords[name], color='red', s=60, zorder=2, label='Waypoints')
+        
+        # Annotate each waypoint with its ID
+        for i, (x, y) in enumerate(zip(x_coords[name], y_coords[name])):
+            plt.annotate(str(i), (x, y), textcoords="offset points", xytext=(5,5),
+                        ha='left', fontsize=9, color='darkblue')
 
     # Customize the graph
     plt.title("Waypoints Path", fontsize=14)
