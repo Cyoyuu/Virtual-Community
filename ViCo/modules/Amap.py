@@ -29,11 +29,12 @@ class Waypoints:
 
 class Amap:
     '''walkers only'''
-    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None):
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=10.):
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=place_metadata
         self.building_metadata=building_metadata
+        self.waypoints_dis=waypoints_dis
 
         with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
             for line in file:
@@ -57,7 +58,7 @@ class Amap:
             self.waypoints.append(Waypoints(id=len(self.waypoints), location=self.map.get_pos(road, 0.), belong=road))
         for road in self.map.printable_roads:
             last_waypoint=self.waypoints[self.road2waypoint[road]]
-            s=10.
+            s=self.waypoints_dis
             for geometry in self.map.printable_roads[road]["geometry"]:
                 while s<geometry['length']+geometry['s']:
                     pos = self.map.get_pos(road, s)
@@ -65,7 +66,7 @@ class Amap:
                     self.waypoints.append(new_wp)
                     last_waypoint.successor.append(new_wp.id)
                     last_waypoint = new_wp
-                    s+=10
+                    s+=self.waypoints_dis
             for successor in self.map.printable_roads[road]['successor']:
                 last_waypoint.successor.append(self.road2waypoint[successor])
         for waypoint in self.waypoints:
@@ -126,19 +127,24 @@ class Amap:
             range(len(self.waypoints)),
             key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2]))
         )
+        min_dis2s = np.linalg.norm(np.array(self.waypoints[start_wp_id].location) - np.array(curr_trans[:2]))
 
         # 2. Find nearest waypoint to goal location
         goal_wp_id = min(
             range(len(self.waypoints)),
             key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))
         )
+        min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
 
         # 3. Pathfinding: Dijkstra (or BFS if uniform cost) over waypoint graph
         # Using Dijkstra with distance as edge cost
         dist = {i: float('inf') for i in range(len(self.waypoints))}
         prev = {i: None for i in range(len(self.waypoints))}
-        dist[start_wp_id] = 0
-        heap = [(0, start_wp_id)]
+        heap = []
+        for i in range(len(self.waypoints)):
+            if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])) <= min_dis2s+self.waypoints_dis:
+                dist[i] = 0
+                heap.append((0, i))
 
         while heap:
             d, wp_id = heapq.heappop(heap)
@@ -163,11 +169,15 @@ class Amap:
                     heapq.heappush(heap, (new_dist, succ_id))
 
         # 4. Reconstruct path
-        if dist[goal_wp_id] == float('inf'):
+        goal_wp_pair=(dist[goal_wp_id], goal_wp_id)
+        for i in range(len(self.waypoints)):
+            if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
+                goal_wp_pair=min((dist[i], i), goal_wp_pair)
+        if goal_wp_pair[0] == float('inf'):
             print(f"No path found from {curr_trans[:2]} to {goal_pos}")
             return []
         path = []
-        curr = goal_wp_id
+        curr = goal_wp_pair[1]
         while curr is not None:
             path.append(self.waypoints[curr].location)
             curr = prev[curr]

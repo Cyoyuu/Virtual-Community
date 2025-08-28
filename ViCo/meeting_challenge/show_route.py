@@ -5,7 +5,9 @@ import os
 
 def plot_waypoints(route_history, steps=100):
     # 3. Create the plot
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(8, 8))
+    plt.xlim(-400, 400)
+    plt.ylim(-400, 400)
     colors = ['blue', 'red', 'yellow', 'cyan', 'green']
     x_coords={}
     y_coords={}
