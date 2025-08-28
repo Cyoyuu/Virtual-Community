@@ -31,6 +31,7 @@ class TurnMotion(BaseMotionModule):
                 self.angle += self.turn_sec_limit
                 rot_xyz = np.array([0.0, 0.0, -self.turn_sec_limit])
             else:
+                self.angle = 0.0
                 rot_xyz = np.array([0.0, 0.0, self.angle])
                 self.robot.action_state = AvatarState.NO_ACTION
                 self.robot.action_status = ActionStatus.SUCCEED
@@ -45,4 +46,7 @@ class TurnMotion(BaseMotionModule):
             self.robot.action_state = AvatarState.NO_ACTION
             self.robot.action_status = ActionStatus.SUCCEED
         rot_mat = geom_utils.quat_to_R(geom_utils.euler_to_quat(rot_xyz))
+        rot_xyz_rad = np.array([0.0, 0.0, np.deg2rad(rot_xyz[2])])
+        rot_mat_rad = geom_utils.quat_to_R(geom_utils.euler_to_quat(rot_xyz_rad))
+        gs.logger.debug(f"Turning Motion: rot_xyz is {rot_xyz}, self.angle is {self.angle}, self.robot.global_rot is {rot_mat @ self.robot.global_rot}, self.robot.global_rot_rad is {rot_mat_rad @ self.robot.global_rot}")
         self.robot.global_rot = rot_mat @ self.robot.global_rot

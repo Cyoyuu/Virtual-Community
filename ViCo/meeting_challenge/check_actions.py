@@ -12,7 +12,10 @@ if __name__=="__main__":
         for step in steps:
             for key in steps[step]["action"]:
                 if key not in output:
-                    output[key]={}
+                    output[key]={"None": 0}
+                if steps[step]["action"][key] is None:
+                    output[key]["None"]+=1
+                    continue
                 if steps[step]["action"][key]["type"] not in output[key]:
                     output[key][steps[step]["action"][key]["type"]]=0
                 output[key][steps[step]["action"][key]["type"]]+=1
