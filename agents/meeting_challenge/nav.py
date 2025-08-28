@@ -192,9 +192,9 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
-        self.logger.info(f"Currently city nav to {goal_place}.")
-        # already at the correct place
-        if goal_place == self.obs['current_place']:
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(self.calc_time())}s")
+        # already at the correct place (or to comply with env setting)
+        if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
         # can enter the correct place
@@ -267,6 +267,12 @@ class NavigationMeetingAgent(Agent):
             self.logger.error(
                 f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. The response was {response}")
             self.generate_road_navigation_plan(max_retry=max_retry-1)
+
+    def calc_time(self):
+        ret=0.
+        for i in range(1, len(self.last_route)):
+            ret+=np.linalg.norm(self.last_route[i][:2]-self.last_route[i-1][:2])
+        return ret
     
     def get_meeting_target(self):
         # use this function to get geometric center
