@@ -129,6 +129,7 @@ class NavigationMeetingAgent(Agent):
         self.last_route = []
         self.last_nav = []
         self.last_action = None
+        self.route_history = dict()
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -158,6 +159,9 @@ class NavigationMeetingAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
+        if self.obs['steps']%100==0:
+            self.route_history[self.obs['steps']]=self.last_route
+            json.dump(self.route_history, open(os.path.join(self.storage_path, "route_hisroty.json"), "w"))
 
     def _act(self, obs):
         action = None
@@ -192,7 +196,7 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
-        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(self.calc_time())}s")
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time())}s")
         # already at the correct place (or to comply with env setting)
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
