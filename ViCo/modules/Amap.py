@@ -144,7 +144,7 @@ class Amap:
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])) <= min_dis2s+self.waypoints_dis:
                 dist[i] = np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2]))
-                heapq.heappush((dist[i], i))
+                heapq.heappush(heap, (dist[i], i))
 
         while heap:
             d, wp_id = heapq.heappop(heap)
