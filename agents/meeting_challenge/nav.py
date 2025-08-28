@@ -275,7 +275,7 @@ class NavigationMeetingAgent(Agent):
     def calc_time(self):
         ret=0.
         for i in range(1, len(self.last_route)):
-            ret+=np.linalg.norm(self.last_route[i][:2]-self.last_route[i-1][:2])
+            ret+=np.linalg.norm(np.array(self.last_route[i][:2])-np.array(self.last_route[i-1][:2]))
         return ret
     
     def get_meeting_target(self):
