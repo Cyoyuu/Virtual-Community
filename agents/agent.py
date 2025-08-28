@@ -139,6 +139,7 @@ class Agent:
 			delta_rad -= 2 * np.pi
 		elif delta_rad < -np.pi:
 			delta_rad += 2 * np.pi
+		self.logger.debug(f"Current pose is {list(self.pose)}. Current Goal is {list(cur_goal)}. Target_deg is {np.rad2deg(target_rad)}, while curr_deg is {np.rad2deg(self.pose[-1])}")
 
 		if delta_rad > np.deg2rad(15):
 			action = {
