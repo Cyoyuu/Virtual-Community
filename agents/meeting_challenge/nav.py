@@ -271,7 +271,7 @@ class NavigationMeetingAgent(Agent):
             builder.align_nav(agent_x_world) - x_min,
             builder.align_nav(agent_y_world) - y_min
         ]
-        occ_map[agent_pos_in_map[1]][agent_pos_in_map[0]]=4
+        occ_map[int(agent_pos_in_map[1])][int(agent_pos_in_map[0])]=4
         # Define local crop around agent (±30m in world coordinates)
         x_low_w, x_up_w = agent_x_world - 30, agent_x_world + 30
         y_low_w, y_up_w = agent_y_world - 30, agent_y_world + 30
