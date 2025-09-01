@@ -238,7 +238,7 @@ class NavigationMeetingAgent(Agent):
         idx = len(self.last_route)
         while idx > 0:
             idx -= 1
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=5)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=2 if idx==len(self.last_route)-1 else 5)
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
@@ -401,8 +401,8 @@ class NavigationMeetingAgent(Agent):
             if self.debug:
                 self.visualize_navigation_plan(
                     downscaled_map=downscaled_map,
-                    original_waypoints=self.last_route if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
-                    waypoints=self.last_nav if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
+                    original_waypoints=[world_to_downscaled_local(pt[0], pt[1]) for pt in self.last_route] if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
+                    waypoints=[world_to_downscaled_local(pt[0], pt[1]) for pt in self.last_nav] if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
                     save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"
                 )
         except Exception as e:
@@ -495,7 +495,7 @@ class NavigationMeetingAgent(Agent):
                 cv2.line(vis_map, pts[i], pts[i+1], color=(255, 0, 0), thickness=1)
 
         # Optionally add a scale indicator
-        cv2.putText(vis_map, 'Red: Plan', (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 1)
+        # cv2.putText(vis_map, 'Red: Plan', (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 1)
 
         # Resize for better visibility (scale up 4x)
         vis_map = cv2.resize(vis_map, (w * 4, h * 4), interpolation=cv2.INTER_NEAREST)
