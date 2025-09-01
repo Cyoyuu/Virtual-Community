@@ -181,6 +181,8 @@ class NavigationMeetingAgent(Agent):
                     self.conversation_history.append(Chat(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
                 elif response_type == "decide":
                     self.meeting_place = speech
+                    if speech.startswith("<") and speech.endswith(">"):
+                        self.meeting_place = speech[1:-1]
                     action = {"type": "wait"}
                     self.mode = NavAgentState.NAVIGATE
                 else:
