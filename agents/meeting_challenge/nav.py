@@ -256,21 +256,123 @@ class NavigationMeetingAgent(Agent):
     def generate_navigation_plan(self, max_retry=3):
         assert max_retry >= 0
         if max_retry == 0:
+            # Fallback: use first 3 waypoints from last_route
             self.last_nav = self.last_route[:min(3,len(self.last_route))]
             return
-        prompt=open("","r").read()
+        # find nearest unexplored point
+        builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
+        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
+        agent_x_world, agent_y_world = self.pose[0], self.pose[1]
+        agent_pos_in_map = [
+            builder.align_nav(agent_x_world) - x_min,
+            builder.align_nav(agent_y_world) - y_min
+        ]
+        occ_map[agent_pos_in_map[1]][agent_pos_in_map[0]]=4
+        # Define local crop around agent (±30m in world coordinates)
+        x_low_w, x_up_w = agent_x_world - 30, agent_x_world + 30
+        y_low_w, y_up_w = agent_y_world - 30, agent_y_world + 30
+        # Convert to map indices
+        x_low = max(0, builder.align_nav(x_low_w) - x_min)
+        x_up = min(occ_map.shape[1], builder.align_nav(x_up_w) - x_min)
+        y_low = max(0, builder.align_nav(y_low_w) - y_min)
+        y_up = min(occ_map.shape[0], builder.align_nav(y_up_w) - y_min)
+
+        # Crop the occupancy map
+        if x_low >= x_up or y_low >= y_up:
+            raise ValueError("Invalid crop bounds after alignment.")
+
+        cropped_map = occ_map[y_low:y_up, x_low:x_up]  # Note: y first, then x
+
+        # Function to downscale using mode (most frequent value), handling borders
+        def downscale_map(map_array, factor):
+            h, w = map_array.shape
+            # Trim to make dimensions divisible by factor
+            new_h = (h // factor) * factor
+            new_w = (w // factor) * factor
+            trimmed = map_array[:new_h, :new_w]
+            # Reshape into blocks
+            reshaped = trimmed.reshape(new_h // factor, factor, new_w // factor, factor)
+            # Move block axes to the end
+            blocks = reshaped.swapaxes(1, 2).reshape(new_h // factor, new_w // factor, factor * factor)
+            # Apply custom priority rule per block
+            downscaled = np.zeros((new_h // factor, new_w // factor), dtype=np.int32)
+            for i in range(blocks.shape[0]):
+                for j in range(blocks.shape[1]):
+                    block = blocks[i, j]
+                    has_2 = 2 in block
+                    has_3 = 3 in block
+                    has_4 = 4 in block
+                    
+                    if has_2 and has_4:
+                        raise ValueError(f"Block at ({i}, {j}) contains both 2 and 4, which is not allowed.")
+                    elif has_4:
+                        downscaled[i, j] = 4
+                    elif has_2:
+                        downscaled[i, j] = 2
+                    elif has_3:
+                        downscaled[i, j] = 3
+                    else:
+                        downscaled[i, j] = 1  # default to free (1)
+            return downscaled
+
+        try:
+            downscaled_map = downscale_map(cropped_map, factor=4)
+        except ValueError as e:
+            self.logger.error(f"Downscaling failed: {e}")
+            self.generate_navigation_plan(max_retry=max_retry - 1)
+            return
+
+        # Convert downscaled map to string representation
+        symbol_map = {1: '.', 2: 'X', 3: '?', 4: 'A'}  # . = free, X = obstacle, ? = unknown, A = agent
+        map_str_lines = []
+        for row in downscaled_map:
+            line = ''.join(symbol_map[val] for val in row)
+            map_str_lines.append(line)
+        map_str = '\n'.join(map_str_lines)
+
+        # Convert last_route (list of [x, y] in world coords) to relative local coordinates (in cropped map, then in downscale grid)
+        def world_to_downscaled_local(x_world, y_world):
+            # Convert world → map index
+            mx = builder.align_nav(x_world) - x_min
+            my = builder.align_nav(y_world) - y_min
+            # Check if in crop
+            if not (x_low <= mx < x_up and y_low <= my < y_up):
+                return None
+            # Convert to local in cropped map
+            mx_local = mx - x_low
+            my_local = my - y_low
+            # Downscale by 4
+            mx_ds = mx_local // 4
+            my_ds = my_local // 4
+            if mx_ds < downscaled_map.shape[1] and my_ds < downscaled_map.shape[0]:
+                return [mx_ds, my_ds]
+            return None
+        
+        # Encode last_route into downscale grid coordinates
+        path_local = []
+        for pt in self.last_route:
+            loc = world_to_downscaled_local(pt[0], pt[1])
+            if loc is not None:
+                path_local.append(loc)
+        path_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
+
+        prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
+        prompt = prompt.format(map=map_str, route=path_str)
         self.logger.debug(f"navigating_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
+            response = self.generator.generate(prompt, img=None, json_mode=False)
             response_dict = self.parse_json(prompt, response)
             self.logger.debug(f"generated response: {response_dict}")
-            self.last_nav = response_dict["waypoints"]
-            assert isinstance(self.last_nav, list)
-            assert len(self.last_nav) > 0
+            waypoints = response_dict.get("waypoints", [])
+            if not isinstance(waypoints, list) or len(waypoints) == 0:
+                raise ValueError("Waypoints must be a non-empty list.")
+            self.last_nav = waypoints
         except Exception as e:
             self.logger.error(
-                f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            self.generate_road_navigation_plan(max_retry=max_retry-1)
+                f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. Response was: {response}"
+            )
+            self.generate_navigation_plan(max_retry=max_retry - 1)
 
     def calc_time(self):
         ret=0.
