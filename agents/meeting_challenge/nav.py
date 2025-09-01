@@ -233,10 +233,11 @@ class NavigationMeetingAgent(Agent):
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
-        return self.llm_navigate(max_retry=0)
+        return self.llm_navigate(max_retry=3)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
+        self.logger.debug(f"Current last_nav is {self.last_nav}")
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
         # estimated_arrival_time = self.curr_time + calc_time()
