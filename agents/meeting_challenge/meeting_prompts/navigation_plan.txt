@@ -10,8 +10,8 @@ The map is a grid where each cell represents 2m × 2m. Coordinates are in (x, y)
 
 You have a suboptimal current route for reference. It derives from a high-level planner, which suggests a safe path, but not the most efficient, because it lacks the knowledge of low-level map details.
 
-The goal is the last point of the current route, located at grid coordinates: {goal_grid}.  
-Current route suggestion (in grid coordinates) (you can ignore the waypoints that you think have already passed): {route}
+The goal is the last point of the current route, located at grid coordinates: $goal_grid$.  
+Current route suggestion (in grid coordinates) (you can ignore the waypoints that you think have already passed): $route$
 
 Your task:
 1. Start from 'A' (current position).
@@ -27,4 +27,4 @@ Respond with only a valid JSON object:
 Do not include any other text.
 
 Map:
-{map}
+$map$

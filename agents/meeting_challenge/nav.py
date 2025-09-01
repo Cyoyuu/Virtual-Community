@@ -367,12 +367,16 @@ class NavigationMeetingAgent(Agent):
             goal_grid = path_local[-1]  # Last waypoint in grid coords
         route_str += " (goal)"
 
-        prompt_template=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
+        prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
         # Format the prompt
-        prompt = prompt_template.format(
-            map=map_str,
-            route=route_str,
-            goal_grid=str(goal_grid) if isinstance(goal_grid, list) else "unknown"
+        prompt = prompt.replace(
+            "$map$", map_str
+        )
+        prompt = prompt.replace(
+            "$route$", route_str
+        )
+        prompt = prompt.replace(
+            "$goal_grid$", str(goal_grid) if isinstance(goal_grid, list) else "unknown"
         )
         self.logger.debug(f"navigating_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
