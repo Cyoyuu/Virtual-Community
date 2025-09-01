@@ -226,10 +226,13 @@ class NavigationMeetingAgent(Agent):
         #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
         #     return action, False
         cur_trans = np.array(self.pose[:2])
-        arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=2)
-        while arrived and len(self.last_route)>1:
-            self.last_route.pop(0)
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[0], threshold=2)
+        idx = len(self.last_route)
+        while idx > 0:
+            idx -= 1
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=5)
+            if arrived:
+                for i in range(idx+1):
+                    self.last_route.pop(0)
         return self.llm_navigate(max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
@@ -368,11 +371,77 @@ class NavigationMeetingAgent(Agent):
             if not isinstance(waypoints, list) or len(waypoints) == 0:
                 raise ValueError("Waypoints must be a non-empty list.")
             self.last_nav = waypoints
+            self.visualize_navigation_plan(
+                downscaled_map=downscaled_map,
+                original_waypoints=self.last_route if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
+                waypoints=self.last_nav if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
+                save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"  # or use f"logs/nav_plan_{self.step}.png"
+            )
         except Exception as e:
             self.logger.error(
                 f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. Response was: {response}"
             )
             self.generate_navigation_plan(max_retry=max_retry - 1)
+
+    def visualize_navigation_plan(self, downscaled_map, original_waypoints, waypoints, save_path=None):
+        """
+        Visualize the downscaled occupancy map with navigation waypoints.
+
+        Args:
+            downscaled_map: 2D numpy array (H, W) with values 1=free, 2=obstacle, 3=unknown, 4=agent
+            waypoints: List of [x, y] grid coordinates (in downscaled map space)
+            agent_grid_pos: [x, y] position of agent in the same grid (downscaled)
+            save_path: If provided, save the image to this path
+        """
+        h, w = downscaled_map.shape
+
+        # Create RGB canvas
+        vis_map = np.zeros((h, w, 3), dtype=np.uint8)
+
+        # Color mapping
+        vis_map[downscaled_map == 1] = [100, 100, 100]  # free space - gray
+        vis_map[downscaled_map == 2] = [255, 255, 255]  # obstacle - white
+        vis_map[downscaled_map == 3] = [0, 0, 0]      # unknown - black
+        vis_map[downscaled_map == 4] = [0, 255, 0]      # agent - green
+
+        # Convert to float32 for OpenCV drawing
+        vis_map = vis_map.astype(np.uint8)
+
+        # Draw waypoints and connect them
+        if waypoints and len(original_waypoints) > 0:
+            pts = []
+            for wp in waypoints:
+                x, y = int(wp[0]), int(wp[1])
+                if 0 <= x < w and 0 <= y < h:
+                    pts.append((x, y))
+                    cv2.circle(vis_map, (x, y), radius=2, color=(255, 255, 0), thickness=-1)  # cyan dot
+
+            # Draw lines connecting waypoints
+            for i in range(len(pts) - 1):
+                cv2.line(vis_map, pts[i], pts[i+1], color=(255, 255, 0), thickness=1)
+        if waypoints and len(waypoints) > 0:
+            pts = []
+            for wp in waypoints:
+                x, y = int(wp[0]), int(wp[1])
+                if 0 <= x < w and 0 <= y < h:
+                    pts.append((x, y))
+                    cv2.circle(vis_map, (x, y), radius=2, color=(255, 0, 0), thickness=-1)  # blue dot
+
+            # Draw lines connecting waypoints
+            for i in range(len(pts) - 1):
+                cv2.line(vis_map, pts[i], pts[i+1], color=(255, 0, 0), thickness=1)
+
+        # Optionally add a scale indicator
+        cv2.putText(vis_map, 'Red: Plan', (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 1)
+
+        # Resize for better visibility (scale up 4x)
+        vis_map = cv2.resize(vis_map, (w * 4, h * 4), interpolation=cv2.INTER_NEAREST)
+
+        if save_path is not None:
+            # Create directory if it doesn't exist
+            os.makedirs(os.path.dirname(os.path.abspath(save_path)), exist_ok=True)
+            cv2.imwrite(save_path, vis_map)
+
 
     def calc_time(self):
         ret=0.
