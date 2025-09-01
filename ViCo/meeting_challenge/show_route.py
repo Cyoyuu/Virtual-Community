@@ -23,7 +23,7 @@ def plot_waypoints(route_history, steps=100):
         plt.plot(x_coords[name], y_coords[name], color=colors[idx], linewidth=2, label=f"Path - {name}", zorder=1)
     
         # Plot the individual waypoints
-        plt.scatter(x_coords[name], y_coords[name], color='red', s=60, zorder=2, label=f"Waypoints - {name}")
+        plt.scatter(x_coords[name], y_coords[name], color='red', s=20, zorder=2, label=f"Waypoints - {name}")
         
         # Annotate each waypoint with its ID
         for i, (x, y) in enumerate(zip(x_coords[name], y_coords[name])):

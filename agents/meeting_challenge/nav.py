@@ -242,6 +242,7 @@ class NavigationMeetingAgent(Agent):
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
+                break
         return self.llm_navigate(max_retry=3)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
@@ -397,12 +398,13 @@ class NavigationMeetingAgent(Agent):
             if not isinstance(waypoints, list) or len(waypoints) == 0:
                 raise ValueError("Waypoints must be a non-empty list.")
             self.last_nav = self.grid_to_world(waypoints, x_low=x_low, y_low=y_low, x_min=x_min, y_min=y_min, resolution_factor=4)
-            self.visualize_navigation_plan(
-                downscaled_map=downscaled_map,
-                original_waypoints=self.last_route if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
-                waypoints=self.last_nav if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
-                save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"  # or use f"logs/nav_plan_{self.step}.png"
-            )
+            if self.debug:
+                self.visualize_navigation_plan(
+                    downscaled_map=downscaled_map,
+                    original_waypoints=self.last_route if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
+                    waypoints=self.last_nav if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
+                    save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"
+                )
         except Exception as e:
             self.logger.error(
                 f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. Response was: {response}"
