@@ -352,16 +352,28 @@ class NavigationMeetingAgent(Agent):
                 return [mx_ds, my_ds]
             return None
         
-        # Encode last_route into downscale grid coordinates
+        # Encode full route and goal
         path_local = []
         for pt in self.last_route:
             loc = world_to_downscaled_local(pt[0], pt[1])
             if loc is not None:
                 path_local.append(loc)
-        path_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
 
-        prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
-        prompt = prompt.format(map=map_str, route=path_str)
+        route_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
+        
+        if not path_local:
+            goal_grid = "unknown"
+        else:
+            goal_grid = path_local[-1]  # Last waypoint in grid coords
+        route_str += " (goal)"
+
+        prompt_template=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
+        # Format the prompt
+        prompt = prompt_template.format(
+            map=map_str,
+            route=route_str,
+            goal_grid=str(goal_grid) if isinstance(goal_grid, list) else "unknown"
+        )
         self.logger.debug(f"navigating_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
