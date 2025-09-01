@@ -152,8 +152,11 @@ class NavigationMeetingAgent(Agent):
                 if event["type"] == "message":
                     pass
                 if event["type"] == "app message":
-                    if self.last_action['type']=="query_app" and self.last_action['arg1']=="query_route":
-                        self.last_route=event["content"]
+                    if self.last_action['type']=="query_app":
+                        if self.last_action['arg1']=="query_route":
+                            self.last_route=event["content"]
+                        elif self.last_action["arg1"]=="query_place":
+                            self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']
@@ -183,10 +186,13 @@ class NavigationMeetingAgent(Agent):
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:
-                action, arrived = self.city_navigate(self.meeting_place)
-                if arrived:
-                    action = {'type': 'task_complete'}
-                    self.logger.info(f"Currently arrived at {self.meeting_place}.")
+                if self.meeting_place not in self.s_mem.get_places():
+                    action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
+                else:
+                    action, arrived = self.city_navigate(self.meeting_place)
+                    if arrived:
+                        action = {'type': 'task_complete'}
+                        self.logger.info(f"Currently arrived at {self.meeting_place}.")
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None
