@@ -129,7 +129,7 @@ class NavigationMeetingAgent(Agent):
         self.last_route = []
         self.last_nav = []
         self.last_action = None
-        self.route_history = dict()
+        self.route_history = {"last_route": dict(), "last_nav": dict()}
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -160,7 +160,8 @@ class NavigationMeetingAgent(Agent):
         self.current_place = obs['current_place']
         self.obs = obs
         if self.obs['steps']%100==0:
-            self.route_history[self.obs['steps']]=copy.deepcopy(self.last_route)
+            self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route)
+            self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
     def _act(self, obs):
@@ -327,7 +328,7 @@ class NavigationMeetingAgent(Agent):
             return
 
         # Convert downscaled map to string representation
-        symbol_map = {1: '.', 2: 'X', 3: '?', 4: 'A'}  # . = free, X = obstacle, ? = unknown, A = agent
+        symbol_map = {1: '?', 2: 'X', 3: '.', 4: 'A'}  # . = free, X = obstacle, ? = unknown, A = agent
         map_str_lines = []
         for row in downscaled_map:
             line = ''.join(symbol_map[val] for val in row)
@@ -387,7 +388,7 @@ class NavigationMeetingAgent(Agent):
             waypoints = response_dict.get("waypoints", [])
             if not isinstance(waypoints, list) or len(waypoints) == 0:
                 raise ValueError("Waypoints must be a non-empty list.")
-            self.last_nav = waypoints
+            self.last_nav = self.grid_to_world(waypoints, x_low=x_low, y_low=y_low, x_min=x_min, y_min=y_min, resolution_factor=4)
             self.visualize_navigation_plan(
                 downscaled_map=downscaled_map,
                 original_waypoints=self.last_route if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
@@ -399,6 +400,41 @@ class NavigationMeetingAgent(Agent):
                 f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. Response was: {response}"
             )
             self.generate_navigation_plan(max_retry=max_retry - 1)
+
+    def grid_to_world(self, downscaled_waypoints, x_low, y_low, x_min, y_min, resolution_factor=4):
+        """
+        Convert waypoints from downscaled grid coordinates to real-world world coordinates.
+
+        Args:
+            downscaled_waypoints: List of [x_ds, y_ds], where (x_ds, y_ds) are in the 
+                                downscaled, cropped map grid (post-4x downscale).
+            x_low, y_low: The lower-left corner (in full map index space) of the cropped region.
+                        These are the same values used in generate_navigation_plan.
+            resolution_factor: The downscale factor (default 4).
+
+        Returns:
+            List of [x_world, y_world] in real-world coordinates (meters).
+        """
+        builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
+
+        world_coords = []
+        for x_ds, y_ds in downscaled_waypoints:
+            # Step 1: Convert from downscaled grid → cropped high-res map coordinates
+            x_cropped = x_ds * resolution_factor + resolution_factor // 2  # center of the block
+            y_cropped = y_ds * resolution_factor + resolution_factor // 2
+
+            # Step 2: Convert from cropped map → full map coordinates
+            x_full = x_cropped + x_low
+            y_full = y_cropped + y_low
+
+            # Step 3: Convert from full map index → world coordinates
+            # Recall: map_index = (aligned_world_coord - origin)
+            x_world = builder.align_nav_inv(x_full + x_min)  # because x_low was in (map_x - x_min)
+            y_world = builder.align_nav_inv(y_full + y_min)
+
+            world_coords.append([x_world, y_world])
+
+        return world_coords
 
     def visualize_navigation_plan(self, downscaled_map, original_waypoints, waypoints, save_path=None):
         """

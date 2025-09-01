@@ -70,6 +70,9 @@ class VolumeGridBuilder:
     def align_nav(self, x):
         return np.floor(x / self.conf.nav_grid_size)
 
+    def align_nav_inv(self, x):
+        return np.floor(x * self.conf.nav_grid_size)
+
     def add_points(self, points: np.ndarray, colors: np.ndarray, label: np.ndarray):
         lib_builder.volume_grid_insert_from_numpy(self.vg_backend,
                                               points.astype(np.float32).ctypes.data_as(ctypes.POINTER(ctypes.c_float)),
