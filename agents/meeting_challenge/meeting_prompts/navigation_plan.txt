@@ -19,9 +19,9 @@ Your task:
 1. Start from 'A' (current position).
 2. End near the goal location.
 3. Avoid obstacles ('X') and minimize travel through unknown areas ('?').
-4. Output at most 5 intermediate waypoints to guide smooth navigation.
+4. Output at most 5 intermediate waypoints to guide smooth navigation. You are not required to always generate all 5 waypoints.
 5. Prefer straight, clear, and safe paths. You can straighten the path based on the existing route, as long as you are certain it is safe and won't result in a collision with any obstacles.
-6. The intermediate waypoints that you generate shall always fall on the free/open space, '.', and within the map range.
+6. The intermediate waypoints that you generate shall always fall on the free/open space, '.', as much as possible, while its also possible to explore the unknown space, '?'. However, the waypoints should always be within the map range and never fall on obstacles, except for when the goal is in that obstacle, which means the goal is an indoor place.
 
 Respond with only a valid JSON object:
 {"waypoints": [[x1, y1], [x2, y2], ...]}

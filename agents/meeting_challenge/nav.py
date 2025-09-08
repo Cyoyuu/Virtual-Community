@@ -177,7 +177,10 @@ class NavigationMeetingAgent(Agent):
                 self.mode = NavAgentState.DISCUSS
             if self.mode == NavAgentState.DISCUSS:
                 self.discussion_time += 1
-                assert self.discussion_time <= 50
+                if self.discussion_time > 50:
+                    action = {"type": "task_terminate"}
+                    self.logger.info(f"Exceeding discussion limit. Task terminating.")
+                    return action
                 response_type, speech = self.get_meeting_place()
                 if response_type is None or response_type == "wait":
                     action = {"type": "wait"}
@@ -200,7 +203,6 @@ class NavigationMeetingAgent(Agent):
                     action, arrived = self.city_navigate(self.meeting_place)
                     if arrived:
                         action = {'type': 'task_complete'}
-                        self.logger.info(f"Currently arrived at {self.meeting_place}.")
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None
