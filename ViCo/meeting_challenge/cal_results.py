@@ -31,8 +31,8 @@ for scene in os.listdir(base_output_dir):
             if key != "agent_poses":
                 results[agent_type][scene][key] = result[key]
         for key in ['time', 'length']:
-            results[agent_type][f"agent_navigation_{key}_mean"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
-            results[agent_type][f"agent_navigation_{key}_stdev"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+            results[agent_type][scene][f"agent_navigation_{key}_mean"]=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+            results[agent_type][scene][f"agent_navigation_{key}_stdev"]=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
 for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting"]=0.

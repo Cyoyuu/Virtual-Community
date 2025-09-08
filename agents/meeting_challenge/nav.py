@@ -125,6 +125,9 @@ class NavigationMeetingAgent(Agent):
         self.conversation_history: list[Chat] = []
         self.meeting_place = None
         self.mode = None
+        # Discussion
+        self.discussion_time = 0
+        # Navigation
         self.last_estimated_arrival_time = None
         self.last_route = []
         self.last_nav = []
@@ -173,6 +176,8 @@ class NavigationMeetingAgent(Agent):
             if self.mode is None:
                 self.mode = NavAgentState.DISCUSS
             if self.mode == NavAgentState.DISCUSS:
+                self.discussion_time += 1
+                assert self.discussion_time <= 50
                 response_type, speech = self.get_meeting_place()
                 if response_type is None or response_type == "wait":
                     action = {"type": "wait"}
@@ -188,6 +193,7 @@ class NavigationMeetingAgent(Agent):
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:
+                self.discussion_time = 0
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
@@ -250,10 +256,11 @@ class NavigationMeetingAgent(Agent):
         self.logger.debug(f"Current last_nav is {self.last_nav}")
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
+            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
         if self.last_estimated_arrival_time + timedelta(seconds=100) < estimated_arrival_time:
             self.generate_navigation_plan(max_retry)
-        self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
+            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
         arrived = True
         curr_goal = None
         cur_trans = np.array(self.pose[:2])

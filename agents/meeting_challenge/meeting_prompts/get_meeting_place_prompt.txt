@@ -37,6 +37,6 @@ Instructions:
 6.You may ask clarifying questions, suggest trade-offs, or support others’ proposals if they seem reasonable.
 7.Keep your message concise (1–3 sentences and less than 100 words), as part of an ongoing dialogue.
 8.To save time, you can make a compromise and accept the current most-supported approach when the conversation becomes too lengthy (more than 5 times agents number).
-9.If you think everyone has reached an agreement with the same destination for the meeting place, just replace $speech$ with "decide" and $speech$ with the decided meeting place. However, before you decide, make sure everyone know your intention.
+9.If you think everyone has reached an agreement with the same destination for the meeting place, just replace $speech$ with "decide" and $speech$ with the decided meeting place. However, before you decide, make sure everyone know your intention, so that they won't wait for you to decide! In other words, you must speak at least once!
 
 Now, generate your response. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!
