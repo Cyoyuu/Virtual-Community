@@ -250,9 +250,10 @@ class NavigationMeetingAgent(Agent):
         self.logger.debug(f"Current last_nav is {self.last_nav}")
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
-        # estimated_arrival_time = self.curr_time + calc_time()
-        # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
-        #     self.generate_navigation_plan(max_retry)
+        estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
+        if self.last_estimated_arrival_time + timedelta(seconds=100) < estimated_arrival_time:
+            self.generate_navigation_plan(max_retry)
+        self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
         arrived = True
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
@@ -513,7 +514,7 @@ class NavigationMeetingAgent(Agent):
         ret=0.
         for i in range(1, len(self.last_route)):
             ret+=np.linalg.norm(np.array(self.last_route[i][:2])-np.array(self.last_route[i-1][:2]))
-        return ret
+        return ret*2 # for turning
     
     def get_meeting_target(self):
         # use this function to get geometric center
