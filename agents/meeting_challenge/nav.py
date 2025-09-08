@@ -404,8 +404,8 @@ class NavigationMeetingAgent(Agent):
             if self.debug:
                 self.visualize_navigation_plan(
                     downscaled_map=downscaled_map,
-                    original_waypoints=[world_to_downscaled_local(pt[0], pt[1]) for pt in self.last_route] if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
-                    waypoints=[world_to_downscaled_local(pt[0], pt[1]) for pt in self.last_nav] if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
+                    original_waypoints=[world_to_downscaled_local(pt[0], pt[1])[0] for pt in self.last_route] if hasattr(self, 'last_route') and isinstance(self.last_route, list) else [],
+                    waypoints=[world_to_downscaled_local(pt[0], pt[1])[0] for pt in self.last_nav] if hasattr(self, 'last_nav') and isinstance(self.last_nav, list) else [],
                     save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"
                 )
         except Exception as e:
@@ -480,7 +480,7 @@ class NavigationMeetingAgent(Agent):
                 x, y = int(wp[0]), int(wp[1])
                 if 0 <= x < w and 0 <= y < h:
                     pts.append((x, y))
-                    cv2.circle(vis_map, (x, y), radius=2, color=(255, 255, 0), thickness=-1)  # cyan dot
+                    cv2.circle(vis_map, (x, y), radius=1, color=(255, 255, 0), thickness=-1)  # cyan dot
 
             # Draw lines connecting waypoints
             for i in range(len(pts) - 1):
@@ -491,7 +491,7 @@ class NavigationMeetingAgent(Agent):
                 x, y = int(wp[0]), int(wp[1])
                 if 0 <= x < w and 0 <= y < h:
                     pts.append((x, y))
-                    cv2.circle(vis_map, (x, y), radius=2, color=(255, 0, 0), thickness=-1)  # blue dot
+                    cv2.circle(vis_map, (x, y), radius=1, color=(255, 0, 0), thickness=-1)  # blue dot
 
             # Draw lines connecting waypoints
             for i in range(len(pts) - 1):
