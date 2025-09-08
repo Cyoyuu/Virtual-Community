@@ -219,7 +219,7 @@ def main():
     total_time=[0. for i in range(num_agents)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
-    while not all_task_end:
+    while not all_task_end and env.steps <= args.step_limit:
         lst_time = time.perf_counter()
         obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime)} for agent_id in obs]
@@ -295,7 +295,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": True}
+              "done": all_task_end}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")
