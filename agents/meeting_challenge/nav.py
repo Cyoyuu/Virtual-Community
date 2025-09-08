@@ -213,8 +213,17 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
+        # cur_trans = np.array(self.pose[:2])
+        # goal_place_dict = self.s_mem.get_knowledge(goal_place)
+        # if goal_place_dict is None:
+        #     self.logger.error(f"No knowledge found for {goal_place}.")
+        #     return None, False
+        # goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+        # if goal_place_dict["building"] != "open space":
+        #     goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time())}s")
         # already at the correct place (or to comply with env setting)
+        # if goal_place == self.obs['current_place'] or (is_near_goal(cur_trans[0], cur_trans[1], None, goal_pos, threshold=5) and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
@@ -242,7 +251,6 @@ class NavigationMeetingAgent(Agent):
         # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
         #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
         #     return action, False
-        cur_trans = np.array(self.pose[:2])
         idx = len(self.last_route)
         while idx > 0:
             idx -= 1
