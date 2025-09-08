@@ -371,11 +371,11 @@ class NavigationMeetingAgent(Agent):
         route_local_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
         route_global_str = " → ".join(f"({x},{y})" for x, y in path_global) if path_global else "None"
         
-        if not path_local:
+        if not path_global:
             goal_grid = "unknown"
         else:
             goal_grid = path_global[-1]  # Last waypoint in grid coords
-        route_str += " (goal)"
+        route_global_str += " (goal)"
 
         prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
         # Format the prompt
