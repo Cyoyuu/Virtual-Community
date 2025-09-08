@@ -213,7 +213,7 @@ class NavigationMeetingAgent(Agent):
         return self.last_action
     
     def city_navigate(self, goal_place, threshold=500.):
-        # cur_trans = np.array(self.pose[:2])
+        cur_trans = np.array(self.pose[:2])
         # goal_place_dict = self.s_mem.get_knowledge(goal_place)
         # if goal_place_dict is None:
         #     self.logger.error(f"No knowledge found for {goal_place}.")
