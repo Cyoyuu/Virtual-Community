@@ -359,22 +359,25 @@ class NavigationMeetingAgent(Agent):
             mx_ds = mx_local // 4
             my_ds = my_local // 4
             if mx_ds < downscaled_map.shape[1] and my_ds < downscaled_map.shape[0]:
-                return [mx_ds, my_ds]
-            return None
+                return [mx_ds, my_ds], True
+            return [mx_ds, my_ds], False
         
         # Encode full route and goal
         path_local = []
+        path_global = []
         for pt in self.last_route:
-            loc = world_to_downscaled_local(pt[0], pt[1])
-            if loc is not None:
+            loc, in_map = world_to_downscaled_local(pt[0], pt[1])
+            if in_map:
                 path_local.append(loc)
+            path_global.append(loc)
 
-        route_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
+        route_local_str = " → ".join(f"({x},{y})" for x, y in path_local) if path_local else "None"
+        route_global_str = " → ".join(f"({x},{y})" for x, y in path_global) if path_global else "None"
         
         if not path_local:
             goal_grid = "unknown"
         else:
-            goal_grid = path_local[-1]  # Last waypoint in grid coords
+            goal_grid = path_global[-1]  # Last waypoint in grid coords
         route_str += " (goal)"
 
         prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan.txt","r").read()
@@ -383,7 +386,10 @@ class NavigationMeetingAgent(Agent):
             "$map$", map_str
         )
         prompt = prompt.replace(
-            "$route$", route_str
+            "$route_local$", route_local_str
+        )
+        prompt = prompt.replace(
+            "$route_global$", route_global_str
         )
         prompt = prompt.replace(
             "$goal_grid$", str(goal_grid) if isinstance(goal_grid, list) else "unknown"

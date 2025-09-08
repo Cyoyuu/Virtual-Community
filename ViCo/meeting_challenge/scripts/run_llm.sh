@@ -18,7 +18,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --config agents_num_5 \
 --agent_type llm \
 --save_per_seconds 200 \
---step_limit 15000 \
+--step_limit 3000 \
 --lm_source azure \
 --lm_id gpt-4o \
 --debug \

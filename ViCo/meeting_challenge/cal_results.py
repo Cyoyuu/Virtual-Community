@@ -15,6 +15,7 @@ base_output_dir = args.output_dir
 results = dict()
 average_results = dict()
 for scene in os.listdir(base_output_dir):
+    if "_old" in str(scene).lower(): continue
     if not os.path.isdir(os.path.join(base_output_dir, scene)): continue
     for agent_type in os.listdir(os.path.join(base_output_dir, scene)):
         # if "_" not in dir_name:
@@ -30,8 +31,8 @@ for scene in os.listdir(base_output_dir):
             if key != "agent_poses":
                 results[agent_type][scene][key] = result[key]
         for key in ['time', 'length']:
-            average_results[agent_type][f"agent_navigation_{key}_mean"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
-            average_results[agent_type][f"agent_navigation_{key}_stdev"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+            results[agent_type][f"agent_navigation_{key}_mean"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+            results[agent_type][f"agent_navigation_{key}_stdev"]+=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
 for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting"]=0.
@@ -41,11 +42,11 @@ for agent_type in results:
     average_results[agent_type]["agent_navigation_length_stdev"]=0.
     num=0
     for scene in results[agent_type]:
-        if "OLD" in scene:continue
+        if "_old" in str(scene).lower(): continue
         if "agent_navigation_time_mean" not in results[agent_type][scene].keys():continue
         num+=1
         for key in average_results[agent_type]:
-            average_results[agent_type][key]+=results[agent_type][key]
+            average_results[agent_type][key]+=results[agent_type][scene][key]
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
     results[agent_type]["average"]=average_results[agent_type]
