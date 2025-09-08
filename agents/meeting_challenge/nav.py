@@ -349,16 +349,13 @@ class NavigationMeetingAgent(Agent):
             # Convert world → map index
             mx = builder.align_nav(x_world) - x_min
             my = builder.align_nav(y_world) - y_min
-            # Check if in crop
-            if not (x_low <= mx < x_up and y_low <= my < y_up):
-                return None
             # Convert to local in cropped map
             mx_local = mx - x_low
             my_local = my - y_low
             # Downscale by 4
             mx_ds = mx_local // 4
             my_ds = my_local // 4
-            if mx_ds < downscaled_map.shape[1] and my_ds < downscaled_map.shape[0]:
+            if 0 <= mx_ds < downscaled_map.shape[1] and 0 <= my_ds < downscaled_map.shape[0]:
                 return [mx_ds, my_ds], True
             return [mx_ds, my_ds], False
         
