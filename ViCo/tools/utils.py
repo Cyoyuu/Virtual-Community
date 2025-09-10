@@ -623,11 +623,11 @@ def get_accessible_places(building_metadata, place_metadata, pose, current_build
 	for building in building_metadata:
 		if building == "open space":
 			for place in building_metadata[building]["places"]:
-				if place["name"] in place_metadata and is_near_goal(pose[0], pose[1], None, place["location"][:2], threshold=3):
+				if place["name"] in place_metadata and is_near_goal(pose[0], pose[1], None, place["location"][:2], threshold=5):
 					accessible_places.append(place["name"])
 		if building_metadata[building]['bounding_box'] is None:
 			continue
-		if is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=3):
+		if is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=5):
 			accessible_places.extend([place["name"] for place in building_metadata[building]["places"] if place["name"] in place_metadata])
 	return accessible_places
 

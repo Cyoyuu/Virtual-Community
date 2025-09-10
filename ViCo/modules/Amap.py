@@ -45,7 +45,7 @@ class Waypoints:
 
 class Amap:
     '''walkers only'''
-    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=10.):
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7.):
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=place_metadata

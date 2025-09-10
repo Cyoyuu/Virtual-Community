@@ -263,7 +263,7 @@ class NavigationMeetingAgent(Agent):
                 for i in range(idx+1):
                     self.last_route.pop(0)
                 break
-        return self.llm_navigate(max_retry=3)
+        return self.llm_navigate(max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert self.last_route is not None
