@@ -304,7 +304,7 @@ class NavigationMeetingAgent(Agent):
         x_low_w, x_up_w = agent_x_world - 30, agent_x_world + 30
         y_low_w, y_up_w = agent_y_world - 30, agent_y_world + 30
         # Convert to map indices
-        x_low = int(max(0, builder.align_nav(x_low_w) - x_min), builder.align_nav(-450) - x_min)
+        x_low = int(max(0, builder.align_nav(x_low_w) - x_min, builder.align_nav(-450) - x_min))
         x_up = int(min(occ_map.shape[1], builder.align_nav(x_up_w) - x_min, builder.align_nav(450) - x_min))
         y_low = int(max(0, builder.align_nav(y_low_w) - y_min, builder.align_nav(-450) - y_min))
         y_up = int(min(occ_map.shape[0], builder.align_nav(y_up_w) - y_min, builder.align_nav(450) - y_min))

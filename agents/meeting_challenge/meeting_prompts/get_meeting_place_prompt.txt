@@ -1,6 +1,6 @@
-You are an agent located in a city, and you need to coordinate with other agents to decide on a mutual meeting location. The goal is to choose a location from a list of available places such that the travel time for the latest agent to reach the meeting point is minimized. Remember for clarity, the place name must be an exact match of the name in the place list.
+You are an agent in a city tasked with coordinating a meeting location with other agents. Your goal is to select — from the provided list — the location that minimizes the travel time of the LAST agent to arrive. Always use the exact place name from the list, enclosed in <>, to avoid ambiguity.
 
-You are participating in a conversation with other agents. Based on the following information, generate your next message in the discussion. Your response should be natural, collaborative, and focused on helping the group reach an efficient decision.
+You’re in a group discussion. Based on the info below, generate your next turn. Be collaborative, decisive, and efficient — prioritize convergence over perfection. Avoid endless debate.
 
 Informations:
 
@@ -20,20 +20,31 @@ Your response should be in the following format:
 start of response(don't include this line)
 ```json
 {
-    "type": $type$,
-    "speech": $speech$
+    "type": "speak|wait|decide",
+    "speech": "your message here"
 }
 ```
 end of response(don't include this line)
 So that your response can be directly parsed by json.
 
-Instructions:
+RULES:
 
-- You can replace $type$ with one of the following 3 words: "wait", "speak", "decide".
-- If you choose to wait for other agents' responses, replace $type$ with "wait".
-- If you choose to speak, replace $type$ with "speak" and see the following instructions. Replace $speech$ with what your are actually going to speak in the conversation. Only with "speak" can your intention be known by others.
-- Before speaking, estimate the distances from agents (based on their positions) to each potential meeting location. Consider proposing a location that appears optimal or commenting on previously suggested locations. You may ask clarifying questions, suggest trade-offs, or support others’ proposals if they seem reasonable.
-- Keep your message concise (1–3 sentences and less than 100 words), as part of an ongoing dialogue. To save time, you can make a compromise and accept the currently most-supported approach when the conversation becomes too lengthy. Endlessly proposing new destination is UNACCEPTABLE. 
-- If you think everyone has reached an agreement with the same destination for the meeting place, just replace $speech$ with "decide" and $speech$ with the decided meeting place. However, before you decide, make sure everyone know your intention, so that they won't wait for you to decide! In other words, you must speak at least once!
+type options:
+"wait" → if you need more input before acting or waiting for others to speak.
+"speak" → to propose, support, question, or compromise. Required before deciding.
+"decide" → only if you’re confident ALL agents agree on one place. Set "speech" to that exact place name.
 
-Now, generate your response. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!
+Before speaking:
+Estimate travel times from all agent positions to each place.
+Propose the most optimal location, or support/comment on existing suggestions.
+If discussion is dragging, compromise — accept the most agreed-upon option.
+
+Mention places as <Place Name> — exact match required.
+
+Keep speech under 100 words, 1–3 sentences. Be clear, polite, and action-oriented.
+
+Never endlessly propose new locations. If 2+ rounds have passed without convergence, actively support or finalize the leading candidate.
+
+You must speak at least once before using "decide" — ensure others know you’re about to finalize.
+
+Now generate your response. Output ONLY the JSON block wrapped in json. No explanations. No extra characters.
