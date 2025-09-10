@@ -56,7 +56,7 @@ class Amap:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
         # self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
-        self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/road_data/roads.pkl", 'rb'))
+        self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
 
         self.waypoints = []
         self.road2waypoint = {}
