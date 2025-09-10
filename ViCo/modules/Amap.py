@@ -12,16 +12,31 @@ import pickle
 import re
 from enum import Enum
 import time
+import math
 import heapq
 import matplotlib.pyplot as plt
 import argparse
 
-from ViCo.tools.utils import *
-from ViCo.modules import *
+# from ViCo.tools.utils import *
+# from ViCo.modules import *
+
+def lat_lon_to_xy(lat, lon, ref_lat, ref_lon):
+    earth_radius = 6378137  # in meters
+    meters_per_degree_lat = 111139  # Approximate meters per degree latitude
+    
+    # Calculate meters per degree longitude based on reference latitude
+    meters_per_degree_lon = 111139 * math.cos(math.radians(ref_lat))
+    
+    # Convert lat/lon to x/y
+    x = (lon - ref_lon) * meters_per_degree_lon
+    y = (lat - ref_lat) * meters_per_degree_lat
+    
+    return [x, y]
 
 @dataclass
 class Waypoints:
     id: int
+    name: str | None = None
     location: list[float, float] | None = None
     belong: str | None = None
     predecessor: list = field(default_factory=list)
@@ -40,9 +55,8 @@ class Amap:
             for line in file:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-        self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr",
-                            terrain_height_path=None,
-                            ref_lat=ref_lat, ref_lon=ref_lon)
+        # self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
+        self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/road_data/roads.pkl", 'rb'))
 
         self.waypoints = []
         self.road2waypoint = {}
@@ -53,25 +67,45 @@ class Amap:
         self.covered_length=0.
 
     def spawn_waypoints(self):
-        for road in self.map.printable_roads:
-            self.road2waypoint[road]=len(self.waypoints)
-            self.waypoints.append(Waypoints(id=len(self.waypoints), location=self.map.get_pos(road, 0.), belong=road))
-        for road in self.map.printable_roads:
-            last_waypoint=self.waypoints[self.road2waypoint[road]]
+        for node in self.nodes:
+            for road in self.nodes[node]["connected_roads"]:
+                self.road2waypoint[road]=len(self.waypoints)
+            self.nodes[node]["2wp"]=len(self.waypoints)
+            self.waypoints.append(Waypoints(id=len(self.waypoints), location=[self.nodes[node]['x'], self.nodes[node]['y']], belong=None if not self.nodes[node]["connected_roads"] else self.nodes[node]["connected_roads"][0]))
+        for road in self.roads:
+            start_x, start_y = road['start']['x'],road['start']['y']
+            end_x, end_y = road['end']['x'],road['end']['y']
+            length = np.linalg.norm(np.array([start_x-end_x, start_y-end_y]))
             s=self.waypoints_dis
-            for geometry in self.map.printable_roads[road]["geometry"]:
-                while s<geometry['length']+geometry['s']:
-                    pos = self.map.get_pos(road, s)
-                    new_wp = Waypoints(id=len(self.waypoints), location=pos, belong=road)
-                    self.waypoints.append(new_wp)
-                    last_waypoint.successor.append(new_wp.id)
-                    last_waypoint = new_wp
-                    s+=self.waypoints_dis
-            for successor in self.map.printable_roads[road]['successor']:
-                last_waypoint.successor.append(self.road2waypoint[successor])
-        for waypoint in self.waypoints:
-            for successor in waypoint.successor:
-                self.waypoints[successor].predecessor.append(waypoint.id)
+            last_waypoint=self.waypoints[self.nodes[road['start']['id']]['2wp']]
+            while s<length:
+                p = np.array([start_x, start_y]) - s/length*np.array([start_x-end_x, start_y-end_y])
+                self.nodes[f"new_node_{len(self.nodes)}"]={"x": p[0], "y": p[1], "connected_roads": road["id"]}
+                new_wp=(Waypoints(id=len(self.waypoints), location=p, belong=road["id"]))
+                self.waypoints.append(new_wp)
+                last_waypoint.successor.append(new_wp.id)
+                last_waypoint = new_wp
+                s+=self.waypoints_dis
+            last_waypoint.successor.append(self.waypoints[self.nodes[road['end']['id']]['2wp']].id)
+        # for road in self.map.printable_roads:
+        #     self.road2waypoint[road]=len(self.waypoints)
+        #     self.waypoints.append(Waypoints(id=len(self.waypoints), location=self.map.get_pos(road, 0.), belong=road))
+        # for road in self.map.printable_roads:
+        #     last_waypoint=self.waypoints[self.road2waypoint[road]]
+        #     s=self.waypoints_dis
+        #     for geometry in self.map.printable_roads[road]["geometry"]:
+        #         while s<geometry['length']+geometry['s']:
+        #             pos = self.map.get_pos(road, s)
+        #             new_wp = Waypoints(id=len(self.waypoints), location=pos, belong=road)
+        #             self.waypoints.append(new_wp)
+        #             last_waypoint.successor.append(new_wp.id)
+        #             last_waypoint = new_wp
+        #             s+=self.waypoints_dis
+        #     for successor in self.map.printable_roads[road]['successor']:
+        #         last_waypoint.successor.append(self.road2waypoint[successor])
+        # for waypoint in self.waypoints:
+        #     for successor in waypoint.successor:
+        #         self.waypoints[successor].predecessor.append(waypoint.id)
 
     def get_pose(self):
         return self.pose
@@ -205,7 +239,7 @@ if __name__ == "__main__" :
     wps=[wp.location for wp in amap.waypoints]
     xs, ys = zip(*wps)
     plt.figure(figsize=(10, 6))
-    plt.plot(xs, ys, 'ro', markersize=5)
+    plt.plot(xs, ys, 'ro', markersize=3)
     plt.title(f'Amap Waypoints Visualization - {args.scene}')
     plt.xlabel('X Coordinate')
     plt.ylabel('Y Coordinate')

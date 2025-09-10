@@ -221,12 +221,12 @@ class NavigationMeetingAgent(Agent):
         # goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
         # if goal_place_dict["building"] != "open space":
         #     goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
-        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time())}s")
         # already at the correct place (or to comply with env setting)
         # if goal_place == self.obs['current_place'] or (is_near_goal(cur_trans[0], cur_trans[1], None, goal_pos, threshold=5) and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time())}s")
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
@@ -304,10 +304,10 @@ class NavigationMeetingAgent(Agent):
         x_low_w, x_up_w = agent_x_world - 30, agent_x_world + 30
         y_low_w, y_up_w = agent_y_world - 30, agent_y_world + 30
         # Convert to map indices
-        x_low = int(max(0, builder.align_nav(x_low_w) - x_min))
-        x_up = int(min(occ_map.shape[1], builder.align_nav(x_up_w) - x_min))
-        y_low = int(max(0, builder.align_nav(y_low_w) - y_min))
-        y_up = int(min(occ_map.shape[0], builder.align_nav(y_up_w) - y_min))
+        x_low = int(max(0, builder.align_nav(x_low_w) - x_min), builder.align_nav(-450) - x_min)
+        x_up = int(min(occ_map.shape[1], builder.align_nav(x_up_w) - x_min, builder.align_nav(450) - x_min))
+        y_low = int(max(0, builder.align_nav(y_low_w) - y_min, builder.align_nav(-450) - y_min))
+        y_up = int(min(occ_map.shape[0], builder.align_nav(y_up_w) - y_min, builder.align_nav(450) - y_min))
 
         # Crop the occupancy map
         if x_low >= x_up or y_low >= y_up:
