@@ -228,7 +228,7 @@ class NavigationMeetingAgent(Agent):
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
-        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time())}s")
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
@@ -283,6 +283,7 @@ class NavigationMeetingAgent(Agent):
         while arrived:
             if not self.last_nav:
                 self.generate_navigation_plan(max_retry=max_retry)
+                self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
                 if not self.last_nav:
                     return {"type": "wait"}, False
             curr_goal = self.last_nav[0]
