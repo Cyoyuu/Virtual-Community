@@ -17,8 +17,9 @@ import heapq
 import matplotlib.pyplot as plt
 import argparse
 
-# from ViCo.tools.utils import *
-# from ViCo.modules import *
+if __name__ != "__main__" :
+    from ViCo.tools.utils import *
+    from ViCo.modules import *
 
 def lat_lon_to_xy(lat, lon, ref_lat, ref_lon):
     earth_radius = 6378137  # in meters
@@ -103,9 +104,9 @@ class Amap:
         #             s+=self.waypoints_dis
         #     for successor in self.map.printable_roads[road]['successor']:
         #         last_waypoint.successor.append(self.road2waypoint[successor])
-        # for waypoint in self.waypoints:
-        #     for successor in waypoint.successor:
-        #         self.waypoints[successor].predecessor.append(waypoint.id)
+        for waypoint in self.waypoints:
+            for successor in waypoint.successor:
+                self.waypoints[successor].predecessor.append(waypoint.id)
 
     def get_pose(self):
         return self.pose
@@ -130,6 +131,21 @@ class Amap:
             if is_near_goal(target_pos[0], target_pos[1], self.place_metadata[place]['bounding_box'], self.place_metadata[place]['location'], threshold=threshold):
                 places_list.append(place)
         return places_list
+    
+    def get_nearest_waypoints(self, curr_trans):
+        """
+        Find and return several nearest waypoint ids from the given curr_trans.
+        """
+        ret=[]
+        start_wp_id = min(
+            range(len(self.waypoints)),
+            key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2]))
+        )
+        min_dis2s = np.linalg.norm(np.array(self.waypoints[start_wp_id].location) - np.array(curr_trans[:2]))
+        for i in range(len(self.waypoints)):
+            if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])) <= min_dis2s+self.waypoints_dis:
+                ret.append(i)
+        return ret
     
     def query_route(self, curr_trans, goal_place):
         """
@@ -223,6 +239,34 @@ class Amap:
         
         path.append(goal_pos)
         return path
+    
+    def get_connected_waypoints(self, waypoint_id):
+        """
+        Find all waypoints connected to the given waypoint_id via successor/predecessor links.
+        Performs BFS to collect all reachable waypoints in the graph.
+
+        Returns:
+            List[int]: List of waypoint IDs that are connected (including the start).
+        """
+        if waypoint_id >= len(self.waypoints) or waypoint_id < 0:
+            return []
+
+        visited = set()
+        queue = [waypoint_id]
+        visited.add(waypoint_id)
+
+        while queue:
+            current_id = queue.pop(0)
+            current_wp = self.waypoints[current_id]
+
+            # Traverse both successors and predecessors for full connectivity
+            neighbors = current_wp.successor + current_wp.predecessor
+            for neighbor_id in neighbors:
+                if neighbor_id < len(self.waypoints) and neighbor_id not in visited:
+                    visited.add(neighbor_id)
+                    queue.append(neighbor_id)
+
+        return sorted(list(visited))
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
@@ -239,7 +283,14 @@ if __name__ == "__main__" :
     wps=[wp.location for wp in amap.waypoints]
     xs, ys = zip(*wps)
     plt.figure(figsize=(10, 6))
-    plt.plot(xs, ys, 'ro', markersize=3)
+    plt.plot(xs, ys, 'bo', markersize=3)
+    n_wps=amap.get_nearest_waypoints([285.16, -196.96])
+    c_wps=set()
+    for wp in n_wps:
+        c_wps.update(amap.get_connected_waypoints(wp))
+    c_wps=[wp.location for wp in amap.waypoints if wp.id in c_wps]
+    c_xs, c_ys = zip(*c_wps)
+    plt.plot(c_xs, c_ys, 'ro', markersize=3)
     plt.title(f'Amap Waypoints Visualization - {args.scene}')
     plt.xlabel('X Coordinate')
     plt.ylabel('Y Coordinate')
