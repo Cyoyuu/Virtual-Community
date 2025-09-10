@@ -129,6 +129,7 @@ class NavigationMeetingAgent(Agent):
         self.discussion_time = 0
         # Navigation
         self.last_estimated_arrival_time = None
+        self.last_estimated_move_time = None
         self.last_route = []
         self.last_nav = []
         self.last_action = None
@@ -158,6 +159,7 @@ class NavigationMeetingAgent(Agent):
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
                             self.last_route=event["content"]
+                            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
@@ -247,10 +249,12 @@ class NavigationMeetingAgent(Agent):
         if not self.last_route:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
-        # estimated_arrival_time = self.curr_time + calc_time()
-        # if self.last_estimated_arrival_time < estimated_arrival_time + THRES:
-        #     action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
-        #     return action, False
+        # If the estimated arrival time exceeds, regenerate
+        estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+        if self.last_estimated_arrival_time + timedelta(minutes=5) < estimated_arrival_time:
+            action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
+            return action, False
+        # throw away arrived waypoints
         idx = len(self.last_route)
         while idx > 0:
             idx -= 1
@@ -266,11 +270,13 @@ class NavigationMeetingAgent(Agent):
         self.logger.debug(f"Current last_nav is {self.last_nav}")
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
-            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
-        estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
-        if self.last_estimated_arrival_time + timedelta(seconds=100) < estimated_arrival_time:
+            self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
+        # If the estimated arrival time exceeds, regenerate
+        estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
+        if self.last_estimated_move_time + timedelta(seconds=25) < estimated_move_time:
             self.generate_navigation_plan(max_retry)
-            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time())
+            self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
+        # throw away arrived waypoints
         arrived = True
         curr_goal = None
         cur_trans = np.array(self.pose[:2])
@@ -527,10 +533,10 @@ class NavigationMeetingAgent(Agent):
             cv2.imwrite(save_path, vis_map)
 
 
-    def calc_time(self):
-        ret=0.
-        for i in range(1, len(self.last_route)):
-            ret+=np.linalg.norm(np.array(self.last_route[i][:2])-np.array(self.last_route[i-1][:2]))
+    def calc_time(self, waypoints):
+        ret=np.linalg.norm(np.array(waypoints[0][:2])-np.array(self.pose[:2]))
+        for i in range(1, len(waypoints)):
+            ret+=np.linalg.norm(np.array(waypoints[i][:2])-np.array(waypoints[i-1][:2]))
         return ret*2 # for turning
     
     def get_meeting_target(self):
