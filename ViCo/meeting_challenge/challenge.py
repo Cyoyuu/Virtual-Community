@@ -254,6 +254,7 @@ def main():
             with open(steps_info_path, 'w') as file:
                 json.dump(steps_info, file, indent=4)
         except Exception as e:
+            gs.logger.error(f"Error in step info storage: {e} with traceback: {traceback.format_exc()}.")
             import pdb; pdb.set_trace()
 
         gs.logger.info(f"current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
