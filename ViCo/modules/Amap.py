@@ -97,7 +97,7 @@ class Amap:
         # self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
         self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
 
-        obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/obstacle_grid.pkl", 'rb'))
+        obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
         self.obstacle_grid = obstacle_grid_save["grid"]
         self.obstacle_grid_parameters = obstacle_grid_save["parameters"]
 
