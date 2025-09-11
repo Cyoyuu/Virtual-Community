@@ -4,7 +4,7 @@ The agent you are helping is in a group discussion. This discussion is triggered
 
 Informations:
 
-The Name of the Agent You Are Helping:
+Agent's Name:
 $SelfName$
 
 Agent position list:
@@ -13,27 +13,25 @@ $AgentPoses$
 Place list:
 $Places$
 
-Conversation History between the agents so far:
+Conversation History so far:
 $ConversationHistory$
 
 Past Events:
 $PastEvents$
 
-App Message:
+Navigation app message:
 $AppMessage$
 
-The agent will act depending on your response. Your response should be in the following format:
-start of response(don't include this line)
+The agent’s action should be returned in the following JSON format:
 ```json
 {
     "type": "speak|wait|query|decide",
     "speech": "your message here"
 }
 ```
-end of response(don't include this line)
 So that your response can be directly parsed by json.
 
-RULES:
+Guidelines for choosing the response:
 
 type options:
 "wait" → if you need more input before acting or waiting for others to speak. Then the agent will wait for the next turn.
@@ -45,13 +43,10 @@ Before speaking:
 Try get necessary travel times from agent positions to places, by either querying the navigation app or simply catching information from others' speech.
 Propose the most optimal location, or support/comment on existing suggestions.
 If discussion is dragging, compromise — accept the most agreed-upon option.
-
+Important constraints:
 Mention places as <Place Name> — exact match required.
-
 Keep speech under 100 words, 1–3 sentences. Be clear, polite, and action-oriented.
-
 Never endlessly propose new locations. If 2+ rounds have passed without convergence, actively support or finalize the leading candidate.
+Speak at least once before using "decide" — ensure others know you’re about to finalize.
 
-You must instruct the agent to speak at least once before using "decide" — ensure others know you’re about to finalize.
-
-Now generate your response. Output ONLY the JSON block wrapped in json. No explanations. No extra characters.
+Finally, return only a valid JSON object in the format shown above.
