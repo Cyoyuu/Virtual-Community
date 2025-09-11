@@ -6,6 +6,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import matplotlib.image as mpimg
 from PIL import Image
 import argparse
 import sys
@@ -96,6 +97,8 @@ if __name__ == "__main__":
 
     # Set up the plot area
     plt.figure(figsize=(8, 8))
+    aerial_view=mpimg.imread(f"ViCo/assets/scenes/{args.scene}/global.png")
+    plt.imshow(aerial_view, extent=[-512, 512, -512, 512])# left, right, bottom, top
     plt.xlim(-400, 400)
     plt.ylim(-400, 400)
     plt.gca().set_aspect('equal', adjustable='box')

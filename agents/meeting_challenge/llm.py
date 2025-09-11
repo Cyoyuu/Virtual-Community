@@ -89,7 +89,7 @@ class Action:
 
 
 @dataclass
-class Chat:
+class Message:
     time: datetime
     subject: str
     content: str
@@ -118,7 +118,7 @@ class LLMMeetingAgent(Agent):
         self.action_history: list[Action] = []
         self.current_plan = None
         self.plan_start_time = None
-        self.conversation_history: list[Chat] = []
+        self.conversation_history: list[Message] = []
         self.meeting_place = None
 
     def reset(self, name, pose):
@@ -138,7 +138,15 @@ class LLMMeetingAgent(Agent):
                 if event["type"] == "speech":
                     if event["subject"] == self.name:
                         continue
-                    self.conversation_history.append(Chat(self.curr_time, event["subject"], event["content"]))
+                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
+                if event["type"] == "app message":
+                    if self.last_action['type']=="query_app":
+                        if self.last_action['arg1']=="query_route":
+                            self.last_route=event["content"]
+                            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
+                        elif self.last_action["arg1"]=="query_place":
+                            self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']
@@ -154,16 +162,19 @@ class LLMMeetingAgent(Agent):
                     action = {"type": "wait"}
                 elif response_type == "speak":
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
-                    self.conversation_history.append(Chat(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
+                    self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
                 elif response_type == "decide":
                     self.meeting_place = speech
                     action = {"type": "wait"}
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             else:
-                action, arrived = self.goto_place(self.meeting_place)
-                if arrived:
-                    action = {'type': 'task_complete'}
+                if self.meeting_place not in self.s_mem.get_places():
+                    action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
+                else:
+                    action, arrived = self.goto_place(self.meeting_place)
+                    if arrived:
+                        action = {'type': 'task_complete'}
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None

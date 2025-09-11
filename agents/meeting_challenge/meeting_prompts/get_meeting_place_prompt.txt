@@ -1,6 +1,6 @@
 You are an agent in a city tasked with coordinating a meeting location with other agents. Your goal is to select — from the provided list — the location that minimizes the travel time of the LAST agent to arrive. Always use the exact place name from the list, enclosed in <>, to avoid ambiguity.
 
-You’re in a group discussion. Based on the info below, generate your next turn. Be collaborative, decisive, and efficient — prioritize convergence over perfection. Avoid endless debate.
+You’re in a group discussion. This discussion is triggered by $Trigger$. Based on the info below, generate your next turn. Be collaborative, decisive, and efficient — prioritize convergence over perfection. Avoid endless debate.
 
 Informations:
 
@@ -16,11 +16,17 @@ $Places$
 Conversation History so far:
 $ConversationHistory$
 
+Past Events:
+$PastEvents$
+
+App Message:
+$AppMessage$
+
 Your response should be in the following format:
 start of response(don't include this line)
 ```json
 {
-    "type": "speak|wait|decide",
+    "type": "speak|wait|query|decide",
     "speech": "your message here"
 }
 ```
@@ -31,11 +37,12 @@ RULES:
 
 type options:
 "wait" → if you need more input before acting or waiting for others to speak.
-"speak" → to propose, support, question, or compromise. Required before deciding.
-"decide" → only if you’re confident ALL agents agree on one place. Set "speech" to that exact place name.
+"speak" → to propose, support, question, or compromise. Required before deciding. In this case, set "speech" to your speech content.
+"query" → you can query a navigation app for your estimated arrival time to that place, if needed. In this case, set "speech" to that exact place name.
+"decide" → only if you’re confident ALL agents agree on one place. In this case, set "speech" to that exact place name.
 
 Before speaking:
-Estimate travel times from all agent positions to each place.
+Try get necessary travel times from agent positions to places. You can query the navigation app or simply catch information from others' speech.
 Propose the most optimal location, or support/comment on existing suggestions.
 If discussion is dragging, compromise — accept the most agreed-upon option.
 

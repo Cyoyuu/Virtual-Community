@@ -93,7 +93,7 @@ class Action:
 
 
 @dataclass
-class Chat:
+class Message:
     time: datetime
     subject: str
     content: str
@@ -122,13 +122,17 @@ class NavigationMeetingAgent(Agent):
         self.action_history: list[Action] = []
         self.current_plan = None
         self.plan_start_time = None
-        self.conversation_history: list[Chat] = []
+        self.conversation_history: list[Message] = []
+        self.event_history: list[Message] = []
+        self.app_message_history: list[Message] = []
         self.meeting_place = None
         self.mode = None
         # Discussion
         self.discussion_time = 0
+        self.discussioin_trigger = ""
         # Navigation
         self.last_estimated_arrival_time = None
+        self.time_to_arrival_timedelta = {}
         self.last_estimated_move_time = None
         self.last_route = []
         self.last_nav = []
@@ -152,14 +156,19 @@ class NavigationMeetingAgent(Agent):
                 if event["type"] == "speech":
                     if event["subject"] == self.name:
                         continue
-                    self.conversation_history.append(Chat(self.curr_time, event["subject"], event["content"]))
-                if event["type"] == "message":
-                    pass
+                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
+                if event["type"] == "broadcast_event":
+                    self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
+                    if self.mode == NavAgentState.NAVIGATE:
+                        self.mode = NavAgentState.DISCUSS
+                        self.discussion_time = 0
+                        self.discussioin_trigger = "RECENT EVENT"
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
                             self.last_route=event["content"]
                             self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
@@ -177,6 +186,8 @@ class NavigationMeetingAgent(Agent):
         try:
             if self.mode is None:
                 self.mode = NavAgentState.DISCUSS
+                self.discussion_time = 0
+                self.discussioin_trigger = "TASK START"
             if self.mode == NavAgentState.DISCUSS:
                 self.discussion_time += 1
                 if self.discussion_time > 50:
@@ -188,17 +199,21 @@ class NavigationMeetingAgent(Agent):
                     action = {"type": "wait"}
                 elif response_type == "speak":
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
-                    self.conversation_history.append(Chat(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
+                    self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
                 elif response_type == "decide":
                     self.meeting_place = speech
                     if speech.startswith("<") and speech.endswith(">"):
                         self.meeting_place = speech[1:-1]
                     action = {"type": "wait"}
                     self.mode = NavAgentState.NAVIGATE
+                    self.discussion_time = 0
+                elif response_type == "query":
+                    if speech.startswith("<") and speech.endswith(">"):
+                        speech = speech[1:-1]
+                    action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:
-                self.discussion_time = 0
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
@@ -249,6 +264,11 @@ class NavigationMeetingAgent(Agent):
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
+        # If few progress made...
+        self.time_to_arrival_timedelta[self.curr_time]=timedelta(seconds=self.calc_time(waypoints=self.last_route))
+        if self.curr_time-timedelta(minutes=10) in self.time_to_arrival_timedelta:
+            if self.time_to_arrival_timedelta[self.curr_time-timedelta(minutes=10)] * 0.95 < self.time_to_arrival_timedelta[self.curr_time]:
+                action = {"type": "broadcast_event", "arg1": "inaccessible_meeting_place", "arg2": f"{self.name} cannot get any closer to the destination, {self.meeting_place}, in the past 10 minutes. This place seems inaccessible to they."}
         # If the estimated arrival time exceeds, regenerate
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
         if self.last_estimated_arrival_time + timedelta(minutes=5) < estimated_arrival_time:
@@ -558,9 +578,12 @@ class NavigationMeetingAgent(Agent):
                 agent_pos_dict[agent]['pose'][0], agent_pos_dict[agent]['pose'][1] = agent_pos_dict[agent]['pose'][0]-1000, agent_pos_dict[agent]['pose'][1]-1000
             agent_pos_description += f"{agent} is now in {agent_pos_dict[agent]['place'] if agent_pos_dict[agent]['place'] is not None else 'open space'}, with coordinate {agent_pos_dict[agent]['pose']}.\n"
         agent_pos_description.strip("\n")
+        prompt = prompt.replace("$Trigger$", self.discussioin_trigger)
         prompt = prompt.replace("$AgentPoses$", agent_pos_description)
         prompt = prompt.replace("$Places$", self.get_nearest_places_description(self.get_meeting_target()))
         prompt = prompt.replace("$ConversationHistory$", self.get_conversation_description())
+        prompt = prompt.replace("$PastEvents$", self.get_past_event_description())
+        prompt = prompt.replace("$AppMessage$", self.get_app_message_description())
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
@@ -739,6 +762,18 @@ class NavigationMeetingAgent(Agent):
             return "None"
         conversation_list = self.conversation_history[-10:] if len(self.conversation_history) > 10 else self.conversation_history
         return "\n".join([chat.to_description() for chat in conversation_list])
+
+    def get_conversation_description(self):
+        if len(self.event_history) == 0:
+            return "None"
+        event_list = self.event_history[-20:] if len(self.event_history) > 20 else self.event_history
+        return "\n".join([event.to_description() for event in event_list])
+
+    def get_app_message_description(self):
+        if len(self.app_message_history) == 0:
+            return "None"
+        app_message_list = self.app_message_history[-10:] if len(self.app_message_history) > 10 else self.app_message_history
+        return "\n".join([app_message.to_description() for app_message in app_message_list])
 
     def goto(self, target, force=False):
         if target.startswith("task_"):

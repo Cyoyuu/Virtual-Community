@@ -682,17 +682,17 @@ class VicoEnv:
 				# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
-			elif action['type'] == 'message':
+			elif action['type'] == 'broadcast_event':
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
 				agent_pos = self.config['agent_poses'][i][:3]
-				converse_range = action['arg2'] if 'arg2' in action else 10
+				converse_range = 800
 				priority = random.randint(0, 100)
 				if converse_range > 800:
 					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 10. Ignored.")
 					self.agents[i].robot.action_status = ActionStatus.FAIL
 					continue
-				deleted_subjects = self.events.add(type="message", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
+				deleted_subjects = self.events.add(type="broadcast event", pos=agent_pos, r=converse_range, content=action['arg2'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
 				# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
