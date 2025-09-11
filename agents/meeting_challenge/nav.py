@@ -210,7 +210,10 @@ class NavigationMeetingAgent(Agent):
                 elif response_type == "query":
                     if speech.startswith("<") and speech.endswith(">"):
                         speech = speech[1:-1]
-                    action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
+                    if speech not in self.s_mem.get_places():
+                        action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
+                    else:
+                        action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
                 else:
                     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:

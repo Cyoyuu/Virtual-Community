@@ -34,6 +34,44 @@ def lat_lon_to_xy(lat, lon, ref_lat, ref_lon):
     
     return [x, y]
 
+def is_point_enclosed_Amap(grid, point, resolution, min_x, min_y, nx, ny):
+    from collections import deque
+
+    i = int((point[0] - min_x) / resolution)
+    j = int((point[1] - min_y) / resolution)
+
+    if i < 0 or i >= nx or j < 0 or j >= ny:
+        # print("Point is out of bounds")
+        return True, (i, j) # not valid
+
+    if grid[i, j] == 1:
+        # print("Point is inside an obstacle")
+        return True, (i, j) # not valid
+    else:
+        return False, (i, j)
+
+    visited = np.zeros_like(grid, dtype=bool)
+    queue = deque()
+    queue.append((i, j))
+    visited[i, j] = True
+
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+
+    while queue:
+        x, y = queue.popleft()
+        if x == 0 or x == nx - 1 or y == 0 or y == ny - 1:
+            # print("Point is not enclosed")
+            return False, (i, j)
+        for dx, dy in directions:
+            nx_ = x + dx
+            ny_ = y + dy
+            if 0 <= nx_ < nx and 0 <= ny_ < ny:
+                if not visited[nx_, ny_] and grid[nx_, ny_] == 0:
+                    visited[nx_, ny_] = True
+                    queue.append((nx_, ny_))
+    # print("Point is enclosed")
+    return True, (i, j)
+
 @dataclass
 class Waypoints:
     id: int
@@ -48,8 +86,8 @@ class Amap:
     def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7.):
         self.pose=pose
         self.covered_length=0.
-        self.place_metadata=place_metadata
-        self.building_metadata=building_metadata
+        self.place_metadata=deepcopy(place_metadata)
+        self.building_metadata=deepcopy(building_metadata)
         self.waypoints_dis=waypoints_dis
 
         with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
@@ -59,6 +97,10 @@ class Amap:
         # self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
         self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
 
+        obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/obstacle_grid.pkl", 'rb'))
+        self.obstacle_grid = obstacle_grid_save["grid"]
+        self.obstacle_grid_parameters = obstacle_grid_save["parameters"]
+
         self.waypoints = []
         self.road2waypoint = {}
         self.spawn_waypoints()
@@ -67,27 +109,44 @@ class Amap:
         self.pose=pose
         self.covered_length=0.
 
+    def is_point_invalid(self, point):
+        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-10,11) for j in range(-10, 11)]])
+
     def spawn_waypoints(self):
         for node in self.nodes:
+            # if the point is invalid
+            if self.is_point_invalid([self.nodes[node]['x'], self.nodes[node]['y']]): continue
+            # processing node
             for road in self.nodes[node]["connected_roads"]:
                 self.road2waypoint[road]=len(self.waypoints)
             self.nodes[node]["2wp"]=len(self.waypoints)
             self.waypoints.append(Waypoints(id=len(self.waypoints), location=[self.nodes[node]['x'], self.nodes[node]['y']], belong=None if not self.nodes[node]["connected_roads"] else self.nodes[node]["connected_roads"][0]))
         for road in self.roads:
+            # spawn points on road
             start_x, start_y = road['start']['x'],road['start']['y']
             end_x, end_y = road['end']['x'],road['end']['y']
             length = np.linalg.norm(np.array([start_x-end_x, start_y-end_y]))
             s=self.waypoints_dis
-            last_waypoint=self.waypoints[self.nodes[road['start']['id']]['2wp']]
+            # if the start point is invalid
+            if '2wp' not in self.nodes[road['start']['id']]:
+                last_waypoint = None
+            else:
+                last_waypoint=self.waypoints[self.nodes[road['start']['id']]['2wp']]
             while s<length:
                 p = np.array([start_x, start_y]) - s/length*np.array([start_x-end_x, start_y-end_y])
-                self.nodes[f"new_node_{len(self.nodes)}"]={"x": p[0], "y": p[1], "connected_roads": road["id"]}
+                # self.nodes[f"new_node_{len(self.nodes)}"]={"x": p[0], "y": p[1], "connected_roads": road["id"]}
+                if self.is_point_invalid(p):
+                    last_waypoint = None
+                    s+=self.waypoints_dis
+                    continue
                 new_wp=(Waypoints(id=len(self.waypoints), location=p, belong=road["id"]))
                 self.waypoints.append(new_wp)
-                last_waypoint.successor.append(new_wp.id)
+                if last_waypoint is not None:
+                    last_waypoint.successor.append(new_wp.id)
                 last_waypoint = new_wp
                 s+=self.waypoints_dis
-            last_waypoint.successor.append(self.waypoints[self.nodes[road['end']['id']]['2wp']].id)
+            if '2wp' in self.nodes[road['end']['id']] and last_waypoint is not None:
+                last_waypoint.successor.append(self.waypoints[self.nodes[road['end']['id']]['2wp']].id)
         # for road in self.map.printable_roads:
         #     self.road2waypoint[road]=len(self.waypoints)
         #     self.waypoints.append(Waypoints(id=len(self.waypoints), location=self.map.get_pos(road, 0.), belong=road))
