@@ -215,6 +215,7 @@ def main():
     # Simulation loop
     env_dt_sim = 0.
     all_task_end = False
+    max_distance = 0.
     total_length=[0. for i in range(num_agents)]
     total_time=[0. for i in range(num_agents)]
     last_agent_pos_dict=None
@@ -296,7 +297,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": all_task_end}
+              "done": all_task_end and max_distance<=10}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")
