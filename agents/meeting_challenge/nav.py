@@ -129,7 +129,7 @@ class NavigationMeetingAgent(Agent):
         self.mode = None
         # Discussion
         self.discussion_time = 0
-        self.discussioin_trigger = ""
+        self.discussion_trigger = ""
         # Navigation
         self.last_estimated_arrival_time = None
         self.time_to_arrival_timedelta = {}
@@ -162,7 +162,7 @@ class NavigationMeetingAgent(Agent):
                     if self.mode == NavAgentState.NAVIGATE:
                         self.mode = NavAgentState.DISCUSS
                         self.discussion_time = 0
-                        self.discussioin_trigger = "RECENT EVENT"
+                        self.discussion_trigger = "RECENT EVENT"
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
@@ -187,7 +187,7 @@ class NavigationMeetingAgent(Agent):
             if self.mode is None:
                 self.mode = NavAgentState.DISCUSS
                 self.discussion_time = 0
-                self.discussioin_trigger = "TASK START"
+                self.discussion_trigger = "TASK START"
             if self.mode == NavAgentState.DISCUSS:
                 self.discussion_time += 1
                 if self.discussion_time > 50:
@@ -572,6 +572,8 @@ class NavigationMeetingAgent(Agent):
         return meeting_target
     
     def get_meeting_place(self):
+        # if self.discussion_trigger == "TASK START":
+        #     return {"type": "decide", "speech": "Bicycle Sharing Station 3"}
         prompt = open(f"agents/meeting_challenge/meeting_prompts/get_meeting_place_prompt.txt", "r").read()
         prompt = prompt.replace("$SelfName$", self.name)
         agent_pos_dict=copy.copy(self.obs["agent_pos_dict"])
@@ -581,7 +583,7 @@ class NavigationMeetingAgent(Agent):
                 agent_pos_dict[agent]['pose'][0], agent_pos_dict[agent]['pose'][1] = agent_pos_dict[agent]['pose'][0]-1000, agent_pos_dict[agent]['pose'][1]-1000
             agent_pos_description += f"{agent} is now in {agent_pos_dict[agent]['place'] if agent_pos_dict[agent]['place'] is not None else 'open space'}, with coordinate {agent_pos_dict[agent]['pose']}.\n"
         agent_pos_description.strip("\n")
-        prompt = prompt.replace("$Trigger$", self.discussioin_trigger)
+        prompt = prompt.replace("$Trigger$", self.discussion_trigger)
         prompt = prompt.replace("$AgentPoses$", agent_pos_description)
         prompt = prompt.replace("$Places$", self.get_nearest_places_description(self.get_meeting_target()))
         prompt = prompt.replace("$ConversationHistory$", self.get_conversation_description())
