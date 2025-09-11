@@ -4,20 +4,29 @@
         "living_place": "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5",
         "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
         "groups": [
-            "Real Estate Enthusiasts"
+            "Bratislava Nightlife Crew"
         ]
     },
-    "Real Estate Enthusiasts": {
-        "description": "A group of individuals interested in real estate, property management, and investment.",
-        "place": "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165",
+    "Usain Bolt": {
+        "age": 38,
+        "living_place": "Crowne Plaza Bratislava, an IHG Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Usain Bolt.png",
+        "groups": [
+            "Bratislava Nightlife Crew"
+        ]
+    },
+    "Bratislava Nightlife Crew": {
+        "description": "A group of friends who enjoy exploring the nightlife and music scene in Bratislava.",
+        "place": "Pilsner Factory",
         "members": [
             "Brian Carter",
-            "Joe Anderson"
+            "James Thompson",
+            "Usain Bolt"
         ],
-        "daily_activity": "discussing property trends from 17:00 to 18:00"
+        "daily_activity": "enjoying live music from 21:00 to 23:00"
     },
-    "Joe Anderson's room at Apartment Residence - Free Parking": {
-        "building": "Obchodn\u00e1 42",
+    "James Thompson's room at Cityhostel": {
+        "building": "Obchodn\u00e1 523/38",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -25,20 +34,169 @@
             "establishment"
         ],
         "location": [
-            1279.9772338867188,
-            814.6163635253906,
+            1268.6700744628906,
+            793.4261322021484,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
+        "name": "James Thompson's room at Cityhostel",
+        "bounding_box": [
+            268.6441708231716,
+            -208.04956766949795,
+            110.72539138793947,
+            10.176606074458617,
+            42.626844703900616,
+            14.377510070800781,
+            0.594663598945046
+        ]
+    },
+    "Pilsner Factory": {
+        "building": "Obchodn\u00e1 32",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1244.2942123413086,
+            770.971794128418,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
-        "name": "Joe Anderson's room at Apartment Residence - Free Parking",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            279.97724063119756,
-            -186.67504382137736,
-            109.85195159912111,
-            10.54192981014587,
-            20.690288721086187,
-            11.267288208007812,
-            0.6385855527911558
+            244.1092539606173,
+            -229.41001538820953,
+            109.54801177978517,
+            11.25969502842969,
+            42.00761548549746,
+            11.413116455078125,
+            0.5922535217484918
+        ]
+    },
+    "Lyce\u00e1lna kni\u017enica": {
+        "building": "Lyce\u00e1lna kni\u017enica",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            876.167911529541,
+            785.4226226806641,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -122.68878172797451,
+            -218.65837620359656,
+            118.72138595581056,
+            22.247238529804783,
+            49.84996908809472,
+            11.810585021972656,
+            -1.0136808109038256
+        ]
+    },
+    "Smoking Gentleman": {
+        "building": "30",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.9751358032227,
+            817.5123443603516,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            187.00836370583508,
+            -182.4161227119345,
+            111.95555877685547,
+            15.39750890902118,
+            70.8121610515319,
+            12.410140991210966,
+            0.6598446837328679
+        ]
+    },
+    "Apollon Gay Club": {
+        "building": "Panensk\u00e1 24",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            775.4760437011719,
+            826.5081939697266,
+            -8
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -224.39263570311678,
+            -173.54534530576763,
+            118.3856773376465,
+            26.770366491627936,
+            30.860392272365,
+            10.814811706542969,
+            0.3402495251964998
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Panensk\u00e1 24",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            775.4760437011719,
+            826.5081939697266,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -224.39263570311678,
+            -173.54534530576763,
+            118.3856773376465,
+            26.770366491627936,
+            30.860392272365,
+            10.814811706542969,
+            0.3402495251964998
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "30",
+        "coarse_type": "stores",
+        "fine_types": [
+            "doctor",
+            "store",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            1186.9751358032227,
+            817.5123443603516,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            187.00836370583508,
+            -182.4161227119345,
+            111.95555877685547,
+            15.39750890902118,
+            70.8121610515319,
+            12.410140991210966,
+            0.6598446837328679
         ]
     },
     "Banco Casino": {
@@ -55,7 +213,7 @@
             788.2996978759766,
             -8
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
         "bounding_box": [
             81.09033863496279,
             -216.33802624657545,
@@ -64,185 +222,6 @@
             78.79693902074749,
             29.527328491210938,
             0.7261077233172377
-        ]
-    },
-    "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165": {
-        "building": "Office Center Po\u0161tov\u00e1",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1187.1749267578125,
-            725.3897399902344,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "bounding_box": [
-            186.0138348335011,
-            -272.9478498407604,
-            115.59178161621095,
-            25.883002097449506,
-            43.72775115768546,
-            21.883285522460938,
-            0.4830995278086819
-        ]
-    },
-    "Foxford": {
-        "building": "Obchodn\u00e1 516/26",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "book_store",
-            "food",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1217.9571914672852,
-            753.2153244018555,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
-        "bounding_box": [
-            218.46867017108656,
-            -247.49230193170808,
-            110.97777557373048,
-            10.213036376648482,
-            45.31893913042523,
-            12.4212646484375,
-            0.6827825048122723
-        ]
-    },
-    "Caffe4U Ltd.": {
-        "building": "Obchodn\u00e1 42",
-        "coarse_type": "food",
-        "fine_types": [
-            "cafe",
-            "point_of_interest",
-            "food",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1279.9772338867188,
-            814.6163635253906,
-            -12
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
-        "bounding_box": [
-            279.97724063119756,
-            -186.67504382137736,
-            109.85195159912111,
-            10.54192981014587,
-            20.690288721086187,
-            11.267288208007812,
-            0.6385855527911558
-        ]
-    },
-    "Bistro Gourmet": {
-        "building": "Crowne Plaza",
-        "coarse_type": "food",
-        "fine_types": [
-            "bakery",
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1075.4125862121582,
-            788.2996978759766,
-            -28
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
-        "bounding_box": [
-            81.09033863496279,
-            -216.33802624657545,
-            122.53482818603516,
-            77.40632928816682,
-            78.79693902074749,
-            29.527328491210938,
-            0.7261077233172377
-        ]
-    },
-    "MyVinox": {
-        "building": "Palis\u00e1dy 55",
-        "coarse_type": "food",
-        "fine_types": [
-            "liquor_store",
-            "point_of_interest",
-            "store",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            858.1165962219238,
-            974.8666898012161,
-            -4
-        ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
-        "bounding_box": [
-            -141.8726107520879,
-            -25.029425121744666,
-            125.90490341186523,
-            25.500160700695005,
-            38.87432909984297,
-            17.066627502441406,
-            -0.1867330541661197
-        ]
-    },
-    "Beverages and Snacks Store": {
-        "building": "N\u00e1mestie 1. m\u00e1ja 7",
-        "coarse_type": "stores",
-        "fine_types": [
-            "book_store",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1186.4807891845703,
-            1058.9975624084473,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
-        "bounding_box": [
-            185.02438221483047,
-            56.90977809588611,
-            123.5959587097168,
-            31.503948143933755,
-            65.05771034679796,
-            21.78833770751953,
-            0.9334929306762859
-        ]
-    },
-    "Fresh and Beverages Store": {
-        "building": "N\u00e1mestie 1. m\u00e1ja 3",
-        "coarse_type": "stores",
-        "fine_types": [
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1158.1401443481445,
-            1015.1535823345184,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
-        "bounding_box": [
-            157.3076934814453,
-            16.575613021850586,
-            124.70117950439453,
-            15.008914947509766,
-            36.92530822753906,
-            21.801910400390625,
-            0.7910774946212769
         ]
     },
     "Hod\u017eovo n\u00e1mestie Bus Stop": {

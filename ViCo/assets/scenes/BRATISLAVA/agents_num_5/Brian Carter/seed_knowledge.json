@@ -1,20 +1,29 @@
 {
-    "Joe Anderson": {
-        "age": 31,
-        "living_place": "Apartment Residence - Free Parking",
-        "appearance": "ViCo/assets/imgs/avatars/Joe Anderson.png",
+    "James Thompson": {
+        "age": 24,
+        "living_place": "Cityhostel",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
         "groups": [
-            "Real Estate Enthusiasts"
+            "Bratislava Nightlife Crew"
         ]
     },
-    "Real Estate Enthusiasts": {
-        "description": "A group of individuals interested in real estate, property management, and investment.",
-        "place": "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165",
+    "Usain Bolt": {
+        "age": 38,
+        "living_place": "Crowne Plaza Bratislava, an IHG Hotel",
+        "appearance": "ViCo/assets/imgs/avatars/Usain Bolt.png",
+        "groups": [
+            "Bratislava Nightlife Crew"
+        ]
+    },
+    "Bratislava Nightlife Crew": {
+        "description": "A group of friends who enjoy exploring the nightlife and music scene in Bratislava.",
+        "place": "Pilsner Factory",
         "members": [
             "Brian Carter",
-            "Joe Anderson"
+            "James Thompson",
+            "Usain Bolt"
         ],
-        "daily_activity": "discussing property trends from 17:00 to 18:00"
+        "daily_activity": "enjoying live music from 21:00 to 23:00"
     },
     "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5": {
         "building": "Konventn\u00e1 5",
@@ -29,7 +38,7 @@
             746.944938659668,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "name": "Brian Carter's room at Luxury Apartment for Long Term Rent Konventna 5",
         "bounding_box": [
             -276.268115611985,
@@ -54,7 +63,7 @@
             725.3897399902344,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-0.json",
         "bounding_box": [
             186.0138348335011,
             -272.9478498407604,
@@ -65,156 +74,180 @@
             0.4830995278086819
         ]
     },
-    "Foxford": {
-        "building": "Obchodn\u00e1 516/26",
+    "Pilsner Factory": {
+        "building": "Obchodn\u00e1 32",
         "coarse_type": "food",
         "fine_types": [
-            "cafe",
-            "book_store",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1244.2942123413086,
+            770.971794128418,
+            -12
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            244.1092539606173,
+            -229.41001538820953,
+            109.54801177978517,
+            11.25969502842969,
+            42.00761548549746,
+            11.413116455078125,
+            0.5922535217484918
+        ]
+    },
+    "Lyce\u00e1lna kni\u017enica": {
+        "building": "Lyce\u00e1lna kni\u017enica",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            876.167911529541,
+            785.4226226806641,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -122.68878172797451,
+            -218.65837620359656,
+            118.72138595581056,
+            22.247238529804783,
+            49.84996908809472,
+            11.810585021972656,
+            -1.0136808109038256
+        ]
+    },
+    "Pochlieb - remeseln\u00e1 pek\u00e1re\u0148": {
+        "building": "Kesselbauer",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
             "food",
             "point_of_interest",
             "store",
             "establishment"
         ],
         "location": [
-            1217.9571914672852,
-            753.2153244018555,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
-        "bounding_box": [
-            218.46867017108656,
-            -247.49230193170808,
-            110.97777557373048,
-            10.213036376648482,
-            45.31893913042523,
-            12.4212646484375,
-            0.6827825048122723
-        ]
-    },
-    "Re\u0161taur\u00e1cia Starome\u0161\u0165an": {
-        "building": "11",
-        "coarse_type": "food",
-        "fine_types": [
-            "restaurant",
-            "point_of_interest",
-            "food",
-            "establishment"
-        ],
-        "location": [
-            898.8823127746582,
-            1068.7859954833984,
-            -4
+            1229.5597686767578,
+            1097.5266609191895,
+            -12
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -100.73299840332709,
-            69.5643964329217,
-            129.2629737854004,
-            28.05144273449464,
-            33.75615629185434,
-            21.99230194091797,
-            -0.1860808995482073
+            229.52139669027076,
+            99.1601935203359,
+            127.0417709350586,
+            45.15908126117911,
+            70.5806971691962,
+            29.937149047851562,
+            0.9473639011973152
         ]
     },
-    "G\u00f3vinda re\u0161taur\u00e1cia": {
-        "building": "Obchodn\u00e1 518/30",
+    "OMA fine foods & wine": {
+        "building": "Konventn\u00e1 6",
         "coarse_type": "food",
         "fine_types": [
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1236.5552062988281,
-            763.2404632568359,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
-        "bounding_box": [
-            238.00740929114,
-            -237.8599568692863,
-            109.37450027465822,
-            12.171784820838267,
-            47.64387934073302,
-            10.710075378417969,
-            0.67377343174067
-        ]
-    },
-    "Snacks and DM Store": {
-        "building": "Mateja Bela 845/6",
-        "coarse_type": "stores",
-        "fine_types": [
-            "clothing_store",
-            "point_of_interest",
             "store",
+            "point_of_interest",
+            "food",
             "establishment"
         ],
         "location": [
-            847.4871063232422,
-            1072.828109741211,
-            -4
+            788.942024230957,
+            732.297966003418,
+            -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -151.96706566509633,
-            70.65231907705704,
-            127.69229125976562,
-            15.882033488606222,
-            21.379831944738232,
-            17.9927978515625,
-            -0.47112191946323195
+            -211.0579833984375,
+            -269.3438415527344,
+            121.36639404296875,
+            19.843809127807617,
+            23.603483200073242,
+            19.838844299316406,
+            0.40836650133132935
         ]
     },
     "Beverages and Snacks Store": {
-        "building": "N\u00e1mestie 1. m\u00e1ja 7",
+        "building": "30",
         "coarse_type": "stores",
         "fine_types": [
-            "book_store",
-            "point_of_interest",
+            "doctor",
             "store",
+            "point_of_interest",
+            "health",
             "establishment"
         ],
         "location": [
-            1186.4807891845703,
-            1058.9975624084473,
-            -8
+            1186.9751358032227,
+            817.5123443603516,
+            -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
         "bounding_box": [
-            185.02438221483047,
-            56.90977809588611,
-            123.5959587097168,
-            31.503948143933755,
-            65.05771034679796,
-            21.78833770751953,
-            0.9334929306762859
+            187.00836370583508,
+            -182.4161227119345,
+            111.95555877685547,
+            15.39750890902118,
+            70.8121610515319,
+            12.410140991210966,
+            0.6598446837328679
         ]
     },
-    "Yoga House": {
-        "building": "Panensk\u00e1 682/33",
-        "coarse_type": "entertainment",
+    "Fresh and DM Store": {
+        "building": "Vysok\u00e1 4275/8",
+        "coarse_type": "stores",
         "fine_types": [
-            "gym",
-            "health",
+            "jewelry_store",
+            "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            932.6029224395752,
-            890.1177978515625,
-            -12
+            1201.3843078613281,
+            913.6762771606445,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            204.34836780679734,
+            -85.42922548508285,
+            115.25312423706055,
+            15.242431397444712,
+            24.759186406855463,
+            8.877067565917969,
+            0.5938443069655112
+        ]
+    },
+    "Picollo Pub II.": {
+        "building": "36",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1243.5505294799805,
+            792.8572769165039,
+            -4
         ],
         "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
-            -67.43454924016274,
-            -109.88184959330047,
-            121.35651779174805,
-            18.942749174920444,
-            35.20652591980877,
-            14.296150207519531,
-            -0.003946361019763512
+            243.3258985957848,
+            -208.92196823155336,
+            110.27561187744142,
+            10.901083097466543,
+            14.098687274693821,
+            10.822311401367188,
+            0.6392674072206049
         ]
     },
     "Hod\u017eovo n\u00e1mestie Bus Stop": {

@@ -1,32 +1,23 @@
 {
-    "Isaac Newton": {
-        "age": 65,
-        "living_place": "Isaac Newton's room at Crowne Plaza Bratislava, an IHG Hotel",
-        "appearance": "ViCo/assets/imgs/avatars/Isaac Newton.png",
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Louise Roberts's room at Grand Central Apartment",
+        "appearance": "ViCo/assets/imgs/avatars/Louise Roberts.png",
         "groups": [
-            "Coffee and Community"
+            "Bratislava Book Club"
         ]
     },
-    "Sophie Carlsen": {
-        "age": 20,
-        "living_place": "Cityhostel",
-        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
-        "groups": [
-            "Coffee and Community"
-        ]
-    },
-    "Coffee and Community": {
-        "description": "A group of coffee lovers and community service enthusiasts who enjoy exploring cafes and engaging in social work.",
-        "place": "Foxford",
+    "Bratislava Book Club": {
+        "description": "A group of book enthusiasts who meet weekly to discuss literature and share insights.",
+        "place": "Lyce\u00e1lna kni\u017enica",
         "members": [
-            "Jody Petersen",
-            "Sophie Carlsen",
-            "Isaac Newton"
+            "Louise Roberts",
+            "Olivia Adams"
         ],
-        "daily_activity": "exploring new coffee blends from 16:00 to 17:00"
+        "daily_activity": "discussing books from 17:00 to 18:30"
     },
-    "Jody Petersen's room at Grand Central Apartment": {
-        "building": "Obchodn\u00e1 518/30",
+    "Olivia Adams's room at Apartments BB4, bratislava": {
+        "building": "Apartments BB4",
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -34,75 +25,124 @@
             "establishment"
         ],
         "location": [
-            1236.5552062988281,
-            763.2404632568359,
+            1132.9840698242188,
+            1036.1422863006592,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Olivia Adams's room at Apartments BB4, bratislava",
+        "bounding_box": [
+            131.29833545608085,
+            34.04425626476906,
+            124.57208251953125,
+            15.165120398183785,
+            26.917886347029903,
+            18.367095947265625,
+            0.9262044573877295
+        ]
+    },
+    "St. Elizabeth College of Health and Social Work": {
+        "building": "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1128.216739654541,
+            997.8481979370117,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            124.86914071920779,
+            -2.126960021792844,
+            123.26166915893555,
+            25.194154249440885,
+            30.301794045956495,
+            17.05878448486328,
+            0.6814667858432252
+        ]
+    },
+    "Lyce\u00e1lna kni\u017enica": {
+        "building": "Lyce\u00e1lna kni\u017enica",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            876.167911529541,
+            785.4226226806641,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -122.68878172797451,
+            -218.65837620359656,
+            118.72138595581056,
+            22.247238529804783,
+            49.84996908809472,
+            11.810585021972656,
+            -1.0136808109038256
+        ]
+    },
+    "Pilsner Factory": {
+        "building": "Obchodn\u00e1 32",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1244.2942123413086,
+            770.971794128418,
             -12
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
-        "name": "Jody Petersen's room at Grand Central Apartment",
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            238.00740929114,
-            -237.8599568692863,
-            109.37450027465822,
-            12.171784820838267,
-            47.64387934073302,
-            10.710075378417969,
-            0.67377343174067
+            244.1092539606173,
+            -229.41001538820953,
+            109.54801177978517,
+            11.25969502842969,
+            42.00761548549746,
+            11.413116455078125,
+            0.5922535217484918
         ]
     },
-    "Foxford": {
-        "building": "Obchodn\u00e1 516/26",
+    "Solidarity caf\u00e9": {
+        "building": "Vysok\u00e1 \u0161kola zdravotn\u00edctva a soci\u00e1lnej pr\u00e1ce sv. Al\u017ebety",
         "coarse_type": "food",
         "fine_types": [
             "cafe",
-            "book_store",
             "food",
             "point_of_interest",
             "store",
             "establishment"
         ],
         "location": [
-            1217.9571914672852,
-            753.2153244018555,
-            -4
+            1128.216739654541,
+            997.8481979370117,
+            -8
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            218.46867017108656,
-            -247.49230193170808,
-            110.97777557373048,
-            10.213036376648482,
-            45.31893913042523,
-            12.4212646484375,
-            0.6827825048122723
+            124.86914071920779,
+            -2.126960021792844,
+            123.26166915893555,
+            25.194154249440885,
+            30.301794045956495,
+            17.05878448486328,
+            0.6814667858432252
         ]
     },
-    "EUROPA realitn\u00e1 kancel\u00e1ria - franchisingov\u00e1 sie\u0165": {
-        "building": "Office Center Po\u0161tov\u00e1",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "real_estate_agency",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            1187.1749267578125,
-            725.3897399902344,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
-        "bounding_box": [
-            186.0138348335011,
-            -272.9478498407604,
-            115.59178161621095,
-            25.883002097449506,
-            43.72775115768546,
-            21.883285522460938,
-            0.4830995278086819
-        ]
-    },
-    "G\u00f3vinda re\u0161taur\u00e1cia": {
-        "building": "Obchodn\u00e1 518/30",
+    "Burza Klub": {
+        "building": "Burza cenn\u00fdch papierov",
         "coarse_type": "food",
         "fine_types": [
             "restaurant",
@@ -111,75 +151,48 @@
             "establishment"
         ],
         "location": [
-            1236.5552062988281,
-            763.2404632568359,
+            1257.4943466186523,
+            983.1975547075272,
             -4
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            238.00740929114,
-            -237.8599568692863,
-            109.37450027465822,
-            12.171784820838267,
-            47.64387934073302,
-            10.710075378417969,
-            0.67377343174067
+            258.8753472259009,
+            -16.45628631242403,
+            114.43963623046875,
+            20.880009420138087,
+            35.22164634919065,
+            11.313095092773438,
+            0.4261933619701138
         ]
     },
-    "\u0160tef\u00e1nka by Pulitzer": {
-        "building": "Palis\u00e1dy 741/59",
+    "Panensk\u00e1 kaviare\u0148": {
+        "building": "Panensk\u00e1 7378/18",
         "coarse_type": "food",
         "fine_types": [
-            "restaurant",
-            "bar",
             "cafe",
             "food",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            950.5810317993164,
-            946.5343780517578,
+            749.2346496582031,
+            813.6686401367188,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
         "bounding_box": [
-            -49.06887963688513,
-            -54.23027200188319,
-            126.81122970581055,
-            35.775112440138464,
-            17.115348876321182,
-            19.51801300048828,
-            -0.18711720969476622
-        ]
-    },
-    "Beverages and Snacks Store": {
-        "building": "N\u00e1mestie 1. m\u00e1ja 7",
-        "coarse_type": "stores",
-        "fine_types": [
-            "book_store",
-            "point_of_interest",
-            "store",
-            "establishment"
-        ],
-        "location": [
-            1186.4807891845703,
-            1058.9975624084473,
-            -8
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
-        "bounding_box": [
-            185.02438221483047,
-            56.90977809588611,
-            123.5959587097168,
-            31.503948143933755,
-            65.05771034679796,
-            21.78833770751953,
-            0.9334929306762859
+            -250.74172613596136,
+            -185.55847163969406,
+            119.12198638916017,
+            10.401990713108344,
+            42.762867451345734,
+            11.31463623046875,
+            0.52236478066182
         ]
     },
     "Beverages and DM Store": {
-        "building": "Konventn\u00e1 17",
+        "building": "Panensk\u00e1 24",
         "coarse_type": "stores",
         "fine_types": [
             "point_of_interest",
@@ -187,43 +200,68 @@
             "establishment"
         ],
         "location": [
-            914.1708068847656,
-            806.4725875854492,
-            -8
+            775.4760437011719,
+            826.5081939697266,
+            -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
         "bounding_box": [
-            -85.28249242447376,
-            -192.96567580213352,
-            124.4691047668457,
-            19.06412789744437,
-            25.967891772463645,
-            21.946678161621094,
-            0.29992843548637516
+            -224.39263570311678,
+            -173.54534530576763,
+            118.3856773376465,
+            26.770366491627936,
+            30.860392272365,
+            10.814811706542969,
+            0.3402495251964998
         ]
     },
-    "KINO TATRA": {
-        "building": "Hotel Tatra",
+    "Fresh and Snacks Store": {
+        "building": "Palis\u00e1dy 736/46",
+        "coarse_type": "stores",
+        "fine_types": [
+            "health",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            878.8709182739258,
+            929.369966506958,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -121.12908336096646,
+            -70.63003652049633,
+            126.56953811645508,
+            44.182081196037345,
+            13.124279932527232,
+            20.169639587402344,
+            -0.18472526591817512
+        ]
+    },
+    "amt project": {
+        "building": "1",
         "coarse_type": "entertainment",
         "fine_types": [
-            "movie_theater",
+            "art_gallery",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            1168.7901611328125,
-            1033.6217756271362,
-            -8
+            727.6116638183594,
+            853.3995513916016,
+            -4
         ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
         "bounding_box": [
-            167.70896911621094,
-            32.90940475463867,
-            124.88888549804688,
-            28.841175079345703,
-            51.44382095336914,
-            23.220130920410156,
-            0.9292467832565308
+            -272.4066664307358,
+            -146.58957856537359,
+            126.36359786987305,
+            16.158430215428393,
+            30.712353606770087,
+            23.915779113769517,
+            -0.010724912719308904
         ]
     },
     "Hod\u017eovo n\u00e1mestie Bus Stop": {
