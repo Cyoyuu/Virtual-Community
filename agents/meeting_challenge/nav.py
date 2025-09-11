@@ -157,7 +157,7 @@ class NavigationMeetingAgent(Agent):
                     if event["subject"] == self.name:
                         continue
                     self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
-                if event["type"] == "broadcast_event":
+                if event["type"] == "broadcast event":
                     self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
                     if self.mode == NavAgentState.NAVIGATE:
                         self.mode = NavAgentState.DISCUSS
@@ -201,9 +201,11 @@ class NavigationMeetingAgent(Agent):
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
                     self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
                 elif response_type == "decide":
-                    self.meeting_place = speech
                     if speech.startswith("<") and speech.endswith(">"):
-                        self.meeting_place = speech[1:-1]
+                        speech = speech[1:-1]
+                    if speech != self.meeting_place:
+                        self.meeting_place = speech
+                        self.time_to_arrival_timedelta=dict()
                     action = {"type": "wait"}
                     self.mode = NavAgentState.NAVIGATE
                     self.discussion_time = 0
@@ -272,6 +274,7 @@ class NavigationMeetingAgent(Agent):
         if self.curr_time-timedelta(minutes=10) in self.time_to_arrival_timedelta:
             if self.time_to_arrival_timedelta[self.curr_time-timedelta(minutes=10)] * 0.95 < self.time_to_arrival_timedelta[self.curr_time]:
                 action = {"type": "broadcast_event", "arg1": "inaccessible_meeting_place", "arg2": f"{self.name} cannot get any closer to the destination, {self.meeting_place}, in the past 10 minutes. This place seems inaccessible to they."}
+                return action, False
         # If the estimated arrival time exceeds, regenerate
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
         if self.last_estimated_arrival_time + timedelta(minutes=5) < estimated_arrival_time:
@@ -573,7 +576,7 @@ class NavigationMeetingAgent(Agent):
     
     def get_meeting_place(self):
         # if self.discussion_trigger == "TASK START":
-        #     return {"type": "decide", "speech": "Bicycle Sharing Station 3"}
+        #     return "decide", "Bicycle Sharing Station 3"
         prompt = open(f"agents/meeting_challenge/meeting_prompts/get_meeting_place_prompt.txt", "r").read()
         prompt = prompt.replace("$SelfName$", self.name)
         agent_pos_dict=copy.copy(self.obs["agent_pos_dict"])
