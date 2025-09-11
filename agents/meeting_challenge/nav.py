@@ -271,13 +271,13 @@ class NavigationMeetingAgent(Agent):
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
         # If few progress made...
         self.time_to_arrival_timedelta[self.curr_time]=timedelta(seconds=self.calc_time(waypoints=self.last_route))
-        if self.curr_time-timedelta(minutes=10) in self.time_to_arrival_timedelta:
-            if self.time_to_arrival_timedelta[self.curr_time-timedelta(minutes=10)] * 0.95 < self.time_to_arrival_timedelta[self.curr_time]:
+        if self.curr_time-timedelta(minutes=5) in self.time_to_arrival_timedelta:
+            if self.time_to_arrival_timedelta[self.curr_time-timedelta(minutes=5)] * 0.95 < self.time_to_arrival_timedelta[self.curr_time]:
                 action = {"type": "broadcast_event", "arg1": "inaccessible_meeting_place", "arg2": f"{self.name} cannot get any closer to the destination, {self.meeting_place}, in the past 10 minutes. This place seems inaccessible to they."}
                 return action, False
         # If the estimated arrival time exceeds, regenerate
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
-        if self.last_estimated_arrival_time + timedelta(minutes=5) < estimated_arrival_time:
+        if self.last_estimated_arrival_time + timedelta(minutes=2) < estimated_arrival_time:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
         # throw away arrived waypoints
