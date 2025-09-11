@@ -763,7 +763,7 @@ class NavigationMeetingAgent(Agent):
         conversation_list = self.conversation_history[-10:] if len(self.conversation_history) > 10 else self.conversation_history
         return "\n".join([chat.to_description() for chat in conversation_list])
 
-    def get_conversation_description(self):
+    def get_past_event_description(self):
         if len(self.event_history) == 0:
             return "None"
         event_list = self.event_history[-20:] if len(self.event_history) > 20 else self.event_history
