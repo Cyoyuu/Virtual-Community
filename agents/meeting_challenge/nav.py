@@ -309,9 +309,9 @@ class NavigationMeetingAgent(Agent):
         while arrived:
             if not self.last_nav:
                 self.generate_navigation_plan(max_retry=max_retry)
-                self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
                 if not self.last_nav:
                     return {"type": "wait"}, False
+                self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
             curr_goal = self.last_nav[0]
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal, threshold=2)

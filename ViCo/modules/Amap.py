@@ -81,6 +81,32 @@ class Waypoints:
     predecessor: list = field(default_factory=list)
     successor: list = field(default_factory=list)
 
+class Route:
+    def __init__(self, waypoints=None):
+        '''
+        waypoints: list(np.array([int,int]))
+        '''
+        self.waypoints=waypoints
+
+    def __getitem__(self, key):
+        # Slice the waypoints using the provided key (can be int or slice)
+        sliced_waypoints = self.waypoints[key]
+        # Return a new Route object with the sliced waypoints
+        return Route(sliced_waypoints)
+    
+    def __len__(self):
+        return len(self.waypoints)
+    
+    def empty(self):
+        return not self.waypoints
+
+    def calc_time(self, pose=None):
+        if pose is not None:
+            ret=np.linalg.norm(np.array(self.waypoints[0][:2])-np.array(pose[:2]))
+        for i in range(1, len(self.waypoints)):
+            ret+=np.linalg.norm(np.array(self.waypoints[i][:2])-np.array(self.waypoints[i-1][:2]))
+        return ret*2 # for turning
+
 class Amap:
     '''walkers only'''
     def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7.):
@@ -292,7 +318,7 @@ class Amap:
                 goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
         if goal_wp_pair[0] == float('inf'):
             print(f"No path found from {curr_trans[:2]} to {goal_pos}")
-            return []
+            return Route([])
         path = []
         curr = goal_wp_pair[1]
         while curr is not None:
@@ -302,10 +328,10 @@ class Amap:
 
         if not path:
             print(f"No valid route found from {curr_trans[:2]} to {goal_pos}")
-            return []
+            return Route([])
         
         path.append(goal_pos)
-        return path
+        return Route(path)
     
     def get_connected_waypoints(self, waypoint_id):
         """
