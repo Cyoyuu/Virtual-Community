@@ -410,7 +410,7 @@ class NavigationMeetingAgent(Agent):
     
     def discuss(self):
         action = None
-        agents = self.obs["agent_pos_dict"].keys()
+        agents = ", ".join(self.obs["agent_pos_dict"].keys())
         places = self.get_nearest_places_description(self.get_meeting_target())
         conversation_history = self.get_conversation_description()
         app_message = self.get_app_message_description()
