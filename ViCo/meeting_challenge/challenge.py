@@ -297,7 +297,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": all_task_end and max_distance<=10}
+              "done": bool(all_task_end and (max_distance<=10))}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")

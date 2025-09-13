@@ -1,0 +1,44 @@
+There are some agents in a city who are tasked with coordinating a meeting location with other agents. You are assisting an agent in a group discussion to coordinate a meeting location. The goal is to select — from the provided list — the location that minimizes the travel time of the LAST agent to arrive.
+
+Based on the conversation history and available information, your task is to **summarize each agent’s current preferred location or stance**. This summary will be used to determine whether consensus has been reached.
+
+---
+
+Informations:
+
+Agent's Name:
+$SelfName$
+
+Agent list:
+$Agents$
+
+Place list:
+$Places$
+
+Conversation History so far:
+$ConversationHistory$
+
+Guidelines:
+
+Be objective and factual — reflect what each agent has explicitly stated or implied.
+If an agent hasn’t spoken or is ambiguous, note that (e.g., “undecided”, “waiting for info”).
+Use clear, concise phrases (under 15 words per agent).
+Do not invent opinions — only infer from available conversation.
+This summary will directly inform the next step: checking for full agreement.
+
+---
+
+Output format:
+
+Return a JSON object where each key is an agent’s name, and each value is a short string summarizing their current opinion or preferred location. Use exact place names from the list when possible, enclosed in <>, e.g., <Central Park>.
+
+```json
+{
+    "agent_name1": "agent_opinion1",
+    "agent_name2": "agent_opinion2",
+    "agent_name3": "agent_opinion3",
+    ...
+}
+```
+
+Finally, return only a valid JSON object in the format shown above.

@@ -101,6 +101,174 @@ class Message:
     def to_description(self):
         return f"{self.time.strftime('%H:%M:%S')} {self.subject}: {self.content}"
 
+
+class Decider:
+    def __init__(self):
+        pass
+
+    def conclude(self, name, agents, places, conversation_history):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_conclude.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$Agents$", agents)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error concluding opinions: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def decide(self, agent_opinions, places):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_decide.txt", "r").read()
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error deciding mode: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+
+class Discusser:
+    def __init__(self):
+        pass
+
+    def extract(self, name, agents, places, conversation_history, app_messages):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$AppMessage$", app_messages)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def plan(self, name, agent_opinions, places, conversation_history, app_messages, known_eta):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$AppMessage$", app_messages)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error generating discussion plan: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+class Collector:
+    def __init__(self):
+        pass
+
+    def analyze(self, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPosition$", position)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$AppMessage$", app_messages)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+    def action(self, name, agents, places, conversation_history, app_messages, analysis):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$AgentList$", agents)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$AppMessage$", app_messages)
+        prompt = prompt.replace("$Analysis$", analysis)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+class Speaker:
+    def __init__(self):
+        pass
+
+    def prepare(self, name, agents, agent_opinions, places, conversation_history, known_eta):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$Agents$", agents)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def speak(self, name, intent, agent_opinions, places, conversation_history, known_eta):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SpeechIntent$", intent)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+class Navigator:
+    def __init__(self, goal_place):
+        self.goal_place = goal_place
+
+
 class NavigationMeetingAgent(Agent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
@@ -130,6 +298,11 @@ class NavigationMeetingAgent(Agent):
         # Discussion
         self.discussion_time = 0
         self.discussion_trigger = ""
+        self.decider = Decider()
+        self.disccusser = Discusser()
+        self.collector = Collector()
+        self.speaker = Speaker()
+        self.thinking = 0
         # Navigation
         self.last_estimated_arrival_time = None
         self.time_to_arrival_timedelta = {}
@@ -194,30 +367,31 @@ class NavigationMeetingAgent(Agent):
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action
-                response_type, speech = self.get_meeting_place()
-                if response_type is None or response_type == "wait":
-                    action = {"type": "wait"}
-                elif response_type == "speak":
-                    action = {"type": "converse", "arg1": speech, "arg2": 800}
-                    self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
-                elif response_type == "decide":
-                    if speech.startswith("<") and speech.endswith(">"):
-                        speech = speech[1:-1]
-                    if speech != self.meeting_place:
-                        self.meeting_place = speech
-                        self.time_to_arrival_timedelta=dict()
-                    action = {"type": "wait"}
-                    self.mode = NavAgentState.NAVIGATE
-                    self.discussion_time = 0
-                elif response_type == "query":
-                    if speech.startswith("<") and speech.endswith(">"):
-                        speech = speech[1:-1]
-                    if speech not in self.s_mem.get_places():
-                        action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
-                    else:
-                        action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
-                else:
-                    raise NotImplementedError(f"meeting place response type {response_type} is not supported")
+                action = self.discuss()
+                # response_type, speech = self.get_meeting_place()
+                # if response_type is None or response_type == "wait":
+                #     action = {"type": "wait"}
+                # elif response_type == "speak":
+                #     action = {"type": "converse", "arg1": speech, "arg2": 800}
+                #     self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
+                # elif response_type == "decide":
+                #     if speech.startswith("<") and speech.endswith(">"):
+                #         speech = speech[1:-1]
+                #     if speech != self.meeting_place:
+                #         self.meeting_place = speech
+                #         self.time_to_arrival_timedelta=dict()
+                #     action = {"type": "wait"}
+                #     self.mode = NavAgentState.NAVIGATE
+                #     self.discussion_time = 0
+                # elif response_type == "query":
+                #     if speech.startswith("<") and speech.endswith(">"):
+                #         speech = speech[1:-1]
+                #     if speech not in self.s_mem.get_places():
+                #         action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
+                #     else:
+                #         action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
+                # else:
+                #     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
@@ -233,6 +407,53 @@ class NavigationMeetingAgent(Agent):
         assert action is None or isinstance(action, dict)
         self.last_action=action
         return self.last_action
+    
+    def discuss(self):
+        action = None
+        agents = self.obs["agent_pos_dict"].keys()
+        places = self.get_nearest_places_description(self.get_meeting_target())
+        conversation_history = self.get_conversation_description()
+        app_message = self.get_app_message_description()
+        if self.thinking == 0:
+            agent_opinions = self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history)
+            decision = self.decider.decide(agent_opinions=agent_opinions, places=places)
+            if decision["agreement_reached"] == True:
+                meeting_place = decision["agreed_location"]
+                if meeting_place.startswith("<") and meeting_place.endswith(">"):
+                    meeting_place = meeting_place[1:-1]
+                if meeting_place != self.meeting_place:
+                    self.meeting_place = meeting_place
+                    self.time_to_arrival_timedelta=dict()
+                self.mode = NavAgentState.NAVIGATE
+                self.discussion_time = 0
+            else:
+                self.thinking = 1
+            action = {"type": "wait"}
+        else:
+            self.thinking = 0
+            if self.discussion_plan==None:
+                self.known_eta = self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message)#!!!
+                self.discussion_plan = self.disccusser.plan(name=self.name, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.known_eta)
+                self.thinking = 2
+                action = {"type": "wait"}
+            elif self.discussion_plan["action"]=="wait":
+                action = {"type": "wait"}
+            elif self.discussion_plan["action"]=="query":
+                analysis = self.collector.analyze(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.known_eta)
+                collect_plan = self.collector.action(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=analysis)
+                if collect_plan["target"]==self.name:
+                    action = {"type": "query_app", "arg1": "query_route", "arg2": collect_plan["target_locations"][0]}
+                else:
+                    description = ", ".join(collect_plan["target_locations"])
+                    speech = f"Hey {collect_plan["target"]}, can you tell us your ETA to {description}?"
+                    action = {"type": "converse", "arg1": speech, "arg2": 800}
+            elif self.discussion_plan["action"]=="speak":
+                intent = self.speaker.prepare(name=self.name, agents=agents, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, known_eta=self.known_eta)
+                speech = self.speaker.speak(name=self.name, intent=intent, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, known_eta=self.known_eta)
+                action = {"type": "converse", "arg1": speech, "arg2": 800}
+            else:
+                raise NotImplementedError(f"meeting place response type is not supported")
+        return action
     
     def city_navigate(self, goal_place, threshold=500.):
         cur_trans = np.array(self.pose[:2])

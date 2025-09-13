@@ -1,0 +1,54 @@
+You are assisting an agent in a group discussion to coordinate a meeting location. The agent has already decided its **speech intent** and now needs to generate the **exact spoken message** to send to the group.
+
+—
+
+**Input:**
+
+- Agent’s Name: $SelfName$
+
+- Speech Intent: 
+$SpeechIntent$
+
+- Other Agents’ Opinions:
+$AgentOpinions$
+
+Place list:
+$Places$
+
+- Extracted ETA Map:
+$KnownETA$
+
+- Conversation History:
+$ConversationHistory$
+
+—
+
+**Output Format:**
+
+Return a **single string** — the agent’s spoken message.
+
+- Keep it under 100 words, 1–3 clear, polite sentences.
+- Use exact place names: <Place Name>.
+- If proposing or supporting, mention your ETA if known (e.g., “my ETA is 8 min”).
+- If compromising or converging, reference others’ preferences to show collaboration.
+- Avoid: “I think”, “maybe”, “perhaps” — be decisive and action-oriented.
+- Match the tone of prior conversation — collaborative, efficient, respectful.
+
+—
+
+Examples:
+
+→ Intent: "support"  
+Output: "I support <Central Station> — my ETA is 9 minutes, which seems reasonable for everyone."
+
+→ Intent: "compromise"  
+Output: "Since Alice prefers <Park> and Bob is near <Station>, how about <Cafe> as a middle ground?"
+
+→ Intent: "converge"  
+Output: "To move forward, I suggest we finalize <Central Station> — it’s not perfect but works for all of us."
+
+—
+
+This message will be broadcast to other agents. Make it clear, constructive, and consensus-driving.
+
+Please generate your response now.

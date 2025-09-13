@@ -1,0 +1,68 @@
+There are some agents in a city who are tasked with coordinating a meeting location with other agents. You are assisting an agent in a group discussion to coordinate a meeting location. The goal is to select — from the provided list — the location that minimizes the travel time of the LAST agent to arrive.
+
+Previous analysis shows that **full agreement has NOT been reached**. Now, your task is to help the agent decide its next move in the discussion: Should it **speak**, **query for more information**, or **wait**?
+
+---
+
+**Input:**
+
+- Agent’s Name: $SelfName$
+
+- Current Agent Opinions:
+$AgentOpinions$
+
+- Available Places: 
+$Places$
+
+- Navigation App Message (if any): 
+$AppMessage$
+
+- Conversation History: 
+$ConversationHistory$
+
+- Known ETAs:
+$KnownETA$
+
+---
+
+**Output Format:**
+
+Return a JSON object with two fields:
+
+```json
+{
+    "action": "speak|query|wait",
+    "reason": "brief explanation (under 20 words)"
+}
+```
+
+---
+
+Guidelines for Choosing Action:
+
+“query” — if:
+
+The agent lacks its own ETA to one or more leading locations.
+It needs data to compare options fairly.
+It need information about other agents.
+Set reason like: “Need ETA to <Downtown Plaza>” "Need <agent name> to clarify ..."
+
+“speak” — if:
+
+The agent has enough info to propose, support, or compromise.
+Discussion is stalling or repeating.
+There’s a clear optimal or majority-preferred location to endorse.
+Set reason like: “Propose <Central Station> as fastest for all”
+
+“wait” — if:
+
+Other agents are actively speaking or querying.
+The agent has nothing new to add yet.
+Recent messages suggest convergence is imminent.
+Set reason like: “Waiting for Bob’s ETA before speaking”
+
+For example, if you need someone's ETA but haven't ask for it, go for "query". If have asked, then "wait".
+
+Be decisive and efficient. Prioritize progress over perfection. Avoid redundant proposals. If 2+ rounds have passed without convergence, lean toward “speak” to drive consensus.
+
+Please generate your response now.
