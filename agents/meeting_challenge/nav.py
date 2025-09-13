@@ -445,7 +445,7 @@ class NavigationMeetingAgent(Agent):
                     action = {"type": "query_app", "arg1": "query_route", "arg2": collect_plan["target_locations"][0]}
                 else:
                     description = ", ".join(collect_plan["target_locations"])
-                    speech = f"Hey {collect_plan["target"]}, can you tell us your ETA to {description}?"
+                    speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
             elif self.discussion_plan["action"]=="speak":
                 intent = self.speaker.prepare(name=self.name, agents=agents, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, known_eta=self.known_eta)
