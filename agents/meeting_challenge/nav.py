@@ -102,10 +102,59 @@ class Message:
         return f"{self.time.strftime('%H:%M:%S')} {self.subject}: {self.content}"
 
 
-class Decider:
+class ThinkingModule:
     def __init__(self, generator, logger):
         self.logger = logger
         self.generator = generator
+
+    def parse_json(self, prompt, response, last_call=False):
+        json_str = None
+        if "```json" in response:
+            # Step 1: Extract the JSON part
+            start = response.find("```json") + len("```json")
+            end = response.find("```", start)
+            json_str = response[start:end].strip()
+        else:
+            self.logger.warning(f"Error parsing JSON, the string was {response}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!",
+                    chat_history=chat_history)
+                return self.parse_json(None, data, last_call=True)
+            else:
+                self.logger.error(f"Error parsing JSON, already last call, the string was {response}")
+                return None
+
+        # # Step 2: Clean up the JSON
+        # # Replace single quotes with double quotes
+        # # Safely evaluate the string to a Python dictionary
+        # parsed_dict = ast.literal_eval(json_str)
+        # # Convert the dictionary back to a JSON string
+        # json_str = json.dumps(parsed_dict)
+
+        # Step 3: Convert to dictionary
+        try:
+            response = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            self.logger.warning(f"Error decoding JSON: {e}, the string was {json_str}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!",
+                    chat_history=chat_history)
+                return self.parse_json(None, data, last_call=True)
+        return response
+
+class Decider(ThinkingModule):
+    def __init__(self, generator, logger):
+        super().__init__(generator, logger)
 
     def conclude(self, name, agents, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_conclude.txt", "r").read()
@@ -140,10 +189,9 @@ class Decider:
         return response_dict
 
 
-class Discusser:
+class Discusser(ThinkingModule):
     def __init__(self, generator, logger):
-        self.logger = logger
-        self.generator = generator
+        super().__init__(generator, logger)
 
     def extract(self, name, agents, places, conversation_history, app_messages):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
@@ -181,10 +229,9 @@ class Discusser:
             response_dict = None
         return response_dict
 
-class Collector:
+class Collector(ThinkingModule):
     def __init__(self, generator, logger):
-        self.logger = logger
-        self.generator = generator
+        super().__init__(generator, logger)
 
     def analyze(self, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
@@ -225,10 +272,9 @@ class Collector:
             response_dict = None
         return response_dict
 
-class Speaker:
+class Speaker(ThinkingModule):
     def __init__(self, generator, logger):
-        self.logger = logger
-        self.generator = generator
+        super().__init__(generator, logger)
 
     def prepare(self, name, agents, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
