@@ -839,6 +839,7 @@ class NavigationMeetingAgent(Agent):
 
 
     def calc_time(self, waypoints):
+        waypoints=waypoints
         ret=np.linalg.norm(np.array(waypoints[0][:2])-np.array(self.pose[:2]))
         for i in range(1, len(waypoints)):
             ret+=np.linalg.norm(np.array(waypoints[i][:2])-np.array(waypoints[i-1][:2]))
