@@ -495,8 +495,11 @@ class NavigationMeetingAgent(Agent):
             elif self.discussion_plan["action"]=="query":
                 analysis = self.collector.analyze(name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 collect_plan = self.collector.action(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
+                target_place = collect_plan["target_locations"][0]
+                if target_place.startswith("<") and target_place.endswith(">"):
+                    target_place = target_place[1:-1]
                 if collect_plan["target"]==self.name:
-                    action = {"type": "query_app", "arg1": "query_route", "arg2": collect_plan["target_locations"][0]}
+                    action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
                 else:
                     description = ", ".join(collect_plan["target_locations"])
                     speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
