@@ -21,19 +21,6 @@ if __name__ != "__main__" :
     from ViCo.tools.utils import *
     from ViCo.modules import *
 
-def lat_lon_to_xy(lat, lon, ref_lat, ref_lon):
-    earth_radius = 6378137  # in meters
-    meters_per_degree_lat = 111139  # Approximate meters per degree latitude
-    
-    # Calculate meters per degree longitude based on reference latitude
-    meters_per_degree_lon = 111139 * math.cos(math.radians(ref_lat))
-    
-    # Convert lat/lon to x/y
-    x = (lon - ref_lon) * meters_per_degree_lon
-    y = (lat - ref_lat) * meters_per_degree_lat
-    
-    return [x, y]
-
 def is_point_enclosed_Amap(grid, point, resolution, min_x, min_y, nx, ny):
     from collections import deque
 

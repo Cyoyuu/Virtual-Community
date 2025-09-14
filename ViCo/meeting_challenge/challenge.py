@@ -223,7 +223,7 @@ def main():
     while not all_task_end and env.steps <= args.step_limit:
         lst_time = time.perf_counter()
         obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
-                          and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime)} for agent_id in obs]
+                          and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
 
         # update obs and do action
         extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i]} for i in range(num_agents)}
