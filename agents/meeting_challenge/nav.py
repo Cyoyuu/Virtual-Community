@@ -492,7 +492,7 @@ class NavigationMeetingAgent(Agent):
             elif self.discussion_plan["action"]=="wait":
                 action = {"type": "wait"}
             elif self.discussion_plan["action"]=="query":
-                analysis = self.collector.analyze(name=self.name, position=self.obs["agent_pos_dict"], places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
+                analysis = self.collector.analyze(name=self.name, position=self.obs["agent_pos_dict"], agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 collect_plan = self.collector.action(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
                 if collect_plan["target"]==self.name:
                     action = {"type": "query_app", "arg1": "query_route", "arg2": collect_plan["target_locations"][0]}
