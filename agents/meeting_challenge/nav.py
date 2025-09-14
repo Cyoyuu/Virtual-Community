@@ -103,8 +103,8 @@ class Message:
 
 
 class Decider:
-    def __init__(self):
-        pass
+    def __init__(self, logger):
+        self.logger = logger
 
     def conclude(self, name, agents, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_conclude.txt", "r").read()
@@ -140,8 +140,8 @@ class Decider:
 
 
 class Discusser:
-    def __init__(self):
-        pass
+    def __init__(self, logger):
+        self.logger = logger
 
     def extract(self, name, agents, places, conversation_history, app_messages):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
@@ -180,8 +180,8 @@ class Discusser:
         return response_dict
 
 class Collector:
-    def __init__(self):
-        pass
+    def __init__(self, logger):
+        self.logger = logger
 
     def analyze(self, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
@@ -223,8 +223,8 @@ class Collector:
         return response_dict
 
 class Speaker:
-    def __init__(self):
-        pass
+    def __init__(self, logger):
+        self.logger = logger
 
     def prepare(self, name, agents, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
@@ -298,10 +298,10 @@ class NavigationMeetingAgent(Agent):
         # Discussion
         self.discussion_time = 0
         self.discussion_trigger = ""
-        self.decider = Decider()
-        self.disccusser = Discusser()
-        self.collector = Collector()
-        self.speaker = Speaker()
+        self.decider = Decider(self.logger)
+        self.disccusser = Discusser(self.logger)
+        self.collector = Collector(self.logger)
+        self.speaker = Speaker(self.logger)
         self.thinking = 0
         # Navigation
         self.last_estimated_arrival_time = None
