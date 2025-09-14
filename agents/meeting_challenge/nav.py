@@ -285,15 +285,14 @@ class Speaker(ThinkingModule):
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
         prompt = prompt.replace("$KnownETA$", known_eta)
         self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
+            response = self.generator.generate(prompt, img=None, json_mode=False)
+            self.logger.debug(f"generated response: {response}")
         except Exception as e:
             self.logger.error(
                 f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
+            response = None
+        return response
     
     def speak(self, name, intent, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_speak.txt", "r").read()
@@ -304,15 +303,14 @@ class Speaker(ThinkingModule):
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
         prompt = prompt.replace("$KnownETA$", known_eta)
         self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
+            response = self.generator.generate(prompt, img=None, json_mode=False)
+            self.logger.debug(f"generated response: {response}")
         except Exception as e:
             self.logger.error(
                 f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
+            response = None
+        return response
 
 class Navigator:
     def __init__(self, goal_place):
