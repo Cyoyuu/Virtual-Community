@@ -211,7 +211,7 @@ class Discusser(ThinkingModule):
         return response_dict
     
     def plan(self, name, agent_opinions, places, conversation_history, app_messages, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_plan.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
@@ -234,7 +234,7 @@ class Collector(ThinkingModule):
         super().__init__(generator, logger)
 
     def analyze(self, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/query_analyze.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$SelfPosition$", position)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
@@ -254,7 +254,7 @@ class Collector(ThinkingModule):
         return response_dict
 
     def action(self, name, agents, places, conversation_history, app_messages, analysis):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agents)
         prompt = prompt.replace("$Places$", places)
@@ -277,7 +277,7 @@ class Speaker(ThinkingModule):
         super().__init__(generator, logger)
 
     def prepare(self, name, agents, agent_opinions, places, conversation_history, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_prepare.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$Agents$", agents)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
@@ -296,7 +296,7 @@ class Speaker(ThinkingModule):
         return response_dict
     
     def speak(self, name, intent, agent_opinions, places, conversation_history, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_speak.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$SpeechIntent$", intent)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
