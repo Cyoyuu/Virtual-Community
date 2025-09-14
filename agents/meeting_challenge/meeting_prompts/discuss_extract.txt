@@ -24,18 +24,18 @@ Return a JSON object structured as:
 ```json
 {
     "<Place Name>": {
-        "Agent1": 12.5,
+        "Agent1": "0:0:15",
         "Agent2": "Impossible",
         ...
     },
     "<Another Place>": {
-        "Agent3": 15.0,
+        "Agent3": "1:14:30",
         ...
     }
 }
 
 Use exact place names from $Places, enclosed in <> as keys.
-For each place, include a sub-object mapping agent names → ETA in minutes (float).
+For each place, include a sub-object mapping agent names → ETA in "HH:MM:SS" format.
 Include:
 Self’s ETAs from $AppMessage (key = SelfName ).
 Other agents’ ETAs mentioned in $ConversationHistory (e.g., “I can get to <Park> in 10 min”).

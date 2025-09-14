@@ -372,14 +372,14 @@ class NavigationMeetingAgent(Agent):
     def _process_obs(self, obs):
         if obs['action_status'] == "FAIL":
             self.logger.info(f"{self.name} failed to execute last action {self.action_history[-1].action}.")
-            if self.action_history[-1].action["type"] == "converse":
-                if len(self.conversation_history) > 0 and self.conversation_history[-1].subject == self.name:
-                    self.conversation_history.pop()
+            # if self.action_history[-1].action["type"] == "converse":
+            #     if len(self.conversation_history) > 0 and self.conversation_history[-1].subject == self.name:
+            #         self.conversation_history.pop()
         if len(obs['events']) > 0:
             for event in obs['events']:
                 if event["type"] == "speech":
-                    if event["subject"] == self.name:
-                        continue
+                    # if event["subject"] == self.name:
+                    #     continue
                     self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
                 if event["type"] == "broadcast event":
                     self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
@@ -393,7 +393,13 @@ class NavigationMeetingAgent(Agent):
                             self.last_route=event["content"]
                             self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
-                            self.update_known_eta({self.last_action['arg2']:{self.name:self.calc_time(waypoints=event["content"])}})
+                            self.update_known_eta(
+                                {
+                                    self.last_action['arg2']:
+                                    {
+                                        self.name: str(timedelta(self.calc_time(waypoints=event["content"])))
+                                    }
+                                })
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
