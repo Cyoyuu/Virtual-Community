@@ -395,6 +395,7 @@ class NavigationMeetingAgent(Agent):
                             self.last_route=event["content"]
                             self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
+                            self.known_eta[self.last_action['arg2']][self.name]=self.calc_time(waypoints=event["content"])
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
         num_new_objects = self.s_mem.update(obs)
@@ -485,14 +486,14 @@ class NavigationMeetingAgent(Agent):
         else:
             self.thinking = 0
             if self.discussion_plan==None:
-                self.known_eta = self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message)#!!!
+                self.known_eta.update(self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
                 self.discussion_plan = self.disccusser.plan(name=self.name, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             elif self.discussion_plan["action"]=="wait":
                 action = {"type": "wait"}
             elif self.discussion_plan["action"]=="query":
-                analysis = self.collector.analyze(name=self.name, position=self.obs["agent_pos_dict"], agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
+                analysis = self.collector.analyze(name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 collect_plan = self.collector.action(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
                 if collect_plan["target"]==self.name:
                     action = {"type": "query_app", "arg1": "query_route", "arg2": collect_plan["target_locations"][0]}
@@ -1050,6 +1051,16 @@ class NavigationMeetingAgent(Agent):
             return "None"
         else:
             return "\n".join([f"{key}: {self.agent_opinions[key]}" for key in self.agent_opinions])
+        
+    def get_agent_poses_description(self):
+        agent_pos_dict=copy.copy(self.obs["agent_pos_dict"])
+        agent_pos_description = ""
+        for agent in agent_pos_dict:
+            if agent_pos_dict[agent]['place'] is not None:
+                agent_pos_dict[agent]['pose'][0], agent_pos_dict[agent]['pose'][1] = agent_pos_dict[agent]['pose'][0]-1000, agent_pos_dict[agent]['pose'][1]-1000
+            agent_pos_description += f"{agent} is now in {agent_pos_dict[agent]['place'] if agent_pos_dict[agent]['place'] is not None else 'open space'}, with coordinate {agent_pos_dict[agent]['pose']}.\n"
+        agent_pos_description.strip("\n")
+        return agent_pos_description
 
     def get_conversation_description(self):
         if len(self.conversation_history) == 0:
