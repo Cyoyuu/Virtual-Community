@@ -352,6 +352,8 @@ class NavigationMeetingAgent(Agent):
         self.disccusser = Discusser(generator=self.generator, logger=self.logger)
         self.collector = Collector(generator=self.generator, logger=self.logger)
         self.speaker = Speaker(generator=self.generator, logger=self.logger)
+        self.discussion_plan = None
+        self.known_eta = dict()
         self.thinking = 0
         # Navigation
         self.last_estimated_arrival_time = None
@@ -465,7 +467,7 @@ class NavigationMeetingAgent(Agent):
         conversation_history = self.get_conversation_description()
         app_message = self.get_app_message_description()
         if self.thinking == 0:
-            agent_opinions = self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history)
+            agent_opinions = str(self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history))
             decision = self.decider.decide(agent_opinions=agent_opinions, places=places)
             if decision["agreement_reached"] == True:
                 meeting_place = decision["agreed_location"]
