@@ -467,8 +467,8 @@ class NavigationMeetingAgent(Agent):
         conversation_history = self.get_conversation_description()
         app_message = self.get_app_message_description()
         if self.thinking == 0:
-            agent_opinions = str(self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history))
-            decision = self.decider.decide(agent_opinions=agent_opinions, places=places)
+            self.agent_opinions = str(self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history))
+            decision = self.decider.decide(agent_opinions=self.get_agent_opinions_description(), places=places)
             if decision["agreement_reached"] == True:
                 meeting_place = decision["agreed_location"]
                 if meeting_place.startswith("<") and meeting_place.endswith(">"):
@@ -485,7 +485,7 @@ class NavigationMeetingAgent(Agent):
             self.thinking = 0
             if self.discussion_plan==None:
                 self.known_eta = self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message)#!!!
-                self.discussion_plan = self.disccusser.plan(name=self.name, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
+                self.discussion_plan = self.disccusser.plan(name=self.name, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             elif self.discussion_plan["action"]=="wait":
@@ -500,8 +500,8 @@ class NavigationMeetingAgent(Agent):
                     speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
             elif self.discussion_plan["action"]=="speak":
-                intent = self.speaker.prepare(name=self.name, agents=agents, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                speech = self.speaker.speak(name=self.name, intent=intent, agent_opinions=agent_opinions, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                intent = self.speaker.prepare(name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                speech = self.speaker.speak(name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 action = {"type": "converse", "arg1": speech, "arg2": 800}
             else:
                 raise NotImplementedError(f"meeting place response type is not supported")
@@ -1043,6 +1043,12 @@ class NavigationMeetingAgent(Agent):
             return "None"
         else:
             return f"{self.known_eta}"
+
+    def get_agent_opinions_description(self):
+        if len(self.agent_opinions) == 0:
+            return "None"
+        else:
+            return "\n".join([f"{key}: {self.agent_opinions[key]}" for key in self.agent_opinions])
 
     def get_conversation_description(self):
         if len(self.conversation_history) == 0:
