@@ -674,8 +674,8 @@ class VicoEnv:
 				agent_pos = self.config['agent_poses'][i][:3]
 				converse_range = action['arg2'] if 'arg2' in action else 10
 				priority = random.randint(0, 100)
-				if converse_range > 800:
-					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 10. Ignored.")
+				if converse_range > 3200:
+					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 3200. Ignored.")
 					self.agents[i].robot.action_status = ActionStatus.FAIL
 					continue
 				deleted_subjects = self.events.add(type="speech", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
