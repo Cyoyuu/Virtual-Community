@@ -37,8 +37,8 @@ Return a JSON object structured as:
 Use exact place names from $Places, enclosed in <> as keys.
 For each place, include a sub-object mapping agent names → ETA in "HH:MM:SS" format.
 Include:
-Self’s ETAs from $AppMessage (key = SelfName ).
-Other agents’ ETAs mentioned in $ConversationHistory (e.g., “I can get to <Park> in 10 min”).
+Self’s ETAs from App Message.
+Other agents’ ETAs mentioned in Conversation History (e.g., “I can get to <Park> in 10 min”).
 If an agent mentions multiple ETAs, use the most recent one.
 If no ETA is available for a place, omit that place entirely.
 If no ETAs found at all, return an empty object: {}

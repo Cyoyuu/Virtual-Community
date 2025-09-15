@@ -554,7 +554,7 @@ class NavigationMeetingAgent(Agent):
                         action = {"type": "wait"}
                         self.discussion_plan["action"]="query_speak"
                 elif self.discussion_plan["action"]=="query_speak":
-                    description = ", ".join(self.collect_plan["target_locations"])
+                    description = ", ".join(self.collect_plan["target_locations"][0])
                     speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {description}?"
                     action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
