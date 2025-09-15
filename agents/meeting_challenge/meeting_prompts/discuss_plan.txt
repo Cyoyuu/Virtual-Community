@@ -34,7 +34,7 @@ Return a JSON object with two fields:
 ```json
 {
     "action": "speak|query|wait",
-    "reason": "brief explanation (under 20 words)"
+    "reason": "brief explanation (under 30 words)"
 }
 ```
 
@@ -64,10 +64,10 @@ Set reason like: “Need ETA to <Downtown Plaza>” "Need <agent name> to clarif
 Other agents are actively speaking or querying.
 The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
-Set reason like: “Waiting for Bob’s ETA before speaking”
+Set reason like: “No one is asking me for more information so I can just wait for Bob’s ETA before speaking”
 
 For example, if you need someone's ETA but haven't ask for it, go for "query". If someone have asked for that ETA, then "wait".
 
-Be decisive and efficient. Prioritize progress over perfection. Avoid redundant proposals. If 2+ rounds have passed without convergence, lean toward “speak” to drive consensus.
+Be decisive and efficient. Prioritize progress over perfection. Prioritize answering questions over throwing questions. Avoid redundant proposals. If 2+ rounds have passed without convergence, lean toward “speak” to drive consensus.
 
 Please generate your response now.

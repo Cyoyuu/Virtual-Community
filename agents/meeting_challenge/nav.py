@@ -416,12 +416,13 @@ class NavigationMeetingAgent(Agent):
                             if self.meeting_place==self.last_action["arg2"]:
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
-                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {timedelta(seconds=(self.calc_time(waypoints=self.last_route)))}s"))
+                            time_to_arrival = timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {time_to_arrival}s"))
                             self.update_known_eta(
                                 {
                                     self.last_action['arg2']:
                                     {
-                                        self.name: str(timedelta(self.calc_time(waypoints=event["content"])))
+                                        self.name: str(time_to_arrival)
                                     }
                                 })
                         elif self.last_action["arg1"]=="query_place":
@@ -1065,10 +1066,13 @@ class NavigationMeetingAgent(Agent):
         
     def update_known_eta(self, new_eta):
         for place in new_eta:
-            if place not in self.known_eta:
-                self.known_eta[place]=dict()
-            for agent in new_eta[place]:
-                self.known_eta[place][agent]=new_eta[place][agent]
+            place_name = place
+            if place_name.startswith("<") and place_name.endswith(">"):
+                    place_name = place_name[1:-1]
+            if place_name not in self.known_eta:
+                self.known_eta[place_name]=dict()
+            for agent in new_eta[place_name]:
+                self.known_eta[place_name][agent]=new_eta[place][agent]
 
     def get_nearest_places_description(self, target):
         place_list = []
