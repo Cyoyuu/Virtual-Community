@@ -536,7 +536,7 @@ class NavigationMeetingAgent(Agent):
         else:
             if self.discussion_plan==None:
                 self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             else:
@@ -545,8 +545,8 @@ class NavigationMeetingAgent(Agent):
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="query":
-                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
+                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
                     target_place = self.collect_plan["target_locations"][0]
                     if target_place.startswith("<") and target_place.endswith(">"):
                         target_place = target_place[1:-1]
@@ -564,8 +564,8 @@ class NavigationMeetingAgent(Agent):
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="speak":
-                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
