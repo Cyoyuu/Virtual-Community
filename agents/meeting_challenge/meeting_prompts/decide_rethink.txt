@@ -30,7 +30,7 @@ Decision Rules:
 
 Set "initiate_new_discussion": true if:
 
-The agent’s ETA has increased by 20% or more compared to its best recent ETA.
+The agent’s ETA has increased by 20% or more and by more than 2 minutes compared to its recent 2 ETA.
 The ETA has been stagnant or increasing for 3+ consecutive updates.
 The navigation app reports a major obstacle (e.g., “blocked”, “closed”, “unreachable”).
 Other agents have already arrived or are very close, while this agent is significantly delayed.

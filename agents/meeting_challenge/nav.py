@@ -552,13 +552,13 @@ class NavigationMeetingAgent(Agent):
                 elif self.discussion_plan["action"]=="query_speak":
                     description = ", ".join(self.collect_plan["target_locations"])
                     speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {description}?"
-                    action = {"type": "converse", "arg1": speech, "arg2": 800}
+                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="speak":
                     intent = self.speaker.prepare(curr_time=curr_time, name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     speech = self.speaker.speak(curr_time=curr_time, name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    action = {"type": "converse", "arg1": speech, "arg2": 800}
+                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
                 else:
@@ -577,7 +577,7 @@ class NavigationMeetingAgent(Agent):
             self.eta_history[curr_time]=curr_eta
             if rethink_result['initiate_new_discussion']:
                 self.enter_discussion_mode(trigger="RECENT EVENT")
-                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 800}
+                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 3200}
                 return action, False
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:

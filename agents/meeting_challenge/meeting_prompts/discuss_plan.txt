@@ -40,21 +40,21 @@ Return a JSON object with two fields:
 
 Guidelines for Choosing Action:
 
+“speak” — if:
+
+The agent has enough info to propose, support, or compromise.
+Discussion is stalling or repeating.
+There’s a clear optimal or majority-preferred location to endorse.
+Someone is asking for your information and you already have that information.
+No one respond you or speak anything since last 10s, in which case you should say again.
+Set reason like: “Propose <Central Station> as fastest for all”
+
 “query” — if:
 
 The agent lacks its own ETA to one or more leading locations.
 It needs data to compare options fairly.
 It need information about other agents.
 Set reason like: “Need ETA to <Downtown Plaza>” "Need <agent name> to clarify ..."
-
-“speak” — if:
-
-The agent has enough info to propose, support, or compromise.
-Discussion is stalling or repeating.
-There’s a clear optimal or majority-preferred location to endorse.
-Someone is asking for your information.
-No one respond you or speak anything since last 10s, in which case you should say again.
-Set reason like: “Propose <Central Station> as fastest for all”
 
 “wait” — if:
 
