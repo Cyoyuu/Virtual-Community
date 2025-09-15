@@ -49,13 +49,13 @@ def plot_waypoints(route_history, steps=100):
 
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
-    parser.add_argument("--output", "-o", type=str)
-    parser.add_argument("--steps", "-s", default=100)
+    parser.add_argument("--scene", "-s", type=str)
+    parser.add_argument("--time", "-t", default=100)
     args=parser.parse_args()
     route_history=dict()
     # Call the function
-    for dir in os.listdir(args.output):
-        if os.path.isdir(os.path.join(args.output, dir)):
-            route_history[str(dir)]=json.load(open(os.path.join(args.output, dir, "route_history.json"), "r"))
-    plot_waypoints(route_history, args.steps)
+    for dir in os.listdir(f"ViCo/meeting_challenge/output/{args.scene}/nav/curr_sim"):
+        if os.path.isdir(os.path.join(f"ViCo/meeting_challenge/output/{args.scene}/nav/curr_sim", dir)):
+            route_history[str(dir)]=json.load(open(os.path.join(f"ViCo/meeting_challenge/output/{args.scene}/nav/curr_sim", dir, "route_history.json"), "r"))
+    plot_waypoints(route_history, args.time)
     
