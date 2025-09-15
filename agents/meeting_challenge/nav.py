@@ -535,7 +535,7 @@ class NavigationMeetingAgent(Agent):
             action = {"type": "wait"}
         else:
             if self.discussion_plan==None:
-                self.update_known_eta(self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
+                self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
                 self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
