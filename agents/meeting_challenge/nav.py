@@ -272,14 +272,14 @@ class Collector(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def action(self, curr_time, name, agents, places, conversation_history, app_messages, analysis):
+    def action(self, curr_time, name, agents, places, conversation_history, known_eta, analysis):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agents)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
-        prompt = prompt.replace("$AppMessage$", app_messages)
+        prompt = prompt.replace("$KnownETA$", known_eta)
         prompt = prompt.replace("$Analysis$", analysis)
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
@@ -535,7 +535,7 @@ class NavigationMeetingAgent(Agent):
                     self.thinking = 0
                 elif self.discussion_plan["action"]=="query":
                     analysis = self.collector.analyze(curr_time=curr_time, name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
+                    collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
                     target_place = collect_plan["target_locations"][0]
                     if target_place.startswith("<") and target_place.endswith(">"):
                         target_place = target_place[1:-1]

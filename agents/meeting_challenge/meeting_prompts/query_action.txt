@@ -17,11 +17,11 @@ $AgentList$
 - Available Places: ← list of candidate locations
 $Places$
 
-- Navigation App Message (if any): ← may contain partial ETAs or errors
-$AppMessage$ 
-
 - Conversation History:  ← what’s been said or queried already
 $ConversationHistory$
+
+- Known ETAs:
+$KnownETA$
 
 - Previous Analysis Regarding Missing Information:
 $Analysis$
