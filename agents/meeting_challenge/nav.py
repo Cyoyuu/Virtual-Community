@@ -190,7 +190,7 @@ class Decider(ThinkingModule):
         return response_dict
     
     def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_decide.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_rethink.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$CurrentPlace$", meeting_place)
