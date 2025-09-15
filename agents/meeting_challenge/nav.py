@@ -416,7 +416,7 @@ class NavigationMeetingAgent(Agent):
                         if self.last_action['arg1']=="query_route":
                             self.last_route=event["content"]
                             self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
-                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {timedelta(seconds=(self.calc_time(waypoints=self.last_route)))}s"))
                             self.update_known_eta(
                                 {
                                     self.last_action['arg2']:
@@ -1102,7 +1102,7 @@ class NavigationMeetingAgent(Agent):
         if len(self.eta_history) == 0:
             return "None"
         else:
-            return "\n".join([f"{key}: {self.eta_history[key]}" for key in self.eta_history])
+            return "\n".join([f"ETA at {key} is {self.eta_history[key]}s" for key in self.eta_history])
 
     def get_agent_opinions_description(self):
         if len(self.agent_opinions) == 0:
