@@ -17,9 +17,6 @@ $AgentOpinions$
 - Available Places: 
 $Places$
 
-- Navigation App Message (if any): 
-$AppMessage$
-
 - Conversation History: 
 $ConversationHistory$
 
@@ -56,7 +53,7 @@ The agent has enough info to propose, support, or compromise.
 Discussion is stalling or repeating.
 There’s a clear optimal or majority-preferred location to endorse.
 Someone is asking for your information.
-No one respond you since last 15s, in which case you should say again.
+No one respond you or speak anything since last 10s, in which case you should say again.
 Set reason like: “Propose <Central Station> as fastest for all”
 
 “wait” — if:
@@ -66,7 +63,7 @@ The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
 Set reason like: “Waiting for Bob’s ETA before speaking”
 
-For example, if you need someone's ETA but haven't ask for it, go for "query". If have asked, then "wait".
+For example, if you need someone's ETA but haven't ask for it, go for "query". If someone have asked for that ETA, then "wait".
 
 Be decisive and efficient. Prioritize progress over perfection. Avoid redundant proposals. If 2+ rounds have passed without convergence, lean toward “speak” to drive consensus.
 
