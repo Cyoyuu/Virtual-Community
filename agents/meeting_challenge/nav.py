@@ -1144,7 +1144,7 @@ class NavigationMeetingAgent(Agent):
     def get_app_message_description(self):
         if len(self.app_message_history) == 0:
             return "None"
-        app_message_list = self.app_message_history[-10:] if len(self.app_message_history) > 10 else self.app_message_history
+        app_message_list = [app_message for app_message in self.app_message_history if app_message.time + timedelta(minutes=2) > self.curr_time]
         return "\n".join([app_message.to_description() for app_message in app_message_list])
 
     def goto(self, target, force=False):

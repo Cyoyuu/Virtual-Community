@@ -8,10 +8,12 @@ Your task: Determine whether it’s time to **initiate a new group discussion** 
 
 - Current Time: $CurrentTime$
 - Agent’s Name: $SelfName$
-- Current Meeting Place: $CurrentPlace$
-- Current ETA: $CurrentETA$
-- Historical ETAs (last 5–10 minutes): $HistoricalETAs$
+- Self's Current Meeting Place: $CurrentPlace$
+- Self's Current ETA: $CurrentETA$
+- Self's Historical ETAs (last 5–10 minutes): $HistoricalETAs$
 - Navigation App Message: None ← e.g., “Route blocked ahead”, “Heavy traffic”, or “ETA increasing”
+
+Note that the team only share the conversation history, instead of all infos.
 
 —
 
