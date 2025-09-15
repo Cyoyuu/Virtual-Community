@@ -420,7 +420,7 @@ class NavigationMeetingAgent(Agent):
                             if self.meeting_place==self.last_action["arg2"]:
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
-                            time_to_arrival = timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                            time_to_arrival = timedelta(seconds=self.calc_time(waypoints=event["content"]))
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {time_to_arrival}s"))
                             self.update_known_eta(
                                 {
@@ -898,7 +898,7 @@ class NavigationMeetingAgent(Agent):
         if self.current_place is None:
             ret=np.linalg.norm(np.array(waypoints[0][:2])-np.array(self.pose[:2]))
         else:
-            ret=0
+            ret=0.
         for i in range(1, len(waypoints)):
             ret+=np.linalg.norm(np.array(waypoints[i][:2])-np.array(waypoints[i-1][:2]))
         return ret*2 # for turning
