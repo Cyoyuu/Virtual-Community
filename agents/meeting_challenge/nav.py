@@ -156,8 +156,9 @@ class Decider(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def conclude(self, name, agents, places, conversation_history):
+    def conclude(self, curr_time, name, agents, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_conclude.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$Agents$", agents)
         prompt = prompt.replace("$Places$", places)
@@ -177,6 +178,24 @@ class Decider(ThinkingModule):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_decide.txt", "r").read()
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error deciding mode: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_decide.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$CurrentPlace$", meeting_place)
+        prompt = prompt.replace("$CurrentETA$", curr_eta)
+        prompt = prompt.replace("$HistoricalETAs$", eta_history)
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
@@ -210,8 +229,9 @@ class Discusser(ThinkingModule):
             response_dict = None
         return response_dict
     
-    def plan(self, name, agent_opinions, places, conversation_history, app_messages, known_eta):
+    def plan(self, curr_time, name, agent_opinions, places, conversation_history, app_messages, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_plan.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
@@ -233,8 +253,9 @@ class Collector(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def analyze(self, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
+    def analyze(self, curr_time, name, position, agent_opinions, places, conversation_history, app_messages, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_analyze.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentInfo$", position)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
@@ -253,8 +274,9 @@ class Collector(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def action(self, name, agents, places, conversation_history, app_messages, analysis):
+    def action(self, curr_time, name, agents, places, conversation_history, app_messages, analysis):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agents)
         prompt = prompt.replace("$Places$", places)
@@ -276,8 +298,9 @@ class Speaker(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def prepare(self, name, agents, agent_opinions, places, conversation_history, known_eta):
+    def prepare(self, curr_time, name, agents, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_prepare.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$Agents$", agents)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
@@ -294,8 +317,9 @@ class Speaker(ThinkingModule):
             response = None
         return response
     
-    def speak(self, name, intent, agent_opinions, places, conversation_history, known_eta):
+    def speak(self, curr_time, name, intent, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_speak.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", datetime.strftime(curr_time))
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$SpeechIntent$", intent)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
@@ -344,7 +368,7 @@ class NavigationMeetingAgent(Agent):
         self.meeting_place = None
         self.mode = None
         # Discussion
-        self.discussion_time = 0
+        self.mode_time_counter = 0
         self.discussion_trigger = ""
         self.decider = Decider(generator=self.generator, logger=self.logger)
         self.disccusser = Discusser(generator=self.generator, logger=self.logger)
@@ -353,10 +377,10 @@ class NavigationMeetingAgent(Agent):
         self.discussion_plan = None
         self.agent_opinions = dict()
         self.known_eta = dict()
+        self.eta_history = dict()
         self.thinking = 0
         # Navigation
         self.last_estimated_arrival_time = None
-        self.time_to_arrival_timedelta = {}
         self.last_estimated_move_time = None
         self.last_route = []
         self.last_nav = []
@@ -381,12 +405,12 @@ class NavigationMeetingAgent(Agent):
                     # if event["subject"] == self.name:
                     #     continue
                     self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
+                    if self.mode==NavAgentState.NAVIGATE:
+                        self.enter_discussion_mode(trigger="NEW DISCUSSION")
                 if event["type"] == "broadcast event":
                     self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
                     if self.mode == NavAgentState.NAVIGATE:
-                        self.mode = NavAgentState.DISCUSS
-                        self.discussion_time = 0
-                        self.discussion_trigger = "RECENT EVENT"
+                        self.enter_discussion_mode(trigger="RECENT EVENT")
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
@@ -416,12 +440,10 @@ class NavigationMeetingAgent(Agent):
         action = None
         try:
             if self.mode is None:
-                self.mode = NavAgentState.DISCUSS
-                self.discussion_time = 0
-                self.discussion_trigger = "TASK START"
+                self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
-                self.discussion_time += 1
-                if self.discussion_time > 50:
+                self.mode_time_counter += 1
+                if self.mode_time_counter > 60:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action
@@ -466,6 +488,20 @@ class NavigationMeetingAgent(Agent):
         self.last_action=action
         return self.last_action
     
+    def enter_discussion_mode(self, trigger):
+        self.mode = NavAgentState.DISCUSS
+        self.mode_time_counter = 0
+        self.discussion_trigger = trigger
+        self.discussion_plan = None
+        self.agent_opinions = dict()
+        self.known_eta = dict()
+        self.eta_history = dict()
+        self.thinking = 0
+
+    def enter_navigation_mode(self):
+        self.mode = NavAgentState.NAVIGATE
+        self.mode_time_counter = 0
+    
     def discuss(self):
         action = None
         agents = ", ".join(self.obs["agent_pos_dict"].keys())
@@ -473,7 +509,7 @@ class NavigationMeetingAgent(Agent):
         conversation_history = self.get_conversation_description()
         app_message = self.get_app_message_description()
         if self.thinking == 0:
-            self.agent_opinions = self.decider.conclude(name=self.name, agents=agents, places=places, conversation_history=conversation_history)
+            self.agent_opinions = self.decider.conclude(curr_time=self.curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history)
             decision = self.decider.decide(agent_opinions=self.get_agent_opinions_description(), places=places)
             if decision["agreement_reached"] == True:
                 meeting_place = decision["agreed_location"]
@@ -482,8 +518,7 @@ class NavigationMeetingAgent(Agent):
                 if meeting_place != self.meeting_place:
                     self.meeting_place = meeting_place
                     self.time_to_arrival_timedelta=dict()
-                self.mode = NavAgentState.NAVIGATE
-                self.discussion_time = 0
+                self.enter_navigation_mode()
             else:
                 self.thinking = 1
             action = {"type": "wait"}
@@ -491,15 +526,15 @@ class NavigationMeetingAgent(Agent):
             self.thinking = 0
             if self.discussion_plan==None:
                 self.update_known_eta(self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-                self.discussion_plan = self.disccusser.plan(name=self.name, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
+                self.discussion_plan = self.disccusser.plan(curr_time=self.curr_time, name=self.name, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             else:
                 if self.discussion_plan["action"]=="wait":
                     action = {"type": "wait"}
                 elif self.discussion_plan["action"]=="query":
-                    analysis = self.collector.analyze(name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
-                    collect_plan = self.collector.action(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
+                    analysis = self.collector.analyze(curr_time=self.curr_time, name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, app_messages=app_message, known_eta=self.get_known_eta_description())
+                    collect_plan = self.collector.action(curr_time=self.curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message, analysis=f"{analysis}")
                     target_place = collect_plan["target_locations"][0]
                     if target_place.startswith("<") and target_place.endswith(">"):
                         target_place = target_place[1:-1]
@@ -510,8 +545,8 @@ class NavigationMeetingAgent(Agent):
                         speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
                         action = {"type": "converse", "arg1": speech, "arg2": 800}
                 elif self.discussion_plan["action"]=="speak":
-                    intent = self.speaker.prepare(name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    speech = self.speaker.speak(name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    intent = self.speaker.prepare(curr_time=self.curr_time, name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    speech = self.speaker.speak(curr_time=self.curr_time, name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
                 else:
                     raise NotImplementedError(f"meeting place response type is not supported")
@@ -520,15 +555,13 @@ class NavigationMeetingAgent(Agent):
     
     def city_navigate(self, goal_place, threshold=500.):
         cur_trans = np.array(self.pose[:2])
-        # goal_place_dict = self.s_mem.get_knowledge(goal_place)
-        # if goal_place_dict is None:
-        #     self.logger.error(f"No knowledge found for {goal_place}.")
-        #     return None, False
-        # goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
-        # if goal_place_dict["building"] != "open space":
-        #     goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
-        # already at the correct place (or to comply with env setting)
-        # if goal_place == self.obs['current_place'] or (is_near_goal(cur_trans[0], cur_trans[1], None, goal_pos, threshold=5) and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
+        if self.mode_time_counter % 60 == 0:
+            rethink_result=self.decider.rethink(curr_time=self.curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=timedelta(seconds=self.calc_time(self.last_route)), eta_history=self.get_eta_history_description())
+            self.eta_history[datetime.strftime(self.curr_time)]=timedelta(seconds=self.calc_time(self.last_route))
+            if rethink_result['initiate_new_discussion']:
+                self.enter_discussion_mode()
+                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 800}
+                return action
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
@@ -553,12 +586,6 @@ class NavigationMeetingAgent(Agent):
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
-        # If few progress made...
-        self.time_to_arrival_timedelta[self.curr_time]=timedelta(seconds=self.calc_time(waypoints=self.last_route))
-        if self.curr_time-timedelta(minutes=5) in self.time_to_arrival_timedelta:
-            if self.time_to_arrival_timedelta[self.curr_time-timedelta(minutes=5)] * 0.95 < self.time_to_arrival_timedelta[self.curr_time]:
-                action = {"type": "broadcast_event", "arg1": "inaccessible_meeting_place", "arg2": f"{self.name} cannot get any closer to the destination, {self.meeting_place}, in the past 10 minutes. This place seems inaccessible to they."}
-                return action, False
         # If the estimated arrival time exceeds, regenerate
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
         if self.last_estimated_arrival_time + timedelta(minutes=2) < estimated_arrival_time:
@@ -568,7 +595,7 @@ class NavigationMeetingAgent(Agent):
         idx = len(self.last_route)
         while idx > 0:
             idx -= 1
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=2 if idx==len(self.last_route)-1 else 5)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=5 if idx==len(self.last_route)-1 else 10)
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
@@ -1065,6 +1092,12 @@ class NavigationMeetingAgent(Agent):
             return "None"
         else:
             return f"{self.known_eta}"
+
+    def get_eta_history_description(self):
+        if len(self.eta_history) == 0:
+            return "None"
+        else:
+            return "\n".join([f"{key}: {self.eta_history[key]}" for key in self.eta_history])
 
     def get_agent_opinions_description(self):
         if len(self.agent_opinions) == 0:

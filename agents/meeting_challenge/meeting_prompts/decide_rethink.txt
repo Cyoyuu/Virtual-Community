@@ -1,0 +1,66 @@
+You are assisting an agent who is currently en route to the agreed meeting location. However, due to unexpected events (traffic, obstacles, etc.), the agent’s estimated time to arrival (ETA) can be no longer improve — or may even be increasing.
+
+Your task: Determine whether it’s time to **initiate a new group discussion** to consider changing the meeting location. Also consider what you are going to say when initiate a new group discussion.
+
+—
+
+**Input:**
+
+- Current Time: $CurrentTime$
+- Agent’s Name: $SelfName$
+- Current Meeting Place: $CurrentPlace$
+- Current ETA: $CurrentETA$
+- Historical ETAs (last 5–10 minutes): $HistoricalETAs$
+- Navigation App Message: None ← e.g., “Route blocked ahead”, “Heavy traffic”, or “ETA increasing”
+
+—
+
+**Output Format:**
+
+Return a JSON object:
+
+```json
+{
+    "initiate_new_discussion": true|false,
+    "speech": "brief explanation why you initiate a new discussion to others (under 50 words)"
+}
+```
+
+Decision Rules:
+
+Set "initiate_new_discussion": true if:
+
+The agent’s ETA has increased by 20% or more compared to its best recent ETA.
+The ETA has been stagnant or increasing for 3+ consecutive updates.
+The navigation app reports a major obstacle (e.g., “blocked”, “closed”, “unreachable”).
+Other agents have already arrived or are very close, while this agent is significantly delayed.
+
+Set "initiate_new_discussion": false if:
+
+ETA is still decreasing, even slowly.
+Delay is minor (< 15% increase) and temporary (e.g., “light traffic”).
+No better alternative location is available or likely to help.
+—
+
+Example:
+
+{
+    "initiate_new_discussion": true,
+    "speech": "Hey everyone! My ETA to <Place Name> increased 30%. There must be something wrong with this location."
+}
+or
+{
+    "initiate_new_discussion": true,
+    "speech": "Hello everyone! It seems my way to <Place Name> is blocked. I can't get closer to it anymore."
+}
+or
+{
+    "initiate_new_discussion": no,
+    "speech": "ETA improves timingly."
+}
+
+—
+
+Be conservative but proactive. Don’t trigger unnecessary discussions — only when the current plan is clearly suboptimal or failing.
+
+Please generate your response now.

@@ -123,7 +123,7 @@ class Amap:
         self.covered_length=0.
 
     def is_point_invalid(self, point):
-        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-10,11) for j in range(-10, 11)]])
+        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-self.waypoints_dis,self.waypoints_dis+1) for j in range(-self.waypoints_dis,self.waypoints_dis+1)]])
 
     def spawn_waypoints(self):
         for node in self.nodes:
