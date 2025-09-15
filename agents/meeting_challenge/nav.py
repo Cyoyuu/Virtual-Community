@@ -212,7 +212,7 @@ class Discusser(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def extract(self, name, agents, places, conversation_history, app_messages):
+    def extract(self, name, places, conversation_history, app_messages):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_extract.txt", "r").read()
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$Places$", places)
@@ -229,10 +229,11 @@ class Discusser(ThinkingModule):
             response_dict = None
         return response_dict
     
-    def plan(self, curr_time, name, agent_opinions, places, conversation_history, known_eta):
+    def plan(self, curr_time, name, pose, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_plan.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPose$", pose)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
@@ -252,10 +253,11 @@ class Collector(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def analyze(self, curr_time, name, position, agent_opinions, places, conversation_history, known_eta):
+    def analyze(self, curr_time, name, pose, position, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_analyze.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPose$", pose)
         prompt = prompt.replace("$AgentInfo$", position)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
@@ -272,10 +274,11 @@ class Collector(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def action(self, curr_time, name, agents, places, conversation_history, known_eta, analysis):
+    def action(self, curr_time, name, pose, agents, places, conversation_history, known_eta, analysis):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPose$", pose)
         prompt = prompt.replace("$AgentList$", agents)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
@@ -296,11 +299,11 @@ class Speaker(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def prepare(self, curr_time, name, agents, agent_opinions, places, conversation_history, known_eta):
+    def prepare(self, curr_time, name, pose, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_prepare.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
-        prompt = prompt.replace("$Agents$", agents)
+        prompt = prompt.replace("$SelfPose$", pose)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
@@ -315,10 +318,11 @@ class Speaker(ThinkingModule):
             response = None
         return response
     
-    def speak(self, curr_time, name, intent, agent_opinions, places, conversation_history, known_eta):
+    def speak(self, curr_time, name, pose, intent, agent_opinions, places, conversation_history, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_speak.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPose$", pose)
         prompt = prompt.replace("$SpeechIntent$", intent)
         prompt = prompt.replace("$AgentOpinions$", agent_opinions)
         prompt = prompt.replace("$Places$", places)
@@ -532,7 +536,7 @@ class NavigationMeetingAgent(Agent):
         else:
             if self.discussion_plan==None:
                 self.update_known_eta(self.disccusser.extract(name=self.name, agents=agents, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             else:
@@ -541,8 +545,8 @@ class NavigationMeetingAgent(Agent):
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="query":
-                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
+                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
                     target_place = self.collect_plan["target_locations"][0]
                     if target_place.startswith("<") and target_place.endswith(">"):
                         target_place = target_place[1:-1]
@@ -560,8 +564,8 @@ class NavigationMeetingAgent(Agent):
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="speak":
-                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
@@ -1063,6 +1067,17 @@ class NavigationMeetingAgent(Agent):
         else:
             return {"type": "turn_left",
                     "arg1": 90}
+        
+    def get_outdoor_pose(self):
+        if self.current_place == None:
+            return self.pose
+        goal_place_dict = self.s_mem.get_knowledge(self.current_place)
+        if goal_place_dict is None:
+            self.logger.error(f"No knowledge found for {self.current_place}.")
+            return None, False
+        goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+        if goal_place_dict["building"] != "open space":
+            goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
         
     def update_known_eta(self, new_eta):
         for place in new_eta:

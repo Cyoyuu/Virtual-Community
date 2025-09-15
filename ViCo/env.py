@@ -705,7 +705,7 @@ class VicoEnv:
 			elif action['type'] == 'query_app':
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
-				agent_pos = self.config['agent_poses'][i][:3]
+				agent_pos = self.config['agent_poses'][i][:3] if self.agent_infos[i]["current_place"] is None else self.agent_infos[i]["outdoor_pose"]
 				priority = random.randint(0, 100)
 				if action['arg1'] == 'query_place':
 					app_answer = self.nav_app.query_place(action['arg2'])
