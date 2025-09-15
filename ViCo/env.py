@@ -705,7 +705,8 @@ class VicoEnv:
 			elif action['type'] == 'query_app':
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
-				agent_pos = self.config['agent_poses'][i][:3] if self.agent_infos[i]["current_building"] == 'open space' else self.agent_infos[i]["outdoor_pose"][:3]
+				agent_pos = self.config['agent_poses'][i][:3]
+				agent_outdoor_pos = self.config['agent_poses'][i][:3] if self.agent_infos[i]["current_building"] == 'open space' else self.agent_infos[i]["outdoor_pose"][:3]
 				priority = random.randint(0, 100)
 				if action['arg1'] == 'query_place':
 					app_answer = self.nav_app.query_place(action['arg2'])
@@ -714,7 +715,7 @@ class VicoEnv:
 					app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				if action['arg1'] == 'query_route':
-					app_answer = self.nav_app.query_route(agent_pos, action['arg2'])
+					app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:

@@ -305,6 +305,7 @@ class Amap:
                 goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
         if goal_wp_pair[0] == float('inf'):
             print(f"No path found from {curr_trans[:2]} to {goal_pos}")
+            assert 0
             return []
         path = []
         curr = goal_wp_pair[1]
@@ -315,6 +316,7 @@ class Amap:
 
         if not path:
             print(f"No valid route found from {curr_trans[:2]} to {goal_pos}")
+            assert 0
             return []
         
         path.append(goal_pos)
