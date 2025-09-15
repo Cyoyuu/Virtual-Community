@@ -558,8 +558,9 @@ class NavigationMeetingAgent(Agent):
         cur_trans = np.array(self.pose[:2])
         if self.mode_time_counter % 60 == 0:
             curr_time = self.curr_time.strftime('%H:%M:%S')
-            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=timedelta(seconds=self.calc_time(self.last_route)), eta_history=self.get_eta_history_description())
-            self.eta_history[curr_time]=timedelta(seconds=self.calc_time(self.last_route))
+            curr_eta = str(timedelta(seconds=self.calc_time(self.last_route)))
+            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=curr_eta, eta_history=self.get_eta_history_description())
+            self.eta_history[curr_time]=curr_eta
             if rethink_result['initiate_new_discussion']:
                 self.enter_discussion_mode()
                 action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 800}
