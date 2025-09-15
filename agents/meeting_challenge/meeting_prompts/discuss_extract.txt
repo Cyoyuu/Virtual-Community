@@ -45,7 +45,7 @@ If no ETAs found at all, return an empty object: {}
 
 Parsing Rules:
 
-Extract only numeric ETAs explicitly tied to a place and an agent.
+Extract only numeric ETAs explicitly tied to a place and an agent, unless an agent cannot go to that place, in which case you should use "Impossible".
 Ignore vague statements like “soon” or “about 10 minutes” unless a number is clearly stated.
 Assume units are minutes unless specified otherwise.
 Match agent names exactly as they appear in history or as SelfName.
