@@ -413,8 +413,9 @@ class NavigationMeetingAgent(Agent):
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
-                            self.last_route=event["content"]
-                            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                            if self.meeting_place==self.last_action["arg2"]:
+                                self.last_route=event["content"]
+                                self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {timedelta(seconds=(self.calc_time(waypoints=self.last_route)))}s"))
                             self.update_known_eta(
                                 {
@@ -503,6 +504,8 @@ class NavigationMeetingAgent(Agent):
     def enter_navigation_mode(self):
         self.mode = NavAgentState.NAVIGATE
         self.mode_time_counter = 0
+        self.last_route = []
+        self.last_nav = []
     
     def discuss(self):
         action = None
