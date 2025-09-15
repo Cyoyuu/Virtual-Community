@@ -7,6 +7,8 @@ import os
 def plot_waypoints(route_history, steps=100):
     # 3. Create the plot
     plt.figure(figsize=(8, 8))
+    aerial_view=mpimg.imread(f"ViCo/assets/scenes/{args.scene}/global.png")
+    plt.imshow(aerial_view, extent=[-512, 512, -512, 512])# left, right, bottom, top
     plt.xlim(-400, 400)
     plt.ylim(-400, 400)
     colors = ['blue', 'red', 'yellow', 'cyan', 'green']
@@ -35,10 +37,6 @@ def plot_waypoints(route_history, steps=100):
     plt.title("Waypoints Path", fontsize=14)
     plt.xlabel("X Coordinate", fontsize=12)
     plt.ylabel("Y Coordinate", fontsize=12)
-    aerial_view=mpimg.imread(f"ViCo/assets/scenes/{args.scene}/global.png")
-    plt.imshow(aerial_view, extent=[-512, 512, -512, 512])# left, right, bottom, top
-    plt.xlim(-400, 400)
-    plt.ylim(-400, 400)
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.legend()
     plt.axis('equal')  # Equal scaling for x and y axes
