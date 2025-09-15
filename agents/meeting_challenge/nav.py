@@ -437,6 +437,7 @@ class NavigationMeetingAgent(Agent):
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
     def _act(self, obs):
+        self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
         action = None
         try:
             if self.mode is None:
@@ -557,6 +558,9 @@ class NavigationMeetingAgent(Agent):
     
     def city_navigate(self, goal_place, threshold=500.):
         cur_trans = np.array(self.pose[:2])
+        if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
+            self.logger.debug(f"{self.name} arrived at {goal_place}.")
+            return self.last_action, True
         if self.mode_time_counter % 120 == 0:
             curr_time = self.curr_time.strftime('%H:%M:%S')
             curr_eta = str(timedelta(seconds=self.calc_time(self.last_route)))
@@ -566,9 +570,6 @@ class NavigationMeetingAgent(Agent):
                 self.enter_discussion_mode(trigger="RECENT EVENT")
                 action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 800}
                 return action, False
-        if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
-            self.logger.debug(f"{self.name} arrived at {goal_place}.")
-            return self.last_action, True
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
