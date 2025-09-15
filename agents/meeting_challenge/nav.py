@@ -1071,7 +1071,7 @@ class NavigationMeetingAgent(Agent):
                     place_name = place_name[1:-1]
             if place_name not in self.known_eta:
                 self.known_eta[place_name]=dict()
-            for agent in new_eta[place_name]:
+            for agent in new_eta[place]:
                 self.known_eta[place_name][agent]=new_eta[place][agent]
 
     def get_nearest_places_description(self, target):
