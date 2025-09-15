@@ -376,6 +376,7 @@ class NavigationMeetingAgent(Agent):
         self.agent_opinions = dict()
         self.known_eta = dict()
         self.eta_history = dict()
+        self.collect_plan = None
         self.thinking = 0
         # Navigation
         self.last_estimated_arrival_time = None
@@ -496,6 +497,7 @@ class NavigationMeetingAgent(Agent):
         self.agent_opinions = dict()
         self.known_eta = dict()
         self.eta_history = dict()
+        self.collect_plan = None
         self.thinking = 0
 
     def enter_navigation_mode(self):
@@ -536,11 +538,11 @@ class NavigationMeetingAgent(Agent):
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="query":
                     analysis = self.collector.analyze(curr_time=curr_time, name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
-                    target_place = collect_plan["target_locations"][0]
+                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
+                    target_place = self.collect_plan["target_locations"][0]
                     if target_place.startswith("<") and target_place.endswith(">"):
                         target_place = target_place[1:-1]
-                    if collect_plan["target"]==self.name:
+                    if self.collect_plan["target"]==self.name:
                         action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
                         self.thinking = 0
                         self.discussion_plan = None
@@ -548,8 +550,8 @@ class NavigationMeetingAgent(Agent):
                         action = {"type": "wait"}
                         self.discussion_plan["action"]="query_speak"
                 elif self.discussion_plan["action"]=="query_speak":
-                    description = ", ".join(collect_plan["target_locations"])
-                    speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
+                    description = ", ".join(self.collect_plan["target_locations"])
+                    speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {description}?"
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
                     self.thinking = 0
                     self.discussion_plan = None
