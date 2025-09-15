@@ -1068,16 +1068,17 @@ class NavigationMeetingAgent(Agent):
             return {"type": "turn_left",
                     "arg1": 90}
         
-    def get_outdoor_pose(self):
+    def get_outdoor_pose_description(self):
         if self.current_place == None:
-            return self.pose
+            return str(self.pose[:2])
         goal_place_dict = self.s_mem.get_knowledge(self.current_place)
         if goal_place_dict is None:
             self.logger.error(f"No knowledge found for {self.current_place}.")
-            return None, False
+            return ""
         goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
         if goal_place_dict["building"] != "open space":
             goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+        return str(goal_pos[:2])
         
     def update_known_eta(self, new_eta):
         for place in new_eta:
