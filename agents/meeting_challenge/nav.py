@@ -533,6 +533,7 @@ class NavigationMeetingAgent(Agent):
                 if self.discussion_plan["action"]=="wait":
                     action = {"type": "wait"}
                     self.thinking = 0
+                    self.discussion_plan = None
                 elif self.discussion_plan["action"]=="query":
                     analysis = self.collector.analyze(curr_time=curr_time, name=self.name, position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     collect_plan = self.collector.action(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
@@ -542,6 +543,7 @@ class NavigationMeetingAgent(Agent):
                     if collect_plan["target"]==self.name:
                         action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
                         self.thinking = 0
+                        self.discussion_plan = None
                     else:
                         action = {"type": "wait"}
                         self.discussion_plan["action"]="query_speak"
@@ -550,14 +552,15 @@ class NavigationMeetingAgent(Agent):
                     speech = f"Hey {collect_plan['target']}, can you tell us your ETA to {description}?"
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
                     self.thinking = 0
+                    self.discussion_plan = None
                 elif self.discussion_plan["action"]=="speak":
                     intent = self.speaker.prepare(curr_time=curr_time, name=self.name, agents=agents, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     speech = self.speaker.speak(curr_time=curr_time, name=self.name, intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     action = {"type": "converse", "arg1": speech, "arg2": 800}
                     self.thinking = 0
+                    self.discussion_plan = None
                 else:
                     raise NotImplementedError(f"discussion plan type is not supported")
-                self.discussion_plan = None
         return action
     
     def city_navigate(self, goal_place, threshold=500.):
