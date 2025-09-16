@@ -625,7 +625,7 @@ class NavigationMeetingAgent(Agent):
         return self.llm_navigate(max_retry=0)
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
-        assert self.last_route is not None
+        assert len(self.last_route)>0
         self.logger.debug(f"Current last_nav is {self.last_nav}")
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
