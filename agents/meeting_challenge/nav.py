@@ -449,7 +449,7 @@ class NavigationMeetingAgent(Agent):
                 self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
                 self.mode_time_counter += 1
-                if self.mode_time_counter > 90:
+                if self.mode_time_counter > 120:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action

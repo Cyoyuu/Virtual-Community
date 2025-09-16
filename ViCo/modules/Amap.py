@@ -354,8 +354,8 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
-    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr"):
-        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr not exist!")
+    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl"):
+        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl not exist!")
         exit()
     with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt', "r") as file:
         for line in file:
