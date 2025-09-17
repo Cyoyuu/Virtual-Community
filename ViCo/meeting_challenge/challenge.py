@@ -232,7 +232,7 @@ def main():
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
 
         # update obs and do action
-        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i]} for i in range(num_agents)}
+        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents)}
         }
 
         for i, agent in enumerate(all_agent_processes):
