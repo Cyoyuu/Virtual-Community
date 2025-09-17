@@ -451,6 +451,7 @@ class HeuristicNavigationMeetingAgent(Agent):
         if arrived:
             action = {'type': 'task_complete'}
         self.mode_time_counter +=1
+        self.last_action = action
         return action
     
     def enter_discussion_mode(self, trigger):
