@@ -443,26 +443,26 @@ class HeuristicNavigationMeetingAgent(Agent):
 
     def _act(self, obs):
         action = None
-        if self.stage == 0:
+        if self.mode_time_counter == 0:
             self.meeting_place = self.get_meeting_place()
             action, arrived = self.city_navigate(self.meeting_place)
             if arrived:
-                self.stage = 10
+                self.mode_time_counter = 10
             else:
-                self.stage += 1
-        elif self.stage <= 9:
+                self.mode_time_counter += 1
+        elif self.mode_time_counter <= 9:
             action, arrived = self.city_navigate(self.meeting_place)
             if arrived:
-                self.stage = 10
+                self.mode_time_counter = 10
             else:
-                self.stage = (self.stage+1)%10
-        elif self.stage == 10:
+                self.mode_time_counter = (self.mode_time_counter+1)%10
+        elif self.mode_time_counter == 10:
             self.meeting_place = self.get_meeting_place()
             action, arrived = self.city_navigate(self.meeting_place)
             if arrived:
                 action = {'type': 'task_complete'}
             else:
-                self.stage = 1
+                self.mode_time_counter = 1
         return action
     
     def enter_discussion_mode(self, trigger):
