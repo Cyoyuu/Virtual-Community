@@ -442,6 +442,7 @@ class HeuristicNavigationMeetingAgent(Agent):
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
     def _act(self, obs):
+        self.logger.debug(f"self mode time counter is {self.mode_time_counter}")
         action = None
         if self.mode_time_counter % 20 == 0:
             self.meeting_place = self.get_meeting_place()
@@ -449,8 +450,7 @@ class HeuristicNavigationMeetingAgent(Agent):
         action, arrived = self.city_navigate(self.meeting_place)
         if arrived:
             action = {'type': 'task_complete'}
-        else:
-            self.mode_time_counter +=1
+        self.mode_time_counter +=1
         return action
     
     def enter_discussion_mode(self, trigger):
