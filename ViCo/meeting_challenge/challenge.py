@@ -96,9 +96,6 @@ def main():
 
     random.seed(time.time())
     # Make output directories
-    job_result_path = os.path.join("ViCo/meeting/challenge/results/", args.scene, f"{agent_type}", f"result_{args.job_id}.json")
-    os.makedirs(job_result_path, exist_ok=True)
-    job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     if args.agent_type == 'llm' and args.lm_id != 'gpt-4o':
         args.output_dir = os.path.join(args.output_dir, args.scene,
                                        f"{args.agent_type}-{args.lm_id.split('/')[0]}")
@@ -108,6 +105,9 @@ def main():
         else:
             agent_type = args.agent_type
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}")
+    job_result_path = os.path.join("ViCo/meeting/challenge/results/", args.scene, f"{agent_type}", f"result_{args.job_id}.json")
+    os.makedirs(job_result_path, exist_ok=True)
+    job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
     output_dir = args.output_dir
     result_path = os.path.join(output_dir, "result.json")
