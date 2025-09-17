@@ -47,6 +47,7 @@ def main():
     parser.add_argument("--output_dir", "-o", type=str, default='ViCo/meeting_challenge/output')
     parser.add_argument("--debug", action='store_true')
     parser.add_argument("--overwrite", action='store_true')
+    parser.add_argument("--job_id", type=int, default=0)
 
     ### Simulation configurations
     parser.add_argument("--resolution", type=int, default=512)
@@ -95,6 +96,9 @@ def main():
 
     random.seed(time.time())
     # Make output directories
+    job_result_path = os.path.join("ViCo/meeting/challenge/results/", args.scene, f"{agent_type}", f"result_{args.job_id}.json")
+    os.makedirs(job_result_path, exist_ok=True)
+    job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     if args.agent_type == 'llm' and args.lm_id != 'gpt-4o':
         args.output_dir = os.path.join(args.output_dir, args.scene,
                                        f"{args.agent_type}-{args.lm_id.split('/')[0]}")
@@ -299,6 +303,8 @@ def main():
               "agent_navigation_length": list(total_length),
               "done": bool(all_task_end and (max_distance<=10))}
     with open(result_path, 'w') as file:
+        json.dump(result, file, indent=4)
+    with open(job_result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")
     env.close()
