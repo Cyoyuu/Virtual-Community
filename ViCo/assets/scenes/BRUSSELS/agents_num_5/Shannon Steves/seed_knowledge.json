@@ -1,22 +1,31 @@
 {
-    "Leonard Park": {
-        "age": 26,
-        "living_place": "Leonard Park's room at Catedra",
-        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at Luxury apartments in Brussels",
+        "appearance": "ViCo/assets/imgs/avatars/James Thompson.png",
         "groups": [
-            "Culinary Enthusiasts Club"
+            "Brussels Culinary Enthusiasts"
         ]
     },
-    "Culinary Enthusiasts Club": {
-        "description": "A group of individuals passionate about cooking and exploring new cuisines.",
+    "Tom Holland": {
+        "age": 28,
+        "living_place": "Hotel Hubert \u2013 Grand Place",
+        "appearance": "ViCo/assets/imgs/avatars/Tom Holland.png",
+        "groups": [
+            "Brussels Culinary Enthusiasts"
+        ]
+    },
+    "Brussels Culinary Enthusiasts": {
+        "description": "A group of food lovers who explore and create new culinary experiences.",
         "place": "The Brunch",
         "members": [
-            "Leonard Park",
-            "Steve Johnson"
+            "James Thompson",
+            "Shannon Steves",
+            "Tom Holland"
         ],
-        "daily_activity": "experimenting with new recipes from 17:00 to 18:30"
+        "daily_activity": "experimenting with new recipes from 18:00 to 20:00"
     },
-    "Steve Johnson's room at Charles' Home": {
+    "Shannon Steves's room at Charles' Home": {
         "building": "Charles' Home",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -27,55 +36,8 @@
             918.7632255554199,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
-        "name": "Steve Johnson's room at Charles' Home",
-        "bounding_box": [
-            -286.6910474754376,
-            -80.37116140514311,
-            65.20316886901855,
-            8.412366977547284,
-            25.602181756683187,
-            14.84024429321289,
-            0.7075414936217818
-        ]
-    },
-    "Beverages and DM Store": {
-        "building": "Rue de la Montagne 70",
-        "coarse_type": "stores",
-        "fine_types": [
-            "storage",
-            "store",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            767.083610534668,
-            956.575662612915,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
-        "bounding_box": [
-            -232.69209821601703,
-            -43.50049928628902,
-            67.36325645446777,
-            5.56019458417559,
-            10.825517845777897,
-            14.710865020751953,
-            0.7408302985462484
-        ]
-    },
-    "Charles' Home": {
-        "building": "Charles' Home",
-        "coarse_type": "accommodation",
-        "fine_types": [
-            "apartments"
-        ],
-        "location": [
-            713.8932189941406,
-            918.7632255554199,
-            -4
-        ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "name": "Shannon Steves's room at Charles' Home",
         "bounding_box": [
             -286.6910474754376,
             -80.37116140514311,
@@ -111,103 +73,118 @@
             -0.3171980679035187
         ]
     },
-    "IHECS - B\u00e2timent Chambon (CH)": {
-        "building": "Boiteux",
-        "coarse_type": "office",
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
         "fine_types": [
-            "university",
+            "park",
+            "tourist_attraction",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            742.2045822143555,
-            1273.7317810058594,
-            -4
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
-        "bounding_box": [
-            -260.5793301556366,
-            273.69968740524826,
-            64.06091117858885,
-            17.2707030023195,
-            25.302058912070837,
-            30.507083892822266,
-            -0.44912342819388795
-        ]
+        "scene": null,
+        "bounding_box": null
     },
-    "L'art de la Pizza": {
-        "building": "Rue de la Montagne 64",
+    "Het Clubke": {
+        "building": "Hogeschool-Universiteit Brussel Campus Stormstraat",
         "coarse_type": "food",
         "fine_types": [
-            "restaurant",
-            "food",
+            "bar",
             "point_of_interest",
             "establishment"
         ],
         "location": [
-            758.4381713867188,
-            948.9562397003174,
-            -4
-        ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
-        "bounding_box": [
-            -241.5618196101769,
-            -51.10496700341272,
-            68.01146507263184,
-            5.438713274693673,
-            11.362794065264458,
-            16.875629425048828,
-            0.8200976718832134
-        ]
-    },
-    "La Confiserie de Bruxelles": {
-        "building": "Rue du Marais 7",
-        "coarse_type": "food",
-        "fine_types": [
-            "store",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "location": [
-            859.8126831054688,
-            1278.1965942382812,
+            795.2914352416992,
+            1106.6389274597168,
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            -140.24633622346465,
-            277.80765255034044,
-            55.569887161254876,
-            7.620576691051349,
-            20.670256816074403,
-            10.726482391357422,
-            1.0060344788977647
+            -206.18020468843474,
+            107.62626312465835,
+            66.49734306335449,
+            31.384778509659178,
+            56.08633111434471,
+            26.057910919189453,
+            0.2835418723482034
         ]
     },
-    "Fresh and DM Store": {
-        "building": "Rue Royale 13",
-        "coarse_type": "stores",
+    "DUKES Lounge Bar": {
+        "building": "Rue de Ligne 49",
+        "coarse_type": "food",
         "fine_types": [
-            "florist",
+            "night_club",
+            "bar",
             "point_of_interest",
-            "store",
             "establishment"
         ],
         "location": [
-            1223.8662719726562,
-            995.715203166008,
+            1232.6369857788086,
+            1170.509262084961,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
         "bounding_box": [
-            224.45492387447095,
-            -4.384532906043618,
-            95.9917984008789,
-            14.131053025339662,
-            10.022415438253853,
-            20.162338256835938,
-            -0.3023380163474682
+            232.49153026267186,
+            168.94271745791167,
+            90.56878662109374,
+            40.352085299741304,
+            16.037624370562437,
+            21.567474365234375,
+            -0.3208501328880337
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Rue d'Arenberg 54",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.3053207397461,
+            983.9646892547607,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -201.7377820158104,
+            -15.961385013195073,
+            72.12518310546875,
+            10.683652086537602,
+            13.801078699753583,
+            20.913543701171875,
+            0.016325344328747354
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Rue de la Montagne 72",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            771.2095184326172,
+            959.8093318939209,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
         ]
     },
     "Museum of the National Bank of Belgium": {
