@@ -548,15 +548,15 @@ class HeuristicNavigationMeetingAgent(Agent):
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
-        if self.mode_time_counter % 120 == 0:
-            curr_time = self.curr_time.strftime('%H:%M:%S')
-            curr_eta = str(timedelta(seconds=self.calc_time(self.last_route)))
-            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=curr_eta, eta_history=self.get_eta_history_description())
-            self.eta_history[curr_time]=curr_eta
-            if rethink_result['initiate_new_discussion']:
-                self.enter_discussion_mode(trigger="RECENT EVENT")
-                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 3200}
-                return action, False
+        # if self.mode_time_counter % 120 == 0:
+        #     curr_time = self.curr_time.strftime('%H:%M:%S')
+        #     curr_eta = str(timedelta(seconds=self.calc_time(self.last_route)))
+        #     rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=curr_eta, eta_history=self.get_eta_history_description())
+        #     self.eta_history[curr_time]=curr_eta
+        #     if rethink_result['initiate_new_discussion']:
+        #         self.enter_discussion_mode(trigger="RECENT EVENT")
+        #         action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 3200}
+        #         return action, False
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
