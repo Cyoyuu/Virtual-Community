@@ -9,7 +9,7 @@ parser.add_argument("--agent_num", type=int, default=1)
 parser.add_argument("--agent_type", type=str, default="heuristic")
 parser.add_argument("--scene", type=str, default="scene_0")
 parser.add_argument("--task_id", type=str, default="carry_1")
-parser.add_argument("--output_dir", "-o", type=str, default="ViCo/assistance_challenge/results/")
+parser.add_argument("--output_dir", "-o", type=str, default="ViCo/meeting_challenge/results/")
 args = parser.parse_args()
 base_output_dir = args.output_dir
 results = dict()

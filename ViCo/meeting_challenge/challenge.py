@@ -105,7 +105,7 @@ def main():
         else:
             agent_type = args.agent_type
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}")
-    job_result_path = os.path.join("ViCo/meeting_challenge/results/", args.scene, f"{agent_type}")
+    job_result_path = os.path.join("ViCo/meeting_challenge/results/", f"{agent_type}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
@@ -224,7 +224,7 @@ def main():
     total_time=[0. for i in range(num_agents)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
-    while not all_task_end and env.steps <= args.step_limit:
+    while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
         obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
@@ -286,14 +286,17 @@ def main():
         gs.logger.info(f"The longest distance between the agents: {max_distance:.2f}")
 
         all_task_end = True
+        to_break = False
         for idx, agent in enumerate(agent_actions_to_print):
             action = agent_actions_to_print[agent]
+            if action in ["task_terminate"]: to_break = True
             if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'force_enter']:
                 total_time[idx]+=1
             if action in ['move_forward'] and last_agent_pos_dict is not None:
                 total_length[idx]+=np.linalg.norm(np.array(extra_obs["agent_pos_dict"][agent]['pose'][:2])-np.array(last_agent_pos_dict[agent]['pose'][:2]))
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
+        if to_break: break
         
         last_agent_pos_dict=extra_obs["agent_pos_dict"]
 
@@ -301,7 +304,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": bool(all_task_end and (max_distance<=20))}
+              "done": bool(all_task_end and (max_distance<=20) and env.steps<=args.step_limit)}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:
