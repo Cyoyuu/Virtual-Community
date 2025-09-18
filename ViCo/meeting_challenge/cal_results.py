@@ -14,16 +14,16 @@ args = parser.parse_args()
 base_output_dir = args.output_dir
 results = dict()
 average_results = dict()
-for scene in os.listdir(base_output_dir):
-    if "_old" in str(scene).lower(): continue
-    if not os.path.isdir(os.path.join(base_output_dir, scene)): continue
-    for agent_type in os.listdir(os.path.join(base_output_dir, scene)):
+for agent_type in os.listdir(base_output_dir):
+    if not os.path.isdir(os.path.join(base_output_dir, agent_type)): continue
+    for scene in os.listdir(os.path.join(base_output_dir, agent_type)):
+        if "_old" in str(scene).lower(): continue
         for job_id in range(5):
             # if "_" not in dir_name:
             #     continue
-            if f"result_{job_id}.json" not in os.listdir(os.path.join(base_output_dir, scene, agent_type)): continue
-            result = json.load(open(os.path.join(base_output_dir, scene, agent_type, f"result_{job_id}.json")))
-            print(f"summerizeing {os.path.join(base_output_dir, scene, agent_type)}")
+            if f"result_{job_id}.json" not in os.listdir(os.path.join(base_output_dir, agent_type, scene)): continue
+            result = json.load(open(os.path.join(base_output_dir, agent_type, scene, f"result_{job_id}.json")))
+            print(f"summerizeing {os.path.join(base_output_dir, agent_type, scene)}")
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
