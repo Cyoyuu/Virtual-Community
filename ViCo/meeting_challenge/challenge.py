@@ -201,6 +201,8 @@ def main():
             all_agent_processes.append(AgentProcess(LLMMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'nav':
             all_agent_processes.append(AgentProcess(NavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == 'single':
+            all_agent_processes.append(AgentProcess(SingleMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'heuristic_nav':
             all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:

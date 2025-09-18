@@ -1,4 +1,5 @@
 #!/bin/bash
+agent_type=$1
 
 # Define arrays of scenes and task types
 scenes=("MADRID" "HARVARD" "AMSTERDAM" "AUSTIN" "BALTIMORE" "BELGRADE" "BERLIN" "BRATISLAVA" "BRUSSELS" "BUDAPEST" "CALGARY" "CHRISTCHURCH" "COLUMBUS" "DENVER" "DETROIT" "EL_PASO" "FLORENCE" "FORT_WORTH" "FRANKFURT" "HAMBURG" "LONGISLAND" "MADISON" "BARCELONA" "LONDON")
@@ -11,7 +12,7 @@ task_types=("collect")
 echo ${task_types[@]}
 
 # Path to your script or command to run
-script_path="run_scene_heuristic.sh"
+script_path="run_scene_$agent_type.sh"
 
 # Iterate over scenes and task types
 for scene in "${scenes[@]}"; do
