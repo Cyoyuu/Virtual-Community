@@ -266,7 +266,7 @@ def main():
             gs.logger.error(f"Error in step info storage: {e} with traceback: {traceback.format_exc()}.\n The step_info is {step_info}")
             import pdb; pdb.set_trace()
 
-        gs.logger.info(f"current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
+        gs.logger.info(f"{args.scene}'s current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
         dt_agent = time.perf_counter() - lst_time
         env.config["dt_agent"] = (env.config["dt_agent"] * env.steps + dt_agent) / (env.steps + 1)
         lst_time = time.perf_counter()

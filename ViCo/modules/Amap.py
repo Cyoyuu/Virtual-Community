@@ -97,6 +97,7 @@ class Route:
 class Amap:
     '''walkers only'''
     def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7., logger=None):
+        self.scene_name=scene_name
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=deepcopy(place_metadata)
@@ -306,7 +307,7 @@ class Amap:
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
         if goal_wp_pair[0] == float('inf'):
-            self.logger.error(f"No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
+            self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
         path = []
         curr = goal_wp_pair[1]
@@ -316,7 +317,7 @@ class Amap:
         path.reverse()
 
         if not path:
-            self.logger.error(f"No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
+            self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
         
         path.append(goal_pos)
