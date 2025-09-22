@@ -123,6 +123,8 @@ class Amap:
 
         self.logger = logger
         self.logger.debug(f"the bus_schedule is :\n{self.bus_schedule}")
+        with open(f'bus_schedule_{scene_name}.json', "w") as file:
+            json.dump(self.bus_schedule, file)
         
     def reset(self, pose):
         self.pose=pose
