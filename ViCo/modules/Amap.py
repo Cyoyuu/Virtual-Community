@@ -96,12 +96,14 @@ class Route:
 
 class Amap:
     '''walkers only'''
-    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7., logger=None):
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, bus_schedule=None, waypoints_dis=7., logger=None):
         self.scene_name=scene_name
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=deepcopy(place_metadata)
         self.building_metadata=deepcopy(building_metadata)
+        self.bus_schedule=deepcopy(bus_schedule[0])
+        self.bus_schedule_reversed=deepcopy(bus_schedule[1])
         self.waypoints_dis=waypoints_dis
 
         with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
@@ -120,6 +122,7 @@ class Amap:
         self.spawn_waypoints()
 
         self.logger = logger
+        self.logger.debug(f"the bus_schedule is :\n{self.bus_schedule}")
         
     def reset(self, pose):
         self.pose=pose
