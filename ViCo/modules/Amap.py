@@ -67,6 +67,10 @@ class Waypoints:
     belong: str | None = None
     predecessor: list = field(default_factory=list)
     successor: list = field(default_factory=list)
+    property: dict = field(default_factory=dict)
+
+    def is_a_bus_stop(self):
+        return "bus_stop_id" in self.property
 
 class Route:
     def __init__(self, waypoints=None):
@@ -168,22 +172,6 @@ class Amap:
                 s+=self.waypoints_dis
             if '2wp' in self.nodes[road['end']['id']] and last_waypoint is not None:
                 last_waypoint.successor.append(self.waypoints[self.nodes[road['end']['id']]['2wp']].id)
-        # for road in self.map.printable_roads:
-        #     self.road2waypoint[road]=len(self.waypoints)
-        #     self.waypoints.append(Waypoints(id=len(self.waypoints), location=self.map.get_pos(road, 0.), belong=road))
-        # for road in self.map.printable_roads:
-        #     last_waypoint=self.waypoints[self.road2waypoint[road]]
-        #     s=self.waypoints_dis
-        #     for geometry in self.map.printable_roads[road]["geometry"]:
-        #         while s<geometry['length']+geometry['s']:
-        #             pos = self.map.get_pos(road, s)
-        #             new_wp = Waypoints(id=len(self.waypoints), location=pos, belong=road)
-        #             self.waypoints.append(new_wp)
-        #             last_waypoint.successor.append(new_wp.id)
-        #             last_waypoint = new_wp
-        #             s+=self.waypoints_dis
-        #     for successor in self.map.printable_roads[road]['successor']:
-        #         last_waypoint.successor.append(self.road2waypoint[successor])
         for waypoint in self.waypoints:
             for successor in waypoint.successor:
                 self.waypoints[successor].predecessor.append(waypoint.id)
@@ -195,6 +183,21 @@ class Amap:
                 if np.linalg.norm(np.array(waypoint.location)-np.array(n_wp.location))<self.waypoints_dis:
                     self.waypoints[idx].successor.append(jdx)
                     self.waypoints[jdx].predecessor.append(idx)
+
+    def initiate_transit(self, bus: Bus):
+        self.bus_stop_to_waypoint=dict()
+        self.bus=bus
+        for bus_wp_id, r_wp in enumerate(self.bus.route):
+            new_wp=Waypoints(id=len(self.waypoints), location=r_wp, belong=None, predecessor=[], successor=[], property={})
+            self.waypoints.append(new_wp)
+            if bus_wp_id in self.bus.stop_indices:
+                new_wp.property["bus_stop_id"]=self.bus.stop_indices.index(bus_wp_id)
+                self.bus_stop_to_waypoint[self.bus.stop_names[new_wp.property["bus_stop_id"]]]=new_wp.id
+            for jdx, n_wp in enumerate(self.waypoints):
+                if jdx==new_wp.id:continue
+                if np.linalg.norm(np.array(new_wp.location)-np.array(n_wp.location))<self.waypoints_dis:
+                    self.waypoints[new_wp.id].successor.append(jdx)
+                    self.waypoints[jdx].predecessor.append(new_wp.id)
 
     def get_pose(self):
         return self.pose
@@ -235,7 +238,7 @@ class Amap:
                 ret.append(i)
         return ret
     
-    def query_route(self, curr_trans, goal_place):
+    def query_route(self, curr_trans, goal_place, curr_time=datetime.strptime("6:00:00","%H:%M:%S")):
         """
         Find a route from current pose to the goal_place using waypoint graph.
         
@@ -276,12 +279,12 @@ class Amap:
 
         # 3. Pathfinding: Dijkstra (or BFS if uniform cost) over waypoint graph
         # Using Dijkstra with distance as edge cost
-        dist = {i: float('inf') for i in range(len(self.waypoints))}
+        dist = {i: datetime.strptime("23:59:59", "%H:%M:%S") for i in range(len(self.waypoints))}
         prev = {i: None for i in range(len(self.waypoints))}
         heap = []
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])) <= min_dis2s+self.waypoints_dis:
-                dist[i] = np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2]))
+                dist[i] = curr_time+timedelta(seconds=np.linalg.norm(np.array(self.waypoints[i].location) - np.array(curr_trans[:2])))
                 heapq.heappush(heap, (dist[i], i))
 
         while heap:
@@ -300,11 +303,21 @@ class Amap:
                 cost = np.linalg.norm(
                     np.array(current_wp.location) - np.array(succ_wp.location)
                 )
-                new_dist = dist[wp_id] + cost
+                new_dist = dist[wp_id] + timedelta(seconds=cost)
                 if new_dist < dist[succ_id]:
                     dist[succ_id] = new_dist
-                    prev[succ_id] = wp_id
+                    prev[succ_id] = [wp_id, 'walk']
                     heapq.heappush(heap, (new_dist, succ_id))
+            if current_wp.is_a_bus_stop():
+                next_bus_time=get_next_bus_time(self.bus.stop_names(current_wp.property["bus_stop_id"]), curr_time)
+                for i in range(current_wp.property["bus_stop_id"], len(self.bus.stop_names)):
+                    bus_wp_id=self.bus_stop_to_waypoint[i]
+                    if bus_wp_id == wp_id: continue
+                    new_dist=datetime.strptime(next_bus_time[self.bus.stop_names[i]]["arrival_times"], "%H:%M:%S")
+                    if new_dist<dist[bus_wp_id]:
+                        dist[bus_wp_id]=new_dist
+                        prev[succ_id] = [wp_id, 'bus']
+                        heapq.heappush(heap, (new_dist, succ_id))
 
         # 4. Reconstruct path
         goal_wp_pair=(dist[goal_wp_id]+min_dis2t, goal_wp_id)
