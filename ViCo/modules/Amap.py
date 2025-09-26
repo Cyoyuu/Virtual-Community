@@ -347,6 +347,7 @@ class Amap:
         if goal_place not in self.place_metadata:
             raise ValueError(f"Unknown place: {goal_place}")
         
+        goal_bbox = self.place_metadata[goal_place]['bounding_box']
         goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]
         curr_trans=copy.deepcopy(curr_trans)
         if goal_pos[0]>500 or goal_pos[1]>500:
@@ -362,11 +363,19 @@ class Amap:
         min_dis2s = np.linalg.norm(np.array(self.waypoints[start_wp_id].location) - np.array(curr_trans[:2]))
 
         # 2. Find nearest waypoint to goal location
-        goal_wp_id = min(
-            range(len(self.waypoints)),
-            key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))
-        )
-        min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
+        goal_wp_id=0
+        while goal_wp_id<len(self.waypoints):
+            if is_near_goal(self.waypoints[i].location[0], self.waypoints[i].location[1], goal_bbox, goal_pos):
+                break
+            goal_wp_id += 1
+        if goal_wp_id==len(self.waypoints):
+            goal_wp_id = min(
+                range(len(self.waypoints)),
+                key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))
+            )
+            min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
+        else:
+            min_dis2t = 0.
 
         # 3. Pathfinding: Dijkstra (or BFS if uniform cost) over waypoint graph
         # Using Dijkstra with distance as edge cost
@@ -413,7 +422,9 @@ class Amap:
         # 4. Reconstruct path
         goal_wp_pair=(dist[goal_wp_id]+timedelta(seconds=min_dis2t), goal_wp_id)
         for i in range(len(self.waypoints)):
-            if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
+            if is_near_goal(self.waypoints[i].location[0], self.waypoints[i].location[1], goal_bbox, goal_pos):
+                goal_wp_pair=min((dist[i], i), goal_wp_pair)
+            elif np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+timedelta(seconds=np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))), i), goal_wp_pair)
         if goal_wp_pair[0] == datetime.strptime("23:59:59", "%H:%M:%S"):
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
