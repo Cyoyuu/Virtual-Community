@@ -414,8 +414,12 @@ class Amap:
         path = Route()
         curr = goal_wp_pair[1]
         while curr is not None:
-            path.append(RouteNode(list(self.waypoints[curr].location), prev[curr][1] if prev[curr] is not None else 'walk', dist[curr]))
-            curr = prev[curr][0]
+            if prev[curr] is None:
+                path.append(RouteNode(list(self.waypoints[curr].location), 'walk', dist[curr]))
+                curr = None
+            else:
+                path.append(RouteNode(list(self.waypoints[curr].location), prev[curr][1], dist[curr]))
+                curr = prev[curr][0]
         path.reverse()
 
         if not path:
