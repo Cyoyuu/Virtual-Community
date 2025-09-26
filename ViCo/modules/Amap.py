@@ -363,20 +363,11 @@ class Amap:
         min_dis2s = np.linalg.norm(np.array(self.waypoints[start_wp_id].location) - np.array(curr_trans[:2]))
 
         # 2. Find nearest waypoint to goal location
-        goal_wp_id=0
-        while goal_wp_id<len(self.waypoints):
-            if is_near_goal(self.waypoints[goal_wp_id].location[0], self.waypoints[goal_wp_id].location[1], goal_bbox, goal_pos):
-                break
-            goal_wp_id += 1
-        if goal_wp_id==len(self.waypoints):
-            goal_wp_id = min(
-                range(len(self.waypoints)),
-                key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))
-            )
-            min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
-        else:
-            min_dis2t = 0.
-        self.logger.info(f"found goal_wp_id is {goal_wp_id}")
+        goal_wp_id = min(
+            range(len(self.waypoints)),
+            key=lambda i: np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))
+        )
+        min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
 
         # 3. Pathfinding: Dijkstra (or BFS if uniform cost) over waypoint graph
         # Using Dijkstra with distance as edge cost
