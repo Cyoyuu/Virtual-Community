@@ -74,7 +74,7 @@ class Waypoints:
     
 @dataclass
 class RouteNode:
-    location :list[float, float] | None = None
+    location: list[float, float] | None = None
     transit: str | None = None
     eta: datetime | None = None
 
@@ -104,6 +104,9 @@ class Route:
     
     def empty(self):
         return not self.nodes
+    
+    def append(self, node: RouteNode):
+        self.nodes.append(node)
 
     def calc_time(self, pose=None):
         if pose is not None:
