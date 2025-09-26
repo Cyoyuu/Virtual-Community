@@ -71,43 +71,127 @@ class Waypoints:
 
     def is_a_bus_stop(self):
         return "bus_stop_id" in self.property
+    
+@dataclass
+class RouteNode:
+    location :list[float, float] | None = None
+    transit: str | None = None
+    eta: datetime | None = None
+
+    def to_dict(self):
+        return {
+            "location": self.location,
+            "transit": self.transit,
+            "eta": self.eta
+        }
 
 class Route:
-    def __init__(self, waypoints=None):
+    def __init__(self, nodes=[], prev=None):
         '''
         waypoints: list(np.array([int,int]))
         '''
-        self.waypoints=waypoints
+        self.nodes=nodes
+        self.prev=prev
 
     def __getitem__(self, key):
         # Slice the waypoints using the provided key (can be int or slice)
-        sliced_waypoints = self.waypoints[key]
+        sliced_waypoints = self.nodes[key]
         # Return a new Route object with the sliced waypoints
         return Route(sliced_waypoints)
     
     def __len__(self):
-        return len(self.waypoints)
+        return len(self.nodes)
     
     def empty(self):
-        return not self.waypoints
+        return not self.nodes
 
     def calc_time(self, pose=None):
         if pose is not None:
-            ret=np.linalg.norm(np.array(self.waypoints[0][:2])-np.array(pose[:2]))
-        for i in range(1, len(self.waypoints)):
-            ret+=np.linalg.norm(np.array(self.waypoints[i][:2])-np.array(self.waypoints[i-1][:2]))
+            ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0]=='bus' else 1.0)
+        for i in range(1, len(self.nodes)):
+            ret+=np.linalg.norm(np.array(self.nodes[i].location[:2])-np.array(self.nodes[i-1].location[:2]))/(5.0 if self.nodes[i]=='bus' else 1.0)
         return ret*2 # for turning
+    
+    def to_dict(self):
+        return [node.to_dict() for node in self.nodes]
+    
+def find_next_bus_times(current_stop, current_time_str, schedule, schedule_reverse):
+    """
+    Given the current stop and time, return the nearest reachable times
+    for each stop (same index across stops), checking both schedule directions.
+    
+    Returns:
+        dict of stop -> arrival time (str) OR None if no buses available.
+    """
+    if isinstance(current_time_str, str):
+        current_time = datetime.strptime(current_time_str, "%H:%M:%S").time()
+    elif isinstance(current_time_str, datetime):
+        current_time = current_time_str
+
+    def get_next_index(schedule_variant):
+        """Return (index, schedule_variant) of next bus if available, else (None, None)."""
+        arrivals = schedule_variant[current_stop]["departure_times"]
+        for i, t_str in enumerate(arrivals):
+            t = datetime.strptime(t_str, "%H:%M:%S").time()
+            if t >= current_time:
+                return i, schedule_variant
+        return None, None
+
+    # Check forward and reverse
+    idx_fwd, sch_fwd = get_next_index(schedule)
+    idx_rev, sch_rev = get_next_index(schedule_reverse)
+
+    # Pick the earlier valid bus (if both exist)
+    chosen_index, chosen_schedule = None, None
+    if idx_fwd is not None and idx_rev is not None:
+        t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd], "%H:%M:%S").time()
+        # if t_fwd<current_time:
+        #     if idx_fwd+1<len(schedule[current_stop]["arrival_times"]):
+        #         t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd+1], "%H:%M:%S").time()
+        #     else:
+        #         t_fwd = None
+        t_rev = datetime.strptime(schedule_reverse[current_stop]["arrival_times"][idx_rev], "%H:%M:%S").time()
+        # if t_rev<current_time:
+        #     if idx_rev+1<len(schedule[current_stop]["arrival_times"]):
+        #         t_rev = datetime.strptime(schedule[current_stop]["arrival_times"][idx_rev+1], "%H:%M:%S").time()
+        #     else:
+        #         t_rev = None
+        if t_fwd <= t_rev:
+            chosen_index, chosen_schedule = idx_fwd, schedule
+        else:
+            chosen_index, chosen_schedule = idx_rev, schedule_reverse
+    elif idx_fwd is not None:
+        chosen_index, chosen_schedule = idx_fwd, schedule
+    elif idx_rev is not None:
+        chosen_index, chosen_schedule = idx_rev, schedule_reverse
+    else:
+        # No buses left today
+        return {stop: None for stop in schedule.keys()}
+
+    # Build result
+    result = {}
+    for stop, times in chosen_schedule.items():
+        result[stop] = times["arrival_times"][chosen_index]
+        if result[stop]<current_time:
+            if stop==current_stop:
+                result[stop]=current_time
+            else:
+                if chosen_schedule==schedule:
+                    result[stop]=schedule_reverse[stop]["arrival_times"][chosen_index]
+                else:
+                    result[stop]=schedule[stop]["arrival_times"][chosen_index+1]
+
+    return result
+
 
 class Amap:
     '''walkers only'''
-    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, bus_schedule=None, waypoints_dis=7., logger=None):
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, bus=None, waypoints_dis=7., logger=None):
         self.scene_name=scene_name
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=deepcopy(place_metadata)
         self.building_metadata=deepcopy(building_metadata)
-        self.bus_schedule=deepcopy(bus_schedule[0])
-        self.bus_schedule_reversed=deepcopy(bus_schedule[1])
         self.waypoints_dis=waypoints_dis
 
         with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
@@ -126,9 +210,6 @@ class Amap:
         self.spawn_waypoints()
 
         self.logger = logger
-        self.logger.debug(f"the bus_schedule is :\n{self.bus_schedule}")
-        with open(f'bus_schedule_{scene_name}.json', "w") as file:
-            json.dump(self.bus_schedule, file)
         
     def reset(self, pose):
         self.pose=pose
@@ -309,7 +390,7 @@ class Amap:
                     prev[succ_id] = [wp_id, 'walk']
                     heapq.heappush(heap, (new_dist, succ_id))
             if current_wp.is_a_bus_stop():
-                next_bus_time=get_next_bus_time(self.bus.stop_names(current_wp.property["bus_stop_id"]), curr_time)
+                next_bus_time=find_next_bus_times(self.bus.stop_names[current_wp.property["bus_stop_id"]], curr_time, self.bus.schedule, self.bus.schedule_reverse)
                 for i in range(current_wp.property["bus_stop_id"], len(self.bus.stop_names)):
                     bus_wp_id=self.bus_stop_to_waypoint[i]
                     if bus_wp_id == wp_id: continue
@@ -324,21 +405,21 @@ class Amap:
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
-        if goal_wp_pair[0] == float('inf'):
+        if goal_wp_pair[0] == datetime.strptime("23:59:59", "%H:%M:%S"):
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
-        path = []
+        path = Route()
         curr = goal_wp_pair[1]
         while curr is not None:
-            path.append(list(self.waypoints[curr].location))
-            curr = prev[curr]
+            path.append(RouteNode(list(self.waypoints[curr].location), prev[curr][1] if prev[curr] is not None else 'walk', dist[curr]))
+            curr = prev[curr][0]
         path.reverse()
 
         if not path:
             self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
         
-        path.append(goal_pos)
+        path.append(RouteNode(goal_pos, 'walk', goal_wp_pair[0]))
         return path
     
     def get_connected_waypoints(self, waypoint_id):

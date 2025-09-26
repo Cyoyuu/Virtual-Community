@@ -240,7 +240,7 @@ class VicoEnv:
 		gs.logger.info(f"running {self.sim_frames_per_step} scene steps for one ViCo step of {self.sec_per_step}s")
 
 		self.traffic_manager.reset()
-		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, bus_schedule=[self.traffic_manager.bus.schedule, self.traffic_manager.bus.schedule_reversed], logger=gs.logger)
+		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, bus=self.traffic_manager.bus, logger=gs.logger)
 
 		for i, agent in enumerate(self.agents):
 			agent.reset(np.array(self.config['agent_poses'][i][:3], dtype=np.float64), geom_utils.euler_to_R(np.degrees(np.array(self.config['agent_poses'][i][3:], dtype=np.float64))))
@@ -715,7 +715,7 @@ class VicoEnv:
 					app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				if action['arg1'] == 'query_route':
-					app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'])
+					app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'], self.curr_time)
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:

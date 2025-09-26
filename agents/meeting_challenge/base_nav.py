@@ -15,6 +15,7 @@ import time
 
 from agents.agent import Agent
 from agents.memory import SemanticMemory
+from ViCo.modules.Amap import Route, RouteNode
 from ViCo.tools.utils import *
 from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
@@ -343,7 +344,7 @@ class Navigator:
         self.goal_place = goal_place
 
 
-class SingleMeetingAgent(Agent):
+class BaseNavigationMeetingAgent(Agent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1):
@@ -385,8 +386,9 @@ class SingleMeetingAgent(Agent):
         # Navigation
         self.last_estimated_arrival_time = None
         self.last_estimated_move_time = None
-        self.last_route = []
-        self.last_nav = []
+        self.navigation_plan = None
+        self.last_route = Route() # waypoints, city level
+        self.last_nav = [] # waypoints, local level
         self.last_action = None
         self.route_history = {"last_route": dict(), "last_nav": dict()}
 
@@ -418,8 +420,9 @@ class SingleMeetingAgent(Agent):
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
                             if self.meeting_place==self.last_action["arg2"]:
+                                self.navigation_plan=event['content']
                                 self.last_route=event["content"]
-                                self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+                                self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))
                             time_to_arrival = timedelta(seconds=self.calc_time(waypoints=event["content"]))
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {time_to_arrival}s"))
                             self.update_known_eta(
@@ -437,63 +440,9 @@ class SingleMeetingAgent(Agent):
         self.current_place = obs['current_place']
         self.obs = obs
         if self.obs['steps']%100==0:
-            self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route)
+            self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route.to_dict())
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
-
-    def _act(self, obs):
-        self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
-        action = None
-        try:
-            if self.mode is None:
-                self.enter_discussion_mode(trigger="TASK START")
-            if self.mode == NavAgentState.DISCUSS:
-                self.mode_time_counter += 1
-                if self.mode_time_counter > 120:
-                    action = {"type": "task_terminate"}
-                    self.logger.info(f"Exceeding discussion limit. Task terminating.")
-                    return action
-                action = self.discuss()
-                # response_type, speech = self.get_meeting_place()
-                # if response_type is None or response_type == "wait":
-                #     action = {"type": "wait"}
-                # elif response_type == "speak":
-                #     action = {"type": "converse", "arg1": speech, "arg2": 800}
-                #     self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
-                # elif response_type == "decide":
-                #     if speech.startswith("<") and speech.endswith(">"):
-                #         speech = speech[1:-1]
-                #     if speech != self.meeting_place:
-                #         self.meeting_place = speech
-                #         self.time_to_arrival_timedelta=dict()
-                #     action = {"type": "wait"}
-                #     self.mode = NavAgentState.NAVIGATE
-                #     self.discussion_time = 0
-                # elif response_type == "query":
-                #     if speech.startswith("<") and speech.endswith(">"):
-                #         speech = speech[1:-1]
-                #     if speech not in self.s_mem.get_places():
-                #         action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
-                #     else:
-                #         action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
-                # else:
-                #     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
-            elif self.mode == NavAgentState.NAVIGATE:
-                self.mode_time_counter += 1
-                if self.meeting_place not in self.s_mem.get_places():
-                    action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
-                else:
-                    action, arrived = self.city_navigate(self.meeting_place)
-                    if arrived:
-                        action = {'type': 'task_complete'}
-        except Exception as e:
-            self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
-            action = None
-        self.action_history.append(Action(action, self.curr_time, self.curr_time))
-        self.logger.debug(f"{self.name}'s current generated action is {action}.")
-        assert action is None or isinstance(action, dict)
-        self.last_action=action
-        return self.last_action
     
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS
@@ -509,7 +458,7 @@ class SingleMeetingAgent(Agent):
     def enter_navigation_mode(self):
         self.mode = NavAgentState.NAVIGATE
         self.mode_time_counter = 0
-        self.last_route = []
+        self.last_route = Route()
         self.last_nav = []
     
     def discuss(self):
@@ -573,11 +522,20 @@ class SingleMeetingAgent(Agent):
                     raise NotImplementedError(f"discussion plan type is not supported")
         return action
     
-    def city_navigate(self, goal_place, threshold=500.):
+    def city_navigate(self, goal_place, threshold=500., rethink=False):
         cur_trans = np.array(self.pose[:2])
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
+        if rethink and self.mode_time_counter % 120 == 0:
+            curr_time = self.curr_time.strftime('%H:%M:%S')
+            curr_eta = str(timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2])))
+            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=curr_eta, eta_history=self.get_eta_history_description())
+            self.eta_history[curr_time]=curr_eta
+            if rethink_result['initiate_new_discussion']:
+                self.enter_discussion_mode(trigger="RECENT EVENT")
+                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 3200}
+                return action, False
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
@@ -595,12 +553,12 @@ class SingleMeetingAgent(Agent):
                 'arg1': 'open space'
             }
             return self.last_action, False
-        if not self.last_route:
+        if self.last_route.empty():
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
-        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))}s")
         # If the estimated arrival time exceeds, regenerate
-        estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
+        estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))
         if self.last_estimated_arrival_time + timedelta(minutes=2) < estimated_arrival_time:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
@@ -608,12 +566,24 @@ class SingleMeetingAgent(Agent):
         idx = len(self.last_route)
         while idx > 0:
             idx -= 1
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx], threshold=5 if idx==len(self.last_route)-1 else 10)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx].location, threshold=5 if idx==len(self.last_route)-1 else 10)
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
                 break
-        return self.llm_navigate(max_retry=0)
+        if self.last_route[0].transit=='walk':
+            if self.obs['current_vehicle']=='bus':
+                return {'type': 'exit_bus', 'arg1': None}
+            else:
+                return self.llm_navigate(max_retry=0)
+        elif self.last_route[0].transit=='bus':
+            if self.obs['current_vehicle']!='bus':
+                if 'bus' in self.obs['accesible_places']:
+                    return {'type': 'enter_bus', 'arg1': None}
+                else:
+                    return {'type': 'wait'}
+            else:
+                return {'type': 'wait'}
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert len(self.last_route)>0
@@ -646,7 +616,11 @@ class SingleMeetingAgent(Agent):
         assert max_retry >= 0
         if max_retry == 0:
             # Fallback: use first 3 waypoints from last_route
-            self.last_nav = self.last_route[:min(3,len(self.last_route))]
+            nav_horizon = 0
+            self.last_nav = {}
+            while nav_horizon < len(self.last_route) and nav_horizon < 3 and self.last_route[nav_horizon].transit == 'walk':
+                self.last_nav.append(self.last_route[nav_horizon].location)
+                nav_horizon += 1
             return
         # find nearest unexplored point
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
@@ -903,6 +877,13 @@ class SingleMeetingAgent(Agent):
         return meeting_target
     
     def get_meeting_place(self):
+        place = self.get_nearest_places(self.get_meeting_target())[0][1]
+        return place
+    
+    def generate_discussion_response(self):
+        '''
+        deplicated function. used for generate discussion action in single step.
+        '''
         # if self.discussion_trigger == "TASK START":
         #     return "decide", "Bicycle Sharing Station 3"
         prompt = open(f"agents/meeting_challenge/meeting_prompts/get_meeting_place_prompt.txt", "r").read()

@@ -21,7 +21,7 @@ from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
 
 
-class NavigationMeetingAgent(BaseNavigationMeetingAgent):
+class SingleMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1):
@@ -74,7 +74,7 @@ class NavigationMeetingAgent(BaseNavigationMeetingAgent):
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
-                    action, arrived = self.city_navigate(self.meeting_place, rethink=True)
+                    action, arrived = self.city_navigate(self.meeting_place, rethink=False)
                     if arrived:
                         action = {'type': 'task_complete'}
         except Exception as e:
