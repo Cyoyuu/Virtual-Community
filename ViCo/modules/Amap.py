@@ -365,7 +365,7 @@ class Amap:
         # 2. Find nearest waypoint to goal location
         goal_wp_id=0
         while goal_wp_id<len(self.waypoints):
-            if is_near_goal(self.waypoints[i].location[0], self.waypoints[i].location[1], goal_bbox, goal_pos):
+            if is_near_goal(self.waypoints[goal_wp_id].location[0], self.waypoints[goal_wp_id].location[1], goal_bbox, goal_pos):
                 break
             goal_wp_id += 1
         if goal_wp_id==len(self.waypoints):
