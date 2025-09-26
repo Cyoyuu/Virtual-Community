@@ -401,10 +401,10 @@ class Amap:
                         heapq.heappush(heap, (new_dist, succ_id))
 
         # 4. Reconstruct path
-        goal_wp_pair=(dist[goal_wp_id]+min_dis2t, goal_wp_id)
+        goal_wp_pair=(dist[goal_wp_id]+timedelta(seconds=min_dis2t), goal_wp_id)
         for i in range(len(self.waypoints)):
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
-                goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
+                goal_wp_pair=min((dist[i]+timedelta(seconds=np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))), i), goal_wp_pair)
         if goal_wp_pair[0] == datetime.strptime("23:59:59", "%H:%M:%S"):
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
