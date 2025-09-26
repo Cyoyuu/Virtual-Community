@@ -423,7 +423,7 @@ class Amap:
         if goal_wp_pair[0] >= inf_time:
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
-        path = Route()
+        path = Route([])
         curr = goal_wp_pair[1]
         while curr is not None:
             if prev[curr] is None:
