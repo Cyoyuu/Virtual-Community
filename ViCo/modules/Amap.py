@@ -108,6 +108,9 @@ class Route:
     def append(self, node: RouteNode):
         self.nodes.append(node)
 
+    def reverse(self):
+        self.nodes.reverse()
+
     def calc_time(self, pose=None):
         if pose is not None:
             ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0]=='bus' else 1.0)
