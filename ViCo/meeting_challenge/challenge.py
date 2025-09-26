@@ -230,7 +230,7 @@ def main():
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
-        obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
+        obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
         for i in range(len(obs_printable)):
             for event in obs_printable[i]['events']:
