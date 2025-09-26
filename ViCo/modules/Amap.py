@@ -376,6 +376,7 @@ class Amap:
             min_dis2t = np.linalg.norm(np.array(self.waypoints[goal_wp_id].location) - np.array(goal_pos))
         else:
             min_dis2t = 0.
+        self.logger.info(f"found goal_wp_id is {goal_wp_id}")
 
         # 3. Pathfinding: Dijkstra (or BFS if uniform cost) over waypoint graph
         # Using Dijkstra with distance as edge cost
@@ -426,6 +427,7 @@ class Amap:
                 goal_wp_pair=min((dist[i], i), goal_wp_pair)
             elif np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+timedelta(seconds=np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))), i), goal_wp_pair)
+        self.logger.info(f"found goal_wp_pair is {goal_wp_pair}")
         if goal_wp_pair[0] == datetime.strptime("23:59:59", "%H:%M:%S"):
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
