@@ -619,7 +619,7 @@ class BaseNavigationMeetingAgent(Agent):
         if max_retry == 0:
             # Fallback: use first 3 waypoints from last_route
             nav_horizon = 0
-            self.last_nav = {}
+            self.last_nav = []
             while nav_horizon < len(self.last_route) and nav_horizon < 3 and self.last_route[nav_horizon].transit == 'walk':
                 self.last_nav.append(self.last_route[nav_horizon].location)
                 nav_horizon += 1
