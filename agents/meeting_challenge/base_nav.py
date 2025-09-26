@@ -879,6 +879,22 @@ class BaseNavigationMeetingAgent(Agent):
     def get_meeting_place(self):
         place = self.get_nearest_places(self.get_meeting_target())[0][1]
         return place
+
+    def get_nearest_places(self, target):
+        place_list = []
+        for place in self.s_mem.get_places():
+            goal_place_dict = self.s_mem.get_knowledge(place)
+            if goal_place_dict is None:
+                self.logger.error(f"No knowledge found for {place}.")
+                return None, False
+            goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+            if goal_place_dict["building"] != "open space":
+                goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+            goal_bbox = goal_place_dict["bounding_box"]
+            place_list.append((np.linalg.norm(np.array(target)-goal_pos),place))
+        place_list = sorted(place_list)
+        place_list = place_list[:15] if len(place_list)>15 else place_list
+        return place_list
     
     def generate_discussion_response(self):
         '''
@@ -1063,19 +1079,7 @@ class BaseNavigationMeetingAgent(Agent):
                 self.known_eta[place_name][agent]=new_eta[place][agent]
 
     def get_nearest_places_description(self, target):
-        place_list = []
-        for place in self.s_mem.get_places():
-            goal_place_dict = self.s_mem.get_knowledge(place)
-            if goal_place_dict is None:
-                self.logger.error(f"No knowledge found for {place}.")
-                return None, False
-            goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
-            if goal_place_dict["building"] != "open space":
-                goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
-            goal_bbox = goal_place_dict["bounding_box"]
-            place_list.append((np.linalg.norm(np.array(target)-goal_pos),place))
-        place_list = sorted(place_list)
-        place_list = place_list[:15] if len(place_list)>15 else place_list
+        place_list = self.get_nearest_places(target)
         places_description = ""
         for dis, place in place_list:
             goal_place_dict = self.s_mem.get_knowledge(place)
