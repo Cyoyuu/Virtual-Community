@@ -310,7 +310,7 @@ class Amap:
     def query_nearby(self, target_pos, threshold=30):
         places_list=[]
         for place in self.place_metadata:
-            if is_near_goal(target_pos[0], target_pos[1], self.place_metadata[place]['bounding_box'], self.place_metadata[place]['location'], threshold=threshold):
+            if is_near_goal(target_pos[0], target_pos[1], self.building_metadata[self.place_metadata[place]['building']]['bounding_box'], self.place_metadata[place]['location'], threshold=threshold):
                 places_list.append(place)
         return places_list
     
@@ -347,7 +347,7 @@ class Amap:
         if goal_place not in self.place_metadata:
             raise ValueError(f"Unknown place: {goal_place}")
         
-        goal_bbox = self.place_metadata[goal_place]['bounding_box']
+        goal_bbox = self.building_metadata[self.place_metadata[goal_place]['building']]['bounding_box']
         goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]
         curr_trans=copy.deepcopy(curr_trans)
         if goal_pos[0]>500 or goal_pos[1]>500:
