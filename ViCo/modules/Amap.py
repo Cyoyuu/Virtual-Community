@@ -82,7 +82,7 @@ class RouteNode:
         return {
             "location": self.location,
             "transit": self.transit,
-            "eta": self.eta
+            "eta": datetime.strftime(self.eta, '%H:%M:%S')
         }
 
 class Route:
