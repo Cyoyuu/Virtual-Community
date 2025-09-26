@@ -556,6 +556,8 @@ class BaseNavigationMeetingAgent(Agent):
         if self.last_route.empty():
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
+        assert isinstance(self.last_route, Route)
+        assert isinstance(self.last_route[0], RouteNode)
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))}s")
         # If the estimated arrival time exceeds, regenerate
         estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))

@@ -86,18 +86,19 @@ class RouteNode:
         }
 
 class Route:
-    def __init__(self, nodes=[], prev=None):
+    def __init__(self, nodes=[]):
         '''
         waypoints: list(np.array([int,int]))
         '''
         self.nodes=nodes
-        self.prev=prev
 
     def __getitem__(self, key):
-        # Slice the waypoints using the provided key (can be int or slice)
-        sliced_waypoints = self.nodes[key]
-        # Return a new Route object with the sliced waypoints
-        return Route(sliced_waypoints)
+        if isinstance(key, int):  # Single index
+            return self.nodes[key]
+        elif isinstance(key, slice):  # Slice → return a new Route
+            return Route(self.nodes[key])
+        else:
+            raise TypeError("Invalid argument type.")
     
     def __len__(self):
         return len(self.nodes)
