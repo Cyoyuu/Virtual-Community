@@ -449,16 +449,16 @@ class BaseNavigationMeetingAgent(Agent):
         self.mode_time_counter = 0
         self.discussion_trigger = trigger
         self.discussion_plan = None
-        self.agent_opinions = {}
-        self.known_eta = {}
-        self.eta_history = {}
+        self.agent_opinions = dict()
+        self.known_eta = dict()
+        self.eta_history = dict()
         self.collect_plan = None
         self.thinking = 0
 
     def enter_navigation_mode(self):
         self.mode = NavAgentState.NAVIGATE
         self.mode_time_counter = 0
-        self.last_route = Route([])
+        self.last_route = Route()
         self.last_nav = []
     
     def discuss(self):
