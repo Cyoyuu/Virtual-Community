@@ -109,6 +109,9 @@ class Route:
     def append(self, node: RouteNode):
         self.nodes.append(node)
 
+    def pop(self, idx):
+        self.nodes.pop(idx)
+
     def reverse(self):
         self.nodes.reverse()
 

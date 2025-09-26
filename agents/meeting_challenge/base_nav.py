@@ -419,11 +419,11 @@ class BaseNavigationMeetingAgent(Agent):
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
+                            time_to_arrival = timedelta(seconds=event['content'].calc_time(pose=self.pose[:2]))
                             if self.meeting_place==self.last_action["arg2"]:
                                 self.navigation_plan=event['content']
                                 self.last_route=event["content"]
-                                self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))
-                            time_to_arrival = timedelta(seconds=self.calc_time(waypoints=event["content"]))
+                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {time_to_arrival}s"))
                             self.update_known_eta(
                                 {
