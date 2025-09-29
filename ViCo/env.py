@@ -32,6 +32,8 @@ from ViCo.modules import *
 
 from agents import Agent, AgentLogger
 
+from ViCo.meeting_challenge.event import EventManager
+
 class VicoEnv:
 	def __init__(self,
 				 seed,
@@ -90,6 +92,15 @@ class VicoEnv:
 		self.entity_idx_to_info = defaultdict(dict)
 		self.entity_idx_to_color = []
 		self.place_cameras = {}
+
+		# event-1
+		self.event_manager = EventManager(
+			seed=self.seed if hasattr(self, "seed") else 0,
+			specs={
+				"road_closure": {
+				"prob": 1.0,
+				"duration_steps": (30, 50),
+				"max_concurrent": 30}})
 
 		self.config_path = config_path
 		self.config = json.load(open(os.path.join(self.config_path, 'config.json'), 'r'))
@@ -240,7 +251,7 @@ class VicoEnv:
 		gs.logger.info(f"running {self.sim_frames_per_step} scene steps for one ViCo step of {self.sec_per_step}s")
 
 		self.traffic_manager.reset()
-		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata)
+		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, logger=gs.logger)
 
 		for i, agent in enumerate(self.agents):
 			agent.reset(np.array(self.config['agent_poses'][i][:3], dtype=np.float64), geom_utils.euler_to_R(np.degrees(np.array(self.config['agent_poses'][i][3:], dtype=np.float64))))
@@ -538,6 +549,10 @@ class VicoEnv:
 		return True
 
 	def step(self, agent_actions):
+		# event-2
+		if self.event_manager is not None:
+			self.event_manager.step(self.steps, env=self)
+
 		for i, agent in enumerate(self.agents):
 			gs.logger.debug(f"Agent {self.agent_names[i]} with state {agent.robot.base_state}.")
 			action = agent_actions[i]
@@ -545,6 +560,38 @@ class VicoEnv:
 				continue
 			agent.robot.action_status = ActionStatus.SUCCEED
 			if action['type'] == 'move_forward':
+				# event-3
+				pose6 = self.config['agent_poses'][i]
+				x, y = float(pose6[0]), float(pose6[1])
+				yaw  = float(pose6[5] if len(pose6) >= 6 else pose6[-1])
+
+				d = float(action['arg1'])
+				nx = x + d * np.cos(yaw)
+				ny = y + d * np.sin(yaw)
+
+				cur_road  = None
+				next_road = None
+				if hasattr(self, "nav_app") and hasattr(self.nav_app, "nearest_road_id"):
+					cur_road  = self.nav_app.nearest_road_id((x, y))
+					next_road = self.nav_app.nearest_road_id((nx, ny))
+				blocked   = set(getattr(self.nav_app, "blocked_roads", set()))
+
+				if next_road in blocked and (cur_road != next_road):
+					print(f"\033[38;5;214m[Event] Blocked road '{next_road}': cancel move for {self.agent_names[i]}, please re-route.\033[0m")
+					agent.robot.action_status = ActionStatus.FAIL
+					if hasattr(self, "events"):
+						self.events.add(
+							type="broadcast event",
+							pos=[0, 0, 0],
+							r=1e9,
+							content=f"Road '{next_road}' is CLOSED ahead for {self.agent_names[i]}. Please re-route.",
+							priority=100,
+							subject="system",
+							predicate="is",
+							object="event",
+						)
+					continue
+
 				agent.move_forward(action['arg1'], self.sec_per_step * 1.0)
 			elif action['type'] == 'teleport':
 				agent.reset_with_global_xy(np.array(action['arg1']))
@@ -674,8 +721,8 @@ class VicoEnv:
 				agent_pos = self.config['agent_poses'][i][:3]
 				converse_range = action['arg2'] if 'arg2' in action else 10
 				priority = random.randint(0, 100)
-				if converse_range > 800:
-					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 10. Ignored.")
+				if converse_range > 3200:
+					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 3200. Ignored.")
 					self.agents[i].robot.action_status = ActionStatus.FAIL
 					continue
 				deleted_subjects = self.events.add(type="speech", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
@@ -706,6 +753,7 @@ class VicoEnv:
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
 				agent_pos = self.config['agent_poses'][i][:3]
+				agent_outdoor_pos = self.config['agent_poses'][i][:3] if self.agent_infos[i]["current_building"] == 'open space' else self.agent_infos[i]["outdoor_pose"][:3]
 				priority = random.randint(0, 100)
 				if action['arg1'] == 'query_place':
 					app_answer = self.nav_app.query_place(action['arg2'])
@@ -714,7 +762,7 @@ class VicoEnv:
 					app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				if action['arg1'] == 'query_route':
-					app_answer = self.nav_app.query_route(agent_pos, action['arg2'])
+					app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject="nav app", predicate="is", object="respond")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:

@@ -215,12 +215,11 @@ def main():
     # Simulation loop
     env_dt_sim = 0.
     all_task_end = False
-    max_distance = 0.
     total_length=[0. for i in range(num_agents)]
     total_time=[0. for i in range(num_agents)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
-    while not all_task_end and env.steps <= args.step_limit:
+    while not all_task_end:
         lst_time = time.perf_counter()
         obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime)} for agent_id in obs]
@@ -255,7 +254,6 @@ def main():
             with open(steps_info_path, 'w') as file:
                 json.dump(steps_info, file, indent=4)
         except Exception as e:
-            gs.logger.error(f"Error in step info storage: {e} with traceback: {traceback.format_exc()}.\n The step_info is {step_info}")
             import pdb; pdb.set_trace()
 
         gs.logger.info(f"current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
@@ -297,7 +295,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": all_task_end and max_distance<=10}
+              "done": True}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")

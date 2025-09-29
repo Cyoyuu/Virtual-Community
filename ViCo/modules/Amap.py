@@ -21,18 +21,24 @@ if __name__ != "__main__" :
     from ViCo.tools.utils import *
     from ViCo.modules import *
 
-def lat_lon_to_xy(lat, lon, ref_lat, ref_lon):
-    earth_radius = 6378137  # in meters
-    meters_per_degree_lat = 111139  # Approximate meters per degree latitude
-    
-    # Calculate meters per degree longitude based on reference latitude
-    meters_per_degree_lon = 111139 * math.cos(math.radians(ref_lat))
-    
-    # Convert lat/lon to x/y
-    x = (lon - ref_lon) * meters_per_degree_lon
-    y = (lat - ref_lat) * meters_per_degree_lat
-    
-    return [x, y]
+def nearest_road_id(self, xy) -> str | None:
+    if not hasattr(self, "waypoints") or not self.waypoints:
+        return None
+    x, y = float(xy[0]), float(xy[1])
+    best, best_d2 = None, float("inf")
+    for wp in self.waypoints:
+        rid = getattr(wp, "belong", None)
+        if not rid:
+            continue
+        loc = getattr(wp, "location", None) or getattr(wp, "pos", None)
+        if loc is not None:
+            wx, wy = float(loc[0]), float(loc[1])
+        else:
+            wx, wy = float(getattr(wp, "x")), float(getattr(wp, "y"))
+        d2 = (wx - x)**2 + (wy - y)**2
+        if d2 < best_d2:
+            best, best_d2 = rid, d2
+    return best
 
 def is_point_enclosed_Amap(grid, point, resolution, min_x, min_y, nx, ny):
     from collections import deque
@@ -81,9 +87,36 @@ class Waypoints:
     predecessor: list = field(default_factory=list)
     successor: list = field(default_factory=list)
 
+class Route:
+    def __init__(self, waypoints=None):
+        '''
+        waypoints: list(np.array([int,int]))
+        '''
+        self.waypoints=waypoints
+
+    def __getitem__(self, key):
+        # Slice the waypoints using the provided key (can be int or slice)
+        sliced_waypoints = self.waypoints[key]
+        # Return a new Route object with the sliced waypoints
+        return Route(sliced_waypoints)
+    
+    def __len__(self):
+        return len(self.waypoints)
+    
+    def empty(self):
+        return not self.waypoints
+
+    def calc_time(self, pose=None):
+        if pose is not None:
+            ret=np.linalg.norm(np.array(self.waypoints[0][:2])-np.array(pose[:2]))
+        for i in range(1, len(self.waypoints)):
+            ret+=np.linalg.norm(np.array(self.waypoints[i][:2])-np.array(self.waypoints[i-1][:2]))
+        return ret*2 # for turning
+
 class Amap:
     '''walkers only'''
-    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7.):
+    def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, waypoints_dis=7., logger=None):
+        self.scene_name=scene_name
         self.pose=pose
         self.covered_length=0.
         self.place_metadata=deepcopy(place_metadata)
@@ -104,13 +137,15 @@ class Amap:
         self.waypoints = []
         self.road2waypoint = {}
         self.spawn_waypoints()
+
+        self.logger = logger
         
     def reset(self, pose):
         self.pose=pose
         self.covered_length=0.
 
     def is_point_invalid(self, point):
-        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-10,11) for j in range(-10, 11)]])
+        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-int(self.waypoints_dis),int(self.waypoints_dis)+1) for j in range(-int(self.waypoints_dis),int(self.waypoints_dis)+1)]])
 
     def spawn_waypoints(self):
         for node in self.nodes:
@@ -291,7 +326,7 @@ class Amap:
             if np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)), i), goal_wp_pair)
         if goal_wp_pair[0] == float('inf'):
-            print(f"No path found from {curr_trans[:2]} to {goal_pos}")
+            self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
         path = []
         curr = goal_wp_pair[1]
@@ -301,7 +336,7 @@ class Amap:
         path.reverse()
 
         if not path:
-            print(f"No valid route found from {curr_trans[:2]} to {goal_pos}")
+            self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return []
         
         path.append(goal_pos)
@@ -339,8 +374,8 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
-    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr"):
-        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr not exist!")
+    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl"):
+        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl not exist!")
         exit()
     with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt', "r") as file:
         for line in file:

@@ -268,6 +268,15 @@ class NavigationMeetingAgent(Agent):
         if not self.last_route:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
+
+        # event-1
+        blocked = set(self.obs.get("blocked_roads", []))
+        if self.last_route and self._route_uses_blocked_road(self.last_route, blocked):
+            self.logger.info(f"{self.name}: current route uses blocked roads; re-querying route to {goal_place}.")
+            self.last_route = None
+            self.last_nav = None
+            return {"type": "query_app", "arg1": "query_route", "arg2": goal_place}, False
+
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.calc_time(waypoints=self.last_route))}s")
         # If few progress made...
         self.time_to_arrival_timedelta[self.curr_time]=timedelta(seconds=self.calc_time(waypoints=self.last_route))
@@ -887,3 +896,13 @@ class NavigationMeetingAgent(Agent):
                 target_region['y_min'] < self.pose[1] < target_region['y_max']:
             arrived = True
         return action, arrived
+
+    def _route_uses_blocked_road(self, route_waypoints, blocked_roads: set) -> bool:
+        """Return True if any waypoint's road_id (belong) is currently blocked."""
+        if not route_waypoints or not blocked_roads:
+            return False
+        for wp in route_waypoints:
+            rid = getattr(wp, "belong", None)
+            if rid in blocked_roads:
+                return True
+        return False
