@@ -144,6 +144,10 @@ def main():
 
     if args.debug:
         args.enable_third_person_cameras = True
+    if args.scene == "DETROIT":
+        args.adversaries_num = 1
+    else:
+        args.adversaries_num = 0
     env = VicoEnv(
         seed=args.seed,
         precision=args.precision,
@@ -152,7 +156,7 @@ def main():
         head_less=args.head_less,
         resolution=args.resolution,
         challenge='meeting',
-        num_agents=config["num_agents"],
+        num_agents=config["num_agents"]+args.adversaries_num,
         config_path=config_path,
         scene=args.scene,
         enable_indoor_scene=args.enable_indoor_scene,
@@ -211,10 +215,6 @@ def main():
         name2idx[config['agent_names'][i]] = i
 
     
-    if args.scene == "DETROIT":
-        args.adversaries_num = 1
-    else:
-        args.adversaries_num = 0
     for i in range(args.adversaries_num):
         adversary_type = "agent"
         basic_kwargs = dict(
