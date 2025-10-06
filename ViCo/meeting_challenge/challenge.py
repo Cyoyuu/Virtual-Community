@@ -47,6 +47,7 @@ def main():
     parser.add_argument("--output_dir", "-o", type=str, default='ViCo/meeting_challenge/output')
     parser.add_argument("--debug", action='store_true')
     parser.add_argument("--overwrite", action='store_true')
+    parser.add_argument("--job_id", type=int, default=0)
 
     ### Simulation configurations
     parser.add_argument("--resolution", type=int, default=512)
@@ -77,7 +78,7 @@ def main():
 
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
-    parser.add_argument("--agent_type", type=str, choices=['heuristic', 'llm', 'mcts', 'random', 'nav'])
+    parser.add_argument("--agent_type", type=str, choices=['heuristic', 'llm', 'mcts', 'random', 'nav', 'heuristic_nav', 'single'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
@@ -104,6 +105,9 @@ def main():
         else:
             agent_type = args.agent_type
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}")
+    job_result_path = os.path.join("ViCo/meeting_challenge/results/", f"{agent_type}", args.scene)
+    os.makedirs(job_result_path, exist_ok=True)
+    job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
     output_dir = args.output_dir
     result_path = os.path.join(output_dir, "result.json")
@@ -140,6 +144,10 @@ def main():
 
     if args.debug:
         args.enable_third_person_cameras = True
+    if args.scene == "DETROIT":
+        args.adversaries_num = 1
+    else:
+        args.adversaries_num = 0
     env = VicoEnv(
         seed=args.seed,
         precision=args.precision,
@@ -148,7 +156,7 @@ def main():
         head_less=args.head_less,
         resolution=args.resolution,
         challenge='meeting',
-        num_agents=config["num_agents"],
+        num_agents=config["num_agents"]+args.adversaries_num,
         config_path=config_path,
         scene=args.scene,
         enable_indoor_scene=args.enable_indoor_scene,
@@ -197,10 +205,42 @@ def main():
             all_agent_processes.append(AgentProcess(LLMMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'nav':
             all_agent_processes.append(AgentProcess(NavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == 'single':
+            all_agent_processes.append(AgentProcess(SingleMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == 'heuristic_nav':
+            all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
         name2idx[config['agent_names'][i]] = i
+
+    
+    for i in range(args.adversaries_num):
+        adversary_type = "agent"
+        basic_kwargs = dict(
+            name=config['agent_names'][num_agents+i],
+            pose=config['agent_poses'][num_agents+i],
+            info=config["agent_infos"][num_agents+i],
+            sim_path=config_path,
+            no_react=args.no_react,
+            debug=args.debug,
+            logging_level=args.logging_level,
+            multi_process=args.multi_process,
+            route=[[0.0, 0.0], [80.0, 0.0]],
+        )
+        llm_kwargs = dict(
+            lm_source=args.lm_source,
+            lm_id=args.lm_id,
+            max_tokens=args.max_tokens,
+            temperature=args.temperature,
+            top_p=args.top_p,
+        )
+        if adversary_type == 'agent':
+            all_agent_processes.append(AgentProcess(AdversaryAgent, **basic_kwargs))
+        else:
+            raise NotImplementedError(f"agent type {adversary_type} is not supported")
+        all_agent_name.append(config['agent_names'][i])
+        name2idx[config['agent_names'][num_agents+i]] = i
 
 
     if args.multi_process:
@@ -215,17 +255,30 @@ def main():
     # Simulation loop
     env_dt_sim = 0.
     all_task_end = False
+<<<<<<< HEAD
     total_length=[0. for i in range(num_agents)]
     total_time=[0. for i in range(num_agents)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     while not all_task_end:
+=======
+    max_distance = 0.
+    total_length=[0. for i in range(num_agents+args.adversaries_num)]
+    total_time=[0. for i in range(num_agents+args.adversaries_num)]
+    last_agent_pos_dict=None
+    infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
+    while not all_task_end and env.steps < args.step_limit:
+>>>>>>> master
         lst_time = time.perf_counter()
-        obs_printable = [{k: v for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
-                          and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime)} for agent_id in obs]
+        obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
+                          and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
+        for i in range(len(obs_printable)):
+            for event in obs_printable[i]['events']:
+                if isinstance(event['content'], Route):
+                    event['content']=event['content'].to_dict()
 
         # update obs and do action
-        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i]} for i in range(num_agents)}
+        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents)}
         }
 
         for i, agent in enumerate(all_agent_processes):
@@ -256,7 +309,7 @@ def main():
         except Exception as e:
             import pdb; pdb.set_trace()
 
-        gs.logger.info(f"current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
+        gs.logger.info(f"{args.scene}'s current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
         dt_agent = time.perf_counter() - lst_time
         env.config["dt_agent"] = (env.config["dt_agent"] * env.steps + dt_agent) / (env.steps + 1)
         lst_time = time.perf_counter()
@@ -280,14 +333,18 @@ def main():
         gs.logger.info(f"The longest distance between the agents: {max_distance:.2f}")
 
         all_task_end = True
+        to_break = False
         for idx, agent in enumerate(agent_actions_to_print):
+            if idx == num_agents: break
             action = agent_actions_to_print[agent]
+            if action in ["task_terminate"]: to_break = True
             if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'force_enter']:
                 total_time[idx]+=1
             if action in ['move_forward'] and last_agent_pos_dict is not None:
                 total_length[idx]+=np.linalg.norm(np.array(extra_obs["agent_pos_dict"][agent]['pose'][:2])-np.array(last_agent_pos_dict[agent]['pose'][:2]))
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
+        if to_break: break
         
         last_agent_pos_dict=extra_obs["agent_pos_dict"]
 
@@ -295,8 +352,14 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
+<<<<<<< HEAD
               "done": True}
+=======
+              "done": bool(all_task_end and (max_distance<=20) and env.steps<=args.step_limit)}
+>>>>>>> master
     with open(result_path, 'w') as file:
+        json.dump(result, file, indent=4)
+    with open(job_result_path, 'w') as file:
         json.dump(result, file, indent=4)
     gs.logger.warning(f"{result}")
     env.close()

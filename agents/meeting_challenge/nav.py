@@ -15,214 +15,66 @@ import time
 
 from agents.agent import Agent
 from agents.memory import SemanticMemory
+from agents.meeting_challenge.base_nav import *
 from ViCo.tools.utils import *
 from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
 
 
-class NavAgentState(Enum):
-    DISCUSS    = "BASE_DISCUSSING"
-    NAVIGATE  = "BASE_NAVIGATING"
-
-@dataclass
-class Place:
-    name: str
-    location: list[float, float] | None = None
-    bbox: list[float, float, float, float] | None = None
-    region: dict | None = None
-
-    def __init__(self, target, region_name, s_mem):
-        if type(target) == dict:
-            # region
-            target_region = target['region']
-            self.name = region_name
-            target_pos = [(target_region['x_min'] + target_region['x_max']) / 2,
-                      (target_region['y_min'] + target_region['y_max']) / 2]
-            self.location = round_numericals(target_pos)
-            self.bbox = round_numericals([target_region['x_min'], target_region['y_min'],
-                         target_region['x_max'], target_region['y_max']])
-            self.region = target['region']
-            return
-        self.name = target
-        if target in s_mem.get_places():
-            # place
-            place_dict = s_mem.get_knowledge(target)
-            self.location = round_numericals([place_dict["location"][0] - 1000, place_dict["location"][1] - 1000])
-            bbox = place_dict["bounding_box"]
-            if bbox is None:
-                # outdoor place
-                self.bbox = [self.location[0] - 4, self.location[1] - 4, self.location[0] + 4, self.location[1] + 4]
-            else:
-                self.bbox = round_numericals(bbox3d_to_bbox2d(bbox_center_to_corners_repr(bbox)))
-            return
-        # agent
-
-    def within(self, point: list[float, float]) -> bool:
-        if self.region is not None:
-            return (self.region['x_min'] <= point[0] <= self.region['x_max'] and
-                    self.region['y_min'] <= point[1] <= self.region['y_max'])
-        elif self.bbox is not None:
-            return (self.bbox[0] <= point[0] <= self.bbox[2] and
-                    self.bbox[1] <= point[1] <= self.bbox[3]) or \
-                     (self.bbox[0] - 1000 <= point[0] <= self.bbox[2] - 1000 and
-                        self.bbox[1] - 1000 <= point[1] <= self.bbox[3] - 1000) or \
-                        (self.bbox[0] + 1000 <= point[0] <= self.bbox[2] + 1000 and
-                        self.bbox[1] + 1000 <= point[1] <= self.bbox[3] + 1000)
-        else:
-            return False
-
-
-@dataclass
-class Action:
-    action: dict
-    start_time: datetime
-    end_time: datetime
-
-    def to_description(self):
-        action_to_print = copy.deepcopy(self.action)
-        if "arg2" in action_to_print:
-            action_to_print.pop("arg2")
-        if self.action["type"] == "converse":
-            action_to_print.pop("arg1")
-        return f"{self.start_time.strftime('%H:%M:%S')} - {self.end_time.strftime('%H:%M:%S') if self.end_time else ''}: {action_to_print}"
-
-    def judge_continue(self, current_plan):
-        if self.action["type"] == "converse" and current_plan["type"] == "converse":
-            return True
-        return self.action == current_plan and self.action["type"] not in ["put", "pick"]
-
-
-@dataclass
-class Message:
-    time: datetime
-    subject: str
-    content: str
-
-    def to_description(self):
-        return f"{self.time.strftime('%H:%M:%S')} {self.subject}: {self.content}"
-
-class NavigationMeetingAgent(Agent):
+class NavigationMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1):
-        super().__init__(name, pose, info, sim_path, no_react, debug, logger)
-        self.looking_down = False
-        self.num_agents = num_agents
-        self.comm = self.num_agents > 1
-        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
-
-        if init_generator:
-
-            self.generator = global_model_manager.get_generator(lm_source, lm_id, max_tokens, temperature, top_p, logger)
-        else:
-            self.generator = None
-
-        self.end_time = None
-
-        self.action_history: list[Action] = []
-        self.current_plan = None
-        self.plan_start_time = None
-        self.conversation_history: list[Message] = []
-        self.event_history: list[Message] = []
-        self.app_message_history: list[Message] = []
-        self.meeting_place = None
-        self.mode = None
-        # Discussion
-        self.discussion_time = 0
-        self.discussion_trigger = ""
-        # Navigation
-        self.last_estimated_arrival_time = None
-        self.time_to_arrival_timedelta = {}
-        self.last_estimated_move_time = None
-        self.last_route = []
-        self.last_nav = []
-        self.last_action = None
-        self.route_history = {"last_route": dict(), "last_nav": dict()}
+        super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents)
 
     def reset(self, name, pose):
         super().reset(name, pose)
-        self.curr_time = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
-        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), debug=self.debug, logger=self.logger)
-        self.meeting_place = None
 
-    def _process_obs(self, obs):
-        if obs['action_status'] == "FAIL":
-            self.logger.info(f"{self.name} failed to execute last action {self.action_history[-1].action}.")
-            if self.action_history[-1].action["type"] == "converse":
-                if len(self.conversation_history) > 0 and self.conversation_history[-1].subject == self.name:
-                    self.conversation_history.pop()
-        if len(obs['events']) > 0:
-            for event in obs['events']:
-                if event["type"] == "speech":
-                    if event["subject"] == self.name:
-                        continue
-                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
-                if event["type"] == "broadcast event":
-                    self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
-                    if self.mode == NavAgentState.NAVIGATE:
-                        self.mode = NavAgentState.DISCUSS
-                        self.discussion_time = 0
-                        self.discussion_trigger = "RECENT EVENT"
-                if event["type"] == "app message":
-                    if self.last_action['type']=="query_app":
-                        if self.last_action['arg1']=="query_route":
-                            self.last_route=event["content"]
-                            self.last_estimated_arrival_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_route))
-                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose {self.pose} to {self.last_action['arg2']} is {self.calc_time(waypoints=self.last_route)}s"))
-                        elif self.last_action["arg1"]=="query_place":
-                            self.s_mem.update_with_new_knowledge(event["content"])
-        num_new_objects = self.s_mem.update(obs)
-        self.curr_time = obs['curr_time']
-        self.held_objects = obs['held_objects']
-        self.current_place = obs['current_place']
-        self.obs = obs
-        if self.obs['steps']%100==0:
-            self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route)
-            self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
-            json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
+    # def _process_obs(self, obs):
 
     def _act(self, obs):
+        self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
         action = None
         try:
             if self.mode is None:
-                self.mode = NavAgentState.DISCUSS
-                self.discussion_time = 0
-                self.discussion_trigger = "TASK START"
+                self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
-                self.discussion_time += 1
-                if self.discussion_time > 50:
+                self.mode_time_counter += 1
+                if self.mode_time_counter > 120:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action
-                response_type, speech = self.get_meeting_place()
-                if response_type is None or response_type == "wait":
-                    action = {"type": "wait"}
-                elif response_type == "speak":
-                    action = {"type": "converse", "arg1": speech, "arg2": 800}
-                    self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
-                elif response_type == "decide":
-                    if speech.startswith("<") and speech.endswith(">"):
-                        speech = speech[1:-1]
-                    if speech != self.meeting_place:
-                        self.meeting_place = speech
-                        self.time_to_arrival_timedelta=dict()
-                    action = {"type": "wait"}
-                    self.mode = NavAgentState.NAVIGATE
-                    self.discussion_time = 0
-                elif response_type == "query":
-                    if speech.startswith("<") and speech.endswith(">"):
-                        speech = speech[1:-1]
-                    if speech not in self.s_mem.get_places():
-                        action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
-                    else:
-                        action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
-                else:
-                    raise NotImplementedError(f"meeting place response type {response_type} is not supported")
+                action = self.discuss()
+                # response_type, speech = self.get_meeting_place()
+                # if response_type is None or response_type == "wait":
+                #     action = {"type": "wait"}
+                # elif response_type == "speak":
+                #     action = {"type": "converse", "arg1": speech, "arg2": 800}
+                #     self.conversation_history.append(Message(self.curr_time + timedelta(seconds=1), self.name, action['arg1']))
+                # elif response_type == "decide":
+                #     if speech.startswith("<") and speech.endswith(">"):
+                #         speech = speech[1:-1]
+                #     if speech != self.meeting_place:
+                #         self.meeting_place = speech
+                #         self.time_to_arrival_timedelta=dict()
+                #     action = {"type": "wait"}
+                #     self.mode = NavAgentState.NAVIGATE
+                #     self.discussion_time = 0
+                # elif response_type == "query":
+                #     if speech.startswith("<") and speech.endswith(">"):
+                #         speech = speech[1:-1]
+                #     if speech not in self.s_mem.get_places():
+                #         action = {"type": "query_app", "arg1": "query_place", "arg2": speech}
+                #     else:
+                #         action = {"type": "query_app", "arg1": "query_route", "arg2": speech}
+                # else:
+                #     raise NotImplementedError(f"meeting place response type {response_type} is not supported")
             elif self.mode == NavAgentState.NAVIGATE:
+                self.mode_time_counter += 1
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
-                    action, arrived = self.city_navigate(self.meeting_place)
+                    action, arrived = self.city_navigate(self.meeting_place, rethink=True)
                     if arrived:
                         action = {'type': 'task_complete'}
         except Exception as e:
@@ -233,6 +85,7 @@ class NavigationMeetingAgent(Agent):
         assert action is None or isinstance(action, dict)
         self.last_action=action
         return self.last_action
+<<<<<<< HEAD
     
     def city_navigate(self, goal_place, threshold=500.):
         cur_trans = np.array(self.pose[:2])
@@ -906,3 +759,5 @@ class NavigationMeetingAgent(Agent):
             if rid in blocked_roads:
                 return True
         return False
+=======
+>>>>>>> master

@@ -1,0 +1,80 @@
+You are assisting an agent in a group discussion to coordinate a meeting location. The agent has decided it needs to **query for more information** before speaking or deciding.
+
+Your task: Analyze what specific travel time or location data is **missing or uncertain** for this agent — based on conversation history, other agents’ opinions, and available navigation data.
+
+---
+
+**Input:**
+
+Current Time:
+$CurrentTime$
+
+- Agent’s Name: $SelfName$
+
+- Agent's position: $SelfPose$
+
+- Agent Info:
+$AgentInfo$
+
+- Current Agent Opinions: 
+$AgentOpinions$
+
+- Available Places:
+$Places$
+
+- Conversation History:
+$ConversationHistory$
+
+- Known ETAs (contains agents' computed ETAs to specific places known by this agent but not others):
+$KnownETA$
+
+Note that the team only share the conversation history, instead of all infos.
+
+---
+
+**Output Format:**
+
+Return a JSON object:
+
+```json
+[
+    {
+        "missing_infos": "<Place Name 1>",
+        "reason": "brief explanation (under 20 words)"
+    },
+    {
+        "missing_infos": "<Agent Name 1>'s ETA to <Place Name 1>",
+        "reason": "brief explanation (under 20 words)"
+    },
+    ...
+]
+```
+
+"missing_infos" must be a exact place name from $Places, each enclosed in <>.
+- Include a place if:
+  - The agent hasn’t queried it yet.
+  - It’s being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
+  - The agent need someone's ETA to that location to make further consideration.
+- Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
+
+—
+
+Example:
+```json
+[
+    {
+        "missing_infos": "<Downtown Plaza>",
+        "reason": "Need Bob's ETAs to compare top 2 candidates"
+    },
+    {
+        "missing_infos": "<Central Park>",
+        "reason": "Need my ETA to compare with Alice’s suggestion"
+    }
+]
+```
+
+—
+
+Be specific and efficient. Avoid querying irrelevant or already-covered locations. Prioritize places that could unblock consensus or reveal a clear optimal choice.
+
+Please generate your response now.

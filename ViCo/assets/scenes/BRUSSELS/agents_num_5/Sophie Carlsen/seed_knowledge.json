@@ -1,0 +1,378 @@
+{
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "Olivia Adams's room at Catedra",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "groups": [
+            "Brussels Environmental Club"
+        ]
+    },
+    "Brussels Environmental Club": {
+        "description": "A group dedicated to promoting environmental awareness and sustainability practices.",
+        "place": "Parc de Bruxelles",
+        "members": [
+            "Olivia Adams",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "organizing environmental campaigns from 15:00 to 17:00"
+    },
+    "Sophie Carlsen's room at Boiteux": {
+        "building": "Boiteux",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            742.2045822143555,
+            1273.7317810058594,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "name": "Sophie Carlsen's room at Boiteux",
+        "bounding_box": [
+            -260.5793301556366,
+            273.69968740524826,
+            64.06091117858885,
+            17.2707030023195,
+            25.302058912070837,
+            30.507083892822266,
+            -0.44912342819388795
+        ]
+    },
+    "Delrez Yannick": {
+        "building": "Campus Pacheco",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1130.8296661376953,
+            1151.119369506836,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            129.0808028258968,
+            148.5057689675389,
+            83.92369842529295,
+            46.85295042332486,
+            55.31250946638599,
+            19.473953247070312,
+            -0.3163196669079378
+        ]
+    },
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "The Brunch": {
+        "building": "Royal Atrium",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1130.694839477539,
+            910.6145782470703,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            129.95689392089844,
+            -80.5760498046875,
+            97.3431625366211,
+            79.33800506591797,
+            72.20111083984375,
+            29.334266662597656,
+            -0.3171980679035187
+        ]
+    },
+    "Paul": {
+        "building": "Rue de l'Enseignement 2",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1224.8189697265625,
+            986.559010386467,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            225.20971536750463,
+            -13.395648765828502,
+            95.81648254394531,
+            21.15989690628574,
+            20.592157221459434,
+            19.81170654296875,
+            -0.3182295182033194
+        ]
+    },
+    "L'art de la Pizza": {
+        "building": "Rue de la Montagne 64",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            758.4381713867188,
+            948.9562397003174,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -241.5618196101769,
+            -51.10496700341272,
+            68.01146507263184,
+            5.438713274693673,
+            11.362794065264458,
+            16.875629425048828,
+            0.8200976718832134
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Rue Royale 13",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1223.8662719726562,
+            995.715203166008,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            224.45492387447095,
+            -4.384532906043618,
+            95.9917984008789,
+            14.131053025339662,
+            10.022415438253853,
+            20.162338256835938,
+            -0.3023380163474682
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Rue de la Montagne 72",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            771.2095184326172,
+            959.8093318939209,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
+        ]
+    },
+    "Museum of the National Bank of Belgium": {
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.4956512451172,
+            1206.5694198608398,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -177.4439928658601,
+            200.82952432688307,
+            60.472846984863274,
+            44.48082358421017,
+            96.86160371481819,
+            20.7210693359375,
+            -0.5117384718386224
+        ]
+    },
+    "Rue Royale - Koningsstraat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            248.4558743001318,
+            126.14291293168375
+        ],
+        "rotation": 2.8210664013372364,
+        "bounding_box": null
+    },
+    "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -185.9587778087036,
+            -55.4488975931433
+        ],
+        "rotation": 2.913809691545618,
+        "bounding_box": null
+    },
+    "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -186.62379945156712,
+            254.07203855685333
+        ],
+        "rotation": -0.48060738320417984,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            257.3150608488824,
+            217.921529838583
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -144.90686574301637,
+            247.30453634487793
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.95122229994689,
+            -157.59257660109876
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            218.04335012590744,
+            -42.91592377155606
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.7892271527921,
+            0.09600317054358865
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            130.89613937889055,
+            90.66982142544775
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            308.76264827423273,
+            -204.25359623561639
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg": [
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Rue Royale - Koningsstraat": [
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}
