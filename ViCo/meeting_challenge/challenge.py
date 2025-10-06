@@ -256,8 +256,8 @@ def main():
     env_dt_sim = 0.
     all_task_end = False
     max_distance = 0.
-    total_length=[0. for i in range(num_agents)]
-    total_time=[0. for i in range(num_agents)]
+    total_length=[0. for i in range(num_agents+args.adversaries_num)]
+    total_time=[0. for i in range(num_agents+args.adversaries_num)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     while not all_task_end and env.steps < args.step_limit:
