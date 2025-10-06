@@ -439,7 +439,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
-        if self.obs['steps']%100==0:
+        if self.obs['steps']%10==0:
             self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route.to_dict())
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))

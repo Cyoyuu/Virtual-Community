@@ -1,0 +1,402 @@
+{
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Cadillac Tower",
+        "appearance": "ViCo/assets/imgs/avatars/Eve By J Gonzales.png",
+        "groups": [
+            "Urban Creatives Collective"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Security Trust Lofts",
+        "appearance": "ViCo/assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Urban Creatives Collective"
+        ]
+    },
+    "Urban Creatives Collective": {
+        "description": "A community of artists and designers who collaborate on creative projects inspired by urban culture.",
+        "place": "The Greening of Detroit - Lafayette Greens",
+        "members": [
+            "Barack Obama",
+            "Eve By J Gonzales",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "creating urban art installations from 16:00 to 18:00"
+    },
+    "Barack Obama's room at Hotel at The Detroit Club": {
+        "building": "The Detroit Club",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "name": "Barack Obama's room at Hotel at The Detroit Club",
+        "bounding_box": [
+            -217.88290791109895,
+            -223.2923461719123,
+            115.47357177734376,
+            24.24307520078893,
+            39.705176260942366,
+            15.116439819335938,
+            0.5268689301193654
+        ]
+    },
+    "Hotel at The Detroit Club": {
+        "building": "The Detroit Club",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "bounding_box": [
+            -217.88290791109895,
+            -223.2923461719123,
+            115.47357177734376,
+            24.24307520078893,
+            39.705176260942366,
+            15.116439819335938,
+            0.5268689301193654
+        ]
+    },
+    "The Greening of Detroit - Lafayette Greens": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            897.4479860573208,
+            968.2752357269793,
+            -0.0009022684871933251
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "The Qube": {
+        "building": "The Qube",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1114.9123573303223,
+            863.841064453125,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            114.91724095609248,
+            -136.1604717034295,
+            138.7156867980957,
+            39.54085284911711,
+            85.26707023472619,
+            69.3884506225586,
+            0.5264903316197388
+        ]
+    },
+    "Bohemia at The Detroit Club": {
+        "building": "The Detroit Club",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -217.88290791109895,
+            -223.2923461719123,
+            115.47357177734376,
+            24.24307520078893,
+            39.705176260942366,
+            15.116439819335938,
+            0.5268689301193654
+        ]
+    },
+    "True Market": {
+        "building": "One Campus Martius",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1110.6941986083984,
+            1128.797939300537,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            122.30052293639584,
+            128.1081377118648,
+            142.94170761108398,
+            124.81806743436205,
+            115.31673169093324,
+            73.77701568603516,
+            0.5266542348991473
+        ]
+    },
+    "American Coney Island": {
+        "building": "114 West Lafayette Boulevard",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            949.7582588195801,
+            980.4919891357422,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -49.4091588726114,
+            -15.766394745487279,
+            111.45375061035156,
+            25.54059719980788,
+            15.453014543212962,
+            9.549057006835938,
+            0.3028234817693629
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "The Detroit Club",
+        "coarse_type": "stores",
+        "fine_types": [
+            "spa",
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -20
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -217.88290791109895,
+            -223.2923461719123,
+            115.47357177734376,
+            24.24307520078893,
+            39.705176260942366,
+            15.116439819335938,
+            0.5268689301193654
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "One Campus Martius",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1110.6941986083984,
+            1128.797939300537,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            122.30052293639584,
+            128.1081377118648,
+            142.94170761108398,
+            124.81806743436205,
+            115.31673169093324,
+            73.77701568603516,
+            0.5266542348991473
+        ]
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -93.46975666202655,
+            33.18000534615047,
+            131.04362869262695,
+            87.17751103579315,
+            33.022748964467326,
+            50.341148376464844,
+            0.01036980624943694
+        ]
+    },
+    "Cadillac Square Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            161.4483028206114,
+            -22.808013611521325
+        ],
+        "rotation": -1.5640466217041311,
+        "bounding_box": null
+    },
+    "Shelby Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -86.86399316235591,
+            -115.57112890928369
+        ],
+        "rotation": -1.0302152296250702,
+        "bounding_box": null
+    },
+    "Washington Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -227.14865352914424,
+            215.1107975807429
+        ],
+        "rotation": -0.0006155934257629443,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            84.45736775052188,
+            171.781173660121
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -108.023841044584,
+            -11.773207132607133
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -235.7681507700008,
+            -220.24129204678292
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -24.2629832013028,
+            189.9705379110076
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -9.397046064414717,
+            -234.05763460544557
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -165.8144108188955,
+            215.07522290123595
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Washington Boulevard": [
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Cadillac Square": [
+            {
+                "stop_name": "Washington Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Shelby Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Cadillac Square Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

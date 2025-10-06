@@ -211,6 +211,10 @@ def main():
         name2idx[config['agent_names'][i]] = i
 
     
+    if args.scene == "DETROIT":
+        args.adversaries_num = 1
+    else:
+        args.adversaries_num = 0
     for i in range(args.adversaries_num):
         adversary_type = "agent"
         basic_kwargs = dict(
