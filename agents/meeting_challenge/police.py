@@ -47,7 +47,8 @@ class AdversaryAgent(Agent):
         self.visible_agent = list()
         for i in tmp_arr:
             e = self.obs["gt_seg_entity_idx_to_info"][i]
-            if e['type'] == 'avatar':
+            self.logger.info(f"gt seg {i} is {e}")
+            if 'type' in e and e['type'] == 'avatar':
                 self.visible_agent.append(e['name'])
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
