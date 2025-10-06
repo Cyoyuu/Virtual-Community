@@ -210,6 +210,34 @@ def main():
         all_agent_name.append(config['agent_names'][i])
         name2idx[config['agent_names'][i]] = i
 
+    
+    for i in range(args.adversaries_num):
+        adversary_type = "agent"
+        basic_kwargs = dict(
+            name=config['agent_names'][num_agents+i],
+            pose=config['agent_poses'][num_agents+i],
+            info=config["agent_infos"][num_agents+i],
+            sim_path=config_path,
+            no_react=args.no_react,
+            debug=args.debug,
+            logging_level=args.logging_level,
+            multi_process=args.multi_process,
+            route=[[0.0, 0.0], [80.0, 0.0]],
+        )
+        llm_kwargs = dict(
+            lm_source=args.lm_source,
+            lm_id=args.lm_id,
+            max_tokens=args.max_tokens,
+            temperature=args.temperature,
+            top_p=args.top_p,
+        )
+        if adversary_type == 'agent':
+            all_agent_processes.append(AgentProcess(AdversaryAgent, **basic_kwargs))
+        else:
+            raise NotImplementedError(f"agent type {adversary_type} is not supported")
+        all_agent_name.append(config['agent_names'][i])
+        name2idx[config['agent_names'][num_agents+i]] = i
+
 
     if args.multi_process:
         gs.logger.info("Start agent processes")

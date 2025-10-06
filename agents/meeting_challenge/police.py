@@ -29,6 +29,8 @@ class AdversaryAgent(Agent):
         self.looking_down = False
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
+        self.spot_counter = dict()
+
     def reset(self, name, pose):
         super().reset(name, pose)
         self.curr_time = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
@@ -40,8 +42,16 @@ class AdversaryAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
+        for i, e in self.obs["gt_seg_entity_idx_to_info"]:
+            if e['type'] == 'avatar':
+                if e['name'] not in self.spot_counter:
+                    self.spot_counter[e['name']] = 0
+                self.spot_counter[e['name']] += 1
 
     def _act(self, obs):
+        for i, e in self.obs["gt_seg_entity_idx_to_info"]:
+            if e['type'] == 'avatar':
+                self.logger.info(f"I see {e['name']}. The info is {e}")
         while is_near_goal(curr_x=self.pose[0], curr_y=self.pose[1], goal_bbox=None, goal_pos=self.route[self.route_index]):
             self.route_index=(self.route_index+1)%(len(self.route))
         action = self.navigate(self.s_mem.get_sg(), goal_pos=self.route[self.route_index], goal_bbox=None)

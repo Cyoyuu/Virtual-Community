@@ -5,7 +5,8 @@
         "Brycer Rodriguez",
         "Eve By J Gonzales",
         "Pika Hayes",
-        "Sophie Carlsen"
+        "Sophie Carlsen",
+        "Adversary 0"
     ],
     "step": 0,
     "agent_infos": [
@@ -98,6 +99,24 @@
             "current_building": "Security Trust Lofts",
             "current_place": "Sophie Carlsen's room at Security Trust Lofts",
             "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                0.0,
+                0.0,
+                108.38985153999431,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
         }
     ],
     "curr_time": "October 1, 2024, 09:00:00",
@@ -142,6 +161,14 @@
             0.0,
             0.0,
             0.0
+        ],
+        [
+            0.0,
+            0.0,
+            108.38985153999431,
+            0.0,
+            0.0,
+            0.0
         ]
     ],
     "locator_colors": [
@@ -149,7 +176,8 @@
         "green",
         "blue",
         "orange",
-        "purple"
+        "purple",
+        "cyan"
     ],
     "locator_colors_rgb": [
         [
@@ -176,6 +204,11 @@
             0.5019607843137255,
             0.0,
             0.5019607843137255
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
         ]
     ],
     "num_agents": 5,
@@ -185,7 +218,8 @@
         "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
         "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
         "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
-        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb"
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb"
     ],
     "stores": {
         "Beverages and DM Store": {
