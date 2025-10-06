@@ -30,6 +30,7 @@ class AdversaryAgent(Agent):
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
         self.spot_counter = dict()
+        self.visible_agent = list()
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -42,16 +43,19 @@ class AdversaryAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
-        for i, e in self.obs["gt_seg_entity_idx_to_info"].items():
+        tmp_arr=set(self.obs['segmentation'].flatten().tolist())
+        self.visible_agent = list()
+        for i in tmp_arr:
+            e = self.obs["gt_seg_entity_idx_to_info"][i]
             if e['type'] == 'avatar':
+                self.visible_agent.append(e['name'])
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
                 self.spot_counter[e['name']] += 1
 
     def _act(self, obs):
-        for i, e in self.obs["gt_seg_entity_idx_to_info"].items():
-            if e['type'] == 'avatar':
-                self.logger.info(f"I see {e['name']}. The info is {e}")
+        for agent_name in self.visible_agent:
+            self.logger.info(f"I see {agent_name}.")
         while is_near_goal(curr_x=self.pose[0], curr_y=self.pose[1], goal_bbox=None, goal_pos=self.route[self.route_index]):
             self.route_index=(self.route_index+1)%(len(self.route))
         action = self.navigate(self.s_mem.get_sg(), goal_pos=self.route[self.route_index], goal_bbox=None)
