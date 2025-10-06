@@ -98,9 +98,9 @@ class VicoEnv:
 			seed=self.seed if hasattr(self, "seed") else 0,
 			specs={
 				"road_closure": {
-				"prob": 0.1,
-				"duration_steps": (10, 20),
-				"max_concurrent": 3}})
+				"prob": 0.8,
+				"duration_steps": (20, 40),
+				"max_concurrent": 20}})
 
 		self.config_path = config_path
 		self.config = json.load(open(os.path.join(self.config_path, 'config.json'), 'r'))
