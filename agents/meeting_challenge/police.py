@@ -42,7 +42,7 @@ class AdversaryAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
-        for i, e in self.obs["gt_seg_entity_idx_to_info"]:
+        for i, e in self.obs["gt_seg_entity_idx_to_info"].items():
             if e['type'] == 'avatar':
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
