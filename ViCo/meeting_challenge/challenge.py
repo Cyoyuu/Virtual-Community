@@ -328,6 +328,7 @@ def main():
         all_task_end = True
         to_break = False
         for idx, agent in enumerate(agent_actions_to_print):
+            if idx == num_agents: break
             action = agent_actions_to_print[agent]
             if action in ["task_terminate"]: to_break = True
             if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'force_enter']:
