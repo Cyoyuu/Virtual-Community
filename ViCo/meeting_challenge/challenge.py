@@ -226,7 +226,7 @@ def main():
             debug=args.debug,
             logging_level=args.logging_level,
             multi_process=args.multi_process,
-            route=[[0.0, 0.0], [80.0, 0.0]],
+            route=None,
         )
         llm_kwargs = dict(
             lm_source=args.lm_source,

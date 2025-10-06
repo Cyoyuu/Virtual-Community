@@ -10,7 +10,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --skip_avatar_animation \
 --enable_gt_segmentation \
 --output_dir ViCo/meeting_challenge/output \
---scene ${scene} \
+--scene DETROIT \
 --enable_outdoor_objects \
 --enable_indoor_scene \
 --outdoor_objects_max_num 5 \
