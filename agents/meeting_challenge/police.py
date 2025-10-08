@@ -47,8 +47,7 @@ class AdversaryAgent(Agent):
         self.visible_agent = list()
         for i in tmp_arr:
             e = self.obs["gt_seg_entity_idx_to_info"][i]
-            self.logger.info(f"gt seg {i} is {e}")
-            if 'type' in e and e['type'] == 'avatar':
+            if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 self.visible_agent.append(e['name'])
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
@@ -57,6 +56,9 @@ class AdversaryAgent(Agent):
     def _act(self, obs):
         for agent_name in self.visible_agent:
             self.logger.info(f"I see {agent_name}.")
+            action = {"type": "signal", "arg1": f"warning {agent_name}"}
+            self.last_action = action
+            return self.last_action
         while is_near_goal(curr_x=self.pose[0], curr_y=self.pose[1], goal_bbox=None, goal_pos=self.route[self.route_index]):
             self.route_index=(self.route_index+1)%(len(self.route))
         action = self.navigate(self.s_mem.get_sg(), goal_pos=self.route[self.route_index], goal_bbox=None)
