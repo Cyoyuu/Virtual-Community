@@ -141,7 +141,7 @@ def main():
     else:
         print(f"Continue simulation from config: {config_path}")
     config = json.load(open(os.path.join(config_path, "config.json"), 'r'))
-    num_agents = config["num_agents"]
+    num_agents = json.load(open(seed_config_path, 'r'))["num_agents"]
     sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.config, args.sentinel_config)
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
@@ -155,7 +155,7 @@ def main():
             config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'])
             config['agent_skins'].extend(sentinel_config['agent_skins'])
             config['num_agents']+=num_sentinels
-            json.dump(config, open(os.path.join(config_path, "config.json"), 'r'), indent=4)
+            json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
     else:
         print(f"No sentinel config found at {sentinel_config_path} !!!")
         sentinel_config = None
@@ -171,7 +171,7 @@ def main():
         head_less=args.head_less,
         resolution=args.resolution,
         challenge='meeting',
-        num_agents=config["num_agents"]+num_sentinels,
+        num_agents=config["num_agents"],
         config_path=config_path,
         scene=args.scene,
         enable_indoor_scene=args.enable_indoor_scene,
