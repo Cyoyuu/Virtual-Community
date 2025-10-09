@@ -50,6 +50,7 @@ class BaseSentinelAgent(Agent):
         for i in freq:
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
+                if 'Sentinel' in e['name']: continue
                 self.visible_agent.append(e['name'])
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
