@@ -4,4 +4,4 @@ from .nav import NavigationMeetingAgent
 from .heuristic_nav import HeuristicNavigationMeetingAgent
 from .single_nav import SingleMeetingAgent
 from .base_nav import BaseNavigationMeetingAgent
-from .police import AdversaryAgent
+from .base_sentinel import BaseSentinelAgent

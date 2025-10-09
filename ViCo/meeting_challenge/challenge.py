@@ -87,11 +87,12 @@ def main():
     parser.add_argument("--temperature", "-t", type=float, default=0, help="temperature")
     parser.add_argument("--top_p", type=float, default=1, help="top p")
 
-    # assistant challenge
+    # meeting challenge
     parser.add_argument("--robot_as_agent", action='store_true')
     parser.add_argument("--enable_demo_camera", action='store_true')
     parser.add_argument("--step_limit", type=int, default=1500)
     parser.add_argument("--robot_policy_path", type=str, default="", help="Where to load robot policy")
+    parser.add_argument("--sentinel_config", type=str, default="sentinel_config.json")
     args = parser.parse_args()
 
     random.seed(time.time())
@@ -141,13 +142,24 @@ def main():
         print(f"Continue simulation from config: {config_path}")
     config = json.load(open(os.path.join(config_path, "config.json"), 'r'))
     num_agents = config["num_agents"]
+    sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.sentinel_config)
+    if os.path.exists(sentinel_config_path):
+        sentinel_config = json.load(open(sentinel_config_path, "r"))
+        if num_agents == len(config['agent_names']):
+            config["agent_names"].extend(sentinel_config['agent_names'])
+            config['agent_infos'].extend(sentinel_config['agent_infos'])
+            config['agent_poses'].extend(sentinel_config['agent_poses'])
+            config['locator_colors'].extend(sentinel_config['locator_colors'])
+            config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'])
+            config['agent_skins'].extend(sentinel_config['agent_skins'])
+            json.dump(config, open(os.path.join(config_path, "config.json"), 'r'), indent=4)
+        num_sentinels = len(sentinel_config['patrol_config'])
+    else:
+        sentinel_config = None
+        num_sentinels = 0
 
     if args.debug:
         args.enable_third_person_cameras = True
-    if args.scene == "DETROIT":
-        args.adversaries_num = 1
-    else:
-        args.adversaries_num = 0
     env = VicoEnv(
         seed=args.seed,
         precision=args.precision,
@@ -156,7 +168,7 @@ def main():
         head_less=args.head_less,
         resolution=args.resolution,
         challenge='meeting',
-        num_agents=config["num_agents"]+args.adversaries_num,
+        num_agents=config["num_agents"]+num_sentinels,
         config_path=config_path,
         scene=args.scene,
         enable_indoor_scene=args.enable_indoor_scene,
@@ -215,7 +227,7 @@ def main():
         name2idx[config['agent_names'][i]] = i
 
     
-    for i in range(args.adversaries_num):
+    for i in range(num_sentinels):
         adversary_type = "agent"
         basic_kwargs = dict(
             name=config['agent_names'][num_agents+i],
@@ -226,7 +238,7 @@ def main():
             debug=args.debug,
             logging_level=args.logging_level,
             multi_process=args.multi_process,
-            route=[[0.0, 0.0], [80.0, 0.0]],
+            patrol_config=sentinel_config['patrol_config'][num_agents+i],
         )
         llm_kwargs = dict(
             lm_source=args.lm_source,
@@ -236,7 +248,7 @@ def main():
             top_p=args.top_p,
         )
         if adversary_type == 'agent':
-            all_agent_processes.append(AgentProcess(AdversaryAgent, **basic_kwargs))
+            all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs))
         else:
             raise NotImplementedError(f"agent type {adversary_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
@@ -256,8 +268,8 @@ def main():
     env_dt_sim = 0.
     all_task_end = False
     max_distance = 0.
-    total_length=[0. for i in range(num_agents+args.adversaries_num)]
-    total_time=[0. for i in range(num_agents+args.adversaries_num)]
+    total_length=[0. for i in range(num_agents+num_sentinels)]
+    total_time=[0. for i in range(num_agents+num_sentinels)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     while not all_task_end and env.steps < args.step_limit:

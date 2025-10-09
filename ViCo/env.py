@@ -241,6 +241,7 @@ class VicoEnv:
 
 		self.traffic_manager.reset()
 		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, bus=self.traffic_manager.bus, logger=gs.logger)
+		self.nav_app.initiate_transit(self.traffic_manager.bus)
 
 		for i, agent in enumerate(self.agents):
 			agent.reset(np.array(self.config['agent_poses'][i][:3], dtype=np.float64), geom_utils.euler_to_R(np.degrees(np.array(self.config['agent_poses'][i][3:], dtype=np.float64))))

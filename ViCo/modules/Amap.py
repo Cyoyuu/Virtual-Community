@@ -128,7 +128,7 @@ class Route:
     def to_dict(self):
         return [node.to_dict() for node in self.nodes]
     
-def find_next_bus_times(current_stop, current_time_str, schedule, schedule_reverse):
+def find_next_bus_times(current_stop, current_time_str, schedule, schedule_reversed):
     """
     Given the current stop and time, return the nearest reachable times
     for each stop (same index across stops), checking both schedule directions.
@@ -152,7 +152,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
 
     # Check forward and reverse
     idx_fwd, sch_fwd = get_next_index(schedule)
-    idx_rev, sch_rev = get_next_index(schedule_reverse)
+    idx_rev, sch_rev = get_next_index(schedule_reversed)
 
     # Pick the earlier valid bus (if both exist)
     chosen_index, chosen_schedule = None, None
@@ -163,7 +163,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
         #         t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd+1], "%H:%M:%S").time()
         #     else:
         #         t_fwd = None
-        t_rev = datetime.strptime(schedule_reverse[current_stop]["arrival_times"][idx_rev], "%H:%M:%S").time()
+        t_rev = datetime.strptime(schedule_reversed[current_stop]["arrival_times"][idx_rev], "%H:%M:%S").time()
         # if t_rev<current_time:
         #     if idx_rev+1<len(schedule[current_stop]["arrival_times"]):
         #         t_rev = datetime.strptime(schedule[current_stop]["arrival_times"][idx_rev+1], "%H:%M:%S").time()
@@ -172,11 +172,11 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
         if t_fwd <= t_rev:
             chosen_index, chosen_schedule = idx_fwd, schedule
         else:
-            chosen_index, chosen_schedule = idx_rev, schedule_reverse
+            chosen_index, chosen_schedule = idx_rev, schedule_reversed
     elif idx_fwd is not None:
         chosen_index, chosen_schedule = idx_fwd, schedule
     elif idx_rev is not None:
-        chosen_index, chosen_schedule = idx_rev, schedule_reverse
+        chosen_index, chosen_schedule = idx_rev, schedule_reversed
     else:
         # No buses left today
         return {stop: None for stop in schedule.keys()}
@@ -190,7 +190,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
                 result[stop]=current_time
             else:
                 if chosen_schedule==schedule:
-                    result[stop]=schedule_reverse[stop]["arrival_times"][chosen_index]
+                    result[stop]=schedule_reversed[stop]["arrival_times"][chosen_index]
                 else:
                     result[stop]=schedule[stop]["arrival_times"][chosen_index+1]
 
@@ -405,7 +405,7 @@ class Amap:
                     prev[succ_id] = [wp_id, 'walk']
                     heapq.heappush(heap, (new_dist, succ_id))
             if current_wp.is_a_bus_stop():
-                next_bus_time=find_next_bus_times(self.bus.stop_names[current_wp.property["bus_stop_id"]], curr_time, self.bus.schedule, self.bus.schedule_reverse)
+                next_bus_time=find_next_bus_times(self.bus.stop_names[current_wp.property["bus_stop_id"]], curr_time, self.bus.schedule, self.bus.schedule_reversed)
                 for i in range(current_wp.property["bus_stop_id"], len(self.bus.stop_names)):
                     bus_wp_id=self.bus_stop_to_waypoint[i]
                     if bus_wp_id == wp_id: continue
