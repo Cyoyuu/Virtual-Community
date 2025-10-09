@@ -54,13 +54,10 @@ class BaseSentinelAgent(Agent):
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
                 self.spot_counter[e['name']] += 1
-                depth = 0.
-                for j in range(self.obs['segmentation'].shape[0]):
-                    for k in range(self.obs['segmentation'].shape[1]):
-                        if self.obs['segmentation'][j][k] == i:
-                            depth += self.obs['depth'][j][k]
-                depth /= freq[i]
-                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the avg depth is {depth}")
+                mask = (self.obs['segmentation'] == i)
+                selected_depths = self.obs['depth'][mask]
+                depth = np.median(selected_depths)
+                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the avg depth is {depth}. The frequency is {freq[i]}")
 
     def _act(self, obs):
         for agent_name in self.visible_agent:
