@@ -144,7 +144,9 @@ def main():
     num_agents = config["num_agents"]
     sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.sentinel_config)
     if os.path.exists(sentinel_config_path):
+        print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
+        num_sentinels = len(sentinel_config['patrol_config'])
         if num_agents == len(config['agent_names']):
             config["agent_names"].extend(sentinel_config['agent_names'])
             config['agent_infos'].extend(sentinel_config['agent_infos'])
@@ -152,9 +154,10 @@ def main():
             config['locator_colors'].extend(sentinel_config['locator_colors'])
             config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'])
             config['agent_skins'].extend(sentinel_config['agent_skins'])
+            config['num_agents']+=num_sentinels
             json.dump(config, open(os.path.join(config_path, "config.json"), 'r'), indent=4)
-        num_sentinels = len(sentinel_config['patrol_config'])
     else:
+        print(f"No sentinel config found!!!")
         sentinel_config = None
         num_sentinels = 0
 
