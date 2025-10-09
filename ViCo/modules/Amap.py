@@ -128,24 +128,20 @@ class Route:
     def to_dict(self):
         return [node.to_dict() for node in self.nodes]
     
-def find_next_bus_times(current_stop, current_time_str, schedule, schedule_reversed):
+def find_next_bus_times(current_stop, current_time, schedule, schedule_reversed):
     """
     Given the current stop and time, return the nearest reachable times
     for each stop (same index across stops), checking both schedule directions.
     
     Returns:
-        dict of stop -> arrival time (str) OR None if no buses available.
+        dict of stop -> arrival time OR None if no buses available.
     """
-    if isinstance(current_time_str, str):
-        current_time = datetime.strptime(current_time_str, "%H:%M:%S").time()
-    elif isinstance(current_time_str, datetime):
-        current_time = current_time_str.time()
 
     def get_next_index(schedule_variant):
         """Return (index, schedule_variant) of next bus if available, else (None, None)."""
         arrivals = schedule_variant[current_stop]["departure_times"]
         for i, t_str in enumerate(arrivals):
-            t = datetime.strptime(t_str, "%H:%M:%S").time()
+            t = datetime.strptime(t_str, "%H:%M:%S")
             if t >= current_time:
                 return i, schedule_variant
         return None, None
@@ -157,13 +153,13 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
     # Pick the earlier valid bus (if both exist)
     chosen_index, chosen_schedule = None, None
     if idx_fwd is not None and idx_rev is not None:
-        t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd], "%H:%M:%S").time()
+        t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd], "%H:%M:%S")
         # if t_fwd<current_time:
         #     if idx_fwd+1<len(schedule[current_stop]["arrival_times"]):
         #         t_fwd = datetime.strptime(schedule[current_stop]["arrival_times"][idx_fwd+1], "%H:%M:%S").time()
         #     else:
         #         t_fwd = None
-        t_rev = datetime.strptime(schedule_reversed[current_stop]["arrival_times"][idx_rev], "%H:%M:%S").time()
+        t_rev = datetime.strptime(schedule_reversed[current_stop]["arrival_times"][idx_rev], "%H:%M:%S")
         # if t_rev<current_time:
         #     if idx_rev+1<len(schedule[current_stop]["arrival_times"]):
         #         t_rev = datetime.strptime(schedule[current_stop]["arrival_times"][idx_rev+1], "%H:%M:%S").time()
@@ -184,7 +180,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
     # Build result
     result = {}
     for stop, times in enumerate(chosen_schedule):
-        result[stop] = times["arrival_times"][chosen_index]
+        result[stop] = datetime.combine(current_time.date(), datetime.strptime(times["arrival_times"][chosen_index], "%H:%M:%S").time())
         if result[stop]<current_time:
             if stop==current_stop:
                 result[stop]=current_time
