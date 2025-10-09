@@ -57,7 +57,7 @@ class BaseSentinelAgent(Agent):
                 mask = (self.obs['segmentation'] == i)
                 selected_depths = self.obs['depth'][mask]
                 depth = np.median(selected_depths)
-                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the avg depth is {depth}. The frequency is {freq[i]}")
+                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the median depth is {depth}. The frequency is {freq[i]}")
 
     def _act(self, obs):
         for agent_name in self.visible_agent:

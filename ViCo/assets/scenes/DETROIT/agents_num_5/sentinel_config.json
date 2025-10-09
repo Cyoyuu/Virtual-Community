@@ -1,6 +1,7 @@
 {
     "agent_names": [
-        "Sentinel 0"
+        "Sentinel 0",
+        "Sentinel 1"
     ],
     "agent_infos": [
         {
@@ -12,6 +13,24 @@
             "outdoor_pose": [
                 0.0,
                 0.0,
+                108.38985153999431,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -100.0,
+                -60.0,
                 108.38985153999431,
                 0.0,
                 0.0,
@@ -32,9 +51,18 @@
             0.0,
             0.0,
             0.0
+        ],
+        [
+            -100.0,
+            -60.0,
+            108.38985153999431,
+            0.0,
+            0.0,
+            0.0
         ]
     ],
     "locator_colors": [
+        "cyan",
         "cyan"
     ],
     "locator_colors_rgb": [
@@ -42,9 +70,15 @@
             0.0,
             1.0,
             1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
         ]
     ],
     "agent_skins": [
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
         "ViCo/avatars/models/celebrity_Donald_Trump.glb"
     ],
     "patrol_config": [
@@ -55,6 +89,9 @@
                 [80.0, 0.0]
             ],
             "route_index": 0
+        },
+        {
+            "type": "rotating"
         }
     ]
 }
