@@ -241,7 +241,7 @@ def main():
             debug=args.debug,
             logging_level=args.logging_level,
             multi_process=args.multi_process,
-            patrol_config=sentinel_config['patrol_config'][num_agents+i],
+            patrol_config=sentinel_config['patrol_config'][i],
         )
         llm_kwargs = dict(
             lm_source=args.lm_source,
