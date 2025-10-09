@@ -139,7 +139,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
     if isinstance(current_time_str, str):
         current_time = datetime.strptime(current_time_str, "%H:%M:%S").time()
     elif isinstance(current_time_str, datetime):
-        current_time = current_time_str
+        current_time = current_time_str.time()
 
     def get_next_index(schedule_variant):
         """Return (index, schedule_variant) of next bus if available, else (None, None)."""
