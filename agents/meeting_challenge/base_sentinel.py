@@ -60,7 +60,7 @@ class BaseSentinelAgent(Agent):
                         if self.obs['segmentation'][j][k] == i:
                             depth += self.obs['depth'][j][k]
                 depth /= freq[i]
-                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]), np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the avg depth is {depth}")
+                self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the avg depth is {depth}")
 
     def _act(self, obs):
         for agent_name in self.visible_agent:
