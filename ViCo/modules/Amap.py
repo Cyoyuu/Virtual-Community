@@ -189,9 +189,9 @@ def find_next_bus_times(current_stop, current_time, schedule, schedule_reversed)
                 result[stop]=current_time
             else:
                 if chosen_schedule==schedule:
-                    result[stop]=schedule_reversed[stop]["arrival_times"][chosen_index]
+                    result[stop]=get_time_from_str(schedule_reversed[stop]["arrival_times"][chosen_index])
                 else:
-                    result[stop]=schedule[stop]["arrival_times"][chosen_index+1]
+                    result[stop]=get_time_from_str(schedule[stop]["arrival_times"][chosen_index+1])
 
     return result
 
@@ -408,7 +408,7 @@ class Amap:
                 for i in range(len(self.bus.stop_names)):
                     bus_wp_id=self.bus_stop_to_waypoint[self.bus.stop_names[i]]
                     if bus_wp_id == wp_id: continue
-                    new_dist=datetime.strptime(next_bus_time[i]["arrival_times"], "%H:%M:%S")
+                    new_dist=next_bus_time[i]
                     if dist[wp_id]<new_dist<dist[bus_wp_id]:
                         dist[bus_wp_id]=new_dist
                         prev[succ_id] = [wp_id, 'bus']
