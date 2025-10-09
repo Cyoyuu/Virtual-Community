@@ -44,7 +44,7 @@ class BaseSentinelAgent(Agent):
         self.current_place = obs['current_place']
         self.obs = obs
         tmp_arr=set(self.obs['segmentation'].flatten().tolist())
-        values, counts = np.unique(self.obs['segmentation'], return_count=True)
+        values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
         self.visible_agent = list()
         for i in freq:
