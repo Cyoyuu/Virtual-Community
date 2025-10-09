@@ -405,12 +405,12 @@ class Amap:
                     prev[succ_id] = [wp_id, 'walk']
                     heapq.heappush(heap, (new_dist, succ_id))
             if current_wp.is_a_bus_stop():
-                next_bus_time=find_next_bus_times(self.bus.stop_names[current_wp.property["bus_stop_id"]], curr_time, self.bus.schedule, self.bus.schedule_reversed)
-                for i in range(current_wp.property["bus_stop_id"], len(self.bus.stop_names)):
-                    bus_wp_id=self.bus_stop_to_waypoint[i]
+                next_bus_time=find_next_bus_times(current_wp.property["bus_stop_id"], curr_time, self.bus.schedule, self.bus.schedule_reversed)
+                for i in range(len(self.bus.stop_names)):
+                    bus_wp_id=self.bus_stop_to_waypoint[self.bus.stop_names[i]]
                     if bus_wp_id == wp_id: continue
-                    new_dist=datetime.strptime(next_bus_time[self.bus.stop_names[i]]["arrival_times"], "%H:%M:%S")
-                    if new_dist<dist[bus_wp_id]:
+                    new_dist=datetime.strptime(next_bus_time[i]["arrival_times"], "%H:%M:%S")
+                    if dist[wp_id]<new_dist<dist[bus_wp_id]:
                         dist[bus_wp_id]=new_dist
                         prev[succ_id] = [wp_id, 'bus']
                         heapq.heappush(heap, (new_dist, succ_id))
