@@ -183,7 +183,7 @@ def find_next_bus_times(current_stop, current_time_str, schedule, schedule_rever
 
     # Build result
     result = {}
-    for stop, times in chosen_schedule.items():
+    for stop, times in enumerate(chosen_schedule):
         result[stop] = times["arrival_times"][chosen_index]
         if result[stop]<current_time:
             if stop==current_stop:
