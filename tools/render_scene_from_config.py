@@ -17,6 +17,9 @@ import argparse
 import numpy as np
 import genesis as gs
 import genesis.utils.geom as geom_utils
+import glob
+from genesis.utils import get_assets_dir
+from utils import load_height_field, get_height_at
 # from modules.avatar.avatar_robot import AvatarRobot
 
 
@@ -32,6 +35,8 @@ def setup_scene(config):
     # Initialize Genesis
     gs.init(seed=0, precision="32", logging_level="info")
     
+    buildings = {}
+
     # Get scene path from config
     scene_path = config.get("scene", "")
     scene_offset = config.get("scene_offset", [0.0, 0.0, 0.0])
@@ -55,25 +60,66 @@ def setup_scene(config):
     
     # Add the scene mesh with offset
     if scene_path:
-        print(f"Loading scene: {scene_path}")
+        # print(f"Loading scene: {scene_path}")
+        # scene.add_entity(
+        #     morph=gs.morphs.Mesh(
+        #         file=scene_path,
+        #         pos=scene_offset,
+        #         euler=(90.0, 0, 0),
+        #         scale=1.0,
+        #         fixed=True,
+        #         collision=False,
+        #     ),
+        #     surface=gs.surfaces.Default()
+        # )
         scene.add_entity(
+            material=gs.materials.Rigid(
+				sdf_min_res=4,
+				sdf_max_res=4,
+			),
             morph=gs.morphs.Mesh(
-                file=scene_path,
+                file=os.path.join(scene_path,"terrain.glb"),
                 pos=scene_offset,
-                euler=(90.0, 0, 0),
+                euler=(90.0, 0, 0),   # keep same orientation you used for terrain
                 scale=1.0,
                 fixed=True,
                 collision=False,
+				merge_submeshes_for_collision=False,
+				group_by_material=True,
             ),
             surface=gs.surfaces.Default()
         )
+
+        paths = [scene_path]
+        if os.path.isdir(scene_path):
+            paths = sorted(glob.glob(os.path.join(scene_path, "**/*.glb"), recursive=True))
+
+        for p in paths:
+            if 'terrain.glb' not in p:
+                print(f"Loading scene mesh: {p}")
+                scene.add_entity(
+                    material=gs.materials.Rigid(
+								sdf_min_res=4,
+								sdf_max_res=4,
+					),
+                    morph=gs.morphs.Mesh(
+                        file=p,
+                        pos=scene_offset,
+                        euler=(90.0, 0, 0),
+                        fixed=True,
+                        collision=True,
+                        group_by_material=True,
+                        decompose_object_error_threshold=0.15,
+                    ),
+                    surface=gs.surfaces.Default()
+                )
     else:
         print("Warning: No scene path specified in config")
     
     return scene
 
 
-def add_agent_skins(scene, config):
+def add_agent_skins(scene, config, hf):
     """Add agent skin entities at their poses."""
     agent_poses = config.get("agent_poses", [])
     agent_skins = config.get("agent_skins", [])
@@ -92,8 +138,14 @@ def add_agent_skins(scene, config):
             euler_angles = np.array(pose[3:6], dtype=np.float64)
             
             # Convert euler angles to rotation matrix
-            rot_matrix = geom_utils.euler_to_R(np.degrees(euler_angles))
+            # rot_matrix = geom_utils.euler_to_R(np.degrees(euler_angles))
             
+            z_ground = float(get_height_at(hf, pos[0], pos[1]))
+            pos[2] = z_ground + 1.2      # ~1.2 m keeps feet above ground
+
+            # keep the pose in config in sync so cameras use the same z
+            config["agent_poses"][i][2] = float(pos[2])
+
             # Get agent name or use default
             agent_name = agent_names[i] if i < len(agent_names) else f"agent_{i}"
             
@@ -101,7 +153,7 @@ def add_agent_skins(scene, config):
             
             # Create avatar material
             mat_avatar = gs.materials.Avatar()
-            
+
             # Add the agent skin entity
             avatar_entity = scene.add_entity(
                 # name=agent_name,
@@ -130,8 +182,9 @@ def create_cameras_from_agent_poses(scene, config):
     
     cameras = []
     # Use camera config if available, otherwise use agent pose
-    camera_pos = camera_configs[0].get("pos")
-    camera_lookat = camera_configs[0].get("lookat")
+    # camera_pos = camera_configs[0].get("pos", [])
+    camera_pos = [agent_poses[0][0]-3, agent_poses[0][1], agent_poses[0][2] + 0.9]
+    camera_lookat = [agent_poses[0][0], agent_poses[0][1], agent_poses[0][2]]
             
     print(f"Creating camera {0} at position {camera_pos}, looking at {camera_lookat}")
             
@@ -141,6 +194,7 @@ def create_cameras_from_agent_poses(scene, config):
         pos=camera_pos,
         lookat=camera_lookat,
         fov=90,
+        far=16000.0,
         GUI=False,
     )
     cameras.append(camera)
@@ -180,6 +234,7 @@ def render_scene(scene, cameras, output_dir="rendered_output"):
     
     print(f"Rendering complete! Images saved to: {output_dir}")
 
+# /scratch/workspace/tchafekar_umass_edu-tchafekar/Ella/vico/Genesis/genesis/assets/ViCo/scene/v1/NY/buildings/buildings_Courtyard Marriot.glb
 
 def main():
     parser = argparse.ArgumentParser(description="Render scene from config.json using agent poses")
@@ -197,13 +252,15 @@ def main():
         print(f"Loading configuration from: {args.config}")
         config = load_config(args.config)
         
+        hf = load_height_field(os.path.join(get_assets_dir(), "ViCo/scene/v1/NY/height_field.npz"))
+
         # Setup scene
         print("Setting up scene...")
         scene = setup_scene(config)
         
         # Add agent skins at their poses
         print("Adding agent skins at their poses...")
-        avatar_entities = add_agent_skins(scene, config)
+        avatar_entities = add_agent_skins(scene, config, hf)
         
         # Create cameras from agent poses
         print("Creating cameras from agent poses...")
