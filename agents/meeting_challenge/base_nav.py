@@ -438,7 +438,7 @@ class BaseNavigationMeetingAgent(Agent):
                 if event["type"] == "sentinel signal":
                     if event['content']['arg2'] != self.name: continue
                     if event['content']['arg1'] == 'ban':
-                        super().reset(self.name, [-1500., -1500., 0., 0., 0., 0.])
+                        self.logger.info("I'm being banned...")
                         self.banned = True
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']

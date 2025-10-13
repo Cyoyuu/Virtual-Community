@@ -33,7 +33,11 @@ class SingleMeetingAgent(BaseNavigationMeetingAgent):
     # def _process_obs(self, obs):
 
     def _act(self, obs):
-        if self.banned: return {"type": "task_complete"}
+        if self.banned:
+            if self.pose[0]>-1000:
+                super().reset(self.name, [-1500., -1500., 0., 0., 0., 0.])
+                return {"type": "teleport", "arg1": [-1500., -1500.]}
+            return {"type": "task_complete"}
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
         action = None
         try:
