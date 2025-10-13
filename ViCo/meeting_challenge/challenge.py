@@ -297,6 +297,8 @@ def main():
             action = agent.act()
             agent_actions[i] = action
             agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
+            if action['type'] == 'signal' and action['arg1']=='ban':
+                banned_agent_list.append(action['arg2'])
 
         steps_info_path = os.path.join(output_dir, "steps.json")
         if os.path.exists(steps_info_path):
@@ -353,8 +355,6 @@ def main():
                 total_length[idx]+=np.linalg.norm(np.array(extra_obs["agent_pos_dict"][agent]['pose'][:2])-np.array(last_agent_pos_dict[agent]['pose'][:2]))
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
-            if action['type'] == 'signal' and action['arg1']=='ban':
-                banned_agent_list.append(action['arg2'])
         if to_break: break
         
         last_agent_pos_dict=extra_obs["agent_pos_dict"]
