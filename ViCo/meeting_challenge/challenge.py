@@ -339,7 +339,8 @@ def main():
             if env.config['agent_names'][idx] in banned_agent_list: continue
             agent_pose = np.array(agent_pose[:2])
             if agent_pose[0]>500: agent_pose-=1000
-            for agent2_pose in env.config['agent_poses']:
+            for idx2, agent2_pose in enumerate(env.config['agent_poses']):
+                if idx == num_agents: break
                 agent2_pose = np.array(agent2_pose[:2])
                 if agent2_pose[0]>500: agent2_pose-=1000
                 max_distance = max(max_distance, np.linalg.norm(agent_pose-agent2_pose))
