@@ -138,6 +138,8 @@ class VicoEnv:
 		self.vehicles = []
 		self.enable_tm_debug = enable_tm_debug
 
+		initial_lights = self.config.get('initial_lights', LIGHTS)
+
 		self.scene = gs.Scene(
 			# viewer_options=None,
 			viewer_options=gs.options.ViewerOptions(
@@ -159,7 +161,7 @@ class VicoEnv:
 			vis_options=gs.options.VisOptions(
 				show_world_frame=False,
 				segmentation_level="entity",
-				lights=LIGHTS
+				lights=initial_lights
 			),
 			profiling_options=gs.options.ProfilingOptions(show_FPS=False),
 			show_viewer=not head_less,
