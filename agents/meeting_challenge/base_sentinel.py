@@ -28,7 +28,7 @@ class BaseSentinelAgent(Agent):
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
         self.spot_counter = dict()
-        self.visible_agent = list()
+        self.visible_agent = dict()
         self.countdown = 0
         self.current_target = None
 
@@ -48,13 +48,13 @@ class BaseSentinelAgent(Agent):
         tmp_arr=set(self.obs['segmentation'].flatten().tolist())
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
-        self.visible_agent = []
+        self.visible_agent = {}
         for i in freq:
             if freq[i] < 20: continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
-                self.visible_agent.append(e['name'])
+                self.visible_agent[e['name']] = freq[i]
                 if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
                 self.spot_counter[e['name']] += 1
@@ -69,7 +69,7 @@ class BaseSentinelAgent(Agent):
             action = self.patrol()
         else:
             if self.current_target is not None and self.current_target in self.visible_agent:
-                self.countdown -= 1
+                self.countdown -= 1 if self.visible_agent[self.current_target]<50 else 2
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
