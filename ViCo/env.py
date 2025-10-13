@@ -725,7 +725,7 @@ class VicoEnv:
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
 				agent_pos = self.config['agent_poses'][i][:3]
-				deleted_subjects = self.events.add(type="sentinel signal", pos=agent_pos, r=800, content=action['arg1'], priority=100, subject=self.agent_names[i], predicate="is", object="issue")
+				deleted_subjects = self.events.add(type="sentinel signal", pos=agent_pos, r=800, content=action, priority=100, subject=self.agent_names[i], predicate="is", object="issue")
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 			else:

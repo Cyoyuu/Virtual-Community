@@ -27,11 +27,10 @@ for agent_type in os.listdir(base_output_dir):
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
-                results[agent_type][scene] = {"success": 0, "time_spent_meeting": [], "total": 0}
+                results[agent_type][scene] = {"success_rate": 0.0, "time_spent_meeting": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
             results[agent_type][scene]['total']+=1
-            if result['done']:
-                results[agent_type][scene]['success']+=1
+            results[agent_type][scene]['success_rate']+=result['success_rate']
             # for key in result:
             #     if key != "agent_poses":
             #         results[agent_type][scene][key] = result[key]
@@ -50,7 +49,7 @@ for agent_type in results:
         results[agent_type][scene]["time_spent_meeting_stderr"]=np.std(np.array(results[agent_type][scene]["time_spent_meeting"]))
         average_results[agent_type]["time_spent_meeting_mean"]+=results[agent_type][scene]["time_spent_meeting_mean"]
         average_results[agent_type]["time_spent_meeting_stderr"]+=results[agent_type][scene]["time_spent_meeting_stderr"]
-        average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success"]/results[agent_type][scene]["total"]
+        average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]/results[agent_type][scene]["total"]
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
     results[agent_type]["average"]=average_results[agent_type]

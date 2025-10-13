@@ -29,6 +29,8 @@ class BaseSentinelAgent(Agent):
 
         self.spot_counter = dict()
         self.visible_agent = list()
+        self.countdown = 0
+        self.current_target = None
 
         self.patrol_config = patrol_config
 
@@ -46,8 +48,9 @@ class BaseSentinelAgent(Agent):
         tmp_arr=set(self.obs['segmentation'].flatten().tolist())
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
-        self.visible_agent = list()
+        self.visible_agent = []
         for i in freq:
+            if freq[i] < 20: continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
@@ -61,14 +64,33 @@ class BaseSentinelAgent(Agent):
                 self.logger.info(f"I see {e['name']}. its position is at {self.obs['agent_pos_dict'][e['name']]}, our distance is {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.obs['agent_pos_dict'][e['name']]['pose'][:2]))} and the median depth is {depth}. The frequency is {freq[i]}")
 
     def _act(self, obs):
-        for agent_name in self.visible_agent:
-            action = {"type": "signal", "arg1": f"warning {agent_name}"}
-            self.last_action = action
-            return self.last_action
-        action = self.patrol()
+        if len(self.visible_agent) == 0:
+            self.set_target(None)
+            action = self.patrol()
+        else:
+            if self.current_target is not None and self.current_target in self.visible_agent:
+                self.countdown -= 1
+                if self.countdown > 0:
+                    action = {"type": "wait"}
+                else:
+                    self.set_target(None)
+                    action = {"type": "signal", "arg1": f"ban", "arg2": agent_name}
+            else:
+                for agent_name in self.visible_agent:
+                    self.set_target(agent_name)
+                    action = {"type": "signal", "arg1": f"warning", "arg2": agent_name}
+                    break
         
         self.last_action=action
         return self.last_action
+    
+    def set_target(self, agent_name):
+        if agent_name is None:
+            self.current_target = None
+            self.countdown = 0
+        else:
+            self.current_target = agent_name
+            self.countdown = 30
     
     def patrol(self):
         if self.patrol_config is None:

@@ -33,6 +33,7 @@ class NavigationMeetingAgent(BaseNavigationMeetingAgent):
     # def _process_obs(self, obs):
 
     def _act(self, obs):
+        if self.banned: return {"type": "task_complete"}
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
         action = None
         try:

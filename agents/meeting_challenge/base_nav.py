@@ -370,6 +370,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.app_message_history: list[Message] = []
         self.meeting_place = None
         self.mode = None
+        self.banned = False
         # Discussion
         self.mode_time_counter = 0
         self.discussion_trigger = ""
@@ -434,6 +435,11 @@ class BaseNavigationMeetingAgent(Agent):
                                 })
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
+                if event["type"] == "sentinel signal":
+                    if event['content']['arg2'] != self.name: continue
+                    if event['content']['arg1'] == 'ban':
+                        super().reset(self.name, [-1500., -1500., 0., 0., 0., 0.])
+                        self.banned = True
         num_new_objects = self.s_mem.update(obs)
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']

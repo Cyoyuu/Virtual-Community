@@ -254,7 +254,6 @@ def main():
             all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs))
         else:
             raise NotImplementedError(f"agent type {adversary_type} is not supported")
-        all_agent_name.append(config['agent_names'][i])
         name2idx[config['agent_names'][num_agents+i]] = i
 
 
@@ -275,6 +274,7 @@ def main():
     total_time=[0. for i in range(num_agents+num_sentinels)]
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
+    banned_agent_list = []
     while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
         obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
@@ -285,7 +285,7 @@ def main():
                     event['content']=event['content'].to_dict()
 
         # update obs and do action
-        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents)}
+        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents) if env.config["agent_names"][i] in all_agent_name and env.config["agent_names"][i] not in banned_agent_list}
         }
 
         for i, agent in enumerate(all_agent_processes):
@@ -331,7 +331,8 @@ def main():
         for key in info:
             infos[key]+=info[key]
         max_distance=0.
-        for agent_pose in env.config['agent_poses']:
+        for idx, agent_pose in enumerate(env.config['agent_poses']):
+            if env.config['agent_names'][idx] in banned_agent_list: continue
             agent_pose = np.array(agent_pose[:2])
             if agent_pose[0]>500: agent_pose-=1000
             for agent2_pose in env.config['agent_poses']:
@@ -352,6 +353,8 @@ def main():
                 total_length[idx]+=np.linalg.norm(np.array(extra_obs["agent_pos_dict"][agent]['pose'][:2])-np.array(last_agent_pos_dict[agent]['pose'][:2]))
             if (action is None or action != 'task_complete') and env.steps <= args.step_limit:
                 all_task_end = False
+            if action['type'] == 'signal' and action['arg1']=='ban':
+                banned_agent_list.append(action['arg2'])
         if to_break: break
         
         last_agent_pos_dict=extra_obs["agent_pos_dict"]
@@ -360,7 +363,7 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "done": bool(all_task_end and (max_distance<=20) and env.steps<=args.step_limit)}
+              "success rate": int(all_task_end and (max_distance<=20))*(num_agents-len(banned_agent_list))/(num_agents)}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:

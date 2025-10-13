@@ -33,6 +33,7 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
     # def _process_obs(self, obs):
 
     def _act(self, obs):
+        if self.banned: return {"type": "task_complete"}
         self.logger.debug(f"self mode time counter is {self.mode_time_counter}")
         action = None
         if self.mode_time_counter % 20 == 0:
