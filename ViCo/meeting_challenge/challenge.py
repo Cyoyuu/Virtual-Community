@@ -297,7 +297,7 @@ def main():
             action = agent.act()
             agent_actions[i] = action
             agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
-            if action['type'] == 'signal' and action['arg1']=='ban':
+            if action is not None and action['type'] == 'signal' and action['arg1']=='ban':
                 banned_agent_list.append(action['arg2'])
 
         steps_info_path = os.path.join(output_dir, "steps.json")
