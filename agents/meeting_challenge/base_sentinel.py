@@ -73,8 +73,8 @@ class BaseSentinelAgent(Agent):
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
-                    self.set_target(None)
                     action = {"type": "signal", "arg1": f"ban", "arg2": self.current_target}
+                    self.set_target(None)
             else:
                 for agent_name in self.visible_agent:
                     self.set_target(agent_name)
