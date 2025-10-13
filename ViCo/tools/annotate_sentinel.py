@@ -54,7 +54,7 @@ if __name__=="__main__":
             1.0,
             1.0
         ]]
-    sentinel_config['agent_skins'] = "ViCo/avatars/models/celebrity_Donald_Trump.glb"
+    sentinel_config['agent_skins'] = ["ViCo/avatars/models/celebrity_Donald_Trump.glb"]
     sentinel_config['patrol_config'] = [{
             "type": "rotating"
         }]
