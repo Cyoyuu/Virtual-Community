@@ -335,6 +335,7 @@ def main():
             infos[key]+=info[key]
         max_distance=0.
         for idx, agent_pose in enumerate(env.config['agent_poses']):
+            if idx == num_agents: break
             if env.config['agent_names'][idx] in banned_agent_list: continue
             agent_pose = np.array(agent_pose[:2])
             if agent_pose[0]>500: agent_pose-=1000
