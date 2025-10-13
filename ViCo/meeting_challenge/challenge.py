@@ -147,7 +147,7 @@ def main():
         print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
         num_sentinels = len(sentinel_config['patrol_config'])
-        if num_agents == config['num_agents']:
+        if 'with_sentinel' not in config:
             config["agent_names"].extend(sentinel_config['agent_names'])
             config['agent_infos'].extend(sentinel_config['agent_infos'])
             config['agent_poses'].extend(sentinel_config['agent_poses'])
@@ -155,6 +155,7 @@ def main():
             config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'])
             config['agent_skins'].extend(sentinel_config['agent_skins'])
             config['num_agents']+=num_sentinels
+            config['with_sentinel'] = True
             json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
     else:
         print(f"No sentinel config found at {sentinel_config_path} !!!")
