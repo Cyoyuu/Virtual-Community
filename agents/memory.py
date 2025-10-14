@@ -58,8 +58,6 @@ class SemanticMemory:
 		self.load_memory()
 		self.SIMILARITY_THRESHOLD = 0.75
 
-	def initialize_warning_labels(self, name):
-
 	def get_sg(self, place=None):
 		if place is None:
 			place = "open space"
