@@ -7,6 +7,10 @@ extern "C" {
         return new VolumeGrid(voxel_res, num_workers);
     }
 
+    void volume_grid_add_warning_label(VolumeGrid *vg, int warning_label) {
+        vg->add_warning_label(warning_label);
+    }
+
     void volume_grid_add_frame(VolumeGrid *vg, uint8_t *rgb, float *depth, int *label, int w, int h, float fov, float *extrinsic) {
         vg->add_frame(rgb, depth, label, w, h, fov, extrinsic);
     }

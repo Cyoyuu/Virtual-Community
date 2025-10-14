@@ -54,6 +54,9 @@ class VolumeGridBuilder:
                                      rgb.shape[1], rgb.shape[0], fov,
                                      camera_ext.astype(np.float32).ctypes.data_as(ctypes.POINTER(ctypes.c_float)))
         return points, colors, lb
+    
+    def add_warning_label(self, warning_label):
+        lib_builder.volume_grid_add_warning_label(warning_label)
 
     def add_frame(self, rgb: np.ndarray, depth: np.ndarray, label: np.ndarray, fov: float, camera_ext: np.ndarray):
         label[(depth < 0) | (depth > self.conf.depth_bound)] = -100 # remove invalid depth
@@ -177,6 +180,7 @@ class VolumeGridBuilder:
             draw_map[np.where(occ_map == 1)] = [0, 0, 0]
             draw_map[np.where(occ_map == 2)] = [255, 255, 255]
             draw_map[np.where(occ_map == 3)] = [0, 0, 255]
+            draw_map[np.where(occ_map == 4)] = [0, 255, 255]
 
             def draw_point(x, y, color):
                 x = int(self.align_nav(x))

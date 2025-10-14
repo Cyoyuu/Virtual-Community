@@ -34,6 +34,7 @@ class SemanticMemory:
 		self.places = []
 		self.transit_places = []
 		self.agents = []
+		self.warning_labels = []
 		self.scene_graph_dict = {}
 		self.current_place = "open space"
 		self.get_sg(self.current_place)
@@ -74,6 +75,8 @@ class SemanticMemory:
 			if os.path.exists(f"{self.storage_path}/{place}/volume_grid.pkl"):
 				print(f"Loading volume grid for {place}...")
 				self.scene_graph_dict[place].volume_grid_builder.load(f"{self.storage_path}/{place}/volume_grid.pkl")
+			for warning_label in self.warning_labels:
+				self.scene_graph_dict[place].add_warning_label(warning_label)
 		if self.current_place is not None and self.current_place != place:
 			self.scene_graph_dict[self.current_place].volume_grid_builder.save(f"{self.storage_path}/{self.current_place}/volume_grid.pkl")
 		self.current_place = place
@@ -185,6 +188,8 @@ class SemanticMemory:
 			time.sleep(0.1)
 		if obs['rgb'] is None:
 			return 0
+		if "gt_seg_entity_idx_to_info" in obs: # add warning flag for sentinels
+			self.warning_labels = [i for i in obs['gt_seg_entity_idx_to_info'] if "type" in obs["gt_seg_entity_idx_to_info"][i] and obs["gt_seg_entity_idx_to_info"][i]["type"] == "avatar" and "Sentinel" in obs["gt_seg_entity_idx_to_info"][i]["name"]]
 		cur_sg = self.get_sg(obs['current_place'])
 		if self.object_builder is not None and "gt_seg_entity_idx_to_info" in obs:
 			labels = self.object_builder.add_frame_with_gt_seg(obs['rgb'], obs['depth'], obs['segmentation'], obs['fov'], obs['extrinsics'], obs['gt_seg_entity_idx_to_info'])

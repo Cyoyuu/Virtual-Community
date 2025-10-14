@@ -18,6 +18,9 @@ class Builder:
         self.output_path = conf.output_path
         self.logger = conf.logger
     
+    def add_warning_label(self, warning_label):
+        self.volume_grid_builder.add_warning_label(warning_label)
+    
     def add_frame(self, rgb: np.ndarray, depth: np.ndarray, labels: np.ndarray, fov: float, camera_ext: np.ndarray):
         self.num_frames += 1
         if rgb is None:

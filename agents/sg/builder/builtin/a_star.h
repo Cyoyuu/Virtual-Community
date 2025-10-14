@@ -68,6 +68,7 @@ public:
         UNKNOWN,
         OBSTACLE,
         ROAD,
+        WARNING,
     };
 
     MapEntry get_map(const Point &p) {
@@ -91,7 +92,11 @@ public:
                     continue;
                 } else {
                     int obs_grid = arr->valid.count(h + 1, h + grid_num);
+                    int warning_grid = arr->warning.count(h + 1, h + grid_num);
                     if (obs_grid > int(0.5 / vg->get_voxel_res())) {
+                        if (warning_grid == obs_grid)
+                        return m = WARNING;
+                        else
                         return m = OBSTACLE;
                     }
                 }
@@ -118,7 +123,7 @@ public:
     int check_path(const std::vector<Point> &path) {
         for (size_t i = 0; i < path.size(); i++) {
             Point cp = align(path[i]);
-            if (cp.x < x_min || cp.x > x_max || cp.y < y_min || cp.y > y_max || get_map(cp) == OBSTACLE) {
+            if (cp.x < x_min || cp.x > x_max || cp.y < y_min || cp.y > y_max || get_map(cp) == OBSTACLE || get_map(cp) == WARNING) {
                 return i;
             }
         }
@@ -166,7 +171,7 @@ private:
                 if (q.x < x_min || q.x > x_max || q.y < y_min || q.y > y_max) {
                     continue;
                 }
-                if (get_map(q) == OBSTACLE)
+                if (get_map(q) == OBSTACLE || get_map(q) == WARNING)
                     mn_dist = std::min(mn_dist, std::max(std::abs(nx), std::abs(ny)));
             }
         }
@@ -220,7 +225,7 @@ std::vector<AStar::Point> AStar::search() {
                 open.emplace(np, current->g + 1 + extra, heuristic(np), current);
                 continue;
             }
-            if (entry == OBSTACLE || n_near_obs <= 1) {
+            if (entry == OBSTACLE || entry == WARNING || n_near_obs <= 1) {
                 // ban move to any direction which near obstacle
                 continue;
             }

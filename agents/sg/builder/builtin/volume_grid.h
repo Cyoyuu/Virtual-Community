@@ -242,6 +242,7 @@ struct Voxel {
     int z;
     uint8_t r, g, b;
     int label;
+    int warning;
 };
 
 class Z_Array {
@@ -249,10 +250,19 @@ class Z_Array {
     int sz;
 public:
     DynamicArray<bool> valid;
+    DynamicArray<bool> warning;
     Voxel *voxels;
     int n;
     Z_Array() : voxels(nullptr), n(0), sz(0) {}
     void insert(const Voxel &v) {
+        if (v.warning) {
+            if (valid.test(v.z))
+            return;
+            warning.set(v.z);
+        }
+        else {
+            warning.reset(v.z);
+        }
         if (valid.set(v.z)) {
             for (int i = 0; i < n; i++) {
                 if (voxels[i].z == v.z) {
@@ -288,6 +298,7 @@ class VolumeGrid {
     int num_workers;
     int x_max, x_min, y_max, y_min, z_max, z_min;
     std::tuple<int, int, int, int, int, int> bound;
+    std::map<int,int> warning_labels;
 
     auto _get_bound() const {
         int x_min, x_max, y_min, y_max, z_min, z_max;
@@ -314,6 +325,7 @@ public:
     VolumeGrid(float voxel_res, int num_workers) :
         voxel_res(voxel_res), num_workers(num_workers) {
         x_max = x_min = y_max = y_min = z_max = z_min = 0;
+        warning_labels.clear();
     }
 
     int align(float x) {
@@ -322,6 +334,10 @@ public:
 
     float retrieve(int x) {
         return (x + 0.5) * voxel_res;
+    }
+
+    void add_warning_label(int warning_label) {
+        warning_labels[warning_label]=1;
     }
 
     void add_frame(uint8_t *rgb, float *depth, int *label, int w, int h, float fov, float *extrinsic) {
@@ -398,6 +414,8 @@ public:
     }
 
     void insert(float *p, uint8_t *c, int *l, int n) {
+        const int sphere_radius_m = 30;
+        const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
         auto run = [&](int id) {
             for (int i = 0; i < n; i++) {
                 float px = p[3 * i] / voxel_res, py = p[3 * i + 1] / voxel_res, pz = p[3 * i + 2] / voxel_res;
@@ -412,11 +430,26 @@ public:
                 }
                 if ((x + X_MAX) % num_workers != id)
                     continue;
-                Z_Array *&arr = data[x + X_MAX][y];
-                if (arr == nullptr) {
-                    arr = new Z_Array();
+                if (warning_labels[l[i]]) {
+                    for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
+                        for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
+                            for (int dz = -sphere_radius_vox; dz <= sphere_radius_vox; dz++) {
+                                if (dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) {
+                                    Z_Array *&arr = data[x + dx + X_MAX][y + dy];
+                                    if (arr == nullptr) arr = new Z_Array();
+                                    arr->insert(Voxel{z + dz, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i], (dx==0&&dy==0)?0:1});
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    // normal insertion
+                    Z_Array *&arr = data[x + X_MAX][y];
+                    if (arr == nullptr) {
+                        arr = new Z_Array();
+                    }
+                    arr->insert(Voxel{z, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i], 0});
                 }
-                arr->insert(Voxel{z, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i]});
             }
         };
         std::vector<std::thread> threads;
