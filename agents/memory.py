@@ -207,7 +207,7 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], labels, obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], obs['segmentation'], obs['fov'], obs['extrinsics'])
 		self.num_frames += 1
 		if num_new_objects > 0:
 			# update region cluster
