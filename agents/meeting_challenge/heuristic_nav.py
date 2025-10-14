@@ -35,7 +35,6 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
     def _act(self, obs):
         if self.banned:
             if self.pose[0]>-1000:
-                super().reset(self.name, [-1500., -1500., 0., 0., 0., 0.])
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
         self.logger.debug(f"self mode time counter is {self.mode_time_counter}")

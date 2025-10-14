@@ -58,6 +58,8 @@ class SemanticMemory:
 		self.load_memory()
 		self.SIMILARITY_THRESHOLD = 0.75
 
+	def initialize_warning_labels(self, name):
+
 	def get_sg(self, place=None):
 		if place is None:
 			place = "open space"
@@ -188,7 +190,7 @@ class SemanticMemory:
 			time.sleep(0.1)
 		if obs['rgb'] is None:
 			return 0
-		if "gt_seg_entity_idx_to_info" in obs: # add warning flag for sentinels
+		if "gt_seg_entity_idx_to_info" in obs and "Sentinel" not in obs['name']: # add warning flag for sentinels
 			self.warning_labels = [i for i in obs['gt_seg_entity_idx_to_info'] if "type" in obs["gt_seg_entity_idx_to_info"][i] and obs["gt_seg_entity_idx_to_info"][i]["type"] == "avatar" and "Sentinel" in obs["gt_seg_entity_idx_to_info"][i]["name"]]
 		cur_sg = self.get_sg(obs['current_place'])
 		if self.object_builder is not None and "gt_seg_entity_idx_to_info" in obs:

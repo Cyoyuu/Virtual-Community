@@ -850,6 +850,7 @@ class VicoEnv:
 		for i, agent in enumerate(self.agents):
 			obs[i]['rgb'], obs[i]['depth'], obs[i]['segmentation'], obs[i]['fov'], obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation)
 			obs[i]['pose'] = self.config['agent_poses'][i]
+			obs[i]['name'] = self.config['agent_names'][i]
 			if self.seconds % self.save_per_seconds == 0:
 				if obs[i]['rgb'] is not None:
 					Image.fromarray(obs[i]['rgb']).save(os.path.join(self.output_dir, 'ego', self.agent_names[i], f"rgb_{self.steps:06d}.png"))
