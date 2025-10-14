@@ -449,6 +449,14 @@ class BaseNavigationMeetingAgent(Agent):
             self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route.to_dict())
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
+        values, counts = np.unique(self.obs['segmentation'], return_counts=True)
+        freq = dict(zip(values, counts))
+        for i in freq:
+            if freq[i] < 30: continue
+            e = self.obs["gt_seg_entity_idx_to_info"][i]
+            if 'type' in e and e['type'] == 'avatar': # e[-1] is None
+                if 'Sentinel' not in e['name']: continue
+                self.logger.info(f"I see {i}: {e['name']}.")
     
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS
