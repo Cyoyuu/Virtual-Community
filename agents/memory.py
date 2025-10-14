@@ -75,8 +75,8 @@ class SemanticMemory:
 			if os.path.exists(f"{self.storage_path}/{place}/volume_grid.pkl"):
 				print(f"Loading volume grid for {place}...")
 				self.scene_graph_dict[place].volume_grid_builder.load(f"{self.storage_path}/{place}/volume_grid.pkl")
-			for warning_label in self.warning_labels:
-				self.scene_graph_dict[place].add_warning_label(warning_label)
+		for warning_label in self.warning_labels:
+			self.scene_graph_dict[place].add_warning_label(warning_label)
 		if self.current_place is not None and self.current_place != place:
 			self.scene_graph_dict[self.current_place].volume_grid_builder.save(f"{self.storage_path}/{self.current_place}/volume_grid.pkl")
 		self.current_place = place
