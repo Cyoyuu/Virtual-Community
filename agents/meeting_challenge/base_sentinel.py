@@ -50,7 +50,7 @@ class BaseSentinelAgent(Agent):
         freq = dict(zip(values, counts))
         self.visible_agent = {}
         for i in freq:
-            if freq[i] < 20: continue
+            if freq[i] < 30: continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
@@ -70,7 +70,7 @@ class BaseSentinelAgent(Agent):
             action = self.patrol()
         else:
             if self.current_target is not None and self.current_target in self.visible_agent:
-                self.countdown -= 1 if self.visible_agent[self.current_target]<50 else 2
+                self.countdown -= 1 if self.visible_agent[self.current_target]<80 else 2
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
