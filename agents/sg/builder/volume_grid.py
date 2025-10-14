@@ -56,7 +56,7 @@ class VolumeGridBuilder:
         return points, colors, lb
     
     def add_warning_label(self, warning_label):
-        lib_builder.volume_grid_add_warning_label(warning_label)
+        lib_builder.volume_grid_add_warning_label(self.vg_backend, warning_label)
 
     def add_frame(self, rgb: np.ndarray, depth: np.ndarray, label: np.ndarray, fov: float, camera_ext: np.ndarray):
         label[(depth < 0) | (depth > self.conf.depth_bound)] = -100 # remove invalid depth
