@@ -6,8 +6,8 @@ lib_builder = ctypes.cdll.LoadLibrary(os.path.join(os.path.dirname(__file__), 'l
 lib_builder.init_volume_grid.argtypes = [ctypes.c_float, ctypes.c_int] # voxel_size, num_threads
 lib_builder.init_volume_grid.restype = ctypes.c_void_p # backend object
 
-lib_builder.volume_grid_add_warning_label.argtypes = [ctypes.c_int # label
-]
+lib_builder.volume_grid_add_warning_label.argtypes = [ctypes.c_void_p, # backend object
+                                                      ctypes.c_int] # label
 lib_builder.volume_grid_add_warning_label.restype = None
 
 lib_builder.volume_grid_add_frame.argtypes = [ctypes.c_void_p, # backend object
