@@ -1,4 +1,4 @@
-scene=$1
+dscene=$1
 
 export PYTHONPATH=${PWD}
 
