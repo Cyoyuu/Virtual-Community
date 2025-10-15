@@ -1,0 +1,358 @@
+{
+    "Olivia Adams": {
+        "age": 22,
+        "living_place": "Chowdala",
+        "appearance": "ViCo/assets/imgs/avatars/Olivia Adams.png",
+        "groups": [
+            "Fort Worth Fitness Enthusiasts"
+        ]
+    },
+    "Fort Worth Fitness Enthusiasts": {
+        "description": "A group of fitness lovers who organize and participate in various fitness activities and events.",
+        "place": "Burk Burnett Park",
+        "members": [
+            "Adam Pierce",
+            "Olivia Adams"
+        ],
+        "daily_activity": "organizing fitness events from 17:00 to 18:00"
+    },
+    "Adam Pierce's room at Houston Place Lofts": {
+        "building": "Houston Place Lofts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1077.2539539337158,
+            971.7707185745239,
+            -12
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "name": "Adam Pierce's room at Houston Place Lofts",
+        "bounding_box": [
+            77.30113140438368,
+            -31.467601247611924,
+            123.30342864990233,
+            30.684560687364822,
+            20.5834413632481,
+            27.294998168945327,
+            0.5201081664834409
+        ]
+    },
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.20849609375,
+            904.2162132263184,
+            -4
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -43.72303431509959,
+            -95.7049147649222,
+            135.87408447265625,
+            73.5226924534619,
+            97.90414338877876,
+            49.02667236328125,
+            -0.007332725972464746
+        ]
+    },
+    "Burk Burnett Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.5295785584899,
+            897.8033562661882,
+            -0.0055793541536104385
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Fort Worth Public Library - Downtown Express": {
+        "building": "Fort Worth Old City Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1030.5131950378418,
+            771.1894226074219,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            30.517742156982422,
+            -228.810302734375,
+            117.53858947753906,
+            55.869632720947266,
+            108.70323944091797,
+            13.071022033691406,
+            -0.010612870566546917
+        ]
+    },
+    "La Perla": {
+        "building": "Houston Place Lofts",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1077.2539539337158,
+            971.7707185745239,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            77.30113140438368,
+            -31.467601247611924,
+            123.30342864990233,
+            30.684560687364822,
+            20.5834413632481,
+            27.294998168945327,
+            0.5201081664834409
+        ]
+    },
+    "61 Osteria": {
+        "building": "500 W. 7th",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Son of a Baker Pizzeria": {
+        "building": "Houston Street Bar & Patio",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1059.4185905456543,
+            1001.9381380081177,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            59.41443378708189,
+            1.938445078914681,
+            114.30772399902344,
+            7.344443049599601,
+            28.339476263795316,
+            9.038848876953125,
+            -1.0462336867279478
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "901 Throckmorton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1026.4681687355042,
+            987.6056065261364,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            26.468162536621094,
+            -12.394390106201172,
+            114.69550323486328,
+            21.960912704467773,
+            15.197171211242676,
+            8.6431884765625,
+            0.5200315713882446
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Star-Telegram Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            957.7258377075195,
+            1015.7194132804871,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -42.27558135986328,
+            8.998313903808594,
+            146.24929809570312,
+            28.1203556060791,
+            60.492374420166016,
+            70.12572479248047,
+            0.5011052489280701
+        ]
+    },
+    "West 7th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -176.4915018524415,
+            -14.460973615116995
+        ],
+        "rotation": -1.0524566790619148,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.1052575202679,
+            182.87464646913259
+        ],
+        "rotation": -0.8936122536766103,
+        "bounding_box": null
+    },
+    "Houston Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.72617540910458,
+            -143.92913508338017
+        ],
+        "rotation": 2.0823315085752347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            64.15209643979796,
+            69.77376676139166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -98.10083788061374,
+            -271.8031433875841
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -2.83358979438382,
+            -42.72445330458906
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            7.8425292876260535,
+            262.31761608136424
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.43417848174332,
+            173.54857106916538
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Houston Street": [
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To West 7th Street": [
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}
