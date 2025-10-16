@@ -50,13 +50,13 @@ class BaseSentinelAgent(Agent):
         freq = dict(zip(values, counts))
         self.visible_agent = {}
         for i in freq:
-            if freq[i] < 30: continue
+            if freq[i] < 0.0002 * len(self.obs['segmentation'].flatten()): continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
                 if e['name'] not in self.obs['agent_pos_dict']: continue
                 self.visible_agent[e['name']] = freq[i]
-                if e['name'] not in self.spot_counter:
+                if e['nameT'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
                 self.spot_counter[e['name']] += 1
                 mask = (self.obs['segmentation'] == i)
@@ -70,7 +70,7 @@ class BaseSentinelAgent(Agent):
             action = self.patrol()
         else:
             if self.current_target is not None and self.current_target in self.visible_agent:
-                self.countdown -= 1 if self.visible_agent[self.current_target]<80 else 2
+                self.countdown -= 1 if self.visible_agent[self.current_target]<0.0005 * len(self.obs['segmentation'].flatten()) else 2
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
@@ -91,7 +91,7 @@ class BaseSentinelAgent(Agent):
             self.countdown = 0
         else:
             self.current_target = agent_name
-            self.countdown = 30
+            self.countdown = 15
     
     def patrol(self):
         if self.patrol_config is None:
