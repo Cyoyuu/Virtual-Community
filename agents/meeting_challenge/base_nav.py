@@ -589,17 +589,17 @@ class BaseNavigationMeetingAgent(Agent):
                 break
         if self.last_route[0].transit=='walk':
             if self.obs['current_vehicle']=='bus':
-                return {'type': 'exit_bus', 'arg1': None}
+                return {'type': 'exit_bus', 'arg1': None}, False
             else:
                 return self.llm_navigate(max_retry=0)
         elif self.last_route[0].transit=='bus':
             if self.obs['current_vehicle']!='bus':
                 if 'bus' in self.obs['accesible_places']:
-                    return {'type': 'enter_bus', 'arg1': None}
+                    return {'type': 'enter_bus', 'arg1': None}, False
                 else:
-                    return {'type': 'wait'}
+                    return {'type': 'wait'}, False
             else:
-                return {'type': 'wait'}
+                return {'type': 'wait'}, False
     
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert len(self.last_route)>0

@@ -1,0 +1,201 @@
+{
+    "agent_names": [
+        "Sentinel 0",
+        "Sentinel 1",
+        "Sentinel 2",
+        "Sentinel 3",
+        "Sentinel 4"
+    ],
+    "agent_infos": [
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                41.6398167937604,
+                149.40972741890562,
+                119.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -8.755248754043167,
+                0.038911418558811306,
+                119.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -253.90192057656918,
+                -107.18799578126709,
+                119.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                73.23705242759009,
+                51.7407742186389,
+                119.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -297.5391422943892,
+                146.66483495744947,
+                119.14538848546394,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        }
+    ],
+    "agent_poses": [
+        [
+            41.6398167937604,
+            149.40972741890562,
+            119.14538848546394,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -8.755248754043167,
+            0.038911418558811306,
+            119.14538848546394,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -253.90192057656918,
+            -107.18799578126709,
+            119.14538848546394,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            73.23705242759009,
+            51.7407742186389,
+            119.14538848546394,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -297.5391422943892,
+            146.66483495744947,
+            119.14538848546394,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan"
+    ],
+    "locator_colors_rgb": [
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb"
+    ],
+    "patrol_config": [
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        }
+    ]
+}

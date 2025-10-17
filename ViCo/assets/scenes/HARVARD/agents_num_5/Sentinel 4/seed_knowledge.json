@@ -1,0 +1,374 @@
+{
+    "Jody Petersen": {
+        "age": 27,
+        "living_place": "Jody Petersen's room at Ridgely Hall",
+        "appearance": "ViCo/assets/imgs/avatars/Jody Petersen.png",
+        "groups": [
+            "Harvard Arts and Wellness Group"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Hampden Hall",
+        "appearance": "ViCo/assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Harvard Arts and Wellness Group"
+        ]
+    },
+    "Harvard Arts and Wellness Group": {
+        "description": "A community of individuals interested in exploring the intersection of art and wellness through various activities.",
+        "place": "Barre & Soul, Harvard Square Yoga and Barre Studio",
+        "members": [
+            "Jody Petersen",
+            "Justin Bieber",
+            "Shannon Steves"
+        ],
+        "daily_activity": "participating in art and yoga sessions from 18:00 to 19:30"
+    },
+    "Justin Bieber's room at Harvard Real Estate": {
+        "building": "Smith Campus Center",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.1311111450195,
+            799.2759552001953,
+            -16
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
+        "name": "Justin Bieber's room at Harvard Real Estate",
+        "bounding_box": [
+            -173.20317491530784,
+            -194.35649816724455,
+            122.63580703735352,
+            57.563055511831486,
+            110.77083940328005,
+            24.70989227294922,
+            -0.42418825838431756
+        ]
+    },
+    "Barre & Soul, Harvard Square Yoga and Barre Studio": {
+        "building": "The Garage",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            747.9146728515625,
+            793.5179595947266,
+            -16
+        ],
+        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "bounding_box": [
+            -250.9162180201214,
+            -198.90871892874114,
+            119.72323608398439,
+            57.22537325853666,
+            37.402858393145735,
+            15.973098754882812,
+            -0.46870070895754173
+        ]
+    },
+    "Harvard College": {
+        "building": "Harvard Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            862.192455291748,
+            1048.0578575134277,
+            -4
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -138.30621387886197,
+            47.52777109982069,
+            120.27682113647461,
+            34.31852236109546,
+            18.63501079092637,
+            12.051979064941406,
+            -0.23440965029856245
+        ]
+    },
+    "Richard A. and Susan F. Smith Campus Center": {
+        "building": "Smith Campus Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "travel_agency",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.1311111450195,
+            799.2759552001953,
+            -8
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -173.20317491530784,
+            -194.35649816724455,
+            122.63580703735352,
+            57.563055511831486,
+            110.77083940328005,
+            24.70989227294922,
+            -0.42418825838431756
+        ]
+    },
+    "Subway": {
+        "building": "The Garage",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            747.9146728515625,
+            793.5179595947266,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -250.9162180201214,
+            -198.90871892874114,
+            119.72323608398439,
+            57.22537325853666,
+            37.402858393145735,
+            15.973098754882812,
+            -0.46870070895754173
+        ]
+    },
+    "Club Passim": {
+        "building": "47 Palmer Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            714.1211395263672,
+            977.9700016975403,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            -285.87886047723384,
+            -22.029998302486906,
+            120.27273178100586,
+            9.374851825096309,
+            21.734583080182954,
+            15.070915222167969,
+            0.007552199086567
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "The Garage",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            747.9146728515625,
+            793.5179595947266,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -250.9162180201214,
+            -198.90871892874114,
+            119.72323608398439,
+            57.22537325853666,
+            37.402858393145735,
+            15.973098754882812,
+            -0.46870070895754173
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "1210 Massachusetts Avenue",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1090.8332290649414,
+            717.215576171875,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            90.86169074337306,
+            -282.78057461273374,
+            118.48482894897462,
+            14.78727720728977,
+            15.861448506360107,
+            10.564079284667969,
+            0.7339386384190978
+        ]
+    },
+    "John F. Kennedy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -301.823639734867,
+            -191.2037801155555
+        ],
+        "rotation": -0.5531513624387934,
+        "bounding_box": null
+    },
+    "Cambridge Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            16.528803609433904,
+            150.65013352098512
+        ],
+        "rotation": -1.8393218932132975,
+        "bounding_box": null
+    },
+    "Quincy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            122.12224185971871,
+            -227.54447507960705
+        ],
+        "rotation": 2.9298153683542463,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -219.2434807155732,
+            -70.13480772898232
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.9620577425494,
+            -168.94950167262357
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            219.70838752681368,
+            101.13194690835284
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -178.8554646544401,
+            -224.5900005932641
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -105.68479829799094,
+            160.20801555148782
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.791292142404634,
+            -204.62582157803433
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            40.48226105178207,
+            104.91752717698618
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Quincy Street": [
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To John F. Kennedy Street": [
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

@@ -16,6 +16,12 @@ import math
 import heapq
 import matplotlib.pyplot as plt
 import argparse
+import sys
+
+current_directory = os.getcwd()
+sys.path.insert(0, current_directory)
+
+from ViCo.tools.annotate_sentinel import annotate_all_rotate
 
 if __name__ != "__main__" :
     from ViCo.tools.utils import *
@@ -277,7 +283,7 @@ class Amap:
                     self.waypoints[idx].successor.append(jdx)
                     self.waypoints[jdx].predecessor.append(idx)
 
-    def initiate_transit(self, bus: Bus):
+    def initiate_transit(self, bus):
         self.bus_stop_to_waypoint=dict()
         self.bus=bus
         for bus_wp_id, r_wp in enumerate(self.bus.route):
@@ -411,8 +417,8 @@ class Amap:
                     new_dist=next_bus_time[i]
                     if dist[wp_id]<new_dist<dist[bus_wp_id]:
                         dist[bus_wp_id]=new_dist
-                        prev[succ_id] = [wp_id, 'bus']
-                        heapq.heappush(heap, (new_dist, succ_id))
+                        prev[bus_wp_id] = [wp_id, 'bus']
+                        heapq.heappush(heap, (new_dist, bus_wp_id))
 
         # 4. Reconstruct path
         goal_wp_pair=(dist[goal_wp_id]+timedelta(seconds=min_dis2t), goal_wp_id)
@@ -487,6 +493,11 @@ if __name__ == "__main__" :
     xs, ys = zip(*wps)
     plt.figure(figsize=(10, 6))
     plt.plot(xs, ys, 'bo', markersize=3)
+    # this code is for generating sentinel config
+    # random_sampled_points=list(np.random.uniform(low=-300, high=300, size=(5, 2)))
+    # for i in range(len(random_sampled_points)):
+    #     random_sampled_points[i]=amap.waypoints[amap.get_nearest_waypoints(random_sampled_points[i])[0]].location
+    # annotate_all_rotate(args.scene, random_sampled_points)
     n_wps=amap.get_nearest_waypoints([285.16, -196.96])
     c_wps=set()
     for wp in n_wps:

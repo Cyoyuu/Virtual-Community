@@ -56,7 +56,7 @@ class BaseSentinelAgent(Agent):
                 if 'Sentinel' in e['name']: continue
                 if e['name'] not in self.obs['agent_pos_dict']: continue
                 self.visible_agent[e['name']] = freq[i]
-                if e['nameT'] not in self.spot_counter:
+                if e['name'] not in self.spot_counter:
                     self.spot_counter[e['name']] = 0
                 self.spot_counter[e['name']] += 1
                 mask = (self.obs['segmentation'] == i)
