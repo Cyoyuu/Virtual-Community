@@ -591,7 +591,7 @@ class BaseNavigationMeetingAgent(Agent):
         # get occ map
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
         occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
-        while idx < len(self.last_route):
+        while idx < len(self.last_route)-1:
             wp_x_world, wp_y_world = self.last_route[idx].location[0], self.last_route[idx].location[1]
             wp_pos_in_map = [
                 builder.align_nav(wp_x_world) - x_min,
