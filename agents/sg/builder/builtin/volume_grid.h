@@ -433,7 +433,7 @@ public:
                 if (warning_labels[l[i]]) {
                     for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
                         for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
-                            for (int dz = -sphere_radius_vox; dz <= sphere_radius_vox; dz++) {
+                            for (int dz = 0; dz <= 0; dz++) {
                                 if (dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) {
                                     Z_Array *&arr = data[x + dx + X_MAX][y + dy];
                                     if (arr == nullptr) arr = new Z_Array();
