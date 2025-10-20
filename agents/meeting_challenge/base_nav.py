@@ -587,6 +587,20 @@ class BaseNavigationMeetingAgent(Agent):
                 for i in range(idx+1):
                     self.last_route.pop(0)
                 break
+        idx = 0
+        # get occ map
+        builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
+        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
+        while idx < len(self.last_route):
+            wp_x_world, wp_y_world = self.last_route[idx].location[0], self.last_route[idx].location[1]
+            wp_pos_in_map = [
+                builder.align_nav(wp_x_world) - x_min,
+                builder.align_nav(wp_y_world) - y_min
+            ]
+            if occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
+                self.last_route.pop(0)
+            else:
+                break
         if self.last_route[0].transit=='walk':
             if self.obs['current_vehicle']=='bus':
                 return {'type': 'exit_bus', 'arg1': None}, False
@@ -594,7 +608,7 @@ class BaseNavigationMeetingAgent(Agent):
                 return self.llm_navigate(max_retry=0)
         elif self.last_route[0].transit=='bus':
             if self.obs['current_vehicle']!='bus':
-                if 'bus' in self.obs['accesible_places']:
+                if 'bus' in self.obs['accessible_places']:
                     return {'type': 'enter_bus', 'arg1': None}, False
                 else:
                     return {'type': 'wait'}, False
@@ -640,13 +654,13 @@ class BaseNavigationMeetingAgent(Agent):
             return
         # find nearest unexplored point
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
-        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
+        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open, 4 for warning
         agent_x_world, agent_y_world = self.pose[0], self.pose[1]
         agent_pos_in_map = [
             builder.align_nav(agent_x_world) - x_min,
             builder.align_nav(agent_y_world) - y_min
         ]
-        occ_map[int(agent_pos_in_map[1])][int(agent_pos_in_map[0])]=4
+        occ_map[int(agent_pos_in_map[1])][int(agent_pos_in_map[0])]=5
         # Define local crop around agent (±30m in world coordinates)
         x_low_w, x_up_w = agent_x_world - 30, agent_x_world + 30
         y_low_w, y_up_w = agent_y_world - 30, agent_y_world + 30
@@ -680,12 +694,12 @@ class BaseNavigationMeetingAgent(Agent):
                     block = blocks[i, j]
                     has_2 = 2 in block
                     has_3 = 3 in block
-                    has_4 = 4 in block
+                    has_5 = 5 in block
                     
-                    if has_2 and has_4:
-                        raise ValueError(f"Block at ({i}, {j}) contains both 2 and 4, which is not allowed.")
-                    elif has_4:
-                        downscaled[i, j] = 4
+                    if has_2 and has_5:
+                        raise ValueError(f"Block at ({i}, {j}) contains both 2 and 5, which is not allowed.")
+                    elif has_5:
+                        downscaled[i, j] = 5
                     elif has_2:
                         downscaled[i, j] = 2
                     elif has_3:
@@ -702,7 +716,7 @@ class BaseNavigationMeetingAgent(Agent):
             return
 
         # Convert downscaled map to string representation
-        symbol_map = {1: '?', 2: 'X', 3: '.', 4: 'A'}  # . = free, X = obstacle, ? = unknown, A = agent
+        symbol_map = {1: '?', 2: 'X', 3: '.', 5: 'A'}  # . = free, X = obstacle, ? = unknown, A = agent
         map_str_lines = []
         for row in downscaled_map:
             line = ''.join(symbol_map[val] for val in row)

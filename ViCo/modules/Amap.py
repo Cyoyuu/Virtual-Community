@@ -276,9 +276,10 @@ class Amap:
                 self.waypoints[successor].predecessor.append(waypoint.id)
         # for low-connected waypoints, search its neighbour
         for idx, waypoint in enumerate(self.waypoints):
-            if len(waypoint.successor)+len(waypoint.predecessor)>1: continue
+            if len(waypoint.successor)+len(waypoint.predecessor)>2: continue
             for jdx, n_wp in enumerate(self.waypoints):
                 if jdx==idx:continue
+                if len(waypoint.successor)+len(waypoint.predecessor)>2: break
                 if np.linalg.norm(np.array(waypoint.location)-np.array(n_wp.location))<self.waypoints_dis:
                     self.waypoints[idx].successor.append(jdx)
                     self.waypoints[jdx].predecessor.append(idx)
