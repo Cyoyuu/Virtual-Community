@@ -597,7 +597,7 @@ class BaseNavigationMeetingAgent(Agent):
                 builder.align_nav(wp_x_world) - x_min,
                 builder.align_nav(wp_y_world) - y_min
             ]
-            if 0 <= int(wp_pos_in_map[1]) < x_max - x_min and 0 <= int(wp_pos_in_map[0]) < y_max - y_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
+            if 0 <= int(wp_pos_in_map[1]) < y_max - y_min and 0 <= int(wp_pos_in_map[0]) < x_max - x_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
                 self.last_route.pop(0)
             else:
                 break
