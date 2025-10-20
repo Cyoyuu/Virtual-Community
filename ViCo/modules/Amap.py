@@ -127,6 +127,8 @@ class Route:
     def calc_time(self, pose=None):
         if pose is not None:
             ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0]=='bus' else 1.0)
+        else:
+            ret=0
         for i in range(1, len(self.nodes)):
             ret+=np.linalg.norm(np.array(self.nodes[i].location[:2])-np.array(self.nodes[i-1].location[:2]))/(5.0 if self.nodes[i]=='bus' else 1.0)
         return ret*2 # for turning

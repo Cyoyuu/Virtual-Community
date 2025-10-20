@@ -420,7 +420,7 @@ class BaseNavigationMeetingAgent(Agent):
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
-                            time_to_arrival = timedelta(seconds=event['content'].calc_time(pose=self.pose[:2]))
+                            time_to_arrival = timedelta(seconds=event['content'].calc_time(pose=self.get_outdoor_pose()))
                             if self.meeting_place==self.last_action["arg2"]:
                                 self.navigation_plan=event['content']
                                 self.last_route=event["content"]
@@ -543,7 +543,7 @@ class BaseNavigationMeetingAgent(Agent):
             return self.last_action, True
         if rethink and self.mode_time_counter % 120 == 0:
             curr_time = self.curr_time.strftime('%H:%M:%S')
-            curr_eta = str(timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2])))
+            curr_eta = str(timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose())))
             rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=curr_eta, eta_history=self.get_eta_history_description())
             self.eta_history[curr_time]=curr_eta
             if rethink_result['initiate_new_discussion']:
@@ -572,9 +572,9 @@ class BaseNavigationMeetingAgent(Agent):
             return action, False
         assert isinstance(self.last_route, Route)
         assert isinstance(self.last_route[0], RouteNode)
-        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))}s")
+        self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose()))}s")
         # If the estimated arrival time exceeds, regenerate
-        estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.pose[:2]))
+        estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose()))
         if self.last_estimated_arrival_time + timedelta(minutes=2) < estimated_arrival_time:
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
@@ -1085,6 +1085,18 @@ class BaseNavigationMeetingAgent(Agent):
         else:
             return {"type": "turn_left",
                     "arg1": 90}
+        
+    def get_outdoor_pose(self):
+        if self.current_place == None:
+            return self.pose[:2]
+        goal_place_dict = self.s_mem.get_knowledge(self.current_place)
+        if goal_place_dict is None:
+            self.logger.error(f"No knowledge found for {self.current_place}.")
+            return self.pose[:2]
+        goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+        if goal_place_dict["building"] != "open space":
+            goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+        return goal_pos[:2]
         
     def get_outdoor_pose_description(self):
         if self.current_place == None:
