@@ -14,20 +14,21 @@ args = parser.parse_args()
 base_output_dir = args.output_dir
 results = dict()
 average_results = dict()
+job_id_range = range(2, 3)
 for agent_type in os.listdir(base_output_dir):
     if not os.path.isdir(os.path.join(base_output_dir, agent_type)): continue
     for scene in os.listdir(os.path.join(base_output_dir, agent_type)):
         if "_old" in str(scene).lower(): continue
-        for job_id in range(5):
+        if agent_type not in results:
+            results[agent_type] = dict()
+        if scene not in results[agent_type]:
+            results[agent_type][scene] = {"success_rate": 0.0, "time_spent_meeting": [], "total": 0}
+        for job_id in job_id_range:
             # if "_" not in dir_name:
             #     continue
             if f"result_{job_id}.json" not in os.listdir(os.path.join(base_output_dir, agent_type, scene)): continue
             result = json.load(open(os.path.join(base_output_dir, agent_type, scene, f"result_{job_id}.json")))
             print(f"summerizeing {os.path.join(base_output_dir, agent_type, scene)}")
-            if agent_type not in results:
-                results[agent_type] = dict()
-            if scene not in results[agent_type]:
-                results[agent_type][scene] = {"success_rate": 0.0, "time_spent_meeting": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
             results[agent_type][scene]['total']+=1
             results[agent_type][scene]['success_rate']+=result['success_rate']
@@ -37,6 +38,7 @@ for agent_type in os.listdir(base_output_dir):
             # for key in ['time', 'length']:
             #     results[agent_type][scene][f"agent_navigation_{key}_mean"]=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
             #     results[agent_type][scene][f"agent_navigation_{key}_stdev"]=np.std(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+        results[agent_type][scene]['success_rate']/=results[agent_type][scene]['total']
 for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting_mean"]=0.
