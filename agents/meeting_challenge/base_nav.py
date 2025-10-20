@@ -597,7 +597,7 @@ class BaseNavigationMeetingAgent(Agent):
                 builder.align_nav(wp_x_world) - x_min,
                 builder.align_nav(wp_y_world) - y_min
             ]
-            if occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
+            if 0 <= int(wp_pos_in_map[1]) < x_max - x_min and 0 <= int(wp_pos_in_map[0]) < y_max - y_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
                 self.last_route.pop(0)
             else:
                 break
@@ -654,7 +654,7 @@ class BaseNavigationMeetingAgent(Agent):
             return
         # find nearest unexplored point
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
-        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open, 4 for warning
+        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknown, 2 for obstacle, 3 for open, 4 for warning
         agent_x_world, agent_y_world = self.pose[0], self.pose[1]
         agent_pos_in_map = [
             builder.align_nav(agent_x_world) - x_min,
