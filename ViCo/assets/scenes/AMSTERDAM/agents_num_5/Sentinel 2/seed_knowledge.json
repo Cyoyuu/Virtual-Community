@@ -1,0 +1,360 @@
+{
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Luxury Canal Suite De Heren",
+        "appearance": "ViCo/assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Amsterdam Fitness Enthusiasts"
+        ]
+    },
+    "Amsterdam Fitness Enthusiasts": {
+        "description": "A group of fitness enthusiasts who meet regularly to train and participate in local marathons and fitness events.",
+        "place": "TrainMore Amsterdam Singel Black Label",
+        "members": [
+            "Elizabeth Mensah",
+            "Leonard Park"
+        ],
+        "daily_activity": "training together from 17:00 to 18:30"
+    },
+    "Elizabeth Mensah's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -8
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-2.json",
+        "name": "Elizabeth Mensah's room at Building III",
+        "bounding_box": [
+            -5.8302764892578125,
+            -82.98564147949219,
+            115.98128509521484,
+            53.84560775756836,
+            52.184173583984375,
+            17.441696166992188,
+            0.7096518278121948
+        ]
+    },
+    "Nederlandse Beauty School Amsterdam": {
+        "building": "Singel 300",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -8
+        ],
+        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "bounding_box": [
+            -261.353045485607,
+            -178.07236909753436,
+            115.16712570190431,
+            30.50653721295573,
+            17.46137789389023,
+            16.67302703857422,
+            -0.1108469586759953
+        ]
+    },
+    "TrainMore Amsterdam Singel Black Label": {
+        "building": "Singel 250",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            750.3935928344727,
+            977.1166310310364,
+            -12
+        ],
+        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "bounding_box": [
+            -252.16844832052092,
+            -20.266105695532953,
+            115.9765739440918,
+            60.518907804090475,
+            52.15308617064885,
+            18.007469177246094,
+            -0.16316968841531765
+        ]
+    },
+    "Humanities IT Lab - Universiteit van Amsterdam": {
+        "building": "UvA PC Hoofthuis",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            870.3427658081055,
+            1076.7827997207642,
+            -4
+        ],
+        "scene": "MV7J6NIKTKJZ2AABAAAAAAA8",
+        "bounding_box": [
+            -133.3330829311656,
+            75.47306057622252,
+            118.04490661621094,
+            26.717999373655417,
+            113.61818832626042,
+            21.909576416015625,
+            -0.2602005698881573
+        ]
+    },
+    "Techlab Bv": {
+        "building": "Singel 326 A",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            731.1872100830078,
+            738.3324813842773,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            -269.11663921247896,
+            -261.7464949481884,
+            114.65562438964845,
+            28.74136867987774,
+            12.706197571820965,
+            15.725479125976562,
+            -0.11961438250784714
+        ]
+    },
+    "Bar Jones": {
+        "building": "Nes 33",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1155.5295486450195,
+            836.4890670776367,
+            -4
+        ],
+        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "bounding_box": [
+            155.35198544065338,
+            -163.77865482198575,
+            111.92657470703126,
+            4.966355568700901,
+            26.691395991358608,
+            9.410446166992188,
+            1.2955394836652667
+        ]
+    },
+    "Bubbles & Wines": {
+        "building": "Nes 37",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1154.6223526000977,
+            832.0418243408203,
+            -4
+        ],
+        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "bounding_box": [
+            154.41142662325373,
+            -168.16498768029314,
+            112.58246231079103,
+            4.544793085208874,
+            26.219692180363413,
+            10.790519714355469,
+            1.3167627608643537
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Spuistraat 226",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_repair",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            816.9859161376953,
+            792.7637405395508,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -182.822909069898,
+            -207.67127999600527,
+            112.96469879150392,
+            8.999228501109584,
+            42.08286216459198,
+            12.497482299804688,
+            -1.1567406684047694
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Spuistraat 224HS",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            829.3459777832031,
+            805.9323348999023,
+            -4
+        ],
+        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -169.95747619113595,
+            -194.06765951091674,
+            114.18987274169923,
+            5.607994509594771,
+            14.351905058631004,
+            14.921096801757812,
+            -1.1597402736604308
+        ]
+    },
+    "Singel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -223.64587491774998,
+            -331.8770473372178
+        ],
+        "rotation": -0.11606742879572277,
+        "bounding_box": null
+    },
+    "Damrak Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            205.2698704781698,
+            105.74759652198695
+        ],
+        "rotation": -0.6870389474018183,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            190.9697649930068,
+            -159.54508143669185
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -270.59051032698653,
+            -184.14685443747305
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -99.84747833441955,
+            -121.10998771547311
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            162.8009026867501,
+            105.22397871245589
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.802841477347487,
+            -233.41860399615223
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -106.98235061443106,
+            -267.68981899489995
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.59099691949788,
+            40.69110591926888
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Damrak": [
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Singel": [
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}
