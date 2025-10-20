@@ -92,7 +92,7 @@ public:
                     continue;
                 } else {
                     int obs_grid = arr->valid.count(h + 1, h + grid_num);
-                    int warning_grid = arr->warning.count();
+                    int warning_grid = arr->warning.count(h + 1, h + grid_num);
                     if (obs_grid > int(0.5 / vg->get_voxel_res())) {
                         if (warning_grid > int(0.5 / vg->get_voxel_res())) {
                             printf("let's try warning! obs: %d warning: %d\n", obs_grid, warning_grid);
