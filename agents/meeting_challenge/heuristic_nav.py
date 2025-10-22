@@ -47,11 +47,10 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
             return action
         if self.mode_time_counter % 30 == 0:
             if len(self.places_buffer) > 0:
-                place = self.places_buffer.pop(0)
-                place_knowledge = self.s_mem.get_knowledge(place)
-                while place_knowledge is not None:
+                while self.places_buffer:
                     place = self.places_buffer.pop(0)
                     place_knowledge = self.s_mem.get_knowledge(place)
+                    if place_knowledge is None: break
                 if place_knowledge is None:
                     action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': place}
                     self.last_action = action
