@@ -421,7 +421,10 @@ class BaseNavigationMeetingAgent(Agent):
                 if event["type"] == "app message":
                     if self.last_action['type']=="query_app":
                         if self.last_action['arg1']=="query_route":
-                            time_to_arrival = timedelta(seconds=event['content'].calc_time(pose=self.get_outdoor_pose()))
+                            if event['content'] is None:
+                                time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
+                            else:
+                                time_to_arrival = timedelta(seconds=event['content'].calc_time(pose=self.get_outdoor_pose()))
                             if self.meeting_place==self.last_action["arg2"]:
                                 self.navigation_plan=event['content']
                                 self.last_route=event["content"]

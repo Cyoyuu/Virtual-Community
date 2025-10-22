@@ -433,7 +433,7 @@ class Amap:
         self.logger.info(f"found goal_wp_pair is {goal_wp_pair}")
         if goal_wp_pair[0] >= inf_time:
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
-            return []
+            return None
         path = Route()
         curr = goal_wp_pair[1]
         while curr is not None:
@@ -447,7 +447,7 @@ class Amap:
 
         if not path:
             self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
-            return []
+            return None
         
         path.append(RouteNode(goal_pos, 'walk', goal_wp_pair[0]))
         return path

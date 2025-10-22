@@ -367,7 +367,8 @@ def main():
               "time_spent_meeting": env.steps,
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
-              "success_rate": int(all_task_end and (max_distance<=20))*(num_agents-len(banned_agent_list))/(num_agents)}
+              "done": int(all_task_end and (max_distance<=20) and (0==len(banned_agent_list))),
+              "detection_rate": (len(banned_agent_list))/(num_agents)}
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:
