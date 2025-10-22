@@ -41,7 +41,7 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
         action = None
         if self.mode_time_counter % 30 == 29:
             thres = self.get_nearest_places(self.get_meeting_target())[0][0]
-            action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': self.get_meeting_target(), 'arg3': thres}
+            action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': list(self.get_meeting_target()), 'arg3': thres}
             self.mode_time_counter += 1
             self.last_action = action
             return action
