@@ -371,6 +371,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.meeting_place = None
         self.mode = None
         self.banned = False
+        self.places_buffer = []
         # Discussion
         self.mode_time_counter = 0
         self.discussion_trigger = ""
@@ -435,6 +436,8 @@ class BaseNavigationMeetingAgent(Agent):
                                 })
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
+                        elif self.last_action["arg1"]=="query_nearby":
+                            self.places_buffer.extend(event['content'])
                 if event["type"] == "sentinel signal":
                     if event['content']['arg2'] != self.name: continue
                     if event['content']['arg1'] == 'ban':
@@ -889,6 +892,9 @@ class BaseNavigationMeetingAgent(Agent):
 
 
     def calc_time(self, waypoints):
+        '''
+        Here waypoints is a list of xy-coordinates.
+        '''
         waypoints=waypoints
         if self.current_place is None:
             ret=np.linalg.norm(np.array(waypoints[0][:2])-np.array(self.pose[:2]))

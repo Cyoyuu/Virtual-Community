@@ -39,12 +39,28 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
             return {"type": "task_complete"}
         self.logger.debug(f"self mode time counter is {self.mode_time_counter}")
         action = None
-        if self.mode_time_counter % 20 == 0:
+        if self.mode_time_counter % 30 == 29:
+            thres = self.get_nearest_places(self.get_meeting_target())[0][0]
+            action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': self.get_meeting_target(), 'arg3': thres}
+            self.mode_time_counter += 1
+            self.last_action = action
+            return action
+        if self.mode_time_counter % 30 == 0:
+            if len(self.places_buffer) > 0:
+                place = self.places_buffer.pop(0)
+                place_knowledge = self.s_mem.get_knowledge(place)
+                while place_knowledge is not None:
+                    place = self.places_buffer.pop(0)
+                    place_knowledge = self.s_mem.get_knowledge(place)
+                if place_knowledge is None:
+                    action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': place}
+                    self.last_action = action
+                    return action
             self.meeting_place = self.get_meeting_place()
             self.enter_navigation_mode()
         action, arrived = self.city_navigate(self.meeting_place)
         if arrived:
             action = {'type': 'task_complete'}
-        self.mode_time_counter +=1
+        self.mode_time_counter += 1
         self.last_action = action
         return action
