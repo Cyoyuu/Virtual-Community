@@ -702,7 +702,7 @@ class VicoEnv:
 			elif action['type'] == 'task_complete':
 				continue
 			elif action['type'] == 'task_terminate':
-				assert 0 and "agent terminate task"
+				continue
 			elif action['type'] == 'query_app':
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
