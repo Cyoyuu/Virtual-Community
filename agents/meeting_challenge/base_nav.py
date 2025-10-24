@@ -190,6 +190,24 @@ class Decider(ThinkingModule):
             response_dict = None
         return response_dict
     
+    def conclude_and_decide(self, curr_time, name, agent_names, places, conversation_history):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_2in1.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$Agents$", agent_names)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error concluding opinions: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
     def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/decide_rethink.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
@@ -275,12 +293,12 @@ class Collector(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def action(self, curr_time, name, pose, agents, places, conversation_history, known_eta, analysis):
+    def action(self, curr_time, name, pose, agent_names, places, conversation_history, known_eta, analysis):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$SelfPose$", pose)
-        prompt = prompt.replace("$AgentList$", agents)
+        prompt = prompt.replace("$AgentList$", agent_names)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
         prompt = prompt.replace("$KnownETA$", known_eta)
@@ -483,63 +501,50 @@ class BaseNavigationMeetingAgent(Agent):
     
     def discuss(self):
         action = None
-        agents = ", ".join(self.obs["agent_pos_dict"].keys())
+        agent_names = ", ".join(self.obs["agent_pos_dict"].keys())
         places = self.get_nearest_places_description(self.get_meeting_target())
         conversation_history = self.get_conversation_description()
         app_message = self.get_app_message_description()
         curr_time = self.curr_time.strftime('%H:%M:%S')
-        if self.thinking == 0:
-            self.agent_opinions = self.decider.conclude(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history)
-            decision = self.decider.decide(agent_opinions=self.get_agent_opinions_description(), places=places)
-            if decision["agreement_reached"] == True:
-                meeting_place = decision["agreed_location"]
-                if meeting_place.startswith("<") and meeting_place.endswith(">"):
-                    meeting_place = meeting_place[1:-1]
-                if meeting_place != self.meeting_place:
-                    self.meeting_place = meeting_place
-                    self.time_to_arrival_timedelta=dict()
-                self.enter_navigation_mode()
-            else:
-                self.thinking = 1
-            action = {"type": "wait"}
+
+        conclusion_and_decision = self.decider.conclude_and_decide(curr_time=curr_time, name=self.name, agent_names=agent_names, places=places, conversation_history=conversation_history)
+        self.agent_opinions = conclusion_and_decision['agent_opinions']
+        decision = conclusion_and_decision['agreement_check']
+        if decision["agreement_reached"] == True:
+            meeting_place = decision["agreed_location"]
+            if meeting_place.startswith("<") and meeting_place.endswith(">"):
+                meeting_place = meeting_place[1:-1]
+            if meeting_place != self.meeting_place:
+                self.meeting_place = meeting_place
+                self.time_to_arrival_timedelta=dict()
+            self.enter_navigation_mode()
         else:
-            if self.discussion_plan==None:
-                self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                self.thinking = 2
+            self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
+            self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+            action = {"type": "wait"}
+            if self.discussion_plan["action"]=="wait":
                 action = {"type": "wait"}
-            else:
-                if self.discussion_plan["action"]=="wait":
-                    action = {"type": "wait"}
-                    self.thinking = 0
-                    self.discussion_plan = None
-                elif self.discussion_plan["action"]=="query":
-                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
-                    target_place = self.collect_plan["target_locations"][0]
-                    if target_place.startswith("<") and target_place.endswith(">"):
-                        target_place = target_place[1:-1]
-                    if self.collect_plan["target"]==self.name:
-                        action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
-                        self.thinking = 0
-                        self.discussion_plan = None
-                    else:
-                        action = {"type": "wait"}
-                        self.discussion_plan["action"]="query_speak"
-                elif self.discussion_plan["action"]=="query_speak":
-                    # description = ", ".join(self.collect_plan["target_locations"][0])
-                    speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {self.collect_plan['target_locations'][0]}?"
-                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
-                    self.thinking = 0
-                    self.discussion_plan = None
-                elif self.discussion_plan["action"]=="speak":
-                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
-                    self.thinking = 0
+                self.discussion_plan = None
+            elif self.discussion_plan["action"]=="query":
+                analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_names=agent_names, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
+                target_place = self.collect_plan["target_locations"][0]
+                if target_place.startswith("<") and target_place.endswith(">"):
+                    target_place = target_place[1:-1]
+                if self.collect_plan["target"]==self.name:
+                    action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
                     self.discussion_plan = None
                 else:
-                    raise NotImplementedError(f"discussion plan type is not supported")
+                    speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {self.collect_plan['target_locations'][0]}?"
+                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                    self.discussion_plan = None
+            elif self.discussion_plan["action"]=="speak":
+                intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                self.discussion_plan = None
+            else:
+                raise NotImplementedError(f"discussion plan type is not supported")
         return action
     
     def city_navigate(self, goal_place, threshold=500., rethink=False):
@@ -1301,3 +1306,64 @@ class BaseNavigationMeetingAgent(Agent):
                 target_region['y_min'] < self.pose[1] < target_region['y_max']:
             arrived = True
         return action, arrived
+    
+    def old_discuss(self):
+        action = None
+        agents = ", ".join(self.obs["agent_pos_dict"].keys())
+        places = self.get_nearest_places_description(self.get_meeting_target())
+        conversation_history = self.get_conversation_description()
+        app_message = self.get_app_message_description()
+        curr_time = self.curr_time.strftime('%H:%M:%S')
+        if self.thinking == 0:
+            self.agent_opinions = self.decider.conclude(curr_time=curr_time, name=self.name, agents=agents, places=places, conversation_history=conversation_history)
+            decision = self.decider.decide(agent_opinions=self.get_agent_opinions_description(), places=places)
+            if decision["agreement_reached"] == True:
+                meeting_place = decision["agreed_location"]
+                if meeting_place.startswith("<") and meeting_place.endswith(">"):
+                    meeting_place = meeting_place[1:-1]
+                if meeting_place != self.meeting_place:
+                    self.meeting_place = meeting_place
+                    self.time_to_arrival_timedelta=dict()
+                self.enter_navigation_mode()
+            else:
+                self.thinking = 1
+            action = {"type": "wait"}
+        else:
+            if self.discussion_plan==None:
+                self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
+                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                self.thinking = 2
+                action = {"type": "wait"}
+            else:
+                if self.discussion_plan["action"]=="wait":
+                    action = {"type": "wait"}
+                    self.thinking = 0
+                    self.discussion_plan = None
+                elif self.discussion_plan["action"]=="query":
+                    analysis = self.collector.analyze(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), position=self.get_agent_poses_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    self.collect_plan = self.collector.action(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agents=agents, places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), analysis=f"{analysis}")
+                    target_place = self.collect_plan["target_locations"][0]
+                    if target_place.startswith("<") and target_place.endswith(">"):
+                        target_place = target_place[1:-1]
+                    if self.collect_plan["target"]==self.name:
+                        action = {"type": "query_app", "arg1": "query_route", "arg2": target_place}
+                        self.thinking = 0
+                        self.discussion_plan = None
+                    else:
+                        action = {"type": "wait"}
+                        self.discussion_plan["action"]="query_speak"
+                elif self.discussion_plan["action"]=="query_speak":
+                    # description = ", ".join(self.collect_plan["target_locations"][0])
+                    speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {self.collect_plan['target_locations'][0]}?"
+                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                    self.thinking = 0
+                    self.discussion_plan = None
+                elif self.discussion_plan["action"]=="speak":
+                    intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                    self.thinking = 0
+                    self.discussion_plan = None
+                else:
+                    raise NotImplementedError(f"discussion plan type is not supported")
+        return action
