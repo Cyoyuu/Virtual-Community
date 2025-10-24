@@ -318,7 +318,7 @@ class Speaker(ThinkingModule):
     def __init__(self, generator, logger):
         super().__init__(generator, logger)
 
-    def prepare(self, curr_time, name, pose, agent_opinions, places, conversation_history, known_eta):
+    def prepare(self, curr_time, name, pose, agent_opinions, places, conversation_history, known_eta, reason_speak):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/speak_prepare.txt", "r").read()
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
@@ -327,6 +327,7 @@ class Speaker(ThinkingModule):
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
         prompt = prompt.replace("$KnownETA$", known_eta)
+        prompt = prompt.replace("$ReasonSpeak$", reason_speak)
         self.logger.debug(f"planning_prompt: {prompt}")
         try:
             response = self.generator.generate(prompt, img=None, json_mode=False)
@@ -394,7 +395,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.mode_time_counter = 0
         self.discussion_trigger = ""
         self.decider = Decider(generator=self.generator, logger=self.logger)
-        self.disccusser = Discusser(generator=self.generator, logger=self.logger)
+        self.discusser = Discusser(generator=self.generator, logger=self.logger)
         self.collector = Collector(generator=self.generator, logger=self.logger)
         self.speaker = Speaker(generator=self.generator, logger=self.logger)
         self.discussion_plan = None
@@ -490,6 +491,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.agent_opinions = dict()
         self.known_eta = dict()
         self.eta_history = dict()
+        self.conversation_history = []
         self.collect_plan = None
         self.thinking = 0
 
@@ -519,8 +521,8 @@ class BaseNavigationMeetingAgent(Agent):
                 self.time_to_arrival_timedelta=dict()
             self.enter_navigation_mode()
         else:
-            self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-            self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+            self.update_known_eta(self.discusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
+            self.discussion_plan = self.discusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
             action = {"type": "wait"}
             if self.discussion_plan["action"]=="wait":
                 action = {"type": "wait"}
@@ -539,7 +541,7 @@ class BaseNavigationMeetingAgent(Agent):
                     action = {"type": "converse", "arg1": speech, "arg2": 3200}
                     self.discussion_plan = None
             elif self.discussion_plan["action"]=="speak":
-                intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description(), reason_speak=self.discussion_plan['reason'])
                 speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 action = {"type": "converse", "arg1": speech, "arg2": 3200}
                 self.discussion_plan = None
@@ -1187,7 +1189,7 @@ class BaseNavigationMeetingAgent(Agent):
     def get_conversation_description(self):
         if len(self.conversation_history) == 0:
             return "None"
-        conversation_list = self.conversation_history[-20:] if len(self.conversation_history) > 20 else self.conversation_history
+        conversation_list = self.conversation_history[-30:] if len(self.conversation_history) > 30 else self.conversation_history
         return "\n".join([chat.to_description() for chat in conversation_list])
 
     def get_past_event_description(self):
@@ -1330,8 +1332,8 @@ class BaseNavigationMeetingAgent(Agent):
             action = {"type": "wait"}
         else:
             if self.discussion_plan==None:
-                self.update_known_eta(self.disccusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
-                self.discussion_plan = self.disccusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
+                self.update_known_eta(self.discusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message))#!!!
+                self.discussion_plan = self.discusser.plan(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                 self.thinking = 2
                 action = {"type": "wait"}
             else:
