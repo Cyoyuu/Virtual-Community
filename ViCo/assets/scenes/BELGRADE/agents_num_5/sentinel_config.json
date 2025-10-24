@@ -1,6 +1,10 @@
 {
     "agent_names": [
-        "Sentinel 0"
+        "Sentinel 0",
+        "Sentinel 1",
+        "Sentinel 2",
+        "Sentinel 3",
+        "Sentinel 4"
     ],
     "agent_infos": [
         {
@@ -10,8 +14,80 @@
                 null
             ],
             "outdoor_pose": [
-                -4.0,
-                130.0,
+                0.0,
+                0.0,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                0.0,
+                -100.0,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                100.0,
+                -200.0,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                200.0,
+                -300.0,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                100.0,
+                210.0,
                 120.3210981852343,
                 0.0,
                 0.0,
@@ -24,8 +100,40 @@
     ],
     "agent_poses": [
         [
-            -4.0,
-            130.0,
+            0.0,
+            0.0,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            -100.0,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            100.0,
+            -200.0,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            200.0,
+            -300.0,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            100.0,
+            210.0,
             120.3210981852343,
             0.0,
             0.0,
@@ -33,6 +141,10 @@
         ]
     ],
     "locator_colors": [
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan",
         "cyan"
     ],
     "locator_colors_rgb": [
@@ -40,12 +152,75 @@
             0.0,
             1.0,
             1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
         ]
     ],
-    "agent_skins": ["ViCo/avatars/models/celebrity_Donald_Trump.glb"],
+    "agent_skins": [
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb"
+    ],
     "patrol_config": [
         {
-            "type": "rotating"
+            "type": "patrolling",
+            "route": [
+                [0.0,0.0],
+                [-10.0,30.0]
+            ],
+            "route_index": 0
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [0.0,-100.0],
+                [20.0,-120.0]
+            ],
+            "route_index": 1
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [100.0,-200.0],
+                [120.0,-240.0]
+            ],
+            "route_index": 2
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [200.0,-300.0],
+                [180.0,-280.0]
+            ],
+            "route_index": 3
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [100.0,210.0],
+                [115.0,210.0]
+            ],
+            "route_index": 4
         }
     ]
 }

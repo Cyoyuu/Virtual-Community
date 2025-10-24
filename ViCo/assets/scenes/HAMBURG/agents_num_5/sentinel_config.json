@@ -1,6 +1,10 @@
 {
     "agent_names": [
-        "Sentinel 0"
+        "Sentinel 0",
+        "Sentinel 1",
+        "Sentinel 2",
+        "Sentinel 3",
+        "Sentinel 4"
     ],
     "agent_infos": [
         {
@@ -10,8 +14,80 @@
                 null
             ],
             "outdoor_pose": [
+                -88.48448989674858,
+                121.58620240585026,
+                120.95559323363635,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
                 null,
+                null
+            ],
+            "outdoor_pose": [
+                -314.3234012519487,
+                104.4993103797723,
+                120.95559323363635,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
                 null,
+                null
+            ],
+            "outdoor_pose": [
+                64.85779133699991,
+                -222.66056391977045,
+                120.95559323363635,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                156.10914347061166,
+                27.27770262830748,
+                120.95559323363635,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -13.826614027032234,
+                234.7319905799513,
                 120.95559323363635,
                 0.0,
                 0.0,
@@ -24,8 +100,40 @@
     ],
     "agent_poses": [
         [
-            null,
-            null,
+            -88.48448989674858,
+            121.58620240585026,
+            120.95559323363635,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -314.3234012519487,
+            104.4993103797723,
+            120.95559323363635,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            64.85779133699991,
+            -222.66056391977045,
+            120.95559323363635,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            156.10914347061166,
+            27.27770262830748,
+            120.95559323363635,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -13.826614027032234,
+            234.7319905799513,
             120.95559323363635,
             0.0,
             0.0,
@@ -33,6 +141,10 @@
         ]
     ],
     "locator_colors": [
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan",
         "cyan"
     ],
     "locator_colors_rgb": [
@@ -40,14 +152,75 @@
             0.0,
             1.0,
             1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
         ]
     ],
     "agent_skins": [
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
         "ViCo/avatars/models/celebrity_Donald_Trump.glb"
     ],
     "patrol_config": [
         {
-            "type": "rotating"
+            "type": "patrolling",
+            "route": [
+                [-88.48448989674858,121.58620240585026],
+                [-40.0,120.0]
+            ],
+            "route_index": 0
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [-314.3234012519487,104.4993103797723],
+                [-300.0,80.0]
+            ],
+            "route_index": 1
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [64.85779133699991,-222.66056391977045],
+                [70.0,-216.0]
+            ],
+            "route_index": 2
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [156.10914347061166,27.27770262830748],
+                [150.0,0.0]
+            ],
+            "route_index": 3
+        },
+        {
+            "type": "patrolling",
+            "route": [
+                [-13.826614027032234,234.7319905799513],
+                [0.0,250.0]
+            ],
+            "route_index": 4
         }
     ]
 }
