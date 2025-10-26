@@ -50,7 +50,7 @@ class BaseSentinelAgent(Agent):
         freq = dict(zip(values, counts))
         self.visible_agent = {}
         for i in freq:
-            if freq[i] < 0.0002 * len(self.obs['segmentation'].flatten()): continue
+            if freq[i] < 0.0003 * len(self.obs['segmentation'].flatten()): continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
@@ -70,7 +70,7 @@ class BaseSentinelAgent(Agent):
             action = self.patrol()
         else:
             if self.current_target is not None and self.current_target in self.visible_agent:
-                self.countdown -= 1 if self.visible_agent[self.current_target]<0.0005 * len(self.obs['segmentation'].flatten()) else 2
+                self.countdown -= 1 if self.visible_agent[self.current_target]<0.0006 * len(self.obs['segmentation'].flatten()) else 2 if self.visible_agent[self.current_target]<0.0009 * len(self.obs['segmentation'].flatten()) else 3
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
@@ -101,6 +101,7 @@ class BaseSentinelAgent(Agent):
         elif self.patrol_config["type"] == "rotating":
             return {"type": "turn_right", "arg1": 30}
         elif self.patrol_config["type"] == "patrolling":
+            self.logger.info(f"Patrolling: the next pos is {self.patrol_config["route"][self.patrol_config["route_index"]]}")
             while is_near_goal(curr_x=self.pose[0], curr_y=self.pose[1], goal_bbox=None, goal_pos=self.patrol_config["route"][self.patrol_config["route_index"]]):
                 self.patrol_config["route_index"]=(self.patrol_config["route_index"]+1)%(len(self.patrol_config["route"]))
             action = self.navigate(self.s_mem.get_sg(), goal_pos=self.patrol_config["route"][self.patrol_config["route_index"]], goal_bbox=None)
