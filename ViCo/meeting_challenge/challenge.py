@@ -107,7 +107,10 @@ def main():
         else:
             agent_type = args.agent_type
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}")
-    job_result_path = os.path.join("ViCo/meeting_challenge/results/", f"{agent_type}", args.scene)
+    if args.sentinel_type == "patrol":
+        job_result_path = os.path.join("ViCo/meeting_challenge/results_patrol/", f"{agent_type}", args.scene)
+    else:
+        job_result_path = os.path.join("ViCo/meeting_challenge/results_rotate/", f"{agent_type}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
