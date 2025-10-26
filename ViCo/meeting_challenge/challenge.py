@@ -143,7 +143,8 @@ def main():
         print(f"Continue simulation from config: {config_path}")
     config = json.load(open(os.path.join(config_path, "config.json"), 'r'))
     num_agents = config["num_agents"]
-    args.sentinel_config = args.sentinel_config.split('.')[0]+args.sentinel_type+args.sentinel_config.split('.')[1]
+    if args.sentinel_type == "patrol":
+        args.sentinel_config = "sentinel_config_patrol.json"
     sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.config, args.sentinel_config)
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
