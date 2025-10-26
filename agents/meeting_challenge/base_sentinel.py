@@ -101,8 +101,10 @@ class BaseSentinelAgent(Agent):
         elif self.patrol_config["type"] == "rotating":
             return {"type": "turn_right", "arg1": 30}
         elif self.patrol_config["type"] == "patrolling":
-            self.logger.info(f"Patrolling: the next pos is {self.patrol_config['route'][self.patrol_config['route_index']]}")
+            num_rep=0
             while is_near_goal(curr_x=self.pose[0], curr_y=self.pose[1], goal_bbox=None, goal_pos=self.patrol_config["route"][self.patrol_config["route_index"]]):
                 self.patrol_config["route_index"]=(self.patrol_config["route_index"]+1)%(len(self.patrol_config["route"]))
+                num_rep += 1
+                if num_rep > len(self.patrol_config["route"]): break
             action = self.navigate(self.s_mem.get_sg(), goal_pos=self.patrol_config["route"][self.patrol_config["route_index"]], goal_bbox=None)
             return action
