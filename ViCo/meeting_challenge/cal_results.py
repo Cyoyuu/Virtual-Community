@@ -28,20 +28,16 @@ for agent_type in os.listdir(base_output_dir):
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
-                results[agent_type][scene] = {"success_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "total": 0}
+                results[agent_type][scene] = {"success_rate": 0.0, "caught_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
+            results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"])
+            results[agent_type][scene]["reasons_fail"].append(result["reason_fail"])
             results[agent_type][scene]['total']+=1
             results[agent_type][scene]['success_rate']+=result['done']
-            results[agent_type][scene]['detection_rate']+=result['detection_rate']
-            # for key in result:
-            #     if key != "agent_poses":
-            #         results[agent_type][scene][key] = result[key]
-            # for key in ['time', 'length']:
-            #     results[agent_type][scene][f"agent_navigation_{key}_mean"]=np.mean(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
-            #     results[agent_type][scene][f"agent_navigation_{key}_stdev"]=np.std(np.array(results[agent_type][scene][f"agent_navigation_{key}"]))
+            results[agent_type][scene]['caught_rate']+=result['caught_rate']
         if agent_type in results and scene in results[agent_type]:
             results[agent_type][scene]['success_rate']/=results[agent_type][scene]['total']
-            results[agent_type][scene]['detection_rate']/=results[agent_type][scene]['total']
+            results[agent_type][scene]['caught_rate']/=results[agent_type][scene]['total']
 for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting_mean"]=0.
@@ -53,8 +49,12 @@ for agent_type in results:
         num+=1
         results[agent_type][scene]["time_spent_meeting_mean"]=np.mean(np.array(results[agent_type][scene]["time_spent_meeting"]))
         results[agent_type][scene]["time_spent_meeting_stderr"]=np.std(np.array(results[agent_type][scene]["time_spent_meeting"]))
+        results[agent_type][scene]["walk_spent_meeting_mean"]=np.mean(np.array(results[agent_type][scene]["walk_spent_meeting"]))
+        results[agent_type][scene]["walk_spent_meeting_stderr"]=np.std(np.array(results[agent_type][scene]["walk_spent_meeting"]))
         average_results[agent_type]["time_spent_meeting_mean"]+=results[agent_type][scene]["time_spent_meeting_mean"]
         average_results[agent_type]["time_spent_meeting_stderr"]+=results[agent_type][scene]["time_spent_meeting_stderr"]
+        average_results[agent_type]["walk_spent_meeting_mean"]+=results[agent_type][scene]["walk_spent_meeting_mean"]
+        average_results[agent_type]["walk_spent_meeting_stderr"]+=results[agent_type][scene]["walk_spent_meeting_stderr"]
         average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]
         average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
     for key in average_results[agent_type]:

@@ -371,10 +371,20 @@ def main():
 
     result = {"agent_poses": [agent_pose for agent_pose in env.config['agent_poses']],
               "time_spent_meeting": env.steps,
+              "walk_spent_meeting": np.sum(total_length),
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
               "done": int(all_task_end and (max_distance<=20) and (0==len(banned_agent_list))),
-              "detection_rate": (len(banned_agent_list))/(num_agents)}
+              "caught_rate": (len(banned_agent_list))/(num_agents)}
+    if result['done'] == 0:
+        if len(banned_agent_list):
+            result['reason_fail': 'agent caught']
+        elif not all_task_end:
+            result['reason_fail': 'not completing']
+        elif max_distance > 20:
+            result['reason_fail': 'not meeting']
+        else:
+            result['reason_fail': 'success']
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:
