@@ -384,7 +384,9 @@ def main():
         elif max_distance > 20:
             result['reason_fail'] = 'not meeting'
         else:
-            result['reason_fail'] = 'success'
+            result['reason_fail'] = 'unknown'
+    else:
+        result['reason_fail'] = 'success'
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:

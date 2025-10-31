@@ -12,6 +12,7 @@ import pickle
 import re
 from enum import Enum
 import time
+import math
 
 from agents.agent import Agent
 from agents.memory import SemanticMemory
@@ -33,6 +34,8 @@ class BaseSentinelAgent(Agent):
         self.current_target = None
 
         self.patrol_config = patrol_config
+        self.countdown_t = 15
+        self.detection_min_pixel_ratio = 0.001
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -50,7 +53,7 @@ class BaseSentinelAgent(Agent):
         freq = dict(zip(values, counts))
         self.visible_agent = {}
         for i in freq:
-            if freq[i] < 0.0003 * len(self.obs['segmentation'].flatten()): continue
+            if freq[i] < self.detection_min_pixel_ratio * len(self.obs['segmentation'].flatten()): continue
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
@@ -70,7 +73,7 @@ class BaseSentinelAgent(Agent):
             action = self.patrol()
         else:
             if self.current_target is not None and self.current_target in self.visible_agent:
-                self.countdown -= 1 if self.visible_agent[self.current_target]<0.0006 * len(self.obs['segmentation'].flatten()) else 2 if self.visible_agent[self.current_target]<0.0009 * len(self.obs['segmentation'].flatten()) else 3
+                self.countdown -= math.sqrt(self.visible_agent[self.current_target]/len(self.obs['segmentation'].flatten())/self.detection_min_pixel_ratio)
                 if self.countdown > 0:
                     action = {"type": "wait"}
                 else:
@@ -91,7 +94,7 @@ class BaseSentinelAgent(Agent):
             self.countdown = 0
         else:
             self.current_target = agent_name
-            self.countdown = 15
+            self.countdown = self.countdown_t
     
     def patrol(self):
         if self.patrol_config is None:

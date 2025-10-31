@@ -14,7 +14,7 @@ args = parser.parse_args()
 base_output_dir = args.output_dir
 results = dict()
 average_results = dict()
-job_id_range = range(2, 3)
+job_id_range = range(1, 6)
 for agent_type in os.listdir(base_output_dir):
     if not os.path.isdir(os.path.join(base_output_dir, agent_type)): continue
     for scene in os.listdir(os.path.join(base_output_dir, agent_type)):
@@ -31,7 +31,8 @@ for agent_type in os.listdir(base_output_dir):
                 results[agent_type][scene] = {"success_rate": 0.0, "caught_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
             results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"])
-            results[agent_type][scene]["reasons_fail"].append(result["reason_fail"])
+            if 'reason_fail' in result:
+                results[agent_type][scene]["reasons_fail"].append(result["reason_fail"])
             results[agent_type][scene]['total']+=1
             results[agent_type][scene]['success_rate']+=result['done']
             results[agent_type][scene]['caught_rate']+=result['caught_rate']
@@ -42,8 +43,10 @@ for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting_mean"]=0.
     average_results[agent_type]["time_spent_meeting_stderr"]=0.
+    average_results[agent_type]["walk_spent_meeting_mean"]=0.
+    average_results[agent_type]["walk_spent_meeting_stderr"]=0.
     average_results[agent_type]["success_rate"]=0.
-    average_results[agent_type]["detection_rate"]=0.
+    average_results[agent_type]["caught_rate"]=0.
     num=0
     for scene in results[agent_type]:
         num+=1
@@ -56,7 +59,7 @@ for agent_type in results:
         average_results[agent_type]["walk_spent_meeting_mean"]+=results[agent_type][scene]["walk_spent_meeting_mean"]
         average_results[agent_type]["walk_spent_meeting_stderr"]+=results[agent_type][scene]["walk_spent_meeting_stderr"]
         average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]
-        average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
+        average_results[agent_type]["caught_rate"]+=results[agent_type][scene]["caught_rate"]
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
     results[agent_type]["average"]=average_results[agent_type]
