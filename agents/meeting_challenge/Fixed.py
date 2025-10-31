@@ -42,7 +42,8 @@ class FixedMeetingAgent(BaseNavigationMeetingAgent):
             action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.meeting_place}
             self.last_action = action
             return action
-        self.enter_navigation_mode()
+        if self.mode == NavAgentState.DISCUSS:
+            self.enter_navigation_mode()
         action, arrived = self.city_navigate(self.meeting_place)
         if arrived:
             action = {'type': 'task_complete'}
