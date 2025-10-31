@@ -378,13 +378,13 @@ def main():
               "caught_rate": (len(banned_agent_list))/(num_agents)}
     if result['done'] == 0:
         if len(banned_agent_list):
-            result['reason_fail': 'agent caught']
+            result['reason_fail'] = 'agent caught'
         elif not all_task_end:
-            result['reason_fail': 'not completing']
+            result['reason_fail'] = 'not completing'
         elif max_distance > 20:
-            result['reason_fail': 'not meeting']
+            result['reason_fail'] = 'not meeting'
         else:
-            result['reason_fail': 'success']
+            result['reason_fail'] = 'success'
     with open(result_path, 'w') as file:
         json.dump(result, file, indent=4)
     with open(job_result_path, 'w') as file:
