@@ -231,6 +231,8 @@ def main():
             all_agent_processes.append(AgentProcess(SingleMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'heuristic_nav':
             all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == "fixed":
+            all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
