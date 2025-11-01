@@ -22,7 +22,7 @@ from ViCo.tools.model_manager import global_model_manager
 from ViCo.tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
 
 class SemanticMemory:
-	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None):
+	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False):
 		self.storage_path = storage_path
 		self.detect_interval = detect_interval
 		self.debug = debug
@@ -57,6 +57,8 @@ class SemanticMemory:
 
 		self.load_memory()
 		self.SIMILARITY_THRESHOLD = 0.75
+
+		self.enable_danger_zone = enable_danger_zone
 
 	def get_sg(self, place=None):
 		if place is None:
@@ -207,7 +209,7 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], obs['segmentation'], obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], obs['segmentation'] if self.enable_danger_zone else labels, obs['fov'], obs['extrinsics'])
 		self.num_frames += 1
 		if num_new_objects > 0:
 			# update region cluster

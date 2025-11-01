@@ -17,6 +17,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --resolution 512 \
 --config agents_num_5 \
 --agent_type nav \
+--enable_danger_zone \
 --save_per_seconds 200 \
 --step_limit 1500 \
 --lm_source azure \
