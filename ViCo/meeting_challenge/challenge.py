@@ -286,6 +286,7 @@ def main():
     last_agent_pos_dict=None
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     banned_agent_list = []
+    detected_agent_list = []
     while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
         obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
@@ -308,8 +309,11 @@ def main():
             action = agent.act()
             agent_actions[i] = action
             agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
-            if action is not None and action['type'] == 'signal' and action['arg1']=='ban':
-                banned_agent_list.append(action['arg2'])
+            if action is not None and action['type'] == 'signal':
+                if action['arg2'] not in detected_agent_list:
+                    detected_agent_list.append(action['arg2'])
+                if action['arg1']=='ban':
+                    banned_agent_list.append(action['arg2'])
 
         steps_info_path = os.path.join(output_dir, "steps.json")
         if os.path.exists(steps_info_path):
@@ -379,7 +383,8 @@ def main():
               "agent_navigation_time": list(total_time),
               "agent_navigation_length": list(total_length),
               "done": int(all_task_end and (max_distance<=20) and (0==len(banned_agent_list))),
-              "caught_rate": (len(banned_agent_list))/(num_agents)}
+              "caught_rate": (len(banned_agent_list))/(num_agents),
+              "detection_rate": (len(detected_agent_list))/(num_agents)}
     if result['done'] == 0:
         if len(banned_agent_list):
             result['reason_fail'] = 'agent caught'
