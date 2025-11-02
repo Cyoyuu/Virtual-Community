@@ -163,7 +163,7 @@ def main():
             json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
             for name in sentinel_config['agent_names']:
                 if os.path.exists(os.path.join(config_path, name)): continue
-                shutil.copytree(os.path.join(config, config['agent_names'][0]), os.path.join(config_path, name))
+                shutil.copytree(os.path.join(config_path, config['agent_names'][0]), os.path.join(config_path, name))
     else:
         print(f"No sentinel config found at {sentinel_config_path} !!!")
         sentinel_config = None
