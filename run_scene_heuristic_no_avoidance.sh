@@ -1,7 +1,7 @@
 scene=$1
 sentinel_type=$2
 # Path to your script or command to run
-script_path="ViCo/meeting_challenge/experiment_scripts/run_heuristic_no_avoiding.sh"
+script_path="ViCo/meeting_challenge/experiment_scripts/run_heuristic_no_avoidance.sh"
 
 for job_id in {1..1}; do
   echo "Running job_id=$job_id for scene=$scene"
