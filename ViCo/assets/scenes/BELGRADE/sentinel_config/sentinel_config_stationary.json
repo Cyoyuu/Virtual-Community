@@ -4,7 +4,12 @@
         "Sentinel 1",
         "Sentinel 2",
         "Sentinel 3",
-        "Sentinel 4"
+        "Sentinel 4",
+        "Sentinel 5",
+        "Sentinel 6",
+        "Sentinel 7",
+        "Sentinel 8",
+        "Sentinel 9"
     ],
     "agent_infos": [
         {
@@ -96,6 +101,96 @@
             "current_building": "open space",
             "current_place": null,
             "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -304.1902833260463,
+                -81.26584174980528,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -303.33499408862923,
+                -220.8368965496157,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                248.89099697524355,
+                22.74183845594176,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -158.65442814029186,
+                40.68698294995671,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -303.76453240894324,
+                267.3327456499406,
+                120.3210981852343,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
         }
     ],
     "agent_poses": [
@@ -138,9 +233,54 @@
             0.0,
             0.0,
             0.0
+        ],
+        [
+            -304.1902833260463,
+            -81.26584174980528,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -303.33499408862923,
+            -220.8368965496157,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            248.89099697524355,
+            22.74183845594176,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -158.65442814029186,
+            40.68698294995671,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            -303.76453240894324,
+            267.3327456499406,
+            120.3210981852343,
+            0.0,
+            0.0,
+            0.0
         ]
     ],
     "locator_colors": [
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan",
+        "cyan",
         "cyan",
         "cyan",
         "cyan",
@@ -172,6 +312,31 @@
             0.0,
             1.0,
             1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
         ]
     ],
     "agent_skins": [
@@ -179,9 +344,29 @@
         "ViCo/avatars/models/celebrity_Donald_Trump.glb",
         "ViCo/avatars/models/celebrity_Donald_Trump.glb",
         "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
+        "ViCo/avatars/models/celebrity_Donald_Trump.glb",
         "ViCo/avatars/models/celebrity_Donald_Trump.glb"
     ],
     "patrol_config": [
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
+        {
+            "type": "rotating"
+        },
         {
             "type": "rotating"
         },

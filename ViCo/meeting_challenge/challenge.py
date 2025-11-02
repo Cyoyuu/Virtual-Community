@@ -149,7 +149,8 @@ def main():
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
-        num_sentinels = args.sentinel_num
+        # num_sentinels = args.sentinel_num
+        num_sentinels = len(sentinel_config['agent_names'])
         if 'with_sentinel' not in config:
             config["agent_names"].extend(sentinel_config['agent_names'][:num_sentinels])
             config['agent_infos'].extend(sentinel_config['agent_infos'][:num_sentinels])
@@ -160,6 +161,9 @@ def main():
             config['num_agents']+=num_sentinels
             config['with_sentinel'] = True
             json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
+            for name in sentinel_config['agent_names']:
+                if os.path.exists(os.path.join(config_path, name)): continue
+                shutil.copytree(os.path.join(config, config['agent_names'][0]), os.path.join(config_path, name))
     else:
         print(f"No sentinel config found at {sentinel_config_path} !!!")
         sentinel_config = None
