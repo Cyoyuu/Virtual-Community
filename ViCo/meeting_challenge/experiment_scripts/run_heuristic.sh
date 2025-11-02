@@ -1,5 +1,6 @@
 scene=$1
-job_id=$2
+sentinel_type=$2
+job_id=$3
 
 export PYTHONPATH=${PWD}
 
@@ -17,6 +18,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --resolution 512 \
 --config agents_num_5 \
 --agent_type heuristic_nav \
+--sentinel_type ${sentinel_type} \
 --enable_danger_zone \
 --save_per_seconds 200 \
 --step_limit 1500 \

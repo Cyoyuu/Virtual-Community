@@ -92,7 +92,7 @@ def main():
     parser.add_argument("--enable_demo_camera", action='store_true')
     parser.add_argument("--step_limit", type=int, default=1500)
     parser.add_argument("--robot_policy_path", type=str, default="", help="Where to load robot policy")
-    parser.add_argument("--sentinel_type", type=str, default="patrol")
+    parser.add_argument("--sentinel_type", type=str, default="patrol", choices=['stationary', 'patrol'])
     parser.add_argument("--sentinel_num", type=int, default=5)
     parser.add_argument("--enable_danger_zone", action='store_true')
     args = parser.parse_args()
@@ -108,10 +108,8 @@ def main():
         else:
             agent_type = args.agent_type
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance")
-    if args.sentinel_type == "patrol":
-        job_result_path = os.path.join("ViCo/meeting_challenge/results_patrol/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
-    else:
-        job_result_path = os.path.join("ViCo/meeting_challenge/results_rotate/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
+    # Make job result directories
+    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
