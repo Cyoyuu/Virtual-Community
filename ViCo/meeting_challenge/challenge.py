@@ -92,8 +92,8 @@ def main():
     parser.add_argument("--enable_demo_camera", action='store_true')
     parser.add_argument("--step_limit", type=int, default=1500)
     parser.add_argument("--robot_policy_path", type=str, default="", help="Where to load robot policy")
-    parser.add_argument("--sentinel_config", type=str, default="sentinel_config.json")
     parser.add_argument("--sentinel_type", type=str, default="patrol")
+    parser.add_argument("--sentinel_num", type=int, default=5)
     parser.add_argument("--enable_danger_zone", action='store_true')
     args = parser.parse_args()
 
@@ -147,20 +147,18 @@ def main():
         print(f"Continue simulation from config: {config_path}")
     config = json.load(open(os.path.join(config_path, "config.json"), 'r'))
     num_agents = config["num_agents"]
-    if args.sentinel_type == "patrol":
-        args.sentinel_config = "sentinel_config_patrol.json"
-    sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.config, args.sentinel_config)
+    sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, "sentinel_config", f"sentinel_config_{args.sentinel_type}.json")
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
-        num_sentinels = len(sentinel_config['patrol_config'])
+        num_sentinels = args.sentinel_num
         if 'with_sentinel' not in config:
-            config["agent_names"].extend(sentinel_config['agent_names'])
-            config['agent_infos'].extend(sentinel_config['agent_infos'])
-            config['agent_poses'].extend(sentinel_config['agent_poses'])
-            config['locator_colors'].extend(sentinel_config['locator_colors'])
-            config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'])
-            config['agent_skins'].extend(sentinel_config['agent_skins'])
+            config["agent_names"].extend(sentinel_config['agent_names'][:num_sentinels])
+            config['agent_infos'].extend(sentinel_config['agent_infos'][:num_sentinels])
+            config['agent_poses'].extend(sentinel_config['agent_poses'][:num_sentinels])
+            config['locator_colors'].extend(sentinel_config['locator_colors'][:num_sentinels])
+            config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'][:num_sentinels])
+            config['agent_skins'].extend(sentinel_config['agent_skins'][:num_sentinels])
             config['num_agents']+=num_sentinels
             config['with_sentinel'] = True
             json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
