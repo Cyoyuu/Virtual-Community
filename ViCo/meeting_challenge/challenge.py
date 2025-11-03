@@ -107,7 +107,7 @@ def main():
             agent_type = f"{args.agent_type}-{args.agent_type2}"
         else:
             agent_type = args.agent_type
-        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance")
+        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.sentinel_type)
     # Make job result directories
     job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
