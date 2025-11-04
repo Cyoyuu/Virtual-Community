@@ -107,9 +107,9 @@ def main():
             agent_type = f"{args.agent_type}-{args.agent_type2}"
         else:
             agent_type = args.agent_type
-        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.sentinel_type)
+        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", f"{args.sentinel_type}_{args.sentinel_num}")
     # Make job result directories
-    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
+    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type}" if args.enable_danger_zone else f"{agent_type}_no_avoidance", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
@@ -149,8 +149,8 @@ def main():
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
-        # num_sentinels = args.sentinel_num
-        num_sentinels = len(sentinel_config['agent_names'])
+        num_sentinels = args.sentinel_num
+        # num_sentinels = len(sentinel_config['agent_names'])
         if 'with_sentinel' not in config:
             config["agent_names"].extend(sentinel_config['agent_names'][:num_sentinels])
             config['agent_infos'].extend(sentinel_config['agent_infos'][:num_sentinels])
