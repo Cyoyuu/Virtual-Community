@@ -1,6 +1,7 @@
 scene=$1
 sentinel_type=$2
-job_id=$3
+sentinel_num=$3
+job_id=$4
 
 export PYTHONPATH=${PWD}
 
@@ -19,6 +20,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --config agents_num_5 \
 --agent_type fixed \
 --sentinel_type ${sentinel_type} \
+--sentinel_num ${sentinel_num} \
 --save_per_seconds 200 \
 --step_limit 1500 \
 --lm_source azure \
