@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from matplotlib.animation import FuncAnimation
+from matplotlib.patches import Circle
 
 
 def load_steps(main_steps_json):
@@ -54,7 +55,7 @@ def build_entity_lists(steps_data, track_sentinels=False):
         return sorted(list(agents)), sorted(list(sentinels))
 
 
-def precompute_histories(full_steps, steps_data, agents):
+def precompute_histories(full_steps, steps_data, agents, max_jump=100.0):
     idx_of_full = {s: i for i, s in enumerate(full_steps)}
     agent_traces = {name: {"xs": [None] * len(full_steps), "ys": [None] * len(full_steps)} for name in agents}
 
@@ -74,10 +75,22 @@ def precompute_histories(full_steps, steps_data, agents):
         xs, ys = trace["xs"], trace["ys"]
         last_x, last_y = None, None
         for i in range(len(xs)):
-            if xs[i] is None or ys[i] is None:
+            cur_x, cur_y = xs[i], ys[i]
+
+            if cur_x is None or cur_y is None:
                 xs[i], ys[i] = last_x, last_y
-            else:
-                last_x, last_y = xs[i], ys[i]
+                continue
+
+            if last_x is not None and last_y is not None:
+                dx = cur_x - last_x
+                dy = cur_y - last_y
+                dist = (dx * dx + dy * dy) ** 0.5
+                if dist > max_jump:
+                    xs[i], ys[i] = last_x, last_y
+                    continue
+
+            last_x, last_y = xs[i], ys[i]
+
     return agent_traces, idx_of_full
 
 
@@ -100,11 +113,11 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
 
     end_step = max_steps
     full_steps = list(range(start_step, end_step + 1))
-    frames = full_steps
-
+    frames = full_steps[::5]
+    
     agents, sentinels = build_entity_lists(steps_data, track_sentinels=False)
 
-    agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, agents)
+    agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, agents, max_jump=100.0)
 
     bg_path = f"ViCo/assets/scenes/{scene}/global.png"
     if not os.path.isfile(bg_path):
@@ -112,19 +125,19 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
     bg = mpimg.imread(bg_path)
 
     fig, ax = plt.subplots(figsize=(8, 8))
-    ax.imshow(bg, extent=[-512, 512, -512, 512], zorder=0)
+    ax.imshow(bg, extent=[-512, 512, -512, 512], zorder=0, alpha=0.4)
     ax.set_xlim(-400, 400)
     ax.set_ylim(-400, 400)
     ax.set_xlabel("X Coordinate")
     ax.set_ylabel("Y Coordinate")
-    ax.grid(True, linestyle="--", alpha=0.4)
+    ax.grid(True, linestyle="--", alpha=0.1)
 
     bright_palette = [
-        "#1E90FF",  # bright blue
-        "#FFA500",  # orange
-        "#32CD32",  # green
-        "#FF0000",  # red
-        "#9400D3",  # purple
+        "#0E7EEE",
+        "#E29F22",
+        "#0DE50D",
+        "#C00B0B",
+        "#9106CD",
     ]
     agent_lines = {}
     agent_dots = {}
@@ -135,14 +148,56 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
         agent_lines[name] = line
         agent_dots[name] = dot
 
-    sentinel_scat = ax.scatter([], [], s=38, marker="^", color="black", label="Sentinels (now)", zorder=4)
+    # --- Sentinel as oriented triangles + following circles ---
+    sentinel_last_pos = {}
+    sentinel_prev_pos = {}
+    sentinel_angles = {}
+    sentinel_tris = {}
+    sentinel_circles = {}
+
+    def make_triangle_artist():
+        (tri_line,) = ax.plot([], [], linestyle="None",
+                              marker=(3, 0, 0),
+                              markersize=12,
+                              markerfacecolor="black",
+                              markeredgecolor="white",
+                              markeredgewidth=0.8,
+                              zorder=4)
+        return tri_line
+
+    def make_circle_patch():
+        circ = Circle((0, 0),
+                      radius=15,
+                      facecolor="#FFF3B0",
+                      edgecolor="none",
+                      alpha=0.4,
+                      zorder=3.6)
+        ax.add_patch(circ)
+        circ.set_visible(False)
+        return circ
+
+    for sname in sentinels:
+        sentinel_tris[sname] = make_triangle_artist()
+        sentinel_angles[sname] = 0.0
+        sentinel_circles[sname] = make_circle_patch()
+
     bus_scat = ax.scatter([], [], s=55, marker="s", color="red", label="Bus (now)", zorder=5)
 
-    ax.legend(loc="upper right", fontsize=8, framealpha=0.8)
+    sentinel_legend_proxy, = ax.plot([], [], linestyle="None",
+                                     marker=(3, 0, 0),
+                                     markersize=12,
+                                     markerfacecolor="black",
+                                     markeredgecolor="white",
+                                     markeredgewidth=0.8,
+                                     label="Sentinel (heading)",
+                                     zorder=4)
+    handles = list(agent_lines.values())
+    if len(handles) > 0:
+        handles = handles[:1]
+        handles[0].set_label("Agent paths & heads")
+    handles += [sentinel_legend_proxy, bus_scat]
+    ax.legend(handles=handles, loc="upper right", fontsize=8, framealpha=0.8)
     ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions")
-
-    sentinel_last = {}
-    bus_last = None
 
     def get_obs_by_name_exact(step, target_name):
         lst = steps_data.get(step, [])
@@ -153,11 +208,22 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
                     return float(pose[0]), float(pose[1])
         return None
 
+    def heading_from(prev_xy, curr_xy, default_deg):
+        if prev_xy is None or curr_xy is None:
+            return default_deg
+        px, py = prev_xy
+        cx, cy = curr_xy
+        dx, dy = cx - px, cy - py
+        if dx == 0 and dy == 0:
+            return default_deg
+        theta = np.degrees(np.arctan2(dy, dx)) - 90.0
+        return float(theta)
+
     def update(step):
-        nonlocal bus_last
         ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions — step {step}")
 
         idx = idx_of_full.get(step, len(full_steps) - 1)
+        # Agents
         for name in agents:
             xs = agent_traces[name]["xs"][: idx + 1]
             ys = agent_traces[name]["ys"][: idx + 1]
@@ -168,28 +234,47 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
             else:
                 agent_dots[name].set_offsets(np.empty((0, 2)))
 
-        sent_xy = []
+        # Sentinels
         for sname in sentinels:
-            pos = get_obs_by_name_exact(step, sname)
-            if pos is not None:
-                sentinel_last[sname] = pos
-            pos_eff = sentinel_last.get(sname, None)
-            if pos_eff is not None:
-                sent_xy.append(pos_eff)
-        if sent_xy:
-            sentinel_scat.set_offsets(np.array(sent_xy))
-        else:
-            sentinel_scat.set_offsets(np.empty((0, 2)))
+            pos_now = get_obs_by_name_exact(step, sname)
+            if pos_now is not None:
+                prev = sentinel_last_pos.get(sname, None)
+                if prev is not None and (pos_now[0] != prev[0] or pos_now[1] != prev[1]):
+                    sentinel_prev_pos[sname] = prev
+                sentinel_last_pos[sname] = pos_now
+
+            eff_pos = sentinel_last_pos.get(sname, None)
+            tri = sentinel_tris[sname]
+            circ = sentinel_circles[sname]
+
+            if eff_pos is not None:
+                circ.center = eff_pos
+                circ.set_visible(True)
+
+                default_ang = sentinel_angles.get(sname, 0.0)
+                ang = heading_from(sentinel_prev_pos.get(sname, None), eff_pos, default_ang)
+                sentinel_angles[sname] = ang
+
+                tri.set_data([eff_pos[0]], [eff_pos[1]])
+                tri.set_marker((3, 0, ang))
+            else:
+                circ.set_visible(False)
+                tri.set_data([], [])
+                tri.set_marker((3, 0, sentinel_angles.get(sname, 0.0)))
 
         bus_pos = load_bus_pose(env_dir, step)
         if bus_pos is not None:
-            bus_last = bus_pos
-        if bus_last is not None:
-            bus_scat.set_offsets(np.array([[bus_last[0], bus_last[1]]]))
+            bus_scat.set_offsets(np.array([[bus_pos[0], bus_pos[1]]]))
         else:
             bus_scat.set_offsets(np.empty((0, 2)))
 
-        artists = list(agent_lines.values()) + list(agent_dots.values()) + [sentinel_scat, bus_scat]
+        artists = (
+            list(agent_lines.values())
+            + list(agent_dots.values())
+            + list(sentinel_tris.values())
+            + list(sentinel_circles.values())
+            + [bus_scat]
+        )
         return artists
 
     ani = FuncAnimation(fig, update, frames=frames, interval=interval, blit=False, repeat=False)
