@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from matplotlib.animation import FuncAnimation
-from matplotlib.patches import Circle
+from matplotlib.patches import Wedge
 
 
 def load_steps(main_steps_json):
@@ -76,11 +76,9 @@ def precompute_histories(full_steps, steps_data, agents, max_jump=100.0):
         last_x, last_y = None, None
         for i in range(len(xs)):
             cur_x, cur_y = xs[i], ys[i]
-
             if cur_x is None or cur_y is None:
                 xs[i], ys[i] = last_x, last_y
                 continue
-
             if last_x is not None and last_y is not None:
                 dx = cur_x - last_x
                 dy = cur_y - last_y
@@ -88,7 +86,6 @@ def precompute_histories(full_steps, steps_data, agents, max_jump=100.0):
                 if dist > max_jump:
                     xs[i], ys[i] = last_x, last_y
                     continue
-
             last_x, last_y = xs[i], ys[i]
 
     return agent_traces, idx_of_full
@@ -135,7 +132,7 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
     bright_palette = [
         "#0E7EEE",
         "#E29F22",
-        "#0DE50D",
+        "#EF39EF",
         "#C00B0B",
         "#9106CD",
     ]
@@ -143,17 +140,16 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
     agent_dots = {}
     for i, name in enumerate(agents):
         color = bright_palette[i % len(bright_palette)]
-        (line,) = ax.plot([], [], linewidth=2.5, color=color, label=f"{name} path", zorder=2)
+        (line,) = ax.plot([], [], linewidth=2.5, color=color, label=name, zorder=2)
         dot = ax.scatter([], [], s=18, marker="o", color=color, zorder=3)
         agent_lines[name] = line
         agent_dots[name] = dot
 
-    # --- Sentinel as oriented triangles + following circles ---
     sentinel_last_pos = {}
     sentinel_prev_pos = {}
     sentinel_angles = {}
     sentinel_tris = {}
-    sentinel_circles = {}
+    sentinel_wedges = {}
 
     def make_triangle_artist():
         (tri_line,) = ax.plot([], [], linestyle="None",
@@ -165,21 +161,23 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
                               zorder=4)
         return tri_line
 
-    def make_circle_patch():
-        circ = Circle((0, 0),
-                      radius=15,
+    def make_wedge_patch():
+        wedge = Wedge(center=(0, 0),
+                      r=20,
+                      theta1=0,
+                      theta2=90,
                       facecolor="#FFF3B0",
                       edgecolor="none",
-                      alpha=0.4,
-                      zorder=3.6)
-        ax.add_patch(circ)
-        circ.set_visible(False)
-        return circ
+                      alpha=0.9,
+                      zorder=1.0)
+        ax.add_patch(wedge)
+        wedge.set_visible(False)
+        return wedge
 
     for sname in sentinels:
         sentinel_tris[sname] = make_triangle_artist()
         sentinel_angles[sname] = 0.0
-        sentinel_circles[sname] = make_circle_patch()
+        sentinel_wedges[sname] = make_wedge_patch()
 
     bus_scat = ax.scatter([], [], s=55, marker="s", color="red", label="Bus (now)", zorder=5)
 
@@ -191,11 +189,8 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
                                      markeredgewidth=0.8,
                                      label="Sentinel (heading)",
                                      zorder=4)
-    handles = list(agent_lines.values())
-    if len(handles) > 0:
-        handles = handles[:1]
-        handles[0].set_label("Agent paths & heads")
-    handles += [sentinel_legend_proxy, bus_scat]
+
+    handles = list(agent_lines.values()) + [sentinel_legend_proxy, bus_scat]
     ax.legend(handles=handles, loc="upper right", fontsize=8, framealpha=0.8)
     ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions")
 
@@ -223,7 +218,6 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
         ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions — step {step}")
 
         idx = idx_of_full.get(step, len(full_steps) - 1)
-        # Agents
         for name in agents:
             xs = agent_traces[name]["xs"][: idx + 1]
             ys = agent_traces[name]["ys"][: idx + 1]
@@ -234,7 +228,6 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
             else:
                 agent_dots[name].set_offsets(np.empty((0, 2)))
 
-        # Sentinels
         for sname in sentinels:
             pos_now = get_obs_by_name_exact(step, sname)
             if pos_now is not None:
@@ -245,20 +238,26 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
 
             eff_pos = sentinel_last_pos.get(sname, None)
             tri = sentinel_tris[sname]
-            circ = sentinel_circles[sname]
+            wedge = sentinel_wedges[sname]
 
             if eff_pos is not None:
-                circ.center = eff_pos
-                circ.set_visible(True)
+                wedge.set_center((eff_pos[0], eff_pos[1]))
+                wedge.set_visible(True)
 
                 default_ang = sentinel_angles.get(sname, 0.0)
                 ang = heading_from(sentinel_prev_pos.get(sname, None), eff_pos, default_ang)
                 sentinel_angles[sname] = ang
 
+                theta_mid = ang + 90.0
+                theta1 = theta_mid - 45.0
+                theta2 = theta_mid + 45.0
+                wedge.set_theta1(theta1)
+                wedge.set_theta2(theta2)
+
                 tri.set_data([eff_pos[0]], [eff_pos[1]])
                 tri.set_marker((3, 0, ang))
             else:
-                circ.set_visible(False)
+                wedge.set_visible(False)
                 tri.set_data([], [])
                 tri.set_marker((3, 0, sentinel_angles.get(sname, 0.0)))
 
@@ -272,7 +271,7 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, save_gif=True):
             list(agent_lines.values())
             + list(agent_dots.values())
             + list(sentinel_tris.values())
-            + list(sentinel_circles.values())
+            + list(sentinel_wedges.values())
             + [bus_scat]
         )
         return artists
