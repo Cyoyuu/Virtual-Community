@@ -15,6 +15,8 @@ import time
 import math
 import heapq
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from PIL import Image
 import argparse
 import sys
 
@@ -22,6 +24,7 @@ current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
 from ViCo.tools.annotate_sentinel import annotate_all_rotate
+from ViCo.tools.road_annotation.visualize_osm_roads import draw_roads
 
 if __name__ != "__main__" :
     from ViCo.tools.utils import *
@@ -207,6 +210,7 @@ def find_next_bus_times(current_stop, current_time, schedule, schedule_reversed)
 class Amap:
     '''walkers only'''
     def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, bus=None, waypoints_dis=7., logger=None):
+        init_time = time.perf_counter()
         self.scene_name=scene_name
         self.pose=pose
         self.covered_length=0.
@@ -218,18 +222,27 @@ class Amap:
             for line in file:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-        # self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
         self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
+        # Paths
+        img_path = f"ViCo/assets/scenes/{self.scene_name}/global.png"
+        if not os.path.exists(img_path):
+            raise FileNotFoundError(f"Aerial image not found: {img_path}")
+        self.global_image = Image.open(img_path).convert("RGB")
 
         obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
         self.obstacle_grid = obstacle_grid_save["grid"]
         self.obstacle_grid_parameters = obstacle_grid_save["parameters"]
 
         self.waypoints = []
-        self.road2waypoint = {}
+        self.road2waypoint_ids = {}
         self.spawn_waypoints()
 
         self.logger = logger
+        init_time = time.perf_counter() - init_time
+        if self.logger is not None:
+            self.logger.info(f"Amap initialized in {init_time}s")
+        else:
+            print(f"Amap initialized in {init_time}s")
         
     def reset(self, pose):
         self.pose=pose
@@ -244,7 +257,9 @@ class Amap:
             if self.is_point_invalid([self.nodes[node]['x'], self.nodes[node]['y']]): continue
             # processing node
             for road in self.nodes[node]["connected_roads"]:
-                self.road2waypoint[road]=len(self.waypoints)
+                if road not in self.road2waypoint_ids:
+                    self.road2waypoint_ids[road]=[]
+                self.road2waypoint_ids[road].append(len(self.waypoints))
             self.nodes[node]["2wp"]=len(self.waypoints)
             self.waypoints.append(Waypoints(id=len(self.waypoints), location=[self.nodes[node]['x'], self.nodes[node]['y']], belong=None if not self.nodes[node]["connected_roads"] else self.nodes[node]["connected_roads"][0]))
         for road in self.roads:
@@ -267,6 +282,9 @@ class Amap:
                     continue
                 new_wp=(Waypoints(id=len(self.waypoints), location=p, belong=road["id"]))
                 self.waypoints.append(new_wp)
+                if road['id'] not in self.road2waypoint_ids:
+                    self.road2waypoint_ids[road['id']]=[]
+                self.road2waypoint_ids[road['id']].append(len(self.waypoints))
                 if last_waypoint is not None:
                     last_waypoint.successor.append(new_wp.id)
                 last_waypoint = new_wp
@@ -278,10 +296,10 @@ class Amap:
                 self.waypoints[successor].predecessor.append(waypoint.id)
         # for low-connected waypoints, search its neighbour
         for idx, waypoint in enumerate(self.waypoints):
-            if len(waypoint.successor)+len(waypoint.predecessor)>2: continue
+            # if len(waypoint.successor)+len(waypoint.predecessor)>2: continue
             for jdx, n_wp in enumerate(self.waypoints):
                 if jdx==idx:continue
-                if len(waypoint.successor)+len(waypoint.predecessor)>2: break
+                # if len(waypoint.successor)+len(waypoint.predecessor)>2: break
                 if np.linalg.norm(np.array(waypoint.location)-np.array(n_wp.location))<self.waypoints_dis:
                     self.waypoints[idx].successor.append(jdx)
                     self.waypoints[jdx].predecessor.append(idx)
@@ -430,7 +448,10 @@ class Amap:
                 goal_wp_pair=min((dist[i], i), goal_wp_pair)
             elif np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos)) <= min_dis2t+self.waypoints_dis:
                 goal_wp_pair=min((dist[i]+timedelta(seconds=np.linalg.norm(np.array(self.waypoints[i].location) - np.array(goal_pos))), i), goal_wp_pair)
-        self.logger.info(f"found goal_wp_pair is {goal_wp_pair}")
+        if self.logger is not None:
+            self.logger.info(f"found goal_wp_pair is {goal_wp_pair}")
+        else:
+            print(f"found goal_wp_pair is {goal_wp_pair}")
         if goal_wp_pair[0] >= inf_time:
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return None
@@ -479,6 +500,99 @@ class Amap:
                     queue.append(neighbor_id)
 
         return sorted(list(visited))
+    
+    def get_zoomed_scene_metadata(self, x_min, y_min, x_max, y_max):
+        """
+        Return a dict that contains all roads and buildings metadata within the area.
+        """
+        ret_road = dict()
+        ret_building = dict()
+
+        # As for roads
+        for road in self.roads:
+            start_x, start_y = road['start']['x'],road['start']['y']
+            end_x, end_y = road['end']['x'],road['end']['y']
+            if (x_min <= start_x <= x_max and y_min <= start_y <=y_max) or (x_min <= end_x <= x_max and y_min <= end_y <=y_max):
+                ret_road[f"{road['name']} {road['id']}"]={'start': [road['start']['x'], road['start']['y']], 'end': [road['end']['x'], road['end']['y']]}
+
+        # As for buildings
+        for building in self.building_metadata:
+            print(self.building_metadata[building])
+            if building == 'open space':
+                for place in self.building_metadata[building]['places']:
+                    if (x_min <= place['location'][0] <= x_max and y_min <= place['location'][1] <=y_max):
+                        ret_building[place['name']] = place
+            else:
+                p = self.building_metadata[building]['outdoor_xy']
+                if (x_min <= p[0] <= x_max and y_min <= p[1] <=y_max):
+                    ret_building[building]=self.building_metadata[building]
+        
+        return ret_road, ret_building
+    
+    def get_zoomed_scene_image(self, x_min, y_min, x_max, y_max, alpha=1.0):
+        """
+        Return a zoomed-in part of the whole scene image with road annotations
+        as a PIL.Image.Image object.
+
+        Args:
+            scene_name (str): Scene name (e.g., "newyork", "detroit").
+            x_min, y_min, x_max, y_max (float): Bounding box coordinates in world units
+                (matching the coordinate extent used when displaying the image, e.g. [-512, 512]).
+            ref_lat, ref_lon (float, optional): Reference latitude and longitude for projection.
+
+        Returns:
+            PIL.Image.Image: Cropped and annotated subimage.
+        """
+        # Paths
+        img_path = f"ViCo/assets/scenes/{self.scene_name}/global.png"
+
+        # Check assets
+        if not os.path.exists(img_path):
+            raise FileNotFoundError(f"Aerial image not found: {img_path}")
+
+        # Load aerial image
+        img = self.global_image
+        width, height = img.size
+        world_min, world_max = -512, 512
+
+        # Create a Matplotlib figure with the zoomed-in extent
+        fig, ax = plt.subplots(figsize=(6, 6))
+        ax.set_xlim(x_min, x_max)
+        ax.set_ylim(y_min, y_max)
+        ax.set_aspect("equal")
+
+        # Display the cropped portion of the aerial image
+        ax.imshow(
+            img,
+            extent=[world_min, world_max, world_min, world_max],
+            origin="upper"
+        )
+
+        # Draw roads
+        draw_roads(self.roads, alpha=alpha)
+
+        color_dict = {'primary': 'red', 'secondary': 'orangered', 'tertiary': 'orange', 'residential': 'gold', 
+              'cycleway':'green', 'pedestrian': 'blue', 'footway': 'deepskyblue', 'service': 'peru', 
+              'unclassified': 'm', 'steps': 'blue', 'elevator':'violet', 'living_street':'pink', 'construction': 'orchid'}
+
+        legend_handles = [mpatches.Patch(color=color, label=road_type) for road_type, color in color_dict.items()]
+
+        ax.legend(handles=legend_handles, title="Road Types", loc='upper left', bbox_to_anchor=(1.0, 1.0), borderaxespad=0, fontsize='small', title_fontsize='medium')
+        plt.tight_layout(pad=0., rect=[0, 0, 1, 1])
+
+        # Turn off axes and layout
+        # ax.axis("off")
+        # plt.tight_layout(pad=0)
+
+        # Render figure to a PIL Image
+        fig.canvas.draw()
+        buf = np.asarray(fig.canvas.buffer_rgba())
+        h, w, _ = buf.shape
+        zoomed_img = buf[:, :, :3]  # drop alpha
+        zoomed_img = Image.fromarray(zoomed_img)
+
+        plt.close(fig)
+        return zoomed_img
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
@@ -491,16 +605,26 @@ if __name__ == "__main__" :
         for line in file:
             ref_lat, ref_lon = line.strip().split()
         ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-    amap=Amap(scene_name=args.scene)
+    building_metadata = json.load(open(os.path.join(f"ViCo/assets/scenes/{args.scene}/agents_num_5", "building_metadata.json"), 'r'))
+    place_metadata = json.load(open(os.path.join(f"ViCo/assets/scenes/{args.scene}/agents_num_5", "place_metadata.json"), 'r'))
+    amap=Amap(scene_name=args.scene, building_metadata=building_metadata, place_metadata=place_metadata)
+    # this code is for generating sentinel config
+    # random_sampled_points=list(np.random.uniform(low=-300, high=300, size=(10, 2)))
+    # for i in range(len(random_sampled_points)):
+    #     random_sampled_points[i]=amap.waypoints[amap.get_nearest_waypoints(random_sampled_points[i])[0]].location
+    # annotate_all_rotate(args.scene, random_sampled_points)
+    # tmp_roads, tmp_buildings = amap.get_zoomed_scene_metadata(-100, -100, 0, 0)
+    # json.dump({'roads': tmp_roads, 'buildings': tmp_buildings}, open("tmp.json", "w"))
+    # amap.get_zoomed_scene_image(-200, -200, 0, 0, alpha=0.5).show()
+    # assert 0
     wps=[wp.location for wp in amap.waypoints]
     xs, ys = zip(*wps)
     plt.figure(figsize=(10, 6))
     plt.plot(xs, ys, 'bo', markersize=3)
-    # this code is for generating sentinel config
-    # random_sampled_points=list(np.random.uniform(low=-300, high=300, size=(5, 2)))
-    # for i in range(len(random_sampled_points)):
-    #     random_sampled_points[i]=amap.waypoints[amap.get_nearest_waypoints(random_sampled_points[i])[0]].location
-    # annotate_all_rotate(args.scene, random_sampled_points)
+    # this code is for testing only
+    # from utils import *
+    # path = amap.query_route([119.95, 184.39], "Elizabeth Mensah's room at Gömöry-ház")
+    # assert 0
     n_wps=amap.get_nearest_waypoints([285.16, -196.96])
     c_wps=set()
     for wp in n_wps:

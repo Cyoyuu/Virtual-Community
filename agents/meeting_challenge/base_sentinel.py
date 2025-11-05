@@ -36,6 +36,7 @@ class BaseSentinelAgent(Agent):
         self.patrol_config = patrol_config
         self.countdown_t = 15
         self.detection_min_pixel_ratio = 0.001
+        self.max_speed = 0.5
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -75,7 +76,8 @@ class BaseSentinelAgent(Agent):
             if self.current_target is not None and self.current_target in self.visible_agent:
                 self.countdown -= math.sqrt(self.visible_agent[self.current_target]/len(self.obs['segmentation'].flatten())/self.detection_min_pixel_ratio)
                 if self.countdown > 0:
-                    action = {"type": "wait"}
+                    action = {"type": "signal", "arg1": f"warning", "arg2": agent_name}
+                    # action = self.navigate(self.s_mem.get_sg(), goal_pos=self.obs['agent_pos_dict'][self.current_target])
                 else:
                     action = {"type": "signal", "arg1": f"ban", "arg2": self.current_target}
                     self.set_target(None)
@@ -85,7 +87,9 @@ class BaseSentinelAgent(Agent):
                     action = {"type": "signal", "arg1": f"warning", "arg2": agent_name}
                     break
         
-        self.last_action=action
+        self.last_action = action
+        # if action['type'] == 'move_forward':
+        #     action['arg1'] = min(action['arg1'], self.max_speed)
         return self.last_action
     
     def set_target(self, agent_name):
