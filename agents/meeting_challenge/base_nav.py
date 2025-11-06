@@ -222,7 +222,7 @@ class Discusser(ThinkingModule):
         return response_dict
 
     def analyze(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/query_analyze.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze.txt", "r").read()
         prompt = prompt.replace("TaskDescription", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -592,8 +592,10 @@ class BaseNavigationMeetingAgent(Agent):
             self.enter_navigation_mode()
         else:
             extracted_info = self.discusser.extract(name=self.name, places=places, conversation_history=conversation_history, app_messages=app_message)
-            self.update_known_eta(extracted_info['ETA Map'])#!!!
-            self.update_known_poses(extracted_info['Agent Poses'])
+            if 'ETA Map' in extracted_info:
+                self.update_known_eta(extracted_info['ETA Map'])#!!!
+            if 'Agent Poses' in extracted_info:
+                self.update_known_poses(extracted_info['Agent Poses'])
             missing_info = self.discusser.analyze(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description, places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description())
             self.discussion_plan = self.discusser.plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
             action = {"type": "wait"}
