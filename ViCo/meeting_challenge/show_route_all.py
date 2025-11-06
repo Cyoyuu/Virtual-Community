@@ -83,6 +83,9 @@ def precompute_histories(full_steps, steps_data, agents, max_jump=100.0):
 
 def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id, interval=100, fps=5, out_format="mp4", output_dir=None, save_gif_flag=False):
     base_dir = os.path.join(data_dir, f"{scene}/{agent_type}/{sentinel_type}_{sentinel_num}/job_{job_id}")
+    if not os.path.exists(os.path.join(base_dir, "result.json")):
+        print(f"{os.path.join(base_dir, 'result.json')} not exists.")
+        return
     steps_json = os.path.join(base_dir, "steps.json")
     env_dir = os.path.join(base_dir, "steps", "env")
     if not os.path.isfile(steps_json):
