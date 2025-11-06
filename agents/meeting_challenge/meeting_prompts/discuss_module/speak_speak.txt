@@ -1,4 +1,6 @@
-You are assisting an agent in a group discussion to coordinate a meeting location. The agent has already decided its **speech intent** and now needs to generate the **exact spoken message** to send to the group.
+$TaskDescription$
+
+Now the agent is in a group discussion. The agent has already decided its **speech intent** and now needs to generate the **exact spoken message** to send to the group.
 
 —
 
@@ -17,14 +19,20 @@ $SpeechIntent$
 - Other Agents’ Opinions:
 $AgentOpinions$
 
-Place list:
+- Place list:
 $Places$
-
-- Extracted ETA Map (contains agents' computed ETAs to specific places known by this agent but not others):
-$KnownETA$
 
 - Conversation History:
 $ConversationHistory$
+
+- Extracted agent positions (contains other agents' locations extracted from previous conversation):
+$KnownPoses$
+
+- Extracted ETA Map (contains agents' computed ETAs to specific places known by this agent):
+$KnownETA$
+
+- Missing informations you have analyzed.
+$MissingInfo$
 
 Note that the team only share the conversation history, instead of all infos.
 
@@ -36,6 +44,7 @@ Return a **single string** — the agent’s spoken message.
 
 - Keep it under 100 words, 1–3 clear, polite sentences.
 - Use exact place names: <Place Name>.
+- When a new conversation starts, mention your current position to let others know (e.g., "I'm current at [90.03, -33.10]"). Enclose your xy coordinates in [], making it easier for others to parse.
 - If proposing or supporting, mention your ETA if known (e.g., “my ETA is 8 min”).
 - If compromising or converging, reference others’ preferences to show collaboration.
 - If others asked you, add your reply into the speech when possible.

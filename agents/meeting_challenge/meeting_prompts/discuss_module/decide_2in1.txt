@@ -1,4 +1,6 @@
-You are assisting an agent in a group discussion to coordinate a meeting location in a city.  
+$TaskDescription$
+
+The agents are now in a group discussion.  
 The goal is to select — from the provided list — the location that minimizes the travel time of the LAST agent to arrive.
 
 Your task involves two steps:
@@ -17,7 +19,7 @@ Agent's Name:
 $SelfName$
 
 Agent list:
-$Agents$
+$AgentList$
 
 Place list:
 $Places$

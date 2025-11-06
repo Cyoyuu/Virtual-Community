@@ -1,4 +1,6 @@
-You are assisting an agent in a group discussion to coordinate a meeting location. Your task is to **extract all available ETA information** — both from the conversation history (other agents’ reported ETAs) and from the navigation app message (this agent’s own ETAs).
+$TaskDescription$
+
+Now the agent is in a group discussion to coordinate a meeting location. Your task is to **extract all available ETA information** — both from the conversation history (other agents’ reported ETAs) and from the navigation app message (this agent’s own ETAs), and **extract all available agent poses** from the conversation history.
 
 —
 
@@ -9,7 +11,7 @@ You are assisting an agent in a group discussion to coordinate a meeting locatio
 - Available Places:
 $Places$
 
-- Conversation History (may contain other agent’s ETAs to specific places):
+- Conversation History (may contain other agent’s ETAs to specific places or their current poses):
 $ConversationHistory$
 
 - Navigation App Message (contains this agent’s computed ETAs to specific places):
@@ -23,22 +25,31 @@ Return a JSON object structured as:
 
 ```json
 {
-    "<Place Name>": {
-        "Agent1": "0:0:15",
-        "Agent2": "Impossible",
-        ...
+    "ETA Map": {
+        "<Place Name>": {
+            "Agent1": "00:00:15",
+            "Agent2": "Impossible",
+            ...
+        },
+        "<Another Place>": {
+            "Agent3": "01:14:30",
+            ...
+        }
     },
-    "<Another Place>": {
-        "Agent3": "1:14:30",
+    "Agent Poses": {
+        "Agent1": [0.0, 80.0],
         ...
     }
 }
+```
 
 Use exact place names from $Places, enclosed in <> as keys.
 For each place, include a sub-object mapping agent names → ETA in "HH:MM:SS" format.
+For each agent poses, include the xy coordinate enclosed in [].
 Include:
 Self’s ETAs from App Message.
 Other agents’ ETAs mentioned in Conversation History (e.g., “I can get to <Park> in 10 min”).
+Other agents' poses mentioned in Conversation History (e.g., "I'm currently at [-133.75, 62.37]")
 If an agent mentions multiple ETAs, use the most recent one.
 If no ETA is available for a place, omit that place entirely.
 If no ETAs found at all, return an empty object: {}
@@ -47,7 +58,6 @@ Parsing Rules:
 
 Extract only numeric ETAs explicitly tied to a place and an agent, unless an agent cannot go to that place, in which case you should use "Impossible".
 Ignore vague statements like “soon” or “about 10 minutes” unless a number is clearly stated.
-Assume units are minutes unless specified otherwise.
 Match agent names exactly as they appear in history or as SelfName.
 
 This output will be used to compute optimal meeting locations. Be accurate and conservative — only extract clear, explicit ETAs.

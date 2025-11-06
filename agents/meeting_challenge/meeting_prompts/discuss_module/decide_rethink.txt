@@ -1,4 +1,6 @@
-You are assisting an agent who is currently en route to the agreed meeting location. However, due to unexpected events (traffic, obstacles, etc.), the agent’s estimated time to arrival (ETA) can be no longer improve — or may even be increasing.
+$TaskDescription$
+
+Now the agent is currently en route to the agreed meeting location. However, due to unexpected events (traffic, obstacles, etc.), the agent’s estimated time to arrival (ETA) can be no longer improve — or may even be increasing.
 
 Your task: Determine whether it’s time to **initiate a new group discussion** to consider changing the meeting location. Also consider what you are going to say when initiate a new group discussion.
 
@@ -9,9 +11,11 @@ Your task: Determine whether it’s time to **initiate a new group discussion** 
 - Current Time: $CurrentTime$
 - Agent’s Name: $SelfName$
 - Self's Current Meeting Place: $CurrentPlace$
-- Self's Current ETA: $CurrentETA$
-- Self's Historical ETAs (last 5–10 minutes): $HistoricalETAs$
-- Navigation App Message: None ← e.g., “Route blocked ahead”, “Heavy traffic”, or “ETA increasing”
+- Self's Current ETA: 
+$CurrentETA$
+
+- Self's Historical ETAs (last 5–10 minutes):
+$HistoricalETAs$
 
 Note that the team only share the conversation history, instead of all infos.
 
@@ -32,8 +36,7 @@ Decision Rules:
 
 Set "initiate_new_discussion": true if:
 
-The agent’s ETA has increased by 20% or more and by more than 2 minutes compared to its recent 2 ETA.
-The ETA has been stagnant or increasing for 3+ consecutive updates.
+The ETA has remained constant or increased over an extended period. For example, although the ETA was 2 minutes at one point, the agent had not arrived even 5 minutes later.
 The navigation app reports a major obstacle (e.g., “blocked”, “closed”, “unreachable”).
 Other agents have already arrived or are very close, while this agent is significantly delayed.
 
@@ -41,7 +44,7 @@ Set "initiate_new_discussion": false if:
 
 The agent has reached the destination.
 ETA is still decreasing, even slowly.
-Delay is minor (< 15% increase) and temporary (e.g., “light traffic”).
+Delay is minor (< 15% increase) and temporary.
 No better alternative location is available or likely to help.
 —
 
@@ -49,12 +52,7 @@ Example:
 
 {
     "initiate_new_discussion": true,
-    "speech": "Hey everyone! My ETA to <Place Name> increased 30%. There must be something wrong with this location."
-}
-or
-{
-    "initiate_new_discussion": true,
-    "speech": "Hello everyone! It seems my way to <Place Name> is blocked. I can't get closer to it anymore."
+    "speech": "(explanation)"
 }
 or
 {

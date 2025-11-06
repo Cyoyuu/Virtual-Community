@@ -1,0 +1,175 @@
+# ================================================
+# Prompt: Reconstruct a Sub-Scene Graph from Dialogue
+# ================================================
+
+# Purpose:
+# Given a piece of conversation among agents discussing the environment, locations,
+# and entities (e.g., buildings, roads, sentinels), reconstruct a structured subgraph
+# representing the described spatial relationships.
+
+# ------------------------------------------------
+# Input Variables:
+#   $ConversationExcerpt  → The dialogue snippet to interpret.
+#   $KnownPlaces          → A list or text summary of places/nodes already known in the current HSG.
+#   $ContextLocation      → The approximate spatial focus or parent node (optional, may be "unknown").
+#   $CityMapHints         → Optional hints such as nearby roads/buildings retrieved from the navigation app.
+#   $TimeStamp            → The current simulation time, if useful for temporal grounding.
+#
+# ------------------------------------------------
+# Output Requirements:
+# Return a JSON object describing the reconstructed subgraph, following the structure below.
+# Include all spatially or semantically meaningful entities mentioned in the dialogue.
+#
+# ------------------------------------------------
+# Output JSON Schema:
+
+{
+  "subgraph_id": "string (unique identifier)",
+  "parent_node": "string or null (name of the node this subgraph attaches to)",
+  "nodes": [
+    {
+      "node_id": "string (unique local identifier)",
+      "name": "string (e.g., 'Central Plaza', 'East Road', 'Sentinel_2')",
+      "type": "string (one of: 'building', 'road', 'sentinel', 'area', 'junction', 'other')",
+      "connectivity_center": {
+        "x": float,
+        "y": float
+      },
+      "properties": {
+        "has_destination": true|false,
+        "has_sentinel": true|false,
+        "confidence": float (0–1),
+        "source": "dialogue",
+        "description": "short textual summary derived from conversation"
+      },
+      "children": ["list of node_ids that are hierarchically under this node"]
+    }
+  ],
+  "edges": [
+    {
+      "from": "node_id",
+      "to": "node_id",
+      "relation": "string (e.g., 'connected_to', 'inside', 'near', 'on_route_to')",
+      "confidence": float (0–1)
+    }
+  ],
+  "summary": "short plain-language summary of what this subgraph represents"
+}
+
+# ------------------------------------------------
+# Instructions for the Model:
+
+1. **Read the dialogue carefully.**
+   Identify all spatial entities (buildings, roads, intersections, sentinels, meeting points, etc.)
+   that appear explicitly or implicitly.
+
+2. **Infer hierarchical structure.**
+   - Group related entities under higher-level areas if possible.
+   - Example: if "Library" and "Café" are both near "Central Square", make "Central Square" the parent node.
+
+3. **Estimate connectivity centers.**
+   - You may assign approximate (x, y) coordinates conceptually (e.g., 0–100 scale) if no coordinates are given.
+   - Ensure all centers are distinct and plausible (e.g., nearby items within 10–30 distance units).
+
+4. **Assign properties.**
+   - `has_sentinel`: true if dialogue mentions a sentinel near or inside this node.
+   - `has_destination`: true if a place is discussed as a goal or meeting point.
+   - Include short descriptions summarizing each node’s role.
+
+5. **Add edges.**
+   - If dialogue implies spatial relation (“next to”, “on”, “connected by”), add an edge.
+   - Use relations like: `connected_to`, `inside`, `near`, `on_route_to`.
+
+6. **Maintain consistency.**
+   - Ensure that all node_ids in edges exist in the node list.
+   - No duplicate node names unless explicitly distinct instances (e.g., "Sentinel_1", "Sentinel_2").
+
+7. **Be factual and conservative.**
+   - Only include entities or relationships that are reasonably implied by the dialogue.
+   - Use “confidence” to express uncertainty (e.g., 0.7 if weakly implied).
+
+8. **Return ONLY a valid JSON object.**
+   - No extra commentary, markdown, or text.
+   - The JSON must match the schema above exactly.
+
+# ------------------------------------------------
+# Example Input:
+
+$ConversationExcerpt:
+"""
+A: I saw a sentinel patrolling near the central park.
+B: Then let's avoid that area. Maybe we can meet behind the museum on the west side of the park.
+C: Good idea, there’s also a café next to the museum.
+"""
+
+$KnownPlaces:
+["Central Park", "Downtown Road", "Library"]
+
+$ContextLocation:
+"Downtown District"
+
+$CityMapHints:
+["Museum", "Café", "Central Park", "Main Road"]
+
+$TimeStamp:
+"2025-11-02T18:30:00Z"
+
+# ------------------------------------------------
+# Example Output:
+
+{
+  "subgraph_id": "sub_20251102_01",
+  "parent_node": "Downtown District",
+  "nodes": [
+    {
+      "node_id": "n1",
+      "name": "Central Park",
+      "type": "area",
+      "connectivity_center": {"x": 50, "y": 50},
+      "properties": {
+        "has_destination": false,
+        "has_sentinel": true,
+        "confidence": 0.95,
+        "source": "dialogue",
+        "description": "Park area with a patrolling sentinel observed nearby."
+      },
+      "children": []
+    },
+    {
+      "node_id": "n2",
+      "name": "Museum",
+      "type": "building",
+      "connectivity_center": {"x": 40, "y": 45},
+      "properties": {
+        "has_destination": true,
+        "has_sentinel": false,
+        "confidence": 0.9,
+        "source": "dialogue",
+        "description": "Suggested meeting place behind the park."
+      },
+      "children": ["n3"]
+    },
+    {
+      "node_id": "n3",
+      "name": "Café",
+      "type": "building",
+      "connectivity_center": {"x": 42, "y": 46},
+      "properties": {
+        "has_destination": false,
+        "has_sentinel": false,
+        "confidence": 0.8,
+        "source": "dialogue",
+        "description": "Located next to the museum."
+      },
+      "children": []
+    }
+  ],
+  "edges": [
+    {"from": "n2", "to": "n1", "relation": "near", "confidence": 0.9},
+    {"from": "n3", "to": "n2", "relation": "connected_to", "confidence": 0.8}
+  ],
+  "summary": "Subgraph representing the area around Central Park, including a museum and café, with one sentinel near the park."
+}
+
+# ------------------------------------------------
+# End of prompt.

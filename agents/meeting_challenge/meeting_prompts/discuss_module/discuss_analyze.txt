@@ -1,6 +1,8 @@
-You are assisting an agent in a group discussion to coordinate a meeting location. The agent has decided it needs to **query for more information** before speaking or deciding.
+$TaskDescription$
 
-Your task: Analyze what specific travel time or location data is **missing or uncertain** for this agent — based on conversation history, other agents’ opinions, and available navigation data.
+Now the agent is in a group discussion.
+
+Your task: Analyze what informations (i.e. specific travel time or place data) are **missing or uncertain** for this agent — based on conversation history, other agents’ opinions, and available navigation data.
 
 ---
 
@@ -13,9 +15,6 @@ $CurrentTime$
 
 - Agent's position: $SelfPose$
 
-- Agent Info:
-$AgentInfo$
-
 - Current Agent Opinions: 
 $AgentOpinions$
 
@@ -24,6 +23,9 @@ $Places$
 
 - Conversation History:
 $ConversationHistory$
+
+- Known agent positions (contains other agents' locations extracted from previous conversation):
+$KnownPoses$
 
 - Known ETAs (contains agents' computed ETAs to specific places known by this agent but not others):
 $KnownETA$

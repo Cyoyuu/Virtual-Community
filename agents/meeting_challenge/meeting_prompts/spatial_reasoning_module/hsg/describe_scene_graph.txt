@@ -1,0 +1,110 @@
+# ================================================
+# Prompt: Organize a Sub-Scene Graph into Natural Language
+# ================================================
+
+# Purpose:
+# Given a sub-scene graph in structured JSON format, generate a coherent, natural-language
+# description summarizing the spatial structure, relationships, and notable entities.
+# The goal is to express the subgraph in a concise, human-readable way so that agents
+# can share it or reason about it conversationally.
+
+# ------------------------------------------------
+# Input Variables:
+#   $SubSceneGraphJSON   → JSON object of a sub-scene graph (same structure as used in reconstruction).
+#   $ContextGoal         → Optional short text describing why the description is needed (e.g., “to inform teammates”, “for internal reasoning”).
+#   $AgentPerspective    → Optional note about which agent’s point of view to take (e.g., “agent near library”, “observer from skyview”).
+#   $VerbosityLevel      → one of ["brief", "normal", "detailed"]. Affects how verbose the language should be.
+
+# ------------------------------------------------
+# Output Requirements:
+# Return a natural-language paragraph or two that:
+#   - Describes the layout and relationships of nodes and edges.
+#   - Mentions key attributes like sentinels, destinations, or significant areas.
+#   - Preserves hierarchy (parent-child relations) in human-friendly terms.
+#   - Avoids listing raw JSON or coordinates, but translates them into spatial or relational expressions.
+
+# ------------------------------------------------
+# Writing Guidelines:
+
+1. **Hierarchy First.**
+   - Begin from the parent or main area (`parent_node`).
+   - Describe subordinate nodes (children) naturally, e.g., “Nearby stands a museum with a café beside it.”
+
+2. **Spatial Relations.**
+   - Use prepositions and connective phrases derived from edge relations:
+     - `connected_to` → “connected to”, “linked with”, “accessible from”
+     - `near` → “near”, “next to”, “close by”
+     - `inside` → “inside”, “within”
+     - `on_route_to` → “on the way to”, “along the path toward”
+
+3. **Entity Highlights.**
+   - If `has_sentinel` = true, mention a sentinel explicitly.
+   - If `has_destination` = true, mark it as a goal or meeting point.
+   - Summarize the `description` fields to make it vivid but concise.
+
+4. **Perspective (optional).**
+   - If `$AgentPerspective` is given, anchor the narration to that perspective.
+     e.g., “From your current position near the east road, the library lies to the north, just beyond the park.”
+
+5. **Tone and Style.**
+   - Avoid enumerating nodes mechanically.
+   - Write as if describing a scene to teammates.
+   - Keep sentences clear, factual, and context-aware.
+
+6. **Output Format:**
+   - Plain text only.
+   - No JSON, no Markdown, no labels.
+   - 1–3 short paragraphs, depending on `$VerbosityLevel`.
+
+# ------------------------------------------------
+# Example Input:
+
+$SubSceneGraphJSON:
+{
+  "subgraph_id": "sub_20251102_01",
+  "parent_node": "Downtown District",
+  "nodes": [
+    {
+      "node_id": "n1",
+      "name": "Central Park",
+      "type": "area",
+      "properties": {"has_destination": false, "has_sentinel": true, "description": "Park area with a patrolling sentinel observed nearby."},
+      "children": []
+    },
+    {
+      "node_id": "n2",
+      "name": "Museum",
+      "type": "building",
+      "properties": {"has_destination": true, "has_sentinel": false, "description": "Suggested meeting place behind the park."},
+      "children": ["n3"]
+    },
+    {
+      "node_id": "n3",
+      "name": "Café",
+      "type": "building",
+      "properties": {"has_destination": false, "has_sentinel": false, "description": "Located next to the museum."},
+      "children": []
+    }
+  ],
+  "edges": [
+    {"from": "n2", "to": "n1", "relation": "near", "confidence": 0.9},
+    {"from": "n3", "to": "n2", "relation": "connected_to", "confidence": 0.8}
+  ],
+  "summary": "Subgraph representing the area around Central Park."
+}
+
+$ContextGoal:
+"To brief teammates."
+
+$AgentPerspective:
+"Agent approaching from east road."
+
+$VerbosityLevel:
+"normal"
+
+# ------------------------------------------------
+# Example Output:
+
+The subgraph focuses on the Downtown District area around Central Park.  
+A sentinel is patrolling near the park, making it a zone to avoid. Just west of the park lies the Museum, which is proposed as the meeting point.  
+Beside the museum, there’s a small café, offering a convenient landmark. From your position on the east road, you would reach the park first, then the museum just beyond it.
