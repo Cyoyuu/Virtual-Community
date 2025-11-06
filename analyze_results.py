@@ -4,12 +4,6 @@ import os
 import argparse
 import numpy as np
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument("--output", "-o", type=str, default='.')
-# parser.add_argument("--type", "-t", type=str, default='stationary')
-# parser.add_argument("--num", "-n", type=int, default=5)
-# args = parser.parse_args()
-
 def generate_one(output_dir, sentinel_num):
     scenes = set()
     for sentinel_type in ['stationary', 'patrol']:
@@ -46,7 +40,7 @@ def generate_one(output_dir, sentinel_num):
                     else:
                         val = ""
                     col_values.append(val)
-                df[agent_type] = col_values
+                df[f"{sentinel_type}_{agent_type}"] = col_values
 
         return df
 
@@ -65,8 +59,11 @@ def generate_one(output_dir, sentinel_num):
     print(f"✅ Saved multi-sheet Excel to {output_path}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", "-o", type=str, default='results')
+    args = parser.parse_args()
     # === CONFIG ===
-    output_path = "results"
+    output_path = args.output
 
     # Define the scenes to group into sections (as in your example)
     # For example, “5 Stationary Sentinels”, “10 Stationary Sentinels”, etc.
@@ -127,7 +124,7 @@ if __name__ == "__main__":
 
     # === Write to Excel ===
     # os.makedirs(os.path.dirname(output_path), exist_sok=True)
-    with pd.ExcelWriter(os.path.join(output_path, "summary_table"), engine="openpyxl") as writer:
+    with pd.ExcelWriter(os.path.join(output_path, "summary_table.xlsx"), engine="openpyxl") as writer:
         for name, df in section_tables:
             df.to_excel(writer, sheet_name="Summary", startrow=writer.sheets.get("Summary", None).max_row if "Summary" in writer.sheets else 0, index=False, header=True)
             # Add title row manually using ExcelWriter positioning
