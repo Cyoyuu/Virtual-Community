@@ -274,7 +274,7 @@ def main():
                 interval=args.interval,
                 fps=args.fps,
                 out_format=args.format,
-                outfile=args.outfile,
+                output_dir==args.output_dir,
                 save_gif_flag=args.save_gif)
 
 if __name__ == "__main__":
