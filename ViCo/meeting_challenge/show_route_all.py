@@ -263,7 +263,7 @@ def main():
     parser.add_argument("--interval", "-i", type=int, default=100)
     parser.add_argument("--fps", type=int, default=5)
     parser.add_argument("--format", type=str, default="mp4", choices=["mp4", "gif"])
-    parser.add_argument("--outfile", type=str, default=None)
+    parser.add_argument("--output_dir", "-o", type=str, default="visualization")
     parser.add_argument("--save_gif", action="store_true")
     args = parser.parse_args()
     animate_all(scene=args.scene,
