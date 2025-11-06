@@ -157,8 +157,8 @@ class ThinkingModule:
         return response
 
 class Decider(ThinkingModule):
-    def __init__(self, generator, logger):
-        super().__init__(generator, logger)
+    def __init__(self, generator, logger, name):
+        super().__init__(generator, logger, name)
     
     def conclude_and_decide(self, curr_time, agent_names, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_2in1.txt", "r").read()
@@ -200,8 +200,8 @@ class Decider(ThinkingModule):
 
 
 class Discusser(ThinkingModule):
-    def __init__(self, generator, logger):
-        super().__init__(generator, logger)
+    def __init__(self, generator, logger, name):
+        super().__init__(generator, logger, name)
 
     def extract(self, name, places, conversation_history, app_messages):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_extract.txt", "r").read()
@@ -311,8 +311,8 @@ class Discusser(ThinkingModule):
         return response
 
 class Reasoner(ThinkingModule):
-    def __init__(self, generator, logger):
-        super().__init__(generator, logger)
+    def __init__(self, generator, logger, name):
+        super().__init__(generator, logger, name)
         self.scanned_map = np.zeroes(dtype=int, shape=[10, 10])
         self.hsg = HSG()
 
@@ -418,8 +418,8 @@ class Reasoner(ThinkingModule):
             return None
 
 class Speaker(ThinkingModule):
-    def __init__(self, generator, logger):
-        super().__init__(generator, logger)
+    def __init__(self, generator, logger, name):
+        super().__init__(generator, logger, name)
 
 class Navigator:
     def __init__(self, goal_place):
@@ -457,9 +457,9 @@ class BaseNavigationMeetingAgent(Agent):
         # Discussion
         self.mode_time_counter = 0
         self.discussion_trigger = ""
-        self.decider = Decider(generator=self.generator, logger=self.logger)
-        self.discusser = Discusser(generator=self.generator, logger=self.logger)
-        self.speaker = Speaker(generator=self.generator, logger=self.logger)
+        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name)
+        self.discusser = Discusser(generator=self.generator, logger=self.logger, name=self.name)
+        self.speaker = Speaker(generator=self.generator, logger=self.logger, name=self.name)
         self.discussion_plan = None
         self.agent_opinions = dict()
         self.known_poses = dict()

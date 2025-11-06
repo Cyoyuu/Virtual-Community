@@ -4,8 +4,8 @@ import json
 import base64
 import io
 from PIL import Image
-from hsg import HSG
-from node import Node
+from .hsg import HSG
+from .node import Node
 
 # ------------------------------
 # Merge function
