@@ -225,7 +225,7 @@ def main():
         )
         if agent_type == 'center':
             all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs))
-        elif agent_type == 'nav':
+        elif agent_type == 'coela':
             all_agent_processes.append(AgentProcess(CoelaMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'single':
             all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs))
