@@ -313,7 +313,7 @@ class Discusser(ThinkingModule):
 class Reasoner(ThinkingModule):
     def __init__(self, generator, logger, name):
         super().__init__(generator, logger, name)
-        self.scanned_map = np.zeroes(dtype=int, shape=[10, 10])
+        self.scanned_map = np.zeros(dtype=int, shape=[10, 10])
         self.hsg = HSG()
 
     def plan(self, curr_time, name, pose, intent):
