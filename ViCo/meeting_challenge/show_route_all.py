@@ -256,6 +256,10 @@ def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", "-s", type=str, required=True)
+    parser.add_argument("--agent_type", "-a", type=str, required=True)
+    parser.add_argument("--sentinel_type", "-t", type=str, required=True)
+    parser.add_argument("--sentinel_num", "-n", type=int, required=True)
+    parser.add_argument("--job_id", "-j", type=int, required=True)
     parser.add_argument("--interval", "-i", type=int, default=100)
     parser.add_argument("--fps", type=int, default=5)
     parser.add_argument("--format", type=str, default="mp4", choices=["mp4", "gif"])
@@ -263,6 +267,10 @@ def main():
     parser.add_argument("--save_gif", action="store_true")
     args = parser.parse_args()
     animate_all(scene=args.scene,
+                agent_type=args.agent_type,
+                sentinel_type=args.sentinel_type,
+                sentinel_num=args.sentinel_num,
+                job_id=args.job_id,
                 interval=args.interval,
                 fps=args.fps,
                 out_format=args.format,
