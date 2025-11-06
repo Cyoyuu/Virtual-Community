@@ -160,8 +160,8 @@ class VolumeGridBuilder:
     def get_overlap(self, other: 'VolumeGridBuilder', radius=0.1) -> float:
         return lib_builder.volume_grid_get_overlap(self.vg_backend, other.vg_backend, radius)
     
-    def get_occ_map(self, agent_pos: np.ndarray=None, save_path: str=None) -> tuple[np.ndarray, int, int, int, int]:
-        # occ map: 1 unknown, 2 obstacle, 3 road
+    def get_occ_map(self, agent_pos: np.ndarray=None, save_path: str=None, external_warning=None, external_route=None) -> tuple[np.ndarray, int, int, int, int]:
+        # occ map: 1 unknown, 2 obstacle, 3 road, and we now use 4 for external warning
         x_min = np.zeros(1, dtype=np.int32)
         y_min = np.zeros(1, dtype=np.int32)
         x_max = np.zeros(1, dtype=np.int32)
@@ -175,12 +175,31 @@ class VolumeGridBuilder:
         w = x_max[0] - x_min[0] + 1
         h = y_max[0] - y_min[0] + 1
         occ_map = np.ctypeslib.as_array(occ, (h, w))
+        if external_warning is not None:
+            for warn in external_warning:
+                for dx in range(-10, 11):
+                    for dy in range(-10, 11):
+                        x = int(self.align_nav(warn[0]+dx))
+                        y = int(self.align_nav(warn[1]+dy))
+                        ax = x - x_min[0]
+                        ay = y - y_min[0]
+                        if 0 <= ax < w and 0 <= ay < h:
+                            occ_map[ay, ax] = 4
+        if external_route is not None:
+            for wp in external_route:
+                        x = int(self.align_nav(wp[0]))
+                        y = int(self.align_nav(wp[1]))
+                        ax = x - x_min[0]
+                        ay = y - y_min[0]
+                        if 0 <= ax < w and 0 <= ay < h:
+                            occ_map[ay, ax] = 10
         if save_path is not None:
             draw_map = np.zeros((h, w, 3), dtype=np.uint8)
             draw_map[np.where(occ_map == 1)] = [0, 0, 0]
             draw_map[np.where(occ_map == 2)] = [255, 255, 255]
             draw_map[np.where(occ_map == 3)] = [0, 0, 255]
             draw_map[np.where(occ_map == 4)] = [0, 255, 255]
+            draw_map[np.where(occ_map == 10)] = [255, 255, 0]
 
             def draw_point(x, y, color):
                 x = int(self.align_nav(x))
@@ -197,7 +216,7 @@ class VolumeGridBuilder:
                 else:
                     for pos in agent_pos:
                         draw_point(pos[0], pos[1], [0, 255, 0])
-            cv2.imwrite(save_path, draw_map)
+            cv2.imwrite(save_path, draw_map[::-1, :, :])
         return occ_map, x_min[0], y_min[0], x_max[0], y_max[0]
 
         # draw_map[np.where(occ_map == 4)] = [127, 255, 255]

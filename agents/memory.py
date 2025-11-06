@@ -246,7 +246,7 @@ class SemanticMemory:
 		if self.current_place is None or self.current_place == "open space":
 			occ_map = cur_sg.volume_grid_builder.get_occ_map(obs["pose"][:3])[0]
 			self.logger.debug(f"Area of known grids: {np.sum(occ_map != 1)}")
-		if self.debug:
+		if self.debug and 'Sentinel' in obs['name']:
 			cur_sg.volume_grid_builder.get_occ_map(obs["pose"][:3], os.path.join(self.storage_path, self.current_place, f"occ_map_{cur_sg.num_frames:06d}.png"))
 		if self.num_frames % 10 == 0:
 			self.save_memory()
