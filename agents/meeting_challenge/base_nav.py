@@ -596,7 +596,7 @@ class BaseNavigationMeetingAgent(Agent):
                 self.update_known_eta(extracted_info['ETA Map'])#!!!
             if 'Agent Poses' in extracted_info:
                 self.update_known_poses(extracted_info['Agent Poses'])
-            missing_info = self.discusser.analyze(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description, places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description())
+            missing_info = self.discusser.analyze(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description())
             self.discussion_plan = self.discusser.plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
             action = {"type": "wait"}
             if self.discussion_plan["action"]=="wait":
