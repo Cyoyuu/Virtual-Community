@@ -255,6 +255,7 @@ def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--data_dir", "-d", type=str, default="ViCo/meeting_challenge/output")
     parser.add_argument("--scene", "-s", type=str, required=True)
     parser.add_argument("--agent_type", "-a", type=str, required=True)
     parser.add_argument("--sentinel_type", "-t", type=str, required=True)
@@ -266,7 +267,8 @@ def main():
     parser.add_argument("--output_dir", "-o", type=str, default="visualization")
     parser.add_argument("--save_gif", action="store_true")
     args = parser.parse_args()
-    animate_all(scene=args.scene,
+    animate_all(data_dir=args.data_dir,
+                scene=args.scene,
                 agent_type=args.agent_type,
                 sentinel_type=args.sentinel_type,
                 sentinel_num=args.sentinel_num,
@@ -274,7 +276,7 @@ def main():
                 interval=args.interval,
                 fps=args.fps,
                 out_format=args.format,
-                output_dir==args.output_dir,
+                output_dir=args.output_dir,
                 save_gif_flag=args.save_gif)
 
 if __name__ == "__main__":
