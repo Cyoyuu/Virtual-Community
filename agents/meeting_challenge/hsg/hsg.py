@@ -1,4 +1,3 @@
-from node import Node
 from copy import deepcopy
 import uuid
 import json
