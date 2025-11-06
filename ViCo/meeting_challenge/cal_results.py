@@ -2,6 +2,7 @@ import json
 import os
 import argparse
 import numpy as np
+from show_route_all import animate_all
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--task", type=str, default="carry")
@@ -9,22 +10,23 @@ parser.add_argument("--agent_num", type=int, default=1)
 parser.add_argument("--agent_type", type=str, default="heuristic")
 parser.add_argument("--scene", type=str, default="scene_0")
 parser.add_argument("--task_id", type=str, default="carry_1")
-parser.add_argument("--output_dir", "-o", type=str, default="ViCo/meeting_challenge/results/")
+parser.add_argument("--results_dir", "-r", type=str, default="ViCo/meeting_challenge/results/")
+parser.add_argument("--output_dir", "-o", type=str, default="ViCo/meeting_challenge/output/")
 args = parser.parse_args()
-base_output_dir = args.output_dir
+base_results_dir = args.results_dir
 results = dict()
 average_results = dict()
 job_id_range = range(1, 6)
-for agent_type in os.listdir(base_output_dir):
-    if not os.path.isdir(os.path.join(base_output_dir, agent_type)): continue
-    for scene in os.listdir(os.path.join(base_output_dir, agent_type)):
+for agent_type in os.listdir(base_results_dir):
+    if not os.path.isdir(os.path.join(base_results_dir, agent_type)): continue
+    for scene in os.listdir(os.path.join(base_results_dir, agent_type)):
         if "_old" in str(scene).lower(): continue
         for job_id in job_id_range:
             # if "_" not in dir_name:
             #     continue
-            if f"result_{job_id}.json" not in os.listdir(os.path.join(base_output_dir, agent_type, scene)): continue
-            result = json.load(open(os.path.join(base_output_dir, agent_type, scene, f"result_{job_id}.json")))
-            print(f"summerizeing {os.path.join(base_output_dir, agent_type, scene)}")
+            if f"result_{job_id}.json" not in os.listdir(os.path.join(base_results_dir, agent_type, scene)): continue
+            result = json.load(open(os.path.join(base_results_dir, agent_type, scene, f"result_{job_id}.json")))
+            print(f"summerizeing {os.path.join(base_results_dir, agent_type, scene)}")
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
@@ -37,6 +39,7 @@ for agent_type in os.listdir(base_output_dir):
             results[agent_type][scene]['success_rate']+=result['done']
             results[agent_type][scene]['caught_rate']+=result['caught_rate']
             results[agent_type][scene]['detection_rate']+=result['detection_rate']
+            animate_all(args.output_dir, scene=scene, agent_type=agent_type, sentinel_type=base_results_dir.split('_')[-2], sentinel_num=int(base_results_dir.split('_')[-1]), job_id=job_id, output_dir="visualization")
         if agent_type in results and scene in results[agent_type]:
             results[agent_type][scene]['success_rate']/=results[agent_type][scene]['total']
             results[agent_type][scene]['caught_rate']/=results[agent_type][scene]['total']
@@ -67,6 +70,6 @@ for agent_type in results:
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
     results[agent_type]["average"]=average_results[agent_type]
-with open(f"{base_output_dir}/results.json", "w") as f:
+with open(f"{base_results_dir}/results.json", "w") as f:
     json.dump(results, f, indent=2)
 import pdb; pdb.set_trace()

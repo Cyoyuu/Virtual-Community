@@ -81,8 +81,8 @@ def precompute_histories(full_steps, steps_data, agents, max_jump=100.0):
             last_x, last_y = xs[i], ys[i]
     return agent_traces, idx_of_full
 
-def animate_all(scene, interval=100, fps=5, out_format="mp4", outfile=None, save_gif_flag=False):
-    base_dir = f"ViCo/meeting_challenge/output/{scene}/heuristic_nav"
+def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id, interval=100, fps=5, out_format="mp4", output_dir=None, save_gif_flag=False):
+    base_dir = os.path.join(data_dir, f"{scene}/{agent_type}/{sentinel_type}_{sentinel_num}/job_{job_id}")
     steps_json = os.path.join(base_dir, "steps.json")
     env_dir = os.path.join(base_dir, "steps", "env")
     if not os.path.isfile(steps_json):
@@ -229,7 +229,7 @@ def animate_all(scene, interval=100, fps=5, out_format="mp4", outfile=None, save
     if save_gif_flag:
         out_format = "gif"
     if out_format.lower() == "mp4":
-        out_path = outfile if outfile else f"{scene}_history_all.mp4"
+        out_path = os.path.join(output_dir, f"{sentinel_type}_{sentinel_num}_{scene}_{agent_type}_job_{job_id}_history_all.mp4")
         last_err = None
         for codec in ["libx264", "mpeg4"]:
             try:
@@ -243,7 +243,7 @@ def animate_all(scene, interval=100, fps=5, out_format="mp4", outfile=None, save
         else:
             raise last_err if last_err else RuntimeError("FFMpegWriter failed with all codecs.")
     elif out_format.lower() == "gif":
-        out_path = outfile if outfile else f"{scene}_history_all.gif"
+        out_path = os.path.join(output_dir, f"{sentinel_type}_{sentinel_num}_{scene}_{agent_type}_job_{job_id}_history_all.gif")
         writer = PillowWriter(fps=fps)
         ani.save(out_path, writer=writer)
         print(f"Saved animation to {out_path}")
