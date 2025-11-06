@@ -13,7 +13,7 @@ class HSG:
         self.nodes = nodes or {}  # dict[node_id] = Node
         self.edges = edges or []  # list of dicts: {from, to, relation, confidence}
 
-    def add_node(self, node: HSG):
+    def add_node(self, node):
         self.nodes[node.id] = node
 
     def add_edge(self, from_id, to_id, relation, confidence=1.0):

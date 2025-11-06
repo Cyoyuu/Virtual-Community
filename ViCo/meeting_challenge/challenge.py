@@ -78,7 +78,7 @@ def main():
 
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
-    parser.add_argument("--agent_type", type=str, choices=['heuristic', 'llm', 'mcts', 'random', 'nav', 'heuristic_nav', 'single', 'fixed'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
@@ -223,16 +223,12 @@ def main():
             temperature=args.temperature,
             top_p=args.top_p,
         )
-        if agent_type == 'heuristic':
-            all_agent_processes.append(AgentProcess(HeuristicMeetingAgent, **basic_kwargs))
-        elif agent_type == 'llm':
-            all_agent_processes.append(AgentProcess(LLMMeetingAgent, **basic_kwargs, **llm_kwargs))
+        if agent_type == 'center':
+            all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs))
         elif agent_type == 'nav':
-            all_agent_processes.append(AgentProcess(NavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(CoelaMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'single':
-            all_agent_processes.append(AgentProcess(SingleMeetingAgent, **basic_kwargs, **llm_kwargs))
-        elif agent_type == 'heuristic_nav':
-            all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "fixed":
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:

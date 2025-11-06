@@ -2,7 +2,7 @@ scene=$1
 sentinel_type=$2
 sentinel_num=$3
 # Path to your script or command to run
-script_path="ViCo/meeting_challenge/experiment_scripts/run_heuristic.sh"
+script_path="ViCo/meeting_challenge/experiment_scripts/run_center.sh"
 
 if [ "$sentinel_num" -eq 20 ]; then
   time_limit=240

@@ -18,10 +18,9 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_5 \
---agent_type heuristic_nav \
+--agent_type center \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
---enable_danger_zone \
 --save_per_seconds 200 \
 --step_limit 1500 \
 --lm_source azure \
