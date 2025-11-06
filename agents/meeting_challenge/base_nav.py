@@ -366,12 +366,12 @@ class Navigator:
 class BaseNavigationMeetingAgent(Agent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1):
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger)
         self.looking_down = False
         self.num_agents = num_agents
         self.comm = self.num_agents > 1
-        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
+        self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"), enable_danger_zone=enable_danger_zone)
 
         if init_generator:
 
@@ -465,7 +465,11 @@ class BaseNavigationMeetingAgent(Agent):
                     if event['content']['arg1'] == 'ban':
                         self.logger.info("I'm being banned...")
                         self.banned = True
-        num_new_objects = self.s_mem.update(obs)
+        num_new_objects = self.s_mem.update(obs, self.last_nav)
+        # if self.debug and self.last_nav is not None:
+        #     self.logger.info(f"saving occ map to occ_map_{self.s_mem.get_sg().num_frames:06d}.png")
+        #     self.s_mem.get_sg().volume_grid_builder.get_occ_map(obs["pose"][:3], os.path.join(self.storage_path, self.current_place if self.current_place is not None else 'open space', f"occ_map_{self.s_mem.get_sg().num_frames:06d}.png"))
+        #     assert os.path.exists(os.path.join(self.storage_path, self.current_place if self.current_place is not None else 'open space', f"occ_map_{self.s_mem.get_sg().num_frames:06d}.png"))
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
