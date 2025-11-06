@@ -477,7 +477,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.route_history = {"last_route": dict(), "last_nav": dict()}
         self.route_plan = list()
         # Reasoning
-        self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger)
+        self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         self.query_buffer = list()
         self.finding_route = 0
 
