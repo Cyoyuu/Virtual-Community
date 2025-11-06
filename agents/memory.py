@@ -185,7 +185,7 @@ class SemanticMemory:
 		
 		Thread(target=_save, daemon=True).start()
 
-	def update(self, obs):
+	def update(self, obs, last_nav=None):
 		while self.saving_lock.locked():
 			time.sleep(0.1)
 		if obs['rgb'] is None:
@@ -246,8 +246,8 @@ class SemanticMemory:
 		if self.current_place is None or self.current_place == "open space":
 			occ_map = cur_sg.volume_grid_builder.get_occ_map(obs["pose"][:3])[0]
 			self.logger.debug(f"Area of known grids: {np.sum(occ_map != 1)}")
-		if self.debug and 'Sentinel' in obs['name']:
-			cur_sg.volume_grid_builder.get_occ_map(obs["pose"][:3], os.path.join(self.storage_path, self.current_place, f"occ_map_{cur_sg.num_frames:06d}.png"))
+		if self.debug:
+			cur_sg.volume_grid_builder.get_occ_map(obs["pose"][:3], os.path.join(self.storage_path, self.current_place, f"occ_map_{cur_sg.num_frames:06d}.png"), external_route=last_nav)
 		if self.num_frames % 10 == 0:
 			self.save_memory()
 		return num_new_objects

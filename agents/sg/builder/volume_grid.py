@@ -185,14 +185,6 @@ class VolumeGridBuilder:
                         ay = y - y_min[0]
                         if 0 <= ax < w and 0 <= ay < h:
                             occ_map[ay, ax] = 4
-        if external_route is not None:
-            for wp in external_route:
-                        x = int(self.align_nav(wp[0]))
-                        y = int(self.align_nav(wp[1]))
-                        ax = x - x_min[0]
-                        ay = y - y_min[0]
-                        if 0 <= ax < w and 0 <= ay < h:
-                            occ_map[ay, ax] = 10
         if save_path is not None:
             draw_map = np.zeros((h, w, 3), dtype=np.uint8)
             draw_map[np.where(occ_map == 1)] = [0, 0, 0]
@@ -216,6 +208,10 @@ class VolumeGridBuilder:
                 else:
                     for pos in agent_pos:
                         draw_point(pos[0], pos[1], [0, 255, 0])
+            
+            if external_route is not None:
+                for wp in external_route:
+                    draw_point(wp[0], wp[1], [255, 255, 0])
             cv2.imwrite(save_path, draw_map[::-1, :, :])
         return occ_map, x_min[0], y_min[0], x_max[0], y_max[0]
 
