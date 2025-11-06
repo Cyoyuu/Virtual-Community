@@ -24,7 +24,10 @@ for agent_type in os.listdir(base_results_dir):
         for job_id in job_id_range:
             # if "_" not in dir_name:
             #     continue
+            sentinel_type=base_results_dir.split('_')[-2]
+            sentinel_num=int(base_results_dir.split('_')[-1])
             if f"result_{job_id}.json" not in os.listdir(os.path.join(base_results_dir, agent_type, scene)): continue
+            if f"result.json" not in os.listdir(os.path.join(args.output_dir, scene, agent_type, f"{sentinel_type}_{sentinel_num}", f"job_{job_id}")): continue
             result = json.load(open(os.path.join(base_results_dir, agent_type, scene, f"result_{job_id}.json")))
             print(f"summerizeing {os.path.join(base_results_dir, agent_type, scene)}")
             if agent_type not in results:
@@ -39,7 +42,7 @@ for agent_type in os.listdir(base_results_dir):
             results[agent_type][scene]['success_rate']+=result['done']
             results[agent_type][scene]['caught_rate']+=result['caught_rate']
             results[agent_type][scene]['detection_rate']+=result['detection_rate']
-            animate_all(args.output_dir, scene=scene, agent_type=agent_type, sentinel_type=base_results_dir.split('_')[-2], sentinel_num=int(base_results_dir.split('_')[-1]), job_id=job_id, output_dir="visualization")
+            # animate_all(args.output_dir, scene=scene, agent_type=agent_type, sentinel_type=base_results_dir.split('_')[-2], sentinel_num=int(base_results_dir.split('_')[-1]), job_id=job_id, output_dir="visualization")
         if agent_type in results and scene in results[agent_type]:
             results[agent_type][scene]['success_rate']/=results[agent_type][scene]['total']
             results[agent_type][scene]['caught_rate']/=results[agent_type][scene]['total']
