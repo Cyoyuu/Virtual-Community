@@ -64,14 +64,8 @@ Return a JSON object:
 Example:
 ```json
 [
-    {
-        "missing_infos": "<Downtown Plaza>",
-        "reason": "Need Bob's ETAs to compare top 2 candidates"
-    },
-    {
-        "missing_infos": "<Central Park>",
-        "reason": "Need my ETA to compare with Alice’s suggestion"
-    }
+    "Need Bob's ETA to <Downtown Plaza> to compare top 2 candidates",
+    "Need my ETA to <Central Park> to compare with Alice’s suggestion"
 ]
 ```
 
