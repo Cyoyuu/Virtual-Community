@@ -101,7 +101,7 @@ def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id
     full_steps = list(range(start_step, end_step + 1))
     frames = full_steps[::10]
     agents_all, sentinels = build_entity_lists(steps_data, track_sentinels=False)
-    fixed_agents = agents_all[:5]
+    fixed_agents = [agent for agent in agents_all if "Sentinel" not in agent]
     fixed_palette = ["#007BFF", "#00C853", "#FFD600", "#8E44AD", "#FF1744"]
     agent_color = {name: fixed_palette[i] for i, name in enumerate(fixed_agents)}
     agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, fixed_agents, max_jump=100.0)
