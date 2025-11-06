@@ -94,7 +94,7 @@ if __name__ == "__main__":
         for sentinel_type in ['stationary', 'patrol']:
             section_name = f"{sentinel_num} {sentinel_type} Sentinels"
             section_data = []
-            results=json.load(open(f"results_{sentinel_type}_{sentinel_num}.json", "r"))
+            results=json.load(open(f"{args.output}/results_{sentinel_type}_{sentinel_num}.json", "r"))
 
             for method_name, method in methods.items():
                 # Map method label to agent_type key in JSON
