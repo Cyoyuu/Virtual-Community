@@ -16,7 +16,7 @@ def generate_one(output_dir, sentinel_num):
             results[sentinel_type] = json.load(f)
 
         # Collect all scenes and agent types
-        agent_types = ['heuristic_nav_no_avoidance', 'heuristic_nav', 'single', 'nav']
+        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela']
 
         for agent_type, scene_dict in results[sentinel_type].items():
             # agent_types.append(agent_type)
@@ -73,10 +73,10 @@ if __name__ == "__main__":
 
     # Define row order (agent labels)
     methods = {
-        "Center + No avoidance": "heuristic_nav_no_avoidance",
-        "Center + Danger Zone avoidance": "heuristic_nav",
-        "RoCo + Danger Zone avoidance": "single",
-        "CoELA + Danger Zone avoidance": "nav",
+        "Center + No avoidance": "center_no_avoidance",
+        "Center + Danger Zone avoidance": "center",
+        "RoCo + Danger Zone avoidance": "roco",
+        "CoELA + Danger Zone avoidance": "coela",
         # "Ours": "ours"
     }
 
