@@ -32,6 +32,7 @@ class BaseSentinelAgent(Agent):
         self.visible_agent = dict()
         self.countdown = 0
         self.current_target = None
+        self.detection_count = 0
 
         self.patrol_config = patrol_config
         self.countdown_t = 15
@@ -76,8 +77,14 @@ class BaseSentinelAgent(Agent):
             if self.current_target is not None and self.current_target in self.visible_agent:
                 self.countdown -= math.sqrt(self.visible_agent[self.current_target]/len(self.obs['segmentation'].flatten())/self.detection_min_pixel_ratio)
                 if self.countdown > 0:
-                    action = {"type": "signal", "arg1": f"warning", "arg2": self.current_target}
-                    # action = self.navigate(self.s_mem.get_sg(), goal_pos=self.obs['agent_pos_dict'][self.current_target])
+                    # action = {"type": "signal", "arg1": f"warning", "arg2": self.current_target}
+                    action = self.navigate(self.s_mem.get_sg(), goal_pos=self.obs['agent_pos_dict'][self.current_target])
+                    if action['type']=='turn_left':
+                        action['type']='look_after_left'
+                    elif action['type']=='turn_right':
+                        action['type']='look_after_right'
+                    elif action['type']=='move_forward':
+                        action['type']='chase'
                 else:
                     action = {"type": "signal", "arg1": f"ban", "arg2": self.current_target}
                     self.set_target(None)
@@ -88,8 +95,10 @@ class BaseSentinelAgent(Agent):
                     break
         
         self.last_action = action
-        # if action['type'] == 'move_forward':
-        #     action['arg1'] = min(action['arg1'], self.max_speed)
+        if self.current_target is not None:
+            self.detection_count += 1
+        if action['type'] == 'chase':
+            action['arg1'] = min(action['arg1'], self.max_speed)
         return self.last_action
     
     def set_target(self, agent_name):

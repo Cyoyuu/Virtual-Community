@@ -305,7 +305,8 @@ def main():
             action = agent.act()
             agent_actions[i] = action
             agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
-            if action is not None and action['type'] == 'signal':
+            # action types indicate it see a sentinel
+            if action is not None and action['type'] in ['signal', 'look_after_left', 'look_after_right', 'chase']:
                 detected_counter += 1
                 if action['arg1']=='ban':
                     banned_agent_list.append(action['arg2'])
@@ -333,6 +334,15 @@ def main():
         dt_agent = time.perf_counter() - lst_time
         env.config["dt_agent"] = (env.config["dt_agent"] * env.steps + dt_agent) / (env.steps + 1)
         lst_time = time.perf_counter()
+        # transfer look_after and chase back to turn and move_forward
+        for i, action in enumerate(agent_actions):
+            if action['type']=='look_after_left':
+                agent_actions[i]['type']='turn_left'
+            if action['type']=='look_after_right':
+                agent_actions[i]['type']='turn_right'
+            if action['type']=='chase':
+                agent_actions[i]['type']='move_forward'
+        # then step
         obs, _, done, info = env.step(agent_actions)
         dt_sim = time.perf_counter() - lst_time
         env_dt_sim = (env_dt_sim * (env.steps - 1) + dt_sim) / env.steps

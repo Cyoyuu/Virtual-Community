@@ -571,8 +571,8 @@ class BaseNavigationMeetingAgent(Agent):
                     self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
                     conversation_history = self.get_conversation_description(limit=1)
                     if self.mode==NavAgentState.NAVIGATE:
-                        extracted_info = self.decider.start(name=self.name, places=places, conversation_history=conversation_history)
-                        if "initiate_new_discussion" in extracted_info and extracted_info["initiate_new_discussion"]:
+                        extracted_info = self.decider.start(name=self.name, agent_names=agent_names, places=places, conversation_history=conversation_history)
+                        if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
                             self.enter_discussion_mode(trigger="NEW DISCUSSION")
                     elif self.mode==NavAgentState.DISCUSS:
                         extracted_info = self.discusser.extract(name=self.name, agent_names=agent_names, places=places, conversation_history=conversation_history)
@@ -642,7 +642,8 @@ class BaseNavigationMeetingAgent(Agent):
                 # Compute median depth
                 selected_depths = self.obs['depth'][mask]
                 z_median = np.median(selected_depths)
-                wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'])
+                self.logger.debug(f"camera_ext is {list(self.obs['extrinsics'])}")
+                wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
                 self.update_known_sentinel_poses([wp[:2]])
@@ -698,6 +699,8 @@ class BaseNavigationMeetingAgent(Agent):
                 # action = self.reasoning_plan()
                 operation = self.discusser.query(curr_time=curr_time, pose=self.get_outdoor_pose_description(), intent=self.discussion_plan['explanation'], places=places)
                 if operation['type'] == 'query_nearby':
+                    operation['coordinate'][0], operation['coordinate'][1] = float(operation['coordinate'][0]), float(operation['coordinate'][1])
+                    operation['radius'] = float(operation['radius'])
                     action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': operation['coordinate'], 'arg3': operation['radius']}
                 elif operation['type'] == 'query_place':
                     if operation['place'].startswith("<") and operation['place'].endswith(">"):
@@ -733,8 +736,8 @@ class BaseNavigationMeetingAgent(Agent):
         for operation in operation_sequece:
             if operation['type'] == 'query_app':
                 if operation['query_type'] == 'query_nearby':
-                    operation['coordinate'][0], operation['coordinate'][1] = int(operation['coordinate'][0]), int(operation['coordinate'][1])
-                    operation['radius'] = int(operation['radius'])
+                    operation['coordinate'][0], operation['coordinate'][1] = float(operation['coordinate'][0]), float(operation['coordinate'][1])
+                    operation['radius'] = float(operation['radius'])
                     action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': operation['coordinate'], 'arg3': operation['radius']}
                 elif operation['query_type'] == 'query_place':
                     action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': operation['place']}
@@ -835,7 +838,7 @@ class BaseNavigationMeetingAgent(Agent):
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert len(self.last_route)>0
         self.logger.debug(f"Current last_nav is {self.last_nav}")
-        if not self.last_nav:
+        if not self.last_nav or max_retry == 0:
             self.generate_navigation_plan(max_retry=max_retry)
             self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
         # If the estimated arrival time exceeds, regenerate
@@ -1352,7 +1355,7 @@ class BaseNavigationMeetingAgent(Agent):
                     flag = False
                     break
             if flag:
-                self.known_sentinel_poses.append(sentinel_pose)
+                self.known_sentinel_poses.append(list(sentinel_pose))
 
     def get_nearest_places_description(self, target):
         place_list = self.get_nearest_places(target)

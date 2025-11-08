@@ -337,6 +337,7 @@ class Amap:
         return knowledge_items
     
     def query_nearby(self, target_pos, threshold=30):
+        assert type(threshold) != str
         places_list=[]
         for place in self.place_metadata:
             if is_near_goal(target_pos[0], target_pos[1], self.building_metadata[self.place_metadata[place]['building']]['bounding_box'], self.place_metadata[place]['location'], threshold=threshold):

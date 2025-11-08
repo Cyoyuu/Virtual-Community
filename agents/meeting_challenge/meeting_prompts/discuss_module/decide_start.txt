@@ -3,7 +3,7 @@ $TaskDescription$
 The agent just received a new message.  
 Your job has **two parts**:
 
-1. Decide whether it is time to **start a new discussion** to coordinate a suitable meeting place.
+1. Decide whether it is time to **start a new discussion or participate the current discussion** to coordinate a suitable meeting place.
 2. Extract all available **ETA information**, **agent poses**, and **sentinel poses** from the shared conversation history.
 
 ---
@@ -30,7 +30,7 @@ Return a JSON object with the following structure:
 
 ```json
 {
-    "initiate_new_discussion": true|false,
+    "initiate_discussion": true|false,
     "ETA Map": {
         "<Place Name>": {
             "Agent1": "00:00:15",
@@ -52,11 +52,12 @@ Return a JSON object with the following structure:
 
 ### **Part 1: Discussion Decision Rules**
 
-Set `"initiate_new_discussion": true` if:
+Set `"initiate_discussion": true` if:
 
 - The recently received message clearly indicates **intention to start** or **need to coordinate** a new discussion or meeting place.
 - The current discussion appears to have concluded and a new topic or location is emerging.
 - The agent is explicitly called upon to make a new decision (“Where should we go next?”, “Let’s regroup”, etc.).
+- The message suggests a discussion is ongoing and it need my participation.
 
 Set it to `false` if:
 

@@ -167,6 +167,7 @@ class VicoEnv:
 		self.agents: list[AvatarController] = []
 		self.agent_names: list[str] = self.config['agent_names']
 		self.agent_infos: list[dict] = self.config['agent_infos']
+		self.agent_speak_weight = [100] * self.num_agents
 		start_time = time.time()
 		frame_ratio = 0.0 if skip_avatar_animation else 5.0
 		for i in range(self.num_agents):
@@ -674,7 +675,8 @@ class VicoEnv:
 					agent.robot.base_state = AvatarState.STANDING
 				agent_pos = self.config['agent_poses'][i][:3]
 				converse_range = action['arg2'] if 'arg2' in action else 10
-				priority = random.randint(0, 100)
+				priority = random.randint(0, self.agent_speak_weight[i])
+				self.agent_speak_weight[i] = max(0, self.agent_speak_weight[i] - 30)
 				if converse_range > 3200:
 					gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 3200. Ignored.")
 					self.agents[i].robot.action_status = ActionStatus.FAIL
@@ -683,6 +685,7 @@ class VicoEnv:
 				# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
+					self.agent_speak_weight[self.agent_names.index(deleted_subject)] += 60
 			elif action['type'] == 'broadcast_event':
 				if agent.robot.base_state == AvatarState.SLEEPING:
 					agent.robot.base_state = AvatarState.STANDING
