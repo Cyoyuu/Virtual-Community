@@ -60,13 +60,11 @@ Using the summarized opinions from Step 1, determine if every agent explicitly s
 
 Guidelines:
 
-Be strict: Agreement means unanimous consensus — no exceptions.
-
-If any agent is “undecided”, “waiting”, or prefers a different location → agreement_reached = false.
-
-Do not infer or assume compromise.
-
-Use exact string matching for place names (e.g., <Central Park> ≠ Central Park).
+- Be strict: Agreement means unanimous consensus — no exceptions.
+- If any agent is “undecided”, “waiting”, or prefers a different location → agreement_reached = false.
+- Do not infer or assume compromise. However, if someone has made a finalization and there are no objections in 5 seconds, you can assume an agreement has been reached.
+- If one agent did not response for a while (e.g., over 10s), consider the probability of it being caught, in which case it's opinion doesn't matter to the agreement.
+- Use exact string matching for place names (e.g., <Central Park> ≠ Central Park).
 
 Output 2 Format:
 

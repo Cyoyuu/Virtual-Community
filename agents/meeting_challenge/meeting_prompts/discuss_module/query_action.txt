@@ -27,9 +27,8 @@ Return a JSON object representing the operation chain:
 
 ```json
 {
-    "type": "query_app",
-    "query_type": "query_nearby|query_place|query_route",
-    "arg1": "see below",
+    "type": "query_nearby|query_place|query_route",
+    "arg": "see below",
     ...
 }
 ```
@@ -39,22 +38,19 @@ Return a JSON object representing the operation chain:
 You must select one from the available operations:
 
 {
-    "type": "query_app",
-    "query_type": "qeury_nearby",
+    "type": "qeury_nearby",
     "coordinate": ["x-coordinate", "y-coordinate"] # this action will trigger a query send to the navigation app.
     "radius": "r" # a float number, representing the radius of the query.
 }
-
+or
 {
-    "type": "query_app",
-    "query_type": "qeury_place",
-    "place": "<Place name>" # this action will trigger a query send to the navigation app.
+    "type": "qeury_place",
+    "place": "<Place name>" # this action will trigger a query send to the navigation app; you can only list one place here.
 }
-
+or
 {
-    "type": "query_app",
-    "query_type": "query_route",
-    "target": "<Tartget place name>" # this action will trigger a spatial reasoning chain to handle the query procedure.
+    "type": "query_route",
+    "target": "<Tartget place name>" # this action will trigger a spatial reasoning chain to handle the query procedure; you can only list one place here.
 }
 
 —

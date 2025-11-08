@@ -37,14 +37,14 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}")
+        self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}, mode_time_counter is {self.mode_time_counter}")
         action = None
         try:
             if self.mode is None:
                 self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
                 self.mode_time_counter += 1
-                if self.mode_time_counter > 120:
+                if self.mode_time_counter > 60:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action

@@ -2,7 +2,7 @@ $TaskDescription$
 
 Now the agent is in a group discussion.
 
-Your task: Analyze what informations (i.e. specific travel time or place data) are **missing or uncertain** for this agent — based on conversation history, other agents’ opinions, and available navigation data.
+Your task: Analyze what informations (i.e. specific travel time or place data) are **missing or uncertain** for this agent and need to query about — based on conversation history, other agents’ opinions, and available known data.
 
 ---
 
@@ -40,23 +40,18 @@ Return a JSON object:
 
 ```json
 [
-    {
-        "missing_infos": "<Place Name 1>",
-        "reason": "brief explanation (under 20 words)"
-    },
-    {
-        "missing_infos": "<Agent Name 1>'s ETA to <Place Name 1>",
-        "reason": "brief explanation (under 20 words)"
-    },
+    "brief explanation (under 20 words)",
+    "brief explanation (under 20 words)",
     ...
 ]
 ```
 
-"missing_infos" must be a exact place name from $Places, each enclosed in <>.
+Places mentioned in missing info must be a exact place name from $Places, each enclosed in <>.
 - Include a place if:
   - The agent hasn’t queried it yet.
   - It’s being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
   - The agent need someone's ETA to that location to make further consideration.
+- Don't include information already known in "Known agent positions" and "Known ETAs". Examine 'KnownETA' carefully. This is very important! For example, if you know your eta to <Place> in "Known ETAs" and someone is asking for that, don't include it in the missing info!.
 - Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
 
 —
@@ -65,12 +60,16 @@ Example:
 ```json
 [
     "Need Bob's ETA to <Downtown Plaza> to compare top 2 candidates",
-    "Need my ETA to <Central Park> to compare with Alice’s suggestion"
+    "Need my ETA to <Central Park> to compare with Alice’s suggestion",
+    "<agent> asked for my ETA to <West Lake>, and I don't know it in Known ETAs.",
+    ...
 ]
 ```
 
+# In this example, "Bob's ETA to <Downtown Plaza>", "my ETA to <Central Park>", and "my ETA to <West Lake>" are not in Known ETAs.
+
 —
 
-Be specific and efficient. Avoid querying irrelevant or already-covered locations. Prioritize places that could unblock consensus or reveal a clear optimal choice.
+Be specific and efficient. Avoid querying irrelevant or already-covered question. Prioritize places that could unblock consensus or reveal a clear optimal choice.
 
 Please generate your response now.

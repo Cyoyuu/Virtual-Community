@@ -25,6 +25,7 @@ class Agent:
 		self.action_status = None
 		self.held_objects = [None, None]
 		self.last_path = None
+		self.last_path_for_estimation = None
 		self.steps = 0
 		self.obs = None
 
@@ -110,6 +111,7 @@ class Agent:
 		goal_bbox = get_bbox(goal_bbox, goal_pos)
 		path = sg.volume_grid_builder.navigate(cur_trans, goal_bbox, self.last_path)
 		self.last_path = None
+		self.last_path_for_estimation = None
 		if path is None:
 			self.logger.error(f"No path found when navigate agent {self.name} to {goal_pos}.")
 			return None
@@ -141,6 +143,7 @@ class Agent:
 			delta_rad += 2 * np.pi
 		self.logger.debug(f"Current pose is {list(self.pose)}. Current Goal is {list(cur_goal)}. Target_deg is {np.rad2deg(target_rad)}, while curr_deg is {np.rad2deg(self.pose[-1])}")
 
+		self.last_path_for_estimation = path
 		if delta_rad > np.deg2rad(15):
 			action = {
 				'type': 'turn_left',

@@ -10,7 +10,8 @@ The agents’ objectives are threefold:
 Capabilities and constraints of the agents:
 - Each agent has access only to its own pose and visual perception. All other information must be obtained from external sources.  
 - External sources include the shared conversation history, detection signals from sentinels, and information retrieved from a navigation application.  
-- In addition to moving within the city, agents can communicate remotely with teammates and send queries to the navigation app.  
+- In addition to moving within the city, agents can communicate remotely with teammates and send queries to the navigation app.
+- Agents caught by sentinels are removed from the task immediately without noticing other agents, and cannot execute any action afterwards.
 - All agents communicate through a global channel, which they use to exchange information and coordinate the selection of a meeting location.  
 - The navigation app provides three main functions:  
   1. Searching for places near a given location.  

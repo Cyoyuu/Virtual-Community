@@ -408,13 +408,13 @@ public:
         uint8_t *c = new uint8_t[3 * pcd_size];
         int *l = new int[pcd_size];
         image_to_pcd(rgb, depth, label, p, c, l, w, h, fov, extrinsic);
-        insert(p, c, l, pcd_size, cur_x, cur_y);
+        insert(p, c, l, pcd_size, cur_x, cur_y, 1);
         delete[] p;
         delete[] c;
         delete[] l;
     }
 
-    void insert(float *p, uint8_t *c, int *l, int n, int cur_x, int cur_y) {
+    void insert(float *p, uint8_t *c, int *l, int n, int cur_x=0, int cur_y=0, int enable_cur_xy=0) {
         const int sphere_radius_m = 10;
         const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
         auto dist = [&](int x, int y, int x0, int y0){return std::sqrt((x - x0)*(x - x0)+(y - y0)*(y - y0));};
@@ -437,7 +437,7 @@ public:
                     for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
                         for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
                             for (int dz = 0; dz <= 0; dz++) {
-                                if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) && (dist(dx+x, dy+y, x, y)-dist(dx+x, dy+y, cur_x, cur_y)<2*A)) {
+                                if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) && enable_cur_xy &&(dist(dx+x, dy+y, x, y)-dist(dx+x, dy+y, cur_x, cur_y)<2*A)) {
                                     Z_Array *&arr = data[x + dx + X_MAX][y + dy];
                                     if (arr == nullptr) arr = new Z_Array();
                                     arr->insert(Voxel{z + dz, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i], (dx==0&&dy==0)?0:1});
