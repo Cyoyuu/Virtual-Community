@@ -231,6 +231,8 @@ def main():
             all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "fixed":
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == "sentinel":
+            all_agent_processes.append(AgentProcess(SentinelMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])

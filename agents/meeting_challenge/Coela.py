@@ -24,7 +24,7 @@ from agents.sg.builder.builder import Builder, BuilderConfig
 class CoelaMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False):
+                 detect_interval=1, num_agents=1, enable_danger_zone=False):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
         self.react_freq = 900 # 15min
         if self.debug:
