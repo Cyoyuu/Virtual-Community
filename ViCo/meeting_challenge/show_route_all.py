@@ -122,7 +122,8 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
         agent_lines[name] = line
         agent_dots[name] = dot
     sentinel_last_pos = {}
-    sentinel_angles_deg_marker = {}
+    sentinel_prev_pos = {}
+    sentinel_angles = {}
     sentinel_tris = {}
     sentinel_wedges = {}
     def make_triangle_artist():
@@ -136,7 +137,7 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
         return tri_line
     def make_wedge_patch():
         wedge = Wedge(center=(0, 0),
-                      r=20,
+                      r=100,
                       theta1=0,
                       theta2=90,
                       facecolor="#FFF3B0",
@@ -148,7 +149,7 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
         return wedge
     for sname in sentinels:
         sentinel_tris[sname] = make_triangle_artist()
-        sentinel_angles_deg_marker[sname] = 0.0
+        sentinel_angles[sname] = 0.0
         sentinel_wedges[sname] = make_wedge_patch()
     bus_scat = ax.scatter([], [], s=55, marker="s", color="red", label="Bus (now)", zorder=5)
     sentinel_legend_proxy, = ax.plot([], [], linestyle="None",
@@ -162,22 +163,53 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
     handles = list(agent_lines.values()) + [sentinel_legend_proxy, bus_scat]
     ax.legend(handles=handles, loc="upper right", fontsize=8, framealpha=0.8)
     ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions")
-    def get_obs_pose_and_heading(step, target_name):
+    def get_obs_by_name_exact(step, target_name):
         lst = steps_data.get(step, [])
         for obs in lst:
             if obs.get("name") == target_name:
                 pose = obs.get("pose", None)
                 if isinstance(pose, (list, tuple)) and len(pose) >= 2:
-                    x = float(pose[0])
-                    y = float(pose[1])
-                    heading_rad = None
-                    if isinstance(pose, (list, tuple)) and len(pose) >= 6:
-                        try:
-                            heading_rad = float(pose[5])
-                        except Exception:
-                            heading_rad = None
-                    return (x, y, heading_rad)
+                    return float(pose[0]), float(pose[1])
         return None
+    def heading_from(prev_xy, curr_xy, default_deg):
+        if prev_xy is None or curr_xy is None:
+            return default_deg
+        px, py = prev_xy
+        cx, cy = curr_xy
+        dx = cx - px
+        dy = cy - py
+        if dx == 0 and dy == 0:
+            return default_deg
+        theta = np.degrees(np.arctan2(dy, dx)) - 90.0
+        return float(theta)
+    def norm_deg(a):
+        a = a % 360.0
+        if a < 0:
+            a += 360.0
+        return a
+    def in_sector(cx, cy, r, t1, t2, x, y):
+        ang = np.degrees(np.arctan2(y - cy, x - cx))
+        a = norm_deg(ang)
+        t1n = norm_deg(t1)
+        t2n = norm_deg(t2)
+        if t1n <= t2n:
+            ok_ang = (a >= t1n) and (a <= t2n)
+        else:
+            ok_ang = (a >= t1n) or (a <= t2n)
+        dx = x - cx
+        dy = y - cy
+        d = np.hypot(dx, dy)
+        return ok_ang and (d <= r + 1e-9)
+    def agent_walking(name, idx):
+        if idx <= 0:
+            return False
+        xs = agent_traces[name]["xs"]
+        ys = agent_traces[name]["ys"]
+        x0, y0 = xs[idx - 1], ys[idx - 1]
+        x1, y1 = xs[idx], ys[idx]
+        if x0 is None or y0 is None or x1 is None or y1 is None:
+            return False
+        return (abs(x1 - x0) + abs(y1 - y0)) > 1e-6
     def update(step):
         ax.set_title(f"{scene}: Agents history & Sentinels/Bus live positions — step {step}")
         idx = idx_of_full.get(step, len(full_steps) - 1)
@@ -191,27 +223,48 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
             else:
                 agent_dots[name].set_offsets(np.empty((0, 2)))
         for sname in sentinels:
-            obs_pose = get_obs_pose_and_heading(step, sname)
+            pos_now = get_obs_by_name_exact(step, sname)
+            if pos_now is not None:
+                prev = sentinel_last_pos.get(sname, None)
+                if prev is not None and (pos_now[0] != prev[0] or pos_now[1] != prev[1]):
+                    sentinel_prev_pos[sname] = prev
+                sentinel_last_pos[sname] = pos_now
+            eff_pos = sentinel_last_pos.get(sname, None)
             tri = sentinel_tris[sname]
             wedge = sentinel_wedges[sname]
-            if obs_pose is not None:
-                x, y, heading_rad = obs_pose
-                sentinel_last_pos[sname] = (x, y)
-                wedge.set_center((x, y))
+            if eff_pos is not None:
+                wedge.set_center((eff_pos[0], eff_pos[1]))
                 wedge.set_visible(True)
-                if heading_rad is not None:
-                    heading_deg_std = np.degrees(heading_rad)
-                    marker_deg = heading_deg_std - 90.0
-                    sentinel_angles_deg_marker[sname] = marker_deg
-                    theta_mid = heading_deg_std
-                    wedge.set_theta1(theta_mid - 45.0)
-                    wedge.set_theta2(theta_mid + 45.0)
-                tri.set_data([x], [y])
-                tri.set_marker((3, 0, sentinel_angles_deg_marker.get(sname, 0.0)))
+                default_ang = sentinel_angles.get(sname, 0.0)
+                ang = heading_from(sentinel_prev_pos.get(sname, None), eff_pos, default_ang)
+                sentinel_angles[sname] = ang
+                theta_mid = ang + 90.0
+                theta1 = theta_mid - 45.0
+                theta2 = theta_mid + 45.0
+                wedge.set_theta1(theta1)
+                wedge.set_theta2(theta2)
+                tri.set_data([eff_pos[0]], [eff_pos[1]])
+                tri.set_marker((3, 0, ang))
+                alert = False
+                r = wedge.r if hasattr(wedge, "r") else 20.0
+                for aname in fixed_agents:
+                    if not agent_walking(aname, idx):
+                        continue
+                    axc = agent_traces[aname]["xs"][idx]
+                    ayc = agent_traces[aname]["ys"][idx]
+                    if axc is None or ayc is None:
+                        continue
+                    if in_sector(eff_pos[0], eff_pos[1], r, theta1, theta2, axc, ayc):
+                        alert = True
+                        break
+                if alert:
+                    wedge.set_facecolor("red")
+                else:
+                    wedge.set_facecolor("#FFF3B0")
             else:
                 wedge.set_visible(False)
                 tri.set_data([], [])
-                tri.set_marker((3, 0, sentinel_angles_deg_marker.get(sname, 0.0)))
+                tri.set_marker((3, 0, sentinel_angles.get(sname, 0.0)))
         bus_pos = load_bus_pose(env_dir, step)
         if bus_pos is not None:
             bus_scat.set_offsets(np.array([[bus_pos[0], bus_pos[1]]]))
