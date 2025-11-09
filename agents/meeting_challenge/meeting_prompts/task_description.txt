@@ -14,8 +14,8 @@ Capabilities and constraints of the agents:
 - Agents caught by sentinels are removed from the task immediately without noticing other agents, and cannot execute any action afterwards.
 - All agents communicate through a global channel, which they use to exchange information and coordinate the selection of a meeting location.  
 - The navigation app provides three main functions:  
-  1. Searching for places near a given location.  
-  2. Returning detailed information about a specified place.  
-  3. Generating a reference route to a designated destination.  
+  1. Searching for places near a given location.
+  2. Returning detailed information about a specified place. 
+  3. Generating a reference route to a designated destination. 
 
 You are now assuming the role of one of these agents.

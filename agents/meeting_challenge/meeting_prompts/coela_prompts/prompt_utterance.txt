@@ -1,0 +1,27 @@
+$TaskDescription$
+
+Given my character description and situation, help me decide what I should say next or I should end the conversation.
+
+My Character Description:
+
+$Character$
+
+Current Place:
+
+$Place$
+
+Current Time:
+
+$Time$
+
+Current Situation:
+
+$Context$
+
+Current conversation history:
+
+$Conversation_history$
+
+Output Format:
+
+Only output the messages you want to say without any quotations. For example: "Hello, Chuang Gan! What are you going to do?". You can also output "null" to finish the conversation if you do not want to speak any more.

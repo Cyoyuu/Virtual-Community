@@ -437,7 +437,7 @@ public:
                     for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
                         for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
                             for (int dz = 0; dz <= 0; dz++) {
-                                if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) && enable_cur_xy &&(dist(dx+x, dy+y, x, y)-dist(dx+x, dy+y, cur_x, cur_y)<2*A)) {
+                                if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) && (!enable_cur_xy ||(enable_cur_xy && (dist(dx+x, dy+y, x, y)-dist(dx+x, dy+y, cur_x, cur_y)<2*A)))) {
                                     Z_Array *&arr = data[x + dx + X_MAX][y + dy];
                                     if (arr == nullptr) arr = new Z_Array();
                                     arr->insert(Voxel{z + dz, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i], (dx==0&&dy==0)?0:1});

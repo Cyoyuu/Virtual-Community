@@ -1,0 +1,39 @@
+$TaskDescription$
+
+Given my character description and situation, help me determine what I should do.
+
+My Character Description:
+
+$Character$
+
+Current Time:
+
+$Time$
+
+Current Place:
+
+$Place$
+
+Known Places:
+
+$KnownPlaces$
+
+Current Situation:
+
+$Context$
+
+Previous Actions:
+
+$ActionHistory$
+
+Available Actions:
+
+1. go to <place>. <place> is the name of a place you can find in Known Places. <place> must be extactly the name of the Known Places!
+2. speak "$Utterance$".
+3. pick <name>. <name> is the name of an object you can find in Current Situation. <name> must be extactly the name of the object!
+4. put. Put down the objects you picked.
+5. sleep <minites>. <minites> is the number of minutes you want to sleep.
+
+Output Format:
+
+You should only output the action without any quotations. For example: 'go to GDW Fulfillment', 'speak "$Utterance$"', 'pick apple_1', 'put', 'sleep 480'.
