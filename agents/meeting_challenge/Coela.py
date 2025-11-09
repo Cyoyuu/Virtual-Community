@@ -14,7 +14,7 @@ from enum import Enum
 import time
 
 from agents.agent import Agent
-from agents.memory import SemanticMemory
+from agents.memory import SemanticMemory, EventInstance
 from agents.meeting_challenge.base_nav import *
 from ViCo.tools.utils import *
 from ViCo.tools.model_manager import global_model_manager
@@ -175,10 +175,10 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         
         action = None
         
-        if self.goal_place is not None:
-            action = self.commute(self.goal_place)
+        if self.goal_place is not None and self.last_react_time != self.curr_time:
+            action = self.city_navigate(self.goal_place)
             if action is not None and action['type'] == 'enter' and action['arg1'] == self.goal_place:
-                self.sleep_time = 30 * 60
+                self.sleep_time = 0
                 self.goal_place = None
             if action is not None:
                 return action
@@ -212,7 +212,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     return {"type": "wait", "arg1": None}
                 return self.conversation("someone", utterance)
             elif self.react_mode == "go":
-                return self.commute(react_target)
+                return self.city_navigate(react_target)
             elif self.react_mode == "wait":
                 return {
                     'type': 'wait',
@@ -305,6 +305,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         prompt = open('agents/meeting_challenge/meeting_prompts/coela_prompts/prompt_utterance.txt', 'r').read()
         task_description = open('agents/meeting_challenge/meeting_prompts/task_description.txt', 'r').read()
         prompt = prompt.replace("$TaskDescription$", task_description)
+        prompt = prompt.replace("$AgentList$", ", ".join(self.obs["agent_pos_dict"].keys()))
         prompt = prompt.replace("$Character$", self.get_character_description())
 
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
@@ -325,6 +326,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             prompt = prompt.replace("$Utterance$", utterance)
         task_description = open('agents/meeting_challenge/meeting_prompts/task_description.txt', 'r').read()
         prompt = prompt.replace("$TaskDescription$", task_description)
+        prompt = prompt.replace("$AgentList$", ", ".join(self.obs["agent_pos_dict"].keys()))
 
         prompt = prompt.replace("$Character$", self.get_character_description())
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
@@ -344,6 +346,15 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         if response.startswith("go to"):
             return "go", response.split("go to ")[1]
         return "wait", None
+    
+    def get_places_description(self):
+        places = []
+        for place in self.s_mem.get_places():
+            place_dict = self.s_mem.get_knowledge(place)
+            if place_dict["coarse_type"] == "transit":
+                continue
+            places.append({"name": place, "type": place_dict["coarse_type"], "building": place_dict["building"]})
+        return json.dumps(places, indent=2)
 
     def describe_events(self, events):
         if events is None:

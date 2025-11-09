@@ -1369,7 +1369,7 @@ class BaseNavigationMeetingAgent(Agent):
             if goal_place_dict["building"] != "open space":
                 goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
             goal_bbox = goal_place_dict["bounding_box"]
-            places_description += f"<{place}>: location {goal_pos}, bounding box {goal_bbox}\n"
+            places_description += f"<{place}>: location {goal_pos}\n"
         return places_description
 
     def get_previous_actions_description(self):

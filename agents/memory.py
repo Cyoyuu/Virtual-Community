@@ -209,7 +209,7 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], obs['segmentation'] if self.enable_danger_zone else labels, obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['segmentation'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, obs['fov'], obs['extrinsics'])
 		self.num_frames += 1
 		if num_new_objects > 0:
 			# update region cluster
