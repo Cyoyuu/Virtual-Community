@@ -646,7 +646,7 @@ class BaseNavigationMeetingAgent(Agent):
                 wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
-                self.update_known_sentinel_poses([wp[:3]+[0]])
+                self.update_known_sentinel_poses([wp[:3]])
 
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS
@@ -799,7 +799,7 @@ class BaseNavigationMeetingAgent(Agent):
                 action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
                 return action, False
         # throw away arrived waypoints
-        idx = len(self.last_route)
+        idx = len(self.last_route)-1
         while idx > 0:
             idx -= 1
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx].location, threshold=5 if idx==len(self.last_route)-1 else 10)
@@ -1355,6 +1355,9 @@ class BaseNavigationMeetingAgent(Agent):
 
     def update_known_sentinel_poses(self, new_sentinel_poses):
         for sentinel_pose in new_sentinel_poses:
+            sentinel_pose = list(sentinel_pose)
+            assert len(sentinel_pose)==3
+            sentinel_pose.append(0)
             flag = True
             for known_sentinel_pose in self.known_sentinel_poses:
                 if np.linalg.norm(np.array(sentinel_pose) - np.array(known_sentinel_pose[:2])) < 15.:
@@ -1362,7 +1365,7 @@ class BaseNavigationMeetingAgent(Agent):
                     break
             if flag:
                 self.known_sentinel_poses.append(list(sentinel_pose))
-                self.s_mem.get_sg().add_danger_zone(list(sentinel_pose), 1) # use 1 will not affect the effect i guess?
+                self.s_mem.get_sg().add_danger_zone(list(sentinel_pose[:3]), 1) # use 1 will not affect the effect i guess?
 
     def get_nearest_places_description(self, target):
         place_list = self.get_nearest_places(target)
