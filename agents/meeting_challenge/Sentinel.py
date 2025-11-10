@@ -138,7 +138,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             return ret
         minv, maxp = 0, None
         for wp in self.last_nav:
-            if not valid(x, y): continue
+            if not valid(wp[0], wp[1]): continue
             value = calc(wp[0], wp[1])
             if value < minv:
                 minv = value

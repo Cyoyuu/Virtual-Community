@@ -257,6 +257,10 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 self.last_go_time = self.curr_time
                 self.last_anction = action
                 return self.last_anction
+            elif self.react_mode == "query":
+                action = {"type": "query_app", "arg1": "query_place", "arg2": react_target}
+                self.last_anction = action
+                return self.last_anction
             elif self.react_mode == "wait":
                 return {
                     'type': 'wait',
@@ -400,6 +404,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         self.react_history.append(response)
         if response.startswith("go to"):
             return "go", response.split("go to ")[1]
+        if response.startswith("query"):
+            return "query", response.split("query ")[1]
         if response == 'task complete':
             return 'task complete'
         return "wait", None

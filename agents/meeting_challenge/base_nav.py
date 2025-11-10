@@ -642,7 +642,6 @@ class BaseNavigationMeetingAgent(Agent):
                 # Compute median depth
                 selected_depths = self.obs['depth'][mask]
                 z_median = np.median(selected_depths)
-                self.logger.debug(f"camera_ext is {list(self.obs['extrinsics'])}")
                 wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
@@ -818,8 +817,6 @@ class BaseNavigationMeetingAgent(Agent):
                 builder.align_nav(wp_x_world) - x_min,
                 builder.align_nav(wp_y_world) - y_min
             ]
-            if 0 <= int(wp_pos_in_map[1]) < y_max - y_min and 0 <= int(wp_pos_in_map[0]) < x_max - x_min:
-                self.logger.debug(f"the first wp in last_route is {[wp_x_world, wp_y_world]}, its occ map is {occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])]}")
             if 0 <= int(wp_pos_in_map[1]) < y_max - y_min and 0 <= int(wp_pos_in_map[0]) < x_max - x_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [2, 4]:
                 self.last_route.pop(0)
             else:
