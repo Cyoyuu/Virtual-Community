@@ -1360,7 +1360,7 @@ class BaseNavigationMeetingAgent(Agent):
             sentinel_pose.append(0)
             flag = True
             for known_sentinel_pose in self.known_sentinel_poses:
-                if np.linalg.norm(np.array(sentinel_pose) - np.array(known_sentinel_pose[:2])) < 15.:
+                if np.linalg.norm(np.array(sentinel_pose[:2]) - np.array(known_sentinel_pose[:2])) < 15.:
                     flag = False
                     break
             if flag:
