@@ -1485,6 +1485,8 @@ class BaseNavigationMeetingAgent(Agent):
         goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
         if goal_place_dict["building"] != "open space":
             goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+        if goal_pos[0] > 500: # hack, there is open space place in memory > 10000
+            goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
         goal_bbox = goal_place_dict["bounding_box"]
         self.logger.debug(f"Goal place: {target_place}, goal pos: {goal_pos}, goal bbox: {goal_bbox}")
         self.last_action = {'type': 'wait', 'arg1': None}

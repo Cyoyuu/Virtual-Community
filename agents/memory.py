@@ -46,12 +46,12 @@ class SemanticMemory:
 		self.explored = {}
 
 		if self.detect_interval != -1:
-			from sg.builder.object import ObjectBuilder, ObjectBuilderConfig, AGENT_TAGS, VEHICLE_TAGS
+			from agents.sg.builder.object import ObjectBuilder, ObjectBuilderConfig, AGENT_TAGS, VEHICLE_TAGS
 			os.makedirs(os.path.join(storage_path, "object"), exist_ok=True)
 			self.object_builder = ObjectBuilder(ObjectBuilderConfig(
 				debug=self.debug, output_path=os.path.join(storage_path, "object"), logger=self.logger))
 			if region_layer:
-				from sg.builder.region import RegionBuilder
+				from agents.sg.builder.region import RegionBuilder
 				self.region_builder = RegionBuilder(vg_builder=self.get_sg(self.current_place).volume_grid_builder,
 					obj_builder=self.object_builder, logger=self.logger,debug=self.debug, output_dir=os.path.join(storage_path, "region"))
 

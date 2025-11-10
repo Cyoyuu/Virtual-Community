@@ -26,6 +26,10 @@ Current Situation:
 
 $Context$
 
+Current conversation history:
+
+$Conversation_history$
+
 Previous Actions:
 
 $ActionHistory$
@@ -33,10 +37,13 @@ $ActionHistory$
 Available Actions:
 
 1. go to <place>. <place> is the name of a place you can find in Known Places. <place> must be extactly the name of the Known Places!
-2. pick <name>. <name> is the name of an object you can find in Current Situation. <name> must be extactly the name of the object!
-3. put. Put down the objects you picked.
-4. sleep <minites>. <minites> is the number of minutes you want to sleep.
+3. complete task. Use this action to confirm you have arrived at the desired meeting place.
+
+Guidance:
+
+- Always use full place name in your output; otherwise it will lead to unknown behavior!
+- Keep progress over perfection! Find one location and go! If you don't reach the destination in 25 minutes, you will all get killed.
 
 Output Format:
 
-You should only output the action without any quotations. For example: 'go to GDW Fulfillment', 'pick apple_1', 'put', 'sleep 480'. Notice that you cannot choose "speak" action although it may appear in the Previous Actions.
+You should only output the action without any quotations. For example: 'go to GDW Fulfillment', 'speak "$Utterance$"', 'task complete'. Notice that you cannot choose "speak" action although it may appear in the Previous Actions.

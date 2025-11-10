@@ -306,6 +306,7 @@ def main():
             tm = time.time()
             action = agent.act()
             agent_actions[i] = action
+            # gs.logger.info(f"Agent {env.config['agent_names'][i]} action: {action} Time used: {time.time()-tm:.2f}s")
             agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
             # action types indicate it see a sentinel
             if action is not None and action['type'] in ['signal', 'look_after_left', 'look_after_right', 'chase']:

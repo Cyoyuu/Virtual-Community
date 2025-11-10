@@ -26,6 +26,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=1, num_agents=1, enable_danger_zone=False):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
+        os.makedirs(f"{self.storage_path}/episodic_memory", exist_ok=True)
         self.react_freq = 900 # 15min
         if self.debug:
             self.react_freq = 300 # 5 min for debug
@@ -39,7 +40,9 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             chat[0] = datetime.strptime(chat[0], "%B %d, %Y, %H:%M:%S")
         self.react_mode = None
         self.react_history = []
-        self.last_react_time = None
+        self.last_react_time = self.curr_time
+        self.last_go_time = self.curr_time
+        self.task_complete = False
         self.goal_place = None
         self.sleep_time = 0
 
@@ -76,6 +79,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     img=img_path)
                 desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
             self.last_react_time = self.curr_time
+            self.logger.debug(f"reacting to new objects: {desc}")
             self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
         
         
@@ -113,11 +117,39 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         if len(obs['events']) > 0:
             for event in obs['events']:
                 if event["type"] == "speech":
+                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
                     if event["position"][:2] == self.pose[:2]:
                         continue
                     subject = self.s_mem.get_name_from_position(event["position"])
                     event["content"] = f"I heard {subject if subject is not None else 'somebody outside of my view'} at {event['position']} says: {event['content']}"
                     kws = [subject, event['type']]
+                elif event["type"] == "app message":
+                    if event["subject"] != self.name:
+                        continue
+                    kws = [event["type"]]
+                    self.logger.info(f"received app message: {event['content']}, my last action is {self.last_action}")
+                    if self.last_action['type']=="query_app":
+                        if self.last_action['arg1']=="query_route":
+                            if event['content'] is None:
+                                time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
+                            else:
+                                time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
+                            if self.meeting_place==self.last_action["arg2"]:
+                                self.navigation_plan=event['content']
+                                self.last_route=event["content"]
+                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
+                            self.update_known_eta(
+                                {
+                                    self.last_action['arg2']:
+                                    {
+                                        self.name: str(time_to_arrival)
+                                    }
+                                })
+                        elif self.last_action["arg1"]=="query_place":
+                            self.s_mem.update_with_new_knowledge(event["content"])
+                        elif self.last_action["arg1"]=="query_nearby":
+                            self.places_buffer.extend(event['content'])
                 else:
                     kws = [event["type"]]
 
@@ -127,6 +159,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 else:
                     img_path = None
 
+                self.logger.debug(f"reacting to new events: {event['content']}")
                 self.add_event(event["type"], self.curr_time, event["position"], obs['current_place'], kws, img_path, event["content"], None)
             self.last_react_time = self.curr_time
 
@@ -148,6 +181,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     desc = self.generate_captioning(f"Describe what you see in one sentence. Start with 'I see'.", img=img_path)
                     kws = []
                 if not donot_add:
+                    self.logger.debug(f"reacting: {desc}")
                     self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], [], img_path, desc, None)
                     self.last_react_time = self.curr_time
 
@@ -155,7 +189,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
     
     def add_event(self, event_type, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy=None, event_expiration=None):
         event_id = str(len(self.curr_events))
-        this_experience = EventInstance(event_id, event_type, event_time, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy, event_expiration)
+        self.logger.debug(f"adding new event, {event_id}: {event_description}")
+        this_experience = EventInstance(event_id, event_type, event_time, event_time, event_position, event_place, event_keywords, event_img, event_description, event_poignancy, event_expiration)
         self.curr_events.append(this_experience)
 
     def _act(self, obs):
@@ -164,7 +199,9 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}, mode_time_counter is {self.mode_time_counter}")
-        action = None
+        if self.curr_time.second % 60 == 0 and self.curr_time.minute % 3 == 0:
+            self.last_react_time = self.curr_time
+        action = None if not self.task_complete else {'type': 'task_complete', 'arg1': None}
         start = time.time()
 
         if self.sleep_time > 0:
@@ -175,12 +212,13 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         
         action = None
         
-        if self.goal_place is not None and self.last_react_time != self.curr_time:
-            action = self.city_navigate(self.goal_place)
-            if action is not None and action['type'] == 'enter' and action['arg1'] == self.goal_place:
-                self.sleep_time = 0
+        if self.goal_place is not None and (self.last_go_time + timedelta(seconds=60) > self.curr_time or self.last_react_time!=self.curr_time):
+            action, arrived = self.city_navigate(self.goal_place)
+            if arrived:
                 self.goal_place = None
+                self.last_react_time = self.curr_time + timedelta(seconds=1)
             if action is not None:
+                self.last_action = action
                 return action
         
         utterance = None
@@ -202,20 +240,32 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         if not self.no_react and self.last_react_time == self.curr_time:
             self.react_mode, react_target = self.generate_react_mode(self.curr_events, utterance)
             self.goal_place = None
+            self.task_complete = False
             
             if self.react_mode == "speak":
                 self.chatting_buffer = []
                 self.chatting_with = None
-                if utterance == "null":
+                if utterance in ["null", 'None']:
                     self.logger.info(f"{self.name} stops the conversation.")
                     self.react_mode = "wait"
                     return {"type": "wait", "arg1": None}
                 return self.conversation("someone", utterance)
             elif self.react_mode == "go":
-                return self.city_navigate(react_target)
+                self.goal_place = react_target
+                self.meeting_place = react_target
+                action, arrived = self.city_navigate(self.meeting_place)
+                self.last_go_time = self.curr_time
+                self.last_anction = action
+                return self.last_anction
             elif self.react_mode == "wait":
                 return {
                     'type': 'wait',
+                    'arg1': None
+                }
+            elif self.react_mode == "task complete":
+                self.task_complete = True
+                return {
+                    'type': 'task_complete',
                     'arg1': None
                 }
             else:
@@ -233,6 +283,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
     def conversation(self, target: str, content: str):
         WAIT = {'type': 'wait', 'arg1': None}
         if len(self.chatting_buffer) == 0 and (self.chatting_with is None or target is None): # set up the conversation
+            self.logger.info(f"Setting up new conversation.")
             curr_events = self.curr_events
             curr_event = curr_events[-1] if len(curr_events) > 0 else None
             for event in curr_events:
@@ -257,6 +308,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 curr_event = event
                 break
         if curr_event is not None and curr_event.event_type == "speech":  # response to a conversation
+            self.logger.debug(f"response to a conversation : event_id is {curr_event.event_id}, description is {curr_event.event_description}")
             self.chatting_with = target
             self.chatting_buffer.append(
                 [self.curr_time, self.chatting_with, curr_event.event_description.split("] says: ")[1]])
@@ -274,17 +326,18 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 return None
             return WAIT
         
-        if content == "null":
+        if content in ["null", 'None']:
             self.logger.info(f"I want to stop the chatting.")
             self.end_conversation()
             return None
         
         self.chatting_buffer.append([self.curr_time + timedelta(seconds=1), (self.name, self.pose[:3]), content])
+        self.logger.info(f"Final Chatting buffer length: {len(self.chatting_buffer)}")
     
         return {
             'type': 'converse',
             'arg1': content,
-            'arg2': 9
+            'arg2': 3200
         }
 
     def generate_captioning(self, prompt, img):
@@ -309,9 +362,10 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         prompt = prompt.replace("$Character$", self.get_character_description())
 
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
-        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else "open space")
+        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else "open space")
+        prompt = prompt.replace("$KnownPlaces$", self.get_places_description())
         conversation_history_desp = '\n'.join([f"{chat[1][0]}: {chat[2]}" for chat in self.chatting_buffer[-4:]])
-        prompt = prompt.replace("$Conversation_history$", conversation_history_desp)
+        prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$Context$", self.describe_events(self.curr_events))
         self.logger.debug(f"Utterance prompt: {prompt}")
         response = self.delete_quotations(self.generator.generate(prompt, img=None, json_mode=False))
@@ -330,9 +384,10 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
 
         prompt = prompt.replace("$Character$", self.get_character_description())
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
-        prompt = prompt.replace("$Place$", "None" if self.current_place is None else self.current_place)
-        prompt = prompt.replace("$Context$", self.describe_events(curr_events))
+        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else "open space")
         prompt = prompt.replace("$KnownPlaces$", self.get_places_description())
+        prompt = prompt.replace("$Context$", self.describe_events(curr_events))
+        prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$ActionHistory$", str(self.react_history[-10:]))
         self.logger.debug(f"React prompt: {prompt}")
         response = self.delete_quotations(self.generator.generate(prompt, img=None, json_mode=False))
@@ -345,6 +400,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         self.react_history.append(response)
         if response.startswith("go to"):
             return "go", response.split("go to ")[1]
+        if response == 'task complete':
+            return 'task complete'
         return "wait", None
     
     def get_places_description(self):
@@ -363,6 +420,11 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         for event in events:
             desc += f"type: {event.event_type}\ntime: {event.event_time}\nplace: {round_numericals(event.event_place)}\nkeywords: {event.event_keywords}\ncontent: {event.event_description}\n\n"
         return desc
+
+    def get_curr_date(self):
+        if self.curr_time is None:
+            return None
+        return self.curr_time.strftime("%A %B %d")
 
     def get_character_description(self):
         """EXAMPLE OUTPUT
