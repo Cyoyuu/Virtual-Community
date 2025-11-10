@@ -42,8 +42,8 @@ Return a JSON object with the following structure:
         "Agent2": [-45.0, 120.0]
     },
     "Sentinel Poses": [
-        [-55.0, 176.0],
-        [12.0, 94.0]
+        [-55.0, 176.0, 99.9],
+        [12.0, 94.0, 98.7]
     ]
 }
 ```
@@ -85,7 +85,7 @@ Extract structured information from conversation history and the most recent mes
 
 - **Sentinel Poses**:
   - A list of all detected sentinel coordinates extracted from the conversation.
-  - Example mention: “I see a sentinel at [-55.0, 176.0]”.
+  - Example mention: “I see a sentinel at [-55.0, 176.0, 98.58]”.
 
 Parsing guidelines:
 - Only extract numeric ETAs explicitly tied to a **place** and **agent**.
