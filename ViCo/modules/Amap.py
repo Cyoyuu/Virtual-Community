@@ -95,7 +95,7 @@ class RouteNode:
         }
 
 class Route:
-    def __init__(self, nodes=None):
+    def __init__(self, nodes=None, impossible=False):
         '''
         waypoints: list(np.array([int,int]))
         '''
@@ -103,6 +103,7 @@ class Route:
             self.nodes = []
         else:
             self.nodes = nodes
+        self.impossible = impossible
 
     def __getitem__(self, key):
         if isinstance(key, int):  # Single index
@@ -128,6 +129,8 @@ class Route:
         self.nodes.reverse()
 
     def calc_time(self, pose=None):
+        if self.impossible:
+            return 24*60*60-1
         if pose is not None:
             ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0]=='bus' else 1.0)
         else:
@@ -455,7 +458,7 @@ class Amap:
             print(f"found goal_wp_pair is {goal_wp_pair}")
         if goal_wp_pair[0] >= inf_time:
             self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
-            return None
+            return Route(impossible=True)
         path = Route()
         curr = goal_wp_pair[1]
         while curr is not None:
@@ -469,7 +472,7 @@ class Amap:
 
         if not path:
             self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
-            return None
+            return Route(impossible=True)
         
         path.append(RouteNode(goal_pos, 'walk', goal_wp_pair[0]))
         return path

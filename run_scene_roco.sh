@@ -17,7 +17,7 @@ fi
 for job_id in {1..2}; do
   echo "Running job_id=$job_id for scene=$scene"
 
-  salloc -p gpu-preempt -G 1 --mem=100G --nodes=1 -t "$time_limit" --job-name=s_$scene srun bash "$script_path" "$scene" "$sentinel_type" "$sentinel_num" "$job_id"
+  salloc -p gpu-preempt -G 1 --mem=100G --nodes=1 -t "$time_limit" --job-name=r_$scene srun bash "$script_path" "$scene" "$sentinel_type" "$sentinel_num" "$job_id"
 done
 
 # Optional flags you had commented out:

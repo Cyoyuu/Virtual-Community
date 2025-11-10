@@ -786,6 +786,7 @@ class BaseNavigationMeetingAgent(Agent):
                 'arg1': 'open space'
             }
             return self.last_action, False
+        if self.last_route.impossible: return None, False
         if self.last_route.empty():
             action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
             return action, False
