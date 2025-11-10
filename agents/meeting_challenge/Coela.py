@@ -410,7 +410,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             place_dict = self.s_mem.get_knowledge(place)
             if place_dict["coarse_type"] == "transit":
                 continue
-            places.append({"name": place, "type": place_dict["coarse_type"], "building": place_dict["building"]})
+            places.append({"name": place, "type": place_dict["coarse_type"]})
         return json.dumps(places, indent=2)
 
     def describe_events(self, events):
