@@ -340,7 +340,7 @@ public:
         warning_labels[warning_label]=1;
     }
 
-    void add_danger_zone(int x, int y, int z, int label) {
+    void add_danger_zone(float x, float y, float z, int label) {
         const int sphere_radius_m = 10;
         const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
         auto run = [&](int id) {

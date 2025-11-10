@@ -10,9 +10,10 @@ lib_builder.volume_grid_add_warning_label.argtypes = [ctypes.c_void_p, # backend
                                                       ctypes.c_int] # label
 lib_builder.volume_grid_add_warning_label.restype = None
 
-lib_builder.volume_grid_add_danger_zone.argtypes = [ctypes.c_int, # x
-                                                      ctypes.c_int, # y
-                                                      ctypes.c_int, # z
+lib_builder.volume_grid_add_danger_zone.argtypes = [ctypes.c_void_p, # backend object
+                                                    ctypes.c_float, # x
+                                                      ctypes.c_float, # y
+                                                      ctypes.c_float, # z
                                                       ctypes.c_int] # label
 lib_builder.volume_grid_add_danger_zone.restype = None
 
