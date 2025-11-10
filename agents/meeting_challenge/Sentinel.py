@@ -77,6 +77,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 self.last_action = self.navigate(self.s_mem.get_sg(), list(emergency_avoidance))
                 return self.last_action
         elif self.emergency > 5:
+            self.logger.info(f"after emergency avoiding. emergency level is {self.emergency}")
             self.last_action = {'type': 'turn_right', 'arg1': 90}
             return self.last_action
         # no emergency
@@ -120,7 +121,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
     def emergency_avoid(self):
         near_sentinels = []
         for sentinel_pose in self.known_sentinel_poses:
-            if np.linalg.norm(np.array(self.pose[:2])-np.array(sentinel_pose[:2])) < 20:
+            if np.linalg.norm(np.array(self.pose[:2])-np.array(sentinel_pose[:2])) < 40:
                 near_sentinels.append(sentinel_pose)
         self.logger.info(f"calculating emergency avoidance, near sentinels include {near_sentinels}")
         # get occ map
@@ -130,12 +131,25 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             px, py = builder.align_nav(x)-x_min, builder.align_nav(y)-y_min
             return 0 <= int(py) < y_max - y_min and 0 <= int(px) < x_max - x_min and occ_map[int(py)][int(px)] not in [2, 4]
         valid_pos = []
+        def calc(x, y):
+            ret = 0
+            for sentinel_pose in near_sentinels:
+                ret += (x - self.pose[0])*(sentinel_pose[0]-self.pose[0]) + (y - self.pose[1])*(sentinel_pose[1]-self.pose[1])
+            return ret
+        minv, maxp = 0, None
+        for wp in self.last_nav:
+            if not valid(x, y): continue
+            value = calc(wp[0], wp[1])
+            if value < minv:
+                minv = value
+                maxp = wp
+        if maxp is not None:
+            self.logger.debug(f"reasonable wp exists in self.last_nav, just use that")
+            return maxp
         for x in range(int(self.pose[0])-40, int(self.pose[0])+40):
             for y in range(int(self.pose[1])-40, int(self.pose[1])+40):
                 if not valid(x, y): continue
-                value = 0
-                for sentinel_pose in near_sentinels:
-                    value += (x - self.pose[0])*(sentinel_pose[0]-self.pose[0]) + (y - self.pose[1])*(sentinel_pose[1]-self.pose[1])
+                value = calc(x, y)
                 if value < 0:
                     valid_pos.append((value, x, y))
         if not valid_pos:
