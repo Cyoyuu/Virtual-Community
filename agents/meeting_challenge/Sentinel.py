@@ -122,6 +122,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         for sentinel_pose in self.known_sentinel_poses:
             if np.linalg.norm(np.array(self.pose[:2])-np.array(sentinel_pose[:2])) < 20:
                 near_sentinels.append(sentinel_pose)
+        self.logger.info(f"calculating emergency avoidance, near sentinels include {near_sentinels}")
         # get occ map
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
         occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
@@ -135,7 +136,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 value = 0
                 for sentinel_pose in near_sentinels:
                     value += (x - self.pose[0])*(sentinel_pose[0]-self.pose[0]) + (y - self.pose[1])*(sentinel_pose[1]-self.pose[1])
-                if value > 0:
+                if value < 0:
                     valid_pos.append((value, x, y))
         if not valid_pos:
             return None  # no safe direction

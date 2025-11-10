@@ -581,7 +581,7 @@ class BaseNavigationMeetingAgent(Agent):
                     if 'Agent Poses' in extracted_info:
                         self.update_known_poses(extracted_info['Agent Poses'])
                     if 'Sentinel Poses' in extracted_info:
-                        self.update_known_sentinel_poses(extracted_info['Sentinel Poses'])
+                        self.update_known_sentinel_poses(extracted_info['Sentinel Poses'], shared=1)
                 if event["type"] == "broadcast event":
                     self.event_history.append(Message(self.curr_time, event["subject"], event["content"]))
                     if self.mode == NavAgentState.NAVIGATE:
@@ -646,7 +646,7 @@ class BaseNavigationMeetingAgent(Agent):
                 wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
-                self.update_known_sentinel_poses([wp[:3]])
+                self.update_known_sentinel_poses([wp[:3]], shared=0)
 
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS
@@ -1353,11 +1353,11 @@ class BaseNavigationMeetingAgent(Agent):
             for agent in new_eta[place]:
                 self.known_eta[place_name][agent]=new_eta[place][agent]
 
-    def update_known_sentinel_poses(self, new_sentinel_poses):
+    def update_known_sentinel_poses(self, new_sentinel_poses, shared=0):
         for sentinel_pose in new_sentinel_poses:
             sentinel_pose = list(sentinel_pose)
             assert len(sentinel_pose)==3
-            sentinel_pose.append(0)
+            sentinel_pose.append(shared)
             flag = True
             for known_sentinel_pose in self.known_sentinel_poses:
                 if np.linalg.norm(np.array(sentinel_pose[:2]) - np.array(known_sentinel_pose[:2])) < 15.:

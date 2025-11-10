@@ -78,7 +78,7 @@ class BaseSentinelAgent(Agent):
                 self.countdown -= math.sqrt(self.visible_agent[self.current_target]/len(self.obs['segmentation'].flatten())/self.detection_min_pixel_ratio)
                 if self.countdown > 0:
                     # action = {"type": "signal", "arg1": f"warning", "arg2": self.current_target}
-                    action = self.navigate(self.s_mem.get_sg(), goal_pos=self.obs['agent_pos_dict'][self.current_target])
+                    action = self.navigate(self.s_mem.get_sg(), goal_pos=self.obs['agent_pos_dict'][self.current_target]["pose"][:2])
                     if action['type']=='turn_left':
                         action['type']='look_after_left'
                     elif action['type']=='turn_right':
