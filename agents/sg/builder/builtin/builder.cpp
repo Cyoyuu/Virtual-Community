@@ -11,7 +11,7 @@ extern "C" {
         vg->add_warning_label(warning_label);
     }
 
-    void volume_grid_add_warning_label(VolumeGrid *vg, int x, int y, int z, int label) {
+    void volume_grid_add_dangerzone(VolumeGrid *vg, int x, int y, int z, int label) {
         vg->add_danger_zone(x, y, z, label);
     }
 
