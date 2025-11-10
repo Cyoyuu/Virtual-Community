@@ -340,6 +340,35 @@ public:
         warning_labels[warning_label]=1;
     }
 
+    void add_danger_zone(int x, int y, int z, int label) {
+        const int sphere_radius_m = 10;
+        const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
+        auto run = [&](int id) {
+            float px = x / voxel_res, py = y / voxel_res, pz = z / voxel_res;
+            int x = floor(px), y = floor(py), z = floor(pz);
+            if (id == 0) {
+                x_max = std::max(x_max, x);
+                x_min = std::min(x_min, x);
+                y_max = std::max(y_max, y);
+                y_min = std::min(y_min, y);
+                z_max = std::max(z_max, z);
+                z_min = std::min(z_min, z);
+            }
+            // double C=dist(x, y, cur_x, cur_y)/2, A=9*C/std::sqrt(82); // let a/b ~ 9
+            for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
+                for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
+                    for (int dz = 0; dz <= 0; dz++) {
+                        if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox)) {
+                            Z_Array *&arr = data[x + dx + X_MAX][y + dy];
+                            if (arr == nullptr) arr = new Z_Array();
+                            arr->insert(Voxel{z + dz, 0, 0, 0, label, (dx==0&&dy==0)?0:1}); // temporarily set rgb to black
+                        }
+                    }
+                }
+            }
+        };
+    }
+
     void add_frame(uint8_t *rgb, float *depth, int *label, int w, int h, float fov, float *extrinsic) {
         int pcd_size = 0;
         float max_depth = 0;

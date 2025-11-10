@@ -537,12 +537,12 @@ class BaseNavigationMeetingAgent(Agent):
         # Navigation
         self.last_estimated_arrival_time = None
         self.last_estimated_move_time = None
-        self.navigation_plan = None
+        self.navigation_plan = None # not using
         self.last_route = Route() # waypoints, city level
         self.last_nav = [] # waypoints, local level
         self.last_action = None
         self.route_history = {"last_route": dict(), "last_nav": dict()}
-        self.route_plan = list()
+        self.route_plan = list() # not using
         # Reasoning
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         self.known_sentinel_poses = list()
@@ -646,7 +646,7 @@ class BaseNavigationMeetingAgent(Agent):
                 wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
-                self.update_known_sentinel_poses([wp[:2]])
+                self.update_known_sentinel_poses([wp[:3]])
 
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS
@@ -661,11 +661,12 @@ class BaseNavigationMeetingAgent(Agent):
         self.collect_plan = None
         self.thinking = 0
 
-    def enter_navigation_mode(self):
+    def enter_navigation_mode(self, reset_route=True):
         self.mode = NavAgentState.NAVIGATE
         self.mode_time_counter = 0
-        self.last_route = Route()
-        self.last_nav = []
+        if reset_route:
+            self.last_route = Route()
+            self.last_nav = []
     
     def discuss(self, reasoning=False):
         action = None
@@ -685,8 +686,10 @@ class BaseNavigationMeetingAgent(Agent):
             if meeting_place != self.meeting_place:
                 self.meeting_place = meeting_place
                 self.time_to_arrival_timedelta=dict()
-            self.route_plan = [self.meeting_place]
-            self.enter_navigation_mode()
+                self.enter_navigation_mode(reset_route=False)
+            else:
+                self.route_plan = [self.meeting_place]
+                self.enter_navigation_mode(reset_route=True)
         else:
             missing_info = self.discusser.analyze(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description())
             missing_info="\n".join(missing_info)
@@ -749,7 +752,7 @@ class BaseNavigationMeetingAgent(Agent):
                 action = {'type': 'query_app', 'arg1': 'query_map', 'arg2': operation['arg']}
         return action
     
-    def city_navigate(self, goal_place, threshold=500., rethink=False):
+    def city_navigate(self, goal_place, threshold=500., rethink=False, requery=True):
         cur_trans = np.array(self.pose[:2])
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
@@ -790,10 +793,11 @@ class BaseNavigationMeetingAgent(Agent):
         assert isinstance(self.last_route[0], RouteNode)
         self.logger.info(f"Currently city nav to {goal_place}. The remaining route waypoints is {len(self.last_route)}. The estimated time till arrival is {timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose()))}s")
         # If the estimated arrival time exceeds, regenerate
-        estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose()))
-        if self.last_estimated_arrival_time < self.curr_time:
-            action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
-            return action, False
+        if requery:
+            estimated_arrival_time = self.curr_time + timedelta(seconds=self.last_route.calc_time(pose=self.get_outdoor_pose()))
+            if self.last_estimated_arrival_time < self.curr_time:
+                action = {"type": "query_app", "arg1": "query_route", "arg2": goal_place}
+                return action, False
         # throw away arrived waypoints
         idx = len(self.last_route)
         while idx > 0:
@@ -804,7 +808,7 @@ class BaseNavigationMeetingAgent(Agent):
                     self.last_route.pop(0)
                 break
         idx = 0
-        # get occ map
+        # get occ map and check if the route will encounter any sentinels
         builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
         occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknow, 2 for obstacle, 3 for open
         while idx < len(self.last_route)-1:
@@ -1143,6 +1147,8 @@ class BaseNavigationMeetingAgent(Agent):
             goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
             if goal_place_dict["building"] != "open space":
                 goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+            if goal_pos[0] > 500: # also a hack
+                goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
             goal_bbox = goal_place_dict["bounding_box"]
             place_list.append((np.linalg.norm(np.array(target)-goal_pos),place))
         place_list = sorted(place_list)
@@ -1351,11 +1357,12 @@ class BaseNavigationMeetingAgent(Agent):
         for sentinel_pose in new_sentinel_poses:
             flag = True
             for known_sentinel_pose in self.known_sentinel_poses:
-                if np.linalg.norm(np.array(sentinel_pose) - np.array(known_sentinel_pose)) < 5.:
+                if np.linalg.norm(np.array(sentinel_pose) - np.array(known_sentinel_pose[:2])) < 15.:
                     flag = False
                     break
             if flag:
                 self.known_sentinel_poses.append(list(sentinel_pose))
+                self.s_mem.get_sg().add_danger_zone(list(sentinel_pose), 1) # use 1 will not affect the effect i guess?
 
     def get_nearest_places_description(self, target):
         place_list = self.get_nearest_places(target)
@@ -1367,6 +1374,8 @@ class BaseNavigationMeetingAgent(Agent):
                 return None, False
             goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
             if goal_place_dict["building"] != "open space":
+                goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+            if goal_pos[0] > 500: # also a hack
                 goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
             goal_bbox = goal_place_dict["bounding_box"]
             places_description += f"<{place}>: location {goal_pos}\n"

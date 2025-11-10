@@ -11,6 +11,10 @@ extern "C" {
         vg->add_warning_label(warning_label);
     }
 
+    void volume_grid_add_warning_label(VolumeGrid *vg, int x, int y, int z, int label) {
+        vg->add_danger_zone(x, y, z, label);
+    }
+
     void volume_grid_add_frame(VolumeGrid *vg, uint8_t *rgb, float *depth, int *label, int w, int h, float fov, float *extrinsic) {
         vg->add_frame(rgb, depth, label, w, h, fov, extrinsic);
     }

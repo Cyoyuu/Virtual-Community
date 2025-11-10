@@ -10,6 +10,12 @@ lib_builder.volume_grid_add_warning_label.argtypes = [ctypes.c_void_p, # backend
                                                       ctypes.c_int] # label
 lib_builder.volume_grid_add_warning_label.restype = None
 
+lib_builder.volume_grid_add_danger_zone.argtypes = [ctypes.c_int, # x
+                                                      ctypes.c_int, # y
+                                                      ctypes.c_int, # z
+                                                      ctypes.c_int] # label
+lib_builder.volume_grid_add_danger_zone.restype = None
+
 lib_builder.volume_grid_add_frame.argtypes = [ctypes.c_void_p, # backend object
                                               ctypes.POINTER(ctypes.c_ubyte), # rgb
                                               ctypes.POINTER(ctypes.c_float), # depth
