@@ -646,7 +646,7 @@ class BaseNavigationMeetingAgent(Agent):
                 wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
-                self.update_known_sentinel_poses([wp[:3]])
+                self.update_known_sentinel_poses([wp[:3]+[0]])
 
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS

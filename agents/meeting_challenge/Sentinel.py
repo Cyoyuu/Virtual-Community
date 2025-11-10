@@ -32,6 +32,12 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         super().reset(name, pose)
 
     def _process_obs(self, obs):
+        for i in range(len(self.known_sentinel_poses)):
+            if self.known_sentinel_poses[i][3]==-1:
+                if obs['action_status'] == "FAIL":
+                    self.known_sentinel_poses[i][3]=0
+                else:
+                    self.known_sentinel_poses[i][3]=1
         super()._process_obs(obs)
         emergency = 0
         for sentinel in self.visible_sentinels:
@@ -74,6 +80,14 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             self.last_action = {'type': 'turn_right', 'arg1': 90}
             return self.last_action
         # no emergency
+        if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
+            speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
+            self.last_action = {"type": "converse", "arg1": speech, "arg2": 3200}
+            for i in range(len(self.known_sentinel_poses)):
+                if self.known_sentinel_poses[i][3]==0:
+                    self.known_sentinel_poses[i][3]=-1
+            return self.last_action
+        # no sentinel to report
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}, mode_time_counter is {self.mode_time_counter}")
         action = None
         try:
