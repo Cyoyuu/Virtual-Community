@@ -45,6 +45,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         self.task_complete = False
         self.goal_place = None
         self.sleep_time = 0
+        self.banned = False
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -150,6 +151,12 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                             self.s_mem.update_with_new_knowledge(event["content"])
                         elif self.last_action["arg1"]=="query_nearby":
                             self.places_buffer.extend(event['content'])
+                elif event["type"] == "sentinel signal":
+                    kws = [event["type"]]
+                    if event['content']['arg2'] != self.name: continue
+                    if event['content']['arg1'] == 'ban':
+                        self.logger.info("I'm being banned...")
+                        self.banned = True
                 else:
                     kws = [event["type"]]
 
