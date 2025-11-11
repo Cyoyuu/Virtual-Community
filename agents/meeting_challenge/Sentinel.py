@@ -27,6 +27,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                  detect_interval=-1, num_agents=1, enable_danger_zone=False):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
         self.emergency = 0
+        self.emergency_avoid_target = None
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -46,10 +47,10 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         if len(obs['events']) > 0 and emergency == 0:
             for event in obs['events']:
                 if event['type'] == 'signal':
-                    emergency = 6
+                    emergency = 9
         if self.emergency == 0:
             self.emergency = emergency
-        elif 1 <= self.emergency <=5: # if in emergency
+        elif 1 <= self.emergency <=8: # if in emergency
             if emergency == 1: # if see sentinel
                 self.emergency = emergency # restart emergency
             else: # if no sentinel seen
@@ -58,7 +59,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             if emergency == 1: # if see emergency
                 self.emergency = 1 # restart emergency
             else: # if no sentinel seen
-                self.emergency = (self.emergency + 1)%9 # progress the post-emergency
+                self.emergency = (self.emergency + 1)%12 # progress the post-emergency
 
     def _act(self, obs):
         if self.banned:
@@ -66,20 +67,24 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
         # if still in emergency
-        if 1 <= self.emergency <= 5:
-            emergency_avoidance = self.emergency_avoid()
-            if emergency_avoidance is None:
+        if 1 <= self.emergency <= 8:
+            if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
+                self.emergency_avoid_target = self.emergency_avoid()
+            if self.emergency_avoid_target is None:
                 self.logger.warning(f"I cannot find a suitable avoidance!")
                 self.last_action = None
                 return None
             else:
-                self.logger.info(f"performing emergency avoiding. Target is {emergency_avoidance}")
-                self.last_action = self.navigate(self.s_mem.get_sg(), list(emergency_avoidance))
+                self.logger.info(f"performing emergency avoiding. Target is {self.emergency_avoid_target}")
+                self.last_action = self.navigate(self.s_mem.get_sg(), list(self.emergency_avoid_target))
                 return self.last_action
-        elif self.emergency > 5:
+        elif self.emergency > 8:
+            self.emergency_avoid_target = None
             self.logger.info(f"after emergency avoiding. emergency level is {self.emergency}")
             self.last_action = {'type': 'turn_right', 'arg1': 90}
             return self.last_action
+        else:
+            self.emergency_avoid_target = None
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"

@@ -22,25 +22,25 @@ LIGHTS = [{
                 'type': 'directional',
                 'dir': (0, -1, -1),
                 'color': (1.0, 1.0, 1.0),
-                'intensity': 7.0,
+                'intensity': 5.0,
             },
             {
                 'type': 'directional',
                 'dir': (0, 1, -1),
                 'color': (1.0, 1.0, 1.0),
-                'intensity': 7.0,
+                'intensity': 5.0,
             },
             {
                 'type': 'directional',
                 'dir': (1, 0, -1),
                 'color': (1.0, 1.0, 1.0),
-                'intensity': 7.0,
+                'intensity': 5.0,
             },
             {
                 'type': 'directional',
                 'dir': (-1, 0, -1),
                 'color': (1.0, 1.0, 1.0),
-                'intensity': 7.0,
+                'intensity': 5.0,
             }
 
             ]  # DAY
