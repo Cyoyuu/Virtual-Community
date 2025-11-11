@@ -5,9 +5,9 @@ sentinel_num=$3
 script_path="ViCo/meeting_challenge/experiment_scripts/run_center_no_avoidance.sh"
 
 if [ "$sentinel_num" -eq 20 ]; then
-  time_limit=240
+  time_limit=270
 elif [ "$sentinel_num" -eq 10 ]; then
-  time_limit=180
+  time_limit=210
 elif [ "$sentinel_num" -eq 5 ]; then
   time_limit=150
 else

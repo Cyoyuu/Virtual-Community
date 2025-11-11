@@ -258,6 +258,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     return {"type": "wait", "arg1": None}
                 return self.conversation("someone", utterance)
             elif self.react_mode == "go":
+                if react_target.startswith('<') and react_target.endswith('>'):
+                    react_target = react_target[1:-1]
                 self.goal_place = react_target
                 self.meeting_place = react_target
                 action, arrived = self.city_navigate(self.meeting_place)
@@ -265,6 +267,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 self.last_anction = action
                 return self.last_anction
             elif self.react_mode == "query":
+                if react_target.startswith('<') and react_target.endswith('>'):
+                    react_target = react_target[1:-1]
                 action = {"type": "query_app", "arg1": "query_place", "arg2": react_target}
                 self.last_anction = action
                 return self.last_anction
