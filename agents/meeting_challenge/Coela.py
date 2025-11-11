@@ -273,7 +273,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     'type': 'wait',
                     'arg1': None
                 }
-            elif self.react_mode == "task complete":
+            elif self.react_mode == "complete task":
                 self.task_complete = True
                 return {
                     'type': 'task_complete',
