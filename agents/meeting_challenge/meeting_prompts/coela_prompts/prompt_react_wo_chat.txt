@@ -37,7 +37,8 @@ $ActionHistory$
 Available Actions:
 
 1. go to <place>. <place> is the name of a place you can find in Known Places. <place> must be extactly the name of the Known Places!
-3. complete task. Use this action to confirm you have arrived at the desired meeting place.
+2. query "Place". Use this action if there is a place mentioned that you don't know (not in Known Places).
+3. complete task. Use this action to confirm you have arrived at the desired meeting place. The task is only considered finish if all of you complete task!
 
 Guidance:
 
@@ -46,4 +47,4 @@ Guidance:
 
 Output Format:
 
-You should only output the action without any quotations. For example: 'go to GDW Fulfillment', 'speak "$Utterance$"', 'task complete'. Notice that you cannot choose "speak" action although it may appear in the Previous Actions.
+You should only output the action without any quotations. For example: 'go to GDW Fulfillment', 'query Center Park', 'complete task'. Notice that you cannot choose "speak" action although it may appear in the Previous Actions.
