@@ -183,7 +183,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         def calc(x, y):
             ret = 0
             for sentinel_pose in near_sentinels:
-                ret += (x - self.pose[0])*(sentinel_pose[0]-self.pose[0]) + (y - self.pose[1])*(sentinel_pose[1]-self.pose[1])
+                ret += (x - self.pose[0])/(sentinel_pose[0]-self.pose[0]) + (y - self.pose[1])/(sentinel_pose[1]-self.pose[1])
             return ret
         minv, maxp = 0, None
         for wp in self.last_nav:

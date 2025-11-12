@@ -252,8 +252,10 @@ class Amap:
         self.pose=pose
         self.covered_length=0.
 
-    def is_point_invalid(self, point):
-        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-int(self.waypoints_dis),int(self.waypoints_dis)+1) for j in range(-int(self.waypoints_dis),int(self.waypoints_dis)+1)]])
+    def is_point_invalid(self, point, lim=None):
+        if lim is None:
+            lim = self.waypoints_dis
+        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-int(lim),int(lim)+1) for j in range(-int(lim),int(lim)+1)]])
 
     def spawn_waypoints(self):
         for node in self.nodes:
@@ -600,15 +602,31 @@ class Amap:
         return zoomed_img
     
     def query_grid_map(self):
-        if self.grid_map is not None:
+        if getattr(self, "grid_map", None) is not None:
             return self.grid_map
-        grid_map = np.zeros(shape=[100, 100])
-        for x in range(-495, 501, 10):
-            for y in range(-495, 501, 10):
-                if self.is_point_invalid(point=(x, y)):
-                    grid_map[y//10+(-495)//10][x//10+(-495)//10]='X'
-                else:
-                    grid_map[y//10+(-495)//10][x//10+(-495)//10]='.'
+        # Define grid size and coordinate range
+        grid_size = 100
+        cell_size = 10
+        coord_min, coord_max = -495, 495
+
+        # Initialize with open space ('.')
+        grid_map = np.full((grid_size, grid_size), '.', dtype=str)
+
+        # Precompute coordinate offset
+        offset = coord_min // cell_size  # = 49 for [-495, 495]
+
+        # Iterate through coordinates
+        for x in range(coord_min, coord_max + 1, cell_size):
+            for y in range(coord_min, coord_max + 1, cell_size):
+                i = (y // cell_size) - offset
+                j = (x // cell_size) - offset
+                # Skip if out of bounds
+                if not (0 <= i < grid_size and 0 <= j < grid_size):
+                    continue
+                # Mark obstacle
+                if self.is_point_invalid([x, y], lim=5):
+                    grid_map[i, j] = 'X'
+
         self.grid_map = grid_map
         return grid_map
 
