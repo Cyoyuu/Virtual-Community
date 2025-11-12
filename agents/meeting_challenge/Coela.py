@@ -248,6 +248,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             self.react_mode, react_target = self.generate_react_mode(self.curr_events, utterance)
             self.goal_place = None
             self.task_complete = False
+            self.logger.debug(f"The generated react is {self.react_mode} {react_target}")
             
             if self.react_mode == "speak":
                 self.chatting_buffer = []
@@ -264,25 +265,27 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 self.meeting_place = react_target
                 action, arrived = self.city_navigate(self.meeting_place)
                 self.last_go_time = self.curr_time
-                self.last_anction = action
-                return self.last_anction
+                self.last_action = action
+                return self.last_action
             elif self.react_mode == "query":
                 if react_target.startswith('<') and react_target.endswith('>'):
                     react_target = react_target[1:-1]
                 action = {"type": "query_app", "arg1": "query_place", "arg2": react_target}
-                self.last_anction = action
-                return self.last_anction
+                self.last_action = action
+                return self.last_action
             elif self.react_mode == "wait":
-                return {
+                self.last_action = {
                     'type': 'wait',
                     'arg1': None
                 }
+                return self.last_action
             elif self.react_mode == "complete task":
                 self.task_complete = True
-                return {
+                self.last_action = {
                     'type': 'task_complete',
                     'arg1': None
                 }
+                return self.last_action
             else:
                 self.logger.warning(f"Unknown react mode {self.react_mode}.")
                 return None
@@ -417,8 +420,8 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             return "go", response.split("go to ")[1]
         if response.startswith("query"):
             return "query", response.split("query ")[1]
-        if response == 'task complete':
-            return 'task complete'
+        if response == 'complete task':
+            return 'complete task', None
         return "wait", None
     
     def get_places_description(self):
