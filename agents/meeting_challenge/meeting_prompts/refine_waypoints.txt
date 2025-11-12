@@ -37,7 +37,7 @@ Generate a **new safe route** from 'A' to 'T':
 ### Output Format
 
 1. First, output the **updated map**, maintaining the same structure as the input, but with 'P' marking the new route.
-2. Immediately after, output a **JSON object** listing the route’s waypoints (each in `[x, y]` format).
+2. Immediately after, output a **JSON object** listing the route’s waypoints (each in `[x, y]` format), forming a route from 'A' to 'T', including 'T'.
 
 No explanations or comments — only the map and the JSON object.
 
@@ -49,9 +49,13 @@ A.PD...
 
 ```json
 [
-    [10, 17],
-    [12, 20],
-    ...
+    [3, 3],
+    [2, 3],
+    [1, 4],
+    [1, 5],
+    [2, 5]
 ]
 ```
+In these example, the waypoints form a route from 'A' to 'T', including all 'P' and 'T'.
+
 Now generate your output.
