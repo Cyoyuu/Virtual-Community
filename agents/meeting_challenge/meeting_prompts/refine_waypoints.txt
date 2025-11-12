@@ -17,7 +17,7 @@ You have just encountered active sentinels on your route. The original path may 
 **Map Description:**
 - The map is represented as a grid.
 - Each cell corresponds to a 10m × 10m area.
-- Coordinates are defined as (y, x) with (0, 0) at the top-left corner.
+- Coordinates are defined as (x, y) with (0, 0) at the top-left corner. (x specifying rows, y specifying columns)
 
 **Map:**
 $Map$
@@ -50,8 +50,8 @@ A.PD...
 
 ```json
 [
-    [10.0, 10.0],
-    [25.0, 15.0],
+    [10, 17],
+    [12, 20],
     ...
 ]
 ```
