@@ -37,7 +37,7 @@ class BaseSentinelAgent(Agent):
         self.patrol_config = patrol_config
         self.countdown_t = 15
         self.detection_min_pixel_ratio = 0.001
-        self.max_speed = 0.3
+        self.max_speed = 0.2
 
     def reset(self, name, pose):
         super().reset(name, pose)
