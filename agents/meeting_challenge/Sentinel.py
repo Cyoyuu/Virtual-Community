@@ -77,7 +77,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     emergency = 11
         if self.emergency == 0:
             self.emergency = emergency
-            if emergency > 0:
+            if emergency > 0 and not self.last_route.empty():
                 self.emergency_analysis["wp_count"] = len(self.last_route)
                 self.emergency_analysis["wp_dis"] = np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))
         elif 1 <= self.emergency <=10: # if in emergency
@@ -90,7 +90,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 self.emergency = 1 # restart emergency
             else: # if no sentinel seen
                 self.emergency = (self.emergency + 1)%14 # progress the post-emergency
-                if self.emergency_analysis["wp_count"] > len(self.last_route) or np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) < self.emergency_analysis["wp_dis"]:
+                if not self.last_route.empty() and (self.emergency_analysis["wp_count"] > len(self.last_route) or np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) < self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
 
     def _act(self, obs):
