@@ -605,9 +605,9 @@ class Amap:
         if getattr(self, "grid_map", None) is not None:
             return self.grid_map
         # Define grid size and coordinate range
-        grid_size = 100
-        cell_size = 10
-        coord_min, coord_max = -495, 495
+        grid_size = 50
+        cell_size = 20
+        coord_min, coord_max = -490, 490
 
         # Initialize with open space ('.')
         grid_map = np.full((grid_size, grid_size), '.', dtype=str)

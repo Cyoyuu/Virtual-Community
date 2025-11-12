@@ -31,7 +31,7 @@ def parse_route_output(model_output: str):
     map_part = re.split(r"```", model_output)[0].strip()
 
     # Extract JSON between triple backticks
-    json_match = re.findall(r"```(.*?)```", model_output, re.DOTALL)
+    json_match = re.findall(r"```json(.*?)```", model_output, re.DOTALL)
     if not json_match:
         raise ValueError("No JSON object found in model output.")
     
@@ -45,11 +45,172 @@ def parse_route_output(model_output: str):
     return map_part, route
 
 
+
+class Reasoner(ThinkingModule):
+    def __init__(self, generator, logger, name):
+        super().__init__(generator, logger, name)
+        self.scanned_map = np.zeros(dtype=int, shape=[10, 10])
+        self.hsg = HSG()
+
+    def plan(self, curr_time, name, pose, intent):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfPose$", pose)
+        prompt = prompt.replace("$Intent$", intent)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def overlook(self, bbox, aerial_view, metadata):
+        map_index = (int(bbox[0] / 100 + 5), int(bbox[1] / 100 + 5))
+        if self.scanned_map[map_index[0], map_index[1]] == 1:
+            self.logger.info("This map section already scanned; skipping reconstruction.")
+            return None
+
+        self.scanned_map[map_index[0], map_index[1]] = 1
+        subgraph = reconstruct_subgraph(aerial_img=aerial_view, metadata=metadata, generator=self.generator)
+        self.hsg = merge_subgraph(self.hsg, subgraph)
+        self.logger.info(f"Integrated new subgraph into global HSG (total nodes: {len(self.hsg.nodes)})")
+
+    def parse(self, conversation_content):
+        prompt = open("agents/meeting_challenge/meeting_prompts/spatial_reasoning_module/hsg/reconstruct_scene_graph.txt", "r").read()
+        prompt = prompt.replace("$ConversationExcerpt$", conversation_content)
+        self.logger.debug(f"[Parse Prompt]\n{prompt}")
+
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            subgraph_json = self.parse_json(prompt, response)
+            sub_hsg = HSG()
+            for node_data in subgraph_json["nodes"]:
+                node = Node(
+                    node_id=node_data["node_id"],
+                    name=node_data["name"],
+                    node_type=node_data["type"],
+                    connectivity_center=node_data["connectivity_center"],
+                    properties=node_data["properties"],
+                    children=node_data["children"],
+                )
+                sub_hsg.add_node(node)
+            for edge in subgraph_json["edges"]:
+                sub_hsg.add_edge(edge["from"], edge["to"], edge["relation"], edge["confidence"])
+            self.hsg = merge_subgraph(self.hsg, sub_hsg)
+            self.logger.info("Updated HSG with new subgraph from conversation.")
+        except Exception as e:
+            self.logger.error(f"Error parsing HSG from conversation: {e}\n{traceback.format_exc()}")
+
+    def find_safe_path(self, current_node, destination_node):
+        """
+        Use the current scene graph to find a safe path to the destination.
+        If information is missing, identify what needs to be queried.
+        """
+        prompt_template = open(
+            "agents/meeting_challenge/meeting_prompts/spatial_reasoning_module/hsg/generate_safe_path.txt",
+            "r"
+        ).read()
+
+        known_graph_json = json.dumps(self.hsg.to_graph(), indent=2)
+        prompt = (
+            prompt_template
+            .replace("$StartNode$", current_node)
+            .replace("$GoalNode$", destination_node)
+            .replace("$KnownGraphJSON$", known_graph_json)
+        )
+
+        self.logger.debug(f"pathfinding_prompt: {prompt}")
+
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"pathfinding_result: {response_dict}")
+        except Exception as e:
+            self.logger.error(f"Error parsing pathfinding response: {e}\nResponse was: {response}")
+            return None
+
+        # Handle the two cases
+        if response_dict.get("status") == "success":
+            self.logger.info(f"Safe path found: {response_dict['path']}")
+            return response_dict
+
+        elif response_dict.get("status") == "incomplete":
+            self.logger.warning("⚠️ Pathfinding incomplete — missing info detected.")
+            missing = response_dict.get("missing_info", [])
+            actions = response_dict.get("recommended_areas_to_query", [])
+            self.logger.info(f"Missing info: {missing}")
+            self.logger.info(f"Recommended areas to query: {actions}")
+
+            return response_dict
+
+        else:
+            self.logger.error("❌ Unknown status in pathfinding result.")
+            return None
+        
+    def check_waypoint_validity(self, pose, grid_map, known_sentinel_poses, last_route):
+        grid_map = deepcopy(grid_map)
+        def align(x):
+            return int(x//20+(-490)//20)
+        grid_map[align(pose[1])][align(pose[1])] = 'A'
+        target_pos = last_route[-1].location
+        grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
+        for sentinel in known_sentinel_poses:
+            for dx in range(-1, 2):
+                for dy in range(-1, 2):
+                    y, x = align(sentinel[1]+dy*20), align(sentinel[0]+dx*20)
+                    grid_map[y][x] = 'D' # sentinel will not appear on the edge
+        for wp in last_route:
+            y, x = align(wp.location[1]), align(wp.location[0])
+            if grid_map[y][x] in ['X', 'D']:
+                return False
+            grid_map[y][x] = 'R'
+        return True
+        
+    def refine_waypoints(self, pose, grid_map, known_sentinel_poses, last_route):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints.txt", "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        grid_map = deepcopy(grid_map)
+        def align(x):
+            return int(x//20+(-490)//20)
+        grid_map[align(pose[1])][align(pose[1])] = 'A'
+        target_pos = last_route[-1].location
+        for wp in last_route:
+            grid_map[align(wp.location[1])][align(wp.location[0])] = 'R'
+        grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
+        for sentinel in known_sentinel_poses:
+            for dx in range(-1, 2):
+                for dy in range(-1, 2):
+                    grid_map[align(sentinel[1]+dy*20)][align(sentinel[0]+dx*20)] = 'D' # sentinel will not appear on the edge
+        def map_from_grid(grid):
+            map_str_lines = []
+            for row in grid:
+                line = ''.join(val for val in row)
+                map_str_lines.append(line)
+            map_str = '\n'.join(map_str_lines)
+            return map_str
+        prompt = prompt.replace("$Map$", map_from_grid(grid_map))
+        self.logger.debug(f"planning_prompt: {prompt}")
+        try:
+            response = self.generator.generate(prompt, img=None, json_mode=False)
+            self.logger.debug(f"generated response: \n{response}\n")
+        except Exception as e:
+            self.logger.error(
+                f"Error generating query action: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+        return response
+
+
 class SentinelMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
+        self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         self.emergency = 0
         self.emergency_avoid_target = None
         self.emergency_analysis = {}
@@ -94,12 +255,17 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
                 if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
+        if not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route):
+            self.ready_to_refine = True
 
     def _act(self, obs):
         if self.banned:
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
+        if self.grid_map is None:
+            self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
+            return self.last_action
         # if still in emergency
         if 1 <= self.emergency <= 10:
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
@@ -121,16 +287,12 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             self.emergency_avoid_target = None
             if self.ready_to_refine and self.refine_retry > 0:
                 self.refine_retry -= 1
-                if self.grid_map is None:
-                    self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
-                    return self.last_action
-                else:
-                    response = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
-                    map_part, route = parse_route_output(response)
-                    self.last_route = Route()
-                    for wp in route:
-                        wp[0], wp[1] = (wp[1] - (-495)//10)*10+5, (wp[0] - (-495)//10)*10+5
-                        self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                response = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
+                map_part, route = parse_route_output(response)
+                self.last_route = Route()
+                for wp in route:
+                    wp[0], wp[1] = (wp[1] - (-490)//20)*20+10, (wp[0] - (-490)//20)*20+10
+                    self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
@@ -151,7 +313,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action
-                action = self.discuss()
+                action = self.discuss_act()
             elif self.mode == NavAgentState.NAVIGATE:
                 self.mode_time_counter += 1
                 if self.meeting_place not in self.s_mem.get_places():

@@ -16,7 +16,7 @@ def generate_one(output_dir, sentinel_num):
             results[sentinel_type] = json.load(f)
 
         # Collect all scenes and agent types
-        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela']
+        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela', 'sentinel']
 
         for agent_type, scene_dict in results[sentinel_type].items():
             # agent_types.append(agent_type)
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     # Define the scenes to group into sections (as in your example)
     # For example, “5 Stationary Sentinels”, “10 Stationary Sentinels”, etc.
     sections = [
-        f"{sentinel_num} {sentinel_type} Sentinels" for sentinel_num in [5, 10, 20] for sentinel_type in ['stationary', 'patrolling']
+        f"{sentinel_num} {sentinel_type} Sentinels" for sentinel_num in [10] for sentinel_type in ['stationary', 'patrolling']
     ]
 
     # Define row order (agent labels)
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         "Center + Danger Zone avoidance": "center",
         "RoCo + Danger Zone avoidance": "roco",
         "CoELA + Danger Zone avoidance": "coela",
-        # "Ours": "ours"
+        "Ours": "sentinel"
     }
 
     # Define metrics to show (column order)
@@ -102,6 +102,7 @@ if __name__ == "__main__":
                 key = method.lower().replace(" ", "_").replace("+", "").replace("-", "")
                 if key not in results:
                     key = list(results.keys())[0]  # fallback if missing
+                if method not in results: continue
 
                 # Aggregate average metrics over listed scenes
                 vals = {m: [] for m in metrics}
@@ -137,5 +138,5 @@ if __name__ == "__main__":
 
     print(f"✅ Saved formatted summary table to {output_path}")
 
-    for sentinel_num in [5, 10, 20]:
+    for sentinel_num in [10]:
         generate_one(output_dir=output_path, sentinel_num=sentinel_num)
