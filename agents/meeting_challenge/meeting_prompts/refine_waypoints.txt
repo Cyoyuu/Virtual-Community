@@ -37,22 +37,42 @@ Generate a **new safe route** from 'A' to 'T':
 
 ### Output Format
 
-1. First, output the **updated map**, maintaining the same structure as the input, but with 'P' marking the new route.
-2. Immediately after, output a **JSON object** listing the route’s waypoints (each in `[x, y]` format).
+Return a single **JSON object** with the following structure:
 
-No explanations or comments — only the map and the JSON object.
+```json
+{
+   "updated map": """
+<your updated map here, same size and layout as the input>
+""",
+   "refined waypoints": [
+      [x1, y1],
+      [x2, y2],
+      ...
+   ]
+}
+```
 
-**Example:**
+Formatting Rules:
+"updated map" must preserve the exact grid layout of the input map.
+Mark your newly generated safe route using 'P'.
+Each coordinate in "refined waypoints" must correspond to a 'P' cell on the map.
+Use [x, y] pairs for each waypoint, in order along the route.
+Do not include any explanations, text, or comments — only the JSON object.
 
+### Example
+
+```json
+{
+   "updated map": """
 ...PP..
 ..PXT..
 A.PD...
-
-```json
-[
-    [10, 17],
-    [12, 20],
-    ...
-]
+""",
+   "refined waypoints": [
+      [10, 17],
+      [12, 20],
+      ...
+   ]
+}
 ```
 Now generate your output.
