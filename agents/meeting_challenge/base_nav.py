@@ -331,7 +331,7 @@ class Discusser(ThinkingModule):
         return response_dict
     
     def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze_and_plan.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
