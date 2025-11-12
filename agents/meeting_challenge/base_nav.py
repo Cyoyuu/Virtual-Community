@@ -509,13 +509,15 @@ class Reasoner(ThinkingModule):
             return map_str
         prompt = prompt.replace("$Map$", map_from_grid(grid_map))
         self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
         try:
-            response = self.generator.generate(prompt, img=None, json_mode=False)
-            self.logger.debug(f"generated response: \n{response}\n")
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
         except Exception as e:
             self.logger.error(
-                f"Error generating query action: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-        return response
+                f"Error generating refined waypoints: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
 
 class Speaker(ThinkingModule):
     def __init__(self, generator, logger, name):
