@@ -126,7 +126,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     return self.last_action
                 else:
                     response = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
-                    map_part, route = parse_route_output(response)
+                    map_part, route = response['updated map'], response['refined waypoints']
                     self.last_route = Route()
                     for wp in route:
                         wp[0], wp[1] = (wp[1] - (-495)//10)*10+5, (wp[0] - (-495)//10)*10+5
