@@ -624,7 +624,7 @@ class Amap:
                 if not (0 <= i < grid_size and 0 <= j < grid_size):
                     continue
                 # Mark obstacle
-                if self.is_point_invalid([x, y], lim=5):
+                if self.is_point_invalid([x, y], lim=10):
                     grid_map[i, j] = 'X'
 
         self.grid_map = grid_map.tolist()

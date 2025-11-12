@@ -21,28 +21,7 @@ from ViCo.tools.utils import *
 from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
 
-def parse_route_output(model_output: str):
-    """
-    Parse the model's response into (map_str, route_list).
-    The model output should contain a map and a JSON list of waypoints.
-    """
 
-    # Extract the map (everything before the JSON)
-    map_part = re.split(r"```", model_output)[0].strip()
-
-    # Extract JSON between triple backticks
-    json_match = re.findall(r"```json(.*?)```", model_output, re.DOTALL)
-    if not json_match:
-        raise ValueError("No JSON object found in model output.")
-    
-    # Parse the JSON waypoints
-    route_str = json_match[-1].strip()
-    try:
-        route = json.loads(route_str)
-    except json.JSONDecodeError:
-        raise ValueError(f"Failed to parse JSON: {route_str}")
-
-    return map_part, route
 
 
 
@@ -175,6 +154,7 @@ class Reasoner(ThinkingModule):
     def refine_waypoints(self, pose, grid_map, known_sentinel_poses, last_route):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        self.logger.debug(f"refining waypoints, the original route is {last_route.to_dict()}")
         grid_map = deepcopy(grid_map)
         def align(x):
             return int(x//20-(-490)//20)
@@ -199,10 +179,44 @@ class Reasoner(ThinkingModule):
         try:
             response = self.generator.generate(prompt, img=None, json_mode=False)
             self.logger.debug(f"generated response: \n{response}\n")
+            route = self.parse_route_output(prompt, response)
         except Exception as e:
             self.logger.error(
                 f"Error generating query action: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-        return response
+            route = None
+        return route
+    
+    def parse_route_output(self, prompt, response, last_call=False):
+        """
+        Parse the model's response into (map_str, route_list).
+        The model output should contain a map and a JSON list of waypoints.
+        """
+
+        try:
+            # Extract the map (everything before the JSON)
+            map_part = re.split(r"```", response)[0].strip()
+            # Extract JSON between triple backticks
+            json_match = re.findall(r"```json(.*?)```", response, re.DOTALL)
+            assert json_match
+            # Parse the JSON waypoints
+            route_str = json_match[-1].strip()
+            route = json.loads(route_str)
+        except Exception:
+                self.logger.warning(f"Error parsing route output, the string was {response}")
+                if not last_call:
+                    chat_history = [
+                        {"role": "user", "content": prompt},
+                        {"role": "assistant", "content": response}
+                    ]
+                    data = self.generator.generate(
+                        f"The output format is wrong. Output the formatted map firstly and json string enclosed in ```json``` secondly only! Do not include any other character in the output!",
+                        chat_history=chat_history)
+                    return self.parse_route_output(None, data, last_call=True)
+                else:
+                    self.logger.error(f"Error parsing JSON, already last call, the string was {response}")
+                    return None
+
+        return route
 
 
 class SentinelMeetingAgent(BaseNavigationMeetingAgent):
@@ -287,12 +301,14 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             self.emergency_avoid_target = None
             if self.ready_to_refine and self.refine_retry > 0:
                 self.refine_retry -= 1
-                response = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
-                map_part, route = parse_route_output(response)
-                self.last_route = Route()
-                for wp in route:
-                    wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
-                    self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                route = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
+                if route is not None:
+                    self.last_route = Route()
+                    for wp in route:
+                        wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
+                        self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                else:
+                    self.logger.warning(f"Fail to generate new route, still using the original one!")
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
