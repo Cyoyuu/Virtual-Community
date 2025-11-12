@@ -156,7 +156,7 @@ class Reasoner(ThinkingModule):
     def check_waypoint_validity(self, pose, grid_map, known_sentinel_poses, last_route):
         grid_map = deepcopy(grid_map)
         def align(x):
-            return int(x//20+(-490)//20)
+            return int(x//20-(-490)//20)
         grid_map[align(pose[1])][align(pose[1])] = 'A'
         target_pos = last_route[-1].location
         grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
@@ -177,7 +177,7 @@ class Reasoner(ThinkingModule):
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         grid_map = deepcopy(grid_map)
         def align(x):
-            return int(x//20+(-490)//20)
+            return int(x//20-(-490)//20)
         grid_map[align(pose[1])][align(pose[1])] = 'A'
         target_pos = last_route[-1].location
         for wp in last_route:
@@ -291,7 +291,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 map_part, route = parse_route_output(response)
                 self.last_route = Route()
                 for wp in route:
-                    wp[0], wp[1] = (wp[1] - (-490)//20)*20+10, (wp[0] - (-490)//20)*20+10
+                    wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
                     self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
