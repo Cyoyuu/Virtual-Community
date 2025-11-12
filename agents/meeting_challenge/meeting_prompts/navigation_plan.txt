@@ -5,8 +5,10 @@ Map legend:
 - 'X' : Obstacle (do NOT traverse)
 - '?' : Unknown space (avoid if possible)
 - 'A' : Robot's current position (start point)
+- 'S' : Currently visible sentinel positions. 
+- 'H' : Historically reported sentinel positions.
 
-The map is a grid where each cell represents 2m × 2m. Coordinates are in (x, y) with (0,0) at the top-left.
+The map is a grid where each cell represents 1m × 1m. Coordinates are in (x, y) with (0,0) at the top-left.
 
 You have a suboptimal current route for reference. It derives from a high-level planner, which suggests a safe path, but not the most efficient, because it lacks the knowledge of low-level map details.
 
@@ -22,6 +24,8 @@ Your task:
 4. Output at most 5 intermediate waypoints to guide smooth navigation. You are not required to always generate all 5 waypoints.
 5. Prefer straight, clear, and safe paths. You can straighten the path based on the existing route, as long as you are certain it is safe and won't result in a collision with any obstacles.
 6. The intermediate waypoints that you generate shall always fall on the free/open space, '.', as much as possible, while its also possible to explore the unknown space, '?'. However, the waypoints should always be within the map range and never fall on obstacles, unless when the goal is in that obstacle, which means the goal is an indoor place.
+7. Avoid detection by sentinels. The closer you are to a sentinel, the higher the risk of being caught. Once a sentinel spots you, it will begin chasing you at half your speed, and stop if you are far away enough.
+8. Reach your final destination efficiently and safely. You can either proceed along the same general route but adjust your timing and path to cross dangerous zones quickly and safely, or reroute entirely, choosing an alternate path (e.g., another street) to avoid potential encounters with sentinels altogether.
 
 Respond with only a valid JSON object:
 {"waypoints": [[x1, y1], [x2, y2], ...]}

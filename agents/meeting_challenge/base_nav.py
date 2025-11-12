@@ -203,7 +203,7 @@ class Decider(ThinkingModule):
     
     def conclude_and_decide(self, curr_time, agent_names, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_2in1.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$AgentList$", agent_names)
@@ -222,7 +222,7 @@ class Decider(ThinkingModule):
     
     def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_rethink.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$CurrentPlace$", meeting_place)
@@ -241,7 +241,7 @@ class Decider(ThinkingModule):
 
     def start(self, name, agent_names, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_start.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agent_names)
         prompt = prompt.replace("$Places$", places)
@@ -264,7 +264,7 @@ class Discusser(ThinkingModule):
 
     def extract(self, name, agent_names, places, conversation_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_extract.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agent_names)
         prompt = prompt.replace("$Places$", places)
@@ -282,7 +282,7 @@ class Discusser(ThinkingModule):
 
     def analyze(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$SelfPose$", pose)
@@ -304,7 +304,7 @@ class Discusser(ThinkingModule):
     
     def plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_plan.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$SelfPose$", pose)
@@ -332,7 +332,7 @@ class Discusser(ThinkingModule):
     
     def speak(self, curr_time, pose, intent, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/speak_speak.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$SelfPose$", pose)
@@ -360,7 +360,7 @@ class Discusser(ThinkingModule):
     
     def query(self, curr_time, pose, intent, places):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/query_action.txt", "r").read()
-        prompt = prompt.replace("TaskDescription", self.task_decription)
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$SelfPose$", pose)
@@ -483,6 +483,39 @@ class Reasoner(ThinkingModule):
         else:
             self.logger.error("❌ Unknown status in pathfinding result.")
             return None
+        
+    def refine_waypoints(self, pose, grid_map, known_sentinel_poses, last_route):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints.txt", "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        grid_map = deepcopy(grid_map)
+        def align(x):
+            return x//10+(-495)//10
+        grid_map[align(pose[1])][align(pose[1])] = 'A'
+        target_pos = last_route[-1].location
+        for wp in last_route:
+            grid_map[align(wp.location[1])][align(wp.location[0])] = 'R'
+        grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
+        for sentinel in known_sentinel_poses:
+            y, x = align(sentinel[1]), align(sentinel[0])
+            for dx in range(-1, 2):
+                for dy in range(-1, 2):
+                    grid_map[y+dy][x+dx] = 'D' # sentinel will not appear on the edge
+        def map_from_grid(grid):
+            map_str_lines = []
+            for row in grid:
+                line = ''.join(val for val in row)
+                map_str_lines.append(line)
+            map_str = '\n'.join(map_str_lines)
+            return map_str
+        prompt = prompt.replace("$Map$", map_from_grid(grid_map))
+        self.logger.debug(f"planning_prompt: {prompt}")
+        try:
+            response = self.generator.generate(prompt, img=None, json_mode=False)
+            self.logger.debug(f"generated response: \n{response}\n")
+        except Exception as e:
+            self.logger.error(
+                f"Error generating query action: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+        return response
 
 class Speaker(ThinkingModule):
     def __init__(self, generator, logger, name):
@@ -548,6 +581,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.known_sentinel_poses = list()
         self.query_buffer = list()
         self.finding_route = 0
+        self.grid_map = None
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -611,6 +645,8 @@ class BaseNavigationMeetingAgent(Agent):
                             self.s_mem.update_with_new_knowledge(event["content"])
                         elif self.last_action["arg1"]=="query_nearby":
                             self.places_buffer.extend(event['content'])
+                        elif self.last_action["arg1"]=="query_grid_map":
+                            self.grid_map = event['content']
                 if event["type"] == "sentinel signal":
                     if event['content']['arg2'] != self.name: continue
                     if event['content']['arg1'] == 'ban':

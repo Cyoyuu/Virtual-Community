@@ -16,9 +16,33 @@ import time
 from agents.agent import Agent
 from agents.memory import SemanticMemory
 from agents.meeting_challenge.base_nav import *
+from ViCo.modules.Amap import Route, RouteNode
 from ViCo.tools.utils import *
 from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
+
+def parse_route_output(model_output: str):
+    """
+    Parse the model's response into (map_str, route_list).
+    The model output should contain a map and a JSON list of waypoints.
+    """
+
+    # Extract the map (everything before the JSON)
+    map_part = re.split(r"```", model_output)[0].strip()
+
+    # Extract JSON between triple backticks
+    json_match = re.findall(r"```(.*?)```", model_output, re.DOTALL)
+    if not json_match:
+        raise ValueError("No JSON object found in model output.")
+    
+    # Parse the JSON waypoints
+    route_str = json_match[-1].strip()
+    try:
+        route = json.loads(route_str)
+    except json.JSONDecodeError:
+        raise ValueError(f"Failed to parse JSON: {route_str}")
+
+    return map_part, route
 
 
 class SentinelMeetingAgent(BaseNavigationMeetingAgent):
@@ -28,6 +52,9 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
         self.emergency = 0
         self.emergency_avoid_target = None
+        self.emergency_analysis = {}
+        self.ready_to_refine = False
+        self.refine_retry = 10
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -47,10 +74,13 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         if len(obs['events']) > 0 and emergency == 0:
             for event in obs['events']:
                 if event['type'] == 'signal':
-                    emergency = 9
+                    emergency = 11
         if self.emergency == 0:
             self.emergency = emergency
-        elif 1 <= self.emergency <=8: # if in emergency
+            if emergency > 0:
+                self.emergency_analysis["wp_count"] = len(self.last_route)
+                self.emergency_analysis["wp_dis"] = np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))
+        elif 1 <= self.emergency <=10: # if in emergency
             if emergency == 1: # if see sentinel
                 self.emergency = emergency # restart emergency
             else: # if no sentinel seen
@@ -59,7 +89,9 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             if emergency == 1: # if see emergency
                 self.emergency = 1 # restart emergency
             else: # if no sentinel seen
-                self.emergency = (self.emergency + 1)%12 # progress the post-emergency
+                self.emergency = (self.emergency + 1)%14 # progress the post-emergency
+                if self.emergency_analysis["wp_count"] > len(self.last_route) or np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) < self.emergency_analysis["wp_dis"]:
+                    self.ready_to_refine = True
 
     def _act(self, obs):
         if self.banned:
@@ -67,7 +99,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
         # if still in emergency
-        if 1 <= self.emergency <= 8:
+        if 1 <= self.emergency <= 10:
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
                 self.emergency_avoid_target = self.emergency_avoid()
             if self.emergency_avoid_target is None:
@@ -78,13 +110,24 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 self.logger.info(f"performing emergency avoiding. Target is {self.emergency_avoid_target}")
                 self.last_action = self.navigate(self.s_mem.get_sg(), list(self.emergency_avoid_target))
                 return self.last_action
-        elif self.emergency > 8:
+        elif self.emergency > 10:
             self.emergency_avoid_target = None
             self.logger.info(f"after emergency avoiding. emergency level is {self.emergency}")
             self.last_action = {'type': 'turn_right', 'arg1': 90}
             return self.last_action
         else:
             self.emergency_avoid_target = None
+            if self.ready_to_refine and self.refine_retry > 0:
+                self.refine_retry -= 1
+                if self.grid_map is None:
+                    self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
+                    return self.last_action
+                else:
+                    response = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
+                    map_part, route = parse_route_output(response)
+                    self.last_route = Route()
+                    for wp in route:
+                        self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"

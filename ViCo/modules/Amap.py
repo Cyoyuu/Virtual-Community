@@ -241,6 +241,7 @@ class Amap:
         self.spawn_waypoints()
 
         self.logger = logger
+        self.grid_map = None
         init_time = time.perf_counter() - init_time
         if self.logger is not None:
             self.logger.info(f"Amap initialized in {init_time}s")
@@ -597,6 +598,19 @@ class Amap:
 
         plt.close(fig)
         return zoomed_img
+    
+    def get_grid_map(self):
+        if self.grid_map is not None:
+            return self.grid_map
+        grid_map = np.zeros(shape=[100, 100])
+        for x in range(-495, 501, 10):
+            for y in range(-495, 501, 10):
+                if self.is_point_invalid(point=(x, y)):
+                    grid_map[y//10+(-495)//10][x//10+(-495)//10]='X'
+                else:
+                    grid_map[y//10+(-495)//10][x//10+(-495)//10]='.'
+        self.grid_map = grid_map
+        return grid_map
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
