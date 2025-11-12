@@ -127,6 +127,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     map_part, route = parse_route_output(response)
                     self.last_route = Route()
                     for wp in route:
+                        wp[0], wp[1] = (wp[1] - (-495)//10)*10+5, (wp[0] - (-495)//10)*10+5
                         self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):

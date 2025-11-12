@@ -599,7 +599,7 @@ class Amap:
         plt.close(fig)
         return zoomed_img
     
-    def get_grid_map(self):
+    def query_grid_map(self):
         if self.grid_map is not None:
             return self.grid_map
         grid_map = np.zeros(shape=[100, 100])
