@@ -194,13 +194,19 @@ class Reasoner(ThinkingModule):
 
         try:
             # Extract the map (everything before the JSON)
-            map_part = re.split(r"```", response)[0].strip()
+            map_part = re.split(r'```json', response, maxsplit=1)[0].strip()
+            map_lines = [line.strip() for line in map_part.splitlines() if line.strip()]
             # Extract JSON between triple backticks
             json_match = re.findall(r"```json(.*?)```", response, re.DOTALL)
             assert json_match
             # Parse the JSON waypoints
             route_str = json_match[-1].strip()
             route = json.loads(route_str)
+            flag = True
+            for wp in route:
+                if not (0<=wp[0]<50) or not (0<=wp[1]<50) or map_part[wp[0]][wp[1]] not in ['A', 'P', 'T']:
+                    flag = False
+            assert flag
         except Exception:
                 self.logger.warning(f"Error parsing route output, the string was {response}")
                 if not last_call:
@@ -208,9 +214,14 @@ class Reasoner(ThinkingModule):
                         {"role": "user", "content": prompt},
                         {"role": "assistant", "content": response}
                     ]
-                    data = self.generator.generate(
-                        f"The output format is wrong. Output the formatted map firstly and json string enclosed in ```json``` secondly only! Do not include any other character in the output!",
-                        chat_history=chat_history)
+                    if flag:
+                        data = self.generator.generate(
+                            f"The route you generated don't match your map! Make sure they match exactly!",
+                            chat_history=chat_history)
+                    else:
+                        data = self.generator.generate(
+                            f"The output format is wrong. Output the formatted map firstly and json string enclosed in ```json``` secondly only! Do not include any other character in the output!",
+                            chat_history=chat_history)
                     return self.parse_route_output(None, data, last_call=True)
                 else:
                     self.logger.error(f"Error parsing JSON, already last call, the string was {response}")

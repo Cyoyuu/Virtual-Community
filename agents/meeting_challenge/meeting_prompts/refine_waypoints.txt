@@ -13,6 +13,7 @@ You have just encountered active sentinels on your route. The original path may 
 - 'D': Dangerous zone — active sentinel presence. Avoid these cells unless no alternative path exists.
 - 'T': Target destination.
 - 'R': Reference route — the original path that has become unsafe.
+- 'W': Reference route in dangerous zone. In other words, 'W'='R'+'D'
 
 **Map Description:**
 - The map is represented as a grid.
@@ -36,17 +37,17 @@ Generate a **new safe route** from 'A' to 'T':
 
 ### Output Format
 
-1. First, output the **updated map**, maintaining the same structure as the input, but with 'P' marking the new route.
+1. First, output the **updated map**, maintaining the same structure as the input, but with 'P' marking the new route. Make sure 'A' and 'T' still showing on your map.
 2. Immediately after, output a **JSON object** listing the route’s waypoints (each in `[x, y]` format), forming a route from 'A' to 'T', including 'T'.
 
 No explanations or comments — only the map and the JSON object.
 
 **Example:**
-
+```
 ...PP..
 ..PXT..
 A.PD...
-
+```
 ```json
 [
     [3, 3],
