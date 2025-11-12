@@ -158,13 +158,17 @@ class Reasoner(ThinkingModule):
         grid_map = deepcopy(grid_map)
         def align(x):
             return int(x//20-(-490)//20)
-        target_pos = last_route[-1].location
-        for wp in last_route:
-            grid_map[align(wp.location[1])][align(wp.location[0])] = 'R'
         for sentinel in known_sentinel_poses:
             for dx in range(-1, 2):
                 for dy in range(-1, 2):
                     grid_map[align(sentinel[1]+dy*20)][align(sentinel[0]+dx*20)] = 'D' # sentinel will not appear on the edge
+        target_pos = last_route[-1].location
+        for wp in last_route:
+            y, x = align(wp.location[1]), align(wp.location[0])
+            if grid_map[y][x]=='D':
+                grid_map[y][x] = 'W'
+            else:
+                grid_map[y][x] = 'R'
         grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
         grid_map[align(pose[1])][align(pose[0])] = 'A'
         def map_from_grid(grid):
