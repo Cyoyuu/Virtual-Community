@@ -489,7 +489,7 @@ class Reasoner(ThinkingModule):
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         grid_map = deepcopy(grid_map)
         def align(x):
-            return x//10+(-495)//10
+            return int(x//10+(-495)//10)
         grid_map[align(pose[1])][align(pose[1])] = 'A'
         target_pos = last_route[-1].location
         for wp in last_route:

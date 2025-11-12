@@ -627,8 +627,8 @@ class Amap:
                 if self.is_point_invalid([x, y], lim=5):
                     grid_map[i, j] = 'X'
 
-        self.grid_map = grid_map
-        return grid_map
+        self.grid_map = grid_map.tolist()
+        return self.grid_map
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
