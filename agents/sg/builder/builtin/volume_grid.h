@@ -378,7 +378,6 @@ public:
                 max_depth = std::max(max_depth, depth[i]);
             }
         }
-        printf("Voxel_grid adding frame: the max_depth is %f\n",max_depth);
         // remove voxels that are disappeared using depth test
         int cur_x = align(extrinsic[3]), cur_y = align(extrinsic[7]);
         int radius = ceil(max_depth * 1.1 / voxel_res);
