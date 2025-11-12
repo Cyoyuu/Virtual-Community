@@ -95,6 +95,7 @@ def main():
     parser.add_argument("--sentinel_type", type=str, default="patrol", choices=['stationary', 'patrol'])
     parser.add_argument("--sentinel_num", type=int, default=5)
     parser.add_argument("--enable_danger_zone", action='store_true')
+    parser.add_argument("--refine_retry", type=int, default=10)
     args = parser.parse_args()
 
     random.seed(time.time())
@@ -232,6 +233,7 @@ def main():
         elif agent_type == "fixed":
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "sentinel":
+            basic_kwargs['refine_retry'] = args.refine_retry
             all_agent_processes.append(AgentProcess(SentinelMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")

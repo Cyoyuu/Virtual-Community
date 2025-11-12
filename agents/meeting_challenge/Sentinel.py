@@ -48,13 +48,13 @@ def parse_route_output(model_output: str):
 class SentinelMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False):
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
         self.emergency = 0
         self.emergency_avoid_target = None
         self.emergency_analysis = {}
         self.ready_to_refine = False
-        self.refine_retry = 10
+        self.refine_retry = refine_retry
 
     def reset(self, name, pose):
         super().reset(name, pose)
