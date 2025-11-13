@@ -622,6 +622,7 @@ class BaseNavigationMeetingAgent(Agent):
         current_message = self.get_conversation_description(limit=1)
         conversation_history = self.get_conversation_description()
         curr_time = self.curr_time.strftime('%H:%M:%S')
+        extracted_info={}
 
         if self.mode==NavAgentState.NAVIGATE and self.rethink:
             extracted_info = self.decider.start(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
