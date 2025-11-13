@@ -87,6 +87,7 @@ class VicoEnv:
 		self.outdoor_objects_max_num = outdoor_objects_max_num
 		self.enable_collision = enable_collision
 		self.enable_gt_segmentation = enable_gt_segmentation
+		self.gt_only_for_sentinels = gt_only_for_sentinels
 		self.scene_name = scene
 		self.entity_idx_to_info = defaultdict(dict)
 		self.entity_idx_to_color = []
@@ -861,7 +862,7 @@ class VicoEnv:
 
 		obs = {i: {} for i in range(self.num_agents)}
 		for i, agent in enumerate(self.agents):
-			obs[i]['rgb'], obs[i]['depth'], obs[i]['segmentation'], obs[i]['fov'], obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation if 'Sentinel' in self.agent_names[i] or self.challenge!="meeting" else False)
+			obs[i]['rgb'], obs[i]['depth'], obs[i]['segmentation'], obs[i]['fov'], obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation if ('Sentinel' in self.agent_names[i] or not self.gt_only_for_sentinels) or self.challenge!="meeting" else False)
 			obs[i]['pose'] = self.config['agent_poses'][i]
 			obs[i]['name'] = self.config['agent_names'][i]
 			if self.seconds % self.save_per_seconds == 0:
