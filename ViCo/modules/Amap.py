@@ -657,6 +657,8 @@ class Amap:
             h, w = grid.shape
         else:
             grid = self.clipped_grid_map
+            min_x, min_y = -400, -400
+            h, w = grid.shape
 
         # --- Plot background grid ---
         fig, ax = plt.subplots(figsize=(8, 8))
