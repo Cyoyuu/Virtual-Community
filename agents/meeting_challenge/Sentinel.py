@@ -335,14 +335,6 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                             time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
                         self.last_route=event["content"]
                         self.last_estimated_arrival_time = self.curr_time + time_to_arrival
-                        self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
-                        self.update_known_eta(
-                            {
-                                self.last_action['arg2']:
-                                {
-                                    self.name: str(time_to_arrival)
-                                }
-                            })
         if self.emergency == 0:
             self.emergency = emergency
             if emergency > 0 and not self.last_route.empty():
