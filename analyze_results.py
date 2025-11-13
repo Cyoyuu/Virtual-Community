@@ -16,7 +16,7 @@ def generate_one(output_dir, sentinel_num):
             results[sentinel_type] = json.load(f)
 
         # Collect all scenes and agent types
-        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela', 'sentinel']
+        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela', 'sentinel', 'sentinel_no_refine']
 
         for agent_type, scene_dict in results[sentinel_type].items():
             # agent_types.append(agent_type)
@@ -77,7 +77,8 @@ if __name__ == "__main__":
         "Center + Danger Zone avoidance": "center",
         "RoCo + Danger Zone avoidance": "roco",
         "CoELA + Danger Zone avoidance": "coela",
-        "Ours": "sentinel"
+        "Ours": "sentinel",
+        "Ours + No refine": "sentinel_no_refine"
     }
 
     # Define metrics to show (column order)
@@ -90,7 +91,7 @@ if __name__ == "__main__":
     # === Construct table ===
     section_tables = []
 
-    for sentinel_num in [5, 10, 20]:
+    for sentinel_num in [10]:
         for sentinel_type in ['stationary', 'patrol']:
             section_name = f"{sentinel_num} {sentinel_type} Sentinels"
             section_data = []
