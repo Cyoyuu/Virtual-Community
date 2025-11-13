@@ -721,6 +721,13 @@ class Amap:
         img = Image.fromarray(img)
 
         return img
+    
+    def refine_route(self, route, curr_time):
+        ret=Route()
+        for wp in route:
+            nwp_loc = self.waypoints[self.get_nearest_waypoints(wp)[0]].location
+            ret.append(RouteNode(nwp_loc, 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+        return ret
 
 
 if __name__ == "__main__" :

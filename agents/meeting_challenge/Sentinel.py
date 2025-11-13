@@ -295,6 +295,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         self.emergency_analysis = {}
         self.ready_to_refine = False
         self.refine_retry = refine_retry
+        self.navigation_plan = None
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -323,10 +324,25 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                         route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route)
                         if route is not None:
                             self.last_route = Route()
-                            for wp in route:
-                                self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                            self.navigation_plan = route
                         else:
                             self.logger.warning(f"Fail to generate new route, still using the original one!")
+                    if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_refine_route':
+                        self.navigation_plan = None
+                        if event['content'] is None:
+                            time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
+                        else:
+                            time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
+                        self.last_route=event["content"]
+                        self.last_estimated_arrival_time = self.curr_time + time_to_arrival
+                        self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
+                        self.update_known_eta(
+                            {
+                                self.last_action['arg2']:
+                                {
+                                    self.name: str(time_to_arrival)
+                                }
+                            })
         if self.emergency == 0:
             self.emergency = emergency
             if emergency > 0 and not self.last_route.empty():
@@ -378,6 +394,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             self.emergency_avoid_target = None
             if self.ready_to_refine and self.refine_retry > 0:
                 self.refine_retry -= 1
+                self.ready_to_refine = False
                 action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [wp.location for wp in self.last_route]}
                 self.last_action = action
                 return self.last_action
@@ -389,6 +406,10 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 #         self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
                 # else:
                 #     self.logger.warning(f"Fail to generate new route, still using the original one!")
+            if self.navigation_plan is not None:
+                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": self.navigation_plan}
+                self.last_action = action
+                return self.last_action
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"

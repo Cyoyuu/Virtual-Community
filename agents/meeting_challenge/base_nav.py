@@ -457,7 +457,6 @@ class BaseNavigationMeetingAgent(Agent):
         # Navigation
         self.last_estimated_arrival_time = None
         self.last_estimated_move_time = None
-        self.navigation_plan = None # not using
         self.last_route = Route() # waypoints, city level
         self.last_nav = [] # waypoints, local level
         self.last_action = None
@@ -496,7 +495,6 @@ class BaseNavigationMeetingAgent(Agent):
                             else:
                                 time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
                             if self.meeting_place==self.last_action["arg2"]:
-                                self.navigation_plan=event['content']
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
