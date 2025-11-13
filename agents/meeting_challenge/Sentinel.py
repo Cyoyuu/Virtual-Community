@@ -296,6 +296,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
         self.ready_to_refine = False
         self.refine_retry = refine_retry
         self.navigation_plan = None
+        self.rethink = True
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -428,7 +429,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
-                    action, arrived = self.city_navigate(self.meeting_place, rethink=True, requery=False)
+                    action, arrived = self.city_navigate(self.meeting_place, requery=False)
                     if arrived:
                         action = {'type': 'task_complete'}
         except Exception as e:

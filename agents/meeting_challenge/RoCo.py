@@ -44,7 +44,7 @@ class RoCoMeetingAgent(BaseNavigationMeetingAgent):
                 self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
                 self.mode_time_counter += 1
-                if self.mode_time_counter > 120:
+                if self.mode_time_counter > 60:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action
@@ -54,7 +54,7 @@ class RoCoMeetingAgent(BaseNavigationMeetingAgent):
                 if self.meeting_place not in self.s_mem.get_places():
                     action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
                 else:
-                    action, arrived = self.city_navigate(self.meeting_place, rethink=False)
+                    action, arrived = self.city_navigate(self.meeting_place)
                     if arrived:
                         action = {'type': 'task_complete'}
         except Exception as e:

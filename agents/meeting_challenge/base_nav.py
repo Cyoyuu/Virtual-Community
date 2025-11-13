@@ -455,6 +455,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.eta_history = dict()
         self.collect_plan = None
         self.thinking = 0
+        self.rethink = False
         # Navigation
         self.last_estimated_arrival_time = None
         self.last_estimated_move_time = None
@@ -622,7 +623,7 @@ class BaseNavigationMeetingAgent(Agent):
         conversation_history = self.get_conversation_description()
         curr_time = self.curr_time.strftime('%H:%M:%S')
 
-        if self.mode==NavAgentState.NAVIGATE:
+        if self.mode==NavAgentState.NAVIGATE and self.rethink:
             extracted_info = self.decider.start(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
             if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
                 self.enter_discussion_mode(trigger="NEW DISCUSSION")
@@ -691,12 +692,12 @@ class BaseNavigationMeetingAgent(Agent):
             raise NotImplementedError(f"discussion plan type is not supported")
         return action
     
-    def city_navigate(self, goal_place, threshold=500., rethink=False, requery=True):
+    def city_navigate(self, goal_place, threshold=500., requery=True):
         cur_trans = np.array(self.pose[:2])
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
-        if rethink and self.mode_time_counter % 120 == 0:
+        if self.rethink and self.mode_time_counter % 120 == 0:
             curr_time = self.curr_time.strftime('%H:%M:%S')
             if self.last_path_for_estimation is None:
                 curr_eta = str(timedelta(seconds=int(self.last_route.calc_time(pose=self.get_outdoor_pose()))))
