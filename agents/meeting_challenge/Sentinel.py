@@ -132,24 +132,74 @@ class Reasoner(ThinkingModule):
             self.logger.error("❌ Unknown status in pathfinding result.")
             return None
         
-    def check_waypoint_validity(self, pose, grid_map, known_sentinel_poses, last_route):
-        grid_map = deepcopy(grid_map)
-        def align(x):
-            return int(x//20-(-490)//20)
-        for sentinel in known_sentinel_poses:
-            for dx in range(-1, 2):
-                for dy in range(-1, 2):
-                    y, x = align(sentinel[1]+dy*20), align(sentinel[0]+dx*20)
-                    grid_map[y][x] = 'D' # sentinel will not appear on the edge
+    def check_waypoint_validity(self, known_sentinel_poses, last_route):
         for wp in last_route:
-            y, x = align(wp.location[1]), align(wp.location[0])
-            if grid_map[y][x] in ['X', 'D']:
-                return False
-            grid_map[y][x] = 'R'
-        target_pos = last_route[-1].location
-        grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
-        grid_map[align(pose[1])][align(pose[0])] = 'A'
+            for sentinel in known_sentinel_poses:
+                if np.linalg.norm(np.array(wp.location[:2])-np.array(sentinel[:2]))<=20:
+                    return False
         return True
+        
+    def refine_waypoints_with_image(self, pose, image, last_route):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints_aerial_view.txt", "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        self.logger.debug(f"refining waypoints with image, the original route is {last_route.to_dict()}")
+        prompt = prompt.replace("$SelfPose$", pose)
+        prompt = prompt.replace("$DestinationPose$", list(last_route[-1].location[:2]))
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=image, json_mode=False)
+        try:
+            response_dict = self.parse_json_with_image(prompt, image, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
+    def parse_json_with_image(self, prompt, image, response, last_call=False):
+        json_str = None
+        if "```json" in response:
+            # Step 1: Extract the JSON part
+            start = response.find("```json") + len("```json")
+            end = response.find("```", start)
+            json_str = response[start:end].strip()
+        else:
+            self.logger.warning(f"Error parsing JSON, the string was {response}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!", img=image,
+                    chat_history=chat_history)
+                return self.parse_json_with_image(None, None, data, last_call=True)
+            else:
+                self.logger.error(f"Error parsing JSON, already last call, the string was {response}")
+                return None
+
+        # # Step 2: Clean up the JSON
+        # # Replace single quotes with double quotes
+        # # Safely evaluate the string to a Python dictionary
+        # parsed_dict = ast.literal_eval(json_str)
+        # # Convert the dictionary back to a JSON string
+        # json_str = json.dumps(parsed_dict)
+
+        # Step 3: Convert to dictionary
+        try:
+            response = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            self.logger.warning(f"Error decoding JSON: {e}, the string was {json_str}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!",
+                    chat_history=chat_history)
+                return self.parse_json(None, data, last_call=True)
+        return response
         
     def refine_waypoints(self, pose, grid_map, known_sentinel_poses, last_route):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints.txt", "r").read()
@@ -265,6 +315,17 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             for event in obs['events']:
                 if event['type'] == 'signal':
                     emergency = 11
+                if event['type'] == 'app message':
+                    if event['subject'] != self.name: continue
+                    if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_grid_map_image':
+                        image = Image.fromarray(np.array(event['content']))
+                        route = self.spatial_resoner.refine_waypoints_with_image(self.pose, image, self.last_route)
+                        if route is not None:
+                            self.last_route = Route()
+                            for wp in route:
+                                self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                        else:
+                            self.logger.warning(f"Fail to generate new route, still using the original one!")
         if self.emergency == 0:
             self.emergency = emergency
             if emergency > 0 and not self.last_route.empty():
@@ -284,7 +345,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
                 if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
-        if not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route):
+        if self.current_place is None and not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route):
             self.ready_to_refine = True
 
     def _act(self, obs):
@@ -292,9 +353,9 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        if self.grid_map is None:
-            self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
-            return self.last_action
+        # if self.grid_map is None:
+        #     self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
+        #     return self.last_action
         # if still in emergency
         if 1 <= self.emergency <= 10:
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
@@ -316,14 +377,17 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             self.emergency_avoid_target = None
             if self.ready_to_refine and self.refine_retry > 0:
                 self.refine_retry -= 1
-                route = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
-                if route is not None:
-                    self.last_route = Route()
-                    for wp in route:
-                        wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
-                        self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
-                else:
-                    self.logger.warning(f"Fail to generate new route, still using the original one!")
+                action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [wp.location for wp in self.last_route]}
+                self.last_action = action
+                return self.last_action
+                # route = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
+                # if route is not None:
+                #     self.last_route = Route()
+                #     for wp in route:
+                #         wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
+                #         self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+                # else:
+                #     self.logger.warning(f"Fail to generate new route, still using the original one!")
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"

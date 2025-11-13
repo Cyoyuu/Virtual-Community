@@ -16,6 +16,7 @@ import math
 import heapq
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+from matplotlib.patches import Circle
 from PIL import Image
 import argparse
 import sys
@@ -242,6 +243,7 @@ class Amap:
 
         self.logger = logger
         self.grid_map = None
+        self.clipped_grid_map = None
         init_time = time.perf_counter() - init_time
         if self.logger is not None:
             self.logger.info(f"Amap initialized in {init_time}s")
@@ -629,6 +631,95 @@ class Amap:
 
         self.grid_map = grid_map.tolist()
         return self.grid_map
+    
+    def get_grid_map_image(self, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None):
+        return self.visualize_grid_with_objects(grid=self.obstacle_grid, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords)
+
+    def visualize_grid_with_objects(self, grid, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None,
+                                resolution=1.0, min_x=0, min_y=0):
+        """
+        Visualize occupancy grid with multiple types of external coordinates.
+
+        Args:
+            grid (np.ndarray): 2D array, 1 for obstacle (black), 0 for free (white)
+            route_coords (list[(x, y)]): sequence of points forming a route
+            circle_coords (list[(x, y)]): centers of circle markers
+            agent_coords (list[(x, y)]): isolated points
+            target_coords (list[(x, y)]): isolated points
+            resolution (float): meters per grid cell
+            min_x, min_y (float): world coordinates of grid[0, 0]
+        """
+        if self.clipped_grid_map is None:
+            grid = deepcopy(grid)
+            grid = grid[int((-400 - min_x)/resolution):int((400 - min_x)/resolution), int((-400 - min_y)/resolution):int((400 - min_y)/resolution)].T
+            self.clipped_grid_map = grid
+            min_x, min_y = -400, -400
+            h, w = grid.shape
+        else:
+            grid = self.clipped_grid_map
+
+        # --- Plot background grid ---
+        fig, ax = plt.subplots(figsize=(8, 8))
+        ax.imshow(grid, cmap='gray_r', origin='lower',
+                extent=[min_x, min_x + w * resolution,
+                        min_y, min_y + h * resolution])
+
+        # Helper: test if a coordinate is in free space
+        def is_free(x, y):
+            gx = int((x - min_x) / resolution)
+            gy = int((y - min_y) / resolution)
+            if gx < 0 or gx >= w or gy < 0 or gy >= h:
+                return False
+            return grid[gy, gx] == 0
+
+        # --- 2️⃣ Circle-like coordinates ---
+        if circle_coords is not None:
+            for (x, y) in circle_coords:
+                if is_free(x, y):
+                    circle = Circle((x, y), radius=20, edgecolor='red',
+                                    facecolor='red', linewidth=1.5)
+                    ax.add_patch(circle)
+
+        # --- 1️⃣ Route-like coordinates ---
+        if route_coords is not None and len(route_coords) > 0:
+            route_coords = np.array([p for p in route_coords if is_free(p[0], p[1])])
+            if len(route_coords) > 0:
+                ax.plot(route_coords[:, 0], route_coords[:, 1], c='blue', linewidth=1.5)
+                ax.scatter(route_coords[:, 0], route_coords[:, 1],
+                        s=12, c='blue', edgecolors='k', linewidths=0.3, zorder=3)
+
+        # --- 3️⃣ Point-like coordinates ---
+        if agent_coords is not None:
+            pts = np.array([p for p in agent_coords if is_free(p[0], p[1])])
+            if len(pts) > 0:
+                ax.scatter(pts[:, 0], pts[:, 1], s=12, c='green', zorder=3)
+
+        # --- 3️⃣ Point-like coordinates ---
+        if target_coords is not None:
+            pts = np.array([p for p in target_coords if is_free(p[0], p[1])])
+            if len(pts) > 0:
+                ax.scatter(pts[:, 0], pts[:, 1], s=12, c='purple', zorder=3)
+
+        # --- Display setup ---
+        ax.set_xlabel("X (world units)")
+        ax.set_ylabel("Y (world units)")
+        ax.set_title("Occupancy Grid with External Elements")
+        ax.grid(True, linestyle=':', alpha=0.4)
+        ax.axis('equal')
+        plt.tight_layout(pad=0., rect=[0, 0, 1, 1])
+
+        fig.canvas.draw()
+        buf = np.asarray(fig.canvas.buffer_rgba())
+        h, w, _ = buf.shape
+        img = buf[:, :, :3]  # drop alpha
+        img = img[::2, ::2, :]
+        print(img.shape)
+        plt.close(fig)
+        return img.tolist()
+        img = Image.fromarray(img)
+
+        return img
+
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
@@ -652,6 +743,8 @@ if __name__ == "__main__" :
     # tmp_roads, tmp_buildings = amap.get_zoomed_scene_metadata(-100, -100, 0, 0)
     # json.dump({'roads': tmp_roads, 'buildings': tmp_buildings}, open("tmp.json", "w"))
     # amap.get_zoomed_scene_image(-200, -200, 0, 0, alpha=0.5).show()
+    # assert 0
+    # amap.get_grid_map_image(agent_coords=[(-207, -77)], circle_coords=[(-88, -62), (-103, 110), (200, 90)], route_coords=[(-207, -77), (-80, -51), (0, 0)], target_coords=[(0,0)]).show()
     # assert 0
     wps=[wp.location for wp in amap.waypoints]
     xs, ys = zip(*wps)

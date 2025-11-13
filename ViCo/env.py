@@ -724,6 +724,9 @@ class VicoEnv:
 				if action['arg1'] == 'query_grid_map':
 					app_answer = self.nav_app.query_grid_map()
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				if action['arg1'] == 'query_grid_map_image':
+					app_answer = self.nav_app.get_grid_map_image(circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
+					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:
 					self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
