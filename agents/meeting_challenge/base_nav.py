@@ -539,6 +539,12 @@ class BaseNavigationMeetingAgent(Agent):
                     f"Here's an image including {', '.join([object.name for object in new_objects])}. Describe what you see in one sentence. Start with 'I see'.",
                     img=img_path)
                 desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
+            for object in new_objects:
+                if 'person' in object.name:
+                    is_sentinel = self.generate_captioning(f"Is there a person in the image that looks like a white humanoid? Output only 'Yes' or 'No'. Don't include other words.")
+                    self.logger.info(f"There is a white humanoid in the view.")
+                    if is_sentinel.lower() == 'yes':
+                        self.s_mem.warning_labels.append(object.idx)
             self.last_react_time = self.curr_time
             self.logger.debug(f"reacting to new objects: {desc}")
             self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
