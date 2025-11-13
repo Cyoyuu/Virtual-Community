@@ -26,7 +26,6 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=1, num_agents=1, enable_danger_zone=False):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone)
-        os.makedirs(f"{self.storage_path}/episodic_memory", exist_ok=True)
         self.react_freq = 900 # 15min
         if self.debug:
             self.react_freq = 300 # 5 min for debug

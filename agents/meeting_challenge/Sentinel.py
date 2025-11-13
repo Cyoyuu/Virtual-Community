@@ -320,7 +320,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     if event['subject'] != self.name: continue
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_grid_map_image':
                         image = Image.fromarray(np.array(event['content']).astype(np.uint8))
-                        image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_{self.obs['steps'].png}"))
+                        image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_{self.obs['steps']}.png"))
                         route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route)
                         if route is not None:
                             self.last_route = Route()
