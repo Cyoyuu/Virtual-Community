@@ -108,7 +108,7 @@ def main():
                                        f"{args.agent_type}-{args.lm_id.split('/')[0]}")
     else:
         agent_type = args.agent_type
-        agent_type_name = f"agent_type"
+        agent_type_name = f"{agent_type}"
         if not args.enable_danger_zone:
             agent_type_name = f"{agent_type}_no_avoidance"
         if args.refine_retry == 0:
