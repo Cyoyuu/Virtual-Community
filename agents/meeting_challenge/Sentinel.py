@@ -142,9 +142,9 @@ class Reasoner(ThinkingModule):
     def refine_waypoints_with_image(self, pose, image, last_route):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints_aerial_view.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        self.logger.debug(f"refining waypoints with image, the original route is {last_route.to_dict()}")
+        self.logger.debug(f"refining waypoints with image {np.array(image).shape}, the original route is {last_route.to_dict()}")
         prompt = prompt.replace("$SelfPose$", pose)
-        prompt = prompt.replace("$DestinationPose$", list(last_route[-1].location[:2]))
+        prompt = prompt.replace("$DestinationPose$", str(list(last_route[-1].location[:2])))
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=image, json_mode=False)
         try:
@@ -318,8 +318,8 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                 if event['type'] == 'app message':
                     if event['subject'] != self.name: continue
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_grid_map_image':
-                        image = Image.fromarray(np.array(event['content']))
-                        route = self.spatial_resoner.refine_waypoints_with_image(self.pose, image, self.last_route)
+                        image = Image.fromarray(np.array(event['content']).astype(np.uint8))
+                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route)
                         if route is not None:
                             self.last_route = Route()
                             for wp in route:
@@ -345,7 +345,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
                 if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
-        if self.current_place is None and not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route):
+        if self.current_place is None and not self.last_route.empty() and not self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route):
             self.ready_to_refine = True
 
     def _act(self, obs):
