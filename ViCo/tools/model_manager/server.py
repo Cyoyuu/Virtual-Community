@@ -96,16 +96,16 @@ class ModelProcess(mp.Process):
         if self.model_subset is not None and model_name not in self.model_subset:
             return None
         if model_name == "ram":
-            from sg.builder.model import RAMWrapper
+            from agents.sg.builder.model import RAMWrapper
             return RAMWrapper()
         if model_name == "dino":
-            from sg.builder.model import DINOWrapper
+            from agents.sg.builder.model import DINOWrapper
             return DINOWrapper()
         if model_name == "sam":
-            from sg.builder.model import SAMWrapper
+            from agents.sg.builder.model import SAMWrapper
             return SAMWrapper()
         if model_name == "clip":
-            from sg.builder.model import CLIPWrapper
+            from agents.sg.builder.model import CLIPWrapper
             return CLIPWrapper()
         if model_name == "embedding":
             from vllm import LLM
