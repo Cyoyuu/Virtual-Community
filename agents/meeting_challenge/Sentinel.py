@@ -345,7 +345,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
                 if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
-        if self.current_place is None and not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route):
+        if self.current_place is None and not self.last_route.empty() and self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route):
             self.ready_to_refine = True
 
     def _act(self, obs):
