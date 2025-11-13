@@ -1,8 +1,9 @@
 #!/bin/bash
 agent_type=$1
-agent_num=$2
-sentinel_type=$3
-sentinel_num=$4
+gt=$2
+agent_num=$3
+sentinel_type=$4
+sentinel_num=$5
 
 # Define arrays of scenes and task types
 # scenes=("MADRID" "HARVARD" "AMSTERDAM" "AUSTIN" "BALTIMORE" "BELGRADE" "BERLIN" "BRATISLAVA" "BRUSSELS" "BUDAPEST" "CALGARY" "CHRISTCHURCH" "COLUMBUS" "DENVER" "DETROIT" "EL_PASO" "FLORENCE" "FORT_WORTH" "FRANKFURT" "HAMBURG" "LONGISLAND" "MADISON" "BARCELONA" "LONDON")
@@ -24,7 +25,7 @@ for scene in "${scenes[@]}"; do
     echo "Running for scene: $scene"
     
     # Example: run python script with arguments
-    bash "$script_path" "$scene" "$agent_num" "$sentinel_type" "$sentinel_num" &
+    bash "$script_path" "$scene" "$gt" "$agent_num" "$sentinel_type" "$sentinel_num" &
     
     # Optionally check exit status and handle errors
     if [ $? -ne 0 ]; then

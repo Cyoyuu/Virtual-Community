@@ -1,9 +1,10 @@
 scene=$1
-agent_num=$2
-sentinel_type=$3
-sentinel_num=$4
+gt=$2
+agent_num=$3
+sentinel_type=$4
+sentinel_num=$5
 # Path to your script or command to run
-script_path="ViCo/meeting_challenge/experiment_scripts/run_coela.sh"
+script_path="ViCo/meeting_challenge/${gt}_scripts/run_coela.sh"
 
 if [ "$sentinel_num" -eq 20 ]; then
   time_limit=270
