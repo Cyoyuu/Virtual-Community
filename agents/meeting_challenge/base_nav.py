@@ -541,10 +541,10 @@ class BaseNavigationMeetingAgent(Agent):
                 desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
             for object in new_objects:
                 if 'person' in object.name:
-                    is_sentinel = self.generate_captioning(f"Is there a person in the image that looks like a white humanoid? Output only 'Yes' or 'No'. Don't include other words.")
-                    self.logger.info(f"There is a white humanoid in the view.")
+                    is_sentinel = self.generate_captioning(f"Is there a person in the image that looks like a white humanoid? Output only 'Yes' or 'No'. Don't include other words.", img=img_path)
                     if is_sentinel.lower() == 'yes':
                         self.s_mem.warning_labels.append(object.idx)
+                        self.logger.info(f"There is a white humanoid in the view. its idx is {object.idx}")
             self.last_react_time = self.curr_time
             self.logger.debug(f"reacting to new objects: {desc}")
             self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
@@ -565,19 +565,23 @@ class BaseNavigationMeetingAgent(Agent):
             e = self.obs["gt_seg_entity_idx_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' not in e['name']: continue
-                mask = (self.obs['segmentation'] == i)
-                # Get pixel coordinates where mask == True
-                v_indices, u_indices = np.nonzero(mask)   # v = row (y), u = column (x)
-                # Compute median pixel position
-                u_median = np.median(u_indices)
-                v_median = np.median(v_indices)
-                # Compute median depth
-                selected_depths = self.obs['depth'][mask]
-                z_median = np.median(selected_depths)
-                wp = pixel_to_world(u_median, v_median, z_median, self.obs['segmentation'].shape[0], self.obs['segmentation'].shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
+                wp = self.get_position_from_view(self.obs['segmentation'], i)
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
                 self.update_known_sentinel_poses([wp[:3]], shared=0)
+
+    def get_position_from_view(self, segmentation, label):
+        mask = (segmentation == label)
+        # Get pixel coordinates where mask == True
+        v_indices, u_indices = np.nonzero(mask)   # v = row (y), u = column (x)
+        # Compute median pixel position
+        u_median = np.median(u_indices)
+        v_median = np.median(v_indices)
+        # Compute median depth
+        selected_depths = self.obs['depth'][mask]
+        z_median = np.median(selected_depths)
+        wp = pixel_to_world(u_median, v_median, z_median, segmentation.shape[0], segmentation.shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
+        return wp
 
     def add_event(self, event_type, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy=None, event_expiration=None):
         event_id = str(len(self.curr_events))
