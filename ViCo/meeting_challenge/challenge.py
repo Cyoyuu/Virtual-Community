@@ -78,6 +78,7 @@ def main():
 
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
+    parser.add_argument("--agent_num", type=int, default=5)
     parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
@@ -104,17 +105,15 @@ def main():
         args.output_dir = os.path.join(args.output_dir, args.scene,
                                        f"{args.agent_type}-{args.lm_id.split('/')[0]}")
     else:
-        if args.agent_type2:
-            agent_type = f"{args.agent_type}-{args.agent_type2}"
-        else:
-            agent_type = args.agent_type
-            if not args.enable_danger_zone:
-                agent_type = f"{agent_type}_no_avoidance"
-            if args.refine_retry == 0:
-                agent_type = f"{agent_type}_no_refine"
-        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
+        agent_type = args.agent_type
+        agent_type_name = agent_type
+        if not args.enable_danger_zone:
+            agent_type_name = f"{agent_type}_no_avoidance"
+        if args.refine_retry == 0:
+            agent_type_name = f"{agent_type}_no_refine"
+        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
-    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type}", args.scene)
+    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
@@ -149,7 +148,15 @@ def main():
     else:
         print(f"Continue simulation from config: {config_path}")
     config = json.load(open(os.path.join(config_path, "config.json"), 'r'))
-    num_agents = config["num_agents"]
+    num_agents = args.agent_num
+    if config["num_agents"]>num_agents:
+        config["num_agents"] = num_agents
+        config["agent_names"]=config['agent_names'][:num_agents]
+        config['agent_infos']=config['agent_infos'][:num_agents]
+        config['agent_poses']=config['agent_poses'][:num_agents]
+        config['locator_colors']=config['locator_colors'][:num_agents]
+        config['locator_colors_rgb']=config['locator_colors_rgb'][:num_agents]
+        config['agent_skins']=config['agent_skins'][:num_agents]
     sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, "sentinel_config", f"sentinel_config_{args.sentinel_type}.json")
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
@@ -299,6 +306,8 @@ def main():
             for event in obs_printable[i]['events']:
                 if isinstance(event['content'], Route):
                     event['content']=event['content'].to_dict()
+                if event['type'] == 'app message':
+                    event['content']='place holder'
 
         # update obs and do action
         extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents) if env.config["agent_names"][i] in all_agent_name and env.config["agent_names"][i] not in banned_agent_list}
