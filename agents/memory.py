@@ -238,10 +238,10 @@ class SemanticMemory:
 							matched_name, matched_value = None, None
 						else:
 							matched_name, matched_value = next(iter(top_values.items()))
-						if matched_value > self.SIMILARITY_THRESHOLD:
-							self.logger.debug(f"Matched new object {obj.tag}({obj.idx}) with name {matched_name}.")
-						else:
-							matched_name = None
+							if matched_value > self.SIMILARITY_THRESHOLD:
+								self.logger.debug(f"Matched new object {obj.tag}({obj.idx}) with name {matched_name}.")
+							else:
+								matched_name = None
 					if matched_name is None:
 						self.logger.debug(f"New object {obj.tag}({obj.idx}) is unmatched. A new knowledge is created")
 						matched_name = f"{obj.tag}_{obj.idx}"

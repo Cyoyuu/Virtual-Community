@@ -550,7 +550,7 @@ class BaseNavigationMeetingAgent(Agent):
         # processing sentinels
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
-        values_labels, counts_labels = np.unique(self.obs['segmentation'], return_counts=True)
+        values_labels, counts_labels = np.unique(self.s_mem.current_labels, return_counts=True)
         freq_labels = dict(zip(values_labels, counts_labels))
         self.logger.info(f"segmentation is {freq}, labels are {freq_labels}")
         self.visible_sentinels = dict()
