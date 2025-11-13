@@ -726,7 +726,7 @@ class Amap:
         ret=Route()
         for wp in route:
             nwp_loc = self.waypoints[self.get_nearest_waypoints(wp)[0]].location
-            ret.append(RouteNode(nwp_loc, 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+            ret.append(RouteNode(list(nwp_loc), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
         return ret
 
 

@@ -395,7 +395,7 @@ class SentinelMeetingAgent(BaseNavigationMeetingAgent):
             if self.ready_to_refine and self.refine_retry > 0:
                 self.refine_retry -= 1
                 self.ready_to_refine = False
-                action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [wp.location for wp in self.last_route]}
+                action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route]}
                 self.last_action = action
                 return self.last_action
                 # route = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
