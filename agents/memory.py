@@ -230,9 +230,14 @@ class SemanticMemory:
 						# spatial_sim = []
 						for name, ft in self.knowledge_feature.items():
 							visual_sim[name] = np.dot(obj.image_ft, ft)
+						self.logger.debug(f"current knowledge feature is {self.knowledge_feature}")
 						self.logger.debug(f"{obj.tag}({obj.idx}) visual similarity with names: {visual_sim}")
 						# sim = np.array(visual_sim) * 0.5 + np.array(spatial_sim) * 0.5
-						matched_name, matched_value = next(iter(top_highest_x_values(visual_sim, 1).items()))
+						top_values = top_highest_x_values(visual_sim, 1)
+						if not top_values:
+							matched_name, matched_value = None, None
+						else:
+							matched_name, matched_value = next(iter(top_values.items()))
 						if matched_value > self.SIMILARITY_THRESHOLD:
 							self.logger.debug(f"Matched new object {obj.tag}({obj.idx}) with name {matched_name}.")
 						else:
