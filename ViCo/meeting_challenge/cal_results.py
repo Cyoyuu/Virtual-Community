@@ -25,7 +25,7 @@ for agent_type in os.listdir(base_results_dir):
             # if "_" not in dir_name:
             #     continue
             gt=base_results_dir.split('/')[-2].split('_', maxsplit=1)[-1]
-            agent_num=base_results_dir.split('_')[-3]
+            agent_num=base_results_dir.split('/')[-1].split('_')[-3]
             sentinel_type=base_results_dir.split('_')[-2]
             sentinel_num=int(base_results_dir.split('_')[-1])
             if f"result_{job_id}.json" not in os.listdir(os.path.join(base_results_dir, agent_type, scene)): continue
