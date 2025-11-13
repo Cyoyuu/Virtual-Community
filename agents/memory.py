@@ -22,7 +22,7 @@ from ViCo.tools.model_manager import global_model_manager
 from ViCo.tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
 
 class SemanticMemory:
-	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False):
+	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False, detection_min_pixel_ratio=0.001):
 		self.storage_path = storage_path
 		self.detect_interval = detect_interval
 		self.debug = debug
@@ -50,7 +50,7 @@ class SemanticMemory:
 			from agents.sg.builder.object import ObjectBuilder, ObjectBuilderConfig, AGENT_TAGS, VEHICLE_TAGS
 			os.makedirs(os.path.join(storage_path, "object"), exist_ok=True)
 			self.object_builder = ObjectBuilder(ObjectBuilderConfig(
-				debug=self.debug, output_path=os.path.join(storage_path, "object"), logger=self.logger))
+				debug=self.debug, output_path=os.path.join(storage_path, "object"), logger=self.logger, detection_min_pixel_ratio=detection_min_pixel_ratio))
 			if region_layer:
 				from agents.sg.builder.region import RegionBuilder
 				self.region_builder = RegionBuilder(vg_builder=self.get_sg(self.current_place).volume_grid_builder,
