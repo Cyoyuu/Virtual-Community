@@ -714,7 +714,8 @@ class Amap:
         buf = np.asarray(fig.canvas.buffer_rgba())
         h, w, _ = buf.shape
         img = buf[:, :, :3]  # drop alpha
-        img = img[::2, ::2, :]
+        if img.shape[0]>800:
+            img = img[::2, ::2, :]
         print(img.shape)
         plt.close(fig)
         return img.tolist()
