@@ -54,11 +54,11 @@ def _remove_overlap_bboxes(bboxes: np.ndarray) -> np.ndarray:
 
 
 class DINOWrapper:
-    def __init__(self, device='cuda', ckpt_path="sg/third_party/GroundingDINO/weights/groundingdino_swinb_cogcoor.pth", box_threshold=0.4):
+    def __init__(self, device='cuda', ckpt_path="agents/sg/third_party/GroundingDINO/weights/groundingdino_swinb_cogcoor.pth", box_threshold=0.4):
         self.device = device
         self.ckpt_path = ckpt_path
         check_download_to("https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth", self.ckpt_path)
-        self.model = load_model("sg/third_party/GroundingDINO/groundingdino/config/GroundingDINO_SwinB_cfg.py", self.ckpt_path, device=device).to(device)
+        self.model = load_model("agents/sg/third_party/GroundingDINO/groundingdino/config/GroundingDINO_SwinB_cfg.py", self.ckpt_path, device=device).to(device)
         self.transform = TS.Compose([
             TS.Resize((512, 512)),
             TS.ToTensor(),

@@ -7,7 +7,7 @@ from efficient_sam.build_efficient_sam import build_efficient_sam_vitt
 from .utils import check_download_to, get_device_type
 
 class SAMWrapper:
-    def __init__(self, device='cuda', ckpt_path="sg/third_party/EfficientSAM/weights/efficient_sam_vitt.pt"):
+    def __init__(self, device='cuda', ckpt_path="agents/sg/third_party/EfficientSAM/weights/efficient_sam_vitt.pt"):
         self.device = device
         self.ckpt_path = ckpt_path
         check_download_to("https://github.com/yformer/EfficientSAM/raw/main/weights/efficient_sam_vitt.pt", self.ckpt_path)
