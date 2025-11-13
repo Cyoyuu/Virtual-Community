@@ -14,7 +14,7 @@ from enum import Enum
 import time
 
 from agents.agent import Agent
-from agents.memory import SemanticMemory
+from agents.memory import SemanticMemory, EventInstance
 from agents.meeting_challenge.hsg import *
 from ViCo.modules.Amap import Route, RouteNode
 from ViCo.tools.utils import *
@@ -522,12 +522,35 @@ class BaseNavigationMeetingAgent(Agent):
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
         self.obs = obs
+        self.curr_events = []
+
+        # react to new objects
+        if not self.no_react and num_new_objects > 0:
+            new_objects = self.s_mem.object_builder.get_new_objects()
+            curr_objects = self.s_mem.object_builder.get_curr_objects()
+            kws = [object.name for object in curr_objects]
+            img_path = os.path.join(self.storage_path, 'episodic_memory',
+                                    f'img_{self.curr_time.strftime("%B %d, %Y, %H:%M:%S")}.png')
+            Image.fromarray(obs['rgb']).save(img_path)
+            if "gt_seg_entity_idx_to_info" in obs:
+                desc = f"I see {', '.join([object.name for object in curr_objects])}."
+            else:
+                desc = self.generate_captioning(
+                    f"Here's an image including {', '.join([object.name for object in new_objects])}. Describe what you see in one sentence. Start with 'I see'.",
+                    img=img_path)
+                desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
+            self.last_react_time = self.curr_time
+            self.logger.debug(f"reacting to new objects: {desc}")
+            self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
+        # saving routes
         if self.obs['steps']%10==0:
             self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route.to_dict())
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
+        # processing sentinels
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
+        self.logger.info(f"segmentation is {freq}, labels are {dict(zip(np.unique(self.s_mem.current_labels, return_counts=True)))}")
         self.visible_sentinels = dict()
         for i in freq:
             if freq[i] < 30: continue
@@ -547,6 +570,18 @@ class BaseNavigationMeetingAgent(Agent):
                 self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
                 self.visible_sentinels[e['name']] = wp
                 self.update_known_sentinel_poses([wp[:3]], shared=0)
+
+    def add_event(self, event_type, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy=None, event_expiration=None):
+        event_id = str(len(self.curr_events))
+        self.logger.debug(f"adding new event, {event_id}: {event_description}")
+        this_experience = EventInstance(event_id, event_type, event_time, event_time, event_position, event_place, event_keywords, event_img, event_description, event_poignancy, event_expiration)
+        self.curr_events.append(this_experience)
+
+    def generate_captioning(self, prompt, img):
+        if self.no_react:
+            return "Do not revoke the llm in no react mode."
+        response = self.generator.generate(prompt, img=img, json_mode=False)
+        return response
 
     def enter_discussion_mode(self, trigger):
         self.mode = NavAgentState.DISCUSS

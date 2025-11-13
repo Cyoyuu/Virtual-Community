@@ -97,6 +97,7 @@ def main():
     parser.add_argument("--sentinel_num", type=int, default=5)
     parser.add_argument("--enable_danger_zone", action='store_true')
     parser.add_argument("--refine_retry", type=int, default=10)
+    parser.add_argument("--gt_only_for_sentinels", action='store_true')
     args = parser.parse_args()
 
     random.seed(time.time())
@@ -200,6 +201,7 @@ def main():
         enable_collision=args.enable_collision,
         skip_avatar_animation=args.skip_avatar_animation,
         enable_gt_segmentation=args.enable_gt_segmentation,
+        gt_only_for_sentinels=args.gt_only_for_sentinels,
         no_load_scene=args.no_load_scene,
         output_dir=output_dir,
         enable_third_person_cameras=args.enable_third_person_cameras,

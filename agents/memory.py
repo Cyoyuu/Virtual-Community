@@ -35,6 +35,7 @@ class SemanticMemory:
 		self.transit_places = []
 		self.agents = []
 		self.warning_labels = []
+		self.current_labels = None
 		self.scene_graph_dict = {}
 		self.current_place = "open space"
 		self.get_sg(self.current_place)
@@ -209,7 +210,8 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['segmentation'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['depth'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, obs['fov'], obs['extrinsics'])
+		self.current_labels = labels
 		self.num_frames += 1
 		if num_new_objects > 0:
 			# update region cluster
