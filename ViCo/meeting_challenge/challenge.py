@@ -98,6 +98,7 @@ def main():
     parser.add_argument("--enable_danger_zone", action='store_true')
     parser.add_argument("--refine_retry", type=int, default=10)
     parser.add_argument("--gt_only_for_sentinels", action='store_true')
+    parser.add_argument("--detect_interval", type=int, default=-1)
     args = parser.parse_args()
 
     random.seed(time.time())
@@ -229,6 +230,7 @@ def main():
             logging_level=args.logging_level,
             multi_process=args.multi_process,
             enable_danger_zone=args.enable_danger_zone,
+            detect_interval=args.detect_interval,
         )
         llm_kwargs = dict(
             lm_source=args.lm_source,

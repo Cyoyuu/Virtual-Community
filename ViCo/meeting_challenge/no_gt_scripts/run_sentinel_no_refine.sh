@@ -11,6 +11,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --skip_avatar_animation \
 --enable_gt_segmentation \
 --gt_only_for_sentinels \
+--detect_interval 1 \
 --output_dir ViCo/meeting_challenge/output \
 --scene "${scene}" \
 --job_id "${job_id}" \
