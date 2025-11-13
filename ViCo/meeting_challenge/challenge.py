@@ -113,9 +113,9 @@ def main():
             agent_type_name = f"{agent_type}_no_avoidance"
         if args.refine_retry == 0:
             agent_type_name = f"{agent_type}_no_refine"
-        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
+        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
-    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
+    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)

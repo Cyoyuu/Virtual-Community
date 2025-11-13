@@ -1,7 +1,8 @@
 scene=$1
-sentinel_type=$2
-sentinel_num=$3
-job_id=$4
+agent_num=$2
+sentinel_type=$3
+sentinel_num=$4
+job_id=$5
 
 export PYTHONPATH=${PWD}
 
@@ -21,6 +22,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --resolution 512 \
 --config agents_num_5 \
 --agent_type center \
+--agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
 --enable_danger_zone \
