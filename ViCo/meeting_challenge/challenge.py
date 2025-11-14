@@ -124,10 +124,9 @@ def main():
     if os.path.exists(result_path):
         result = json.load(open(result_path, 'r'))
         print(f"results exists: {result}")
-        if result["done"]:
-            print(f"it's already done. Skip running simulation")
-            end_processes()
-            exit(0)
+        print(f"it's already done. Skip running simulation")
+        end_processes()
+        exit(0)
     if args.overwrite and os.path.exists(args.output_dir):
         print(f"Overwrite the output directory: {args.output_dir}")
         shutil.rmtree(args.output_dir)
