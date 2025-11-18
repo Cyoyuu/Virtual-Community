@@ -85,6 +85,10 @@ class Agent:
 		# override to perform your own action **when spare**
 		pass
 
+	def diagnose(self, text_prompt, rgb, depth, extrinsics, **kwargs):
+		# overwrite to perform your own diagnosis with text prompt, rgb, depth, extrinsics. 
+		pass
+
 	def save_scratch(self):
 		self.scratch['held_objects'] = self.held_objects
 		self.scratch['curr_time'] = self.curr_time.strftime("%B %d, %Y, %H:%M:%S")
