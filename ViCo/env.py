@@ -100,6 +100,10 @@ class VicoEnv:
 		if "dt_chat" not in self.config:
 			self.config["dt_chat"] = 0
 
+		# two
+		if "max_steps_camera" not in self.config:
+			self.config["max_steps_camera"] = 10000
+
 		if self.challenge == 'full':
 			assert self.num_agents == self.config[
 				'num_agents'], f"num_agents in config file is {self.config['num_agents']}, but got {self.num_agents}"
@@ -155,6 +159,23 @@ class VicoEnv:
                 fov = 90,
                 GUI=False,
             )
+		
+		# one
+		self.low_cam = self.scene.add_camera(
+			res=(2000, 2000),
+			pos=(-60.0, 95.0, 110.0),
+			lookat=(-55.0, 97.0, 110.0),
+			fov=60,
+			GUI=False,
+		)
+		# self.low_cam = self.scene.add_camera(
+		# 	res=(2000, 2000),
+		# 	pos=(-60.0, 70.0, 125.0),
+		# 	lookat=(-70.0, 120.0, 75.0),
+		# 	fov=60,
+		# 	GUI=False,
+		# )
+	
 		terrain = self.load_city_scene(self.scene_assets_dir, no_load_scene)
 		gs.logger.info(f"loading city scene took {time.time() - start_time:.2f}s")
 
@@ -835,6 +856,13 @@ class VicoEnv:
 				third_person_rgb = agent.get_third_person_camera_rgb(indoor)
 				if third_person_rgb is not None:
 					Image.fromarray(third_person_rgb).save(os.path.join(self.output_dir, 'tp', self.agent_names[i], f"rgb_{self.steps:06d}.png"))
+
+				# three
+				low_rgb, _, _, _ = self.low_cam.render()
+				low_camera_path = os.path.join(self.output_dir, "traffic_ego", "low_camera", f"rgb_{self.steps:06d}.png")
+				os.makedirs(os.path.dirname(low_camera_path), exist_ok=True)
+				Image.fromarray(low_rgb).save(low_camera_path)
+				gs.logger.info(f"Saved low camera view to {low_camera_path}")
 
 		if self.traffic_manager is not None and self.enable_tm_debug and self.seconds % self.save_per_seconds == 0:
 			for i, avatar in enumerate(self.traffic_manager.avatars):

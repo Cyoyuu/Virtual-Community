@@ -17,7 +17,7 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --resolution 512 \
 --config agents_num_5 \
 --agent_type heuristic_nav \
---save_per_seconds 200 \
+--save_per_seconds 2 \
 --step_limit 1500 \
 --lm_source azure \
 --lm_id gpt-4o \

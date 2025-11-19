@@ -99,9 +99,9 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
     frames = full_steps[::5]
     agents_all, sentinels = build_entity_lists(steps_data, track_sentinels=False)
     fixed_agents = agents_all[:5]
-    fixed_palette = ["#007BFF", "#00C853", "#FFD600", "#8E44AD", "#FF1744"]
+    fixed_palette = ["#007BFF", "#00C853", "#FFD600", "#8E44AD", "#FF17E4"]
     agent_color = {name: fixed_palette[i] for i, name in enumerate(fixed_agents)}
-    agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, fixed_agents, max_jump=100.0)
+    agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, fixed_agents, max_jump=20.0)
     bg_path = f"ViCo/assets/scenes/{scene}/global.png"
     if not os.path.isfile(bg_path):
         raise FileNotFoundError(f"Background map not found at: {bg_path}")
@@ -137,7 +137,7 @@ def animate_all(scene, max_steps=2000, interval=100, fps=5, out_format="mp4", ou
         return tri_line
     def make_wedge_patch():
         wedge = Wedge(center=(0, 0),
-                      r=100,
+                      r=20,
                       theta1=0,
                       theta2=90,
                       facecolor="#FFF3B0",

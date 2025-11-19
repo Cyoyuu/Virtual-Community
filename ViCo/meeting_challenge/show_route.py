@@ -66,7 +66,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     route_history = {}
-    base_dir = f"ViCo/meeting_challenge/output/{args.scene}/nav/curr_sim"
+    base_dir = f"ViCo/meeting_challenge/output/{args.scene}/heuristic_nav/curr_sim"
     for dir in os.listdir(base_dir):
         if 'Sentinel' in dir: continue
         subdir = os.path.join(base_dir, dir)
