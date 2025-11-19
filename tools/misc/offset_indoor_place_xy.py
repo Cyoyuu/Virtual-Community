@@ -36,7 +36,7 @@ if __name__ == "__main__":
     base_dir = "assets/scenes"
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", "-s", type=str, required=True)
-    parser.add_argument("--num_agents", "-n", type=int, required=True)
+    parser.add_argument("--num_agents", "-n", type=int, default=15)
     args = parser.parse_args()
     scene_dir = os.path.join(base_dir, args.scene)
     config_dir = os.path.join(scene_dir, f"agents_num_{str(args.num_agents)}")

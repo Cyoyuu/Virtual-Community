@@ -187,7 +187,7 @@ class CharacterGen:
             self.assign_scene_to_place_metadata()
         else:
             # counting number of places of types first
-            cnt_types = {}
+            cnt_types = defaultdict(int)
             for place in self.place_metadata:
                 cnt_types[self.place_metadata[place]["coarse_type"]] += 1
             if cnt_types["stores"] < 6 or cnt_types["accommodation"] < 1 or cnt_types["food"] < 3 or cnt_types["entertainment"] < 1:
@@ -531,7 +531,7 @@ class CharacterGen:
                 print("force_check_grounding option is not allowed when gpt_cache does not exist. Exiting...")
                 exit()
             print("groups_json and characters_json not exist or you used regenerate option, start generation.")
-            self.generator = Generator(lm_source='azure', lm_id='gpt-4o', max_tokens=8192, temperature=0, top_p=1, logger=None)
+            self.generator = Generator(lm_source=args.lm_source, lm_id='gpt-4o', max_tokens=16384, temperature=0, top_p=1, logger=None)
             os.makedirs(base_path, exist_ok=True)
             raw_gpt_response = self.generator.generate(prompt)
             # print("Debug: raw_gpt_response:", raw_gpt_response)
@@ -1006,6 +1006,7 @@ if __name__ == "__main__":
     parser.add_argument("--predefined_famous", action="store_true")
     parser.add_argument("--force_check_grounding", action="store_true") # only use this if there's existing gpt cache that may not be grounded correctly
     parser.add_argument("--filter_distance_square", type=float, default=300.0)
+    parser.add_argument("--lm_source", type=str, default='azure', choices=['azure', 'openai'])
     args = parser.parse_args()
     print("args:", args)
     random.seed(hash(args.scene))

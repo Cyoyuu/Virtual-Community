@@ -39,24 +39,16 @@ def generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_
     current_y_left = 0
     current_y_right = 0
 
-    accommodation_indicator_mapping = {}
     iter_places = {}
-    letter = coarse_type_to_letter["accommodation"]
-    i = 1
-    for pname in places_by_coarse_type["accommodation"]:
-        if "'s room at " in pname and pname.split("'s room at ")[1] in iter_places:
-            indicator = iter_places[pname.split("'s room at ")[1]]
-        elif pname in iter_places:
-            indicator = iter_places[pname]
-        else:
-            indicator = f"{letter}{i}"
-            if "'s room at " in pname:
-                iter_places[pname.split("'s room at ")[1]] = indicator
-            else:
-                iter_places[pname] = indicator
-            i += 1
-        accommodation_indicator_mapping[pname] = indicator
-    places_by_coarse_type["accommodation"].sort(key=lambda pname: accommodation_indicator_mapping[pname])
+    # Sort accommodation: private rooms ('s room at ) first, then others alphabetically.
+    if "accommodation" in places_by_coarse_type:
+        places_by_coarse_type["accommodation"].sort(
+            key=lambda pname: (0 if "'s room at " in pname else 1, pname.lower())
+        )
+    # Sort all other coarse types alphabetically.
+    for c in places_by_coarse_type.keys():
+        if c != "accommodation":
+            places_by_coarse_type[c].sort(key=lambda pname: pname.lower())
 
     pname2color = {}
     def draw_entry(ax, start_y, pname, indicator):
@@ -76,23 +68,23 @@ def generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_
         else:
             ax_right.text(0.0, current_y_right, f"{letter} ({ctype})", fontsize=14, fontweight='bold')
             current_y_right += 0.3
-        i = 1
-        for i, pname in enumerate(places_by_coarse_type[ctype]):
+        counter = 1
+        for pname in places_by_coarse_type[ctype]:
             if "'s room at " in pname and pname.split("'s room at ")[1] in iter_places:
                 indicator = iter_places[pname.split("'s room at ")[1]]
             elif pname in iter_places:
                 indicator = iter_places[pname]
             else:
-                indicator = f"{letter}{i}"
+                indicator = f"{letter}{counter}"
                 if "'s room at " in pname:
                     iter_places[pname.split("'s room at ")[1]] = indicator
                 else:
                     iter_places[pname] = indicator
-                i += 1
+                counter += 1
             if draw_on_left:
-                current_y_left = draw_entry(ax_left, current_y_left, pname, i)
+                current_y_left = draw_entry(ax_left, current_y_left, pname, indicator)
             else:
-                current_y_right = draw_entry(ax_right, current_y_right, pname, i)
+                current_y_right = draw_entry(ax_right, current_y_right, pname, indicator)
                 increase_y_for_ctype = True
             if draw_on_left and ((info_height - current_y_left) < 1.5):
                 draw_on_left = False
@@ -162,15 +154,24 @@ def overlay_locations_desp_on_image(place_metadata, building_metadata, save_path
         if place_name in places_by_coarse_type[ctype]:
             continue
         places_by_coarse_type[ctype].append(place_name)
+    # Ensure the same sorting as legend: accommodation rooms first, others alphabetically
+    if "accommodation" in places_by_coarse_type:
+        places_by_coarse_type["accommodation"].sort(
+            key=lambda pname: (0 if "'s room at " in pname else 1, pname.lower())
+        )
+    for c in places_by_coarse_type.keys():
+        if c != "accommodation":
+            places_by_coarse_type[c].sort(key=lambda pname: pname.lower())
     for ctype in sorted(places_by_coarse_type.keys()):
         letter = coarse_type_to_letter[ctype]
-        for i, place_name in enumerate(places_by_coarse_type[ctype]):
-            if "'s room at " in place_name:
-                place_name = place_name.split("'s room at ")[1]
-            if place_name in place_indicators:
+        counter = 1
+        for place_name in places_by_coarse_type[ctype]:
+            base_name = place_name.split("'s room at ")[1] if "'s room at " in place_name else place_name
+            if base_name in place_indicators:
                 continue
-            indicator = f"{letter}{i+1}"
-            place_indicators[place_name] = indicator
+            indicator = f"{letter}{counter}"
+            place_indicators[base_name] = indicator
+            counter += 1
     
     drew_indicators = []
     for place in known_places:

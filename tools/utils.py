@@ -370,7 +370,7 @@ def schedule_validator(hourly_schedule, s_mem, curr_time, place_metadata=None, l
 					break
 	first_schedule = True
 	for i, schedule_step in enumerate(hourly_schedule):
-		if datetime.strptime(schedule_step["end_time"], "%H:%M:%S").time() <= curr_time.time():
+		if datetime.strptime(schedule_step["end_time"], "%H:%M:%S").time() < curr_time.time():
 			continue
 		if i == 0:
 			if schedule_step['start_time'] != "00:00:00":
