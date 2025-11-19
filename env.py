@@ -348,7 +348,6 @@ class VicoEnv:
 			"rgb": rgb_space,
 			"depth": depth_space,
 			"segmentation": spaces.Box(0, 256, (self.resolution, self.resolution), dtype=np.int32),
-			'fov': spaces.Box(0, 180, (1,), dtype=np.float32),
 			'extrinsics': spaces.Box(-30, 30, (4, 4), dtype=np.float32),
 			'pose': spaces.Box(-400, 400, (6,), dtype=np.float32), # may be larger?
 			'accessible_places': spaces.Sequence(spaces.Text(max_length=1000, charset=string.printable)),
@@ -1079,9 +1078,9 @@ class VicoEnv:
 
 			if self.genesis_steps % self.agent_visual_obs_freq[i] == 0:
 				if self.batch_renderer:
-					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['fov'], self.obs[i]['extrinsics'] = self.rgbs[agent.ego_view.idx], self.depths[agent.ego_view.idx], self.segmentations[agent.ego_view.idx], agent.ego_view.fov, agent.ego_view.extrinsics
+					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['extrinsics'] = self.rgbs[agent.ego_view.idx], self.depths[agent.ego_view.idx], self.segmentations[agent.ego_view.idx], agent.ego_view.extrinsics
 				else:
-					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['fov'], self.obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation)
+					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation)
 				if self.seconds % self.save_per_seconds == 0:
 					if self.obs[i]['rgb'] is not None:
 						Image.fromarray(self.obs[i]['rgb']).save(

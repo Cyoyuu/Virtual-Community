@@ -356,7 +356,7 @@ class AvatarController():
             segmentation=False,
     ):
         if self.robot.base_state == AvatarState.SLEEPING:
-            return None, None, None, self.ego_view.fov, self.ego_view.transform
+            return None, None, None, self.ego_view.transform
         if self.robot.base_state == AvatarState.IN_VEHICLE:
             if self.robot._h_attach_to.name != "bicycle" and self.robot._h_attach_to.ego_view is not None:
                 return self.robot._h_attach_to.render_ego_view(rotation_offset, depth, segmentation)
@@ -366,7 +366,7 @@ class AvatarController():
         
         self.ego_view.set_pose(pos=head_pos, lookat=head_rot@np.array([1,0,0])+head_pos)
         rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.fov, self.ego_view.transform
+        return rgb, depth, seg, self.ego_view.transform
 
     #################### Motions ####################
 

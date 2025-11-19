@@ -10,7 +10,7 @@ class TourAgent(Agent):
 	def __init__(self, name, pose, info, sim_path, tour_spatial_memory, no_react=False, debug=False, logger=None):
 		super().__init__(name, pose, info, sim_path, no_react, debug, logger)
 		self.detect_interval = 1
-		self.s_mem = SceneGraph(os.path.join(self.storage_path, "scene_graph"), detect_interval=self.detect_interval, debug=self.debug, logger=self.logger)
+		self.s_mem = SceneGraph(os.path.join(self.storage_path, "scene_graph"), detect_interval=self.detect_interval, fov=self.fov, debug=self.debug, logger=self.logger)
 		self.tour_spatial_memory = tour_spatial_memory
 		self.tour_building_names = [building for building in tour_spatial_memory.keys() if tour_spatial_memory[building]["bounding_box"] is not None]
 		random.shuffle(self.tour_building_names)
@@ -22,7 +22,7 @@ class TourAgent(Agent):
 
 	def reset(self, name, pose):
 		super().reset(name, pose)
-		self.s_mem = SceneGraph(os.path.join(self.storage_path, "scene_graph"), detect_interval=self.detect_interval, debug=self.debug, logger=self.logger) #todo: log the num_frames
+		self.s_mem = SceneGraph(os.path.join(self.storage_path, "scene_graph"), detect_interval=self.detect_interval, fov=self.fov, debug=self.debug, logger=self.logger) #todo: log the num_frames
 		self.curr_idx= 0
 		self.curr_goal_name = self.tour_building_names[self.curr_idx]
 		curr_goal_dict = self.tour_spatial_memory[self.curr_goal_name]

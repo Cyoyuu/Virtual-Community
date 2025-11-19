@@ -31,6 +31,7 @@ class Agent:
 		self.debug = debug
 		self.WALK_SPEED = 1.0 # m/s
 		self.BIKE_SPEED = 3.0 # m/s
+		self.fov = 90.0 # degrees
 		self.current_vehicle = self.scratch['current_vehicle'] if 'current_vehicle' in self.scratch else None
 		self.current_place = self.scratch['current_place'] if 'current_place' in self.scratch else None
 		self.action_status = None

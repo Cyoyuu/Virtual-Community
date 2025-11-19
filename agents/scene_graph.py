@@ -9,9 +9,10 @@ sys.path.insert(0, current_directory)
 from .sg.builder.builder import Builder, BuilderConfig, VolumeGridBuilderConfig
 
 class SceneGraph:
-	def __init__(self, storage_path, detect_interval=-1, debug=False, logger=None):
+	def __init__(self, storage_path, detect_interval=-1, fov=90.0, debug=False, logger=None):
 		self.storage_path = storage_path
 		self.detect_interval = detect_interval
+		self.fov = fov
 		self.debug = debug
 		self.logger = logger
 		self.scene_graph_dict = {}
@@ -36,7 +37,7 @@ class SceneGraph:
 
 			self.scene_graph_dict[place] = Builder(
 				BuilderConfig(output_path=output_path,
-							  volume_grid_conf=volume_grid_conf, debug=self.debug, logger=self.logger))
+							  volume_grid_conf=volume_grid_conf, fov=self.fov, debug=self.debug, logger=self.logger))
 			if os.path.exists(f"{self.storage_path}/{place}/volume_grid.pkl"):
 				print(f"Loading volume grid for {place}...")
 				self.scene_graph_dict[place].volume_grid_builder.load(f"{self.storage_path}/{place}/volume_grid.pkl")
@@ -52,7 +53,7 @@ class SceneGraph:
 			return
 		cur_sg = self.get_sg(obs['current_place'])
 		labels = -np.ones_like(obs['depth'], dtype=np.int32)
-		cur_sg.add_frame(obs['rgb'], obs['depth'], labels, obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], labels, obs['extrinsics'])
 		self.num_frames += 1
 
 		if self.current_place is None or self.current_place == "open space":
