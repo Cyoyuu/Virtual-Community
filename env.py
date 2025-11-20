@@ -106,7 +106,6 @@ class VicoEnv:
 			self.config["dt_control"] = [1.0] * self.num_agents
 		if "dt_rgb_obs" not in self.config:
 			self.config["dt_rgb_obs"] = [1.0] * self.num_agents
-		self.robot_only_simulation = False
 		robot_agent_id_list = self.config.get("robot_agent_id_list")
 		self.enable_robots = bool(robot_agent_id_list)
 		self.robot_agent_id_list = robot_agent_id_list or []
@@ -149,7 +148,7 @@ class VicoEnv:
 				camera_fov=60,
 			),
 			rigid_options=gs.options.RigidOptions(
-				gravity=(0.0, 0.0, -9.8) if self.enable_robots else (0.0, 0.0, 0.0),
+				gravity=(0.0, 0.0, -9.8),
 				enable_collision=self.enable_collision,
 				max_collision_pairs=400,
 				dt=dt_sim
@@ -409,18 +408,18 @@ class VicoEnv:
 		step_info_path = os.path.join(self.config_path.replace('curr_sim', 'steps'), 'env', f"{self.steps:06d}.json")
 		atomic_save(step_info_path, json.dumps(step_info, indent=2, default=json_converter))
 
-	def scene_step(self):
+	def scene_step(self, avatar_sim_early_end=False):
 		self.scene.step()
 
 		if self.enable_demo_camera:
 			rgb, _, _, _ = self.demo_camera.render(depth=False)
 			Image.fromarray(rgb).save(os.path.join(self.output_dir, 'demo', f"{self.genesis_steps:06d}.png"))
 
-		if self.enable_robots:
-			for robot in self.robots:
-				robot.step(actions=None, perform_physics_step=True)
-			if self.robot_only_simulation:
-				return
+		for robot in self.robots:
+			robot.step(actions=None, perform_physics_step=True)
+
+		if avatar_sim_early_end:
+			return
 
 		if self.vehicles:
 			for vehicle in self.vehicles:
@@ -930,7 +929,7 @@ class VicoEnv:
 		sps_chat = time.perf_counter() - start_time
 		self.config["sps_chat"] = (self.config["sps_chat"] * self.steps + sps_chat) / (self.steps + 1)
 
-	def check_sim_early_end(self):
+	def check_avatar_sim_early_end(self):
 		if self.skip_avatar_animation:
 			return True
 		if all([agent.spare() for agent in self.agents]) and \
@@ -971,15 +970,16 @@ class VicoEnv:
 			self.perform_action(i, action, is_robot=i in self.robot_agent_id_list)
 		if self.defer_chat:
 			self.post_generate_chat(agent_actions)
-		sim_early_end = False
-		self.robot_only_simulation = False
+		avatar_sim_early_end = False
 		for _ in tqdm.tqdm(range(simulate_to_genesis_step - self.genesis_steps), desc="simulating", ):
-			self.scene_step()
+			self.scene_step(avatar_sim_early_end=avatar_sim_early_end)
 			self.genesis_steps += 1
-			if not sim_early_end and self.check_sim_early_end():
-				sim_early_end = True
-				gs.logger.info(f"At {self.genesis_steps} frames, all agents finished action, end simulation early.")
-			self.robot_only_simulation = sim_early_end
+			if not avatar_sim_early_end and self.check_avatar_sim_early_end():
+				avatar_sim_early_end = True
+				gs.logger.info(f"After {_ + 1} frames, all agents finished action, end avatar simulation early.")
+				if not self.enable_robots:
+					self.genesis_steps = simulate_to_genesis_step
+					break
 
 		self.steps += 1
 		self.seconds += self.sec_per_step
@@ -992,12 +992,12 @@ class VicoEnv:
 			if self.traffic_manager is not None:
 				self.traffic_manager.step()
 			self.traffic_manager.bus.step(self.curr_time)
-			if sim_early_end and not self.traffic_manager.bus.stop_at_this_step:
+			if avatar_sim_early_end and not self.traffic_manager.bus.stop_at_this_step:
 				bus_next_pose = self.traffic_manager.bus.update_at_time(self.curr_time)
 				self.traffic_manager.bus.reset(np.array(bus_next_pose[:3], dtype=np.float64), geom_utils.euler_to_R(
 					np.degrees(np.array(bus_next_pose[3:], dtype=np.float64))))
 				# to update the position of agents in bus
-				self.scene_step()
+				self.scene_step(avatar_sim_early_end=avatar_sim_early_end)
 			self.events.clear()
 		self.fps_tracker.step()
 		return self.obs, 0, False, {}
