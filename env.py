@@ -276,6 +276,7 @@ class VicoEnv:
 			if i not in self.robot_agent_id_list:
 				agent.initialize_no_collision(no_collision_entities)
 		gs.logger.info(f"loading {self.num_agents} avatars took {time.time() - start_time:.2f}s")
+
 		### Load indoor scenes
 		if self.enable_indoor_scene:
 			start_time = time.time()
@@ -292,7 +293,7 @@ class VicoEnv:
 			# load a default room
 			self.active_places_info['default_room'], self.place_cameras['default_room'] = \
 				load_default_room(self, "default_room")
-
+		
 		for vgeom in self.scene.rigid_solver.vgeoms:
 			vgeom.surface.double_sided = True
 
@@ -346,9 +347,9 @@ class VicoEnv:
 		self.observation_space_single = spaces.Dict({
 			"rgb": rgb_space,
 			"depth": depth_space,
-			"segmentation": spaces.Box(0, 256, (self.resolution, self.resolution), dtype=np.int32),
+			"segmentation": spaces.Box(0, 10000, (self.resolution, self.resolution), dtype=np.int32),
 			'extrinsics': spaces.Box(-30, 30, (4, 4), dtype=np.float32),
-			'pose': spaces.Box(-400, 400, (6,), dtype=np.float32), # may be larger?
+			'pose': spaces.Box(-1400, 1400, (6,), dtype=np.float32),
 			'accessible_places': spaces.Sequence(spaces.Text(max_length=1000, charset=string.printable)),
 			'action_status': spaces.Text(max_length=1000, charset=string.printable),
 			'current_building': spaces.Text(max_length=1000, charset=string.printable),
@@ -380,6 +381,7 @@ class VicoEnv:
 					mx = np.maximum(mx, verts.max(axis=0))
 					mn = np.minimum(mn, verts.min(axis=0))
 				e["bbox"] = np.stack([mn, mx])
+		self.idxc_to_info = {idxc: self.entity_idx_to_info[entity_idx] for idxc, entity_idx in self.scene.visualizer.segmentation_idx_dict.items() if entity_idx != -1}
 
 		os.makedirs(os.path.join(self.output_dir, 'steps', 'env'), exist_ok=True)
 
@@ -1090,7 +1092,7 @@ class VicoEnv:
 							Image.fromarray(self.entity_idx_to_color[self.obs[i]['segmentation'] + 1]).save(
 								os.path.join(self.output_dir, 'ego', self.agent_names[i], f"seg_{self.steps:06d}.png"))
 				if self.enable_gt_segmentation:
-					self.obs[i]["gt_seg_entity_idx_to_info"] = self.entity_idx_to_info
+					self.obs[i]["gt_seg_idxc_to_info"] = self.idxc_to_info
 
 				self.obs[i]['events'] = self.events.get(
 					ref_pos=(self.obs[i]['pose'][:3])) if self.challenge != 'commute' else []
@@ -1133,8 +1135,6 @@ class VicoEnv:
 						agent.get_global_xy())
 					if nearest_bicycle is not None:
 						self.obs[i]['accessible_places'].append('bicycle')
-				if self.enable_gt_segmentation:
-					self.obs[i]["gt_seg_entity_idx_to_info"] = self.entity_idx_to_info
 
 			if i in self.robot_agent_id_list:
 				self.obs[i]['robot_t'] = self.genesis_steps * self.config["dt_sim"]

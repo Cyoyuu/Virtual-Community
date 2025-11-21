@@ -127,7 +127,7 @@ class AgentProcess(mp.Process):
 	def log_step_agent_info(self, obs_i, action):
 		obs_printable = {k: v for k, v in obs_i.items() if
 						 not isinstance(v, np.ndarray) and not isinstance(v, datetime)}
-		obs_printable.pop("gt_seg_entity_idx_to_info", None)
+		obs_printable.pop("gt_seg_idxc_to_info", None)
 		step_info = {"curr_time": obs_i["curr_time"],
 					 "obs": obs_printable,
 					 "action": action,  # todo: if ongoing, then log down the last action [which is ongoing]

@@ -365,8 +365,8 @@ class AvatarController():
         head_pos += head_rot @ np.array([0.2, 0.0, 0.0]) # Move the camera forward by a certain distance to prevent it from seeing the avatar.
         
         self.ego_view.set_pose(pos=head_pos, lookat=head_rot@np.array([1,0,0])+head_pos)
-        rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.transform
+        rgb, depth, seg_idxc_arr, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
+        return rgb, depth, seg_idxc_arr, self.ego_view.transform
 
     #################### Motions ####################
 
