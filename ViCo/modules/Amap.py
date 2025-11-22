@@ -632,10 +632,10 @@ class Amap:
         self.grid_map = grid_map.tolist()
         return self.grid_map
     
-    def get_grid_map_image(self, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None):
-        return self.visualize_grid_with_objects(grid=self.obstacle_grid, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords)
+    def get_grid_map_image(self, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None, new_route_coords=None):
+        return self.visualize_grid_with_objects(grid=self.obstacle_grid, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords, new_route_coords=new_route_coords)
 
-    def visualize_grid_with_objects(self, grid, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None,
+    def visualize_grid_with_objects(self, grid, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None, new_route_coords=None,
                                 resolution=1.0, min_x=0, min_y=0):
         """
         Visualize occupancy grid with multiple types of external coordinates.
@@ -677,18 +677,27 @@ class Amap:
         # --- 2️⃣ Circle-like coordinates ---
         if circle_coords is not None:
             for (x, y) in circle_coords:
-                if is_free(x, y):
-                    circle = Circle((x, y), radius=20, edgecolor='red',
-                                    facecolor='red', linewidth=1.5)
-                    ax.add_patch(circle)
+                # if is_free(x, y):
+                circle = Circle((x, y), radius=20, edgecolor='red',
+                                facecolor='red', linewidth=1.5)
+                ax.add_patch(circle)
 
         # --- 1️⃣ Route-like coordinates ---
         if route_coords is not None and len(route_coords) > 0:
+            # self.logger.info(f"getting grid image, route_coords are {route_coords}")
             route_coords = np.array([p for p in route_coords if is_free(p[0], p[1])])
             if len(route_coords) > 0:
                 ax.plot(route_coords[:, 0], route_coords[:, 1], c='blue', linewidth=1.5)
                 ax.scatter(route_coords[:, 0], route_coords[:, 1],
                         s=12, c='blue', edgecolors='k', linewidths=0.3, zorder=3)
+
+        # --- 1️⃣ New Route-like coordinates ---
+        if new_route_coords is not None and len(new_route_coords) > 0:
+            new_route_coords = np.array([p for p in new_route_coords if is_free(p[0], p[1])])
+            if len(new_route_coords) > 0:
+                ax.plot(new_route_coords[:, 0], new_route_coords[:, 1], c='orange', linewidth=1.5)
+                ax.scatter(new_route_coords[:, 0], new_route_coords[:, 1],
+                        s=12, c='orange', edgecolors='k', linewidths=0.3, zorder=3)
 
         # --- 3️⃣ Point-like coordinates ---
         if agent_coords is not None:
@@ -723,12 +732,14 @@ class Amap:
 
         return img
     
-    def refine_route(self, route, curr_time):
+    def refine_route(self, route, curr_time, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None):
         ret=Route()
         for wp in route:
             nwp_loc = self.waypoints[self.get_nearest_waypoints(wp)[0]].location
             ret.append(RouteNode(list(nwp_loc), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
-        return ret
+        if target_coords is not None:
+            ret.append(RouteNode(target_coords[0], 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+        return {"refined_route": ret, "grid_map_image": self.get_grid_map_image(route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords, new_route_coords=[list(wp.location) for wp in ret])}
 
 
 if __name__ == "__main__" :

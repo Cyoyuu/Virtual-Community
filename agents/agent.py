@@ -14,7 +14,6 @@ class Agent:
 		self.storage_path = f"{sim_path}/{name}"
 		self.scratch = json.load(open(f"{self.storage_path}/scratch.json", "r"))
 		self.curr_time: datetime = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
-		self.seed_knowledge = json.load(open(f"{self.storage_path}/seed_knowledge.json", "r"))
 		self.logger = logger
 		self.no_react = no_react
 		self.debug = debug

@@ -187,7 +187,7 @@ class VicoEnv:
 												},
 											   frame_ratio=frame_ratio,
 											   terrain_height_path=os.path.join(gs.utils.get_assets_dir(), self.scene_assets_dir, "height_field.npz"),
-											   third_person_camera_resolution=128 if self.enable_third_person_cameras else None,
+											   third_person_camera_resolution=512 if self.enable_third_person_cameras else None,
 											   enable_collision=enable_collision))
 			no_collision_entities += [self.agents[i].robot.box]
 
@@ -730,7 +730,7 @@ class VicoEnv:
 					app_answer = self.nav_app.get_grid_map_image(circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
 				if action['arg1'] == 'query_refine_route':
-					app_answer = self.nav_app.refine_route(route=action['arg2'], curr_time=self.curr_time)
+					app_answer = self.nav_app.refine_route(route=action['arg4'], curr_time=self.curr_time, circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
 					deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
 				# if interleaved with other speech events, keep only this one, drop others and give it fail
 				for deleted_subject in deleted_subjects:

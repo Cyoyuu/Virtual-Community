@@ -23,13 +23,19 @@ $SelfPose$
 And the coordinate of the destination:
 $DestinationPose$
 
+And all known sentinel poses:
+$KnownSentinelPoses$
+
+Current reference route intersects the danger zone centered:
+$Danger$
+
 ---
 
 ### Guidelines
 
 Generate a **new safe route** from your current position to the target destination:
 The route should be represented by a series of sparse waypoints
-The should not pass any dangerous zones unless necessary.
+The should not pass any dangerous zones unless necessary. You shouldn't get closer to any sentinel than 20m
 The route should always starts from your current position and ends at the destination.
 The waypoints should fulfill the following requirement:
 - The waypoints should be located in transitable zones.
@@ -52,6 +58,14 @@ You also have your numeric position for reference:
 
 And the coordinate of the destination:
 [48.6, -63.5]
+
+And all known sentinel poses:
+[
+    [50, -100]
+]
+
+Current reference route intersects the danger zone centered:
+[50, -100]
 
 (and the aerial view image).
 

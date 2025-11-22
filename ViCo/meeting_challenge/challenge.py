@@ -124,6 +124,7 @@ def main():
     if os.path.exists(result_path):
         result = json.load(open(result_path, 'r'))
         print(f"results exists: {result}")
+        # if result["done"]:
         print(f"it's already done. Skip running simulation")
         end_processes()
         exit(0)
