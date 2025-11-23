@@ -158,4 +158,4 @@ class HuskyController(RobotBaseController):
         direction = quat_to_direction(self.robot.get_quat().cpu().numpy())
         self.ego_view.set_pose(pos=head_pos + direction / 2, lookat=head_pos + direction)
         rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.fov, self.ego_view.transform
+        return rgb, depth, seg, self.ego_view.transform

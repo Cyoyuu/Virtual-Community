@@ -973,7 +973,7 @@ class Go2Controller(RobotBaseController):
 
         self.ego_view.set_pose(pos=head_pos, lookat=facing_direction + head_pos)
         rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.fov, self.ego_view.transform
+        return rgb, depth, seg, self.ego_view.transform
 
     def _step_contact_targets(self):
         frequencies = self.commands[:, 4]

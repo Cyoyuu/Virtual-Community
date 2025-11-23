@@ -117,7 +117,7 @@ class VehicleController():
         camera_pos = camera_rot @ np.array([6.0, 0.0, 4.0]) + camera_pos
         self.ego_view.set_pose(pos=camera_pos, lookat=camera_rot@np.array([1,0,0])+camera_pos)
         rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.fov, self.ego_view.transform
+        return rgb, depth, seg, self.ego_view.transform
     
     def stop(self):
         self.state = VehicleState.IDLE
