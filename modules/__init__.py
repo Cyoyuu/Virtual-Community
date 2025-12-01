@@ -6,3 +6,4 @@ from .avatar import *
 from .vehicle import *
 from .traffic_manager import *
 from .Amap import *
+from .robot import ROBOT_CONTROLLERS, ROBOT_POSITION_OFFSETS, ROBOT_CONFIGS

@@ -8,8 +8,8 @@ import genesis as gs
 
 import pickle
 
-from ViCo.tools.utils import *
-from ViCo.tools.road_annotation.retrieve_nearest_road import point_to_road_distance
+from tools.utils import *
+from tools.road_annotation.retrieve_nearest_road import point_to_road_distance
 
 def euler_to_matrix(euler: np.ndarray, unit: str = 'rad') -> np.ndarray:
     '''Convert Euler angles to rotation matrix.
@@ -88,7 +88,7 @@ class OutdoorObjectContext:
 
     scene_name: str = 'NY'
     assets_dir: str = 'ViCo/objects/outdoor_objects'
-    objects_cfg_dir: str = 'ViCo/assets/scene/v1/NY/objects'
+    objects_cfg_dir: str = 'assets/scene/v1/NY/objects'
     max_objects: Optional[Union[int, Dict[str, int]]] = None
     seed: int = 0
     terrain_height_field_path: str = ''
@@ -118,7 +118,7 @@ class OutdoorObjectContext:
 
         #* Load road info
         if not self.road_info_path:
-            self.road_info_path = f'ViCo/assets/scenes/{self.scene_name}/roads.pkl'
+            self.road_info_path = f'assets/scenes/{self.scene_name}/roads.pkl'
         # assert os.path.exists(self.road_info_path), f'Road info not found at {self.road_info_path}'
         self.road_info = None
         if os.path.exists(self.road_info_path):

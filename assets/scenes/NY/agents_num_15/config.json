@@ -1,6 +1,7 @@
 {
     "sim_name": "NY_agents_num_15",
     "agent_names": [
+<<<<<<< HEAD
         "Alex Jefferson",
         "Bill Gates",
         "Brian Carter",
@@ -16,6 +17,23 @@
         "Sophie Carlsen",
         "Steve Jobs",
         "Steve Johnson"
+=======
+        "Brian Carter",
+        "Elizabeth Mensah",
+        "Eve By J Gonzales",
+        "Freya Novak",
+        "James Thompson",
+        "Kate Novak",
+        "Layla Haddad",
+        "Leonard Park",
+        "Louise Roberts",
+        "Morten Lindqvist",
+        "Naomi Zhang",
+        "Shannon Steves",
+        "Steve Johnson",
+        "Tariq Johnson",
+        "Zara Williams"
+>>>>>>> upstream/master
     ],
     "step": 0,
     "agent_infos": [
@@ -25,6 +43,7 @@
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -35,11 +54,18 @@
                 -176.4918158282429,
                 -168.62045470681733,
                 117.75227154611986,
+=======
+            "outdoor_pose": [
+                -168.96050649809,
+                -172.7948961523109,
+                117.79346936529234,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
             "current_building": "EOS",
+<<<<<<< HEAD
             "current_place": "Alex Jefferson's room at E\u014cS NoMad Apartments",
             "current_vehicle": null
         },
@@ -65,6 +91,9 @@
             ],
             "current_building": "Eventi",
             "current_place": "Bill Gates's room at Kimpton Hotel Eventi",
+=======
+            "current_place": "Brian Carter's room at E\u014cS NoMad Apartments",
+>>>>>>> upstream/master
             "current_vehicle": null
         },
         {
@@ -73,6 +102,7 @@
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -83,12 +113,23 @@
                 108.12438844417848,
                 -231.75085496182845,
                 118.61468966186943,
+=======
+            "outdoor_pose": [
+                14.009457304278493,
+                -235.96821240653165,
+                119.05258098535603,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
+<<<<<<< HEAD
             "current_building": "Tower 31",
             "current_place": "Brian Carter's room at Furnished Quarters",
+=======
+            "current_building": "The Grand Hotel",
+            "current_place": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments",
+>>>>>>> upstream/master
             "current_vehicle": null
         },
         {
@@ -97,6 +138,7 @@
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -107,10 +149,17 @@
                 23.950507721909005,
                 -242.72840589937996,
                 119.04602688270234,
+=======
+            "outdoor_pose": [
+                230.26574005217148,
+                -237.9793813322237,
+                118.66696406338984,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
+<<<<<<< HEAD
             "current_building": "The Grand Hotel",
             "current_place": "Brycer Rodriguez's room at MACY 31 Self Serviced Apartments",
             "current_vehicle": null
@@ -137,6 +186,10 @@
             ],
             "current_building": "The Magellan",
             "current_place": "Elizabeth Mensah's room at The Magellan",
+=======
+            "current_building": "315 5th Avenue",
+            "current_place": "Eve By J Gonzales's room at Living Quest Real Estate",
+>>>>>>> upstream/master
             "current_vehicle": null
         },
         {
@@ -145,6 +198,7 @@
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -155,20 +209,36 @@
                 41.90026986984471,
                 -254.01178537908862,
                 118.88674997440768,
+=======
+            "outdoor_pose": [
+                -181.95981732923968,
+                -255.84941413137122,
+                118.26496892925451,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
+<<<<<<< HEAD
             "current_building": "Hyatt Herald Square New York",
             "current_place": "Feifei Li's room at Hyatt Herald Square New York",
             "current_vehicle": null
         },
         {
             "cash": 1000,
+=======
+            "current_building": "Eventi",
+            "current_place": "Freya Novak's room at Kimpton Hotel Eventi",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+>>>>>>> upstream/master
             "held_objects": [
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -299,11 +369,18 @@
                 96.88933644177155,
                 -51.51054083556099,
                 120.0164409934345,
+=======
+            "outdoor_pose": [
+                109.31126197377,
+                -58.38838382343218,
+                119.82444221138945,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
             "current_building": "The Magellan",
+<<<<<<< HEAD
             "current_place": "Roth Miller's room at The Magellan",
             "current_vehicle": null
         },
@@ -353,6 +430,9 @@
             ],
             "current_building": "Hotel Wolcott",
             "current_place": "Steve Jobs's room at Hotel Wolcott",
+=======
+            "current_place": "James Thompson's room at The Magellan",
+>>>>>>> upstream/master
             "current_vehicle": null
         },
         {
@@ -361,6 +441,7 @@
                 null,
                 null
             ],
+<<<<<<< HEAD
             "physical_health": 1,
             "mental_health": 1,
             "condition": {
@@ -371,12 +452,185 @@
                 -161.92306222848973,
                 -111.4770923652881,
                 117.8160569382824,
+=======
+            "outdoor_pose": [
+                42.37496311702582,
+                -253.1369838578248,
+                118.88814890783081,
+>>>>>>> upstream/master
                 0.0,
                 0.0,
                 0.0
             ],
+<<<<<<< HEAD
             "current_building": "EOS",
             "current_place": "Steve Johnson's room at E\u014cS NoMad Apartments",
+=======
+            "current_building": "Hyatt Herald Square New York",
+            "current_place": "Kate Novak's room at Hyatt Herald Square New York",
+            "current_vehicle": null
+        },
+        {
+            "cash": 850,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                44.25313397504115,
+                -112.1392117909442,
+                119.63351850025187,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Stanford",
+            "current_place": "Layla Haddad's room at Hotel Stanford",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -229.51049417604548,
+                -139.16188170754873,
+                117.33036561812085,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "132 West 31st Street",
+            "current_place": "Leonard Park's room at 31 Penn Plaza",
+            "current_vehicle": null
+        },
+        {
+            "cash": 550,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                136.88900247950244,
+                -247.9466596365536,
+                118.39127244366081,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Tower 31",
+            "current_place": "Louise Roberts's room at Furnished Quarters",
+            "current_vehicle": null
+        },
+        {
+            "cash": 950,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                95.15931979906756,
+                -230.35092249697004,
+                118.83871445473088,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Life Hotel",
+            "current_place": "Morten Lindqvist's room at Life Hotel New York",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                129.44285843749262,
+                -160.43804665246816,
+                119.685773737778,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Hotel @ 5th Avenue",
+            "current_place": "Naomi Zhang's room at The Hotel at Fifth Avenue",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -46.28102900818591,
+                -97.05449722920139,
+                118.78332847980465,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "888 6th Avenue",
+            "current_place": "Shannon Steves's room at National at 888 6th Avenue",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -132.6891191692271,
+                26.531721518919817,
+                118.16064073420378,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Manhattan Mall",
+            "current_place": "Steve Johnson's room at Hadson Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 850,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -262.02560600807885,
+                -113.6234980996184,
+                117.03410003296699,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Courtyard Marriot",
+            "current_place": "Tariq Johnson's room at Courtyard New York Manhattan/Chelsea",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -35.37998865904402,
+                -247.71780723442689,
+                118.79557621255657,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "1235 Broadway",
+            "current_place": "Zara Williams's room at Justin Management",
+>>>>>>> upstream/master
             "current_vehicle": null
         }
     ],
@@ -392,6 +646,7 @@
             0.0
         ],
         [
+<<<<<<< HEAD
             831.1549682617188,
             772.2764205932617,
             -16,
@@ -408,6 +663,8 @@
             0.0
         ],
         [
+=======
+>>>>>>> upstream/master
             1028.208975315094,
             771.2782287597656,
             -8,
@@ -416,6 +673,25 @@
             0.0
         ],
         [
+<<<<<<< HEAD
+=======
+            1250.5939025878906,
+            748.8459930419922,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            831.1549682617188,
+            772.2764205932617,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+>>>>>>> upstream/master
             1111.491611480713,
             958.9692373275757,
             -8,
@@ -432,6 +708,7 @@
             0.0
         ],
         [
+<<<<<<< HEAD
             1036.2706203460693,
             923.6691150665283,
             -12,
@@ -440,6 +717,8 @@
             0.0
         ],
         [
+=======
+>>>>>>> upstream/master
             1057.636833190918,
             898.8839225769043,
             -8,
@@ -448,22 +727,41 @@
             0.0
         ],
         [
+<<<<<<< HEAD
             804.9608306884766,
             946.3306083679199,
-            -8,
-            0.0,
-            0.0,
-            0.0
-        ],
-        [
-            856.461296081543,
-            847.310863494873,
+=======
+            778.9717559814453,
+            893.3489532470703,
             -12,
             0.0,
             0.0,
             0.0
         ],
         [
+            1125.5573425292969,
+            774.1234664916992,
+>>>>>>> upstream/master
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+<<<<<<< HEAD
+            856.461296081543,
+            847.310863494873,
+=======
+            1097.0518035888672,
+            786.0063781738281,
+>>>>>>> upstream/master
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+<<<<<<< HEAD
             804.9608306884766,
             946.3306083679199,
             -12,
@@ -490,18 +788,54 @@
         [
             1121.6408500671387,
             719.4098663330078,
+=======
+            1136.844165802002,
+            852.2810897827148,
+>>>>>>> upstream/master
             -8,
             0.0,
             0.0,
             0.0
         ],
         [
+<<<<<<< HEAD
             856.461296081543,
             847.310863494873,
+=======
+            965.2362632751465,
+            886.0820426940918,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.0142936706543,
+            986.3369770050049,
+>>>>>>> upstream/master
             -16,
             0.0,
             0.0,
             0.0
+<<<<<<< HEAD
+=======
+        ],
+        [
+            743.3408966064453,
+            897.8083534240723,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            943.8778076171875,
+            769.8535232543945,
+            -12,
+            0.0,
+            0.0,
+            0.0
+>>>>>>> upstream/master
         ]
     ],
     "locator_colors": [
@@ -601,6 +935,7 @@
     "num_agents": 15,
     "sec_per_step": 1,
     "agent_skins": [
+<<<<<<< HEAD
         "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
         "ViCo/avatars/models/celebrity_Bill_Gates.glb",
         "ViCo/avatars/models/mixamo_Brian_Carter.glb",
@@ -616,11 +951,28 @@
         "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb",
         "ViCo/avatars/models/celebrity_Steve_Jobs.glb",
         "ViCo/avatars/models/mixamo_Steve_Johnson.glb"
+=======
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/custom_Freya_Novak.glb",
+        "ViCo/avatars/models/mixamo_James_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/custom_Layla_Haddad.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/custom_Morten_Lindqvist.glb",
+        "ViCo/avatars/models/custom_Naomi_Zhang.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/custom_Tariq_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+>>>>>>> upstream/master
     ],
     "stores": {
         "Beverages and DM Store": {
             "building": "Macy's",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-DM.json",
+            "scene": "indoor_scenes/store-Beverages-DM.json",
             "type": "store-Beverages-DM",
             "goods": [
                 {
@@ -636,8 +988,12 @@
             ]
         },
         "Beverages and Snacks Store": {
+<<<<<<< HEAD
             "building": "45W West 29th Street #201",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Beverages-Snacks.json",
+=======
+            "building": "Cambria Hotel & Suites",
+>>>>>>> upstream/master
+            "scene": "indoor_scenes/store-Beverages-Snacks.json",
             "type": "store-Beverages-Snacks",
             "goods": [
                 {
@@ -653,8 +1009,12 @@
             ]
         },
         "Fresh and Beverages Store": {
+<<<<<<< HEAD
             "building": "47 West 30th Street",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Beverages.json",
+=======
+            "building": "1235 Broadway",
+>>>>>>> upstream/master
+            "scene": "indoor_scenes/store-Fresh-Beverages.json",
             "type": "store-Fresh-Beverages",
             "goods": [
                 {
@@ -670,8 +1030,12 @@
             ]
         },
         "Fresh and DM Store": {
+<<<<<<< HEAD
             "building": "25 West 31st Street 4th floor",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+=======
+            "building": "31 West 32nd Street",
+>>>>>>> upstream/master
+            "scene": "indoor_scenes/store-Fresh-DM.json",
             "type": "store-Fresh-DM",
             "goods": [
                 {
@@ -687,8 +1051,12 @@
             ]
         },
         "Fresh and Snacks Store": {
+<<<<<<< HEAD
             "building": "315 5th Avenue",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+=======
+            "building": "330 5th Avenue",
+>>>>>>> upstream/master
+            "scene": "indoor_scenes/store-Fresh-Snacks.json",
             "type": "store-Fresh-Snacks",
             "goods": [
                 {
@@ -704,8 +1072,12 @@
             ]
         },
         "Snacks and DM Store": {
+<<<<<<< HEAD
             "building": "1261 Flushing Avenue",
-            "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+=======
+            "building": "39 West 32nd Street #1101",
+>>>>>>> upstream/master
+            "scene": "indoor_scenes/store-Snacks-DM.json",
             "type": "store-Snacks-DM",
             "goods": [
                 {
@@ -721,6 +1093,7 @@
             ]
         }
     },
+<<<<<<< HEAD
     "groups": {
         "Tech Innovators Club": {
             "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
@@ -765,5 +1138,113 @@
             ],
             "daily_activity": "studying and sharing knowledge from 15:00 to 16:00"
         }
+    },
+    "robot_agent_id_list": [
+        0,
+        1,
+        2
+    ],
+    "robot_types": [
+        "drone",
+        "husky",
+        "google_robot"
+    ],
+    "dt_control": [
+        0.02,
+        0.02,
+        0.02,
+=======
+    "dt_control": [
+        1.0,
+        1.0,
+        1.0,
+>>>>>>> upstream/master
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+<<<<<<< HEAD
+    "demo_camera_pos": [
+        110.12438844417848,
+        -229.75085496182845,
+        121.61468966186943
+    ],
+    "demo_camera_lookat": [
+        108.12438844417848,
+        -231.75085496182845,
+        120.61468966186943
+    ]
+=======
+    "groups": {
+        "Culinary Creators": {
+            "description": "A group of food enthusiasts and culinary experts who gather to share recipes and cooking techniques.",
+            "place": "My Cooking Party",
+            "members": [
+                "Morten Lindqvist",
+                "Eve By J Gonzales",
+                "Freya Novak",
+                "Brian Carter"
+            ],
+            "daily_activity": "experimenting with new recipes from 17:00 to 19:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech-savvy individuals who collaborate on innovative projects and share knowledge about the latest technology trends.",
+            "place": "Idea Nuova Inc",
+            "members": [
+                "Leonard Park",
+                "Elizabeth Mensah",
+                "Zara Williams",
+                "Shannon Steves"
+            ],
+            "daily_activity": "discussing tech trends from 15:00 to 17:00"
+        },
+        "Art and Culture Enthusiasts": {
+            "description": "A group of individuals passionate about art, culture, and history, who explore museums and galleries together.",
+            "place": "Creative Art Works",
+            "members": [
+                "Kate Novak",
+                "Steve Johnson",
+                "Louise Roberts",
+                "Naomi Zhang"
+            ],
+            "daily_activity": "visiting art galleries from 16:00 to 18:00"
+        },
+        "Music and Entertainment Crew": {
+            "description": "A group of music lovers and entertainers who enjoy creating and performing music together.",
+            "place": "Maru Karaoke Lounge",
+            "members": [
+                "Tariq Johnson",
+                "Layla Haddad",
+                "James Thompson"
+            ],
+            "daily_activity": "jamming and performing music from 18:00 to 20:00"
+        }
     }
+>>>>>>> upstream/master
 }

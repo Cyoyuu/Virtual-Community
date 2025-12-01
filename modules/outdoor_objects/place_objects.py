@@ -8,7 +8,7 @@ import genesis as gs
 
 from .context import OutdoorObjectContext
 from .context import compose_euler
-from ViCo.tools.utils import *
+from tools.utils import *
 
 def place_mesh(
 	env,

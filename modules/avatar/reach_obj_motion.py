@@ -2,7 +2,7 @@ import numpy as np
 from .base_motion_module import BaseMotionModule
 from .utils import AvatarState, ActionStatus
 from scipy.spatial.transform import Rotation as R, Slerp
-from ViCo.modules.avatar.utils import Mixamo_global_processing
+from modules.avatar.utils import Mixamo_global_processing
 import genesis.utils.geom as geom_utils
 import genesis as gs
 

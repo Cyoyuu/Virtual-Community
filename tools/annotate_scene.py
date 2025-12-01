@@ -26,8 +26,8 @@ from genesis.options import CoacdOptions
 
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
-from ViCo.tools.constants import google_map_type_to_coarse, google_map_coarse_to_types, coarse_types_priority
-from ViCo.tools.utils import *
+from tools.constants import google_map_type_to_coarse, google_map_coarse_to_types, coarse_types_priority, ASSETS_PATH
+from tools.utils import *
 
 def flatten(places):
 	# Flatten the list of lists of dictionaries to a list of dictionaries
@@ -161,10 +161,10 @@ def search_original_places(args, scene_range_meta, api_key):
 	if len(j) == 0:
 		print("No places found. It's likely your API key is invalid or your API hasen't enabled Places API and Places (New) API.")
 		exit()
-	save_to_json(j, f'ViCo/assets/scenes/{args.scene}/raw/places_original.json')
+	save_to_json(j, f'assets/scenes/{args.scene}/raw/places_original.json')
 	#convert all lla positions to enu
-	with open(f'ViCo/assets/scenes/{args.scene}/raw/places_original.json') as f:
-		with open(f'ViCo/assets/scenes/{args.scene}/raw/places_enu_original.json', 'w') as g:
+	with open(f'assets/scenes/{args.scene}/raw/places_original.json') as f:
+		with open(f'assets/scenes/{args.scene}/raw/places_enu_original.json', 'w') as g:
 			j = f.readlines()
 			# for each line, scan if it is in a format "lat": ... or "lng": ...
 			temp_lat, temp_lng = 0, 0
@@ -192,7 +192,7 @@ def search_original_places(args, scene_range_meta, api_key):
 def filter_places(args):
 	filter_types = ["route", "locality", "political", "neighborhood"]
 	filter_names = ["animal"]
-	with open(f"ViCo/assets/scenes/{args.scene}/raw/places_enu_original.json", 'r') as file:
+	with open(f"assets/scenes/{args.scene}/raw/places_enu_original.json", 'r') as file:
 		json_text = file.read()
 	json_text_cleaned = re.sub(r',\s*([}\]])', r'\1', json_text) # remove trailing commas before closing braces or brackets
 	places = json.loads(json_text_cleaned)
@@ -203,18 +203,18 @@ def filter_places(args):
 				filtered_places.append(place)
 
 	print("# filtered places:", len(filtered_places))
-	with open(f"ViCo/assets/scenes/{args.scene}/raw/places_enu.json", 'w') as json_file:
+	with open(f"assets/scenes/{args.scene}/raw/places_enu.json", 'w') as json_file:
 		json.dump(filtered_places, json_file, indent=4)
 	# if args.remove_temp:
-	#     os.remove(f"ViCo/assets/scenes/{args.scene}/raw/places_enu_original.json")
+	#     os.remove(f"assets/scenes/{args.scene}/raw/places_enu_original.json")
 
 def save_metadata(args):
-	with open(f"ViCo/assets/scenes/{args.scene}/raw/places_enu.json", 'r') as file:
+	with open(f"assets/scenes/{args.scene}/raw/places_enu.json", 'r') as file:
 		json_text = file.read()
 	json_text_cleaned = re.sub(r',\s*([}\]])', r'\1', json_text) # remove trailing commas before closing braces or brackets
 	places = json.loads(json_text_cleaned)
-	if os.path.exists("ViCo/env_places_metadata.json"):
-		with open("ViCo/env_places_metadata.json", 'r') as file:
+	if os.path.exists("env_places_metadata.json"):
+		with open("env_places_metadata.json", 'r') as file:
 			metadata = json.load(file)
 	else:
 		metadata = {}
@@ -239,10 +239,10 @@ def save_metadata(args):
 			metadata[place["name"]]["user_ratings_total"] = place["user_ratings_total"]
 		if "vicinity" in place.keys():
 			metadata[place["name"]]["vicinity"] = place["vicinity"]
-	with open(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json", 'w') as json_file:
+	with open(f"assets/scenes/{args.scene}/raw/places_full.json", 'w') as json_file:
 		json.dump(metadata, json_file, indent=4)
 	if args.remove_temp:
-		os.remove(f"ViCo/assets/scenes/{args.scene}/raw/places_enu.json")
+		os.remove(f"assets/scenes/{args.scene}/raw/places_enu.json")
 
 def bbox3d_to_bbox2d(bbox3d):
 	x_coords = [point[0] for point in bbox3d]
@@ -329,7 +329,7 @@ def overlay_locations_desp_on_image():
 			indicator_text = place_indicators[(building, place_name)]
 			ctype = place["coarse_type"]
 			color = type_to_color[ctype]
-			draw.text((pixel_x, pixel_y + i * 14), indicator_text, font=ImageFont.truetype("ViCo/assets/arial.ttf", 20), fill=color)
+			draw.text((pixel_x, pixel_y + i * 14), indicator_text, font=ImageFont.truetype("assets/arial.ttf", 20), fill=color)
 	world_filter_distance = args.filter_distance_square
 	corners_2d_pixel = []
 	for corners_2d_world in [[-world_filter_distance, world_filter_distance], [world_filter_distance, world_filter_distance], [world_filter_distance, -world_filter_distance], [-world_filter_distance, -world_filter_distance], [-world_filter_distance, world_filter_distance]]:
@@ -339,7 +339,7 @@ def overlay_locations_desp_on_image():
 	draw.line(corners_2d_pixel, fill="red", width=3)
 	legend_image = generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_letter)
 	annotated_image = stitch_images_horizontally(annotated_image, legend_image)
-	annotated_image.save(f"ViCo/assets/scenes/{args.scene}/global_annotated.png")
+	annotated_image.save(f"assets/scenes/{args.scene}/global_annotated.png")
 
 def generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_letter):
 	sorted_ctypes = sorted(places_by_coarse_type.keys())
@@ -785,7 +785,7 @@ def get_building_to_places():
 	print("Starts filtering buildings...")
 	accessible_buildings, inaccessible_buildings = accessibility_filtering(building_metadata)
 	print("Finished filtering buildings.")
-	json.dump(inaccessible_buildings, open(f"ViCo/assets/scenes/{args.scene}/raw/inaccessible_buildings.json", 'w'), indent=4)
+	json.dump(inaccessible_buildings, open(f"assets/scenes/{args.scene}/raw/inaccessible_buildings.json", 'w'), indent=4)
 	# print("Starts choosing stores...")
 	# updated_buildings = choose_6_stores(copy.deepcopy(accessible_buildings))
 	# print("Finished choosing stores.")
@@ -797,18 +797,18 @@ def get_building_to_places():
 	print("Starts filtering places...")
 	place_metadata = probabilistic_place_filtering(place_metadata)
 	print("Finished filtering places.")
-	json.dump(place_metadata, open(f"ViCo/assets/scenes/{args.scene}/place_metadata.json", 'w'), indent=4)
+	json.dump(place_metadata, open(f"assets/scenes/{args.scene}/place_metadata.json", 'w'), indent=4)
 	building_metadata = update_buildings(buildings_with_capped_places, place_metadata)
-	json.dump(building_metadata, open(f"ViCo/assets/scenes/{args.scene}/building_metadata.json", 'w'), indent=4)
-	json.dump(building_to_places, open(f"ViCo/assets/scenes/{args.scene}/raw/building_to_places.json", 'w'), indent=4)
-	json.dump(mismatched, open(f"ViCo/assets/scenes/{args.scene}/raw/mismatched.json", 'w'), indent=4)
+	json.dump(building_metadata, open(f"assets/scenes/{args.scene}/building_metadata.json", 'w'), indent=4)
+	json.dump(building_to_places, open(f"assets/scenes/{args.scene}/raw/building_to_places.json", 'w'), indent=4)
+	json.dump(mismatched, open(f"assets/scenes/{args.scene}/raw/mismatched.json", 'w'), indent=4)
 	# sort type_stats by key
 	type_stats = dict(sorted(type_stats.items(), key=lambda item: item[0]))
-	json.dump(type_stats, open(f"ViCo/assets/scenes/{args.scene}/raw/type_stats.json", 'w'), indent=4)
-	json.dump(generate_new_type_stats(building_metadata), open(f"ViCo/assets/scenes/{args.scene}/raw/type_stats_accessible.json", 'w'))
+	json.dump(type_stats, open(f"assets/scenes/{args.scene}/raw/type_stats.json", 'w'), indent=4)
+	json.dump(generate_new_type_stats(building_metadata), open(f"assets/scenes/{args.scene}/raw/type_stats_accessible.json", 'w'))
 
 	# if args.align_legacy:
-	# 	legacy_place_path = f"ViCo/assets/scenes/{args.scene}/legacy/place_metadata.json"
+	# 	legacy_place_path = f"assets/scenes/{args.scene}/legacy/place_metadata.json"
 	# 	if os.path.exists(legacy_place_path):
 	# 		legacy_place_metadata = json.load(open(legacy_place_path))
 	# 	else:
@@ -825,8 +825,8 @@ def get_building_to_places():
 	# 			place_metadata[place] = {key: place_metadata[place][key] for key in ["building", "coarse_type", "fine_types", "location", "scene"]}
 	# 	building_metadata = update_buildings(accessible_buildings, place_metadata)
 	# 	place_metadata = update_place_metadata(place_metadata, building_metadata)
-	# 	json.dump(place_metadata, open(f"ViCo/assets/scenes/{args.scene}/place_metadata.json", 'w'), indent=4)
-	# 	json.dump(building_metadata, open(f"ViCo/assets/scenes/{args.scene}/building_metadata.json", 'w'), indent=4)
+	# 	json.dump(place_metadata, open(f"assets/scenes/{args.scene}/place_metadata.json", 'w'), indent=4)
+	# 	json.dump(building_metadata, open(f"assets/scenes/{args.scene}/building_metadata.json", 'w'), indent=4)
 	# 	print("Aligned to legacy metadata.")
 
 	return place_metadata, building_metadata, inaccessible_buildings, building_to_places
@@ -975,24 +975,24 @@ if __name__ == '__main__':
 	scene_assets_dir = f"ViCo/scene/v1/{args.scene}"
 
 	if not args.only_update_bbox:
-		coarse_indoor_scene = json.load(open("ViCo/modules/indoor_scenes/coarse_type_to_indoor_scene.json", 'r'))
+		coarse_indoor_scene = json.load(open(os.path.join(ASSETS_PATH, "coarse_type_to_indoor_scene.json"), 'r'))
 		# Check necessary files are existed
-		if os.path.exists(f"ViCo/assets/scenes/{args.scene}/raw/building_to_osm_tags.json"):
+		if os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "building_to_osm_tags.json")):
 			print("Necessary file check passed: building_to_osm_tags.json")
 		else:
-			print(f"Necessary file not exist: ViCo/assets/scenes/{args.scene}/raw/building_to_osm_tags.json")
+			print(f"Necessary file not exist: {os.path.join(ASSETS_PATH, 'scenes', args.scene, 'raw', 'building_to_osm_tags.json')}")
 			exit()
 
-		if os.path.exists(f"ViCo/assets/scenes/{args.scene}/raw/center.txt"):
+		if os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "center.txt")):
 			print("Necessary file check passed: center.txt")
 		else:
-			print(f"Necessary file not exist: ViCo/assets/scenes/{args.scene}/raw/center.txt")
+			print(f"Necessary file not exist: {os.path.join(ASSETS_PATH, 'scenes', args.scene, 'raw', 'center.txt')}")
 			exit()
 
-		# if os.path.exists(f"ViCo/assets/scenes/{args.scene}/orthographic_scale_800.png"):
+		# if os.path.exists(f"assets/scenes/{args.scene}/orthographic_scale_800.png"):
 		#     print("Necessary file check passed: orthographic_scale_800.png")
 		# else:
-		#     print(f "Necessary file not exist: ViCo/assets/scenes/{args.scene}/orthographic_scale_800.png")
+		#     print(f "Necessary file not exist: assets/scenes/{args.scene}/orthographic_scale_800.png")
 		#     exit()
 
 		# Also check height field, despite not used for annotating the scene (used in character generation)
@@ -1013,7 +1013,7 @@ if __name__ == '__main__':
 		# Load height field as LinearNDInterpolatorExt
 		height_field = load_height_field(height_field_path)
 
-		if not os.path.exists(os.path.join(f"ViCo/assets/scenes/{args.scene}/global.png")):
+		if not os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "global.png")):
 			print(f"start loading scenes and take a global image of the scene from the perspective camera in Genesis")
 			if not gs._initialized:
 				gs.init(seed=0, precision="32", logging_level="info", backend=gs.gpu)
@@ -1072,39 +1072,39 @@ if __name__ == '__main__':
 			gs_scene.reset()
 
 			global_rgb, _, _, _ = global_cam.render()
-			Image.fromarray(global_rgb).save(os.path.join(f"ViCo/assets/scenes/{args.scene}/global.png"))
-			# Image.fromarray(global_depth).save(os.path.join(f"ViCo/assets/scenes/{args.scene}/global_depth.png"))
+			Image.fromarray(global_rgb).save(os.path.join(ASSETS_PATH, "scenes", args.scene, "global.png"))
+			# Image.fromarray(global_depth).save(os.path.join(f"assets/scenes/{args.scene}/global_depth.png"))
 			print("Saved global image to asset folder.")
 
 			global_cam_parameters = {}
 			global_cam_parameters["camera_res"] = global_cam.res
 			global_cam_parameters["camera_fov"] = global_cam.fov
 			global_cam_parameters["camera_extrinsics"] = global_cam.extrinsics.tolist()
-			with open(f"ViCo/assets/scenes/{args.scene}/global_cam_parameters.json", "w") as f:
+			with open(os.path.join(ASSETS_PATH, "scenes", args.scene, "global_cam_parameters.json"), "w") as f:
 				json.dump(global_cam_parameters, f)
 			print("Saved global camera parameters to asset folder")
 		else:
 			print("Exists: global.png, skipping...")
-			global_cam_parameters = json.load(open(f"ViCo/assets/scenes/{args.scene}/global_cam_parameters.json", 'r'))
+			global_cam_parameters = json.load(open(os.path.join(ASSETS_PATH, "scenes", args.scene, "global_cam_parameters.json"), 'r'))
 
 		# Search places
-		if not args.search_original_places and os.path.exists(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json"):
+		if not args.search_original_places and os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "places_full.json")):
 			print("Exists: places_full.json, skipping...")
 			# # Back up first and only filtering
-			# shutil.copy2(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json", f"ViCo/assets/scenes/{args.scene}/raw/places_full_old.json")
-			# with open(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json", 'r') as file:
+			# shutil.copy2(f"assets/scenes/{args.scene}/raw/places_full.json", f"assets/scenes/{args.scene}/raw/places_full_old.json")
+			# with open(f"assets/scenes/{args.scene}/raw/places_full.json", 'r') as file:
 			#     places_dict = json.load(file)
 			#     filtered_places_dict = {}
 			#     for place in places_dict:
 			#         if abs(places_dict[place]["location"][0]) <= args.filter_distance_square and abs(places_dict[place]["location"][1]) <= args.filter_distance_square:
 			#             filtered_places_dict[place] = places_dict[place]
-			# with open(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json", 'w') as file:
+			# with open(f"assets/scenes/{args.scene}/raw/places_full.json", 'w') as file:
 			#     json.dump(filtered_places_dict, file, indent=4)
 		else:
-			if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/raw/places_enu_original.json") or args.search_original_places:
+			if not os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "places_enu_original.json")) or args.search_original_places:
 				print("Start searching places...")
 				scene_range_meta = {}
-				with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt') as f:
+				with open(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "center.txt")) as f:
 					scene_range_meta["lat"], scene_range_meta["lng"] = map(float, f.read().strip().split(' '))
 					scene_range_meta["rad"] = 400.0
 				scene_range_meta["rad"] = scene_range_meta["rad"] * math.sqrt(2)
@@ -1139,11 +1139,11 @@ if __name__ == '__main__':
 							this_bounding_box = irregular_to_regular_bbox(this_bounding_box)
 						this_bounding_box = bbox_corners_to_center_repr(this_bounding_box)
 						all_loaded_building_bboxes.append(this_bounding_box)
-			json.dump(all_loaded_building_bboxes, open(f"ViCo/assets/scenes/{args.scene}/all_loaded_building_bboxes.json", 'w'), separators=(",", ":"))
+			json.dump(all_loaded_building_bboxes, open(os.path.join(ASSETS_PATH, "scenes", args.scene, "all_loaded_building_bboxes.json"), 'w'), separators=(",", ":"))
 			print("Generated bounding boxes of all loaded buildings.")
 
 			# Compute the obstacle grid and its parameters
-			if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/obstacle_grid.pkl"):
+			if not os.path.exists(os.path.join(ASSETS_PATH, "scenes", args.scene, "obstacle_grid.pkl")):
 				obstacle_grid_parameters = {
 					"bbox_extension": 1.0,
 					"resolution": 0.5,
@@ -1170,21 +1170,21 @@ if __name__ == '__main__':
 					"grid": obstacle_grid,
 					"parameters": obstacle_grid_parameters
 				}
-				pickle.dump(obstacle_grid_save, open(f"ViCo/assets/scenes/{args.scene}/obstacle_grid.pkl", 'wb'))
+				pickle.dump(obstacle_grid_save, open(os.path.join(ASSETS_PATH, "scenes", args.scene, "obstacle_grid.pkl"), 'wb'))
 			else:
 				print("Obstacle grid already exists, skipping generation.")
-				obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/obstacle_grid.pkl", 'rb'))
+				obstacle_grid_save = pickle.load(open(os.path.join(ASSETS_PATH, "scenes", args.scene, "obstacle_grid.pkl"), 'rb'))
 				obstacle_grid = obstacle_grid_save["grid"]
 				obstacle_grid_parameters = obstacle_grid_save["parameters"]
 				print("Loaded obstacle grid.")
 		
-			image_path = f"ViCo/assets/scenes/{args.scene}/global.png"
+			image_path = os.path.join(ASSETS_PATH, "scenes", args.scene, "global.png")
 			if not os.path.exists(image_path):
 				white_global_image = Image.new("RGB", (2000, 2000), "white")
 				white_global_image.save(image_path)
-			with open(f"ViCo/assets/scenes/{args.scene}/raw/places_full.json", 'r') as file:
+			with open(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "places_full.json"), 'r') as file:
 				places_dict = json.load(file)
-			with open(f"ViCo/assets/scenes/{args.scene}/raw/building_to_osm_tags.json", 'r') as file:
+			with open(os.path.join(ASSETS_PATH, "scenes", args.scene, "raw", "building_to_osm_tags.json"), 'r') as file:
 				building_to_osm_tags = json.load(file)
 			place_metadata, building_metadata, inaccessible_buildings, building_to_places = get_building_to_places()
 			# overlay_locations_desp_on_image()
@@ -1196,8 +1196,8 @@ if __name__ == '__main__':
 
 		# Check alignment between place metadata and building metadata
 		metadata_alignment_error_flag = False
-		place_metadata = json.load(open(f"ViCo/assets/scenes/{args.scene}/place_metadata.json", 'r'))
-		building_metadata = json.load(open(f"ViCo/assets/scenes/{args.scene}/building_metadata.json", 'r'))
+		place_metadata = json.load(open(os.path.join(ASSETS_PATH, "scenes", args.scene, "place_metadata.json"), 'r'))
+		building_metadata = json.load(open(os.path.join(ASSETS_PATH, "scenes", args.scene, "building_metadata.json"), 'r'))
 		# first check if every place in place_metadata is in building_metadata
 		for place in place_metadata:
 			if place_metadata[place]["building"] not in building_metadata:
@@ -1222,10 +1222,10 @@ if __name__ == '__main__':
 		else:
 			print("Scene metadata alignment success!")
 	
-	# if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/building_metadata.json"):
+	# if not os.path.exists(f"assets/scenes/{args.scene}/building_metadata.json"):
 	# 	print(f"Building metadata not found for scene {args.scene}.")
 	# 	exit()
-	# building_metadata = json.load(open(f"ViCo/assets/scenes/{args.scene}/building_metadata.json", 'r'))
+	# building_metadata = json.load(open(os.path.join(ASSETS_PATH, "scenes", args.scene, "building_metadata.json"), 'r'))
 	# scene_assets_dir = f"ViCo/scene/v1/{args.scene}"
 	# for building in building_metadata:
 	# 	# If encounter 'ValueError: string is not a file' error, change the '/' in the glb name after 'buildings_' to '_' should generally fix the problem.
@@ -1239,5 +1239,5 @@ if __name__ == '__main__':
 	# 		mesh.apply_transform(rotation_matrix)
 	# 		obb = mesh.bounding_box_oriented
 	# 		building_metadata[building]["bounding_box"] = obb.vertices.tolist()
-	# json.dump(building_metadata, open(f"ViCo/assets/scenes/{args.scene}/building_metadata.json", 'w'), indent=4)
+	# json.dump(building_metadata, open(os.path.join(ASSETS_PATH, "scenes", args.scene, "building_metadata.json"), 'w'), indent=4)
 	# print("Updated bounding boxes in building metadata.")

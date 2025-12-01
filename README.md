@@ -23,11 +23,12 @@
     <a href="#">Bao Chi Dang</a>,
     <a href="#">Zhehuan Chen</a>,
     <a href="#">Daksha Ladia</a>,
+    <a href="#">Quang Vinh Dang</a>,
     <a href="#">Jiageng Liu</a>,
     <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
   </p>
   <p align="center">
-    <a href="https://virtual-community-ai.github.io/paper.pdf">
+    <a href="https://arxiv.org/pdf/2508.14893">
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://virtual-community-ai.github.io/' style='padding-left: 0.5rem;'>
@@ -38,7 +39,7 @@
 Virtual Community is an open-world platform that simulates human-robot coexistence in shared communities, featuring a physics-based multi-agent simulator and real-world 3D scenes to study embodied social intelligence at scale.
 
 <p align="center">
-    <img src="ViCo/assets/imgs/teaser.png" alt="Logo" width="190%">
+    <img src="assets/imgs/teaser.png" alt="Logo" width="190%">
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -91,18 +92,19 @@ Assets include:
 - `avatars` folder: contains the human avatars' skin and motion.
 - `cars` folder: contains the vehicle models including car, bus, bike, etc.
 
-If you want to use indoor scenes from GRUTopia, please follow their instructions [here](https://github.com/OpenRobotLab/GRUtopia?tab=readme-ov-file#%EF%B8%8F-assets) to download the commercial_scenes.zip, and unzip it under `Genesis/genesis/assets/ViCo/`.
+If you want to use indoor scenes from GRUTopia (otherwise use `--no_load_indoor_scene` flag), please follow their instructions [here](https://github.com/OpenRobotLab/GRUtopia?tab=readme-ov-file#%EF%B8%8F-assets) to download the commercial_scenes.zip, and unzip it under `Genesis/genesis/assets/ViCo/scene/`.
 
 After this step, the directory structure should be:
 
 ```
 Genesis/genesis/assets/ViCo/
 ├── scene/
+├──── v1/
+├──── commercial_scenes/ (optional)
 ├── robots/
 ├── objects/
 ├── avatars/
-├── cars/
-└── commercial_scenes/ (optional)
+└── cars/
 ```
 
 ### Run the Simulation
@@ -173,9 +175,13 @@ With many more not listed here, we are grateful for the contributions of the ope
 ## Citation
 If you find this work useful, please consider citing:
 ```bibtex
-@article{zhou2025virtual,
-  title={Virtual Community: An Open World for Humans, Robots, and Society},
-  author={Zhou, Qinhong and Zhang, Hongxin and Lin, Xiangye and Zhang, Zheyuan and Chen, Yutian and Liu, Wenjun and Zhang, Zunzhe and Chen, Sunli and Fang, Lixing and Lyu, Qiushi and Sun, Xinyu and Yang, Jincheng and Wang, Zeyuan and Dang, Bao Chi and Chen, Zhehuan and Ladia, Daksha and Liu, Jiageng and Gan, Chuang},
-  year={2025}
+@misc{zhou2025virtualcommunityopenworld,
+      title={Virtual Community: An Open World for Humans, Robots, and Society}, 
+      author={Qinhong Zhou and Hongxin Zhang and Xiangye Lin and Zheyuan Zhang and Yutian Chen and Wenjun Liu and Zunzhe Zhang and Sunli Chen and Lixing Fang and Qiushi Lyu and Xinyu Sun and Jincheng Yang and Zeyuan Wang and Bao Chi Dang and Zhehuan Chen and Daksha Ladia and Jiageng Liu and Chuang Gan},
+      year={2025},
+      eprint={2508.14893},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.14893}, 
 }
 ```

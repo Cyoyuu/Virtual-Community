@@ -24,6 +24,12 @@ logs
 Genesis/genesis/assets/ViCo
 ViCo/meeting_challenge/results*
 chat_raw*.jsonl
+assets/scenes/*/raw/
+assets/scenes/*/gpt_cache/
+assets/scenes/*/agents_num_15_with_schedules
+assets/imgs/*
+!assets/imgs/teaser.png
+!assets/imgs/avatars/
 turn_into_xlsx.py
 scp.sh
 step_*_path.png

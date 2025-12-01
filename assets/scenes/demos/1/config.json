@@ -1,0 +1,72 @@
+{
+    "sim_name": "Simple_agent_num_2",
+    "scene": "ViCo/scene/demo/DETROIT_ok/DETROIT_stage2_cut_with_objects_basic.glb",
+    "scene_offset": [0.0, 0.0, 26.3],
+    "agent_names": [
+        "Alex Jefferson",
+        "Brian Carter"
+    ],
+    "step": 0,
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            173.0,
+            6.5,
+            107.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            172.0,
+            7.5,
+            107.0,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "num_agents": 2,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/mixamo_Brian_Carter.glb"
+    ],
+    "dt_control": [
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0
+    ],
+    "camera_config": [
+        {
+            "pos": [
+                175.12438844417848,
+                5.75085496182845,
+                108.61468966186943
+            ],
+            "lookat": [
+                173.12438844417848,
+                7.75085496182845,
+                107.61468966186943
+            ]
+        }
+    ],
+    "agent_actions": [
+        [
+            {
+                "type": "move_forward",
+                "arg1": 1.0
+            }
+        ],
+        [
+            {
+                "type": "move_forward",
+                "arg1": 1.0
+            }
+        ]
+    ]
+}

@@ -1,4 +1,4 @@
-python ViCo/examples/transit.py --head_less \
+python examples/transit.py --head_less \
 --backend gpu \
 --multi_process \
 --skip_avatar_animation \

@@ -278,8 +278,8 @@ def place_usd_scene_with_ratio(usd_file, scene, global_pos=np.zeros(3), load_obj
             continue
         if not load_objects and typ != "structure":
             continue
-        init_euler = [0, 0, 0]
-        init_pos = np.array([0, 0, 0])
+        init_euler = [0., 0., 0.]
+        init_pos = np.array([0., 0., 0.])
         init_scale = 0.01
         init_T = gs.utils.geom.trans_R_to_T(init_pos, R.from_euler("xyz", init_euler, degrees=True).as_matrix())
         init_T[:3, :3] *= init_scale

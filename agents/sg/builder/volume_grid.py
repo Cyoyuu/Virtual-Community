@@ -1,6 +1,5 @@
 from typing import Tuple, Union
 
-import cv2
 import numpy as np
 import pickle
 import ctypes
@@ -11,8 +10,8 @@ import os
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
-from ViCo.tools.utils import atomic_save
-from agents.sg.builder.builtin import lib_builder
+from tools.utils import atomic_save
+from .builtin import lib_builder
 
 def convex_hull(points: np.ndarray) -> np.ndarray:
     size = np.zeros(1, dtype=np.int32)
@@ -215,10 +214,9 @@ class VolumeGridBuilder:
             if external_route is not None:
                 for wp in external_route:
                     draw_point(wp[0], wp[1], [255, 255, 0])
-            cv2.imwrite(save_path, draw_map[::-1, :, :])
+            from PIL import Image
+            Image.fromarray(draw_map).save(save_path[::-1, :, :])
         return occ_map, x_min[0], y_min[0], x_max[0], y_max[0]
-
-        # draw_map[np.where(occ_map == 4)] = [127, 255, 255]
     
     def radius_denoise(self, min_points: int, radius: float):
         lib_builder.volume_grid_radius_denoise(self.vg_backend, min_points, radius)

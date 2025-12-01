@@ -63,7 +63,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     # lat, lon = 40.748998486718186, -73.9882893780644 # x, y
     [x,y]=lat_lon_to_xy(args.lat, args.lon, args.ref_lat, args.ref_lon)
-    roads, nodes = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/roads.pkl", 'rb'))
+    roads, nodes = pickle.load(open(f"assets/scenes/{args.scene}/roads.pkl", 'rb'))
     min_distance = float('inf')
     closest_road = None
     for road in roads:

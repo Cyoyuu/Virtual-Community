@@ -16,10 +16,10 @@ current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
 
-from ViCo.tools.utils import *
+from tools.utils import *
 
-from ViCo.tools.annotate_scene import stitch_images_horizontally, generate_diverse_colors
-from ViCo.tools.constants import google_map_coarse_to_types
+from tools.annotate_scene import stitch_images_horizontally, generate_diverse_colors
+from tools.constants import google_map_coarse_to_types
 
 wonderful_colors = [
     ("#FFA6A6"),
@@ -39,24 +39,16 @@ def generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_
     current_y_left = 0
     current_y_right = 0
 
-    accommodation_indicator_mapping = {}
     iter_places = {}
-    letter = coarse_type_to_letter["accommodation"]
-    i = 1
-    for pname in places_by_coarse_type["accommodation"]:
-        if "'s room at " in pname and pname.split("'s room at ")[1] in iter_places:
-            indicator = iter_places[pname.split("'s room at ")[1]]
-        elif pname in iter_places:
-            indicator = iter_places[pname]
-        else:
-            indicator = f"{letter}{i}"
-            if "'s room at " in pname:
-                iter_places[pname.split("'s room at ")[1]] = indicator
-            else:
-                iter_places[pname] = indicator
-            i += 1
-        accommodation_indicator_mapping[pname] = indicator
-    places_by_coarse_type["accommodation"].sort(key=lambda pname: accommodation_indicator_mapping[pname])
+    # Sort accommodation: private rooms ('s room at ) first, then others alphabetically.
+    if "accommodation" in places_by_coarse_type:
+        places_by_coarse_type["accommodation"].sort(
+            key=lambda pname: (0 if "'s room at " in pname else 1, pname.lower())
+        )
+    # Sort all other coarse types alphabetically.
+    for c in places_by_coarse_type.keys():
+        if c != "accommodation":
+            places_by_coarse_type[c].sort(key=lambda pname: pname.lower())
 
     pname2color = {}
     def draw_entry(ax, start_y, pname, indicator):
@@ -76,23 +68,23 @@ def generate_places_legend(places_by_coarse_type, type_to_color, coarse_type_to_
         else:
             ax_right.text(0.0, current_y_right, f"{letter} ({ctype})", fontsize=14, fontweight='bold')
             current_y_right += 0.3
-        i = 1
-        for i, pname in enumerate(places_by_coarse_type[ctype]):
+        counter = 1
+        for pname in places_by_coarse_type[ctype]:
             if "'s room at " in pname and pname.split("'s room at ")[1] in iter_places:
                 indicator = iter_places[pname.split("'s room at ")[1]]
             elif pname in iter_places:
                 indicator = iter_places[pname]
             else:
-                indicator = f"{letter}{i}"
+                indicator = f"{letter}{counter}"
                 if "'s room at " in pname:
                     iter_places[pname.split("'s room at ")[1]] = indicator
                 else:
                     iter_places[pname] = indicator
-                i += 1
+                counter += 1
             if draw_on_left:
-                current_y_left = draw_entry(ax_left, current_y_left, pname, i)
+                current_y_left = draw_entry(ax_left, current_y_left, pname, indicator)
             else:
-                current_y_right = draw_entry(ax_right, current_y_right, pname, i)
+                current_y_right = draw_entry(ax_right, current_y_right, pname, indicator)
                 increase_y_for_ctype = True
             if draw_on_left and ((info_height - current_y_left) < 1.5):
                 draw_on_left = False
@@ -142,7 +134,7 @@ def find_place_index_in_building(building_meta, place_name):
     raise Exception(f"{place_name} not found in building_meta")
 
 def overlay_locations_desp_on_image(place_metadata, building_metadata, save_path, known_places, groups):
-    image_path = f"ViCo/assets/scenes/{args.scene}/global.png"
+    image_path = f"assets/scenes/{args.scene}/global.png"
     annotated_image = Image.open(image_path).convert("RGB")
     draw = ImageDraw.Draw(annotated_image)
     coarse_types = list(google_map_coarse_to_types.keys())
@@ -151,7 +143,7 @@ def overlay_locations_desp_on_image(place_metadata, building_metadata, save_path
     type_to_color["transit"] = "white"
     coarse_type_to_letter = {}
     padding = 5
-    font = ImageFont.truetype("ViCo/assets/arial.ttf", args.font_size)
+    font = ImageFont.truetype("assets/arial.ttf", args.font_size)
     for i, ctype in enumerate(sorted(coarse_types)):
         coarse_type_to_letter[ctype] = chr(ord('A') + i)
     places_by_coarse_type = defaultdict(list)
@@ -162,15 +154,24 @@ def overlay_locations_desp_on_image(place_metadata, building_metadata, save_path
         if place_name in places_by_coarse_type[ctype]:
             continue
         places_by_coarse_type[ctype].append(place_name)
+    # Ensure the same sorting as legend: accommodation rooms first, others alphabetically
+    if "accommodation" in places_by_coarse_type:
+        places_by_coarse_type["accommodation"].sort(
+            key=lambda pname: (0 if "'s room at " in pname else 1, pname.lower())
+        )
+    for c in places_by_coarse_type.keys():
+        if c != "accommodation":
+            places_by_coarse_type[c].sort(key=lambda pname: pname.lower())
     for ctype in sorted(places_by_coarse_type.keys()):
         letter = coarse_type_to_letter[ctype]
-        for i, place_name in enumerate(places_by_coarse_type[ctype]):
-            if "'s room at " in place_name:
-                place_name = place_name.split("'s room at ")[1]
-            if place_name in place_indicators:
+        counter = 1
+        for place_name in places_by_coarse_type[ctype]:
+            base_name = place_name.split("'s room at ")[1] if "'s room at " in place_name else place_name
+            if base_name in place_indicators:
                 continue
-            indicator = f"{letter}{i+1}"
-            place_indicators[place_name] = indicator
+            indicator = f"{letter}{counter}"
+            place_indicators[base_name] = indicator
+            counter += 1
     
     drew_indicators = []
     for place in known_places:
@@ -214,9 +215,9 @@ class CharacterGen:
         characters = None
 
         if not args.event:
-            base_path = f"ViCo/assets/scenes/{args.scene}/gpt_cache/g{args.num_groups}c{args.num_characters}"
+            base_path = f"assets/scenes/{args.scene}/gpt_cache/g{args.num_groups}c{args.num_characters}"
         else:
-            base_path = os.path.join(f"ViCo/assets/scenes/{args.scene}", "gpt_cache", "events", f"{args.event}", f"g{args.num_groups}c{args.num_characters}")
+            base_path = os.path.join(f"assets/scenes/{args.scene}", "gpt_cache", "events", f"{args.event}", f"g{args.num_groups}c{args.num_characters}")
         
         groups_json_path = os.path.join(base_path, "groups.json")
         characters_json_path = os.path.join(base_path, "characters.json")
@@ -227,9 +228,9 @@ class CharacterGen:
         else:
             assert 0, "Please generate the config first before known place annotation."
           
-        with open(f"ViCo/assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/place_metadata.json", "r") as f:
+        with open(f"assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/place_metadata.json", "r") as f:
             self.place_metadata = json.load(f)
-        with open(f"ViCo/assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/building_metadata.json", "r") as f:
+        with open(f"assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/building_metadata.json", "r") as f:
             self.building_metadata = json.load(f)
         
         all_known_places_set = set(self.place_metadata.keys())
@@ -251,7 +252,7 @@ class CharacterGen:
         for group in groups:
             groups[group]["members"] = sorted(groups[group]["members"])
             all_known_places_set.add(groups[group]['place'])
-        overlay_locations_desp_on_image(place_metadata=self.place_metadata, building_metadata=self.building_metadata, save_path=f"ViCo/assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/known_places.png", known_places=all_known_places_set, groups=groups)
+        overlay_locations_desp_on_image(place_metadata=self.place_metadata, building_metadata=self.building_metadata, save_path=f"assets/scenes/{middle_path}/agents_num_{len(list(characters.keys()))}/known_places.png", known_places=all_known_places_set, groups=groups)
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -267,11 +268,11 @@ if __name__ == "__main__":
         middle_path = f"{args.scene}"
     else:
         middle_path = os.path.join(f"{args.scene}", "events", args.event)
-    args.output_dir = f"ViCo/assets/scenes/{middle_path}/agents_num_{args.num_characters}"
+    args.output_dir = f"assets/scenes/{middle_path}/agents_num_{args.num_characters}"
 
     height_field_path = f"Genesis/genesis/assets/ViCo/scene/v1/{args.scene}/height_field.npz"
     height_field = load_height_field(height_field_path)
-    global_cam_parameters = json.load(open(f"ViCo/assets/scenes/{args.scene}/global_cam_parameters.json", 'r'))
+    global_cam_parameters = json.load(open(f"assets/scenes/{args.scene}/global_cam_parameters.json", 'r'))
 
     gen = CharacterGen(args)
     print(f"Starting to generate known places annotation for {args.scene}...")

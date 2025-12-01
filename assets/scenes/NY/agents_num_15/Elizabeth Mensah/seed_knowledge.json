@@ -1,8 +1,9 @@
 {
+<<<<<<< HEAD
     "Brian Carter": {
         "age": 35,
         "living_place": "Brian Carter's room at Furnished Quarters",
-        "appearance": "ViCo/assets/imgs/avatars/Brian Carter.png",
+        "appearance": "assets/imgs/avatars/Brian Carter.png",
         "groups": [
             "Real Estate Professionals"
         ]
@@ -10,7 +11,7 @@
     "Roth Miller": {
         "age": 26,
         "living_place": "The Magellan",
-        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
         "groups": [
             "Real Estate Professionals"
         ]
@@ -29,16 +30,59 @@
         "building": "The Magellan",
         "coarse_type": "accommodation",
         "fine_types": [
+=======
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "31 Penn Plaza",
+        "appearance": "assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "National at 888 6th Avenue",
+        "appearance": "assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "Justin Management",
+        "appearance": "assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Tech Innovators": {
+        "description": "A group of tech-savvy individuals who collaborate on innovative projects and share knowledge about the latest technology trends.",
+        "place": "Idea Nuova Inc",
+        "members": [
+            "Leonard Park",
+            "Elizabeth Mensah",
+            "Zara Williams",
+            "Shannon Steves"
+        ],
+        "daily_activity": "discussing tech trends from 15:00 to 17:00"
+    },
+    "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments": {
+        "building": "The Grand Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "travel_agency",
+>>>>>>> upstream/master
             "real_estate_agency",
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1111.491611480713,
             958.9692373275757,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-1.json",
+        "scene": "indoor_scenes/accomodation-1.json",
         "name": "Elizabeth Mensah's room at The Magellan",
         "bounding_box": [
             111.49943564050403,
@@ -63,7 +107,7 @@
             796.5592193603516,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json",
+        "scene": "indoor_scenes/store-Fresh-DM.json",
         "bounding_box": [
             75.2679071004987,
             -203.44077901289347,
@@ -87,7 +131,7 @@
             748.8459930419922,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "scene": "indoor_scenes/accomodation-3.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -112,7 +156,7 @@
             922.1136102676392,
             -12
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
         "bounding_box": [
             209.90191650390625,
             -77.88565826416016,
@@ -146,16 +190,45 @@
         "fine_types": [
             "university",
             "school",
+=======
+            1028.208975315094,
+            771.2782287597656,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Elizabeth Mensah's room at MACY 31 Self Serviced Apartments",
+        "bounding_box": [
+            28.11411635540542,
+            -228.34289938701022,
+            140.15322875976565,
+            15.483748107840936,
+            27.250661559485522,
+            42.373260498046875,
+            -0.49853943981600857
+        ]
+    },
+    "CUNY School of Professional Studies | CUNY SPS": {
+        "building": "119 West 31st Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+>>>>>>> upstream/master
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1086.7381439208984,
             1091.5392627716064,
+=======
+            856.0582275390625,
+            938.0584306716919,
+>>>>>>> upstream/master
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
         "bounding_box": [
+<<<<<<< HEAD
             86.1720604405572,
             94.01040019106586,
             141.65610885620117,
@@ -181,7 +254,7 @@
             1011.0326929092407,
             -8
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
         "bounding_box": [
             49.00880813598632,
             11.032692909240737,
@@ -197,17 +270,61 @@
         "coarse_type": "food",
         "fine_types": [
             "bar",
+=======
+            -143.94234710886053,
+            -61.93701148753711,
+            154.29039001464844,
+            21.260188035629255,
+            60.45866373743206,
+            72.62905883789062,
+            -0.5043155355838873
+        ]
+    },
+    "Idea Nuova Inc": {
+        "building": "302 5th Avenue",
+        "coarse_type": "office",
+        "fine_types": [
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1162.615135192871,
+            745.3537521362305,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            166.78116607666013,
+            -254.64624786376953,
+            141.81495285034183,
+            39.04346833617033,
+            26.57725526046413,
+            47.151588439941406,
+            -0.5137604612671748
+        ]
+    },
+    "My Cooking Party": {
+        "building": "130 West 29th Street 6th Floor",
+        "coarse_type": "food",
+        "fine_types": [
+>>>>>>> upstream/master
             "point_of_interest",
             "food",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1097.0518035888672,
             786.0063781738281,
+=======
+            712.7225799560547,
+            767.3263397216797,
+>>>>>>> upstream/master
             -8
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
+<<<<<<< HEAD
             97.03073501586915,
             -213.9936218261719,
             137.22705078125,
@@ -232,7 +349,7 @@
             1073.8670864105225,
             -28
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
         "bounding_box": [
             -74.38545227050781,
             79.51829528808594,
@@ -257,7 +374,7 @@
             748.8459930419922,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -266,6 +383,15 @@
             46.34579013023134,
             46.907310485839844,
             1.0607685399950633
+=======
+            -287.273216746148,
+            -232.6736473645091,
+            141.23655700683597,
+            11.968931024730045,
+            26.58043054724567,
+            47.82476806640625,
+            -0.5045187456682845
+>>>>>>> upstream/master
         ]
     },
     "Creative Art Works": {
@@ -281,7 +407,11 @@
             986.3369770050049,
             -8
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+<<<<<<< HEAD
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+=======
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+>>>>>>> upstream/master
         "bounding_box": [
             -87.99254708130022,
             -3.0164706221076525,
@@ -292,6 +422,185 @@
             -0.5049870570731838
         ]
     },
+<<<<<<< HEAD
+=======
+    "Maru Karaoke Lounge": {
+        "building": "11 West 32nd Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1161.2002716064453,
+            839.4018936157227,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            161.20028394285737,
+            -160.59810476944108,
+            141.64703750610352,
+            15.017496366422412,
+            26.931707245485633,
+            45.090263366699205,
+            -0.5048190204161771
+        ]
+    },
+    "Baskin-Robbins": {
+        "building": "302 5th Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1162.615135192871,
+            745.3537521362305,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            166.78116607666013,
+            -254.64624786376953,
+            141.81495285034183,
+            39.04346833617033,
+            26.57725526046413,
+            47.151588439941406,
+            -0.5137604612671748
+        ]
+    },
+    "Osamil": {
+        "building": "5 West 31st Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1147.021011352539,
+            757.8211059570312,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            147.0463166282184,
+            -242.17888894798878,
+            139.32381439208987,
+            7.719387487556864,
+            28.90506625939441,
+            41.47477722167969,
+            -0.5125011388280382
+        ]
+    },
+    "Black Burger": {
+        "building": "65 West 30th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            902.8825759887695,
+            789.7968215942383,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -97.13081879761769,
+            -208.591050198152,
+            122.02051925659181,
+            6.421427692114796,
+            17.197245776783056,
+            7.895133972167969,
+            1.0663526621289972
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "1235 Broadway",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            943.8778076171875,
+            769.8535232543945,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -52.94042068798431,
+            -226.06583904509267,
+            126.48215484619142,
+            18.778852966593117,
+            51.27035995071426,
+            16.201675415039062,
+            1.0633228611263694
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Macy's",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            913.9607601165771,
+            1186.2614402770996,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -78.07142163349155,
+            186.41713195475742,
+            137.64349746704102,
+            62.00910475735177,
+            220.29955843176916,
+            40.736106872558594,
+            1.0600280517096008
+        ]
+    },
+    "Paspa Physical Therapy | Manual, Sports & Running Therapists": {
+        "building": "131 West 35th Street 12th floor",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "physiotherapist",
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            959.5877599716187,
+            1234.9851837158203,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -40.40801239013672,
+            234.98516845703125,
+            146.94140625,
+            22.378097534179688,
+            25.371742248535156,
+            59.06849670410156,
+            -0.500099778175354
+        ]
+    },
+>>>>>>> upstream/master
     "West 33rd Street Bus Stop": {
         "building": "open space",
         "coarse_type": "transit",

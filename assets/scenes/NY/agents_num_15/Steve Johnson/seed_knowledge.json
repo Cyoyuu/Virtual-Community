@@ -1,8 +1,9 @@
 {
+<<<<<<< HEAD
     "Bill Gates": {
         "age": 50,
         "living_place": "Bill Gates's room at Kimpton Hotel Eventi",
-        "appearance": "ViCo/assets/imgs/avatars/Bill Gates.png",
+        "appearance": "assets/imgs/avatars/Bill Gates.png",
         "groups": [
             "Tech Innovators Club"
         ]
@@ -10,7 +11,7 @@
     "Feifei Li": {
         "age": 48,
         "living_place": "Feifei Li's room at Hyatt Herald Square New York",
-        "appearance": "ViCo/assets/imgs/avatars/Feifei Li.png",
+        "appearance": "assets/imgs/avatars/Feifei Li.png",
         "groups": [
             "Tech Innovators Club"
         ]
@@ -18,7 +19,7 @@
     "Steve Jobs": {
         "age": 50,
         "living_place": "Steve Jobs's room at Hotel Wolcott",
-        "appearance": "ViCo/assets/imgs/avatars/Steve Jobs.png",
+        "appearance": "assets/imgs/avatars/Steve Jobs.png",
         "groups": [
             "Tech Innovators Club"
         ]
@@ -36,6 +37,45 @@
     },
     "Steve Johnson's room at E\u014cS NoMad Apartments": {
         "building": "EOS",
+=======
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Kate Novak's room at Hyatt Herald Square New York",
+        "appearance": "assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Art and Culture Enthusiasts"
+        ]
+    },
+    "Louise Roberts": {
+        "age": 29,
+        "living_place": "Louise Roberts's room at Furnished Quarters",
+        "appearance": "assets/imgs/avatars/Louise Roberts.png",
+        "groups": [
+            "Art and Culture Enthusiasts"
+        ]
+    },
+    "Naomi Zhang": {
+        "age": 28,
+        "living_place": "Naomi Zhang's room at The Hotel at Fifth Avenue",
+        "appearance": "assets/imgs/avatars/Naomi Zhang.png",
+        "groups": [
+            "Art and Culture Enthusiasts"
+        ]
+    },
+    "Art and Culture Enthusiasts": {
+        "description": "A group of individuals passionate about art, culture, and history, who explore museums and galleries together.",
+        "place": "Creative Art Works",
+        "members": [
+            "Kate Novak",
+            "Steve Johnson",
+            "Louise Roberts",
+            "Naomi Zhang"
+        ],
+        "daily_activity": "visiting art galleries from 16:00 to 18:00"
+    },
+    "Steve Johnson's room at Hadson Realty": {
+        "building": "Manhattan Mall",
+>>>>>>> upstream/master
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -43,11 +83,12 @@
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             856.461296081543,
             847.310863494873,
             -16
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
+        "scene": "indoor_scenes/accomodation-5.json",
         "name": "Steve Johnson's room at E\u014cS NoMad Apartments",
         "bounding_box": [
             -146.10708771234118,
@@ -57,6 +98,95 @@
             60.37182501770884,
             136.5864028930664,
             -0.5061219706499509
+=======
+            912.0142936706543,
+            986.3369770050049,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Steve Johnson's room at Hadson Realty",
+        "bounding_box": [
+            -87.99254708130022,
+            -3.0164706221076525,
+            146.6420669555664,
+            104.82575874028153,
+            60.9554637105247,
+            57.36222839355469,
+            -0.5049870570731838
+        ]
+    },
+    "Satellite Academy High School": {
+        "building": "120 West 30th Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "secondary_school",
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            797.3880767822266,
+            808.3782043457031,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -204.01870088507104,
+            -191.62353860340792,
+            132.5457878112793,
+            19.094865935670374,
+            30.86118669042229,
+            29.701759338378906,
+            -0.5061314732156017
+        ]
+    },
+    "Creative Art Works": {
+        "building": "Manhattan Mall",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            912.0142936706543,
+            986.3369770050049,
+            -8
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -87.99254708130022,
+            -3.0164706221076525,
+            146.6420669555664,
+            104.82575874028153,
+            60.9554637105247,
+            57.36222839355469,
+            -0.5049870570731838
+        ]
+    },
+    "My Cooking Party": {
+        "building": "130 West 29th Street 6th Floor",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            712.7225799560547,
+            767.3263397216797,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -287.273216746148,
+            -232.6736473645091,
+            141.23655700683597,
+            11.968931024730045,
+            26.58043054724567,
+            47.82476806640625,
+            -0.5045187456682845
+>>>>>>> upstream/master
         ]
     },
     "Idea Nuova Inc": {
@@ -71,7 +201,11 @@
             745.3537521362305,
             -8
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+<<<<<<< HEAD
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+=======
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+>>>>>>> upstream/master
         "bounding_box": [
             166.78116607666013,
             -254.64624786376953,
@@ -82,6 +216,7 @@
             -0.5137604612671748
         ]
     },
+<<<<<<< HEAD
     "Empire State Building": {
         "building": "Empire State Building",
         "coarse_type": "entertainment",
@@ -96,7 +231,7 @@
             922.1136102676392,
             -12
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
         "bounding_box": [
             209.90191650390625,
             -77.88565826416016,
@@ -137,7 +272,7 @@
             748.8459930419922,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "scene": "indoor_scenes/accomodation-3.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -162,7 +297,7 @@
             1091.5392627716064,
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
         "bounding_box": [
             86.1720604405572,
             94.01040019106586,
@@ -188,7 +323,7 @@
             922.1136102676392,
             -44
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
             209.90191650390625,
             -77.88565826416016,
@@ -214,7 +349,7 @@
             745.3537521362305,
             -4
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
             166.78116607666013,
             -254.64624786376953,
@@ -227,6 +362,10 @@
     },
     "Chorus Karaoke": {
         "building": "25 West 32nd Street",
+=======
+    "Maru Karaoke Lounge": {
+        "building": "11 West 32nd Street",
+>>>>>>> upstream/master
         "coarse_type": "food",
         "fine_types": [
             "bar",
@@ -235,11 +374,12 @@
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1116.3717498779297,
             866.1845169067383,
             -8
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
             116.37175898459454,
             -133.8154796930211,
@@ -255,16 +395,114 @@
         "coarse_type": "stores",
         "fine_types": [
             "clothing_store",
+=======
+            1161.2002716064453,
+            839.4018936157227,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            161.20028394285737,
+            -160.59810476944108,
+            141.64703750610352,
+            15.017496366422412,
+            26.931707245485633,
+            45.090263366699205,
+            -0.5048190204161771
+        ]
+    },
+    "Ikbal's Halal Food": {
+        "building": "Manhattan Mall",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            912.0142936706543,
+            986.3369770050049,
+            -28
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -87.99254708130022,
+            -3.0164706221076525,
+            146.6420669555664,
+            104.82575874028153,
+            60.9554637105247,
+            57.36222839355469,
+            -0.5049870570731838
+        ]
+    },
+    "HEYTEA\uff08Herald Square\uff09": {
+        "building": "1293 Broadway",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            971.3552742004395,
+            1049.5880527496338,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -24.13645408894945,
+            51.776564703188,
+            144.17276763916016,
+            45.905027636807425,
+            60.492557916270634,
+            50.93571472167969,
+            -0.5051112547335569
+        ]
+    },
+    "America Gourmet Food": {
+        "building": "831 6th Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            810.3820037841797,
+            724.9438629150391,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -189.6179827598148,
+            -275.0561403259667,
+            124.66675567626955,
+            5.685023257284445,
+            19.779977142762768,
+            12.543716430664062,
+            1.063173428692334
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Macy's",
+        "coarse_type": "stores",
+        "fine_types": [
+>>>>>>> upstream/master
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             799.1183776855469,
             855.8725738525391,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "indoor_scenes/store-Snacks-DM.json",
         "bounding_box": [
             -198.72824691925817,
             -141.62327576145356,
@@ -280,16 +518,38 @@
         "coarse_type": "stores",
         "fine_types": [
             "clothing_store",
+=======
+            913.9607601165771,
+            1186.2614402770996,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -78.07142163349155,
+            186.41713195475742,
+            137.64349746704102,
+            62.00910475735177,
+            220.29955843176916,
+            40.736106872558594,
+            1.0600280517096008
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "1235 Broadway",
+        "coarse_type": "stores",
+        "fine_types": [
+>>>>>>> upstream/master
             "store",
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1250.5939025878906,
             748.8459930419922,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -298,6 +558,21 @@
             46.34579013023134,
             46.907310485839844,
             1.0607685399950633
+=======
+            943.8778076171875,
+            769.8535232543945,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -52.94042068798431,
+            -226.06583904509267,
+            126.48215484619142,
+            18.778852966593117,
+            51.27035995071426,
+            16.201675415039062,
+            1.0633228611263694
+>>>>>>> upstream/master
         ]
     },
     "West 33rd Street Bus Stop": {

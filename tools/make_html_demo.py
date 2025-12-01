@@ -61,7 +61,7 @@ def main():
         for part in args.data_dir.replace("\\", "/").split("/"):
             for tag in SCENE_TAGS:
                 if part.upper().startswith(tag):
-                    args.scene = tag.lower() 
+                    args.scene = tag
                     break
             else:
                 continue      
@@ -99,24 +99,24 @@ def main():
     with open(template_path, encoding="utf-8") as f:
         html = f.read()
 
+    # Convert filesystem paths to server-root-relative URLs for python -m http.server
+    repo_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+
+    def web_path(p: str) -> str:
+        return "/" + os.path.relpath(os.path.abspath(p), repo_root).replace(os.sep, "/")
+
+    output_dir_abs = os.path.abspath(args.output_dir)
+
     substitutions = {
-        "$OutputFolderPath$":
-            f"/{args.output_dir.replace(os.sep, '/')}",
-        "$CurrSimFolderPath$":
-            f"/{os.path.join(args.output_dir, 'curr_sim').replace(os.sep, '/')}",
-        "$ConfigPath$":
-            f"/{cfg_path.replace(os.sep, '/')}",
-        "$TpegoFolderPath$":
-            f"/{os.path.join(args.output_dir, 'ego').replace(os.sep, '/')}",
-        "$tpFolderPath$":                                            
-            f"/{os.path.join(args.output_dir, 'tp').replace(os.sep, '/')}",
-        "$StepsFolderPath$":
-            f"/{os.path.join(args.output_dir, 'steps').replace(os.sep, '/')}",
-        "$AvatarImgsPath$": "/ViCo/assets/imgs/avatars",
-        "$GlobalCameraParameterPath$":
-            f"/ViCo/assets/scenes/{args.scene}/global_cam_parameters.json",
-        "$GlobalImagePath$":
-            f"/ViCo/assets/scenes/{args.scene}/global.png",
+        "$OutputFolderPath$": web_path(output_dir_abs),
+        "$CurrSimFolderPath$": web_path(os.path.join(output_dir_abs, "curr_sim")),
+        "$ConfigPath$": web_path(cfg_path),
+        "$TpegoFolderPath$": web_path(os.path.join(output_dir_abs, "ego")),
+        "$tpFolderPath$": web_path(os.path.join(output_dir_abs, "tp")),
+        "$StepsFolderPath$": web_path(os.path.join(output_dir_abs, "steps")),
+        "$AvatarImgsPath$": web_path(os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets/imgs/avatars")),
+        "$GlobalCameraParameterPath$": web_path(os.path.join(os.path.dirname(os.path.dirname(__file__)), f"assets/scenes/{args.scene}/global_cam_parameters.json")),
+        "$GlobalImagePath$": web_path(os.path.join(os.path.dirname(os.path.dirname(__file__)), f"assets/scenes/{args.scene}/global.png")),
         "$FPS$": str(args.fps),
     }
     for key, val in substitutions.items():
@@ -131,7 +131,7 @@ def main():
     print("    python -m http.server")
     print(f"and open:")
     print(
-        f"    http://localhost:8000/{args.output_dir.replace(os.sep, '/')}/demo.html")
+        f"    http://localhost:8000{web_path(output_dir_abs)}/demo.html")
 
 
 if __name__ == "__main__":

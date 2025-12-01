@@ -1,8 +1,9 @@
 {
+<<<<<<< HEAD
     "Elizabeth Mensah": {
         "age": 23,
         "living_place": "The Magellan",
-        "appearance": "ViCo/assets/imgs/avatars/Elizabeth Mensah.png",
+        "appearance": "assets/imgs/avatars/Elizabeth Mensah.png",
         "groups": [
             "Real Estate Professionals"
         ]
@@ -10,7 +11,7 @@
     "Roth Miller": {
         "age": 26,
         "living_place": "The Magellan",
-        "appearance": "ViCo/assets/imgs/avatars/Roth Miller.png",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
         "groups": [
             "Real Estate Professionals"
         ]
@@ -39,7 +40,7 @@
             774.1234664916992,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
+        "scene": "indoor_scenes/accomodation-8.json",
         "name": "Brian Carter's room at Furnished Quarters",
         "bounding_box": [
             125.50192449735654,
@@ -64,7 +65,7 @@
             722.7256774902344,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-6.json",
+        "scene": "indoor_scenes/accomodation-6.json",
         "bounding_box": [
             -274.94458683373756,
             -276.87225050135913,
@@ -77,6 +78,45 @@
     },
     "Living Quest Real Estate": {
         "building": "315 5th Avenue",
+=======
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Living Quest Real Estate",
+        "appearance": "assets/imgs/avatars/Eve By J Gonzales.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Freya Novak": {
+        "age": 22,
+        "living_place": "Kimpton Hotel Eventi",
+        "appearance": "assets/imgs/avatars/Freya Novak.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Morten Lindqvist": {
+        "age": 38,
+        "living_place": "Life Hotel New York",
+        "appearance": "assets/imgs/avatars/Morten Lindqvist.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Culinary Creators": {
+        "description": "A group of food enthusiasts and culinary experts who gather to share recipes and cooking techniques.",
+        "place": "My Cooking Party",
+        "members": [
+            "Morten Lindqvist",
+            "Eve By J Gonzales",
+            "Freya Novak",
+            "Brian Carter"
+        ],
+        "daily_activity": "experimenting with new recipes from 17:00 to 19:00"
+    },
+    "Brian Carter's room at E\u014cS NoMad Apartments": {
+        "building": "EOS",
+>>>>>>> upstream/master
         "coarse_type": "accommodation",
         "fine_types": [
             "real_estate_agency",
@@ -84,11 +124,12 @@
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1250.5939025878906,
             748.8459930419922,
             -8
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
+        "scene": "indoor_scenes/accomodation-3.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -105,15 +146,39 @@
         "fine_types": [
             "tourist_attraction",
             "museum",
+=======
+            856.461296081543,
+            847.310863494873,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Brian Carter's room at E\u014cS NoMad Apartments",
+        "bounding_box": [
+            -146.10708771234118,
+            -149.8059753834191,
+            186.19350814819336,
+            62.82913257263171,
+            60.37182501770884,
+            136.5864028930664,
+            -0.5061219706499509
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Macy's",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+>>>>>>> upstream/master
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1209.8928298950195,
             922.1136102676392,
             -12
         ],
-        "scene": "MVJWVGYKTLDAYAABAAAAAAQ8",
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
         "bounding_box": [
             209.90191650390625,
             -77.88565826416016,
@@ -155,7 +220,7 @@
             1091.5392627716064,
             -4
         ],
-        "scene": "MVSGSAIKTKJ66AABAAAAAEA8",
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
         "bounding_box": [
             86.1720604405572,
             94.01040019106586,
@@ -180,7 +245,7 @@
             760.3578414916992,
             -8
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
             39.670225788872,
             -239.64214411723827,
@@ -204,7 +269,7 @@
             851.8866348266602,
             -12
         ],
-        "scene": "MWHLEPQKTIFZIAABAAAAAAA8",
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
         "bounding_box": [
             175.86998845377235,
             -149.79616787928182,
@@ -213,6 +278,21 @@
             60.04532468661299,
             48.41016387939453,
             -0.5079003816756903
+=======
+            913.9607601165771,
+            1186.2614402770996,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -78.07142163349155,
+            186.41713195475742,
+            137.64349746704102,
+            62.00910475735177,
+            220.29955843176916,
+            40.736106872558594,
+            1.0600280517096008
+>>>>>>> upstream/master
         ]
     },
     "My Cooking Party": {
@@ -228,7 +308,11 @@
             767.3263397216797,
             -8
         ],
-        "scene": "MV5M25QKTKJZ2AABAAAAAAI8",
+<<<<<<< HEAD
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+=======
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+>>>>>>> upstream/master
         "bounding_box": [
             -287.273216746148,
             -232.6736473645091,
@@ -239,21 +323,29 @@
             -0.5045187456682845
         ]
     },
+<<<<<<< HEAD
     "Fresh and Snacks Store": {
         "building": "315 5th Avenue",
         "coarse_type": "stores",
         "fine_types": [
             "clothing_store",
             "store",
+=======
+    "Idea Nuova Inc": {
+        "building": "302 5th Avenue",
+        "coarse_type": "office",
+        "fine_types": [
+>>>>>>> upstream/master
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1250.5939025878906,
             748.8459930419922,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-Snacks.json",
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
         "bounding_box": [
             250.59391528632548,
             -251.15399789636342,
@@ -266,6 +358,126 @@
     },
     "Snacks and DM Store": {
         "building": "1261 Flushing Avenue",
+=======
+            1162.615135192871,
+            745.3537521362305,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            166.78116607666013,
+            -254.64624786376953,
+            141.81495285034183,
+            39.04346833617033,
+            26.57725526046413,
+            47.151588439941406,
+            -0.5137604612671748
+        ]
+    },
+    "Creative Art Works": {
+        "building": "Manhattan Mall",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            912.0142936706543,
+            986.3369770050049,
+            -8
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -87.99254708130022,
+            -3.0164706221076525,
+            146.6420669555664,
+            104.82575874028153,
+            60.9554637105247,
+            57.36222839355469,
+            -0.5049870570731838
+        ]
+    },
+    "Maru Karaoke Lounge": {
+        "building": "11 West 32nd Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1161.2002716064453,
+            839.4018936157227,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            161.20028394285737,
+            -160.59810476944108,
+            141.64703750610352,
+            15.017496366422412,
+            26.931707245485633,
+            45.090263366699205,
+            -0.5048190204161771
+        ]
+    },
+    "McDonald's": {
+        "building": "Macy's",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            913.9607601165771,
+            1186.2614402770996,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -78.07142163349155,
+            186.41713195475742,
+            137.64349746704102,
+            62.00910475735177,
+            220.29955843176916,
+            40.736106872558594,
+            1.0600280517096008
+        ]
+    },
+    "Broadway Bites": {
+        "building": "Greeley Square Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            899.0340919494629,
+            895.734016418457,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -100.95115106399811,
+            -103.09984511953616,
+            165.5618019104004,
+            30.543137717582347,
+            30.24054606799013,
+            94.87682342529297,
+            -0.5064983153094723
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Cambria Hotel & Suites",
+>>>>>>> upstream/master
         "coarse_type": "stores",
         "fine_types": [
             "clothing_store",
@@ -274,11 +486,12 @@
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             799.1183776855469,
             855.8725738525391,
             -4
         ],
-        "scene": "ViCo/modules/indoor_scenes/scenes/store-Snacks-DM.json",
+        "scene": "indoor_scenes/store-Snacks-DM.json",
         "bounding_box": [
             -198.72824691925817,
             -141.62327576145356,
@@ -287,6 +500,21 @@
             48.856348571969356,
             49.60017395019531,
             1.0665750842797699
+=======
+            712.4935150146484,
+            732.4054336547852,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -287.5071770169319,
+            -267.59578067723425,
+            142.71878051757815,
+            15.742136436926929,
+            21.572867305410863,
+            50.13873291015625,
+            -0.5057876595085739
+>>>>>>> upstream/master
         ]
     },
     "Arrive": {
@@ -304,7 +532,7 @@
             803.6043243408203,
             -4
         ],
-        "scene": "MV4AFHQKTKJZ2AABAAAAAEA8",
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
         "bounding_box": [
             -259.029740431504,
             -196.3960782716385,

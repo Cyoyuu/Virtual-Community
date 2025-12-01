@@ -198,17 +198,17 @@ def get_ground_areas(lat, lng, radius):
 
 
 def fetch_osm(lat, lng, rad, scene_name):
-    if os.path.exists(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.pkl"):
-        road_data=pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.pkl","rb"))
+    if os.path.exists(f"assets/scenes/{scene_name}/road_data/road_data.pkl"):
+        road_data=pickle.load(open(f"assets/scenes/{scene_name}/road_data/road_data.pkl","rb"))
     else:
         road_data = get_roads(lat, lng, rad)
-        pickle.dump(road_data,open(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.pkl","wb"))
-    if os.path.exists(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.osm"):
-        with open(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.osm","r", encoding="utf-8") as file:
+        pickle.dump(road_data,open(f"assets/scenes/{scene_name}/road_data/road_data.pkl","wb"))
+    if os.path.exists(f"assets/scenes/{scene_name}/road_data/road_data.osm"):
+        with open(f"assets/scenes/{scene_name}/road_data/road_data.osm","r", encoding="utf-8") as file:
             osm_data=file.read()
     else:
         osm_data = get_osm_data(lat, lng, rad)
-        with open(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.osm","w", encoding="utf-8") as file:
+        with open(f"assets/scenes/{scene_name}/road_data/road_data.osm","w", encoding="utf-8") as file:
             file.write(osm_data)
     try:
         # Define the desired settings. In this case, default values.
@@ -218,7 +218,7 @@ def fetch_osm(lat, lng, rad, scene_name):
         settings.set_osm_way_types(["motorway", "motorway_link", "trunk", "trunk_link", "primary", "primary_link", "secondary", "secondary_link", "tertiary", "tertiary_link", "unclassified", "residential"])
         # Convert to .xodr
         xodr_data = carla.Osm2Odr.convert(osm_data, settings)
-        with open(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr","w", encoding='utf-8') as file:
+        with open(f"assets/scenes/{scene_name}/road_data/road_data.xodr","w", encoding='utf-8') as file:
             file.write(xodr_data)
     except Exception as e:
         pass
@@ -410,15 +410,15 @@ if __name__ == "__main__":
     # parser.add_argument("--ref_lon", type=float, required=True)
     parser.add_argument("--radius", type=float, required=True)
     args = parser.parse_args()
-    if os.path.exists(f"ViCo/assets/scenes/{args.scene}"):
+    if os.path.exists(f"assets/scenes/{args.scene}"):
         print("Scene exists")
-        Path(f"ViCo/assets/scenes/{args.scene}/road_data").mkdir(parents=True, exist_ok=True)
-        with open(f"ViCo/assets/scenes/{args.scene}/raw/center.txt", "r") as f:
+        Path(f"assets/scenes/{args.scene}/road_data").mkdir(parents=True, exist_ok=True)
+        with open(f"assets/scenes/{args.scene}/raw/center.txt", "r") as f:
             ref_lat, ref_lon=f.readline().split()
             args.ref_lat, args.ref_lon=float(ref_lat), float(ref_lon)
             print(f"retrieved coordinates from raw file. lat: {args.ref_lat}, lon: {args.ref_lon}")
     else:
-        print(f"Scene not exist: ViCo/assets/scenes/{args.scene}")
+        print(f"Scene not exist: assets/scenes/{args.scene}")
         exit()
     road_data, roads_dict, node_dict = fetch_osm(lat=args.ref_lat,
                                       lng=args.ref_lon,
@@ -434,7 +434,7 @@ if __name__ == "__main__":
     plt.grid()
 
     roads, nodes=get_road_area(road_data, args.ref_lat, args.ref_lon, api_key=None)
-    pickle.dump((roads, nodes), open(f"ViCo/assets/scenes/{args.scene}/road_data/roads.pkl", 'wb'))
+    pickle.dump((roads, nodes), open(f"assets/scenes/{args.scene}/road_data/roads.pkl", 'wb'))
     draw_roads(roads, nodes, args.ref_lat, args.ref_lon)
 
     # Show the plot

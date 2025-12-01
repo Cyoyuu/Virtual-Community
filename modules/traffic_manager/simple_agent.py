@@ -1,5 +1,5 @@
 import numpy as np
-from ViCo.modules import *
+from modules import *
 
 class AutoAvatar:
     def __init__(self, avatar, simple_avatar, debug=False, logger=None, name="default_name"):

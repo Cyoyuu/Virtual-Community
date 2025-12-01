@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "The Albert": {
         "building": "The Albert",
         "coarse_type": "accommodation",
@@ -52,6 +53,8 @@
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-8.json",
         "name": "Olivia Adams's room at Security Trust Lofts"
     },
+=======
+>>>>>>> upstream/master
     "Starbucks": {
         "building": "One Kennedy Square",
         "coarse_type": "food",
@@ -67,10 +70,74 @@
             953.4135026931763,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
     },
     "Mr Beast's room at Hotel at The Detroit Club": {
         "building": "The Detroit Club",
+=======
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Snacks and DM Store": {
+        "building": "The Albert",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            932.0420570373535,
+            1159.4660568237305,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json"
+    },
+    "Security Trust Lofts": {
+        "building": "Security Trust Lofts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            990.7653558254242,
+            940.8342533111572,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-4.json"
+    },
+    "Olivia Adams's room at Fowler Building": {
+        "building": "Fowler Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            964.197732925415,
+            1176.8706283569336,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Olivia Adams's room at Fowler Building"
+    },
+    "Emily Johnson's room at Louis Kamper Apts": {
+        "building": "Louis Kamper Apts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            804.1666030883789,
+            1243.5814895629883,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Emily Johnson's room at Louis Kamper Apts"
+    },
+    "Malik Okoro's room at Hotel Indigo Detroit Downtown, an IHG Hotel": {
+        "building": "Hotel Indigo",
+>>>>>>> upstream/master
         "coarse_type": "accommodation",
         "fine_types": [
             "lodging",
@@ -78,6 +145,7 @@
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             782.9457015991211,
             777.2981643676758,
             -16
@@ -94,15 +162,83 @@
             "store",
             "restaurant",
             "food",
+=======
+            798.1555938720703,
+            969.3572273254395,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Malik Okoro's room at Hotel Indigo Detroit Downtown, an IHG Hotel"
+    },
+    "Chad Thompson's room at Capitol Park Building": {
+        "building": "Capitol Park Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            912.4307479858398,
+            1070.605749130249,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Chad Thompson's room at Capitol Park Building"
+    },
+    "Beverages and Snacks Store": {
+        "building": "Ally Detroit Center",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_dealer",
+            "store",
+>>>>>>> upstream/master
             "point_of_interest",
             "establishment"
         ],
         "location": [
+<<<<<<< HEAD
             1013.4044237136841,
             1090.8484153747559,
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+=======
+            1257.6224517822266,
+            823.1520156860352,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json"
+    },
+    "Fresh and Beverages Store": {
+        "building": "First State Bank",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "local_government_office",
+            "establishment"
+        ],
+        "location": [
+            980.8406653404236,
+            957.0423936843872,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json"
+    },
+    "Hotel Indigo Detroit Downtown, an IHG Hotel": {
+        "building": "Hotel Indigo",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.1555938720703,
+            969.3572273254395,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-2.json"
+>>>>>>> upstream/master
     },
     "The Hudson Cafe": {
         "building": "1241 Woodward Avenue",
@@ -118,6 +254,7 @@
             1190.8524017333984,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "The Westin Book Cadillac Detroit": {
@@ -166,16 +303,30 @@
     },
     "Fowler Building": {
         "building": "Fowler Building",
+=======
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Capitol Park Building": {
+        "building": "Capitol Park Building",
+>>>>>>> upstream/master
         "coarse_type": "accommodation",
         "fine_types": [
             "apartments"
         ],
         "location": [
+<<<<<<< HEAD
             964.197732925415,
             1176.8706283569336,
             -4
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json"
+=======
+            912.4307479858398,
+            1070.605749130249,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-0.json"
+>>>>>>> upstream/master
     },
     "The Greening of Detroit - Lafayette Greens": {
         "building": "open space",
@@ -207,7 +358,326 @@
             988.4745365381241,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+=======
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "Griswold Capitol Park": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments",
+            "parking"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json"
+    },
+    "CrossFit in the D": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json"
+    },
+    "Federal Reserve Building": {
+        "building": "Federal Reserve Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            956.3205618858337,
+            879.8981018066406,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json"
+    },
+    "The Motor Bar": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json"
+    },
+    "Roasting Plant Coffee": {
+        "building": "First National Bank Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1220.8864822387695,
+            917.9287872314453,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Alex Jefferson's room at The Albert": {
+        "building": "The Albert",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            932.0420570373535,
+            1159.4660568237305,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "name": "Alex Jefferson's room at The Albert"
+    },
+    "Trolley Room Detroit.": {
+        "building": "Hotel Indigo",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.1555938720703,
+            969.3572273254395,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "Louise Roberts's room at Bedell Bldg": {
+        "building": "Bedell Bldg",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            945.6000175476074,
+            1206.29248046875,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Louise Roberts's room at Bedell Bldg"
+    },
+    "Buhl Bar": {
+        "building": "Buhl Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1091.3976936340332,
+            750.5899505615234,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "28 Grand": {
+        "building": "28 Grand",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            879.1999893188477,
+            1261.3353271484375,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-6.json"
+    },
+    "Eat\u00f3ri Market": {
+        "building": "Malcomson Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "grocery_or_supermarket",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            840.9358520507812,
+            1132.5894584655762,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Bad Luck Bar": {
+        "building": "The Albert",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            932.0420570373535,
+            1159.4660568237305,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "Morten Lindqvist's room at The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -24
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Morten Lindqvist's room at The Westin Book Cadillac Detroit"
+    },
+    "Adam Pierce's room at Griswold Capitol Park": {
+        "building": "Griswold Capitol Park",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments",
+            "parking"
+        ],
+        "location": [
+            906.5216598510742,
+            1033.1299982070923,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Adam Pierce's room at Griswold Capitol Park"
+    },
+    "Marcus Yuen's room at The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -20
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Marcus Yuen's room at The Westin Book Cadillac Detroit"
+    },
+    "True Market": {
+        "building": "One Campus Martius",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1110.6941986083984,
+            1128.797939300537,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "American Coney Island": {
+        "building": "114 West Lafayette Boulevard",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            949.7582588195801,
+            980.4919891357422,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "Kenji Watanabe's room at The Westin Book Cadillac Detroit": {
+        "building": "The Westin Book Cadillac Detroit",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            823.1789932250977,
+            1038.2136731147766,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Kenji Watanabe's room at The Westin Book Cadillac Detroit"
+    },
+    "The Albert": {
+        "building": "The Albert",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            932.0420570373535,
+            1159.4660568237305,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-6.json"
+    },
+    "Leila": {
+        "building": "Farwell Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            841.1796798706055,
+            1178.3803787231445,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+>>>>>>> upstream/master
     },
     "Bohemia at The Detroit Club": {
         "building": "The Detroit Club",
@@ -225,7 +695,41 @@
             777.2981643676758,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+=======
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Zara Williams's room at Louis Kamper Apts": {
+        "building": "Louis Kamper Apts",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            804.1666030883789,
+            1243.5814895629883,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Zara Williams's room at Louis Kamper Apts"
+    },
+    "Beverages and DM Store": {
+        "building": "The Detroit Club",
+        "coarse_type": "stores",
+        "fine_types": [
+            "spa",
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            782.9457015991211,
+            777.2981643676758,
+            -20
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json"
+>>>>>>> upstream/master
     },
     "Plum Market \u2013 Ally Detroit Center": {
         "building": "Ally Detroit Center",
@@ -245,6 +749,7 @@
             823.1520156860352,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Beverages and Snacks Store": {
@@ -427,6 +932,11 @@
         "name": "Elizabeth Mensah's room at 28 Grand"
     },
     "Sophie Carlsen's room at Fowler Building": {
+=======
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+    },
+    "Fowler Building": {
+>>>>>>> upstream/master
         "building": "Fowler Building",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -435,6 +945,7 @@
         "location": [
             964.197732925415,
             1176.8706283569336,
+<<<<<<< HEAD
             -8
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-5.json",
@@ -528,6 +1039,26 @@
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+=======
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-5.json"
+    },
+    "Cadillac Lodge": {
+        "building": "Cadillac Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1260.9187774658203,
+            1034.3864555358887,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+>>>>>>> upstream/master
     },
     "Fresh and DM Store": {
         "building": "First National Bank Building",
@@ -543,6 +1074,7 @@
             917.9287872314453,
             -12
         ],
+<<<<<<< HEAD
         "scene": "ViCo/modules/indoor_scenes/scenes/store-Fresh-DM.json"
     },
     "American Coney Island": {
@@ -622,6 +1154,25 @@
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json"
     },
     "Taylor Swift's room at The Westin Book Cadillac Detroit": {
+=======
+        "scene": "indoor_scenes/store-Fresh-DM.json"
+    },
+    "Spkr Box": {
+        "building": "Spkr Box",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "cafe"
+        ],
+        "location": [
+            851.0887756347656,
+            1242.951416015625,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "Marco Ruiz's room at The Westin Book Cadillac Detroit": {
+>>>>>>> upstream/master
         "building": "The Westin Book Cadillac Detroit",
         "coarse_type": "accommodation",
         "fine_types": [
@@ -631,6 +1182,7 @@
         "location": [
             823.1789932250977,
             1038.2136731147766,
+<<<<<<< HEAD
             -20
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-3.json",
@@ -651,6 +1203,56 @@
             -4
         ],
         "scene": "MV5M25QKTKJZ2AABAAAAAAI8"
+=======
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Marco Ruiz's room at The Westin Book Cadillac Detroit"
+    },
+    "Elizabeth Mensah's room at Julian C. Madison Building": {
+        "building": "Julian C. Madison Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            803.9821166992188,
+            1267.0031204223633,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Elizabeth Mensah's room at Julian C. Madison Building"
+    },
+    "Fresh and Snacks Store": {
+        "building": "Farwell Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            841.1796798706055,
+            1178.3803787231445,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json"
+    },
+    "Julian C. Madison Building": {
+        "building": "Julian C. Madison Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            803.9821166992188,
+            1267.0031204223633,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-5.json"
+>>>>>>> upstream/master
     },
     "Louis Kamper Apts": {
         "building": "Louis Kamper Apts",
@@ -663,15 +1265,23 @@
             1243.5814895629883,
             -4
         ],
+<<<<<<< HEAD
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json"
     },
     "45 W Grand River": {
         "building": "45 W Grand River",
+=======
+        "scene": "indoor_scenes/accomodation-4.json"
+    },
+    "Kate Novak's room at Security Trust Lofts": {
+        "building": "Security Trust Lofts",
+>>>>>>> upstream/master
         "coarse_type": "accommodation",
         "fine_types": [
             "apartments"
         ],
         "location": [
+<<<<<<< HEAD
             888.0002059936523,
             1216.2952270507812,
             -4
@@ -691,6 +1301,88 @@
         ],
         "scene": "ViCo/modules/indoor_scenes/scenes/dormitory-4.json",
         "name": "Leonard Park's room at Louis Kamper Apts"
+=======
+            990.7653558254242,
+            940.8342533111572,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Kate Novak's room at Security Trust Lofts"
+    },
+    "Steve Johnson's room at 28 Grand": {
+        "building": "28 Grand",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            879.1999893188477,
+            1261.3353271484375,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "name": "Steve Johnson's room at 28 Grand"
+    },
+    "Bedell Bldg": {
+        "building": "Bedell Bldg",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            945.6000175476074,
+            1206.29248046875,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json"
+    },
+    "Avalon Caf\u00e9 and Bakery": {
+        "building": "1001 Woodward Garage",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1013.4044237136841,
+            1090.8484153747559,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json"
+    },
+    "The Press/321": {
+        "building": "Detroit Free Press Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            777.766716003418,
+            826.4625930786133,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-0.json"
+    },
+    "Comerica / Detroit Trust Company": {
+        "building": "Comerica / Detroit Trust Company",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            936.5564441680908,
+            780.0391006469727,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json"
+>>>>>>> upstream/master
     },
     "BrisaBar": {
         "building": "Brisabar",
@@ -706,6 +1398,7 @@
             964.1176795959473,
             -4
         ],
+<<<<<<< HEAD
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
     },
     "Julian C. Madison Building": {
@@ -885,6 +1578,9 @@
             -4
         ],
         "scene": "MWHLEPQKTIFZIAABAAAAAAA8"
+=======
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json"
+>>>>>>> upstream/master
     },
     "Cadillac Square Bus Stop": {
         "building": "open space",

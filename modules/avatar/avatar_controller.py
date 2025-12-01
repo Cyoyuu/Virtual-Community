@@ -10,7 +10,7 @@ import genesis.utils.geom as geom_utils
 from genesis.utils.misc import get_assets_dir, get_cvx_cache_dir
 
 from .utils import *
-from ViCo.tools.utils import *
+from tools.utils import *
 from .avatar_robot import AvatarRobot
 
 from .walk_motion import WalkMotion
@@ -69,7 +69,6 @@ Supported_Motions = {
 class AvatarController():
     '''
     Avatar Controller, converts high level actions into joints positions.
-    See https://docs.google.com/document/d/1FWms2r8xpw1FIl1CFG_IfuxeiMBgxrIERzHzK0hE5V0/preview for details
     '''
     full_motion_data = None
     full_motion_data_path = None
@@ -90,7 +89,7 @@ class AvatarController():
         self.robot = AvatarRobot(env, skin_options, name)
         self.box = self.robot.box
 
-        motion_data_path = os.path.join(motion_data_path)
+        motion_data_path = os.path.join(get_assets_dir(), motion_data_path)
         if AvatarController.full_motion_data_path is None:
             AvatarController.full_motion_data_path = f"{motion_data_path}.full"
 
@@ -168,6 +167,7 @@ class AvatarController():
                 lookat=(1.0, 0.0, 0.0),
                 fov=ego_view_options["fov"],
                 GUI=ego_view_options["GUI"],
+                far=16000.0,
             )
         else:
             self.ego_view = None
@@ -187,7 +187,8 @@ class AvatarController():
                 pos=(0.0, 0.0, 0.0),
                 lookat=(0.0, 0.0, 0.0),
                 fov=90,
-                GUI=False
+                GUI=False,
+                far=16000.0,
             )
 
         self.enable_collision = enable_collision
@@ -355,7 +356,7 @@ class AvatarController():
             segmentation=False,
     ):
         if self.robot.base_state == AvatarState.SLEEPING:
-            return None, None, None, self.ego_view.fov, self.ego_view.transform
+            return None, None, None, self.ego_view.transform
         if self.robot.base_state == AvatarState.IN_VEHICLE:
             if self.robot._h_attach_to.name != "bicycle" and self.robot._h_attach_to.ego_view is not None:
                 return self.robot._h_attach_to.render_ego_view(rotation_offset, depth, segmentation)
@@ -364,8 +365,8 @@ class AvatarController():
         head_pos += head_rot @ np.array([0.2, 0.0, 0.0]) # Move the camera forward by a certain distance to prevent it from seeing the avatar.
         
         self.ego_view.set_pose(pos=head_pos, lookat=head_rot@np.array([1,0,0])+head_pos)
-        rgb, depth, seg, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
-        return rgb, depth, seg, self.ego_view.fov, self.ego_view.transform
+        rgb, depth, seg_idxc_arr, _ = self.ego_view.render(depth=depth, segmentation=segmentation, colorize_seg=False)
+        return rgb, depth, seg_idxc_arr, self.ego_view.transform
 
     #################### Motions ####################
 

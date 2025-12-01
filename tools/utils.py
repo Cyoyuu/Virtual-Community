@@ -5,6 +5,7 @@ import cv2
 import random
 import colorsys
 import numpy as np
+import torch
 import matplotlib.colors as mcolors
 from rtree import index as rtree_index
 from datetime import datetime, timedelta
@@ -50,6 +51,30 @@ def atomic_save(file_path: str, data: Union[str, bytes, Image.Image]):
 		print(f"Warning: Failed to save {file_path} with error: {e}, traceback: {traceback.format_exc()}")
 	finally:
 		lock.release()
+
+def gs_quat2euler(quat):  # xyz
+	# Extract quaternion components
+	qw, qx, qy, qz = quat.unbind(-1)
+
+	# Roll (x-axis rotation)
+	sinr_cosp = 2 * (qw * qx + qy * qz)
+	cosr_cosp = 1 - 2 * (qx * qx + qy * qy)
+	roll = torch.atan2(sinr_cosp, cosr_cosp)
+
+	# Pitch (y-axis rotation)
+	sinp = 2 * (qw * qy - qz * qx)
+	pitch = torch.where(
+		torch.abs(sinp) >= 1,
+		torch.sign(sinp) * torch.tensor(torch.pi / 2),
+		torch.asin(sinp),
+	)
+
+	# Yaw (z-axis rotation)
+	siny_cosp = 2 * (qw * qz + qx * qy)
+	cosy_cosp = 1 - 2 * (qy * qy + qz * qz)
+	yaw = torch.atan2(siny_cosp, cosy_cosp)
+
+	return torch.stack([roll, pitch, yaw], dim=-1)
 
 def merge_step_files(steps_folder_path, agent_names, num_steps=43200, overwrite=False):
 	if os.path.exists(os.path.join(steps_folder_path, "all_steps.json")) and not overwrite:
@@ -345,7 +370,7 @@ def schedule_validator(hourly_schedule, s_mem, curr_time, place_metadata=None, l
 					break
 	first_schedule = True
 	for i, schedule_step in enumerate(hourly_schedule):
-		if datetime.strptime(schedule_step["end_time"], "%H:%M:%S").time() <= curr_time.time():
+		if datetime.strptime(schedule_step["end_time"], "%H:%M:%S").time() < curr_time.time():
 			continue
 		if i == 0:
 			if schedule_step['start_time'] != "00:00:00":

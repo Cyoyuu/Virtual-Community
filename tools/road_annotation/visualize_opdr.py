@@ -60,7 +60,7 @@ def visualize_roads(roads, ref_lat=0., ref_lon=0., offset_x=0., offset_y=0.):
     plt.grid()
     # plt.legend()
     plt.axis('equal')  # Equal scaling for x and y axes
-    # plt.savefig("ViCo/modules/trafficmanager/opdr.png")
+    # plt.savefig("modules/trafficmanager/opdr.png")
     plt.show()
 
 if __name__ == "__main__":
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     parser.add_argument("--scene", "-s", type=str, required=True)
     args = parser.parse_args()
     # Example usage
-    file_path = f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr"  # Replace with your OpenDRIVE file path
+    file_path = f"assets/scenes/{args.scene}/road_data/road_data.xodr"  # Replace with your OpenDRIVE file path
     print(f"visualizing {file_path}...")
     roads_data, offset_x, offset_y = parse_opendrive(file_path)
 

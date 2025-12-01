@@ -425,10 +425,10 @@ if __name__ == '__main__':
     
         transit = {}
         
-        with open(f"ViCo/assets/scenes/{args.scene}/road_data/roads.pkl", 'rb') as file:
+        with open(f"assets/scenes/{args.scene}/road_data/roads.pkl", 'rb') as file:
             roads_geodetic, nodes = pickle.load(file)
         scene_range_meta = {}
-        with open(f"ViCo/assets/scenes/{args.scene}/raw/center.txt") as f:
+        with open(f"assets/scenes/{args.scene}/raw/center.txt") as f:
             scene_range_meta["lat"], scene_range_meta["lng"] = map(float, f.read().strip().split(' '))
         
         roads = []
@@ -447,7 +447,7 @@ if __name__ == '__main__':
 
         print("Highway Type Stats:", highway_types_stats)
 
-        place_metadata_path = f"ViCo/assets/scenes/{args.scene}/place_metadata.json"
+        place_metadata_path = f"assets/scenes/{args.scene}/place_metadata.json"
         place_metadata = json.load(open(place_metadata_path, 'r'))
 
         all_places = []
@@ -617,7 +617,7 @@ if __name__ == '__main__':
         transit["bicycle"] = {}
         transit["bicycle"]["stations"] = bicycle_stations
 
-        json.dump(transit, open(f"ViCo/assets/scenes/{args.scene}/transit.json", 'w'), indent=4)
+        json.dump(transit, open(f"assets/scenes/{args.scene}/transit.json", 'w'), indent=4)
 
         draw_roads(roads)
         # for position in all_places:
@@ -640,10 +640,10 @@ if __name__ == '__main__':
                 plt.title('Transit Annotation Mode: No Bus Road Constraint')
             else:
                 plt.title('Transit Annotation Mode: Normal')
-            plt.savefig(f"ViCo/assets/scenes/{args.scene}/transit.png")
+            plt.savefig(f"assets/scenes/{args.scene}/transit.png")
             plt.show()
         else:
-            # base_path = f"ViCo/assets/scenes/{args.scene}"
+            # base_path = f"assets/scenes/{args.scene}"
             # os.makedirs(f'{base_path}/animation', exist_ok=True)
             for i in range(0, len(refined_waypoints)):
                 temp_way_points_enu = np.array(refined_waypoints[:i+1])
@@ -661,12 +661,12 @@ if __name__ == '__main__':
             #         image = imageio.imread(filename)
             #         writer.append_data(image)
     else:   
-        transit = json.load(open(f"ViCo/assets/scenes/{args.scene}/transit.json", 'r'))
-        place_metadata_path = f"ViCo/assets/scenes/{args.scene}/place_metadata.json"
+        transit = json.load(open(f"assets/scenes/{args.scene}/transit.json", 'r'))
+        place_metadata_path = f"assets/scenes/{args.scene}/place_metadata.json"
         place_metadata = json.load(open(place_metadata_path, 'r'))
 
     # Update place metadata and building metadata
-    building_metadata_path = f"ViCo/assets/scenes/{args.scene}/building_metadata.json"
+    building_metadata_path = f"assets/scenes/{args.scene}/building_metadata.json"
     building_metadata = json.load(open(building_metadata_path, 'r'))
 
     # clean previous transit data
