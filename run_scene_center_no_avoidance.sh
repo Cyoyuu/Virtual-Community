@@ -4,7 +4,7 @@ agent_num=$3
 sentinel_type=$4
 sentinel_num=$5
 # Path to your script or command to run
-script_path="ViCo/meeting_challenge/${gt}_scripts/run_center_no_avoidance.sh"
+script_path="meeting_challenge/${gt}_scripts/run_center_no_avoidance.sh"
 
 if [ "$sentinel_num" -eq 20 ]; then
   time_limit=270

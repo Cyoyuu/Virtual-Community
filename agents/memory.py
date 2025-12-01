@@ -18,8 +18,8 @@ current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 from agents.sg.builder.builder import Builder, BuilderConfig, VolumeGridBuilderConfig
 from agents.sg.builder.object import Object, AGENT_TAGS
-from ViCo.tools.model_manager import global_model_manager
-from ViCo.tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
+from tools.model_manager import global_model_manager
+from tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
 
 class SemanticMemory:
 	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False, detection_min_pixel_ratio=0.001):

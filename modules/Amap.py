@@ -24,12 +24,12 @@ import sys
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 
-from ViCo.tools.annotate_sentinel import annotate_all_rotate
-from ViCo.tools.road_annotation.visualize_osm_roads import draw_roads
+from tools.annotate_sentinel import annotate_all_rotate
+from tools.road_annotation.visualize_osm_roads import draw_roads
 
 if __name__ != "__main__" :
-    from ViCo.tools.utils import *
-    from ViCo.modules import *
+    from tools.utils import *
+    from modules import *
 
 def is_point_enclosed_Amap(grid, point, resolution, min_x, min_y, nx, ny):
     from collections import deque

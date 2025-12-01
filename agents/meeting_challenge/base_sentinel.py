@@ -16,8 +16,6 @@ import math
 
 from agents.agent import Agent
 from agents.memory import SemanticMemory
-from ViCo.tools.utils import *
-from ViCo.tools.model_manager import global_model_manager
 from agents.sg.builder.builder import Builder, BuilderConfig
 
 

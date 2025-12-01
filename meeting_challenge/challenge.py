@@ -16,8 +16,8 @@ sys.path.append(current_directory)
 
 from agents.meeting_challenge import *
 from agents.memory import SemanticMemory
-from ViCo.env import VicoEnv, AgentProcess
-from ViCo.modules import *
+from env import VicoEnv, AgentProcess
+from modules import *
 
 keep_running = False
 
@@ -248,7 +248,7 @@ def main():
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
-            all_agent_processes.append(AgentProcess(SentinelMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])

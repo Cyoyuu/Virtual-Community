@@ -22,7 +22,7 @@ Genesis/**/*.pkl
 *.egg-info*
 logs
 Genesis/genesis/assets/ViCo
-ViCo/meeting_challenge/results*
+meeting_challenge/results*
 chat_raw*.jsonl
 assets/scenes/*/raw/
 assets/scenes/*/gpt_cache/
@@ -35,9 +35,8 @@ scp.sh
 step_*_path.png
 waypoints_animation*.gif
 *.xlsx
-results*.json
 tmp.json
 visualization
-ViCo/modules/utils.py
+modules/utils.py
 mv.py
-results
+results*

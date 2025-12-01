@@ -4,4 +4,4 @@ from .RoCo import RoCoMeetingAgent
 from .base_nav import BaseNavigationMeetingAgent
 from .base_sentinel import BaseSentinelAgent
 from .Fixed import FixedMeetingAgent
-from .Sentinel import SentinelMeetingAgent
+from .CoSaR import CoSaRMeetingAgent
