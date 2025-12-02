@@ -16,7 +16,8 @@ sys.path.append(current_directory)
 
 from agents.meeting_challenge import *
 from agents.memory import SemanticMemory
-from env import VicoEnv, AgentProcess
+from env import VicoEnv
+from agents.agent import AgentProcess
 from modules import *
 
 keep_running = False
