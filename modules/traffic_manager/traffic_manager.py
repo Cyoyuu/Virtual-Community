@@ -34,15 +34,15 @@ class TrafficManager:
             self.enable_traffic=True
         else:
             self.enable_traffic=False
-        if self.enable_traffic and not os.path.exists(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr"):
-            logger.error(f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr not exist!")
+        if self.enable_traffic and not os.path.exists(f"assets/scenes/{scene_name}/road_data/road_data.xodr"):
+            logger.error(f"assets/scenes/{scene_name}/road_data/road_data.xodr not exist!")
             exit()
-        with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
+        with open(f'assets/scenes/{scene_name}/raw/center.txt', "r") as file:
             for line in file:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
         if self.enable_traffic:
-            self.map = LocalMap(file_path=f"ViCo/assets/scenes/{scene_name}/road_data/road_data.xodr",
+            self.map = LocalMap(file_path=f"assets/scenes/{scene_name}/road_data/road_data.xodr",
                                   terrain_height_path=None if self.dry_run else f"{self.env.scene_assets_dir}/height_field.npz",
                                   ref_lat=ref_lat, ref_lon=ref_lon)
             self.sampled_roads = self.map.get_main_roads()
@@ -486,18 +486,18 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
-    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr"):
-        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr not exist!")
+    if not os.path.exists(f"assets/scenes/{args.scene}/road_data/road_data.xodr"):
+        print(f"assets/scenes/{args.scene}/road_data/road_data.xodr not exist!")
         exit()
-    with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt', "r") as file:
+    with open(f'assets/scenes/{args.scene}/raw/center.txt', "r") as file:
         for line in file:
             ref_lat, ref_lon = line.strip().split()
         ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-    local_map=LocalMap(file_path=f"ViCo/assets/scenes/{args.scene}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
+    local_map=LocalMap(file_path=f"assets/scenes/{args.scene}/road_data/road_data.xodr", terrain_height_path=None, ref_lat=ref_lat, ref_lon=ref_lon)
     traffic_manager = TrafficManager(None, args.scene, vehicle_number=60, dry_run=True, pedestrian_number=60)
 
     fig, ax = plt.subplots(figsize=(10, 6))
-    aerial_view=mpimg.imread(f"ViCo/assets/scenes/{args.scene}/global.png")
+    aerial_view=mpimg.imread(f"assets/scenes/{args.scene}/global.png")
     plt.imshow(aerial_view, extent=[-512, 512, -512, 512])# left, right, bottom, top
     ax.set_xlim(0, 10)
     ax.set_ylim(0, 6)
