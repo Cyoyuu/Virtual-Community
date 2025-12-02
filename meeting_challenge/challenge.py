@@ -325,7 +325,8 @@ def main():
                 agent.update(obs[i])
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:
-                agent_actions[i] = agent.act()
+                action = agent.act()
+                agent_actions[i] = action
                 agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
                 if agent_actions[i] is not None and agent_actions[i]['type'] == 'converse':
                     agent_actions[i]['request_chat_func'] = agent.request_chat
