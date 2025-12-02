@@ -302,8 +302,10 @@ def main():
     infos={"time_used_by_step": np.zeros(5, dtype=float), "time_used_by_scene_step": np.zeros(5, dtype=float)}
     banned_agent_list = []
     detected_counter = 0
+    agent_list_to_update = obs.pop('agent_list_to_update')
     while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
+        # prcess obs_printable
         obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
         for i in range(len(obs_printable)):
@@ -316,22 +318,24 @@ def main():
         # update obs and do action
         extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents) if env.config["agent_names"][i] in all_agent_name and env.config["agent_names"][i] not in banned_agent_list}
         }
-
+        # agents step
         for i, agent in enumerate(all_agent_processes):
-            obs[i].update(extra_obs)
-            agent.update(obs[i])
-
+            if i in agent_list_to_update:
+                obs[i].update(extra_obs)
+                agent.update(obs[i])
         for i, agent in enumerate(all_agent_processes):
-            tm = time.time()
-            action = agent.act()
-            agent_actions[i] = action
-            # gs.logger.info(f"Agent {env.config['agent_names'][i]} action: {action} Time used: {time.time()-tm:.2f}s")
-            agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
-            # action types indicate it see a sentinel
-            if action is not None and action['type'] in ['signal', 'look_after_left', 'look_after_right', 'chase']:
-                detected_counter += 1
-                if action['arg1']=='ban':
-                    banned_agent_list.append(action['arg2'])
+            if i in agent_list_to_update:
+                agent_actions[i] = agent.act()
+                agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
+                if agent_actions[i] is not None and agent_actions[i]['type'] == 'converse':
+                    agent_actions[i]['request_chat_func'] = agent.request_chat
+                    agent_actions[i]['get_utterance_func'] = agent.get_utterance
+                # action types indicate it see a sentinel
+                if action is not None and action['type'] in ['signal', 'look_after_left', 'look_after_right', 'chase']:
+                    detected_counter += 1
+                    if action['arg1']=='ban':
+                        banned_agent_list.append(action['arg2'])
+        agent_actions['agent_list_to_update'] = agent_list_to_update
 
         steps_info_path = os.path.join(output_dir, "steps.json")
         if os.path.exists(steps_info_path):

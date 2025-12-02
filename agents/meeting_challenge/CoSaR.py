@@ -404,7 +404,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
-            self.last_action = {"type": "converse", "arg1": speech, "arg2": 3200}
+            self.last_action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
             for i in range(len(self.known_sentinel_poses)):
                 if self.known_sentinel_poses[i][3]==0:
                     self.known_sentinel_poses[i][3]=-1

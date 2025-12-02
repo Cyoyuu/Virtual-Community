@@ -84,12 +84,12 @@ class Action:
         action_to_print = copy.deepcopy(self.action)
         if "arg2" in action_to_print:
             action_to_print.pop("arg2")
-        if self.action["type"] == "converse":
+        if self.action["type"] == "remote_converse":
             action_to_print.pop("arg1")
         return f"{self.start_time.strftime('%H:%M:%S')} - {self.end_time.strftime('%H:%M:%S') if self.end_time else ''}: {action_to_print}"
 
     def judge_continue(self, current_plan):
-        if self.action["type"] == "converse" and current_plan["type"] == "converse":
+        if self.action["type"] == "remote_converse" and current_plan["type"] == "remote_converse":
             return True
         return self.action == current_plan and self.action["type"] not in ["put", "pick"]
 
@@ -479,7 +479,7 @@ class BaseNavigationMeetingAgent(Agent):
     def _process_obs(self, obs):
         if obs['action_status'] == "FAIL":
             self.logger.info(f"{self.name} failed to execute last action {self.action_history[-1].action}.")
-            # if self.action_history[-1].action["type"] == "converse":
+            # if self.action_history[-1].action["type"] == "remote_converse":
             #     if len(self.conversation_history) > 0 and self.conversation_history[-1].subject == self.name:
             #         self.conversation_history.pop()
         if len(obs['events']) > 0:
@@ -687,7 +687,7 @@ class BaseNavigationMeetingAgent(Agent):
         elif self.discussion_plan["action"]=="speak":
             intent = self.discussion_plan['explanation']
             speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
-            action = {"type": "converse", "arg1": speech, "arg2": 3200}
+            action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
             self.discussion_plan = None
         else:
             raise NotImplementedError(f"discussion plan type is not supported")
@@ -768,7 +768,7 @@ class BaseNavigationMeetingAgent(Agent):
             rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=f"{curr_eta}s remains to reach the destination", eta_history=self.get_eta_history_description())
             if rethink_result['initiate_new_discussion']:
                 self.enter_discussion_mode(trigger="RECENT EVENT")
-                action = {"type": "converse", "arg1": rethink_result["speech"], "arg2": 3200}
+                action = {"type": "remote_converse", "arg1": rethink_result["speech"], "arg2": 3200}
                 return action, False
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
@@ -1605,13 +1605,13 @@ class BaseNavigationMeetingAgent(Agent):
                 elif self.discussion_plan["action"]=="query_speak":
                     # description = ", ".join(self.collect_plan["target_locations"][0])
                     speech = f"Hey {self.collect_plan['target']}, can you tell us your ETA to {self.collect_plan['target_locations'][0]}?"
-                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                    action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
                 elif self.discussion_plan["action"]=="speak":
                     intent = self.speaker.prepare(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
                     speech = self.speaker.speak(curr_time=curr_time, name=self.name, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_eta=self.get_known_eta_description())
-                    action = {"type": "converse", "arg1": speech, "arg2": 3200}
+                    action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
                     self.thinking = 0
                     self.discussion_plan = None
                 else:
