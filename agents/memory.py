@@ -22,9 +22,10 @@ from tools.model_manager import global_model_manager
 from tools.utils import atomic_save, json_converter, min_max_normalize_dict, top_highest_x_values
 
 class SemanticMemory:
-	def __init__(self, storage_path, detect_interval=-1, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False, detection_min_pixel_ratio=0.001):
+	def __init__(self, storage_path, detect_interval=-1, fov=90.0, region_layer=False, debug=False, logger=None, knowledge_path=None, enable_danger_zone = False, detection_min_pixel_ratio=0.001):
 		self.storage_path = storage_path
 		self.detect_interval = detect_interval
+		self.fov = fov
 		self.debug = debug
 		self.logger = logger
 		self.knowledge_path = os.path.join(storage_path, "knowledge.json") if knowledge_path is None else knowledge_path
@@ -195,11 +196,11 @@ class SemanticMemory:
 			self.warning_labels = [i for i in obs['gt_seg_entity_idx_to_info'] if "type" in obs["gt_seg_entity_idx_to_info"][i] and obs["gt_seg_entity_idx_to_info"][i]["type"] == "avatar" and "Sentinel" in obs["gt_seg_entity_idx_to_info"][i]["name"]]
 		cur_sg = self.get_sg(obs['current_place'])
 		if self.object_builder is not None and "gt_seg_entity_idx_to_info" in obs:
-			labels = self.object_builder.add_frame_with_gt_seg(obs['rgb'], obs['depth'], obs['segmentation'], obs['fov'], obs['extrinsics'], obs['gt_seg_entity_idx_to_info'])
+			labels = self.object_builder.add_frame_with_gt_seg(obs['rgb'], obs['depth'], obs['segmentation'], self.fov, obs['extrinsics'], obs['gt_seg_entity_idx_to_info'])
 			num_new_objects = len(self.object_builder.new_objects)
 		elif self.detect_interval > 0 and self.num_frames % self.detect_interval == 0 and (self.last_processed_rgb is None or not np.allclose(obs['rgb'], self.last_processed_rgb)):
 			self.last_processed_rgb = obs['rgb']
-			labels = self.object_builder.add_frame(obs['rgb'], obs['depth'], obs['fov'], obs['extrinsics'])
+			labels = self.object_builder.add_frame(obs['rgb'], obs['depth'], self.fov, obs['extrinsics'])
 			if self.debug:
 				label_color = np.random.rand(max(0, int(labels.max())) + 101, 3)
 				label_color[0] = 0
@@ -210,7 +211,7 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['depth'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, obs['fov'], obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['depth'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, self.fov, obs['extrinsics'])
 		self.current_labels = labels
 		self.num_frames += 1
 		if num_new_objects > 0:
