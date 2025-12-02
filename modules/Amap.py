@@ -222,18 +222,18 @@ class Amap:
         self.building_metadata=deepcopy(building_metadata)
         self.waypoints_dis=waypoints_dis
 
-        with open(f'ViCo/assets/scenes/{scene_name}/raw/center.txt', "r") as file:
+        with open(f'assets/scenes/{scene_name}/raw/center.txt', "r") as file:
             for line in file:
                 ref_lat, ref_lon = line.strip().split()
             ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-        self.roads, self.nodes = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
+        self.roads, self.nodes = pickle.load(open(f"assets/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
         # Paths
-        img_path = f"ViCo/assets/scenes/{self.scene_name}/global.png"
+        img_path = f"assets/scenes/{self.scene_name}/global.png"
         if not os.path.exists(img_path):
             raise FileNotFoundError(f"Aerial image not found: {img_path}")
         self.global_image = Image.open(img_path).convert("RGB")
 
-        obstacle_grid_save = pickle.load(open(f"ViCo/assets/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
+        obstacle_grid_save = pickle.load(open(f"assets/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
         self.obstacle_grid = obstacle_grid_save["grid"]
         self.obstacle_grid_parameters = obstacle_grid_save["parameters"]
 
@@ -553,7 +553,7 @@ class Amap:
             PIL.Image.Image: Cropped and annotated subimage.
         """
         # Paths
-        img_path = f"ViCo/assets/scenes/{self.scene_name}/global.png"
+        img_path = f"assets/scenes/{self.scene_name}/global.png"
 
         # Check assets
         if not os.path.exists(img_path):
@@ -735,15 +735,15 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
-    if not os.path.exists(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl"):
-        print(f"ViCo/assets/scenes/{args.scene}/road_data/road_data.pkl not exist!")
+    if not os.path.exists(f"assets/scenes/{args.scene}/road_data/road_data.pkl"):
+        print(f"assets/scenes/{args.scene}/road_data/road_data.pkl not exist!")
         exit()
-    with open(f'ViCo/assets/scenes/{args.scene}/raw/center.txt', "r") as file:
+    with open(f'assets/scenes/{args.scene}/raw/center.txt', "r") as file:
         for line in file:
             ref_lat, ref_lon = line.strip().split()
         ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-    building_metadata = json.load(open(os.path.join(f"ViCo/assets/scenes/{args.scene}/agents_num_5", "building_metadata.json"), 'r'))
-    place_metadata = json.load(open(os.path.join(f"ViCo/assets/scenes/{args.scene}/agents_num_5", "place_metadata.json"), 'r'))
+    building_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_5", "building_metadata.json"), 'r'))
+    place_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_5", "place_metadata.json"), 'r'))
     amap=Amap(scene_name=args.scene, building_metadata=building_metadata, place_metadata=place_metadata)
     # this code is for generating sentinel config
     # random_sampled_points=list(np.random.uniform(low=-300, high=300, size=(10, 2)))
