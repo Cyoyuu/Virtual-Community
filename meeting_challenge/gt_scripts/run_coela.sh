@@ -6,12 +6,12 @@ job_id=$5
 
 export PYTHONPATH=${PWD}
 
-python ViCo/meeting_challenge/challenge.py --head_less \
+python meeting_challenge/challenge.py --head_less \
 --backend gpu \
 --multi_process \
 --skip_avatar_animation \
 --enable_gt_segmentation \
---output_dir ViCo/meeting_challenge/output \
+--output_dir meeting_challenge/output \
 --scene "${scene}" \
 --job_id "${job_id}" \
 --enable_outdoor_objects \
