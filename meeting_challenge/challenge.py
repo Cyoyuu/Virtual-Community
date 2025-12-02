@@ -45,7 +45,7 @@ def main():
     parser.add_argument("--backend", type=str, default='cpu')
     parser.add_argument("--head_less", '-l', action='store_true')
     parser.add_argument("--multi_process", '-m', action='store_true')
-    parser.add_argument("--output_dir", "-o", type=str, default='ViCo/meeting_challenge/output')
+    parser.add_argument("--output_dir", "-o", type=str, default='meeting_challenge/output')
     parser.add_argument("--debug", action='store_true')
     parser.add_argument("--overwrite", action='store_true')
     parser.add_argument("--job_id", type=int, default=0)
@@ -67,7 +67,7 @@ def main():
     parser.add_argument("--enable_indoor_scene", action='store_true')
     parser.add_argument("--enable_indoor_activities", action='store_true')
     parser.add_argument("--enable_outdoor_objects", action='store_true')
-    parser.add_argument("--outdoor_objects_assets_dir", type=str, default='ViCo/scene/object_assets')
+    parser.add_argument("--outdoor_objects_assets_dir", type=str, default='scene/object_assets')
     parser.add_argument("--outdoor_objects_max_num", type=int, default=10)
     parser.add_argument("--no_load_scene", action='store_true')
 
@@ -116,7 +116,7 @@ def main():
             agent_type_name = f"{agent_type}_no_refine"
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
-    job_result_path = os.path.join(f"ViCo/meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
+    job_result_path = os.path.join(f"meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(args.output_dir, exist_ok=True)
@@ -138,7 +138,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     config_path = os.path.join(args.output_dir, 'curr_sim')
     if not os.path.exists(config_path):
-        seed_config_path = os.path.join('ViCo/assets/scenes', args.scene, args.config)
+        seed_config_path = os.path.join('assets/scenes', args.scene, args.config)
         print(f"Initiate new simulation from config: {seed_config_path}")
         try:
             shutil.copytree(seed_config_path, config_path)
@@ -159,7 +159,7 @@ def main():
         config['locator_colors']=config['locator_colors'][:num_agents]
         config['locator_colors_rgb']=config['locator_colors_rgb'][:num_agents]
         config['agent_skins']=config['agent_skins'][:num_agents]
-    sentinel_config_path = os.path.join('ViCo/assets/scenes', args.scene, "sentinel_config", f"sentinel_config_{args.sentinel_type}.json")
+    sentinel_config_path = os.path.join('assets/scenes', args.scene, "sentinel_config", f"sentinel_config_{args.sentinel_type}.json")
     if os.path.exists(sentinel_config_path):
         print(f"adding sentinels to config...")
         sentinel_config = json.load(open(sentinel_config_path, "r"))
