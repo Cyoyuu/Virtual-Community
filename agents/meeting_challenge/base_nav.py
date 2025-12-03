@@ -591,7 +591,7 @@ class BaseNavigationMeetingAgent(Agent):
         # Compute median depth
         selected_depths = self.obs['depth'][mask]
         z_median = np.median(selected_depths)
-        wp = pixel_to_world(u_median, v_median, z_median, segmentation.shape[0], segmentation.shape[1], self.obs['fov'], self.obs['extrinsics'].flatten())
+        wp = pixel_to_world(u_median, v_median, z_median, segmentation.shape[0], segmentation.shape[1], self.s_mem.fov, self.obs['extrinsics'].flatten())
         return wp
 
     def add_event(self, event_type, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy=None, event_expiration=None):
