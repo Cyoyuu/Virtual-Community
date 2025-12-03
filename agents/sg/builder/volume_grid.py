@@ -215,7 +215,7 @@ class VolumeGridBuilder:
                 for wp in external_route:
                     draw_point(wp[0], wp[1], [255, 255, 0])
             from PIL import Image
-            Image.fromarray(draw_map).save(save_path[::-1, :, :])
+            Image.fromarray(draw_map).save(save_path)
         return occ_map, x_min[0], y_min[0], x_max[0], y_max[0]
     
     def radius_denoise(self, min_points: int, radius: float):

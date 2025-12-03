@@ -380,6 +380,7 @@ def main():
                     agent_actions[i]['type']='move_forward'
         # then step
         obs, _, done, info = env.step(agent_actions)
+        agent_list_to_update = obs.pop('agent_list_to_update')
         sps_sim = time.perf_counter() - lst_time
         env.config["sps_sim"] = (env.config["sps_sim"] * (env.steps - 1) + sps_sim) / max(env.steps, 1)
         gs.logger.info(f"Time used: {sps_agent:.2f}s for agents and robots, {sps_sim:.2f}s for simulation, "
