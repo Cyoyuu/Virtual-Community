@@ -369,14 +369,15 @@ def main():
         env.config["sps_agent"] = (env.config["sps_agent"] * env.steps + sps_agent) / (env.steps + 1)
         lst_time = time.perf_counter()
         # transfer look_after and chase back to turn and move_forward
-        for i, action in enumerate(agent_actions):
-            if agent_actions[i] is None: continue
-            if agent_actions[i]['type']=='look_after_left':
-                agent_actions[i]['type']='turn_left'
-            if agent_actions[i]['type']=='look_after_right':
-                agent_actions[i]['type']='turn_right'
-            if agent_actions[i]['type']=='chase':
-                agent_actions[i]['type']='move_forward'
+        for i, agent in enumerate(all_agent_processes):
+            if i in agent_list_to_update:
+                if agent_actions[i] is None: continue
+                if agent_actions[i]['type']=='look_after_left':
+                    agent_actions[i]['type']='turn_left'
+                if agent_actions[i]['type']=='look_after_right':
+                    agent_actions[i]['type']='turn_right'
+                if agent_actions[i]['type']=='chase':
+                    agent_actions[i]['type']='move_forward'
         # then step
         obs, _, done, info = env.step(agent_actions)
         sps_sim = time.perf_counter() - lst_time
