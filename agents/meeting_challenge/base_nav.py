@@ -561,15 +561,24 @@ class BaseNavigationMeetingAgent(Agent):
         freq_labels = dict(zip(values_labels, counts_labels))
         self.logger.info(f"segmentation is {freq}, labels are {freq_labels}")
         self.visible_sentinels = dict()
-        for i in freq:
-            if i not in self.obs["gt_seg_idxc_to_info"]: continue
-            if freq[i] < 30: continue
-            e = self.obs["gt_seg_idxc_to_info"][i]
-            if 'type' in e and e['type'] == 'avatar': # e[-1] is None
-                if 'Sentinel' not in e['name']: continue
-                wp = self.get_position_from_view(self.obs['segmentation'], i)
-                self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
-                self.visible_sentinels[e['name']] = wp
+        if 'gt_seg_idxc_to_info' in self.obs:
+            for i in freq:
+                if i not in self.obs["gt_seg_idxc_to_info"]: continue
+                if freq[i] < 30: continue
+                e = self.obs["gt_seg_idxc_to_info"][i]
+                if 'type' in e and e['type'] == 'avatar': # e[-1] is None
+                    if 'Sentinel' not in e['name']: continue
+                    wp = self.get_position_from_view(self.obs['segmentation'], i)
+                    self.logger.info(f"I see {i}: {e['name']}. World coordinates for {e['name']} are {wp}.")
+                    self.visible_sentinels[e['name']] = wp
+                    self.update_known_sentinel_poses([wp[:3]], shared=0)
+        else:
+            for i in freq_labels:
+                if i not in self.s_mem.warning_labels: continue
+                if freq_labels[i] < 30: continue
+                wp = self.get_position_from_view(self.s_mem.current_labels, i)
+                self.logger.info(f"I see a sentinel. World coordinates for its idx {i} are {wp}.")
+                self.visible_sentinels['Sentinel'] = wp
                 self.update_known_sentinel_poses([wp[:3]], shared=0)
 
     def get_position_from_view(self, segmentation, label):
