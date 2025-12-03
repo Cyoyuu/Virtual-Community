@@ -54,6 +54,7 @@ class BaseSentinelAgent(Agent):
         self.logger.info(f"freq is: {freq}")
         self.visible_agent = {}
         for i in freq:
+            if i < 0: continue
             if freq[i] < self.detection_min_pixel_ratio * len(self.obs['segmentation'].flatten()): continue
             e = self.obs["gt_seg_idxc_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None

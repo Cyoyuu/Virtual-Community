@@ -562,6 +562,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.logger.info(f"segmentation is {freq}, labels are {freq_labels}")
         self.visible_sentinels = dict()
         for i in freq:
+            if i < 0: continue
             if freq[i] < 30: continue
             e = self.obs["gt_seg_idxc_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
