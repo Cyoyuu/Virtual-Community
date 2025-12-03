@@ -376,7 +376,7 @@ def main():
         env.config["sps_sim"] = (env.config["sps_sim"] * (env.steps - 1) + sps_sim) / max(env.steps, 1)
         gs.logger.info(f"Time used: {sps_agent:.2f}s for agents and robots, {sps_sim:.2f}s for simulation, "
                        f"average {env.config['sps_agent']:.2f}s for agents, "
-                       f"{env.config["sps_sim"]:.2f}s for simulation, "
+                       f"{env.config['sps_sim']:.2f}s for simulation, "
                        f"{env.config['sps_chat']:.2f}s for post-chatting over {env.steps} steps.")
         for key in info:
             infos[key]+=info[key]
