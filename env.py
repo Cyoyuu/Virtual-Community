@@ -326,7 +326,9 @@ class VicoEnv:
 		gs.logger.info(f"running {self.sim_frames_per_step} scene steps for one ViCo step of {self.sec_per_step}s")
 
 		self.traffic_manager.reset()
-		self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, bus=self.traffic_manager.bus, logger=gs.logger)
+		if self.challenge == 'meeting':
+			self.nav_app = Amap(scene_name=scene, pose=None, place_metadata=self.place_metadata, building_metadata=self.building_metadata, bus=self.traffic_manager.bus, logger=gs.logger)
+			self.agent_speak_weight = [100] * self.num_agents
 		# self.nav_app.initiate_transit(self.traffic_manager.bus)
 
 		for i, agent in enumerate(self.agents):
