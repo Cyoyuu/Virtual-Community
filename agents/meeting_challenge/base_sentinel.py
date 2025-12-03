@@ -156,3 +156,63 @@ class BaseSentinelAgent(Agent):
             'arg1': np.linalg.norm(cur_goal - cur_trans),
         }
         return action
+    
+    def navigate(self, sg, goal_pos, goal_bbox=None):
+        if goal_pos is None:
+            return None
+        cur_trans = np.array(self.pose[:2])
+        goal_bbox = get_bbox(goal_bbox, goal_pos)
+        path = sg.volume_grid_builder.navigate(cur_trans, goal_bbox, self.last_path)
+        self.last_path = None
+        self.last_path_for_estimation = None
+        if path is None:
+            self.logger.error(f"No path found when navigate agent {self.name} to {goal_pos}.")
+            return None
+        else:
+            if self.current_vehicle == "bicycle":
+                nav_grid_num = int(self.BIKE_SPEED // sg.volume_grid_builder.conf.nav_grid_size)
+            elif self.current_vehicle is None:
+                nav_grid_num = int(self.WALK_SPEED // sg.volume_grid_builder.conf.nav_grid_size)
+            else:
+                self.logger.error(f"Unsupported vehicle type {self.current_vehicle} for navigation.")
+                nav_grid_num = int(self.WALK_SPEED // sg.volume_grid_builder.conf.nav_grid_size)
+            cur_goal = path[min(nav_grid_num, len(path) - 1)]
+            if sg.volume_grid_builder.has_obstacle(get_axis_aligned_bbox(np.array([cur_goal, cur_trans]), None)):
+                cur_goal = path[min(2, len(path) - 1)]
+        
+        self.logger.debug(f"Path {path[:3]}\n...\n{path[-3:]}")
+        from agents.sg.builder.volume_grid import convex_hull, dist_to_hull
+        dist = dist_to_hull(path[-1], convex_hull(goal_bbox))
+        if dist > 2:
+            self.logger.warning(f"Unable to find a path to the target bounding box. The optimal available path is still a distance of {dist} away from the target bounding box. The optimal path has been automatically adopted.")
+        if self.action_status == "COLLIDE":
+            self.logger.warning(f"{self.name} at {self.pose} moving to {cur_goal} is colliding with obstacles, path found was {path}.")
+        # move
+        target_rad = np.arctan2(cur_goal[1] - cur_trans[1], cur_goal[0] - cur_trans[0])
+        delta_rad = target_rad - self.pose[-1]
+        if delta_rad > np.pi:
+            delta_rad -= 2 * np.pi
+        elif delta_rad < -np.pi:
+            delta_rad += 2 * np.pi
+        self.logger.debug(f"Current pose is {list(self.pose)}. Current Goal is {list(cur_goal)}. Target_deg is {np.rad2deg(target_rad)}, while curr_deg is {np.rad2deg(self.pose[-1])}")
+
+        self.last_path_for_estimation = path
+        if delta_rad > np.deg2rad(15):
+            action = {
+                'type': 'turn_left',
+                'arg1': np.rad2deg(delta_rad),
+            }
+            self.last_path = path
+        elif delta_rad < -np.deg2rad(15):
+            action = {
+                'type': 'turn_right',
+                'arg1': np.rad2deg(-delta_rad),
+            }
+            self.last_path = path
+        else: action = {
+            'type': 'move_forward',
+            'arg1': np.linalg.norm(cur_goal - cur_trans),
+        }
+        if action['arg1'] < 0.1:
+            self.logger.warning(f"{self.name} at {self.pose} moving to {cur_goal} is too close, path found was {path}.")
+        return action
