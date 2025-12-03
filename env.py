@@ -918,15 +918,15 @@ class VicoEnv:
 		elif action['type'] == 'remote_converse':
 			if agent.robot.base_state == AvatarState.SLEEPING:
 				agent.robot.base_state = AvatarState.STANDING
-			agent_pos = self.config['agent_poses'][i][:3]
+			agent_pos = self.config['agent_poses'][agent_id][:3]
 			converse_range = action['arg2'] if 'arg2' in action else 10
-			priority = random.randint(0, self.agent_speak_weight[i])
-			self.agent_speak_weight[i] = max(0, self.agent_speak_weight[i] - 30)
+			priority = random.randint(0, self.agent_speak_weight[agent_id])
+			self.agent_speak_weight[agent_id] = max(0, self.agent_speak_weight[agent_id] - 30)
 			if converse_range > 3200:
-				gs.logger.warning(f"Agent {self.agent_names[i]} attempted to converse with range {converse_range} which is larger than 3200. Ignored.")
-				self.agents[i].robot.action_status = ActionStatus.FAIL
+				gs.logger.warning(f"Agent {self.agent_names[agent_id]} attempted to converse with range {converse_range} which is larger than 3200. Ignored.")
+				self.agents[agent_id].robot.action_status = ActionStatus.FAIL
 				return
-			deleted_subjects = self.events.add(type="speech", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[i], predicate="is", object="talk")
+			deleted_subjects = self.events.add(type="speech", pos=agent_pos, r=converse_range, content=action['arg1'], priority=priority, subject=self.agent_names[agent_id], predicate="is", object="talk")
 			# if interleaved with other speech events, keep only the highest priority one, drop others and give it fail
 			for deleted_subject in deleted_subjects:
 				self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
@@ -938,35 +938,35 @@ class VicoEnv:
 		elif action['type'] == 'query_app':
 			if agent.robot.base_state == AvatarState.SLEEPING:
 				agent.robot.base_state = AvatarState.STANDING
-			agent_pos = self.config['agent_poses'][i][:3]
-			agent_outdoor_pos = self.config['agent_poses'][i][:3] if self.agent_infos[i]["current_building"] == 'open space' else self.agent_infos[i]["outdoor_pose"][:3]
+			agent_pos = self.config['agent_poses'][agent_id][:3]
+			agent_outdoor_pos = self.config['agent_poses'][agent_id][:3] if self.agent_infos[agent_id]["current_building"] == 'open space' else self.agent_infos[agent_id]["outdoor_pose"][:3]
 			priority = random.randint(0, 100)
 			if action['arg1'] == 'query_place':
 				app_answer = self.nav_app.query_place(action['arg2'])
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_nearby':
 				app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_route':
 				app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'], self.curr_time)
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_grid_map':
 				app_answer = self.nav_app.query_grid_map()
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_grid_map_image':
 				app_answer = self.nav_app.get_grid_map_image(circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_refine_route':
 				app_answer = self.nav_app.refine_route(route=action['arg2'], curr_time=self.curr_time)
-				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[i], predicate="get", object="app response")
+				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			# if interleaved with other speech events, keep only this one, drop others and give it fail
 			for deleted_subject in deleted_subjects:
 				self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 		elif action["type"] == "signal":
 			if agent.robot.base_state == AvatarState.SLEEPING:
 				agent.robot.base_state = AvatarState.STANDING
-			agent_pos = self.config['agent_poses'][i][:3]
-			deleted_subjects = self.events.add(type="sentinel signal", pos=agent_pos, r=20, content=action, priority=100, subject=self.agent_names[i], predicate="is", object="issue")
+			agent_pos = self.config['agent_poses'][agent_id][:3]
+			deleted_subjects = self.events.add(type="sentinel signal", pos=agent_pos, r=20, content=action, priority=100, subject=self.agent_names[agent_id], predicate="is", object="issue")
 			for deleted_subject in deleted_subjects:
 				self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
 		else:

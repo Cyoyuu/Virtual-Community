@@ -51,6 +51,7 @@ class BaseSentinelAgent(Agent):
         tmp_arr=set(self.obs['segmentation'].flatten().tolist())
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))
+        self.logger.info(f"freq is: {freq}")
         self.visible_agent = {}
         for i in freq:
             if freq[i] < self.detection_min_pixel_ratio * len(self.obs['segmentation'].flatten()): continue
