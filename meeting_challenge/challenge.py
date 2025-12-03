@@ -358,8 +358,8 @@ def main():
             import pdb; pdb.set_trace()
 
         gs.logger.info(f"{args.scene}'s current time: {env.curr_time}, ViCo steps: {env.steps}/{args.step_limit}, agent_pose: {round_numericals(env.config['agent_poses'])}, agents actions: {agent_actions_to_print}")
-        dt_agent = time.perf_counter() - lst_time
-        env.config["dt_agent"] = (env.config["dt_agent"] * env.steps + dt_agent) / (env.steps + 1)
+        sps_agent = time.perf_counter() - lst_time
+        env.config["sps_agent"] = (env.config["sps_agent"] * env.steps + sps_agent) / (env.steps + 1)
         lst_time = time.perf_counter()
         # transfer look_after and chase back to turn and move_forward
         for i, action in enumerate(agent_actions):
@@ -372,12 +372,12 @@ def main():
                 agent_actions[i]['type']='move_forward'
         # then step
         obs, _, done, info = env.step(agent_actions)
-        dt_sim = time.perf_counter() - lst_time
-        env_dt_sim = (env_dt_sim * (env.steps - 1) + dt_sim) / env.steps
-        gs.logger.info(f"Time used: {dt_agent:.2f}s for agents and robots, {dt_sim:.2f}s for simulation, "
-                       f"average {env.config['dt_agent']:.2f}s for agents, "
-                       f"{env_dt_sim:.2f}s for simulation, "
-                       f"{env.config['dt_chat']:.2f}s for post-chatting over {env.steps} steps.")
+        sps_sim = time.perf_counter() - lst_time
+        env.config["sps_sim"] = (env.config["sps_sim"] * (env.steps - 1) + sps_sim) / max(env.steps, 1)
+        gs.logger.info(f"Time used: {sps_agent:.2f}s for agents and robots, {sps_sim:.2f}s for simulation, "
+                       f"average {env.config['sps_agent']:.2f}s for agents, "
+                       f"{env.config["sps_sim"]:.2f}s for simulation, "
+                       f"{env.config['sps_chat']:.2f}s for post-chatting over {env.steps} steps.")
         for key in info:
             infos[key]+=info[key]
         max_distance=0.
