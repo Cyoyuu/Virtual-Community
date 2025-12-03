@@ -316,12 +316,19 @@ def main():
                     event['content']='place holder'
 
         # update obs and do action
-        extra_obs = {"agent_pos_dict": {env.config["agent_names"][i]: {"place": env.obs[i]['current_place'], "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]} for i in range(num_agents) if env.config["agent_names"][i] in all_agent_name and env.config["agent_names"][i] not in banned_agent_list}
+        extra_obs = {
+            "agent_pos_dict": {
+                env.config["agent_names"][i]: {
+                    "place": env.obs[i]['current_place'],
+                    "pose": env.config["agent_poses"][i] if env.obs[i]['current_building']=='open space' else env.agent_infos[i]["outdoor_pose"]
+                    } for i in range(num_agents) if env.config["agent_names"][i] in all_agent_name and env.config["agent_names"][i] not in banned_agent_list
+            },
         }
         # agents step
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:
                 obs[i].update(extra_obs)
+                obs[i].update({"name": env.config["agent_names"][i]})
                 agent.update(obs[i])
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:
