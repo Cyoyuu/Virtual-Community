@@ -307,7 +307,7 @@ def main():
         lst_time = time.perf_counter()
         # prcess obs_printable
         obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
-                          and k != 'gt_seg_entity_idx_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
+                          and k != 'gt_seg_idxc_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
         for i in range(len(obs_printable)):
             for event in obs_printable[i]['events']:
                 if isinstance(event['content'], Route):

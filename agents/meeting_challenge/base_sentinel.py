@@ -54,7 +54,7 @@ class BaseSentinelAgent(Agent):
         self.visible_agent = {}
         for i in freq:
             if freq[i] < self.detection_min_pixel_ratio * len(self.obs['segmentation'].flatten()): continue
-            e = self.obs["gt_seg_entity_idx_to_info"][i]
+            e = self.obs["gt_seg_idxc_to_info"][i]
             if 'type' in e and e['type'] == 'avatar': # e[-1] is None
                 if 'Sentinel' in e['name']: continue
                 if e['name'] not in self.obs['agent_pos_dict']: continue
