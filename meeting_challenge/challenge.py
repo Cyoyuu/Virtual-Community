@@ -290,6 +290,7 @@ def main():
 
     agent_actions = {}
     agent_actions_to_print = {}
+    agent_actions_to_save = {}
 
     # Simulation loop
     env_dt_sim = 0.
@@ -337,6 +338,7 @@ def main():
                 action = agent.act()
                 agent_actions[i] = action
                 agent_actions_to_print[agent.name] = agent_actions[i]['type'] if agent_actions[i] is not None else None
+                agent_actions_to_save[agent.name] = copy.deepcopy(action)
                 if agent_actions[i] is not None and agent_actions[i]['type'] == 'converse':
                     agent_actions[i]['request_chat_func'] = agent.request_chat
                     agent_actions[i]['get_utterance_func'] = agent.get_utterance

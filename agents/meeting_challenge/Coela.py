@@ -350,7 +350,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         self.logger.info(f"Final Chatting buffer length: {len(self.chatting_buffer)}")
     
         return {
-            'type': 'converse',
+            'type': 'remote_converse',
             'arg1': content,
             'arg2': 3200
         }
