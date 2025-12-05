@@ -20,7 +20,7 @@ python meeting_challenge/challenge.py --head_less \
 --enable_indoor_scene \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
---config agents_num_5 \
+--config agents_num_15 \
 --agent_type fixed \
 --agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
