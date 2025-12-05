@@ -202,7 +202,6 @@ def main():
         enable_collision=args.enable_collision,
         skip_avatar_animation=args.skip_avatar_animation,
         enable_gt_segmentation=args.enable_gt_segmentation,
-        gt_only_for_sentinels=args.gt_only_for_sentinels,
         no_load_scene=args.no_load_scene,
         output_dir=output_dir,
         enable_third_person_cameras=args.enable_third_person_cameras,
@@ -329,6 +328,9 @@ def main():
             if i in agent_list_to_update:
                 obs[i].update(extra_obs)
                 obs[i].update({"name": env.config["agent_names"][i]})
+                if args.gt_only_for_sentinels and 'Sentinel' not in env.config["agent_names"][i]:
+                    obs[i].pop('gt_seg_idxc_to_info')
+                    obs[i]['segmentation']=np.full_like(obs[i]['depth'], None)
                 agent.update(obs[i])
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:

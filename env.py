@@ -46,7 +46,6 @@ class VicoEnv:
 				 enable_decompose=False,
 				 skip_avatar_animation=False,
 				 enable_gt_segmentation=False,
-				 gt_only_for_sentinels=False,
 				 no_load_scene=False,
 				 output_dir='output',
 				 enable_third_person_cameras=True,
@@ -89,10 +88,6 @@ class VicoEnv:
 		self.enable_collision = enable_collision
 		self.enable_decompose = enable_decompose
 		self.enable_gt_segmentation = enable_gt_segmentation
-		self.gt_only_for_sentinels = gt_only_for_sentinels
-		if self.gt_only_for_sentinels:
-			gs.logger.error("gt_only_for_sentinels not implemented!")
-			exit(0)
 		self.batch_renderer = batch_renderer
 		self.scene_name = scene
 		self.entity_idx_to_info = defaultdict(dict)
