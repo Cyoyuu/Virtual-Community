@@ -954,7 +954,7 @@ class VicoEnv:
 				app_answer = self.nav_app.get_grid_map_image(circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
 				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_refine_route':
-				app_answer = self.nav_app.refine_route(route=action['arg2'], curr_time=self.curr_time)
+				app_answer = self.nav_app.refine_route(route=action['arg4'], curr_time=self.curr_time, circle_coords=action['arg2'], route_coords=action['arg3'], agent_coords=[agent_outdoor_pos], target_coords=[action['arg3'][-1]])
 				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			# if interleaved with other speech events, keep only this one, drop others and give it fail
 			for deleted_subject in deleted_subjects:

@@ -134,10 +134,10 @@ class Reasoner(ThinkingModule):
         for wp in last_route:
             for sentinel in known_sentinel_poses:
                 if np.linalg.norm(np.array(wp.location[:2])-np.array(sentinel[:2]))<=20:
-                    return False
-        return True
+                    return False, str(sentinel[:2])
+        return True, "None"
         
-    def refine_waypoints_with_image(self, pose, image, last_route):
+    def refine_waypoints_with_image(self, pose, image, last_route, known_sentinel_poses, danger):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints_aerial_view.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         self.logger.debug(f"refining waypoints with image {np.array(image).shape}, the original route is {last_route.to_dict()}")
@@ -145,6 +145,8 @@ class Reasoner(ThinkingModule):
         prompt = prompt.replace("$DestinationPose$", str(list(last_route[-1].location[:2])))
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=image, json_mode=False)
+        prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
+        prompt = prompt.replace("$Danger$", danger)
         try:
             response_dict = self.parse_json_with_image(prompt, image, response)
             self.logger.debug(f"generated response: {response_dict}")
@@ -199,87 +201,6 @@ class Reasoner(ThinkingModule):
                 return self.parse_json(None, data, last_call=True)
         return response
         
-    def refine_waypoints(self, pose, grid_map, known_sentinel_poses, last_route):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints.txt", "r").read()
-        prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        self.logger.debug(f"refining waypoints, the original route is {last_route.to_dict()}")
-        grid_map = deepcopy(grid_map)
-        def align(x):
-            return int(x//20-(-490)//20)
-        for sentinel in known_sentinel_poses:
-            for dx in range(-1, 2):
-                for dy in range(-1, 2):
-                    grid_map[align(sentinel[1]+dy*20)][align(sentinel[0]+dx*20)] = 'D' # sentinel will not appear on the edge
-        target_pos = last_route[-1].location
-        for wp in last_route:
-            y, x = align(wp.location[1]), align(wp.location[0])
-            if grid_map[y][x]=='D':
-                grid_map[y][x] = 'W'
-            else:
-                grid_map[y][x] = 'R'
-        grid_map[align(target_pos[1])][align(target_pos[0])] = 'T'
-        grid_map[align(pose[1])][align(pose[0])] = 'A'
-        def map_from_grid(grid):
-            map_str_lines = []
-            for row in grid:
-                line = ''.join(val for val in row)
-                map_str_lines.append(line)
-            map_str = '\n'.join(map_str_lines)
-            return map_str
-        prompt = prompt.replace("$Map$", map_from_grid(grid_map))
-        self.logger.debug(f"planning_prompt: {prompt}")
-        try:
-            response = self.generator.generate(prompt, img=None, json_mode=False)
-            self.logger.debug(f"generated response: \n{response}\n")
-            route = self.parse_route_output(prompt, response)
-        except Exception as e:
-            self.logger.error(
-                f"Error generating query action: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            route = None
-        return route
-    
-    def parse_route_output(self, prompt, response, last_call=False):
-        """
-        Parse the model's response into (map_str, route_list).
-        The model output should contain a map and a JSON list of waypoints.
-        """
-
-        try:
-            # Extract the map (everything before the JSON)
-            map_part = re.split(r'```json', response, maxsplit=1)[0].strip()
-            map_lines = [line.strip() for line in map_part.splitlines() if line.strip()]
-            # Extract JSON between triple backticks
-            json_match = re.findall(r"```json(.*?)```", response, re.DOTALL)
-            assert json_match
-            # Parse the JSON waypoints
-            route_str = json_match[-1].strip()
-            route = json.loads(route_str)
-            flag = True
-            for wp in route:
-                if not (0<=wp[0]<50) or not (0<=wp[1]<50) or map_part[wp[0]][wp[1]] not in ['A', 'P', 'T']:
-                    flag = False
-            assert flag
-        except Exception:
-                self.logger.warning(f"Error parsing route output, the string was {response}")
-                if not last_call:
-                    chat_history = [
-                        {"role": "user", "content": prompt},
-                        {"role": "assistant", "content": response}
-                    ]
-                    if flag:
-                        data = self.generator.generate(
-                            f"The route you generated don't match your map! Make sure they match exactly!",
-                            chat_history=chat_history)
-                    else:
-                        data = self.generator.generate(
-                            f"The output format is wrong. Output the formatted map firstly and json string enclosed in ```json``` secondly only! Do not include any other character in the output!",
-                            chat_history=chat_history)
-                    return self.parse_route_output(None, data, last_call=True)
-                else:
-                    self.logger.error(f"Error parsing JSON, already last call, the string was {response}")
-                    return None
-
-        return route
 
 
 class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
@@ -320,7 +241,8 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_grid_map_image':
                         image = Image.fromarray(np.array(event['content']).astype(np.uint8))
                         image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_{self.obs['steps']}.png"))
-                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route)
+                        route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route)
+                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route, self.get_known_sentinel_poses_description(), danger)
                         if route is not None:
                             self.last_route = Route()
                             self.navigation_plan = route
@@ -328,11 +250,15 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                             self.logger.warning(f"Fail to generate new route, still using the original one!")
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_refine_route':
                         self.navigation_plan = None
+                        self.logger.debug(f"successfully got refined route from the app. it's {event['content']['refined_route'].to_dict()}")
                         if event['content'] is None:
                             time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
                         else:
-                            time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
-                        self.last_route=event["content"]
+                            time_to_arrival = timedelta(seconds=int(event['content']["refined_route"].calc_time(pose=self.get_outdoor_pose())))
+                        image = Image.fromarray(np.array(event['content']["grid_map_image"]).astype(np.uint8))
+                        image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png"))
+                        self.logger.debug(f"successfully saved refined route image to grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png")
+                        self.last_route=event["content"]["refined_route"]
                         self.last_estimated_arrival_time = self.curr_time + time_to_arrival
         if self.emergency == 0:
             self.emergency = emergency
@@ -353,8 +279,11 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
                 if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]):
                     self.ready_to_refine = True
-        if self.current_place is None and not self.last_route.empty() and not self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route):
+        route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route)
+        if self.current_place is None and not self.last_route.empty() and not route_validity and self.navigation_plan is None:
             self.ready_to_refine = True
+        else:
+            self.ready_to_refine = False
 
     def _act(self, obs):
         if self.banned:
@@ -398,7 +327,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 # else:
                 #     self.logger.warning(f"Fail to generate new route, still using the original one!")
             if self.navigation_plan is not None:
-                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": self.navigation_plan}
+                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route], "arg4": self.navigation_plan}
                 self.last_action = action
                 return self.last_action
         # no emergency
@@ -417,7 +346,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
                 self.mode_time_counter += 1
-                if self.mode_time_counter > 80:
+                if self.mode_time_counter > 90:
                     action = {"type": "task_terminate"}
                     self.logger.info(f"Exceeding discussion limit. Task terminating.")
                     return action

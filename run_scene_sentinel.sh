@@ -7,11 +7,11 @@ sentinel_num=$5
 script_path="meeting_challenge/${gt}_scripts/run_sentinel.sh"
 
 if [ "$sentinel_num" -eq 20 ]; then
-  time_limit=270
+  time_limit=300
 elif [ "$sentinel_num" -eq 10 ]; then
-  time_limit=210
+  time_limit=240
 elif [ "$sentinel_num" -eq 5 ]; then
-  time_limit=150
+  time_limit=180
 else
   time_limit=120  # default fallback
 fi

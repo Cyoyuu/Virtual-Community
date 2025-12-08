@@ -1,8 +1,7 @@
 scene=$1
-agent_num=$2
-sentinel_type=$3
-sentinel_num=$4
-job_id=$5
+sentinel_type=$2
+sentinel_num=$3
+job_id=$4
 
 export PYTHONPATH=${PWD}
 
@@ -11,9 +10,6 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --multi_process \
 --skip_avatar_animation \
 --enable_gt_segmentation \
---gt_only_for_sentinels \
---enable_third_person_cameras \
---detect_interval 1 \
 --output_dir ViCo/meeting_challenge/output \
 --scene "${scene}" \
 --job_id "${job_id}" \
@@ -21,12 +17,10 @@ python ViCo/meeting_challenge/challenge.py --head_less \
 --enable_indoor_scene \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
---config agents_num_15 \
---agent_type sentinel \
---agent_num ${agent_num} \
+--config agents_num_5 \
+--agent_type center \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
---enable_danger_zone \
 --save_per_seconds 1 \
 --step_limit 1500 \
 --lm_source azure \
