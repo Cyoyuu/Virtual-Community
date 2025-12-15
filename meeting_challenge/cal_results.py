@@ -74,6 +74,7 @@ for agent_type in results:
         average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
+    average_results[agent_type]["total_case"] = num
     results[agent_type]["average"]=average_results[agent_type]
 with open(f"{base_results_dir}/results.json", "w") as f:
     json.dump(results, f, indent=2)
