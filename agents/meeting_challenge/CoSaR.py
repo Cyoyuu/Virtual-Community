@@ -244,7 +244,6 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                         route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route)
                         route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route, self.get_known_sentinel_poses_description(), danger)
                         if route is not None:
-                            self.last_route = Route()
                             self.navigation_plan = route
                         else:
                             self.logger.warning(f"Fail to generate new route, still using the original one!")
