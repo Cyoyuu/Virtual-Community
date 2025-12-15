@@ -49,12 +49,9 @@ class RoCoMeetingAgent(BaseNavigationMeetingAgent):
                 action = self.discuss_act()
             elif self.mode == NavAgentState.NAVIGATE:
                 self.mode_time_counter += 1
-                if self.meeting_place not in self.s_mem.get_places():
-                    action = {"type": "query_app", "arg1": "query_place", "arg2":self.meeting_place}
-                else:
-                    action, arrived = self.city_navigate(self.meeting_place)
-                    if arrived:
-                        action = {'type': 'task_complete'}
+                action, arrived = self.city_navigate(self.meeting_place)
+                if arrived:
+                    action = {'type': 'task_complete'}
         except Exception as e:
             self.logger.error(f"Error in action generation: {e} with traceback: {traceback.format_exc()}. The plan was {action}")
             action = None

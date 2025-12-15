@@ -132,7 +132,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                                 time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
                             else:
                                 time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
-                            if self.meeting_place==self.last_action["arg2"]:
+                            if self.goal_place==self.last_action["arg2"]:
                                 self.navigation_plan=event['content']
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + time_to_arrival
@@ -259,8 +259,9 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 if react_target.startswith('<') and react_target.endswith('>'):
                     react_target = react_target[1:-1]
                 self.goal_place = react_target
-                self.meeting_place = react_target
-                action, arrived = self.city_navigate(self.meeting_place)
+                self.last_route = Route()
+                self.last_nav = []
+                action, arrived = self.city_navigate(self.goal_place)
                 self.last_go_time = self.curr_time
                 self.last_action = action
                 return self.last_action
@@ -378,7 +379,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
 
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
         prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else "open space")
-        prompt = prompt.replace("$KnownPlaces$", self.get_places_description())
+        prompt = prompt.replace("$KnownPlaces$", self.get_nearest_places_description(self.get_meeting_target()))
         conversation_history_desp = '\n'.join([f"{chat[1][0]}: {chat[2]}" for chat in self.chatting_buffer[-4:]])
         prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$Context$", self.describe_events(self.curr_events))
@@ -400,7 +401,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         prompt = prompt.replace("$Character$", self.get_character_description())
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
         prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else "open space")
-        prompt = prompt.replace("$KnownPlaces$", self.get_places_description())
+        prompt = prompt.replace("$KnownPlaces$", self.get_nearest_places_description(self.get_meeting_target()))
         prompt = prompt.replace("$Context$", self.describe_events(curr_events))
         prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$ActionHistory$", str(self.react_history[-10:]))

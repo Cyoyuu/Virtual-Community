@@ -764,10 +764,15 @@ class BaseNavigationMeetingAgent(Agent):
         return action
     
     def city_navigate(self, goal_place, threshold=500., requery=True):
+        # If not having the goal_place in memory, query for it.
+        if goal_place not in self.s_mem.get_places():
+            return {"type": "query_app", "arg1": "query_place", "arg2": goal_place}, False
+        # Check if already arrived.
         cur_trans = np.array(self.pose[:2])
         if goal_place == self.obs['current_place'] or (goal_place in self.obs['accessible_places'] and self.s_mem.get_knowledge(goal_place)["building"]=="open space"):
             self.logger.debug(f"{self.name} arrived at {goal_place}.")
             return self.last_action, True
+        # Rethink whether to start a new communicatioin.
         if self.rethink and self.mode_time_counter % 120 == 0:
             curr_time = self.curr_time.strftime('%H:%M:%S')
             if self.last_path_for_estimation is None:
@@ -775,11 +780,12 @@ class BaseNavigationMeetingAgent(Agent):
             else:
                 curr_eta = str(timedelta(seconds=int(self.last_route.calc_time())+len(self.last_path_for_estimation)*2))
             self.eta_history[curr_time]=curr_eta
-            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=self.meeting_place, curr_eta=f"{curr_eta}s remains to reach the destination", eta_history=self.get_eta_history_description())
+            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=goal_place, curr_eta=f"{curr_eta}s remains to reach the destination", eta_history=self.get_eta_history_description())
             if rethink_result['initiate_new_discussion']:
                 self.enter_discussion_mode(trigger="RECENT EVENT")
                 action = {"type": "remote_converse", "arg1": rethink_result["speech"], "arg2": 3200}
                 return action, False
+        # 4. Check current place.
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
             self.logger.debug(f"{self.name} finished navigation to {goal_place}")
@@ -833,8 +839,10 @@ class BaseNavigationMeetingAgent(Agent):
                 self.last_route.pop(0)
             else:
                 break
+        # If no intermediate waypoints left.
         if len(self.last_route)==1:
             return self.goto_place(goal_place)
+        # navigate depending on current transit type.
         if self.last_route[0].transit=='walk':
             if self.obs['current_vehicle']=='bus':
                 return {'type': 'exit_bus', 'arg1': None}, False
