@@ -342,7 +342,7 @@ class ObjectBuilder:
         obs_seg_unique_ids = np.unique(segmentation).tolist()
         box_tags, box_names, boxes, masks = [], [], [], []
         for id in obs_seg_unique_ids:
-            if id == -1:
+            if id <= 0:
                 continue
             tag = gt_seg_entity_idx_to_info[id]["type"]
             name = gt_seg_entity_idx_to_info[id]["name"]

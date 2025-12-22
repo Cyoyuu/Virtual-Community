@@ -29,7 +29,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
             self.react_freq = 300 # 5 min for debug
         if self.no_react:
             self.react_freq = 1e8
-        self.chat_time_limit = 15 # 15 seconds
+        self.chat_time_limit = 10 # 10 seconds
 
         self.chatting_with: str = self.scratch["chatting_with"] if "chatting_with" in self.scratch else None # name
         self.chatting_buffer: list[list[datetime, list, str]] = self.scratch["chatting_buffer"] if "chatting_buffer" in self.scratch else []
@@ -205,7 +205,6 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}, mode_time_counter is {self.mode_time_counter}")
         if self.curr_time.second % 60 == 0 and self.curr_time.minute % 3 == 0:
             self.last_react_time = self.curr_time
-        action = None if not self.task_complete else {'type': 'task_complete', 'arg1': None}
         start = time.time()
 
         if self.sleep_time > 0:
@@ -214,7 +213,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 return {'type': 'wake', 'arg1': None} # wake up
             return {'type': 'sleep', 'arg1': None}
         
-        action = None
+        action = None if not self.task_complete else {'type': 'task_complete', 'arg1': None}
         
         if self.goal_place is not None and (self.last_go_time + timedelta(seconds=60) > self.curr_time or self.last_react_time!=self.curr_time):
             action, arrived = self.city_navigate(self.goal_place)
@@ -259,6 +258,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                 if react_target.startswith('<') and react_target.endswith('>'):
                     react_target = react_target[1:-1]
                 self.goal_place = react_target
+                self.meeting_place = react_target #need meeting place to track the destination in prompt.
                 self.last_route = Route()
                 self.last_nav = []
                 action, arrived = self.city_navigate(self.goal_place)
@@ -378,12 +378,12 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
         prompt = prompt.replace("$Character$", self.get_character_description())
 
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
-        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else f"open space: at {self.pose[:2]}")
+        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.meeting_place if self.meeting_place is not None and self.meeting_place in self.obs['accessible_places'] else f"open space: at {self.pose[:2]}")
         prompt = prompt.replace("$KnownPlaces$", self.get_nearest_places_description(self.get_meeting_target()))
         conversation_history_desp = '\n'.join([f"{chat[1][0]}: {chat[2]}" for chat in self.chatting_buffer[-4:]])
         prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$Context$", self.describe_events(self.curr_events))
-        self.logger.debug(f"Tracking place, current_place is {self.current_place}, goal_place is {self.goal_place}, accessible is {self.obs['accessible_places']}")
+        self.logger.debug(f"Tracking place, current_place is {self.current_place}, meeting_place is {self.meeting_place}, accessible is {self.obs['accessible_places']}")
         self.logger.debug(f"Utterance prompt: {prompt}")
         response = self.delete_quotations(self.generator.generate(prompt, img=None, json_mode=False))
         self.logger.debug(f"Generated utterance: {response}")
@@ -401,12 +401,12 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
 
         prompt = prompt.replace("$Character$", self.get_character_description())
         prompt = prompt.replace("$Time$", self.curr_time.strftime("%H:%M:%S"))
-        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.goal_place if self.goal_place is not None and self.goal_place in self.obs['accessible_places'] else f"open space: at {self.pose[:2]}")
+        prompt = prompt.replace("$Place$", self.current_place if self.current_place is not None else self.meeting_place if self.meeting_place is not None and self.meeting_place in self.obs['accessible_places'] else f"open space: at {self.pose[:2]}")
         prompt = prompt.replace("$KnownPlaces$", self.get_nearest_places_description(self.get_meeting_target()))
         prompt = prompt.replace("$Context$", self.describe_events(curr_events))
         prompt = prompt.replace("$Conversation_history$", self.get_conversation_description(20))
         prompt = prompt.replace("$ActionHistory$", str(self.react_history[-10:]))
-        self.logger.debug(f"Tracking place, current_place is {self.current_place}, goal_place is {self.goal_place}, accessible is {self.obs['accessible_places']}")
+        self.logger.debug(f"Tracking place, current_place is {self.current_place}, meeting_place is {self.meeting_place}, accessible is {self.obs['accessible_places']}")
         self.logger.debug(f"React prompt: {prompt}")
         response = self.delete_quotations(self.generator.generate(prompt, img=None, json_mode=False))
         self.logger.debug(f"Generated react: {response}")
