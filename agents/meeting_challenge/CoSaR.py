@@ -216,6 +216,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.refine_retry = refine_retry
         self.navigation_plan = None
         self.rethink = True
+        self.chat_time_limit = 60
 
     def reset(self, name, pose):
         super().reset(name, pose)
@@ -345,14 +346,19 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 self.enter_discussion_mode(trigger="TASK START")
             if self.mode == NavAgentState.DISCUSS:
                 self.mode_time_counter += 1
-                if self.mode_time_counter > 90:
-                    action = {"type": "task_terminate"}
-                    self.logger.info(f"Exceeding discussion limit. Task terminating.")
-                    return action
+                if self.mode_time_counter > self.chat_time_limit:
+                    if self.meeting_place is None:
+                        self.logger.warning(f"Exceeding discussion limit but no agreed location. Terminating the task.")
+                        action = {"type": "task_terminate"}
+                        return action
+                    else:
+                        self.logger.warning(f"Exceeding discussion limit. Going to the most preferred location")
+                        self.enter_navigation_mode(goal_place=self.meeting_place)
+                        return {"type": "wait"}
                 action = self.discuss_act()
             elif self.mode == NavAgentState.NAVIGATE:
                 self.mode_time_counter += 1
-                action, arrived = self.city_navigate(self.meeting_place, requery=False)
+                action, arrived = self.city_navigate(self.goal_place, requery=False)
                 if arrived:
                     action = {'type': 'task_complete'}
         except Exception as e:

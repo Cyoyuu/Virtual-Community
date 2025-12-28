@@ -966,6 +966,29 @@ class VicoEnv:
 			deleted_subjects = self.events.add(type="sentinel signal", pos=agent_pos, r=20, content=action, priority=100, subject=self.agent_names[agent_id], predicate="is", object="issue")
 			for deleted_subject in deleted_subjects:
 				self.agents[self.agent_names.index(deleted_subject)].robot.action_status = ActionStatus.FAIL
+		elif action["type"] == "debug_action":
+			if action["arg1"] == "query_accessible_places":
+				assert action["arg2"] in self.place_metadata
+				pose = agent.get_global_pose()
+				if self.agent_infos[agent_id]["current_place"] is not None:
+					assert self.agent_infos[agent_id]["current_building"] != "open space", "The current building must be provided if the agent is not in the open space."
+					assert action["arg2"] in [place["name"] for place in building_metadata[self.agent_infos[agent_id]["current_building"]]["places"] if place["name"] != self.agent_infos[agent_id]["current_place"]]
+					# accessible_places.extend([place["name"] for place in building_metadata[self.agent_infos[agent_id]["current_building"]]["places"] if place["name"] != self.agent_infos[agent_id]["current_place"]])
+					# accessible_places.append("open space")
+					# return accessible_places
+				for building in building_metadata:
+					if building == "open space":
+						for place in building_metadata[building]["places"]:
+							if place == action["arg2"]:
+								gs.logger.warning(f"Checking accessibility for place {action['arg2']} in open space, is_near_goal is {is_near_goal(pose[0], pose[1], None, place['location'][:2], threshold=5)}")
+							# if place["name"] in place_metadata and is_near_goal(pose[0], pose[1], None, place["location"][:2], threshold=5):
+							# 	accessible_places.append(place["name"])
+					if building_metadata[building]['bounding_box'] is None:
+						continue
+					if action["arg2"] in building_metadata[building]["places"]:
+						gs.logger.warning(f"Checking accessibility for place {action['arg2']} in open space, is_near_goal is {is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=5)}")
+					# if is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=5):
+					# 	accessible_places.extend([place["name"] for place in building_metadata[building]["places"] if place["name"] in place_metadata])
 		else:
 			raise NotImplementedError(f"agent action type {action['type']} is not supported")
 

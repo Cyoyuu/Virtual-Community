@@ -78,7 +78,7 @@ Return a JSON object:
 ```
 
 If all agents prefer the same location, set `"agreement_reached": true` and `"agreed_location"` to that location.
-Otherwise, set "agreement_reached": false and `"agreed_location": null`.
+Otherwise, set "agreement_reached": false and `"agreed_location"` to the most supported location.
 
 Final Output
 

@@ -438,7 +438,8 @@ class BaseNavigationMeetingAgent(Agent):
         self.conversation_history: list[Message] = []
         self.event_history: list[Message] = []
         self.app_message_history: list[Message] = []
-        self.meeting_place = None
+        self.meeting_place = None # meeting place for discussion
+        self.goal_place = None # goal place for navigation
         self.mode = None
         self.banned = False
         self.places_buffer = []
@@ -475,6 +476,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.curr_time = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), debug=self.debug, logger=self.logger)
         self.meeting_place = None
+        self.goal_place = None
 
     def _process_obs(self, obs):
         if obs['action_status'] == "FAIL":
@@ -486,7 +488,7 @@ class BaseNavigationMeetingAgent(Agent):
             for event in obs['events']:
                 if event["type"] == "speech":
                     self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
-                    self.discuss_process(obs)
+                    self.discuss_process_speech(obs)
                 if event["type"] == "app message":
                     if event["subject"] != self.name:
                         continue
@@ -496,7 +498,7 @@ class BaseNavigationMeetingAgent(Agent):
                                 time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
                             else:
                                 time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
-                            if self.meeting_place==self.last_action["arg2"]:
+                            if self.goal_place==self.last_action["arg2"]:
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
@@ -542,7 +544,8 @@ class BaseNavigationMeetingAgent(Agent):
                 desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
             for object in new_objects:
                 if 'person' in object.name:
-                    is_sentinel = self.generate_captioning(f"Is there a person in the image that looks like a white humanoid? Output only 'Yes' or 'No'. Don't include other words.", img=img_path)
+                    prompt = "You are analyzing an image from a simulation environment. Determine whether the depicted figure is a white humanoid model or a human model. Focus on visual cues such as: 1. Surface material (e.g., uniform matte or glossy white plastic vs. textured skin. The humanoid has a uniformly bright white skin) 2. Color consistency (pure or near-uniform white vs. natural skin tones or varied coloration) 3. Facial detail (simplified or stylized features vs. realistic eyes, skin texture, and expressions) 4. Joints and seams (visible mechanical joints or panel lines vs. organic anatomy) 5. Clothing and accessories (integrated body shell vs. separate wearable clothing) Is there a such humanoid in the image? Output only 'Yes' or 'No'. Don't include other words."
+                    is_sentinel = self.generate_captioning(prompt, img=img_path)
                     if is_sentinel.lower() == 'yes':
                         self.s_mem.warning_labels.append(object.idx)
                         self.logger.info(f"There is a white humanoid in the view. its idx is {object.idx}")
@@ -614,19 +617,20 @@ class BaseNavigationMeetingAgent(Agent):
         self.agent_opinions = dict()
         self.known_poses = dict()
         self.known_eta = dict()
-        self.eta_history = dict()
         # self.conversation_history = []
         self.collect_plan = None
         self.thinking = 0
 
-    def enter_navigation_mode(self, reset_route=True):
+    def enter_navigation_mode(self, goal_place):
         self.mode = NavAgentState.NAVIGATE
         self.mode_time_counter = 0
-        if reset_route:
+        if self.goal_place != goal_place:
+            self.goal_place = goal_place
+            self.eta_history = dict()
             self.last_route = Route()
             self.last_nav = []
 
-    def discuss_process(self, obs):
+    def discuss_process_speech(self, obs):
         agent_names = ", ".join(obs["agent_pos_dict"].keys())
         places = self.get_nearest_places_description(self.get_meeting_target())
         current_message = self.get_conversation_description(limit=1)
@@ -643,17 +647,13 @@ class BaseNavigationMeetingAgent(Agent):
             conclusion_and_decision = self.decider.conclude_and_decide(curr_time=curr_time, agent_names=agent_names, places=places, conversation_history=conversation_history)
             self.agent_opinions = conclusion_and_decision['agent_opinions']
             decision = conclusion_and_decision['agreement_check']
-            if decision["agreement_reached"] == True:
+            if decision["agreed_location"] is not None:
                 meeting_place = decision["agreed_location"]
                 if meeting_place.startswith("<") and meeting_place.endswith(">"):
                     meeting_place = meeting_place[1:-1]
-                if meeting_place != self.meeting_place:
-                    self.meeting_place = meeting_place
-                    self.time_to_arrival_timedelta=dict()
-                    self.enter_navigation_mode(reset_route=False)
-                else:
-                    self.route_plan = [self.meeting_place]
-                    self.enter_navigation_mode(reset_route=True)
+                self.meeting_place = meeting_place
+            if decision["agreement_reached"] == True:
+                self.enter_navigation_mode(goal_place=self.meeting_place)
         if 'ETA Map' in extracted_info:
             self.update_known_eta(extracted_info['ETA Map'])#!!!
         if 'Agent Poses' in extracted_info:
@@ -1450,7 +1450,7 @@ class BaseNavigationMeetingAgent(Agent):
         agent_pos_description.strip("\n")
         return agent_pos_description
 
-    def get_conversation_description(self, limit=30):
+    def get_conversation_description(self, limit=20):
         if len(self.conversation_history) == 0:
             return "None"
         conversation_list = self.conversation_history[-limit:] if len(self.conversation_history) > limit else self.conversation_history
@@ -1547,7 +1547,8 @@ class BaseNavigationMeetingAgent(Agent):
         if is_near_goal(cur_trans[0], cur_trans[1], goal_bbox, goal_pos):
             self.logger.warning(
                 f"{self.name} at {self.pose} is near the goal {goal_pos}, but not at the goal {target_place}.")
-            return self.last_action, True
+            self.logger.debug(f"{self.name}'s current accessible places are {self.obs['accessible_places']}")
+            return {"type": "debug_action", "arg1": "query_accessible_places", "arg2": target_place}, True
         self.logger.debug(
             f"{self.name} at {tuple(int(p) for p in self.pose)} is moving to {target_place} at {tuple(int(g) for g in goal_pos)}.")
         start = time.time()
