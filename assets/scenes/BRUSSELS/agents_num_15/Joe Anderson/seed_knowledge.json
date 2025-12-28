@@ -1,0 +1,418 @@
+{
+    "Felix Braun": {
+        "age": 49,
+        "living_place": "Felix Braun's room at Atlas hotel",
+        "appearance": "assets/imgs/avatars/Felix Braun.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Marcus Yuen": {
+        "age": 41,
+        "living_place": "Hotel Hubert \u2013 Grand Place",
+        "appearance": "assets/imgs/avatars/Marcus Yuen.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Boiteux",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Business Networking Group": {
+        "description": "A group of professionals who meet to discuss business strategies and opportunities.",
+        "place": "Philantropy House",
+        "members": [
+            "Felix Braun",
+            "Joe Anderson",
+            "Marcus Yuen",
+            "Roth Miller"
+        ],
+        "daily_activity": "discussing business strategies from 17:00 to 19:00"
+    },
+    "Joe Anderson's room at Belair": {
+        "building": "Belair",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1164.3447799682617,
+            1126.8471984863281,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Joe Anderson's room at Belair",
+        "bounding_box": [
+            162.50767517089844,
+            128.20407104492188,
+            95.4486312866211,
+            21.404014587402344,
+            59.5289306640625,
+            37.63227081298828,
+            -0.6595889329910278
+        ]
+    },
+    "BUILDINGyourLEARNING": {
+        "building": "Koningsstraat 132 b1 rue Royal",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1204.4950408935547,
+            1099.5251235961914,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            203.14553833007812,
+            96.4153060913086,
+            93.6859130859375,
+            52.84236526489258,
+            29.350204467773438,
+            28.927291870117188,
+            -0.48704713582992554
+        ]
+    },
+    "Philantropy House": {
+        "building": "Philantropy House",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1182.0369186401367,
+            977.2010865211487,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            181.11677349590934,
+            -22.776869956576956,
+            95.44200897216797,
+            18.188009707988304,
+            25.854275102858498,
+            22.190536499023438,
+            -0.3038562366117691
+        ]
+    },
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Fresh and DM Store": {
+        "building": "Marquis",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            915.5147399902344,
+            892.4346466064453,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -91.03511047363281,
+            -104.93002319335938,
+            83.58557891845703,
+            72.18888854980469,
+            90.57077026367188,
+            32.19690704345703,
+            -0.5364537239074707
+        ]
+    },
+    "The Brunch": {
+        "building": "Royal Atrium",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1130.694839477539,
+            910.6145782470703,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            129.95689392089844,
+            -80.5760498046875,
+            97.3431625366211,
+            79.33800506591797,
+            72.20111083984375,
+            29.334266662597656,
+            -0.3171980679035187
+        ]
+    },
+    "Brasserie de la Presse": {
+        "building": "Rue Royale 100",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1189.9850463867188,
+            1003.2612009048462,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            186.70975041761054,
+            3.23972612867151,
+            95.63347244262695,
+            23.757540210441256,
+            37.31228203296095,
+            26.198951721191406,
+            -0.3218778333910595
+        ]
+    },
+    "L\u00e9opold Caf\u00e9 Royal": {
+        "building": "Rue de Louvain 2",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1238.1253128051758,
+            957.8619194030762,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            238.83478966107015,
+            -41.40968102847862,
+            97.5982780456543,
+            14.035324867965631,
+            14.764576679103767,
+            20.757362365722656,
+            -0.1396001207075822
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "De Lignegebouw",
+        "coarse_type": "stores",
+        "fine_types": [
+            "tourist_attraction",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1091.9577903747559,
+            1090.271245956421,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            81.72869873046875,
+            95.05367279052734,
+            84.16876220703125,
+            78.65176391601562,
+            67.44265747070312,
+            28.106361389160156,
+            0.4103567898273468
+        ]
+    },
+    "Museum of the National Bank of Belgium": {
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.4956512451172,
+            1206.5694198608398,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -177.4439928658601,
+            200.82952432688307,
+            60.472846984863274,
+            44.48082358421017,
+            96.86160371481819,
+            20.7210693359375,
+            -0.5117384718386224
+        ]
+    },
+    "Rue Royale - Koningsstraat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            248.4558743001318,
+            126.14291293168375
+        ],
+        "rotation": 2.8210664013372364,
+        "bounding_box": null
+    },
+    "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -185.9587778087036,
+            -55.4488975931433
+        ],
+        "rotation": 2.913809691545618,
+        "bounding_box": null
+    },
+    "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -186.62379945156712,
+            254.07203855685333
+        ],
+        "rotation": -0.48060738320417984,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            257.3150608488824,
+            217.921529838583
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -144.90686574301637,
+            247.30453634487793
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.95122229994689,
+            -157.59257660109876
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            218.04335012590744,
+            -42.91592377155606
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.7892271527921,
+            0.09600317054358865
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            130.89613937889055,
+            90.66982142544775
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            308.76264827423273,
+            -204.25359623561639
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg": [
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Rue Royale - Koningsstraat": [
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

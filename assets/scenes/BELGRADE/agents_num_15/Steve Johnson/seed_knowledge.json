@@ -1,0 +1,466 @@
+{
+    "Alex Jefferson": {
+        "age": 30,
+        "living_place": "Alex Jefferson's room at Belgrade apartments",
+        "appearance": "assets/imgs/avatars/Alex Jefferson.png",
+        "groups": [
+            "Hospitality Enthusiasts"
+        ]
+    },
+    "Rafael Costa": {
+        "age": 34,
+        "living_place": "Rafael Costa's room at Hotel Balkan Beograd",
+        "appearance": "assets/imgs/avatars/Rafael Costa.png",
+        "groups": [
+            "Hospitality Enthusiasts"
+        ]
+    },
+    "Hospitality Enthusiasts": {
+        "description": "A group of individuals passionate about the hospitality industry, sharing ideas and experiences.",
+        "place": "Hotel Moskva",
+        "members": [
+            "Alex Jefferson",
+            "Rafael Costa",
+            "Steve Johnson"
+        ],
+        "daily_activity": "sharing hospitality experiences from 18:00 to 19:00"
+    },
+    "Steve Johnson's room at Apartments DaisyD": {
+        "building": "Vlajkovi\u0107eva 19",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.7846145629883,
+            1015.0279195606709,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "name": "Steve Johnson's room at Apartments DaisyD",
+        "bounding_box": [
+            231.58037139028374,
+            14.858811244013696,
+            117.47364807128906,
+            18.62512060315148,
+            21.576278446235847,
+            20.342132568359375,
+            -0.6277538076249395
+        ]
+    },
+    "\u0414\u0435\u0447\u0458\u0430 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u041d\u0435\u0432\u0435\u043d": {
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            944.9322471618652,
+            977.98246717453,
+            -44
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -57.98859673003932,
+            -18.20325686930177,
+            124.30842590332031,
+            29.364029995549377,
+            96.4219709118051,
+            26.592315673828125,
+            -1.0063747571390163
+        ]
+    },
+    "Hotel Moskva": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Nu\u0161i\u0107eva Business Center": {
+        "building": "Nu\u0161i\u0107eva Business Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            988.0944175720215,
+            1160.702018737793,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -11.905582427978516,
+            161.4200439453125,
+            121.59349822998047,
+            17.21519660949707,
+            26.603633880615234,
+            27.876197814941406,
+            0.6476122736930847
+        ]
+    },
+    "Historical Museum of Serbia": {
+        "building": "\u0417\u0433\u0440\u0430\u0434\u0430 \u0410\u0433\u0440\u0430\u0440\u043d\u0435 \u0431\u0430\u043d\u043a\u0435",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1054.1815195083618,
+            924.8383960723877,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            49.39818572998047,
+            -80.8160171508789,
+            124.84838104248047,
+            36.2137565612793,
+            75.2015380859375,
+            27.05773162841797,
+            1.085327386856079
+        ]
+    },
+    "Akademija za humani razvoj": {
+        "building": "\u041a\u0440\u0441\u043c\u0430\u043d\u043e\u0432\u0438\u045b\u0435\u0432\u0430 \u043a\u0443\u045b\u0430",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            854.767463684082,
+            818.8358688354492,
+            -12
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -146.52522728090835,
+            -183.23858902429177,
+            120.30991363525392,
+            23.122962705079612,
+            29.182019901594646,
+            13.053009033203125,
+            0.44689168594144024
+        ]
+    },
+    "\u0160tark - Terazije": {
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            944.9322471618652,
+            977.98246717453,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -57.98859673003932,
+            -18.20325686930177,
+            124.30842590332031,
+            29.364029995549377,
+            96.4219709118051,
+            26.592315673828125,
+            -1.0063747571390163
+        ]
+    },
+    "Restaurant Tchaikovsky": {
+        "building": "\u0425\u043e\u0442\u0435\u043b \u041c\u043e\u0441\u043a\u0432\u0430",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            790.4918212890625,
+            949.7886743545532,
+            -16
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -213.42634588036267,
+            -48.73610635567594,
+            124.15340042114258,
+            36.14207165365348,
+            45.935074547904534,
+            29.157432556152344,
+            0.29337685038855804
+        ]
+    },
+    "Vulcano Sat": {
+        "building": "De\u010danska 19",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1001.187463760376,
+            1069.4868125915527,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            0.42719209844817163,
+            69.7192734965203,
+            123.05133819580078,
+            23.012960001660343,
+            20.371723309824382,
+            26.616439819335938,
+            0.3289698065609828
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            944.9322471618652,
+            977.98246717453,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -57.98859673003932,
+            -18.20325686930177,
+            124.30842590332031,
+            29.364029995549377,
+            96.4219709118051,
+            26.592315673828125,
+            -1.0063747571390163
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Vlajkovi\u0107eva 6",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1245.6627655029297,
+            966.1480956077576,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            247.01767013624317,
+            -35.67716776804984,
+            119.52547836303711,
+            37.204999839673484,
+            36.13185447283995,
+            22.838661193847656,
+            -0.6547632807168339
+        ]
+    },
+    "Skulptura Devojka sa \u0161koljkom": {
+        "building": "\u0414\u043e\u043c \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            944.9322471618652,
+            977.98246717453,
+            -12
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -57.98859673003932,
+            -18.20325686930177,
+            124.30842590332031,
+            29.364029995549377,
+            96.4219709118051,
+            26.592315673828125,
+            -1.0063747571390163
+        ]
+    },
+    "Terazije Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -164.62815107752476,
+            -95.63216940962928
+        ],
+        "rotation": -2.7305262349241093,
+        "bounding_box": null
+    },
+    "Nu\u0161i\u0107eva Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -119.24844984998313,
+            63.60666664076639
+        ],
+        "rotation": -1.0909325927205704,
+        "bounding_box": null
+    },
+    "Vlajkovi\u0107eva Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            173.20657790852127,
+            -65.35067351838185
+        ],
+        "rotation": -1.2887654117099983,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            141.37977936067165,
+            -25.473929222954297
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -179.81139956827707,
+            -60.43984930068976
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -1.7717796907507926,
+            -110.18798798107161
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -93.23521906373988,
+            83.04741591922233
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -118.58895033529824,
+            -209.70731384944537
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.20695820872615,
+            -223.9359239602318
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            254.1027380200836,
+            -78.3013779382844
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Vlajkovi\u0107eva": [
+            {
+                "stop_name": "Terazije Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Nu\u0161i\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Vlajkovi\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Terazije": [
+            {
+                "stop_name": "Vlajkovi\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Nu\u0161i\u0107eva Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Terazije Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

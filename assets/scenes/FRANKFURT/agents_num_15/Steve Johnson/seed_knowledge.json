@@ -1,0 +1,473 @@
+{
+    "Alex Jefferson": {
+        "age": 30,
+        "living_place": "Alex Jefferson's room at Schlegel",
+        "appearance": "assets/imgs/avatars/Alex Jefferson.png",
+        "groups": [
+            "Hospitality Professionals"
+        ]
+    },
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Kate Novak's room at Weissenburg",
+        "appearance": "assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Hospitality Professionals"
+        ]
+    },
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Leonard Park's room at Rindsfuss",
+        "appearance": "assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Hospitality Professionals"
+        ]
+    },
+    "Hospitality Professionals": {
+        "description": "A group of professionals working in the hospitality industry, sharing experiences and improving service quality.",
+        "place": "Hotel am Dom",
+        "members": [
+            "Alex Jefferson",
+            "Kate Novak",
+            "Leonard Park",
+            "Steve Johnson"
+        ],
+        "daily_activity": "discussing customer service strategies from 16:00 to 18:00"
+    },
+    "Steve Johnson's room at Schwarzer Stern": {
+        "building": "Schwarzer Stern",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            992.2196761965752,
+            751.7379531860352,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Steve Johnson's room at Schwarzer Stern",
+        "bounding_box": [
+            -7.410382065144745,
+            -248.64382778735637,
+            99.98729324340822,
+            12.243022666453513,
+            11.613664059071015,
+            13.951805114746094,
+            0.21347172544316548
+        ]
+    },
+    "Ambient Living Immobilienvermittlung": {
+        "building": "R\u00f6merberg 11",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            921.2175483703613,
+            737.0332183837891,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "bounding_box": [
+            -78.73505343295855,
+            -262.84143555491767,
+            98.05226898193361,
+            15.925016731429382,
+            7.881749477265815,
+            11.942535400390625,
+            0.3921813263529947
+        ]
+    },
+    "Hotel am Dom": {
+        "building": "Domplatz 6",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1233.2164688110352,
+            863.6302719116211,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            233.18076880520346,
+            -136.36972228978289,
+            101.88853454589845,
+            12.871604336692938,
+            9.756648558102032,
+            14.154769897460938,
+            0.34270161254485526
+        ]
+    },
+    "Caricatura - Museum for Comic Art": {
+        "building": "Leinwandhaus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.523208618164,
+            765.889533996582,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            174.8834335717765,
+            -234.9144884354077,
+            100.17367553710939,
+            20.808565936856695,
+            21.14944224435766,
+            16.697982788085938,
+            0.20027042910870235
+        ]
+    },
+    "Miramar Hotel": {
+        "building": "Berliner Stra\u00dfe 31",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1004.9592114686966,
+            953.1371688842773,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "bounding_box": [
+            4.97999647060584,
+            -46.877199361681136,
+            103.1543083190918,
+            13.67528657773226,
+            11.868005374491217,
+            15.948753356933594,
+            0.296561705660808
+        ]
+    },
+    "Ev. Kindertagesst\u00e4tte St. Paulsgemeinde Frankfurt a.M.": {
+        "building": "Gro\u00dfe Fischerstra\u00dfe 28",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1183.9584655761719,
+            738.755615234375,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            184.01898859681972,
+            -260.98544563113177,
+            94.51446914672853,
+            20.801247162123463,
+            9.733134652889829,
+            6.560264587402344,
+            0.10225525050753245
+        ]
+    },
+    "Eiscaf\u00e9 Da Vinci": {
+        "building": "Drachenfels",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            932.5831317901611,
+            744.9311828613281,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -67.41686820983887,
+            -255.118896484375,
+            99.34021759033205,
+            10.91451995984059,
+            17.126075593968174,
+            14.770065307617188,
+            0.3766350588647885
+        ]
+    },
+    "Dortmunder Pils Meet - Frankfurt am Main": {
+        "building": "Hainer Hof 1",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1227.3043975830078,
+            887.5636940002441,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            227.2921142578125,
+            -111.91338348388672,
+            104.0345230102539,
+            10.44001579284668,
+            19.470979690551758,
+            18.705047607421875,
+            0.2416202872991562
+        ]
+    },
+    "Caf\u00e9 Libretto": {
+        "building": "Hasengasse 4",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1113.608512878418,
+            1125.8227348327637,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            113.60841445993407,
+            125.80665845920605,
+            104.05967330932616,
+            12.643698901591378,
+            15.322833140136925,
+            15.986122131347656,
+            0.15540766870274966
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Berliner Stra\u00dfe 32",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            987.3406576514244,
+            991.286385178566,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -12.709037168017064,
+            -8.71576752160202,
+            97.10634994506836,
+            3.2540219991408033,
+            28.525698446945842,
+            4.634880065917969,
+            -1.2666214923855066
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Eichhorn",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1065.6512508392334,
+            848.6308364868164,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            65.76705689541508,
+            -151.38333157982913,
+            104.3672332763672,
+            7.067856343644299,
+            6.9635968839580045,
+            17.886993408203125,
+            0.2662172504119303
+        ]
+    },
+    "artROOM Frankfurt": {
+        "building": "Berliner Stra\u00dfe 32",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            987.3406576514244,
+            991.286385178566,
+            -12
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -12.709037168017064,
+            -8.71576752160202,
+            97.10634994506836,
+            3.2540219991408033,
+            28.525698446945842,
+            4.634880065917969,
+            -1.2666214923855066
+        ]
+    },
+    "Bleidenstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -228.00891954540512,
+            34.867100012495186
+        ],
+        "rotation": -1.2272212009665018,
+        "bounding_box": null
+    },
+    "Domplatz Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            187.89873308578933,
+            -125.09747067401953
+        ],
+        "rotation": -2.828107580791367,
+        "bounding_box": null
+    },
+    "Saalgasse Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            49.44755052649866,
+            -244.83844986744862
+        ],
+        "rotation": -0.883976932063394,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.714385474731255,
+            -24.361326528559523
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            234.75346195656564,
+            -225.2147639010552
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            79.31304242685894,
+            -173.4409525514944
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.4797500106486,
+            -25.948462163399768
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.98993118456949,
+            -33.292404946251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -56.344927612231416,
+            -201.5723036494874
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -89.90940664203639,
+            113.47685636627334
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Saalgasse": [
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Bleidenstra\u00dfe": [
+            {
+                "stop_name": "Saalgasse Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Domplatz Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Bleidenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

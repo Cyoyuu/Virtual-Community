@@ -1,0 +1,444 @@
+{
+    "Elena Markovic": {
+        "age": 33,
+        "living_place": "Elena Markovic's room at A Home In The Hill",
+        "appearance": "assets/imgs/avatars/Elena Markovic.png",
+        "groups": [
+            "Baltimore Artists Collective"
+        ]
+    },
+    "Freya Novak": {
+        "age": 22,
+        "living_place": "Freya Novak's room at A Home In The Hill",
+        "appearance": "assets/imgs/avatars/Freya Novak.png",
+        "groups": [
+            "Baltimore Artists Collective"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Harbor Hill Apartments",
+        "appearance": "assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Baltimore Artists Collective"
+        ]
+    },
+    "Baltimore Artists Collective": {
+        "description": "A group of artists and creatives who collaborate on projects and share their work.",
+        "place": "The Pink Art Gallery",
+        "members": [
+            "Freya Novak",
+            "Layla Haddad",
+            "Pika Hayes",
+            "Elena Markovic"
+        ],
+        "daily_activity": "creating art from 15:00 to 17:00"
+    },
+    "Layla Haddad's room at A Home In The Hill": {
+        "building": "1113 South Hanover Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.0026702880859,
+            912.5161247253418,
+            -20
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "name": "Layla Haddad's room at A Home In The Hill",
+        "bounding_box": [
+            -240.13296508789062,
+            -87.07470703125,
+            74.53837585449219,
+            14.2446928024292,
+            3.736699104309082,
+            5.3982696533203125,
+            0.15606799721717834
+        ]
+    },
+    "Henry Street Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "premise",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1394.287557213864,
+            749.9864890881348,
+            -0.017084060218820696
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "The Pink Art Gallery": {
+        "building": "1125 Light Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1045.0656147003174,
+            905.5884094238281,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            45.04530912123172,
+            -94.27878347087179,
+            81.16293716430664,
+            28.20581876158442,
+            5.3033449846572225,
+            8.762138366699219,
+            0.08704382790697278
+        ]
+    },
+    "Berkshire Hathaway HomeServices PenFed Realty: Federal Hill": {
+        "building": "1208 Light Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1010.9413750171661,
+            836.8262405395508,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            11.126857047763268,
+            -163.31975045789636,
+            82.1138153076172,
+            24.269761392659984,
+            9.271086343053893,
+            9.451339721679688,
+            0.14800448656274226
+        ]
+    },
+    "The 8x10": {
+        "building": "10 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            885.5095634460449,
+            979.1267638206482,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -114.48613357543947,
+            -20.873236179351807,
+            77.52820587158203,
+            4.753929894684231,
+            19.792485562640035,
+            8.963027954101562,
+            0.05566619235794686
+        ]
+    },
+    "Federal Hill Preparatory School": {
+        "building": "1040 William Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.0709342956543,
+            1032.2982387542725,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            80.46018270572205,
+            32.297798565321045,
+            81.66573715209961,
+            104.2108690619469,
+            64.79397269395406,
+            11.744636535644531,
+            0.12242259344145233
+        ]
+    },
+    "Mums": {
+        "building": "1132 South Hanover Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            724.3079528808594,
+            854.9539108276367,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -275.54354754340426,
+            -145.03124695479735,
+            75.93122482299806,
+            25.74745611164599,
+            5.392887275572759,
+            8.056068420410156,
+            0.15494405095682104
+        ]
+    },
+    "Papa Johns Pizza": {
+        "building": "1200 South Hanover Street Ste 103",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            730.7646789550781,
+            798.2197036743164,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -269.27805554699574,
+            -201.78423893407444,
+            75.37605667114259,
+            16.788311904114863,
+            27.527919488011563,
+            5.917335510253906,
+            0.04819633707666095
+        ]
+    },
+    "Tre Fratelli Italian Ristorante": {
+        "building": "Light Street Cafe",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1043.4411659240723,
+            922.4366073608398,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            43.41630280936763,
+            -77.38293389288572,
+            80.98074340820312,
+            27.901172733018516,
+            6.02131874955646,
+            9.030654907226562,
+            0.12883258487804705
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Her Heelz",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1044.1779718399048,
+            916.9040336608887,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            44.16277930093856,
+            -83.0925231946922,
+            80.3414192199707,
+            27.967117530881094,
+            5.660090144037043,
+            7.504096984863281,
+            0.1229107160823021
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "United States",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            857.6034545898438,
+            1013.4469127655029,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -142.40333941174686,
+            13.125603049043427,
+            77.30020904541016,
+            16.981290564846642,
+            6.089655895902471,
+            8.058425903320312,
+            0.0524477595417495
+        ]
+    },
+    "Weber Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            62.045638028129346,
+            -79.944052801245
+        ],
+        "rotation": -1.4347317355623312,
+        "bounding_box": null
+    },
+    "South Charles Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -83.55211554255058,
+            -33.65036613291564
+        ],
+        "rotation": -1.4776061895035828,
+        "bounding_box": null
+    },
+    "Olive Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -203.6470944479423,
+            -45.68417057898851
+        ],
+        "rotation": -3.0916009048916844,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -166.37837354804984,
+            25.09043608193694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            31.192618875151837,
+            -86.33272588533399
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.24465578842066,
+            -122.939706084611
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.470494963686212,
+            66.23107185146742
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -68.41388043672472,
+            -23.896660317334824
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            352.67343009202983,
+            -8.493953354113648
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            77.06964128758824,
+            -254.656878264548
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Olive Street": [
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Weber Street": [
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

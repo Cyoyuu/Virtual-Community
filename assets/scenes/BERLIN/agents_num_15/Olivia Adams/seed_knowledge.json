@@ -1,0 +1,384 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Palais Theising",
+        "appearance": "assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Berlin Art Enthusiasts"
+        ]
+    },
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "Elizabeth Mensah's room at Rathsack Geb\u00e4udeservice GmbH",
+        "appearance": "assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "Berlin Art Enthusiasts"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Rathsack Geb\u00e4udeservice GmbH",
+        "appearance": "assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Berlin Art Enthusiasts"
+        ]
+    },
+    "Berlin Art Enthusiasts": {
+        "description": "A group of art lovers who explore galleries and exhibitions in Berlin.",
+        "place": "Galerie im Adlon",
+        "members": [
+            "Brycer Rodriguez",
+            "Elizabeth Mensah",
+            "Olivia Adams",
+            "Shannon Steves"
+        ],
+        "daily_activity": "visiting art exhibitions from 15:00 to 17:00"
+    },
+    "Olivia Adams's room at Rathsack Geb\u00e4udeservice GmbH": {
+        "building": "Glinkastra\u00dfe 30",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1282.8489990234375,
+            712.7369079589844,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Olivia Adams's room at Rathsack Geb\u00e4udeservice GmbH",
+        "bounding_box": [
+            282.8455266759489,
+            -287.01308378672064,
+            114.89515686035158,
+            19.153817999697633,
+            7.455263266501914,
+            23.53887939453125,
+            0.09032472245426922
+        ]
+    },
+    "Starbucks": {
+        "building": "Pariser Platz 4A",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            830.5794143676758,
+            1017.6247839927673,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -169.4203239842582,
+            17.62556044452765,
+            117.32018280029297,
+            35.40057035240413,
+            50.099088604200496,
+            27.398513793945312,
+            0.11025260651881935
+        ]
+    },
+    "Galerie im Adlon": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Pariser Platz 4A",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            830.5794143676758,
+            1017.6247839927673,
+            -16
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -169.4203239842582,
+            17.62556044452765,
+            117.32018280029297,
+            35.40057035240413,
+            50.099088604200496,
+            27.398513793945312,
+            0.11025260651881935
+        ]
+    },
+    "Lorenz Adlon Esszimmer": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -16
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
+        ]
+    },
+    "Erlebnis Europa": {
+        "building": "Europ\u00e4isches Haus",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            859.9858245849609,
+            1020.8131468296051,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -140.01697617682035,
+            20.885201414491316,
+            116.6334457397461,
+            23.787216257339264,
+            50.09909114116946,
+            25.933547973632812,
+            0.11064097039360862
+        ]
+    },
+    "Dunkin' Donuts": {
+        "building": "Europ\u00e4isches Haus",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "bakery",
+            "restaurant",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            859.9858245849609,
+            1020.8131468296051,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -140.01697617682035,
+            20.885201414491316,
+            116.6334457397461,
+            23.787216257339264,
+            50.09909114116946,
+            25.933547973632812,
+            0.11064097039360862
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Adlon Kempinski",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            861.4021148681641,
+            868.8953990936279,
+            -24
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -133.4479759749235,
+            -130.38561385500515,
+            117.15104675292969,
+            75.2384016090033,
+            133.4335694963155,
+            27.219940185546875,
+            0.10601444692501599
+        ]
+    },
+    "Dorotheenstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -276.32068646209586,
+            134.91691783328858
+        ],
+        "rotation": -1.4599881249020588,
+        "bounding_box": null
+    },
+    "Wilhelmstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -80.1443818575605,
+            -133.99096123871433
+        ],
+        "rotation": 0.3023605865467752,
+        "bounding_box": null
+    },
+    "Mittelstra\u00dfe Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            374.8505950021759,
+            141.1008314496153
+        ],
+        "rotation": -1.4710703828250777,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            229.96290008650672,
+            62.08780631732322
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.61441405187819,
+            17.257650244464728
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -125.37705697340463,
+            -189.25981309793508
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.40201082542762,
+            -154.0059505983572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.282316988717954,
+            175.09397367318775
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            332.6510647579524,
+            -324.88368731930206
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            211.35856808912084,
+            183.73906073961084
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Mittelstra\u00dfe": [
+            {
+                "stop_name": "Dorotheenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Wilhelmstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Mittelstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Dorotheenstra\u00dfe": [
+            {
+                "stop_name": "Mittelstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Wilhelmstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            },
+            {
+                "stop_name": "Dorotheenstra\u00dfe Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

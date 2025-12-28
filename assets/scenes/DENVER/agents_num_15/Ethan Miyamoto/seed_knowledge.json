@@ -1,0 +1,406 @@
+{
+    "Layla Haddad": {
+        "age": 19,
+        "living_place": "Sonesta Denver Downtown",
+        "appearance": "assets/imgs/avatars/Layla Haddad.png",
+        "groups": [
+            "Denver Music Enthusiasts"
+        ]
+    },
+    "Liam Novak": {
+        "age": 25,
+        "living_place": "Hilton Garden Inn Denver Downtown",
+        "appearance": "assets/imgs/avatars/Liam Novak.png",
+        "groups": [
+            "Denver Music Enthusiasts"
+        ]
+    },
+    "Zara Williams": {
+        "age": 15,
+        "living_place": "The Residences at Civic Center",
+        "appearance": "assets/imgs/avatars/Zara Williams.png",
+        "groups": [
+            "Denver Music Enthusiasts"
+        ]
+    },
+    "Denver Music Enthusiasts": {
+        "description": "A group of individuals passionate about music and performing arts, sharing their love for music through jam sessions and performances.",
+        "place": "McNichols Civic Center Building",
+        "members": [
+            "Ethan Miyamoto",
+            "Layla Haddad",
+            "Liam Novak",
+            "Zara Williams"
+        ],
+        "daily_activity": "rehearsing music from 17:00 to 19:00"
+    },
+    "Ethan Miyamoto's room at Skyline Hotel Denver": {
+        "building": "437 West Colfax Avenue",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            841.7524566650391,
+            961.2652130126953,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Ethan Miyamoto's room at Skyline Hotel Denver",
+        "bounding_box": [
+            -158.48239716157016,
+            -44.7017985410797,
+            135.01132202148438,
+            16.713002198888955,
+            19.478643706234354,
+            13.2021484375,
+            0.7957042146756431
+        ]
+    },
+    "McNichols Civic Center Building": {
+        "building": "McNichols Civic Center Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1229.2746276855469,
+            895.5717010498047,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            229.26273154956812,
+            -104.4560193293176,
+            141.8115692138672,
+            53.99832903034863,
+            27.98106471507084,
+            17.5625,
+            -0.004475675748544737
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "1400 Welton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            921.1014671325684,
+            1231.4142456054688,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -78.86513722527702,
+            231.35973084680603,
+            155.3886604309082,
+            37.338189277498,
+            53.38359940772542,
+            57.99999237060547,
+            -0.7776138292772795
+        ]
+    },
+    "Pasque": {
+        "building": "Populus",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1094.5269508361816,
+            968.238603591919,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            94.56638345416434,
+            -31.72089859677881,
+            155.6052474975586,
+            50.78785507319186,
+            28.05453806650109,
+            46.62547302246094,
+            -0.00342862296876436
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "1460 Tremont Place",
+        "coarse_type": "stores",
+        "fine_types": [
+            "car_repair",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1120.3152389526367,
+            1133.587215423584,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            120.31850296132035,
+            133.58823802909964,
+            134.07655334472656,
+            14.959641026505825,
+            37.86621193615334,
+            5.19195556640625,
+            0.782198140811292
+        ]
+    },
+    "Bar Red": {
+        "building": "437 West Colfax Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            841.7524566650391,
+            961.2652130126953,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -158.48239716157016,
+            -44.7017985410797,
+            135.01132202148438,
+            16.713002198888955,
+            19.478643706234354,
+            13.2021484375,
+            0.7957042146756431
+        ]
+    },
+    "Diamond Cabaret": {
+        "building": "1222 Glenarm Place",
+        "coarse_type": "food",
+        "fine_types": [
+            "night_club",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            816.2572402954102,
+            980.2737646102905,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -183.74275970458984,
+            -22.592729568481435,
+            133.0150604248047,
+            38.59656916720307,
+            40.64379225727282,
+            10.082611083984375,
+            -0.786622183771094
+        ]
+    },
+    "Subway": {
+        "building": "Wellington E. Webb Municipal Office Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1184.5072441101074,
+            1024.9130420684814,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            182.91170129436063,
+            16.130097853386722,
+            162.67181396484375,
+            80.21159215106188,
+            121.08105544187607,
+            60.699951171875,
+            -0.7818358507686517
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "1439 Court Place",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1136.9391555786133,
+            1079.5140228271484,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            136.2337494826226,
+            79.93223573988571,
+            137.16744995117188,
+            8.069826018857096,
+            17.52715615103761,
+            9.54339599609375,
+            0.7830412026560171
+        ]
+    },
+    "Tremont Place Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            223.51118219794316,
+            272.6155177584943
+        ],
+        "rotation": 2.35402308414951,
+        "bounding_box": null
+    },
+    "Glenarm Place Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -36.57998736222894,
+            10.95737012174964
+        ],
+        "rotation": 1.6337246460609054,
+        "bounding_box": null
+    },
+    "West 14th Avenue Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            38.63757570344625,
+            -236.50780135581877
+        ],
+        "rotation": -1.5709184286041482,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -132.29308674514246,
+            44.03818273086455
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            229.37408745254095,
+            -84.02767138673687
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            73.82841255855345,
+            46.97023279130167
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -65.88070627516149,
+            -116.11411382584171
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -14.11898390240778,
+            197.93008231918526
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            101.76363289190434,
+            -226.434088464398
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            239.87633008535047,
+            200.17493575828917
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 14th Avenue": [
+            {
+                "stop_name": "Tremont Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Glenarm Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 14th Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Tremont Place": [
+            {
+                "stop_name": "West 14th Avenue Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Glenarm Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Tremont Place Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

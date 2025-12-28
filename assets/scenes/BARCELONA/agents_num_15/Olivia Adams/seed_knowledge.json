@@ -1,0 +1,403 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at SmartMove - Real Estate Agency Barcelona",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at Pensi\u00f3n Nevada",
+        "appearance": "assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "El Avenida Palace",
+        "appearance": "assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Culinary Creators"
+        ]
+    },
+    "Culinary Creators": {
+        "description": "A group of culinary enthusiasts who love to experiment with new recipes and flavors.",
+        "place": "Can Pizza Universitat",
+        "members": [
+            "Adam Pierce",
+            "James Thompson",
+            "Pika Hayes",
+            "Olivia Adams"
+        ],
+        "daily_activity": "experimenting with new recipes from 17:00 to 18:00"
+    },
+    "Olivia Adams's room at Movistar Centre": {
+        "building": "Movistar Centre",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1140.361312866211,
+            1004.8940782546997,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "name": "Olivia Adams's room at Movistar Centre",
+        "bounding_box": [
+            135.98538208007812,
+            7.576118469238281,
+            142.0291748046875,
+            25.226667404174805,
+            27.929733276367188,
+            43.638832092285156,
+            0.7388031482696533
+        ]
+    },
+    "Mandiram Escola de Yoga": {
+        "building": "Pl Urquinaona",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.7693557739258,
+            1255.4750671386719,
+            -12
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            174.7235690686839,
+            251.93077120888918,
+            137.4907646179199,
+            25.40860593222929,
+            33.38011725376362,
+            28.89398956298828,
+            0.7825328536983855
+        ]
+    },
+    "Can Pizza Universitat": {
+        "building": "Ronda de la Universitat",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.5226516723633,
+            982.3367626667023,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -201.01796938045516,
+            -18.399003356869216,
+            136.12260818481445,
+            18.27070180396342,
+            41.40875408504387,
+            21.59789276123047,
+            0.463124273712025
+        ]
+    },
+    "Movistar Centre": {
+        "building": "Movistar Centre",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1140.361312866211,
+            1004.8940782546997,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "bounding_box": [
+            135.98538208007812,
+            7.576118469238281,
+            142.0291748046875,
+            25.226667404174805,
+            27.929733276367188,
+            43.638832092285156,
+            0.7388031482696533
+        ]
+    },
+    "Il\u00b7lacions Design Gallery": {
+        "building": "Rambla de Canaletes",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1090.086513519287,
+            730.7357635498047,
+            -8
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            90.05526925079454,
+            -268.4703047539697,
+            133.17289352416995,
+            31.677733173517826,
+            18.86584769294573,
+            31.82740020751953,
+            0.4654475662488498
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Carrer de les Ramelleres",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            868.5278091430664,
+            726.250244140625,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -131.35856887474358,
+            -272.91074895479477,
+            127.60297012329103,
+            5.479217981620863,
+            12.06460799455686,
+            18.43260955810547,
+            -1.0141660090419626
+        ]
+    },
+    "100 Montaditos": {
+        "building": "Pl Urquinaona",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1174.7693557739258,
+            1255.4750671386719,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            174.7235690686839,
+            251.93077120888918,
+            137.4907646179199,
+            25.40860593222929,
+            33.38011725376362,
+            28.89398956298828,
+            0.7825328536983855
+        ]
+    },
+    "Batea": {
+        "building": "El Avenida Palace",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            753.3645477294922,
+            1243.994743347168,
+            -12
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -246.63091359976198,
+            247.11159671648724,
+            150.58866882324216,
+            28.076820589647134,
+            31.403392938025995,
+            44.21380615234375,
+            -0.7764564204912203
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Pl Urquinaona",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1174.7693557739258,
+            1255.4750671386719,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            174.7235690686839,
+            251.93077120888918,
+            137.4907646179199,
+            25.40860593222929,
+            33.38011725376362,
+            28.89398956298828,
+            0.7825328536983855
+        ]
+    },
+    "Yoga Vacaciones": {
+        "building": "Ronda de la Universitat",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            798.5226516723633,
+            982.3367626667023,
+            -8
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -201.01796938045516,
+            -18.399003356869216,
+            136.12260818481445,
+            18.27070180396342,
+            41.40875408504387,
+            21.59789276123047,
+            0.463124273712025
+        ]
+    },
+    "Carrer de Pelai Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -204.29159513682924,
+            -125.76041054613603
+        ],
+        "rotation": -1.6835685762424586,
+        "bounding_box": null
+    },
+    "Carrer de les Moles Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            281.36825597179325,
+            -33.58935112239556
+        ],
+        "rotation": -2.528794532330347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -122.53727152492371,
+            198.66561933870753
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            233.75701186628015,
+            -21.747647677694534
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -89.05860692651642,
+            -232.12719100086204
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            141.44607067946572,
+            206.82899029537643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -196.94092205335937,
+            -86.69934575498702
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            160.0452007698988,
+            -240.7381685183215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -17.649811608307868,
+            220.37557954478368
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Carrer de les Moles": [
+            {
+                "stop_name": "Carrer de Pelai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Carrer de les Moles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            }
+        ],
+        "To Carrer de Pelai": [
+            {
+                "stop_name": "Carrer de les Moles Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Carrer de Pelai Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ]
+    }
+}

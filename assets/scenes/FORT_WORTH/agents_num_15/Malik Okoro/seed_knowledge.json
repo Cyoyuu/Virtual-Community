@@ -1,0 +1,405 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Houston Place Lofts",
+        "appearance": "assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Fort Worth Fitness Enthusiasts"
+        ]
+    },
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at Houston Place Lofts",
+        "appearance": "assets/imgs/avatars/Emily Johnson.png",
+        "groups": [
+            "Fort Worth Fitness Enthusiasts"
+        ]
+    },
+    "Fort Worth Fitness Enthusiasts": {
+        "description": "A group of individuals passionate about fitness and healthy living.",
+        "place": "Lanham Fitness Center",
+        "members": [
+            "Brycer Rodriguez",
+            "Malik Okoro",
+            "Emily Johnson"
+        ],
+        "daily_activity": "working out from 17:00 to 18:00"
+    },
+    "Malik Okoro's room at AC Hotel Fort Worth Downtown": {
+        "building": "AC Hotel by Marriott Fort Worth Downtown",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1000.2256889343262,
+            1245.1710739135742,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "name": "Malik Okoro's room at AC Hotel Fort Worth Downtown",
+        "bounding_box": [
+            0.2256677185824998,
+            245.1710743244809,
+            134.80499649047852,
+            14.857526582824796,
+            61.75554330877731,
+            50.283531188964844,
+            -1.051457804762095
+        ]
+    },
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.20849609375,
+            904.2162132263184,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -43.72303431509959,
+            -95.7049147649222,
+            135.87408447265625,
+            73.5226924534619,
+            97.90414338877876,
+            49.02667236328125,
+            -0.007332725972464746
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Sundance Square Garage 4",
+        "coarse_type": "stores",
+        "fine_types": [
+            "painter",
+            "home_goods_store",
+            "general_contractor",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            976.5441904067993,
+            1112.689754486084,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -23.45589733123777,
+            112.68975448608398,
+            123.90921783447266,
+            62.05431423067467,
+            55.34756888959051,
+            27.650802612304688,
+            0.5155558487701815
+        ]
+    },
+    "Greysteel": {
+        "building": "500 W. 7th",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "The Capital Grille": {
+        "building": "800 Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1086.3670768737793,
+            1093.1757984161377,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            86.36700439453124,
+            93.17579841613771,
+            128.61751556396484,
+            60.78334076952802,
+            47.384098196499885,
+            39.69581604003906,
+            0.5219033855747158
+        ]
+    },
+    "Bar 10Ten": {
+        "building": "Fairfield Inn & Suites",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1108.7402420043945,
+            889.4390525817871,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            105.07011366918834,
+            -110.56095306098314,
+            117.54885482788086,
+            30.026538485495077,
+            55.37369114665346,
+            15.150581359863281,
+            -1.0352801342979414
+        ]
+    },
+    "61 Osteria": {
+        "building": "500 W. 7th",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Del Frisco's Double Eagle Steakhouse": {
+        "building": "812 Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1115.4414978027344,
+            1074.0068664550781,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            115.44150299577899,
+            74.03469708528104,
+            112.13885498046875,
+            14.794639622503063,
+            29.680339827121642,
+            6.7381134033203125,
+            -1.0489170516000657
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "500 W. 7th",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Star-Telegram Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            957.7258377075195,
+            1015.7194132804871,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -42.27558135986328,
+            8.998313903808594,
+            146.24929809570312,
+            28.1203556060791,
+            60.492374420166016,
+            70.12572479248047,
+            0.5011052489280701
+        ]
+    },
+    "West 7th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -176.4915018524415,
+            -14.460973615116995
+        ],
+        "rotation": -1.0524566790619148,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.1052575202679,
+            182.87464646913259
+        ],
+        "rotation": -0.8936122536766103,
+        "bounding_box": null
+    },
+    "Houston Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.72617540910458,
+            -143.92913508338017
+        ],
+        "rotation": 2.0823315085752347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            64.15209643979796,
+            69.77376676139166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -98.10083788061374,
+            -271.8031433875841
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -2.83358979438382,
+            -42.72445330458906
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            7.8425292876260535,
+            262.31761608136424
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.43417848174332,
+            173.54857106916538
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Houston Street": [
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To West 7th Street": [
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

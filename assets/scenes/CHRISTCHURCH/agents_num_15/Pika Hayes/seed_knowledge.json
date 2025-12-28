@@ -1,0 +1,438 @@
+{
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at ibis Christchurch",
+        "appearance": "assets/imgs/avatars/Emily Johnson.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Mira Johansson": {
+        "age": 27,
+        "living_place": "Mira Johansson's room at Distinction Christchurch Hotel",
+        "appearance": "assets/imgs/avatars/Mira Johansson.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Catalyst Group - Christchurch",
+        "appearance": "assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Christchurch Explorers Club": {
+        "description": "A group of individuals who love exploring the city and discovering new places.",
+        "place": "Rauora Park",
+        "members": [
+            "Emily Johnson",
+            "Mira Johansson",
+            "Pika Hayes",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "exploring the park from 15:00 to 17:00"
+    },
+    "Pika Hayes's room at Quest Cathedral Junction": {
+        "building": "113 Worcester Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.782585144043,
+            1055.9374160766602,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Pika Hayes's room at Quest Cathedral Junction",
+        "bounding_box": [
+            88.7461050778869,
+            55.949892770445274,
+            123.08096694946289,
+            11.976878644164314,
+            35.09910573653191,
+            22.20238494873047,
+            -0.0020834661734678976
+        ]
+    },
+    "Quest Cathedral Junction": {
+        "building": "113 Worcester Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.782585144043,
+            1055.9374160766602,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "bounding_box": [
+            88.7461050778869,
+            55.949892770445274,
+            123.08096694946289,
+            11.976878644164314,
+            35.09910573653191,
+            22.20238494873047,
+            -0.0020834661734678976
+        ]
+    },
+    "Rauora Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1264.0135744674103,
+            837.0244306087668,
+            -0.007541792011437565
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Crowne Plaza Christchurch by IHG": {
+        "building": "Crowne Plaza Christchurch",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            952.5873069763184,
+            1231.9229583740234,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "bounding_box": [
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "The Last Word": {
+        "building": "Christchurch Central City",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1087.3518562316895,
+            1214.3340301513672,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            87.34386809071687,
+            214.32288894269573,
+            115.55654907226561,
+            7.756204003420394,
+            4.4974299151423835,
+            7.609832763671875,
+            0.007165563492951198
+        ]
+    },
+    "Heritage Health Club": {
+        "building": "Old Government Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -20
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "O.G.B Bar & Cocktail Bar": {
+        "building": "Old Government Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Belle (cafe & micro roastery)": {
+        "building": "168 Armagh Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1086.9688148498535,
+            1239.3252563476562,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            86.96881484985352,
+            239.32525634765628,
+            116.48816299438475,
+            8.4099576232289,
+            9.695930790310141,
+            9.462501525878906,
+            -1.1830119483924416e-05
+        ]
+    },
+    "Sampan House": {
+        "building": "Sampan House",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1140.073097229004,
+            1112.4701118469238,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            140.1375882537261,
+            112.42621662678262,
+            114.3852310180664,
+            11.033179246051956,
+            22.97604743312369,
+            6.5003662109375,
+            0.008051158725287775
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Old Government Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -28
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "254/266 High Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1006.0611438751221,
+            854.505443572998,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            6.021806023641008,
+            -145.45488709037065,
+            117.67600631713869,
+            39.10646660046526,
+            52.94703387876733,
+            9.621162414550781,
+            -0.003533991967874436
+        ]
+    },
+    "Gloucester Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            57.12867876988341,
+            116.53646795470775
+        ],
+        "rotation": 3.137767476010901,
+        "bounding_box": null
+    },
+    "Colombo Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            56.29208670534897,
+            28.563349604132178
+        ],
+        "rotation": -3.1393365052238997,
+        "bounding_box": null
+    },
+    "Cambridge Terrace Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -372.361714314352,
+            -203.89736754714133
+        ],
+        "rotation": 3.12841219057123,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -246.50746527210558,
+            -2.463151061085895
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.488766660426808,
+            -173.5865310534407
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -192.05062614359377,
+            -168.3787989896405
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.50697073452898,
+            183.7728118125115
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            167.6508060845298,
+            -170.38236131376215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.73054451666508,
+            192.61921121320998
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Cambridge Terrace": [
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Gloucester Street": [
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

@@ -1,0 +1,462 @@
+{
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "The Pressman",
+        "appearance": "assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "Madison Book Club"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "306 West Main",
+        "appearance": "assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Madison Book Club"
+        ]
+    },
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Capitol West",
+        "appearance": "assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Madison Book Club"
+        ]
+    },
+    "Madison Book Club": {
+        "description": "A group of book enthusiasts who meet weekly to discuss literature and share recommendations.",
+        "place": "Madison Public Library Foundation",
+        "members": [
+            "Brian Carter",
+            "Elizabeth Mensah",
+            "Joe Anderson",
+            "Megan Carter"
+        ],
+        "daily_activity": "discussing books from 17:00 to 18:00"
+    },
+    "Brian Carter's room at Capitol West": {
+        "building": "Capitol West",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            936.5092840194702,
+            872.5380058288574,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "name": "Brian Carter's room at Capitol West",
+        "bounding_box": [
+            -63.06808088323473,
+            -135.1073593750149,
+            138.23846817016602,
+            41.786820131401434,
+            65.31207096224526,
+            36.86614227294922,
+            -0.8109431431926516
+        ]
+    },
+    "Dane County Law Library": {
+        "building": "Dane County Courthouse",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "local_government_office",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1211.5316543579102,
+            765.6957092285156,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            211.92847769128176,
+            -234.79353173570695,
+            136.46384048461917,
+            53.32808319264715,
+            96.47461518221027,
+            43.035240173339844,
+            -0.018349374586955774
+        ]
+    },
+    "Madison Public Library Foundation": {
+        "building": "Central Library",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            907.8183670043945,
+            1034.5971868038177,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -92.18163528481247,
+            34.491553804678155,
+            124.31414794921875,
+            43.38067968144966,
+            75.84236118222586,
+            16.493988037109375,
+            -0.8101532184373549
+        ]
+    },
+    "Resolution Fitness": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -24
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "Overture Center for the Arts": {
+        "building": "Overture Center for the Arts",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            819.9914093017578,
+            1093.7106523513794,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -179.16370996064046,
+            121.91806722295829,
+            127.17206192016602,
+            82.25792288044569,
+            169.8988746353147,
+            23.26610565185547,
+            0.7557416301816211
+        ]
+    },
+    "Private Colleges Wisconsin": {
+        "building": "Hovde Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            998.8073711395264,
+            1038.2255668640137,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -1.1926295662076751,
+            38.38144520473439,
+            139.9369125366211,
+            20.415041522755825,
+            41.1722186706721,
+            35.80293273925781,
+            0.7668077105630473
+        ]
+    },
+    "Madison Hunger Task Force - Food Distribution Center": {
+        "building": "Capitol West",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            936.5092840194702,
+            872.5380058288574,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -63.06808088323473,
+            -135.1073593750149,
+            138.23846817016602,
+            41.786820131401434,
+            65.31207096224526,
+            36.86614227294922,
+            -0.8109431431926516
+        ]
+    },
+    "Ugly Apple Cafe": {
+        "building": "Dane County Courthouse",
+        "coarse_type": "food",
+        "fine_types": [
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1211.5316543579102,
+            765.6957092285156,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            211.92847769128176,
+            -234.79353173570695,
+            136.46384048461917,
+            53.32808319264715,
+            96.47461518221027,
+            43.035240173339844,
+            -0.018349374586955774
+        ]
+    },
+    "Grace Food Pantry": {
+        "building": "Grace Episcopal Church",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1031.0897550582886,
+            1066.6621742248535,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            29.245024725377334,
+            68.2189762842892,
+            129.92411041259766,
+            38.900416891364486,
+            52.482412828377086,
+            13.733200073242188,
+            -0.7682133798751558
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "130 State Street # A",
+        "coarse_type": "stores",
+        "fine_types": [
+            "locksmith",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            887.9674873352051,
+            1182.5409393310547,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -112.05280917570605,
+            182.75033484028413,
+            124.3171157836914,
+            18.308635262501973,
+            20.276575819620746,
+            8.644699096679688,
+            -0.022875965762880923
+        ]
+    },
+    "Wisconsin Veterans Museum": {
+        "building": "Wisconsin Veterans Museum",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            993.1682281494141,
+            1200.1342086791992,
+            -20
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -6.829787310349609,
+            200.137719433682,
+            134.5824317932129,
+            34.28802050934785,
+            36.193114700329446,
+            23.85729217529297,
+            0.7589465206364812
+        ]
+    },
+    "West Johnson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -145.11684279218883,
+            315.8134983792674
+        ],
+        "rotation": -0.8037606552265828,
+        "bounding_box": null
+    },
+    "West Doty Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            168.93290855636047,
+            -103.42746178914004
+        ],
+        "rotation": -0.03291053212501917,
+        "bounding_box": null
+    },
+    "West Wilson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            324.9969270949154,
+            -170.54746365896176
+        ],
+        "rotation": 2.34409417720222,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.243696430131573,
+            24.310546849995898
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -202.69080886288236,
+            173.51026241170064
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.01263518237513,
+            -119.86484854684215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -51.05275980103885,
+            169.47393538372248
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -157.31361505045334,
+            -192.33382936607885
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.30546522827655,
+            -246.33948688643684
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West Wilson Street": [
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West Johnson Street": [
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

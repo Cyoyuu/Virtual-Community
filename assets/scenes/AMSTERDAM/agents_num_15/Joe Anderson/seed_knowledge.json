@@ -1,0 +1,432 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Charly Group Amsterdam",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Shannon Steves": {
+        "age": 27,
+        "living_place": "Charly Group Amsterdam",
+        "appearance": "assets/imgs/avatars/Shannon Steves.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Building III",
+        "appearance": "assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+        "place": "Techlab Bv",
+        "members": [
+            "Adam Pierce",
+            "Sophie Carlsen",
+            "Shannon Steves",
+            "Joe Anderson"
+        ],
+        "daily_activity": "discussing tech trends from 17:00 to 18:00"
+    },
+    "Joe Anderson's room at Building III": {
+        "building": "Building III",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1000.8488445281982,
+            912.8461971282959,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Joe Anderson's room at Building III",
+        "bounding_box": [
+            -5.8302764892578125,
+            -82.98564147949219,
+            115.98128509521484,
+            53.84560775756836,
+            52.184173583984375,
+            17.441696166992188,
+            0.7096518278121948
+        ]
+    },
+    "The Hoxton, Amsterdam": {
+        "building": "Herengracht 255",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "bar",
+            "lodging",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            733.1640319824219,
+            855.8078308105469,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "bounding_box": [
+            -266.56705171980195,
+            -144.4856856688487,
+            114.63676071166994,
+            50.8484292174105,
+            24.199284567896992,
+            15.497520446777344,
+            -0.12067092442104516
+        ]
+    },
+    "Techlab Bv": {
+        "building": "Singel 326 A",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            731.1872100830078,
+            738.3324813842773,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -269.11663921247896,
+            -261.7464949481884,
+            114.65562438964845,
+            28.74136867987774,
+            12.706197571820965,
+            15.725479125976562,
+            -0.11961438250784714
+        ]
+    },
+    "Flemish Cultural Center de Brakke Grond": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -12
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            173.13579031517335,
+            -233.8267931442452,
+            112.11829757690431,
+            82.57669607270873,
+            58.77243479033173,
+            10.355445861816406,
+            -0.054462440222174106
+        ]
+    },
+    "Amsterdam Yoga Centre": {
+        "building": "Singel 300",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -261.353045485607,
+            -178.07236909753436,
+            115.16712570190431,
+            30.50653721295573,
+            17.46137789389023,
+            16.67302703857422,
+            -0.1108469586759953
+        ]
+    },
+    "Hotel V": {
+        "building": "Vlaams Cultuurhuis de Brakke Grond",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1173.8683776855469,
+            766.2080841064453,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "bounding_box": [
+            173.13579031517335,
+            -233.8267931442452,
+            112.11829757690431,
+            82.57669607270873,
+            58.77243479033173,
+            10.355445861816406,
+            -0.054462440222174106
+        ]
+    },
+    "The Butcher W Operations B.V.": {
+        "building": "Nieuwezijds Voorburgwal 271",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            970.0538415908813,
+            791.1518478393555,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -31.506619012387137,
+            -208.65652846581608,
+            116.44873428344728,
+            35.0808898983162,
+            16.718240413065534,
+            19.015907287597656,
+            0.343589264457194
+        ]
+    },
+    "Mr portret": {
+        "building": "Amsterdam",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            869.0656204223633,
+            846.8522186279297,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -131.58415199843085,
+            -153.41456121849257,
+            114.78226470947267,
+            8.330863639717887,
+            27.97477187551898,
+            16.254226684570312,
+            -1.0819358269557329
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Sint Luci\u00ebnsteeg 18",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.206184387207,
+            733.0989761352539,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -59.071700620779055,
+            -266.0649309514624,
+            117.80208969116212,
+            17.421766631676785,
+            22.76370293531338,
+            21.874549865722656,
+            0.29821078364520925
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Gasthuismolensteeg 8",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            738.8455963134766,
+            906.6804466247559,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -260.87710531988813,
+            -93.34497743472,
+            114.1373291015625,
+            4.682865742821338,
+            15.326799996830925,
+            13.263565063476562,
+            -0.11337250540635439
+        ]
+    },
+    "Moonlife concept store": {
+        "building": "Wijdesteeg",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            909.2360000610352,
+            836.0588455200195,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -90.2540054321289,
+            -163.9869384765625,
+            114.9057846069336,
+            16.6563777923584,
+            5.759768009185791,
+            16.80438995361328,
+            0.17803071439266205
+        ]
+    },
+    "Singel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -223.64587491774998,
+            -331.8770473372178
+        ],
+        "rotation": -0.11606742879572277,
+        "bounding_box": null
+    },
+    "Damrak Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            205.2698704781698,
+            105.74759652198695
+        ],
+        "rotation": -0.6870389474018183,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            190.9697649930068,
+            -159.54508143669185
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -270.59051032698653,
+            -184.14685443747305
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -99.84747833441955,
+            -121.10998771547311
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            162.8009026867501,
+            105.22397871245589
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.802841477347487,
+            -233.41860399615223
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -106.98235061443106,
+            -267.68981899489995
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.59099691949788,
+            40.69110591926888
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Damrak": [
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Singel": [
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

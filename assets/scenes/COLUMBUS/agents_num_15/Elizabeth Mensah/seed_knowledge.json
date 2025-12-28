@@ -1,0 +1,417 @@
+{
+    "Leonard Park": {
+        "age": 26,
+        "living_place": "Microliving at Long and Front",
+        "appearance": "assets/imgs/avatars/Leonard Park.png",
+        "groups": [
+            "Columbus Art Collective"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Microliving at Long and Front",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Columbus Art Collective"
+        ]
+    },
+    "Columbus Art Collective": {
+        "description": "A group of artists and designers who collaborate on creative projects and host exhibitions.",
+        "place": "Chaos Contemporary Craft",
+        "members": [
+            "Roth Miller",
+            "Leonard Park",
+            "Elizabeth Mensah"
+        ],
+        "daily_activity": "creating art pieces from 15:00 to 17:00"
+    },
+    "Elizabeth Mensah's room at Microliving at Long and Front": {
+        "building": "Microliving at Long and Front",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            999.395791053772,
+            1277.5515899658203,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Elizabeth Mensah's room at Microliving at Long and Front",
+        "bounding_box": [
+            -0.6059568508298341,
+            277.5541094147857,
+            122.27580642700194,
+            57.37173109128698,
+            19.08595959194788,
+            19.336875915527344,
+            0.14320930857348763
+        ]
+    },
+    "Kiddie Academy of Downtown Columbus": {
+        "building": "CSI International Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1100.6427726745605,
+            1113.7678565979004,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            100.6171347030615,
+            113.76785232627823,
+            124.48173141479492,
+            39.32766095879762,
+            15.737196691206336,
+            18.048561096191406,
+            0.14157389229671702
+        ]
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "Huntington Center": {
+        "building": "Huntington Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1119.5110931396484,
+            894.9528617858887,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            117.65195046295409,
+            -104.44199788015068,
+            198.56515884399414,
+            68.80355370839798,
+            69.8860186925178,
+            162.32524871826172,
+            0.14680052427771872
+        ]
+    },
+    "DAVIDSON THEATRE AT THE RIFFE CENTER THEATRES": {
+        "building": "Vern Riffe Center for Government and the Arts",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1104.2559204101562,
+            817.3631744384766,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            104.2154832221221,
+            -184.14588436692574,
+            171.88875198364258,
+            129.24464097674974,
+            74.03578528349477,
+            116.11711883544922,
+            0.13660516016028626
+        ]
+    },
+    "Ohio University Govt Relations": {
+        "building": "Huntington Plaza",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
+        ]
+    },
+    "Cravings Caf\u00e9": {
+        "building": "Microliving at Long and Front",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            999.395791053772,
+            1277.5515899658203,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -0.6059568508298341,
+            277.5541094147857,
+            122.27580642700194,
+            57.37173109128698,
+            19.08595959194788,
+            19.336875915527344,
+            0.14320930857348763
+        ]
+    },
+    "Greater Columbus Women's Business Development Center -- Wbdc - Food Distribution Center": {
+        "building": "CSI International Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1100.6427726745605,
+            1113.7678565979004,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            100.6171347030615,
+            113.76785232627823,
+            124.48173141479492,
+            39.32766095879762,
+            15.737196691206336,
+            18.048561096191406,
+            0.14157389229671702
+        ]
+    },
+    "Little Cat Boba": {
+        "building": "8 on the Square",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1181.717056274414,
+            1046.3932247161865,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            181.7769775390625,
+            46.288639068603516,
+            146.48919677734375,
+            12.697893142700195,
+            21.93798828125,
+            56.926246643066406,
+            0.14886035025119781
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "The Citizens Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Rankin Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1057.955774307251,
+            1185.8356399536133,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            57.95577223875324,
+            185.83563966785394,
+            121.20072937011719,
+            11.644727330429395,
+            27.747418554989345,
+            14.2720947265625,
+            0.1372793196485807
+        ]
+    },
+    "Marconi Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -173.8897111313305,
+            259.3223454647179
+        ],
+        "rotation": 1.7374446058537958,
+        "bounding_box": null
+    },
+    "North High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            156.97469546519335,
+            122.38828789203147
+        ],
+        "rotation": -2.9933589340822246,
+        "bounding_box": null
+    },
+    "South High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            209.61970123951443,
+            -190.3711637897594
+        ],
+        "rotation": -2.994111967392216,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            57.03117646281551,
+            -17.56404027718296
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.17144875149471,
+            -217.34119253501643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.344963855943284,
+            222.93542690688022
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.64205681084644,
+            -231.96371476352795
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            287.8821319352048,
+            50.86864863752275
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To South High Street": [
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Marconi Boulevard": [
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

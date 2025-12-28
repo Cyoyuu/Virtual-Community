@@ -1,0 +1,417 @@
+{
+    "Marcus Yuen": {
+        "age": 41,
+        "living_place": "Thompson Austin",
+        "appearance": "assets/imgs/avatars/Marcus Yuen.png",
+        "groups": [
+            "Austin Family Fun Club"
+        ]
+    },
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Savills Austin",
+        "appearance": "assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Austin Family Fun Club"
+        ]
+    },
+    "Austin Family Fun Club": {
+        "description": "A group of families and children who organize fun activities and outings.",
+        "place": "Texas Toy Museum and Arcade",
+        "members": [
+            "Elena Markovic",
+            "Marcus Yuen",
+            "Megan Carter"
+        ],
+        "daily_activity": "playing games from 16:00 to 17:00"
+    },
+    "Elena Markovic's room at The Driskill": {
+        "building": "The Driskill",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            1164.4101486206055,
+            1045.4788842201233,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Elena Markovic's room at The Driskill",
+        "bounding_box": [
+            164.4190478965505,
+            45.95275120352525,
+            119.48749923706055,
+            49.06776463765067,
+            54.34353309550402,
+            20.864112854003906,
+            -0.3018611889945575
+        ]
+    },
+    "Texas Toy Museum and Arcade": {
+        "building": "Texas Toy Museum and Arcade",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "yes",
+            "museum"
+        ],
+        "location": [
+            948.3590316772461,
+            793.1610107421875,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -51.63707923628399,
+            -206.8386852762458,
+            109.60832977294923,
+            7.3241139086942555,
+            24.319346276566723,
+            9.03558349609375,
+            1.253305594684323
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.0162734985352,
+            846.779727935791,
+            -12
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
+        ]
+    },
+    "The Belmont": {
+        "building": "305 West 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            797.5304489135742,
+            1091.120532989502,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -203.79709794496705,
+            91.78725087669439,
+            113.32905197143555,
+            24.803138547941682,
+            39.375700919980304,
+            7.532524108886719,
+            -0.30859181566233107
+        ]
+    },
+    "Tacodeli": {
+        "building": "301 Congress",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1035.5013465881348,
+            735.1301651000977,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            36.42030355833909,
+            -260.97442031289506,
+            128.56488418579104,
+            103.43402650153512,
+            43.07685841660562,
+            48.342430114746094,
+            -0.31240514790593676
+        ]
+    },
+    "Kelly's Corner": {
+        "building": "101 West 5th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            979.6644954681396,
+            930.729549407959,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -20.33547388995112,
+            -69.27045020726763,
+            112.62531661987305,
+            15.078860178257216,
+            49.16816879527693,
+            10.173179626464844,
+            1.258258398572647
+        ]
+    },
+    "Shop 24": {
+        "building": "213 East 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "grocery_or_supermarket",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1232.1889190673828,
+            950.5078811645508,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            232.18412017822268,
+            -49.49211883544922,
+            112.08625793457031,
+            7.084113131569865,
+            39.00810866711124,
+            8.027328491210938,
+            -0.3126706401264996
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "5th and Colorado",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            849.1528282165527,
+            959.4064693450928,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -150.8711313336559,
+            -40.593528950208295,
+            139.06513595581055,
+            53.96049004373077,
+            39.745880443738045,
+            62.901283264160156,
+            -0.31915276708788637
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "CVS Pharmacy",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "home_goods_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            991.9518547058105,
+            968.1774082183838,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -7.955486361960999,
+            -32.19181646060113,
+            113.48494338989258,
+            15.5949806247993,
+            48.827431638572364,
+            10.580268859863281,
+            1.260487028853259
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

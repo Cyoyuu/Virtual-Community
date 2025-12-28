@@ -1,0 +1,452 @@
+{
+    "Julian Cross": {
+        "age": 29,
+        "living_place": "Julian Cross's room at Crowne Plaza Bratislava, an IHG Hotel",
+        "appearance": "assets/imgs/avatars/Julian Cross.png",
+        "groups": [
+            "Bratislava Film Enthusiasts"
+        ]
+    },
+    "Marcus Yuen": {
+        "age": 41,
+        "living_place": "Hotel Tatra",
+        "appearance": "assets/imgs/avatars/Marcus Yuen.png",
+        "groups": [
+            "Bratislava Film Enthusiasts"
+        ]
+    },
+    "Morten Lindqvist": {
+        "age": 38,
+        "living_place": "Metropolitan Star",
+        "appearance": "assets/imgs/avatars/Morten Lindqvist.png",
+        "groups": [
+            "Bratislava Film Enthusiasts"
+        ]
+    },
+    "Bratislava Film Enthusiasts": {
+        "description": "A group of film lovers who meet to discuss and watch films.",
+        "place": "KINO TATRA",
+        "members": [
+            "Julian Cross",
+            "Liam Novak",
+            "Marcus Yuen",
+            "Morten Lindqvist"
+        ],
+        "daily_activity": "watching films and discussing from 18:00 to 20:00"
+    },
+    "Liam Novak's room at Downtown Bratislava Hotel": {
+        "building": "Panensk\u00e1 680/31",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            917.5140228271484,
+            881.6466598510742,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Liam Novak's room at Downtown Bratislava Hotel",
+        "bounding_box": [
+            -82.40365273784448,
+            -118.39910127454172,
+            120.63804626464844,
+            11.370514321993728,
+            19.978504898214634,
+            13.068603515625,
+            -0.008670630902432114
+        ]
+    },
+    "Downtown Bratislava Hotel": {
+        "building": "Panensk\u00e1 680/31",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            917.5140228271484,
+            881.6466598510742,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "bounding_box": [
+            -82.40365273784448,
+            -118.39910127454172,
+            120.63804626464844,
+            11.370514321993728,
+            19.978504898214634,
+            13.068603515625,
+            -0.008670630902432114
+        ]
+    },
+    "KINO TATRA": {
+        "building": "Hotel Tatra",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "movie_theater",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -8
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "IQ\u0161KA Akademia": {
+        "building": "Jozefsk\u00e1 2989/23",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1269.376968383789,
+            1156.8174209594727,
+            -12
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            269.37696838378906,
+            157.01224517822266,
+            118.11531448364256,
+            15.04331677156841,
+            21.894748876848894,
+            11.212196350097656,
+            -0.6640161475554919
+        ]
+    },
+    "S\u00fakromn\u00e1 matersk\u00e1 \u0161kola Edulienka": {
+        "building": "Palis\u00e1dy 51",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            751.6633911132812,
+            999.3768491744995,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -241.9502737656367,
+            -7.8830475367116595,
+            127.74319839477539,
+            51.35908790251902,
+            52.34022501824036,
+            19.66057586669922,
+            -0.5634947647358655
+        ]
+    },
+    "Club 44": {
+        "building": "38",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1274.195541381836,
+            804.1743240356445,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            274.6199014180362,
+            -197.32016606969484,
+            109.09879302978517,
+            10.993202781976226,
+            32.11135035592315,
+            10.38519287109375,
+            0.6462901796311471
+        ]
+    },
+    "Slovak Restaurant": {
+        "building": "Hotel Tatra",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1168.7901611328125,
+            1033.6217756271362,
+            -12
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            167.70896911621094,
+            32.90940475463867,
+            124.88888549804688,
+            28.841175079345703,
+            51.44382095336914,
+            23.220130920410156,
+            0.9292467832565308
+        ]
+    },
+    "Le Petit Cafe & Restaurant": {
+        "building": "Such\u00e9 m\u00fdto 510/19",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.4679737091064,
+            823.8547134399414,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -51.808871476344635,
+            -176.08763228338887,
+            119.46907806396486,
+            24.746865212699813,
+            24.387481023760454,
+            11.815887451171875,
+            0.27431105438881775
+        ]
+    },
+    "G\u00f3vinda re\u0161taur\u00e1cia": {
+        "building": "Obchodn\u00e1 518/30",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1236.5552062988281,
+            763.2404632568359,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            238.00740929114,
+            -237.8599568692863,
+            109.37450027465822,
+            12.171784820838267,
+            47.64387934073302,
+            10.710075378417969,
+            0.67377343174067
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "N\u00e1mestie 1. m\u00e1ja 3",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1158.1401443481445,
+            1015.1535823345184,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            157.3076934814453,
+            16.575613021850586,
+            124.70117950439453,
+            15.008914947509766,
+            36.92530822753906,
+            21.801910400390625,
+            0.7910774946212769
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "15",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1176.7928848266602,
+            792.9827270507812,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            176.88776397664427,
+            -206.4331001293598,
+            112.01051712036134,
+            10.404992989577813,
+            45.561803619260935,
+            12.133293151855469,
+            0.6767907008323272
+        ]
+    },
+    "Hod\u017eovo n\u00e1mestie Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            89.6687841327635,
+            -110.04229442443317
+        ],
+        "rotation": -0.753325421791811,
+        "bounding_box": null
+    },
+    "\u0160tetinova Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -233.40005217414816,
+            -155.00664649639714
+        ],
+        "rotation": 2.1172461786750985,
+        "bounding_box": null
+    },
+    "Panensk\u00e1 Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -132.46840279007986,
+            -140.8212360800419
+        ],
+        "rotation": 2.14118163697676,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            247.52892989801015,
+            -125.3516310895381
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -73.72702856905617,
+            -138.602181229165
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -279.3872891726143,
+            -36.23969947565152
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            217.80103525537174,
+            42.488212927284344
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.0017833264783,
+            -232.77288073898328
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -244.1337320355244,
+            -163.91799842996238
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -128.19851995173985,
+            100.2670809518925
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Panensk\u00e1": [
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hod\u017eovo n\u00e1mestie": [
+            {
+                "stop_name": "Panensk\u00e1 Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "\u0160tetinova Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Hod\u017eovo n\u00e1mestie Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

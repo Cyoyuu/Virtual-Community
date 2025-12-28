@@ -1,0 +1,378 @@
+{
+    "James Thompson": {
+        "age": 24,
+        "living_place": "Palliser Square",
+        "appearance": "assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Malik Okoro": {
+        "age": 30,
+        "living_place": "Fairmont Palliser",
+        "appearance": "assets/imgs/avatars/Malik Okoro.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Bankers Court Building",
+        "appearance": "assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Tech Innovators": {
+        "description": "A group of tech enthusiasts and entrepreneurs who discuss the latest trends and innovations in technology.",
+        "place": "Calgary Chamber of Commerce",
+        "members": [
+            "Brycer Rodriguez",
+            "James Thompson",
+            "Malik Okoro",
+            "Steve Johnson"
+        ],
+        "daily_activity": "brainstorming tech ideas from 16:00 to 18:00"
+    },
+    "Brycer Rodriguez's room at Mount Royal House": {
+        "building": "Mount Royal House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            912.678882598877,
+            772.8514404296875,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-8.json",
+        "name": "Brycer Rodriguez's room at Mount Royal House",
+        "bounding_box": [
+            -87.51196144294578,
+            -227.89640834070806,
+            123.69854736328126,
+            63.17600504110091,
+            34.01356979322341,
+            60.349090576171875,
+            -0.04312088485364048
+        ]
+    },
+    "Rosso Coffee Roasters - Stephen Ave": {
+        "building": "Calgary TELUS Convention Centre North Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_takeaway",
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1170.5018463134766,
+            1032.6835761070251,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            170.52440324268116,
+            32.21843464154801,
+            105.03994369506836,
+            82.04110323126498,
+            89.91837552826995,
+            21.63860321044922,
+            -0.04917491242612879
+        ]
+    },
+    "Calgary Chamber of Commerce": {
+        "building": "Calgary Chamber of Commerce",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1030.4410238265991,
+            1219.0133666992188,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            30.44338847651975,
+            218.94835531170966,
+            104.017032623291,
+            34.09097385904392,
+            21.768319383217154,
+            18.89360809326172,
+            -0.04311696943721217
+        ]
+    },
+    "Collage Gallery": {
+        "building": "Telus Sky",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1011.5281934738159,
+            1126.022590637207,
+            -12
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            12.20758230332764,
+            126.24321741697567,
+            114.30366897583008,
+            61.13943111378536,
+            45.866454927839555,
+            38.696983337402344,
+            -0.03840578717597665
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "Central United Church",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            906.9660758972168,
+            1067.496934890747,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -92.86805725097656,
+            68.08885955810547,
+            101.40857696533203,
+            38.42744064331055,
+            39.614845275878906,
+            10.944747924804688,
+            -0.04805094003677368
+        ]
+    },
+    "Ruth's Chris Steak House Calgary": {
+        "building": "Calgary Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1040.60560131073,
+            847.8853607177734,
+            -12
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            40.594573013600154,
+            -152.27061659338204,
+            192.05587005615234,
+            38.31504073746664,
+            38.39599312097794,
+            191.1009063720703,
+            0.4284025480628934
+        ]
+    },
+    "Buzzards Restaurant & Bar": {
+        "building": "Mount Royal House",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            912.678882598877,
+            772.8514404296875,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -87.51196144294578,
+            -227.89640834070806,
+            123.69854736328126,
+            63.17600504110091,
+            34.01356979322341,
+            60.349090576171875,
+            -0.04312088485364048
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "First on Tenth",
+        "coarse_type": "stores",
+        "fine_types": [
+            "hair_care",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            988.4496936798096,
+            714.2852325439453,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -11.622152328491211,
+            -285.60400390625,
+            138.67218017578125,
+            68.26644897460938,
+            18.656599044799805,
+            87.11425018310547,
+            -0.04413949325680733
+        ]
+    },
+    "7 Avenue SE Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            213.57898134369964,
+            79.73680891249482
+        ],
+        "rotation": 1.5226506190170235,
+        "bounding_box": null
+    },
+    "7 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -124.4519846515683,
+            19.556307044589268
+        ],
+        "rotation": 1.4410783557362552,
+        "bounding_box": null
+    },
+    "9 Avenue SW Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -32.44796231946118,
+            -109.16211502337957
+        ],
+        "rotation": -1.6133906719308326,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            37.25163294595485,
+            -68.55553785117415
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.03246747747397,
+            133.2601646863323
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            176.09291638577415,
+            -23.9639466873687
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -194.56048645554196,
+            -101.36867727252661
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            171.99436022298394,
+            202.88656314004245
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -114.93998688393205,
+            -247.5273767606725
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.064107078237664,
+            97.85745257931084
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To 9 Avenue SW": [
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To 7 Avenue SE": [
+            {
+                "stop_name": "9 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "7 Avenue SW Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "7 Avenue SE Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

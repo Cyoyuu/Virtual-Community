@@ -1,0 +1,410 @@
+{
+    "Elliot Marsh": {
+        "age": 26,
+        "living_place": "Elliot Marsh's room at Wombat's Hostel",
+        "appearance": "assets/imgs/avatars/Elliot Marsh.png",
+        "groups": [
+            "Famous Personalities"
+        ]
+    },
+    "Ivy Holloway": {
+        "age": 21,
+        "living_place": "Ivy Holloway's room at 12 Revay Hotel",
+        "appearance": "assets/imgs/avatars/Ivy Holloway.png",
+        "groups": [
+            "Famous Personalities"
+        ]
+    },
+    "Morten Lindqvist": {
+        "age": 38,
+        "living_place": "Wombat's Hostel",
+        "appearance": "assets/imgs/avatars/Morten Lindqvist.png",
+        "groups": [
+            "Famous Personalities"
+        ]
+    },
+    "Theo Caldwell": {
+        "age": 34,
+        "living_place": "Wombat's Hostel",
+        "appearance": "assets/imgs/avatars/Theo Caldwell.png",
+        "groups": [
+            "Famous Personalities"
+        ]
+    },
+    "Famous Personalities": {
+        "description": "A group of famous individuals exploring opportunities in Budapest.",
+        "place": "Wombat's Hostel",
+        "members": [
+            "Elliot Marsh",
+            "Ivy Holloway",
+            "Liam Novak",
+            "Morten Lindqvist",
+            "Theo Caldwell"
+        ],
+        "daily_activity": "networking and attending events from 18:00 to 20:00"
+    },
+    "Liam Novak's room at Wombat's Hostel": {
+        "building": "Wombat's Hostel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            1214.6585540771484,
+            941.0573272705078,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Liam Novak's room at Wombat's Hostel",
+        "bounding_box": [
+            213.07931518554688,
+            -60.51513671875,
+            108.30778503417969,
+            32.56475830078125,
+            54.75981903076172,
+            17.16424560546875,
+            0.608243465423584
+        ]
+    },
+    "Wombat's Hostel": {
+        "building": "Wombat's Hostel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            1214.6585540771484,
+            941.0573272705078,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "bounding_box": [
+            213.07931518554688,
+            -60.51513671875,
+            108.30778503417969,
+            32.56475830078125,
+            54.75981903076172,
+            17.16424560546875,
+            0.608243465423584
+        ]
+    },
+    "Association of Hungarian Fine and Applied Artists": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1079.8432006835938,
+            1107.1592712402344,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            80.0988998413086,
+            107.15927124023438,
+            112.07051849365234,
+            34.5406608581543,
+            39.503257751464844,
+            22.35468292236328,
+            0.7375522255897522
+        ]
+    },
+    "ECE irodah\u00e1z": {
+        "building": "ECE irodah\u00e1z",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            943.3070030212402,
+            970.7814821600914,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -52.95170402526854,
+            -29.218517839908586,
+            114.28670501708984,
+            46.33361879146786,
+            54.264206122232714,
+            26.726882934570312,
+            0.1509085970705138
+        ]
+    },
+    "12 Revay Hotel": {
+        "building": "12 Revay Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1101.1510887145996,
+            1196.1985092163086,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "bounding_box": [
+            101.54588114433633,
+            196.19850028938524,
+            111.17228698730467,
+            20.844687070841115,
+            40.332532981227864,
+            22.353317260742188,
+            0.7457837012891251
+        ]
+    },
+    "\u65e5\u672c\u9910\u9986 \u6709\u4e2d\u6587\u670d\u52a1\u5458": {
+        "building": "G\u00f6m\u00f6ry-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1135.7746887207031,
+            889.8367767333984,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            135.4932621858353,
+            -108.57888023100195,
+            107.01535034179688,
+            28.15780918758088,
+            79.21807942758274,
+            14.563751220703125,
+            0.6066335663815834
+        ]
+    },
+    "Roni ABC": {
+        "building": "Roni ABC",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1139.6305847167969,
+            823.7910614013672,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            139.6305694580078,
+            -176.2089385986328,
+            103.14949035644533,
+            9.903895661645569,
+            15.840966828222008,
+            6.4879913330078125,
+            0.6891719889663451
+        ]
+    },
+    "Halva & Nuts": {
+        "building": "J\u00e1lics-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1261.4201278686523,
+            996.4071159362793,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            258.21750350592197,
+            -3.4177748727319117,
+            109.11663055419922,
+            33.23343903767869,
+            88.40608087802327,
+            18.769088745117188,
+            0.6162391829918276
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Budapest",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1216.7794342041016,
+            1239.5271911621094,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            216.89222648491366,
+            239.52718356379356,
+            112.66350936889647,
+            13.457946068611527,
+            30.4657303433898,
+            24.342247009277344,
+            0.7402521506894878
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Hark\u00e1nyi-b\u00e9rpalota",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "shoe_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1054.3488693237305,
+            1082.9636821746826,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            54.74369239807129,
+            82.96368217468262,
+            113.02025985717773,
+            35.841751900908996,
+            40.797507303842266,
+            24.254173278808594,
+            0.7324671803742033
+        ]
+    },
+    "Hercegpr\u00edm\u00e1s utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -155.9045398743109,
+            144.7213899496251
+        ],
+        "rotation": 0.1637124135040342,
+        "bounding_box": null
+    },
+    "Kir\u00e1ly utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            117.95772788275947,
+            -183.99893072540985
+        ],
+        "rotation": 2.2355502044473248,
+        "bounding_box": null
+    },
+    "Andr\u00e1ssy \u00fat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            59.99896986558039,
+            29.98931781945049
+        ],
+        "rotation": 2.377180086853661,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            248.1290355749906,
+            -186.6216138602753
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            111.0178026959204,
+            109.49239231574528
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            71.10663574044452,
+            -84.23841513956515
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -122.0405227968639,
+            -79.60096903829383
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            241.34025042679923,
+            -78.70096472476352
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Andr\u00e1ssy \u00fat": [
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hercegpr\u00edm\u00e1s utca": [
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}

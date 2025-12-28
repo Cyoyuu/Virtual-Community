@@ -1,0 +1,413 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Recoven, S.L.",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Madrid Tech Innovators"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "HAUS Group Real Estate",
+        "appearance": "assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Madrid Tech Innovators"
+        ]
+    },
+    "Morten Lindqvist": {
+        "age": 38,
+        "living_place": "LI-ONNA",
+        "appearance": "assets/imgs/avatars/Morten Lindqvist.png",
+        "groups": [
+            "Madrid Tech Innovators"
+        ]
+    },
+    "Madrid Tech Innovators": {
+        "description": "A group of tech enthusiasts and entrepreneurs who explore new technologies and investment opportunities.",
+        "place": "Beverages and DM Store",
+        "members": [
+            "Adam Pierce",
+            "Morten Lindqvist",
+            "Joe Anderson",
+            "Dylan Mercer"
+        ],
+        "daily_activity": "discussing tech innovations from 14:00 to 16:00"
+    },
+    "Dylan Mercer's room at VP Jard\u00edn de Recoletos": {
+        "building": "Calle de Gil de Santiva\u00f1es",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "parking",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.8162384033203,
+            971.0767664909363,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Dylan Mercer's room at VP Jard\u00edn de Recoletos",
+        "bounding_box": [
+            186.8205108642578,
+            -28.92323350906371,
+            113.29517364501953,
+            25.314533185951518,
+            24.83850642830309,
+            19.035842895507812,
+            -0.28649533353081275
+        ]
+    },
+    "VP Jard\u00edn de Recoletos": {
+        "building": "Calle de Gil de Santiva\u00f1es",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "parking",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.8162384033203,
+            971.0767664909363,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            186.8205108642578,
+            -28.92323350906371,
+            113.29517364501953,
+            25.314533185951518,
+            24.83850642830309,
+            19.035842895507812,
+            -0.28649533353081275
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Paseo de Recoletos",
+        "coarse_type": "stores",
+        "fine_types": [
+            "pharmacy",
+            "health",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1001.0358138084412,
+            1238.9425201416016,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            0.9838162426465749,
+            238.94030685135232,
+            116.43093872070312,
+            17.73265966695145,
+            48.035493411200264,
+            29.082916259765625,
+            -0.29340665030088114
+        ]
+    },
+    "Sala Recoletos - Fundaci\u00f3n MAPFRE": {
+        "building": "Fundaci\u00f3n Mapfre - Sala de exposiciones Recoletos",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            919.7438831329346,
+            1029.5676300525665,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -82.22857281986984,
+            28.175066932454314,
+            109.62540817260742,
+            47.564611938743475,
+            49.57584921157312,
+            21.949424743652344,
+            -0.35154400613995723
+        ]
+    },
+    "Ramses": {
+        "building": "Casa Faraona",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.871467590332,
+            811.9625549316406,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            196.5790342003344,
+            -188.11042213113132,
+            116.20140075683594,
+            31.457270093021272,
+            31.886763895202066,
+            24.39218139648439,
+            0.3458850740238424
+        ]
+    },
+    "Chip\u00e9 Club - Bar clandestino Madrid": {
+        "building": "Paseo de Recoletos",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1001.0358138084412,
+            1238.9425201416016,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            0.9838162426465749,
+            238.94030685135232,
+            116.43093872070312,
+            17.73265966695145,
+            48.035493411200264,
+            29.082916259765625,
+            -0.29340665030088114
+        ]
+    },
+    "El Supremo": {
+        "building": "Calle del Marqu\u00e9s de la Ensenada",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            908.283561706543,
+            1155.4200744628906,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -91.72639198366613,
+            155.52685999328318,
+            115.23300933837889,
+            21.133228186770705,
+            12.901063177096571,
+            22.644622802734375,
+            -0.2945916875196931
+        ]
+    },
+    "Restaurante Casa America": {
+        "building": "Plaza Cibeles",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            983.6115970611572,
+            750.4559173583984,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -16.300989151000977,
+            -250.48870849609375,
+            102.1541748046875,
+            12.776013374328613,
+            29.475526809692383,
+            13.409934997558594,
+            -0.17329157888889313
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Calle de Prim",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            860.2977752685547,
+            956.9047145843506,
+            -12
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -139.69485024090739,
+            -43.07773417651626,
+            109.45698165893555,
+            16.26329378201227,
+            30.27872698696252,
+            21.77777862548828,
+            -0.008063202430744962
+        ]
+    },
+    "Fascinado club": {
+        "building": "Calle del Cid",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1110.3236274719238,
+            1011.5788412094116,
+            -8
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            108.69259589742757,
+            11.578841354121302,
+            110.65298080444336,
+            58.357260873754335,
+            67.11923446343889,
+            21.438880920410156,
+            -0.2627025719028576
+        ]
+    },
+    "Calle del Marqu\u00e9s del Duero Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -58.0202809454414,
+            -218.57037871714718
+        ],
+        "rotation": -1.7406466506939888,
+        "bounding_box": null
+    },
+    "Calle de Gil de Santiva\u00f1es Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            147.0734273115021,
+            -4.309514189558893
+        ],
+        "rotation": 1.2901675503266337,
+        "bounding_box": null
+    },
+    "Calle del Marqu\u00e9s de la Ensenada Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -119.00400701601724,
+            126.13158515816286
+        ],
+        "rotation": 2.8536377698847484,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -146.95564288226248,
+            61.05785866076525
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            155.55199020286358,
+            -96.74209822714788
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -152.03367697953678,
+            -310.89190558203575
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -0.20704627128564979,
+            179.78328094249733
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -78.7641995305332,
+            -98.62504570361148
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Calle del Marqu\u00e9s de la Ensenada": [
+            {
+                "stop_name": "Calle del Marqu\u00e9s del Duero Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Calle de Gil de Santiva\u00f1es Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Calle del Marqu\u00e9s de la Ensenada Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ],
+        "To Calle del Marqu\u00e9s del Duero": [
+            {
+                "stop_name": "Calle del Marqu\u00e9s de la Ensenada Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Calle de Gil de Santiva\u00f1es Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            },
+            {
+                "stop_name": "Calle del Marqu\u00e9s del Duero Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:10",
+                "last_bus": "22:10"
+            }
+        ]
+    }
+}

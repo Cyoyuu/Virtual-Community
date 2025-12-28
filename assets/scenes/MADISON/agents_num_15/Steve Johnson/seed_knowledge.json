@@ -1,0 +1,448 @@
+{
+    "Brycer Rodriguez": {
+        "age": 22,
+        "living_place": "Brycer Rodriguez's room at Metropolitan Place",
+        "appearance": "assets/imgs/avatars/Brycer Rodriguez.png",
+        "groups": [
+            "Madison Fitness Enthusiasts"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at The Baskerville",
+        "appearance": "assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Madison Fitness Enthusiasts"
+        ]
+    },
+    "Malik Okoro": {
+        "age": 30,
+        "living_place": "Malik Okoro's room at Hyatt Place Madison/Downtown",
+        "appearance": "assets/imgs/avatars/Malik Okoro.png",
+        "groups": [
+            "Madison Fitness Enthusiasts"
+        ]
+    },
+    "Madison Fitness Enthusiasts": {
+        "description": "A group of fitness lovers who engage in various physical activities and promote healthy living.",
+        "place": "Resolution Fitness",
+        "members": [
+            "Brycer Rodriguez",
+            "James Thompson",
+            "Malik Okoro",
+            "Steve Johnson"
+        ],
+        "daily_activity": "working out from 18:00 to 19:00"
+    },
+    "Steve Johnson's room at The Baskerville": {
+        "building": "The Baskerville",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1193.1338348388672,
+            870.4584999084473,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Steve Johnson's room at The Baskerville",
+        "bounding_box": [
+            185.23142658058168,
+            -129.177188269885,
+            134.30076217651367,
+            23.956652346006287,
+            25.06971484599353,
+            16.217201232910156,
+            -0.779961869680665
+        ]
+    },
+    "The Loraine Business Center": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "bank",
+            "atm",
+            "insurance_agency",
+            "real_estate_agency",
+            "lawyer",
+            "finance",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Resolution Fitness": {
+        "building": "345 West Washington Avenue Suite 301",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "point_of_interest",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            866.8342590332031,
+            784.8025360107422,
+            -24
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -133.16710990727387,
+            -212.27386865793926,
+            123.82314682006837,
+            47.57762657786027,
+            47.40309278389749,
+            18.51477813720703,
+            0.763441685994273
+        ]
+    },
+    "Madison Public Library Foundation": {
+        "building": "Central Library",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            907.8183670043945,
+            1034.5971868038177,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -92.18163528481247,
+            34.491553804678155,
+            124.31414794921875,
+            43.38067968144966,
+            75.84236118222586,
+            16.493988037109375,
+            -0.8101532184373549
+        ]
+    },
+    "Overture Center for the Arts": {
+        "building": "Overture Center for the Arts",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            819.9914093017578,
+            1093.7106523513794,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -179.16370996064046,
+            121.91806722295829,
+            127.17206192016602,
+            82.25792288044569,
+            169.8988746353147,
+            23.26610565185547,
+            0.7557416301816211
+        ]
+    },
+    "Private Colleges Wisconsin": {
+        "building": "Hovde Building",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            998.8073711395264,
+            1038.2255668640137,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -1.1926295662076751,
+            38.38144520473439,
+            139.9369125366211,
+            20.415041522755825,
+            41.1722186706721,
+            35.80293273925781,
+            0.7668077105630473
+        ]
+    },
+    "Barriques Coffee - West Wash": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Canteen": {
+        "building": "The Jackman Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1192.753662109375,
+            930.3317165374756,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            185.8621370536495,
+            -70.29101342544072,
+            137.01148223876953,
+            22.864208823085917,
+            24.295675218716095,
+            14.681228637695312,
+            0.7746554952659692
+        ]
+    },
+    "Maharani Indian Restaurant": {
+        "building": "380 West Washington Avenue",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            777.3930892944336,
+            842.5797004699707,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -224.62778580791513,
+            -157.32686995216346,
+            120.13739013671876,
+            24.406498216105483,
+            59.17619045226178,
+            14.502105712890625,
+            0.7796008137773812
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Hotel Lorraine",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1064.0722122192383,
+            992.6795320510864,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            67.84330533212328,
+            -7.143889108579693,
+            143.8704071044922,
+            40.441464669951515,
+            57.16704586636814,
+            33.96905517578125,
+            -0.8080404991432186
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Red Square Flowers",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            881.4170722961426,
+            1146.7241439819336,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -118.68217722600218,
+            146.73099182559304,
+            124.18193817138672,
+            11.283159542270063,
+            12.914925350364555,
+            9.328994750976562,
+            -0.017016861997636745
+        ]
+    },
+    "West Johnson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -145.11684279218883,
+            315.8134983792674
+        ],
+        "rotation": -0.8037606552265828,
+        "bounding_box": null
+    },
+    "West Doty Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            168.93290855636047,
+            -103.42746178914004
+        ],
+        "rotation": -0.03291053212501917,
+        "bounding_box": null
+    },
+    "West Wilson Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            324.9969270949154,
+            -170.54746365896176
+        ],
+        "rotation": 2.34409417720222,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.243696430131573,
+            24.310546849995898
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -202.69080886288236,
+            173.51026241170064
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.01263518237513,
+            -119.86484854684215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -51.05275980103885,
+            169.47393538372248
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -157.31361505045334,
+            -192.33382936607885
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.30546522827655,
+            -246.33948688643684
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West Wilson Street": [
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To West Johnson Street": [
+            {
+                "stop_name": "West Wilson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West Doty Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West Johnson Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

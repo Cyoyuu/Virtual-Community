@@ -1,0 +1,365 @@
+{
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Building III",
+        "appearance": "assets/imgs/avatars/Eve By J Gonzales.png",
+        "groups": [
+            "Amsterdam Art Enthusiasts"
+        ]
+    },
+    "Amsterdam Art Enthusiasts": {
+        "description": "A group of individuals who share a passion for art and creativity, exploring various art galleries and exhibitions in Amsterdam.",
+        "place": "YellowKorner Amsterdam",
+        "members": [
+            "Adam Pierce",
+            "Eve By J Gonzales"
+        ],
+        "daily_activity": "visiting art galleries from 15:00 to 17:00"
+    },
+    "Adam Pierce's room at Charly Group Amsterdam": {
+        "building": "Herengracht 257",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            720.1282348632812,
+            842.0216064453125,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Adam Pierce's room at Charly Group Amsterdam",
+        "bounding_box": [
+            -280.11429650880973,
+            -157.9582740154823,
+            115.12566375732423,
+            26.706160253990106,
+            6.349404563599513,
+            16.483627319335938,
+            -0.11062574532596305
+        ]
+    },
+    "Amsterdam Yoga Centre": {
+        "building": "Singel 300",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            739.4293670654297,
+            822.9019088745117,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -261.353045485607,
+            -178.07236909753436,
+            115.16712570190431,
+            30.50653721295573,
+            17.46137789389023,
+            16.67302703857422,
+            -0.1108469586759953
+        ]
+    },
+    "YellowKorner Amsterdam": {
+        "building": "Singel 282",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            745.3891906738281,
+            882.0786437988281,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -254.7461246729208,
+            -118.18349402501218,
+            112.8027114868164,
+            30.78212881543937,
+            10.393568934449723,
+            11.191864013671875,
+            -0.11114827116600837
+        ]
+    },
+    "Het Stadspaleis": {
+        "building": "Nieuwezijds Voorburgwal 277",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            938.045373916626,
+            774.0534515380859,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -62.00836213480033,
+            -225.94664409126472,
+            109.34338760375978,
+            6.863627677860372,
+            5.9578909682280985,
+            5.187065124511719,
+            -0.14215852601286
+        ]
+    },
+    "Dutch Water Lounge": {
+        "building": "Herengracht 247",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            719.8452301025391,
+            887.0168952941895,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -280.048865905586,
+            -112.92880560379217,
+            115.27105712890625,
+            20.722819167425072,
+            4.939497991424446,
+            15.91229248046875,
+            -0.10914285493143494
+        ]
+    },
+    "Cafe Schuim": {
+        "building": "Spuistraat 189",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            869.4603691101074,
+            870.8415336608887,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -131.8667260371928,
+            -129.32094159017515,
+            113.14724349975587,
+            20.102814578198476,
+            22.432352195624098,
+            12.601829528808594,
+            0.1930479883147341
+        ]
+    },
+    "BeerTemple": {
+        "building": "Nieuwezijds Voorburgwal 250",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            909.3520698547363,
+            866.4657592773438,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -90.50333803668119,
+            -132.2621381959301,
+            111.78848266601564,
+            7.737429111232643,
+            19.175992964912254,
+            10.089279174804688,
+            -1.1704084795077612
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Jonge Roelensteeg",
+        "coarse_type": "stores",
+        "fine_types": [
+            "jewelry_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            994.1781234741211,
+            873.2332382202148,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -4.336325975351388,
+            -125.87864440757882,
+            113.8076400756836,
+            11.58001058912558,
+            63.10215152139229,
+            13.695755004882812,
+            -1.222712265249705
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Herengracht 253 H",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            718.9880218505859,
+            871.8441009521484,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -280.92360556215567,
+            -128.0981590605597,
+            114.94841766357423,
+            20.887481728916377,
+            5.165369626436314,
+            15.739913940429688,
+            -0.10850134392108121
+        ]
+    },
+    "Singel Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -223.64587491774998,
+            -331.8770473372178
+        ],
+        "rotation": -0.11606742879572277,
+        "bounding_box": null
+    },
+    "Damrak Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            205.2698704781698,
+            105.74759652198695
+        ],
+        "rotation": -0.6870389474018183,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            190.9697649930068,
+            -159.54508143669185
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -270.59051032698653,
+            -184.14685443747305
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -99.84747833441955,
+            -121.10998771547311
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            162.8009026867501,
+            105.22397871245589
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            14.802841477347487,
+            -233.41860399615223
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -106.98235061443106,
+            -267.68981899489995
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -167.59099691949788,
+            40.69110591926888
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Damrak": [
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Singel": [
+            {
+                "stop_name": "Damrak Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Singel Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

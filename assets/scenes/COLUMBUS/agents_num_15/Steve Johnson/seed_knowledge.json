@@ -1,0 +1,430 @@
+{
+    "Chad Thompson": {
+        "age": 28,
+        "living_place": "Chad Thompson's room at Day Companies",
+        "appearance": "assets/imgs/avatars/Chad Thompson.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "James Thompson": {
+        "age": 24,
+        "living_place": "James Thompson's room at Microliving at Long and Front",
+        "appearance": "assets/imgs/avatars/James Thompson.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Joe Anderson's room at Day Companies",
+        "appearance": "assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Tech Innovators Club"
+        ]
+    },
+    "Tech Innovators Club": {
+        "description": "A group of tech enthusiasts and professionals who discuss the latest trends and work on innovative projects.",
+        "place": "Huntington Center",
+        "members": [
+            "James Thompson",
+            "Chad Thompson",
+            "Joe Anderson",
+            "Steve Johnson"
+        ],
+        "daily_activity": "developing tech solutions from 16:00 to 18:00"
+    },
+    "Steve Johnson's room at Day Companies": {
+        "building": "22 East Gay Street # 800",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.4444580078125,
+            1198.7952880859375,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "name": "Steve Johnson's room at Day Companies",
+        "bounding_box": [
+            186.40369779120803,
+            198.81144994375734,
+            130.16643905639648,
+            20.454929907609795,
+            19.167812591652858,
+            30.219642639160156,
+            0.1485978110058755
+        ]
+    },
+    "Supreme Court Law Library": {
+        "building": "Supreme Court of Ohio",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            996.0639266967773,
+            796.9352188110352,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -4.291066646575928,
+            -203.0668487548828,
+            138.6997833251953,
+            36.43946838378906,
+            96.42694091796875,
+            57.17816162109375,
+            0.14592263102531433
+        ]
+    },
+    "Huntington Center": {
+        "building": "Huntington Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1119.5110931396484,
+            894.9528617858887,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            117.65195046295409,
+            -104.44199788015068,
+            198.56515884399414,
+            68.80355370839798,
+            69.8860186925178,
+            162.32524871826172,
+            0.14680052427771872
+        ]
+    },
+    "Chaos Contemporary Craft": {
+        "building": "78 North High Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1164.998664855957,
+            1218.1978302001953,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            164.99983614024816,
+            218.2010218866336,
+            128.19513702392578,
+            57.03872063428137,
+            12.378004564168062,
+            26.912185668945312,
+            0.14626007278795772
+        ]
+    },
+    "DAVIDSON THEATRE AT THE RIFFE CENTER THEATRES": {
+        "building": "Vern Riffe Center for Government and the Arts",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1104.2559204101562,
+            817.3631744384766,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            104.2154832221221,
+            -184.14588436692574,
+            171.88875198364258,
+            129.24464097674974,
+            74.03578528349477,
+            116.11711883544922,
+            0.13660516016028626
+        ]
+    },
+    "Ohio University Govt Relations": {
+        "building": "Huntington Plaza",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.7580137252808,
+            963.1019334793091,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            39.75801380942004,
+            -36.89805276939042,
+            139.73874282836914,
+            43.879185442144035,
+            29.917434723981227,
+            52.145469665527344,
+            0.15077389799563612
+        ]
+    },
+    "Barroluco Argentine Comfort Food": {
+        "building": "47 North Pearl Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1175.5971221923828,
+            1152.0074768066406,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            174.75808802608174,
+            151.96841372484968,
+            124.51150131225586,
+            57.50807030278581,
+            19.403159772770323,
+            17.58509063720703,
+            0.1478729979968653
+        ]
+    },
+    "Accent Wine Parlor": {
+        "building": "The Citizens Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "liquor_store",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -12
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Downtown Convenience": {
+        "building": "26 North High Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "convenience_store",
+            "point_of_interest",
+            "food",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1171.1194915771484,
+            1070.2487487792969,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            171.1194918551205,
+            70.2487526354041,
+            124.80613708496094,
+            26.698042906307474,
+            28.613302389477465,
+            14.776763916015625,
+            0.14788409782279663
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "Supreme Court of Ohio",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            996.0639266967773,
+            796.9352188110352,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -4.291066646575928,
+            -203.0668487548828,
+            138.6997833251953,
+            36.43946838378906,
+            96.42694091796875,
+            57.17816162109375,
+            0.14592263102531433
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "The Citizens Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1088.1769924163818,
+            1138.675464630127,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            88.30434919742729,
+            138.6551785088116,
+            132.46599197387695,
+            57.051317028997595,
+            19.707441263019703,
+            35.49272918701172,
+            0.14549941762505805
+        ]
+    },
+    "Marconi Boulevard Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -173.8897111313305,
+            259.3223454647179
+        ],
+        "rotation": 1.7374446058537958,
+        "bounding_box": null
+    },
+    "North High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            156.97469546519335,
+            122.38828789203147
+        ],
+        "rotation": -2.9933589340822246,
+        "bounding_box": null
+    },
+    "South High Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            209.61970123951443,
+            -190.3711637897594
+        ],
+        "rotation": -2.994111967392216,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            57.03117646281551,
+            -17.56404027718296
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.17144875149471,
+            -217.34119253501643
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -26.344963855943284,
+            222.93542690688022
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -189.64205681084644,
+            -231.96371476352795
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            287.8821319352048,
+            50.86864863752275
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To South High Street": [
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Marconi Boulevard": [
+            {
+                "stop_name": "South High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "North High Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Marconi Boulevard Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

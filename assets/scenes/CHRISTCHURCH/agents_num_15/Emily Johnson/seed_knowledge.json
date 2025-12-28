@@ -1,0 +1,414 @@
+{
+    "Mira Johansson": {
+        "age": 27,
+        "living_place": "Distinction Christchurch Hotel",
+        "appearance": "assets/imgs/avatars/Mira Johansson.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Pika Hayes": {
+        "age": 18,
+        "living_place": "Quest Cathedral Junction",
+        "appearance": "assets/imgs/avatars/Pika Hayes.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Catalyst Group - Christchurch",
+        "appearance": "assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Christchurch Explorers Club"
+        ]
+    },
+    "Christchurch Explorers Club": {
+        "description": "A group of individuals who love exploring the city and discovering new places.",
+        "place": "Rauora Park",
+        "members": [
+            "Emily Johnson",
+            "Mira Johansson",
+            "Pika Hayes",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "exploring the park from 15:00 to 17:00"
+    },
+    "Emily Johnson's room at ibis Christchurch": {
+        "building": "Ibis Hotel Christchurch",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            842.8177108764648,
+            913.6643409729004,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "name": "Emily Johnson's room at ibis Christchurch",
+        "bounding_box": [
+            -157.18228912353516,
+            -86.33565902709961,
+            121.98949432373047,
+            40.17265593468636,
+            25.792584612096835,
+            23.821609497070312,
+            0.0008585295396987734
+        ]
+    },
+    "Rauora Park": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1264.0135744674103,
+            837.0244306087668,
+            -0.007541792011437565
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Crowne Plaza Christchurch by IHG": {
+        "building": "Crowne Plaza Christchurch",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            952.5873069763184,
+            1231.9229583740234,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "bounding_box": [
+            -47.411441802978516,
+            231.80393981933594,
+            144.02279663085938,
+            25.295927047729492,
+            25.22930145263672,
+            65.22388458251953,
+            0.0137138357385993
+        ]
+    },
+    "The Last Word": {
+        "building": "Christchurch Central City",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1087.3518562316895,
+            1214.3340301513672,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            87.34386809071687,
+            214.32288894269573,
+            115.55654907226561,
+            7.756204003420394,
+            4.4974299151423835,
+            7.609832763671875,
+            0.007165563492951198
+        ]
+    },
+    "Heritage Health Club": {
+        "building": "Old Government Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1081.2799625396729,
+            989.6693503856659,
+            -20
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            81.27511799758722,
+            -10.339055078365252,
+            121.60937881469727,
+            79.2137254254017,
+            27.705736653511416,
+            18.518211364746094,
+            -0.00034991138627258754
+        ]
+    },
+    "Micky Finn's": {
+        "building": "85A Hereford Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            763.9596405029297,
+            925.8460655212402,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -236.0403594970703,
+            -74.15640258789062,
+            117.51860046386719,
+            22.99322509765625,
+            50.05768585205078,
+            12.017929077148438,
+            0.0016457809833809733
+        ]
+    },
+    "Sura Sushi": {
+        "building": "254/266 High Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1006.0611438751221,
+            854.505443572998,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            6.021806023641008,
+            -145.45488709037065,
+            117.67600631713869,
+            39.10646660046526,
+            52.94703387876733,
+            9.621162414550781,
+            -0.003533991967874436
+        ]
+    },
+    "Miro": {
+        "building": "The Midland Club",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            736.4852600097656,
+            1087.1025047302246,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -263.25354660870937,
+            83.00094899331515,
+            117.69670867919922,
+            16.710578222114197,
+            21.135787163318394,
+            13.64361572265625,
+            -0.6276685122359623
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "254/266 High Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1006.0611438751221,
+            854.505443572998,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            6.021806023641008,
+            -145.45488709037065,
+            117.67600631713869,
+            39.10646660046526,
+            52.94703387876733,
+            9.621162414550781,
+            -0.003533991967874436
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Ibis Hotel Christchurch",
+        "coarse_type": "stores",
+        "fine_types": [
+            "home_goods_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            842.8177108764648,
+            913.6643409729004,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -157.18228912353516,
+            -86.33565902709961,
+            121.98949432373047,
+            40.17265593468636,
+            25.792584612096835,
+            23.821609497070312,
+            0.0008585295396987734
+        ]
+    },
+    "Gloucester Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            57.12867876988341,
+            116.53646795470775
+        ],
+        "rotation": 3.137767476010901,
+        "bounding_box": null
+    },
+    "Colombo Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            56.29208670534897,
+            28.563349604132178
+        ],
+        "rotation": -3.1393365052238997,
+        "bounding_box": null
+    },
+    "Cambridge Terrace Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -372.361714314352,
+            -203.89736754714133
+        ],
+        "rotation": 3.12841219057123,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -246.50746527210558,
+            -2.463151061085895
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -7.488766660426808,
+            -173.5865310534407
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -192.05062614359377,
+            -168.3787989896405
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            102.50697073452898,
+            183.7728118125115
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            167.6508060845298,
+            -170.38236131376215
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -64.73054451666508,
+            192.61921121320998
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Cambridge Terrace": [
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Gloucester Street": [
+            {
+                "stop_name": "Cambridge Terrace Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Colombo Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Gloucester Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

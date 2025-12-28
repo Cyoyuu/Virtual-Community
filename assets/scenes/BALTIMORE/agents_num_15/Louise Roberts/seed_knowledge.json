@@ -1,0 +1,481 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at 1201 S Charles Street Apartments",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Federal Hill Real Estate Team"
+        ]
+    },
+    "Alex Jefferson": {
+        "age": 30,
+        "living_place": "Alex Jefferson's room at Harbor Hill Apartments",
+        "appearance": "assets/imgs/avatars/Alex Jefferson.png",
+        "groups": [
+            "Federal Hill Real Estate Team"
+        ]
+    },
+    "Brian Carter": {
+        "age": 35,
+        "living_place": "Brian Carter's room at 1111 Light Street Apartments",
+        "appearance": "assets/imgs/avatars/Brian Carter.png",
+        "groups": [
+            "Federal Hill Real Estate Team"
+        ]
+    },
+    "Federal Hill Real Estate Team": {
+        "description": "A team of real estate professionals working together to close deals and expand their client base.",
+        "place": "Berkshire Hathaway HomeServices PenFed Realty: Federal Hill",
+        "members": [
+            "Alex Jefferson",
+            "Brian Carter",
+            "Louise Roberts",
+            "Adam Pierce"
+        ],
+        "daily_activity": "discussing property deals from 14:00 to 16:00"
+    },
+    "Louise Roberts's room at Harbor Hill Apartments": {
+        "building": "301 Warren Avenue",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.7144393920898,
+            1157.3680725097656,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Louise Roberts's room at Harbor Hill Apartments",
+        "bounding_box": [
+            196.73759916069076,
+            156.80485902506257,
+            90.40943908691405,
+            53.36242182451752,
+            49.96472165476233,
+            17.639984130859375,
+            0.033998933263118494
+        ]
+    },
+    "South Baltimore Leaning Center": {
+        "building": "South Baltimore Leaning Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "yes",
+            "school"
+        ],
+        "location": [
+            945.9187469482422,
+            756.3312835693359,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -54.11801101590324,
+            -243.66391200219152,
+            83.2001190185547,
+            21.278705233403148,
+            33.52941527636348,
+            12.501998901367188,
+            0.04916913770621794
+        ]
+    },
+    "Berkshire Hathaway HomeServices PenFed Realty: Federal Hill": {
+        "building": "1208 Light Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1010.9413750171661,
+            836.8262405395508,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            11.126857047763268,
+            -163.31975045789636,
+            82.1138153076172,
+            24.269761392659984,
+            9.271086343053893,
+            9.451339721679688,
+            0.14800448656274226
+        ]
+    },
+    "The Pink Art Gallery": {
+        "building": "1125 Light Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1045.0656147003174,
+            905.5884094238281,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            45.04530912123172,
+            -94.27878347087179,
+            81.16293716430664,
+            28.20581876158442,
+            5.3033449846572225,
+            8.762138366699219,
+            0.08704382790697278
+        ]
+    },
+    "The 8x10": {
+        "building": "10 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            885.5095634460449,
+            979.1267638206482,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -114.48613357543947,
+            -20.873236179351807,
+            77.52820587158203,
+            4.753929894684231,
+            19.792485562640035,
+            8.963027954101562,
+            0.05566619235794686
+        ]
+    },
+    "Federal Hill Preparatory School": {
+        "building": "1040 William Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.0709342956543,
+            1032.2982387542725,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            80.46018270572205,
+            32.297798565321045,
+            81.66573715209961,
+            104.2108690619469,
+            64.79397269395406,
+            11.744636535644531,
+            0.12242259344145233
+        ]
+    },
+    "The Brewer's Cask": {
+        "building": "Brewers Cask",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1019.692458152771,
+            764.5966033935547,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            19.69245830998879,
+            -235.35330577030328,
+            83.88119125366212,
+            22.723498348075918,
+            5.036956974563426,
+            9.847343444824219,
+            0.04169641107251326
+        ]
+    },
+    "Locals Only": {
+        "building": "25 East Cross Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_delivery",
+            "meal_takeaway",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            929.0774955749512,
+            922.8820762634277,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -70.90778341604572,
+            -77.1007787123477,
+            78.57836532592773,
+            4.862988275072507,
+            19.394747945600294,
+            9.034461975097656,
+            0.14489682096521742
+        ]
+    },
+    "The Alley at Abbey Fed": {
+        "building": "1041 Marshall Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            967.5839347839355,
+            998.7237911820412,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -32.409095689421065,
+            -1.0900356140877738,
+            77.91742324829102,
+            17.860579022402316,
+            4.296881794078811,
+            6.144371032714844,
+            0.12064640991174708
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "1137 South Charles Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            865.080249786377,
+            848.4602813720703,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -134.96711451623082,
+            -151.53971171281745,
+            77.34609985351564,
+            17.534911025233963,
+            5.8381252826471695,
+            6.92803955078125,
+            0.14663918626361333
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Her Heelz",
+        "coarse_type": "stores",
+        "fine_types": [
+            "shoe_store",
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1044.1779718399048,
+            916.9040336608887,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            44.16277930093856,
+            -83.0925231946922,
+            80.3414192199707,
+            27.967117530881094,
+            5.660090144037043,
+            7.504096984863281,
+            0.1229107160823021
+        ]
+    },
+    "Federal Hill Fitness": {
+        "building": "39 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            971.6682195663452,
+            928.7260780334473,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -28.18764607514438,
+            -71.30665859825848,
+            79.17960357666016,
+            10.93428580259039,
+            19.285946848699442,
+            8.722610473632812,
+            0.14376600018485758
+        ]
+    },
+    "Weber Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            62.045638028129346,
+            -79.944052801245
+        ],
+        "rotation": -1.4347317355623312,
+        "bounding_box": null
+    },
+    "South Charles Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -83.55211554255058,
+            -33.65036613291564
+        ],
+        "rotation": -1.4776061895035828,
+        "bounding_box": null
+    },
+    "Olive Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -203.6470944479423,
+            -45.68417057898851
+        ],
+        "rotation": -3.0916009048916844,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -166.37837354804984,
+            25.09043608193694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            31.192618875151837,
+            -86.33272588533399
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.24465578842066,
+            -122.939706084611
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.470494963686212,
+            66.23107185146742
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -68.41388043672472,
+            -23.896660317334824
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            352.67343009202983,
+            -8.493953354113648
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            77.06964128758824,
+            -254.656878264548
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Olive Street": [
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Weber Street": [
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

@@ -1,0 +1,449 @@
+{
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "Elizabeth Mensah's room at Harbor Hill Apartments",
+        "appearance": "assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "Federal Hill Scholars"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Harbor Hill Apartments",
+        "appearance": "assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Federal Hill Scholars"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Harbor Hill Apartments",
+        "appearance": "assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Federal Hill Scholars"
+        ]
+    },
+    "Federal Hill Scholars": {
+        "description": "A group of students and educators focused on academic excellence and community service.",
+        "place": "Federal Hill Preparatory School",
+        "members": [
+            "Elizabeth Mensah",
+            "Megan Carter",
+            "Sophie Carlsen",
+            "Steve Johnson"
+        ],
+        "daily_activity": "studying and tutoring from 16:00 to 18:00"
+    },
+    "Megan Carter's room at Harbor Hill Apartments": {
+        "building": "301 Warren Avenue",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.7144393920898,
+            1157.3680725097656,
+            -20
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "name": "Megan Carter's room at Harbor Hill Apartments",
+        "bounding_box": [
+            196.73759916069076,
+            156.80485902506257,
+            90.40943908691405,
+            53.36242182451752,
+            49.96472165476233,
+            17.639984130859375,
+            0.033998933263118494
+        ]
+    },
+    "Holy Cross School": {
+        "building": "Holy Cross School",
+        "coarse_type": "office",
+        "fine_types": [
+            "yes",
+            "school"
+        ],
+        "location": [
+            1152.104881286621,
+            906.5582313537598,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            151.98419189453125,
+            -93.4417724609375,
+            90.77432250976562,
+            20.880937576293945,
+            37.453582763671875,
+            20.863975524902344,
+            0.12011001259088516
+        ]
+    },
+    "Federal Hill Preparatory School": {
+        "building": "1040 William Street",
+        "coarse_type": "office",
+        "fine_types": [
+            "school",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.0709342956543,
+            1032.2982387542725,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            80.46018270572205,
+            32.297798565321045,
+            81.66573715209961,
+            104.2108690619469,
+            64.79397269395406,
+            11.744636535644531,
+            0.12242259344145233
+        ]
+    },
+    "The Pink Art Gallery": {
+        "building": "1125 Light Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1045.0656147003174,
+            905.5884094238281,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            45.04530912123172,
+            -94.27878347087179,
+            81.16293716430664,
+            28.20581876158442,
+            5.3033449846572225,
+            8.762138366699219,
+            0.08704382790697278
+        ]
+    },
+    "Berkshire Hathaway HomeServices PenFed Realty: Federal Hill": {
+        "building": "1208 Light Street",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1010.9413750171661,
+            836.8262405395508,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-2.json",
+        "bounding_box": [
+            11.126857047763268,
+            -163.31975045789636,
+            82.1138153076172,
+            24.269761392659984,
+            9.271086343053893,
+            9.451339721679688,
+            0.14800448656274226
+        ]
+    },
+    "The 8x10": {
+        "building": "10 East Cross Street",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "night_club",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            885.5095634460449,
+            979.1267638206482,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -114.48613357543947,
+            -20.873236179351807,
+            77.52820587158203,
+            4.753929894684231,
+            19.792485562640035,
+            8.963027954101562,
+            0.05566619235794686
+        ]
+    },
+    "Codetta Bake Shop": {
+        "building": "809 Light Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bakery",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1016.3392496109009,
+            1258.0202331542969,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            16.3444625715972,
+            258.1375507877168,
+            82.93563842773436,
+            26.64310380977587,
+            15.818869409713106,
+            11.277694702148438,
+            0.046974421154397365
+        ]
+    },
+    "Kiku Sushi Restaurant": {
+        "building": "1017 Light Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1024.5301642417908,
+            1076.7642936706543,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            23.837368016349362,
+            77.07267493413748,
+            78.63003158569336,
+            22.90562986131112,
+            23.07440637122895,
+            4.367774963378906,
+            0.140429423452867
+        ]
+    },
+    "Juice Lab Company": {
+        "building": "1035 Light Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1038.2314910888672,
+            1034.6633367538452,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            38.20132050428663,
+            34.66333781711625,
+            79.33521270751953,
+            4.681614211217072,
+            41.35544334549062,
+            6.7262115478515625,
+            -1.4362703455085215
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "1017 Light Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            1024.5301642417908,
+            1076.7642936706543,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            23.837368016349362,
+            77.07267493413748,
+            78.63003158569336,
+            22.90562986131112,
+            23.07440637122895,
+            4.367774963378906,
+            0.140429423452867
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "United States",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            857.6034545898438,
+            1013.4469127655029,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -142.40333941174686,
+            13.125603049043427,
+            77.30020904541016,
+            16.981290564846642,
+            6.089655895902471,
+            8.058425903320312,
+            0.0524477595417495
+        ]
+    },
+    "Weber Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            62.045638028129346,
+            -79.944052801245
+        ],
+        "rotation": -1.4347317355623312,
+        "bounding_box": null
+    },
+    "South Charles Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -83.55211554255058,
+            -33.65036613291564
+        ],
+        "rotation": -1.4776061895035828,
+        "bounding_box": null
+    },
+    "Olive Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -203.6470944479423,
+            -45.68417057898851
+        ],
+        "rotation": -3.0916009048916844,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -166.37837354804984,
+            25.09043608193694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            31.192618875151837,
+            -86.33272588533399
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -159.24465578842066,
+            -122.939706084611
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.470494963686212,
+            66.23107185146742
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -68.41388043672472,
+            -23.896660317334824
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            352.67343009202983,
+            -8.493953354113648
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            77.06964128758824,
+            -254.656878264548
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Olive Street": [
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To Weber Street": [
+            {
+                "stop_name": "Olive Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "South Charles Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Weber Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            }
+        ]
+    }
+}

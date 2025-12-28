@@ -1,0 +1,434 @@
+{
+    "Elizabeth Mensah": {
+        "age": 23,
+        "living_place": "Sequential Investors",
+        "appearance": "assets/imgs/avatars/Elizabeth Mensah.png",
+        "groups": [
+            "Real Estate Enthusiasts"
+        ]
+    },
+    "Steve Johnson": {
+        "age": 30,
+        "living_place": "Sequential Investors",
+        "appearance": "assets/imgs/avatars/Steve Johnson.png",
+        "groups": [
+            "Real Estate Enthusiasts"
+        ]
+    },
+    "Real Estate Enthusiasts": {
+        "description": "A group of professionals interested in real estate investment and development.",
+        "place": "Sequential Investors",
+        "members": [
+            "Brian Carter",
+            "Elizabeth Mensah",
+            "Steve Johnson"
+        ],
+        "daily_activity": "discussing real estate trends from 17:00 to 18:00"
+    },
+    "Brian Carter's room at Sequential Investors": {
+        "building": "Church House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.3703765869141,
+            780.0136413574219,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "name": "Brian Carter's room at Sequential Investors",
+        "bounding_box": [
+            -60.88481735607865,
+            -220.96357869285595,
+            120.36973953247072,
+            82.6332155913987,
+            67.00764628673878,
+            22.06346893310547,
+            -0.04917140091393483
+        ]
+    },
+    "Sequential Investors": {
+        "building": "Church House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            940.3703765869141,
+            780.0136413574219,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "bounding_box": [
+            -60.88481735607865,
+            -220.96357869285595,
+            120.36973953247072,
+            82.6332155913987,
+            67.00764628673878,
+            22.06346893310547,
+            -0.04917140091393483
+        ]
+    },
+    "Westminster School of Performing Arts": {
+        "building": "Westminster School of Performing Arts",
+        "coarse_type": "office",
+        "fine_types": [
+            "school"
+        ],
+        "location": [
+            797.0221786499023,
+            739.8084411621094,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -202.8161952857905,
+            -260.1328744849317,
+            114.46369552612306,
+            23.035931767788107,
+            16.730050587738205,
+            12.209114074707031,
+            0.06673498164936975
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "22 Old Queen Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "electronics_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            824.645378112793,
+            1128.757713317871,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -175.35461423719383,
+            128.75771327606415,
+            116.56636810302733,
+            8.890083714670498,
+            18.01551161554313,
+            13.931243896484375,
+            -0.005464895487979712
+        ]
+    },
+    "The Sanctuary House Hotel, Westminster": {
+        "building": "The Sanctuary House",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            757.8156127929688,
+            970.385989189148,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "bounding_box": [
+            -242.2012113904863,
+            -29.605653477132034,
+            118.60699081420898,
+            12.129893244495445,
+            22.935171452941404,
+            20.820655822753906,
+            -0.0016603201183618928
+        ]
+    },
+    "Jubilee cafe": {
+        "building": "Palace of Westminster",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "store",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1186.7197265625,
+            1014.4050092697144,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            181.7056121826172,
+            14.125774383544922,
+            117.14085388183594,
+            22.020198822021484,
+            75.07693481445312,
+            15.454673767089844,
+            -0.17619134485721588
+        ]
+    },
+    "Lounge Cafe Bar": {
+        "building": "21 Tothill Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "night_club",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            782.5476531982422,
+            956.0917768478394,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -221.9999761810053,
+            -41.00432835701465,
+            119.63298034667969,
+            37.28729740050478,
+            51.92476331272745,
+            27.839691162109375,
+            0.2934156417579507
+        ]
+    },
+    "Old Queen Street Cafe": {
+        "building": "Old Queen Street Cafe",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "restaurant"
+        ],
+        "location": [
+            884.4760704040527,
+            1130.854419708252,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -115.75725710442185,
+            131.1551734189998,
+            114.83838653564452,
+            6.050106645660036,
+            14.866615904979602,
+            10.558807373046875,
+            0.15017571978004912
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Palace of Westminster",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1186.7197265625,
+            1014.4050092697144,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            181.7056121826172,
+            14.125774383544922,
+            117.14085388183594,
+            22.020198822021484,
+            75.07693481445312,
+            15.454673767089844,
+            -0.17619134485721588
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Purcell\u2019s House",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            997.0793085098267,
+            777.1799163818359,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            -2.974617675962026,
+            -223.9743219528726,
+            117.34281158447267,
+            23.59270741268224,
+            13.774660362247173,
+            15.702880859375,
+            -0.26447118528984076
+        ]
+    },
+    "Jewel Tower": {
+        "building": "Jewel Tower",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1133.601131439209,
+            852.3947525024414,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            134.1471753919293,
+            -147.23030639948652,
+            114.85148239135744,
+            12.14343671012587,
+            12.901637224428617,
+            11.908256530761719,
+            -0.1660622962690317
+        ]
+    },
+    "Great College Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            38.40645274211528,
+            -227.53480770787186
+        ],
+        "rotation": 1.240830193911033,
+        "bounding_box": null
+    },
+    "Matthew Parker Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -139.13957576516128,
+            63.5414377776007
+        ],
+        "rotation": -1.6014350916289413,
+        "bounding_box": null
+    },
+    "Canon Row Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            194.6122040617792,
+            201.13171938296531
+        ],
+        "rotation": -0.027518677941777574,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -110.76626049393577,
+            158.07514125346896
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            170.30989385654047,
+            -66.70382338960972
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -15.263137694116443,
+            -188.72949809339028
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -207.08554426024182,
+            -18.108069950133103
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -79.68914916737444,
+            -259.0516822463162
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.770661319853595,
+            151.91202430390794
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Canon Row": [
+            {
+                "stop_name": "Great College Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Matthew Parker Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Canon Row Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Great College Street": [
+            {
+                "stop_name": "Canon Row Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Matthew Parker Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Great College Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

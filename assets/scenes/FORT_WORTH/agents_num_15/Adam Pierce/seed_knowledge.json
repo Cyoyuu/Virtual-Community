@@ -1,0 +1,400 @@
+{
+    "Kenji Watanabe": {
+        "age": 42,
+        "living_place": "Hilton Fort Worth",
+        "appearance": "assets/imgs/avatars/Kenji Watanabe.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Layla Haddad": {
+        "age": 19,
+        "living_place": "Kimpton Harper Hotel",
+        "appearance": "assets/imgs/avatars/Layla Haddad.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Naomi Zhang": {
+        "age": 28,
+        "living_place": "Courtyard Fort Worth Downtown/Blackstone",
+        "appearance": "assets/imgs/avatars/Naomi Zhang.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Tariq Johnson": {
+        "age": 24,
+        "living_place": "Kimpton Harper Hotel",
+        "appearance": "assets/imgs/avatars/Tariq Johnson.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Fort Worth Music and Culinary Club": {
+        "description": "A group of musicians and chefs who share a love for music and food.",
+        "place": "The Capital Grille",
+        "members": [
+            "Kenji Watanabe",
+            "Tariq Johnson",
+            "Naomi Zhang",
+            "Adam Pierce",
+            "Layla Haddad"
+        ],
+        "daily_activity": "jamming and cooking from 18:00 to 20:00"
+    },
+    "Adam Pierce's room at Historic Electric Building Apartments": {
+        "building": "Electric Service Building",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            821.9500427246094,
+            1022.4112071990967,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "name": "Adam Pierce's room at Historic Electric Building Apartments",
+        "bounding_box": [
+            -178.04802281694103,
+            22.41234720413449,
+            129.91905212402344,
+            30.370826750577688,
+            60.958008278269745,
+            36.670013427734375,
+            0.5177628715806325
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Neil P Anderson Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            850.162223815918,
+            967.5801939964294,
+            -20
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -150.05951247334372,
+            -32.22582196628941,
+            130.54940032958984,
+            33.87540978849457,
+            49.67236195149711,
+            36.27357482910156,
+            -0.020723284586584113
+        ]
+    },
+    "The Capital Grille": {
+        "building": "800 Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1086.3670768737793,
+            1093.1757984161377,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            86.36700439453124,
+            93.17579841613771,
+            128.61751556396484,
+            60.78334076952802,
+            47.384098196499885,
+            39.69581604003906,
+            0.5219033855747158
+        ]
+    },
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.20849609375,
+            904.2162132263184,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -43.72303431509959,
+            -95.7049147649222,
+            135.87408447265625,
+            73.5226924534619,
+            97.90414338877876,
+            49.02667236328125,
+            -0.007332725972464746
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Sundance Square Garage 4",
+        "coarse_type": "stores",
+        "fine_types": [
+            "painter",
+            "home_goods_store",
+            "general_contractor",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            976.5441904067993,
+            1112.689754486084,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -23.45589733123777,
+            112.68975448608398,
+            123.90921783447266,
+            62.05431423067467,
+            55.34756888959051,
+            27.650802612304688,
+            0.5155558487701815
+        ]
+    },
+    "Greysteel": {
+        "building": "500 W. 7th",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Picchi Pacchi Pizzeria": {
+        "building": "Neil P Anderson Building",
+        "coarse_type": "food",
+        "fine_types": [
+            "meal_delivery",
+            "meal_takeaway",
+            "store",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            850.162223815918,
+            967.5801939964294,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -150.05951247334372,
+            -32.22582196628941,
+            130.54940032958984,
+            33.87540978849457,
+            49.67236195149711,
+            36.27357482910156,
+            -0.020723284586584113
+        ]
+    },
+    "Stars and Stripes Cafe": {
+        "building": "819 Taylor Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            947.0385932922363,
+            964.9410948753357,
+            -8
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -48.55105017880037,
+            -34.83246707570252,
+            119.95969009399414,
+            75.80013665442563,
+            46.080401777333556,
+            17.54650115966797,
+            0.23962274223543903
+        ]
+    },
+    "J's Personalized Training Center": {
+        "building": "711 Commerce Street # 200",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1199.5153274536133,
+            1241.2267761230469,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            199.5169219970703,
+            241.23193359375,
+            113.08917999267578,
+            61.19828796386719,
+            61.287410736083984,
+            15.694381713867188,
+            0.5232307314872742
+        ]
+    },
+    "West 7th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -176.4915018524415,
+            -14.460973615116995
+        ],
+        "rotation": -1.0524566790619148,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.1052575202679,
+            182.87464646913259
+        ],
+        "rotation": -0.8936122536766103,
+        "bounding_box": null
+    },
+    "Houston Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.72617540910458,
+            -143.92913508338017
+        ],
+        "rotation": 2.0823315085752347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            64.15209643979796,
+            69.77376676139166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -98.10083788061374,
+            -271.8031433875841
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -2.83358979438382,
+            -42.72445330458906
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            7.8425292876260535,
+            262.31761608136424
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.43417848174332,
+            173.54857106916538
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Houston Street": [
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To West 7th Street": [
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

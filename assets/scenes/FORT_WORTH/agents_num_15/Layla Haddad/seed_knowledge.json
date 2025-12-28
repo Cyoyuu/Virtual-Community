@@ -1,0 +1,422 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Historic Electric Building Apartments",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Kenji Watanabe": {
+        "age": 42,
+        "living_place": "Kenji Watanabe's room at Hilton Fort Worth",
+        "appearance": "assets/imgs/avatars/Kenji Watanabe.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Naomi Zhang": {
+        "age": 28,
+        "living_place": "Courtyard Fort Worth Downtown/Blackstone",
+        "appearance": "assets/imgs/avatars/Naomi Zhang.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Tariq Johnson": {
+        "age": 24,
+        "living_place": "Kimpton Harper Hotel",
+        "appearance": "assets/imgs/avatars/Tariq Johnson.png",
+        "groups": [
+            "Fort Worth Music and Culinary Club"
+        ]
+    },
+    "Fort Worth Music and Culinary Club": {
+        "description": "A group of musicians and chefs who share a love for music and food.",
+        "place": "The Capital Grille",
+        "members": [
+            "Kenji Watanabe",
+            "Tariq Johnson",
+            "Naomi Zhang",
+            "Adam Pierce",
+            "Layla Haddad"
+        ],
+        "daily_activity": "jamming and cooking from 18:00 to 20:00"
+    },
+    "Layla Haddad's room at Kimpton Harper Hotel": {
+        "building": "Kimpton Harper Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1073.6060333251953,
+            1149.291820526123,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "name": "Layla Haddad's room at Kimpton Harper Hotel",
+        "bounding_box": [
+            71.09225845336914,
+            149.29182052612305,
+            155.87026977539062,
+            33.059778069377586,
+            32.37294998021107,
+            94.354248046875,
+            0.5188131348863582
+        ]
+    },
+    "Bar 10Ten": {
+        "building": "Fairfield Inn & Suites",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1108.7402420043945,
+            889.4390525817871,
+            -8
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            105.07011366918834,
+            -110.56095306098314,
+            117.54885482788086,
+            30.026538485495077,
+            55.37369114665346,
+            15.150581359863281,
+            -1.0352801342979414
+        ]
+    },
+    "61 Osteria": {
+        "building": "500 W. 7th",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "The Capital Grille": {
+        "building": "800 Main Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1086.3670768737793,
+            1093.1757984161377,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            86.36700439453124,
+            93.17579841613771,
+            128.61751556396484,
+            60.78334076952802,
+            47.384098196499885,
+            39.69581604003906,
+            0.5219033855747158
+        ]
+    },
+    "Lanham Fitness Center": {
+        "building": "Fritz G Lanham Federal Building",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "gym",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            956.20849609375,
+            904.2162132263184,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -43.72303431509959,
+            -95.7049147649222,
+            135.87408447265625,
+            73.5226924534619,
+            97.90414338877876,
+            49.02667236328125,
+            -0.007332725972464746
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Sundance Square Garage 4",
+        "coarse_type": "stores",
+        "fine_types": [
+            "painter",
+            "home_goods_store",
+            "general_contractor",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            976.5441904067993,
+            1112.689754486084,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -23.45589733123777,
+            112.68975448608398,
+            123.90921783447266,
+            62.05431423067467,
+            55.34756888959051,
+            27.650802612304688,
+            0.5155558487701815
+        ]
+    },
+    "Greysteel": {
+        "building": "500 W. 7th",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-1.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Refinery 714": {
+        "building": "Kimpton Harper Hotel",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1073.6060333251953,
+            1149.291820526123,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            71.09225845336914,
+            149.29182052612305,
+            155.87026977539062,
+            33.059778069377586,
+            32.37294998021107,
+            94.354248046875,
+            0.5188131348863582
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "500 W. 7th",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            760.355339050293,
+            1001.8072786331177,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -239.64472198486328,
+            1.8072786331176856,
+            156.6912498474121,
+            59.74548593380447,
+            38.73666860610383,
+            91.33393096923828,
+            0.5245775659963329
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "901 Throckmorton Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1026.4681687355042,
+            987.6056065261364,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            26.468162536621094,
+            -12.394390106201172,
+            114.69550323486328,
+            21.960912704467773,
+            15.197171211242676,
+            8.6431884765625,
+            0.5200315713882446
+        ]
+    },
+    "West 7th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -176.4915018524415,
+            -14.460973615116995
+        ],
+        "rotation": -1.0524566790619148,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.1052575202679,
+            182.87464646913259
+        ],
+        "rotation": -0.8936122536766103,
+        "bounding_box": null
+    },
+    "Houston Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            86.72617540910458,
+            -143.92913508338017
+        ],
+        "rotation": 2.0823315085752347,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            64.15209643979796,
+            69.77376676139166
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -98.10083788061374,
+            -271.8031433875841
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -2.83358979438382,
+            -42.72445330458906
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            7.8425292876260535,
+            262.31761608136424
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            183.43417848174332,
+            173.54857106916538
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Houston Street": [
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To West 7th Street": [
+            {
+                "stop_name": "Houston Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "West 7th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

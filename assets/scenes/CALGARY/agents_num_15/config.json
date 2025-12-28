@@ -1,0 +1,713 @@
+{
+    "sim_name": "CALGARY_agents_num_15",
+    "agent_names": [
+        "Brycer Rodriguez",
+        "Chad Thompson",
+        "Elizabeth Mensah",
+        "Elliot Marsh",
+        "Emily Johnson",
+        "Ivy Holloway",
+        "James Thompson",
+        "Kate Novak",
+        "Layla Haddad",
+        "Louise Roberts",
+        "Malik Okoro",
+        "Nico Vega",
+        "Olivia Adams",
+        "Steve Johnson",
+        "Zara Williams"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -119.73864257030979,
+                -218.81961517241973,
+                94.07252201099968,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Brycer Rodriguez's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                10.32204730713864,
+                -296.9116082749586,
+                95.29069564495495,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "First on Tenth",
+            "current_place": "Chad Thompson's room at First on Tenth",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                242.45059745118746,
+                175.70285785791881,
+                93.76711806897062,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Carter Place",
+            "current_place": "Elizabeth Mensah's room at Carter Place",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -99.95630992458695,
+                -179.65891880198095,
+                95.43878622654498,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Elliot Marsh's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -120.48401113328636,
+                -236.09445835179093,
+                94.64729934030923,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Emily Johnson's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                63.00264094210036,
+                69.38055206394428,
+                95.5753092046888,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Regency Calgary",
+            "current_place": "Ivy Holloway's room at Hyatt Regency Calgary",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -45.67306987889994,
+                -155.74784774983166,
+                96.9858789145052,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Tower Centre",
+            "current_place": "James Thompson's room at Palliser Square",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                147.50114831422025,
+                95.52397351685268,
+                94.39182151548253,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "St. Regis Hotel",
+            "current_place": "Kate Novak's room at St. Regis Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                62.21868514360969,
+                48.90324648293299,
+                95.80277010451479,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Regency Calgary",
+            "current_place": "Layla Haddad's room at Hyatt Regency Calgary",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -119.8275103847482,
+                -220.87923726324982,
+                94.09278095714082,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Louise Roberts's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -97.94524782476489,
+                -179.74545838634836,
+                95.54905582216684,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Fairmont Palliser Hotel",
+            "current_place": "Malik Okoro's room at Fairmont Palliser",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                63.03469305048668,
+                70.21776867641913,
+                95.52435833250708,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Regency Calgary",
+            "current_place": "Nico Vega's room at Hyatt Regency Calgary",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -120.04347801163482,
+                -225.8845555334338,
+                94.25547505360207,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Olivia Adams's room at Mount Royal House",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -289.747459041941,
+                -83.3175269102912,
+                97.23648315287889,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Bankers Court",
+            "current_place": "Steve Johnson's room at Bankers Court Building",
+            "current_vehicle": null
+        },
+        {
+            "cash": 150,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -96.29957371977886,
+                -245.54078256778155,
+                95.83795620814655,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Mount Royal House",
+            "current_place": "Zara Williams's room at Mount Royal House",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            912.678882598877,
+            772.8514404296875,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            988.4496936798096,
+            714.2852325439453,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1253.5452575683594,
+            1154.7436904907227,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1077.2204723358154,
+            1059.287166595459,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1048.0912742614746,
+            832.0565490722656,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1154.2382049560547,
+            1116.5070190429688,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1077.2204723358154,
+            1059.287166595459,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.662654876709,
+            847.2293167114258,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1077.2204723358154,
+            1059.287166595459,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -24,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            743.7522277832031,
+            925.2698059082031,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            912.678882598877,
+            772.8514404296875,
+            -28,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/custom_Elliot_Marsh.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/custom_Ivy_Holloway.glb",
+        "ViCo/avatars/models/mixamo_James_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/custom_Layla_Haddad.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/custom_Malik_Okoro.glb",
+        "ViCo/avatars/models/custom_Nico_Vega.glb",
+        "ViCo/avatars/models/mixamo_Olivia_Adams.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Zara_Williams.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "First on Tenth",
+            "scene": "indoor_scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "205 9 Avenue Southeast",
+            "scene": "indoor_scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "One Palliser Square",
+            "scene": "indoor_scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Leeson & Lineham Block",
+            "scene": "indoor_scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Alberta Hotel Building",
+            "scene": "indoor_scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Central United Church",
+            "scene": "indoor_scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "dt_control": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "groups": {
+        "Calgary Creatives": {
+            "description": "A group of artists and designers who collaborate on creative projects and share their work.",
+            "place": "Collage Gallery",
+            "members": [
+                "Elliot Marsh",
+                "Layla Haddad",
+                "Nico Vega",
+                "Zara Williams"
+            ],
+            "daily_activity": "creating art from 15:00 to 17:00"
+        },
+        "Tech Innovators": {
+            "description": "A group of tech enthusiasts and entrepreneurs who discuss the latest trends and innovations in technology.",
+            "place": "Calgary Chamber of Commerce",
+            "members": [
+                "Brycer Rodriguez",
+                "James Thompson",
+                "Malik Okoro",
+                "Steve Johnson"
+            ],
+            "daily_activity": "brainstorming tech ideas from 16:00 to 18:00"
+        },
+        "Community Helpers": {
+            "description": "A group of individuals dedicated to community service and social work, organizing events and outreach programs.",
+            "place": "Snacks and DM Store",
+            "members": [
+                "Elizabeth Mensah",
+                "Emily Johnson",
+                "Kate Novak",
+                "Olivia Adams"
+            ],
+            "daily_activity": "planning community events from 14:00 to 16:00"
+        },
+        "Gourmet Enthusiasts": {
+            "description": "A group of food lovers and culinary experts who explore gourmet cuisine and share recipes.",
+            "place": "Ruth's Chris Steak House Calgary",
+            "members": [
+                "Chad Thompson",
+                "Ivy Holloway",
+                "Louise Roberts"
+            ],
+            "daily_activity": "tasting new dishes from 18:00 to 20:00"
+        }
+    }
+}

@@ -1,0 +1,467 @@
+{
+    "Felix Braun": {
+        "age": 49,
+        "living_place": "Felix Braun's room at Atlas hotel",
+        "appearance": "assets/imgs/avatars/Felix Braun.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Joe Anderson": {
+        "age": 31,
+        "living_place": "Joe Anderson's room at Belair",
+        "appearance": "assets/imgs/avatars/Joe Anderson.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Boiteux",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Business Networking Group"
+        ]
+    },
+    "Business Networking Group": {
+        "description": "A group of professionals who meet to discuss business strategies and opportunities.",
+        "place": "Philantropy House",
+        "members": [
+            "Felix Braun",
+            "Joe Anderson",
+            "Marcus Yuen",
+            "Roth Miller"
+        ],
+        "daily_activity": "discussing business strategies from 17:00 to 19:00"
+    },
+    "Marcus Yuen's room at Hotel Hubert \u2013 Grand Place": {
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            754.4182434082031,
+            1029.0228338241577,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "name": "Marcus Yuen's room at Hotel Hubert \u2013 Grand Place",
+        "bounding_box": [
+            -242.77814001533116,
+            29.39701795784947,
+            68.78532791137695,
+            10.99586768065038,
+            29.960067861208522,
+            21.458961486816406,
+            -0.7963710798842513
+        ]
+    },
+    "Hotel Hubert \u2013 Grand Place": {
+        "building": "Hotel Hubert \u2013 Grand Place",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "yes",
+            "hotel"
+        ],
+        "location": [
+            754.4182434082031,
+            1029.0228338241577,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-0.json",
+        "bounding_box": [
+            -242.77814001533116,
+            29.39701795784947,
+            68.78532791137695,
+            10.99586768065038,
+            29.960067861208522,
+            21.458961486816406,
+            -0.7963710798842513
+        ]
+    },
+    "Philantropy House": {
+        "building": "Philantropy House",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1182.0369186401367,
+            977.2010865211487,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            181.11677349590934,
+            -22.776869956576956,
+            95.44200897216797,
+            18.188009707988304,
+            25.854275102858498,
+            22.190536499023438,
+            -0.3038562366117691
+        ]
+    },
+    "Parc de Bruxelles": {
+        "building": "open space",
+        "coarse_type": "open",
+        "fine_types": [
+            "park",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1288.2820004270154,
+            702.6976881331855,
+            -0.013435480158932478
+        ],
+        "scene": null,
+        "bounding_box": null
+    },
+    "Fresh and DM Store": {
+        "building": "Marquis",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            915.5147399902344,
+            892.4346466064453,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -91.03511047363281,
+            -104.93002319335938,
+            83.58557891845703,
+            72.18888854980469,
+            90.57077026367188,
+            32.19690704345703,
+            -0.5364537239074707
+        ]
+    },
+    "The Brunch": {
+        "building": "Royal Atrium",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1130.694839477539,
+            910.6145782470703,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            129.95689392089844,
+            -80.5760498046875,
+            97.3431625366211,
+            79.33800506591797,
+            72.20111083984375,
+            29.334266662597656,
+            -0.3171980679035187
+        ]
+    },
+    "Caf\u00e9 Treurenberg": {
+        "building": "Rue de l'Enseignement 16",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1239.9752731323242,
+            999.8848342895508,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            239.84636643667886,
+            -0.12699247561789573,
+            96.61907958984375,
+            5.372008774594805,
+            10.596316685737595,
+            20.548797607421875,
+            0.7407672233980279
+        ]
+    },
+    "Busy Bee": {
+        "building": "Rue d'Assaut 3",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            760.513313293457,
+            1050.4241676330566,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -244.84292602539062,
+            56.13623046875,
+            66.68570709228516,
+            37.01728057861328,
+            61.71924591064453,
+            19.778133392333984,
+            -0.9071028232574463
+        ]
+    },
+    "Beat": {
+        "building": "Rue de l'Enseignement 1",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1265.8722763061523,
+            992.8784402608871,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            264.4020024679156,
+            -7.046564779245346,
+            96.43821334838867,
+            20.869623572947138,
+            12.893582211572355,
+            19.09839630126953,
+            0.2983405084175893
+        ]
+    },
+    "Fresh and Snacks Store": {
+        "building": "Rue d'Assaut 3",
+        "coarse_type": "stores",
+        "fine_types": [
+            "clothing_store",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            760.513313293457,
+            1050.4241676330566,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Fresh-Snacks.json",
+        "bounding_box": [
+            -244.84292602539062,
+            56.13623046875,
+            66.68570709228516,
+            37.01728057861328,
+            61.71924591064453,
+            19.778133392333984,
+            -0.9071028232574463
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Rue de la Montagne 72",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            771.2095184326172,
+            959.8093318939209,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -229.02060147218896,
+            -40.262445394456336,
+            67.26360893249512,
+            5.4505255347556565,
+            11.059817223216562,
+            13.841129302978516,
+            0.7364910428788115
+        ]
+    },
+    "Museum of the National Bank of Belgium": {
+        "building": "Rue Montagne aux Herbes Potag\u00e8res 57",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            823.4956512451172,
+            1206.5694198608398,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            -177.4439928658601,
+            200.82952432688307,
+            60.472846984863274,
+            44.48082358421017,
+            96.86160371481819,
+            20.7210693359375,
+            -0.5117384718386224
+        ]
+    },
+    "Rue Royale - Koningsstraat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            248.4558743001318,
+            126.14291293168375
+        ],
+        "rotation": 2.8210664013372364,
+        "bounding_box": null
+    },
+    "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -185.9587778087036,
+            -55.4488975931433
+        ],
+        "rotation": 2.913809691545618,
+        "bounding_box": null
+    },
+    "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -186.62379945156712,
+            254.07203855685333
+        ],
+        "rotation": -0.48060738320417984,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            257.3150608488824,
+            217.921529838583
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -144.90686574301637,
+            247.30453634487793
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -84.95122229994689,
+            -157.59257660109876
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            218.04335012590744,
+            -42.91592377155606
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -233.7892271527921,
+            0.09600317054358865
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            130.89613937889055,
+            90.66982142544775
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            308.76264827423273,
+            -204.25359623561639
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg": [
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Rue Royale - Koningsstraat": [
+            {
+                "stop_name": "Rue Montagne aux Herbes Potag\u00e8res - Warmoesberg Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Boulevard de l'Imp\u00e9ratrice - Keizerinlaan Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "Rue Royale - Koningsstraat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

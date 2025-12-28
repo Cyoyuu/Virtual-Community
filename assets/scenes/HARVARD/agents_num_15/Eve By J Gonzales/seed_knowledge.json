@@ -1,0 +1,451 @@
+{
+    "Megan Carter": {
+        "age": 10,
+        "living_place": "Hampden Hall",
+        "appearance": "assets/imgs/avatars/Megan Carter.png",
+        "groups": [
+            "Harvard Arts Collective"
+        ]
+    },
+    "Sophia Lindberg": {
+        "age": 25,
+        "living_place": "Harvard Real Estate",
+        "appearance": "assets/imgs/avatars/Sophia Lindberg.png",
+        "groups": [
+            "Harvard Arts Collective"
+        ]
+    },
+    "Sophie Carlsen": {
+        "age": 20,
+        "living_place": "Grays Hall",
+        "appearance": "assets/imgs/avatars/Sophie Carlsen.png",
+        "groups": [
+            "Harvard Arts Collective"
+        ]
+    },
+    "Harvard Arts Collective": {
+        "description": "A community of artists and creatives who explore various forms of art and host exhibitions.",
+        "place": "Carpenter Center for the Visual Arts",
+        "members": [
+            "Megan Carter",
+            "Sophia Lindberg",
+            "Sophie Carlsen",
+            "Eve By J Gonzales"
+        ],
+        "daily_activity": "creating art pieces from 14:00 to 15:00"
+    },
+    "Eve By J Gonzales's room at Grays Hall": {
+        "building": "Grays Hall",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "dormitory"
+        ],
+        "location": [
+            893.3049583435059,
+            914.6575927734375,
+            -12
+        ],
+        "scene": "indoor_scenes/accomodation-6.json",
+        "name": "Eve By J Gonzales's room at Grays Hall",
+        "bounding_box": [
+            -106.79140504783946,
+            -85.85036245265066,
+            120.51073455810547,
+            40.80876967743861,
+            16.560681974594857,
+            14.964935302734375,
+            -0.23073792031290555
+        ]
+    },
+    "Harvard College": {
+        "building": "Harvard Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            862.192455291748,
+            1048.0578575134277,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -138.30621387886197,
+            47.52777109982069,
+            120.27682113647461,
+            34.31852236109546,
+            18.63501079092637,
+            12.051979064941406,
+            -0.23440965029856245
+        ]
+    },
+    "Carpenter Center for the Visual Arts": {
+        "building": "Carpenter Center",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1185.689353942871,
+            911.0917778015137,
+            -4
+        ],
+        "scene": "indoor_scenes/MV4AFHQKTKJZ2AABAAAAAEA8.json",
+        "bounding_box": [
+            185.9552494907168,
+            -87.77732787119393,
+            121.98974227905275,
+            61.57512744563733,
+            42.114735916360885,
+            13.96250152587892,
+            -0.1005751136370428
+        ]
+    },
+    "Harvard Data Center": {
+        "building": "Littauer Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            858.018367767334,
+            1223.814796447754,
+            -4
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -142.11360922115927,
+            222.94980898441594,
+            120.97059631347656,
+            79.54169107837889,
+            20.190206365012017,
+            16.3668212890625,
+            -0.18780005654391949
+        ]
+    },
+    "Harvard University": {
+        "building": "Massachusetts Hall",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            854.8024978637695,
+            1003.1739790439606,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -145.19750211251878,
+            3.224075311900224,
+            119.92831420898438,
+            31.428743132661122,
+            13.710266997647256,
+            11.812286376953125,
+            -0.2272257900509816
+        ]
+    },
+    "Harvard Dining Services": {
+        "building": "Barker Center",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1165.637794494629,
+            799.9498748779297,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            164.69317915027494,
+            -196.41386542457778,
+            122.82674789428711,
+            60.588359005144476,
+            48.49385325378118,
+            15.344734191894531,
+            -0.2399779176236976
+        ]
+    },
+    "Hokkaido Ramen Santouka Harvard Square": {
+        "building": "1 Bow Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1039.3047876358032,
+            753.5999145507812,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            38.750882445320414,
+            -247.46371164849546,
+            121.7418556213379,
+            42.66129789812281,
+            29.642139585218526,
+            17.180503845214844,
+            0.09122056390323662
+        ]
+    },
+    "Harvard University Progressive Student Labor Movement - Food Distribution Center": {
+        "building": "Phillips Brooks House",
+        "coarse_type": "food",
+        "fine_types": [
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            884.6940994262695,
+            1137.758689880371,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -115.3003125843737,
+            137.72099773188626,
+            120.98233795166016,
+            26.028092027670702,
+            13.793972241538913,
+            16.661880493164062,
+            -0.2288973779472262
+        ]
+    },
+    "Fresh and DM Store": {
+        "building": "Fairfax Hall",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "health",
+            "establishment"
+        ],
+        "location": [
+            965.2799434661865,
+            797.9606475830078,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-DM.json",
+        "bounding_box": [
+            -35.89722601049442,
+            -202.01474917851465,
+            122.21923065185547,
+            36.856671350736484,
+            29.58495595179066,
+            18.268997192382812,
+            -0.34573960385135294
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "90 Mount Auburn Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "florist",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            726.0536651611328,
+            760.4123458862305,
+            -8
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            -274.6198041475984,
+            -239.19936902564024,
+            119.00808334350587,
+            22.396947756415692,
+            25.22330659023678,
+            13.947456359863281,
+            -0.542438987425215
+        ]
+    },
+    "Behind VA Shadows Gallery": {
+        "building": "Fairfax Hall",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            965.2799434661865,
+            797.9606475830078,
+            -16
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -35.89722601049442,
+            -202.01474917851465,
+            122.21923065185547,
+            36.856671350736484,
+            29.58495595179066,
+            18.268997192382812,
+            -0.34573960385135294
+        ]
+    },
+    "John F. Kennedy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -301.823639734867,
+            -191.2037801155555
+        ],
+        "rotation": -0.5531513624387934,
+        "bounding_box": null
+    },
+    "Cambridge Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            16.528803609433904,
+            150.65013352098512
+        ],
+        "rotation": -1.8393218932132975,
+        "bounding_box": null
+    },
+    "Quincy Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            122.12224185971871,
+            -227.54447507960705
+        ],
+        "rotation": 2.9298153683542463,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -219.2434807155732,
+            -70.13480772898232
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            179.9620577425494,
+            -168.94950167262357
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            219.70838752681368,
+            101.13194690835284
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -178.8554646544401,
+            -224.5900005932641
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -105.68479829799094,
+            160.20801555148782
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            10.791292142404634,
+            -204.62582157803433
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            40.48226105178207,
+            104.91752717698618
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Quincy Street": [
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            }
+        ],
+        "To John F. Kennedy Street": [
+            {
+                "stop_name": "Quincy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Cambridge Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "John F. Kennedy Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            }
+        ]
+    }
+}

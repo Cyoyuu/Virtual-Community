@@ -1,0 +1,447 @@
+{
+    "Emily Johnson": {
+        "age": 16,
+        "living_place": "Emily Johnson's room at Avison Young",
+        "appearance": "assets/imgs/avatars/Emily Johnson.png",
+        "groups": [
+            "Austin Arts Collective"
+        ]
+    },
+    "Eve By J Gonzales": {
+        "age": 21,
+        "living_place": "Eve By J Gonzales's room at Susan Stiles Realty",
+        "appearance": "assets/imgs/avatars/Eve By J Gonzales.png",
+        "groups": [
+            "Austin Arts Collective"
+        ]
+    },
+    "Kate Novak": {
+        "age": 23,
+        "living_place": "Kate Novak's room at Crites Real Estate",
+        "appearance": "assets/imgs/avatars/Kate Novak.png",
+        "groups": [
+            "Austin Arts Collective"
+        ]
+    },
+    "Austin Arts Collective": {
+        "description": "A community of artists and art lovers who gather to share their work and collaborate on creative projects.",
+        "place": "Northern-Southern",
+        "members": [
+            "Emily Johnson",
+            "Eve By J Gonzales",
+            "Kate Novak",
+            "Sophie Carlsen"
+        ],
+        "daily_activity": "creating art projects from 17:00 to 18:00"
+    },
+    "Sophie Carlsen's room at Avison Young": {
+        "building": "515 Congress Avenue # N",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "real_estate_agency",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1083.6014881134033,
+            1001.5067653656006,
+            -16
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Sophie Carlsen's room at Avison Young",
+        "bounding_box": [
+            83.6024169921875,
+            1.5064697265625,
+            159.8031005859375,
+            34.35401153564453,
+            34.197303771972656,
+            102.46208953857422,
+            -0.32215163111686707
+        ]
+    },
+    "University of Texas System": {
+        "building": "Oneut",
+        "coarse_type": "office",
+        "fine_types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            922.984354019165,
+            1233.151496887207,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -77.98925877396991,
+            233.150795347805,
+            150.94607543945312,
+            81.73437536627918,
+            37.67119150193988,
+            70.22061157226562,
+            -0.3191964198787381
+        ]
+    },
+    "Northern-Southern": {
+        "building": "107 East 5th Street Suite 107",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1196.0162734985352,
+            846.779727935791,
+            -12
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            195.96339006212202,
+            -153.52561899581013,
+            111.79315567016603,
+            84.04274366957031,
+            39.872757824014116,
+            10.408760070800781,
+            -0.3183239924386668
+        ]
+    },
+    "Indeed Tower": {
+        "building": "Indeed Tower",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            919.9503040313721,
+            1146.2666625976562,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            -87.66839599609375,
+            146.1295623779297,
+            194.9882049560547,
+            52.14065170288086,
+            82.02035522460938,
+            167.20199584960938,
+            -0.31920403242111206
+        ]
+    },
+    "The Belmont": {
+        "building": "305 West 6th Street",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            797.5304489135742,
+            1091.120532989502,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            -203.79709794496705,
+            91.78725087669439,
+            113.32905197143555,
+            24.803138547941682,
+            39.375700919980304,
+            7.532524108886719,
+            -0.30859181566233107
+        ]
+    },
+    "Texas Toy Museum and Arcade": {
+        "building": "Texas Toy Museum and Arcade",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "yes",
+            "museum"
+        ],
+        "location": [
+            948.3590316772461,
+            793.1610107421875,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            -51.63707923628399,
+            -206.8386852762458,
+            109.60832977294923,
+            7.3241139086942555,
+            24.319346276566723,
+            9.03558349609375,
+            1.253305594684323
+        ]
+    },
+    "Thistle Cafe": {
+        "building": "Procore Tower",
+        "coarse_type": "food",
+        "fine_types": [
+            "cafe",
+            "restaurant",
+            "point_of_interest",
+            "store",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            871.353946685791,
+            1060.5845203399658,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -131.23443318484968,
+            60.81827806514308,
+            159.35279083251953,
+            84.50115065414666,
+            47.30849482341774,
+            99.03630065917969,
+            -0.31420839639070536
+        ]
+    },
+    "Mediterranean Resources LLC": {
+        "building": "401 Congress Avenue # 2900",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            965.4733638763428,
+            886.7862167358398,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -34.52972047320928,
+            -113.21433429605591,
+            110.49073791503906,
+            7.312171877054673,
+            49.17180439685783,
+            7.0614013671875,
+            1.258533636391678
+        ]
+    },
+    "La Traviata": {
+        "building": "La Traviata",
+        "coarse_type": "food",
+        "fine_types": [
+            "yes",
+            "restaurant"
+        ],
+        "location": [
+            950.4021701812744,
+            799.4060363769531,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            -49.593020213675985,
+            -200.59397164007862,
+            109.6868362426758,
+            5.820364445738577,
+            24.320852226661046,
+            8.9205322265625,
+            1.2531818532048284
+        ]
+    },
+    "Beverages and DM Store": {
+        "building": "The Riley Building",
+        "coarse_type": "stores",
+        "fine_types": [
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "location": [
+            770.6295471191406,
+            870.1963768005371,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-DM.json",
+        "bounding_box": [
+            -229.33644227973974,
+            -129.84225238207358,
+            110.46203231811523,
+            14.370263832706828,
+            39.28341531517277,
+            12.250572204589844,
+            -0.30777149544789173
+        ]
+    },
+    "Snacks and DM Store": {
+        "building": "114 West 7th Street",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            996.3216896057129,
+            1210.3084182739258,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Snacks-DM.json",
+        "bounding_box": [
+            -3.5658947838399495,
+            210.38272006824155,
+            124.8991928100586,
+            20.02545691914643,
+            38.632853893261846,
+            20.611282348632812,
+            -0.30779775886248867
+        ]
+    },
+    "East 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            277.47893669539457,
+            -37.35784042384879
+        ],
+        "rotation": 1.2582329237657535,
+        "bounding_box": null
+    },
+    "West 6th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            25.74402127344481,
+            151.2718159082804
+        ],
+        "rotation": 2.8369250100386862,
+        "bounding_box": null
+    },
+    "West 4th Street Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -229.05473430961683,
+            -99.50255037787772
+        ],
+        "rotation": 1.259703994414767,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            140.52280766126947,
+            120.95155908514572
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -191.32981481961303,
+            -124.22094705012601
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            227.13453582192167,
+            -21.9486166288251
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -4.782220611426993,
+            158.87187733096548
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -203.21332748212237,
+            54.689170054801835
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 6": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            28.567972761697195,
+            -286.6961097235694
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 7": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -58.44510504174203,
+            -135.07827813654393
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To West 4th Street": [
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:01",
+                "last_bus": "22:01"
+            },
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To East 6th Street": [
+            {
+                "stop_name": "West 4th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "West 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:04",
+                "last_bus": "22:04"
+            },
+            {
+                "stop_name": "East 6th Street Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:06",
+                "last_bus": "22:06"
+            }
+        ]
+    }
+}

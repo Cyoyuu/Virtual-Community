@@ -1,0 +1,713 @@
+{
+    "sim_name": "AUSTIN_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Alex Jefferson",
+        "Chad Thompson",
+        "Clara Voss",
+        "Elena Markovic",
+        "Emily Johnson",
+        "Ethan Miyamoto",
+        "Eve By J Gonzales",
+        "Julian Cross",
+        "Kate Novak",
+        "Leonard Park",
+        "Marcus Yuen",
+        "Megan Carter",
+        "Shannon Steves",
+        "Sophie Carlsen"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -270.2559754675525,
+                -23.054923803432352,
+                106.63149288973861,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hanover Republic Square",
+            "current_place": "Adam Pierce's room at Hanover Republic Square",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -246.48209324447285,
+                195.4536381321572,
+                112.56094161107671,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 West 6th Street Suite 1510",
+            "current_place": "Alex Jefferson's room at Savills Austin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -87.12993455423674,
+                -171.15779719353532,
+                105.63883931219488,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "319 Colorado Street",
+            "current_place": "Chad Thompson's room at 4th and Colorado",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                99.30876555559436,
+                104.51160561782962,
+                110.7291690385708,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Aloft Austin Downtown",
+            "current_place": "Clara Voss's room at Aloft Austin Downtown",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                132.96495890712083,
+                30.823123884894258,
+                108.92147442448297,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Driskill",
+            "current_place": "Elena Markovic's room at The Driskill",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                65.61590877931114,
+                5.0306625343220865,
+                109.15252427844243,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "515 Congress Avenue # N",
+            "current_place": "Emily Johnson's room at Avison Young",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                159.44120011661118,
+                133.3063864600754,
+                111.41784821444182,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "The Stephen F Austin Royal Sonesta Hotel",
+            "current_place": "Ethan Miyamoto's room at The Stephen F Austin Royal Sonesta Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -30.595982104250105,
+                244.25564224517655,
+                117.72794239936282,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Brown Building",
+            "current_place": "Eve By J Gonzales's room at Susan Stiles Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                136.25617243239142,
+                223.04047611076513,
+                112.31151844189941,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hyatt Centric Congress Avenue Austin",
+            "current_place": "Julian Cross's room at Hyatt Centric Congress Avenue Austin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -278.77871410107844,
+                100.5774797836216,
+                109.9070306010522,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "ATX Tower",
+            "current_place": "Kate Novak's room at Crites Real Estate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                51.564122919429856,
+                239.64289603827916,
+                116.97571416775655,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "722 Congress Avenue",
+            "current_place": "Leonard Park's room at Nellis Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                234.58483475633514,
+                -118.57103983234842,
+                107.84201080480446,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Thompson Austin",
+            "current_place": "Marcus Yuen's room at Thompson Austin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -154.18466190900475,
+                202.60011672010174,
+                116.66309402841816,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 West 6th Street Suite 1510",
+            "current_place": "Megan Carter's room at Savills Austin",
+            "current_vehicle": null
+        },
+        {
+            "cash": 750,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -41.6257644298321,
+                247.858819684405,
+                117.83600150051075,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Brown Building",
+            "current_place": "Shannon Steves's room at Susan Stiles Realty",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                61.76152631218271,
+                -6.5170444138702095,
+                109.07393875006015,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "515 Congress Avenue # N",
+            "current_place": "Sophie Carlsen's room at Avison Young",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            753.2972106933594,
+            990.7613353729248,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            797.0851669311523,
+            1200.809211730957,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            890.3592643737793,
+            837.6057586669922,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1126.3316345214844,
+            1108.1401252746582,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1164.4101486206055,
+            1045.4788842201233,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1083.6014881134033,
+            1001.5067653656006,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1140.7429313659668,
+            1155.3119430541992,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            964.4265832901001,
+            1266.8643417358398,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1160.5523147583008,
+            1216.660385131836,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            750.550178527832,
+            1108.0142288208008,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1077.0716609954834,
+            1231.643081665039,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1216.2151947021484,
+            909.6419906616211,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            797.0851669311523,
+            1200.809211730957,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            964.4265832901001,
+            1266.8643417358398,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1083.6014881134033,
+            1001.5067653656006,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Alex_Jefferson.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/custom_Clara_Voss.glb",
+        "ViCo/avatars/models/custom_Elena_Markovic.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/custom_Ethan_Miyamoto.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/custom_Julian_Cross.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/custom_Marcus_Yuen.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Sophie_Carlsen.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "The Riley Building",
+            "scene": "indoor_scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "5th and Colorado",
+            "scene": "indoor_scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "CVS Pharmacy",
+            "scene": "indoor_scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "501 Congress Avenue #108",
+            "scene": "indoor_scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "612 Brazos Street Suite C",
+            "scene": "indoor_scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "114 West 7th Street",
+            "scene": "indoor_scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "dt_control": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "groups": {
+        "Austin Innovators Club": {
+            "description": "A group of tech enthusiasts and professionals who meet to discuss the latest trends in technology and innovation.",
+            "place": "Indeed Tower",
+            "members": [
+                "Adam Pierce",
+                "Alex Jefferson",
+                "Leonard Park",
+                "Shannon Steves"
+            ],
+            "daily_activity": "discussing technology trends from 18:00 to 19:00"
+        },
+        "Austin Arts Collective": {
+            "description": "A community of artists and art lovers who gather to share their work and collaborate on creative projects.",
+            "place": "Northern-Southern",
+            "members": [
+                "Emily Johnson",
+                "Eve By J Gonzales",
+                "Kate Novak",
+                "Sophie Carlsen"
+            ],
+            "daily_activity": "creating art projects from 17:00 to 18:00"
+        },
+        "Austin Entertainment Group": {
+            "description": "A network of entertainers and performers who collaborate on events and performances.",
+            "place": "The Belmont",
+            "members": [
+                "Chad Thompson",
+                "Clara Voss",
+                "Ethan Miyamoto",
+                "Julian Cross"
+            ],
+            "daily_activity": "planning performances from 19:00 to 20:00"
+        },
+        "Austin Family Fun Club": {
+            "description": "A group of families and children who organize fun activities and outings.",
+            "place": "Texas Toy Museum and Arcade",
+            "members": [
+                "Elena Markovic",
+                "Marcus Yuen",
+                "Megan Carter"
+            ],
+            "daily_activity": "playing games from 16:00 to 17:00"
+        }
+    }
+}

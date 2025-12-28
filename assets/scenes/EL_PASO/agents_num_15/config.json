@@ -1,0 +1,713 @@
+{
+    "sim_name": "EL_PASO_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Chad Thompson",
+        "Elena Markovic",
+        "Elizabeth Mensah",
+        "Emily Johnson",
+        "Eve By J Gonzales",
+        "Freya Novak",
+        "James Thompson",
+        "Leonard Park",
+        "Malik Okoro",
+        "Megan Carter",
+        "Naomi Zhang",
+        "Shannon Steves",
+        "Steve Johnson",
+        "Victor Han"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 750,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                202.9692314786925,
+                4.079101683054937,
+                107.48542025178935,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "100 North Stanton Street",
+            "current_place": "Adam Pierce's room at Stanton Tower",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                16.97902296510898,
+                171.59310715196034,
+                111.75220924088319,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 East Main Street Suite 1205",
+            "current_place": "Chad Thompson's room at 300 East Main Leasing",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -107.08391872984234,
+                -51.54221154926657,
+                109.31845122819428,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Plaza Hotel",
+            "current_place": "Elena Markovic's room at Plaza Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                20.097580104724166,
+                271.44221019281946,
+                113.69454235376986,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "416 North Stanton Street Floor 6",
+            "current_place": "Elizabeth Mensah's room at Leonardo Poggio Real Estate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                71.85952330216492,
+                212.8559989830037,
+                111.43102248770512,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Indigo El Paso Downtown",
+            "current_place": "Emily Johnson's room at TANIA",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                44.63306197692479,
+                192.05136465272076,
+                111.51271142618529,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 East Main Street Suite 1205",
+            "current_place": "Eve By J Gonzales's room at 300 East Main Leasing",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                73.66798010125413,
+                157.0622938660187,
+                109.82733050844651,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "De Soto Hotel",
+            "current_place": "Freya Novak's room at De Soto Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                205.08983180348343,
+                5.682782563316916,
+                107.48083023397147,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "100 North Stanton Street",
+            "current_place": "James Thompson's room at Stanton Tower",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                29.89686462892452,
+                147.14032700688637,
+                110.95042717733176,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "300 East Main Street Suite 1205",
+            "current_place": "Leonard Park's room at 300 East Main Leasing",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -63.77595074803763,
+                -57.340406278598174,
+                108.66257948599045,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Plaza Hotel",
+            "current_place": "Malik Okoro's room at Plaza Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                75.12045802856395,
+                215.26772218527054,
+                111.33711463488137,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Hotel Indigo El Paso Downtown",
+            "current_place": "Megan Carter's room at TANIA",
+            "current_vehicle": null
+        },
+        {
+            "cash": 950,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -84.43553896761489,
+                -33.83612205519167,
+                109.24379672563337,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Plaza Hotel",
+            "current_place": "Naomi Zhang's room at Plaza Hotel",
+            "current_vehicle": null
+        },
+        {
+            "cash": 650,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                13.017258466617093,
+                266.12819608417357,
+                113.6233465879234,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "416 North Stanton Street Floor 6",
+            "current_place": "Shannon Steves's room at Leonardo Poggio Real Estate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 850,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                184.23216572376194,
+                -52.79279561500741,
+                107.2061382474196,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "100 North Stanton Street",
+            "current_place": "Steve Johnson's room at Stanton Tower",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -83.93200511202929,
+                -33.4424684868616,
+                109.24884798667438,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Plaza Hotel",
+            "current_place": "Victor Han's room at Plaza Hotel",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1204.7733688354492,
+            984.2451591491699,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1040.244960784912,
+            1167.8869705200195,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.358814239502,
+            940.456018447876,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1002.5127696990967,
+            1273.740577697754,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1076.874267578125,
+            1186.811424255371,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1040.244960784912,
+            1167.8869705200195,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1083.831340789795,
+            1142.3115501403809,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1204.7733688354492,
+            984.2451591491699,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1040.244960784912,
+            1167.8869705200195,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.358814239502,
+            940.456018447876,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1076.874267578125,
+            1186.811424255371,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.358814239502,
+            940.456018447876,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1002.5127696990967,
+            1273.740577697754,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1204.7733688354492,
+            984.2451591491699,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            914.358814239502,
+            940.456018447876,
+            -20,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/custom_Elena_Markovic.glb",
+        "ViCo/avatars/models/mixamo_Elizabeth_Mensah.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Eve_By_J_Gonzales.glb",
+        "ViCo/avatars/models/custom_Freya_Novak.glb",
+        "ViCo/avatars/models/mixamo_James_Thompson.glb",
+        "ViCo/avatars/models/mixamo_Leonard_Park.glb",
+        "ViCo/avatars/models/custom_Malik_Okoro.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/custom_Naomi_Zhang.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/mixamo_Steve_Johnson.glb",
+        "ViCo/avatars/models/custom_Victor_Han.glb"
+    ],
+    "stores": {
+        "Beverages and DM Store": {
+            "building": "216 South Stanton Street",
+            "scene": "indoor_scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and Snacks Store": {
+            "building": "105 East San Antonio Avenue",
+            "scene": "indoor_scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "W. S. Hills Commercial Structure",
+            "scene": "indoor_scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Anson Mills",
+            "scene": "indoor_scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "119 North Stanton Street",
+            "scene": "indoor_scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "318 North Mesa Street Suite R-318",
+            "scene": "indoor_scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "dt_control": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "groups": {
+        "El Paso Art Enthusiasts": {
+            "description": "A group of individuals passionate about art and creativity.",
+            "place": "Flor De Barro Gallery",
+            "members": [
+                "Elena Markovic",
+                "Eve By J Gonzales",
+                "Freya Novak",
+                "Victor Han"
+            ],
+            "daily_activity": "exploring art exhibitions from 15:00 to 17:00"
+        },
+        "Tech Innovators": {
+            "description": "A group focused on technology and innovation.",
+            "place": "Strayer University",
+            "members": [
+                "Adam Pierce",
+                "Emily Johnson",
+                "James Thompson",
+                "Leonard Park"
+            ],
+            "daily_activity": "developing software projects from 14:00 to 16:00"
+        },
+        "Culinary Creators": {
+            "description": "A group of culinary experts and enthusiasts.",
+            "place": "Corazon Restaurant",
+            "members": [
+                "Chad Thompson",
+                "Elizabeth Mensah",
+                "Malik Okoro",
+                "Steve Johnson"
+            ],
+            "daily_activity": "experimenting with new recipes from 18:00 to 20:00"
+        },
+        "Community Advocates": {
+            "description": "A group dedicated to community service and activism.",
+            "place": "Fray Garcia de San Francisco Pioneer Plaza",
+            "members": [
+                "Megan Carter",
+                "Naomi Zhang",
+                "Shannon Steves"
+            ],
+            "daily_activity": "organizing community events from 16:00 to 18:00"
+        }
+    }
+}

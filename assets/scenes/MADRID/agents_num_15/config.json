@@ -1,0 +1,713 @@
+{
+    "sim_name": "MADRID_agents_num_15",
+    "agent_names": [
+        "Adam Pierce",
+        "Brycer Rodriguez",
+        "Chad Thompson",
+        "Dylan Mercer",
+        "Emily Johnson",
+        "Joe Anderson",
+        "Kate Novak",
+        "Louise Roberts",
+        "Megan Carter",
+        "Mira Johansson",
+        "Morten Lindqvist",
+        "Pika Hayes",
+        "Rafael Costa",
+        "Shannon Steves",
+        "Sophia Lindberg"
+    ],
+    "step": 0,
+    "agent_infos": [
+        {
+            "cash": 800,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                65.08866515026584,
+                59.973003098909174,
+                99.82969602104318,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Edificio Restaura",
+            "current_place": "Adam Pierce's room at Recoven, S.L.",
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -91.76258084565609,
+                -72.14125010720778,
+                97.31022505266532,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+            "current_place": "Brycer Rodriguez's room at Edificio de la Sociedad de Cr\u00e9dito Mobiliario",
+            "current_vehicle": null
+        },
+        {
+            "cash": 900,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                150.10723754239177,
+                -101.75600075438132,
+                103.32051865415458,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Villalar",
+            "current_place": "Chad Thompson's room at Habitum Grupo Corporativo S.L.",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                193.73151238933107,
+                -16.969753078423885,
+                104.29179617036161,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Gil de Santiva\u00f1es",
+            "current_place": "Dylan Mercer's room at VP Jard\u00edn de Recoletos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 300,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -106.6152489847684,
+                -118.44640173534651,
+                96.12370405880944,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Palacio del Marqu\u00e9s de Alca\u00f1ices",
+            "current_place": "Emily Johnson's room at Palacio del Marqu\u00e9s de Alca\u00f1ices",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                164.77365553074313,
+                -96.24846356872054,
+                103.83748401471782,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "5",
+            "current_place": "Joe Anderson's room at HAUS Group Real Estate",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                88.55668442670483,
+                52.781163400518125,
+                100.85186373889084,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle del Cid",
+            "current_place": "Kate Novak's room at Apart-Hotel Serrano Recoletos",
+            "current_vehicle": null
+        },
+        {
+            "cash": 600,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -141.95884398381733,
+                -59.199366900973274,
+                98.92426490106638,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Prim",
+            "current_place": "Louise Roberts's room at Hermanos Revilla S.A.",
+            "current_vehicle": null
+        },
+        {
+            "cash": 200,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -79.06200652717541,
+                -40.41285639997959,
+                97.42986440577286,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Banco Pastor",
+            "current_place": "Megan Carter's room at Banco Pastor",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                207.43346542851776,
+                -202.20879770418975,
+                105.12106976075358,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa Faraona",
+            "current_place": "Mira Johansson's room at Casa Faraona",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                47.85382031025179,
+                -24.850879524101337,
+                98.97767543501774,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Direcci\u00f3n General de Juventud y Deporte",
+            "current_place": "Morten Lindqvist's room at LI-ONNA",
+            "current_vehicle": null
+        },
+        {
+            "cash": 400,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -78.88600574885945,
+                112.16043191142268,
+                102.41544572711815,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de B\u00e1rbara de Braganza",
+            "current_place": "Pika Hayes's room at Alquiler Aulas Madrid",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                232.05490373317076,
+                -255.15602606398568,
+                105.29086183812556,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Puerta de Alcal\u00e1",
+            "current_place": "Rafael Costa's room at The Walt Madrid",
+            "current_vehicle": null
+        },
+        {
+            "cash": 700,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                -270.0761927067751,
+                67.99128709583191,
+                103.85340412418041,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Calle de Piamonte",
+            "current_place": "Shannon Steves's room at Dompick",
+            "current_vehicle": null
+        },
+        {
+            "cash": 1000,
+            "held_objects": [
+                null,
+                null
+            ],
+            "outdoor_pose": [
+                193.07756064104092,
+                -207.38226726910423,
+                104.40817593579004,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "current_building": "Casa Faraona",
+            "current_place": "Sophia Lindberg's room at Casa Faraona",
+            "current_vehicle": null
+        }
+    ],
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "agent_poses": [
+        [
+            1059.319423675537,
+            1034.0926558971405,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            885.4159889221191,
+            918.5993690490723,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1139.5207290649414,
+            901.6513214111328,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1186.8162384033203,
+            971.0767664909363,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            885.6569404602051,
+            879.8155746459961,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1170.4527740478516,
+            926.8880996704102,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1110.3236274719238,
+            1011.5788412094116,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            860.2977752685547,
+            956.9047145843506,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            894.14111328125,
+            954.4608287811279,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1196.871467590332,
+            811.9625549316406,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1046.7858867645264,
+            992.2309155464172,
+            -12,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            933.8505382537842,
+            1125.0574073791504,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1229.0316314697266,
+            723.4699859619141,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            733.4967193603516,
+            1090.074062347412,
+            -8,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            1196.871467590332,
+            811.9625549316406,
+            -16,
+            0.0,
+            0.0,
+            0.0
+        ]
+    ],
+    "locator_colors": [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "pink",
+        "cyan",
+        "magenta",
+        "teal",
+        "maroon",
+        "navy",
+        "olive",
+        "lime",
+        "aqua"
+    ],
+    "locator_colors_rgb": [
+        [
+            1.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.6470588235294118,
+            0.0
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            1.0,
+            1.0,
+            0.0
+        ],
+        [
+            1.0,
+            0.7529411764705882,
+            0.796078431372549
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ],
+        [
+            1.0,
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            0.5019607843137255,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.5019607843137255
+        ],
+        [
+            0.5019607843137255,
+            0.5019607843137255,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            1.0,
+            1.0
+        ]
+    ],
+    "num_agents": 15,
+    "sec_per_step": 1,
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_Brycer_Rodriguez.glb",
+        "ViCo/avatars/models/mixamo_Chad_Thompson.glb",
+        "ViCo/avatars/models/custom_Dylan_Mercer.glb",
+        "ViCo/avatars/models/mixamo_Emily_Johnson.glb",
+        "ViCo/avatars/models/mixamo_Joe_Anderson.glb",
+        "ViCo/avatars/models/mixamo_Kate_Novak.glb",
+        "ViCo/avatars/models/mixamo_Louise_Roberts.glb",
+        "ViCo/avatars/models/mixamo_Megan_Carter.glb",
+        "ViCo/avatars/models/custom_Mira_Johansson.glb",
+        "ViCo/avatars/models/custom_Morten_Lindqvist.glb",
+        "ViCo/avatars/models/mixamo_Pika_Hayes.glb",
+        "ViCo/avatars/models/custom_Rafael_Costa.glb",
+        "ViCo/avatars/models/mixamo_Shannon_Steves.glb",
+        "ViCo/avatars/models/custom_Sophia_Lindberg.glb"
+    ],
+    "stores": {
+        "Beverages and Snacks Store": {
+            "building": "5",
+            "scene": "indoor_scenes/store-Beverages-Snacks.json",
+            "type": "store-Beverages-Snacks",
+            "goods": [
+                {
+                    "name": "Beverages",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and DM Store": {
+            "building": "Teatro Marquina",
+            "scene": "indoor_scenes/store-Fresh-DM.json",
+            "type": "store-Fresh-DM",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Dairy & Meat",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Beverages Store": {
+            "building": "Calle de Prim",
+            "scene": "indoor_scenes/store-Fresh-Beverages.json",
+            "type": "store-Fresh-Beverages",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 10,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Fresh and Snacks Store": {
+            "building": "Banco Pastor",
+            "scene": "indoor_scenes/store-Fresh-Snacks.json",
+            "type": "store-Fresh-Snacks",
+            "goods": [
+                {
+                    "name": "Fresh Produce",
+                    "price": 10,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 14,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Snacks and DM Store": {
+            "building": "Calle del Almirante",
+            "scene": "indoor_scenes/store-Snacks-DM.json",
+            "type": "store-Snacks-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 14,
+                    "quantity": 5
+                },
+                {
+                    "name": "Snacks",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        },
+        "Beverages and DM Store": {
+            "building": "Paseo de Recoletos",
+            "scene": "indoor_scenes/store-Beverages-DM.json",
+            "type": "store-Beverages-DM",
+            "goods": [
+                {
+                    "name": "Dairy & Meat",
+                    "price": 12,
+                    "quantity": 5
+                },
+                {
+                    "name": "Beverages",
+                    "price": 12,
+                    "quantity": 5
+                }
+            ]
+        }
+    },
+    "dt_control": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "dt_visual_obs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "groups": {
+        "Madrid Art Enthusiasts": {
+            "description": "A group of art lovers who enjoy visiting galleries and discussing visual arts.",
+            "place": "Sala Recoletos - Fundaci\u00f3n MAPFRE",
+            "members": [
+                "Kate Novak",
+                "Emily Johnson",
+                "Pika Hayes",
+                "Shannon Steves"
+            ],
+            "daily_activity": "visiting art galleries from 15:00 to 17:00"
+        },
+        "Madrid Culinary Creators": {
+            "description": "A group of chefs and food enthusiasts who experiment with new recipes and host cooking classes.",
+            "place": "Ramses",
+            "members": [
+                "Rafael Costa",
+                "Chad Thompson",
+                "Brycer Rodriguez",
+                "Louise Roberts"
+            ],
+            "daily_activity": "experimenting with new recipes from 16:00 to 18:00"
+        },
+        "Madrid Tech Innovators": {
+            "description": "A group of tech enthusiasts and entrepreneurs who explore new technologies and investment opportunities.",
+            "place": "Beverages and DM Store",
+            "members": [
+                "Adam Pierce",
+                "Morten Lindqvist",
+                "Joe Anderson",
+                "Dylan Mercer"
+            ],
+            "daily_activity": "discussing tech innovations from 14:00 to 16:00"
+        },
+        "Madrid Music Performers": {
+            "description": "A group of musicians and performers who collaborate on music projects and perform at local events.",
+            "place": "Chip\u00e9 Club - Bar clandestino Madrid",
+            "members": [
+                "Sophia Lindberg",
+                "Mira Johansson",
+                "Megan Carter"
+            ],
+            "daily_activity": "rehearsing music performances from 17:00 to 19:00"
+        }
+    }
+}

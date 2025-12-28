@@ -1,0 +1,411 @@
+{
+    "Adam Pierce": {
+        "age": 27,
+        "living_place": "Adam Pierce's room at Fonci\u00e9re-palota",
+        "appearance": "assets/imgs/avatars/Adam Pierce.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Roth Miller": {
+        "age": 26,
+        "living_place": "Stern-b\u00e9rpalota",
+        "appearance": "assets/imgs/avatars/Roth Miller.png",
+        "groups": [
+            "Tech Innovators"
+        ]
+    },
+    "Tech Innovators": {
+        "description": "A group of tech enthusiasts and professionals working on innovative projects.",
+        "place": "ECE irodah\u00e1z",
+        "members": [
+            "Adam Pierce",
+            "Roth Miller",
+            "Louise Roberts"
+        ],
+        "daily_activity": "developing software applications from 14:00 to 16:00"
+    },
+    "Louise Roberts's room at Saxlehner-palota": {
+        "building": "Saxlehner-palota",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "apartments"
+        ],
+        "location": [
+            1045.8289232254028,
+            978.7351529598236,
+            -8
+        ],
+        "scene": "indoor_scenes/accomodation-5.json",
+        "name": "Louise Roberts's room at Saxlehner-palota",
+        "bounding_box": [
+            44.03922120119148,
+            -22.00304435604793,
+            113.34463882446289,
+            37.23346399637809,
+            39.29501262473252,
+            25.08399200439453,
+            0.6396981209871949
+        ]
+    },
+    "Mad\u00e1ch Trade Center": {
+        "building": "Mad\u00e1ch Trade Center",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            1263.6710739135742,
+            859.2509078979492,
+            -4
+        ],
+        "scene": "indoor_scenes/MVSGSAIKTKJ66AABAAAAAEA8.json",
+        "bounding_box": [
+            266.6149385192083,
+            -146.7274329635741,
+            114.26008605957031,
+            31.35583564571864,
+            54.34587721211185,
+            31.515655517578125,
+            0.8250894633695468
+        ]
+    },
+    "ECE irodah\u00e1z": {
+        "building": "ECE irodah\u00e1z",
+        "coarse_type": "office",
+        "fine_types": [
+            "office"
+        ],
+        "location": [
+            943.3070030212402,
+            970.7814821600914,
+            -8
+        ],
+        "scene": "indoor_scenes/MV7J6NIKTKJZ2AABAAAAAAA8.json",
+        "bounding_box": [
+            -52.95170402526854,
+            -29.218517839908586,
+            114.28670501708984,
+            46.33361879146786,
+            54.264206122232714,
+            26.726882934570312,
+            0.1509085970705138
+        ]
+    },
+    "Association of Hungarian Fine and Applied Artists": {
+        "building": "Steiner (\u00c1mon)-b\u00e9rpalota",
+        "coarse_type": "entertainment",
+        "fine_types": [
+            "art_gallery",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1079.8432006835938,
+            1107.1592712402344,
+            -4
+        ],
+        "scene": "indoor_scenes/MVJWVGYKTLDAYAABAAAAAAQ8.json",
+        "bounding_box": [
+            80.0988998413086,
+            107.15927124023438,
+            112.07051849365234,
+            34.5406608581543,
+            39.503257751464844,
+            22.35468292236328,
+            0.7375522255897522
+        ]
+    },
+    "12 Revay Hotel": {
+        "building": "12 Revay Hotel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel",
+            "hotel"
+        ],
+        "location": [
+            1101.1510887145996,
+            1196.1985092163086,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-4.json",
+        "bounding_box": [
+            101.54588114433633,
+            196.19850028938524,
+            111.17228698730467,
+            20.844687070841115,
+            40.332532981227864,
+            22.353317260742188,
+            0.7457837012891251
+        ]
+    },
+    "Wombat's Hostel": {
+        "building": "Wombat's Hostel",
+        "coarse_type": "accommodation",
+        "fine_types": [
+            "hotel"
+        ],
+        "location": [
+            1214.6585540771484,
+            941.0573272705078,
+            -4
+        ],
+        "scene": "indoor_scenes/accomodation-3.json",
+        "bounding_box": [
+            213.07931518554688,
+            -60.51513671875,
+            108.30778503417969,
+            32.56475830078125,
+            54.75981903076172,
+            17.16424560546875,
+            0.608243465423584
+        ]
+    },
+    "The bar": {
+        "building": "Anker-h\u00e1z",
+        "coarse_type": "food",
+        "fine_types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1038.3319717645645,
+            786.3472595214844,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            34.69973267611073,
+            -201.74286506389677,
+            114.81161117553712,
+            59.29532381305756,
+            53.081640493610074,
+            29.38581085205078,
+            0.6645522602420528
+        ]
+    },
+    "Pizzagram": {
+        "building": "Stein-b\u00e9rpalota",
+        "coarse_type": "food",
+        "fine_types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+        ],
+        "location": [
+            1020.2060127258301,
+            956.8885612487793,
+            -4
+        ],
+        "scene": "indoor_scenes/MV5M25QKTKJZ2AABAAAAAAI8.json",
+        "bounding_box": [
+            13.103591904457579,
+            -45.090792071727364,
+            113.3840560913086,
+            41.58100998762464,
+            33.60088733113829,
+            25.476303100585938,
+            0.5930513562908697
+        ]
+    },
+    "Roni ABC": {
+        "building": "Roni ABC",
+        "coarse_type": "food",
+        "fine_types": [
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1139.6305847167969,
+            823.7910614013672,
+            -4
+        ],
+        "scene": "indoor_scenes/MWHLEPQKTIFZIAABAAAAAAA8.json",
+        "bounding_box": [
+            139.6305694580078,
+            -176.2089385986328,
+            103.14949035644533,
+            9.903895661645569,
+            15.840966828222008,
+            6.4879913330078125,
+            0.6891719889663451
+        ]
+    },
+    "Fresh and Beverages Store": {
+        "building": "Orczy-h\u00e1z 1795-1937.001",
+        "coarse_type": "stores",
+        "fine_types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1065.9004726409912,
+            745.359619140625,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Fresh-Beverages.json",
+        "bounding_box": [
+            65.7991468123316,
+            -254.69090033197278,
+            113.4127883911133,
+            16.842144540667675,
+            13.922820128071264,
+            26.736495971679688,
+            -0.614250855591749
+        ]
+    },
+    "Beverages and Snacks Store": {
+        "building": "Orczy-h\u00e1z 1795-1937.002",
+        "coarse_type": "stores",
+        "fine_types": [
+            "beauty_salon",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": [
+            1082.5144958496094,
+            733.6156234741211,
+            -4
+        ],
+        "scene": "indoor_scenes/store-Beverages-Snacks.json",
+        "bounding_box": [
+            82.51449584960938,
+            -266.2007141113281,
+            113.66513061523438,
+            14.387836456298828,
+            24.090131759643555,
+            27.955238342285156,
+            0.9561694860458374
+        ]
+    },
+    "Hercegpr\u00edm\u00e1s utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            -155.9045398743109,
+            144.7213899496251
+        ],
+        "rotation": 0.1637124135040342,
+        "bounding_box": null
+    },
+    "Kir\u00e1ly utca Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            117.95772788275947,
+            -183.99893072540985
+        ],
+        "rotation": 2.2355502044473248,
+        "bounding_box": null
+    },
+    "Andr\u00e1ssy \u00fat Bus Stop": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bus stop",
+        "location": [
+            59.99896986558039,
+            29.98931781945049
+        ],
+        "rotation": 2.377180086853661,
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 1": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            248.1290355749906,
+            -186.6216138602753
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 2": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            111.0178026959204,
+            109.49239231574528
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 3": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            71.10663574044452,
+            -84.23841513956515
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 4": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            -122.0405227968639,
+            -79.60096903829383
+        ],
+        "bounding_box": null
+    },
+    "Bicycle Sharing Station 5": {
+        "building": "open space",
+        "coarse_type": "transit",
+        "fine_type": "bike station",
+        "location": [
+            241.34025042679923,
+            -78.70096472476352
+        ],
+        "bounding_box": null
+    },
+    "transit_schedule": {
+        "To Andr\u00e1ssy \u00fat": [
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:00",
+                "last_bus": "22:00"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:02",
+                "last_bus": "22:02"
+            },
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            }
+        ],
+        "To Hercegpr\u00edm\u00e1s utca": [
+            {
+                "stop_name": "Andr\u00e1ssy \u00fat Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:03",
+                "last_bus": "22:03"
+            },
+            {
+                "stop_name": "Kir\u00e1ly utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:05",
+                "last_bus": "22:05"
+            },
+            {
+                "stop_name": "Hercegpr\u00edm\u00e1s utca Bus Stop",
+                "frequency": 15,
+                "first_bus": "06:07",
+                "last_bus": "22:07"
+            }
+        ]
+    }
+}
