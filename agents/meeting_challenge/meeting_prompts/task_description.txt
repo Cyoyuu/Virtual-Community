@@ -19,7 +19,7 @@ Capabilities and constraints of the agents:
   3. Generating a reference route to a designated destination. 
 
 Guidelines:
-- Use exact place names. For example, 'Adrian Keller's room at Hotel Château Royal Berlin' and 'Hotel Château Royal Berlin' refer to two distinct locations.
+- Use exact place names: <Place Name>. For example, "<Adrian Keller's room at Hotel Château Royal Berlin>", "<Adrian Keller's room>" and "<Hotel Château Royal Berlin>" refer to three distinct locations.
 - Signal task completion only after you reached the destination.
 - The game is considered successful only if all agents are at the same location and have signaled task completion.
 - You must complete exactly one game.

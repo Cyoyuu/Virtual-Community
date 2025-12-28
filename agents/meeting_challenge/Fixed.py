@@ -35,7 +35,7 @@ class FixedMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        self.meeting_place = "Elizabeth Mensah's room at Gömöry-ház"
+        self.meeting_place = "The Greening of Detroit - Lafayette Greens"
         if self.s_mem.get_knowledge(self.meeting_place) is None:
             action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.meeting_place}
             self.last_action = action
