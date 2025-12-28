@@ -5,6 +5,7 @@ import numpy as np
 import traceback
 import logging
 import sys
+import time
 # import torch.multiprocessing as mp
 # ctx = mp.get_context('spawn')
 import multiprocessing as mp # todo: replace with torch.multiprocessing
@@ -54,6 +55,7 @@ class Agent:
 		self.action_status = None
 
 	def act(self, obs):
+		act_time = time.perf_counter()
 		self.steps = obs['steps']
 		self.pose = obs['pose']
 		self.obs = obs
@@ -68,11 +70,17 @@ class Agent:
 		self.action_status = obs['action_status']
 		self.held_objects = obs['held_objects']
 		self.cash = obs['cash']
+		_obs_time = time.perf_counter()
 		self._process_obs(obs)
+		_obs_time = time.perf_counter() - _obs_time
 		if self.action_status == "ONGOING":
 			return None
+		_act_time = time.perf_counter()
 		action = self._act(obs)
+		_act_time = time.perf_counter() - _act_time
 		self.save_scratch()
+		act_time = time.perf_counter() - act_time
+		self.logger.debug(f"{self.name} finish action. Time taken: {act_time:.2f}s. Time _process_obs taken: {_obs_time:.2f}s. Time _act taken: {_act_time:.2f}s.")
 		return action
 
 	def chat(self, content):
