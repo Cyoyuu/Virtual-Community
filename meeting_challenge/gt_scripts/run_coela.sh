@@ -11,6 +11,7 @@ python meeting_challenge/challenge.py --head_less \
 --multi_process \
 --skip_avatar_animation \
 --enable_gt_segmentation \
+--detect_interval 1 \
 --output_dir meeting_challenge/output \
 --scene "${scene}" \
 --job_id "${job_id}" \
