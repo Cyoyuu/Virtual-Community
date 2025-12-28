@@ -37,6 +37,31 @@ def end_processes():
         p.terminate()
         p.join()
 
+def get_gpu_info(timeout=3):
+    import subprocess
+    print("Getting gpu info")
+    try:
+        result = subprocess.run(
+            ["nvidia-smi", "--query-gpu=name,memory.total", "--format=csv,noheader,nounits"],
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            check=True,
+        )
+    except subprocess.TimeoutExpired:
+        return [{"error": "nvidia-smi timed out"}]
+    except FileNotFoundError:
+        return [{"error": "nvidia-smi not found"}]
+    except subprocess.CalledProcessError as e:
+        return [{"error": e.stderr.strip()}]
+
+    gpus = []
+    for line in result.stdout.strip().split("\n"):
+        name, vram = line.split(", ")
+        gpus.append({"name": name, "vram_MB": int(vram)})
+    print(f"gpu info gotten: {gpus}")
+    return gpus
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed", type=int, default=0)
@@ -131,11 +156,14 @@ def main():
     if args.overwrite and os.path.exists(args.output_dir):
         print(f"Overwrite the output directory: {args.output_dir}")
         shutil.rmtree(args.output_dir)
+    print(f"Initializing output directory...")
     os.makedirs(os.path.join(output_dir, 'logs'), exist_ok=True)
     os.makedirs(os.path.join(output_dir, 'debug'), exist_ok=True)
 
     # Read and initialize scene configuration
     os.makedirs(args.output_dir, exist_ok=True)
+    print(f"Dumping gpu environment...")
+    json.dump({"gpus": get_gpu_info()}, open(os.path.join(output_dir, "gpus.json"), 'w'), indent=4)
     config_path = os.path.join(args.output_dir, 'curr_sim')
     if not os.path.exists(config_path):
         seed_config_path = os.path.join('assets/scenes', args.scene, args.config)
@@ -182,6 +210,7 @@ def main():
         print(f"No sentinel config found at {sentinel_config_path} !!!")
         sentinel_config = None
         num_sentinels = 0
+    json.dump({"gpus": get_gpu_info(), "success_config_initialization": True}, open(os.path.join(output_dir, "gpus.json"), 'w'), indent=4)
 
     if args.debug:
         args.enable_third_person_cameras = True
@@ -305,6 +334,7 @@ def main():
     agent_list_to_update = obs.pop('agent_list_to_update')
     while not all_task_end and env.steps < args.step_limit:
         lst_time = time.perf_counter()
+        gs.logger.info(f"step {env.steps} starts")
         # prcess obs_printable
         obs_printable = [{k: copy.deepcopy(v) for k, v in obs[agent_id].items() if not isinstance(v, np.ndarray) \
                           and k != 'gt_seg_idxc_to_info' and not isinstance(v, datetime) and not isinstance(v, Route)} for agent_id in obs]
@@ -325,6 +355,7 @@ def main():
             },
         }
         # agents step
+        gs.logger.info(f"step {env.steps}: agent step starts")
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:
                 obs[i].update(extra_obs)
@@ -333,6 +364,7 @@ def main():
                     obs[i].pop('gt_seg_idxc_to_info')
                     obs[i]['segmentation']=np.full_like(obs[i]['depth'], None)
                 agent.update(obs[i])
+        gs.logger.info(f"step {env.steps}: agent obs update finishes")
         for i, agent in enumerate(all_agent_processes):
             if i in agent_list_to_update:
                 action = agent.act()
@@ -348,6 +380,7 @@ def main():
                     if action['arg1']=='ban':
                         banned_agent_list.append(action['arg2'])
         agent_actions['agent_list_to_update'] = agent_list_to_update
+        gs.logger.info(f"step {env.steps}: agent action finishes")
 
         steps_info_path = os.path.join(output_dir, "steps.json")
         if os.path.exists(steps_info_path):
@@ -423,6 +456,7 @@ def main():
         
         last_agent_pos_dict=extra_obs["agent_pos_dict"]
 
+    json.dump({"gpus": get_gpu_info(), "success_config_initialization": True, "infos": {"average_agent": env.config["sps_agent"] * (env.steps), "average_sim": env.config["sps_sim"] * env.steps}}, open(os.path.join(output_dir, "gpus.json"), 'w'), indent=4)
     result = {"agent_poses": [agent_pose for agent_pose in env.config['agent_poses']],
               "time_spent_meeting": env.steps,
               "walk_spent_meeting": np.sum(total_length),
