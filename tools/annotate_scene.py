@@ -661,7 +661,9 @@ def get_building_to_places():
 		if not any(type_ in [t for coarse in google_map_coarse_to_types if coarse != "open" for t in google_map_coarse_to_types[coarse]] for type_ in places_dict[place_name]["types"]):
 			if "park" in places_dict[place_name]["types"]:
 				# open spaces
-				building_to_places["open space"].append({"name": place_name, "coarse_type": "open", "fine_types": places_dict[place_name]["types"], "location": places_dict[place_name]["location"]})
+				loc = places_dict[place_name]["location"]
+				loc[2] = 0.0
+				building_to_places["open space"].append({"name": place_name, "coarse_type": "open", "fine_types": places_dict[place_name]["types"], "location": loc})
 				type_stats["open"] += 1
 				continue
 		# 1. location point is within the bounding box of the building
