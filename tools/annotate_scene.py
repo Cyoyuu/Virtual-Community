@@ -21,9 +21,6 @@ import copy
 import trimesh
 import pickle
 
-import genesis as gs
-from genesis.options import CoacdOptions
-
 current_directory = os.getcwd()
 sys.path.insert(0, current_directory)
 from tools.constants import google_map_type_to_coarse, google_map_coarse_to_types, coarse_types_priority, ASSETS_PATH
@@ -753,7 +750,7 @@ def get_building_to_places():
 				"location": [building_center[0], building_center[1], building_center[2] - (i + 1) * 4] if building_center is not None else place["location"],
 				# "scene": random.sample(coarse_indoor_scene[place['coarse_type']], 1)[0] if building_center is not None else None,
 			}
-		
+		import genesis as gs
 		if building_name != "open space":
 			mesh = trimesh.load(os.path.join(gs.utils.get_assets_dir(), scene_assets_dir, 'buildings', "buildings_" + building_name + ".glb"))
 			rotation_matrix = trimesh.transformations.rotation_matrix(np.deg2rad(90.0), [1, 0, 0])
@@ -880,6 +877,8 @@ def update_building_to_places(building_to_places, accessible_buildings):
 	return new_building_to_places
 
 def load_city_scene(scene, scene_assets_dir):
+	import genesis as gs
+	from genesis.options import CoacdOptions
 	scene.add_entity(
 		material=gs.materials.Rigid(
 			sdf_min_res=4,
@@ -971,7 +970,7 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 	print("args:", args)
 	# random.seed(args.seed)
-
+	import genesis as gs
 	scene_assets_dir = f"ViCo/scene/v1/{args.scene}"
 
 	if not args.only_update_bbox:

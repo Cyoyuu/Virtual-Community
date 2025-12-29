@@ -418,21 +418,14 @@ class CharacterGen:
             elif args.num_characters == 1:
                 character_names = ["James Thompson"]
             else:
-                predefined_celebrity_names = {
-                    "NY": ["Justin Bieber", "Kamala Harris", "Feifei Li", "Bill Gates", "Steve Jobs"],
-                    "DETROIT": ["Taylor Swift", "Elon Musk", "Mr Beast", "Jensen Huang", "Albert Einstein"],
-                    "LONDON": ["Emma Watson", "Mark Zuckerberg", "Andrew Ng", "LeBron James", "Bruce Lee"]
-                } # Only use this for 15-characters generation because celebrity names will be exactly 5
-                num_celebrity = args.num_characters // 3
-                num_mixamo = args.num_characters - num_celebrity
+                num_custom_skin = args.num_characters // 3
+                num_mixamo = args.num_characters - num_custom_skin
                 random.shuffle(mixamo_names)
                 selected_mixamo_names = mixamo_names[:num_mixamo]
-                celebrity_names = [name for name in self.character_name_to_skin_info.keys() if name not in mixamo_names]
-                if args.predefined_famous and args.scene in predefined_celebrity_names:
-                    celebrity_names = predefined_celebrity_names[args.scene]
-                random.shuffle(celebrity_names)
-                selected_celebrity_names = celebrity_names[:num_celebrity]
-                character_names = selected_mixamo_names + selected_celebrity_names
+                custom_skin_names = [name for name in self.character_name_to_skin_info.keys() if name not in mixamo_names]
+                random.shuffle(custom_skin_names)
+                selected_custom_skin_names = custom_skin_names[:num_custom_skin]
+                character_names = selected_mixamo_names + selected_custom_skin_names
 
             character_names = sorted(character_names)
             print("Selected Characters:", character_names)
@@ -1002,8 +995,6 @@ if __name__ == "__main__":
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--regenerate", action="store_true")
     parser.add_argument("--use_max_120", action="store_true") # only use this if you fail many times to generate jsons that are grounded correctly
-    parser.add_argument("--famous", action="store_true") # characters sampled from a list of very famous people
-    parser.add_argument("--predefined_famous", action="store_true")
     parser.add_argument("--force_check_grounding", action="store_true") # only use this if there's existing gpt cache that may not be grounded correctly
     parser.add_argument("--filter_distance_square", type=float, default=300.0)
     parser.add_argument("--lm_source", type=str, default='azure', choices=['azure', 'openai'])

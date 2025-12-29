@@ -4,13 +4,15 @@ import argparse
 
 def offset_places_xy_in_place_metadata(place_metadata, offset):
     for place in place_metadata:
-        if len(place_metadata[place]["location"]) == 3 and place_metadata[place]["location"][2] < 0 and place_metadata[place]["location"][0] < (offset / 2) and place_metadata[place]["location"][1] < (offset / 2):
+        if len(place_metadata[place]["location"]) == 3 and place_metadata[place]["location"][2] < 0 and place_metadata[place]["building"] != "open space" and place_metadata[place]["location"][0] < (offset / 2) and place_metadata[place]["location"][1] < (offset / 2):
             place_metadata[place]["location"][0] += offset
             place_metadata[place]["location"][1] += offset
     return place_metadata
 
 def offset_places_xy_in_building_metadata(building_metadata, offset):
     for building in building_metadata:
+        if building == "open space":
+            continue
         for place_i in range(len(building_metadata[building]["places"])):
             if len(building_metadata[building]["places"][place_i]["location"]) == 3 and building_metadata[building]["places"][place_i]["location"][2] < 0 and building_metadata[building]["places"][place_i]["location"][0] < (offset / 2) and building_metadata[building]["places"][place_i]["location"][1] < (offset / 2):
                 building_metadata[building]["places"][place_i]["location"][0] += offset
@@ -27,7 +29,7 @@ def offset_places_xy_in_config_metadata(config_metadata, offset):
 def offset_places_xy_in_knowledge(knowledge, offset):
     for k in knowledge:
         if "location" in knowledge[k]:
-            if len(knowledge[k]["location"]) == 3 and knowledge[k]["location"][2] < 0 and knowledge[k]["location"][0] < (offset / 2) and knowledge[k]["location"][1] < (offset / 2):
+            if len(knowledge[k]["location"]) == 3 and knowledge[k]["location"][2] < 0 and knowledge[k]["building"] != "open space" and knowledge[k]["location"][0] < (offset / 2) and knowledge[k]["location"][1] < (offset / 2):
                 knowledge[k]["location"][0] += offset
                 knowledge[k]["location"][1] += offset
     return knowledge

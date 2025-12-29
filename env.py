@@ -142,7 +142,7 @@ class VicoEnv:
 		self.scene = gs.Scene(
 			# viewer_options=None,
 			viewer_options=gs.options.ViewerOptions(
-				res=(1000, 1000),
+				res=(1024, 1024),
 				camera_pos=np.array([0.0, 0.0, 1000]),
 				camera_lookat=np.array([0, 0.0, 0.0]),
 				camera_fov=60,
