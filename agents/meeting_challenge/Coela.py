@@ -50,35 +50,7 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
     # def _process_obs(self, obs):
 
     def _process_obs(self, obs):
-        # if new day, generate new hourly schedule
-        start = time.time()
-        if obs['action_status'] == "FAIL":
-            self.logger.info(f"{self.name} failed to execute last action {self.react_history[-1]}.")
-            if self.react_mode == "speak":
-                self.chatting_buffer.pop() # remove the failed chat
-
-        num_new_objects = self.s_mem.update(obs)
-        self.logger.debug(f"Process obs 2: {start}, {time.time()}")
-        self.curr_events = []
-
-        # react to new objects
-        if not self.no_react and num_new_objects > 0:
-            new_objects = self.s_mem.object_builder.get_new_objects()
-            curr_objects = self.s_mem.object_builder.get_curr_objects()
-            kws = [object.name for object in curr_objects]
-            img_path = os.path.join(self.storage_path, 'episodic_memory',
-                                    f'img_{self.curr_time.strftime("%B %d, %Y, %H:%M:%S")}.png')
-            Image.fromarray(obs['rgb']).save(img_path)
-            if "gt_seg_idxc_to_info" in obs:
-                desc = f"I see {', '.join([object.name for object in curr_objects])}."
-            else:
-                desc = self.generate_captioning(
-                    f"Here's an image including {', '.join([object.name for object in new_objects])}. Describe what you see in one sentence. Start with 'I see'.",
-                    img=img_path)
-                desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
-            self.last_react_time = self.curr_time
-            self.logger.debug(f"reacting to new objects: {desc}")
-            self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
+        super()._process_obs(obs)
         
         
         if self.chatting_with is not None:
@@ -190,6 +162,12 @@ class CoelaMeetingAgent(BaseNavigationMeetingAgent):
                     self.last_react_time = self.curr_time
 
         self.logger.debug(f"Process obs 3: {start}, {time.time()}")
+        # processing sentinels
+        values, counts = np.unique(self.obs['segmentation'], return_counts=True)
+        freq = dict(zip(values, counts))
+        values_labels, counts_labels = np.unique(self.s_mem.current_labels, return_counts=True)
+        freq_labels = dict(zip(values_labels, counts_labels))
+        self.logger.info(f"segmentation is {freq}, labels are {freq_labels}")
     
     def add_event(self, event_type, event_time, event_position, event_place, event_keywords, event_img, event_description, event_text_ft, event_poignancy=None, event_expiration=None):
         event_id = str(len(self.curr_events))

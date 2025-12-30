@@ -211,7 +211,7 @@ class SemanticMemory:
 		else:
 			labels = -np.ones_like(obs['depth'], dtype=np.int32)
 			num_new_objects = 0
-		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['depth'], -1) if not self.enable_danger_zone else obs['segmentation'] if self.detect_interval==-1 else labels, obs['extrinsics'])
+		cur_sg.add_frame(obs['rgb'], obs['depth'], np.full_like(obs['depth'], -1) if not self.enable_danger_zone else obs['segmentation'] if "gt_seg_idxc_to_info" in obs else labels, obs['extrinsics'])
 		self.current_labels = labels
 		self.num_frames += 1
 		if num_new_objects > 0:

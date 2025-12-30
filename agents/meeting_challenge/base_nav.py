@@ -432,7 +432,7 @@ class BaseNavigationMeetingAgent(Agent):
 
         self.end_time = None
 
-        self.action_history: list[Action] = []
+        self.action_history: list[Action] = [] # not used so far
         self.current_plan = None
         self.plan_start_time = None
         self.conversation_history: list[Message] = []
@@ -479,48 +479,11 @@ class BaseNavigationMeetingAgent(Agent):
         self.goal_place = None
 
     def _process_obs(self, obs):
-        if obs['action_status'] == "FAIL":
-            self.logger.info(f"{self.name} failed to execute last action {self.action_history[-1].action}.")
-            # if self.action_history[-1].action["type"] == "remote_converse":
-            #     if len(self.conversation_history) > 0 and self.conversation_history[-1].subject == self.name:
-            #         self.conversation_history.pop()
-        if len(obs['events']) > 0:
-            for event in obs['events']:
-                if event["type"] == "speech":
-                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
-                    self.discuss_process_speech(obs)
-                if event["type"] == "app message":
-                    if event["subject"] != self.name:
-                        continue
-                    if self.last_action['type']=="query_app":
-                        if self.last_action['arg1']=="query_route":
-                            if event['content'] is None:
-                                time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
-                            else:
-                                time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
-                            if self.goal_place==self.last_action["arg2"]:
-                                self.last_route=event["content"]
-                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
-                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
-                            self.update_known_eta(
-                                {
-                                    self.last_action['arg2']:
-                                    {
-                                        self.name: str(time_to_arrival)
-                                    }
-                                })
-                        elif self.last_action["arg1"]=="query_place":
-                            self.s_mem.update_with_new_knowledge(event["content"])
-                        elif self.last_action["arg1"]=="query_nearby":
-                            self.places_buffer.extend(event['content'])
-                        elif self.last_action["arg1"]=="query_grid_map":
-                            self.grid_map = event['content']
-                if event["type"] == "sentinel signal":
-                    if event['content']['arg2'] != self.name: continue
-                    if event['content']['arg1'] == 'ban':
-                        self.logger.info("I'm being banned...")
-                        self.banned = True
+        # if obs['action_status'] == "FAIL": commented because we don't use action_history, to prevent unknown behavior
+        #     self.logger.info(f"{self.name} failed to execute last action {self.action_history[-1].action}.")
+        start = time.time()
         num_new_objects = self.s_mem.update(obs, last_nav=self.last_nav)
+        self.logger.debug(f"Update Semantic Memory: {start}, {time.time()}")
         self.curr_time = obs['curr_time']
         self.held_objects = obs['held_objects']
         self.current_place = obs['current_place']
@@ -557,6 +520,45 @@ class BaseNavigationMeetingAgent(Agent):
             self.route_history['last_route'][self.obs['steps']]=copy.deepcopy(self.last_route.to_dict())
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
+
+    def process_obs_with_sptial_knowledge(self):
+        # react to events
+        if len(obs['events']) > 0:
+            for event in obs['events']:
+                if event["type"] == "speech":
+                    self.conversation_history.append(Message(self.curr_time, event["subject"], event["content"]))
+                    self.discuss_process_speech(obs)
+                if event["type"] == "app message":
+                    if event["subject"] != self.name:
+                        continue
+                    if self.last_action['type']=="query_app":
+                        if self.last_action['arg1']=="query_route":
+                            if event['content'] is None:
+                                time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
+                            else:
+                                time_to_arrival = timedelta(seconds=int(event['content'].calc_time(pose=self.get_outdoor_pose())))
+                            if self.goal_place==self.last_action["arg2"]:
+                                self.last_route=event["content"]
+                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
+                            self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
+                            self.update_known_eta(
+                                {
+                                    self.last_action['arg2']:
+                                    {
+                                        self.name: str(time_to_arrival)
+                                    }
+                                })
+                        elif self.last_action["arg1"]=="query_place":
+                            self.s_mem.update_with_new_knowledge(event["content"])
+                        elif self.last_action["arg1"]=="query_nearby":
+                            self.places_buffer.extend(event['content'])
+                        elif self.last_action["arg1"]=="query_grid_map":
+                            self.grid_map = event['content']
+                if event["type"] == "sentinel signal":
+                    if event['content']['arg2'] != self.name: continue
+                    if event['content']['arg1'] == 'ban':
+                        self.logger.info("I'm being banned...")
+                        self.banned = True
         # processing sentinels
         values, counts = np.unique(self.obs['segmentation'], return_counts=True)
         freq = dict(zip(values, counts))

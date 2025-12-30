@@ -29,7 +29,9 @@ class RoCoMeetingAgent(BaseNavigationMeetingAgent):
     def reset(self, name, pose):
         super().reset(name, pose)
 
-    # def _process_obs(self, obs):
+    def _process_obs(self, obs):
+        super()._process_obs(obs)
+        self.process_obs_with_sptial_knowledge()
 
     def _act(self, obs):
         if self.banned:
