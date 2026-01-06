@@ -521,7 +521,7 @@ class BaseNavigationMeetingAgent(Agent):
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
-    def process_obs_with_sptial_knowledge(self):
+    def process_obs_with_sptial_knowledge(self, obs):
         # react to events
         if len(obs['events']) > 0:
             for event in obs['events']:

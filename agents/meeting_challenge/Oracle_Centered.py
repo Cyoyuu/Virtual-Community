@@ -28,7 +28,9 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
     def reset(self, name, pose):
         super().reset(name, pose)
 
-    # def _process_obs(self, obs):
+    def _process_obs(self, obs):
+        super()._process_obs(obs)
+        self.process_obs_with_sptial_knowledge(obs)
 
     def _act(self, obs):
         if self.banned:
@@ -54,8 +56,8 @@ class HeuristicNavigationMeetingAgent(BaseNavigationMeetingAgent):
                     self.last_action = action
                     return action
             self.meeting_place = self.get_meeting_place()
-            self.enter_navigation_mode()
-        action, arrived = self.city_navigate(self.meeting_place)
+            self.enter_navigation_mode(goal_place=self.meeting_place)
+        action, arrived = self.city_navigate(self.goal_place)
         if arrived:
             action = {'type': 'task_complete'}
         self.mode_time_counter += 1

@@ -229,7 +229,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 else:
                     self.known_sentinel_poses[i][3]=1
         super()._process_obs(obs)
-        self.process_obs_with_sptial_knowledge()
+        self.process_obs_with_sptial_knowledge(obs)
         emergency = 0
         for sentinel in self.visible_sentinels:
             if np.linalg.norm(np.array(self.pose[:2])-np.array(self.visible_sentinels[sentinel][:2]))<18:
