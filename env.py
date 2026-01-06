@@ -970,23 +970,26 @@ class VicoEnv:
 			if action["arg1"] == "query_accessible_places":
 				assert action["arg2"] in self.place_metadata
 				pose = agent.get_global_pose()
+				gs.logger.info(f"debug action triggerred: checking {action['arg2']} for accissibility. {self.agent_names[agent_id]}'s current place is {self.agent_infos[agent_id]['current_place']}, current building is {self.agent_infos[agent_id]['current_building']}, outdoor pose is {self.agent_infos[agent_id]['outdoor_pose']}, current pose is {pose}.")
 				if self.agent_infos[agent_id]["current_place"] is not None:
 					assert self.agent_infos[agent_id]["current_building"] != "open space", "The current building must be provided if the agent is not in the open space."
-					assert action["arg2"] in [place["name"] for place in building_metadata[self.agent_infos[agent_id]["current_building"]]["places"] if place["name"] != self.agent_infos[agent_id]["current_place"]]
+					assert action["arg2"] in [place["name"] for place in self.building_metadata[self.agent_infos[agent_id]["current_building"]]["places"] if place["name"] != self.agent_infos[agent_id]["current_place"]]
 					# accessible_places.extend([place["name"] for place in building_metadata[self.agent_infos[agent_id]["current_building"]]["places"] if place["name"] != self.agent_infos[agent_id]["current_place"]])
 					# accessible_places.append("open space")
 					# return accessible_places
-				for building in building_metadata:
+				for building in self.building_metadata:
 					if building == "open space":
-						for place in building_metadata[building]["places"]:
+						gs.logger.warning(f"checking openspace")
+						for place in self.building_metadata[building]["places"]:
+							gs.logger.warning(f"checking place {place}")
 							if place == action["arg2"]:
 								gs.logger.warning(f"Checking accessibility for place {action['arg2']} in open space, is_near_goal is {is_near_goal(pose[0], pose[1], None, place['location'][:2], threshold=5)}")
 							# if place["name"] in place_metadata and is_near_goal(pose[0], pose[1], None, place["location"][:2], threshold=5):
 							# 	accessible_places.append(place["name"])
-					if building_metadata[building]['bounding_box'] is None:
+					if self.building_metadata[building]['bounding_box'] is None:
 						continue
-					if action["arg2"] in building_metadata[building]["places"]:
-						gs.logger.warning(f"Checking accessibility for place {action['arg2']} in open space, is_near_goal is {is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=5)}")
+					if action["arg2"] in self.building_metadata[building]["places"]:
+						gs.logger.warning(f"Checking accessibility for place {action['arg2']} in open space, is_near_goal is {is_near_goal(pose[0], pose[1], self.building_metadata[building]['bounding_box'], None, threshold=5)}")
 					# if is_near_goal(pose[0], pose[1], building_metadata[building]['bounding_box'], None, threshold=5):
 					# 	accessible_places.extend([place["name"] for place in building_metadata[building]["places"] if place["name"] in place_metadata])
 		else:
