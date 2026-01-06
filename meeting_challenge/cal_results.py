@@ -16,11 +16,12 @@ args = parser.parse_args()
 base_results_dir = args.results_dir
 results = dict()
 average_results = dict()
-job_id_range = range(1, 2)
+job_id_range = range(1, 3)
 for agent_type in os.listdir(base_results_dir):
     if not os.path.isdir(os.path.join(base_results_dir, agent_type)): continue
     for scene in os.listdir(os.path.join(base_results_dir, agent_type)):
         if "_old" in str(scene).lower(): continue
+        if "BARCELONA" in str(scene).upper(): continue
         for job_id in job_id_range:
             # if "_" not in dir_name:
             #     continue
