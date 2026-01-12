@@ -193,7 +193,6 @@ class VolumeGridBuilder:
             draw_map[np.where(occ_map == 2)] = [255, 255, 255]
             draw_map[np.where(occ_map == 3)] = [0, 0, 255]
             draw_map[np.where(occ_map == 4)] = [0, 255, 255]
-            draw_map[np.where(occ_map == 10)] = [255, 255, 0]
 
             def draw_point(x, y, color):
                 x = int(self.align_nav(x))
