@@ -278,6 +278,9 @@ def main():
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == "replay":
+            basic_kwargs['steps'] = None # @ ruxi fill this: pass action list from steps.json to the replay agent in basic_kwargs
+            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
