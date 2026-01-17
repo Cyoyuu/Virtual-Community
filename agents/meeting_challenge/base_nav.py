@@ -427,6 +427,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.comm = self.num_agents > 1
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"), enable_danger_zone=enable_danger_zone, detection_min_pixel_ratio=0.0005)
         os.makedirs(f"{self.storage_path}/episodic_memory", exist_ok=True)
+        os.makedirs(f"{self.storage_path}/generated_waypoints", exist_ok=True)
 
         if init_generator:
 
