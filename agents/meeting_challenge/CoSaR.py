@@ -574,10 +574,11 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         img = buf[:, :, :3]  # drop alpha
         if img.shape[0]>800:
             img = img[::2, ::2, :]
+        img = Image.fromarray(np.array(img).astype(np.uint8))
         if save_path is not None:
             img.save(save_path)
         plt.close(fig)
-        return Image.fromarray(np.array(img).astype(np.uint8))
+        return img
 
     def parse_json_with_image(self, prompt, image, response, last_call=False):
         json_str = None
