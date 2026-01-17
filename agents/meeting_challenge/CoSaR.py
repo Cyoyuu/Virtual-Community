@@ -291,9 +291,6 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        # if self.grid_map is None:
-        #     self.last_action = {"type": "query_app", "arg1": "query_grid_map"}
-        #     return self.last_action
         # if still in emergency
         if 1 <= self.emergency <= 10:
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
@@ -319,14 +316,6 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route]}
                 self.last_action = action
                 return self.last_action
-                # route = self.spatial_resoner.refine_waypoints(self.pose, self.grid_map, self.known_sentinel_poses, self.last_route)
-                # if route is not None:
-                #     self.last_route = Route()
-                #     for wp in route:
-                #         wp[0], wp[1] = (wp[1] + (-490)//20)*20+10, (wp[0] + (-490)//20)*20+10
-                #         self.last_route.append(RouteNode(list(wp), 'walk', datetime.combine(self.curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
-                # else:
-                #     self.logger.warning(f"Fail to generate new route, still using the original one!")
             if self.navigation_plan is not None:
                 action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route], "arg4": self.navigation_plan}
                 self.last_action = action
@@ -422,3 +411,215 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
 
         # Return or update navigation goal
         return (target_x, target_y)
+    
+    def generate_navigation_plan_with_img(self, max_retry=3):
+        assert max_retry >= 0
+        if max_retry == 0:
+            # Fallback: use first 3 waypoints from last_route
+            nav_horizon = 0
+            self.last_nav = []
+            while nav_horizon < len(self.last_route) and nav_horizon < 3 and self.last_route[nav_horizon].transit == 'walk':
+                self.last_nav.append(self.last_route[nav_horizon].location)
+                nav_horizon += 1
+            return
+        # get occ map
+        builder = self.s_mem.get_sg(place=self.current_place).volume_grid_builder
+        occ_map, x_min, y_min, x_max, y_max = builder.get_occ_map() # occ map: 1 for unknown, 2 for obstacle, 3 for open, 4 for warning
+        agent_x_world, agent_y_world = self.pose[0], self.pose[1]
+        agent_pos_in_map = [
+            builder.align_nav(agent_x_world) - x_min,
+            builder.align_nav(agent_y_world) - y_min
+        ]
+        # Define local crop around agent (±30m in world coordinates)
+        x_low_w, x_up_w = max(agent_x_world - 30, -400), min(agent_x_world + 30, 400)
+        y_low_w, y_up_w = max(agent_y_world - 30, -400), min(agent_y_world + 30, 400)
+        # Convert to map indices
+        x_low = int(max(0, builder.align_nav(x_low_w) - x_min))
+        x_up = int(min(occ_map.shape[1], builder.align_nav(x_up_w) - x_min))
+        y_low = int(max(0, builder.align_nav(y_low_w) - y_min))
+        y_up = int(min(occ_map.shape[0], builder.align_nav(y_up_w) - y_min))
+        def get_pos_in_map(pos):
+            return [builder.align_nav(pos[0]) - x_min - x_low, builder.align_nav(pos[1]) - y_min - y_low]
+
+        # Crop the occupancy map
+        if x_low >= x_up or y_low >= y_up:
+            raise ValueError("Invalid crop bounds after alignment.")
+
+        cropped_map = occ_map[y_low:y_up, x_low:x_up]  # Note: y first, then x
+
+        img = self.visualize_occ_map_with_objects(cropped_map, min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[get_pos_in_map(wp.location) for wp in self.last_route], circle_coords=[get_pos_in_map(sentinel_pos) for sentinel_pos in self.visible_sentinels], agent_coords=[get_pos_in_map(self.pose)], target_coords=[get_pos_in_map(self.last_route[-1].location)])
+        
+        # Encode full route and goal
+        path_local = []
+        path_global = []
+        for pt in self.last_route:
+            if x_low_w <= pt.location[0] <= x_up_w and y_low_w <= pt.location[1] <= y_up_w:
+                path_local.append(pt.location)
+            path_global.append(pt.location)
+
+        route_local_str = " → ".join(f"({x:.1f},{y:.1f})" for x, y in path_local) if path_local else "None"
+        route_global_str = " → ".join(f"({x:.1f},{y:.1f})" for x, y in path_global) if path_global else "None"
+        goal_grid = path_global[-1] if path_global else "unknown"
+        route_global_str += " (goal)"
+
+        prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan_with_img.txt","r").read()
+        # Format the prompt
+        prompt = prompt.replace("$SelfPose$", str(self.pose[:2]))
+        prompt = prompt.replace(
+            "$route_local$", route_local_str
+        )
+        prompt = prompt.replace(
+            "$route_global$", route_global_str
+        )
+        prompt = prompt.replace(
+            "$goal_grid$", str(goal_grid) if isinstance(goal_grid, list) else "unknown"
+        )
+        prompt = prompt.replace(
+            "$KnownSentinelPoses$", json.dumps(self.visible_sentinels)
+        )
+        self.logger.debug(f"navigating_prompt: {prompt}")
+        try:
+            response = self.generator.generate(prompt, img=img, json_mode=False)
+            response_dict = self.parse_json_with_image(prompt, img, response)
+            self.logger.debug(f"generated response: {response_dict}")
+            waypoints = response_dict
+            if not isinstance(waypoints, list) or len(waypoints) == 0:
+                raise ValueError("Waypoints must be a non-empty list.")
+            self.last_nav = waypoints
+            if self.debug:
+                self.visualize_occ_map_with_objects(
+                    cropped_map,
+                    min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[get_pos_in_map(wp.location) for wp in self.last_route], circle_coords=[get_pos_in_map(sentinel_pos) for sentinel_pos in self.visible_sentinels], agent_coords=[get_pos_in_map(self.pose)], target_coords=[get_pos_in_map(self.last_route[-1].location)], 
+                    save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"
+                )
+        except Exception as e:
+            self.logger.error(
+                f"Error generating navigation plan: {e} with traceback: {traceback.format_exc()}. Response was: {response}"
+            )
+            self.generate_navigation_plan_with_img(max_retry=max_retry - 1)
+
+    def visualize_occ_map_with_objects(self, cropped_map, route_coords=None, circle_coords=None, agent_coords=None, target_coords=None, new_route_coords=None, save_path=None, 
+                                resolution=1.0, min_x=0, min_y=0, max_x=0, max_y=0):
+        # Build RGB map
+        h, w = cropped_map.shape
+        draw_map = np.zeros((h, w, 3), dtype=np.uint8)
+
+        # Map semantics: 1=unknown(gray), 2=obstacle(white), 3=open(black), 4=warning(red)
+        draw_map[cropped_map == 1] = [128, 128, 128]   # gray
+        draw_map[cropped_map == 2] = [255, 255, 255]   # white
+        draw_map[cropped_map == 3] = [0, 0, 0]         # black
+        draw_map[cropped_map == 4] = [255, 0, 0]       # red
+
+        # --- Plot background grid ---
+        fig, ax = plt.subplots(figsize=(8, 8))
+        ax.imshow(draw_map, origin='lower', extent=[min_x, max_x, min_y, max_y])
+
+        # Helper: test if a coordinate is in free space
+        def is_free(x, y):
+            gx = int((x) / resolution)
+            gy = int((y) / resolution)
+            if gx < 0 or gx >= w or gy < 0 or gy >= h:
+                return False
+            # cropped_map: 3 = open (free)
+            return cropped_map[gy, gx] == 3
+
+        # --- 2️⃣ Circle-like coordinates ---
+        if circle_coords is not None:
+            for (x, y) in circle_coords:
+                # if is_free(x, y):
+                circle = Circle((x, y), radius=5, edgecolor='red',
+                                facecolor='red', linewidth=1.5)
+                ax.add_patch(circle)
+
+        # --- 1️⃣ Route-like coordinates ---
+        if route_coords is not None and len(route_coords) > 0:
+            # self.logger.info(f"getting grid image, route_coords are {route_coords}")
+            route_coords = np.array([p for p in route_coords if is_free(p[0], p[1])])
+            if len(route_coords) > 0:
+                ax.plot(route_coords[:, 0], route_coords[:, 1], c='blue', linewidth=1.5)
+                ax.scatter(route_coords[:, 0], route_coords[:, 1],
+                        s=12, c='blue', edgecolors='k', linewidths=0.3, zorder=3)
+
+        # --- 1️⃣ New Route-like coordinates ---
+        if new_route_coords is not None and len(new_route_coords) > 0:
+            new_route_coords = np.array([p for p in new_route_coords if is_free(p[0], p[1])])
+            if len(new_route_coords) > 0:
+                ax.plot(new_route_coords[:, 0], new_route_coords[:, 1], c='orange', linewidth=1.5)
+                ax.scatter(new_route_coords[:, 0], new_route_coords[:, 1],
+                        s=12, c='orange', edgecolors='k', linewidths=0.3, zorder=3)
+
+        # --- 3️⃣ Point-like coordinates ---
+        if agent_coords is not None:
+            pts = np.array([p for p in agent_coords if is_free(p[0], p[1])])
+            if len(pts) > 0:
+                ax.scatter(pts[:, 0], pts[:, 1], s=12, c='green', zorder=3)
+
+        # --- 3️⃣ Point-like coordinates ---
+        if target_coords is not None:
+            pts = np.array([p for p in target_coords if is_free(p[0], p[1])])
+            if len(pts) > 0:
+                ax.scatter(pts[:, 0], pts[:, 1], s=12, c='purple', zorder=3)
+
+        # --- Display setup ---
+        ax.set_xlabel("X (world units)")
+        ax.set_ylabel("Y (world units)")
+        ax.set_title("Occupancy Grid with External Elements")
+        ax.grid(True, linestyle=':', alpha=0.4)
+        ax.axis('equal')
+        plt.tight_layout(pad=0., rect=[0, 0, 1, 1])
+
+        fig.canvas.draw()
+        buf = np.asarray(fig.canvas.buffer_rgba())
+        h, w, _ = buf.shape
+        img = buf[:, :, :3]  # drop alpha
+        if img.shape[0]>800:
+            img = img[::2, ::2, :]
+        if save_path is not None:
+            img.save(save_path)
+        plt.close(fig)
+        return Image.fromarray(np.array(img).astype(np.uint8))
+
+    def parse_json_with_image(self, prompt, image, response, last_call=False):
+        json_str = None
+        if "```json" in response:
+            # Step 1: Extract the JSON part
+            start = response.find("```json") + len("```json")
+            end = response.find("```", start)
+            json_str = response[start:end].strip()
+        else:
+            self.logger.warning(f"Error parsing JSON, the string was {response}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!", img=image,
+                    chat_history=chat_history)
+                return self.parse_json_with_image(None, None, data, last_call=True)
+            else:
+                self.logger.error(f"Error parsing JSON, already last call, the string was {response}")
+                return None
+
+        # # Step 2: Clean up the JSON
+        # # Replace single quotes with double quotes
+        # # Safely evaluate the string to a Python dictionary
+        # parsed_dict = ast.literal_eval(json_str)
+        # # Convert the dictionary back to a JSON string
+        # json_str = json.dumps(parsed_dict)
+
+        # Step 3: Convert to dictionary
+        try:
+            response = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            self.logger.warning(f"Error decoding JSON: {e}, the string was {json_str}")
+            if not last_call:
+                chat_history = [
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": response}
+                ]
+                data = self.generator.generate(
+                    f"The output format is wrong. Output the formatted json string enclosed in ```json``` only! Do not include any other character in the output!",
+                    chat_history=chat_history)
+                return self.parse_json(None, data, last_call=True)
+        return response
