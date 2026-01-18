@@ -520,7 +520,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         def is_free(x, y):
             gx = int((x) / resolution)
             gy = int((y) / resolution)
-            if gx < 0 or gx >= w or gy < 0 or gy >= h:
+            if gx < min_x or gx >= max_x or gy < min_y or gy >= max_y:
                 return False
             # cropped_map: 3 = open (free)
             return cropped_map[gy, gx] != 2

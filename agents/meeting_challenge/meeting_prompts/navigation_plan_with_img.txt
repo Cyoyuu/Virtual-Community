@@ -33,14 +33,14 @@ $KnownSentinelPoses$
 
 Generate a **new safe route** from your current position to the target destination:
 The route should be represented by a series of waypoints
-The route should not pass any dangerous zones unless necessary. You shouldn't get closer to any sentinel than 20m
+The route should not pass any dangerous zones unless necessary.
 The route should always starts from your current position.
 The waypoints should fulfill the following requirement:
 - The waypoints should be located in transitable zones.
 - The waypoints should not be located in dangerous zones, unless necessary.
 - The waypoints should guarantee connectivity. One can easily find its way by following the waypoints in order, with the possibility of lost its way minimized.
 - The waypoints should not be too dense. Try not place multiple waypoints along one street where there are no crossroads.
-You only need to find a partial route within the map range.
+You only need to find a partial route within the map range. Try output 3 to 5 waypoints.
 
 ---
 
@@ -55,7 +55,7 @@ Example Input:
 You also have your numeric position for reference:
 [15.4, 18.5]
 
-Current local route suggestion: (20, 20) → (25, 30) → (30, 35) → (40, 40)
+Current local route suggestion: (20, 20) → (25, 29) → (30, 34) → (40, 40)
 Current global route suggestion: (20, 20) → (25, 29) → (30, 34) → (40, 40) → (47, 43) → (55, 40)(goal)
 
 And all known sentinel poses:
@@ -69,7 +69,6 @@ Example output:
 
 ```json
 [
-    [20.0, 20.0],
     [15.6, 30.5],
     [20.3, 40.9],
     [30.9, 45.7]
