@@ -506,10 +506,10 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         draw_map = np.zeros((h, w, 3), dtype=np.uint8)
         self.logger.debug(f"h and w are {h} and {w}, agent_coords is {agent_coords}")
 
-        # Map semantics: 1=unknown(gray), 2=obstacle(white), 3=open(black), 4=warning(red)
+        # Map semantics: 1=unknown(gray), 2=obstacle(black), 3=open(white), 4=warning(red)
         draw_map[cropped_map == 1] = [128, 128, 128]   # gray
-        draw_map[cropped_map == 2] = [255, 255, 255]   # white
-        draw_map[cropped_map == 3] = [0, 0, 0]         # black
+        draw_map[cropped_map == 2] = [0, 0, 0]   # black
+        draw_map[cropped_map == 3] = [255, 255, 255]         # white
         draw_map[cropped_map == 4] = [255, 0, 0]       # red
 
         # --- Plot background grid ---
@@ -523,7 +523,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if gx < 0 or gx >= w or gy < 0 or gy >= h:
                 return False
             # cropped_map: 3 = open (free)
-            return cropped_map[gy, gx] == 3
+            return cropped_map[gy, gx] != 2
 
         # --- 2️⃣ Circle-like coordinates ---
         if circle_coords is not None:
@@ -552,7 +552,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
 
         # --- 3️⃣ Point-like coordinates ---
         if agent_coords is not None:
-            pts = np.array([p for p in agent_coords if is_free(p[0], p[1])])
+            pts = np.array([p for p in agent_coords])
             if len(pts) > 0:
                 ax.scatter(pts[:, 0], pts[:, 1], s=12, c='green', zorder=3)
 
