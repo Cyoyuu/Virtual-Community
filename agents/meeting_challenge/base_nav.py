@@ -867,12 +867,12 @@ class BaseNavigationMeetingAgent(Agent):
     def llm_navigate(self, max_retry = 3, threshold=200.):
         assert len(self.last_route)>0
         self.logger.debug(f"Current last_nav is {self.last_nav}")
-        if not self.last_nav or max_retry == 0:
+        if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
             self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
         # If the estimated arrival time exceeds, regenerate
         estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
-        if self.last_estimated_move_time + timedelta(seconds=25) < estimated_move_time:
+        if self.last_estimated_move_time + timedelta(seconds=30) < estimated_move_time:
             self.generate_navigation_plan(max_retry)
             self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
         # throw away arrived waypoints
@@ -889,7 +889,7 @@ class BaseNavigationMeetingAgent(Agent):
             action = self.navigate(self.s_mem.get_sg(), curr_goal)
             arrived = is_near_goal(cur_trans[0], cur_trans[1], None, curr_goal, threshold=10)
             if arrived: self.last_nav.pop(0)
-        return action, arrived
+        return action, False
     
     def generate_navigation_plan(self, max_retry=3):
         if self.rethink == True:
