@@ -827,7 +827,7 @@ class BaseNavigationMeetingAgent(Agent):
         idx = len(self.last_route)-1
         while idx > 0:
             idx -= 1
-            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx].location, threshold=5 if idx==len(self.last_route)-1 else 10)
+            arrived = is_near_goal(cur_trans[0], cur_trans[1], None, self.last_route[idx].location, threshold=5 if idx==len(self.last_route)-1 else 20)
             if arrived:
                 for i in range(idx+1):
                     self.last_route.pop(0)
