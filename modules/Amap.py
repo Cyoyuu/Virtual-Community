@@ -753,8 +753,8 @@ if __name__ == "__main__" :
         for line in file:
             ref_lat, ref_lon = line.strip().split()
         ref_lat, ref_lon = float(ref_lat), float(ref_lon)
-    building_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_5", "building_metadata.json"), 'r'))
-    place_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_5", "place_metadata.json"), 'r'))
+    building_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_15", "building_metadata.json"), 'r'))
+    place_metadata = json.load(open(os.path.join(f"assets/scenes/{args.scene}/agents_num_15", "place_metadata.json"), 'r'))
     amap=Amap(scene_name=args.scene, building_metadata=building_metadata, place_metadata=place_metadata)
     # this code is for generating sentinel config
     # random_sampled_points=list(np.random.uniform(low=-300, high=300, size=(10, 2)))

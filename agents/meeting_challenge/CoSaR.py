@@ -464,6 +464,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
 
         prompt=open("agents/meeting_challenge/meeting_prompts/navigation_plan_with_img.txt","r").read()
         # Format the prompt
+        prompt = prompt.replace("$TaskDescription$", self.spatial_resoner.task_decription)
         prompt = prompt.replace("$SelfPose$", str(self.pose[:2]))
         prompt = prompt.replace(
             "$route_local$", route_local_str
@@ -503,6 +504,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         # Build RGB map
         h, w = cropped_map.shape
         draw_map = np.zeros((h, w, 3), dtype=np.uint8)
+        self.logger.debug(f"h and w are {h} and {w}, agent_coords is {agent_coords}")
 
         # Map semantics: 1=unknown(gray), 2=obstacle(white), 3=open(black), 4=warning(red)
         draw_map[cropped_map == 1] = [128, 128, 128]   # gray
