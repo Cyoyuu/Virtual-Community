@@ -523,7 +523,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if gx < min_x or gx >= max_x or gy < min_y or gy >= max_y:
                 return False
             # cropped_map: 3 = open (free)
-            return cropped_map[gy, gx] != 2
+            return True
 
         # --- 2️⃣ Circle-like coordinates ---
         if circle_coords is not None:
