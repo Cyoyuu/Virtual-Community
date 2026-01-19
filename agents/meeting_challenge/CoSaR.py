@@ -447,7 +447,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
 
         cropped_map = occ_map[y_low:y_up, x_low:x_up]  # Note: y first, then x
 
-        img = self.visualize_occ_map_with_objects(cropped_map, min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[wp.location for wp in self.last_route], circle_coords=[sentinel_pos[:2] for sentinel_pos in self.visible_sentinels], agent_coords=[self.pose[:2]], target_coords=[self.last_route[-1].location])
+        img = self.visualize_occ_map_with_objects(cropped_map, min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[wp.location for wp in self.last_route], circle_coords=[sentinel_pos[:2] for sentinel_pos in self.visible_sentinels.values()], agent_coords=[self.pose[:2]], target_coords=[self.last_route[-1].location])
         
         # Encode full route and goal
         path_local = []
@@ -490,7 +490,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.debug:
                 self.visualize_occ_map_with_objects(
                     cropped_map,
-                    min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[wp.location for wp in self.last_route], circle_coords=[sentinel_pos[:2] for sentinel_pos in self.visible_sentinels], agent_coords=[self.pose[:2]], target_coords=[self.last_route[-1].location], new_route_coords=self.last_nav,
+                    min_x=x_low_w, max_x=x_up_w, min_y=y_low_w, max_y=y_up_w, route_coords=[wp.location for wp in self.last_route], circle_coords=[sentinel_pos[:2] for sentinel_pos in self.visible_sentinels.values()], agent_coords=[self.pose[:2]], target_coords=[self.last_route[-1].location], new_route_coords=self.last_nav,
                     save_path=f"{self.storage_path}/generated_waypoints/navigation_plan_{self.steps:06d}.png"
                 )
         except Exception as e:
