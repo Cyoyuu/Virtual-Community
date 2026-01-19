@@ -32,6 +32,9 @@ $KnownPoses$
 - Known ETAs (contains agents' computed ETAs to specific places known by this agent but not others):
 $KnownETA$
 
+- Known ETAs (contains agents' computed ETAs to specific places known by this agent but not others):
+$KnownETA$
+
 - Reported sentinel poses:
 $KnownSentinelPoses$
 
@@ -96,7 +99,7 @@ Other agents are actively speaking or querying.
 The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
 
-For example, if you need someone's ETA but haven't ask for it, go for "speak". If someone else have asked for that ETA, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration.
+For example, if you need someone's ETA but haven't ask for it, go for "speak". If someone else have asked for that ETA, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again.
 
 
 —
