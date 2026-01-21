@@ -892,7 +892,7 @@ class BaseNavigationMeetingAgent(Agent):
         return action, False
     
     def generate_navigation_plan(self, max_retry=3):
-        if self.rethink == True:
+        if False and self.rethink == True:
             return self.generate_navigation_plan_with_img(max_retry=3)
         else:
             return self.generate_navigation_plan_without_img(max_retry=0)
