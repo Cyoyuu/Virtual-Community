@@ -27,21 +27,33 @@ class ReplayAgent(Agent):
         self.looking_down = False
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), detect_interval=detect_interval, debug=self.debug, logger=self.logger, knowledge_path=os.path.join(self.storage_path, "seed_knowledge.json"))
 
-        self.steps = None # @ruxi fill this: action list read from the output
+        self.steps = steps if steps is not None else []  # @ruxi fill this: action list read from the output
         self.step = 0
 
     def reset(self, name, pose):
         super().reset(name, pose)
         self.curr_time = datetime.strptime(self.scratch['curr_time'], "%B %d, %Y, %H:%M:%S") if self.scratch['curr_time'] is not None else None
         self.s_mem = SemanticMemory(os.path.join(self.storage_path, "semantic_memory"), debug=self.debug, logger=self.logger)
+        self.step = 0
 
     def _process_obs(self, obs):
         pass
 
     def _act(self, obs):
+        if self.steps is None or len(self.steps) == 0:
+            return {'type': 'task_terminate'}
+
+        if self.step >= len(self.steps):
+            return {'type': 'task_terminate'}
+
         action = self.steps[self.step]
-        if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'enter_bus', 'exit_bus']:
-            # @ruxi fill this: execute action
-            pass
-        else:
-            return {'type': 'wait'}
+        self.step += 1
+
+        if isinstance(action, str):
+            if action in ['move_forward', 'turn_left', 'turn_right', 'enter', 'enter_bus', 'exit_bus']:
+                # @ruxi fill this: execute action
+                return {'type': action}
+            else:
+                return {'type': 'wait'}
+
+        return {'type': 'wait'}

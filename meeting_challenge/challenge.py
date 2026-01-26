@@ -105,7 +105,7 @@ def main():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'replay'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
@@ -125,6 +125,7 @@ def main():
     parser.add_argument("--refine_retry", type=int, default=10)
     parser.add_argument("--gt_only_for_sentinels", action='store_true')
     parser.add_argument("--detect_interval", type=int, default=-1)
+    parser.add_argument("--replay_steps_path", type=str, default=None)
     args = parser.parse_args()
 
     random.seed(time.time())
@@ -243,6 +244,14 @@ def main():
     )
     obs = env.reset()
 
+    replay_steps_info = None
+    if args.agent_type == "replay":
+        if args.replay_steps_path is None:
+            raise ValueError("replay mode requires --replay_steps_path pointing to a steps.json")
+        with open(args.replay_steps_path, "r") as f:
+            replay_steps_info = json.load(f)
+        replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
+
     # Initialize the proposer agents and NPC agents
     name2idx = {}
     all_agent_processes: list[AgentProcess] = []
@@ -279,8 +288,16 @@ def main():
             basic_kwargs['refine_retry'] = args.refine_retry
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "replay":
-            basic_kwargs['steps'] = None # @ ruxi fill this: pass action list from steps.json to the replay agent in basic_kwargs
+            steps_for_agent = []
+            for k in replay_step_keys:
+                a = replay_steps_info[k].get("action", {}).get(str(i), None)
+                if a is None:
+                    steps_for_agent.append({'type': 'wait'})
+                else:
+                    steps_for_agent.append(a)
+            basic_kwargs['steps'] = steps_for_agent # @ ruxi fill this: pass action list from steps.json to the replay agent in basic_kwargs
             all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
+
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
