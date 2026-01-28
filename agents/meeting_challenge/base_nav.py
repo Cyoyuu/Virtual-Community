@@ -602,7 +602,10 @@ class BaseNavigationMeetingAgent(Agent):
             if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
                 self.enter_discussion_mode(trigger="NEW DISCUSSION")
         elif self.mode==NavAgentState.DISCUSS:
-            extracted_info = self.discusser.extract_info(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
+            if 'spatial_memory' in self.ablate or 'analyzer' in self.ablate:
+                extracted_info = {}
+            else:
+                extracted_info = self.discusser.extract_info(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
             conclusion_and_decision = self.discusser.conclude_and_decide(curr_time=curr_time, agent_names=agent_names, places=places, conversation_history=conversation_history)
             self.agent_opinions = conclusion_and_decision['agent_opinions']
             decision = conclusion_and_decision['agreement_check']
