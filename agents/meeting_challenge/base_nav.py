@@ -205,25 +205,6 @@ class Decider(ThinkingModule):
     def __init__(self, generator, logger, name):
         super().__init__(generator, logger, name)
     
-    def conclude_and_decide(self, curr_time, agent_names, places, conversation_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_2in1.txt", "r").read()
-        prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$CurrentTime$", curr_time)
-        prompt = prompt.replace("$SelfName$", self.name)
-        prompt = prompt.replace("$AgentList$", agent_names)
-        prompt = prompt.replace("$Places$", places)
-        prompt = prompt.replace("$ConversationHistory$", conversation_history)
-        self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-        try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
-        except Exception as e:
-            self.logger.error(
-                f"Error concluding opinions: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
-    
     def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_rethink.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
@@ -263,11 +244,31 @@ class Decider(ThinkingModule):
 
 
 class Discusser(ThinkingModule):
-    def __init__(self, generator, logger, name):
+    def __init__(self, generator, logger, name, ablate=""):
         super().__init__(generator, logger, name)
+        self.ablate = ablate
+    
+    def conclude_and_decide(self, curr_time, agent_names, places, conversation_history):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if self.ablate=='spatial_memory' else ''}conclude_and_decide.txt", "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", self.name)
+        prompt = prompt.replace("$AgentList$", agent_names)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error concluding opinions: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
 
-    def extract(self, name, agent_names, places, conversation_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_extract.txt", "r").read()
+    def extract_info(self, name, agent_names, places, conversation_history):
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if self.ablate=='spatial_memory' else ''}extract_info.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agent_names)
@@ -283,59 +284,9 @@ class Discusser(ThinkingModule):
                 f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
             response_dict = None
         return response_dict
-
-    def analyze(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze.txt", "r").read()
-        prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$CurrentTime$", curr_time)
-        prompt = prompt.replace("$SelfName$", self.name)
-        prompt = prompt.replace("$SelfPose$", pose)
-        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
-        prompt = prompt.replace("$Places$", places)
-        prompt = prompt.replace("$ConversationHistory$", conversation_history)
-        prompt = prompt.replace("$KnownPoses$", known_poses)
-        prompt = prompt.replace("$KnownETA$", known_eta)
-        self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-        try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
-        except Exception as e:
-            self.logger.error(
-                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
-    
-    def plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_plan.txt", "r").read()
-        prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$CurrentTime$", curr_time)
-        prompt = prompt.replace("$SelfName$", self.name)
-        prompt = prompt.replace("$SelfPose$", pose)
-        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
-        prompt = prompt.replace("$Places$", places)
-        prompt = prompt.replace("$ConversationHistory$", conversation_history)
-        prompt = prompt.replace("$KnownPoses$", known_poses)
-        prompt = prompt.replace("$KnownETA$", known_eta)
-        prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
-        prompt = prompt.replace("$MissingInfo$", missing_info)
-        if stalling:
-            prompt = prompt.replace("$Stalling$", "The discussion has extended too long. Avoid throwing new questions and finalize as soon as possible!")
-        else:
-            prompt = prompt.replace("$Stalling$", '')
-        self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-        try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
-        except Exception as e:
-            self.logger.error(
-                f"Error generating discussion plan: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
     
     def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/discuss_analyze_and_plan.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if self.ablate=='spatial_memory' else ''}analyze_and_plan.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -362,7 +313,7 @@ class Discusser(ThinkingModule):
         return response_dict
     
     def speak(self, curr_time, pose, intent, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/speak_speak.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if self.ablate=='spatial_memory' else ''}speak_speak.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -390,7 +341,7 @@ class Discusser(ThinkingModule):
         return response
     
     def query(self, curr_time, pose, intent, places):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/query_action.txt", "r").read()
+        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if self.ablate=='spatial_memory' else ''}query_action.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -420,7 +371,7 @@ class Navigator:
 class BaseNavigationMeetingAgent(Agent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False):
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False, ablate=""):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger)
         self.looking_down = False
         self.num_agents = num_agents
@@ -448,6 +399,7 @@ class BaseNavigationMeetingAgent(Agent):
         self.mode = None
         self.banned = False
         self.places_buffer = []
+        self.ablate = ablate
         # Discussion
         self.mode_time_counter = 0
         self.discussion_trigger = ""
@@ -650,7 +602,7 @@ class BaseNavigationMeetingAgent(Agent):
             if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
                 self.enter_discussion_mode(trigger="NEW DISCUSSION")
         elif self.mode==NavAgentState.DISCUSS:
-            extracted_info = self.discusser.extract(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
+            extracted_info = self.discusser.extract_info(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
             conclusion_and_decision = self.decider.conclude_and_decide(curr_time=curr_time, agent_names=agent_names, places=places, conversation_history=conversation_history)
             self.agent_opinions = conclusion_and_decision['agent_opinions']
             decision = conclusion_and_decision['agreement_check']
@@ -1413,7 +1365,7 @@ class BaseNavigationMeetingAgent(Agent):
             if goal_pos[0] > 500: # also a hack
                 goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
             goal_bbox = goal_place_dict["bounding_box"]
-            places_description += f"<{place}>: location {goal_pos}\n"
+            places_description += f"<{place}>: location {goal_pos}\n" if "spatial_memory" not in self.ablate else f"<{place}>\n"
         return places_description
 
     def get_previous_actions_description(self):

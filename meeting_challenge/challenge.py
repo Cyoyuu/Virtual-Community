@@ -125,6 +125,7 @@ def main():
     parser.add_argument("--refine_retry", type=int, default=10)
     parser.add_argument("--gt_only_for_sentinels", action='store_true')
     parser.add_argument("--detect_interval", type=int, default=-1)
+    parser.add_argument("--ablate", type=str, default="")
     parser.add_argument("--replay_steps_path", type=str, default=None)
     args = parser.parse_args()
 
@@ -286,6 +287,7 @@ def main():
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
+            basic_kwargs['ablate'] = args.ablate
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "replay":
             steps_for_agent = []
