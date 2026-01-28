@@ -141,6 +141,8 @@ def main():
             agent_type_name = f"{agent_type}_no_avoidance"
         if args.refine_retry == 0:
             agent_type_name = f"{agent_type}_no_refine"
+        if args.ablate != "":
+            agent_type_name = f"{agent_type}_ablate_{args.ablate}"
         args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
     job_result_path = os.path.join(f"meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
