@@ -77,7 +77,7 @@ for agent_type in results:
         average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
     for job_id in job_id_range:
         for scene in results[agent_type]:
-            average_results[agent_type]['success_rate_list'][job_id]+=max(0, results[agent_type][scene]['success_rate_list'])
+            average_results[agent_type]['success_rate_list'][job_id]+=max(0, results[agent_type][scene]['success_rate_list'][job_id])
         average_results[agent_type]['success_rate_list'][job_id]/=len(results[agent_type])
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
