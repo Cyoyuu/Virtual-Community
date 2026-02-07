@@ -16,7 +16,7 @@ args = parser.parse_args()
 base_results_dir = args.results_dir
 results = dict()
 average_results = dict()
-job_id_range = range(1, 3)
+job_id_range = range(1, 5)
 for agent_type in os.listdir(base_results_dir):
     if not os.path.isdir(os.path.join(base_results_dir, agent_type)): continue
     for scene in os.listdir(os.path.join(base_results_dir, agent_type)):
@@ -36,13 +36,14 @@ for agent_type in os.listdir(base_results_dir):
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
-                results[agent_type][scene] = {"success_rate": 0.0, "caught_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
+                results[agent_type][scene] = {"success_rate": 0.0, 'success_rate_list': [-1]*(job_id_range[-1]+1), "caught_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
             results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"])
             if 'reason_fail' in result:
                 results[agent_type][scene]["reasons_fail"].append(result["reason_fail"])
             results[agent_type][scene]['total']+=1
             results[agent_type][scene]['success_rate']+=result['done']
+            results[agent_type][scene]['success_rate_list'][job_id]=int(result['done'])
             results[agent_type][scene]['caught_rate']+=result['caught_rate']
             results[agent_type][scene]['detection_rate']+=result['detection_rate']
             # animate_all(args.output_dir, scene=scene, agent_type=agent_type, sentinel_type=base_results_dir.split('_')[-2], sentinel_num=int(base_results_dir.split('_')[-1]), job_id=job_id, output_dir="visualization")
@@ -57,6 +58,7 @@ for agent_type in results:
     average_results[agent_type]["walk_spent_meeting_mean"]=0.
     average_results[agent_type]["walk_spent_meeting_stderr"]=0.
     average_results[agent_type]["success_rate"]=0.
+    average_results[agent_type]["success_rate_list"]=[0]*(job_id_range[-1]+1)
     average_results[agent_type]["caught_rate"]=0.
     average_results[agent_type]["detection_rate"]=0.
     num=0
@@ -73,6 +75,10 @@ for agent_type in results:
         average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]
         average_results[agent_type]["caught_rate"]+=results[agent_type][scene]["caught_rate"]
         average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
+    for job_id in job_id_range:
+        for scene in results[agent_type]:
+            average_results[agent_type]['success_rate_list'][job_id]+=max(0, results[agent_type][scene]['success_rate_list'])
+        average_results[agent_type]['success_rate_list'][job_id]/=len(results[agent_type])
     for key in average_results[agent_type]:
         average_results[agent_type][key]/=num
     average_results[agent_type]["total_case"] = num
