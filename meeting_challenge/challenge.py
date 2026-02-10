@@ -151,7 +151,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     output_dir = args.output_dir
     result_path = os.path.join(output_dir, "result.json")
-    if os.path.exists(result_path):
+    if os.path.exists(result_path) and args.job_id != 0: # 0 is for debug
         result = json.load(open(result_path, 'r'))
         print(f"results exists: {result}")
         print(f"it's already done. Skip running simulation")

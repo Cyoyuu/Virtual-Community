@@ -123,6 +123,9 @@ class Route:
     def append(self, node: RouteNode):
         self.nodes.append(node)
 
+    def extend(self, route):
+        self.nodes.extend(route.nodes)
+
     def pop(self, idx):
         self.nodes.pop(idx)
 
@@ -133,11 +136,11 @@ class Route:
         if self.impossible:
             return 24*60*60-1
         if pose is not None:
-            ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0]=='bus' else 1.0)
+            ret=np.linalg.norm(np.array(self.nodes[0].location[:2])-np.array(pose[:2]))/(5.0 if self.nodes[0].transit=='bus' else 1.0)
         else:
             ret=0
         for i in range(1, len(self.nodes)):
-            ret+=np.linalg.norm(np.array(self.nodes[i].location[:2])-np.array(self.nodes[i-1].location[:2]))/(5.0 if self.nodes[i]=='bus' else 1.0)
+            ret+=np.linalg.norm(np.array(self.nodes[i].location[:2])-np.array(self.nodes[i-1].location[:2]))/(5.0 if self.nodes[i].transit=='bus' else 1.0)
         return ret*2 # for turning
     
     def to_dict(self):
@@ -367,13 +370,14 @@ class Amap:
                 ret.append(i)
         return ret
     
-    def query_route(self, curr_trans, goal_place, curr_time=datetime.strptime("6:00:00","%H:%M:%S")):
+    def query_route(self, curr_trans, goal_place=None, goal_trans=None, curr_time=datetime.strptime("6:00:00","%H:%M:%S")):
         """
         Find a route from current pose to the goal_place using waypoint graph.
         
         Args:
             curr_trans (list | np.ndarray): Current [x, y, ...] position of agent
             goal_place (str): Name of the destination place
+            goal_trans (list | np.ndarray): The goal position [x, y, ...] in the same coordinate system as curr_trans
 
         Returns:
             list[Waypoints]: Ordered list of waypoints from current pose to goal
@@ -382,11 +386,15 @@ class Amap:
             raise ValueError("No waypoints available. Call spawn_waypoints() first.")
 
         # Get goal location
-        if goal_place not in self.place_metadata:
+        if goal_place is not None and goal_place not in self.place_metadata:
             raise ValueError(f"Unknown place: {goal_place}")
         
-        goal_bbox = self.building_metadata[self.place_metadata[goal_place]['building']]['bounding_box']
-        goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]
+        if goal_place is not None:
+            goal_bbox = self.building_metadata[self.place_metadata[goal_place]['building']]['bounding_box']
+            goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]
+        else:
+            goal_bbox = None
+            goal_pos = goal_trans
         curr_trans=copy.deepcopy(curr_trans)
         if goal_pos[0]>500 or goal_pos[1]>500:
             goal_pos[0], goal_pos[1]=goal_pos[0]-1000, goal_pos[1]-1000
@@ -736,9 +744,15 @@ class Amap:
         ret=Route()
         for wp in route:
             nwp_loc = self.waypoints[self.get_nearest_waypoints(wp)[0]].location
-            ret.append(RouteNode(list(nwp_loc), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+            if len(ret)==0:
+                ret.append(RouteNode(list(nwp_loc), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+            else:
+                ret.extend(self.query_route(ret[-1].location, goal_place=None, goal_trans=nwp_loc, curr_time=curr_time))
         if target_coords is not None:
-            ret.append(RouteNode(target_coords[0], 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+            if len(ret)==0:
+                ret.append(RouteNode(list(target_coords[0]), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
+            else:
+                ret.extend(self.query_route(ret[-1].location, goal_place=None, goal_trans=target_coords[0], curr_time=curr_time))
         return {"refined_route": ret, "grid_map_image": self.get_grid_map_image(route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords, new_route_coords=[list(wp.location) for wp in ret])}
 
 
