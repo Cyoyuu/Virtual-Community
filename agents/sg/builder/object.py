@@ -139,6 +139,14 @@ class ObjectBuilder:
         self.new_objects: list[int] = []
         self.curr_objects: list[int] = []
         self.num_frames = 0
+
+        self.white_humanoid_text_ft = self.clip.predict_text(
+            ["a white humanoid robot with smooth white plastic body"]
+        )[0]
+
+        self.human_text_ft = self.clip.predict_text(
+            ["a human with realistic skin texture and clothing"]
+        )[0]
     
     @staticmethod
     def _crop_image(rgb: np.ndarray, box: np.ndarray, mask: np.ndarray = None) -> np.ndarray:
@@ -201,6 +209,87 @@ class ObjectBuilder:
             if remove_class in [t.lower() for t in tag.split()]:
                 return True
         return False
+
+    def is_white_humanoid(self, obj):
+        """
+        Decide whether an object is a white humanoid (robot-like)
+        Returns True / False
+        """
+
+        # setting conf
+
+        # ---- Color thresholds ----
+        white_brightness = 210.0       # 0–255 scale
+        white_color_std = 18.0         # low texture variance
+
+        # ---- CLIP thresholds ----
+        clip_white_thresh = 0.225       # cosine similarity
+        clip_margin_thresh = -0.05             # must beat human description
+
+        # ---- Geometry (meters) ----
+        min_humanoid_height = 1.2
+        max_humanoid_height = 2.2
+
+        # --------------------------------------------------
+        # 0. Early semantic shortcut (cheap & safe)
+        # --------------------------------------------------
+        if obj.tag in {"white_humanoid", "robot", "android"}:
+            return True
+
+        if obj.tag in ["person", "humanoid"]:
+            # person could still be a white humanoid → do NOT early reject
+            pass
+
+        # --------------------------------------------------
+        # 1. Color consistency & whiteness (VERY strong signal in sim)
+        # --------------------------------------------------
+        img = obj.appearance_list[0].rgb.astype(np.float32)
+
+        mean_rgb = img.mean(axis=(0, 1))
+        std_rgb = img.std(axis=(0, 1))
+
+        brightness = mean_rgb.mean()            # overall whiteness
+        color_var = std_rgb.mean()               # texture / material variance
+
+        is_white_color = (
+            brightness > white_brightness and
+            color_var < white_color_std
+        )
+
+        # --------------------------------------------------
+        # 2. CLIP semantic check (robot vs human)
+        # --------------------------------------------------
+        # Pre-encoded text features stored in conf
+        clip_sim = float(obj.image_ft @ self.white_humanoid_text_ft)
+        clip_sim_human = float(obj.image_ft @ self.human_text_ft)
+
+        clip_margin = clip_sim - clip_sim_human
+
+        is_clip_humanoid = (
+            clip_sim > clip_white_thresh and
+            clip_margin > clip_margin_thresh
+        )
+
+        self.logger.debug(f"Object {obj.idx} - Color brightness: {brightness:.2f}, color variance: {color_var:.2f}, CLIP sim to white humanoid: {clip_sim:.3f}, CLIP margin over human: {clip_margin:.3f}")
+
+        # --------------------------------------------------
+        # 3. Optional: geometry sanity check (humanoids are compact)
+        # --------------------------------------------------
+        # min_b, max_b = obj.get_bound()
+        # extent = max_b - min_b
+
+        # is_reasonable_size = (
+        #     extent[2] > conf.min_humanoid_height and
+        #     extent[2] < conf.max_humanoid_height
+        # )
+
+        # --------------------------------------------------
+        # Final decision (weighted logic)
+        # --------------------------------------------------
+        if is_clip_humanoid:
+            return True
+
+        return False
     
     def add_frame(self, rgb: np.ndarray, depth: np.ndarray, fov: float, camera_ext: np.ndarray):
         self.new_objects.clear()
@@ -212,7 +301,7 @@ class ObjectBuilder:
         tags = self.ram.predict(rgb)
         self.logger.debug(f"RAM time: {start}, {time.time()}")
         tags = [tag for tag in tags if not self._ban_tag(tag)]
-        tags.extend(["building", "person"])
+        tags.extend(["building", "person", "white_humanoid"])
         tags = list(set(tags))
         if self.debug:
             with open(os.path.join(self.output_path, "debug", f"{self.num_frames:06d}_tag.txt"), "w") as f:
@@ -256,6 +345,8 @@ class ObjectBuilder:
                 label = np.where(mask, 0, -100)
                 points, colors, _ = VolumeGridBuilder._img_to_pcd(rgb, depth, label, fov, camera_ext)
                 obj = Object(0, points, colors, appearance, tag, image_ft, self.conf, self.num_frames)
+                if self.is_white_humanoid(obj):
+                    obj.tag = "white_humanoid"
                 if obj.denoise(self.conf.denoise_param) < 5:
                     areas.append(0)
                     cur_objects.append(None)
@@ -362,6 +453,7 @@ class ObjectBuilder:
             start = time.time()
             areas = []
             cur_objects: list[Object] = []
+            self.logger.debug(f"Object building adding frame step 1: estimated {len(masks)} objects")
             for name, tag, mask, appearance in zip(box_names, box_tags, masks, appearances):
                 mask = mask & (depth < self.conf.depth_bound)
                 if mask.sum() / mask.size < self.conf.detection_min_pixel_ratio:
@@ -371,16 +463,19 @@ class ObjectBuilder:
                 label = np.where(mask, 0, -100)
                 points, colors, _ = VolumeGridBuilder._img_to_pcd(rgb, depth, label, fov, camera_ext)
                 obj = Object(0, points, colors, appearance, tag, None, self.conf, self.num_frames, name=name)
+                self.logger.debug(f"obj created")
                 if obj.denoise(self.conf.denoise_param) < 5:
                     areas.append(0)
                     cur_objects.append(None)
                     continue
 
                 areas.append(mask.sum())
+                self.logger.debug(f"denoise finishes")
                 min_bound, max_bound = obj.get_bound()
                 self.logger.debug(f"Detect object: {obj}")
                 cur_objects.append(obj)
 
+            self.logger.debug(f"Object building adding frame step 2")
             # Step 2: Merge current objects with existing objects
             for cur_obj, appearance, mask in zip(cur_objects, appearances, masks):
                 if cur_obj is None:
@@ -405,6 +500,7 @@ class ObjectBuilder:
 
                     objects[merge_obj_idx].add_frame(rgb, depth, fov, camera_ext, mask, cur_obj.image_ft, self.num_frames, appearance)
                     objects[merge_obj_idx].denoise(self.conf.denoise_param)
+                    self.logger.debug(f"Merge object denoised: {cur_obj} into {objects[merge_obj_idx]}")
                     labels[mask] = objects[merge_obj_idx].idx
                     self.curr_objects.append(objects[merge_obj_idx].idx)
                     del cur_obj

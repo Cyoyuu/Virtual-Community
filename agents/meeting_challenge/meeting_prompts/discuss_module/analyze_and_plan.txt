@@ -79,7 +79,7 @@ Discussion is stalling or repeating. You want to finalize the discussion.
 There’s a clear optimal or majority-preferred location to endorse.
 You need information about other agents.
 Someone is asking for your information and you already have that information.
-No one respond you or speak anything during the last 5s, in which case you should say again.
+No one respond you or speak anything during the last 5s, in which case you should speak again.
 In short, if you need to speak something, choose 'speak'. If so, set the 'explanation' to your speech intent. The intent should at least include one of the following three fields:
 1. What you think about the destination. You want to propose a new destination, or support a good option already onthe table, or make a compromise between disagreement?
 2. What questions are you answering? What information you want to provide?
@@ -95,7 +95,7 @@ In short, if you need to query the navigation app for something, choose 'query'.
 
 “wait” — if:
 
-Other agents are actively speaking or querying.
+Other agents are actively speaking or querying, unless they are asking you.
 The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
 
@@ -123,6 +123,6 @@ Example:
 
 —
 
-Be specific and efficient. Avoid querying irrelevant or already-covered question. Prioritize places that could unblock consensus or reveal a clear optimal choice. Be decisive and efficient. Prioritize progress over perfection. Prioritize answering questions over throwing questions. If more than 25 seconds have passed without convergence, lean to drive consensus. Last but not the least, avoid redundant proposals, speeches or finalization if possible.
+Be specific and efficient. Avoid querying irrelevant or already-covered question. Prioritize places that could unblock consensus or reveal a clear optimal choice. Propose against a place if its too far from you, e.g. ETA greater than 20 mins. Be decisive and efficient. Prioritize progress over perfection. Prioritize answering questions over throwing questions. If more than 25 seconds have passed without convergence, lean to drive consensus. Last but not the least, avoid redundant proposals, speeches or finalization if possible.
 
 Please generate your response now.

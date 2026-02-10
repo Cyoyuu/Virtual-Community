@@ -13,7 +13,7 @@ $CurrentTime$
 
 - Agent's position: $SelfPose$
 
-- Available Places:
+- Known Available Places:
 $Places$
 
 - Intent:
@@ -45,7 +45,7 @@ You must select one from the available operations:
 or
 {
     "type": "query_place",
-    "place": "<Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here.
+    "place": "<Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here. If the place name is not in the Known Available Places, choose this.
 }
 or
 {

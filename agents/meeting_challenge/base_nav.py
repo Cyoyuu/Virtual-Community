@@ -463,12 +463,15 @@ class BaseNavigationMeetingAgent(Agent):
                     img=img_path)
                 desc += f" Entities detected: {', '.join([object.name for object in curr_objects])}."
             for object in new_objects:
-                if 'person' in object.name:
-                    prompt = "You are analyzing an image from a simulation environment. Determine whether the depicted figure is a white humanoid model or a human model. Focus on visual cues such as: 1. Surface material (e.g., uniform matte or glossy white plastic vs. textured skin. The humanoid has a uniformly bright white skin) 2. Color consistency (pure or near-uniform white vs. natural skin tones or varied coloration) 3. Facial detail (simplified or stylized features vs. realistic eyes, skin texture, and expressions) 4. Joints and seams (visible mechanical joints or panel lines vs. organic anatomy) 5. Clothing and accessories (integrated body shell vs. separate wearable clothing) Is there a such humanoid in the image? Output only 'Yes' or 'No'. Don't include other words."
-                    is_sentinel = self.generate_captioning(prompt, img=img_path)
-                    if is_sentinel.lower() == 'yes':
-                        self.s_mem.warning_labels.append(object.idx)
-                        self.logger.info(f"There is a white humanoid in the view. its idx is {object.idx}")
+                if 'sentinel' in object.name or 'white_humanoid' in object.name:
+                    self.logger.info(f"There is a sentinel or humanoid in the view. its idx is {object.idx}")
+                    self.s_mem.warning_labels.append(object.idx)
+                # if 'person' in object.name:
+                #     prompt = "You are analyzing an image from a simulation environment. Determine whether the depicted figure is a white humanoid model or a human model. Focus on visual cues such as: 1. Surface material (e.g., uniform matte or glossy white plastic vs. textured skin. The humanoid has a uniformly bright white skin) 2. Color consistency (pure or near-uniform white vs. natural skin tones or varied coloration) 3. Facial detail (simplified or stylized features vs. realistic eyes, skin texture, and expressions) 4. Joints and seams (visible mechanical joints or panel lines vs. organic anatomy) 5. Clothing and accessories (integrated body shell vs. separate wearable clothing) Is there a such humanoid in the image? Output only 'Yes' or 'No'. Don't include other words."
+                #     is_sentinel = self.generate_captioning(prompt, img=img_path)
+                #     if is_sentinel.lower() == 'yes':
+                #         self.s_mem.warning_labels.append(object.idx)
+                #         self.logger.info(f"There is a white humanoid in the view. its idx is {object.idx}")
             self.last_react_time = self.curr_time
             self.logger.debug(f"reacting to new objects: {desc}")
             self.add_event("observation", self.curr_time, self.pose[:3], obs['current_place'], kws, img_path, desc, None)
@@ -1382,7 +1385,7 @@ class BaseNavigationMeetingAgent(Agent):
         if len(self.known_poses) == 0:
             return "None"
         else:
-            return json.dumps(self.known_poses, indent=2)
+            return "\n".join(f"{agent_name} is at {self.known_poses[agent_name][0]:.2f}, {self.known_poses[agent_name][1]:.2f}" for agent_name in self.known_poses)
 
     def get_known_eta_description(self):
         if len(self.known_eta) == 0:
@@ -1394,13 +1397,13 @@ class BaseNavigationMeetingAgent(Agent):
         if len(self.known_sentinel_poses) == 0:
             return "None"
         else:
-            return json.dumps(self.known_sentinel_poses, indent=2)
+            return "\n".join(f"{sentinel_pos[0]:.2f}, {sentinel_pos[1]:.2f}" for sentinel_pos in self.known_sentinel_poses)
 
     def get_eta_history_description(self):
         if len(self.eta_history) == 0:
             return "None"
         else:
-            return "\n".join([f"ETA at time {key} is: {self.eta_history[key]}s remains to reach destination" for key in self.eta_history])
+            return "\n".join([f"ETA at time {key} is: {self.eta_history[key]}s remains to reach destination. Estimated arrival time is {(datetime.strptime(key, '%H:%M:%S')+timedelta(**dict(zip(['hours', 'minutes', 'seconds'],map(int, self.eta_history[key].split(':')))))).strftime('%H:%M:%S')}." for key in self.eta_history])
 
     def get_agent_opinions_description(self):
         if len(self.agent_opinions) == 0:

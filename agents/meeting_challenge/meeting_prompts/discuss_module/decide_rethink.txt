@@ -36,14 +36,13 @@ Decision Rules:
 
 Set "initiate_new_discussion": true if:
 
-The ETA has remained constant or increased over an extended period. For example, although the ETA was 2 minutes at one point, the agent had not arrived even 5 minutes later.
-The navigation app reports a major obstacle (e.g., “blocked”, “closed”, “unreachable”).
+The estimated arrival time worsened significantly, like by 5 mins, or it exceeds the 09:25:00 limit.
 Other agents have already arrived or are very close, while this agent is significantly delayed.
 
 Set "initiate_new_discussion": false if:
 
 The agent has reached the destination.
-ETA is still decreasing, even slowly.
+The agent is making progress as estimated. The estimated arrival time remains stable or become better.
 Delay is minor (< 15% increase) and temporary.
 No better alternative location is available or likely to help.
 —

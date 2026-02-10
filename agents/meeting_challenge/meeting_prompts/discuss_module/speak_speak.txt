@@ -53,6 +53,7 @@ Return a **single string** — the agent’s spoken message.
 - If others asked you, add your reply into the speech when possible.
 - If the conversation is dragging, don't throw new questions, even if it's in your speech intent. Instead, ask the undecided agents to assert finalization as soon as possible. Avoid asking redundant question and requests.
 - When mentioning your ETA, always specify the destination it is related with.
+- Don't ask for sentinel poses, as they should all be reported immediately when observed.
 - Avoid: “I think”, “maybe”, “perhaps” — be decisive and action-oriented.
 - Match the tone of prior conversation — collaborative, efficient, respectful.
 
