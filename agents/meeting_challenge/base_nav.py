@@ -804,6 +804,26 @@ class BaseNavigationMeetingAgent(Agent):
                 self.last_route.pop(0)
             else:
                 break
+        idx = 0
+        while idx < len(self.last_route)-1:
+            wp_x_world, wp_y_world = self.last_route[idx].location[0], self.last_route[idx].location[1]
+            wp_pos_in_map = [
+                builder.align_nav(wp_x_world) - x_min,
+                builder.align_nav(wp_y_world) - y_min
+            ]
+            if 0 <= int(wp_pos_in_map[1]) < y_max - y_min and 0 <= int(wp_pos_in_map[0]) < x_max - x_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [3]:
+                break
+            idx += 1
+        # avoid going for wp inside buildings (unknow) 
+        if 0 < idx < len(self.last_route):
+            self.navigate(self.s_mem.get_sg(), self.last_route[idx].location)
+            time_to_reach_next_open_space_wp=len(self.last_path_for_estimation)
+            self.navigate(self.s_mem.get_sg(), self.last_route[0].location)
+            time_to_reach_next_wp=len(self.last_path_for_estimation)
+            if time_to_reach_next_wp > time_to_reach_next_open_space_wp:
+                while idx>0:
+                    idx -= 1
+                    self.last_route.pop(0)
         # If no intermediate waypoints left.
         if len(self.last_route)==1:
             return self.goto_place(goal_place)

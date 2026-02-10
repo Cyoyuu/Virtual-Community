@@ -945,7 +945,7 @@ class VicoEnv:
 				app_answer = self.nav_app.query_nearby(action['arg2'], action['arg3'])
 				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_route':
-				app_answer = self.nav_app.query_route(agent_outdoor_pos, action['arg2'], self.curr_time)
+				app_answer = self.nav_app.query_route(agent_outdoor_pos, goal_place=action['arg2'], curr_time=self.curr_time)
 				deleted_subjects = self.events.add(type="app message", pos=agent_pos, r=1, content=app_answer, priority=priority, subject=self.agent_names[agent_id], predicate="get", object="app response")
 			if action['arg1'] == 'query_grid_map':
 				app_answer = self.nav_app.query_grid_map()
