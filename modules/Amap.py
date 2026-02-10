@@ -146,6 +146,19 @@ class Route:
     def to_dict(self):
         return [node.to_dict() for node in self.nodes]
     
+    def simplify(self):
+        new_nodes=[]
+        i=0
+        while i<len(self.nodes):
+            j=len(self.nodes)
+            while j>i:
+                j-=1
+                if np.linalg.norm(np.array(self.nodes[j].location)-np.array(self.nodes[i].location))<=7:
+                    break
+            new_nodes.append(self.nodes[j])
+            i=j+1
+        self.nodes=new_nodes
+    
 def find_next_bus_times(current_stop, current_time, schedule, schedule_reversed):
     """
     Given the current stop and time, return the nearest reachable times
@@ -470,7 +483,7 @@ class Amap:
         else:
             print(f"found goal_wp_pair is {goal_wp_pair}")
         if goal_wp_pair[0] >= inf_time:
-            self.logger.error(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
+            self.logger.warning(f"{self.scene_name}: No path found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return Route(impossible=True)
         path = Route()
         curr = goal_wp_pair[1]
@@ -484,10 +497,10 @@ class Amap:
         path.reverse()
 
         if not path:
-            self.logger.error(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
+            self.logger.warning(f"{self.scene_name}: No valid route found from {curr_trans[:2]} to {goal_place} at {goal_pos}")
             return Route(impossible=True)
         
-        path.append(RouteNode(goal_pos, 'walk', goal_wp_pair[0]))
+        path.append(RouteNode(list(goal_pos), 'walk', goal_wp_pair[0]))
         return path
     
     def get_connected_waypoints(self, waypoint_id):
@@ -747,12 +760,15 @@ class Amap:
             if len(ret)==0:
                 ret.append(RouteNode(list(nwp_loc), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
             else:
-                ret.extend(self.query_route(ret[-1].location, goal_place=None, goal_trans=nwp_loc, curr_time=curr_time))
+                new_route=self.query_route(ret[-1].location, goal_place=None, goal_trans=nwp_loc, curr_time=curr_time)
+                if new_route.impossible == 0: ret.extend(new_route)
         if target_coords is not None:
             if len(ret)==0:
                 ret.append(RouteNode(list(target_coords[0]), 'walk', datetime.combine(curr_time.date(), datetime.strptime("23:59:59", "%H:%M:%S").time())))
             else:
-                ret.extend(self.query_route(ret[-1].location, goal_place=None, goal_trans=target_coords[0], curr_time=curr_time))
+                new_route=self.query_route(ret[-1].location, goal_place=None, goal_trans=target_coords[0], curr_time=curr_time)
+                if new_route.impossible == 0: ret.extend(new_route)
+        ret.simplify()
         return {"refined_route": ret, "grid_map_image": self.get_grid_map_image(route_coords=route_coords, circle_coords=circle_coords, agent_coords=agent_coords, target_coords=target_coords, new_route_coords=[list(wp.location) for wp in ret])}
 
 
