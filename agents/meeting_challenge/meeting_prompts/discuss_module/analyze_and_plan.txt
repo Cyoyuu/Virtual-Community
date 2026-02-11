@@ -65,8 +65,8 @@ Places mentioned in missing info must be a exact place name from $Places, each e
 - Include a place if:
   - The agent hasn’t queried it yet.
   - It’s being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
-  - The agent need someone's ETA to that location to make further consideration.
-- Don't include information already known in "Known agent positions" and "Known ETAs". Examine 'KnownETA' carefully. This is very important! For example, if you know your eta to <Place> in "Known ETAs" and someone is asking for that, don't include it in the missing info!.
+- Don't include information already known in "Known agent positions" and "Known ETAs". Examine 'KnownETA' carefully. This is very important! For example, if you know your ETA to <Place> in "Known ETAs" and someone is asking for that, don't include it in the missing info!.
+- Include an agent's pose if it's not known yet.
 - Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
 
 Guidelines for Choosing Action:
@@ -76,7 +76,7 @@ You must choose from three types of actions: "speak" with teammates, "query" the
 
 The agent has enough info to propose, support, or compromise.
 Discussion is stalling or repeating. You want to finalize the discussion.
-There’s a clear optimal or majority-preferred location to endorse.
+There’s a clear optimal or majority-preferred location to endorse. Or the majority-preferred location is too far for you - you have a bad ETA to that location, which means you may not be able to reach it in limited time.
 You need information about other agents.
 Someone is asking for your information and you already have that information.
 No one respond you or speak anything during the last 5s, in which case you should speak again.
@@ -99,7 +99,7 @@ Other agents are actively speaking or querying, unless they are asking you.
 The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
 
-For example, if you need someone's ETA but haven't ask for it, go for "speak". If someone else have asked for that ETA, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again.
+For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again.
 
 
 —
@@ -108,18 +108,17 @@ Example:
 ```json
 {
     "missing info": [
-        "<agent> asked for my ETA to <West Lake>, and I don't know it in Known ETAs.",
-        "Need Bob's ETA to <Downtown Plaza> to compare top 2 candidates",
+        "Need Bob's pose to compare top 2 candidates",
         "Need my ETA to <Central Park> to compare with Alice’s suggestion",
         ...
     ],
     "action": "query",
-    "explanation": "I should prioritize querying my ETA to <West Lake>, because someone asked me for that, so that I can answer him later."
+    "explanation": "I should prioritize querying my ETA to <West Lake>, because I need to check whether it is too far for me."
 }
 
 ```
 
-# In this example, "Bob's ETA to <Downtown Plaza>", "my ETA to <Central Park>", and "my ETA to <West Lake>" are not in Known ETAs.
+# In this example, "Bob's pose", "my ETA to <Central Park>", and "my ETA to <West Lake>" are not in Known ETAs.
 
 —
 
