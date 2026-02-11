@@ -64,10 +64,10 @@ for agent_type in results:
     num=0
     for scene in results[agent_type]:
         num+=1
-        results[agent_type][scene]["time_spent_meeting_mean"]=np.mean(np.array(results[agent_type][scene]["time_spent_meeting"]))
-        results[agent_type][scene]["time_spent_meeting_stderr"]=np.std(np.array(results[agent_type][scene]["time_spent_meeting"]))
-        results[agent_type][scene]["walk_spent_meeting_mean"]=np.mean(np.array(results[agent_type][scene]["walk_spent_meeting"]))
-        results[agent_type][scene]["walk_spent_meeting_stderr"]=np.std(np.array(results[agent_type][scene]["walk_spent_meeting"]))
+        results[agent_type][scene]["time_spent_meeting_mean"]=float(np.mean(np.array(results[agent_type][scene]["time_spent_meeting"])))
+        results[agent_type][scene]["time_spent_meeting_stderr"]=float(np.std(np.array(results[agent_type][scene]["time_spent_meeting"])))
+        results[agent_type][scene]["walk_spent_meeting_mean"]=float(np.mean(np.array(results[agent_type][scene]["walk_spent_meeting"])))
+        results[agent_type][scene]["walk_spent_meeting_stderr"]=float(np.std(np.array(results[agent_type][scene]["walk_spent_meeting"])))
         average_results[agent_type]["time_spent_meeting_mean"]+=results[agent_type][scene]["time_spent_meeting_mean"]
         average_results[agent_type]["time_spent_meeting_stderr"]+=results[agent_type][scene]["time_spent_meeting_stderr"]
         average_results[agent_type]["walk_spent_meeting_mean"]+=results[agent_type][scene]["walk_spent_meeting_mean"]
