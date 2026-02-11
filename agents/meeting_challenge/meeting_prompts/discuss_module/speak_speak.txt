@@ -48,10 +48,11 @@ Return a **single string** — the agent’s spoken message.
 - Keep it under 100 words, 1–3 clear, polite sentences.
 - Use exact place names: <Place Name>.
 - If you haven't mentioned your current position or it has changed since your last mentioning, mention your current position to let others know (e.g., "I'm current at [90.03, -33.10]"). Enclose your xy coordinates in [], making it easier for others to parse.
-- Mention an ETA (e.g., “my ETA is 18 min”), if it is so bad that would affect your meeting in time.
+- If an ETA is so bad that would affect your meeting in time, mention that ETA (e.g., “my ETA is 18 min”) and clearly express you opposition.
 - If compromising or converging, reference others’ preferences to show collaboration.
 - If others asked you, add your reply into the speech when possible.
 - If the conversation is dragging, don't throw new questions, even if it's in your speech intent. Instead, ask the undecided agents to assert finalization as soon as possible. Avoid asking redundant question and requests.
+- Don't make unnecessary repetition. If you have nothing new to add, just output "null".
 - When mentioning your ETA, always specify the destination it is related with.
 - Don't ask for sentinel poses, as they should all be reported immediately when observed.
 - Avoid: “I think”, “maybe”, “perhaps” — be decisive and action-oriented.
@@ -72,6 +73,6 @@ Output: "To move forward, I suggest we finalize <Central Station> — it’s not
 
 —
 
-This message will be broadcast to other agents. Make it clear, constructive, and consensus-driving. Also make the speech concise to reduce cost.
+This message will be broadcast to other agents. Make it clear, constructive, and consensus-driving. Also make the speech concise to reduce cost. If you have nothing new to add, just output "null".
 
 Please generate your response now.

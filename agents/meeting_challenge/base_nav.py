@@ -662,7 +662,10 @@ class BaseNavigationMeetingAgent(Agent):
         elif self.discussion_plan["action"]=="speak":
             intent = self.discussion_plan['explanation']
             speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
-            action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
+            if speech == "null":
+                action = {"type": "wait"}
+            else:
+                action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
             self.discussion_plan = None
         else:
             raise NotImplementedError(f"discussion plan type is not supported")
