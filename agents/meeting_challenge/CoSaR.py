@@ -233,6 +233,33 @@ class CoSaRDiscusser(Discusser):
                 f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
             response_dict = None
         return response_dict
+    
+    def speak(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
+        prompt = open(os.path.join(self.prompt_path, "speak_speak.txt"), "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", self.name)
+        prompt = prompt.replace("$SelfPose$", pose)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$KnownPoses$", known_poses)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
+        prompt = prompt.replace("$MissingInfo$", missing_info)
+        if stalling:
+            prompt = prompt.replace("$Stalling$", "The discussion has extended too long. Avoid throwing new questions and finalize as soon as possible!")
+        else:
+            prompt = prompt.replace("$Stalling$", '')
+        self.logger.debug(f"planning_prompt: {prompt}")
+        try:
+            response = self.generator.generate(prompt, img=None, json_mode=False)
+            self.logger.debug(f"generated response: {response}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response = None
+        return response
 
 
 
