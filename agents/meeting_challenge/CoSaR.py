@@ -421,7 +421,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         curr_time = self.curr_time.strftime('%H:%M:%S')
 
         # Reasoner
-        speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
+        speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info="missing_info", stalling=self.mode_time_counter>30)
         self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30, speech=speech['speech'])
         missing_info="\n".join(self.discussion_plan['missing info'])
         action = {"type": "wait"}
