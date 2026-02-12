@@ -150,11 +150,13 @@ def pixel_to_world(u, v, z, w, h, fov, extrinsic=None):
 
 
 class ThinkingModule:
-    def __init__(self, generator, logger, name):
+    def __init__(self, generator, logger, name, type="", ablate=""):
         self.logger = logger
         self.generator = generator
         self.task_decription = open(f"agents/meeting_challenge/meeting_prompts/task_description.txt", "r").read()
         self.name = name
+        self.ablate = ablate
+        self.prompt_path=os.path(f"agents/meeting_challenge/meeting_prompts/{'discuss_module' if 'cosar' not in type else 'cosar_prompts'}/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}")
 
     def parse_json(self, prompt, response, last_call=False):
         json_str = None
@@ -202,11 +204,11 @@ class ThinkingModule:
         return response
 
 class Decider(ThinkingModule):
-    def __init__(self, generator, logger, name):
-        super().__init__(generator, logger, name)
+    def __init__(self, generator, logger, name, type="", ablate=""):
+        super().__init__(generator, logger, name, type, ablate)
     
     def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_rethink.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "decide_rethink.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", name)
@@ -225,7 +227,7 @@ class Decider(ThinkingModule):
         return response_dict
 
     def start(self, name, agent_names, places, conversation_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/decide_start.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "decide_start.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agent_names)
@@ -244,12 +246,11 @@ class Decider(ThinkingModule):
 
 
 class Discusser(ThinkingModule):
-    def __init__(self, generator, logger, name, ablate=""):
-        super().__init__(generator, logger, name)
-        self.ablate = ablate
+    def __init__(self, generator, logger, name, type="", ablate=""):
+        super().__init__(generator, logger, name, type, ablate)
     
     def conclude_and_decide(self, curr_time, agent_names, places, conversation_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}conclude_and_decide.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "conclude_and_decide.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -268,7 +269,7 @@ class Discusser(ThinkingModule):
         return response_dict
 
     def extract_info(self, name, agent_names, places, conversation_history):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}extract_info.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "extract_info.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$SelfName$", name)
         prompt = prompt.replace("$AgentList$", agent_names)
@@ -286,7 +287,7 @@ class Discusser(ThinkingModule):
         return response_dict
     
     def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}analyze_and_plan.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "analyze_and_plan.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -313,7 +314,7 @@ class Discusser(ThinkingModule):
         return response_dict
     
     def speak(self, curr_time, pose, intent, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}speak_speak.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "speak_speak.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -341,7 +342,7 @@ class Discusser(ThinkingModule):
         return response
     
     def query(self, curr_time, pose, intent, places):
-        prompt = open(f"agents/meeting_challenge/meeting_prompts/discuss_module/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}query_action.txt", "r").read()
+        prompt = open(os.path.join(self.prompt_path, "query_action.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -403,7 +404,7 @@ class BaseNavigationMeetingAgent(Agent):
         # Discussion
         self.mode_time_counter = 0
         self.discussion_trigger = ""
-        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name)
+        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, ablate=self.ablate)
         self.discusser = Discusser(generator=self.generator, logger=self.logger, name=self.name, ablate=self.ablate)
         self.speaker = Speaker(generator=self.generator, logger=self.logger, name=self.name)
         self.discussion_plan = None

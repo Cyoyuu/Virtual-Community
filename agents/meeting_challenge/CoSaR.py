@@ -209,6 +209,8 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10, ablate=""):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate)
+        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
+        self.discusser = Discusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         self.emergency = 0
         self.emergency_avoid_target = None
@@ -377,6 +379,45 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         assert action is None or isinstance(action, dict)
         self.last_action=action
         return self.last_action
+    
+    def discuss_act(self):
+        action = None
+        agent_names = ", ".join(self.obs["agent_pos_dict"].keys())
+        places = self.get_nearest_places_description(self.get_meeting_target())
+        conversation_history = self.get_conversation_description()
+        app_message = self.get_app_message_description()
+        curr_time = self.curr_time.strftime('%H:%M:%S')
+
+        # Reasoner
+        self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30)
+        missing_info="\n".join(self.discussion_plan['missing info'])
+        action = {"type": "wait"}
+        # Executor
+        if self.discussion_plan["action"]=="wait":
+            action = {"type": "wait"}
+            self.discussion_plan = None
+        elif self.discussion_plan['action']=='goto':
+            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].self.discussion_plan(">"):
+                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
+            action = self.city_navigate(goal_place=self.discussion_plan['explanation'])[0]
+        elif self.discussion_plan["action"]=="query_place":
+            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].self.discussion_plan(">"):
+                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
+            action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['explanation']}
+        elif self.discussion_plan['action'] == 'query_route':
+            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
+                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
+            action = {'type': 'query_app', 'arg1': 'query_route', 'arg2': self.discussion_plan['explanation']}
+        elif self.discussion_plan["action"]=="speak":
+            intent = self.discussion_plan['explanation']
+            speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
+            if speech == "null":
+                action = {"type": "wait"}
+            else:
+                action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
+        else:
+            raise NotImplementedError(f"discussion plan type {self.discussion_plan['action']} is not supported")
+        return action
     
     def emergency_avoid(self):
         near_sentinels = []
