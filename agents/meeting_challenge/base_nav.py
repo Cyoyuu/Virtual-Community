@@ -156,7 +156,7 @@ class ThinkingModule:
         self.task_decription = open(f"agents/meeting_challenge/meeting_prompts/task_description.txt", "r").read()
         self.name = name
         self.ablate = ablate
-        self.prompt_path=os.path(f"agents/meeting_challenge/meeting_prompts/{'discuss_module' if 'cosar' not in type else 'cosar_prompts'}/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}")
+        self.prompt_path=f"agents/meeting_challenge/meeting_prompts/{'discuss_module' if 'cosar' not in type else 'cosar_prompts'}/{'no_spatial_memory/'if 'spatial_memory' in self.ablate else ''}"
 
     def parse_json(self, prompt, response, last_call=False):
         json_str = None
