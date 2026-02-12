@@ -397,11 +397,11 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             action = {"type": "wait"}
             self.discussion_plan = None
         elif self.discussion_plan['action']=='goto':
-            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].self.discussion_plan(">"):
+            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
                 self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
             action = self.city_navigate(goal_place=self.discussion_plan['explanation'])[0]
         elif self.discussion_plan["action"]=="query_place":
-            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].self.discussion_plan(">"):
+            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
                 self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
             action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['explanation']}
         elif self.discussion_plan['action'] == 'query_route':
