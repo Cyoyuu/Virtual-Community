@@ -252,6 +252,15 @@ class CoSaRDiscusser(Discusser):
         else:
             prompt = prompt.replace("$Stalling$", '')
         self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
         try:
             response = self.generator.generate(prompt, img=None, json_mode=False)
             self.logger.debug(f"generated response: {response}")
