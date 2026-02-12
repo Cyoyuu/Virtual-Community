@@ -53,7 +53,7 @@ Return a JSON object:
         "brief explanation (under 20 words)",
         ...
     ],
-    "reasoning": "briefly show how you think of what action to choose next (under 80 words)"
+    "reasoning": "briefly show how you think of what action to choose next (under 80 words)",
     "action": "speak|query_place|query_route|wait|goto",
     "explanation": "(see below formats)"
 }
@@ -142,7 +142,7 @@ Example:
         "Need my ETA to <Central Park> to compare with Alice’s suggestion",
         ...
     ],
-    "reasoning": "I should prioritize querying my ETA to <West Lake>, because I need to check whether it is too far for me."
+    "reasoning": "I should prioritize querying my ETA to <West Lake>, because I need to check whether it is too far for me.",
     "action": "query_route",
     "explanation": "<West Lake>"
 }
@@ -152,13 +152,13 @@ Example:
 More action example (omitting the "missing info" and "reasoning" part):
 
 {
-    "reasoning": "People are considering <Central Park>. They are very close to it. However I'm very far from it, which may prevent us from meeting in time. So I need propose against it and suggest a better choice."
+    "reasoning": "People are considering <Central Park>. They are very close to it. However I'm very far from it, which may prevent us from meeting in time. So I need propose against it and suggest a better choice.",
     "action": "speak",
     "explanation": "I want to propose against <Central Park>, because it's 20 minutes from me, which is too far. <Jamaica Conservation> is a better choice because it is not far from any of us."
 }
 
 {
-    "reasoning": "Everyone except Jessica has made finalization. Bob has asked for her response just in the last second, so there is no need for me to ask again. I can just start to go to <Revere Beach>."
+    "reasoning": "Everyone except Jessica has made finalization. Bob has asked for her response just in the last second, so there is no need for me to ask again. I can just start to go to <Revere Beach>.",
     "action": "goto",
     "explanation": "<Revere Beach>"
 }
