@@ -202,6 +202,38 @@ class Reasoner(ThinkingModule):
                 return self.parse_json(None, data, last_call=True)
         return response
         
+class CoSaRDiscusser(Discusser):
+    def __init__(self, generator, logger, name, type="", ablate=""):
+        super().__init__(generator, logger, name, type, ablate)
+    
+    def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling, speech):
+        prompt = open(os.path.join(self.prompt_path, "analyze_and_plan.txt"), "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", self.name)
+        prompt = prompt.replace("$SelfPose$", pose)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        prompt = prompt.replace("$KnownPoses$", known_poses)
+        prompt = prompt.replace("$KnownETA$", known_eta)
+        prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
+        prompt = prompt.replace("$Speech$", speech)
+        if stalling:
+            prompt = prompt.replace("$Stalling$", "The discussion has extended too long. Avoid throwing new questions and finalize as soon as possible!")
+        else:
+            prompt = prompt.replace("$Stalling$", '')
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+
 
 
 class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
@@ -210,7 +242,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10, ablate=""):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate)
         self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
-        self.discusser = Discusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
+        self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         self.emergency = 0
         self.emergency_avoid_target = None
@@ -389,7 +421,8 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         curr_time = self.curr_time.strftime('%H:%M:%S')
 
         # Reasoner
-        self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30)
+        speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
+        self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30, speech=speech['speech'])
         missing_info="\n".join(self.discussion_plan['missing info'])
         action = {"type": "wait"}
         # Executor
@@ -397,24 +430,19 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             action = {"type": "wait"}
             self.discussion_plan = None
         elif self.discussion_plan['action']=='goto':
-            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
-                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
-            action = self.city_navigate(goal_place=self.discussion_plan['explanation'])[0]
+            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
+                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
+            action = self.city_navigate(goal_place=self.discussion_plan['content'])[0]
         elif self.discussion_plan["action"]=="query_place":
-            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
-                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
-            action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['explanation']}
+            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
+                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
+            action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['content']}
         elif self.discussion_plan['action'] == 'query_route':
-            if self.discussion_plan['explanation'].startswith("<") and self.discussion_plan['explanation'].endswith(">"):
-                self.discussion_plan['explanation'] = self.discussion_plan['explanation'][1:-1]
-            action = {'type': 'query_app', 'arg1': 'query_route', 'arg2': self.discussion_plan['explanation']}
+            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
+                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
+            action = {'type': 'query_app', 'arg1': 'query_route', 'arg2': self.discussion_plan['content']}
         elif self.discussion_plan["action"]=="speak":
-            intent = self.discussion_plan['explanation']
-            speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), intent=intent, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info=missing_info, stalling=self.mode_time_counter>30)
-            if speech == "null":
-                action = {"type": "wait"}
-            else:
-                action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
+            action = {"type": "remote_converse", "arg1": speech['speech'], "arg2": 3200}
         else:
             raise NotImplementedError(f"discussion plan type {self.discussion_plan['action']} is not supported")
         return action

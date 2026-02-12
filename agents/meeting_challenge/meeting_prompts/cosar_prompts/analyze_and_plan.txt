@@ -55,34 +55,34 @@ Return a JSON object:
     ],
     "reasoning": "briefly show how you think of what action to choose next (under 80 words)",
     "action": "speak|query_place|query_route|wait|goto",
-    "explanation": "(see below formats)"
+    "content": "(see below formats)"
 }
 
 You must select exactly one from the available actions:
 
 {
     "action": "speak",
-    "explanation": "(your speech intent)"
+    "content": null
 }
 or
 {
     "action": "query_place",
-    "explanation": "<Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here. If the place name is not in the Known Available Places, choose this.
+    "content": "<Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here. If the place name is not in the Known Available Places, choose this.
 }
 or
 {
     "action": "query_route",
-    "explanation": "<Target place name>" # this action will trigger a spatial reasoning chain to handle the query procedure; you can only list one place here.
+    "content": "<Target place name>" # this action will trigger a spatial reasoning chain to handle the query procedure; you can only list one place here.
 }
 or
 {
     "action": "wait",
-    "explanation": "(reason)" # fill anything here
+    "content": null
 }
 or
 {
     "action": "goto",
-    "explanation": "<Target place name>" # this action will trigger a navigation pipeline towards that place; you can only list one place here.
+    "content": "<Target place name>" # this action will trigger a navigation pipeline towards that place; you can only list one place here.
 }
 
 ```
@@ -97,39 +97,39 @@ Places mentioned in missing info must be a exact place name from $Places, each e
 - Include an agent's pose if it's not known yet.
 - Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
 
-Guidelines for Choosing Action:
-- You must choose from three types of actions: "speak" with teammates, "query" the navigation app for "place" or "route", "goto" somewhere, or just "wait".
+You must choose exactly one of the following five action types:
+- "speak": communicate with teammates using the proposed speech: "$Speech$".
+- "query_place": query the navigation app for information about a specific place.
+- "query_route": query the navigation app for route or ETA information.
+- "goto": move toward a selected destination.
+- "wait": take no action and observe.
 
-“speak” — if:
+Choose "speak" if:
+- You need to propose, support, or compromise on a decision.
+- The discussion is stalling or repeating, and your message can help finalize it.
+- You need specific information from other agents.
+- Another agent asks for information that you already have.
+- No one has responded for the last 5 seconds and repeating your key point is necessary.
 
-The agent has enough info to propose, support, or compromise.
-Discussion is stalling or repeating. You want to finalize the discussion.
-There’s a clear optimal or majority-preferred location to endorse. Or the majority-preferred location is too far for you - you have a bad ETA to that location, which means you may not be able to reach it in limited time.
-You need information about other agents.
-Someone is asking for your information and you already have that information.
-No one respond you or speak anything during the last 5s, in which case you should speak again.
-In short, if you need to speak something, choose 'speak'. If so, set the 'explanation' to your speech intent. The intent should at least include one of the following three fields:
-1. What you think about the destination. You want to propose a new destination, or support a good option already onthe table, or make a compromise between disagreement?
-2. What questions are you answering? What information you want to provide?
-3. What information are you asking for? If the conversation is dragging, don't throw new questions. Instead, ask the undecided agents to assert finalization as soon as possible. Avoid asking unnecessary or redundant questions and requests (In this case don't choose speak if you have no other thing to say).
+Do NOT choose "speak" if your message only repeats previous content without adding new value. Attention! Unnecessary speech may block the communication channel and prevent agents who truly need to speak from doing so.
 
-“query_place” — if:
+Choose "query_place" if:
+- A place is mentioned but you lack information about it.
 
-Some unknown places are mentioned, so you need to query the navigation app for this.
+Choose "query_route" if:
+- You do not know your ETA or route to one candidate locations.
+- Another agent requests your route-related information that you do not have.
 
-“query_route” — if:
+Choose "goto" or "wait" if:
+- Other agents are actively speaking or querying (unless they are directly addressing you).
+- You have no new information to contribute.
+- The discussion appears close to convergence.
 
-The agent lacks its own ETA to one or more leading locations, so it will query the navigation app for this.
-Someone is asking for your information and you don't have that information.
+In this case:
+- Choose "goto" if a promising destination has been identified.
+- Otherwise, choose "wait".
 
-“wait” or "goto" — if:
-
-Other agents are actively speaking or querying, unless they are asking you.
-The agent has nothing new to add yet.
-Recent messages suggest convergence is imminent.
-Then, choose "goto" if there is a promising destination place. Otherwise, "wait".
-
-For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again.
+For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question has been asked multiple times, please don't waste time asking again.
 
 
 —
@@ -144,7 +144,7 @@ Example:
     ],
     "reasoning": "I should prioritize querying my ETA to <West Lake>, because I need to check whether it is too far for me.",
     "action": "query_route",
-    "explanation": "<West Lake>"
+    "content": "<West Lake>"
 }
 ```
 # In this example, "Bob's pose" is not known, and "my ETA to <Central Park>" and "my ETA to <West Lake>" are not in Known ETAs.
@@ -152,15 +152,21 @@ Example:
 More action example (omitting the "missing info" and "reasoning" part):
 
 {
-    "reasoning": "People are considering <Central Park>. They are very close to it. However I'm very far from it, which may prevent us from meeting in time. So I need propose against it and suggest a better choice.",
+    "reasoning": "I want to propose against <Central Park>, because it's 20 minutes from me, which is too far. <Jamaica Conservation> is a better choice because it is not far from any of us.",
     "action": "speak",
-    "explanation": "I want to propose against <Central Park>, because it's 20 minutes from me, which is too far. <Jamaica Conservation> is a better choice because it is not far from any of us."
+    "content": null
 }
-
+or
 {
     "reasoning": "Everyone except Jessica has made finalization. Bob has asked for her response just in the last second, so there is no need for me to ask again. I can just start to go to <Revere Beach>.",
     "action": "goto",
-    "explanation": "<Revere Beach>"
+    "content": "<Revere Beach>"
+}
+or
+{
+    "reasoning": "I know everyone's pose except Emily, and Alice has just asked for it. Since there is no promising destination yet, I can just wait.",
+    "action": "wait",
+    "content": null
 }
 
 —

@@ -13,9 +13,6 @@ $CurrentTime$
 
 - Agent's position: $SelfPose$
 
-- Speech Intent: 
-$SpeechIntent$
-
 - Other Agents’ Opinions:
 $AgentOpinions$
 
@@ -39,11 +36,25 @@ $MissingInfo$
 
 Note that the team only share the conversation history, instead of all infos.
 
-—
+---
 
 **Output Format:**
 
-Return a **single string** — the agent’s spoken message.
+Return a JSON object:
+
+```json
+{
+    "reasoning": "briefly show how you think of what to say next (under 80 words)",
+    "speech": "(speech that you are going to speak)"
+}
+
+Guidlines for reasoning:
+
+1. What you think about the destination. You want to propose a new destination, or support a good option already onthe table, or make a compromise between disagreement?
+2. What questions are you answering? What information you want to provide?
+3. What information are you asking for? If the conversation is dragging, don't throw new questions. Instead, ask the undecided agents to assert finalization as soon as possible. Avoid asking unnecessary or redundant questions and requests (In this case don't choose speak if you have no other thing to say).
+
+Guidelines for speech:
 
 - Keep it under 100 words, 1–3 clear, polite sentences.
 - Use exact place names: <Place Name>.
@@ -63,13 +74,13 @@ Return a **single string** — the agent’s spoken message.
 Examples:
 
 → Intent: "support"  
-Output: "I support <Central Station> — which seems close to and reasonable for everyone."
+speech: "I support <Central Station> — which seems close to and reasonable for everyone."
 
 → Intent: "compromise"  
-Output: "Since Alice prefers <Park> and Bob is near <Station>, how about <Cafe> as a middle ground?"
+speech: "Since Alice prefers <Park> and Bob is near <Station>, how about <Cafe> as a middle ground?"
 
 → Intent: "converge"  
-Output: "To move forward, I suggest we finalize <Central Station> — it’s not perfect but works for all of us."
+speech: "To move forward, I suggest we finalize <Central Station> — it’s not perfect but works for all of us."
 
 —
 
