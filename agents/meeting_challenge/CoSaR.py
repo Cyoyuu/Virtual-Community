@@ -422,13 +422,14 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 # if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]): # did not pass in emergency
                 #     self.ready_to_refine = True
                 #     self.refine_reference = [list(wp.location) for wp in self.last_route]
-        if self.last_route:
+        if self.mode_time_counter % 60 == 0: self.continuous_refine_retry = self.max_continuous_refine_retry
+        if self.last_route and not self.ready_to_refine:
             route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
             if self.current_place is None and not self.last_route.empty() and not route_validity and self.coarse_refine_result is None:
                 self.refine_target_place = self.goal_place
                 if self.refine_target_place not in self.refine_retry:
                     self.refine_retry[self.refine_target_place] = self.max_refine_retry
-                if self.refine_retry[self.refine_target_place] >= 0:
+                if self.refine_retry[self.refine_target_place] >= 0 and self.continuous_refine_retry >= 0:
                     self.ready_to_refine = True
                     self.refine_target_danger = danger
                     self.refine_reference = [list(wp.location) for wp in self.last_route]
