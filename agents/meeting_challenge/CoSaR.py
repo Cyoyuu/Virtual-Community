@@ -330,6 +330,8 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.refine_target_danger = None
         self.coarse_refine_result = None
         self.max_refine_retry = refine_retry
+        self.max_continuous_refine_retry = 3
+        self.continuous_refine_retry = self.max_continuous_refine_retry
         self.refine_retry = dict()
         # CoSaR property
         self.rethink = True
@@ -383,9 +385,10 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                         route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, event["content"]["refined_route"], excluding_wps=[self.pose[:2], event["content"]["refined_route"][-1].location])
                         self.refine_history.append(route_validity)
                         json.dump(self.refine_history, open(os.path.join(self.storage_path, "refine_history.json"), "w"))
-                        if route_validity or self.refine_retry[self.refine_target_place] < 0:
+                        if route_validity or self.refine_retry[self.refine_target_place] < 0 or self.continuous_refine_retry < 0:
                             self.ready_to_refine = False
                             self.coarse_refine_result = None
+                            self.continuous_refine_retry = self.max_continuous_refine_retry
                             self.update_known_eta(
                                 {
                                     self.refine_target_place:
@@ -398,6 +401,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                             self.refine_target_danger = danger
                             self.refine_reference = self.refine_reference
                             self.coarse_refine_result = None
+                            self.continuous_refine_retry -= 1
         if self.emergency == 0:
             self.emergency = emergency
             if emergency > 0 and not self.last_route.empty():
