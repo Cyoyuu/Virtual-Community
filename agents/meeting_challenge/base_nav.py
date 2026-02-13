@@ -207,11 +207,11 @@ class Decider(ThinkingModule):
     def __init__(self, generator, logger, name, type="", ablate=""):
         super().__init__(generator, logger, name, type, ablate)
     
-    def rethink(self, curr_time, name, meeting_place, curr_eta, eta_history):
+    def rethink(self, curr_time, meeting_place, curr_eta, eta_history):
         prompt = open(os.path.join(self.prompt_path, "decide_rethink.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
-        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$CurrentPlace$", meeting_place)
         prompt = prompt.replace("$CurrentETA$", curr_eta)
         prompt = prompt.replace("$HistoricalETAs$", eta_history)
@@ -226,10 +226,10 @@ class Decider(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def start(self, name, agent_names, places, conversation_history):
+    def start(self, agent_names, places, conversation_history):
         prompt = open(os.path.join(self.prompt_path, "decide_start.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$AgentList$", agent_names)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
@@ -268,10 +268,10 @@ class Discusser(ThinkingModule):
             response_dict = None
         return response_dict
 
-    def extract_info(self, name, agent_names, places, conversation_history):
+    def extract_info(self, agent_names, places, conversation_history):
         prompt = open(os.path.join(self.prompt_path, "extract_info.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$SelfName$", name)
+        prompt = prompt.replace("$SelfName$", self.name)
         prompt = prompt.replace("$AgentList$", agent_names)
         prompt = prompt.replace("$Places$", places)
         prompt = prompt.replace("$ConversationHistory$", conversation_history)
@@ -502,7 +502,7 @@ class BaseNavigationMeetingAgent(Agent):
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
-                            if enable_refine==False:
+                            if enable_refine==False or len(event["content"])==0:
                                 self.update_known_eta(
                                     {
                                         self.last_action['arg2']:
@@ -518,16 +518,18 @@ class BaseNavigationMeetingAgent(Agent):
                                         self.refine_retry[self.refine_target_place] = self.max_refine_retry
                                     if self.refine_retry[self.refine_target_place] >= 0:
                                         self.ready_to_refine = True
+                                        self.refine_target_danger = danger
                                         self.refine_reference = [list(wp.location) for wp in event["content"]]
                                     else:
                                         self.ready_to_refine = False
-                                        self.update_known_eta(
+                                if not self.ready_to_refine:
+                                    self.update_known_eta(
+                                        {
+                                            self.last_action['arg2']:
                                             {
-                                                self.last_action['arg2']:
-                                                {
-                                                    self.name: str(time_to_arrival)
-                                                }
-                                            })
+                                                self.name: str(time_to_arrival)
+                                            }
+                                        })
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
                         elif self.last_action["arg1"]=="query_nearby":
@@ -596,7 +598,8 @@ class BaseNavigationMeetingAgent(Agent):
         self.mode_time_counter = 0
         self.discussion_trigger = trigger
         self.discussion_plan = None
-        self.agent_opinions = dict()
+        for agent in self.agent_opinions:
+            self.agent_opinions[agent] = self.agent_opinions[agent] + ", in the previous round of communication."
         self.known_poses = dict()
         self.known_eta = dict()
         # self.conversation_history = []
@@ -621,14 +624,14 @@ class BaseNavigationMeetingAgent(Agent):
         extracted_info={}
 
         if self.mode==NavAgentState.NAVIGATE and self.rethink:
-            extracted_info = self.decider.start(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
+            extracted_info = self.decider.start(agent_names=agent_names, places=places, conversation_history=current_message)
             if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
                 self.enter_discussion_mode(trigger="NEW DISCUSSION")
         elif self.mode==NavAgentState.DISCUSS:
             if 'spatial_memory' in self.ablate or 'analyzer' in self.ablate:
                 extracted_info = {}
             else:
-                extracted_info = self.discusser.extract_info(name=self.name, agent_names=agent_names, places=places, conversation_history=current_message)
+                extracted_info = self.discusser.extract_info(agent_names=agent_names, places=places, conversation_history=current_message)
             conclusion_and_decision = self.discusser.conclude_and_decide(curr_time=curr_time, agent_names=agent_names, places=places, conversation_history=conversation_history)
             self.agent_opinions = conclusion_and_decision['agent_opinions']
             decision = conclusion_and_decision['agreement_check']
@@ -768,11 +771,11 @@ class BaseNavigationMeetingAgent(Agent):
             else:
                 curr_eta = str(timedelta(seconds=int(self.last_route.calc_time())+len(self.last_path_for_estimation)*2))
             self.eta_history[curr_time]=curr_eta
-            rethink_result=self.decider.rethink(curr_time=curr_time, name=self.name, meeting_place=goal_place, curr_eta=f"{curr_eta}s remains to reach the destination", eta_history=self.get_eta_history_description())
+            rethink_result=self.decider.rethink(curr_time=curr_time, meeting_place=goal_place, curr_eta=f"{curr_eta}s remains to reach the destination", eta_history=self.get_eta_history_description())
             if rethink_result['initiate_new_discussion']:
                 self.enter_discussion_mode(trigger="RECENT EVENT")
-                action = {"type": "remote_converse", "arg1": rethink_result["speech"], "arg2": 3200}
-                return action, False
+                self.last_action = {"type": "remote_converse", "arg1": rethink_result["speech"], "arg2": 3200}
+                return self.last_action, False
         # 4. Check current place.
         # can enter the correct place
         if goal_place in self.obs['accessible_places']:
@@ -827,8 +830,9 @@ class BaseNavigationMeetingAgent(Agent):
                 self.last_route.pop(0)
             else:
                 break
+        # avoid going for wp inside buildings (unknow) 
         idx = 0
-        while idx < len(self.last_route)-1:
+        while idx < len(self.last_route):
             wp_x_world, wp_y_world = self.last_route[idx].location[0], self.last_route[idx].location[1]
             wp_pos_in_map = [
                 builder.align_nav(wp_x_world) - x_min,
@@ -837,7 +841,6 @@ class BaseNavigationMeetingAgent(Agent):
             if 0 <= int(wp_pos_in_map[1]) < y_max - y_min and 0 <= int(wp_pos_in_map[0]) < x_max - x_min and occ_map[int(wp_pos_in_map[1])][int(wp_pos_in_map[0])] in [3]:
                 break
             idx += 1
-        # avoid going for wp inside buildings (unknow) 
         if 0 < idx < len(self.last_route):
             self.navigate(self.s_mem.get_sg(), self.last_route[idx].location)
             time_to_reach_next_open_space_wp=len(self.last_path_for_estimation)
@@ -849,6 +852,7 @@ class BaseNavigationMeetingAgent(Agent):
                     self.last_route.pop(0)
         # If no intermediate waypoints left.
         if len(self.last_route)==1:
+            self.last_nav = [self.last_route[0].location]
             return self.goto_place(goal_place)
         # navigate depending on current transit type.
         if self.last_route[0].transit=='walk':

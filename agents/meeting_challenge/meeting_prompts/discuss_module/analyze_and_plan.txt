@@ -62,12 +62,17 @@ Return a JSON object:
 Guidelines for analyzing missing info:
 
 Places mentioned in missing info must be a exact place name from $Places, each enclosed in <>.
+- Include an agent's pose if it's not known yet.
 - Include a place if:
   - The agent hasn’t queried it yet.
   - It’s being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
 - Don't include information already known in "Known agent positions" and "Known ETAs". Examine 'KnownETA' carefully. This is very important! For example, if you know your ETA to <Place> in "Known ETAs" and someone is asking for that, don't include it in the missing info!.
-- Include an agent's pose if it's not known yet.
-- Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
+- Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty. Unknown agent poses are the most critical.
+
+Guidelines for Choosing Meeting Place:
+- Should be close to all agents. One good idea is selecting a middle ground.
+- Never too far for any agents. If a place is too far for any agent, propose against it.
+- Additionally, shouldn't be close to any sentinels when possible.
 
 Guidelines for Choosing Action:
 You must choose from three types of actions: "speak" with teammates, "query" the navigation app, or just "wait".
@@ -90,16 +95,15 @@ In short, if you need to speak something, choose 'speak'. If so, set the 'explan
 The agent lacks its own ETA to one or more leading locations, so it will query the navigation app for this.
 Someone is asking for your information and you don't have that information.
 Some unknown places are mentioned, so you need to query the navigation app for this.
-You want more information about a specific area.
 In short, if you need to query the navigation app for something, choose 'query'. If so, set the 'explanation' to what you want to query about.
 
 “wait” — if:
 
-Other agents are actively speaking or querying, unless they are asking you.
+Other agents are actively speaking or asking, unless they are asking you.
 The agent has nothing new to add yet.
 Recent messages suggest convergence is imminent.
 
-For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again.
+For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question have asked multiple times, please don't waste time asking again. If someone has just asked for another one's response, be patient to wait for that response for at least 5 seconds.
 
 
 —

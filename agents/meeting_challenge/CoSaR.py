@@ -205,6 +205,45 @@ class Reasoner(ThinkingModule):
 class CoSaRDiscusser(Discusser):
     def __init__(self, generator, logger, name, type="", ablate=""):
         super().__init__(generator, logger, name, type, ablate)
+
+    def start(self, agent_names, agent_opinions, places, conversation_history):
+        prompt = open(os.path.join(self.prompt_path, "decide_start.txt"), "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        prompt = prompt.replace("$SelfName$", self.name)
+        prompt = prompt.replace("$AgentList$", agent_names)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
+    
+    def conclude_and_decide_and_extract(self, curr_time, agent_names, agent_opinions, places, conversation_history):
+        prompt = open(os.path.join(self.prompt_path, "conclude_and_decide_and_extract.txt"), "r").read()
+        prompt = prompt.replace("$TaskDescription$", self.task_decription)
+        prompt = prompt.replace("$CurrentTime$", curr_time)
+        prompt = prompt.replace("$SelfName$", self.name)
+        prompt = prompt.replace("$AgentList$", agent_names)
+        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
+        prompt = prompt.replace("$Places$", places)
+        prompt = prompt.replace("$ConversationHistory$", conversation_history)
+        self.logger.debug(f"planning_prompt: {prompt}")
+        response = self.generator.generate(prompt, img=None, json_mode=False)
+        try:
+            response_dict = self.parse_json(prompt, response)
+            self.logger.debug(f"generated response: {response_dict}")
+        except Exception as e:
+            self.logger.error(
+                f"Error concluding opinions: {e} with traceback: {traceback.format_exc()}. The response was {response}")
+            response_dict = None
+        return response_dict
     
     def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling, speech):
         prompt = open(os.path.join(self.prompt_path, "analyze_and_plan.txt"), "r").read()
@@ -288,6 +327,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.ready_to_refine = False
         self.refine_reference = None
         self.refine_target_place = None # place the reference route lead to
+        self.refine_target_danger = None
         self.coarse_refine_result = None
         self.max_refine_retry = refine_retry
         self.refine_retry = dict()
@@ -323,7 +363,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                         image = Image.fromarray(np.array(event['content']).astype(np.uint8))
                         image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_{self.obs['steps']}.png"))
                         # route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
-                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.refine_reference, self.get_known_sentinel_poses_description(), danger)
+                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.refine_reference, self.get_known_sentinel_poses_description(), self.refine_target_danger)
                         if route is not None:
                             self.coarse_refine_result = route
                         else:
@@ -355,6 +395,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                                 })
                         else:
                             self.ready_to_refine = True
+                            self.refine_target_danger = danger
                             self.refine_reference = self.refine_reference
                             self.coarse_refine_result = None
         if self.emergency == 0:
@@ -385,6 +426,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                     self.refine_retry[self.refine_target_place] = self.max_refine_retry
                 if self.refine_retry[self.refine_target_place] >= 0:
                     self.ready_to_refine = True
+                    self.refine_target_danger = danger
                     self.refine_reference = [list(wp.location) for wp in self.last_route]
                 else:
                     self.ready_to_refine = False
@@ -475,6 +517,42 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         assert action is None or isinstance(action, dict)
         self.last_action=action
         return self.last_action
+
+    def discuss_process_speech(self, obs):
+        agent_names = ", ".join(obs["agent_pos_dict"].keys())
+        places = self.get_nearest_places_description(self.get_meeting_target())
+        current_message = self.get_conversation_description(limit=1)
+        conversation_history = self.get_conversation_description()
+        curr_time = self.curr_time.strftime('%H:%M:%S')
+        extracted_info={}
+
+        for agent_name in obs["agent_pos_dict"].keys():
+            if agent_name not in self.agent_opinions:
+                self.agent_opinions[agent_name] = 'undecided'
+
+        if self.mode==NavAgentState.NAVIGATE and self.rethink:
+            extracted_info = self.discusser.start(agent_names=agent_names, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=current_message)
+            self.agent_opinions = extracted_info['agent_opinions']
+            if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
+                self.enter_discussion_mode(trigger="NEW DISCUSSION")
+        elif self.mode==NavAgentState.DISCUSS:
+            extracted_info = self.discusser.conclude_and_decide_and_extract(curr_time=curr_time, agent_names=agent_names, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=current_message)
+            self.agent_opinions = extracted_info['agent_opinions']
+            decision = extracted_info['agreement_check']
+            if decision["agreed_location"] is not None:
+                meeting_place = decision["agreed_location"]
+                if meeting_place.startswith("<") and meeting_place.endswith(">"):
+                    meeting_place = meeting_place[1:-1]
+                self.meeting_place = meeting_place
+            if decision["agreement_reached"] == True:
+                self.enter_navigation_mode(goal_place=self.meeting_place)
+        if 'spatial_memory' not in self.ablate and 'analyzer' not in self.ablate:
+            if 'ETA Map' in extracted_info:
+                self.update_known_eta(extracted_info['ETA Map'])#!!!
+            if 'Agent Poses' in extracted_info:
+                self.update_known_poses(extracted_info['Agent Poses'])
+            if 'Sentinel Poses' in extracted_info:
+                self.update_known_sentinel_poses(extracted_info['Sentinel Poses'], shared=1)
     
     def discuss_act(self):
         action = None

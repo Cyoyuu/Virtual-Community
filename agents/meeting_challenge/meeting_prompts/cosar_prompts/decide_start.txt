@@ -1,10 +1,12 @@
 $TaskDescription$
 
 The agent just received a new message.  
-Your job has **two parts**:
+Your job has **four parts**:
 
-1. Decide whether it is time to **start a new discussion or participate the current discussion** to coordinate a suitable meeting place.
-2. Extract all available **ETA information**, **agent poses**, and **sentinel poses** from the shared conversation history.
+1. Decide whether it is time to **start a new round of discussion or participate the current discussion** to coordinate a suitable meeting place.
+2. **Summarize each agent’s current preferred location or stance** based on the conversation history.
+3. **Determine whether all agents have reached full agreement** on a single meeting location.
+4. Extract all available **ETA information**, **agent poses**, and **sentinel poses** from the shared conversation history.
 
 ---
 
@@ -15,6 +17,9 @@ $SelfName$
 
 **Agent List:**  
 $AgentList$
+
+Previous Agent Opinions: 
+$AgentOpinions$
 
 **Available Places:**  
 $Places$
@@ -31,21 +36,36 @@ Return a JSON object with the following structure:
 ```json
 {
     "initiate_discussion": true|false,
+    "agent_opinions": {
+        "agent_name1": "agent_opinion1",
+        "agent_name2": "agent_opinion2",
+        ...
+    },
+    "agreement_check": {
+        "agreement_reached": true|false,
+        "agreed_location": "<Place Name>" | null
+    },
     "ETA Map": {
         "<Place Name>": {
             "Agent1": "00:00:15",
-            "Agent2": "Impossible"
+            "Agent2": "Impossible",
+            ...
+        },
+        "<Another Place>": {
+            "Agent3": "01:14:30",
+            ...
         }
     },
     "Agent Poses": {
         "Agent1": [0.0, 80.0],
-        "Agent2": [-45.0, 120.0]
-    },
+        ...
+    }
     "Sentinel Poses": [
-        [-55.0, 176.0, 99.9],
-        [12.0, 94.0, 98.7]
+        [-55.0, 176.0, 108.55],
+        ...
     ]
 }
+```
 ```
 
 ---
@@ -66,7 +86,37 @@ Set it to `false` if:
 
 ---
 
-### **Part 2: Information Extraction Rules**
+### **Part 2: Summarize Agent Opinions**
+
+Guidelines:
+
+- Be objective and factual — reflect what each agent has explicitly stated or implied. 
+- If an agent hasn’t spoken or is ambiguous, note that (e.g., “undecided”, “waiting for info”). 
+- Use clear, concise phrases (under 15 words per agent). 
+- Do not invent opinions — only infer from available conversation. 
+- Use exact place names from the list, enclosed in <>, e.g., <Central Park>. 
+- For agents not speaking, keep their previous opinion.
+
+---
+
+### **Part 3: Check for Full Agreement**
+
+Using the summarized opinions from Step 1, determine if every agent explicitly supports the same location.
+
+Guidelines:
+
+- Be strict: Agreement means unanimous consensus — no exceptions.
+- If any agent is “undecided”, “waiting”, or prefers a different location → agreement_reached = false.
+- Do not infer or assume compromise. However, if someone has made a finalization and there are no objections in 5 seconds, you can assume an agreement has been reached.
+- If one agent did not response for a while (e.g., over 10s), consider the probability of it being caught, in which case it's opinion doesn't matter to the agreement.
+- Use exact string matching for place names (e.g., <Central Park> ≠ Central Park).
+
+If all agents prefer the same location, set `"agreement_reached": true` and `"agreed_location"` to that location.
+Otherwise, set "agreement_reached": false and `"agreed_location"` to the most supported location.
+
+---
+
+### **Part 4: Information Extraction Rules**
 
 Extract structured information from conversation history and the most recent message:
 

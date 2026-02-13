@@ -28,7 +28,7 @@ Return a JSON object:
 ```json
 {
     "initiate_new_discussion": true|false,
-    "speech": "brief explanation why you initiate a new discussion to others (under 50 words)"
+    "speech": "brief explanation why you initiate a new discussion to others (under 100 words)"
 }
 ```
 
@@ -45,6 +45,17 @@ The agent has reached the destination.
 The agent is making progress as estimated. The estimated arrival time remains stable or become better.
 Delay is minor (< 15% increase) and temporary.
 No better alternative location is available or likely to help.
+
+Guidelines for speech:
+
+- Keep it under 100 words, 1–3 clear, polite sentences.
+- Use exact place names: <Place Name> in your speech.
+- If you haven't mentioned your current position or it has changed since your last mentioning, mention your current position to let others know (e.g., "I'm current at [90.03, -33.10]"). Enclose your xy coordinates in [], making it easier for others to parse.
+- If an ETA is so bad that would affect your meeting in time, mention that ETA (e.g., “my ETA is 18 min”) and clearly express you opposition.
+- When mentioning your ETA, always specify the destination it is related with.
+- Don't ask for sentinel poses, as they should all be reported immediately when observed.
+- Avoid: “I think”, “maybe”, “perhaps” — be decisive and action-oriented.
+- Match the tone of prior conversation — collaborative, efficient, respectful.
 —
 
 Example:
