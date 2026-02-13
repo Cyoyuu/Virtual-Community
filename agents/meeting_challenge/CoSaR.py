@@ -138,12 +138,12 @@ class Reasoner(ThinkingModule):
                     return False, str(sentinel[:2])
         return True, "None"
         
-    def refine_waypoints_with_image(self, pose, image, last_route, known_sentinel_poses, danger):
+    def refine_waypoints_with_image(self, pose, image, reference_route, known_sentinel_poses, danger):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/refine_waypoints_aerial_view.txt", "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        self.logger.debug(f"refining waypoints with image {np.array(image).shape}, the original route is {last_route.to_dict()}")
+        self.logger.debug(f"refining waypoints with image {np.array(image).shape}, the original route is {reference_route}")
         prompt = prompt.replace("$SelfPose$", pose)
-        prompt = prompt.replace("$DestinationPose$", str(list(last_route[-1].location[:2])))
+        prompt = prompt.replace("$DestinationPose$", str(list(reference_route[-1][:2])))
         self.logger.debug(f"planning_prompt: {prompt}")
         response = self.generator.generate(prompt, img=image, json_mode=False)
         prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
@@ -280,12 +280,18 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
         self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
+        # emergency property
         self.emergency = 0
         self.emergency_avoid_target = None
         self.emergency_analysis = {}
+        # route refine property
         self.ready_to_refine = False
-        self.refine_retry = refine_retry
-        self.navigation_plan = None
+        self.refine_reference = None
+        self.refine_target_place = None # place the reference route lead to
+        self.coarse_refine_result = None
+        self.max_refine_retry = refine_retry
+        self.refine_retry = dict()
+        # CoSaR property
         self.rethink = True
         self.chat_time_limit = 60
 
@@ -302,7 +308,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 else:
                     self.known_sentinel_poses[i][3]=1
         super()._process_obs(obs)
-        self.process_obs_with_sptial_knowledge(obs)
+        self.process_obs_with_sptial_knowledge(obs, enable_refine=True)
         emergency = 0
         for sentinel in self.visible_sentinels:
             if np.linalg.norm(np.array(self.pose[:2])-np.array(self.visible_sentinels[sentinel][:2]))<18:
@@ -316,29 +322,41 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_grid_map_image':
                         image = Image.fromarray(np.array(event['content']).astype(np.uint8))
                         image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_{self.obs['steps']}.png"))
-                        route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
-                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.last_route, self.get_known_sentinel_poses_description(), danger)
+                        # route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
+                        route = self.spatial_resoner.refine_waypoints_with_image(self.get_outdoor_pose_description(), image, self.refine_reference, self.get_known_sentinel_poses_description(), danger)
                         if route is not None:
-                            self.navigation_plan = route
+                            self.coarse_refine_result = route
                         else:
                             self.logger.warning(f"Fail to generate new route, still using the original one!")
                     if self.last_action['type']=="query_app" and self.last_action['arg1'] == 'query_refine_route':
-                        self.navigation_plan = None
                         self.logger.debug(f"successfully got refined route from the app. it's {event['content']['refined_route'].to_dict()}")
                         if event['content'] is None:
                             time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
                         else:
                             time_to_arrival = timedelta(seconds=int(event['content']["refined_route"].calc_time(pose=self.get_outdoor_pose())))
+                        if self.goal_place==self.last_action["arg2"]:
+                                self.last_route=event["content"]["refined_route"]
+                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                         image = Image.fromarray(np.array(event['content']["grid_map_image"]).astype(np.uint8))
                         image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png"))
                         self.logger.debug(f"successfully saved refined route image to grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png")
-                        last_wp=self.last_route[-1]
-                        self.last_route=event["content"]["refined_route"]
-                        self.last_route.append(last_wp)
-                        self.last_estimated_arrival_time = self.curr_time + time_to_arrival
-                        route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
+                        route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, event["content"]["refined_route"], excluding_wps=[self.pose[:2], event["content"]["refined_route"][-1].location])
                         self.refine_history.append(route_validity)
                         json.dump(self.refine_history, open(os.path.join(self.storage_path, "refine_history.json"), "w"))
+                        if route_validity or self.refine_retry[self.refine_target_place] < 0:
+                            self.ready_to_refine = False
+                            self.coarse_refine_result = None
+                            self.update_known_eta(
+                                {
+                                    self.refine_target_place:
+                                    {
+                                        self.name: str(time_to_arrival)
+                                    }
+                                })
+                        else:
+                            self.ready_to_refine = True
+                            self.refine_reference = self.refine_reference
+                            self.coarse_refine_result = None
         if self.emergency == 0:
             self.emergency = emergency
             if emergency > 0 and not self.last_route.empty():
@@ -356,12 +374,20 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 self.emergency = (self.emergency + 1)%14 # progress the post-emergency
                 if not self.last_route.empty():
                     self.logger.debug(f"analyzing emergency, {self.emergency_analysis['wp_count']} and {len(self.last_route)}; {self.emergency_analysis['wp_dis']} and {np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2]))}")
-                if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]): # did not pass in emergency
-                    self.ready_to_refine = True
+                # if not self.last_route.empty() and (self.emergency_analysis["wp_count"] == len(self.last_route) and np.linalg.norm(np.array(self.pose[:2]) - np.array(self.last_route[0].location[:2])) > self.emergency_analysis["wp_dis"]): # did not pass in emergency
+                #     self.ready_to_refine = True
+                #     self.refine_reference = [list(wp.location) for wp in self.last_route]
         if self.last_route:
             route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
-            if self.current_place is None and not self.last_route.empty() and not route_validity and self.navigation_plan is None:
-                self.ready_to_refine = True
+            if self.current_place is None and not self.last_route.empty() and not route_validity and self.coarse_refine_result is None:
+                self.refine_target_place = self.goal_place
+                if self.refine_target_place not in self.refine_retry:
+                    self.refine_retry[self.refine_target_place] = self.max_refine_retry
+                if self.refine_retry[self.refine_target_place] >= 0:
+                    self.ready_to_refine = True
+                    self.refine_reference = [list(wp.location) for wp in self.last_route]
+                else:
+                    self.ready_to_refine = False
             else:
                 self.ready_to_refine = False
 
@@ -370,10 +396,9 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        # if still in emergency
-        if self.refine_retry<=0:
+        if self.max_refine_retry<=0:
             self.emergency = 0
-        if 1 <= self.emergency <= 10:
+        if 1 <= self.emergency <= 10: # if still in emergency
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
                 self.emergency_avoid_target = self.emergency_avoid()
             if self.emergency_avoid_target is None:
@@ -384,28 +409,31 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 self.logger.info(f"performing emergency avoiding. Target is {self.emergency_avoid_target}")
                 self.last_action = self.navigate(self.s_mem.get_sg(), list(self.emergency_avoid_target))
                 return self.last_action
-        elif self.emergency > 10:
+        elif self.emergency > 10: # if after emergency
             self.emergency_avoid_target = None
             self.logger.info(f"after emergency avoiding. emergency level is {self.emergency}")
             self.last_action = {'type': 'turn_right', 'arg1': 90}
             return self.last_action
-        else:
+        else:  # if not in emergency
             self.emergency_avoid_target = None
             if self.ready_to_refine:
-                if self.refine_retry > 0:
-                    self.refine_retry -= 1
+                if self.refine_retry[self.refine_target_place] > 0:
+                    self.refine_retry[self.refine_target_place] -= 1
                     self.ready_to_refine = False
-                    action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route]}
+                    action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference}
                     self.last_action = action
                     return self.last_action
-                elif self.ready_to_refine == 0: # if 0, make a normal query
-                    self.refine_retry -= 1
+                elif self.refine_retry[self.refine_target_place] == 0: # if 0, make a normal query
+                    self.refine_retry[self.refine_target_place] -= 1
                     self.ready_to_refine = False
                     action = {"type": "query_app", "arg1": "query_route", "arg2": self.goal_place}
                     self.last_action = action
                     return self.last_action
-            if self.navigation_plan is not None:
-                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": [list(wp.location) for wp in self.last_route], "arg4": self.navigation_plan}
+                else:
+                    self.logger.error(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
+                    raise ValueError(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
+            if self.coarse_refine_result is not None:
+                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference, "arg4": self.coarse_refine_result}
                 self.last_action = action
                 return self.last_action
         # no emergency

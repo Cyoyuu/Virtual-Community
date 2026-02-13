@@ -482,7 +482,7 @@ class BaseNavigationMeetingAgent(Agent):
             self.route_history['last_nav'][self.obs['steps']]=copy.deepcopy(self.last_nav)
             json.dump(self.route_history, open(os.path.join(self.storage_path, "route_history.json"), "w"))
 
-    def process_obs_with_sptial_knowledge(self, obs):
+    def process_obs_with_sptial_knowledge(self, obs, enable_refine=False):
         # react to events
         if len(obs['events']) > 0:
             for event in obs['events']:
@@ -502,13 +502,32 @@ class BaseNavigationMeetingAgent(Agent):
                                 self.last_route=event["content"]
                                 self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                             self.app_message_history.append(Message(self.curr_time, event["subject"], f"The estimated time from current pose to {self.last_action['arg2']} is {time_to_arrival}s"))
-                            self.update_known_eta(
-                                {
-                                    self.last_action['arg2']:
+                            if enable_refine==False:
+                                self.update_known_eta(
                                     {
-                                        self.name: str(time_to_arrival)
-                                    }
-                                })
+                                        self.last_action['arg2']:
+                                        {
+                                            self.name: str(time_to_arrival)
+                                        }
+                                    })
+                            else:
+                                route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, event["content"], excluding_wps=[self.pose[:2], event["content"][-1].location])
+                                if not route_validity:
+                                    self.refine_target_place = self.last_action["arg2"]
+                                    if self.refine_target_place not in self.refine_retry:
+                                        self.refine_retry[self.refine_target_place] = self.max_refine_retry
+                                    if self.refine_retry[self.refine_target_place] >= 0:
+                                        self.ready_to_refine = True
+                                        self.refine_reference = [list(wp.location) for wp in event["content"]]
+                                    else:
+                                        self.ready_to_refine = False
+                                        self.update_known_eta(
+                                            {
+                                                self.last_action['arg2']:
+                                                {
+                                                    self.name: str(time_to_arrival)
+                                                }
+                                            })
                         elif self.last_action["arg1"]=="query_place":
                             self.s_mem.update_with_new_knowledge(event["content"])
                         elif self.last_action["arg1"]=="query_nearby":
@@ -1397,6 +1416,20 @@ class BaseNavigationMeetingAgent(Agent):
             goal_bbox = goal_place_dict["bounding_box"]
             places_description += f"<{place}>: location {goal_pos}\n" if "spatial_memory" not in self.ablate else f"<{place}>\n"
         return places_description
+
+    def get_place_outdoor_pose(self, place):
+        """return a (2,) list or None"""
+        goal_place_dict = self.s_mem.get_knowledge(place)
+        if goal_place_dict is None:
+            self.logger.error(f"No knowledge found for {place}.")
+            return None
+        goal_pos = np.array([goal_place_dict["location"][0], goal_place_dict["location"][1]])
+        if goal_place_dict["building"] != "open space":
+            goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+        if goal_pos[0] > 500: # also a hack
+            goal_pos[0], goal_pos[1] = goal_pos[0] - 1000, goal_pos[1] - 1000
+        goal_bbox = goal_place_dict["bounding_box"]
+        return goal_pos[:2]
 
     def get_previous_actions_description(self):
         if len(self.action_history) == 0:
