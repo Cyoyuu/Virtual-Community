@@ -447,7 +447,10 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             self.emergency = 0
         if 1 <= self.emergency <= 10: # if still in emergency
             self.logger.info(f"In emergency, emergency level is {self.emergency}")
-            if len(self.obs['accessible_places']) > 0:
+            if self.current_place is not None:
+                self.last_action={"type": "wait"}
+                return self.last_action
+            if len(self.obs['accessible_places']) > 0 :
                 emergency_avoid_target_place = self.goal_place if self.goal_place in self.obs['accessible_places'] else self.obs['accessible_places'][0]
                 self.logger.info(f"performing emergency avoiding. Target is {emergency_avoid_target_place}")
                 self.last_action = {
