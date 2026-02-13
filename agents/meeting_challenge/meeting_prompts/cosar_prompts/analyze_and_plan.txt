@@ -67,12 +67,12 @@ You must select exactly one from the available actions:
 or
 {
     "action": "query_place",
-    "content": "<Target Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here. If the place name is not in the Known Available Places, choose this.
+    "content": "<Target Place name>" # this action will trigger a query sent to the navigation app; you can only list one place here. If the place name is not in the Known Available Places, choose this. Must be a place name, e.g. "<Castle Island>", but neither "(agent)'s pose" nor "(sentinel)'s pose".
 }
 or
 {
     "action": "query_route",
-    "content": "<Target place name>" # this action will trigger a spatial reasoning chain to handle the query procedure; you can only list one place here.
+    "content": "<Target place name>" # this action will trigger a spatial reasoning chain to handle the query procedure; you can only list one place here. Must be from Known Available Places.
 }
 or
 {
@@ -120,7 +120,7 @@ Choose "speak" if:
 Do NOT choose "speak" if your message only repeats previous content without adding new value. Attention! Unnecessary speech may block the communication channel and prevent agents who truly need to speak from doing so.
 
 Choose "query_place" if:
-- A place is mentioned but you lack information about it.
+- A place is mentioned but you lack information about it. Must be a **place**.
 
 Choose "query_route" if:
 - You do not know your ETA or route to one candidate locations.

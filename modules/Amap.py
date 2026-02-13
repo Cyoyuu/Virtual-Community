@@ -355,6 +355,7 @@ class Amap:
 
     def query_place(self, place_name):
         # one place at one time to simulate time cost
+        if place_name not in self.place_metadata: return None
         knowledge = copy.deepcopy(self.place_metadata[place_name])
         knowledge["bounding_box"]=self.building_metadata[knowledge['building']]['bounding_box']
         knowledge_items={place_name: knowledge}

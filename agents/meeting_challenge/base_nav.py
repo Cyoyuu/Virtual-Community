@@ -531,7 +531,10 @@ class BaseNavigationMeetingAgent(Agent):
                                             }
                                         })
                         elif self.last_action["arg1"]=="query_place":
-                            self.s_mem.update_with_new_knowledge(event["content"])
+                            if event['content'] is not None:
+                                self.s_mem.update_with_new_knowledge(event["content"])
+                            else:
+                                self.logger.warning(f"Get no information for {self.last_action['arg2']}")
                         elif self.last_action["arg1"]=="query_nearby":
                             self.places_buffer.extend(event['content'])
                         elif self.last_action["arg1"]=="query_grid_map":
