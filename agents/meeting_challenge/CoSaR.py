@@ -445,6 +445,18 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         if self.max_refine_retry<=0:
             self.emergency = 0
         if 1 <= self.emergency <= 10: # if still in emergency
+            self.logger.info(f"In emergency, emergency level is {self.emergency}")
+            if len(self.obs['accessible_places']) > 0:
+                emergency_avoid_target_place = self.goal_place if self.goal_place in self.obs['accessible_places'] else self.obs['accessible_places'][0]
+                self.logger.info(f"performing emergency avoiding. Target is {emergency_avoid_target_place}")
+                self.last_action = {
+                    'type': 'enter',
+                    'arg1': emergency_avoid_target_place
+                }
+                return self.last_action
+            self.rethink = False
+            self.city_navigate(self.goal_place, requery=False) # just for refresh self.nav
+            self.rethink = True
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
                 self.emergency_avoid_target = self.emergency_avoid()
             if self.emergency_avoid_target is None:
@@ -462,26 +474,27 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             return self.last_action
         else:  # if not in emergency
             self.emergency_avoid_target = None
-            if self.ready_to_refine:
-                if self.refine_retry[self.refine_target_place] > 0:
-                    self.refine_retry[self.refine_target_place] -= 1
-                    self.ready_to_refine = False
-                    action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference}
-                    self.last_action = action
-                    return self.last_action
-                elif self.refine_retry[self.refine_target_place] == 0: # if 0, make a normal query
-                    self.refine_retry[self.refine_target_place] -= 1
-                    self.ready_to_refine = False
-                    action = {"type": "query_app", "arg1": "query_route", "arg2": self.goal_place}
-                    self.last_action = action
-                    return self.last_action
-                else:
-                    self.logger.error(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
-                    raise ValueError(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
-            if self.coarse_refine_result is not None:
-                action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference, "arg4": self.coarse_refine_result}
+        # route refinement
+        if self.ready_to_refine:
+            if self.refine_retry[self.refine_target_place] > 0:
+                self.refine_retry[self.refine_target_place] -= 1
+                self.ready_to_refine = False
+                action = {"type": "query_app", "arg1": "query_grid_map_image", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference}
                 self.last_action = action
                 return self.last_action
+            elif self.refine_retry[self.refine_target_place] == 0: # if 0, make a normal query
+                self.refine_retry[self.refine_target_place] -= 1
+                self.ready_to_refine = False
+                action = {"type": "query_app", "arg1": "query_route", "arg2": self.goal_place}
+                self.last_action = action
+                return self.last_action
+            else:
+                self.logger.error(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
+                raise ValueError(f"Error in refine retry count for place {self.refine_target_place}, the count is {self.refine_retry[self.refine_target_place]}")
+        if self.coarse_refine_result is not None:
+            action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference, "arg4": self.coarse_refine_result}
+            self.last_action = action
+            return self.last_action
         # no emergency
         if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
             speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
