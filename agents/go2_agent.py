@@ -13,7 +13,7 @@ from .robot_agent import RobotAgent
 class Go2Agent(RobotAgent):
     def __init__(self, name, pose, info, sim_path,
                  no_react=False, debug=False, logger=None, **kwargs):
-        env_cfg, obs_cfg, reward_cfg, command_cfg = pickle.load(open("modules/robot/cfgs/go2/cfgs.pkl", 'rb'))
+        env_cfg, obs_cfg, reward_cfg, command_cfg = pickle.load(open("assets/robot_cfgs/go2/cfgs.pkl", 'rb'))
         self.num_single_obs = obs_cfg['num_obs']
         self.obs_history = torch.zeros([1, self.num_single_obs * obs_cfg['num_history_obs']],
                                        dtype=torch.float, device=gs.backend.name)
