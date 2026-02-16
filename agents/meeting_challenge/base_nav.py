@@ -1405,7 +1405,7 @@ class BaseNavigationMeetingAgent(Agent):
             if flag:
                 self.known_sentinel_poses.append(list(sentinel_pose))
                 if self.current_place is None:
-                    self.s_mem.get_sg('open space').add_danger_zone(list(sentinel_pose[:3]), 1) # use 1 will not affect the effect i guess?
+                    self.s_mem.get_sg('open space').add_danger_zone(list(sentinel_pose[:3]), 1, self.obs['extrinsics']) # use 1 will not affect the effect i guess?
 
     def get_nearest_places_description(self, target):
         place_list = self.get_nearest_places(target)

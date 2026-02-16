@@ -23,8 +23,8 @@ class Builder:
     def add_warning_label(self, warning_label):
         self.volume_grid_builder.add_warning_label(warning_label)
 
-    def add_danger_zone(self, sentinel_pos, sentinel_label):
-        self.volume_grid_builder.add_danger_zone(sentinel_pos=sentinel_pos, sentinel_label=sentinel_label)
+    def add_danger_zone(self, sentinel_pos, sentinel_label, camera_ext: np.ndarray):
+        self.volume_grid_builder.add_danger_zone(sentinel_pos=sentinel_pos, sentinel_label=sentinel_label, camera_ext=camera_ext)
     
     def add_frame(self, rgb: np.ndarray, depth: np.ndarray, labels: np.ndarray, camera_ext: np.ndarray):
         self.num_frames += 1

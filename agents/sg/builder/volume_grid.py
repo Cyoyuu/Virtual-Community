@@ -159,8 +159,8 @@ class VolumeGridBuilder:
     def get_overlap(self, other: 'VolumeGridBuilder', radius=0.1) -> float:
         return lib_builder.volume_grid_get_overlap(self.vg_backend, other.vg_backend, radius)
     
-    def add_danger_zone(self, sentinel_pos, sentinel_label):
-        lib_builder.volume_grid_add_danger_zone(self.vg_backend, sentinel_pos[0], sentinel_pos[1], sentinel_pos[2], sentinel_label)
+    def add_danger_zone(self, sentinel_pos, sentinel_label, camera_ext: np.ndarray):
+        lib_builder.volume_grid_add_danger_zone(self.vg_backend, sentinel_pos[0], sentinel_pos[1], sentinel_pos[2], sentinel_label, camera_ext.astype(np.float32).ctypes.data_as(ctypes.POINTER(ctypes.c_float)))
     
     def get_occ_map(self, agent_pos: np.ndarray=None, save_path: str=None, external_warning=None, external_route=None) -> tuple[np.ndarray, int, int, int, int]:
         # occ map: 1 unknown, 2 obstacle, 3 road, and we now use 4 for external warning

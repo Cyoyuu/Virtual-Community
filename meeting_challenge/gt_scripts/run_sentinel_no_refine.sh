@@ -24,7 +24,7 @@ python meeting_challenge/challenge.py --head_less \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
 --enable_danger_zone \
---refine_retry 0 \
+--refine_retry "-1" \
 --save_per_seconds 200 \
 --step_limit 1500 \
 --lm_source azure \

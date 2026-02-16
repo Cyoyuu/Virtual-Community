@@ -14,7 +14,8 @@ lib_builder.volume_grid_add_danger_zone.argtypes = [ctypes.c_void_p, # backend o
                                                     ctypes.c_float, # x
                                                       ctypes.c_float, # y
                                                       ctypes.c_float, # z
-                                                      ctypes.c_int] # label
+                                                      ctypes.c_int, # label
+                                                      ctypes.POINTER(ctypes.c_float)] # camera_ext
 lib_builder.volume_grid_add_danger_zone.restype = None
 
 lib_builder.volume_grid_add_frame.argtypes = [ctypes.c_void_p, # backend object

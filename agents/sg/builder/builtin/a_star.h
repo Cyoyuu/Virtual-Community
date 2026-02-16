@@ -95,7 +95,6 @@ public:
                     int warning_grid = arr->warning.count(h + 1, h + grid_num);
                     if (obs_grid > int(0.5 / vg->get_voxel_res())) {
                         if (warning_grid > int(0.5 / vg->get_voxel_res())) {
-                            printf("let's try warning! obs: %d warning: %d\n", obs_grid, warning_grid);
                             return m = WARNING;
                         }
                         else
@@ -125,9 +124,10 @@ public:
     int check_path(const std::vector<Point> &path) {
         for (size_t i = 0; i < path.size(); i++) {
             Point cp = align(path[i]);
-            if (cp.x < x_min || cp.x > x_max || cp.y < y_min || cp.y > y_max || get_map(cp) == OBSTACLE || get_map(cp) == WARNING) {
+            if (cp.x < x_min || cp.x > x_max || cp.y < y_min || cp.y > y_max || get_map(cp) == OBSTACLE) {
                 return i;
             }
+            // WARNING is allowed on path so agent can exit the warning zone
         }
         return -1;
     }
@@ -227,7 +227,7 @@ std::vector<AStar::Point> AStar::search() {
                 open.emplace(np, current->g + 1 + extra, heuristic(np), current);
                 continue;
             }
-            if (entry == OBSTACLE || entry == WARNING || n_near_obs <= 1) {
+            if (entry == OBSTACLE || (entry == WARNING && current_entry != WARNING) || n_near_obs <= 1) {
                 // ban move to any direction which near obstacle
                 continue;
             }
@@ -235,7 +235,7 @@ std::vector<AStar::Point> AStar::search() {
                 open.emplace(np, current->g + 5 + extra, heuristic(np), current);
             } else if (current_entry == UNKNOWN) {
                 open.emplace(np, current->g + 5 + extra, heuristic(np), current);
-            } else if (current_entry == ROAD) {
+            } else if (current_entry == ROAD || current_entry == WARNING) {
                 if (std::abs(nh - h) <= base)
                     open.emplace(np, current->g + 1 + extra, heuristic(np), current);
                 // else if (std::abs(nh - h) <= int(MAX_HEIGHT / 2 / vg->get_voxel_res()))

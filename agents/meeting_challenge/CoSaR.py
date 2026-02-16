@@ -443,21 +443,22 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        if self.max_refine_retry<=0:
+        if self.max_refine_retry<=0 or (self.goal_place is not None and self.goal_place in self.refine_retry and self.refine_retry[self.goal_place] < 0) or self.continuous_refine_retry < 0:
             self.emergency = 0
         if 1 <= self.emergency <= 10: # if still in emergency
             self.logger.info(f"In emergency, emergency level is {self.emergency}")
-            if self.current_place is not None:
-                self.last_action={"type": "wait"}
-                return self.last_action
-            if len(self.obs['accessible_places']) > 0 :
-                emergency_avoid_target_place = self.goal_place if self.goal_place in self.obs['accessible_places'] else self.obs['accessible_places'][0]
-                self.logger.info(f"performing emergency avoiding. Target is {emergency_avoid_target_place}")
-                self.last_action = {
-                    'type': 'enter',
-                    'arg1': emergency_avoid_target_place
-                }
-                return self.last_action
+            # if self.current_place is not None:
+            #     self.emergency = max(9, self.emergency)
+            #     self.last_action={"type": "wait"}
+            #     return self.last_action
+            # if len(self.obs['accessible_places']) > 0 :
+            #     emergency_avoid_target_place = self.goal_place if self.goal_place in self.obs['accessible_places'] else self.obs['accessible_places'][0]
+            #     self.logger.info(f"performing emergency avoiding. Target is {emergency_avoid_target_place}")
+            #     self.last_action = {
+            #         'type': 'enter',
+            #         'arg1': emergency_avoid_target_place
+            #     }
+            #     return self.last_action
             self.rethink = False
             self.city_navigate(self.goal_place, requery=False) # just for refresh self.nav
             self.rethink = True

@@ -340,9 +340,11 @@ public:
         warning_labels[warning_label]=1;
     }
 
-    void add_danger_zone(float x, float y, float z, int label) {
+    void add_danger_zone(float x, float y, float z, int label, float *extrinsic) {
         const int sphere_radius_m = 10;
         const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
+        int cur_x = align(extrinsic[3]), cur_y = align(extrinsic[7]);
+        auto dist = [&](int x, int y, int x0, int y0){return std::sqrt(double((x - x0)*(x - x0)+(y - y0)*(y - y0)));};
         auto run = [&](int id) {
             float px = x / voxel_res, py = y / voxel_res, pz = z / voxel_res;
             int x = floor(px), y = floor(py), z = floor(pz);
@@ -354,13 +356,13 @@ public:
                 z_max = std::max(z_max, z);
                 z_min = std::min(z_min, z);
             }
-            // double C=dist(x, y, cur_x, cur_y)/2, A=9*C/std::sqrt(82); // let a/b ~ 9
+            double C=dist(x, y, cur_x, cur_y)/2, A=3*C/std::sqrt(10);
             for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
                 for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
                     for (int dz = 0; dz <= 0; dz++) {
                         if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox)) {
                             Z_Array *&arr = data[x + dx + X_MAX][y + dy];
-                            if (arr == nullptr) arr = new Z_Array();
+                            if (arr == nullptr) continue;
                             arr->insert(Voxel{z + dz, 0, 0, 0, label, (dx==0&&dy==0)?0:1}); // temporarily set rgb to black
                         }
                     }
@@ -445,8 +447,8 @@ public:
     void insert(float *p, uint8_t *c, int *l, int n, int cur_x=0, int cur_y=0, int enable_cur_xy=0) {
         const int sphere_radius_m = 10;
         const int sphere_radius_vox = std::ceil(sphere_radius_m / voxel_res);
-        auto dist = [&](int x, int y, int x0, int y0){return std::sqrt((x - x0)*(x - x0)+(y - y0)*(y - y0));};
-        auto run = [&](int id) {
+        auto dist = [&](int x, int y, int x0, int y0){return std::sqrt(double((x - x0)*(x - x0)+(y - y0)*(y - y0)));};
+        auto run = [&](int id, int warning_run) {
             for (int i = 0; i < n; i++) {
                 float px = p[3 * i] / voxel_res, py = p[3 * i + 1] / voxel_res, pz = p[3 * i + 2] / voxel_res;
                 int x = floor(px), y = floor(py), z = floor(pz);
@@ -460,20 +462,23 @@ public:
                 }
                 if ((x + X_MAX) % num_workers != id)
                     continue;
-                double C=dist(x, y, cur_x, cur_y)/2, A=9*C/std::sqrt(82); // let a/b ~ 9
-                if (warning_labels[l[i]]) {
+                double C=dist(x, y, cur_x, cur_y)/2, A=3*C/std::sqrt(10); // let a/b ~ 9
+                if (warning_run && warning_labels[l[i]]) {
                     for (int dx = -sphere_radius_vox; dx <= sphere_radius_vox; dx++) {
                         for (int dy = -sphere_radius_vox; dy <= sphere_radius_vox; dy++) {
-                            for (int dz = 0; dz <= 0; dz++) {
+                            for (int dz = 0; dz <= 1; dz++) {
                                 if ((dx * dx + dy * dy + dz * dz <= sphere_radius_vox * sphere_radius_vox) && (!enable_cur_xy ||(enable_cur_xy && (dist(dx+x, dy+y, x, y)-dist(dx+x, dy+y, cur_x, cur_y)<2*A)))) {
                                     Z_Array *&arr = data[x + dx + X_MAX][y + dy];
-                                    if (arr == nullptr) arr = new Z_Array();
+                                    if (arr == nullptr) {
+                                        continue;
+                                    }
                                     arr->insert(Voxel{z + dz, c[3 * i], c[3 * i + 1], c[3 * i + 2], l[i], (dx==0&&dy==0)?0:1});
                                 }
                             }
                         }
                     }
-                } else {
+                }
+                if (!warning_run) {
                     // normal insertion
                     Z_Array *&arr = data[x + X_MAX][y];
                     if (arr == nullptr) {
@@ -485,10 +490,17 @@ public:
         };
         std::vector<std::thread> threads;
         for (int i = 0; i < num_workers; i++) {
-            threads.push_back(std::thread(run, i));
+            threads.push_back(std::thread(run, i, 0));
         }
         for (int i = 0; i < num_workers; i++) {
             threads[i].join();
+        }
+        std::vector<std::thread> threads_warning;
+        for (int i = 0; i < num_workers; i++) {
+            threads_warning.push_back(std::thread(run, i, 1));
+        }
+        for (int i = 0; i < num_workers; i++) {
+            threads_warning[i].join();
         }
         this->bound = _get_bound();
     }
