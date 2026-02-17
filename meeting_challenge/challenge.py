@@ -105,7 +105,7 @@ def main():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'replay'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'replay'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
@@ -139,7 +139,7 @@ def main():
         agent_type_name = f"{agent_type}"
         if not args.enable_danger_zone:
             agent_type_name = f"{agent_type}_no_avoidance"
-        if args.refine_retry == 0:
+        if args.refine_retry <= 0:
             agent_type_name = f"{agent_type}_no_refine"
         if args.ablate != "":
             agent_type_name = f"{agent_type}_ablate_{args.ablate}"
@@ -287,6 +287,8 @@ def main():
             all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "fixed":
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
+        elif agent_type == "mcts":
+            all_agent_processes.append(AgentProcess(MCTSMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
             basic_kwargs['ablate'] = args.ablate

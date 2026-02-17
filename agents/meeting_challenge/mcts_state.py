@@ -1,98 +1,76 @@
-"""
-MCTS State representation for meeting challenge agents.
-Each state represents the positions of all agents and the current agent's planned destination.
-"""
 import numpy as np
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 from dataclasses import dataclass
+import copy
 
 
 @dataclass
 class MCTSState:
     """
-    Represents a state in the MCTS search tree.
-    
-    Attributes:
-        agent_positions: Dictionary mapping agent names to their [x, y] positions
-        current_agent: Name of the agent making the decision
-        current_place: Current place name the agent is at or heading to
-        depth: Depth of this state in the search tree
+    Sequential risk-aware MCTS state.
     """
     agent_positions: Dict[str, List[float]]
     current_agent: str
     current_place: Optional[str]
+
+    time: float
+    alive_agents: Dict[str, bool]
+
+    cumulative_distance: float = 0.0
+    cumulative_detection: float = 0.0
     depth: int = 0
-    
-    def __hash__(self):
-        """Make state hashable for use in dictionaries."""
-        # Create a hash from agent positions and current place
-        pos_tuple = tuple(sorted((name, tuple(pos[:2])) for name, pos in self.agent_positions.items()))
-        return hash((pos_tuple, self.current_agent, self.current_place, self.depth))
-    
-    def __eq__(self, other):
-        """Check equality of states."""
-        if not isinstance(other, MCTSState):
-            return False
-        return (self.agent_positions == other.agent_positions and
-                self.current_agent == other.current_agent and
-                self.current_place == other.current_place and
-                self.depth == other.depth)
-    
+
+    def copy(self):
+        return MCTSState(
+            agent_positions=copy.deepcopy(self.agent_positions),
+            current_agent=self.current_agent,
+            current_place=self.current_place,
+            time=self.time,
+            alive_agents=copy.deepcopy(self.alive_agents),
+            cumulative_distance=self.cumulative_distance,
+            cumulative_detection=self.cumulative_detection,
+            depth=self.depth
+        )
+
+    def is_terminal(self, max_depth: int, deadline: float) -> bool:
+        if self.depth >= max_depth:
+            return True
+        if self.time >= deadline:
+            return True
+        if not self.alive_agents.get(self.current_agent, True):
+            return True
+        return False
+
     def calculate_max_distance(self) -> float:
-        """
-        Calculate the maximum distance between any two agents.
-        This is the metric we want to minimize.
-        
-        Returns:
-            Maximum pairwise distance between agents
-        """
-        if len(self.agent_positions) < 2:
+        positions = [
+            np.array(pos)
+            for name, pos in self.agent_positions.items()
+            if self.alive_agents.get(name, True)
+        ]
+
+        if len(positions) < 2:
             return 0.0
-        
-        positions = list(self.agent_positions.values())
+
         max_dist = 0.0
-        
         for i in range(len(positions)):
             for j in range(i + 1, len(positions)):
-                pos1 = np.array(positions[i][:2])
-                pos2 = np.array(positions[j][:2])
-                dist = np.linalg.norm(pos1 - pos2)
-                max_dist = max(max_dist, dist)
-        
+                d = np.linalg.norm(positions[i] - positions[j])
+                max_dist = max(max_dist, d)
         return max_dist
-    
-    def calculate_average_distance(self) -> float:
-        """
-        Calculate the average distance between all pairs of agents.
-        
-        Returns:
-            Average pairwise distance between agents
-        """
-        if len(self.agent_positions) < 2:
-            return 0.0
-        
-        positions = list(self.agent_positions.values())
-        total_dist = 0.0
-        count = 0
-        
-        for i in range(len(positions)):
-            for j in range(i + 1, len(positions)):
-                pos1 = np.array(positions[i][:2])
-                pos2 = np.array(positions[j][:2])
-                dist = np.linalg.norm(pos1 - pos2)
-                total_dist += dist
-                count += 1
-        
-        return total_dist / count if count > 0 else 0.0
-    
-    def get_reward(self) -> float:
-        """
-        Calculate reward for this state. Lower distance = higher reward.
-        We use negative distance as reward to maximize (minimize distance).
-        
-        Returns:
-            Reward value (negative of max distance)
-        """
+
+    def get_reward(self, deadline: float) -> float:
+        # if not self.alive_agents.get(self.current_agent, True):
+        #     return -1000.0
+
+        if self.time >= deadline:
+            return -500.0
+
         max_dist = self.calculate_max_distance()
-        # Return negative distance as reward (we want to minimize distance)
-        return -max_dist
+
+        reward = 0.0
+        reward -= 2.0 * max_dist
+        if max_dist <= 20: reward += 1000.0
+        reward -= 0.1 * self.cumulative_distance
+        reward -= 5.0 * self.cumulative_detection
+
+        return reward
