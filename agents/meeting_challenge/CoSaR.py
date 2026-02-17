@@ -246,7 +246,9 @@ class CoSaRDiscusser(Discusser):
         return response_dict
     
     def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling, speech):
-        prompt = open(os.path.join(self.prompt_path, "analyze_and_plan.txt"), "r").read()
+        prompt_path = self.prompt_path
+        if "spatial_memory" in self.ablate: prompt_path = os.path.join(prompt_path, "no_spatial_memory")
+        prompt = open(os.path.join(prompt_path, "analyze_and_plan.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -274,7 +276,9 @@ class CoSaRDiscusser(Discusser):
         return response_dict
     
     def speak(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
-        prompt = open(os.path.join(self.prompt_path, "speak_speak.txt"), "r").read()
+        prompt_path = self.prompt_path
+        if "spatial_memory" in self.ablate: prompt_path = os.path.join(prompt_path, "no_spatial_memory")
+        prompt = open(os.path.join(prompt_path, "speak_speak.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
         prompt = prompt.replace("$CurrentTime$", curr_time)
         prompt = prompt.replace("$SelfName$", self.name)
@@ -316,8 +320,8 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10, ablate=""):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate)
-        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
-        self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar' if self.ablate=="" else "", ablate=self.ablate)
+        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
+        self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         # emergency property
         self.emergency = 0
