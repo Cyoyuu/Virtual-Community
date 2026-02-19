@@ -122,7 +122,7 @@ def main():
     parser.add_argument("--sentinel_type", type=str, default="patrol", choices=['stationary', 'patrol'])
     parser.add_argument("--sentinel_num", type=int, default=5)
     parser.add_argument("--enable_danger_zone", action='store_true')
-    parser.add_argument("--refine_retry", type=int, default=10)
+    parser.add_argument("--refine_retry", type=int, default=5)
     parser.add_argument("--gt_only_for_sentinels", action='store_true')
     parser.add_argument("--detect_interval", type=int, default=-1)
     parser.add_argument("--ablate", type=str, default="")

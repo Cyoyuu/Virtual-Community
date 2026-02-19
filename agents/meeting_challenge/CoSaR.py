@@ -318,7 +318,7 @@ class CoSaRDiscusser(Discusser):
 class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=10, ablate=""):
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=5, ablate=""):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate)
         self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
@@ -334,7 +334,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.refine_target_danger = None
         self.coarse_refine_result = None
         self.max_refine_retry = refine_retry
-        self.max_continuous_refine_retry = 3
+        self.max_continuous_refine_retry = 2
         self.continuous_refine_retry = self.max_continuous_refine_retry
         self.refine_retry = dict()
         # CoSaR property
@@ -429,7 +429,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         if self.mode_time_counter % 60 == 0: self.continuous_refine_retry = self.max_continuous_refine_retry
         if self.last_route and not self.ready_to_refine:
             route_validity, danger = self.spatial_resoner.check_waypoint_validity(self.known_sentinel_poses, self.last_route, excluding_wps=[self.pose[:2], self.last_route[-1].location])
-            if self.current_place is None and not self.last_route.empty() and not route_validity and self.coarse_refine_result is None:
+            if self.current_place is None and (not route_validity or self.emergency > 10) and self.coarse_refine_result is None:
                 self.refine_target_place = self.goal_place
                 if self.refine_target_place not in self.refine_retry:
                     self.refine_retry[self.refine_target_place] = self.max_refine_retry
