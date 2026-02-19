@@ -32,6 +32,23 @@ class MCTSState:
             depth=self.depth
         )
 
+    def __str__(self):
+        """
+        Human‑readable summary of the MCTS state for logging/debugging.
+        """
+        alive = [name for name, ok in self.alive_agents.items() if ok]
+        max_dist = self.calculate_max_distance()
+        return (
+            f"MCTSState(agent={self.current_agent}, "
+            f"place={self.current_place}, "
+            f"time={self.time:.1f}, "
+            f"depth={self.depth}, "
+            f"alive={alive}, "
+            f"cum_dist={self.cumulative_distance:.2f}, "
+            f"cum_detect={self.cumulative_detection:.2f}, "
+            f"max_pair_dist={max_dist:.2f})"
+        )
+
     def is_terminal(self, max_depth: int, deadline: float) -> bool:
         if self.depth >= max_depth:
             return True
@@ -68,9 +85,9 @@ class MCTSState:
         max_dist = self.calculate_max_distance()
 
         reward = 0.0
-        reward -= 2.0 * max_dist
-        if max_dist <= 20: reward += 1000.0
-        reward -= 0.1 * self.cumulative_distance
-        reward -= 5.0 * self.cumulative_detection
+        # reward -= 0.005 * max_dist
+        if max_dist <= 20: reward += 5.0
+        reward -= 0.0015 * self.cumulative_distance
+        reward -= 0.05 * self.cumulative_detection
 
         return reward

@@ -18,6 +18,19 @@ class MCTSNode:
         self.max_depth = max_depth
         self.logger = logger
 
+    def __str__(self):
+        """
+        Human‑readable summary of the MCTS node for logging/debugging.
+        """
+        return (
+            f"MCTSNode(action={self.action}, "
+            f"visits={self.visits}, "
+            f"value={self.value:.3f}, "
+            f"children={len(self.children)}, "
+            f"depth={self.state.depth}, "
+            f"place={self.state.current_place})"
+        )
+
     def is_terminal(self, deadline):
         return self.state.is_terminal(self.max_depth, deadline)
 
@@ -39,7 +52,7 @@ class MCTSNode:
                     math.log(self.visits) / child.visits
                 )
                 ucb = exploit + explore
-            self.logger.debug(f"ucb:{ucb}, value:{child.value}, visits:{self.visits}")
+            self.logger.debug(f"ucb:{ucb}, value:{child.value}, visits:{child.visits}")
             if ucb > best_value:
                 best_value = ucb
                 best_child = child
@@ -92,11 +105,11 @@ class MCTSPlanner:
 
         new_state = state.copy()
 
-        current_pos = np.array(state.agent_positions[self.agent_name])
-        target_pos = np.array(place_locations[action])
+        current_pos = np.array(state.agent_positions[self.agent_name], dtype=float)
+        target_pos = np.array(place_locations[action], dtype=float)
 
-        distance = np.linalg.norm(current_pos - target_pos)
-        travel_time = distance / self.speed
+        distance = float(np.linalg.norm(current_pos - target_pos))
+        travel_time = distance / self.speed if self.speed > 0 else 0.0
 
         new_state.time += travel_time
         new_state.cumulative_distance += distance
@@ -104,7 +117,7 @@ class MCTSPlanner:
         new_state.current_place = action
 
         # ---- Stochastic detection model ----
-        detection_prob = min(0.8, distance / 600.0)
+        detection_prob = min(0.8, distance / 600.0) if distance > 0 else 0.0
 
         if random.random() < detection_prob:
             new_state.cumulative_detection += 1
@@ -116,17 +129,33 @@ class MCTSPlanner:
         new_state.agent_positions[self.agent_name] = target_pos.tolist()
 
         # assuming other agents are going to the same place
-        for agent_name in new_state.agent_positions:
-            dist_to_target = np.linalg.norm(np.array(state.agent_positions[agent_name]) - target_pos)
-            direction = (target_pos - np.array(state.agent_positions[agent_name])) / dist_to_target
-            dist_to_cover = np.linalg.norm(direction * min(self.speed * travel_time, dist_to_target))
-            new_pos = np.array(state.agent_positions[agent_name]) + direction * min(self.speed * travel_time, dist_to_target)
-            new_state.cumulative_distance += dist_to_cover
-            detection_prob = min(0.8, dist_to_cover / 600.0)
+        for agent_name in list(new_state.agent_positions.keys()):
+            # Skip current agent; already updated above
+            if agent_name == self.agent_name:
+                continue
+
+            start_pos = np.array(state.agent_positions[agent_name], dtype=float)
+            dist_to_target = float(np.linalg.norm(start_pos - target_pos))
+
+            # If already at target, no movement, avoid division by zero
+            if dist_to_target == 0.0:
+                continue
+
+            max_step = self.speed * travel_time
+            step_dist = min(max_step, dist_to_target)
+
+            # Direction is well-defined here because dist_to_target > 0
+            direction = (target_pos - start_pos) / dist_to_target
+            new_pos = start_pos + direction * step_dist
+
+            new_state.cumulative_distance += step_dist
+
+            detection_prob = min(0.8, step_dist / 600.0) if step_dist > 0 else 0.0
             if random.random() < detection_prob:
                 new_state.cumulative_detection += 1
                 if random.random() < 0.2:
                     new_state.alive_agents[agent_name] = False
+
             new_state.agent_positions[agent_name] = new_pos.tolist()
 
         return new_state
@@ -161,11 +190,15 @@ class MCTSPlanner:
                       k=10):
 
         positions = list(agent_positions.values())
-        center = np.mean(np.array(positions), axis=0)
+        if not positions:
+            # No agent positions provided; fall back to arbitrary top-k places
+            return list(place_locations.keys())[:k]
+
+        center = np.mean(np.array(positions, dtype=float), axis=0)
 
         scored = []
         for place, pos in place_locations.items():
-            dist = np.linalg.norm(np.array(pos) - center)
+            dist = float(np.linalg.norm(np.array(pos, dtype=float) - center))
             scored.append((dist, place))
 
         scored.sort()

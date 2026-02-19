@@ -32,7 +32,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, ablate="",
-                 mcts_simulations=100, mcts_max_depth=3, mcts_exploration=1.414):
+                 mcts_simulations=200, mcts_max_depth=3, mcts_exploration=5):
         """
         Initialize MCTS agent.
         
@@ -75,6 +75,9 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         self.planned_place = None
         self.planning_interval = 50  # Replan every N steps
         self.known_sentinel = dict()
+
+        self.replan = False
+        self.nearby_queried = False
     
     def reset(self, name, pose):
         """Reset agent state."""
@@ -87,6 +90,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         self.process_obs_with_sptial_knowledge(obs)
 
         # react to new danger
+        self.danger_detected = False
         for sentinel in self.visible_sentinels:
             if sentinel not in self.known_sentinel:
                 self.danger_detected = True
@@ -207,31 +211,52 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         # -------------------------------------------------
         # 2. Check replanning triggers
         # -------------------------------------------------
-        replan = False
+        if self.replan == False:
+            # No current plan
+            if self.planned_place is None:
+                self.replan = True
+                self.nearby_queried = False
 
-        # No current plan
-        if self.planned_place is None:
-            replan = True
+            # Periodic replanning
+            if self.mode_time_counter % self.planning_interval == 0:
+                self.replan = True
+                self.nearby_queried = False
 
-        # Periodic replanning
-        if self.mode_time_counter % self.planning_interval == 0:
-            replan = True
+            # Danger zone trigger (if enabled)
+            if hasattr(self, "danger_detected") and self.danger_detected:
+                self.replan = True
+                self.nearby_queried = False
 
-        # Danger zone trigger (if enabled)
-        if hasattr(self, "danger_detected") and self.danger_detected:
-            replan = True
-
-        # If other agents stopped at new locations
-        agent_positions = self._get_agent_positions()
-        # if hasattr(self, "last_agent_positions"): # why adding this?
-        #     if agent_positions != self.last_agent_positions:
-        #         replan = True
-        self.last_agent_positions = agent_positions
+            # If other agents stopped at new locations
+            agent_positions = self._get_agent_positions()
+            # if hasattr(self, "last_agent_positions"): # why adding this?
+            #     if agent_positions != self.last_agent_positions:
+            #         self.replan = True
+            self.last_agent_positions = agent_positions
 
         # -------------------------------------------------
         # 3. Replan if necessary
         # -------------------------------------------------
-        if replan:
+        if self.replan:
+            # First get all available places
+            if not self.nearby_queried:
+                self.nearby_queried = True
+                thres = self.get_nearest_places(self.get_meeting_target())[0][0]
+                action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': list(self.get_meeting_target()), 'arg3': thres}
+                self.mode_time_counter += 1
+                self.last_action = action
+                return action
+            if len(self.places_buffer) > 0:
+                while self.places_buffer:
+                    place = self.places_buffer.pop(0)
+                    place_knowledge = self.s_mem.get_knowledge(place)
+                    if place_knowledge is None: break
+                if place_knowledge is None:
+                    action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': place}
+                    self.mode_time_counter += 1
+                    self.last_action = action
+                    return action
+            self.replan = False
             # Cancel current navigation
             # self.exit_navigation_mode()
 
