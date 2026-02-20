@@ -20,6 +20,8 @@ class MCTSState:
     cumulative_detection: float = 0.0
     depth: int = 0
 
+    logger: int =0
+
     def copy(self):
         return MCTSState(
             agent_positions=copy.deepcopy(self.agent_positions),
@@ -29,7 +31,8 @@ class MCTSState:
             alive_agents=copy.deepcopy(self.alive_agents),
             cumulative_distance=self.cumulative_distance,
             cumulative_detection=self.cumulative_detection,
-            depth=self.depth
+            depth=self.depth,
+            logger=self.logger
         )
 
     def __str__(self):
@@ -50,6 +53,8 @@ class MCTSState:
         )
 
     def is_terminal(self, max_depth: int, deadline: float) -> bool:
+        if self.calculate_max_distance() <=20:
+            return True
         if self.depth >= max_depth:
             return True
         if self.time >= deadline:
@@ -89,5 +94,6 @@ class MCTSState:
         if max_dist <= 20: reward += 5.0
         reward -= 0.0015 * self.cumulative_distance
         reward -= 0.05 * self.cumulative_detection
+        self.logger.debug(f"get reward: {-0.0015 * self.cumulative_distance} by distance, {-0.05 * self.cumulative_detection} by detection, {5.0 if max_dist <=20 else 0.0} by success")
 
         return reward

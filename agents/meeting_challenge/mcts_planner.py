@@ -43,7 +43,7 @@ class MCTSNode:
         assert self.children
         self.logger.debug("selecting child")
 
-        for child in self.children.values():
+        for action, child in self.children.items():
             if child.visits == 0:
                 ucb = float("inf")
             else:
@@ -52,7 +52,7 @@ class MCTSNode:
                     math.log(self.visits) / child.visits
                 )
                 ucb = exploit + explore
-            self.logger.debug(f"ucb:{ucb}, value:{child.value}, visits:{child.visits}")
+            self.logger.debug(f"action: {action}; ucb:{ucb}, value:{child.value}, visits:{child.visits}")
             if ucb > best_value:
                 best_value = ucb
                 best_child = child
@@ -229,11 +229,14 @@ class MCTSPlanner:
             alive_agents={name: True for name in agent_positions},
             cumulative_distance=0.0,
             cumulative_detection=0.0,
-            depth=0
+            depth=0,
+            logger=self.logger
         )
 
         root = MCTSNode(root_state, max_depth=self.max_depth, logger=self.logger)
         root.untried_actions = candidate_places.copy()
+
+        if root.is_terminal(deadline_seconds): return None
 
         import tqdm
         for _ in tqdm.tqdm(range(self.num_simulations)):

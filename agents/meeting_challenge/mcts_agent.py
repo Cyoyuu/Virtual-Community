@@ -78,6 +78,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
 
         self.replan = False
         self.nearby_queried = False
+        self.task_complete = False
     
     def reset(self, name, pose):
         """Reset agent state."""
@@ -107,6 +108,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         """
         places = self.s_mem.get_places()
         place_locations = {}
+        building_locations = {}
         
         for place in places:
             place_dict = self.s_mem.get_knowledge(place)
@@ -120,7 +122,16 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
             if location[0] > 500:  # Hack for coordinate system
                 location[0], location[1] = location[0] - 1000, location[1] - 1000
             
-            place_locations[place] = location[:2].tolist()
+            if place_dict["building"] is not None:
+                if place_dict["building"] not in building_locations:
+                    building_locations[place_dict["building"]] = place
+                    place_locations[place] = location[:2].tolist()
+                if building_locations[place_dict["building"]] > place:
+                    place_locations.pop(building_locations[place_dict["building"]], None)
+                    building_locations[place_dict["building"]] = place
+                    place_locations[place] = location[:2].tolist()
+            else:
+                place_locations[place] = location[:2].tolist()
         
         return places, place_locations
     
@@ -134,11 +145,13 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         agent_positions = {}
         
         for agent_name, agent_info in self.obs['agent_pos_dict'].items():
-            pose = agent_info['pose'][:2]
-            
+            pose = None
             # Adjust coordinates if needed
-            # if agent_info.get('place') is not None: # already done
-            #     pose = [pose[0] - 1000, pose[1] - 1000]
+            if agent_info.get('place') is not None:
+                pose = self.get_place_outdoor_pose(agent_info.get('place'))
+
+            if pose is None:
+                pose = agent_info['pose'][:2]
             
             if pose[0] > 500:  # Hack for coordinate system
                 pose = [pose[0] - 1000, pose[1] - 1000]
@@ -188,7 +201,8 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                     alive_agents={name: True for name in agent_positions},
                     cumulative_distance=0.0,
                     cumulative_detection=0.0,
-                    depth=0
+                    depth=0,
+                    logger=self.logger
                 ).calculate_max_distance()
                 self.logger.info(f"Current max distance between agents: {max_dist:.2f}")
         
@@ -213,17 +227,20 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         # -------------------------------------------------
         if self.replan == False:
             # No current plan
-            if self.planned_place is None:
+            if self.planned_place is None and self.task_complete == False:
+                self.logger.debug(f"replan due to planned_place is None.")
                 self.replan = True
                 self.nearby_queried = False
 
             # Periodic replanning
             if self.mode_time_counter % self.planning_interval == 0:
+                self.logger.debug(f"replan due to mode_time_counter.")
                 self.replan = True
                 self.nearby_queried = False
 
             # Danger zone trigger (if enabled)
             if hasattr(self, "danger_detected") and self.danger_detected:
+                self.logger.debug(f"replan due to danger.")
                 self.replan = True
                 self.nearby_queried = False
 
@@ -238,8 +255,10 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         # 3. Replan if necessary
         # -------------------------------------------------
         if self.replan:
+            self.logger.debug(f"start replan.")
             # First get all available places
             if not self.nearby_queried:
+                self.logger.debug(f"start replan: query nearby")
                 self.nearby_queried = True
                 thres = self.get_nearest_places(self.get_meeting_target())[0][0]
                 action = {'type': 'query_app', 'arg1': 'query_nearby', 'arg2': list(self.get_meeting_target()), 'arg3': thres}
@@ -247,6 +266,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                 self.last_action = action
                 return action
             if len(self.places_buffer) > 0:
+                self.logger.debug(f"start replan: query place")
                 while self.places_buffer:
                     place = self.places_buffer.pop(0)
                     place_knowledge = self.s_mem.get_knowledge(place)
@@ -262,23 +282,28 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
 
             next_place = self._plan_next_place()
 
-            if next_place is None:
-                self.logger.warning(f"Failed to generate plan.")
-                return {"type": "wait"}
+            # if next_place is None:
+            #     self.logger.warning(f"Failed to generate plan.")
+            #     return {"type": "wait"}
 
             self.planned_place = next_place
-            self.enter_navigation_mode(goal_place=self.planned_place)
-            self.logger.info(f"Plan: {self.planned_place}")
+            if self.planned_place is not None:
+                self.enter_navigation_mode(goal_place=self.planned_place)
+                self.logger.info(f"Plan: {self.planned_place}")
 
         # -------------------------------------------------
         # 4. Execute 1 navigation step only
         # -------------------------------------------------
-        action, arrived = self.city_navigate(self.planned_place)
+        if self.planned_place is not None:
+            action, arrived = self.city_navigate(self.planned_place)
+        else:
+            arrived = True
 
         # -------------------------------------------------
         # 5. If arrived → decide what to do
         # -------------------------------------------------
         if arrived:
+            self.logger.debug(f"arrived")
             self.planned_place = None
             # self.exit_navigation_mode()
 
@@ -293,12 +318,15 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                 dist = np.linalg.norm(my_pos - np.array(agent_pos[:2]))
                 if dist > 20.0:
                     all_close = False
+                    self.logger.info(f"{self.name} is at {my_pos}, {agent_name} is at {agent_pos[:2]}, distance: {dist:.2f}. Not all close.")
                     break
 
-            if all_close and len(agent_positions) > 1:
+            if all_close:
+                self.task_complete = True
                 return {"type": "task_complete"}
 
             # Otherwise replan next waypoint next step
+            self.task_complete = False
             return {"type": "wait"}
 
         # -------------------------------------------------
