@@ -878,6 +878,7 @@ class BaseNavigationMeetingAgent(Agent):
         if not self.last_nav:
             self.generate_navigation_plan(max_retry=max_retry)
             self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
+        if self.last_estimated_move_time is None: self.last_estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
         # If the estimated arrival time exceeds, regenerate
         estimated_move_time = self.curr_time + timedelta(seconds=self.calc_time(waypoints=self.last_nav))
         if self.last_estimated_move_time + timedelta(seconds=30) < estimated_move_time:
@@ -1398,10 +1399,11 @@ class BaseNavigationMeetingAgent(Agent):
             assert len(sentinel_pose)==3
             sentinel_pose.append(shared)
             flag = True
-            for known_sentinel_pose in self.known_sentinel_poses:
+            for idx, known_sentinel_pose in enumerate(self.known_sentinel_poses):
                 if np.linalg.norm(np.array(sentinel_pose[:2]) - np.array(known_sentinel_pose[:2])) < 10.:
                     flag = False
-                    break
+                    if shared == 1:
+                        self.known_sentinel_poses[idx][2] = 1
             if flag:
                 self.known_sentinel_poses.append(list(sentinel_pose))
                 if self.current_place is None:
