@@ -15,11 +15,17 @@ elif [ "$sentinel_num" -eq 5 ]; then
 else
   time_limit=120  # default fallback
 fi
+if [ "$gt" = "no_gt" ]; then
+  time_limit=$((time_limit + 60))
+fi
+if [ "$time_limit" -gt "480" ]; then
+  time_limit=480
+fi
 
-for job_id in {1..1}; do
+for job_id in {1..2}; do
   echo "Running job_id=$job_id for scene=$scene"
 
-  salloc -p gpu-preempt -G 1 --mem=100G -t "$time_limit" --job-name=c_$scene srun bash "$script_path" "$scene" "$agent_num" "$sentinel_type" "$sentinel_num" "$job_id"
+  salloc -p gpu,gpu-preempt -G 1 --mem=100G -t "$time_limit" --job-name=c_$scene --constraint="[a16|a40|gh200|l40s|l4]" srun bash "$script_path" "$scene" "$agent_num" "$sentinel_type" "$sentinel_num" "$job_id"
 done
 
 # Optional flags you had commented out:
