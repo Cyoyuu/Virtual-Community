@@ -79,3 +79,22 @@ class CompletionClient(ModelClient):
     def complete(self, text, max_tokens=4096, temperature=0, top_p=1):
         from vllm import SamplingParams
         return self.post(f"/completion", text, sampling_params=SamplingParams(max_tokens=max_tokens, temperature=temperature, top_p=top_p))
+
+
+class QwenMMClient(ModelClient):
+    def multimodal_chat(self, text, images, max_tokens=4096, temperature=0, top_p=1):
+        """
+        Multimodal chat with Qwen-VL via /qwen_mm.
+
+        Args:
+            text: prompt string
+            images: list of images (PIL or paths)
+        """
+        from vllm import SamplingParams
+        # Wrap single example in a batch; ProcessChannel will batch further if needed.
+        return self.post(
+            f"/qwen_mm",
+            [text],
+            [images],
+            sampling_params=SamplingParams(max_tokens=max_tokens, temperature=temperature, top_p=top_p),
+        )

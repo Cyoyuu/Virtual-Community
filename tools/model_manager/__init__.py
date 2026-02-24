@@ -46,6 +46,7 @@ class ModelManager:
             "clip": CLIPClient(device, port, channel),
             "embedding": EmbedClient(device, port, channel),
             "completion": CompletionClient(device, port, channel),
+            "qwen_mm": QwenMMClient(device, port, channel),
         }
     
     def get_model(self, model_name):

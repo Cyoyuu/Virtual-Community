@@ -46,6 +46,7 @@ class ProcessChannel:
             "/clip/text": mp.Queue(),
             "/embedding": mp.Queue(),
             "/completion": mp.Queue(),
+            "/qwen_mm": mp.Queue(),
         }
         self.output = mp.Manager().dict()
         self.cond_c = mp.Condition()
@@ -113,6 +114,11 @@ class ModelProcess(mp.Process):
         if model_name == "completion":
             from vllm import LLM
             return LLM(model="deepseek-ai/DeepSeek-R1-Distill-Qwen-14B", dtype="float16", tensor_parallel_size=len(self.cuda_devices), enable_prefix_caching=False, enable_chunked_prefill=False)
+        if model_name == "qwen_mm":
+            from .qwen_mm_wrapper import QwenMultimodalWrapper
+            return QwenMultimodalWrapper(
+                model_id=os.getenv("QWEN_VL_MODEL_ID", "Qwen/Qwen2.5-VL-14B-Instruct")
+            )
         raise ValueError(f"unknown model: {model_name}")
 
     def init(self):
@@ -156,6 +162,9 @@ class ModelProcess(mp.Process):
         elif paths[0] == "completion":
             outputs = model.chat(*args, **kwargs)
             result = [output.outputs[0].text.split("</think>")[-1] for output in outputs]
+        elif paths[0] == "qwen_mm":
+            # texts: List[str], images: List[List[image-like]], sampling_params: List[SamplingParams]
+            result = model.chat_mm(*args, **kwargs)
         elif paths[0] == "clip":
             if paths[1] == "image":
                 result = model.predict_image(*args, **kwargs)

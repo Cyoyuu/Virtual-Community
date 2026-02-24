@@ -382,8 +382,21 @@ class BaseNavigationMeetingAgent(Agent):
         os.makedirs(f"{self.storage_path}/generated_waypoints", exist_ok=True)
 
         if init_generator:
-
-            self.generator = global_model_manager.get_generator(lm_source, lm_id, max_tokens, temperature, top_p, logger)
+            if lm_source in ["openai", "azure"]:
+                self.generator = global_model_manager.get_generator(
+                    lm_source, lm_id, max_tokens, temperature, top_p, logger
+                )
+            elif lm_source == "local_qwen":
+                from agents.meeting_challenge.qwen_local_generator import QwenLocalGenerator
+                self.generator = QwenLocalGenerator(
+                    lm_id=lm_id,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                    top_p=top_p,
+                    logger=self.logger,
+                )
+            else:
+                raise ValueError(f"Unsupported lm_source: {lm_source}")
         else:
             self.generator = None
 
@@ -1381,6 +1394,7 @@ class BaseNavigationMeetingAgent(Agent):
         
     def update_known_poses(self, new_poses):
         for agent in new_poses:
+            if any([type(x) not in [float, int] for x in new_poses[agent]]): continue
             self.known_poses[agent]=new_poses[agent]
         
     def update_known_eta(self, new_eta):

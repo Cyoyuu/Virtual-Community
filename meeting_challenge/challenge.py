@@ -108,7 +108,7 @@ def main():
     parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'replay'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
-    parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface"], default="azure", help="language model source")
+    parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface", "local_qwen"], default="azure", help="language model source")
     parser.add_argument("--lm_id", "-lm", type=str, default="gpt-35-turbo", help="language model id")
     parser.add_argument("--max_tokens", type=int, default=4096, help="maximum tokens")
     parser.add_argument("--temperature", "-t", type=float, default=0, help="temperature")
@@ -205,6 +205,8 @@ def main():
             config['locator_colors_rgb'].extend(sentinel_config['locator_colors_rgb'][:num_sentinels])
             config['agent_skins'].extend(sentinel_config['agent_skins'][:num_sentinels])
             config['num_agents']+=num_sentinels
+            config['dt_control'].extend([config['dt_control'][0]]*(num_sentinels+num_agents-len(config['dt_control'])))
+            config['dt_visual_obs'].extend([config['dt_visual_obs'][0]]*(num_sentinels+num_agents-len(config['dt_visual_obs'])))
             config['with_sentinel'] = True
             json.dump(config, open(os.path.join(config_path, "config.json"), 'w'), indent=4)
             for name in sentinel_config['agent_names']:
