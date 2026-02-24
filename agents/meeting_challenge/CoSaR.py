@@ -608,6 +608,14 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         elif self.discussion_plan['action'] == 'query_route':
             if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
                 self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
+            places_in_mem = self.s_mem.get_places()
+            if self.discussion_plan['content'] not in places_in_mem:
+                self.logger.warning(f"the place {self.discussion_plan['content']} is not in memory, cannot query route")
+                for place_in_mem in places_in_mem:
+                    if self.discussion_plan['content'] in place_in_mem:
+                        self.logger.warning(f"but found similar place {place_in_mem} in memory, maybe you want to go there?")
+                        self.discussion_plan['content'] = place_in_mem
+                        break
             action = {'type': 'query_app', 'arg1': 'query_route', 'arg2': self.discussion_plan['content']}
         elif self.discussion_plan["action"]=="speak":
             action = {"type": "remote_converse", "arg1": speech['speech'], "arg2": 3200}
