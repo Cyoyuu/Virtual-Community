@@ -97,7 +97,7 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                 self.danger_detected = True
                 if self.logger:
                     self.logger.info(f"{self.name} detected new sentinel: {sentinel}")
-            self.known_sentinel[sentinel] = self.visible_sentinels[sentinel]
+            self.known_sentinel[sentinel] = self.visible_sentinels[sentinel][:2]
     
     def _get_available_places(self) -> Tuple[List[str], Dict[str, List[float]]]:
         """
@@ -187,7 +187,8 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
             agent_positions=copy.deepcopy(agent_positions),
             place_locations=place_locations,
             current_time_seconds=self.steps,
-            deadline_seconds=deadline_seconds
+            deadline_seconds=deadline_seconds,
+            sentinel_positions=self.known_sentinel.values()
         )
         
         if self.logger:
@@ -207,6 +208,21 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                 self.logger.info(f"Current max distance between agents: {max_dist:.2f}")
         
         return next_place
+
+    def check_meeting_condition(self):
+        # Check meeting condition
+        agent_positions = self._get_agent_positions()
+        my_pos = np.array(agent_positions.get(self.name, [0, 0])[:2])
+
+        all_close = True
+        for agent_name, agent_pos in agent_positions.items():
+            if agent_name == self.name:
+                continue
+            dist = np.linalg.norm(my_pos - np.array(agent_pos[:2]))
+            if dist > 20.0:
+                all_close = False
+                break
+        return all_close
     
     def _act(self, obs):
         """
@@ -266,12 +282,12 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
                 self.last_action = action
                 return action
             if len(self.places_buffer) > 0:
-                self.logger.debug(f"start replan: query place")
                 while self.places_buffer:
                     place = self.places_buffer.pop(0)
                     place_knowledge = self.s_mem.get_knowledge(place)
                     if place_knowledge is None: break
                 if place_knowledge is None:
+                    self.logger.debug(f"start replan: query place")
                     action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': place}
                     self.mode_time_counter += 1
                     self.last_action = action
@@ -294,32 +310,27 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         # -------------------------------------------------
         # 4. Execute 1 navigation step only
         # -------------------------------------------------
-        if self.planned_place is not None:
-            action, arrived = self.city_navigate(self.planned_place)
+
+        # if all_close
+        if self.check_meeting_condition():
+            self.meeting_place = self.get_meeting_place()
+            self.enter_navigation_mode(goal_place=self.meeting_place)
+            action, arrived = self.city_navigate(self.goal_place)
+        elif self.planned_place is not None:
+            action, arrived = self.city_navigate(self.goal_place)
         else:
             arrived = True
 
         # -------------------------------------------------
         # 5. If arrived → decide what to do
         # -------------------------------------------------
+        self.mode_time_counter += 1
         if arrived:
             self.logger.debug(f"arrived")
             self.planned_place = None
             # self.exit_navigation_mode()
 
-            # Check meeting condition
-            agent_positions = self._get_agent_positions()
-            my_pos = np.array(agent_positions.get(self.name, [0, 0])[:2])
-
-            all_close = True
-            for agent_name, agent_pos in agent_positions.items():
-                if agent_name == self.name:
-                    continue
-                dist = np.linalg.norm(my_pos - np.array(agent_pos[:2]))
-                if dist > 20.0:
-                    all_close = False
-                    self.logger.info(f"{self.name} is at {my_pos}, {agent_name} is at {agent_pos[:2]}, distance: {dist:.2f}. Not all close.")
-                    break
+            all_close = self.check_meeting_condition()
 
             if all_close:
                 self.task_complete = True
@@ -332,7 +343,6 @@ class MCTSMeetingAgent(BaseNavigationMeetingAgent):
         # -------------------------------------------------
         # 6. Continue moving
         # -------------------------------------------------
-        self.mode_time_counter += 1
         self.last_action = action
         return action
 

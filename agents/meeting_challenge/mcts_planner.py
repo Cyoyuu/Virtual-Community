@@ -93,6 +93,21 @@ class MCTSPlanner:
         self.speed = speed
         self.logger = logger
 
+    def point_to_segment_distance(self, p, a, b):
+        """
+        Distance from point p to line segment ab.
+        p, a, b are numpy arrays.
+        """
+        ab = b - a
+        if np.allclose(ab, 0):
+            return np.linalg.norm(p - a)
+
+        t = np.dot(p - a, ab) / np.dot(ab, ab)
+        t = max(0.0, min(1.0, t))
+        projection = a + t * ab
+        return np.linalg.norm(p - projection)
+
+
     # -----------------------------------------------------
     # Risk-aware transition
     # -----------------------------------------------------
@@ -101,7 +116,8 @@ class MCTSPlanner:
                             state: MCTSState,
                             action: str,
                             place_locations: Dict[str, List[float]],
-                            deadline: float) -> MCTSState:
+                            deadline: float,
+                            sentinel_positions: List[List[float]]) -> MCTSState:
 
         new_state = state.copy()
 
@@ -116,49 +132,83 @@ class MCTSPlanner:
         new_state.depth += 1
         new_state.current_place = action
 
-        # ---- Stochastic detection model ----
-        detection_prob = min(0.8, distance / 600.0) if distance > 0 else 0.0
+        # --------------------------------------------------
+        # Sentinel-aware detection for current agent
+        # --------------------------------------------------
 
-        if random.random() < detection_prob:
+        path_start = current_pos
+        path_end = target_pos
+
+        total_detection_prob = min(0.8, distance / 600.0)
+
+        for s in sentinel_positions:
+            s_pos = np.array(s, dtype=float)
+            d = self.point_to_segment_distance(s_pos, path_start, path_end)
+
+            # Detection radius model
+            detection_radius = 20.0
+
+            if d < detection_radius:
+                # Risk increases when closer
+                risk = (detection_radius - d) / detection_radius
+                total_detection_prob = 1 - (1 - total_detection_prob) * (1 - risk * risk)
+
+        # Clamp probability
+        total_detection_prob = min(0.9, total_detection_prob)
+
+        if random.random() < total_detection_prob:
             new_state.cumulative_detection += 1
-
-            # Capture probability
-            if random.random() < 0.2:
+            if random.random() < 0.3:
                 new_state.alive_agents[self.agent_name] = False
 
         new_state.agent_positions[self.agent_name] = target_pos.tolist()
 
-        # assuming other agents are going to the same place
+        # --------------------------------------------------
+        # Other agents
+        # --------------------------------------------------
+
         for agent_name in list(new_state.agent_positions.keys()):
-            # Skip current agent; already updated above
             if agent_name == self.agent_name:
                 continue
 
             start_pos = np.array(state.agent_positions[agent_name], dtype=float)
             dist_to_target = float(np.linalg.norm(start_pos - target_pos))
 
-            # If already at target, no movement, avoid division by zero
             if dist_to_target == 0.0:
                 continue
 
-            max_step = self.speed * travel_time
+            max_step = self.speed * (travel_time + 30)
             step_dist = min(max_step, dist_to_target)
 
-            # Direction is well-defined here because dist_to_target > 0
             direction = (target_pos - start_pos) / dist_to_target
             new_pos = start_pos + direction * step_dist
 
             new_state.cumulative_distance += step_dist
 
-            detection_prob = min(0.8, step_dist / 600.0) if step_dist > 0 else 0.0
-            if random.random() < detection_prob:
+            # ---- Sentinel-aware detection for other agents ----
+            total_detection_prob = min(0.8, step_dist / 600.0)
+
+            for s in sentinel_positions:
+                s_pos = np.array(s, dtype=float)
+                d = self.point_to_segment_distance(s_pos, start_pos, new_pos)
+
+                detection_radius = 20.0
+
+                if d < detection_radius:
+                    risk = (detection_radius - d) / detection_radius
+                    total_detection_prob = 1 - (1 - total_detection_prob) * (1 - risk * risk)
+
+            total_detection_prob = min(0.9, total_detection_prob)
+
+            if random.random() < total_detection_prob:
                 new_state.cumulative_detection += 1
-                if random.random() < 0.2:
+                if random.random() < 0.3:
                     new_state.alive_agents[agent_name] = False
 
             new_state.agent_positions[agent_name] = new_pos.tolist()
 
         return new_state
+
 
     # -----------------------------------------------------
     # Rollout
@@ -168,14 +218,15 @@ class MCTSPlanner:
                 state: MCTSState,
                 place_locations,
                 candidate_places,
-                deadline):
+                deadline,
+                sentinel_positions):
 
         current = state
 
         while not current.is_terminal(self.max_depth, deadline):
             action = random.choice(candidate_places)
             current = self.simulate_transition(
-                current, action, place_locations, deadline
+                current, action, place_locations, deadline, sentinel_positions
             )
 
         return current.get_reward(deadline)
@@ -212,7 +263,8 @@ class MCTSPlanner:
              agent_positions: Dict[str, List[float]],
              place_locations: Dict[str, List[float]],
              current_time_seconds: float,
-             deadline_seconds: float) -> Optional[str]:
+             deadline_seconds: float,
+             sentinel_positions) -> Optional[str]:
 
         if not place_locations:
             return None
@@ -265,7 +317,8 @@ class MCTSPlanner:
                     node.state,
                     action,
                     place_locations,
-                    deadline_seconds
+                    deadline_seconds,
+                    sentinel_positions
                 )
 
                 child = MCTSNode(new_state,
@@ -283,7 +336,8 @@ class MCTSPlanner:
                 node.state,
                 place_locations,
                 candidate_places,
-                deadline_seconds
+                deadline_seconds,
+                sentinel_positions
             )
             self.logger.debug(f"rollout: reward is {reward}")
 
