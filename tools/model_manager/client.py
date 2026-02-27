@@ -89,12 +89,21 @@ class QwenMMClient(ModelClient):
         Args:
             text: prompt string
             images: list of images (PIL or paths)
+            max_tokens: max tokens to generate
+            temperature: sampling temperature (0 = greedy)
+            top_p: nucleus sampling parameter
         """
-        from vllm import SamplingParams
-        # Wrap single example in a batch; ProcessChannel will batch further if needed.
+        # Use a simple dict instead of vLLM's SamplingParams
+        sampling_params = {
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            "top_p": top_p,
+        }
+        
+        # Wrap single example in a batch; server will handle processing
         return self.post(
             f"/qwen_mm",
-            [text],
-            [images],
-            sampling_params=SamplingParams(max_tokens=max_tokens, temperature=temperature, top_p=top_p),
+            text,
+            images,
+            sampling_params=sampling_params,
         )

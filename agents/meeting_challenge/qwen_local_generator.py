@@ -52,6 +52,13 @@ class QwenLocalGenerator:
         temperature = self.temperature if temperature is None else temperature
         top_p = self.top_p if top_p is None else top_p
 
+        prompt = prompt + """You must NOT call any tools.
+Do NOT output <tool_call>.
+Respond ONLY with a valid JSON object, enclosed in ```json```.
+No explanations.
+No markdown.
+No extra text."""
+
         # Flatten chat history into a single prompt string, similar to how prompts are written now
         if chat_history is not None:
             history_text = ""
@@ -66,6 +73,7 @@ class QwenLocalGenerator:
         images = self._normalize_images(img)
 
         # Route everything (text-only or multimodal) through qwen_mm; empty image list is allowed.
+        # self.logger.debug(f"Generating with Qwen-VL: what happened here? images: {images}, img: {img}")
         texts = self._mm_client.multimodal_chat(
             full_prompt,
             images,
@@ -73,5 +81,6 @@ class QwenLocalGenerator:
             temperature=temperature,
             top_p=top_p,
         )
+        self.logger.debug(f"Generating with Qwen-VL: and here? texts: {texts[0] if isinstance(texts, list) else texts}")
         return texts[0] if isinstance(texts, list) else texts
 
