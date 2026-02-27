@@ -380,9 +380,9 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                             time_to_arrival = timedelta(hours=23, minutes=59, seconds=59)
                         else:
                             time_to_arrival = timedelta(seconds=int(event['content']["refined_route"].calc_time(pose=self.get_outdoor_pose())))
-                        if self.goal_place==self.last_action["arg2"]:
-                                self.last_route=event["content"]["refined_route"]
-                                self.last_estimated_arrival_time = self.curr_time + time_to_arrival
+                        if self.goal_place==self.refine_target_place:
+                            self.last_route=event["content"]["refined_route"]
+                            self.last_estimated_arrival_time = self.curr_time + time_to_arrival
                         image = Image.fromarray(np.array(event['content']["grid_map_image"]).astype(np.uint8))
                         image.save(os.path.join(self.storage_path, f"grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png"))
                         self.logger.debug(f"successfully saved refined route image to grid_map_aerial_view_with_refined_route_{self.obs['steps']}.png")
@@ -390,6 +390,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                         self.refine_history.append(route_validity)
                         json.dump(self.refine_history, open(os.path.join(self.storage_path, "refine_history.json"), "w"))
                         if route_validity or self.refine_retry[self.refine_target_place] < 0 or self.continuous_refine_retry < 0:
+                            self.logger.info(f"successful route refinement or reach refinement retrying limit.")
                             self.ready_to_refine = False
                             self.coarse_refine_result = None
                             self.continuous_refine_retry = self.max_continuous_refine_retry
@@ -401,6 +402,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                                     }
                                 })
                         else:
+                            self.logger.info(f"unsuccessful route refinement, do it again.")
                             self.ready_to_refine = True
                             self.refine_target_danger = danger
                             self.refine_reference = self.refine_reference
@@ -591,7 +593,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         # Reasoner
         speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info="missing_info", stalling=self.mode_time_counter>30)
         self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30, speech=speech['speech'])
-        missing_info="\n".join(self.discussion_plan['missing info'])
+        # missing_info="\n".join(self.discussion_plan['missing info']) # not in use now
         action = {"type": "wait"}
         # Executor
         if self.discussion_plan["action"]=="wait":
@@ -601,11 +603,11 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
                 self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
             action = self.city_navigate(goal_place=self.discussion_plan['content'])[0]
-        elif self.discussion_plan["action"]=="query_place":
+        elif self.discussion_plan["action"] in ["query_place", "query place"]:
             if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
                 self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
             action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['content']}
-        elif self.discussion_plan['action'] == 'query_route':
+        elif self.discussion_plan['action'] in ['query_route', 'query route']:
             if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
                 self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
             places_in_mem = self.s_mem.get_places()

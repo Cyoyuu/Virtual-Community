@@ -36,7 +36,7 @@ Decision Rules:
 
 Set "initiate_new_discussion": true if:
 
-The estimated arrival time worsened significantly, like by 5 mins, or it exceeds the 09:25:00 limit.
+The estimated arrival time worsened significantly, like by 10 mins, or it exceeds the 09:25:00 limit.
 Other agents have already arrived or are very close, while this agent is significantly delayed.
 
 Set "initiate_new_discussion": false if:
