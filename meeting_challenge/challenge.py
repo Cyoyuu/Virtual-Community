@@ -113,6 +113,7 @@ def main():
     parser.add_argument("--max_tokens", type=int, default=4096, help="maximum tokens")
     parser.add_argument("--temperature", "-t", type=float, default=0, help="temperature")
     parser.add_argument("--top_p", type=float, default=1, help="top p")
+    parser.add_argument("--server_port", type=int, default=8000, help="port for local LM server, only used when lm_source is local_qwen")
 
     # meeting challenge
     parser.add_argument("--robot_as_agent", action='store_true')
@@ -279,6 +280,7 @@ def main():
         llm_kwargs = dict(
             lm_source=args.lm_source,
             lm_id=args.lm_id,
+            server_port=args.server_port,
             max_tokens=args.max_tokens,
             temperature=args.temperature,
             top_p=args.top_p,

@@ -15,7 +15,7 @@ class QwenMultimodalWrapper:
         tensor_parallel_size: int = 1,
     ):
         self.model_id = model_id
-        self.local_path = local_path
+        self.local_path = os.path.join(local_path, model_id)
 
         # Download if not exists
         if not self._weights_exist(self.local_path):
@@ -40,8 +40,9 @@ class QwenMultimodalWrapper:
         self.llm = LLM(
             model=self.local_path,
             tensor_parallel_size=tensor_parallel_size,
-            dtype="float16",
             trust_remote_code=True,
+            max_model_len=8192,
+            gpu_memory_utilization=0.85,
         )
 
     def _weights_exist(self, path: str) -> bool:
@@ -108,12 +109,16 @@ class QwenMultimodalWrapper:
                 add_generation_prompt=True,
             )
 
-            requests.append({
+            request = {
                 "prompt": prompt_text,
-                "multi_modal_data": {
-                    "image": pil_images if pil_images else None
+            }
+
+            if pil_images:
+                request["multi_modal_data"] = {
+                    "image": pil_images
                 }
-            })
+
+            requests.append(request)
 
         # vLLM batched generation
         outputs = self.llm.generate(requests, sampling)

@@ -318,8 +318,9 @@ class CoSaRDiscusser(Discusser):
 class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=5, ablate=""):
-        super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate)
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=5, ablate="", server_port=8000):
+        super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate, server_port=server_port)
+        self.logger.info(f"client port: {self.generator._mm_client.server_port}")
         self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)

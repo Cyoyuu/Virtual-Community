@@ -48,8 +48,11 @@ class ModelClient:
                     break
             except Exception as e:
                 continue
-        if r is None or r.status_code != 200:
-            raise ValueError("failed to connect to server")
+        if r is None:
+            raise ValueError("no response from server")
+
+        if r.status_code != 200:
+            raise ValueError(f"server error: {r.content}")
         return pickle.loads(r.content)
 
 class RAMClient(ModelClient, RAMWrapper):
@@ -93,6 +96,8 @@ class QwenMMClient(ModelClient):
             temperature: sampling temperature (0 = greedy)
             top_p: nucleus sampling parameter
         """
+        if not text:
+            raise ValueError("Empty prompt passed to Qwen server")
         # Use a simple dict instead of vLLM's SamplingParams
         sampling_params = {
             "max_tokens": max_tokens,
@@ -103,7 +108,7 @@ class QwenMMClient(ModelClient):
         # Wrap single example in a batch; server will handle processing
         return self.post(
             f"/qwen_mm",
-            text,
-            images,
-            sampling_params=sampling_params,
+            [text],
+            [images],
+            sampling_params,
         )

@@ -27,7 +27,7 @@ class ModelServerHandler(BaseHTTPRequestHandler):
         args, kwargs = pickle.loads(post_data)
 
         try:
-            result = self.server.process_request(self.path, *args, **kwargs)
+            result = self.server.handle_model_request(self.path, *args, **kwargs)
 
             self.send_response(200)
             self.end_headers()
@@ -49,6 +49,7 @@ class ModelServerHandler(BaseHTTPRequestHandler):
 
 class ModelServer(HTTPServer):
     def __init__(self, server_address):
+        print(f"Starting Qwen vLLM server...server address: {server_address}")
         super().__init__(server_address, ModelServerHandler)
 
         # Logging
@@ -63,13 +64,13 @@ class ModelServer(HTTPServer):
         self.models["qwen_mm"] = QwenMultimodalWrapper(
             model_id=os.getenv(
                 "QWEN_VL_MODEL_ID",
-                "Qwen/Qwen2.5-7B-Instruct",
+                "Qwen/Qwen3-VL-30B-A3B-Instruct-FP8",
             )
         )
         print("Model loaded.")
 
     # Core processing logic
-    def process_request(self, url, *args, **kwargs):
+    def handle_model_request(self, url, *args, **kwargs):
         """
         URL format:
             /qwen_mm

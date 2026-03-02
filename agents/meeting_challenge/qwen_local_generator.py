@@ -12,14 +12,16 @@ class QwenLocalGenerator:
     but routes requests through tools.model_manager's qwen_mm client.
     """
 
-    def __init__(self, lm_id, max_tokens=4096, temperature=0.0, top_p=1.0, logger=None):
+    def __init__(self, lm_id, server_port=8000, max_tokens=4096, temperature=0.0, top_p=1.0, logger=None):
         self.lm_id = lm_id
+        self.server_port = server_port
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.top_p = top_p
         self.logger = logger or logging.getLogger(__name__)
 
         self._mm_client = global_model_manager.get_model("qwen_mm")
+        self._mm_client.server_port = server_port
 
     def _normalize_images(self, img) -> List[Image.Image]:
         # Accept str, PIL.Image, or list of them → list[Image.Image]

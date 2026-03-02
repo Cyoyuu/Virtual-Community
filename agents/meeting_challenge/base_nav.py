@@ -372,7 +372,7 @@ class Navigator:
 class BaseNavigationMeetingAgent(Agent):
     def __init__(self, name, pose, info, sim_path, no_react=False, debug=False, logger=None,
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
-                 detect_interval=-1, num_agents=1, enable_danger_zone=False, ablate=""):
+                 detect_interval=-1, num_agents=1, enable_danger_zone=False, ablate="", server_port=8000):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger)
         self.looking_down = False
         self.num_agents = num_agents
@@ -390,6 +390,7 @@ class BaseNavigationMeetingAgent(Agent):
                 from agents.meeting_challenge.qwen_local_generator import QwenLocalGenerator
                 self.generator = QwenLocalGenerator(
                     lm_id=lm_id,
+                    server_port=server_port,
                     max_tokens=max_tokens,
                     temperature=temperature,
                     top_p=top_p,
