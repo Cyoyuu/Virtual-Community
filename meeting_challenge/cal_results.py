@@ -16,7 +16,7 @@ args = parser.parse_args()
 base_results_dir = args.results_dir
 results = dict()
 average_results = dict()
-job_id_range = range(1, 5)
+job_id_range = range(1, 7)
 for agent_type in os.listdir(base_results_dir):
     if not os.path.isdir(os.path.join(base_results_dir, agent_type)): continue
     for scene in os.listdir(os.path.join(base_results_dir, agent_type)):
@@ -37,8 +37,8 @@ for agent_type in os.listdir(base_results_dir):
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
                 results[agent_type][scene] = {"success_rate": 0.0, 'success_rate_list': [-1]*(job_id_range[-1]+1), "caught_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
-            results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"])
-            results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"])
+            results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"] if result['done'] else 1500)
+            results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"]+500*result['caught_rate']*float(agent_num))
             if 'reason_fail' in result:
                 results[agent_type][scene]["reasons_fail"].append(result["reason_fail"])
             results[agent_type][scene]['total']+=1
@@ -83,6 +83,7 @@ for agent_type in results:
         if type(average_results[agent_type][key]) in [int, float]:
             average_results[agent_type][key]/=num
     average_results[agent_type]["total_case"] = num
+    average_results[agent_type]["success_rate"] = average_results[agent_type]["success_rate"]*num/14
     results[agent_type]["average"]=average_results[agent_type]
 with open(f"{base_results_dir}/results.json", "w") as f:
     json.dump(results, f, indent=2)

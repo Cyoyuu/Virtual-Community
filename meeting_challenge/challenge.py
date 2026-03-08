@@ -280,7 +280,6 @@ def main():
         llm_kwargs = dict(
             lm_source=args.lm_source,
             lm_id=args.lm_id,
-            server_port=args.server_port,
             max_tokens=args.max_tokens,
             temperature=args.temperature,
             top_p=args.top_p,
@@ -298,6 +297,7 @@ def main():
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
             basic_kwargs['ablate'] = args.ablate
+            llm_kwargs['server_port'] = args.server_port
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == "replay":
             steps_for_agent = []

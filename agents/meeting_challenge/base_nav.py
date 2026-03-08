@@ -396,6 +396,7 @@ class BaseNavigationMeetingAgent(Agent):
                     top_p=top_p,
                     logger=self.logger,
                 )
+                self.logger.info(f"client port: {self.generator._mm_client.server_port}")
             else:
                 raise ValueError(f"Unsupported lm_source: {lm_source}")
         else:
