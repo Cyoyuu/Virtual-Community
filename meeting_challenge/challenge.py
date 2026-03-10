@@ -153,7 +153,7 @@ def main():
         with open(replay_steps_path, "r") as f:
             replay_steps_info = json.load(f)
         replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
-        replay_output_dir = os.path("meeting_challenge/replay_outputs")
+        replay_output_dir = os.path.join("meeting_challenge", "replay_outputs")
         output_dir = os.path.join(replay_output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
     job_result_path = os.path.join(f"meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
