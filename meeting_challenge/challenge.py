@@ -273,7 +273,6 @@ def main():
             debug=args.debug,
             logging_level=args.logging_level,
             multi_process=args.multi_process,
-            enable_danger_zone=args.enable_danger_zone,
             detect_interval=args.detect_interval,
         )
         llm_kwargs = dict(
@@ -282,6 +281,9 @@ def main():
             max_tokens=args.max_tokens,
             temperature=args.temperature,
             top_p=args.top_p,
+        )
+        challenge_kwargs = dict(
+            enable_danger_zone=args.enable_danger_zone,
         )
         if args.replay_mode:
             steps_for_agent = []
@@ -294,20 +296,20 @@ def main():
             basic_kwargs['replay_actions'] = steps_for_agent
             all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
         elif agent_type == 'center':
-            all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == 'coela':
-            all_agent_processes.append(AgentProcess(CoelaMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(CoelaMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == 'roco':
-            all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(RoCoMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == "fixed":
-            all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == "mcts":
-            all_agent_processes.append(AgentProcess(MCTSMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(MCTSMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
             basic_kwargs['ablate'] = args.ablate
             llm_kwargs['server_port'] = args.server_port
-            all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
+            all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
 
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
