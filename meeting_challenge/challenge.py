@@ -105,7 +105,7 @@ def main():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'replay'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface", "local_qwen"], default="azure", help="language model source")
@@ -127,13 +127,13 @@ def main():
     parser.add_argument("--gt_only_for_sentinels", action='store_true')
     parser.add_argument("--detect_interval", type=int, default=-1)
     parser.add_argument("--ablate", type=str, default="")
-    parser.add_argument("--replay_steps_path", type=str, default=None)
+    parser.add_argument("--replay_mode", action='store_true')
     args = parser.parse_args()
 
     random.seed(time.time())
     # Make output directories
     if args.agent_type == 'llm' and args.lm_id != 'gpt-4o':
-        args.output_dir = os.path.join(args.output_dir, args.scene,
+        output_dir = os.path.join(args.output_dir, args.scene,
                                        f"{args.agent_type}-{args.lm_id.split('/')[0]}")
     else:
         agent_type = args.agent_type
@@ -146,13 +146,20 @@ def main():
             agent_type_name = f"{agent_type}_ablate_{args.ablate}"
         if args.lm_source == "local_qwen":
             agent_type_name = f"{agent_type_name}_local_qwen"
-        args.output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
+        output_dir = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
+    if args.replay_mode:
+        replay_steps_info = None
+        replay_steps_path = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}", "steps.json")
+        with open(replay_steps_path, "r") as f:
+            replay_steps_info = json.load(f)
+        replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
+        replay_output_dir = os.path("meeting_challenge/replay_outputs")
+        output_dir = os.path.join(replay_output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
     job_result_path = os.path.join(f"meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
-    os.makedirs(args.output_dir, exist_ok=True)
-    output_dir = args.output_dir
+    os.makedirs(output_dir, exist_ok=True)
     result_path = os.path.join(output_dir, "result.json")
     if os.path.exists(result_path) and args.job_id != 0: # 0 is for debug
         result = json.load(open(result_path, 'r'))
@@ -160,18 +167,18 @@ def main():
         print(f"it's already done. Skip running simulation")
         end_processes()
         exit(0)
-    if args.overwrite and os.path.exists(args.output_dir):
-        print(f"Overwrite the output directory: {args.output_dir}")
-        shutil.rmtree(args.output_dir)
+    if args.overwrite and os.path.exists(output_dir):
+        print(f"Overwrite the output directory: {output_dir}")
+        shutil.rmtree(output_dir)
     print(f"Initializing output directory...")
     os.makedirs(os.path.join(output_dir, 'logs'), exist_ok=True)
     os.makedirs(os.path.join(output_dir, 'debug'), exist_ok=True)
 
     # Read and initialize scene configuration
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
     print(f"Dumping gpu environment...")
     json.dump({"gpus": get_gpu_info()}, open(os.path.join(output_dir, "gpus.json"), 'w'), indent=4)
-    config_path = os.path.join(args.output_dir, 'curr_sim')
+    config_path = os.path.join(output_dir, 'curr_sim')
     if not os.path.exists(config_path):
         seed_config_path = os.path.join('assets/scenes', args.scene, args.config)
         print(f"Initiate new simulation from config: {seed_config_path}")
@@ -252,14 +259,6 @@ def main():
     )
     obs = env.reset()
 
-    replay_steps_info = None
-    if args.agent_type == "replay":
-        if args.replay_steps_path is None:
-            raise ValueError("replay mode requires --replay_steps_path pointing to a steps.json")
-        with open(args.replay_steps_path, "r") as f:
-            replay_steps_info = json.load(f)
-        replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
-
     # Initialize the proposer agents and NPC agents
     name2idx = {}
     all_agent_processes: list[AgentProcess] = []
@@ -284,7 +283,17 @@ def main():
             temperature=args.temperature,
             top_p=args.top_p,
         )
-        if agent_type == 'center':
+        if args.replay_mode:
+            steps_for_agent = []
+            for k in replay_step_keys:
+                a = replay_steps_info[k].get("action", {}).get(str(i), None)
+                if a is None:
+                    steps_for_agent.append({'type': 'wait'})
+                else:
+                    steps_for_agent.append(a)
+            basic_kwargs['replay_actions'] = steps_for_agent
+            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
+        elif agent_type == 'center':
             all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs))
         elif agent_type == 'coela':
             all_agent_processes.append(AgentProcess(CoelaMeetingAgent, **basic_kwargs, **llm_kwargs))
@@ -299,16 +308,6 @@ def main():
             basic_kwargs['ablate'] = args.ablate
             llm_kwargs['server_port'] = args.server_port
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs))
-        elif agent_type == "replay":
-            steps_for_agent = []
-            for k in replay_step_keys:
-                a = replay_steps_info[k].get("action", {}).get(str(i), None)
-                if a is None:
-                    steps_for_agent.append({'type': 'wait'})
-                else:
-                    steps_for_agent.append(a)
-            basic_kwargs['steps'] = steps_for_agent # @ ruxi fill this: pass action list from steps.json to the replay agent in basic_kwargs
-            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
 
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")

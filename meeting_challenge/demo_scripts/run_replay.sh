@@ -1,18 +1,20 @@
 scene=$1
-agent_num=$2
-sentinel_type=$3
-sentinel_num=$4
-job_id=$5
-# @ ruxi: make sure this args consistent with the output you are reading.
+agent_type=$2
+agent_num=$3
+sentinel_type=$4
+sentinel_num=$5
+job_id=$6
 
 export PYTHONPATH=${PWD}
 
+# in replay mode, --output_dir serves as the source dir
 python meeting_challenge/challenge.py --head_less \
 --backend gpu \
 --multi_process \
 --skip_avatar_animation \
 --enable_gt_segmentation \
 --output_dir meeting_challenge/output \
+--replay_mode \
 --scene "${scene}" \
 --job_id "${job_id}" \
 --enable_outdoor_objects \
@@ -20,7 +22,7 @@ python meeting_challenge/challenge.py --head_less \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_15 \
---agent_type replay \
+--agent_type ${agent_type} \
 --agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
