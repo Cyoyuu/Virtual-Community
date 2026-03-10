@@ -161,7 +161,7 @@ def main():
     job_result_path = os.path.join(job_result_path, f"result_{args.job_id}.json")
     os.makedirs(output_dir, exist_ok=True)
     result_path = os.path.join(output_dir, "result.json")
-    if os.path.exists(result_path) and args.job_id != 0: # 0 is for debug
+    if os.path.exists(result_path) and args.job_id != 0 and not args.replay_mode: # 0 is for debug
         result = json.load(open(result_path, 'r'))
         print(f"results exists: {result}")
         print(f"it's already done. Skip running simulation")
@@ -294,7 +294,7 @@ def main():
                 else:
                     steps_for_agent.append(a)
             basic_kwargs['replay_actions'] = steps_for_agent
-            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs, **llm_kwargs)) 
+            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs)) 
         elif agent_type == 'center':
             all_agent_processes.append(AgentProcess(HeuristicNavigationMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == 'coela':
