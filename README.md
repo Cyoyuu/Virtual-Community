@@ -4,7 +4,7 @@
   Humans, Robots, and Society
 </h1>
   <p align="center">
-    arXiv 2025
+    ICLR 2026
   </p>
   <p align="center">
     <a href="https://zhouqqhh.github.io/">Qinhong Zhou*</a>,
