@@ -147,27 +147,27 @@ if __name__ == "__main__":
     parser.add_argument("--scene", "-s", type=str, required=True)
     # parser.add_argument("--radius", type=float, required=True)
     args = parser.parse_args()
-    if os.path.exists(f"ViCo/assets/scenes/{args.scene}"):
+    if os.path.exists(f"assets/scenes/{args.scene}"):
         print("Scene exists")
-        Path(f"ViCo/assets/scenes/{args.scene}/road_data").mkdir(parents=True, exist_ok=True)
-        with open(f"ViCo/assets/scenes/{args.scene}/raw/center.txt", "r") as f:
+        Path(f"assets/scenes/{args.scene}/road_data").mkdir(parents=True, exist_ok=True)
+        with open(f"assets/scenes/{args.scene}/raw/center.txt", "r") as f:
             ref_lat, ref_lon=f.readline().split()
             args.ref_lat, args.ref_lon=float(ref_lat), float(ref_lon)
             print(f"retrieved coordinates from raw file. lat: {args.ref_lat}, lon: {args.ref_lon}")
     else:
-        print(f"Scene not exist: ViCo/assets/scenes/{args.scene}")
+        print(f"Scene not exist: assets/scenes/{args.scene}")
         exit()
 
     # Set up the plot area
     plt.figure(figsize=(8, 8))
-    aerial_view=mpimg.imread(f"ViCo/assets/scenes/{args.scene}/global.png")
+    aerial_view=mpimg.imread(f"assets/scenes/{args.scene}/global.png")
     plt.imshow(aerial_view, extent=[-512, 512, -512, 512])# left, right, bottom, top
     plt.xlim(-400, 400)
     plt.ylim(-400, 400)
     plt.gca().set_aspect('equal', adjustable='box')
     # plt.grid()
 
-    roads, nodes = pickle.load(open(f"ViCo/assets/scenes/{args.scene}/road_data/roads.pkl", 'rb'))
+    roads, nodes = pickle.load(open(f"assets/scenes/{args.scene}/road_data/roads.pkl", 'rb'))
     draw_roads(roads)
     # draw_roads(roads, nodes, args.ref_lat, args.ref_lon)
 

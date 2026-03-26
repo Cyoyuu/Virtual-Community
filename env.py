@@ -50,6 +50,7 @@ class VicoEnv:
 				 output_dir='output',
 				 enable_third_person_cameras=True,
 				 enable_demo_camera=False,
+                 use_luisa_renderer=False,
 				 no_traffic_manager=False,
 				 tm_vehicle_num=0,
 				 tm_avatar_num=0,
@@ -156,7 +157,16 @@ class VicoEnv:
 			avatar_options=gs.options.AvatarOptions(
 				enable_collision=self.enable_collision,
 			),
-			renderer=gs.renderers.Rasterizer() if not self.batch_renderer else gs.renderers.BatchRenderer(use_rasterizer=True),
+            renderer=gs.renderers.RayTracer(
+                env_surface=gs.surfaces.Emission(
+                    emissive_texture=gs.textures.ImageTexture(
+                        image_path="textures/indoor_bright.png",
+                    ),
+                ),
+                env_radius=100.0,
+                env_euler=(0, 0, 180),
+                lights=[],
+            ) if use_luisa_renderer else gs.renderers.Rasterizer() if not self.batch_renderer else gs.renderers.BatchRenderer(use_rasterizer=True),
 			vis_options=gs.options.VisOptions(
 				show_world_frame=False,
 				segmentation_level="entity",

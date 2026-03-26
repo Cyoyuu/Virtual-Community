@@ -16,7 +16,7 @@ def generate_one(output_dir, sentinel_num):
             results[sentinel_type] = json.load(f)
 
         # Collect all scenes and agent types
-        agent_types = ['center_no_avoidance', 'center', 'roco', 'coela', 'sentinel', 'sentinel_no_refine']
+        agent_types = ['center_no_avoidance', 'center', 'mcts', 'roco', 'coela', 'sentinel', 'sentinel_no_refine']
 
         for agent_type, scene_dict in results[sentinel_type].items():
             # agent_types.append(agent_type)

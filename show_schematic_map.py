@@ -16,7 +16,7 @@ def visualize_map_with_routes(
     # -------------------------------------------------------
     # 2. Plot base image
     # -------------------------------------------------------
-    fig, ax = plt.subplots(figsize=(8, 8))
+    fig, ax = plt.subplots(figsize=(4, 4))
     ax.imshow(img, origin='upper')
     # ax.set_title("Map Visualization")
     ax.set_xlabel("X")
@@ -25,10 +25,10 @@ def visualize_map_with_routes(
     # -------------------------------------------------------
     # 5. Draw new route (yellow)
     # -------------------------------------------------------
-    if new_route:
-        xs, ys = zip(*new_route)
-        ax.plot(xs, ys, color='orange', linewidth=1, label='New Route')
-        ax.scatter(xs, ys, color='orange', s=7)
+    # if new_route:
+    #     xs, ys = zip(*new_route)
+    #     ax.plot(xs, ys, color='orange', linewidth=1, label='New Route')
+    #     ax.scatter(xs, ys, color='orange', s=7)
 
     # -------------------------------------------------------
     # 6. Legend entries for map semantics
@@ -54,7 +54,7 @@ def visualize_map_with_routes(
     legend_elements.append(plt.Line2D([0], [0], color='blue', linewidth=2, label='Original Route'))
 
     # Yellow = new route
-    legend_elements.append(plt.Line2D([0], [0], color='orange', linewidth=2, label='New Route'))
+    # legend_elements.append(plt.Line2D([0], [0], color='orange', linewidth=2, label='New Route'))
 
     ax.legend(handles=legend_elements, loc='upper right')
 
@@ -66,6 +66,6 @@ def visualize_map_with_routes(
 
 if __name__=="__main__":
     print(1)
-    global_image = Image.open("../icons/schematic_map.png").convert("RGB")
+    global_image = Image.open("../icons/Picture1.png").convert("RGB")
     print(2)
     visualize_map_with_routes(global_image, new_route=[[630, 300], [662, 406], [500, 400], [481, 415]])
