@@ -18,6 +18,9 @@ fi
 if [ "$gt" = "no_gt" ]; then
   time_limit=$((time_limit + 60))
 fi
+if [ "$agent_num" -eq 10 ]; then
+  time_limit=$((time_limit + 120))
+fi
 if [ "$time_limit" -gt "480" ]; then
   time_limit=480
 fi

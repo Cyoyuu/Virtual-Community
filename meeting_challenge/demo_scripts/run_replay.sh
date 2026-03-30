@@ -29,6 +29,7 @@ python meeting_challenge/challenge.py --head_less \
 --enable_danger_zone \
 --save_per_seconds 1 \
 --step_limit 1500 \
+--use_luisa_renderer \
 --lm_source azure \
 --lm_id gpt-4o \
 --debug \

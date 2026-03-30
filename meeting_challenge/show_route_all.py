@@ -105,7 +105,7 @@ def animate_all(data_dir, scene, agent_type, sentinel_type, sentinel_num, job_id
     fixed_palette = ["#007BFF", "#00C853", "#FFD600", "#8E44AD", "#FF1744"]
     agent_color = {name: fixed_palette[i] for i, name in enumerate(fixed_agents)}
     agent_traces, idx_of_full = precompute_histories(full_steps, steps_data, fixed_agents, max_jump=100.0)
-    bg_path = f"ViCo/assets/scenes/{scene}/global.png"
+    bg_path = f"assets/scenes/{scene}/global.png"
     if not os.path.isfile(bg_path):
         raise FileNotFoundError(f"Background map not found at: {bg_path}")
     bg = mpimg.imread(bg_path)

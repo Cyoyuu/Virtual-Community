@@ -31,14 +31,12 @@ for agent_type in os.listdir(base_results_dir):
             sentinel_num=int(base_results_dir.split('_')[-1])
             if f"result_{job_id}.json" not in os.listdir(os.path.join(base_results_dir, agent_type, scene)): continue
             if f"result.json" not in os.listdir(os.path.join(args.output_dir, scene, f"{agent_type}_{gt}_{agent_num}", f"{sentinel_type}_{sentinel_num}", f"job_{job_id}")): continue
-            if f"config.json" not in os.listdir(os.path.join(args.output_dir, scene, f"{agent_type}_{gt}_{agent_num}", f"{sentinel_type}_{sentinel_num}", f"job_{job_id}", "curr_sim")): continue
             result = json.load(open(os.path.join(base_results_dir, agent_type, scene, f"result_{job_id}.json")))
-            config = json.load(open(os.path.join(args.output_dir, scene, f"{agent_type}_{gt}_{agent_num}", f"{sentinel_type}_{sentinel_num}", f"job_{job_id}", "curr_sim", "config.json")))
             print(f"summerizeing {os.path.join(base_results_dir, agent_type, scene)}")
             if agent_type not in results:
                 results[agent_type] = dict()
             if scene not in results[agent_type]:
-                results[agent_type][scene] = {"success_rate": 0.0, 'success_rate_list': [-1]*(job_id_range[-1]+1), "caught_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0, "sps_agent": 0, "sps_sim": 0}
+                results[agent_type][scene] = {"success_rate": 0.0, 'success_rate_list': [-1]*(job_id_range[-1]+1), "caught_rate": 0.0, "detection_rate": 0.0, "time_spent_meeting": [], "walk_spent_meeting": [], "reasons_fail": [], "total": 0}
             results[agent_type][scene]["time_spent_meeting"].append(result["time_spent_meeting"] if result['done'] else 1500)
             results[agent_type][scene]["walk_spent_meeting"].append(result["walk_spent_meeting"]+500*result['caught_rate']*float(agent_num))
             if 'reason_fail' in result:
@@ -48,16 +46,11 @@ for agent_type in os.listdir(base_results_dir):
             results[agent_type][scene]['success_rate_list'][job_id]=int(result['done'])
             results[agent_type][scene]['caught_rate']+=result['caught_rate']
             results[agent_type][scene]['detection_rate']+=result['detection_rate']
-            results[agent_type][scene]['sps_agent']+=config['sps_agent']
-            results[agent_type][scene]['sps_sim']+=config['sps_sim']
             # animate_all(args.output_dir, scene=scene, agent_type=agent_type, sentinel_type=base_results_dir.split('_')[-2], sentinel_num=int(base_results_dir.split('_')[-1]), job_id=job_id, output_dir="visualization")
         if agent_type in results and scene in results[agent_type]:
             results[agent_type][scene]['success_rate']/=results[agent_type][scene]['total']
             results[agent_type][scene]['caught_rate']/=results[agent_type][scene]['total']
             results[agent_type][scene]['detection_rate']/=results[agent_type][scene]['total']
-            results[agent_type][scene]['sps_agent']/=results[agent_type][scene]['total']
-            results[agent_type][scene]['sps_sim']/=results[agent_type][scene]['total']
-
 for agent_type in results:
     average_results[agent_type]=dict()
     average_results[agent_type]["time_spent_meeting_mean"]=0.
@@ -68,9 +61,6 @@ for agent_type in results:
     average_results[agent_type]["success_rate_list"]=[0]*(job_id_range[-1]+1)
     average_results[agent_type]["caught_rate"]=0.
     average_results[agent_type]["detection_rate"]=0.
-    average_results[agent_type]["sps_agent"]=0.
-    average_results[agent_type]["sps_sim"]=0.
-
     num=0
     for scene in results[agent_type]:
         num+=1
@@ -85,8 +75,6 @@ for agent_type in results:
         average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]
         average_results[agent_type]["caught_rate"]+=results[agent_type][scene]["caught_rate"]
         average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
-        average_results[agent_type]["sps_agent"]+=results[agent_type][scene]["sps_agent"]
-        average_results[agent_type]["sps_sim"]+=results[agent_type][scene]["sps_sim"]
     for job_id in job_id_range:
         for scene in results[agent_type]:
             average_results[agent_type]['success_rate_list'][job_id]+=max(0, results[agent_type][scene]['success_rate_list'][job_id])

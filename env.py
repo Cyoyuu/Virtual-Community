@@ -90,6 +90,7 @@ class VicoEnv:
 		self.enable_decompose = enable_decompose
 		self.enable_gt_segmentation = enable_gt_segmentation
 		self.batch_renderer = batch_renderer
+		self.use_luisa_renderer = use_luisa_renderer
 		self.scene_name = scene
 		self.entity_idx_to_info = defaultdict(dict)
 		self.entity_idx_to_color = []
@@ -166,7 +167,7 @@ class VicoEnv:
                 env_radius=100.0,
                 env_euler=(0, 0, 180),
                 lights=[],
-            ) if use_luisa_renderer else gs.renderers.Rasterizer() if not self.batch_renderer else gs.renderers.BatchRenderer(use_rasterizer=True),
+            ) if self.use_luisa_renderer else gs.renderers.Rasterizer() if not self.batch_renderer else gs.renderers.BatchRenderer(use_rasterizer=True),
 			vis_options=gs.options.VisOptions(
 				show_world_frame=False,
 				segmentation_level="entity",
@@ -204,6 +205,18 @@ class VicoEnv:
 				intensity=1.0,
 				directional=True,
 			)
+		if self.use_luisa_renderer:
+			lights=[
+				{"pos": (-5000.0, 2000.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 2.0},
+				{"pos": (5000.0, -2000.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
+				{"pos": (0.0, 0.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 0.5},
+			]
+			for light in lights:
+				self.scene.add_mesh_light(
+					morph=gs.morphs.Sphere(pos=light["pos"],radius=light["radius"]),
+					color=light["color"],
+					intensity=1.0,
+				)
 		### Load city scene
 		start_time = time.time()
 		if self.enable_demo_camera:
@@ -1174,6 +1187,8 @@ class VicoEnv:
 			if self.genesis_steps % self.agent_visual_obs_freq[i] == 0:
 				if self.batch_renderer:
 					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['extrinsics'] = self.rgbs[agent.ego_view.idx], self.depths[agent.ego_view.idx], self.segmentations[agent.ego_view.idx], agent.ego_view.extrinsics
+				elif self.use_luisa_renderer:
+					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['extrinsics'] = agent.render_ego_view()
 				else:
 					self.obs[i]['rgb'], self.obs[i]['depth'], self.obs[i]['segmentation'], self.obs[i]['extrinsics'] = agent.render_ego_view(depth=True, segmentation=self.enable_gt_segmentation)
 				if self.seconds % self.save_per_seconds == 0:

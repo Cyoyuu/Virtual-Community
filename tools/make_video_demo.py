@@ -22,6 +22,16 @@ sys.path.insert(0, current_directory)
 
 from tools.utils import *
 
+import time
+
+def safe_image_clip(path, retries=5):
+    for _ in range(retries):
+        try:
+            return ImageClip(path)
+        except OSError:
+            time.sleep(0.05)
+    raise RuntimeError(f"Failed to read image: {path}")
+
 def render_topdown_locators(image, locator_positions, colors, circle_radii, camera_parameters):
     f_x = camera_parameters["camera_res"][0] / (2.0 * np.tan(np.radians(camera_parameters["camera_fov"] / 2.0)))
     f_y = camera_parameters["camera_res"][1] / (2.0 * np.tan(np.radians(camera_parameters["camera_fov"] / 2.0)))
@@ -203,7 +213,9 @@ def make_global_image(i, args, names_order, camera_parameters):
         agent_poses.append(step_data["obs"]["pose"])
     global_image_copy = global_image.copy()
     global_image_with_agents = render_topdown_locators(global_image_copy, [np.array(agent_pose[:3]) for agent_pose in agent_poses], agent_locator_colors, circle_radii=[15 for _ in agent_poses], camera_parameters=camera_parameters)
-    Image.fromarray(global_image_with_agents).save(global_img_path)
+    img = Image.fromarray(global_image_with_agents)
+    img.save(global_img_path)
+    img.close()
     return True
 
 if __name__ == '__main__':
@@ -224,8 +236,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.data_dir is not None:
         args.data_dir = args.data_dir.rstrip('/')
-        args.agent_type = args.data_dir.split('/')[-1]
-        args.scene = args.data_dir.split('/')[-2].split('_')[0]
+        args.agent_type = args.data_dir.split('/')[-3]
+        args.scene = args.data_dir.split('/')[-4].split('_')[0]
         args.output_dir = args.data_dir
     else:
         args.output_dir = os.path.join(args.output_dir, f"{args.scene}_{args.config}", f"{args.agent_type}")
@@ -257,10 +269,10 @@ if __name__ == '__main__':
 
     global_images = {}
 
-    global_image_path = os.path.join('ViCo', 'assets', 'scenes', args.scene, "global.png")
+    global_image_path = os.path.join('assets', 'scenes', args.scene, "global.png")
     global_image = cv2.imread(global_image_path)
 
-    camera_parameters = json.load(open(os.path.join('ViCo', 'assets', 'scenes', args.scene, "global_cam_parameters.json")))
+    camera_parameters = json.load(open(os.path.join('assets', 'scenes', args.scene, "global_cam_parameters.json")))
     agent_locator_colors = map_lang_colors_to_rgb(config["locator_colors"])
 
     for name in names_order:
@@ -270,9 +282,9 @@ if __name__ == '__main__':
             assert os.path.exists(agent_cam_image_path), f"Image {agent_cam_image_path} does not exist."
             agent_cam_images[name][frame_idx] = agent_cam_image_path
         # agent_cam_images[name] = sorted(agent_cam_images[name])
-        avatar_images[name] = os.path.join('ViCo', 'assets', 'imgs', 'avatars', f'{name}.png')
+        avatar_images[name] = os.path.join('assets', 'imgs', 'avatars', f'{name}.png')
         # if not os.path.exists(avatar_images[name]):
-        #     avatar_images[name] = os.path.join('ViCo', 'assets', 'imgs', 'default.png')
+        #     avatar_images[name] = os.path.join('assets', 'imgs', 'default.png')
         # avatar_images[name] = imageio.imread(avatar_images[name]).resized((512, 512))
 
     if num_agents >= 12:
@@ -301,6 +313,12 @@ if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=args.threads) as executor:
         global_image_generated = partial(make_global_image, args=args, names_order=names_order, camera_parameters=camera_parameters)
         tqdm.tqdm(executor.map(global_image_generated, range(0, num_steps, args.fps)), total=num_steps//args.fps)
+    for i in range(0, num_steps, args.fps):
+        path = os.path.join(args.output_dir, 'global', f'rgb_{i:06d}.png')
+        print(f"Checking existence of global image: {path}")
+        while not os.path.exists(path) or os.path.getsize(path) == 0:
+            time.sleep(0.01)
+    print("Finished generating global images.")
 
     with ThreadPoolExecutor(max_workers=args.threads) as executor:
         process_frame_partial = partial(process_frame_agents, args=args, names_order=names_order, name_to_color=name_to_color, agent_cam_images=agent_cam_images, global_images=global_images, demo_folder=demo_folder, last_text_actions=last_text_actions)
@@ -309,7 +327,7 @@ if __name__ == '__main__':
     clips = [clip for clip in clips if clip is not None]
     if not args.no_output_video:
         if args.videowriter == "ffmpeg":
-            images_to_video_using_ffmpeg(demo_folder, os.path.join(demo_folder, "demo.mp4"), fps=args.fps, threads=args.threads, codec=args.codec)
+            images_to_video_using_ffmpeg(demo_folder, os.path.join(demo_folder, "demo.mp4"), fps=args.fps*5, threads=args.threads, codec=args.codec)
         else:
             final_clip = concatenate_videoclips(clips)
-            final_clip.write_videofile(os.path.join(demo_folder, "demo.mp4"), fps=args.fps)
+            final_clip.write_videofile(os.path.join(demo_folder, "demo.mp4"), fps=args.fps*5)

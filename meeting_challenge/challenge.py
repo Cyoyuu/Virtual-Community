@@ -86,6 +86,7 @@ def main():
     parser.add_argument("--curr_time", type=str)
     parser.add_argument("--start_id", type=int)
     parser.add_argument("--only_one_sample", action='store_true')
+    parser.add_argument("--use_luisa_renderer", action='store_true')
 
     ### Scene configurations
     parser.add_argument("--scene", type=str, required=True)
@@ -154,7 +155,11 @@ def main():
             replay_steps_info = json.load(f)
         replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
         replay_output_dir = os.path.join("meeting_challenge", "replay_outputs")
-        output_dir = os.path.join(replay_output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
+        if args.use_luisa_renderer:
+            output_dir = os.path.join(replay_output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}_luisa")
+            args.enable_indoor_scene = False
+        else:
+            output_dir = os.path.join(replay_output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}")
     # Make job result directories
     job_result_path = os.path.join(f"meeting_challenge/results_{'no_gt' if args.gt_only_for_sentinels else 'gt'}/{args.agent_num}_{args.sentinel_type}_{args.sentinel_num}/", f"{agent_type_name}", args.scene)
     os.makedirs(job_result_path, exist_ok=True)
@@ -250,6 +255,7 @@ def main():
         no_load_scene=args.no_load_scene,
         output_dir=output_dir,
         enable_third_person_cameras=args.enable_third_person_cameras,
+        use_luisa_renderer=args.use_luisa_renderer,
         no_traffic_manager=args.no_traffic_manager,
         enable_tm_debug=args.enable_tm_debug,
         tm_vehicle_num=args.tm_vehicle_num,
@@ -328,7 +334,6 @@ def main():
             debug=args.debug,
             logging_level=args.logging_level,
             multi_process=args.multi_process,
-            patrol_config=sentinel_config['patrol_config'][i],
         )
         llm_kwargs = dict(
             lm_source=args.lm_source,
@@ -337,8 +342,21 @@ def main():
             temperature=args.temperature,
             top_p=args.top_p,
         )
-        if adversary_type == 'agent':
-            all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs))
+        challenge_kwargs = dict(
+            patrol_config=sentinel_config['patrol_config'][i],
+        )
+        if args.replay_mode:
+            steps_for_agent = []
+            for k in replay_step_keys:
+                a = replay_steps_info[k].get("action", {}).get(str(num_agents+i), None)
+                if a is None:
+                    steps_for_agent.append({'type': 'wait'})
+                else:
+                    steps_for_agent.append(a)
+            basic_kwargs['replay_actions'] = steps_for_agent
+            all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs)) 
+        elif adversary_type == 'agent':
+            all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs, **meeting_challenge))
         else:
             raise NotImplementedError(f"agent type {adversary_type} is not supported")
         name2idx[config['agent_names'][num_agents+i]] = i
