@@ -262,6 +262,7 @@ def main():
         tm_avatar_num=args.tm_avatar_num,
         save_per_seconds=args.save_per_seconds,
         debug=args.debug,
+        enable_demo_camera=args.enable_demo_camera,
     )
     obs = env.reset()
 

@@ -10,9 +10,16 @@ import argparse
 import subprocess
 import numpy as np
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 import matplotlib.colors as mcolors
-from moviepy import TextClip, ImageClip, CompositeVideoClip, concatenate_videoclips
+from moviepy import ImageClip, CompositeVideoClip, concatenate_videoclips, ColorClip
+
+_font_cache = {}
+
+def get_font(size):
+    if size not in _font_cache:
+        _font_cache[size] = ImageFont.truetype("tools/misc/OpenSans-Regular.ttf", size)
+    return _font_cache[size]
 
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
@@ -24,6 +31,14 @@ from tools.utils import *
 
 import time
 
+VIDEO_W, VIDEO_H = 2560, 1920
+TOP_H    = 200   # avatar strip
+BOTTOM_H = 250   # speech text area
+MID_H    = VIDEO_H - TOP_H - BOTTOM_H  # 1470
+SIDE_W   = 400   # width of each side camera column
+CENTER_W = VIDEO_W - 2 * SIDE_W        # 1760
+
+
 def safe_image_clip(path, retries=5):
     for _ in range(retries):
         try:
@@ -31,6 +46,7 @@ def safe_image_clip(path, retries=5):
         except OSError:
             time.sleep(0.05)
     raise RuntimeError(f"Failed to read image: {path}")
+
 
 def render_topdown_locators(image, locator_positions, colors, circle_radii, camera_parameters):
     f_x = camera_parameters["camera_res"][0] / (2.0 * np.tan(np.radians(camera_parameters["camera_fov"] / 2.0)))
@@ -49,52 +65,59 @@ def render_topdown_locators(image, locator_positions, colors, circle_radii, came
         cv2.circle(image, (pixel_x, pixel_y), radius, (color[2]*255, color[1]*255, color[0]*255), -1)
     return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
+
 def extract_frame_number(filename):
     match = re.search(r'frame_(\d+)\.(?:png|jpe?g)$', filename)
     return int(match.group(1)) if match else -1
 
-def images_to_video_using_ffmpeg(input_dir_path, output_path, fps=30, threads=8, codec="mpeg4"):
-    images = sorted([img for img in os.listdir(input_dir_path) if img.endswith(('.png', '.jpg', '.jpeg'))], key=extract_frame_number)
-    if not images:
-        raise ValueError(f"No images in {input_dir_path}")
+
+VIDEO_FPS = 24  # output video frame rate
+
+def images_to_video_using_ffmpeg(frame_durations, output_path, threads=8, codec="mpeg4"):
+    """
+    frame_durations: list of (image_path, duration_seconds) tuples.
+    Each frame is duplicated in the concat list as many times as needed to fill its
+    duration at VIDEO_FPS — constant-fps encoding, compatible with all codecs.
+    """
     with open("images_list.txt", "w") as f:
-        for image in images:
-            f.write(f"file '{os.path.join(input_dir_path, image)}'\n")
+        for path, dur in frame_durations:
+            n_copies = max(1, round(dur * VIDEO_FPS))
+            for _ in range(n_copies):
+                f.write(f"file '{os.path.abspath(path)}'\n")
     if codec == "mpeg4":
-        ffmpeg_cmd_generate = [
-            "ffmpeg", 
-            "-f", "concat",
-            "-safe", "0",
-            "-r", str(fps),
+        ffmpeg_cmd = [
+            "ffmpeg",
+            "-f", "concat", "-safe", "0",
+            "-r", str(VIDEO_FPS),
             "-i", "images_list.txt",
             "-vcodec", "mpeg4",
             "-threads", str(threads),
-            output_path
+            output_path,
         ]
     elif codec == "h264":
-        ffmpeg_cmd_generate = [
-            "ffmpeg", 
-            "-f", "concat",
-            "-safe", "0",
-            "-r", str(fps),
+        ffmpeg_cmd = [
+            "ffmpeg",
+            "-f", "concat", "-safe", "0",
+            "-r", str(VIDEO_FPS),
             "-i", "images_list.txt",
             "-vcodec", "libx264",
             "-crf", "18",
             "-preset", "slow",
             "-threads", str(threads),
-            output_path
+            output_path,
         ]
     else:
         print(f"Codec {codec} not supported.")
         exit()
-    subprocess.run(ffmpeg_cmd_generate, check=True)
+    subprocess.run(ffmpeg_cmd, check=True)
     os.remove("images_list.txt")
+
 
 def rgb_to_bgr255(color):
     rgb = mcolors.to_rgb(color)
-    # gbr = (rgb[2]*255, rgb[1]*255, rgb[0]*255)
     rgb = (int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255))
     return rgb
+
 
 def add_colored_dot(frame, position, radius, color):
     if isinstance(frame, np.ndarray):
@@ -105,106 +128,136 @@ def add_colored_dot(frame, position, radius, color):
     draw.ellipse(bbox, fill=color, outline=color)
     return frame
 
-def process_frame_agents(frame_idx, args, names_order, name_to_color, agent_cam_images, global_images, demo_folder, last_text_actions):
-    
+
+def collect_speech_events(frame_idx, args, names_order):
+    """Return unique (subject, content) speech events observed at this frame across all agents."""
+    seen = set()
+    events_out = []
+    for name in names_order:
+        step_file = os.path.join(args.output_dir, 'steps', name, f'{frame_idx:06d}.json')
+        if not os.path.exists(step_file):
+            continue
+        step_data = json.load(open(step_file))
+        for event in (step_data.get('obs', {}).get('events', []) or []):
+            if event.get('type') == 'speech':
+                key = (event.get('subject', name), event.get('content', ''))
+                if key not in seen:
+                    seen.add(key)
+                    events_out.append(key)
+    return events_out
+
+
+def process_frame_agents(frame_idx, args, names_order, non_sentinel_names, display_names_order,
+                         name_to_color, agent_cam_images, global_images, demo_folder, last_text_actions):
+
+    # --- Speech events and clip duration ---
+    speech_events = collect_speech_events(frame_idx, args, names_order)
+    if speech_events:
+        total_words = sum(len(content.split()) for _, content in speech_events)
+        clip_duration = max(1.5, total_words / 6.0)
+    else:
+        clip_duration = 1.0 / args.fps
+
     frame_image_path = os.path.join(demo_folder, f"frame_{frame_idx:06}.png")
     if not args.overwrite and os.path.exists(frame_image_path):
-        return ImageClip(frame_image_path, duration=1/args.fps)
-    selected_agents = selected_initial_agents.copy()
-    none_action_agents = [name for name in selected_agents if json.load(open(os.path.join(args.output_dir, 'steps', name, f'{frame_idx:06d}.json')))["action"] is None]
-    action_agents = [name for name in names_order if json.load(open(os.path.join(args.output_dir, 'steps', name, f'{frame_idx:06d}.json')))["action"] is not None and name not in selected_agents]
-    
-    for none_agent in none_action_agents:
-        if len(action_agents) == 0:
-            break
-        if none_agent in selected_agents:
-            selected_agents[selected_agents.index(none_agent)] = action_agents.pop(0)
-    
-    wrapped_text_upper = {}
-    wrapped_text_bottom = {}
+        return ImageClip(frame_image_path, duration=clip_duration)
+
+    # Read current sim time from first available non-sentinel agent
     current_time = None
-    
-    for name in selected_agents:
-        steps_data_name_frame_idx = json.load(open(os.path.join(args.output_dir, 'steps', name, f'{frame_idx:06d}.json')))
-        current_schedule = str(steps_data_name_frame_idx["action_desp"]) if "action_desp" in steps_data_name_frame_idx else None
-        current_action = steps_data_name_frame_idx["action"]["type"] if "action" in steps_data_name_frame_idx and steps_data_name_frame_idx["action"] is not None else "None"
-        current_place = str(steps_data_name_frame_idx["obs"]["current_place"]) if "current_place" in steps_data_name_frame_idx["obs"] and steps_data_name_frame_idx["obs"]["current_place"] is not None else "Open Space"
-        current_time = steps_data_name_frame_idx["curr_time"]
-        
-        if current_schedule:
-            last_text_actions[name] = current_schedule
-        else:
-            current_schedule = last_text_actions[name] if last_text_actions[name] else "None"
-        
-        wrapped_text_upper[name] = textwrap.fill(current_schedule, width=45)
-        current_action = name + ' ' + current_action + " at " + current_place
-        wrapped_text_bottom[name] = textwrap.fill(current_action, width=45)
-    
-    dynamic_clips = [
-        ImageClip(global_images[frame_idx]).with_position((930, 600)).with_duration(1/args.fps).resized(width=700)
-    ]
+    for name in non_sentinel_names[:1]:
+        step_file = os.path.join(args.output_dir, 'steps', name, f'{frame_idx:06d}.json')
+        if os.path.exists(step_file):
+            current_time = json.load(open(step_file)).get('curr_time')
 
-    avatar_positions = []
+    dynamic_clips = []
+    # pil_texts: list of (x, y, text, font_size, color_rgb) drawn after composition
+    pil_texts = []
 
-    for i in range(0, 12):
-        avatar_positions.append([10 + i * 222, 60])
-    for i in range(0, 13):
-        avatar_positions.append([10 + i * 204, 1760])
-    
-    text_clips = []
-    for i, name in enumerate(names_order):
-        pos = avatar_positions[i]
-        dynamic_clips.append(ImageClip(avatar_images[name]).with_position((pos[0], pos[1])).with_duration(1/args.fps).resized(width=130))
-        pos = avatar_positions[i]
-        text_clips.append(
-            TextClip(font="tools/misc/OpenSans-Regular.ttf", text=name, font_size=20, color=(name_color_bgr_255[name][0], name_color_bgr_255[name][1], name_color_bgr_255[name][2]))
-            .with_position((pos[0] - 10, pos[1] - 50))
-            .with_duration(1/args.fps)
-        )
-
-    
-    selected_agents_positions = [
-        (50, 300), (50, 780), (50, 1260),
-        (500, 300), (500, 780), (500, 1260),
-        (1700, 300), (1700, 780), (1700, 1260),
-        (2150, 300), (2150, 780), (2150, 1260),
-    ]
-    
-    for i, name in enumerate(selected_agents):
-        pos = selected_agents_positions[i]
-        dynamic_clips.append(ImageClip(agent_cam_images[name][frame_idx]).with_position((pos[0], pos[1])).with_duration(1/args.fps).resized(width=350))
-        # text_clips.append(
-        #     TextClip(font="tools/misc/OpenSans-Regular.ttf", text=wrapped_text_upper[name], font_size=15, color=(255, 255, 255))
-        #     .with_position((pos[0], pos[1] - 50))
-        #     .with_duration(1/args.fps)
-        # )
-        text_clips.append(
-            TextClip(font="tools/misc/OpenSans-Regular.ttf", text=wrapped_text_bottom[name], font_size=15, color=(255, 255, 255))
-            .with_position((pos[0], pos[1] + 350))
-            .with_duration(1/args.fps)
-        )
-    
-    text_clips.append(
-        TextClip(font="tools/misc/OpenSans-Regular.ttf", text="Time: " + str(current_time), font_size=50, color=(255, 255, 255))
-        .with_position((890, 400))
-        .with_duration(1/args.fps)
+    # --- Dark background for bottom text area ---
+    dynamic_clips.append(
+        ColorClip(size=(VIDEO_W, BOTTOM_H), color=(20, 20, 20))
+        .with_position((0, VIDEO_H - BOTTOM_H))
+        .with_duration(clip_duration)
     )
-    
-    frame_clip = CompositeVideoClip(dynamic_clips + text_clips, size=(2560, 1920))
+
+    # --- Global view (center of middle area, as large as possible) ---
+    global_img_clip = ImageClip(global_images[frame_idx])
+    gw, gh = global_img_clip.size
+    scale = min(CENTER_W / gw, MID_H / gh)
+    new_gw = int(gw * scale)
+    gx = SIDE_W + (CENTER_W - new_gw) // 2
+    gy = TOP_H + (MID_H - int(gh * scale)) // 2
+    dynamic_clips.append(
+        global_img_clip.with_position((gx, gy)).with_duration(clip_duration).resized(width=new_gw)
+    )
+    if current_time:
+        pil_texts.append((gx + 12, gy + 12, "Time: " + str(current_time), 40, (255, 255, 255)))
+
+    # --- Top avatar strip (unique names; one Sentinel entry) ---
+    n_display = len(display_names_order)
+    avatar_x_spacing = VIDEO_W / n_display
+    avatar_img_w = min(120, int(avatar_x_spacing - 15))
+    for i, dname in enumerate(display_names_order):
+        ax = int(10 + i * avatar_x_spacing)
+        ay = 60
+        dynamic_clips.append(
+            ImageClip(avatar_images_display[dname])
+            .with_position((ax, ay))
+            .with_duration(clip_duration)
+            .resized(width=avatar_img_w)
+        )
+        clr = name_color_bgr_255_display[dname]
+        pil_texts.append((ax, ay - 40, dname, 17, clr))
+
+    # --- Side camera views: non-sentinel agents only (up to 6) ---
+    cam_agents = non_sentinel_names[:6]
+    row_h = MID_H // 3
+    cam_view_w = SIDE_W - 20
+    left_positions  = [(10,                    TOP_H + r * row_h) for r in range(3)]
+    right_positions = [(VIDEO_W - SIDE_W + 10, TOP_H + r * row_h) for r in range(3)]
+
+    for i, name in enumerate(cam_agents):
+        pos = left_positions[i] if i < 3 else right_positions[i - 3]
+        dynamic_clips.append(
+            ImageClip(agent_cam_images[name][frame_idx])
+            .with_position(pos)
+            .with_duration(clip_duration)
+            .resized(width=cam_view_w)
+        )
+        pil_texts.append((pos[0] + 6, pos[1] + 6, name, 18, (220, 220, 220)))
+
+    # --- Bottom speech text ---
+    if speech_events:
+        y_text = VIDEO_H - BOTTOM_H + 18
+        for subject, content in speech_events:
+            if y_text > VIDEO_H - 32:
+                break
+            msg = textwrap.fill(f"{subject}: {content}", width=125)
+            pil_texts.append((18, y_text, msg, 32, (255, 255, 180)))
+            n_lines = msg.count('\n') + 1
+            y_text += 38 * n_lines + 10
+
+    # --- Compose frame (images only) then draw all text with PIL ---
+    frame_clip = CompositeVideoClip(dynamic_clips, size=(VIDEO_W, VIDEO_H))
     frame = frame_clip.get_frame(0)
-    
-    for i, name in enumerate(names_order):
-        pos = avatar_positions[i]
-        this_color = (int(name_color_bgr_255[name][0]), int(name_color_bgr_255[name][1]), int(name_color_bgr_255[name][2]))
-        frame = add_colored_dot(frame, (pos[0] + 60, pos[1] - 15), 10, this_color)
-    
-    frame.save(frame_image_path)
-    
-    return ImageClip(frame_image_path, duration=1/args.fps)
+    frame_img = Image.fromarray(frame.astype(np.uint8))
+    draw = ImageDraw.Draw(frame_img)
+    for x, y, text, fsize, color in pil_texts:
+        draw.text((x, y), text, fill=color, font=get_font(fsize))
+
+    # Colored identity dots on avatar strip
+    for i, dname in enumerate(display_names_order):
+        ax = int(10 + i * avatar_x_spacing)
+        clr = name_color_bgr_255_display[dname]
+        frame_img = add_colored_dot(frame_img, (ax + avatar_img_w // 2, 52), 8, clr)
+
+    frame_img.save(frame_image_path)
+    return ImageClip(frame_image_path, duration=clip_duration)
+
 
 def make_global_image(i, args, names_order, camera_parameters):
     global_img_path = os.path.join(args.output_dir, 'global', f'rgb_{i:06d}.png')
-    global_images[i] = (global_img_path)
+    global_images[i] = global_img_path
     if os.path.exists(global_img_path) and not args.overwrite:
         return True
     agent_poses = []
@@ -212,11 +265,18 @@ def make_global_image(i, args, names_order, camera_parameters):
         step_data = json.load(open(os.path.join(args.output_dir, 'steps', name, f'{i:06d}.json')))
         agent_poses.append(step_data["obs"]["pose"])
     global_image_copy = global_image.copy()
-    global_image_with_agents = render_topdown_locators(global_image_copy, [np.array(agent_pose[:3]) for agent_pose in agent_poses], agent_locator_colors, circle_radii=[15 for _ in agent_poses], camera_parameters=camera_parameters)
+    global_image_with_agents = render_topdown_locators(
+        global_image_copy,
+        [np.array(pose[:3]) for pose in agent_poses],
+        agent_locator_colors,
+        circle_radii=[15 for _ in agent_poses],
+        camera_parameters=camera_parameters,
+    )
     img = Image.fromarray(global_image_with_agents)
     img.save(global_img_path)
     img.close()
     return True
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -225,15 +285,17 @@ if __name__ == '__main__':
     parser.add_argument("--config", type=str, default='agents_num_15')
     parser.add_argument("--agent_type", type=str, choices=['tour_agent'], default='tour_agent')
     parser.add_argument("--data_dir", "-d", type=str)
-    parser.add_argument("--fps", type=int, default=1)
+    parser.add_argument("--fps", type=int, default=5,
+                        help="Steps shown per second during normal (non-speech) playback.")
     parser.add_argument("--no_output_video", action='store_true')
     parser.add_argument("--overwrite", action='store_true')
     parser.add_argument("--steps", type=int)
     parser.add_argument("--cam_type", choices=['ego', 'tp'], default='ego')
     parser.add_argument("--videowriter", choices=['default', 'ffmpeg'], default='default')
-    parser.add_argument("--codec", choices=['mpeg4', 'h264'], default='mpeg4') # For server, use mpeg4. For local, use h264, which is better.
+    parser.add_argument("--codec", choices=['mpeg4', 'h264'], default='mpeg4')
     parser.add_argument("--threads", type=int, default=16)
     args = parser.parse_args()
+
     if args.data_dir is not None:
         args.data_dir = args.data_dir.rstrip('/')
         args.agent_type = args.data_dir.split('/')[-3]
@@ -241,33 +303,60 @@ if __name__ == '__main__':
         args.output_dir = args.data_dir
     else:
         args.output_dir = os.path.join(args.output_dir, f"{args.scene}_{args.config}", f"{args.agent_type}")
+
     demo_folder = os.path.join(args.output_dir, 'demo')
     os.makedirs(demo_folder, exist_ok=True)
     os.makedirs(os.path.join(args.output_dir, 'global'), exist_ok=True)
 
     config_path = os.path.join(args.output_dir, 'curr_sim', "config.json")
-    with open(config_path, 'r') as file:
-        config = json.load(file)
+    with open(config_path, 'r') as f:
+        config = json.load(f)
 
-    names_order = config["agent_names"] # by default, can change later
-    num_agents = config["num_agents"]
+    names_order = config["agent_names"]
+    num_agents  = config["num_agents"]
     name_to_color = {}
     last_text_actions = {}
-    last_goal_locations = {}
-    for agent_name, agent_skin, locator_color in zip(config["agent_names"], config["agent_skins"], config["locator_colors_rgb"]):
+    for agent_name, locator_color in zip(config["agent_names"], config["locator_colors"]):
         name_to_color[agent_name] = locator_color
         last_text_actions[agent_name] = None
-        last_goal_locations[agent_name] = None
 
     num_steps = config["step"]
     if args.steps:
         num_steps = min(num_steps, args.steps)
-    duration = num_steps / args.fps
 
+    # Separate sentinel vs non-sentinel agents
+    SENTINEL_RE = re.compile(r'^Sentinel \d+$')
+    non_sentinel_names = [n for n in names_order if not SENTINEL_RE.match(n)]
+    sentinel_names     = [n for n in names_order if SENTINEL_RE.match(n)]
+
+    # Display list for avatar strip: unique names, one "Sentinel" entry
+    display_names_order = non_sentinel_names[:]
+    if sentinel_names:
+        display_names_order.append('Sentinel')
+
+    # Build per-agent avatar image paths (keyed by actual agent name)
     avatar_images = {}
     agent_cam_images = defaultdict(dict)
-
     global_images = {}
+
+    for name in names_order:
+        for frame_idx in range(num_steps):
+            cam_path = os.path.join(args.output_dir, args.cam_type, name, f'rgb_{frame_idx:06d}.png')
+            assert os.path.exists(cam_path), f"Image {cam_path} does not exist."
+            agent_cam_images[name][frame_idx] = cam_path
+        avatar_name = SENTINEL_RE.sub('Sentinel', name)
+        avatar_images[name] = os.path.join('assets', 'imgs', 'avatars', f'{avatar_name}.png')
+
+    # Display avatar images keyed by display name (unique)
+    avatar_images_display = {n: avatar_images[n] for n in non_sentinel_names}
+    if sentinel_names:
+        avatar_images_display['Sentinel'] = os.path.join('assets', 'imgs', 'avatars', 'Sentinel.png')
+
+    # Color lookup tables
+    name_color_bgr_255 = {n: rgb_to_bgr255(name_to_color[n]) for n in names_order}
+    name_color_bgr_255_display = {n: name_color_bgr_255[n] for n in non_sentinel_names}
+    if sentinel_names:
+        name_color_bgr_255_display['Sentinel'] = name_color_bgr_255[sentinel_names[0]]
 
     global_image_path = os.path.join('assets', 'scenes', args.scene, "global.png")
     global_image = cv2.imread(global_image_path)
@@ -275,59 +364,47 @@ if __name__ == '__main__':
     camera_parameters = json.load(open(os.path.join('assets', 'scenes', args.scene, "global_cam_parameters.json")))
     agent_locator_colors = map_lang_colors_to_rgb(config["locator_colors"])
 
-    for name in names_order:
-        # import pdb; pdb.set_trace()
-        for frame_idx in range(num_steps):
-            agent_cam_image_path = os.path.join(args.output_dir, args.cam_type, name, f'rgb_{frame_idx:06d}.png')
-            assert os.path.exists(agent_cam_image_path), f"Image {agent_cam_image_path} does not exist."
-            agent_cam_images[name][frame_idx] = agent_cam_image_path
-        # agent_cam_images[name] = sorted(agent_cam_images[name])
-        avatar_images[name] = os.path.join('assets', 'imgs', 'avatars', f'{name}.png')
-        # if not os.path.exists(avatar_images[name]):
-        #     avatar_images[name] = os.path.join('assets', 'imgs', 'default.png')
-        # avatar_images[name] = imageio.imread(avatar_images[name]).resized((512, 512))
-
-    if num_agents >= 12:
-        selected_initial_agents = names_order[:12]
-    else:
-        selected_initial_agents = names_order[:num_agents]
-
-    name_color_bgr_255 = {}
-    for name in names_order:
-        name_color = name_to_color[name]
-        name_color_bgr_255[name] = rgb_to_bgr255(name_color)
-
-    # for i in tqdm.tqdm(range(0, num_steps, args.fps)):
-    #     global_img_path = os.path.join(args.output_dir, 'global', f'rgb_{i:06d}.png')
-    #     global_images[i] = (global_img_path)
-    #     if os.path.exists(global_img_path) and not args.overwrite:
-    #         continue
-    #     agent_poses = []
-    #     for name in names_order:
-    #         step_data = json.load(open(os.path.join(args.output_dir, 'steps', name, f'{i:06d}.json')))
-    #         agent_poses.append(step_data["obs"]["pose"])
-    #     global_image_copy = global_image.copy()
-    #     global_image_with_agents = render_topdown_locators(global_image_copy, [np.array(agent_pose[:3]) for agent_pose in agent_poses], agent_locator_colors, circle_radii=[15 for _ in agent_poses], camera_parameters=camera_parameters)
-    #     Image.fromarray(global_image_with_agents).save(global_img_path)
-
+    # Generate global top-down images
     with ThreadPoolExecutor(max_workers=args.threads) as executor:
-        global_image_generated = partial(make_global_image, args=args, names_order=names_order, camera_parameters=camera_parameters)
-        tqdm.tqdm(executor.map(global_image_generated, range(0, num_steps, args.fps)), total=num_steps//args.fps)
-    for i in range(0, num_steps, args.fps):
+        global_image_fn = partial(make_global_image, args=args, names_order=names_order,
+                                  camera_parameters=camera_parameters)
+        tqdm.tqdm(executor.map(global_image_fn, range(0, num_steps, 1)), total=num_steps)
+    for i in range(0, num_steps, 1):
         path = os.path.join(args.output_dir, 'global', f'rgb_{i:06d}.png')
-        print(f"Checking existence of global image: {path}")
         while not os.path.exists(path) or os.path.getsize(path) == 0:
             time.sleep(0.01)
     print("Finished generating global images.")
 
+    # Render demo frames
     with ThreadPoolExecutor(max_workers=args.threads) as executor:
-        process_frame_partial = partial(process_frame_agents, args=args, names_order=names_order, name_to_color=name_to_color, agent_cam_images=agent_cam_images, global_images=global_images, demo_folder=demo_folder, last_text_actions=last_text_actions)
-        clips = list(tqdm.tqdm(executor.map(process_frame_partial, range(0, num_steps, args.fps)), total=num_steps//args.fps))
+        process_fn = partial(
+            process_frame_agents,
+            args=args,
+            names_order=names_order,
+            non_sentinel_names=non_sentinel_names,
+            display_names_order=display_names_order,
+            name_to_color=name_to_color,
+            agent_cam_images=agent_cam_images,
+            global_images=global_images,
+            demo_folder=demo_folder,
+            last_text_actions=last_text_actions,
+        )
+        clips = list(tqdm.tqdm(executor.map(process_fn, range(0, num_steps, 1)), total=num_steps))
 
-    clips = [clip for clip in clips if clip is not None]
+    clips = [c for c in clips if c is not None]
+
     if not args.no_output_video:
         if args.videowriter == "ffmpeg":
-            images_to_video_using_ffmpeg(demo_folder, os.path.join(demo_folder, "demo.mp4"), fps=args.fps*5, threads=args.threads, codec=args.codec)
+            frame_durations = [
+                (os.path.join(demo_folder, f"frame_{i:06}.png"), clips[idx].duration)
+                for idx, i in enumerate(range(0, num_steps, 1))
+            ]
+            images_to_video_using_ffmpeg(
+                frame_durations,
+                os.path.join(demo_folder, "demo.mp4"),
+                threads=args.threads,
+                codec=args.codec,
+            )
         else:
             final_clip = concatenate_videoclips(clips)
-            final_clip.write_videofile(os.path.join(demo_folder, "demo.mp4"), fps=args.fps*5)
+            final_clip.write_videofile(os.path.join(demo_folder, "demo.mp4"), fps=VIDEO_FPS)

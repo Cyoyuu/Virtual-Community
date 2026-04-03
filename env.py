@@ -158,12 +158,14 @@ class VicoEnv:
 			avatar_options=gs.options.AvatarOptions(
 				enable_collision=self.enable_collision,
 			),
-            renderer=gs.renderers.RayTracer(
-                env_surface=gs.surfaces.Emission(
-                    emissive_texture=gs.textures.ImageTexture(
-                        image_path="textures/indoor_bright.png",
-                    ),
-                ),
+            renderer=gs.renderers.RayTracer(  # type: ignore
+				logging_level="info",
+				env_surface=gs.surfaces.Emission(
+					emissive_texture=gs.textures.ImageTexture(
+						# image_path="textures/indoor_bright.png",
+						image_path="textures/outdoor_sky.exr",
+					)
+				),
                 env_radius=100.0,
                 env_euler=(0, 0, 180),
                 lights=[],
@@ -227,7 +229,6 @@ class VicoEnv:
 				fov=90,
 				far=16000.0,
 				GUI=False,
-				debug=True,
 			)
 			os.makedirs(os.path.join(self.output_dir, 'demo'), exist_ok=True)
 		self.terrain = self.load_city_scene(self.scene_assets_dir, no_load_scene)
