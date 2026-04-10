@@ -21,6 +21,87 @@ def get_font(size):
         _font_cache[size] = ImageFont.truetype("tools/misc/OpenSans-Regular.ttf", size)
     return _font_cache[size]
 
+
+# ---------------------------------------------------------------------------
+# Styled background
+# ---------------------------------------------------------------------------
+_BG_NAVY       = (18,  35,  62)   # base dark navy
+_BG_STRIP      = (26,  45,  78)   # top avatar strip
+_BG_SIDE       = (22,  38,  68)   # side camera columns
+_BG_SPEECH     = (14,  26,  50)   # bottom speech panel
+_ACCENT_BLUE   = (74, 158, 191)   # bright teal-blue separator lines
+_ACCENT_GOLD   = (200, 168,  75)  # warm gold corner accents
+_DIVIDER       = ( 38,  58,  92)  # subtle camera-row dividers
+
+_bg_cache = None
+_avatar_img_cache = {}
+
+def get_avatar_image(path, width):
+    """Load, resize, and cache an avatar as RGBA. Cached per (path, width)."""
+    key = (path, width)
+    if key not in _avatar_img_cache:
+        img = Image.open(path).convert("RGBA")
+        w, h = img.size
+        new_h = int(h * width / w)
+        _avatar_img_cache[key] = img.resize((width, new_h), Image.LANCZOS)
+    return _avatar_img_cache[key]
+
+def make_background_image():
+    """Build a styled static background PIL Image (computed once, then cached)."""
+    global _bg_cache
+    if _bg_cache is not None:
+        return _bg_cache
+
+    img = Image.new("RGB", (VIDEO_W, VIDEO_H), _BG_NAVY)
+    draw = ImageDraw.Draw(img)
+
+    # Top avatar strip — vertical gradient from lighter to base
+    for y in range(TOP_H):
+        t = y / TOP_H
+        r = int(_BG_STRIP[0] + t * (_BG_NAVY[0] - _BG_STRIP[0]))
+        g = int(_BG_STRIP[1] + t * (_BG_NAVY[1] - _BG_STRIP[1]))
+        b = int(_BG_STRIP[2] + t * (_BG_NAVY[2] - _BG_STRIP[2]))
+        draw.line([(0, y), (VIDEO_W, y)], fill=(r, g, b))
+
+    # Left and right side camera columns
+    draw.rectangle([(0, TOP_H), (SIDE_W, VIDEO_H - BOTTOM_H)], fill=_BG_SIDE)
+    draw.rectangle([(VIDEO_W - SIDE_W, TOP_H), (VIDEO_W, VIDEO_H - BOTTOM_H)], fill=_BG_SIDE)
+
+    # Bottom speech panel — vertical gradient from base to darker
+    for y in range(BOTTOM_H):
+        t = y / BOTTOM_H
+        r = int(_BG_NAVY[0] + t * (_BG_SPEECH[0] - _BG_NAVY[0]))
+        g = int(_BG_NAVY[1] + t * (_BG_SPEECH[1] - _BG_NAVY[1]))
+        b = int(_BG_NAVY[2] + t * (_BG_SPEECH[2] - _BG_NAVY[2]))
+        draw.line([(0, VIDEO_H - BOTTOM_H + y), (VIDEO_W, VIDEO_H - BOTTOM_H + y)], fill=(r, g, b))
+
+    # Bright accent separator lines
+    draw.rectangle([(0, TOP_H - 3),               (VIDEO_W, TOP_H)],                   fill=_ACCENT_BLUE)
+    draw.rectangle([(0, VIDEO_H - BOTTOM_H),       (VIDEO_W, VIDEO_H - BOTTOM_H + 3)],  fill=_ACCENT_BLUE)
+    draw.rectangle([(SIDE_W - 3, TOP_H),           (SIDE_W, VIDEO_H - BOTTOM_H)],        fill=_ACCENT_BLUE)
+    draw.rectangle([(VIDEO_W - SIDE_W, TOP_H),     (VIDEO_W - SIDE_W + 3, VIDEO_H - BOTTOM_H)], fill=_ACCENT_BLUE)
+
+    # Subtle horizontal dividers between camera rows (side columns only)
+    row_h = MID_H // 3
+    for r in range(1, 3):
+        y = TOP_H + r * row_h
+        draw.rectangle([(0, y - 1),           (SIDE_W, y + 1)],           fill=_DIVIDER)
+        draw.rectangle([(VIDEO_W - SIDE_W, y - 1), (VIDEO_W, y + 1)],     fill=_DIVIDER)
+
+    # Gold corner accents (top-left and top-right of the whole frame)
+    L = 50
+    T = 5
+    draw.rectangle([(0, 0), (L, T)],  fill=_ACCENT_GOLD)
+    draw.rectangle([(0, 0), (T, L)],  fill=_ACCENT_GOLD)
+    draw.rectangle([(VIDEO_W - L, 0), (VIDEO_W, T)],  fill=_ACCENT_GOLD)
+    draw.rectangle([(VIDEO_W - T, 0), (VIDEO_W, L)],  fill=_ACCENT_GOLD)
+
+    # Thin gold rule just inside the bottom of the top strip
+    draw.rectangle([(20, TOP_H - 7), (VIDEO_W - 20, TOP_H - 5)], fill=_ACCENT_GOLD)
+
+    _bg_cache = img
+    return _bg_cache
+
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
 
@@ -150,13 +231,13 @@ def collect_speech_events(frame_idx, args, names_order):
 def process_frame_agents(frame_idx, args, names_order, non_sentinel_names, display_names_order,
                          name_to_color, agent_cam_images, global_images, demo_folder, last_text_actions):
 
-    # --- Speech events and clip duration ---
+    # --- Speech events and clip duration (2× speed) ---
     speech_events = collect_speech_events(frame_idx, args, names_order)
     if speech_events:
         total_words = sum(len(content.split()) for _, content in speech_events)
-        clip_duration = max(1.5, total_words / 6.0)
+        clip_duration = max(1.5, total_words / 6.0) / 2.0
     else:
-        clip_duration = 1.0 / args.fps
+        clip_duration = 1.0 / (args.fps * 2)
 
     frame_image_path = os.path.join(demo_folder, f"frame_{frame_idx:06}.png")
     if not args.overwrite and os.path.exists(frame_image_path):
@@ -173,10 +254,10 @@ def process_frame_agents(frame_idx, args, names_order, non_sentinel_names, displ
     # pil_texts: list of (x, y, text, font_size, color_rgb) drawn after composition
     pil_texts = []
 
-    # --- Dark background for bottom text area ---
+    # --- Styled background (full frame, drawn once and cached) ---
     dynamic_clips.append(
-        ColorClip(size=(VIDEO_W, BOTTOM_H), color=(20, 20, 20))
-        .with_position((0, VIDEO_H - BOTTOM_H))
+        ImageClip(np.array(make_background_image()))
+        .with_position((0, 0))
         .with_duration(clip_duration)
     )
 
@@ -194,20 +275,15 @@ def process_frame_agents(frame_idx, args, names_order, non_sentinel_names, displ
         pil_texts.append((gx + 12, gy + 12, "Time: " + str(current_time), 40, (255, 255, 255)))
 
     # --- Top avatar strip (unique names; one Sentinel entry) ---
+    # Avatars are pasted via PIL (not moviepy) so we can draw a white backing
+    # behind transparent images for contrast against the dark background.
     n_display = len(display_names_order)
     avatar_x_spacing = VIDEO_W / n_display
     avatar_img_w = min(120, int(avatar_x_spacing - 15))
     for i, dname in enumerate(display_names_order):
         ax = int(10 + i * avatar_x_spacing)
-        ay = 60
-        dynamic_clips.append(
-            ImageClip(avatar_images_display[dname])
-            .with_position((ax, ay))
-            .with_duration(clip_duration)
-            .resized(width=avatar_img_w)
-        )
         clr = name_color_bgr_255_display[dname]
-        pil_texts.append((ax, ay - 40, dname, 17, clr))
+        pil_texts.append((ax, 20, dname, 17, clr))
 
     # --- Side camera views: non-sentinel agents only (up to 6) ---
     cam_agents = non_sentinel_names[:6]
@@ -237,19 +313,34 @@ def process_frame_agents(frame_idx, args, names_order, non_sentinel_names, displ
             n_lines = msg.count('\n') + 1
             y_text += 38 * n_lines + 10
 
-    # --- Compose frame (images only) then draw all text with PIL ---
+    # --- Compose frame (images only) then draw all text/avatars with PIL ---
     frame_clip = CompositeVideoClip(dynamic_clips, size=(VIDEO_W, VIDEO_H))
     frame = frame_clip.get_frame(0)
     frame_img = Image.fromarray(frame.astype(np.uint8))
     draw = ImageDraw.Draw(frame_img)
+
+    # Paste avatar images with white rounded-rect backing for contrast
+    PAD = 5
+    for i, dname in enumerate(display_names_order):
+        ax = int(10 + i * avatar_x_spacing)
+        ay = 38
+        av = get_avatar_image(avatar_images_display[dname], avatar_img_w)
+        av_w, av_h = av.size
+        draw.rounded_rectangle(
+            [ax - PAD, ay - PAD, ax + av_w + PAD, ay + av_h + PAD],
+            radius=8, fill=(240, 240, 240)
+        )
+        frame_img.paste(av, (ax, ay), av)
+
     for x, y, text, fsize, color in pil_texts:
         draw.text((x, y), text, fill=color, font=get_font(fsize))
 
     # Colored identity dots on avatar strip
     for i, dname in enumerate(display_names_order):
         ax = int(10 + i * avatar_x_spacing)
+        av_h = get_avatar_image(avatar_images_display[dname], avatar_img_w).size[1]
         clr = name_color_bgr_255_display[dname]
-        frame_img = add_colored_dot(frame_img, (ax + avatar_img_w // 2, 52), 8, clr)
+        frame_img = add_colored_dot(frame_img, (ax + avatar_img_w // 2, 38 + av_h + PAD + 8), 8, clr)
 
     frame_img.save(frame_image_path)
     return ImageClip(frame_image_path, duration=clip_duration)

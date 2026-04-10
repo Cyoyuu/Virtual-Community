@@ -166,7 +166,7 @@ class VicoEnv:
 						image_path="textures/outdoor_sky.exr",
 					)
 				),
-                env_radius=100.0,
+                env_radius=500.0,
                 env_euler=(0, 0, 180),
                 lights=[],
             ) if self.use_luisa_renderer else gs.renderers.Rasterizer() if not self.batch_renderer else gs.renderers.BatchRenderer(use_rasterizer=True),
@@ -209,9 +209,11 @@ class VicoEnv:
 			)
 		if self.use_luisa_renderer:
 			lights=[
-				{"pos": (-5000.0, 2000.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 2.0},
-				{"pos": (5000.0, -2000.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
-				{"pos": (0.0, 0.0, 3000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 0.5},
+				{"pos": (-5000.0, 2000.0, 5000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
+				{"pos": (5000.0, -2000.0, 5000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
+				{"pos": (2000.0, -5000.0, 5000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
+				{"pos": (-2000.0, 5000.0, 5000.0), "radius": 300.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 1.0},
+				{"pos": (0.0, 0.0, 5000.0), "radius": 500.0, "color": np.array([255.0, 223.0, 200.0, 0.0]) * 3.0},
 			]
 			for light in lights:
 				self.scene.add_mesh_light(
