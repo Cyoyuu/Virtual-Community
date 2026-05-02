@@ -1,0 +1,53 @@
+{
+    "sim_name": "DETROIT_agents_num_2_demo",
+    "num_agents": 2,
+    "agent_names": [
+        "Demo Agent",
+        "Demo Sentinel"
+    ],
+    "step": 0,
+    "curr_time": "October 1, 2024, 09:00:00",
+    "start_time": "October 1, 2024, 09:00:00",
+    "sec_per_step": 1,
+    "agent_poses": [
+        [124.0, -67.0, 106.0, 0.0, 0.0, 0.0],
+        [126.0, -65.0, 106.0, 0.0, 0.0, 0.0]
+    ],
+    "agent_infos": [
+        {
+            "cash": 500,
+            "held_objects": [null, null],
+            "outdoor_pose": [124.0, -67.0, 106.0, 0.0, 0.0, 0.0],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        },
+        {
+            "cash": 500,
+            "held_objects": [null, null],
+            "outdoor_pose": [126.0, -65.0, 106.0, 0.0, 0.0, 0.0],
+            "current_building": "open space",
+            "current_place": null,
+            "current_vehicle": null
+        }
+    ],
+    "agent_skins": [
+        "ViCo/avatars/models/mixamo_Adam_Pierce.glb",
+        "ViCo/avatars/models/mixamo_sentinel.glb"
+    ],
+    "locator_colors": ["red", "blue"],
+    "locator_colors_rgb": [
+        [1.0, 0.0, 0.0],
+        [0.0, 0.0, 1.0]
+    ],
+    "dt_control": [1.0, 1.0],
+    "dt_visual_obs": [1.0, 1.0],
+    "agent_actions": [
+        [],
+        []
+    ],
+    "groups": {},
+    "stores": {},
+    "demo_camera_pos": [156.0, -65.0, 136.0],
+    "demo_camera_lookat": [126.0, -65.0, 106.0]
+}

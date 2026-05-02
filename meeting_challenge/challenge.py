@@ -18,6 +18,7 @@ from agents.meeting_challenge import *
 from agents.memory import SemanticMemory
 from env import VicoEnv
 from agents.agent import AgentProcess
+from agents.demo_agent import DemoAgentProcess
 from modules import *
 
 keep_running = False
@@ -106,7 +107,7 @@ def main():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'demo'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface", "local_qwen"], default="azure", help="language model source")
@@ -151,6 +152,10 @@ def main():
     if args.replay_mode:
         replay_steps_info = None
         replay_steps_path = os.path.join(args.output_dir, args.scene, f"{agent_type_name}_{'no_gt' if args.gt_only_for_sentinels else 'gt'}_{args.agent_num}", f"{args.sentinel_type}_{args.sentinel_num}", f"job_{args.job_id}", "steps.json")
+        if not os.path.exists(replay_steps_path):
+            print(f"Replay steps {replay_steps_path} doesn't exist!")
+            end_processes()
+            exit(0)
         with open(replay_steps_path, "r") as f:
             replay_steps_info = json.load(f)
         replay_step_keys = sorted(replay_steps_info.keys(), key=lambda x: int(x))
@@ -317,7 +322,10 @@ def main():
             basic_kwargs['ablate'] = args.ablate
             llm_kwargs['server_port'] = args.server_port
             all_agent_processes.append(AgentProcess(CoSaRMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
-
+        elif agent_type == 'demo':
+            agent_actions = config.get('agent_actions', [])
+            action_list = agent_actions[i] if i < len(agent_actions) else []
+            all_agent_processes.append(DemoAgentProcess(config['agent_names'][i], action_list))
         else:
             raise NotImplementedError(f"agent type {agent_type} is not supported")
         all_agent_name.append(config['agent_names'][i])
