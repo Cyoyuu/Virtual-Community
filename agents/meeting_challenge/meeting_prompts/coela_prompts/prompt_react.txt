@@ -38,7 +38,7 @@ Available Actions:
 
 1. go to <place>. <place> is the name of a place you can find in Known Places. <place> must be extactly a name in the Known Places, enclosed in <>.
 2. speak "$Utterance$".
-3. query <Place>. Use this action if there is a place mentioned that you don't know (not in Known Places).
+3. query <Place>. Use this action if there is a place mentioned that you don't know (not in Known Places). Note <navigation app> is not a <Place> and hence invalid.
 4. complete task. Use this action to signal task completion and confirm you have arrived at the desired meeting place. The task is only considered finish if all of you complete task!
 
 Guidance:

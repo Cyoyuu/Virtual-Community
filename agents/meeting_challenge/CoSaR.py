@@ -449,7 +449,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             if self.pose[0]>-1000:
                 return {"type": "teleport", "arg1": [-1500., -1500.]}
             return {"type": "task_complete"}
-        if self.max_refine_retry<=0 or (self.goal_place is not None and self.goal_place in self.refine_retry and self.refine_retry[self.goal_place] < 0) or self.continuous_refine_retry < 0:
+        if "emergency_avoidance" in self.ablate or self.max_refine_retry<=0 or (self.goal_place is not None and self.goal_place in self.refine_retry and self.refine_retry[self.goal_place] < 0) or self.continuous_refine_retry < 0:
             self.emergency = 0
         if 1 <= self.emergency <= 10: # if still in emergency
             self.logger.info(f"In emergency, emergency level is {self.emergency}")
