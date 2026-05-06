@@ -365,7 +365,7 @@ def main():
             basic_kwargs['replay_actions'] = steps_for_agent
             all_agent_processes.append(AgentProcess(ReplayAgent, **basic_kwargs)) 
         elif adversary_type == 'agent':
-            all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs, **meeting_challenge))
+            all_agent_processes.append(AgentProcess(BaseSentinelAgent, **basic_kwargs, **challenge_kwargs))
         else:
             raise NotImplementedError(f"agent type {adversary_type} is not supported")
         name2idx[config['agent_names'][num_agents+i]] = i
