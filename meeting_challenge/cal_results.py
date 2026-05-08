@@ -2,6 +2,8 @@ import json
 import os
 import argparse
 import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
 from show_route_all import animate_all
 
 parser = argparse.ArgumentParser()
@@ -59,44 +61,94 @@ for agent_type in os.listdir(base_results_dir):
             results[agent_type][scene]['sps_sim']/=results[agent_type][scene]['total']
 
 for agent_type in results:
-    average_results[agent_type]=dict()
-    average_results[agent_type]["time_spent_meeting_mean"]=0.
-    average_results[agent_type]["time_spent_meeting_stderr"]=0.
-    average_results[agent_type]["walk_spent_meeting_mean"]=0.
-    average_results[agent_type]["walk_spent_meeting_stderr"]=0.
-    average_results[agent_type]["success_rate"]=0.
-    average_results[agent_type]["success_rate_list"]=[0]*(job_id_range[-1]+1)
-    average_results[agent_type]["caught_rate"]=0.
-    average_results[agent_type]["detection_rate"]=0.
-    average_results[agent_type]["sps_agent"]=0.
-    average_results[agent_type]["sps_sim"]=0.
+    average_results[agent_type] = dict()
+    average_results[agent_type]["success_rate_list"] = [0] * (job_id_range[-1] + 1)
 
-    num=0
+    # Collect per-scene values for cross-scene error bars
+    scene_time   = []
+    scene_walk   = []
+    scene_sr     = []
+    scene_cr     = []
+    scene_dr     = []
+    scene_sps_a  = []
+    scene_sps_s  = []
+
     for scene in results[agent_type]:
-        num+=1
-        results[agent_type][scene]["time_spent_meeting_mean"]=float(np.mean(np.array(results[agent_type][scene]["time_spent_meeting"])))
-        results[agent_type][scene]["time_spent_meeting_stderr"]=float(np.std(np.array(results[agent_type][scene]["time_spent_meeting"])))
-        results[agent_type][scene]["walk_spent_meeting_mean"]=float(np.mean(np.array(results[agent_type][scene]["walk_spent_meeting"])))
-        results[agent_type][scene]["walk_spent_meeting_stderr"]=float(np.std(np.array(results[agent_type][scene]["walk_spent_meeting"])))
-        average_results[agent_type]["time_spent_meeting_mean"]+=results[agent_type][scene]["time_spent_meeting_mean"]
-        average_results[agent_type]["time_spent_meeting_stderr"]+=results[agent_type][scene]["time_spent_meeting_stderr"]
-        average_results[agent_type]["walk_spent_meeting_mean"]+=results[agent_type][scene]["walk_spent_meeting_mean"]
-        average_results[agent_type]["walk_spent_meeting_stderr"]+=results[agent_type][scene]["walk_spent_meeting_stderr"]
-        average_results[agent_type]["success_rate"]+=results[agent_type][scene]["success_rate"]
-        average_results[agent_type]["caught_rate"]+=results[agent_type][scene]["caught_rate"]
-        average_results[agent_type]["detection_rate"]+=results[agent_type][scene]["detection_rate"]
-        average_results[agent_type]["sps_agent"]+=results[agent_type][scene]["sps_agent"]
-        average_results[agent_type]["sps_sim"]+=results[agent_type][scene]["sps_sim"]
+        arr_time = np.array(results[agent_type][scene]["time_spent_meeting"])
+        arr_walk = np.array(results[agent_type][scene]["walk_spent_meeting"])
+        results[agent_type][scene]["time_spent_meeting_mean"]   = float(np.mean(arr_time))
+        results[agent_type][scene]["time_spent_meeting_stderr"] = float(np.std(arr_time) / np.sqrt(len(arr_time))) if len(arr_time) > 1 else 0.0
+        results[agent_type][scene]["walk_spent_meeting_mean"]   = float(np.mean(arr_walk))
+        results[agent_type][scene]["walk_spent_meeting_stderr"] = float(np.std(arr_walk) / np.sqrt(len(arr_walk))) if len(arr_walk) > 1 else 0.0
+
+        scene_time.append(results[agent_type][scene]["time_spent_meeting_mean"])
+        scene_walk.append(results[agent_type][scene]["walk_spent_meeting_mean"])
+        scene_sr.append(results[agent_type][scene]["success_rate"])
+        scene_cr.append(results[agent_type][scene]["caught_rate"])
+        scene_dr.append(results[agent_type][scene]["detection_rate"])
+        scene_sps_a.append(results[agent_type][scene]["sps_agent"])
+        scene_sps_s.append(results[agent_type][scene]["sps_sim"])
+
+    num = len(scene_sr)
+
+    def _mean_stderr(vals):
+        arr = np.array(vals)
+        mean = float(np.mean(arr))
+        stderr = float(np.std(arr) / np.sqrt(len(arr))) if len(arr) > 1 else 0.0
+        return mean, stderr
+
+    average_results[agent_type]["time_spent_meeting_mean"],  average_results[agent_type]["time_spent_meeting_stderr"]  = _mean_stderr(scene_time)
+    average_results[agent_type]["walk_spent_meeting_mean"],  average_results[agent_type]["walk_spent_meeting_stderr"]  = _mean_stderr(scene_walk)
+    average_results[agent_type]["success_rate"],             average_results[agent_type]["success_rate_stderr"]        = _mean_stderr(scene_sr)
+    average_results[agent_type]["caught_rate"],              average_results[agent_type]["caught_rate_stderr"]         = _mean_stderr(scene_cr)
+    average_results[agent_type]["detection_rate"],           average_results[agent_type]["detection_rate_stderr"]      = _mean_stderr(scene_dr)
+    average_results[agent_type]["sps_agent"],                _                                                         = _mean_stderr(scene_sps_a)
+    average_results[agent_type]["sps_sim"],                  _                                                         = _mean_stderr(scene_sps_s)
+
     for job_id in job_id_range:
         for scene in results[agent_type]:
-            average_results[agent_type]['success_rate_list'][job_id]+=max(0, results[agent_type][scene]['success_rate_list'][job_id])
-        average_results[agent_type]['success_rate_list'][job_id]/=len(results[agent_type])
-    for key in average_results[agent_type]:
-        if type(average_results[agent_type][key]) in [int, float]:
-            average_results[agent_type][key]/=num
+            average_results[agent_type]['success_rate_list'][job_id] += max(0, results[agent_type][scene]['success_rate_list'][job_id])
+        average_results[agent_type]['success_rate_list'][job_id] /= len(results[agent_type])
+
     average_results[agent_type]["total_case"] = num
-    average_results[agent_type]["success_rate"] = average_results[agent_type]["success_rate"]*num/14
-    results[agent_type]["average"]=average_results[agent_type]
+    average_results[agent_type]["success_rate"] = average_results[agent_type]["success_rate"] * num / 14
+    results[agent_type]["average"] = average_results[agent_type]
 with open(f"{base_results_dir}/results.json", "w") as f:
     json.dump(results, f, indent=2)
-# import pdb; pdb.set_trace()
+
+# --- Plot ---
+matplotlib.rcParams['font.family'] = 'serif'
+
+agent_types = [k for k in average_results]
+metrics = [
+    ("success_rate",    "success_rate_stderr",   "Success Rate"),
+    ("caught_rate",     "caught_rate_stderr",     "Caught Rate"),
+    ("detection_rate",  "detection_rate_stderr",  "Detection Rate"),
+    ("time_spent_meeting_mean",  "time_spent_meeting_stderr",  "Time Spent Meeting (steps)"),
+    ("walk_spent_meeting_mean",  "walk_spent_meeting_stderr",  "Walk Spent Meeting (m)"),
+]
+
+fig, axes = plt.subplots(1, len(metrics), figsize=(4 * len(metrics), 4))
+
+x = np.arange(len(agent_types))
+for ax, (mean_key, stderr_key, ylabel) in zip(axes, metrics):
+    means  = [average_results[a][mean_key]  for a in agent_types]
+    errors = [average_results[a][stderr_key] for a in agent_types]
+    ax.bar(x, means, yerr=errors,
+           capsize=4,
+           error_kw=dict(elinewidth=1.2, ecolor='black'),
+           color='steelblue', edgecolor='black', linewidth=0.8,
+           width=0.5)
+    ax.set_xticks(x)
+    ax.set_xticklabels(agent_types, rotation=20, ha='right', fontsize=8)
+    ax.set_ylabel(ylabel, fontsize=9)
+    ax.yaxis.grid(True, linestyle='--', linewidth=0.5, alpha=0.7)
+    ax.set_axisbelow(True)
+    ax.spines[['top', 'right']].set_visible(False)
+
+fig.suptitle(base_results_dir, fontsize=9)
+fig.tight_layout()
+out_path = os.path.join(base_results_dir, "results.pdf")
+fig.savefig(out_path, dpi=300, bbox_inches='tight')
+print(f"Figure saved to {out_path}")
+plt.show()
