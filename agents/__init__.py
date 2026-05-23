@@ -22,5 +22,8 @@ def get_agent_cls(agent_type, robot_type=None):
             return DroneTourAgent
         else:
             raise NotImplementedError
+    elif agent_type == 'user_controlled_agent':
+        from .user_controlled_agent import UserControlledAgent
+        return UserControlledAgent   
     else:
         raise NotImplementedError
