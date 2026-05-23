@@ -56,6 +56,7 @@ Virtual Community is an open-world platform that simulates human-robot coexisten
 
 ## News
 
+- [2025-05-23] Virtual Community now supports user controlled agents and switches to uv for project management.
 - [2026-01-26] Virtual Community is accepted by ICLR 2026.
 - [2025-06-19] We have released the Virtual Community! Check out the [project website](https://virtual-community-ai.github.io/) and our [paper](https://virtual-community-ai.github.io/paper.pdf) for more details.
 
