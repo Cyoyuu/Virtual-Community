@@ -63,7 +63,7 @@ def get_gpu_info(timeout=3):
     print(f"gpu info gotten: {gpus}")
     return gpus
 
-def main():
+def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--precision", type=str, default='32')
@@ -107,7 +107,7 @@ def main():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'demo'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'demo', 'rl', 'mat'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface", "local_qwen"], default="azure", help="language model source")
@@ -130,8 +130,28 @@ def main():
     parser.add_argument("--detect_interval", type=int, default=-1)
     parser.add_argument("--ablate", type=str, default="")
     parser.add_argument("--replay_mode", action='store_true')
+    parser.add_argument("--rl_ckpt", type=str, default=None,
+                        help="Path to PPO checkpoint for --agent_type rl. "
+                             "If unset, agents use a random-init policy.")
+    parser.add_argument("--rl_training_mode", action='store_true',
+                        help="Internal flag set by meeting_challenge/train_rl.py "
+                             "to enable trajectory logging on RLMeetingAgent.")
+    parser.add_argument("--mat_ckpt", type=str, default=None,
+                        help="Path to MAT checkpoint for --agent_type mat.")
+    parser.add_argument("--mat_training_mode", action='store_true',
+                        help="Internal flag set by meeting_challenge/train_mat.py.")
+    parser.add_argument("--mat_planning_interval", type=int, default=50,
+                        help="Macro-action duration for MAT (CoELA default 50).")
     args = parser.parse_args()
+    return args
 
+
+def main():
+    args = parse_args()
+    run_challenge(args)
+
+
+def run_challenge(args):
     random.seed(time.time())
     # Make output directories
     if args.agent_type == 'llm' and args.lm_id != 'gpt-4o':
@@ -271,6 +291,30 @@ def main():
     )
     obs = env.reset()
 
+    # MAT runs need a single shared in-process controller. Construct it before
+    # building subagents so MATSubAgent.__init__ can register with it.
+    if agent_type == "mat":
+        if args.multi_process:
+            gs.logger.warning(
+                "MAT requires in-process agents; forcing multi_process=False.")
+            args.multi_process = False
+        from agents.meeting_challenge.MAT import (
+            MATController, set_active_controller,
+        )
+        mat_save_path = os.path.join(output_dir, "mat_trajectory.pkl")
+        mat_controller = MATController(
+            num_agents=num_agents,
+            policy_ckpt=args.mat_ckpt,
+            step_limit=args.step_limit,
+            planning_interval=args.mat_planning_interval,
+            training_mode=args.mat_training_mode,
+            save_path=mat_save_path,
+            logger=gs.logger,
+        )
+        set_active_controller(mat_controller)
+    else:
+        mat_controller = None
+
     # Initialize the proposer agents and NPC agents
     name2idx = {}
     all_agent_processes: list[AgentProcess] = []
@@ -317,6 +361,19 @@ def main():
             all_agent_processes.append(AgentProcess(FixedMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
         elif agent_type == "mcts":
             all_agent_processes.append(AgentProcess(MCTSMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs))
+        elif agent_type == "rl":
+            rl_kwargs = dict(
+                policy_ckpt=args.rl_ckpt,
+                training_mode=args.rl_training_mode,
+                step_limit=args.step_limit,
+            )
+            all_agent_processes.append(AgentProcess(RLMeetingAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs, **rl_kwargs))
+        elif agent_type == "mat":
+            mat_kwargs = dict(
+                planning_interval=args.mat_planning_interval,
+                step_limit=args.step_limit,
+            )
+            all_agent_processes.append(AgentProcess(MATSubAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs, **mat_kwargs))
         elif agent_type == "sentinel":
             basic_kwargs['refine_retry'] = args.refine_retry
             basic_kwargs['ablate'] = args.ablate
@@ -544,6 +601,23 @@ def main():
     env.close()
     del env
     end_processes()
+    # Reset the MAT singleton so a subsequent run_challenge() in the same
+    # python process (e.g., from train_mat.py) starts with a clean slate.
+    if mat_controller is not None:
+        try:
+            from agents.meeting_challenge.MAT import set_active_controller
+            set_active_controller(None)
+        except Exception:
+            pass
+    return {
+        "result": result,
+        "output_dir": output_dir,
+        "config_path": config_path,
+        "agent_names": all_agent_name,
+        "banned_agent_list": banned_agent_list,
+        "mat_trajectory_path": (mat_controller.save_path
+                                if mat_controller is not None else None),
+    }
 
 if __name__ == '__main__':
     keep_running = os.environ.get('keep_running', '0') == '1'

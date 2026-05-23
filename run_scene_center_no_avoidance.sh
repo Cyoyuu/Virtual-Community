@@ -25,7 +25,7 @@ if [ "$time_limit" -gt "480" ]; then
   time_limit=480
 fi
 
-for job_id in {1..1}; do
+for job_id in {1..6}; do
   echo "Running job_id=$job_id for scene=$scene"
 
   salloc -p gpu,gpu-preempt -G 1 --mem=50G -t "$time_limit" --job-name=hn_$scene --nodes=1 --constraint="[a16|a40|gh200|l40s|l4]" srun bash "$script_path" "$scene" "$agent_num" "$sentinel_type" "$sentinel_num" "$job_id"

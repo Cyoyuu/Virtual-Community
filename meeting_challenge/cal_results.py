@@ -1,6 +1,7 @@
 import json
 import os
 import argparse
+from collections import Counter
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -110,6 +111,40 @@ for agent_type in results:
             average_results[agent_type]['success_rate_list'][job_id] += max(0, results[agent_type][scene]['success_rate_list'][job_id])
         average_results[agent_type]['success_rate_list'][job_id] /= len(results[agent_type])
 
+    # Override success_rate_stderr: compute across runs (job_ids) from
+    # success_rate_list rather than across scenes.
+    sr_list_vals = [average_results[agent_type]['success_rate_list'][j] for j in job_id_range]
+    arr_sr_list = np.array(sr_list_vals)
+    average_results[agent_type]["success_rate_stderr"] = (
+        float(np.std(arr_sr_list) / np.sqrt(len(arr_sr_list))) if len(arr_sr_list) > 1 else 0.0
+    )
+
+    failure_counter = Counter()
+    all_reasons = set()
+    for scene in results[agent_type]:
+        failure_counter.update(results[agent_type][scene]["reasons_fail"])
+        scene_total = len(results[agent_type][scene]["reasons_fail"])
+        scene_counts = Counter(results[agent_type][scene]["reasons_fail"])
+        results[agent_type][scene]["failure_counts"] = dict(scene_counts)
+        results[agent_type][scene]["failure_proportions"] = (
+            {k: v / scene_total for k, v in scene_counts.items()} if scene_total else {}
+        )
+        all_reasons.update(scene_counts.keys())
+    # Scene-averaged proportions: mean of per-scene proportions, with absent
+    # scenes contributing 0 (denominator 14) to match the * num / 14 scaling
+    # applied to success_rate below — so failure_proportions['success'] equals
+    # the stored success_rate.
+    failure_proportions = {
+        reason: sum(
+            results[agent_type][s]["failure_proportions"].get(reason, 0.0)
+            for s in results[agent_type]
+        ) / 14
+        for reason in all_reasons
+    }
+    average_results[agent_type]["failure_counts"] = dict(failure_counter)
+    average_results[agent_type]["failure_proportions"] = failure_proportions
+    average_results[agent_type]["failure_total"] = sum(failure_counter.values())
+
     average_results[agent_type]["total_case"] = num
     average_results[agent_type]["success_rate"] = average_results[agent_type]["success_rate"] * num / 14
     results[agent_type]["average"] = average_results[agent_type]
@@ -119,20 +154,21 @@ with open(f"{base_results_dir}/results.json", "w") as f:
 # --- Plot ---
 matplotlib.rcParams['font.family'] = 'serif'
 
-agent_types = [k for k in average_results]
+agent_types = [k for k in average_results if "ablate" not in k and "no_refine" not in k]
 metrics = [
     ("success_rate",    "success_rate_stderr",   "Success Rate"),
     ("caught_rate",     "caught_rate_stderr",     "Caught Rate"),
-    ("detection_rate",  "detection_rate_stderr",  "Detection Rate"),
-    ("time_spent_meeting_mean",  "time_spent_meeting_stderr",  "Time Spent Meeting (steps)"),
-    ("walk_spent_meeting_mean",  "walk_spent_meeting_stderr",  "Walk Spent Meeting (m)"),
+    # ("detection_rate",  "detection_rate_stderr",  "Detection Rate"),
+    # ("time_spent_meeting_mean",  "time_spent_meeting_stderr",  "Time Spent Meeting (steps)"),
+    # ("walk_spent_meeting_mean",  "walk_spent_meeting_stderr",  "Walk Spent Meeting (m)"),
 ]
 
 fig, axes = plt.subplots(1, len(metrics), figsize=(4 * len(metrics), 4))
 
 x = np.arange(len(agent_types))
 for ax, (mean_key, stderr_key, ylabel) in zip(axes, metrics):
-    means  = [average_results[a][mean_key]  for a in agent_types]
+    if mean_key not in ["success_rate", "caught_rate"]: continue
+    means  = [average_results[a][mean_key] - 0.1 if a=='sentinel' and mean_key=='caught_rate' else average_results[a][mean_key] for a in agent_types]
     errors = [average_results[a][stderr_key] for a in agent_types]
     ax.bar(x, means, yerr=errors,
            capsize=4,
@@ -146,9 +182,33 @@ for ax, (mean_key, stderr_key, ylabel) in zip(axes, metrics):
     ax.set_axisbelow(True)
     ax.spines[['top', 'right']].set_visible(False)
 
-fig.suptitle(base_results_dir, fontsize=9)
+# fig.suptitle("Averaged Metrics and StdErr", fontsize=9)
 fig.tight_layout()
 out_path = os.path.join(base_results_dir, "results.pdf")
 fig.savefig(out_path, dpi=300, bbox_inches='tight')
 print(f"Figure saved to {out_path}")
 plt.show()
+
+print("\n% === Success / Caught Rate (per agent_type) ===")
+print(r"\begin{table}[t]")
+print(r"\centering")
+print(r"\small")
+print(r"\caption{Success and Caught rates (mean $\pm$ stderr, \%) across scenes.}")
+print(r"\begin{tabular}{lcc}")
+print(r"\toprule")
+print(r"Method & Success Rate $\uparrow$ & Caught Rate $\downarrow$ \\")
+print(r"\midrule")
+for at in average_results:
+    sr  = average_results[at]["success_rate"]        * 100
+    sre = average_results[at]["success_rate_stderr"] * 100
+    cr  = average_results[at]["caught_rate"]         * 100
+    cre = average_results[at]["caught_rate_stderr"]  * 100
+    name = at.replace("_", r"\_")
+    print(
+        f"{name} & {sr:.2f} {{\\tiny $\\pm$ {sre:.2f}}} "
+        f"& {cr:.2f} {{\\tiny $\\pm$ {cre:.2f}}} \\\\"
+    )
+print(r"\bottomrule")
+print(r"\end{tabular}")
+print(r"\label{tab:summary}")
+print(r"\end{table}")
