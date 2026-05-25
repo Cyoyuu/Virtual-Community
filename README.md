@@ -82,10 +82,10 @@ bash meeting_challenge/no_gt_scripts/run_cosar.sh DETROIT 3 stationary 1 0
 If you find our work useful, please consider citing:
 
 ```bibtex
-@misc{lin2025sentinel,
+@misc{lin2026sentinel,
   title  = {Sentinel: Embodied Cooperative Spatial Reasoning and Planning},
   author = {Lin, Xiangye and Zhang, Hongxin and Deng, Ruxi and Zhou, Qinhong and Gan, Chuang},
-  year   = {2025},
+  year   = {2026},
 }
 ```
 
