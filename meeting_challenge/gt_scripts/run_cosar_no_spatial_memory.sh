@@ -11,18 +11,16 @@ python meeting_challenge/challenge.py --head_less \
 --multi_process \
 --skip_avatar_animation \
 --enable_gt_segmentation \
---gt_only_for_sentinels \
---detect_interval 1 \
 --output_dir meeting_challenge/output \
 --scene "${scene}" \
 --job_id "${job_id}" \
---ablate emergency_avoidance \
+--ablate spatial_memory \
 --enable_outdoor_objects \
 --enable_indoor_scene \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_15 \
---agent_type sentinel \
+--agent_type cosar \
 --agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
@@ -33,3 +31,6 @@ python meeting_challenge/challenge.py --head_less \
 --lm_id gpt-4o \
 --debug \
 --overwrite
+
+# Optional flags you had commented out:
+# --enable_indoor_activities

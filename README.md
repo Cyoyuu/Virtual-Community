@@ -18,7 +18,7 @@ The Sentinel Challenge is built on top of [Virtual Community](https://github.com
 ```bash
 git submodule update --init
 conda env create -f env.yaml
-conda activate vico_nav
+conda activate cosar
 
 # Genesis physics engine (submodule)
 cd Genesis && pip install -e . && cd ..
@@ -62,24 +62,18 @@ Runners live under `meeting_challenge/`:
 | `meeting_challenge/gt_scripts/` | Ground-truth segmentation for all agents (`--enable_gt_segmentation`) |
 | `meeting_challenge/no_gt_scripts/` | Ground-truth segmentation restricted to sentinels (`--gt_only_for_sentinels`); other agents use learned perception |
 
-Each folder contains one script per method (`sentinel` = CoSaR, plus baselines `mcts`, `roco`, `coela`, `center`, `center_no_avoidance`, `fixed`, `rl`, `mat`, and CoSaR ablations `_no_analyzer`, `_no_emergency_avoidance`, `_no_refine`, `_no_spatial_memory`, `_qwen`).
+Each folder contains one script per method (`cosar` = our method, plus baselines `mcts`, `roco`, `coela`, `center`, `center_no_avoidance`, `fixed`, `rl`, `mat`, and CoSaR ablations `_no_analyzer`, `_no_emergency_avoidance`, `_no_refine`, `_no_spatial_memory`, `_qwen`).
 
 For example, to run CoSaR with 3 agents and 1 stationary sentinel in New York under the oracle-perception setting:
 
 ```bash
-bash meeting_challenge/gt_scripts/run_sentinel.sh NY 3 stationary 1 0
+bash meeting_challenge/gt_scripts/run_cosar.sh DETROIT 3 stationary 1 0
 ```
 
 Same configuration without oracle perception:
 
 ```bash
-bash meeting_challenge/no_gt_scripts/run_sentinel.sh NY 3 stationary 1 0
-```
-
-Outputs are written to `meeting_challenge/output/`. Aggregate metrics with:
-
-```bash
-python meeting_challenge/cal_results.py
+bash meeting_challenge/no_gt_scripts/run_cosar.sh DETROIT 3 stationary 1 0
 ```
 
 

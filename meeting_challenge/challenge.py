@@ -107,7 +107,7 @@ def parse_args():
     ### Agent configurations
     parser.add_argument("--config", type=str, default='agents_num_25')
     parser.add_argument("--agent_num", type=int, default=5)
-    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'sentinel', 'mcts', 'demo', 'rl', 'mat'])
+    parser.add_argument("--agent_type", type=str, choices=['center', 'roco', 'coela', 'fixed', 'cosar', 'mcts', 'demo', 'rl', 'mat'])
     parser.add_argument("--agent_type2", type=str, choices=['heuristic', 'llm', 'mcts', 'random'])
     parser.add_argument("--no_react", action='store_true')
     parser.add_argument("--lm_source", type=str, choices=["openai", "azure", "huggingface", "local_qwen"], default="azure", help="language model source")
@@ -374,7 +374,7 @@ def run_challenge(args):
                 step_limit=args.step_limit,
             )
             all_agent_processes.append(AgentProcess(MATSubAgent, **basic_kwargs, **llm_kwargs, **challenge_kwargs, **mat_kwargs))
-        elif agent_type == "sentinel":
+        elif agent_type == "cosar":
             basic_kwargs['refine_retry'] = args.refine_retry
             basic_kwargs['ablate'] = args.ablate
             llm_kwargs['server_port'] = args.server_port

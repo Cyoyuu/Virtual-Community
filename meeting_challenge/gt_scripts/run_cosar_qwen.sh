@@ -66,7 +66,7 @@ python meeting_challenge/challenge.py --head_less \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_15 \
---agent_type sentinel \
+--agent_type cosar \
 --agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \

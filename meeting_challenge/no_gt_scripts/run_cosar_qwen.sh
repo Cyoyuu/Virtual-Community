@@ -6,6 +6,10 @@ job_id=$5
 
 export PYTHONPATH=${PWD}
 
+conda run -n vico_nav_qwen python tools/qwen_manager/server.py &
+
+sleep 3m
+
 python meeting_challenge/challenge.py --head_less \
 --backend gpu \
 --multi_process \
@@ -21,15 +25,14 @@ python meeting_challenge/challenge.py --head_less \
 --outdoor_objects_max_num 5 \
 --resolution 512 \
 --config agents_num_15 \
---agent_type sentinel \
+--agent_type cosar \
 --agent_num ${agent_num} \
 --sentinel_type ${sentinel_type} \
 --sentinel_num ${sentinel_num} \
 --enable_danger_zone \
---refine_retry "-1" \
 --save_per_seconds 200 \
 --step_limit 1500 \
---lm_source azure \
+--lm_source local_qwen \
 --lm_id gpt-4o \
 --debug \
 --overwrite
