@@ -26,7 +26,7 @@ if __name__ != "__main__" :
     from ..tools.utils import *
     from . import *
 
-def is_point_enclosed_Amap(grid, point, resolution, min_x, min_y, nx, ny):
+def is_point_enclosed_MapTool(grid, point, resolution, min_x, min_y, nx, ny):
     from collections import deque
 
     i = int((point[0] - min_x) / resolution)
@@ -222,7 +222,7 @@ def find_next_bus_times(current_stop, current_time, schedule, schedule_reversed)
     return result
 
 
-class Amap:
+class MapTool:
     '''walkers only'''
     def __init__(self, scene_name=None, pose=None, place_metadata=None, building_metadata=None, bus=None, waypoints_dis=7., logger=None):
         init_time = time.perf_counter()
