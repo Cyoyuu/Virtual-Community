@@ -1,187 +1,101 @@
-<p align="center">
-  <h1 align="center">
-  Virtual Community: An Open World for<br />
-  Humans, Robots, and Society
-</h1>
-  <p align="center">
-    arXiv 2025
-  </p>
-  <p align="center">
-    <a href="https://zhouqqhh.github.io/">Qinhong Zhou*</a>,
-    <a href="https://icefoxzhx.github.io/">Hongxin Zhang*</a>,
-    <a href="#">Xiangye Lin*</a>,
-    <a href="https://cozheyuanzhangde.github.io/">Zheyuan Zhang*</a>,
-    <a href="#">Yutian Chen</a>,
-    <a href="#">Wenjun Liu</a>,
-    <a href="#">Zunzhe Zhang</a>,
-    <a href="https://eeeeeerickkk.github.io/">Sunli Chen</a>,
-    <a href="https://owenowl.github.io/">Lixing Fang</a>,
-    <a href="#">Qiushi Lyu</a>,
-    <a href="#">Xinyu Sun</a>,
-    <a href="#">Jincheng Yang</a>,
-    <a href="#">Zeyuan Wang</a>,
-    <a href="#">Bao Chi Dang</a>,
-    <a href="#">Zhehuan Chen</a>,
-    <a href="#">Daksha Ladia</a>,
-    <a href="#">Quang Vinh Dang</a>,
-    <a href="#">Jiageng Liu</a>,
-    <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
-  </p>
-  <p align="center">
-    <a href="https://arxiv.org/pdf/2508.14893">
-      <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
-    </a>
-    <a href='https://virtual-community-ai.github.io/' style='padding-left: 0.5rem;'>
-      <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
-    </a>
-  </p>
+# Sentinel: Embodied Cooperative Spatial Reasoning and Planning
 
-Virtual Community is an open-world platform that simulates human-robot coexistence in shared communities, featuring a physics-based multi-agent simulator and real-world 3D scenes to study embodied social intelligence at scale.
+This repo contains code for the following paper:
 
-<p align="center">
-    <img src="assets/imgs/teaser.png" alt="Logo" width="190%">
-</p>
+_Xiangye Lin\*, Hongxin Zhang\*, Ruxi Deng, Qinhong Zhou, Chuang Gan_: Sentinel: Embodied Cooperative Spatial Reasoning and Planning
 
-<!-- TABLE OF CONTENTS -->
-<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
+Paper: _coming soon_
 
-  <summary>Tabel of Contents</summary>
-  <ol>
-    <li><a href="#news">News</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#acknowledgement">Acknowledgement</a></li>
-    <li><a href="#citation">Citation</a></li>
-  </ol>
-</details>
+Project Website: _coming soon_
 
-## News
-- [2025-06-19] We have released the Virtual Community! Check out the [project website](https://virtual-community-ai.github.io/) and our [paper](https://virtual-community-ai.github.io/paper.pdf) for more details.
+We introduce the **Sentinel Challenge**, a benchmark for studying _Cooperative Spatial Intelligence_, in which multiple decentralized embodied agents must communicate in natural language to agree on a mutually safe and convenient meeting point in city-scale outdoor environments, then navigate there while avoiding dynamic sentinels patrolling the scene with only a coarse map tool for spatial guidance. To address this problem, we propose **CoSaR**, a cooperative spatial reasoning and planning framework that bridges the communication and planning strengths of foundation models with classical spatial navigation algorithms. CoSaR maintains a dynamic spatial memory of poses, ETAs, occupancy, and sentinel danger zones, and uses a spatial-aware reasoning module to decide when to communicate, query the map tool, navigate, or wait. Across 14 city-scale scenes with 3–5 agents, CoSaR consistently achieves faster gathering, shorter path lengths, and improved safety over strong baselines.
 
-## Getting Started
 
-### Installation
+## Installation
 
-We're using python 3.11, cuda 11.7 and ubuntu 24.04. If you are using a different version, please modify the env.yaml file accordingly.
+The Sentinel Challenge is built on top of [Virtual Community](https://github.com/UMass-Embodied-AGI/Virtual-Community). The simulator runs on Python 3.11, CUDA 11.7, Ubuntu 24.04.
 
 ```bash
+git submodule update --init
 conda env create -f env.yaml
+conda activate vico_nav
+
+# Genesis physics engine (submodule)
+cd Genesis && pip install -e . && cd ..
+
+# Scene-graph builder (used by the perception module)
+cd agents/sg && ./setup.sh && cd ../..
 ```
 
-Install Genesis from the source:
+### Assets
 
-```bash
-cd Genesis
-pip install -e .
-```
-
-To run the example tour agent, install volume grid lib:
-
-```bash
-cd agents/sg
-./setup.sh
-```
-
-### Assets Preparation
-
-Download the assets from the [Google Drive](https://drive.google.com/drive/u/2/folders/15XR80efNfgdpYi-5dXh3lJ35p9WBqFc5) and organize them under `Genesis/genesis/assets/ViCo`.
-
-Assets include:
-- `scene` folder: contains the generated outdoor 3D scenes.
-- `robots` folder: contains the robot models.
-- `objects` folder: contains the object models.
-- `avatars` folder: contains the human avatars' skin and motion.
-- `cars` folder: contains the vehicle models including car, bus, bike, etc.
-
-If you want to use indoor scenes from GRUTopia (otherwise use `--no_load_indoor_scene` flag), please follow their instructions [here](https://github.com/OpenRobotLab/GRUtopia?tab=readme-ov-file#%EF%B8%8F-assets) to download the commercial_scenes.zip, and unzip it under `Genesis/genesis/assets/ViCo/scene/`.
-
-After this step, the directory structure should be:
+Download the Virtual Community assets from [Google Drive](https://drive.google.com/drive/u/2/folders/15XR80efNfgdpYi-5dXh3lJ35p9WBqFc5) and organize them under `Genesis/genesis/assets/ViCo/`:
 
 ```
 Genesis/genesis/assets/ViCo/
 ├── scene/
 ├──── v1/
-├──── commercial_scenes/ (optional)
+├──── commercial_scenes/ (optional, from GRUtopia)
 ├── robots/
 ├── objects/
 ├── avatars/
 └── cars/
 ```
 
-### Run the Simulation
-
-Run the following script to test the simulation, where 15 agents will tour around the New York Scene.
-
-```bash
-./scripts/run_tour_agent.sh
-```
-
-Tips: Loading all indoor scenes and objects may take around 40G memory. If you encounter memory issues, consider adding `--no_load_indoor_scene` flag to the script to disable indoor scenes.
+If you want indoor scenes from GRUtopia, follow [their instructions](https://github.com/OpenRobotLab/GRUtopia?tab=readme-ov-file#%EF%B8%8F-assets) to download `commercial_scenes.zip`; otherwise pass `--no_load_indoor_scene` to the runners.
 
 ### System Requirements
 
-#### System Memory (RAM)
-<ul class="list-disc ml-6">
-  <li>**Minimum**: 24 GB</li>
-  <li>**Recommended**: 32 GB</li>
-</ul>
+- **RAM**: 24 GB minimum / 32 GB recommended
+- **VRAM**: 10 GB minimum / 16 GB recommended
+- **Disk**: 60 GB minimum / 100 GB recommended
 
-#### GPU Memory (VRAM)
-<ul class="list-disc ml-6">
-  <li>**Minimum**: 10 GB</li>
-  <li>**Recommended**: 16 GB</li>
-</ul>
 
-#### Disk Space
-<ul class="list-disc ml-6">
-  <li>**Minimum**: 60 GB</li>
-  <li>**Recommended**: 100 GB</li>
-</ul>
+## Run Experiments
 
-### TroubleShooting
+The main implementation of _CoSaR_ is in `agents/meeting_challenge/CoSaR.py` (agent), `agents/meeting_challenge/base_nav.py` (shared navigation base), and `agents/meeting_challenge/meeting_prompts/cosar_prompts/` (LLM prompts). The challenge entry point is `meeting_challenge/challenge.py`.
 
-If you encounter any issues, please check the following:
+Runners live under `meeting_challenge/`:
 
-`libstdcxx. so.6: version GLIBCXX 3.4.32’not found required by  sg/builder/builtin/libbuider.so)`
+| Folder | Perception |
+|---|---|
+| `meeting_challenge/gt_scripts/` | Ground-truth segmentation for all agents (`--enable_gt_segmentation`) |
+| `meeting_challenge/no_gt_scripts/` | Ground-truth segmentation restricted to sentinels (`--gt_only_for_sentinels`); other agents use learned perception |
 
-To resolve this issue, you may need to update your GCC runtime. You can do this by running:
+Each folder contains one script per method (`sentinel` = CoSaR, plus baselines `mcts`, `roco`, `coela`, `center`, `center_no_avoidance`, `fixed`, `rl`, `mat`, and CoSaR ablations `_no_analyzer`, `_no_emergency_avoidance`, `_no_refine`, `_no_spatial_memory`, `_qwen`).
+
+For example, to run CoSaR with 3 agents and 1 stationary sentinel in New York under the oracle-perception setting:
 
 ```bash
-conda install -c conda-forge libstdcxx-ng
+bash meeting_challenge/gt_scripts/run_sentinel.sh NY 3 stationary 1 0
 ```
 
----
+Same configuration without oracle perception:
 
-Only _pygltflib-1.16.0_ works for now, the latest version _pygltflib-1.16.1_ will slower the scene loading.
+```bash
+bash meeting_challenge/no_gt_scripts/run_sentinel.sh NY 3 stationary 1 0
+```
+
+Outputs are written to `meeting_challenge/output/`. Aggregate metrics with:
+
+```bash
+python meeting_challenge/cal_results.py
+```
+
+
+## Citation
+
+If you find our work useful, please consider citing:
+
+```bibtex
+@misc{lin2025sentinel,
+  title  = {Sentinel: Embodied Cooperative Spatial Reasoning and Planning},
+  author = {Lin, Xiangye and Zhang, Hongxin and Deng, Ruxi and Zhou, Qinhong and Gan, Chuang},
+  year   = {2025},
+}
+```
 
 
 ## Acknowledgement
-Virtual Community is built on lots of amazing open-source projects:
 
-- [Genesis](https://github.com/Genesis-Embodied-AI/Genesis): Universal physics engine backend. Thanks for the team for their great work on Genesis, which provides the foundation for our project.
-- [GRUtopia](https://github.com/OpenRobotLab/GRUtopia): The indoor scene dataset we used for retrieval.
-- [ARCHITECT](https://github.com/wangyian-me/architect_official_code/): The indoor scene generation method we used.
-- [Google 3D Tiles](https://3d-tiles.web.app/): The source of our outdoor scene data.
-- [OpenStreetMap](https://www.openstreetmap.org/): The source of our outdoor scene data.
-- [Blender](https://www.blender.org/): The 3D modeling software we used to create and modify the assets.
-- ...
-
-And inspiring works that influenced our design and implementation:
-- [Generative Agents](https://github.com/joonspk-research/generative_agents): Inspiring our character generation.
-- [V-IRL](https://virl-platform.github.io/): Inspiring our leverage of real geospatial data.
-- ...
-
-With many more not listed here, we are grateful for the contributions of the open-source community that made this project possible.
-
-## Citation
-If you find this work useful, please consider citing:
-```bibtex
-@misc{zhou2025virtualcommunityopenworld,
-      title={Virtual Community: An Open World for Humans, Robots, and Society}, 
-      author={Qinhong Zhou and Hongxin Zhang and Xiangye Lin and Zheyuan Zhang and Yutian Chen and Wenjun Liu and Zunzhe Zhang and Sunli Chen and Lixing Fang and Qiushi Lyu and Xinyu Sun and Jincheng Yang and Zeyuan Wang and Bao Chi Dang and Zhehuan Chen and Daksha Ladia and Jiageng Liu and Chuang Gan},
-      year={2025},
-      eprint={2508.14893},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2508.14893}, 
-}
-```
+The Sentinel Challenge is built on the [Virtual Community](https://github.com/UMass-Embodied-AGI/Virtual-Community) platform; we thank its authors and the underlying open-source projects it depends on, including [Genesis](https://github.com/Genesis-Embodied-AI/Genesis), [GRUtopia](https://github.com/OpenRobotLab/GRUtopia), [Google 3D Tiles](https://3d-tiles.web.app/), [OpenStreetMap](https://www.openstreetmap.org/), and [Blender](https://www.blender.org/). Our baselines build on [CoELA](https://github.com/UMass-Embodied-AGI/CoELA), [RoCo](https://github.com/MandiZhao/robot-collab), and the [Multi-Agent Transformer](https://github.com/PKU-MARL/Multi-Agent-Transformer).

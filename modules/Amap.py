@@ -401,8 +401,9 @@ class Amap:
 
         # Get goal location
         if goal_place is not None and goal_place not in self.place_metadata:
-            raise ValueError(f"Unknown place: {goal_place}")
-        
+            print(f"[Amap.query_route] Unknown place: {goal_place!r}; returning None so the caller can handle it.")
+            return None
+
         if goal_place is not None:
             goal_bbox = self.building_metadata[self.place_metadata[goal_place]['building']]['bounding_box']
             goal_pos = self.place_metadata[goal_place]['location'][:2]  # [x, y]

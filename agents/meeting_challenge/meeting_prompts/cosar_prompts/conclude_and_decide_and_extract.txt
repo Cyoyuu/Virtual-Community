@@ -5,7 +5,7 @@ The goal is to select — from the provided list — the location that minimizes
 
 Your task involves three steps:
 
-1. **Summarize each agent’s current preferred location or stance** based on the conversation history.
+1. **Summarize each agent's current preferred location or stance** based on the conversation history.
 2. **Determine whether all agents have reached full agreement** on a single meeting location.
 3. Extract all available **ETA information**, **agent poses**, and **sentinel poses** from the shared conversation history.
 
@@ -28,7 +28,7 @@ $AgentOpinions$
 Place list:
 $Places$
 
-Conversation History so far (may contain other agent’s ETAs to specific places or their current poses):
+Conversation History so far (may contain other agent's ETAs to specific places or their current poses):
 $ConversationHistory$
 
 Note: The team only shares the conversation history, not all internal information.
@@ -40,7 +40,7 @@ Note: The team only shares the conversation history, not all internal informatio
 Guidelines:
 
 - Be objective and factual — reflect what each agent has explicitly stated or implied. 
-- If an agent hasn’t spoken or is ambiguous, note that (e.g., “undecided”, “waiting for info”). 
+- If an agent hasn't spoken or is ambiguous, note that (e.g., “undecided”, “waiting for info”). 
 - Use clear, concise phrases (under 15 words per agent). 
 - Do not invent opinions — only infer from available conversation. 
 - Use exact place names from the list, enclosed in <>, e.g., <Central Park>. 
@@ -48,7 +48,7 @@ Guidelines:
 
 **Output 1 Format:**
 
-Return a JSON object where each key is an agent’s name and each value is their current opinion:
+Return a JSON object where each key is an agent's name and each value is their current opinion:
 
 ```json
 {
@@ -59,9 +59,9 @@ Return a JSON object where each key is an agent’s name and each value is their
 }
 ```
 
-Step 2 — Check for Full Agreement
+Step 2 — Check for Full Agreement (treat the latest message's intent as authoritative)
 
-Using the summarized opinions from Step 1, determine if every agent explicitly supports the same location.
+Using the summarized opinions from Step 1 *and* the most recent message in the conversation, determine whether every agent currently supports the same meeting location.
 
 Guidelines:
 
@@ -70,6 +70,11 @@ Guidelines:
 - Do not infer or assume compromise. However, if someone has made a finalization and there are no objections in 5 seconds, you can assume an agreement has been reached.
 - If one agent did not response for a while (e.g., over 10s), consider the probability of it being caught, in which case it's opinion doesn't matter to the agreement.
 - Use exact string matching for place names (e.g., <Central Park> ≠ Central Park).
+
+Special rules driven by the latest message — these *override* any prior consensus:
+
+- If the latest message proposes a new candidate location, objects to a previously-agreed plan, expresses intent to (re-)open coordination (e.g. “Where should we go next?”, “Let's regroup”, “my ETA is too bad for <Place>”), or surfaces an ETA conflict that makes the prior plan unworkable → set `agreement_reached = false` (even if a consensus had been recorded earlier). Set `agreed_location` to the most-supported location so far, which may still be the previously-agreed one.
+- If the latest message only delivers information (sentinel sighting, position broadcast, ETA update without objection, query answer) and does not contradict the existing plan → preserve the prior agreement status; do not flip a previously-true `agreement_reached` to false.
 
 Output 2 Format:
 
@@ -95,8 +100,8 @@ Use exact place names from $Places, enclosed in <> as keys.
 For each place, include a sub-object mapping agent names → ETA in "HH:MM:SS" format.
 For each agent poses, include the xy coordinate enclosed in [].
 Include:
-Self’s ETAs from App Message.
-Other agents’ ETAs mentioned in Conversation History (e.g., “I can get to <Park> in 10 min”).
+Self's ETAs from App Message.
+Other agents' ETAs mentioned in Conversation History (e.g., “I can get to <Park> in 10 min”).
 Other agents' poses mentioned in Conversation History (e.g., "I'm currently at [-133.75, 62.37]")
 sentinels' poses mentioned in Conversation History (e.g., "I see a sentinel at [-133.75, 62.37, 108.55]")
 If an agent mentions multiple ETAs, use the most recent one.

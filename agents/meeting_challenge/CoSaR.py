@@ -17,7 +17,6 @@ from agents.agent import Agent
 from agents.memory import SemanticMemory
 from agents.meeting_challenge.base_nav import *
 from modules.Amap import Route, RouteNode
-from agents.sg.builder.builder import Builder, BuilderConfig
 
 
 
@@ -26,8 +25,6 @@ from agents.sg.builder.builder import Builder, BuilderConfig
 class Reasoner(ThinkingModule):
     def __init__(self, generator, logger, name):
         super().__init__(generator, logger, name)
-        self.scanned_map = np.zeros(dtype=int, shape=[10, 10])
-        self.hsg = HSG()
 
     def plan(self, curr_time, name, pose, intent):
         prompt = open(f"agents/meeting_challenge/meeting_prompts/query_action.txt", "r").read()
@@ -45,91 +42,7 @@ class Reasoner(ThinkingModule):
                 f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
             response_dict = None
         return response_dict
-    
-    def overlook(self, bbox, aerial_view, metadata):
-        map_index = (int(bbox[0] / 100 + 5), int(bbox[1] / 100 + 5))
-        if self.scanned_map[map_index[0], map_index[1]] == 1:
-            self.logger.info("This map section already scanned; skipping reconstruction.")
-            return None
 
-        self.scanned_map[map_index[0], map_index[1]] = 1
-        subgraph = reconstruct_subgraph(aerial_img=aerial_view, metadata=metadata, generator=self.generator)
-        self.hsg = merge_subgraph(self.hsg, subgraph)
-        self.logger.info(f"Integrated new subgraph into global HSG (total nodes: {len(self.hsg.nodes)})")
-
-    def parse(self, conversation_content):
-        prompt = open("agents/meeting_challenge/meeting_prompts/spatial_reasoning_module/hsg/reconstruct_scene_graph.txt", "r").read()
-        prompt = prompt.replace("$ConversationExcerpt$", conversation_content)
-        self.logger.debug(f"[Parse Prompt]\n{prompt}")
-
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-        try:
-            subgraph_json = self.parse_json(prompt, response)
-            sub_hsg = HSG()
-            for node_data in subgraph_json["nodes"]:
-                node = Node(
-                    node_id=node_data["node_id"],
-                    name=node_data["name"],
-                    node_type=node_data["type"],
-                    connectivity_center=node_data["connectivity_center"],
-                    properties=node_data["properties"],
-                    children=node_data["children"],
-                )
-                sub_hsg.add_node(node)
-            for edge in subgraph_json["edges"]:
-                sub_hsg.add_edge(edge["from"], edge["to"], edge["relation"], edge["confidence"])
-            self.hsg = merge_subgraph(self.hsg, sub_hsg)
-            self.logger.info("Updated HSG with new subgraph from conversation.")
-        except Exception as e:
-            self.logger.error(f"Error parsing HSG from conversation: {e}\n{traceback.format_exc()}")
-
-    def find_safe_path(self, current_node, destination_node):
-        """
-        Use the current scene graph to find a safe path to the destination.
-        If information is missing, identify what needs to be queried.
-        """
-        prompt_template = open(
-            "agents/meeting_challenge/meeting_prompts/spatial_reasoning_module/hsg/generate_safe_path.txt",
-            "r"
-        ).read()
-
-        known_graph_json = json.dumps(self.hsg.to_graph(), indent=2)
-        prompt = (
-            prompt_template
-            .replace("$StartNode$", current_node)
-            .replace("$GoalNode$", destination_node)
-            .replace("$KnownGraphJSON$", known_graph_json)
-        )
-
-        self.logger.debug(f"pathfinding_prompt: {prompt}")
-
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-
-        try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"pathfinding_result: {response_dict}")
-        except Exception as e:
-            self.logger.error(f"Error parsing pathfinding response: {e}\nResponse was: {response}")
-            return None
-
-        # Handle the two cases
-        if response_dict.get("status") == "success":
-            self.logger.info(f"Safe path found: {response_dict['path']}")
-            return response_dict
-
-        elif response_dict.get("status") == "incomplete":
-            self.logger.warning("⚠️ Pathfinding incomplete — missing info detected.")
-            missing = response_dict.get("missing_info", [])
-            actions = response_dict.get("recommended_areas_to_query", [])
-            self.logger.info(f"Missing info: {missing}")
-            self.logger.info(f"Recommended areas to query: {actions}")
-
-            return response_dict
-
-        else:
-            self.logger.error("❌ Unknown status in pathfinding result.")
-            return None
-        
     def check_waypoint_validity(self, known_sentinel_poses, last_route, excluding_wps=[]):
         for wp in last_route:
             if any(np.linalg.norm(np.array(wp.location[:2])-np.array(excluding_wp[:2]))<5 for excluding_wp in excluding_wps): continue
@@ -202,29 +115,10 @@ class Reasoner(ThinkingModule):
                 return self.parse_json(None, data, last_call=True)
         return response
         
-class CoSaRDiscusser(Discusser):
+class CoSaRDiscusser(ThinkingModule):
     def __init__(self, generator, logger, name, type="", ablate=""):
         super().__init__(generator, logger, name, type, ablate)
 
-    def start(self, agent_names, agent_opinions, places, conversation_history):
-        prompt = open(os.path.join(self.prompt_path, "decide_start.txt"), "r").read()
-        prompt = prompt.replace("$TaskDescription$", self.task_decription)
-        prompt = prompt.replace("$SelfName$", self.name)
-        prompt = prompt.replace("$AgentList$", agent_names)
-        prompt = prompt.replace("$AgentOpinions$", agent_opinions)
-        prompt = prompt.replace("$Places$", places)
-        prompt = prompt.replace("$ConversationHistory$", conversation_history)
-        self.logger.debug(f"planning_prompt: {prompt}")
-        response = self.generator.generate(prompt, img=None, json_mode=False)
-        try:
-            response_dict = self.parse_json(prompt, response)
-            self.logger.debug(f"generated response: {response_dict}")
-        except Exception as e:
-            self.logger.error(
-                f"Error extracting ETAs: {e} with traceback: {traceback.format_exc()}. The response was {response}")
-            response_dict = None
-        return response_dict
-    
     def conclude_and_decide_and_extract(self, curr_time, agent_names, agent_opinions, places, conversation_history):
         prompt = open(os.path.join(self.prompt_path, "conclude_and_decide_and_extract.txt"), "r").read()
         prompt = prompt.replace("$TaskDescription$", self.task_decription)
@@ -245,7 +139,7 @@ class CoSaRDiscusser(Discusser):
             response_dict = None
         return response_dict
     
-    def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, stalling, speech):
+    def analyze_and_plan(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, unreported_sentinels, current_eta, eta_history, stalling, speech):
         prompt_path = self.prompt_path
         if "spatial_memory" in self.ablate: prompt_path = os.path.join(prompt_path, "no_spatial_memory")
         prompt = open(os.path.join(prompt_path, "analyze_and_plan.txt"), "r").read()
@@ -259,6 +153,9 @@ class CoSaRDiscusser(Discusser):
         prompt = prompt.replace("$KnownPoses$", known_poses)
         prompt = prompt.replace("$KnownETA$", known_eta)
         prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
+        prompt = prompt.replace("$UnreportedSentinels$", unreported_sentinels)
+        prompt = prompt.replace("$CurrentETA$", current_eta)
+        prompt = prompt.replace("$ETAHistory$", eta_history)
         prompt = prompt.replace("$Speech$", speech)
         if stalling:
             prompt = prompt.replace("$Stalling$", "The discussion has extended too long. Avoid throwing new questions and finalize as soon as possible!")
@@ -275,7 +172,7 @@ class CoSaRDiscusser(Discusser):
             response_dict = None
         return response_dict
     
-    def speak(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, missing_info, stalling):
+    def speak(self, curr_time, pose, agent_opinions, places, conversation_history, known_poses, known_eta, known_sentinel_poses, unreported_sentinels, current_eta, eta_history, missing_info, stalling):
         prompt_path = self.prompt_path
         if "spatial_memory" in self.ablate: prompt_path = os.path.join(prompt_path, "no_spatial_memory")
         prompt = open(os.path.join(prompt_path, "speak_speak.txt"), "r").read()
@@ -289,6 +186,9 @@ class CoSaRDiscusser(Discusser):
         prompt = prompt.replace("$KnownPoses$", known_poses)
         prompt = prompt.replace("$KnownETA$", known_eta)
         prompt = prompt.replace("$KnownSentinelPoses$", known_sentinel_poses)
+        prompt = prompt.replace("$UnreportedSentinels$", unreported_sentinels)
+        prompt = prompt.replace("$CurrentETA$", current_eta)
+        prompt = prompt.replace("$ETAHistory$", eta_history)
         prompt = prompt.replace("$MissingInfo$", missing_info)
         if stalling:
             prompt = prompt.replace("$Stalling$", "The discussion has extended too long. Avoid throwing new questions and finalize as soon as possible!")
@@ -320,7 +220,6 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                  lm_source='openai', lm_id='gpt-4o', max_tokens=4096, temperature=0, top_p=1.0, init_generator=True,
                  detect_interval=-1, num_agents=1, enable_danger_zone=False, refine_retry=5, ablate="", server_port=8000):
         super().__init__(name, pose, info, sim_path, no_react, debug, logger, lm_source, lm_id, max_tokens, temperature, top_p, init_generator, detect_interval, num_agents, enable_danger_zone, ablate=ablate, server_port=server_port)
-        self.decider = Decider(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.discusser = CoSaRDiscusser(generator=self.generator, logger=self.logger, name=self.name, type='cosar', ablate=self.ablate)
         self.spatial_resoner = Reasoner(generator=self.generator, logger=self.logger, name=self.name)
         # emergency property
@@ -338,7 +237,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         self.continuous_refine_retry = self.max_continuous_refine_retry
         self.refine_retry = dict()
         # CoSaR property
-        self.rethink = True
+        self.rethink = False
         self.chat_time_limit = 60
 
         self.refine_history = []
@@ -465,9 +364,7 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             #         'arg1': emergency_avoid_target_place
             #     }
             #     return self.last_action
-            self.rethink = False
             self.city_navigate(self.goal_place, requery=False) # just for refresh self.nav
-            self.rethink = True
             if self.emergency_avoid_target is None or is_near_goal(self.pose[0], self.pose[1], None, list(self.emergency_avoid_target)):
                 self.emergency_avoid_target = self.emergency_avoid()
             if self.emergency_avoid_target is None:
@@ -506,15 +403,6 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
             action = {"type": "query_app", "arg1": "query_refine_route", "arg2": [pose[:2] for pose in self.known_sentinel_poses], "arg3": self.refine_reference, "arg4": self.coarse_refine_result}
             self.last_action = action
             return self.last_action
-        # no emergency
-        if any([sentinel[3]==0 for sentinel in self.known_sentinel_poses]):
-            speech = f"I saw sentinel(s) at {[sentinel[:3] for sentinel in self.known_sentinel_poses if sentinel[3]==0]}"
-            self.last_action = {"type": "remote_converse", "arg1": speech, "arg2": 3200}
-            for i in range(len(self.known_sentinel_poses)):
-                if self.known_sentinel_poses[i][3]==0:
-                    self.known_sentinel_poses[i][3]=-1
-            return self.last_action
-        # no sentinel to report
         self.logger.debug(f"Current mode is {self.mode}, while the trigger is {self.discussion_trigger}, mode_time_counter is {self.mode_time_counter}")
         action = None
         try:
@@ -534,6 +422,14 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
                 action = self.discuss_act()
             elif self.mode == NavAgentState.NAVIGATE:
                 self.mode_time_counter += 1
+                tick_120s = self.mode_time_counter % 120 == 0
+                has_unreported_sentinel = any(s[3] == 0 for s in self.known_sentinel_poses)
+                if tick_120s:
+                    self._sample_eta_history()
+                if tick_120s or has_unreported_sentinel:
+                    action = self.reason_and_act()
+                    if action is not None:
+                        return action
                 action, arrived = self.city_navigate(self.goal_place, requery=False)
                 if arrived:
                     action = {'type': 'task_complete'}
@@ -550,80 +446,147 @@ class CoSaRMeetingAgent(BaseNavigationMeetingAgent):
         agent_names = ", ".join(obs["agent_pos_dict"].keys())
         places = self.get_nearest_places_description(self.get_meeting_target())
         current_message = self.get_conversation_description(limit=1)
-        conversation_history = self.get_conversation_description()
         curr_time = self.curr_time.strftime('%H:%M:%S')
-        extracted_info={}
 
         for agent_name in obs["agent_pos_dict"].keys():
             if agent_name not in self.agent_opinions:
                 self.agent_opinions[agent_name] = 'undecided'
 
-        if self.mode==NavAgentState.NAVIGATE and self.rethink:
-            extracted_info = self.discusser.start(agent_names=agent_names, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=current_message)
+        extracted_info = self.discusser.conclude_and_decide_and_extract(
+            curr_time=curr_time, agent_names=agent_names,
+            agent_opinions=self.get_agent_opinions_description(),
+            places=places, conversation_history=current_message,
+        ) or {}
+        if 'agent_opinions' in extracted_info:
             self.agent_opinions = extracted_info['agent_opinions']
-            if "initiate_discussion" in extracted_info and extracted_info["initiate_discussion"]:
-                self.enter_discussion_mode(trigger="NEW DISCUSSION")
-        elif self.mode==NavAgentState.DISCUSS:
-            extracted_info = self.discusser.conclude_and_decide_and_extract(curr_time=curr_time, agent_names=agent_names, agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=current_message)
-            self.agent_opinions = extracted_info['agent_opinions']
-            decision = extracted_info['agreement_check']
-            if decision["agreed_location"] is not None:
-                meeting_place = decision["agreed_location"]
-                if meeting_place.startswith("<") and meeting_place.endswith(">"):
-                    meeting_place = meeting_place[1:-1]
-                self.meeting_place = meeting_place
-            if decision["agreement_reached"] == True:
-                self.enter_navigation_mode(goal_place=self.meeting_place)
         if 'spatial_memory' not in self.ablate and 'analyzer' not in self.ablate:
             if 'ETA Map' in extracted_info:
-                self.update_known_eta(extracted_info['ETA Map'])#!!!
+                self.update_known_eta(extracted_info['ETA Map'])
             if 'Agent Poses' in extracted_info:
                 self.update_known_poses(extracted_info['Agent Poses'])
             if 'Sentinel Poses' in extracted_info:
                 self.update_known_sentinel_poses(extracted_info['Sentinel Poses'], shared=1)
+
+        decision = extracted_info.get('agreement_check', {}) or {}
+        agreed_location = decision.get('agreed_location')
+        if isinstance(agreed_location, str) and agreed_location.startswith("<") and agreed_location.endswith(">"):
+            agreed_location = agreed_location[1:-1]
+        if agreed_location is not None:
+            self.meeting_place = agreed_location
+        if decision.get('agreement_reached') is True and agreed_location is not None:
+            if self.mode != NavAgentState.NAVIGATE or self.goal_place != agreed_location:
+                self.enter_navigation_mode(goal_place=agreed_location)
+        else:
+            if self.mode != NavAgentState.DISCUSS:
+                self.enter_discussion_mode(trigger="DISAGREEMENT")
     
-    def discuss_act(self):
-        action = None
-        agent_names = ", ".join(self.obs["agent_pos_dict"].keys())
+    def get_unreported_sentinel_poses_description(self):
+        unreported = [s[:3] for s in self.known_sentinel_poses if s[3] == 0]
+        if not unreported:
+            return "None"
+        return "\n".join(f"{p[0]:.2f}, {p[1]:.2f}, {p[2]:.2f}" for p in unreported)
+
+    def _sample_eta_history(self):
+        if self.last_route is None or self.last_route.empty():
+            return
+        if self.last_path_for_estimation is None:
+            curr_eta_seconds = int(self.last_route.calc_time(pose=self.get_outdoor_pose()))
+        else:
+            curr_eta_seconds = int(self.last_route.calc_time()) + len(self.last_path_for_estimation) * 2
+        self.eta_history[self.curr_time.strftime('%H:%M:%S')] = str(timedelta(seconds=curr_eta_seconds))
+
+    def _current_eta_description(self):
+        if self.last_route is None or self.last_route.empty():
+            return "N/A"
+        if self.last_path_for_estimation is None:
+            curr_eta_seconds = int(self.last_route.calc_time(pose=self.get_outdoor_pose()))
+        else:
+            curr_eta_seconds = int(self.last_route.calc_time()) + len(self.last_path_for_estimation) * 2
+        return str(timedelta(seconds=curr_eta_seconds))
+
+    def _mark_unreported_sentinels_as_pending(self):
+        for i in range(len(self.known_sentinel_poses)):
+            if self.known_sentinel_poses[i][3] == 0:
+                self.known_sentinel_poses[i][3] = -1
+
+    def reason_and_act(self):
+        in_discuss = self.mode == NavAgentState.DISCUSS
         places = self.get_nearest_places_description(self.get_meeting_target())
         conversation_history = self.get_conversation_description()
-        app_message = self.get_app_message_description()
         curr_time = self.curr_time.strftime('%H:%M:%S')
+        current_eta_str = "N/A" if in_discuss else self._current_eta_description()
+        eta_history_str = "N/A" if in_discuss else self.get_eta_history_description()
+        unreported_sentinels_str = self.get_unreported_sentinel_poses_description()
+        stalling = in_discuss and self.mode_time_counter > 30
 
-        # Reasoner
-        speech = self.discusser.speak(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), missing_info="missing_info", stalling=self.mode_time_counter>30)
-        self.discussion_plan = self.discusser.analyze_and_plan(curr_time=curr_time, pose=self.get_outdoor_pose_description(), agent_opinions=self.get_agent_opinions_description(), places=places, conversation_history=conversation_history, known_poses=self.get_known_poses_description(), known_eta=self.get_known_eta_description(), known_sentinel_poses=self.get_known_sentinel_poses_description(), stalling=self.mode_time_counter>30, speech=speech['speech'])
-        # missing_info="\n".join(self.discussion_plan['missing info']) # not in use now
-        action = {"type": "wait"}
-        # Executor
-        if self.discussion_plan["action"]=="wait":
-            action = {"type": "wait"}
+        speech = self.discusser.speak(
+            curr_time=curr_time, pose=self.get_outdoor_pose_description(),
+            agent_opinions=self.get_agent_opinions_description(), places=places,
+            conversation_history=conversation_history,
+            known_poses=self.get_known_poses_description(),
+            known_eta=self.get_known_eta_description(),
+            known_sentinel_poses=self.get_known_sentinel_poses_description(),
+            unreported_sentinels=unreported_sentinels_str,
+            current_eta=current_eta_str, eta_history=eta_history_str,
+            missing_info="missing_info", stalling=stalling,
+        )
+        if speech is None or 'speech' not in speech:
+            self.logger.warning("speak returned no usable speech; skipping reasoning step")
+            return None
+        self.discussion_plan = self.discusser.analyze_and_plan(
+            curr_time=curr_time, pose=self.get_outdoor_pose_description(),
+            agent_opinions=self.get_agent_opinions_description(), places=places,
+            conversation_history=conversation_history,
+            known_poses=self.get_known_poses_description(),
+            known_eta=self.get_known_eta_description(),
+            known_sentinel_poses=self.get_known_sentinel_poses_description(),
+            unreported_sentinels=unreported_sentinels_str,
+            current_eta=current_eta_str, eta_history=eta_history_str,
+            stalling=stalling, speech=speech['speech'],
+        )
+        if self.discussion_plan is None or 'action' not in self.discussion_plan:
+            self.logger.warning("analyze_and_plan returned no usable plan; skipping reasoning step")
+            return None
+
+        action_type = self.discussion_plan["action"]
+        if action_type == "wait":
             self.discussion_plan = None
-        elif self.discussion_plan['action']=='goto':
-            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
-                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
-            action = self.city_navigate(goal_place=self.discussion_plan['content'])[0]
-        elif self.discussion_plan["action"] in ["query_place", "query place"]:
-            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
-                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
-            action = {'type': 'query_app', 'arg1': 'query_place', 'arg2': self.discussion_plan['content']}
-        elif self.discussion_plan['action'] in ['query_route', 'query route']:
-            if self.discussion_plan['content'].startswith("<") and self.discussion_plan['content'].endswith(">"):
-                self.discussion_plan['content'] = self.discussion_plan['content'][1:-1]
+            return {"type": "wait"} if in_discuss else None
+        if action_type == "goto":
+            content = self.discussion_plan['content']
+            if content.startswith("<") and content.endswith(">"):
+                content = content[1:-1]
+            self.discussion_plan['content'] = content
+            return self.city_navigate(goal_place=content)[0]
+        if action_type in ("query_place", "query place"):
+            content = self.discussion_plan['content']
+            if content.startswith("<") and content.endswith(">"):
+                content = content[1:-1]
+            self.discussion_plan['content'] = content
+            return {'type': 'query_app', 'arg1': 'query_place', 'arg2': content}
+        if action_type in ("query_route", "query route"):
+            content = self.discussion_plan['content']
+            if content.startswith("<") and content.endswith(">"):
+                content = content[1:-1]
             places_in_mem = self.s_mem.get_places()
-            if self.discussion_plan['content'] not in places_in_mem:
-                self.logger.warning(f"the place {self.discussion_plan['content']} is not in memory, cannot query route")
-                for place_in_mem in places_in_mem:
-                    if self.discussion_plan['content'] in place_in_mem:
-                        self.logger.warning(f"but found similar place {place_in_mem} in memory, maybe you want to go there?")
-                        self.discussion_plan['content'] = place_in_mem
-                        break
-            action = {'type': 'query_app', 'arg1': 'query_route', 'arg2': self.discussion_plan['content']}
-        elif self.discussion_plan["action"]=="speak":
-            action = {"type": "remote_converse", "arg1": speech['speech'], "arg2": 3200}
-        else:
-            raise NotImplementedError(f"discussion plan type {self.discussion_plan['action']} is not supported")
-        return action
+            if content not in places_in_mem:
+                fallback = next((p for p in places_in_mem if content in p), None)
+                if fallback is None:
+                    self.logger.warning(f"query_route target {content!r} is not in memory and no similar place found; falling back to wait")
+                    self.discussion_plan = None
+                    return {"type": "wait"} if in_discuss else None
+                self.logger.warning(f"query_route target {content!r} is not in memory; using similar place {fallback!r} instead")
+                content = fallback
+            self.discussion_plan['content'] = content
+            return {'type': 'query_app', 'arg1': 'query_route', 'arg2': content}
+        if action_type == "speak":
+            self._mark_unreported_sentinels_as_pending()
+            return {"type": "remote_converse", "arg1": speech['speech'], "arg2": 3200}
+        raise NotImplementedError(f"discussion plan type {action_type} is not supported")
+
+    def discuss_act(self):
+        action = self.reason_and_act()
+        return action if action is not None else {"type": "wait"}
     
     def emergency_avoid(self):
         near_sentinels = []

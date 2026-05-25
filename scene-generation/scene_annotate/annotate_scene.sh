@@ -1,2 +1,0 @@
-SCENE=" newyork"
-python3 tools/annotate_scene.py --scene $SCENE --search_original_places --filter_places --filter_distance_square 400 --search_resolution 135.0 --save_metadata --visualize_metadata

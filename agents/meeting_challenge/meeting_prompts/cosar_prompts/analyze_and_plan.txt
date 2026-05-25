@@ -1,10 +1,10 @@
 $TaskDescription$
 
-Now the agent is in a group discussion.
+You are the agent's spatial-aware reasoning module. You decide the agent's next action by reasoning over its spatial memory, the shared conversation, recent ETA evolution, and any sentinels the agent has spotted but not yet broadcast.
 
-Your task has two steps: 
-1. Analyze what informations (i.e. specific travel time or place data) are **missing or uncertain** for this agent and need to query about — based on conversation history, other agents’ opinions, and available known data.
-2. Help the agent decide its next move in the discussion: Should it **speak**, **query for more information**, **wait** or **goto** somewhere? $Stalling$
+Your task has two steps:
+1. Analyze what information (i.e. specific travel time or place data) is **missing or uncertain** for this agent — based on conversation history, other agents' opinions, and available known data.
+2. Decide the agent's next action: **speak**, **query for more information**, **wait** or **goto** somewhere. $Stalling$
 
 ---
 
@@ -13,7 +13,7 @@ Your task has two steps:
 Current Time:
 $CurrentTime$
 
-- Agent’s Name: $SelfName$
+- Agent's Name: $SelfName$
 
 - Agent's position: $SelfPose$
 
@@ -35,8 +35,17 @@ $KnownETA$
 - Known ETAs (contains agents' computed ETAs to specific places known by this agent but not others):
 $KnownETA$
 
-- Reported sentinel poses:
+- Reported sentinel poses (already broadcast to the team):
 $KnownSentinelPoses$
+
+- Unreported sentinel poses (observed by you, not yet broadcast):
+$UnreportedSentinels$
+
+- Current ETA to your current goal (or "N/A" if no committed goal):
+$CurrentETA$
+
+- ETA history (sampled every 120 s on the same route; "N/A" when no committed goal):
+$ETAHistory$
 
 Note that the team only share the conversation history, instead of all infos.
 
@@ -92,8 +101,9 @@ Guidelines for analyzing missing info:
 Places mentioned in missing info must be a exact place name from $Places, each enclosed in <>.
 - Include an agent's pose if it's not known yet.
 - Include a place if:
-  - The agent hasn’t queried it yet.
-  - It’s being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
+  - The agent hasn't queried it yet.
+  - It's being seriously considered (e.g., mentioned by others, optimal, or a compromise candidate).
+  - Must be a valid place, either from Known Available Places, or from the conversation history.
 - Don't include information already known in "Known agent positions" and "Known ETAs". Examine 'KnownETA' carefully. This is very important! For example, if you know your ETA to <Place> in "Known ETAs" and someone is asking for that, don't include it in the missing info!.
 - Never include sentinel poses in missing infos.
 - Limit to at most 3 infos — prioritize the most critical for breaking ties or resolving uncertainty.
@@ -120,11 +130,12 @@ Choose "speak" if:
 Do NOT choose "speak" if your message only repeats previous content without adding new value. Attention! Unnecessary speech may block the communication channel and prevent agents who truly need to speak from doing so.
 
 Choose "query_place" if:
-- A place is mentioned but you lack information about it. Must be a **place**.
+- A place is mentioned but you lack information about it, i.e. not in Known Available Places. Must be a **place**.
 
 Choose "query_route" if:
 - You do not know your ETA or route to one candidate locations.
 - Another agent requests your route-related information that you do not have.
+- The place is in Known Available Places.
 
 Choose "goto" or "wait" if:
 - Other agents are actively speaking or querying (unless they are directly addressing you).
@@ -137,6 +148,16 @@ In this case:
 
 For example, if you need someone's pose but haven't ask for it, go for "speak". If someone else have asked for that pose, then "wait". If one agent did not response for a while, consider the probability of it being caught, in which case you should exclude it from consideration. When speaking, try your best to avoid repetition. If one question has been asked multiple times, please don't waste time asking again. If someone has just asked for another one's response, be patient to wait for that response for at least 5 seconds before you speak.
 
+Mid-route reconsideration (use the ETA fields):
+- If `$CurrentETA$` is "N/A" or `$ETAHistory$` is "N/A", do **not** reason about individual ETA degradation. Instead compare candidate places using the per-place ETA Map and the known agent poses.
+- If `$CurrentETA$` is a concrete value and `$ETAHistory$` shows a significant worsening (e.g. ≥ 10 minutes worse than an earlier sample, or the projected arrival no longer fits the 09:25:00 deadline, or teammates have already arrived while this agent is still far away), prefer "speak" — the proposed `$Speech$` should already surface the concern; choose "speak" to broadcast it.
+- If `$ETAHistory$` is stable or improving and `$CurrentETA$` is within budget, do **not** speak about ETA — prefer "wait" so the agent keeps navigating.
+- Delays smaller than ~15 % are minor and not worth interrupting the team.
+
+Sentinel reporting (use `$UnreportedSentinels$`):
+- If `$UnreportedSentinels$` is non-empty, those coordinates **must** be broadcast immediately. The proposed `$Speech$` already includes them — choose "speak" so the broadcast goes out, unless an even more urgent action applies (which is rare).
+- If `$UnreportedSentinels$` is "None", do not raise sentinel topics on your own.
+
 
 —
 
@@ -145,7 +166,7 @@ Example:
 {
     "missing info": [
         "Need Bob's pose to compare top 2 candidates",
-        "Need my ETA to <Central Park> to compare with Alice’s suggestion",
+        "Need my ETA to <Central Park> to compare with Alice's suggestion",
         ...
     ],
     "reasoning": "I should prioritize querying my ETA to <West Lake>, because I need to check whether it is too far for me.",

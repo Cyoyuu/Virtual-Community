@@ -9,11 +9,11 @@ Now the agent is in a group discussion. The agent has already decided its **spee
 Current Time:
 $CurrentTime$
 
-- Agent’s Name: $SelfName$
+- Agent's Name: $SelfName$
 
 - Agent's position: $SelfPose$
 
-- Other Agents’ Opinions:
+- Other Agents' Opinions:
 $AgentOpinions$
 
 - Place list:
@@ -28,8 +28,17 @@ $KnownPoses$
 - Extracted ETA Map (contains agents' computed ETAs to specific places known by this agent):
 $KnownETA$
 
-- Reported sentinel poses:
+- Reported sentinel poses (already broadcast to the team):
 $KnownSentinelPoses$
+
+- Unreported sentinel poses (observed by you, not yet broadcast — if non-empty, your speech MUST include each coordinate verbatim):
+$UnreportedSentinels$
+
+- Current ETA to your current goal (or "N/A" if no committed goal):
+$CurrentETA$
+
+- ETA history (sampled every 120 s on the same route; "N/A" when no committed goal):
+$ETAHistory$
 
 - Missing informations you have analyzed.
 $MissingInfo$
@@ -61,12 +70,15 @@ Guidelines for speech:
 - If you haven't mentioned your current position or it has changed since your last mentioning, mention your current position to let others know (e.g., "I'm current at [90.03, -33.10]"). Enclose your xy coordinates in [], making it easier for others to parse.
 - Avoid proposing destination before you know everyone's pose.
 - If an ETA is so bad that would affect your meeting in time, mention that ETA (e.g., “my ETA is 18 min”) and clearly express you opposition.
-- If compromising or converging, reference others’ preferences to show collaboration.
+- Inspect `$CurrentETA$` and `$ETAHistory$`. If they are concrete values AND show significant worsening (e.g. ≥ 10 min worse than an earlier sample, or projected arrival no longer fits the 09:25:00 deadline), explicitly state your current ETA and propose reconsidering the meeting place. If they are "N/A" or stable, do not raise ETA-degradation concerns.
+- If compromising or converging, reference others' preferences to show collaboration.
 - If others asked you, add your reply into the speech when possible.
 - If the conversation is dragging, don't throw new questions, even if it's in your speech intent. Instead, ask the undecided agents to assert finalization as soon as possible. Avoid asking redundant question and requests.
 - Don't make unnecessary repetition. If you have nothing new to add, just output "null".
 - When mentioning your ETA, always specify the destination it is related with.
 - Don't ask for sentinel poses, as they should all be reported immediately when observed.
+- If `$UnreportedSentinels$` is non-empty, your speech MUST explicitly include each unreported sentinel coordinate verbatim (e.g. "I see sentinels at [-55.00, 176.00, 108.55], [12.30, -4.10, 95.20]"). This takes priority over the "if nothing new to add, output null" rule — sentinel reports are always new.
+- If `$UnreportedSentinels$` is "None", do not raise sentinels on your own.
 - Avoid: “I think”, “maybe”, “perhaps” — be decisive and action-oriented.
 - Match the tone of prior conversation — collaborative, efficient, respectful.
 
@@ -81,7 +93,7 @@ speech: "I support <Central Station> — which seems close to and reasonable for
 speech: "Since Alice prefers <Park> and Bob is near <Station>, how about <Cafe> as a middle ground?"
 
 → Intent: "converge"  
-speech: "To move forward, I suggest we finalize <Central Station> — it’s not perfect but works for all of us."
+speech: "To move forward, I suggest we finalize <Central Station> — it's not perfect but works for all of us."
 
 —
 
