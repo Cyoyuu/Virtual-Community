@@ -253,9 +253,9 @@ class MapTool:
         self.clipped_grid_map = None
         init_time = time.perf_counter() - init_time
         if self.logger is not None:
-            self.logger.info(f"Amap initialized in {init_time}s")
+            self.logger.info(f"MapTool initialized in {init_time}s")
         else:
-            print(f"Amap initialized in {init_time}s")
+            print(f"MapTool initialized in {init_time}s")
         
     def reset(self, pose):
         self.pose=pose
@@ -264,7 +264,7 @@ class MapTool:
     def is_point_invalid(self, point, lim=None):
         if lim is None:
             lim = self.waypoints_dis
-        return all([is_point_enclosed_Amap(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-int(lim),int(lim)+1) for j in range(-int(lim),int(lim)+1)]])
+        return all([is_point_enclosed_MapTool(grid=self.obstacle_grid, point=point+shift, resolution=self.obstacle_grid_parameters["resolution"], min_x=self.obstacle_grid_parameters["min_x"], min_y=self.obstacle_grid_parameters["min_y"], nx=self.obstacle_grid_parameters["nx"], ny=self.obstacle_grid_parameters["ny"])[0] for shift in [np.array([i, j]) for i in range(-int(lim),int(lim)+1) for j in range(-int(lim),int(lim)+1)]])
 
     def spawn_waypoints(self):
         for node in self.nodes:
@@ -392,7 +392,7 @@ class MapTool:
 
         # Get goal location
         if goal_place is not None and goal_place not in self.place_metadata:
-            print(f"[Amap.query_route] Unknown place: {goal_place!r}; returning None so the caller can handle it.")
+            print(f"[MapTool.query_route] Unknown place: {goal_place!r}; returning None so the caller can handle it.")
             return None
 
         if goal_place is not None:
@@ -779,19 +779,19 @@ if __name__ == "__main__" :
         ref_lat, ref_lon = float(ref_lat), float(ref_lon)
     building_metadata = json.load(open(os.path.join(f"{scene_dir}/agents_num_15", "building_metadata.json"), 'r'))
     place_metadata = json.load(open(os.path.join(f"{scene_dir}/agents_num_15", "place_metadata.json"), 'r'))
-    amap=Amap(scene_name=args.scene, building_metadata=building_metadata, place_metadata=place_metadata)
-    wps=[wp.location for wp in amap.waypoints]
+    map_tool=MapTool(scene_name=args.scene, building_metadata=building_metadata, place_metadata=place_metadata)
+    wps=[wp.location for wp in map_tool.waypoints]
     xs, ys = zip(*wps)
     plt.figure(figsize=(10, 6))
     plt.plot(xs, ys, 'bo', markersize=3)
-    n_wps=amap.get_nearest_waypoints([285.16, -196.96])
+    n_wps=map_tool.get_nearest_waypoints([285.16, -196.96])
     c_wps=set()
     for wp in n_wps:
-        c_wps.update(amap.get_connected_waypoints(wp))
-    c_wps=[wp.location for wp in amap.waypoints if wp.id in c_wps]
+        c_wps.update(map_tool.get_connected_waypoints(wp))
+    c_wps=[wp.location for wp in map_tool.waypoints if wp.id in c_wps]
     c_xs, c_ys = zip(*c_wps)
     plt.plot(c_xs, c_ys, 'ro', markersize=3)
-    plt.title(f'Amap Waypoints Visualization - {args.scene}')
+    plt.title(f'MapTool Waypoints Visualization - {args.scene}')
     plt.xlabel('X Coordinate')
     plt.ylabel('Y Coordinate')
     plt.grid()
