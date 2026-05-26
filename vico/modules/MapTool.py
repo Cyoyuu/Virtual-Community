@@ -233,10 +233,6 @@ class MapTool:
         self.building_metadata=deepcopy(building_metadata)
         self.waypoints_dis=waypoints_dis
 
-        with open(f'{get_assets_dir()}/scenes/{scene_name}/raw/center.txt', "r") as file:
-            for line in file:
-                ref_lat, ref_lon = line.strip().split()
-            ref_lat, ref_lon = float(ref_lat), float(ref_lon)
         self.roads, self.nodes = pickle.load(open(f"{get_assets_dir()}/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
         # Paths
         img_path = f"{get_assets_dir()}/scenes/{self.scene_name}/global.png"
