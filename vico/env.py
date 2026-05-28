@@ -14,6 +14,7 @@ import genesis as gs
 from genesis.utils.tools import FPSTracker
 from genesis.utils.misc import tensor_to_array
 from .tools.utils import get_assets_dir
+from .tools.asset_utils import get_asset_path
 import genesis.utils.geom as geom_utils
 from genesis.options import CoacdOptions
 from genesis.engine.entities.rigid_entity import RigidEntity
@@ -142,7 +143,7 @@ class VicoEnv:
 		self.obs = {i: {} for i in range(self.num_agents)}
 		self.obs['agent_list_to_update'] = [i for i in range(self.num_agents)]
 
-		self.scene_assets_dir = os.path.join(get_assets_dir(), f"ViCo/scene/v1/{scene}")
+		self.scene_assets_dir = get_asset_path(f"scene/v1/{scene}")
 		self.vehicles = []
 		self.enable_tm_debug = enable_tm_debug
 
@@ -175,34 +176,14 @@ class VicoEnv:
 			show_viewer=not head_less,
 		)
 		if self.batch_renderer:
-			self.scene.add_light(
-				pos=(1.0, 1.0, 1.0),
-				dir=(0.0, -1.0, -1.0),
-				color=(1.0, 1.0, 1.0),
-				intensity=1.0,
-				directional=True,
-			)
-			self.scene.add_light(
-				pos=(1.0, 1.0, 1.0),
-				dir=(0.0, 1.0, -1.0),
-				color=(1.0, 1.0, 1.0),
-				intensity=1.0,
-				directional=True,
-			)
-			self.scene.add_light(
-				pos=(1.0, 1.0, 1.0),
-				dir=(1.0, 0.0, -1.0),
-				color=(1.0, 1.0, 1.0),
-				intensity=1.0,
-				directional=True,
-			)
-			self.scene.add_light(
-				pos=(1.0, 1.0, 1.0),
-				dir=(-1.0, 0.0, -1.0),
-				color=(1.0, 1.0, 1.0),
-				intensity=1.0,
-				directional=True,
-			)
+			for light in initial_lights:
+				self.scene.add_light(
+					pos=(1.0, 1.0, 1.0),
+					dir=light['dir'],
+					color=light['color'],
+					intensity=light['intensity'],
+					directional=True,
+				)
 		### Load city scene
 		start_time = time.time()
 		if self.enable_demo_camera:
@@ -259,7 +240,7 @@ class VicoEnv:
 			else:
 				# initialize agent as avatar
 				self.agents.append(self.add_avatar(name=self.agent_names[i],
-												   motion_data_path='ViCo/avatars/motions/motion.pkl',
+												   motion_data_path='avatars/motions/motion.pkl',
 												   skin_options={
 													   'glb_path': self.config['agent_skins'][i],
 													   'euler': (-90, 0, 90),
@@ -687,7 +668,7 @@ class VicoEnv:
 			outdoor_object_context = OutdoorObjectContext(
 				scene_name=self.scene_name,
 				objects_cfg_dir=os.path.join(scene_assets_dir, 'objects'),
-				assets_dir='ViCo/objects/outdoor_objects',
+				assets_dir='objects/outdoor_objects',
 				max_objects=self.outdoor_objects_max_num,
 				seed=self.seed,
 				terrain_height_field_path=f"{scene_assets_dir}/height_field.npz",
@@ -766,9 +747,10 @@ class VicoEnv:
 					if self.agent_infos[agent_id]["current_building"] == 'open space':
 						self.agent_infos[agent_id]["outdoor_pose"] = self.config['agent_poses'][agent_id]
 					self.load_indoor_scene(action['arg1'])  # load new scenes should be wrong now
-					if "init_avatar_poses" in self.active_places_info[action['arg1']]:
-						pos = self.active_places_info[action['arg1']]["init_avatar_poses"][0]["pos"]
-						euler = self.active_places_info[action['arg1']]["init_avatar_poses"][0]["euler"]
+					place_info = self.active_places_info.get(action['arg1'])
+					if place_info is not None and "init_avatar_poses" in place_info:
+						pos = place_info["init_avatar_poses"][0]["pos"]
+						euler = place_info["init_avatar_poses"][0]["euler"]
 						x, y, z = self.place_metadata[action['arg1']]['location']
 						pos = np.array([pos[0] + x, pos[1] + y, z])
 						agent.reset(pos, geom_utils.euler_to_R(np.degrees(np.array(euler, dtype=np.float64))))
@@ -842,9 +824,10 @@ class VicoEnv:
 					if self.agent_infos[agent_id]["current_building"] == 'open space':
 						self.agent_infos[agent_id]["outdoor_pose"] = self.config['agent_poses'][agent_id]
 					self.load_indoor_scene(action['arg1'])  # load new scenes should be wrong now
-					if "init_avatar_poses" in self.active_places_info[action['arg1']]:
-						pos = self.active_places_info[action['arg1']]["init_avatar_poses"][0]["pos"]
-						euler = self.active_places_info[action['arg1']]["init_avatar_poses"][0]["euler"]
+					place_info = self.active_places_info.get(action['arg1'])
+					if place_info is not None and "init_avatar_poses" in place_info:
+						pos = place_info["init_avatar_poses"][0]["pos"]
+						euler = place_info["init_avatar_poses"][0]["euler"]
 						x, y, z = self.place_metadata[action['arg1']]['location']
 						pos = np.array([pos[0] + x, pos[1] + y, z])
 						agent.reset(pos, geom_utils.euler_to_R(np.degrees(np.array(euler, dtype=np.float64))))
