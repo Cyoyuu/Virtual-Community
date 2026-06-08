@@ -20,7 +20,7 @@ from PIL import Image
 import argparse
 
 from ..tools.road_annotation.visualize_osm_roads import draw_roads
-from ..tools.utils import get_assets_dir
+from ..tools.constants import ASSETS_PATH
 
 if __name__ != "__main__" :
     from ..tools.utils import *
@@ -233,14 +233,14 @@ class MapTool:
         self.building_metadata=deepcopy(building_metadata)
         self.waypoints_dis=waypoints_dis
 
-        self.roads, self.nodes = pickle.load(open(f"{get_assets_dir()}/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
+        self.roads, self.nodes = pickle.load(open(f"{ASSETS_PATH}/scenes/{scene_name}/road_data/roads.pkl", 'rb'))
         # Paths
-        img_path = f"{get_assets_dir()}/scenes/{self.scene_name}/global.png"
+        img_path = f"{ASSETS_PATH}/scenes/{self.scene_name}/global.png"
         if not os.path.exists(img_path):
             raise FileNotFoundError(f"Aerial image not found: {img_path}")
         self.global_image = Image.open(img_path).convert("RGB")
 
-        obstacle_grid_save = pickle.load(open(f"{get_assets_dir()}/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
+        obstacle_grid_save = pickle.load(open(f"{ASSETS_PATH}/scenes/{scene_name}/obstacle_grid.pkl", 'rb'))
         self.obstacle_grid = obstacle_grid_save["grid"]
         self.obstacle_grid_parameters = obstacle_grid_save["parameters"]
 
@@ -567,7 +567,7 @@ class MapTool:
             PIL.Image.Image: Cropped and annotated subimage.
         """
         # Paths
-        img_path = f"{get_assets_dir()}/scenes/{self.scene_name}/global.png"
+        img_path = f"{ASSETS_PATH}/scenes/{self.scene_name}/global.png"
 
         # Check assets
         if not os.path.exists(img_path):
@@ -769,7 +769,7 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", '-s', type=str, required=True)
     args = parser.parse_args()
-    scene_dir = f"{get_assets_dir()}/scenes/{args.scene}"
+    scene_dir = f"{ASSETS_PATH}/scenes/{args.scene}"
     if not os.path.exists(f"{scene_dir}/road_data/road_data.pkl"):
         print(f"{scene_dir}/road_data/road_data.pkl not exist!")
         exit()
